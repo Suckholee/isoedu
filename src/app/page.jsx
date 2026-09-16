@@ -45,7 +45,9 @@ import {
   ExternalLink,
   ShieldCheck,
   Zap,
-  Briefcase
+  Briefcase,
+  PanelLeftOpen,
+  ChevronRight
 } from 'lucide-react';
 
 export default function HomePage() {
@@ -135,6 +137,44 @@ export default function HomePage() {
   // Filters & Toast
   const [activeStatusFilter, setActiveStatusFilter] = useState('ALL');
   const [toastMessage, setToastMessage] = useState(null);
+
+  // Left Sidebar Collapse/Expand State with localStorage persistence
+  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem('isoedu_sidebar_open');
+      if (saved !== null) {
+        setIsSidebarOpen(saved === 'true');
+      }
+    } catch (e) {}
+  }, []);
+
+  const handleToggleSidebar = () => {
+    setIsSidebarOpen(prev => {
+      const next = !prev;
+      try {
+        localStorage.setItem('isoedu_sidebar_open', String(next));
+      } catch (e) {}
+      return next;
+    });
+  };
+
+  // Keyboard shortcut: [ or Ctrl/Cmd + B to toggle left sidebar
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      const targetTag = e.target?.tagName?.toUpperCase();
+      if (targetTag === 'INPUT' || targetTag === 'TEXTAREA' || e.target?.isContentEditable) {
+        return;
+      }
+      if (e.key === '[' || ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'b')) {
+        e.preventDefault();
+        handleToggleSidebar();
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, []);
 
   // 1. Initial Load Documents & Projects
   useEffect(() => {
@@ -416,6 +456,8 @@ export default function HomePage() {
       
       {/* 1. Google Drive Material 3 Header */}
       <Header
+        isSidebarOpen={isSidebarOpen}
+        onToggleSidebar={handleToggleSidebar}
         currentCompany={currentCompany}
         onSelectCompany={(comp) => {
           setCurrentCompany(comp);
@@ -438,10 +480,12 @@ export default function HomePage() {
       />
 
       {/* 2. Main Workspace (Sidebar + Floating Card in Canvas + Companion Bar) */}
-      <div className="flex-1 flex overflow-hidden">
+      <div className="flex-1 flex overflow-hidden relative">
         
-        {/* Left Google Drive Sidebar */}
+        {/* Left Google Drive Sidebar (Collapsible) */}
         <Sidebar
+          isOpen={isSidebarOpen}
+          onToggle={handleToggleSidebar}
           activeNav={activeNav}
           onSelectNav={(nav) => {
             setActiveNav(nav);
@@ -461,6 +505,20 @@ export default function HomePage() {
           onSelectProject={handleSelectProject}
           onOpenNewProjectModal={() => setIsNewProjectModalOpen(true)}
         />
+
+        {/* Floating Re-open Sidebar Button when collapsed */}
+        {!isSidebarOpen && (
+          <button
+            onClick={handleToggleSidebar}
+            className="absolute left-2.5 top-3 z-30 px-3 py-1.5 rounded-full bg-white/95 hover:bg-white text-slate-700 hover:text-blue-600 shadow-md border border-slate-200/90 flex items-center gap-1.5 text-xs font-bold transition-all hover:scale-105 group cursor-pointer backdrop-blur-xs animate-fade-in"
+            title="사이드바 펼치기 (단축키: [ )"
+            aria-label="사이드바 펼치기"
+          >
+            <PanelLeftOpen className="w-4 h-4 text-blue-600 group-hover:scale-110 transition-transform" />
+            <span className="hidden sm:inline">사이드바 펼치기</span>
+            <ChevronRight className="w-3.5 h-3.5 text-slate-400 group-hover:translate-x-0.5 transition-transform" />
+          </button>
+        )}
 
         {/* Center: The Floating White Canvas Panel (핵심 고급스러움 요소) */}
         <div className="flex-1 flex flex-col min-w-0 pr-1 pb-3 pl-1 overflow-hidden">

@@ -76,3 +76,14 @@ git push -u origin main
 2. [Vercel](https://vercel.com)에 로그인 후 GitHub 저장소 Import
 3. 환경변수(Supabase URL/Key)가 있다면 입력 후 **Deploy** 클릭
 4. 수초 내에 글로벌 CDN 주소(`https://your-app.vercel.app`)로 자동 배포 완료!
+
+## 원투원 블로그 콘텐츠 제작 실습
+
+홈 왼쪽의 **원투원 블로그 실습** 또는 `/practice/one-to-one`에서 시작합니다.
+사업 자료, 사진 드라이브, 미팅 기록, 블로그 작성, 발행 기록의 다섯 단계로 구성됩니다.
+수업 진행안과 구현 범위는 [실습 안내](docs/one-to-one-blog-workshop.md)를 참고하세요.
+
+현재 버전은 브라우저에 자료를 저장하는 실습 도구입니다. 기본 초안과 외부 AI용 프롬프트를 제공하며,
+회원 인증·외부 드라이브·양식 자동 분석·AI API·블로그 자동 발행은 연결하지 않았습니다.
+
+검증: `node --test tests/one-to-one.test.mjs`

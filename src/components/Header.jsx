@@ -24,11 +24,14 @@ import {
   Phone,
   BookOpen,
   Award,
-  Layers
+  Layers,
+  Menu
 } from 'lucide-react';
 import { INITIAL_COMPANIES } from '../lib/mockData';
 
 export default function Header({
+  isSidebarOpen = true,
+  onToggleSidebar,
   currentCompany,
   onSelectCompany,
   onOpenSearch,
@@ -72,8 +75,24 @@ export default function Header({
     <header className="h-16 px-4 sm:px-6 flex items-center justify-between bg-[#f8fafd] text-slate-800 select-none relative z-40">
       
       {/* 1. Left: Google Drive Signature Brand Identity */}
-      <div className="flex items-center gap-3 w-60 shrink-0">
-        <div className="flex items-center gap-2.5">
+      <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+        {/* Google Drive Standard Hamburger Menu Button to Toggle Sidebar */}
+        <button
+          onClick={onToggleSidebar}
+          className={`p-2.5 rounded-full hover:bg-slate-200/70 text-slate-600 transition-colors cursor-pointer shrink-0 ${
+            !isSidebarOpen ? 'bg-blue-50 text-blue-600 ring-1 ring-blue-200' : ''
+          }`}
+          title={isSidebarOpen ? "사이드바 접기 (단축키: [ )" : "사이드바 펼치기 (단축키: [ )"}
+          aria-label={isSidebarOpen ? "사이드바 접기" : "사이드바 펼치기"}
+        >
+          <Menu className="w-5 h-5" />
+        </button>
+
+        <div 
+          className="flex items-center gap-2.5 cursor-pointer hover:opacity-90 transition-opacity"
+          onClick={() => onSelectNav && onSelectNav('home')}
+          title="홈으로 이동"
+        >
           {/* Google Drive Multi-Color Triangle Logo */}
           <div className="w-10 h-10 flex items-center justify-center">
             <svg viewBox="0 0 87.3 78" className="w-8 h-8">

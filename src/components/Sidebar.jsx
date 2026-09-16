@@ -13,6 +13,7 @@ import {
   BarChart3, 
   ChevronRight, 
   ChevronDown, 
+  ChevronLeft,
   Cloud,
   Award, 
   BookOpen, 
@@ -26,12 +27,15 @@ import {
   Briefcase,
   FolderPlus,
   Landmark,
-  Sparkles
+  Sparkles,
+  PanelLeftClose
 } from 'lucide-react';
 import { ISO_STANDARDS_INFO, ISO_MANDATORY_REQUIREMENTS } from '../lib/isoRequirementsData.js';
 import { ISO_9001_MASTER_BLUEPRINT } from '../lib/iso9001Blueprint.js';
 
 export default function Sidebar({ 
+  isOpen = true,
+  onToggle,
   activeNav, 
   onSelectNav, 
   selectedStandard = 'ISO_9001',
@@ -94,11 +98,34 @@ export default function Sidebar({
   };
 
   return (
-    <aside className="w-64 bg-[#f8fafd] flex flex-col justify-between p-3 select-none shrink-0 h-[calc(100vh-64px)] overflow-y-auto">
-      <div className="space-y-4">
+    <aside 
+      className={`bg-[#f8fafd] flex flex-col justify-between select-none shrink-0 h-[calc(100vh-64px)] overflow-y-auto overflow-x-hidden transition-all duration-300 ease-in-out ${
+        isOpen 
+          ? 'w-64 p-3 opacity-100' 
+          : 'w-0 p-0 opacity-0 pointer-events-none border-0'
+      }`}
+      aria-hidden={!isOpen}
+    >
+      <div className="w-58 min-w-[232px] space-y-4">
         
+        {/* Top Header Row with Collapse Button (User Reference Design) */}
+        <div className="flex items-center justify-between px-1.5 pt-0.5 pb-1 border-b border-slate-200/50">
+          <span className="text-[11px] font-bold text-slate-400 uppercase tracking-wider flex items-center gap-1.5">
+            <Folder className="w-3.5 h-3.5 text-blue-600" />
+            <span>메뉴 탐색</span>
+          </span>
+          <button
+            onClick={onToggle}
+            className="p-1.5 rounded-lg text-slate-400 hover:text-slate-700 hover:bg-slate-200/70 transition-colors cursor-pointer flex items-center gap-1 group"
+            title="사이드바 접기 (단축키: [ )"
+            aria-label="사이드바 접기"
+          >
+            <ChevronLeft className="w-4 h-4 text-slate-500 group-hover:-translate-x-0.5 transition-transform" />
+          </button>
+        </div>
+
         {/* 1. Google Drive '+ 신규' Floating Pill Button with Dropdown */}
-        <div className="pt-2 px-1 relative">
+        <div className="px-1 relative">
           <button
             onClick={() => setIsNewMenuOpen(!isNewMenuOpen)}
             className="flex items-center gap-3 px-5 py-3.5 rounded-2xl bg-white hover:bg-slate-50 text-slate-800 font-semibold text-sm shadow-md hover:shadow-lg border border-slate-200/60 transition-all group w-full"
@@ -153,6 +180,10 @@ export default function Sidebar({
 
         {/* 2. Navigation Items with Google Drive Pill Capsules */}
         <nav className="space-y-0.5 text-xs font-semibold text-slate-700">
+          <a href="/practice/one-to-one" className="mb-3 flex items-center gap-3 rounded-xl bg-teal-800 px-4 py-3 text-sm font-semibold text-white hover:bg-teal-900">
+            <BookOpen className="h-4 w-4" />원투원 블로그 실습
+          </a>
+
           
           {/* 홈 (드라이브 홈) */}
           <button
