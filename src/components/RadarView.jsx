@@ -46,6 +46,7 @@ export default function RadarView({ documents, onOpenDetail }) {
 
   return (
     <div className="space-y-6">
+      <p role="note" className="mt-6 rounded-lg border border-amber-200 bg-amber-50 p-3 text-sm text-amber-900">상단 수치와 차트는 시연 데이터입니다. 긴급 조치 문서 목록만 현재 등록 문서를 사용합니다.</p>
       
       {/* 1. Header Metrics Banner (시안 6번 매핑) */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">

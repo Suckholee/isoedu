@@ -1,0 +1,44 @@
+{
+  "sources": [
+    {
+      "id": "k-startup",
+      "name": "K-Startup",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do",
+      "scope": "창업 지원사업",
+      "method": "공개 공고 상세; 공식 API 접근 조건은 별도 확인"
+    },
+    {
+      "id": "mss",
+      "name": "중소벤처기업부",
+      "url": "https://www.mss.go.kr/site/smba/ex/bbs/List.do?cbIdx=310",
+      "scope": "중기부 사업공고·정정",
+      "method": "공개 공고 상세"
+    },
+    {
+      "id": "bizinfo",
+      "name": "기업마당",
+      "url": "https://www.bizinfo.go.kr/apiList.do",
+      "listingUrl": "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/list.do",
+      "apiUrl": "https://www.bizinfo.go.kr/uss/rss/bizinfoApi.do",
+      "apiDocumentation": "https://www.bizinfo.go.kr/apiDetail.do?id=bizinfoApi",
+      "scope": "중앙부처·지자체·유관기관 지원사업",
+      "method": "공식 API 우선; 서비스 인증키 발급 필요; 없으면 공개 공고"
+    },
+    {
+      "id": "iris",
+      "name": "IRIS",
+      "url": "https://www.iris.go.kr/index.do",
+      "scope": "국가 R&D 공고",
+      "method": "공고 상세·첨부와 세부 접수 차수 날짜 확인"
+    },
+    {
+      "id": "kotra",
+      "name": "KOTRA 무역투자24",
+      "url": "https://kotra.or.kr/subList/20000020753",
+      "scope": "수출·해외진출 지원사업",
+      "method": "공개 사업신청 목록·상세"
+    }
+  ],
+  "priority": "공고 원문·세부 차수·정정 공고 우선",
+  "checkedOn": "2026-10-17"
+}

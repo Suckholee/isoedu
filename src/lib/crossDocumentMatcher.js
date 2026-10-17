@@ -8,7 +8,7 @@ import { REQUIRED_DOCUMENTS_TEMPLATES } from './governmentProgramsData.js';
 
 export function matchDocumentsForProgram(program, companyDocs = [], companyProfile = {}) {
   const templateKey = program?.requiredDocsTemplate || 'STANDARD_OVERSEAS_CERT';
-  const checklist = REQUIRED_DOCUMENTS_TEMPLATES[templateKey] || REQUIRED_DOCUMENTS_TEMPLATES.STANDARD_OVERSEAS_CERT;
+  const checklist = templateKey === 'UNVERIFIED' ? [] : (REQUIRED_DOCUMENTS_TEMPLATES[templateKey] || REQUIRED_DOCUMENTS_TEMPLATES.STANDARD_OVERSEAS_CERT);
 
   let matchedCount = 0;
   let bonusPointsCount = 0;

@@ -1,27 +1,14 @@
 import { createServerClient } from '@supabase/ssr';
-import { cookies } from 'next/headers';
-
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+import { dataConfig, isCloudMode } from '../../lib/dataConfig.js';
 
 export const createClient = (cookieStore) => {
-  if (!supabaseUrl || !supabaseKey) return null;
-  return createServerClient(
-    supabaseUrl,
-    supabaseKey,
-    {
-      cookies: {
-        getAll() {
-          return cookieStore.getAll();
-        },
-        setAll(cookiesToSet) {
-          try {
-            cookiesToSet.forEach(({ name, value, options }) => cookieStore.set(name, value, options));
-          } catch {
-            // Server component ignore
-          }
-        },
+  if (!isCloudMode || !dataConfig.configured) return null;
+  return createServerClient(dataConfig.url, dataConfig.key, {
+    cookies: {
+      getAll: () => cookieStore.getAll(),
+      setAll(cookiesToSet) {
+        cookiesToSet.forEach(({ name, value, options }) => cookieStore.set(name, value, options));
       },
-    }
-  );
+    },
+  });
 };

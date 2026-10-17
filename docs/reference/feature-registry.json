@@ -1,0 +1,1184 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-14",
+  "sources": [
+    "참고자료/조영빈Iso 플랫폼 2차_20261012.pptx",
+    "참고자료/어니스톤_사업계획서_서티멘토서티루트_마스터본초안_20261010_v5.pdf"
+  ],
+  "features": [
+    {
+      "id": "S01",
+      "slide": 1,
+      "name": "기업 계정 및 환경 설정",
+      "group": "계정",
+      "sourceSpec": "기업 계정 및 환경 설정 기능 명세 명세 내용이 없습니다.",
+      "layout": "설정 폼 + 우측 계정 요약",
+      "dependsOn": [],
+      "dependencyBasis": "제안: 원본 기능 내용을 바탕으로 구성한 선행 데이터 의존성. 슬라이드 순서와 구별한다.",
+      "codeCandidates": [],
+      "status": "미매핑·구현 미검증",
+      "specMissing": true
+    },
+    {
+      "id": "S02",
+      "slide": 2,
+      "name": "회원가입 및 권한별 로그인 (기업/컨설턴트/심사원)",
+      "group": "계정",
+      "sourceSpec": "회원가입 및 권한별 로그인 (기업/컨설턴트/심사원) 기능 명세 🎯 기획 의도 (Intent) ISO 인증 및 심사 프로세스의 디지털 전환을 목표로 하는 SaaS 플랫폼 특성상, 사용자 유형(기업, 컨설턴트, 심사원)에 따른 엄격한 권한 분리와 맞춤형 온보딩 흐름이 필수적입니다. 이 기능은 각기 다른 목적을 가진 사용자가 최적화된 대시보드 및 워크플로우에 접근할 수 있도록 하는 첫 번째 진입점입니다. 특히, 인증 보안이 중요한 도메인 특성을 반영하여 사용자 식별의 정확도를 높이고, 복잡한 B2B 가입 절차를 유형별 단계별 입력(Step-by-step) UI로 설계함으로써 이탈률을 최소화하고 신뢰도 높은 사용자 경험을 제공하는 데 목적이 있습니다. ⚙️ 기술 명세 (Technical Spec) -  UI/UX 상호작용:  회원가입 시 탭(Tab) 또는 선택형 카드 UI를 통해 '기업/컨설턴트/심사원' 유형을 우선 선택하도록 구성합니다. 유형 선택에 따라 입력 필드가 동적으로 변경(Dynamic Form)되며, 기업의 경우 사업자등록번호 인증 API 연동, 컨설턴트 및 심사원은 자격 증명 번호 및 소속 기관 확인 필드를 활성화합니다. 로그인 시에는 단일 진입점을 제공하되, 인증 성공 후 반환되는 JWT(JSON Web Token)의 role 클레임을 기반으로 각기 다른 메인 랜딩 페이지로 리다이렉션 처리를 수행합니다. -  백엔드 연동 및 보안:  RESTful API를 통해 유형별 가입 요청을 처리하며, RBAC(Role-Based Access Control) 아키텍처를 적용하여 데이터 접근 권한을 엄격히 제어합니다. 로그인 시 보안 강화를 위해 MFA(Multi-Factor Authentication) 옵션을 제공하며, 세션 만료 및 토큰 갱신(Refresh Token) 로직을 통해 SaaS 환경의 보안 표준을 준수합니다. 프론트엔드 상태 관리 라이브러리(Zustand 또는 Redux)를 활용하여 사용자의 권한 상태를 전역적으로 관리하고, 권한이 없는 페이지 접근 시 403 Forbidden 처리 및 안내 팝업을 노출합니다.",
+      "layout": "가입·로그인 양분 + 역할 카드",
+      "dependsOn": [],
+      "dependencyBasis": "제안: 원본 기능 내용을 바탕으로 구성한 선행 데이터 의존성. 슬라이드 순서와 구별한다.",
+      "codeCandidates": [
+        "src/components/AuthModal.jsx",
+        "src/context/AuthContext.jsx"
+      ],
+      "status": "구현 후보 있음·완료 미검증",
+      "specMissing": false,
+      "designProgress": {
+        "date": "2026-10-14",
+        "status": "공통 UI 적용·업무 완료 미검증",
+        "changes": [
+          "공통 셸·헤더·디자인 토큰",
+          "실제 기존 화면을 연결하는 인증 관리 탐색"
+        ],
+        "code": [
+          "src/components/CertificationJourney.jsx",
+          "src/components/ui/Button.jsx",
+          "src/app/globals.css"
+        ],
+        "dataBoundary": "기존 currentCompany·문서 저장소·프로젝트 상태 유지. 화면 탐색은 데이터 수정이나 승인 처리를 하지 않음."
+      },
+      "buttonAudit": {
+        "date": "2026-10-17",
+        "scope": "로그인 전 UI 클릭 및 코드 확인",
+        "fixes": [
+          "일정·알림·보고서·설정의 개별 화면 연결",
+          "계정 메뉴 키보드 접근",
+          "템플릿 미승인 초안 및 임의 만기 제거"
+        ],
+        "verification": "메뉴 8개, 대시보드 5개, 규격 진단 6개, 필터, 로그인 모달, 문서 등록 취소·닫기 확인",
+        "remaining": "인증된 저장·업로드 미검증; 기관 예약·외부 알림 미연동"
+      },
+      "uiMap": {
+        "document": "docs/reference/screen-navigation-map.md",
+        "board": "https://www.figma.com/board/AIOk8BKLYcgkzc3S247FAk/?node-id=1-8",
+        "scope": "로그인 전 실제 화면 12개; 편집기 진입 제한 기록; 기업 프로필·맞춤 지원사업 예정 흐름 구분"
+      }
+    },
+    {
+      "id": "S03",
+      "slide": 3,
+      "name": "기업 프로필 및 업종/사업장 정보 관리",
+      "group": "계정",
+      "sourceSpec": "기업 프로필 및 업종/사업장 정보 관리 기능 명세 🎯 기획 의도 (Intent) 본 UI 요소는 ISO 인증 및 표준 준수를 목적으로 하는 SaaS 플랫폼의 핵심 데이터 베이스인 '기업 아이덴티티'를 정의하고 관리하기 위해 설계되었습니다. 단순한 정보 입력을 넘어, ISO 9001/14001 등 각종 국제 표준 심사에 필수적인 기업 규모, 표준산업분류(KSIC) 코드, 다중 사업장(Site) 현황을 체계화하여 관리합니다. 사용자는 이 기능을 통해 인증 심사 시 요구되는 기업의 법적·실무적 근거 데이터를 일원화할 수 있으며, 이는 향후 플랫폼 내에서 생성되는 모든 보고서 및 심사 문서의 기본 메타데이터로 활용되어 데이터 정합성을 보장합니다. ⚙️ 기술 명세 (Technical Spec) -  인터페이스 및 상호작용 : 폼 기반의 입력 인터페이스를 제공하며, 사업자등록번호 입력 시 공공데이터 API를 통한 실시간 유효성 검증 및 기업 기본 정보 자동 완성(Auto-fill) 기능을 지원합니다. 다중 사업장 관리의 경우, 리스트 형태의 CRUD 인터페이스를 통해 본사 외 지사, 공장 등 심사 범위(Scope)에 포함될 주소지를 유연하게 확장할 수 있도록 설계합니다. -  데이터 및 상태 관리 : 모든 데이터 수정은 PATCH /api/v1/company/profile 엔드포인트를 통해 비동기로 처리되며, 낙관적 업데이트(Optimistic Updates)를 적용하여 사용자 경험의 연속성을 확보합니다. 업종/업태 정보는 표준산업분류 DB와 연동된 검색 인터페이스를 제공하여 데이터의 표준화를 유지합니다. -  권한 및 보안 : RBAC(Role-Based Access Control) 정책에 따라 '관리자(Admin)' 이상의 권한을 가진 사용자에게만 수정 접근 권한을 부여하며, 기업 정보의 중요도를 고려하여 변경 이력(Audit Log)을 데이터베이스에 기록하여 추적 가능성(Traceability)을 확보해야 합니다.",
+      "layout": "탭 + 기업 정보 폼",
+      "dependsOn": [
+        "S02"
+      ],
+      "dependencyBasis": "제안: 원본 기능 내용을 바탕으로 구성한 선행 데이터 의존성. 슬라이드 순서와 구별한다.",
+      "codeCandidates": [
+        "src/lib/workspaceRepository.js"
+      ],
+      "status": "구현 후보 있음·완료 미검증",
+      "specMissing": false,
+      "uiMap": {
+        "document": "docs/reference/screen-navigation-map.md",
+        "board": "https://www.figma.com/board/AIOk8BKLYcgkzc3S247FAk/?node-id=1-8",
+        "scope": "로그인 전 실제 화면 12개; 편집기 진입 제한 기록; 기업 프로필·맞춤 지원사업 예정 흐름 구분"
+      }
+    },
+    {
+      "id": "S04",
+      "slide": 4,
+      "name": "조직 내부 담당자 초대 및 권한 설정",
+      "group": "계정",
+      "sourceSpec": "조직 내부 담당자 초대 및 권한 설정 기능 명세 🎯 기획 의도 (Intent) 본 기능은 SaaS 플랫폼의 핵심인 멀티 테넌시(Multi-tenancy) 환경에서 기업 고객이 자율적으로 조직 구조를 설계하고 보안 거버넌스를 확립하기 위해 설계되었습니다. ISO 표준 준수 및 기업용 솔루션의 특성상, 정보 접근 권한의 분리(Segregation of Duties)는 필수적입니다. 관리자가 팀원의 이메일 기반 초대를 통해 워크스페이스로 온보딩시키고, 각 담당자의 직무에 최적화된 권한(Role-based Access Control)을 부여함으로써 협업 효율성을 극대화하고 민감 데이터에 대한 보안 리스크를 최소화하는 것을 목적으로 합니다. ⚙️ 기술 명세 (Technical Spec) 1.   초대 로직 및 유효성 검사 :      *   Input 필드에 이메일 입력 시 정규표현식을 통한 클라이언트 사이드 검증을 수행하며, 이미 등록된 사용자나 초대 대기 중인 이메일은 중복 체크 API를 통해 실시간 피드백을 제공합니다.      *   '초대 보내기' 클릭 시 POST /api/v1/organization/invitations를 호출하며, 백엔드에서는 고유 토큰이 포함된 매직 링크를 생성하여 SMTP를 통해 발송합니다. 2.   권한 설정 및 매핑 (RBAC) :      *   UI 상에서 권한 프리셋(예: 소유자, 관리자, 편집자, 뷰어) 또는 커스텀 권한 선택 시, 해당 Role ID와 연동된 권한 맵(Permission Map)을 매칭합니다.      *   SaaS 특성을 고려하여 하위 부서나 특정 프로젝트 단위의 접근 권한(Granular Permissions)을 설정할 수 있도록 다중 선택 컴포넌트를 활용합니다. 3.   상태 관리 및 UI 인터랙션 :      *   초대 리스트는 '대기(Pending)', '수락(Accepted)', '만료(Expired)' 상태로 구분하여 관리합니다.      *   초대 취소 또는 권한 수정 시 즉각적인 UI 반영을 위해 TanStack Query(React Query)의 optimistic updates를 적용하여 네트워크 지연 시간 동안의 사용자 경험을 개선합니다.      *   모든 권한 변경 이력은 감사 로그(Audit Trail) 저장을 위해 백엔드 로그 테이블에 기록되어야 합니다.",
+      "layout": "초대 폼 + 구성원 표 + 권한 안내",
+      "dependsOn": [
+        "S02",
+        "S03"
+      ],
+      "dependencyBasis": "제안: 원본 기능 내용을 바탕으로 구성한 선행 데이터 의존성. 슬라이드 순서와 구별한다.",
+      "codeCandidates": [
+        "supabase/platform_migration.sql"
+      ],
+      "status": "구현 후보 있음·완료 미검증",
+      "specMissing": false
+    },
+    {
+      "id": "S05",
+      "slide": 5,
+      "name": "기업 전용 통합 대시보드 (준비율/일정/알림 현황)",
+      "group": "계정",
+      "sourceSpec": "기업 전용 통합 대시보드 (준비율/일정/알림 현황) 기능 명세 🎯 기획 의도 (Intent) 본 대시보드는 ISO 인증 및 유지 관리가 필수적인 SaaS 환경에서 기업 관리자가 인증 갱신 주기와 컴플라이언스 준수 현황을 한눈에 파악하도록 돕는 통제 센터(Control Center) 역할을 합니다. 산재한 인증 관련 문서 준비율과 심사 일정을 시각화함으로써 실무자의 업무 누락을 방지하고, 관리자가 기업의 전반적인 규제 대응 리스크를 선제적으로 관리할 수 있는 데이터 중심의 의사결정 환경을 제공하는 데 목적이 있습니다. ⚙️ 기술 명세 (Technical Spec) 1.   데이터 동기화 및 렌더링 :      *   GET /v1/enterprise/dashboard/summary API를 통해 준비율(Progress), 주요 일정(Schedules), 최신 알림(Notifications) 데이터를 병렬로 호출하며, SWR 또는 React Query를 사용하여 데이터의 최신성을 유지합니다.     *    준비율(Readiness Rate) : 도넛 차트(Donut Chart) 혹은 프로그레스 바 형태로 시각화하며, 하위 항목 클릭 시 해당 문서 관리 상세 페이지로 딥링크(Deep Link) 처리합니다. 2.   상호작용 및 상태 관리 :      *    일정 위젯 : 인증 심사 임박 시(D-30 등) Highlight 스타일을 적용하고, 호버(Hover) 시 툴팁을 통해 상세 일정 정보를 노출합니다.      *    알림 현황 : 실시간 웹소켓(WebSocket) 연동을 통해 미확인 알림 건수를 Badge 형태로 표시하며, '전체 읽음' 처리 시 즉시 상태를 리프레시합니다. 3.   UI/UX 최적화 :      *   데이터 로딩 중에는 스켈레톤 UI(Skeleton UI)를 제공하여 레이아웃 시프트를 방지하고, 반응형 그리드 시스템(Desktop-first)을 적용하여 해상도에 최적화된 위젯 배치를 지원합니다.     *   데이터 부재 시(Empty State) 사용자가 다음 행동(예: 문서 업로드, 일정 등록)을 수행할 수 있도록 유도하는 CTA(Call-to-Action) 버튼을 배치합니다.",
+      "layout": "KPI + 준비율 도넛 + 일정·알림",
+      "dependsOn": [
+        "S03",
+        "S07",
+        "S08",
+        "S23",
+        "S26",
+        "S27"
+      ],
+      "dependencyBasis": "제안: 원본 기능 내용을 바탕으로 구성한 선행 데이터 의존성. 슬라이드 순서와 구별한다.",
+      "codeCandidates": [
+        "src/components/DashboardView.jsx"
+      ],
+      "status": "구현 후보 있음·완료 미검증",
+      "specMissing": false,
+      "designProgress": {
+        "date": "2026-10-14",
+        "status": "공통 UI 적용·업무 완료 미검증",
+        "changes": [
+          "공통 셸·헤더·디자인 토큰",
+          "실제 기존 화면을 연결하는 인증 관리 탐색"
+        ],
+        "code": [
+          "src/components/CertificationJourney.jsx",
+          "src/components/ui/Button.jsx",
+          "src/app/globals.css"
+        ],
+        "dataBoundary": "기존 currentCompany·문서 저장소·프로젝트 상태 유지. 화면 탐색은 데이터 수정이나 승인 처리를 하지 않음."
+      },
+      "designRevision": {
+        "date": "2026-10-17",
+        "reference": "PPT S05",
+        "status": "첫 화면 구조 교체·전체 장표 적용 미완료",
+        "files": [
+          "src/components/PlatformSidebar.jsx",
+          "src/components/DashboardView.jsx",
+          "src/app/globals.css"
+        ],
+        "behavior": "회사 컨텍스트 유지; 인증별 진단 이동 시 규격 전달; 문서 보유·D-Day 집계. 외부 알림 미연동.",
+        "verification": "프로덕션 빌드 성공, localhost 새로고침 및 스크린샷 확인. 인증된 데이터 저장은 미검증.",
+        "changes": [
+          "PPT S05의 화면 전체 높이 사이드바, 8개 메뉴, 하단 계정 패널",
+          "상단 드라이브 헤더 제거 및 계정·회사 전환 유지",
+          "3열 390px 카드, 하단 약 2:1 표·요약 배치",
+          "좁은 패널은 원본 데스크톱 구성 가로 스크롤 유지"
+        ],
+        "limitations": [
+          "심사 일정·알림 센터는 만기 화면, 보고서는 진단 화면의 기존 기능으로 연결; 전용 기능 미구현",
+          "원본의 예시 수치 대신 실제 등록 문서를 집계하므로 로그인 전 빈 상태",
+          "전체 장표 구현 및 인증된 통합 검증 미완료"
+        ]
+      },
+      "buttonAudit": {
+        "date": "2026-10-17",
+        "scope": "로그인 전 UI 클릭 및 코드 확인",
+        "fixes": [
+          "일정·알림·보고서·설정의 개별 화면 연결",
+          "계정 메뉴 키보드 접근",
+          "템플릿 미승인 초안 및 임의 만기 제거"
+        ],
+        "verification": "메뉴 8개, 대시보드 5개, 규격 진단 6개, 필터, 로그인 모달, 문서 등록 취소·닫기 확인",
+        "remaining": "인증된 저장·업로드 미검증; 기관 예약·외부 알림 미연동"
+      },
+      "uiMap": {
+        "document": "docs/reference/screen-navigation-map.md",
+        "board": "https://www.figma.com/board/AIOk8BKLYcgkzc3S247FAk/?node-id=1-8",
+        "scope": "로그인 전 실제 화면 12개; 편집기 진입 제한 기록; 기업 프로필·맞춤 지원사업 예정 흐름 구분"
+      },
+      "uxRules": [
+        "UX-001",
+        "UX-002"
+      ]
+    },
+    {
+      "id": "S06",
+      "slide": 6,
+      "name": "인증 준비 및 진단 도구",
+      "group": "진단",
+      "sourceSpec": "인증 준비 및 진단 도구 기능 명세 명세 내용이 없습니다.",
+      "layout": "가입·로그인 진입 화면",
+      "dependsOn": [
+        "S03"
+      ],
+      "dependencyBasis": "제안: 원본 기능 내용을 바탕으로 구성한 선행 데이터 의존성. 슬라이드 순서와 구별한다.",
+      "codeCandidates": [],
+      "status": "미매핑·구현 미검증",
+      "specMissing": true
+    },
+    {
+      "id": "S07",
+      "slide": 7,
+      "name": "인증 수요 및 기존 보유 인증 등록",
+      "group": "진단",
+      "sourceSpec": "인증 수요 및 기존 보유 인증 등록 기능 명세 🎯 기획 의도 (Intent) ISO 인증 컨설팅 SaaS 플랫폼 내에서 사용자의 현재 컴플라이언스 상태를 정의하고, 목표하는 인증 체계와의 격차(Gap)를 분석하기 위한 기초 데이터를 수집하는 핵심 모듈입니다. 사용자가 보유한 기존 인증의 유효성을 체계적으로 관리함과 동시에, 신규 취득 희망 인증(수요)을 명확히 설정하게 함으로써 '진단 도구'가 정교한 맞춤형 로드맵과 예상 소요 자원을 산출할 수 있도록 유도합니다. 이는 단순 데이터 입력을 넘어, 기업의 인증 자산 현황을 시각화하고 규제 대응 우선순위를 결정하는 의사결정의 근거를 제공하는 데 목적이 있습니다. ⚙️ 기술 명세 (Technical Spec) UI는 표준화된 ISO 규격 라이브러리를 기반으로 한  Multi-Select Autocomplete  및  Tagging 시스템 을 적용하여 입력 오류를 최소화합니다. 기존 인증 등록 시에는 유효기간 관리를 위한  Date Picker 와 인증서 진위 확인을 위한 파일 업로드(Drag & Drop 지원) 기능을 포함하며, 업로드된 파일은 S3 등 객체 스토리지에 저장 후 메타데이터를 DB화합니다.  프론트엔드에서는 사용자 입력값에 따라 진단 알고리즘이 실시간 반영될 수 있도록  Global State(예: Redux, Zustand) 를 통해 '진단 진행률' 상태를 업데이트합니다. 백엔드와는 POST /api/v1/certification/profile 엔드포인트를 통해 통신하며, 기존 인증의 만료일과 신규 수요 인증의 상관관계를 분석하여 '갱신 필요성' 또는 '통합 심사 가능성'에 대한 플래그 데이터를 반환받습니다. 또한, 입력 중 페이지 이탈 시 데이터 손실을 방지하기 위한  Draft Save(임시 저장)  로직과 유효하지 않은 인증 규격 입력 시에 대한 클라이언트 사이드 밸리데이션(Validation)을 수행합니다.",
+      "layout": "단계 폼 + 보유 인증 표",
+      "dependsOn": [
+        "S03"
+      ],
+      "dependencyBasis": "제안: 원본 기능 내용을 바탕으로 구성한 선행 데이터 의존성. 슬라이드 순서와 구별한다.",
+      "codeCandidates": [
+        "src/components/AddDocumentModal.jsx"
+      ],
+      "status": "구현 후보 있음·완료 미검증",
+      "specMissing": false
+    },
+    {
+      "id": "S08",
+      "slide": 8,
+      "name": "ISO 표준별 자가진단 체크리스트",
+      "group": "진단",
+      "sourceSpec": "ISO 표준별 자가진단 체크리스트 기능 명세 🎯 기획 의도 (Intent) ISO 인증 획득의 핵심 단계인 'Gap Analysis(격차 분석)'를 디지털화하여, 복잡한 국제 표준 규격 조항을 기업 담당자가 직관적으로 해석하고 점검할 수 있는 환경을 제공합니다. 사용자는 이 체크리스트를 통해 인증 준비 현황을 정량적인 수치(준수율, Compliance Rate)로 즉각 확인하며, 인증 심사 전 결함(Non-conformity)이 발생할 수 있는 취약 지점을 사전에 파악하여 대응 전략을 수립할 수 있습니다. 이는 파편화된 오프라인 문서를 SaaS 기반의 중앙 집중식 관리 체계로 전환하여 인증 준비에 소요되는 리소스를 최소화하고 진단 결과의 객관성을 확보하는 데 목적이 있습니다. ⚙️ 기술 명세 (Technical Spec) -  데이터 로직 및 연동:  선택된 ISO 표준 ID(예: ISO 9001, 27001 등)에 따라 하위 조항(Clauses) 및 체크 항목을 동적으로 렌더링하는 GET /api/v1/diagnosis/checklists/{standard_id} API를 호출합니다. 각 문항은 '준수/미흡/해당 없음'의 3단계 상태값을 가지며, 변경 시마다 PATCH 요청을 통해 실시간 자동 저장(Auto-save)을 지원하여 데이터 휘발을 방지합니다. -  UI/UX 상호작용:  대분류·중분류 조항별로 아코디언(Accordion) 또는 스텝퍼(Stepper) UI를 적용하여 정보 밀도를 조절합니다. 사용자가 응답을 완료할 때마다 상단 Sticky 영역의 프로그레스 바(Progress Bar)와 준수율 지표가 실시간으로 업데이트(State Management: Zustand/Redux 활용)되어야 합니다. -  컴포넌트 정책:  필수 항목 미응답 시 최종 결과 도출 페이지로의 진입을 차단하는 Validation 로직을 포함합니다. 또한, 각 문항 옆에는 가이드 툴팁(Tooltip)을 배치하여 관련 요구사항에 대한 해설과 증빙 필요 문서(Evidence) 예시를 제공함으로써 사용자 이탈률을 낮추고 진단 정확도를 높입니다.",
+      "layout": "준비율 요약 + 조항별 체크리스트 표",
+      "dependsOn": [
+        "S07",
+        "S32"
+      ],
+      "dependencyBasis": "제안: 원본 기능 내용을 바탕으로 구성한 선행 데이터 의존성. 슬라이드 순서와 구별한다.",
+      "codeCandidates": [
+        "src/components/IsoComplianceMatrixView.jsx"
+      ],
+      "status": "구현 후보 있음·완료 미검증",
+      "specMissing": false,
+      "designProgress": {
+        "date": "2026-10-14",
+        "status": "공통 UI 적용·업무 완료 미검증",
+        "changes": [
+          "공통 셸·헤더·디자인 토큰",
+          "실제 기존 화면을 연결하는 인증 관리 탐색"
+        ],
+        "code": [
+          "src/components/CertificationJourney.jsx",
+          "src/components/ui/Button.jsx",
+          "src/app/globals.css"
+        ],
+        "dataBoundary": "기존 currentCompany·문서 저장소·프로젝트 상태 유지. 화면 탐색은 데이터 수정이나 승인 처리를 하지 않음."
+      },
+      "designRevision": {
+        "date": "2026-10-17",
+        "reference": "PPT S05",
+        "status": "첫 화면 구조 교체·전체 장표 적용 미완료",
+        "files": [
+          "src/components/PlatformSidebar.jsx",
+          "src/components/DashboardView.jsx",
+          "src/app/globals.css"
+        ],
+        "behavior": "회사 컨텍스트 유지; 인증별 진단 이동 시 규격 전달; 문서 보유·D-Day 집계. 외부 알림 미연동.",
+        "verification": "프로덕션 빌드 성공, localhost 새로고침 및 스크린샷 확인. 인증된 데이터 저장은 미검증."
+      },
+      "uiMap": {
+        "document": "docs/reference/screen-navigation-map.md",
+        "board": "https://www.figma.com/board/AIOk8BKLYcgkzc3S247FAk/?node-id=1-8",
+        "scope": "로그인 전 실제 화면 12개; 편집기 진입 제한 기록; 기업 프로필·맞춤 지원사업 예정 흐름 구분"
+      },
+      "uxRules": [
+        "UX-001",
+        "UX-002"
+      ]
+    },
+    {
+      "id": "S09",
+      "slide": 9,
+      "name": "준비 상태(Gap Analysis) 분석 결과 리포트",
+      "group": "진단",
+      "sourceSpec": "준비 상태(Gap Analysis) 분석 결과 리포트 기능 명세 🎯 기획 의도 (Intent) 본 UI 요소는 ISO 인증 심사 준비의 핵심 단계인 'Gap Analysis'의 결과물을 시각화하여, 사용자가 인증 표준 대비 현재 조직의 역량과 미충족 요건(Non-conformity)을 즉각적으로 파악하도록 돕는 데 목적이 있습니다. 복잡한 인증 규격 조항을 데이터 시각화(차트 및 스코어링)로 변환하여 제공함으로써, 사용자는 우선순위에 따른 개선 과제를 도출하고 인증 획득까지의 로드맵을 전략적으로 수립할 수 있습니다. 단순한 결과 나열이 아닌, SaaS 플랫폼 특유의 '실행 가능한 인사이트(Actionable Insight)'를 제공하여 사용자 경험의 완결성을 높입니다. ⚙️ 기술 명세 (Technical Spec) 1.   데이터 바인딩 및 렌더링 : 백엔드 API로부터 수신된 조항별 준수율(Compliance Rate) 데이터를 수치(Percentage) 및 상태 값(Pass/Partial/Fail)에 따라 동적으로 렌더링합니다. 각 조항 클릭 시 상세 미충족 사유와 권장 조치 사항이 포함된 Accordion 또는 Slide-over 패널이 트리거되어야 합니다. 2.   인터랙션 및 시각화 : 고수준의 분석을 위해 거미줄 차트(Spider Chart) 또는 프로그레스 바 형태의 UI 컴포넌트를 활용하며, 특정 데이터 포인트 호버(Hover) 시 툴팁으로 세부 스코어를 노출합니다. 분석 결과는 PDF 및 Excel 리포트 생성 API와 연동되어 즉시 다운로드 가능해야 합니다. 3.   상태 관리 및 최적화 : 진단 데이터의 양에 따라 스켈레톤 UI(Skeleton UI)를 적용하여 데이터 로딩 중 이탈을 방지합니다. 또한, 진단 이력(History) 비교 기능을 위해 이전 분석 데이터와의 스냅샷 비교 연산을 클라이언트 사이드에서 처리하거나, 비교 API 호출을 통해 전후 대비 지표를 실시간으로 갱신합니다. 4.   보안 및 정책 : 인증 데이터의 민감도를 고려하여 클라이언트 단의 상태 관리(Redux/Zustand 등) 시 데이터 암호화를 권장하며, 세션 만료 시 리포트 접근 권한을 즉시 차단하는 가드(Guard) 로직을 포함합니다.",
+      "layout": "KPI + Gap 비교 막대 + 조항 표",
+      "dependsOn": [
+        "S08",
+        "S16"
+      ],
+      "dependencyBasis": "제안: 원본 기능 내용을 바탕으로 구성한 선행 데이터 의존성. 슬라이드 순서와 구별한다.",
+      "codeCandidates": [
+        "src/lib/complianceEngine.js"
+      ],
+      "status": "구현 후보 있음·완료 미검증",
+      "specMissing": false
+    },
+    {
+      "id": "S10",
+      "slide": 10,
+      "name": "준비 지원 전문가 매칭 및 1:1 상담 문의",
+      "group": "진단",
+      "sourceSpec": "준비 지원 전문가 매칭 및 1:1 상담 문의 기능 명세 🎯 기획 의도 (Intent) ISO 인증 준비 및 진단 단계에서 사용자가 직면하는 전문성 격차(Gap)를 해소하기 위한 고관여 전환(Conversion) 장치입니다. 자가 진단 도구를 통해 파악된 부족한 요건을 사용자가 스스로 해결하기에는 한계가 있으므로, 해당 도메인의 전문 컨설턴트를 즉각 매칭하여 인증 통과 가능성을 높이는 데 목적이 있습니다. SaaS 플랫폼으로서 단순한 정보 제공을 넘어 실질적인 솔루션을 제안함으로써 플랫폼 잔류 시간을 늘리고, B2B 유료 컨설팅 서비스로의 매끄러운 유입(Lead Generation)을 유도합니다. ⚙️ 기술 명세 (Technical Spec) 1.   상호작용 및 UI 정책 : 클릭 시 진단 결과 데이터(diagnostic_result_id)를 파라미터로 포함하여 전문가 리스트 레이어 또는 상담 신청 폼을 호출합니다. 사용자의 인증 희망 분야 및 진단 취약 점수를 기반으로 추천 알고리즘이 적용된 전문가 리스트를 동적으로 렌더링하며, 각 전문가 카드에는 '실시간 상담 가능 여부' 상태값이 표시되어야 합니다. 2.   데이터 및 API 연동 : POST /api/v1/match/request를 통해 사용자의 기본 프로필과 진단 리포트 요약본을 선택된 전문가에게 전송합니다. 이때 세션 유지 및 중복 신청 방지를 위한 debounce 처리를 적용하며, 비동기 통신 중에는 스켈레톤 UI를 노출하여 로딩 사용자 경험을 개선합니다. 3.   상태 관리 : 상담 신청 완료 시 글로벌 상태(Store) 내 consultation_status를 업데이트하여 대시보드 내 실시간 현황 UI에 반영합니다. 알림 서비스(Push/Email)와 연동되어 전문가 수락 시 사용자에게 즉각적인 피드백을 제공할 수 있는 핸들러를 포함해야 합니다.",
+      "layout": "전문가 목록 + 우측 상담 패널",
+      "dependsOn": [
+        "S09"
+      ],
+      "dependencyBasis": "제안: 원본 기능 내용을 바탕으로 구성한 선행 데이터 의존성. 슬라이드 순서와 구별한다.",
+      "codeCandidates": [
+        "src/components/WorkspaceView.jsx"
+      ],
+      "status": "구현 후보 있음·완료 미검증",
+      "specMissing": false
+    },
+    {
+      "id": "S11",
+      "slide": 11,
+      "name": "AI 문서 자동 생성 및 관리",
+      "group": "문서",
+      "sourceSpec": "AI 문서 자동 생성 및 관리 기능 명세 명세 내용이 없습니다.",
+      "layout": "문서 KPI + 필터 + 문서 표",
+      "dependsOn": [
+        "S03",
+        "S07"
+      ],
+      "dependencyBasis": "제안: 원본 기능 내용을 바탕으로 구성한 선행 데이터 의존성. 슬라이드 순서와 구별한다.",
+      "codeCandidates": [
+        "src/components/DriveExplorer.jsx"
+      ],
+      "status": "구현 후보 있음·완료 미검증",
+      "specMissing": true,
+      "designProgress": {
+        "date": "2026-10-14",
+        "status": "공통 UI 적용·업무 완료 미검증",
+        "changes": [
+          "공통 셸·헤더·디자인 토큰",
+          "실제 기존 화면을 연결하는 인증 관리 탐색"
+        ],
+        "code": [
+          "src/components/CertificationJourney.jsx",
+          "src/components/ui/Button.jsx",
+          "src/app/globals.css"
+        ],
+        "dataBoundary": "기존 currentCompany·문서 저장소·프로젝트 상태 유지. 화면 탐색은 데이터 수정이나 승인 처리를 하지 않음."
+      },
+      "designRevision": {
+        "date": "2026-10-17",
+        "reference": "PPT S05",
+        "status": "첫 화면 구조 교체·전체 장표 적용 미완료",
+        "files": [
+          "src/components/PlatformSidebar.jsx",
+          "src/components/DashboardView.jsx",
+          "src/app/globals.css"
+        ],
+        "behavior": "회사 컨텍스트 유지; 인증별 진단 이동 시 규격 전달; 문서 보유·D-Day 집계. 외부 알림 미연동.",
+        "verification": "프로덕션 빌드 성공, localhost 새로고침 및 스크린샷 확인. 인증된 데이터 저장은 미검증."
+      },
+      "uiMap": {
+        "document": "docs/reference/screen-navigation-map.md",
+        "board": "https://www.figma.com/board/AIOk8BKLYcgkzc3S247FAk/?node-id=1-8",
+        "scope": "로그인 전 실제 화면 12개; 편집기 진입 제한 기록; 기업 프로필·맞춤 지원사업 예정 흐름 구분"
+      },
+      "uxRules": [
+        "UX-001",
+        "UX-002"
+      ]
+    },
+    {
+      "id": "S12",
+      "slide": 12,
+      "name": "인증별 표준 템플릿 및 가이드 라이브러리",
+      "group": "문서",
+      "sourceSpec": "인증별 표준 템플릿 및 가이드 라이브러리 기능 명세 🎯 기획 의도 (Intent) ISO 인증 및 규제 준수(Compliance)를 준비하는 기업 사용자에게 각 표준(ISO 9001, 27001, 45001 등)에 최적화된 문서 구조를 즉각적으로 제공하여, 문서 작성 시 발생하는 막막함과 오류를 최소화합니다. 이 라이브러리는 'AI 문서 자동 생성' 기능의 핵심 데이터 소스 역할을 하며, 사용자가 인증 심사 기준에 부합하는 검증된 템플릿과 가이드라인을 참조함으로써 인증 취득 준비 시간을 획기적으로 단축하고 문서 품질의 일관성을 유지하도록 돕는 데 목적이 있습니다. ⚙️ 기술 명세 (Technical Spec) *    상호작용 및 UI 구성 : 사용자가 인증 종류, 업종, 문서 유형별 필터를 적용하여 실시간으로 템플릿을 탐색할 수 있는 그리드/리스트 뷰를 제공합니다. 개별 템플릿 카드 클릭 시 '미리보기(Quick View)' 레이어가 호출되며, 'AI 생성에 적용' 버튼 클릭 시 해당 템플릿의 스키마 데이터가 AI 프롬프트 엔진으로 전달됩니다. *    데이터 연동 (API) :      *   GET /api/v2/templates: 인증 유형 및 태그 기반의 템플릿 리스트를 호출합니다.     *   GET /api/v2/guides/{id}: 특정 템플릿에 매칭된 상세 가이드라인 및 관련 법규 데이터를 비동기(Asynchronous) 방식으로 로드합니다. *    상태 관리 및 버전 제어 :      *   인증 표준의 개정(Revision) 발생 시 최신 버전이 우선 노출되도록 is_latest 플래그를 관리하며, 구버전 문서와의 호환성을 위해 버전 히스토리를 제공합니다.     *   사용자가 즐겨찾기하거나 최근 사용한 템플릿은 로컬 스토리지 또는 사용자 프로필 DB에 저장하여 개인화된 대시보드를 구성합니다. *    보안 및 정책 : SaaS 환경 내 유료 플랜에 따른 접근 권한(ACL)을 검증하여, 활성화된 인증 모듈에 한해서만 템플릿 다운로드 및 AI 연동 기능을 활성화합니다.",
+      "layout": "템플릿 카드 목록 + 우측 미리보기",
+      "dependsOn": [
+        "S07",
+        "S32"
+      ],
+      "dependencyBasis": "제안: 원본 기능 내용을 바탕으로 구성한 선행 데이터 의존성. 슬라이드 순서와 구별한다.",
+      "codeCandidates": [
+        "src/lib/iso9001Blueprint.js"
+      ],
+      "status": "구현 후보 있음·완료 미검증",
+      "specMissing": false,
+      "uxRules": [
+        "UX-001",
+        "UX-002"
+      ]
+    },
+    {
+      "id": "S13",
+      "slide": 13,
+      "name": "문서 작성을 위한 기업 운영 정보 입력 인터페이스",
+      "group": "문서",
+      "sourceSpec": "문서 작성을 위한 기업 운영 정보 입력 인터페이스 기능 명세 🎯 기획 의도 (Intent) 본 인터페이스는 기업의 핵심 운영 데이터를 정형화된 형태로 수집하여 AI 기반의 ISO 표준 문서 및 운영 매뉴얼 생성의 정확도를 극대화하기 위해 설계되었습니다. SaaS 플랫폼 특성상 사용자가 반복적으로 입력해야 하는 번거로움을 최소화하기 위해 기업 프로필 정보를 동적으로 로드하고, 미기입된 필수 항목에 대한 가이드를 제공함으로써 문서의 신뢰성과 컴플라이언스 준수율을 높이는 것을 목적으로 합니다. 결과적으로 사용자는 최소한의 입력만으로도 업종별 특화된 고품질의 비즈니스 문서를 즉각적으로 생성할 수 있는 데이터 기반을 확보하게 됩니다. ⚙️ 기술 명세 (Technical Spec) -  UI/UX 상호작용:  입력 폼은 데이터 복잡도를 고려하여 단계별 스테퍼(Stepper) 또는 섹션별 아코디언 구조를 취하며, 각 필드는 입력 시 실시간 유효성 검사(Validation)를 수행합니다. 특정 산업군 선택 시 해당 도메인에 필수적인 추가 입력 필드가 동적으로 렌더링되는 조건부 로직(Conditional Rendering)을 적용합니다.  -  데이터 처리 및 API:  입력된 데이터는 JSON 스키마 형태로 구조화되어 PATCH /api/v1/corp/operation-info API를 통해 백엔드로 전송됩니다. 작성 중 이탈로 인한 데이터 손실을 방지하기 위해 로컬 스토리지 또는 Redis 기반의 임시 저장(Auto-save) 메커니즘을 지원하며, AI 생성 엔진이 즉시 참조할 수 있도록 전처리(Pre-processing) 과정을 거쳐 벡터 데이터베이스의 컨텍스트로 활용됩니다. -  상태 관리:  React Hook Form 또는 Formik과 같은 라이브러리를 사용하여 폼 상태를 관리하며, 전역 상태 관리(Zustand/Redux)를 통해 문서 생성 모듈의 프리뷰 화면과 실시간 데이터 동기화를 유지합니다. 필수값 누락 시 생성 버튼이 비활성화되는 상태 제어 로직을 포함합니다.",
+      "layout": "단계별 운영 정보 폼 + 안내",
+      "dependsOn": [
+        "S03",
+        "S12"
+      ],
+      "dependencyBasis": "제안: 원본 기능 내용을 바탕으로 구성한 선행 데이터 의존성. 슬라이드 순서와 구별한다.",
+      "codeCandidates": [
+        "src/components/NewProjectModal.jsx"
+      ],
+      "status": "구현 후보 있음·완료 미검증",
+      "specMissing": false,
+      "uxRules": [
+        "UX-001",
+        "UX-002"
+      ]
+    },
+    {
+      "id": "S14",
+      "slide": 14,
+      "name": "AI 기반 매뉴얼/절차서 초안 자동 생성 엔진",
+      "group": "문서",
+      "sourceSpec": "AI 기반 매뉴얼/절차서 초안 자동 생성 엔진 기능 명세 🎯 기획 의도 (Intent) ISO 인증 및 표준화 작업의 핵심인 '매뉴얼 및 절차서' 작성 과정에서 발생하는 고도의 인지 부하와 시간 소모를 해결하기 위해 설계되었습니다. 사용자가 기업의 기초 비즈니스 정보와 대상 ISO 표준 조항을 입력하면, AI가 해당 도메인에 최적화된 표준 용어와 규격 요구사항을 반영한 초안을 즉시 생성합니다. 이를 통해 문서 작성에 투입되는 리소스를 최소화하고, 비전문가도 규정 준수성(Compliance)이 확보된 고품질의 문서를 신속하게 구축할 수 있는 SaaS 환경을 제공합니다. ⚙️ 기술 명세 (Technical Spec) 1.   상호작용 및 UI 제어 : 생성 버튼 클릭 시 로딩 인디케이터와 함께 실시간 텍스트 생성 과정을 확인할 수 있는 스트리밍 UI(Streaming UI)를 제공합니다. 생성 도중 '중단' 및 '재생성' 옵션을 통해 사용자의 주도권을 보장하며, 완료 후 즉시 편집 모드로 전환되는 워크플로우를 가집니다. 2.   데이터 및 API 연동 : 사용자 입력 데이터(산업군, 공정 정보, 표준 규격 조항)를 Payload로 구성하여 LLM 엔진 기반의 생성 API(POST /api/v1/ai/generate-manual)를 호출합니다. 결과값은 ISO 표준 스키마에 맞춘 JSON 구조로 수신되어 화면 내 리치 텍스트 에디터(Rich Text Editor) 컴포넌트의 State로 자동 매핑됩니다. 3.   상태 관리 및 최적화 : 다량의 텍스트 생성 시 브라우저 부하를 방지하기 위해 가상 스크롤(Virtual Scroll)을 적용하며, API 호출 최적화를 위해 생성 요청 직후 버튼을 비활성화(Disabled) 처리하여 중복 요청을 방지합니다. 생성된 문서는 로컬 스토리지 또는 세션에 임시 저장되어 네트워크 단절 시 데이터 유실을 방지하는 안정성 정책을 적용합니다.",
+      "layout": "기업 정보·생성 설정·결과의 다열 구성",
+      "dependsOn": [
+        "S12",
+        "S13"
+      ],
+      "dependencyBasis": "제안: 원본 기능 내용을 바탕으로 구성한 선행 데이터 의존성. 슬라이드 순서와 구별한다.",
+      "codeCandidates": [
+        "src/components/AIConsultantPanel.jsx",
+        "src/app/api/ai-chat/route.js"
+      ],
+      "status": "구현 후보 있음·완료 미검증",
+      "specMissing": false,
+      "buttonAudit": {
+        "date": "2026-10-17",
+        "scope": "로그인 전 UI 클릭 및 코드 확인",
+        "fixes": [
+          "일정·알림·보고서·설정의 개별 화면 연결",
+          "계정 메뉴 키보드 접근",
+          "템플릿 미승인 초안 및 임의 만기 제거"
+        ],
+        "verification": "메뉴 8개, 대시보드 5개, 규격 진단 6개, 필터, 로그인 모달, 문서 등록 취소·닫기 확인",
+        "remaining": "인증된 저장·업로드 미검증; 기관 예약·외부 알림 미연동"
+      },
+      "uxRules": [
+        "UX-001",
+        "UX-002"
+      ]
+    },
+    {
+      "id": "S15",
+      "slide": 15,
+      "name": "웹 기반 문서 편집기 및 확인 상태 관리",
+      "group": "문서",
+      "sourceSpec": "웹 기반 문서 편집기 및 확인 상태 관리 기능 명세 🎯 기획 의도 (Intent) 본 컴포넌트는 AI가 자동 생성한 ISO 표준 문서를 사용자가 직접 검토하고, 기업별 맞춤형 비즈니스 로직에 맞춰 실시간으로 수정 및 확정하기 위해 설계되었습니다. SaaS 기반의 ISO 인증 관리 플랫폼 특성상, 문서의 '무결성'과 '심사 대비 적합성'이 최우선입니다. 사용자가 AI의 결과물을 단순히 수용하는 것을 넘어, 편집 및 '확인 완료(Validated)' 상태로 전환하는 과정을 통해 데이터의 신뢰도를 확보하고, 추후 인증 심사 시 증빙 가능한 감사 추적(Audit Trail)의 기틀을 마련하는 것이 핵심 목적입니다. ⚙️ 기술 명세 (Technical Spec) 1.   편집기 인터페이스 및 상호작용 : Draft.js 또는 TipTap 기반의 WYSIWYG 에디터를 채택하여 Markdown 및 리치 텍스트 편집을 지원합니다. 사용자가 텍스트를 수정할 때마다 '저장 중...' 상태를 인디케이터로 노출하며, 서버 부하 방지를 위해 1,500ms 단위의 디바운싱(Debouncing) 처리가 적용된 자동 저장(Auto-save) API를 호출합니다. 2.   상태 관리 및 워크플로우 : 문서 상태는 [초안(Draft) -> 검토 중(Review) -> 확인 완료(Confirmed)]의 스테이트 머신으로 관리됩니다. '확인 완료' 버튼 클릭 시 PATCH /api/v1/docs/{id}/status API를 호출하며, 이 때 AI 생성 시점과 최종 수정자 정보가 포함된 메타데이터 스냅샷을 생성하여 버전 히스토리에 기록합니다. 3.   데이터 동기화 및 유효성 검사 : 문서 내 필수 기재 항목(ISO 요구사항) 누락 시 에디터 하단에 실시간 Validation 가이드를 플로팅 툴팁으로 출력합니다. 확정된 문서는 Read-only 모드로 전환되며, 재수정 시 '개정(Revision)' 프로세스를 타도록 프론트엔드 라우팅 및 권한 로직(RBAC)을 적용합니다.",
+      "layout": "중앙 편집기 + 우측 확인 패널",
+      "dependsOn": [
+        "S14"
+      ],
+      "dependencyBasis": "제안: 원본 기능 내용을 바탕으로 구성한 선행 데이터 의존성. 슬라이드 순서와 구별한다.",
+      "codeCandidates": [
+        "src/components/RealtimeEditorModal.jsx"
+      ],
+      "status": "구현 후보 있음·완료 미검증",
+      "specMissing": false,
+      "uiMap": {
+        "document": "docs/reference/screen-navigation-map.md",
+        "board": "https://www.figma.com/board/AIOk8BKLYcgkzc3S247FAk/?node-id=1-8",
+        "scope": "로그인 전 실제 화면 12개; 편집기 진입 제한 기록; 기업 프로필·맞춤 지원사업 예정 흐름 구분"
+      },
+      "uxRules": [
+        "UX-001",
+        "UX-002"
+      ]
+    },
+    {
+      "id": "S16",
+      "slide": 16,
+      "name": "기존 보유 문서 업로드 및 체크리스트 매핑",
+      "group": "문서",
+      "sourceSpec": "기존 보유 문서 업로드 및 체크리스트 매핑 기능 명세 🎯 기획 의도 (Intent) 본 기능은 ISO 인증 및 품질 경영 시스템을 운영하는 기업 고객이 기존에 보유한 방대한 레거시 문서(PDF, DOCX 등)를 시스템에 신속하게 이관하고, AI가 분석한 데이터 모델과 표준 체크리스트를 상호 매핑하기 위해 설계되었습니다. 단순한 파일 저장을 넘어, AI가 문서 내 조항과 요구사항을 파악하여 플랫폼 내 관리 항목과 연결함으로써 사용자가 수동으로 데이터를 입력하는 공수를 80% 이상 절감하는 것을 목표로 합니다. 이는 SaaS 환경에서 데이터 연속성을 확보하고, AI 문서 자동 생성 기능을 위한 고품질의 학습 및 참조 컨텍스트(Context)를 구축하는 핵심 단계입니다. ⚙️ 기술 명세 (Technical Spec) *    인터랙션 및 UI 구성:  Drag & Drop 방식의 파일 업로드 존을 제공하며, 업로드 시 실시간 프로그래스 바와 파일 유효성 검사(확장자, 용량 제한 등) 결과를 시각화합니다. 업로드 완료 후에는 AI 엔진이 문서를 파싱하여 추출한 주요 키워드와 체크리스트 항목 간의 '매핑 일치도(Confidence Score)'를 퍼센트 단위로 표시하고, 사용자가 이를 검토 및 수정할 수 있는 스플릿 뷰(Split View) 인터페이스를 제공합니다. *    백엔드 연동 및 상태 관리:       *   POST /api/v1/docs/upload-and-map: 멀티파트 파일 업로드와 동시에 비동기 AI 분석 워커(Worker)를 호출합니다.     *    상태 관리:  파일 상태는 PENDING, PROCESSING, MAPPED, ERROR의 4단계 스테이트로 관리하며, 분석 완료 시 웹소켓(WebSocket) 또는 폴링(Polling)을 통해 클라이언트에 매핑 결과를 push합니다.     *    데이터 정합성:  매핑 확정 시, 추출된 텍스트 청크(Chunk)와 체크리스트 ID 간의 관계 데이터를 RDB 및 벡터 DB에 동시 저장하여 향후 AI 자동 생성 시 RAG(Retrieval-Augmented Generation) 소스로 활용될 수 있도록 인덱싱합니다.",
+      "layout": "드롭존 + 업로드 진행 + 매핑 표",
+      "dependsOn": [
+        "S07",
+        "S08"
+      ],
+      "dependencyBasis": "제안: 원본 기능 내용을 바탕으로 구성한 선행 데이터 의존성. 슬라이드 순서와 구별한다.",
+      "codeCandidates": [
+        "src/components/AddDocumentModal.jsx",
+        "src/lib/storageVault.js"
+      ],
+      "status": "구현 후보 있음·완료 미검증",
+      "specMissing": false,
+      "uiMap": {
+        "document": "docs/reference/screen-navigation-map.md",
+        "board": "https://www.figma.com/board/AIOk8BKLYcgkzc3S247FAk/?node-id=1-8",
+        "scope": "로그인 전 실제 화면 12개; 편집기 진입 제한 기록; 기업 프로필·맞춤 지원사업 예정 흐름 구분"
+      },
+      "uxRules": [
+        "UX-001",
+        "UX-002"
+      ]
+    },
+    {
+      "id": "S17",
+      "slide": 17,
+      "name": "문서 버전 관리 및 수정 이력 추적",
+      "group": "문서",
+      "sourceSpec": "문서 버전 관리 및 수정 이력 추적 기능 명세 🎯 기획 의도 (Intent) 본 기능은 ISO 인증 및 규제 준수(Compliance)가 핵심인 SaaS 환경에서 AI가 자동 생성한 문서의 신뢰성을 보장하고, 변경 사항에 대한 투명한 책임 추적성(Accountability)을 확보하기 위해 설계되었습니다. 사용자는 AI 제안 내용과 인간의 수정 사항을 명확히 구분하여 비교할 수 있으며, 규정 심사 시 필수적인 '문서 개정 이력 관리'를 자동화함으로써 운영 리스크를 최소화합니다. 단순한 저장 기능을 넘어, 최적의 결과물을 도출하기 위한 반복적인 프롬프트 조정 및 편집 과정을 자산화하고 언제든 안전하게 이전 시점으로 복구할 수 있는 심리적 안전 장치를 제공하는 데 목적이 있습니다. ⚙️ 기술 명세 (Technical Spec) 1.  인터랙션 및 UI 컴포넌트 :    -  사이드 패널(Drawer) : 문서 편집 화면 우측에 타임라인 형태의 히스토리 목록을 제공합니다. 각 버전은 '버전 번호(v1.x.x)', '수정자(AI/사용자 명)', '수정 일시', '변경 요약' 정보를 포함합니다.    -  Diff Viewer : 특정 버전 선택 시, 현재 버전과 선택 버전 간의 텍스트 차이(추가된 문구는 Green Highlight, 삭제된 문구는 Red Strikethrough)를 시각적으로 대조하는 모달 또는 스플릿 뷰를 활성화합니다.    -  Restore 기능 : '이 버전으로 복구' 버튼 클릭 시, 현재 본문을 해당 시점의 데이터로 덮어쓰며 신규 버전(v+1)을 생성합니다. 2.  데이터 처리 및 API 연동 :    -  스냅샷 관리 : 문서 저장 시 전체 텍스트를 스냅샷 형태로 DB에 저장하거나, 서버 부하 감소를 위해 Operational Transformation(OT) 또는 CRDT 알고리즘 기반의 차이(Delta) 값만을 관리합니다.    -  API 엔드포인트 : GET /api/v1/docs/{id}/versions를 통해 이력을 조회하고, POST /api/v1/docs/{id}/restore를 통해 특정 스냅샷으로 복원을 요청합니다.    -  상태 관리 : 전역 상태(Redux/Zustand 등)를 통해 현재 편집 중인 버전의 ID와 로드된 히스토리 리스트를 관리하며, AI 생성 중에는 'Optimistic UI'를 적용하여 히스토리 목록에 '생성 중...' 상태를 즉시 노출합니다.",
+      "layout": "문서 본문 + 우측 버전 타임라인",
+      "dependsOn": [
+        "S15",
+        "S16"
+      ],
+      "dependencyBasis": "제안: 원본 기능 내용을 바탕으로 구성한 선행 데이터 의존성. 슬라이드 순서와 구별한다.",
+      "codeCandidates": [
+        "src/lib/storageVault.js",
+        "supabase/platform_migration.sql"
+      ],
+      "status": "구현 후보 있음·완료 미검증",
+      "specMissing": false,
+      "uxRules": [
+        "UX-001",
+        "UX-002"
+      ]
+    },
+    {
+      "id": "S18",
+      "slide": 18,
+      "name": "심사 신청 및 배정 시스템",
+      "group": "심사",
+      "sourceSpec": "심사 신청 및 배정 시스템 기능 명세 명세 내용이 없습니다.",
+      "layout": "가입·로그인 진입 화면",
+      "dependsOn": [
+        "S09",
+        "S17"
+      ],
+      "dependencyBasis": "제안: 원본 기능 내용을 바탕으로 구성한 선행 데이터 의존성. 슬라이드 순서와 구별한다.",
+      "codeCandidates": [],
+      "status": "미매핑·구현 미검증",
+      "specMissing": true
+    },
+    {
+      "id": "S19",
+      "slide": 19,
+      "name": "심사 신청 프로세스 (희망일/장소/범위 입력)",
+      "group": "심사",
+      "sourceSpec": "심사 신청 프로세스 (희망일/장소/범위 입력) 기능 명세 🎯 기획 의도 (Intent) ISO 인증 심사 신청의 핵심 단계인 '희망일, 장소, 범위' 입력 단계는 인증 표준 및 심사원 배정 로직의 기초 데이터를 수집하는 데 목적이 있습니다. SaaS 기반 플랫폼으로서 사용자에게는 복잡한 오프라인 심사 요건을 디지털 인터페이스로 표준화하여 입력을 간소화하고, 운영사 측에는 데이터 정형화를 통해 심사원 매칭 알고리즘의 효율성을 극대화하기 위함입니다. 특히 심사 범위(Scope) 입력 시 업종별 표준 산업 분류와 연동하여 인증의 신뢰성을 확보하고, 다지점 사업장의 경우 장소 정보를 체계적으로 관리하여 출장비 산출 및 배정 최적화를 돕는 핵심 UX 접점입니다. ⚙️ 기술 명세 (Technical Spec) 1.  데이터 인터랙션 및 상태 관리 :     -  희망일 : DatePicker 컴포넌트를 활용하며, 신청일 기준 최소 2주 이후부터 선택 가능하도록 Validation 로직을 적용합니다. 심사 차수(1단계/2단계)에 따른 연동 일정을 동적으로 가이드합니다.    -  장소 : 주소 검색 API(카카오/구글)를 연동하며, 본사 외 부설 연구소나 공장 등 '다지점(Multi-site)' 추가가 가능한 리스트 인터페이스를 제공합니다. 각 장소 데이터는 위경도 좌표값으로 변환되어 추후 심사원 배정 거리 계산 API의 파라미터로 활용됩니다.    -  심사 범위 : 텍스트 입력과 동시에 기등록된 표준 업종 코드(IAF Code) 검색 필터를 제공하여 데이터의 일관성을 유지합니다. 2.  백엔드 연동 및 API :    - GET /v1/audits/available-slots: 선택한 날짜의 심사 가능 여부 실시간 확인.    - POST /v1/applications/draft: 단계별 자동 저장(Auto-save) 기능을 활성화하여 이탈 시 데이터 보존.    - 모든 입력 필드는 Zod 또는 Yup과 같은 라이브러리를 통해 클라이언트 사이드 스키마 검증 후 서버로 전송하며, 필수 값 누락 시 '다음' 버튼은 disabled 상태를 유지합니다.",
+      "layout": "신청 단계 표시 + 범위·일정 폼",
+      "dependsOn": [
+        "S03",
+        "S07",
+        "S09",
+        "S17"
+      ],
+      "dependencyBasis": "제안: 원본 기능 내용을 바탕으로 구성한 선행 데이터 의존성. 슬라이드 순서와 구별한다.",
+      "codeCandidates": [
+        "src/components/NewProjectModal.jsx"
+      ],
+      "status": "구현 후보 있음·완료 미검증",
+      "specMissing": false,
+      "designProgress": {
+        "date": "2026-10-14",
+        "status": "공통 UI 적용·업무 완료 미검증",
+        "changes": [
+          "공통 셸·헤더·디자인 토큰",
+          "실제 기존 화면을 연결하는 인증 관리 탐색"
+        ],
+        "code": [
+          "src/components/CertificationJourney.jsx",
+          "src/components/ui/Button.jsx",
+          "src/app/globals.css"
+        ],
+        "dataBoundary": "기존 currentCompany·문서 저장소·프로젝트 상태 유지. 화면 탐색은 데이터 수정이나 승인 처리를 하지 않음."
+      },
+      "buttonAudit": {
+        "date": "2026-10-17",
+        "scope": "로그인 전 UI 클릭 및 코드 확인",
+        "fixes": [
+          "일정·알림·보고서·설정의 개별 화면 연결",
+          "계정 메뉴 키보드 접근",
+          "템플릿 미승인 초안 및 임의 만기 제거"
+        ],
+        "verification": "메뉴 8개, 대시보드 5개, 규격 진단 6개, 필터, 로그인 모달, 문서 등록 취소·닫기 확인",
+        "remaining": "인증된 저장·업로드 미검증; 기관 예약·외부 알림 미연동"
+      }
+    },
+    {
+      "id": "S20",
+      "slide": 20,
+      "name": "견적 안내 및 비용 정산 관리",
+      "group": "심사",
+      "sourceSpec": "견적 안내 및 비용 정산 관리 기능 명세 🎯 기획 의도 (Intent) 본 UI 요소는 ISO 인증 심사 프로세스 중 '신청-배정' 단계에서 발생하는 비용 산출의 투명성을 확보하고, SaaS 기반의 자동화된 정산 환경을 제공하기 위해 설계되었습니다. 신청 기업에는 인증 표준별 심사 일수(Man-day)에 따른 상세 견적 내역을 명확히 전달하여 의사결정을 지원하며, 운영사에는 심사원 배정 정보와 연동된 실시간 정산 현황을 대시보드 형태로 제공함으로써 수기 관리로 인한 휴먼 에러를 방지합니다. 궁극적으로는 복잡한 인증 수수료 및 제반 비용 처리를 표준화하여 심사 신청부터 계약 체결까지의 리드타임(Lead Time)을 단축하는 것에 목적이 있습니다. ⚙️ 기술 명세 (Technical Spec) 1.   데이터 바인딩 및 연동 : Application_ID를 기반으로 심사 종목(ISO 9001/14001 등), 기업 규모, 심사 일수 데이터를 호출하여 견적서를 자동 렌더링합니다. 백엔드 API(GET /v1/settlements/{app_id})를 통해 심사비, 출장비, 부가세 등 항목별 산출 내역을 수신합니다. 2.   상태 관리 및 인터랙션 : 정산 상태(견적 발송, 입금 대기, 결제 완료, 세금계산서 발행)에 따라 UI 뱃지(Badge)의 컬러 및 텍스트를 실시간 업데이트합니다. 견적 수정 시에는 원클릭으로 재계산(Recalculation) 로직을 실행하며, 수정 이력은 히스토리 스택으로 관리합니다. 3.   동작 프로토콜 :     *    Click Event : 견적서 상세 보기 시 모달(Modal) 또는 사이드 패널(Side Panel) 형태로 상세 내역을 전개합니다.     *    External Integration : 결제 확인 시 PG 연동 또는 가상계좌 입금 확인 API와 동기화되며, '정산 완료' 상태 전환 시 ERP/회계 시스템으로 전표 생성 트리거를 전송합니다.     *    Validation : 미수금 발생 시 관리자에게 푸시 알림을 발송하고, 심사원에게는 배정 확정 제한(Lock) 로직을 적용하여 비즈니스 리스크를 제어합니다.",
+      "layout": "견적 항목 표 + 우측 금액·결제 요약",
+      "dependsOn": [
+        "S19"
+      ],
+      "dependencyBasis": "제안: 원본 기능 내용을 바탕으로 구성한 선행 데이터 의존성. 슬라이드 순서와 구별한다.",
+      "codeCandidates": [],
+      "status": "미매핑·구현 미검증",
+      "specMissing": false
+    },
+    {
+      "id": "S21",
+      "slide": 21,
+      "name": "심사원 인력 풀 등록 및 분야별 관리",
+      "group": "심사",
+      "sourceSpec": "심사원 인력 풀 등록 및 분야별 관리 기능 명세 🎯 기획 의도 (Intent) ISO 인증 심사의 핵심 자산인 심사원 인력을 체계적으로 DB화하여, 심사 신청 건에 최적화된 적격 심사원을 신속하게 매칭하기 위한 기반 시스템입니다. 각 심사원의 전문 분야(IAF 코드, 산업 분류), 자격 유효기간, 수행 이력을 SaaS 환경 내에서 통합 관리함으로써 수동 배정 시 발생할 수 있는 휴먼 에러를 방지하고 심사 품질의 신뢰성을 확보합니다. 특히, 플랫폼 관리자가 다수의 심사원 상태(가용 여부, 역량 등)를 직관적으로 파악하여 인증 비즈니스의 운영 효율성을 극대화하는 데 목적이 있습니다. ⚙️ 기술 명세 (Technical Spec) 1.   UI/UX 인터페이스 : 다중 필터링이 가능한 데이터 그리드(Data Grid) 형태로 구현하며, 전문 분야별(예: ISO 9001, 14001, 45001 등) 카테고리 칩(Chip) UI를 통해 가독성을 높입니다. 심사원 상세 정보는 사이드 패널(Side Panel) 또는 모달(Modal)을 통해 제공하여 맥락 유지를 지원합니다. 2.   데이터 인터랙션 및 API :      *    GET `/api/v2/auditors` : 분야, 자격 상태, 지역별 쿼리 파라미터를 지원하는 페이징 API를 호출합니다.     *    POST/PATCH : 심사원 프로필 및 자격 증명 서류(PDF/이미지) 업로드를 위해 Multipart Form Data를 처리하며, 자격증 만료일 기준 D-30 자동 알림 로직을 백엔드 스케줄러와 연동합니다. 3.   상태 관리 및 유효성 검사 : 심사원별 '승인/대기/정지' 상태값을 실시간으로 관리하며, 중복 등록 방지를 위해 이메일 및 자격 번호 고유값 검증(Unique Validation)을 수행합니다. 클라이언트 측에서는 대용량 인력 풀 로딩 시 성능 저하를 방지하기 위해 가상 스크롤(Virtual Scroll) 및 디바운싱(Debouncing) 기술을 적용하여 검색 경험을 최적화합니다.",
+      "layout": "심사원 목록 표 + 상세 프로필",
+      "dependsOn": [
+        "S02"
+      ],
+      "dependencyBasis": "제안: 원본 기능 내용을 바탕으로 구성한 선행 데이터 의존성. 슬라이드 순서와 구별한다.",
+      "codeCandidates": [],
+      "status": "미매핑·구현 미검증",
+      "specMissing": false
+    },
+    {
+      "id": "S22",
+      "slide": 22,
+      "name": "심사원 배정 로직 (지역/분야/이해상충 검토)",
+      "group": "심사",
+      "sourceSpec": "심사원 배정 로직 (지역/분야/이해상충 검토) 기능 명세 🎯 기획 의도 (Intent) 본 기능은 ISO 인증 심사의 신뢰성과 투명성을 보장하기 위한 핵심 비즈니스 로직으로, 심사원 배정 과정에서 발생할 수 있는 인적 오류와 이해상충(Conflict of Interest) 리스크를 원천 차단하는 데 목적이 있습니다. SaaS 플랫폼으로서 관리자의 수동 개입을 최소화하고, 심사원의  지리적 접근성(비용 효율성) ,  전문 분야 적합성(기술적 타당성) ,  윤리적 규정 준수(법적 리스크 방지) 를 데이터 기반으로 자동 검증합니다. 이를 통해 인증 기관은 심사 품질을 표준화하고, 심사원은 본인의 전문 역량에 최적화된 스케줄을 제안받음으로써 플랫폼 전체의 운영 효율을 극대화합니다. ⚙️ 기술 명세 (Technical Spec) 1.   필터링 및 매칭 엔진 (Logic Flow):     *    분야(Scope) 매칭:  신청 기업의 NACE 코드(혹은 IAF 코드)와 심사원의 보유 자격 코드를 1:1 매칭하여 1차 후보군을 추출합니다.     *    지역(Proximity) 계산:  Google Maps API 또는 카카오 로컬 API를 연동하여 기업 소재지와 심사원 활동 베이스 간의 직선/주행 거리를 계산, 근거리 우선 순위를 부여합니다.     *    이해상충(COI) 검증:  최근 2년 내 해당 기업에 대한 컨설팅 수행 여부 및 이해관계인 포함 여부를 DB에서 조회하여 매칭 제외(Hard-block) 처리합니다. 2.   UI 상호작용 및 상태 관리:     *    추천 스코어링:  위 세 가지 지표를 가중치 합산하여 '추천 지수'를 시각화(ProgressBar 또는 Badge)합니다.     *    실시간 유효성 체크:  관리자가 특정 심사원을 강제 배정 시도할 경우, POST /api/v1/assignment/validate를 호출하여 위반 항목(예: \"전문분야 미달\")을 토스트 메시지로 즉시 피드백합니다.     *    상태 정의:  PENDING(배정 대기), MATCHED(조건 충족), CONFLICT(이해상충 감지), ASSIGNED(배정 완료) 등의 상태를 Redux/Context API를 통해 전역 관리합니다. 3.   데이터 연동 (API):     *   GET /api/v1/auditors/recommend?project_id={id}를 통해 조건별 필터링된 심사원 리스트와 추천 사유 데이터를 비동기 수신합니다.     *   배정 확정 시 PUT /api/v1/assignment/confirm 요청을 통해 감사 기록(Audit Trail)에 배정 근거 데이터를 아카이빙합니다.",
+      "layout": "필터 + 후보 목록 + 지도·배정 요약",
+      "dependsOn": [
+        "S19",
+        "S21",
+        "S33"
+      ],
+      "dependencyBasis": "제안: 원본 기능 내용을 바탕으로 구성한 선행 데이터 의존성. 슬라이드 순서와 구별한다.",
+      "codeCandidates": [],
+      "status": "미매핑·구현 미검증",
+      "specMissing": false
+    },
+    {
+      "id": "S23",
+      "slide": 23,
+      "name": "심사 일정 확정 및 실시간 상태 트래킹",
+      "group": "심사",
+      "sourceSpec": "심사 일정 확정 및 실시간 상태 트래킹 기능 명세 🎯 기획 의도 (Intent) 본 기능은 ISO 인증 심사 과정에서 가장 병목 현상이 잦은 '일정 조율 및 확정' 단계를 디지털화하여 업무 효율성을 극대화하는 데 목적이 있습니다. SaaS 플랫폼 특성에 맞춰 심사원과 피심사 기업 간의 비대면 커뮤니케이션 비용을 줄이고, 심사 준비부터 종료까지의 전 과정을 시각화된 타임라인으로 제공함으로써 사용자에게 심리적 안정감과 투명한 공정 관리를 제공합니다. 특히 법정 심사 기한 준수가 중요한 ISO 도메인 특성을 반영하여, 일정 지연 리스크를 사전에 방지하고 실시간 상태 추적을 통해 인증 취득까지의 가시성을 확보합니다. ⚙️ 기술 명세 (Technical Spec) 1.  상호작용 및 UI 제어 :     - 사용자는 캘린더 인터페이스를 통해 제안된 심사 일정을 확인하고 '확정' 버튼 클릭 시 Confirmation Modal을 통해 최종 승인 절차를 거칩니다.    - 상태 트래킹은 Stepper 또는 Progress Bar 컴포넌트를 활용하며, [배정 완료 - 일정 확정 - 심사 중 - 보고서 작성 - 인증서 발급]의 스테이트 머신(State Machine) 구조에 따라 실시간 업데이트됩니다. 2.  백엔드 연동 및 데이터 처리 :    - 일정 확정 시 PATCH /api/v1/audits/{audit_id}/schedule 엔드포인트를 호출하여 상태값을 CONFIRMED로 변경하며, 관련 데이터는 고가용성을 위해 트랜잭션 처리를 보장해야 합니다.    - 실시간 상태 추적은 WebSocket 또는 Server-Sent Events(SSE)를 통해 서버의 상태 변화를 클라이언트에 즉각 푸시하며, 대시보드 진입 시 최신 상태 동기화를 위해 Optimistic UI 업데이트 패턴을 적용합니다. 3.  예외 처리 및 정책 :    - 일정 중복 방지를 위해 심사원별 Availability API와 연동하여 Validation을 수행하며, 일정 변경(Reschedule)은 특정 시점(예: 심사 7일 전) 이후에는 관리자 승인 프로세스로 전환되는 비즈니스 로직을 포함합니다.",
+      "layout": "일정 달력 + 확정 모달 + 상태 타임라인",
+      "dependsOn": [
+        "S20",
+        "S22"
+      ],
+      "dependencyBasis": "제안: 원본 기능 내용을 바탕으로 구성한 선행 데이터 의존성. 슬라이드 순서와 구별한다.",
+      "codeCandidates": [
+        "src/components/ProjectDetailView.jsx"
+      ],
+      "status": "구현 후보 있음·완료 미검증",
+      "specMissing": false,
+      "buttonAudit": {
+        "date": "2026-10-17",
+        "scope": "로그인 전 UI 클릭 및 코드 확인",
+        "fixes": [
+          "일정·알림·보고서·설정의 개별 화면 연결",
+          "계정 메뉴 키보드 접근",
+          "템플릿 미승인 초안 및 임의 만기 제거"
+        ],
+        "verification": "메뉴 8개, 대시보드 5개, 규격 진단 6개, 필터, 로그인 모달, 문서 등록 취소·닫기 확인",
+        "remaining": "인증된 저장·업로드 미검증; 기관 예약·외부 알림 미연동"
+      },
+      "uiMap": {
+        "document": "docs/reference/screen-navigation-map.md",
+        "board": "https://www.figma.com/board/AIOk8BKLYcgkzc3S247FAk/?node-id=1-8",
+        "scope": "로그인 전 실제 화면 12개; 편집기 진입 제한 기록; 기업 프로필·맞춤 지원사업 예정 흐름 구분"
+      }
+    },
+    {
+      "id": "S24",
+      "slide": 24,
+      "name": "심사 결과 보고서 및 인증서 업로드/발급",
+      "group": "심사",
+      "sourceSpec": "심사 결과 보고서 및 인증서 업로드/발급 기능 명세 🎯 기획 의도 (Intent) 본 기능은 ISO 인증 심사의 최종 단계인 결과 통보 및 증명서 발급 과정을 디지털화하여, 심사원과 고객사 간의 행정적 공백을 최소화하는 데 목적이 있습니다. SaaS 플랫폼의 핵심 가치인 '업무 자동화'를 위해, 수동으로 이루어지던 보고서 전달 방식을 시스템 내 워크플로우로 통합합니다. 이를 통해 심사 이력의 무결성을 보장하고, 고객사는 실시간으로 인증 상태를 확인 및 다운로드할 수 있어 관리 편의성을 극대화합니다. 또한, 보안이 중요한 인증 문서의 특성을 고려하여 위·변조 방지 및 접근 권한 제어를 통해 플랫폼의 신뢰도를 제고합니다. ⚙️ 기술 명세 (Technical Spec) -  UI Interaction:  Drag & Drop 방식의 파일 업로드 존을 제공하며, 업로드 시 파일 확장자(PDF, JPG 권장) 및 용량 제한(Max 20MB)에 대한 Validation을 클라이언트 단에서 1차 수행합니다. 업로드 완료 후 '발급' 버튼 클릭 시, 시스템은 해당 심사 건의 상태값(Status)을 Audit_Completed에서 Certified로 즉시 변경하고 상단에 Toast 메시지로 피드백을 노출합니다. -  Backend & Data:  RESTful API를 통해 심사 ID(Audit_ID)와 매핑된 파일 정보를 서버로 전송합니다. 보고서와 인증서는 보안 스토리지(S3 등)에 저장되며, 외부 유출 방지를 위해 Presigned URL 방식을 채택하여 권한이 부여된 사용자(심사원, 해당 업체 담당자)에게만 특정 시간 동안 접근을 허용합니다. -  State Management:  리액티브 상태 관리를 통해 업로드 진행률(Progress Bar)을 실시간으로 표시하며, 발급 완료 시 대시보드 내 '인증 현황' 위젯에 데이터가 실시간 동기화(Refetch)되도록 처리합니다. PDF 뷰어 라이브러리를 연동하여 별도 다운로드 없이 브라우저 내에서 즉시 미리보기가 가능하도록 구현합니다.",
+      "layout": "결과 요약 + 보고서·인증서 드롭존",
+      "dependsOn": [
+        "S23"
+      ],
+      "dependencyBasis": "제안: 원본 기능 내용을 바탕으로 구성한 선행 데이터 의존성. 슬라이드 순서와 구별한다.",
+      "codeCandidates": [],
+      "status": "미매핑·구현 미검증",
+      "specMissing": false
+    },
+    {
+      "id": "S25",
+      "slide": 25,
+      "name": "사후 관리 및 알림 서비스",
+      "group": "사후관리",
+      "sourceSpec": "사후 관리 및 알림 서비스 기능 명세 명세 내용이 없습니다.",
+      "layout": "알림 채널·조건 설정 폼",
+      "dependsOn": [
+        "S24"
+      ],
+      "dependencyBasis": "제안: 원본 기능 내용을 바탕으로 구성한 선행 데이터 의존성. 슬라이드 순서와 구별한다.",
+      "codeCandidates": [],
+      "status": "미매핑·구현 미검증",
+      "specMissing": true
+    },
+    {
+      "id": "S26",
+      "slide": 26,
+      "name": "인증 유효기간 및 갱신 주기 관리",
+      "group": "사후관리",
+      "sourceSpec": "인증 유효기간 및 갱신 주기 관리 기능 명세 🎯 기획 의도 (Intent) 본 기능은 ISO 인증 및 각종 규제 준수가 필수적인 기업 고객을 위한  컴플라이언스 리스크 관리의 핵심 요소 입니다. 인증서의 유효기간 만료는 사업 운영의 연속성에 치명적인 영향을 미칠 수 있으므로, 사용자가 관리 중인 모든 인증 자산의 상태를 직관적으로 모니터링하고 갱신 주기를 체계적으로 설정할 수 있도록 돕습니다. 단순한 날짜 기록을 넘어, SaaS 환경에서 자동화된 리마인드 프로토콜과 연동되어 수동 관리로 인한 인적 오류를 최소화하고 인증 유지 비용을 최적화하는 데 목적이 있습니다. ⚙️ 기술 명세 (Technical Spec) *    UI/UX 상호작용:  유효기간 필드는 Date Picker를 통해 입력받으며, 갱신 주기는 Dropdown(1년/2년/3년 등) 또는 사용자 정의 입력 형식을 지원합니다. 현재 날짜와 만료일(Expiration Date)을 비교하여 상태(정상: Green, 임박: Amber, 만료: Red)를 배지로 표시하는 동적 스타일링을 적용합니다.  *    데이터 및 API 연동:       *   GET /api/v1/certificates/{id}/validity: 특정 인증의 유효기간 및 설정된 알림 주기 데이터를 호출합니다.     *   PATCH /api/v1/certificates/{id}/renewal-policy: 갱신 주기 및 사전 알림 시점(D-90, D-60, D-30 등) 설정을 업데이트합니다. *    상태 관리 및 비즈니스 로직:  클라이언트 단에서 Day.js 또는 date-fns 라이브러리를 활용해 잔여 유효기간을 실시간 계산합니다. 설정된 갱신 주기에 따라 차기 심사 예정일이 자동 산출되어야 하며, 변경 사항 발생 시 상위 '사후 관리 및 알림 서비스' 모듈의 스케줄러(Cron Job)와 동기화되어 푸시 알림 및 이메일 발송 큐에 등록됩니다.",
+      "layout": "KPI + 인증별 만기 표",
+      "dependsOn": [
+        "S07",
+        "S24"
+      ],
+      "dependencyBasis": "제안: 원본 기능 내용을 바탕으로 구성한 선행 데이터 의존성. 슬라이드 순서와 구별한다.",
+      "codeCandidates": [
+        "src/components/RadarView.jsx",
+        "src/components/ExpiryRadarBanner.jsx"
+      ],
+      "status": "구현 후보 있음·완료 미검증",
+      "specMissing": false,
+      "designProgress": {
+        "date": "2026-10-14",
+        "status": "공통 UI 적용·업무 완료 미검증",
+        "changes": [
+          "공통 셸·헤더·디자인 토큰",
+          "실제 기존 화면을 연결하는 인증 관리 탐색"
+        ],
+        "code": [
+          "src/components/CertificationJourney.jsx",
+          "src/components/ui/Button.jsx",
+          "src/app/globals.css"
+        ],
+        "dataBoundary": "기존 currentCompany·문서 저장소·프로젝트 상태 유지. 화면 탐색은 데이터 수정이나 승인 처리를 하지 않음."
+      },
+      "designRevision": {
+        "date": "2026-10-17",
+        "reference": "PPT S05",
+        "status": "첫 화면 구조 교체·전체 장표 적용 미완료",
+        "files": [
+          "src/components/PlatformSidebar.jsx",
+          "src/components/DashboardView.jsx",
+          "src/app/globals.css"
+        ],
+        "behavior": "회사 컨텍스트 유지; 인증별 진단 이동 시 규격 전달; 문서 보유·D-Day 집계. 외부 알림 미연동.",
+        "verification": "프로덕션 빌드 성공, localhost 새로고침 및 스크린샷 확인. 인증된 데이터 저장은 미검증."
+      },
+      "buttonAudit": {
+        "date": "2026-10-17",
+        "scope": "로그인 전 UI 클릭 및 코드 확인",
+        "fixes": [
+          "일정·알림·보고서·설정의 개별 화면 연결",
+          "계정 메뉴 키보드 접근",
+          "템플릿 미승인 초안 및 임의 만기 제거"
+        ],
+        "verification": "메뉴 8개, 대시보드 5개, 규격 진단 6개, 필터, 로그인 모달, 문서 등록 취소·닫기 확인",
+        "remaining": "인증된 저장·업로드 미검증; 기관 예약·외부 알림 미연동"
+      },
+      "uiMap": {
+        "document": "docs/reference/screen-navigation-map.md",
+        "board": "https://www.figma.com/board/AIOk8BKLYcgkzc3S247FAk/?node-id=1-8",
+        "scope": "로그인 전 실제 화면 12개; 편집기 진입 제한 기록; 기업 프로필·맞춤 지원사업 예정 흐름 구분"
+      }
+    },
+    {
+      "id": "S27",
+      "slide": 27,
+      "name": "문서 검토 및 법적 요구사항 업데이트 알림",
+      "group": "사후관리",
+      "sourceSpec": "문서 검토 및 법적 요구사항 업데이트 알림 기능 명세 🎯 기획 의도 (Intent) ISO 인증 유지 관리의 핵심인 법규 준수(Compliance)와 문서 최신성 유지를 자동화하여 관리 리스크를 최소화하기 위함입니다. 사용자가 산재된 법령 개정 소식을 일일이 확인하지 않아도, 시스템이 기업별 연관 법적 요구사항을 필터링하여 즉각적인 가이드를 제공합니다. 이를 통해 문서 검토 누락으로 인한 인증 취소나 법적 위반 가능성을 선제적으로 차단하고, SaaS 환경에서 데이터 기반의 체계적인 사후 관리 경험을 제공하는 것이 목적입니다. ⚙️ 기술 명세 (Technical Spec) -  UI 및 인터렉션 : 알림 센터 내 전용 UI 컴포넌트로 구현하며, 중요도(Critical/Warning/Info)에 따른 컬러 시스템(Red/Amber/Blue)을 적용합니다. 요소 클릭 시 해당 법규가 적용되어야 할 특정 문서의 편집 화면으로 직접 이동하는 '딥링크(Deep-link)' 기능을 지원하며, 호버 시 업데이트된 법령의 요약문(Summary)을 툴팁으로 노출합니다. -  데이터 연동 및 API : GET /api/v2/notifications/compliance 인터페이스를 통해 사용자 권한 및 구독 플랜에 매칭되는 업데이트 내역을 호출합니다. 법제처 및 ISO 표준화 기구의 외부 API와 연동된 미들웨어를 통해 실시간으로 데이터를 동기화하며, '검토 완료' 처리 시 PATCH 요청을 통해 해당 알림의 상태 값을 Resolved로 변경하고 문서 관리 히스토리에 감사 추적(Audit Trail) 로그를 생성합니다. -  상태 관리 : 실시간 알림을 위해 웹소켓(WebSocket) 또는 SSE(Server-Sent Events)를 활용하며, 브라우저 세션 간 동기화를 위해 전역 상태 관리 저장소(Redux/Zustand 등)에서 읽지 않은 알림 카운트를 실시간 업데이트합니다.",
+      "layout": "알림 목록 + 검토 안내",
+      "dependsOn": [
+        "S17",
+        "S26",
+        "S32",
+        "S34"
+      ],
+      "dependencyBasis": "제안: 원본 기능 내용을 바탕으로 구성한 선행 데이터 의존성. 슬라이드 순서와 구별한다.",
+      "codeCandidates": [],
+      "status": "미매핑·구현 미검증",
+      "specMissing": false,
+      "buttonAudit": {
+        "date": "2026-10-17",
+        "scope": "로그인 전 UI 클릭 및 코드 확인",
+        "fixes": [
+          "일정·알림·보고서·설정의 개별 화면 연결",
+          "계정 메뉴 키보드 접근",
+          "템플릿 미승인 초안 및 임의 만기 제거"
+        ],
+        "verification": "메뉴 8개, 대시보드 5개, 규격 진단 6개, 필터, 로그인 모달, 문서 등록 취소·닫기 확인",
+        "remaining": "인증된 저장·업로드 미검증; 기관 예약·외부 알림 미연동"
+      },
+      "uiMap": {
+        "document": "docs/reference/screen-navigation-map.md",
+        "board": "https://www.figma.com/board/AIOk8BKLYcgkzc3S247FAk/?node-id=1-8",
+        "scope": "로그인 전 실제 화면 12개; 편집기 진입 제한 기록; 기업 프로필·맞춤 지원사업 예정 흐름 구분"
+      }
+    },
+    {
+      "id": "S28",
+      "slide": 28,
+      "name": "사후 심사/갱신 심사 자동 일정 예약 안내",
+      "group": "사후관리",
+      "sourceSpec": "사후 심사/갱신 심사 자동 일정 예약 안내 기능 명세 🎯 기획 의도 (Intent) 본 UI 요소는 ISO 인증 유지의 핵심인 사후 및 갱신 심사 주기를 시스템이 선제적으로 계산하여 사용자(인증 기업 담당자)에게 제안함으로써, 인증 효력 정지(Suspension) 리스크를 원천 차단하는 데 목적이 있습니다. SaaS 플랫폼 특성상 다수의 인증 규격과 복잡한 갱신 주기를 수동으로 관리해야 하는 운영 부담을 최소화하고, 데이터 기반의 자동 예약 가이드를 제공하여 사용자 경험의 연속성을 확보합니다. 이를 통해 기업은 컴플라이언스 준수 신뢰도를 높이고, 플랫폼은 심사원 배정 및 일정 최적화라는 운영 효율성을 달성합니다. ⚙️ 기술 명세 (Technical Spec) -  데이터 로직 및 트리거:  백엔드 스케줄러가 각 인증별 최종 심사일과 유효기간을 계산하여, 사후 심사(통상 1년 주기) 또는 갱신 심사(3년 주기) 90일 전부터 해당 UI 요소를 활성화합니다. API(GET /v1/audit/recommend-schedules)를 통해 추천 일정 리스트와 심사원 가용 상태를 호출합니다. -  상태 관리 및 인터랙션:       -  Default:  대시보드 상단 혹은 인증 상세 페이지 내 'Floating Card' 또는 'Banner' 형태로 노출되며, 'D-Day' 카운트와 함께 긴급도를 시각화(Warning Color)합니다.     -  Action:  예약 안내 클릭 시 모달(Modal) 혹은 사이드 패널이 오픈되며, 시스템이 추천하는 최적 일정(Best Match) 3곳을 제안합니다. 사용자가 일정을 선택하면 POST /v1/audit/reservations 요청을 통해 임시 예약 상태(Status: PENDING)로 전환됩니다. -  예외 처리:  심사 가능 인력(Auditor) 풀이 초과되었거나 법정 심사 기한을 넘긴 경우 '상담 필요' 상태로 전환하여 유선 연결 또는 1:1 문의 채널로 리다이렉트하는 예외 로직을 포함합니다. 모든 인터랙션은 실시간으로 동기화되어 중복 예약이 발생하지 않도록 낙관적 업데이트(Optimistic Update)와 서버 측 검증을 병행합니다.",
+      "layout": "예약 안내 배너 + 달력 + 추천 일정",
+      "dependsOn": [
+        "S23",
+        "S26"
+      ],
+      "dependencyBasis": "제안: 원본 기능 내용을 바탕으로 구성한 선행 데이터 의존성. 슬라이드 순서와 구별한다.",
+      "codeCandidates": [],
+      "status": "미매핑·구현 미검증",
+      "specMissing": false
+    },
+    {
+      "id": "S29",
+      "slide": 29,
+      "name": "차기 심사 신청 연계 프로세스",
+      "group": "사후관리",
+      "sourceSpec": "차기 심사 신청 연계 프로세스 기능 명세 🎯 기획 의도 (Intent) ISO 인증 관리의 핵심은 '인증 유효성 유지'와 '정기 심사(사후/갱신) 적기 이행'에 있습니다. 본 UI 요소는 인증 만료 90일 전부터 사용자에게 심사 주기를 인지시키고, 기존 심사 이력(Historical Data)을 차기 신청서로 자동 매핑하여 데이터 입력의 피로도를 획기적으로 낮추는 데 목적이 있습니다. 이를 통해 사용자는 복잡한 인증 유지 절차를 누락 없이 수행하여 비즈니스 연속성을 확보할 수 있으며, 플랫폼 운영 측면에서는 고객 유지율(Retention)을 강화하고 사후 관리 프로세스의 자동화 전환율을 높이는 핵심 트리거 역할을 수행합니다. ⚙️ 기술 명세 (Technical Spec) 1.   상태 관리 및 데이터 연동 :      - GET /v2/audit/next-schedule: 현재 활성 상태인 인증서의 만료일과 심사 주기(사후 1차, 2차, 갱신 등)를 계산하여 잔여 D-Day 정보를 호출합니다.     - POST /v2/audit/apply/linkage: 클릭 시 기존 심사 시 등록된 기업 정보, 범위, 인증 표준 데이터를 신규 신청 폼으로 전달(Data Mapping)하고 고유 audit_link_id를 생성하여 세션을 유지합니다. 2.   UI/UX 상호작용 :      -  Trigger : 대시보드 및 사후 관리 리스트 내 '차기 심사 신청' 버튼 클릭 시 활성화됩니다.     -  Visual Feedback : 심사 임박도(D-Day)에 따라 버튼의 강조색(Primary)과 배지(Warning)를 가변적으로 노출합니다.     -  Validation : 미결된 보완 조치사항이나 미납된 연회비가 있을 경우, 신청 단계 진입 전 'Pre-check' 팝업을 통해 선행 과제를 안내하고 진입을 제한하는 로직을 포함합니다. 3.   예외 처리 : 브라우저 세션 종료나 네트워크 오류 시에도 작성 중인 신청서가 '임시 저장(Draft)' 상태로 백엔드 DB에 자동 동기화되도록 처리합니다.",
+      "layout": "차기 심사 요약 + 신청 목록",
+      "dependsOn": [
+        "S24",
+        "S26",
+        "S28"
+      ],
+      "dependencyBasis": "제안: 원본 기능 내용을 바탕으로 구성한 선행 데이터 의존성. 슬라이드 순서와 구별한다.",
+      "codeCandidates": [],
+      "status": "미매핑·구현 미검증",
+      "specMissing": false
+    },
+    {
+      "id": "S30",
+      "slide": 30,
+      "name": "플랫폼 운영 관리 센터",
+      "group": "운영",
+      "sourceSpec": "플랫폼 운영 관리 센터 기능 명세 명세 내용이 없습니다.",
+      "layout": "관리자 가입·로그인 진입 화면",
+      "dependsOn": [
+        "S02"
+      ],
+      "dependencyBasis": "제안: 원본 기능 내용을 바탕으로 구성한 선행 데이터 의존성. 슬라이드 순서와 구별한다.",
+      "codeCandidates": [],
+      "status": "미매핑·구현 미검증",
+      "specMissing": true
+    },
+    {
+      "id": "S31",
+      "slide": 31,
+      "name": "통합 운영 지표 대시보드",
+      "group": "운영",
+      "sourceSpec": "통합 운영 지표 대시보드 기능 명세 🎯 기획 의도 (Intent) 본 대시보드는 SaaS 플랫폼의 방대한 운영 데이터를 시각적으로 중앙 집중화하여, 관리자가 복잡한 수치를 직관적으로 파악하고 신속한 비즈니스 의사결정을 내릴 수 있도록 설계되었습니다. 테넌트별 이용 현황, 구독 갱신율, 시스템 리소스 사용량 등 핵심 성과 지표(KPI)를 실시간으로 모니터링함으로써 운영 효율성을 극대화합니다. 특히 2차 고도화 단계에 맞춰 단순 나열식 지표를 넘어, 이상 징후 포착 및 사용자 행동 패턴 분석을 통한 선제적 대응 체계를 구축하는 데 목적이 있습니다. ⚙️ 기술 명세 (Technical Spec) 1.   데이터 시각화 및 인터랙션 : 각 지표 카드는 Grid 시스템 기반의 반응형 레이아웃을 따르며, 마우스 호버 시 툴팁을 통해 상세 수치 및 전일 대비 증감률을 노출합니다. 차트 라이브러리(예: Recharts, Highcharts)를 활용하여 기간별(일/주/월) 필터링 및 데이터 줌 기능을 제공합니다. 2.   API 연동 및 동기화 : RESTful API 또는 GraphQL을 통해 대시보드 통계 엔드포인트와 연동합니다. 실시간성이 요구되는 지표(접속자 수, 오류 발생 등)는 WebSocket 또는 5분 단위의 Short Polling 방식을 채택하며, 대량 데이터 로딩 시 사용자 경험을 저해하지 않도록 Skeleton UI 및 지연 로딩(Lazy Loading) 기술을 적용합니다. 3.   상태 관리 및 보안 : 전역 상태 관리(Redux Toolkit 또는 React Query)를 통해 필터 값(날짜, 테넌트 유형 등)을 유지하며, API 캐싱 전략을 통해 불필요한 네트워크 비용을 절감합니다. 관리자 권한 등급(Role-based Access Control)에 따라 지표 노출 범위 및 데이터 마스킹 정책을 동적으로 적용하여 테넌트 간 데이터 격리 및 보안 무결성을 보장합니다.",
+      "layout": "운영 KPI + 시계열·분포 차트",
+      "dependsOn": [
+        "S33",
+        "S35",
+        "S36"
+      ],
+      "dependencyBasis": "제안: 원본 기능 내용을 바탕으로 구성한 선행 데이터 의존성. 슬라이드 순서와 구별한다.",
+      "codeCandidates": [],
+      "status": "미매핑·구현 미검증",
+      "specMissing": false
+    },
+    {
+      "id": "S32",
+      "slide": 32,
+      "name": "인증별 표준 템플릿 및 기준 정보 CMS",
+      "group": "운영",
+      "sourceSpec": "인증별 표준 템플릿 및 기준 정보 CMS 기능 명세 🎯 기획 의도 (Intent) 본 CMS는 ISO 9001, 14001, 27001 등 다양한 국제 표준 인증별 심사 요건과 표준 문서 템플릿을 중앙에서 통합 관리하기 위해 설계되었습니다. SaaS 플랫폼 특성상 멀티 테넌트(Multi-tenant) 환경에서 모든 고객사에게 일관된 최신 규제 대응 기준을 신속하게 전파하고, 인증 체계 변화에 따른 운영 효율성을 극대화하는 것이 핵심 목적입니다. 관리자는 이를 통해 인증별 마스터 데이터(체크리스트, 필수 증적 항목, 표준 서식)를 구성하며, 사용자는 플랫폼 내에서 검증된 최신 가이드라인에 따라 인증 준비 및 심사 프로세스를 무결성 있게 수행할 수 있도록 돕습니다. ⚙️ 기술 명세 (Technical Spec) 1.   데이터 인터랙션 및 상태 관리:       *   인증 유형(ISO Type), 버전(Version), 언어셋 등 다차원 필터링 기능이 포함된 데이터 그리드(Data Grid)를 제공합니다.     *   템플릿 등록 시 JSON Schema 기반의 동적 폼 빌더를 호출하여 각 인증별로 상이한 입력 필드와 필수 로직을 정의합니다.     *   변경 사항 저장 시 '초안(Draft) - 검토(Review) - 배포(Published)'의 워크플로우 상태값을 관리하며, 배포 시 전체 테넌트에 실시간 혹은 스케줄링 기반으로 데이터가 동기화됩니다. 2.   API 및 백엔드 연동:       *   GET /api/v1/cms/templates: 인증별 기준 정보 목록 및 메타데이터 호출.     *   POST/PUT /api/v1/cms/templates/{id}: 마스터 템플릿 및 증적 기준 정보의 CRUD 처리.     *   PATCH /api/v1/cms/templates/{id}/release: 배포 버전 관리(Versioning) 및 이력 로그 생성. 3.   UI/UX 가이드라인:       *    Master-Detail 패턴:  목록에서 항목 선택 시 상세 설정 및 미리보기(Preview) 창을 우측 슬라이드 패널로 노출하여 작업 컨텍스트를 유지합니다.     *    Drag & Drop:  표준 서식 파일(hwp, docx, pdf) 업로드 시 드래그 앤 드롭 UI를 지원하며, 서버 사이드에서 바이러스 검사 및 메타데이터 추출 로직을 수행합니다.     *    권한 제어(RBAC):  '플랫폼 슈퍼 관리자' 등급에만 수정 권한을 부여하며, 모든 변경 이력은 감사 추적(Audit Trail)을 위해 데이터베이스에 기록됩니다.",
+      "layout": "템플릿 필터 + 관리 표",
+      "dependsOn": [
+        "S02"
+      ],
+      "dependencyBasis": "제안: 원본 기능 내용을 바탕으로 구성한 선행 데이터 의존성. 슬라이드 순서와 구별한다.",
+      "codeCandidates": [],
+      "status": "미매핑·구현 미검증",
+      "specMissing": false
+    },
+    {
+      "id": "S33",
+      "slide": 33,
+      "name": "심사 신청 접수 및 보완 요청 관리",
+      "group": "운영",
+      "sourceSpec": "심사 신청 접수 및 보완 요청 관리 기능 명세 🎯 기획 의도 (Intent) ISO 인증 심사 과정에서 발생하는 방대한 서류 검토 및 보강 절차를 효율화하기 위한 핵심 관리 모듈입니다. 이 UI 요소는 플랫폼 운영자가 신청자의 접수 현황을 한눈에 파악하고, 규정 준수(Compliance) 여부에 따른 보완 요구 사항을 즉각적으로 전달하여 심사 리드 타임(Lead Time)을 단축하는 데 목적이 있습니다. 복잡한 오프라인 서류 왕래를 디지털 워크플로우로 전환함으로써 운영 관리자의 업무 생산성을 높이고, 신청자에게는 투명한 심사 진행 상태를 제공하여 SaaS 플랫폼으로서의 신뢰도를 확보합니다. ⚙️ 기술 명세 (Technical Spec) -  상태 관리 및 워크플로우:  데이터 그리드(Data Grid) 내 각 항목은 '접수 대기', '검토 중', '보완 요청', '승인 완료'의 4단계 상태값을 가집니다. 상태 변경 시 PATCH API를 통해 실시간 업데이트되며, '보완 요청' 선택 시 팝업/슬라이드 오버 형태의 보완 사유 입력 폼이 활성화됩니다. -  데이터 바인딩 및 상호작용:  각 신청 리스트 클릭 시 상세 보기 페이지로 라우팅되거나 하단 패널이 확장(Expansion)됩니다. 보완 요청 시에는 첨부된 개별 문서 단위로 피드백을 매핑할 수 있도록 document_id와 comment_text를 객체 배열 형태로 백엔드에 전송합니다. -  알림 및 연동:  보완 요청 확정(Submit) 이벤트 발생 시, 즉시 신청자에게 메일 및 알림톡(Webhook) 전송 로직이 트리거되어야 합니다. 또한, 동시 접속 운영자 간의 데이터 충돌을 방지하기 위해 낙관적 업데이트(Optimistic UI)와 함께 필요 시 웹소켓(Websocket)을 통한 실시간 리스트 갱신을 권장합니다.",
+      "layout": "신청 표 + 우측 보완 패널",
+      "dependsOn": [
+        "S19"
+      ],
+      "dependencyBasis": "제안: 원본 기능 내용을 바탕으로 구성한 선행 데이터 의존성. 슬라이드 순서와 구별한다.",
+      "codeCandidates": [],
+      "status": "미매핑·구현 미검증",
+      "specMissing": false
+    },
+    {
+      "id": "S34",
+      "slide": 34,
+      "name": "알림 발송 조건 및 시점 커스텀 설정",
+      "group": "운영",
+      "sourceSpec": "알림 발송 조건 및 시점 커스텀 설정 기능 명세 🎯 기획 의도 (Intent) 본 기능은 SaaS 플랫폼 운영자가 각 워크플로우 단계별로 발생하는 이벤트를 정의하고, 이에 따른 알림(Push, Email, Kakao Biztalk 등) 발송 로직을 비즈니스 환경에 맞춰 유연하게 제어하기 위해 설계되었습니다. 플랫폼 내 표준화된 절차뿐만 아니라 고객사별 특수한 운영 정책에 대응할 수 있도록  '이벤트 트리거 - 필터 조건 - 발송 시점' 을 모듈화하여 설정하는 환경을 제공합니다. 이를 통해 운영 업무의 자동화 수준을 높이고, 플랫폼 사용자가 적시에 필수 정보를 수신하게 함으로써 서비스 이탈 방지 및 업무 연속성을 보장하는 데 목적이 있습니다. ⚙️ 기술 명세 (Technical Spec) 1.   상호작용 및 UI 구성 :     *    Rule Builder Interface : 드롭다운을 통해 시스템 내 정의된 이벤트(회원 가입, 결제 완료, 데이터 업데이트 등)를 선택하고, 조건절(AND/OR)을 추가할 수 있는 동적 폼을 구성합니다.     *    Timing Control : 즉시 발송 외에 'n분/시간/일 후' 또는 '특정 날짜/시간' 등의 지연 발송(Delayed Task) 설정을 위한 Time Picker 및 Relative Offset 입력 필드를 제공합니다.     *    Status Management : 각 설정값은 활성/비활성(Toggle) 상태를 가지며, 수정 시 즉시 프리뷰(Preview) 대시보드에 반영되어 최종 저장 전 발송 대상과 시점을 시뮬레이션할 수 있어야 합니다. 2.   데이터 및 백엔드 연동 :     *    Rule Engine API : 사용자가 설정한 커스텀 조건은 JSON Schema 형태로 구조화하여 POST /v1/admin/notification/configs 엔드포인트를 통해 저장합니다.     *    Event-Driven Architecture : 백엔드에서는 Message Queue(예: RabbitMQ, Kafka)와 연동하여 특정 이벤트 발생 시 설정된 Rule을 조회하고, Worker가 조건 일치 여부를 판단하여 발송 큐에 적재합니다.     *    State Control : 대량 발송 작업의 부하를 방지하기 위해 각 조건별 발송 이력 및 상태(Pending, Sent, Failed)를 추적하며, 동일 트리거에 대한 중복 발송 방지(Deduplication) 로직을 적용합니다.",
+      "layout": "조건 폼 + 시점 설정 + 우측 미리보기",
+      "dependsOn": [
+        "S02"
+      ],
+      "dependencyBasis": "제안: 원본 기능 내용을 바탕으로 구성한 선행 데이터 의존성. 슬라이드 순서와 구별한다.",
+      "codeCandidates": [],
+      "status": "미매핑·구현 미검증",
+      "specMissing": false
+    },
+    {
+      "id": "S35",
+      "slide": 35,
+      "name": "심사 건별 수익 및 배분 정산 기록",
+      "group": "운영",
+      "sourceSpec": "심사 건별 수익 및 배분 정산 기록 기능 명세 🎯 기획 의도 (Intent) 본 UI 요소는 SaaS 플랫폼 운영의 핵심인 투명한 재무 관리와 정산 프로세스의 효율성을 극대화하기 위해 설계되었습니다. 개별 심사 건 단위로 발생하는 매출과 플랫폼 수수료, 그리고 외부 파트너 또는 심사역에게 돌아가는 배분 수익을 명확히 시각화함으로써 운영 관리자가 정산 데이터의 정확성을 즉각적으로 검증할 수 있도록 돕습니다. 이는 정산 오류로 인한 리소스를 최소화하고, 다각적인 수익성 분석을 위한 기초 데이터를 제공하여 플랫폼의 신뢰도를 높이는 데 목적이 있습니다. ⚙️ 기술 명세 (Technical Spec) -  Data Architecture & API : GET /v2/settlement/records/{examination_id} 엔드포인트를 통해 데이터를 호출합니다. 서버 사이드에서 확정된 정산 로직(원천세, 플랫폼 수수료율, 배분 공식 등)이 반영된 최종 정산 객체를 반환받으며, 소수점 단위의 오차를 방지하기 위해 금융권 표준 부동소수점 처리 방식을 준수하여 렌더링합니다. -  UI Interaction & UX :      -  상태 배지(Status Badge) : 정산 상태(미정산, 정산 대기, 완료, 보류)를 고유 컬러 코딩과 함께 노출하여 직관적인 식별을 지원합니다.     -  세부 내역 툴팁 : 배분 금액 위 호버(Hover) 시, 해당 금액의 산출 근거(공제 항목, 적용 요율 등)를 팝오버 형태로 노출합니다.     -  동적 필터링 및 정렬 : 심사 일자, 배분 대상자, 금액별 오름차순/내림차순 정렬 기능을 제공하며, 대용량 데이터 처리를 위해 Virtualized List를 적용하여 스크롤 성능을 최적화합니다. -  State Management : 정산 상태 변경 시(예: 수동 정산 완료 처리), React Query 또는 SWR의 Optimistic Update를 활용하여 즉각적인 UI 피드백을 제공하고, 백엔드 DB와 클라이언트 데이터 간의 동기화를 유지합니다. 모든 데이터는 감사 추적(Audit Trail)을 위해 정산 히스토리 로그와 연동되어야 합니다.",
+      "layout": "정산 KPI + 배분·이력 표",
+      "dependsOn": [
+        "S20",
+        "S23"
+      ],
+      "dependencyBasis": "제안: 원본 기능 내용을 바탕으로 구성한 선행 데이터 의존성. 슬라이드 순서와 구별한다.",
+      "codeCandidates": [],
+      "status": "미매핑·구현 미검증",
+      "specMissing": false
+    },
+    {
+      "id": "S36",
+      "slide": 36,
+      "name": "사용자 이용 통계 및 전환율 분석",
+      "group": "운영",
+      "sourceSpec": "사용자 이용 통계 및 전환율 분석 기능 명세 🎯 기획 의도 (Intent) 본 UI 요소는 SaaS 플랫폼의 비즈니스 건전성을 진단하고 데이터 기반의 의사결정을 지원하기 위한 핵심 대시보드 모듈입니다. 플랫폼 운영자가 단순한 접속 수치를 넘어, 유입 경로별 전환율(Conversion Rate), 기능별 체류 시간, 유료 플랜 업그레이드 이탈 구간 등 주요 KPI를 직관적으로 파악하도록 돕습니다. 특히 2차 고도화 단계에 맞춰 사용자 세그먼트별 행동 패턴을 분석함으로써, 서비스 개선을 위한 인사이트를 도출하고 LTV(고객 생애 가치) 극대화 및 이탈률(Churn Rate) 감소를 위한 정량적 근거를 제공하는 데 목적이 있습니다. ⚙️ 기술 명세 (Technical Spec) 1.   데이터 시각화 및 상호작용 : Chart.js 또는 Recharts 라이브러리를 활용하여 시계열 데이터(Line/Area Chart)와 깔때기 분석(Funnel Chart)을 구현합니다. 사용자는 일/주/월/분기별 날짜 범위 필터를 통해 데이터를 동적으로 조회할 수 있으며, 특정 데이터 포인트 호버 시 상세 수치를 툴팁으로 출력합니다. 2.   API 및 데이터 처리 : /api/v2/analytics/usage 및 /api/v2/analytics/conversion 엔드포인트를 통해 데이터를 호출합니다. 대용량 로그 데이터 조회 시 성능 최적화를 위해 백엔드에서 집계된(Aggregated) 데이터를 비동기(Asynchronous) 방식으로 수신하며, 데이터 로딩 중에는 Skeleton UI를 노출하여 인지적 대기 시간을 단축합니다. 3.   상태 관리 및 필터링 : 세그먼트 필터(무료/유료 사용자, 권한별 등) 변경 시 URL Query Parameter를 동기화하여 대시보드 상태를 유지(Deep Linking)하며, 클라이언트 사이드 캐싱(React Query 등)을 적용해 동일 조건 재조회 시 불필요한 네트워크 비용을 최소화합니다. CSV/Excel 추출 버튼 클릭 시 현재 필터링된 데이터셋을 클라이언트 단에서 파싱하여 즉시 다운로드 기능을 제공합니다.",
+      "layout": "이용 KPI + 시계열·퍼널 + 세그먼트 표",
+      "dependsOn": [
+        "S02",
+        "S10",
+        "S20"
+      ],
+      "dependencyBasis": "제안: 원본 기능 내용을 바탕으로 구성한 선행 데이터 의존성. 슬라이드 순서와 구별한다.",
+      "codeCandidates": [],
+      "status": "미매핑·구현 미검증",
+      "specMissing": false
+    }
+  ],
+  "extraBusinessFeatures": [
+    {
+      "id": "B01",
+      "name": "교육 과정·수강·평가·수료",
+      "status": "미매핑·구현 미검증"
+    },
+    {
+      "id": "B02",
+      "name": "파트너 등록·자격 검증·행동 강령",
+      "status": "미매핑·구현 미검증"
+    },
+    {
+      "id": "B03",
+      "name": "기업 문의 배분·파트너 CRM",
+      "status": "미매핑·구현 미검증"
+    },
+    {
+      "id": "B04",
+      "name": "셀프 신청 안내 영상",
+      "status": "미매핑·구현 미검증"
+    },
+    {
+      "id": "B05",
+      "name": "상품·결제·관리 구독",
+      "status": "미매핑·구현 미검증"
+    },
+    {
+      "id": "B06",
+      "name": "파트너 지속률·기업 구독 지표",
+      "status": "미매핑·구현 미검증"
+    }
+  ],
+  "userRequestedFeatures": [
+    {
+      "id": "G01",
+      "name": "정부지원사업 전체 달력",
+      "source": "사용자 요청: 정부사업 정보를 달력 UI로 전체 확인",
+      "relatedFeatures": [
+        "S03",
+        "S12",
+        "S13"
+      ],
+      "status": "공식 목록 1차 수집본·달력 데이터 연결 구현",
+      "code": [
+        "src/components/GovernmentProgramCalendar.jsx",
+        "src/lib/programCalendar.mjs",
+        "src/components/GovernmentNoticeAnalysis.jsx",
+        "scripts/collect-government-details.mjs",
+        "scripts/plan-government-analysis.mjs"
+      ],
+      "dataContract": "사업 id, applicationStartDate/applicationEndDate YYYY-MM-DD; 미확인 날짜는 달력 배치 제외 후 별도 전체 목록",
+      "flow": "주 메뉴 정부지원사업 → 달력 → 사업 상세 → 필요 서류(선택 사업 ID 전달) → 프로젝트 생성 기존 경로",
+      "permissions": "사전 등록 자료 읽기만 제공. 회사 문서·프로젝트 저장은 기존 인증·권한 경로 사용.",
+      "verification": "월 이동·오늘·지자체 필터·검색·상세·필요서류·달력 복귀 확인; 날짜 경계·윤년·오류 날짜 테스트 통과",
+      "remaining": "타 페이지·타 출처 추가 수집, 상세/첨부 검토, 중복·정정 정교화 및 기업별 적합도 미완료",
+      "collection": {
+        "automationId": "isoedu",
+        "schedule": "매일 09:00 Asia/Seoul",
+        "sources": "data/government-programs/sources.json",
+        "management": "docs/reference/government-collection.md",
+        "status": "K-Startup 15건·중기부 10건 1페이지 수집; API로 달력·목록 연결",
+        "analysisScope": "정기 업무는 공고 상세와 첨부 PDF/HWPX/HWP·별첨·사업계획서 양식 분석까지 포함한다. 자격·제외 조건·지원금·자부담·마감 시각·평가·필수/조건부 서류·사업계획서 항목을 원문/첨부 URL·페이지/절·확인 시각과 기록한다. 목록/상세/첨부 완료/일부 미확인을 구별하고 읽지 못한 파일과 본문 충돌은 미확인으로 보존한다. G01 공고 ID와 근거 → S03 회사 프로필 비교 → S12 양식 → S13 회사 정보 → 회사별 구비서류·사업계획서로 인계한다. 회사 데이터 접근은 기존 권한 경로를 유지한다. 회사 정보 없이 적합 여부를 확정하지 않는다. 자동화 지시 갱신은 완료했으나 수집 명령의 첨부 분석 구현·실행 및 앱 표시 검증은 미완료다.",
+        "latestAnalysisRun": "2026-10-17 즉시 실행: 공식 목록 25건 갱신 및 상세 HTML 25건·첨부 링크 50개 확보. mss-1071619의 PDF 28쪽 텍스트/HWPX 본문 대조와 4·11쪽 시각 검토로 핵심 조건·서류·추진계획 분석을 analyses/mss-1071619.json에 저장했다. 전체 페이지 시각 검토와 최신 정정 확인은 미완료. 나머지 24건 첨부 내용 분석 대기. API는 공고 ID가 일치하는 분석만 결합하고 달력 상세·목록에서 조건별 서류와 작성 항목을 표시한다. 회사 프로필 판정·서류 자동매칭·작성 저장은 미연동. 기존 인증·회사 권한 변경 없음.",
+        "loop": "반복 분석 루프: 매일09시 목록 갱신 → 상세/첨부 링크 확보 → analysis-queue.json 계획 → 마감 임박·신규/변경·미분석·부분분석·과거 공고 순으로 실제 첨부 분석 → 건별 저장 → 큐 재계산. 다음 실행은 남은 항목을 이어간다. attempts/lastError/nextRetryAt로 재시도하며 한 건 실패로 전체를 중단하지 않는다. complete는 분석 파일 reviewStatus=complete 및 sourceFingerprint 일치 시에만 인정한다. HTML 텍스트·첨부 주소 변경 감지는 구현했고 동일 URL 첨부 교체의 콘텐츠 해시 대조는 에이전트 실행 업무로 남아 있다. 회사별 자격·구비문서·작성으로 인계할 공고 ID·근거·조건을 유지하며 회사 접근 권한은 기존 경로를 따른다. 현재 큐25건 중 미분석24·부분분석1; 전체 분석 완료 아님."
+      }
+    }
+  ],
+  "routing": {
+    "document": "docs/reference/ux-rules.md#ux-004-기능마다-독립된-url",
+    "shell": "src/components/PlatformWorkspace.jsx",
+    "routes": "src/lib/platformRoutes.mjs",
+    "verification": "메뉴 9개 URL 변경·뒤로/앞으로·설정 새로고침·문서/규격 직접 주소·정부사업 달력/목록 경로 확인"
+  },
+  "customerCaseAnalysis": {
+    "date": "2026-10-18",
+    "documentCount": 123,
+    "ocrPages": 158,
+    "evidence": "docs/reference/customer-document-evidence.md",
+    "insights": "docs/reference/business-plan-insights.md",
+    "status": "2026-10-18 고객 작성사례123개 분석: S03 회사→사업 아이템→신청 공고/차수→S12 양식→S13 근거 정보→S14 초안→S15 검토→S17 제출 버전으로 구분할 것을 제안. 원문 해시·문서 귀속·기준일·사실/목표/미확인·근거 위치를 인계한다. 회사별 권한 유지, 타 고객 증빙·수치 혼용 금지. 분석 산출물만 작성했으며 회사 자동등록·자격판정·작성 저장 미구현. 상세 business-plan-insights.md 및 customer-document-evidence.md."
+  },
+  "referenceLibrary": {
+    "date": "2026-10-18",
+    "relatedFeatures": [
+      "S03",
+      "S11",
+      "S12",
+      "S13",
+      "S14",
+      "S15",
+      "S17"
+    ],
+    "route": "/documents/references?reference=case-001",
+    "status": "2026-10-18: /documents/references에서 작성사례123개·65묶음 목록/고객/형식 검색 및 뷰어 연결. PDF는 Range 지원 원본 뷰어, HWP/HWPX/DOC/DOCX/PPT/PPTX는 전 구간 추출 본문과 원본 다운로드 제공. 각 문서 원문 목차 후보 또는 유형별 제안 구성은 사용자 검토 후 대상 회사·사업 아이템에 적용한다. 타 회사 원문 수치/실적 복사 없이 목차별 입력 초안을 미리보고 기존 문서 저장소에 DRAFT로 저장한다. companyId, businessItem, referenceOrigin(id/sha256/revision/headings/확인상태)을 S03→S12/S13→S14/S15→S17에 인계. 파일은 localhost 개발서버에만 제공하며 운영환경 API403, 현재회사 문서 저장은 기존 인증/RLS 경로 사용. 로컬 저장소 재조회·회사 격리·클라우드 필드 변환 테스트 검증. 실제 로그인한 회사의 클라우드 저장은 미검증. AI 본문 완성 및 원본 편집형식 내보내기는 미구현.",
+    "code": [
+      "src/components/ReferenceLibrary.jsx",
+      "src/lib/referenceLibrary.mjs",
+      "src/lib/referenceStandards.mjs",
+      "src/app/api/reference-library/route.js",
+      "src/app/api/reference-library/[id]/route.js"
+    ],
+    "verification": "44개 테스트 통과: 출처회사 사실/숫자 배제, 회사별 저장·재조회·격리, referenceOrigin 클라우드 필드 보존. localhost API 목록123·본문1043단위·PDF206·잘못된ID404·cross-site403 검증. 브라우저 문서함 진입·검색3건·HWP전문·PDF원본·URL복원·회사미선택생성차단 확인. 로그인한 회사의 실제 Supabase 저장은 미검증.",
+    "supersededBy": "clientDrive /documents (사용자 요구 정정)"
+  },
+  "clientDrive": {
+    "date": "2026-10-18",
+    "relatedFeatures": [
+      "S03",
+      "S11",
+      "S12",
+      "S13",
+      "S14",
+      "S15",
+      "S17"
+    ],
+    "route": "/documents?folder={folderId}&file={fileId}",
+    "status": "2026-10-18 사용자 정정 반영: 참고문서 라이브러리를 문서 관리 기본 화면에서 제외하고 /documents 거래처 드라이브로 대체. 원본 라벨 기준65개 거래처 폴더에 기존123개 문서를 연결했다. /documents/iso는 기존 ISO 규격 문서, /documents/references?reference=...는 기존 링크 호환용 거래처 파일 뷰어 진입. 거래처/하위 폴더 생성, 파일 업로드(50MB), 이름 변경, 폴더 이동, 휴지통/복원, 원본 다운로드·PDF/이미지/추출 본문 뷰어, TXT/MD 편집과 이전 바이트 보관 구현. 다른 거래처 문서 작성은 대상 폴더의 거래처ID·이름과 사업 아이템을 사용해 목차 기준 MD 초안을 실제 파일로 생성하고 referenceOrigin/작성 상태를 보관한다. S03 거래처→S11 파일→S12 기준→S13 입력→S14/S15 작성/편집→S17 근거·이력 인계. 현재 데이터는 data/client-drive/state.json 및 로컬 파일에 저장하며 로컬 단일 사용자 범위다. Supabase 회사/사용자 권한·공유/동기화와 연동 완료한 것으로 표시하지 않는다. 법인 관계나 현재 계약 여부는 원본 폴더명만으로 확정하지 않는다.",
+    "verification": "50개 테스트 통과 및 빌드 성공. 직렬화된 저장·재시작 재조회·동시 변경 보존·폴더 순환/중복 차단·원본 보호·휴지통 접근404·복원·대상거래처 초안 생성·텍스트 편집 이전본 보존 검증. 실제 로컬API에서도 업로드/이름변경/이동/편집/다운로드/휴지통/복원/초안 생성 확인. 임시 항목 정리 후65폴더123파일 유지. 외부 클라우드 저장·공유·전체Office 원본배치 뷰어는 미구현.",
+    "code": [
+      "src/components/ClientDrive.jsx",
+      "src/lib/clientDrive.mjs",
+      "src/app/api/client-drive/route.js",
+      "src/app/api/client-drive/[id]/route.js",
+      "scripts/extract-drive-file.py"
+    ],
+    "dataContract": "node.id/type/parentId/kind/client root, file sha256/sourceId, referenceOrigin, businessItem, docStatus, trashedAt/deletedWith, updatedAt/versions",
+    "permissions": "개발 localhost 단일 사용자 파일시스템. 운영API403; 기존 회사 문서 RLS와 별개. 원본 직접 덮어쓰기 차단.",
+    "initialNavigation": {
+      "relatedFeatures": [
+        "S03",
+        "S11"
+      ],
+      "behavior": "전체·ㄱ~ㅎ·영문·숫자/기타 초성 버튼과 거래처 수 표시. 법인 접두어 제외, 쌍자음 기본 초성 통합, 거래처명 기준 가나다순. 검색과 교차 필터링.",
+      "handoff": "URL initial → 거래처 폴더 folder → 파일 file. 폴더에서 루트 복귀 시 초성 유지.",
+      "permissions": "화면 필터만 변경. 파일 저장·권한 변경 없음.",
+      "verification": "빌드 성공. 초성 분류 7개 사례 단언 통과. 브라우저 ㄱ 선택3건·경호 검색1건·새로고침 ㄱ3건 유지 확인.",
+      "code": "src/lib/clientInitials.mjs"
+    },
+    "documentSpaceNavigation": {
+      "date": "2026-10-18",
+      "relatedFeatures": [
+        "S11",
+        "S12",
+        "S13",
+        "S14",
+        "S15",
+        "S16",
+        "S17"
+      ],
+      "description": "S11~S17 문서 공간의 상단 제목·설명·탭·여백을 공통 DocumentSpaceHeader로 통일. /documents 거래처 드라이브 ↔ /documents/iso ISO 규격 문서를 같은 위치의 탭으로 이동. ISO의 중복 드라이브 복귀 배너·환영 제목 제거. ISO 내부 구비문서/전체 규격 진단 전환은 유지. 거래처 folder/file/initial과 ISO standard/folder 데이터 계약 및 저장 권한 변경 없음. 브라우저 양방향 탭 이동·주소 변경과 동일 헤더 표시 확인, 프로덕션 빌드 성공. 로컬 거래처 파일을 ISO 회사 문서로 자동 인계하는 기능은 추가하지 않음.",
+      "code": [
+        "src/components/DocumentSpaceHeader.jsx",
+        "src/components/ClientDrive.jsx",
+        "src/components/DriveExplorer.jsx"
+      ]
+    },
+    "loadRecovery": {
+      "description": "S11 거래처 드라이브 목록 장애 복구(2026-10-18): API가 JSON 대신 HTML을 반환하는 개발서버 상태를 확인해 재시작. 로컬 state 65폴더123파일 보존 및 API200 application/json 188항목 확인. 목록 로딩/실패를 빈 목록과 구분하고 실패 시 초성·0개·빈 폴더 안내를 숨기며 재시도 제공, 폴더 추가 비활성화. 성공 시 기존 거래처→폴더→파일 인계 유지. 저장 형식·권한 변경 없음. 프로덕션 빌드 통과.",
+      "relatedFeatures": [
+        "S03",
+        "S11"
+      ],
+      "permissions": "변경 없음"
+    },
+    "viewerEntry": "2026-10-18 S11/S15 파일 뷰어 진입 명확화: 거래처 파일 행에 눈 아이콘·보기 버튼 추가. 파일명 또는 보기 → folder/file URL → 기존 본문 뷰어로 인계. HWP는 추출 전문 표시, 원본 배치 뷰어는 미구현이며 다운로드 안내 유지. 원본 저장·권한 변경 없음. 경호 HWP case-008 API200 JSON 및 본문 확인, 빌드 성공.",
+    "originalPreview": {
+      "description": "2026-10-18 S11/S15 원문 미리보기: 한컴 PDF 내보내기로 경호 HWP case-008(13쪽), case-115(17쪽) 원문 배치 PDF를 생성하고 첫 페이지 표·한글 시각 검증. 원문 보기와 전체 본문 탭 분리. source SHA256 기반 로컬 PDF 캐시로 원본 변경 시 이전 PDF 연결 차단. /api/client-drive/{id}?preview=1은 기존 로컬 접근·휴지통 검사를 거쳐 PDF/Range 응답, 미변환 파일422 안내 및 전체 본문 대안. 원본 바이트·회사 권한·저장 노드 변경 없음. S03 거래처→S11 파일ID/원본해시→S15 원문/본문 뷰어→S12 작성 기준 인계. 기존 PDF는 직접 표시. 다른 HWP/Office 전체 자동 변환은 미구현, 경호2개만 원문 변환 완료. 캐시 무효화·원본 보호 테스트 통과, 빌드 성공, case-008 API200 application/pdf 확인.",
+      "relatedFeatures": [
+        "S03",
+        "S11",
+        "S12",
+        "S15"
+      ],
+      "code": [
+        "src/lib/documentPreview.mjs",
+        "src/components/OriginalDocumentPreview.jsx",
+        "scripts/register-document-preview.mjs"
+      ],
+      "permissions": "기존 localhost 전용, source hash 캐시. 외부 전송 없음."
+    },
+    "multiFormatViewer": {
+      "description": "2026-10-18 S11/S15 다중 형식 원문 뷰어: PDF/이미지 직접 표시; DOC/DOCX·XLS/XLSX·PPT/PPTX 로컬 LibreOffice 자동 PDF 변환(Excel 시트당 한 페이지); HWP 한컴PDF 우선, 없으면 @ohah/hwpjs 및 pyhwp 보조 HTML 렌더링; HWPX 표·본문·이미지 HTML 렌더링. 업로드 파일에도 같은 파일ID→source SHA256→변환 캐시→뷰어 경로 적용. 프로세스 분리·직렬 변환·원자적 캐시 저장·90초 제한 및 실패 안내, HTML sandbox/CSP로 스크립트·외부 요청 차단. 원본123개 해시 일치, 기존 비PDF89개 전부 변환 성공/PDF34개 직접 제공. XLS/XLSX 2시트 변환 및 XLSX 실제 업로드→API200→브라우저열기 검증, 검증용 항목 정리 후65폴더123파일 유지. 형식별 대표 API200 및 cross-site403, 51개 테스트·빌드 통과. 대표 페이지 시각검토만 수행했으며 복잡한 글꼴·개체 배치 완전일치는 보장하지 않는다. Excel 셀 편집·암호문서 열기 미지원. localhost 전용으로 기존 권한 변경 없음. 회사별 cloud 저장·공유 연결 미완료. S03 거래처→S11 folder/file/원본해시→S15 원문뷰어→S12 작성기준 연결을 유지한다.",
+      "relatedFeatures": [
+        "S03",
+        "S11",
+        "S12",
+        "S15",
+        "S17"
+      ],
+      "code": [
+        "src/lib/documentPreview.mjs",
+        "src/components/OriginalDocumentPreview.jsx",
+        "scripts/render-hwp-preview.cjs",
+        "scripts/render-hwp-fallback.py",
+        "scripts/render-hwpx-preview.py"
+      ],
+      "verificationReport": "docs/reference/document-viewer-validation.json"
+    },
+    "isoPanelDesign": {
+      "relatedFeatures": [
+        "S11",
+        "S12",
+        "S15"
+      ],
+      "description": "2026-10-18 S11/S12/S15 ISO 규격 문서 디자인 정리: 공통 문서 관리 헤더 유지, 다색 규격 버튼을 규격 선택 dropdown으로 통합하고 문서 필터 dropdown과 문서 등록 액션으로 도구막대 정리. 중복 그라데이션 배너·장식 배지 제거, 분류 카드와 예시 패널을 흰색/회색·파란 선택색 중심으로 통일. 작성 예시의 공식성/즉시 사용 단정 표현 완화. 규격→분류→목록/예시 흐름 유지. 규격 변경 시 standard+folder=ALL을 단일 URL 변경으로 인계하고 folder=ALL도 /documents/iso에 유지하도록 경로 수정. 데이터·회사 권한·문서 저장 경로 변경 없음. 브라우저 ISO14001 규격/제목/URL 및9001 복귀 확인, 프로덕션 빌드 성공. 실제 회사 저장 검증 상태 변경 없음.",
+      "code": [
+        "src/components/DriveExplorer.jsx",
+        "src/components/PlatformWorkspace.jsx",
+        "src/app/globals.css"
+      ]
+    }
+  },
+  "myWork": {
+    "id": "M01",
+    "relatedFeatures": [
+      "S03",
+      "S05",
+      "B03",
+      "S11",
+      "S15",
+      "S23",
+      "S27"
+    ],
+    "description": "2026-10-18 사용자 추가 요구 M01 내 업무: /dashboard 첫 화면을 오늘/기한초과/7일 이내 업무 요약·날짜/거래처별 목록·월간 달력·오른쪽 상세 패널로 변경, 이전 인증 요약 컴포넌트는 보존하고 인증 메뉴 유지. 거래처/담당자/검색/기간 필터, 개인 업무, 생성·수정·완료 취소/완료·회신대기·체크리스트·메모 지원. 내부 dueDate와 수동입력 officialDueDate/sourceUrl 구분. 실제 Drive 거래처 root ID/문서 ID와 연결하고 서버에서 문서 소유 거래처 일치 검증. 거래처 드라이브 폴더의 업무 보기→/dashboard?client=...; 업무→/documents?file=...→기존 원문 뷰어. /api/work-tasks 및 data/client-drive/tasks/tasks.json에 직렬 잠금·원자적 저장. query client/task/scope/group/view로 상태 인계. S03/B03 거래처→M01/S05 업무→S11/S15 연결 문서→M01 상태/기한 재조회. localhost 개발 단일 사용자 범위이며 담당자 문자열은 실제 계정권한이 아님; 팀 공유/알림 발송/공고 자동 업무 생성 미연동. 실제 기한을 추정하거나 문서에서 임의 업무를 생성하지 않음. 53개 테스트 및 빌드 통과(한국 날짜 경계·윤년·지연/완료/미정 분류·재조회·동시 저장·공식/내부 마감 분리·거래처 문서 격리). 실제 API 저장2건·재조회 및 브라우저 요약/상세/문서 링크 검증.",
+    "code": [
+      "src/components/MyWorkView.jsx",
+      "src/lib/workTasks.mjs",
+      "src/lib/workTaskDates.mjs",
+      "src/app/api/work-tasks/route.js"
+    ],
+    "permissions": "개발 localhost 전용; 클라우드 회사 RLS와 별개, 실제 팀 계정/공유 미연동",
+    "dataContract": "task.id/title/clientId/documentId/status/dueDate/officialDueDate/sourceUrl/assignee/checklist/notes/createdAt/updatedAt",
+    "finalVerification": "브라우저 완료 처리 후 오늘 마감1→0 갱신, 달력 전환 확인. 검증용2업무만 제거하고 실제 업무 보존. 데이터 없는 첫 진입은 빈 상태와 업무 추가 안내 표시.",
+    "compactSummary": "2026-10-18 UX-007/M01/S05 사용자 밀도 선호 반영: 기한지남·오늘마감·7일이내 큰 요약카드3개 제거, 기존 기간 필터 옆 작은 숫자 배지로 통합. 업무 목록의 화면 점유 우선. 기존 scope/client/task/view 데이터 인계·필터 동작·저장 권한 변경 없음.",
+    "compactSummaryVerification": "빌드 성공. 브라우저 카드 제거·기간필터 숫자0 표시·오늘 마감 클릭 시 /dashboard?scope=today 및 선택상태 확인."
+  },
+  "companySwitcher": {
+    "relatedFeatures": [
+      "S02",
+      "S03",
+      "S11"
+    ],
+    "description": "2026-10-18 S02/S03 회사 선택 진입 수정: 사이드바의 동작 없는 회사 표시 div를 CompanySwitcher 버튼으로 교체하고 Header에도 동일 컴포넌트 적용. 접근 가능한 companies 목록과 선택 콜백을 공유하며 선택 시 currentCompany와 해당 프로젝트를 동기화한다. guest 빈목록은 로그인 안내/실제 AuthModal 진입, 로그인 후 빈목록은 회사등록·권한 확인 안내. 거래처 Drive 폴더와 소속 회사 권한 목록을 구분하고 별도 드라이브 링크 제공. 로그인 상태와 관계없이 표시되던 녹색 연결 표시 제거. 계정→서버권한 회사 목록→회사ID→기존 문서 저장소/프로젝트 연결 유지. 로컬 거래처를 클라우드 회사로 임의 매핑하지 않으며 권한 변경 없음. 실제 브라우저 왼쪽 선택메뉴·guest 안내·로그인 모달 진입 및 빌드 확인. 인증된 회사 선택과 Supabase 저장은 계정 로그인 미완료로 이번 검증에 포함하지 않음.",
+    "code": [
+      "src/components/CompanySwitcher.jsx",
+      "src/components/Header.jsx",
+      "src/components/PlatformSidebar.jsx",
+      "src/components/PlatformWorkspace.jsx"
+    ]
+  },
+  "emailAuthentication": {
+    "relatedFeatures": [
+      "S02",
+      "S03"
+    ],
+    "description": "2026-10-18 사용자 승인으로 Supabase dqnblzlgpybhjftopldg Confirm email을 임시 OFF로 저장. ceo@honestone.kr 계정은 기존 미인증 상태에서 동일 계정 가입 완료 후 email_confirmed_at/session 및 비밀번호 로그인 성공 확인. 비밀번호·세션토큰은 저장소에 기록하지 않음. 향후 이메일 인증 재활성화 예정(사용자 요청 기록, 일정 미정). 로그인 후 profiles 및 audit_projects는 PGRST205로 미설치 상태, companies 조회는 가능. 인증 성공과 회사별 권한/프로필 연결 완료는 구분하며 임의 권한 우회나 기본 관리자 역할 부여 없음.",
+    "status": "email confirmation temporarily disabled; auth login verified; profile schema pending"
+  }
+}

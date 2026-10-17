@@ -27,13 +27,15 @@ import { ISO_STANDARDS_INFO } from '../lib/isoRequirementsData.js';
 import { evaluateComplianceReadiness, evaluateAllStandardsOverview } from '../lib/complianceEngine.js';
 
 export default function IsoComplianceMatrixView({
+  initialStandard = 'ISO_9001',
+  onSelectStandard,
   documents,
   currentCompany,
   onOpenDetail,
   onAddDocument,
   onUpdateDocument
 }) {
-  const [selectedStandard, setSelectedStandard] = useState('ISO_9001');
+  const [selectedStandard, setSelectedStandard] = useState(initialStandard);
   const [statusFilter, setStatusFilter] = useState('ALL'); // 'ALL' | 'MISSING' | 'READY'
   const [isLinkingModalOpen, setIsLinkingModalOpen] = useState(false);
   const [activeReqForLink, setActiveReqForLink] = useState(null);
@@ -77,17 +79,16 @@ export default function IsoComplianceMatrixView({
       author: 'AI 규격 자동편성기',
       version: 'v1.0',
       revisionNo: 'Rev. 1.0',
-      status: 'READY',
-      docStatus: '승인 완료',
-      approvalDate: new Date().toISOString().split('T')[0],
-      expiryDate: '2027-05-30',
-      dDay: 365,
+      status: 'DRAFT',
+      docStatus: '작성 중',
+      approvalDate: null,
+      expiryDate: null,
       penaltyRisk: req.penaltyRisk,
       summary: req.summary,
       checklist: [
-        { text: `${req.standard} 규격 조항 ${req.clause} 요건 대조 완료`, done: true },
-        { text: '사후심사 심사관 현장 검증 증빙 등록', done: true },
-        { text: '부서장 최종 승인 및 전자 직인 날인', done: true },
+        { text: `${req.standard} 규격 조항 ${req.clause} 요건 대조 완료`, done: false },
+        { text: '사후심사 심사관 현장 검증 증빙 등록', done: false },
+        { text: '부서장 최종 승인 및 전자 직인 날인', done: false },
       ],
       contentDraft: req.templateDraft || `# ${req.defaultTitle}\n\n1. 목적 및 범위\n2. 주관 부서 책임\n3. 이행 기준`,
       coverGradient: req.level === 'LEVEL_1' ? 'from-blue-600 to-indigo-700' :
@@ -99,7 +100,7 @@ export default function IsoComplianceMatrixView({
   };
 
   // 기존 드라이브 문서와 연결
-  const handleLinkExistingDoc = (doc) => {
+  const handleLinkExistingDoc = async (doc) => {
     if (!activeReqForLink) return;
 
     // 해당 문서에 규격 및 조항 매핑 업데이트
@@ -110,7 +111,8 @@ export default function IsoComplianceMatrixView({
       hierarchyLevel: activeReqForLink.level
     };
 
-    onUpdateDocument && onUpdateDocument(updated);
+    const saved = onUpdateDocument && await onUpdateDocument(updated);
+    if (!saved) return;
     setIsLinkingModalOpen(false);
     setActiveReqForLink(null);
   };
@@ -151,7 +153,7 @@ export default function IsoComplianceMatrixView({
             return (
               <button
                 key={std.code}
-                onClick={() => setSelectedStandard(std.code)}
+                onClick={() => onSelectStandard ? onSelectStandard(std.code) : setSelectedStandard(std.code)}
                 className={`p-3.5 rounded-2xl border text-left transition-all relative group ${
                   isSelected
                     ? 'bg-white border-blue-500 shadow-md ring-2 ring-blue-100'

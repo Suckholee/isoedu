@@ -1,0 +1,57 @@
+{"at":"2026-10-17T14:48:46.039Z","source":"k-startup","status":"partial-success","coverage":"public listing page 1 only; details and remaining pages not collected","count":15,"url":"https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do"}
+{"at":"2026-10-17T14:48:46.039Z","source":"mss","status":"partial-success","coverage":"public listing page 1 only; details and remaining pages not collected","count":10,"url":"https://www.mss.go.kr/site/smba/ex/bbs/List.do?cbIdx=310"}
+{"at":"2026-10-17T14:54:16.635Z","source":"k-startup","status":"failed","error":"fetch failed"}
+{"at":"2026-10-17T14:54:16.635Z","source":"mss","status":"failed","error":"fetch failed"}
+{"at":"2026-10-17T14:54:23.560Z","source":"k-startup","status":"partial-success","coverage":"public listing page 1 only; details and remaining pages not collected","count":15,"url":"https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do"}
+{"at":"2026-10-17T14:54:23.560Z","source":"mss","status":"partial-success","coverage":"public listing page 1 only; details and remaining pages not collected","count":10,"url":"https://www.mss.go.kr/site/smba/ex/bbs/List.do?cbIdx=310"}
+{"at":"2026-10-17T14:55:14.507Z","id":"kstartup-179533","stage":"detail-fetch","status":"partial-success","attachments":0,"coverage":"HTML captured; attachment content analysis tracked separately"}
+{"at":"2026-10-17T14:55:14.507Z","id":"kstartup-179529","stage":"detail-fetch","status":"partial-success","attachments":0,"coverage":"HTML captured; attachment content analysis tracked separately"}
+{"at":"2026-10-17T14:55:14.507Z","id":"kstartup-179528","stage":"detail-fetch","status":"partial-success","attachments":0,"coverage":"HTML captured; attachment content analysis tracked separately"}
+{"at":"2026-10-17T14:55:14.507Z","id":"kstartup-179520","stage":"detail-fetch","status":"partial-success","attachments":0,"coverage":"HTML captured; attachment content analysis tracked separately"}
+{"at":"2026-10-17T14:55:14.507Z","id":"kstartup-179531","stage":"detail-fetch","status":"partial-success","attachments":0,"coverage":"HTML captured; attachment content analysis tracked separately"}
+{"at":"2026-10-17T14:55:14.507Z","id":"kstartup-179536","stage":"detail-fetch","status":"partial-success","attachments":0,"coverage":"HTML captured; attachment content analysis tracked separately"}
+{"at":"2026-10-17T14:55:14.507Z","id":"kstartup-179538","stage":"detail-fetch","status":"partial-success","attachments":0,"coverage":"HTML captured; attachment content analysis tracked separately"}
+{"at":"2026-10-17T14:55:14.507Z","id":"kstartup-179524","stage":"detail-fetch","status":"partial-success","attachments":0,"coverage":"HTML captured; attachment content analysis tracked separately"}
+{"at":"2026-10-17T14:55:14.507Z","id":"kstartup-179535","stage":"detail-fetch","status":"partial-success","attachments":0,"coverage":"HTML captured; attachment content analysis tracked separately"}
+{"at":"2026-10-17T14:55:14.507Z","id":"kstartup-179523","stage":"detail-fetch","status":"partial-success","attachments":0,"coverage":"HTML captured; attachment content analysis tracked separately"}
+{"at":"2026-10-17T14:55:14.507Z","id":"kstartup-179522","stage":"detail-fetch","status":"partial-success","attachments":0,"coverage":"HTML captured; attachment content analysis tracked separately"}
+{"at":"2026-10-17T14:55:14.507Z","id":"kstartup-179519","stage":"detail-fetch","status":"partial-success","attachments":0,"coverage":"HTML captured; attachment content analysis tracked separately"}
+{"at":"2026-10-17T14:55:14.507Z","id":"kstartup-179515","stage":"detail-fetch","status":"partial-success","attachments":0,"coverage":"HTML captured; attachment content analysis tracked separately"}
+{"at":"2026-10-17T14:55:14.507Z","id":"kstartup-179504","stage":"detail-fetch","status":"partial-success","attachments":0,"coverage":"HTML captured; attachment content analysis tracked separately"}
+{"at":"2026-10-17T14:55:14.507Z","id":"kstartup-179516","stage":"detail-fetch","status":"partial-success","attachments":0,"coverage":"HTML captured; attachment content analysis tracked separately"}
+{"at":"2026-10-17T14:55:14.507Z","id":"mss-1071793","stage":"detail-fetch","status":"partial-success","attachments":2,"coverage":"HTML captured; attachment content analysis tracked separately"}
+{"at":"2026-10-17T14:55:14.507Z","id":"mss-1071785","stage":"detail-fetch","status":"partial-success","attachments":2,"coverage":"HTML captured; attachment content analysis tracked separately"}
+{"at":"2026-10-17T14:55:14.507Z","id":"mss-1071736","stage":"detail-fetch","status":"partial-success","attachments":2,"coverage":"HTML captured; attachment content analysis tracked separately"}
+{"at":"2026-10-17T14:55:14.507Z","id":"mss-1071648","stage":"detail-fetch","status":"partial-success","attachments":2,"coverage":"HTML captured; attachment content analysis tracked separately"}
+{"at":"2026-10-17T14:55:14.507Z","id":"mss-1071647","stage":"detail-fetch","status":"partial-success","attachments":2,"coverage":"HTML captured; attachment content analysis tracked separately"}
+{"at":"2026-10-17T14:55:14.507Z","id":"mss-1071646","stage":"detail-fetch","status":"partial-success","attachments":2,"coverage":"HTML captured; attachment content analysis tracked separately"}
+{"at":"2026-10-17T14:55:14.507Z","id":"mss-1071619","stage":"detail-fetch","status":"partial-success","attachments":2,"coverage":"HTML captured; attachment content analysis tracked separately"}
+{"at":"2026-10-17T14:55:14.507Z","id":"mss-1071591","stage":"detail-fetch","status":"partial-success","attachments":2,"coverage":"HTML captured; attachment content analysis tracked separately"}
+{"at":"2026-10-17T14:55:14.507Z","id":"mss-1071565","stage":"detail-fetch","status":"partial-success","attachments":2,"coverage":"HTML captured; attachment content analysis tracked separately"}
+{"at":"2026-10-17T14:55:14.507Z","id":"mss-1071550","stage":"detail-fetch","status":"partial-success","attachments":2,"coverage":"HTML captured; attachment content analysis tracked separately"}
+{"at":"2026-10-17T14:55:40.173Z","id":"kstartup-179533","stage":"detail-fetch","status":"partial-success","attachments":2,"coverage":"HTML captured; attachment content analysis tracked separately"}
+{"at":"2026-10-17T14:55:40.173Z","id":"kstartup-179529","stage":"detail-fetch","status":"partial-success","attachments":3,"coverage":"HTML captured; attachment content analysis tracked separately"}
+{"at":"2026-10-17T14:55:40.173Z","id":"kstartup-179528","stage":"detail-fetch","status":"partial-success","attachments":1,"coverage":"HTML captured; attachment content analysis tracked separately"}
+{"at":"2026-10-17T14:55:40.173Z","id":"kstartup-179520","stage":"detail-fetch","status":"partial-success","attachments":1,"coverage":"HTML captured; attachment content analysis tracked separately"}
+{"at":"2026-10-17T14:55:40.173Z","id":"kstartup-179531","stage":"detail-fetch","status":"partial-success","attachments":2,"coverage":"HTML captured; attachment content analysis tracked separately"}
+{"at":"2026-10-17T14:55:40.173Z","id":"kstartup-179536","stage":"detail-fetch","status":"partial-success","attachments":1,"coverage":"HTML captured; attachment content analysis tracked separately"}
+{"at":"2026-10-17T14:55:40.173Z","id":"kstartup-179538","stage":"detail-fetch","status":"partial-success","attachments":3,"coverage":"HTML captured; attachment content analysis tracked separately"}
+{"at":"2026-10-17T14:55:40.173Z","id":"kstartup-179524","stage":"detail-fetch","status":"partial-success","attachments":4,"coverage":"HTML captured; attachment content analysis tracked separately"}
+{"at":"2026-10-17T14:55:40.173Z","id":"kstartup-179535","stage":"detail-fetch","status":"partial-success","attachments":3,"coverage":"HTML captured; attachment content analysis tracked separately"}
+{"at":"2026-10-17T14:55:40.173Z","id":"kstartup-179523","stage":"detail-fetch","status":"partial-success","attachments":2,"coverage":"HTML captured; attachment content analysis tracked separately"}
+{"at":"2026-10-17T14:55:40.173Z","id":"kstartup-179522","stage":"detail-fetch","status":"partial-success","attachments":1,"coverage":"HTML captured; attachment content analysis tracked separately"}
+{"at":"2026-10-17T14:55:40.173Z","id":"kstartup-179519","stage":"detail-fetch","status":"partial-success","attachments":2,"coverage":"HTML captured; attachment content analysis tracked separately"}
+{"at":"2026-10-17T14:55:40.173Z","id":"kstartup-179515","stage":"detail-fetch","status":"partial-success","attachments":2,"coverage":"HTML captured; attachment content analysis tracked separately"}
+{"at":"2026-10-17T14:55:40.173Z","id":"kstartup-179504","stage":"detail-fetch","status":"partial-success","attachments":2,"coverage":"HTML captured; attachment content analysis tracked separately"}
+{"at":"2026-10-17T14:55:40.173Z","id":"kstartup-179516","stage":"detail-fetch","status":"partial-success","attachments":1,"coverage":"HTML captured; attachment content analysis tracked separately"}
+{"at":"2026-10-17T14:55:40.173Z","id":"mss-1071793","stage":"detail-fetch","status":"partial-success","attachments":2,"coverage":"HTML captured; attachment content analysis tracked separately"}
+{"at":"2026-10-17T14:55:40.173Z","id":"mss-1071785","stage":"detail-fetch","status":"partial-success","attachments":2,"coverage":"HTML captured; attachment content analysis tracked separately"}
+{"at":"2026-10-17T14:55:40.173Z","id":"mss-1071736","stage":"detail-fetch","status":"partial-success","attachments":2,"coverage":"HTML captured; attachment content analysis tracked separately"}
+{"at":"2026-10-17T14:55:40.173Z","id":"mss-1071648","stage":"detail-fetch","status":"partial-success","attachments":2,"coverage":"HTML captured; attachment content analysis tracked separately"}
+{"at":"2026-10-17T14:55:40.173Z","id":"mss-1071647","stage":"detail-fetch","status":"partial-success","attachments":2,"coverage":"HTML captured; attachment content analysis tracked separately"}
+{"at":"2026-10-17T14:55:40.173Z","id":"mss-1071646","stage":"detail-fetch","status":"partial-success","attachments":2,"coverage":"HTML captured; attachment content analysis tracked separately"}
+{"at":"2026-10-17T14:55:40.173Z","id":"mss-1071619","stage":"detail-fetch","status":"partial-success","attachments":2,"coverage":"HTML captured; attachment content analysis tracked separately"}
+{"at":"2026-10-17T14:55:40.173Z","id":"mss-1071591","stage":"detail-fetch","status":"partial-success","attachments":2,"coverage":"HTML captured; attachment content analysis tracked separately"}
+{"at":"2026-10-17T14:55:40.173Z","id":"mss-1071565","stage":"detail-fetch","status":"partial-success","attachments":2,"coverage":"HTML captured; attachment content analysis tracked separately"}
+{"at":"2026-10-17T14:55:40.173Z","id":"mss-1071550","stage":"detail-fetch","status":"partial-success","attachments":2,"coverage":"HTML captured; attachment content analysis tracked separately"}
+{"at":"2026-10-17T14:56:03.301Z","id":"mss-1071619","stage":"attachment-analysis","status":"partial-success","coverage":"PDF 28쪽 텍스트 추출 및 HWPX 본문 대조. 신청서류 표(4쪽)·신청서 양식(11쪽) 시각 검토. 전체 페이지의 시각 검토 및 변경공고 재확인은 미완료.","analysis":"analyses/mss-1071619.json"}

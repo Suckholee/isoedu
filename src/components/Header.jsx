@@ -1,15 +1,15 @@
 'use client';
 
 import React, { useState, useRef, useEffect } from 'react';
-import { 
-  Search, 
-  HelpCircle, 
-  Settings, 
-  Sparkles, 
-  Grid, 
-  SlidersHorizontal, 
-  ChevronDown, 
-  Check, 
+import {
+  Search,
+  HelpCircle,
+  Settings,
+  Sparkles,
+  Grid,
+  SlidersHorizontal,
+  ChevronDown,
+  Check,
   Building2,
   FolderOpen,
   Plus,
@@ -25,11 +25,17 @@ import {
   BookOpen,
   Award,
   Layers,
-  Menu
+  Menu,
+  Database,
+  LogIn
 } from 'lucide-react';
-import { INITIAL_COMPANIES } from '../lib/mockData';
+import { useAuth } from '../context/AuthContext';
+import AuthModal from './AuthModal';
+import CompanySwitcher from './CompanySwitcher';
+import { isCloudMode } from '../lib/dataConfig';
 
 export default function Header({
+  companies = [],
   isSidebarOpen = true,
   onToggleSidebar,
   currentCompany,
@@ -46,10 +52,11 @@ export default function Header({
   const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
   const [isHelpModalOpen, setIsHelpModalOpen] = useState(false);
   const [isSettingsModalOpen, setIsSettingsModalOpen] = useState(false);
+  const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
+  const { profile, logout, switchDemoRole, isDemoMode } = useAuth();
 
   // Settings State
   const [alertThreshold, setAlertThreshold] = useState('30');
-  const [autoSyncEnabled, setAutoSyncEnabled] = useState(true);
 
   const dropdownRef = useRef(null);
   const appsRef = useRef(null);
@@ -72,8 +79,8 @@ export default function Header({
   }, []);
 
   return (
-    <header className="h-16 px-4 sm:px-6 flex items-center justify-between bg-[#f8fafd] text-slate-800 select-none relative z-40">
-      
+    <header className="iso-header h-16 px-4 sm:px-6 flex items-center justify-between text-slate-800 select-none relative z-40 gap-2">
+
       {/* 1. Left: Google Drive Signature Brand Identity */}
       <div className="flex items-center gap-2 sm:gap-3 shrink-0">
         {/* Google Drive Standard Hamburger Menu Button to Toggle Sidebar */}
@@ -88,50 +95,29 @@ export default function Header({
           <Menu className="w-5 h-5" />
         </button>
 
-        <div 
-          className="flex items-center gap-2.5 cursor-pointer hover:opacity-90 transition-opacity"
-          onClick={() => onSelectNav && onSelectNav('home')}
-          title="홈으로 이동"
-        >
-          {/* Google Drive Multi-Color Triangle Logo */}
-          <div className="w-10 h-10 flex items-center justify-center">
-            <svg viewBox="0 0 87.3 78" className="w-8 h-8">
-              <path d="m6.6 66.85 3.85 6.65c.8 1.4 1.95 2.5 3.3 3.3l13.75-23.8H0c0 1.55.4 3.1 1.2 4.5z" fill="#0066da"/>
-              <path d="M43.65 25 29.9 1.2c-1.35.8-2.5 1.9-3.3 3.3l-25.4 44C.4 49.9 0 51.45 0 53h27.5z" fill="#00ac47"/>
-              <path d="M73.55 76.8c1.35-.8 2.5-1.9 3.3-3.3l1.6-2.75 7.65-13.25c.8-1.4 1.2-2.95 1.2-4.5H59.8l5.85 10.1z" fill="#ea4335"/>
-              <path d="M43.65 25 57.4 1.2C56.05.4 54.5 0 52.9 0H34.4c-1.6 0-3.15.4-4.5 1.2z" fill="#00832d"/>
-              <path d="M59.8 53H87.3c0-1.55-.4-3.1-1.2-4.5L72.35 25l-13.75 23.8z" fill="#ffba00"/>
-              <path d="m73.55 76.8-13.75-23.8H27.5L13.75 76.8c1.35.8 2.9 1.2 4.5 1.2h50.8c1.6 0 3.15-.4 4.5-1.2z" fill="#2684fc"/>
-            </svg>
-          </div>
-          <div className="flex items-center gap-1.5">
-            <span className="text-[22px] font-normal tracking-tight text-slate-700 font-sans">
-              드라이브
-            </span>
-            <span className="px-1.5 py-0.5 rounded text-[10px] font-black bg-blue-100 text-blue-800 tracking-wider">
-              ISO
-            </span>
-          </div>
-        </div>
+        <button type="button" className="iso-brand" onClick={() => onSelectNav?.('dashboard')} aria-label="어니스톤 전체 현황">
+          <span className="iso-brand-mark"><ShieldCheck className="w-6 h-6" aria-hidden="true" /></span>
+          <span className="text-left"><span className="block text-lg font-bold tracking-tight">어니스톤</span><span className="block text-[11px] text-slate-500">인증 준비와 사후 관리</span></span>
+        </button>
       </div>
 
       {/* 2. Center: Google Drive Signature Huge Pill-shaped Search Bar */}
-      <div className="flex-1 max-w-2xl mx-4">
-        <div 
+      <div className="flex-1 min-w-0 max-w-2xl mx-2 hidden sm:block">
+        <div
           onClick={onOpenSearch}
-          className="w-full h-12 px-4 rounded-full bg-[#edf2fc] hover:bg-[#e1e9f8] hover:shadow-xs transition-all flex items-center justify-between cursor-pointer border border-transparent focus-within:border-slate-300 focus-within:bg-white focus-within:shadow-md"
+          className="w-full h-10 px-4 rounded-lg bg-slate-50 hover:bg-slate-100 hover:shadow-xs transition-all flex items-center justify-between cursor-pointer border border-transparent focus-within:border-slate-300 focus-within:bg-white focus-within:shadow-md"
         >
           <div className="flex items-center gap-3 flex-1">
             <div className="w-8 h-8 rounded-full flex items-center justify-center text-slate-600">
               <Search className="w-5 h-5" />
             </div>
             <span className="text-slate-600 text-[15px] font-normal select-none">
-              Drive에서 답변 받기 (문서 및 ISO 규격 조항 검색)
+              문서 및 ISO 규격 조항 검색
             </span>
           </div>
-          
+
           <div className="flex items-center gap-2">
-            <button 
+            <button
               onClick={(e) => {
                 e.stopPropagation();
                 onOpenSearch();
@@ -150,62 +136,17 @@ export default function Header({
 
       {/* 3. Right: Enterprise Tenant Chip + Google Workspace Controls */}
       <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
-        
-        {/* Tenant Switcher (Pill Chip) */}
-        <div className="relative" ref={dropdownRef}>
-          <button
-            onClick={() => setIsCompanyDropdownOpen(!isCompanyDropdownOpen)}
-            className="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white hover:bg-slate-100 border border-slate-200/90 text-xs font-semibold text-slate-700 shadow-2xs transition-all"
-          >
-            <div className="w-4 h-4 rounded-full bg-blue-600 text-white flex items-center justify-center text-[9px] font-black">
-              {currentCompany?.name?.charAt(0) || '아'}
-            </div>
-            <span className="truncate max-w-[130px] hidden md:inline">
-              {currentCompany?.name || '(주)아이소에듀'}
-            </span>
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-            <ChevronDown className="w-3 h-3 text-slate-400" />
-          </button>
 
-          {/* Tenant Dropdown */}
-          {isCompanyDropdownOpen && (
-            <div className="absolute right-0 mt-2 w-64 bg-white rounded-2xl shadow-xl border border-slate-200 p-2 z-50 animate-scale-up">
-              <div className="px-3 py-1.5 text-[10px] font-bold text-slate-400 uppercase tracking-wider">
-                관리 테넌트 전환
-              </div>
-              <div className="space-y-0.5">
-                {INITIAL_COMPANIES.map((comp) => (
-                  <button
-                    key={comp.id}
-                    onClick={() => {
-                      onSelectCompany(comp);
-                      setIsCompanyDropdownOpen(false);
-                    }}
-                    className={`w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs transition-colors ${
-                      currentCompany?.id === comp.id
-                        ? 'bg-blue-50 text-blue-800 font-bold'
-                        : 'text-slate-700 hover:bg-slate-50'
-                    }`}
-                  >
-                    <div className="text-left truncate">
-                      <div>{comp.name}</div>
-                      <div className="text-[10px] text-slate-400">{comp.industry}</div>
-                    </div>
-                    {currentCompany?.id === comp.id && <Check className="w-4 h-4 text-blue-600" />}
-                  </button>
-                ))}
-              </div>
-            </div>
-          )}
-        </div>
+        {/* Tenant Switcher (Pill Chip) */}
+        <CompanySwitcher companies={companies} currentCompany={currentCompany} onSelectCompany={onSelectCompany}/>
 
         {/* Gemini / AI Assistant Sparkle Button */}
         <button
           onClick={onToggleAiPanel}
           title="Gemini AI 규격 어시스턴트"
           className={`p-2.5 rounded-full transition-all ${
-            isAiPanelOpen 
-              ? 'bg-purple-100 text-purple-700 ring-2 ring-purple-400' 
+            isAiPanelOpen
+              ? 'bg-purple-100 text-purple-700 ring-2 ring-purple-400'
               : 'hover:bg-slate-200/70 text-slate-600'
           }`}
         >
@@ -213,7 +154,7 @@ export default function Header({
         </button>
 
         {/* Help Icon -> Opens Help Modal */}
-        <button 
+        <button
           onClick={() => setIsHelpModalOpen(true)}
           title="지원 및 고객센터"
           className="p-2.5 rounded-full hover:bg-slate-200/70 text-slate-600 transition-colors"
@@ -222,7 +163,7 @@ export default function Header({
         </button>
 
         {/* Settings Icon -> Opens Settings Modal */}
-        <button 
+        <button
           onClick={() => setIsSettingsModalOpen(true)}
           title="환경설정 및 알림 기준"
           className="p-2.5 rounded-full hover:bg-slate-200/70 text-slate-600 transition-colors"
@@ -232,9 +173,9 @@ export default function Header({
 
         {/* Google 9-Dots Apps Icon -> Opens Apps Dropdown */}
         <div className="relative" ref={appsRef}>
-          <button 
+          <button
             onClick={() => setIsAppsDropdownOpen(!isAppsDropdownOpen)}
-            title="Google Workspace & ISO 앱스"
+            title="어니스톤 도구"
             className="p-2.5 rounded-full hover:bg-slate-200/70 text-slate-600 transition-colors"
           >
             <Grid className="w-5 h-5" />
@@ -243,10 +184,10 @@ export default function Header({
           {isAppsDropdownOpen && (
             <div className="absolute right-0 mt-2 w-80 bg-white rounded-2xl shadow-2xl border border-slate-200 p-4 z-50 animate-scale-up">
               <div className="text-xs font-bold text-slate-500 mb-3 uppercase tracking-wider">
-                ISO EDU Enterprise Suite
+                어니스톤 서비스
               </div>
               <div className="grid grid-cols-3 gap-3 text-center">
-                <div 
+                <div
                   onClick={() => {
                     setIsAppsDropdownOpen(false);
                     onSelectNav && onSelectNav('drive');
@@ -259,7 +200,7 @@ export default function Header({
                   <span className="text-xs font-semibold text-slate-800">AI 드라이브</span>
                 </div>
 
-                <div 
+                <div
                   onClick={() => {
                     setIsAppsDropdownOpen(false);
                     onSelectNav && onSelectNav('radar');
@@ -272,7 +213,7 @@ export default function Header({
                   <span className="text-xs font-semibold text-slate-800">만기 레이더</span>
                 </div>
 
-                <div 
+                <div
                   onClick={() => {
                     setIsAppsDropdownOpen(false);
                     onSelectNav && onSelectNav('dashboard');
@@ -285,7 +226,7 @@ export default function Header({
                   <span className="text-xs font-semibold text-slate-800">심사 대시보드</span>
                 </div>
 
-                <div 
+                <div
                   onClick={() => {
                     setIsAppsDropdownOpen(false);
                     onToggleAiPanel();
@@ -298,7 +239,7 @@ export default function Header({
                   <span className="text-xs font-semibold text-slate-800">AI 어시스턴트</span>
                 </div>
 
-                <div 
+                <div
                   onClick={() => {
                     setIsAppsDropdownOpen(false);
                     alert('KOITA 한국산업기술진흥협회 연구개발지원시스템 연동 포털로 이동합니다.');
@@ -311,7 +252,7 @@ export default function Header({
                   <span className="text-xs font-semibold text-slate-800">연구소 포털</span>
                 </div>
 
-                <div 
+                <div
                   onClick={() => {
                     setIsAppsDropdownOpen(false);
                     alert('KAB 한국인정지원센터 공식 인증서 조회 시스템으로 이동합니다.');
@@ -328,43 +269,103 @@ export default function Header({
           )}
         </div>
 
+        {/* Storage Sync Badge */}
+        <div className="hidden lg:flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200 shadow-2xs">
+          <Database className="w-3.5 h-3.5 text-emerald-600" />
+          <span>{isCloudMode ? 'Supabase 저장 모드' : '이 브라우저에 저장'}</span>
+        </div>
+
         {/* User Avatar -> Opens User Profile Menu */}
         <div className="ml-1 relative" ref={userRef}>
-          <div 
+          <button type="button" aria-label="계정 메뉴" aria-expanded={isUserMenuOpen}
             onClick={() => setIsUserMenuOpen(!isUserMenuOpen)}
-            className="w-9 h-9 rounded-full bg-[#e8710a] text-white flex items-center justify-center font-bold text-sm shadow-xs hover:ring-2 hover:ring-slate-300 transition-all cursor-pointer"
-            title="사용자 프로필: 홍준호 (품질경영본부)"
+            className="w-9 h-9 rounded-full bg-gradient-to-tr from-blue-600 to-indigo-600 text-white flex items-center justify-center font-bold text-xs shadow-xs hover:ring-2 hover:ring-blue-300 transition-all cursor-pointer"
+            title={`사용자 프로필: ${profile?.fullName || '회원'} (${profile?.title || '사용자'})`}
           >
-            준호
-          </div>
+            {profile?.fullName?.substring(0, 2) || '회원'}
+          </button>
 
           {isUserMenuOpen && (
-            <div className="absolute right-0 mt-2 w-72 bg-white rounded-2xl shadow-2xl border border-slate-200 p-4 z-50 animate-scale-up space-y-3">
+            <div className="absolute right-0 mt-2 w-80 bg-white rounded-2xl shadow-2xl border border-slate-200 p-4 z-50 animate-scale-up space-y-3">
               <div className="flex items-center gap-3 pb-3 border-b border-slate-100">
-                <div className="w-12 h-12 rounded-full bg-[#e8710a] text-white flex items-center justify-center font-bold text-base shadow-xs">
-                  준호
+                <div className="w-11 h-11 rounded-full bg-gradient-to-tr from-blue-600 to-indigo-600 text-white flex items-center justify-center font-bold text-sm shadow-xs">
+                  {profile?.fullName?.substring(0, 2) || '회원'}
                 </div>
-                <div>
-                  <div className="font-bold text-sm text-slate-900">홍준호 선임연구원</div>
-                  <div className="text-xs text-slate-400">품질경영본부 / 최고심사관</div>
-                  <div className="text-[11px] text-blue-600 font-medium">{currentCompany?.name}</div>
+                <div className="min-w-0 flex-1">
+                  <div className="font-bold text-sm text-slate-900 truncate">{profile?.fullName}</div>
+                  <div className="text-xs text-slate-500 truncate">{profile?.title}</div>
+                  <div className="text-[11px] text-blue-600 font-medium truncate">{currentCompany?.name || profile?.company?.name}</div>
                 </div>
               </div>
 
               <div className="space-y-1 text-xs">
                 <div className="flex items-center justify-between p-2 rounded-lg bg-slate-50 text-slate-700">
-                  <span>보안 등급</span>
+                  <span>보안 권한</span>
                   <span className="font-bold text-emerald-600 flex items-center gap-1">
-                    <ShieldCheck className="w-3.5 h-3.5" /> 최고관리자 (Level 5)
+                    <ShieldCheck className="w-3.5 h-3.5" /> {profile?.securityLevel || '로그인 필요'}
                   </span>
                 </div>
                 <div className="flex items-center justify-between p-2 rounded-lg bg-slate-50 text-slate-700">
                   <span>MFA 2단계 인증</span>
-                  <span className="font-bold text-emerald-600">활성화됨</span>
+                  <span className="font-bold text-emerald-600">{profile?.mfaEnabled ? '활성화됨' : '미설정'}</span>
                 </div>
               </div>
 
+              {/* Role Switcher */}
+              {isDemoMode && <div className="p-2.5 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5">
+                <div className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">
+                  시연 역할 즉시 전환
+                </div>
+                <div className="grid grid-cols-3 gap-1">
+                  <button
+                    type="button"
+                    onClick={() => switchDemoRole('ADMIN')}
+                    className={`py-1 px-1.5 rounded-md text-[10px] font-bold transition-all ${
+                      profile?.role === 'ADMIN'
+                        ? 'bg-blue-600 text-white shadow-2xs'
+                        : 'bg-white text-slate-600 hover:bg-slate-200'
+                    }`}
+                  >
+                    👑 최고관리
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => switchDemoRole('AUDITOR')}
+                    className={`py-1 px-1.5 rounded-md text-[10px] font-bold transition-all ${
+                      profile?.role === 'AUDITOR'
+                        ? 'bg-purple-600 text-white shadow-2xs'
+                        : 'bg-white text-slate-600 hover:bg-slate-200'
+                    }`}
+                  >
+                    🔍 KAB심사
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => switchDemoRole('MEMBER')}
+                    className={`py-1 px-1.5 rounded-md text-[10px] font-bold transition-all ${
+                      profile?.role === 'MEMBER'
+                        ? 'bg-emerald-600 text-white shadow-2xs'
+                        : 'bg-white text-slate-600 hover:bg-slate-200'
+                    }`}
+                  >
+                    🏢 기업실무
+                  </button>
+                </div>
+              </div>}
+
               <div className="pt-2 border-t border-slate-100 space-y-1">
+                <button
+                  onClick={() => {
+                    setIsUserMenuOpen(false);
+                    setIsAuthModalOpen(true);
+                  }}
+                  className="w-full flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-bold text-blue-600 hover:bg-blue-50 transition-colors"
+                >
+                  <LogIn className="w-3.5 h-3.5" />
+                  <span>회원 로그인 / 계정 전환</span>
+                </button>
+
+                {!isCloudMode && (
                 <button
                   onClick={() => {
                     setIsUserMenuOpen(false);
@@ -375,11 +376,12 @@ export default function Header({
                   <RefreshCw className="w-3.5 h-3.5" />
                   <span>데모 표준 데이터 초기화</span>
                 </button>
+                )}
 
                 <button
                   onClick={() => {
                     setIsUserMenuOpen(false);
-                    alert('로그아웃 시뮬레이션: 세션이 안전하게 유지됩니다.');
+                    logout();
                   }}
                   className="w-full flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-semibold text-slate-600 hover:bg-slate-100 transition-colors"
                 >
@@ -400,7 +402,7 @@ export default function Header({
             <div className="flex items-center justify-between border-b border-slate-100 pb-3">
               <h3 className="text-base font-bold text-slate-900 flex items-center gap-2">
                 <HelpCircle className="w-5 h-5 text-blue-600" />
-                <span>ISO EDU 고객지원 및 심사 핫라인</span>
+                <span>어니스톤 고객지원 및 심사 핫라인</span>
               </h3>
               <button onClick={() => setIsHelpModalOpen(false)} className="p-1 rounded-lg text-slate-400 hover:bg-slate-100">
                 <X className="w-5 h-5" />
@@ -468,18 +470,10 @@ export default function Header({
               </div>
 
               <div className="space-y-1.5">
-                <label className="font-bold text-slate-800 block">클라우드 실시간 동기화 (Supabase Realtime)</label>
-                <div className="flex items-center justify-between p-3 rounded-xl border border-slate-200 bg-slate-50">
-                  <div>
-                    <div className="font-bold text-slate-800">초저지연 24ms 무중단 자동 저장</div>
-                    <div className="text-[11px] text-slate-400">문서 편집 시 실시간으로 클라우드에 암호화 보관</div>
-                  </div>
-                  <input
-                    type="checkbox"
-                    checked={autoSyncEnabled}
-                    onChange={(e) => setAutoSyncEnabled(e.target.checked)}
-                    className="w-4 h-4 rounded text-blue-600 focus:ring-blue-500"
-                  />
+                <label className="font-bold text-slate-800 block">문서 저장 위치</label>
+                <div className="p-3 rounded-xl border border-slate-200 bg-slate-50">
+                  <div className="font-bold text-slate-800">{isCloudMode ? 'Supabase' : '이 브라우저'}</div>
+                  <div className="text-[11px] text-slate-500">편집기의 저장 버튼으로 변경 내용을 저장합니다.</div>
                 </div>
               </div>
             </div>
@@ -504,6 +498,12 @@ export default function Header({
           </div>
         </div>
       )}
+
+      {/* 5. Auth & Membership Modal */}
+      <AuthModal
+        isOpen={isAuthModalOpen}
+        onClose={() => setIsAuthModalOpen(false)}
+      />
 
     </header>
   );

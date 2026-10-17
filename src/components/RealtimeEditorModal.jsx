@@ -1,56 +1,121 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { 
-  X, 
-  Wifi, 
-  Share2, 
-  Save, 
-  Clock, 
-  Star, 
-  ChevronDown, 
-  Bold, 
-  Italic, 
-  Underline, 
-  Strikethrough, 
-  AlignLeft, 
-  AlignCenter, 
-  AlignRight, 
-  List, 
-  ListOrdered, 
-  Link, 
-  Sparkles, 
-  CheckCircle2, 
-  Copy, 
-  FileText, 
-  Printer, 
-  Download, 
-  ShieldAlert, 
-  CheckSquare, 
-  Square, 
-  Trash2, 
-  Award, 
-  BookOpen, 
+import {
+  X,
+  Wifi,
+  Share2,
+  Save,
+  Clock,
+  Star,
+  ChevronDown,
+  Bold,
+  Italic,
+  Underline,
+  Strikethrough,
+  AlignLeft,
+  AlignCenter,
+  AlignRight,
+  List,
+  ListOrdered,
+  Link,
+  Sparkles,
+  CheckCircle2,
+  Copy,
+  FileText,
+  Printer,
+  Download,
+  ShieldAlert,
+  CheckSquare,
+  Square,
+  Trash2,
+  Award,
+  BookOpen,
   GitPullRequest,
   Check,
   AlertTriangle,
-  RotateCcw
+  RotateCcw,
+  Database,
+  UploadCloud,
+  FileCheck,
+  Lock,
+  ShieldCheck,
+  ExternalLink
 } from 'lucide-react';
+import { uploadDocumentFile, listDocumentFiles, getSecureDownloadUrl } from '../lib/storageVault';
+import { isCloudMode } from '../lib/dataConfig';
+import { useAuth } from '../context/AuthContext';
 
-export default function RealtimeEditorModal({ 
-  doc, 
-  isOpen, 
-  onClose, 
-  onSave, 
-  onToggleChecklist, 
-  onDeleteDocument 
+export default function RealtimeEditorModal({
+  doc,
+  isOpen,
+  onClose,
+  onSave,
+  onToggleChecklist,
+  onDeleteDocument
 }) {
-  const [activeTab, setActiveTab] = useState('preview'); // 'preview' (정식 서식 뷰) | 'edit' (실시간 편집기) | 'audit' (AI 규격 감사)
+  const [activeTab, setActiveTab] = useState('preview'); // 'preview' | 'edit' | 'audit' | 'vault'
   const [content, setContent] = useState('');
   const [isRealtimePopupOpen, setIsRealtimePopupOpen] = useState(false);
   const [isCopied, setIsCopied] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
   const [isAiPolishing, setIsAiPolishing] = useState(false);
+
+  // Enterprise Storage Vault & Revision States
+  const { profile } = useAuth();
+  const [attachedFiles, setAttachedFiles] = useState([]);
+  const [isUploading, setIsUploading] = useState(false);
+  const [uploadError, setUploadError] = useState(null);
+  const revisions = attachedFiles.map(file => ({
+    revNo: file.version, date: file.uploadedAt?.split('T')[0], reason: file.reason,
+    author: file.uploadedBy, approver: '승인 대기',
+  }));
+
+  useEffect(() => {
+    let cancelled = false;
+    setAttachedFiles([]);
+    setUploadError(null);
+    if (doc?.id && isOpen) {
+      listDocumentFiles(doc.companyId, doc.id).then(files => {
+        if (!cancelled) setAttachedFiles(files);
+      }).catch(error => { if (!cancelled) setUploadError(error.message); });
+    }
+    return () => { cancelled = true; };
+  }, [doc?.id, doc?.companyId, isOpen, profile?.id]);
+
+  const handleDownload = async file => {
+    try {
+      const url = await getSecureDownloadUrl(file.filePath);
+      const anchor = document.createElement('a');
+      anchor.href = url;
+      anchor.download = file.fileName;
+      anchor.target = '_blank';
+      anchor.rel = 'noopener';
+      anchor.click();
+      if (url.startsWith('blob:')) setTimeout(() => URL.revokeObjectURL(url), 60000);
+    } catch (error) { setUploadError(error.message); }
+  };
+
+  const handleFileUpload = async (e) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    setUploadError(null);
+    setIsUploading(true);
+    try {
+      const res = await uploadDocumentFile(file, {
+        companyId: doc.companyId,
+        docId: doc.id,
+        version: Math.max(0, ...attachedFiles.map(file => file.version || 0)) + 1,
+        user: profile
+      });
+      if (res.success) setAttachedFiles(prev => [res, ...prev]);
+    } catch (err) {
+      setUploadError(err.message || '파일 업로드 중 오류가 발생했습니다.');
+    } finally {
+      setIsUploading(false);
+      e.target.value = '';
+    }
+  };
 
   useEffect(() => {
     if (doc) {
@@ -66,12 +131,10 @@ export default function RealtimeEditorModal({
     setTimeout(() => setIsCopied(false), 2000);
   };
 
-  const handleSave = () => {
+  const handleSave = async () => {
     setIsSaving(true);
-    setTimeout(() => {
-      setIsSaving(false);
-      onSave && onSave(doc.id, content);
-    }, 500);
+    try { await onSave?.(doc.id, content); }
+    finally { setIsSaving(false); }
   };
 
   const handlePrint = () => {
@@ -106,16 +169,16 @@ export default function RealtimeEditorModal({
   return (
     <div className="fixed inset-0 z-50 bg-slate-900/70 backdrop-blur-xs flex items-center justify-center p-2 sm:p-4 animate-fade-in print:p-0 print:bg-white">
       <div className="bg-[#f8fafd] w-full max-w-6xl h-[94vh] rounded-2xl shadow-2xl border border-slate-200 flex flex-col overflow-hidden animate-scale-up print:h-auto print:border-none print:shadow-none">
-        
+
         {/* 1. Google Docs Master Header */}
         <div className="h-16 border-b border-slate-200/90 px-4 sm:px-6 flex items-center justify-between bg-white shrink-0 print:hidden">
-          
+
           {/* Left: Document Identity & Breadcrumb */}
           <div className="flex items-center gap-3 min-w-0">
             <div className="w-9 h-9 rounded-lg bg-blue-600 text-white flex items-center justify-center shrink-0 shadow-xs">
               <FileText className="w-5 h-5" />
             </div>
-            
+
             <div className="min-w-0">
               <div className="flex items-center gap-2">
                 <span className="font-bold text-slate-900 text-sm sm:text-base truncate max-w-xs sm:max-w-md">
@@ -139,7 +202,7 @@ export default function RealtimeEditorModal({
                 <span>•</span>
                 <span className="text-emerald-600 font-medium flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5" />
-                  클라우드 자동저장됨
+                  {isSaving ? '저장 중...' : content !== (doc.contentDraft || doc.content || '') ? '저장하지 않은 변경' : '저장 버튼으로 변경 반영'}
                 </span>
               </div>
             </div>
@@ -147,7 +210,7 @@ export default function RealtimeEditorModal({
 
           {/* Right: Actions & Realtime Pulse */}
           <div className="flex items-center gap-2 sm:gap-3 shrink-0">
-            
+
             {/* Realtime Status Indicator */}
             <div className="relative hidden md:block">
               <button
@@ -155,8 +218,8 @@ export default function RealtimeEditorModal({
                 className="flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200 hover:bg-emerald-100 transition-all shadow-2xs"
               >
                 <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                <span>실시간 동기화</span>
-                <span className="font-mono text-[10px] text-emerald-800">24ms</span>
+                <span>{isCloudMode ? 'Supabase 저장' : '브라우저 저장'}</span>
+
                 <ChevronDown className="w-3 h-3 text-emerald-600" />
               </button>
 
@@ -170,10 +233,10 @@ export default function RealtimeEditorModal({
                     <span className="text-[10px] text-slate-400">채널 정상</span>
                   </div>
                   <div className="space-y-1.5 text-[11px] text-slate-600">
-                    <div className="flex justify-between"><span>상태:</span><b className="text-emerald-600">SUBSCRIBED</b></div>
-                    <div className="flex justify-between"><span>지연시간:</span><b>24 ms</b></div>
+                    <div className="flex justify-between"><span>상태:</span><b className="text-emerald-600">{isCloudMode ? 'Supabase 저장' : '브라우저 저장'}</b></div>
+
                     <div className="flex justify-between"><span>문서 채널:</span><b className="font-mono text-[10px]">realtime:doc:{doc.code}</b></div>
-                    <div className="flex justify-between"><span>암호화:</span><b>AES-256 Cloud Vault</b></div>
+
                   </div>
                 </div>
               )}
@@ -210,6 +273,7 @@ export default function RealtimeEditorModal({
             {/* Close Button */}
             <button
               onClick={onClose}
+            aria-label="닫기"
               className="p-2 rounded-lg text-slate-400 hover:text-slate-700 hover:bg-slate-100 transition-colors"
             >
               <X className="w-5 h-5" />
@@ -221,14 +285,14 @@ export default function RealtimeEditorModal({
 
         {/* 2. Sub-Toolbar: Mode Tabs & WYSIWYG Control */}
         <div className="h-11 border-b border-slate-200 px-6 flex items-center justify-between bg-white text-xs shrink-0 print:hidden">
-          
+
           {/* Mode Tabs */}
           <div className="flex items-center gap-1 bg-[#edf2fc] p-1 rounded-lg">
             <button
               onClick={() => setActiveTab('preview')}
               className={`px-3 py-1 rounded-md font-bold transition-all flex items-center gap-1.5 ${
-                activeTab === 'preview' 
-                  ? 'bg-white text-blue-700 shadow-2xs' 
+                activeTab === 'preview'
+                  ? 'bg-white text-blue-700 shadow-2xs'
                   : 'text-slate-600 hover:text-slate-900'
               }`}
             >
@@ -239,8 +303,8 @@ export default function RealtimeEditorModal({
             <button
               onClick={() => setActiveTab('edit')}
               className={`px-3 py-1 rounded-md font-bold transition-all flex items-center gap-1.5 ${
-                activeTab === 'edit' 
-                  ? 'bg-white text-blue-700 shadow-2xs' 
+                activeTab === 'edit'
+                  ? 'bg-white text-blue-700 shadow-2xs'
                   : 'text-slate-600 hover:text-slate-900'
               }`}
             >
@@ -251,13 +315,25 @@ export default function RealtimeEditorModal({
             <button
               onClick={() => setActiveTab('audit')}
               className={`px-3 py-1 rounded-md font-bold transition-all flex items-center gap-1.5 ${
-                activeTab === 'audit' 
-                  ? 'bg-white text-purple-700 shadow-2xs' 
+                activeTab === 'audit'
+                  ? 'bg-white text-purple-700 shadow-2xs'
                   : 'text-slate-600 hover:text-slate-900'
               }`}
             >
               <Sparkles className="w-3.5 h-3.5 text-purple-600" />
-              <span>🤖 AI 규격 진단 & 감사</span>
+              <span>🤖 AI 규격 진단</span>
+            </button>
+
+            <button
+              onClick={() => setActiveTab('vault')}
+              className={`px-3 py-1 rounded-md font-bold transition-all flex items-center gap-1.5 ${
+                activeTab === 'vault'
+                  ? 'bg-white text-emerald-700 shadow-2xs'
+                  : 'text-slate-600 hover:text-slate-900'
+              }`}
+            >
+              <Database className="w-3.5 h-3.5 text-emerald-600" />
+              <span>🗄️ 보안 볼트 & 파일</span>
             </button>
           </div>
 
@@ -275,11 +351,11 @@ export default function RealtimeEditorModal({
 
         {/* 3. Main Body Canvas */}
         <div className="flex-1 bg-slate-100 overflow-y-auto p-4 sm:p-8 flex justify-center">
-          
+
           {/* TAB 1: Formal A4 Document Preview Mode */}
           {activeTab === 'preview' && (
             <div className="bg-white w-full max-w-4xl min-h-full rounded-2xl shadow-lg border border-slate-200/80 p-8 sm:p-12 space-y-8 print:p-0 print:shadow-none print:border-none print:max-w-none">
-              
+
               {/* Header: Company Name & Document Title */}
               <div className="border-b-2 border-slate-900 pb-5">
                 <div className="flex items-center justify-between text-xs text-slate-400 font-semibold mb-1">
@@ -298,7 +374,7 @@ export default function RealtimeEditorModal({
 
               {/* Official Approval Table (결재선) */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                
+
                 {/* Left: Document Control Table */}
                 <table className="w-full text-xs border border-slate-300 text-slate-700">
                   <tbody>
@@ -445,49 +521,49 @@ export default function RealtimeEditorModal({
           {/* TAB 2: Full Editable Docs Editor Mode */}
           {activeTab === 'edit' && (
             <div className="bg-white w-full max-w-4xl min-h-full rounded-2xl shadow-lg border border-slate-200 p-8 flex flex-col">
-              
+
               {/* Docs Editing Toolbar */}
               <div className="flex items-center gap-1 border-b border-slate-200 pb-3 mb-4 text-slate-600 text-xs overflow-x-auto">
                 <span className="font-bold text-slate-900 mr-2">편집 도구</span>
-                <button 
-                  onClick={() => setContent(prev => prev + '\n**[강조 조항]** ')} 
-                  title="굵게 (Bold)" 
+                <button
+                  onClick={() => setContent(prev => prev + '\n**[강조 조항]** ')}
+                  title="굵게 (Bold)"
                   className="p-1.5 rounded hover:bg-slate-100 cursor-pointer"
                 >
                   <Bold className="w-3.5 h-3.5" />
                 </button>
-                <button 
-                  onClick={() => setContent(prev => prev + '\n*[참고 사항]* ')} 
-                  title="기울임 (Italic)" 
+                <button
+                  onClick={() => setContent(prev => prev + '\n*[참고 사항]* ')}
+                  title="기울임 (Italic)"
                   className="p-1.5 rounded hover:bg-slate-100 cursor-pointer"
                 >
                   <Italic className="w-3.5 h-3.5" />
                 </button>
-                <button 
-                  onClick={() => setContent(prev => prev + '\n<u>[필수 이행 사항]</u> ')} 
-                  title="밑줄 (Underline)" 
+                <button
+                  onClick={() => setContent(prev => prev + '\n<u>[필수 이행 사항]</u> ')}
+                  title="밑줄 (Underline)"
                   className="p-1.5 rounded hover:bg-slate-100 cursor-pointer"
                 >
                   <Underline className="w-3.5 h-3.5" />
                 </button>
                 <div className="h-4 w-px bg-slate-200 mx-1"></div>
-                <button 
-                  onClick={() => setContent(prev => prev + '\n- 필수 점검 항목: ')} 
-                  title="글머리 기호 목록" 
+                <button
+                  onClick={() => setContent(prev => prev + '\n- 필수 점검 항목: ')}
+                  title="글머리 기호 목록"
                   className="p-1.5 rounded hover:bg-slate-100 cursor-pointer"
                 >
                   <List className="w-3.5 h-3.5" />
                 </button>
-                <button 
-                  onClick={() => setContent(prev => prev + '\n1. 제1항: \n2. 제2항: ')} 
-                  title="번호 매기기 목록" 
+                <button
+                  onClick={() => setContent(prev => prev + '\n1. 제1항: \n2. 제2항: ')}
+                  title="번호 매기기 목록"
                   className="p-1.5 rounded hover:bg-slate-100 cursor-pointer"
                 >
                   <ListOrdered className="w-3.5 h-3.5" />
                 </button>
-                <button 
-                  onClick={() => setContent(prev => prev + '\n### 제 조 (신설 조항)\n')} 
-                  title="조항 헤딩 추가" 
+                <button
+                  onClick={() => setContent(prev => prev + '\n### 제 조 (신설 조항)\n')}
+                  title="조항 헤딩 추가"
                   className="px-2 py-1 rounded hover:bg-slate-100 cursor-pointer font-bold text-[11px]"
                 >
                   + 조항 추가
@@ -522,7 +598,7 @@ export default function RealtimeEditorModal({
           {/* TAB 3: AI Compliance Audit & Gap Analysis */}
           {activeTab === 'audit' && (
             <div className="bg-white w-full max-w-4xl min-h-full rounded-2xl shadow-lg border border-slate-200 p-8 space-y-6">
-              
+
               <div className="flex items-center justify-between border-b pb-4">
                 <div>
                   <h2 className="text-xl font-black text-slate-900 flex items-center gap-2">
@@ -580,6 +656,143 @@ export default function RealtimeEditorModal({
                   <Sparkles className="w-3.5 h-3.5" />
                   <span>AI 조항 자동 완성 적용</span>
                 </button>
+              </div>
+
+            </div>
+          )}
+
+          {/* TAB 4: Enterprise Storage Vault & File Attachments */}
+          {activeTab === 'vault' && (
+            <div className="bg-white w-full max-w-4xl min-h-full rounded-2xl shadow-lg border border-slate-200 p-8 space-y-6">
+
+              <div className="flex items-center justify-between border-b pb-4">
+                <div>
+                  <h2 className="text-xl font-black text-slate-900 flex items-center gap-2">
+                    <Database className="w-5 h-5 text-emerald-600" />
+                    문서 보안 스토리지 볼트 (Vault)
+                  </h2>
+                  <p className="text-xs text-slate-500 mt-1">
+                    원본 파일과 등록 이력을 함께 보관합니다.
+                  </p>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="px-3 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200 flex items-center gap-1.5">
+                    <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
+                    <span>{isCloudMode ? '회사별 접근 권한 적용' : '이 브라우저에 보관'}</span>
+                  </span>
+                </div>
+              </div>
+
+              {/* Upload Dropzone */}
+              <div className="p-6 rounded-2xl border-2 border-dashed border-slate-200 hover:border-emerald-400 bg-slate-50/50 hover:bg-emerald-50/20 transition-all text-center">
+                <input
+                  type="file"
+                  id="vault-file-input"
+                  className="hidden"
+                  onChange={handleFileUpload}
+                  accept=".pdf,.doc,.docx,.xls,.xlsx,.hwp,.png,.jpg,.jpeg"
+                  disabled={isUploading}
+                />
+                <label
+                  htmlFor="vault-file-input"
+                  className="cursor-pointer flex flex-col items-center justify-center space-y-2"
+                >
+                  <div className="w-12 h-12 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center shadow-xs">
+                    <UploadCloud className="w-6 h-6" />
+                  </div>
+                  <div className="text-sm font-bold text-slate-800">
+                    {isUploading ? '파일 저장 및 SHA-256 계산 중...' : '클릭하여 인증서/규격 원본 파일 업로드'}
+                  </div>
+                  <p className="text-xs text-slate-400">
+                    PDF, HWP, Word, Excel, 이미지 지원 (최대 50MB / SHA-256 해시 기록)
+                  </p>
+                </label>
+
+                {uploadError && (
+                  <div className="mt-3 p-2.5 rounded-lg bg-rose-50 border border-rose-200 text-rose-700 text-xs font-medium">
+                    {uploadError}
+                  </div>
+                )}
+              </div>
+
+              {/* Attached Files List */}
+              <div className="space-y-3">
+                <h4 className="text-xs font-bold text-slate-700 uppercase tracking-wider flex items-center gap-1.5">
+                  <FileCheck className="w-4 h-4 text-emerald-600" />
+                  보관 중인 정식 규격 원본 파일 ({attachedFiles.length}건)
+                </h4>
+
+                <div className="space-y-2">
+                  {attachedFiles.map((f) => (
+                    <div
+                      key={f.id}
+                      className="p-3.5 rounded-xl border border-slate-200 hover:border-slate-300 bg-white flex items-center justify-between transition-all shadow-2xs"
+                    >
+                      <div className="flex items-center gap-3 min-w-0">
+                        <div className="w-9 h-9 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center font-bold text-xs shrink-0">
+                          {f.fileName.split('.').pop()?.toUpperCase() || 'FILE'}
+                        </div>
+                        <div className="min-w-0">
+                          <div className="font-bold text-xs text-slate-900 truncate">{f.fileName}</div>
+                          <div className="text-[11px] text-slate-400 flex items-center gap-2 mt-0.5">
+                            <span>{(f.fileSize / (1024 * 1024)).toFixed(2)} MB</span>
+                            <span>•</span>
+                            <span>업로드: {f.uploadedAt}</span>
+                            <span>•</span>
+                            <span>등록자: {f.uploadedBy}</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="flex items-center gap-2 shrink-0">
+                        <span className="hidden sm:inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-mono bg-slate-100 text-slate-600 border border-slate-200">
+                          <Lock className="w-2.5 h-2.5 text-emerald-600" /> SHA-256 기록
+                        </span>
+                        <button
+                          type="button"
+                          onClick={() => handleDownload(f)}
+                          className="px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold flex items-center gap-1 transition-colors"
+                        >
+                          <Download className="w-3.5 h-3.5" />
+                          <span>다운로드</span>
+                        </button>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Revision History Table */}
+              <div className="space-y-3 pt-2">
+                <h4 className="text-xs font-bold text-slate-700 uppercase tracking-wider flex items-center gap-1.5">
+                  <GitPullRequest className="w-4 h-4 text-blue-600" />
+                  ISO 9001 문서 제/개정 이력 (Revision History)
+                </h4>
+
+                <div className="border border-slate-200 rounded-xl overflow-hidden text-xs">
+                  <table className="w-full text-left">
+                    <thead className="bg-slate-50 border-b border-slate-200 font-bold text-slate-600">
+                      <tr>
+                        <th className="py-2 px-3">개정 번호</th>
+                        <th className="py-2 px-3">개정 일자</th>
+                        <th className="py-2 px-3">개정 사유 및 주요 변경 내용</th>
+                        <th className="py-2 px-3">기안자</th>
+                        <th className="py-2 px-3">승인권자</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-slate-100">
+                      {revisions.map((rev, idx) => (
+                        <tr key={idx} className="hover:bg-slate-50/50">
+                          <td className="py-2.5 px-3 font-bold text-blue-600">Rev. {rev.revNo}</td>
+                          <td className="py-2.5 px-3 text-slate-500">{rev.date}</td>
+                          <td className="py-2.5 px-3 text-slate-800 font-medium">{rev.reason}</td>
+                          <td className="py-2.5 px-3 text-slate-600">{rev.author}</td>
+                          <td className="py-2.5 px-3 font-semibold text-emerald-600">{rev.approver}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
               </div>
 
             </div>

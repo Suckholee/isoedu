@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="어니스톤 AI 업무자동화 원데이 클래스 · 2교시 수강생 교재 및 강의 메인 스크린">
+<title>2교시 · 스마트폰 사진 3장으로 네이버 상위노출 블로그 완성하기 | neoNpeter 이석호 대표</title>
+<style>
+:root{
+  --green:#03C75A;--green2:#029D46;--navy:#0C1E38;--navy2:#162E52;
+  --gold:#C8A44D;--gold2:#E3C67B;--ivory:#F8F7F2;--ink:#1C1C1C;
+  --mut:#586071;--ln:#E4DDD0;--ok:#1D7347;--warn:#8D5B18;--stop:#933636
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:"Pretendard","Noto Sans KR","Malgun Gothic",-apple-system,sans-serif;
+  background:#0B1728;color:var(--ink);line-height:1.6;-webkit-text-size-adjust:100%;
+  height:100vh;overflow:hidden;
+}
+
+/* ── 인증 게이트 모달 (0922) ── */
+#gate{position:fixed;inset:0;background:var(--navy);z-index:999;display:flex;align-items:center;justify-content:center;padding:24px}
+#gate .box{max-width:380px;width:100%;text-align:center;color:#fff;background:rgba(22,46,82,0.6);border:1px solid #2B4E7C;padding:32px 28px;border-radius:20px;box-shadow:0 20px 40px rgba(0,0,0,0.45)}
+#gate .logo{width:56px;height:56px;border-radius:14px;background:var(--green);color:#fff;font-weight:900;font-size:26px;line-height:56px;margin:0 auto 16px;box-shadow:0 4px 14px rgba(3,199,90,0.35)}
+#gate h1{font-size:22px;margin-bottom:8px;font-weight:800}
+#gate p{color:#A9BDD4;font-size:13.5px;margin-bottom:20px;line-height:1.5}
+#gate .input-wrap{position:relative}
+#gate input{width:100%;padding:15px;border-radius:12px;border:2px solid #2B4E7C;background:#122541;color:#fff;font-size:24px;text-align:center;letter-spacing:.35em;font-weight:800;transition:all .2s}
+#gate input:focus{border-color:var(--green);outline:none;background:#173055}
+#gate button.go-btn{width:100%;margin-top:12px;padding:15px;border:0;border-radius:12px;background:var(--green);color:#fff;font-weight:900;font-size:16px;cursor:pointer;font-family:inherit;transition:background .2s}
+#gate button.go-btn:hover{background:var(--green2)}
+#gate .err{color:#F5A8A8;font-size:13px;margin-top:12px;min-height:18px;font-weight:600}
+#gate .presenter-hint{margin-top:18px;padding-top:14px;border-top:1px dashed #2B4E7C;font-size:12px;color:#859BB5}
+#gate .presenter-hint span{color:var(--gold2);font-weight:700}
+#gate .auto-btn{background:transparent;border:1px solid #365C8C;color:#A9BDD4;padding:6px 12px;border-radius:6px;font-size:11.5px;margin-top:8px;cursor:pointer}
+#gate .auto-btn:hover{background:#1B3A63;color:#fff}
+
+/* ── 메인 앱 컨테이너 (PPT 풀스크린 프레임) ── */
+#app{display:flex;flex-direction:column;height:100vh;overflow:hidden;background:#0B1728}
+
+/* ── PPT 상단 슬라이드 마스터 바 ── */
+#bar{
+  height:44px;flex-shrink:0;z-index:90;
+  background:#0C1E38;border-bottom:1px solid rgba(255,255,255,0.1);
+  display:flex;align-items:center;justify-content:space-between;gap:12px;padding:0 20px;
+  color:#fff;
+}
+#bar .brand-badge{
+  display:flex;align-items:center;gap:10px;font-size:13px;font-weight:800;letter-spacing:-.01em;
+}
+#bar .session-tag{
+  background:var(--green);color:#fff;font-size:11px;font-weight:900;padding:2px 7px;border-radius:4px;
+}
+#bar .pin-pill{
+  background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);
+  color:#A9BDD4;font-size:11.5px;padding:2px 8px;border-radius:4px;display:flex;gap:5px;align-items:center;
+}
+#bar .pin-pill strong{color:var(--gold2);letter-spacing:.05em}
+
+#bar .now{font-size:13.5px;font-weight:700;color:#E1E9F4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#bar .now span{color:var(--green);font-weight:900;margin-right:6px}
+#bar .actions{display:flex;gap:8px;align-items:center}
+#bar .tbtn{background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:#fff;padding:4px 10px;border-radius:6px;font-size:12px;font-weight:800;cursor:pointer;display:inline-flex;align-items:center;gap:5px;transition:all .15s}
+#bar .tbtn:hover{background:rgba(255,255,255,0.2);border-color:var(--green)}
+#bar .tbtn.active{background:var(--green);color:#fff;border-color:var(--green)}
+#bar .zoom{display:flex;gap:3px;align-items:center}
+#bar button.zbtn{font:inherit;font-size:12px;font-weight:800;width:28px;height:28px;border-radius:6px;border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.08);color:#fff;cursor:pointer;line-height:1}
+#bar button.zbtn:hover{background:rgba(255,255,255,0.2);border-color:var(--green)}
+#bar .lvl{font-size:11px;color:#A9BDD4;min-width:28px;text-align:center;font-weight:700}
+
+/* ── 미니멀 인라인 타이머 배너 ── */
+#timerBanner{display:none;background:#132A4A;border-bottom:2px solid var(--green);padding:6px 20px;align-items:center;justify-content:space-between;gap:16px;color:#fff}
+#timerBanner.on{display:flex}
+#timerBanner .t-info{display:flex;align-items:center;gap:8px}
+#timerBanner .t-tag{background:var(--green);color:#fff;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:900}
+#timerBanner .t-txt{font-size:12.5px;font-weight:700;color:#E1E9F4}
+#timerBanner .t-clock{font-size:22px;font-weight:900;color:#62E59E;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+#timerBanner .t-ctrls{display:flex;gap:5px}
+#timerBanner button{font:inherit;font-size:11.5px;font-weight:800;padding:4px 10px;border-radius:5px;border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.1);color:#fff;cursor:pointer}
+#timerBanner button:hover{background:rgba(255,255,255,0.25)}
+#timerBanner button.primary{background:var(--green);color:#fff;border-color:var(--green)}
+
+/* ── PPT 슬라이드 메인 스테이지 ── */
+.layout{
+  flex:1;min-height:0;width:100%;max-width:100%;
+  display:grid;grid-template-columns:190px 1fr;
+  background:#0B1728;overflow:hidden;
+}
+
+/* 슬라이드 썸네일 목차 (PPT 좌측 슬라이드 목록 스타일) */
+nav{
+  background:#0E1B2E;border-right:1px solid rgba(255,255,255,0.08);
+  padding:14px 10px;overflow-y:auto;
+}
+nav .t{font-size:10.5px;letter-spacing:.12em;color:var(--green);font-weight:900;margin:10px 0 5px;padding-left:6px;text-transform:uppercase}
+nav a{
+  display:block;font-size:12.5px;color:#8E9CAE;text-decoration:none;
+  padding:8px 10px;border-radius:6px;font-weight:600;margin-bottom:4px;
+  background:rgba(255,255,255,0.02);border:1px solid transparent;
+  transition:all .15s;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+nav a:hover{background:rgba(255,255,255,0.06);color:#fff}
+nav a.cur{background:rgba(3,199,90,0.15);border-color:var(--green);color:#fff;font-weight:800}
+nav a.cur:before{content:"▶ ";color:var(--green);font-size:10px}
+nav .allbtn{margin-top:14px;width:100%;font:inherit;font-size:11.5px;font-weight:800;padding:7px;border-radius:6px;border:1px solid rgba(255,255,255,0.15);background:transparent;color:#8E9CAE;cursor:pointer}
+nav .allbtn:hover{background:rgba(255,255,255,0.08);color:#fff}
+
+/* 슬라이드 본체 캔버스 */
+main{
+  background:#F8F7F2;flex:1;height:100%;
+  padding:20px 32px;overflow:hidden;
+  display:flex;flex-direction:column;justify-content:center;
+}
+#prog{height:3px;background:rgba(0,0,0,0.06);width:100%}
+#prog i{display:block;height:100%;background:var(--green);width:0;transition:width .2s ease}
+
+main section.pg{display:none;height:100%;width:100%;max-width:1440px;margin:0 auto;flex-direction:column;justify-content:center}
+main section.pg.on{display:flex;animation:fadeIn .18s ease-out}
+@keyframes fadeIn{from{opacity:0;transform:scale(0.995)}to{opacity:1;transform:scale(1)}}
+
+/* 슬라이드 내부 타이포그래피 (PPT 비율에 맞춤) */
+.slide-header{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:10px;border-bottom:2px solid var(--green);padding-bottom:6px;flex-shrink:0}
+h2{font-size:24px;color:var(--navy);letter-spacing:-.02em;font-weight:900;display:flex;align-items:baseline;gap:8px;margin:0}
+h2 .n{color:var(--green);font-size:15px;font-weight:900;letter-spacing:.08em}
+.slide-subtitle{font-size:13.5px;color:var(--mut);font-weight:600}
+h3{font-size:16px;color:var(--navy);margin:10px 0 6px;font-weight:800}
+p{font-size:14px;margin-bottom:8px;word-break:keep-all;line-height:1.6}
+
+/* 2열 슬라이드 레이아웃 그리드 (PPT 좌/우 분할 레이아웃) */
+.slide-grid-2{
+  display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:stretch;
+  flex:1;min-height:0;overflow:hidden;
+}
+.slide-col{
+  display:flex;flex-direction:column;justify-content:center;min-height:0;overflow:hidden;
+}
+
+/* ── 2교시 대기 화면 전용 카드 (PPT 1화면 최적화) ── */
+.welcome-hero{
+  background:linear-gradient(135deg,var(--navy) 0%,#162E52 100%);color:#fff;
+  border-radius:14px;padding:20px 24px;margin-bottom:14px;
+  box-shadow:0 8px 24px rgba(12,30,56,0.12);
+}
+.welcome-hero .tag-row{display:flex;gap:8px;margin-bottom:8px;align-items:center}
+.welcome-hero .tag-pill{background:var(--green);color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:900}
+.welcome-hero h1{font-size:24px;line-height:1.3;font-weight:900;margin-bottom:6px}
+.welcome-hero p.sub{font-size:13.5px;color:#A9BDD4;line-height:1.5}
+.pin-display-box{
+  background:#11233E;border:2px dashed var(--green);border-radius:10px;
+  padding:10px 18px;margin-top:12px;display:flex;align-items:center;justify-content:space-between;gap:12px;
+}
+.pin-display-box .lbl{font-size:12px;color:#859BB5;font-weight:700}
+.pin-display-box .code{font-size:28px;font-weight:900;color:#62E59E;letter-spacing:.2em;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+
+/* ── 실습 프롬프트 박스 (PPT 핏) ── */
+.prompt-box{border:1.5px solid var(--navy);border-radius:10px;overflow:hidden;margin:8px 0 0;background:#fff;display:flex;flex-direction:column;flex:1;min-height:0}
+.prompt-box .p-top{background:var(--navy);color:#fff;padding:8px 14px;display:flex;align-items:center;justify-content:space-between;font-size:12.5px;font-weight:800;flex-shrink:0}
+.prompt-box .p-top .copy-btn{background:var(--green);color:#fff;border:0;padding:5px 12px;border-radius:6px;font-size:11.5px;font-weight:900;cursor:pointer;transition:all .15s}
+.prompt-box .p-top .copy-btn:hover{background:var(--green2)}
+.prompt-box .p-top .copy-btn.done{background:var(--ok);color:#fff}
+.prompt-box pre{margin:0;padding:12px 14px;font-size:12.5px;line-height:1.65;white-space:pre-wrap;word-break:break-word;font-family:"D2Coding","Menlo","Consolas",monospace;color:#28303C;background:#fff;overflow-y:auto;flex:1}
+.prompt-box .token{color:var(--navy);font-weight:800;background:#E7F8EE;border-radius:4px;padding:1px 5px;border-bottom:2px solid #A1E6BE}
+
+/* ── 인라인 맞춤 입력 카드 ── */
+.custom-inline-card{background:#F0FAF4;border:1px solid #BEE7D1;border-radius:10px;padding:8px 14px;margin:6px 0;display:flex;align-items:center;gap:12px;flex-shrink:0}
+.custom-inline-card .desc{font-size:12px;font-weight:800;color:var(--navy);display:flex;align-items:center;gap:5px}
+.custom-inline-card .fields{display:flex;gap:8px;flex:1}
+.custom-inline-card input{flex:1;padding:6px 10px;border:1px solid #A6DEC0;border-radius:6px;font:inherit;font-size:12.5px;background:#fff;color:var(--ink)}
+.custom-inline-card input:focus{outline:0;border-color:var(--green)}
+
+/* ── Before vs After 탭 ── */
+.ba-container{border:1px solid var(--ln);border-radius:10px;overflow:hidden;margin:8px 0;display:flex;flex-direction:column;flex:1;min-height:0}
+.ba-tabs{display:flex;background:var(--ivory);border-bottom:1px solid var(--ln);flex-shrink:0}
+.ba-tab{flex:1;padding:9px;text-align:center;font-size:12.5px;font-weight:800;color:var(--mut);border:0;background:transparent;cursor:pointer;border-bottom:3px solid transparent}
+.ba-tab.active{color:var(--navy);background:#fff;border-bottom-color:var(--navy)}
+.ba-tab.before.active{border-bottom-color:var(--stop);color:var(--stop)}
+.ba-tab.after.active{border-bottom-color:var(--ok);color:var(--ok)}
+.ba-content{padding:14px;background:#fff;font-size:13px;line-height:1.65;overflow-y:auto;flex:1}
+.ba-content pre{white-space:pre-wrap;word-break:break-word;font-family:inherit;margin:0;font-size:13px}
+
+/* ── 공통 UI 컴포넌트 ── */
+.step{border:1px solid var(--ln);border-radius:10px;padding:12px 14px;margin-bottom:8px;background:#fff}
+.step .h{display:flex;gap:8px;align-items:baseline;margin-bottom:4px}
+.step .b{background:var(--navy);color:#fff;font-size:11px;font-weight:900;padding:2px 8px;border-radius:14px;white-space:nowrap}
+.step .ti{font-size:14.5px;font-weight:900;color:var(--navy)}
+.step p{font-size:13px;color:var(--mut);margin:0}
+
+.cal{border-radius:10px;padding:12px 16px;font-size:13px;margin:8px 0;line-height:1.6}
+.cal.warn{background:#FFF8E8;border:1px solid #EBD9A8;color:var(--warn)}
+.cal.tip{background:#EEF8F2;border:1px solid #C4E8D3;color:var(--ok)}
+.cal.stop{background:#FDF0EE;border:1px solid #F0CFC8;color:var(--stop)}
+.cal b{display:block;margin-bottom:4px;font-size:14px}
+
+/* 강사 소개 프로필 카드 (슬림 핏) */
+.instructor-profile-card{display:flex;gap:14px;align-items:center;background:#fff;border:1px solid var(--ln);border-radius:12px;padding:12px 16px;margin:8px 0;box-shadow:0 4px 12px rgba(12,30,56,0.03);flex-shrink:0}
+.instructor-profile-card .avatar-box{width:68px;height:68px;border-radius:50%;overflow:hidden;border:2.5px solid var(--green);flex-shrink:0;background:#EDE8DF}
+.instructor-profile-card .avatar-box img{width:100%;height:100%;object-fit:cover;object-position:center top}
+.instructor-profile-card .profile-info h4{font-size:15px;font-weight:900;color:var(--navy);margin:0 0 3px;display:flex;align-items:center;gap:6px}
+.instructor-profile-card .profile-info h4 span{font-size:11px;color:#fff;background:var(--navy);padding:2px 7px;border-radius:8px;font-weight:700}
+.instructor-profile-card .profile-info p{font-size:12px;color:var(--mut);margin:0;line-height:1.5}
+
+/* ── 강의 시각화 일러스트/이미지 전용 카드 (PPT 1화면 맞춤 높이 제어) ── */
+.lecture-fig{margin:8px 0;border:1px solid var(--ln);border-radius:12px;overflow:hidden;background:#fff;box-shadow:0 6px 18px rgba(12,30,56,0.04);display:flex;flex-direction:column;flex:1;min-height:0}
+.lecture-fig .fig-img-wrap{background:#0C1E38;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;flex:1;min-height:0}
+.lecture-fig img{width:100%;height:100%;max-height:42vh;object-fit:contain;display:block}
+.lecture-fig .fig-caption{padding:8px 14px;background:#FAFAF7;border-top:1px solid var(--ln);display:flex;align-items:center;justify-content:space-between;gap:10px;flex-shrink:0}
+.lecture-fig .fig-caption .cap-txt{font-size:12.5px;font-weight:700;color:var(--navy)}
+.lecture-fig .fig-caption .cap-sub{font-size:11.5px;color:var(--mut);font-weight:500}
+.lecture-fig .fig-badge{background:var(--green);color:#fff;font-size:10.5px;font-weight:800;padding:2px 8px;border-radius:8px;white-space:nowrap}
+
+/* ── PPT 하단 프레젠테이션 네비게이터 ── */
+#pager{
+  height:48px;flex-shrink:0;z-index:95;
+  background:#0C1E38;border-top:1px solid rgba(255,255,255,0.1);
+  display:flex;align-items:center;justify-content:space-between;gap:12px;padding:0 20px;
+  color:#fff;
+}
+#pager button{font:inherit;font-size:13px;font-weight:800;padding:7px 16px;border-radius:6px;border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.08);color:#fff;cursor:pointer;white-space:nowrap;transition:all .15s}
+#pager button:hover:not(:disabled){background:rgba(255,255,255,0.2);border-color:var(--green)}
+#pager button.main{background:var(--green);color:#fff;border-color:var(--green);min-width:140px}
+#pager button.main:hover{background:var(--green2)}
+#pager button:disabled{opacity:.3;cursor:default}
+#pager .ct{font-size:13.5px;color:#A9BDD4;font-variant-numeric:tabular-nums;white-space:nowrap;font-weight:800}
+#pager .key-hint{font-size:11.5px;color:#8E9CAE;margin-left:8px;font-weight:500}
+#pager .sp{flex:1}
+
+/* ── 줌 레벨 조정 ── */
+body.z1 main{font-size:1.05em}
+body.z2 main{font-size:1.15em}
+body.z3 main{font-size:1.25em}
+body.z2 nav,body.z3 nav{display:none}
+body.z2 .layout,body.z3 .layout{grid-template-columns:1fr}
+
+/* ── 전체보기 모드 (스크롤 활성화) ── */
+body.allmode, body.allmode #app{height:auto;overflow:auto}
+body.allmode .layout{grid-template-columns:1fr;overflow:visible;height:auto}
+body.allmode main{overflow:visible;height:auto;padding:36px}
+body.allmode main section.pg{display:block;margin-bottom:48px;border-bottom:2px solid var(--ln);padding-bottom:32px;height:auto}
+body.allmode #pager,body.allmode #prog{display:none}
+
+.hidden{display:none!important}
+@media(max-width:820px){
+  .layout{grid-template-columns:1fr}
+  nav{display:none}
+  .slide-grid-2{grid-template-columns:1fr;overflow-y:auto}
+  main section.pg{overflow-y:auto}
+}
+</style>
+</head>
+<body>
+
+<!-- ── 1. 인증번호 입력 게이트 (인증번호: 0922) ── -->
+<div id="gate">
+  <div class="box">
+    <div class="logo">N</div>
+    <h1>2교시 · 실습 교재</h1>
+    <p>강의 화면에 표시된 <strong>인증번호 4자리</strong>를 입력해 주세요.</p>
+    <div class="input-wrap">
+      <input id="pw" inputmode="numeric" maxlength="4" placeholder="0000" autocomplete="off" autofocus>
+    </div>
+    <button id="go" class="go-btn">들어가기</button>
+    <div class="err" id="err"></div>
+    <div class="presenter-hint">
+      강사/진행자용 인증번호: <span>0922</span><br>
+      <button class="auto-btn" id="quickEnterBtn">클릭하여 바로 메인 화면 열기</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── 2. 본문 앱 (PPT 프레임) ── -->
+<div id="app" class="hidden">
+
+<!-- PPT 상단 마스터 슬라이드 바 -->
+<div id="bar">
+  <div class="brand-badge">
+    <span class="session-tag">2교시</span>
+    <span>사진 3장으로 완성하는 네이버 상위노출 블로그</span>
+    <span class="pin-pill">접속 PIN <strong>0922</strong></span>
+  </div>
+  <div class="now"><span>SLIDE</span><em id="nowSec" style="font-style:normal">00 · 대기 &amp; 사전 확인</em></div>
+  <div class="actions">
+    <button id="timerToggleBtn" class="tbtn" title="사진 고르기 & 작성 5분 실습 타이머">⏱️ 5분 실습</button>
+    <div class="zoom">
+      <button id="zo" class="zbtn" title="글씨 작게">A−</button>
+      <div class="lvl" id="zl">기본</div>
+      <button id="zi" class="zbtn" title="글씨 크게">A+</button>
+    </div>
+  </div>
+</div>
+
+<!-- 상단 미니멀 타이머 배너 -->
+<div id="timerBanner">
+  <div class="t-info">
+    <span class="t-tag">실습 타이머</span>
+    <span class="t-txt">사진 3장 고르고 프롬프트 입력 실습</span>
+  </div>
+  <div class="t-clock" id="timerClock">05:00</div>
+  <div class="t-ctrls">
+    <button id="timerStartBtn" class="primary">시작</button>
+    <button id="timerResetBtn">초기화</button>
+    <button id="timerCloseBtn">닫기</button>
+  </div>
+</div>
+
+<div id="prog"><i></i></div>
+
+<div class="layout">
+<nav id="nav"></nav>
+
+<main>
+
+<!-- PAGE 0: 대기 & 사전 확인 (PPT 2열 핏) -->
+<section class="pg on" id="p_wait" data-g="시작 전" data-t="00 · 대기 &amp; 준비물 확인" data-live="1">
+  <div class="slide-header">
+    <h2><span class="n">00</span>2교시 시작 전 대기 &amp; 30초 준비물 체크</h2>
+    <span class="slide-subtitle">스마트폰 사진 3장이면 10분 만에 고효율 포스팅이 완성됩니다</span>
+  </div>
+
+  <div class="slide-grid-2">
+    <!-- 좌측 컬럼: 대기 카드 & PIN -->
+    <div class="slide-col">
+      <div class="welcome-hero">
+        <div class="tag-row">
+          <span class="tag-pill">2교시 오픈 대기</span>
+          <span style="font-size:12.5px;color:#A9BDD4;font-weight:600">neoNpeter 이석호 대표</span>
+        </div>
+        <h1>AI 네이버 블로그 마케팅 자동화<br>2교시: 사진 기반 상위노출 포스팅</h1>
+        <p class="sub">수강생 여러분 환영합니다. 정시 시작 전 아래 접속 번호와 스마트폰 사진을 준비해 주세요.</p>
+        
+        <div class="pin-display-box">
+          <div>
+            <div class="lbl">2교시 교재 접속 인증번호</div>
+            <div style="font-size:12px;color:#859BB5;margin-top:2px">모바일/노트북 화면에서 입력</div>
+          </div>
+          <div class="code">0922</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 우측 컬럼: 30초 체크리스트 -->
+    <div class="slide-col">
+      <div class="cal stop">
+        <b>지금 스마트폰 갤러리를 열고 확인해 주세요</b>
+        <p style="margin:0 0 6px">① <strong>내 비즈니스 사진 3장 준비</strong> — 매장/사무실 외관 1장, 제품 또는 서류 1장, 고객 만남/현장 1장</p>
+        <p style="margin:0 0 6px">② <strong>네이버 블로그 앱 또는 PC 로그인</strong> — 스마트에디터 ONE 작성 창을 열어둘 수 있는지 확인</p>
+        <p style="margin:0">③ <strong>클로드(Claude) 또는 GPT 창 켜기</strong> — 1교시에서 쓰던 AI 창을 그대로 활용</p>
+      </div>
+
+      <div class="cal tip">
+        <b>사진이 마땅히 없어도 걱정하지 마세요</b>
+        강의 교재 안에 바로 복사해서 쓸 수 있는 <strong>[업종별 표준 샘플 사진 3종 시나리오]</strong>가 준비되어 있어 즉시 실습 가능합니다.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PAGE 1: 강사 인사 & 왜 사진 블로그인가 (PPT 2열 핏) -->
+<section class="pg" id="p0" data-g="시작 전" data-t="00 · 강사 인사" data-live="1">
+  <div class="slide-header">
+    <h2><span class="n">00</span>왜 블로그는 여전히 사업의 핵심인가</h2>
+    <span class="slide-subtitle">네이버 검색은 고객이 '살 준비가 되었을 때' 직접 찾아옵니다</span>
+  </div>
+
+  <div class="slide-grid-2">
+    <!-- 좌측 컬럼: 핵심 철학 & 강사 프로필 -->
+    <div class="slide-col">
+      <div class="cal stop" style="margin-top:0">
+        <b>네이버 알고리즘(D.I.A)이 가장 좋아하는 글은 '진짜 내 이야기'입니다</b>
+        인터넷 글을 긁어모은 AI 글은 저품질로 밀려납니다. 하지만 <strong>'내가 직접 찍은 고유 사진 3장' + '그 상황의 디테일한 묘사'</strong>가 결합된 글은 네이버가 가장 높은 점수를 줍니다.
+      </div>
+
+      <!-- 강사 소개 프로필 카드 -->
+      <div class="instructor-profile-card">
+        <div class="avatar-box">
+          <img src="/instructors/lee-seokho.jpg" alt="이석호 대표" onerror="this.src='instructors/lee-seokho.jpg'">
+        </div>
+        <div class="profile-info">
+          <h4>이석호 대표 <span>neoNpeter 대표 / AI 마케팅 디렉터</span></h4>
+          <p>AI 기반 콘텐츠 마케팅 자동화 디렉터 · BNI 비즈니스 네트워킹 전문 작가 · 블로그/숏폼 통합 퍼널 설계자<br>
+          <strong>"단순한 글짓기 기술이 아닌, 매일의 일상이 매출로 연결되는 자동화 루틴을 선물해 드립니다."</strong></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 우측 컬럼: 네이버 스마트에디터 결과물 예시 -->
+    <div class="slide-col">
+      <figure class="lecture-fig">
+        <div class="fig-img-wrap">
+          <img src="/images/naver_smart_editor_preview.jpg" alt="네이버 블로그 검색 1위 스마트에디터 포스팅 프리뷰" loading="lazy">
+        </div>
+        <div class="fig-caption">
+          <div>
+            <div class="cap-txt">🏆 오늘 여러분이 완성할 결과물: 체류시간 극대화 구조</div>
+            <div class="cap-sub">호기심 유발 헤드라인 + 사진 3장 황금 배치 + 인용구 박스 + 스마트블록 해시태그 완성본.</div>
+          </div>
+          <span class="fig-badge">목표 퀄리티</span>
+        </div>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- PAGE 2: 오늘 한 장 (로드맵 & 실습 2대 목표) (PPT 2열 핏) -->
+<section class="pg" id="p1" data-g="시작 전" data-t="00 · 오늘 한 장" data-live="1">
+  <div class="slide-header">
+    <h2><span class="n">00</span>오늘 50분, 한 장으로 끝내는 블로그 파이프라인</h2>
+    <span class="slide-subtitle">사진 3장 상황 ➔ Claude AI 구조화 ➔ 네이버 포스팅 발행</span>
+  </div>
+
+  <div class="slide-grid-2">
+    <!-- 좌측 컬럼: 파이프라인 인포그래픽 & 핵심 성과물 -->
+    <div class="slide-col">
+      <figure class="lecture-fig" style="margin-top:0">
+        <div class="fig-img-wrap">
+          <img src="/images/blog_automation_workflow.jpg" alt="사진 3장에서 네이버 스마트에디터 블로그 포스팅까지의 워크플로우" loading="lazy">
+        </div>
+        <div class="fig-caption">
+          <div class="cap-txt">📸 [외관] ➔ [핵심 디테일] ➔ [고객 미팅/결과] 3컷 시각적 스토리텔링</div>
+          <span class="fig-badge">Auto Pipeline</span>
+        </div>
+      </figure>
+
+      <div class="cal tip" style="margin-bottom:0">
+        <b>오늘 가져가실 3대 핵심 성과물</b>
+        <p style="margin:0 0 4px">1. <strong>체류시간 2배 늘리는 사진 3장 선택 공식</strong> (외관 ➔ 디테일 ➔ 스토리)</p>
+        <p style="margin:0 0 4px">2. <strong>스마트에디터 ONE에 복사-붙여넣기 1초 완성 템플릿</strong></p>
+        <p style="margin:0">3. <strong>전문직·외식업·서비스업 맞춤형 톤앤매너 프롬프트</strong></p>
+      </div>
+    </div>
+
+    <!-- 우측 컬럼: 맞춤 키워드 입력 & 원클릭 복사 프롬프트 -->
+    <div class="slide-col">
+      <div class="custom-inline-card">
+        <div class="desc">
+          <span>✏️ 내 비즈니스 키워드 입력:</span>
+        </div>
+        <div class="fields">
+          <input type="text" id="blogTopic" placeholder="메인 키워드 (예: 역삼동 세무사 / 경영컨설팅)" value="중소기업 경영컨설팅">
+          <input type="text" id="blogTarget" placeholder="타깃 독자 (예: 법인 대표)" value="성장기 중소기업 대표">
+        </div>
+      </div>
+
+      <div class="prompt-box">
+        <div class="p-top">
+          <span>실습 프롬프트: 사진 3장 기반 상위노출 포스팅 생성기</span>
+          <button class="copy-btn" id="copyPromptBtn">프롬프트 복사</button>
+        </div>
+        <pre id="promptTemplateText">당신은 네이버 블로그 일 방문자 5만 명 이상을 기록하는 최정상급 인플루언서이자 비즈니스 콘텐츠 에디터입니다.
+아래 제공된 [포스팅 정보]와 [사진 3장 상황]을 바탕으로, 네이버 검색 알고리즘(D.I.A)에 최적화된 매력적인 포스팅을 작성해 주세요.
+
+[포스팅 정보]
+- 메인 주제/타깃 키워드: <span class="token token-topic">중소기업 경영컨설팅</span>
+- 타깃 독자: <span class="token token-target">성장기 중소기업 대표</span>
+- 희망 톤앤매너: 전문적이면서도 진정성 있고 읽기 편한 비즈니스 스토리텔링 톤
+
+[사진 컷별 상황 설명]
+- 사진 1 (외관/도입): 고객사 본사 로비에 도착했을 때의 차분하고 기대감 넘치는 분위기
+- 사진 2 (메인 디테일/본문): 회의실 테이블에 펼쳐진 경영 진단 체크리스트와 꼼꼼한 분석 메모
+- 사진 3 (결과/마무리): 대표님과 악수를 나누며 후속 전략에 대해 깊이 공감하고 웃는 모습
+
+[글 작성 원칙]
+1. 제목: 클릭을 부르는 호기심 자극형 + 검색 키워드가 전면에 자연스럽게 배치된 메인 제목 1개 (부제목 포함)
+2. 도입부: 독자의 실제 고민에 깊이 공감하는 스토리텔링 (2~3문단)
+3. 본문 구조: 각 사진이 들어갈 자리에 [사진 1 삽입: 외관], [사진 2 삽입: 디테일], [사진 3 삽입: 미팅] 명확히 표기
+4. 시각화 포인트: 스마트에디터 인용구(따옴표)로 쓸 만한 핵심 문장 2개 볼드체로 강조
+5. 해시태그: 네이버 스마트블록과 연관 검색어에 최적화된 해시태그 10개 추천</pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PAGE 3: Before vs After 실제 포스팅 비교 (PPT 2열 핏) -->
+<section class="pg" id="p2" data-g="현장 실습" data-t="01 · Before &amp; After 비교" data-live="1">
+  <div class="slide-header">
+    <h2><span class="n">01</span>내용이 어떻게 달라지는가 — Before vs After</h2>
+    <span class="slide-subtitle">스토리와 감각적 사진 묘사가 결합된 글은 체류시간에서 5배 차이를 만듭니다</span>
+  </div>
+
+  <div class="slide-grid-2">
+    <!-- 좌측 컬럼: Before vs After 탭 비교 카드 -->
+    <div class="slide-col">
+      <div class="ba-container" style="margin-top:0">
+        <div class="ba-tabs">
+          <button class="ba-tab before active" data-tab="before">1. 흔한 홍보성 일기글 (Before)</button>
+          <button class="ba-tab after" data-tab="after">2. AI 상위노출 글 (After)</button>
+        </div>
+        <div class="ba-content" id="baBefore">
+          <pre style="color:#7D3B3B">"오늘 날씨가 참 좋네요. 오늘은 오랜만에 거래처 미팅이 있어서 강남에 다녀왔습니다.
+새로 계약한 고객사 대표님을 만났는데 상담이 참 잘 끝났습니다.
+저희는 중소기업 컨설팅을 전문으로 하고 있으니 필요하신 분들은 언제든지 연락주세요.
+아래 지도 첨부합니다. 다음에도 맛있는 커피 마시면서 이야기 나누고 싶네요. 끝!"</pre>
+        </div>
+        <div class="ba-content" id="baAfter" style="display:none">
+          <pre style="color:#1C4E34;font-weight:600">■ [제목] "대표님, 지난달 세금계산서 보셨습니까?" — 10인 제조업 대표가 상담 30분 만에 고개를 끄덕인 이유
+
+[사진 1 삽입: 차분한 로비 전경]
+화려한 사무실보다 더 중요한 것은, 그 문을 열고 들어가는 사람의 진심입니다.
+오늘 아침, 10년 넘게 정밀 부품을 제조해 오신 한 대표님을 뵙기 위해 길을 나섰습니다.
+
+"열심히 만든 제품인데, 왜 통장 잔고는 늘 제자리일까요?"
+첫 잔의 커피가 식기도 전에 대표님이 건네신 첫마디였습니다.
+
+[사진 2 삽입: 테이블 위 분석 메모와 서류]
+“대표님, 문제는 공장이 아니라 ‘원가 집계 방식’에 있었습니다.”
+숫자는 거짓말을 하지 않습니다. 테이블 위에 펼쳐진 최근 3개년 결산서와 현장 작업 일지를 1시간 동안 대조해 나갔습니다.
+누군가에게는 그저 딱딱한 장부지만, 대표님과 저에게는 지난 10년의 땀방울이 고스란히 담긴 역사였습니다.
+
+“정말 이것만 바꿔도 매달 새어나가는 1,500만 원을 잡을 수 있습니까?”
+“네, 제가 대표님 옆에서 다음 주 현장 전산 코드부터 직접 바로잡겠습니다.”
+
+[사진 3 삽입: 미팅을 마치며 나눈 든든한 악수]
+미팅을 마치고 문을 나서는 길, 대표님의 굳어있던 어깨가 한결 가벼워진 것을 보았습니다.
+컨설팅이란 대단한 이론을 가르치는 것이 아닙니다. 
+대표님이 오롯이 사업에만 집중하실 수 있도록 가시를 대신 뽑아드리는 일입니다.
+
+#중소기업경영컨설팅 #제조업원가절감 #스마트공장 #경영진단 #어니스톤</pre>
+        </div>
+      </div>
+    </div>
+
+    <!-- 우측 컬럼: 사진 3장 룰 & 상위노출 체크리스트 -->
+    <div class="slide-col">
+      <figure class="lecture-fig" style="margin-top:0">
+        <div class="fig-img-wrap">
+          <img src="/images/blog_photo_selection_formula.jpg" alt="비즈니스 블로그 사진 3장 황금 공식" loading="lazy">
+        </div>
+        <div class="fig-caption">
+          <div class="cap-txt">📸 사진 3장 황금 공식: 외관 ➔ 디테일 ➔ 스토리</div>
+          <span class="fig-badge">사진 선택 룰</span>
+        </div>
+      </figure>
+
+      <div class="cal tip" style="margin-bottom:0">
+        <b>네이버 상위노출 3대 체크리스트</b>
+        <p style="margin:0 0 4px">· <strong>체류시간:</strong> 모바일 기준 스크롤을 3회 이상 내릴 수 있는 호흡의 텍스트</p>
+        <p style="margin:0 0 4px">· <strong>사진 고유성:</strong> 남들이 올린 스톡 사진이 아닌 스마트폰 직접 촬영 사진</p>
+        <p style="margin:0">· <strong>명확한 CTA:</strong> 글의 마지막에 무료 진단/상담 문의 링크 배치</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+</div>
+
+<!-- ── 3. 하단 네비게이터 페이저 ── -->
+<div id="pager">
+  <button id="prevBtn" disabled>&larr; 이전 슬라이드</button>
+  <span class="ct" id="pageIndicator">1 / 4</span>
+  <span class="key-hint">[키보드 &larr; &rarr; / Space 넘김]</span>
+  <div class="sp"></div>
+  <button id="nextBtn" class="main">다음 슬라이드 &rarr;</button>
+</div>
+
+</div><!-- /#app -->
+
+<script>
+(function(){
+  // ── 1. DOM 요소 및 페이징 상태 초기화 ──
+  var AUTH_CODE = '0922';
+  var gate = document.getElementById('gate');
+  var app = document.getElementById('app');
+  var pwInput = document.getElementById('pw');
+  var goBtn = document.getElementById('go');
+  var errBox = document.getElementById('err');
+  var quickEnterBtn = document.getElementById('quickEnterBtn');
+
+  var pages = Array.from(document.querySelectorAll('main section.pg'));
+  var curIndex = 0;
+  var prevBtn = document.getElementById('prevBtn');
+  var nextBtn = document.getElementById('nextBtn');
+  var pageIndicator = document.getElementById('pageIndicator');
+  var nowSecEl = document.getElementById('nowSec');
+  var progBar = document.querySelector('#prog i');
+  var navEl = document.getElementById('nav');
+
+  // 사이드바 목차 자동 생성
+  var curGroup = '';
+  pages.forEach(function(p, i){
+    var g = p.getAttribute('data-g') || '';
+    var t = p.getAttribute('data-t') || ('0' + i);
+    if (g && g !== curGroup) {
+      curGroup = g;
+      var grpEl = document.createElement('div');
+      grpEl.className = 't';
+      grpEl.textContent = g;
+      navEl.appendChild(grpEl);
+    }
+    var a = document.createElement('a');
+    a.href = '#' + p.id;
+    a.textContent = t;
+    a.setAttribute('data-idx', i);
+    if (p.getAttribute('data-live')) a.classList.add('live');
+    a.addEventListener('click', function(e){
+      e.preventDefault();
+      goToPage(i);
+    });
+    navEl.appendChild(a);
+  });
+
+  var allBtn = document.createElement('button');
+  allBtn.className = 'allbtn';
+  allBtn.textContent = '전체 펼쳐보기';
+  allBtn.addEventListener('click', function(){
+    document.body.classList.toggle('allmode');
+    this.textContent = document.body.classList.contains('allmode') ? '슬라이드 모드로 전환' : '전체 펼쳐보기';
+  });
+  navEl.appendChild(allBtn);
+
+  function updatePageDisplay() {
+    if (document.body.classList.contains('allmode')) return;
+    pages.forEach(function(p, i){
+      if (i === curIndex) {
+        p.classList.add('on');
+      } else {
+        p.classList.remove('on');
+      }
+    });
+
+    var navLinks = navEl.querySelectorAll('a[data-idx]');
+    navLinks.forEach(function(a){
+      if (parseInt(a.getAttribute('data-idx'), 10) === curIndex) {
+        a.classList.add('cur');
+      } else {
+        a.classList.remove('cur');
+      }
+    });
+
+    prevBtn.disabled = (curIndex === 0);
+    nextBtn.disabled = (curIndex === pages.length - 1);
+    pageIndicator.textContent = (curIndex + 1) + ' / ' + pages.length;
+
+    var curTitle = pages[curIndex].getAttribute('data-t') || '';
+    nowSecEl.textContent = curTitle;
+
+    var pct = ((curIndex + 1) / pages.length) * 100;
+    if (progBar) progBar.style.width = pct + '%';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function goToPage(idx) {
+    if (idx >= 0 && idx < pages.length) {
+      curIndex = idx;
+      updatePageDisplay();
+    }
+  }
+
+  // ── 2. 인증 및 게이트 제어 ──
+  function unlock() {
+    gate.classList.add('hidden');
+    app.classList.remove('hidden');
+    sessionStorage.setItem('aiedu_auth_passed_session02', '1');
+    updatePageDisplay();
+  }
+
+  // URL 파라미터 확인 (?pw=0922 or ?master=true)
+  var params = new URLSearchParams(window.location.search);
+  if (params.get('pw') === AUTH_CODE || params.get('master') === 'true' || sessionStorage.getItem('aiedu_auth_passed_session02') === '1' || sessionStorage.getItem('aiedu_auth_passed') === '1') {
+    unlock();
+  }
+
+  function handleAuth() {
+    var val = pwInput.value.trim();
+    if (val === AUTH_CODE) {
+      unlock();
+    } else {
+      errBox.textContent = '인증번호가 맞지 않습니다. (강의 화면을 확인해 주세요)';
+      pwInput.value = '';
+      pwInput.focus();
+    }
+  }
+
+  goBtn.addEventListener('click', handleAuth);
+  pwInput.addEventListener('keyup', function(e){
+    if (e.key === 'Enter') handleAuth();
+  });
+  if (quickEnterBtn) {
+    quickEnterBtn.addEventListener('click', function(){
+      pwInput.value = AUTH_CODE;
+      unlock();
+    });
+  }
+
+  prevBtn.addEventListener('click', function(){ goToPage(curIndex - 1); });
+  nextBtn.addEventListener('click', function(){ goToPage(curIndex + 1); });
+
+  // 키보드 방향키 넘김 지원
+  window.addEventListener('keydown', function(e){
+    if (!gate.classList.contains('hidden')) return;
+    if (e.target && (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA')) return;
+    if (e.key === 'ArrowRight' || e.key === 'PageDown' || e.key === ' ') {
+      e.preventDefault();
+      goToPage(curIndex + 1);
+    } else if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
+      e.preventDefault();
+      goToPage(curIndex - 1);
+    }
+  });
+
+  // ── 3. 폰트 줌 및 프로젝터 와이드 모드 ──
+  var zoomLevels = ['', 'z1', 'z2', 'z3'];
+  var zoomLabels = ['기본', '1단계', '2단계 (프로젝터)', '3단계 (초대형)'];
+  var currentZoomIdx = 0;
+  var zlEl = document.getElementById('zl');
+  var ziBtn = document.getElementById('zi');
+  var zoBtn = document.getElementById('zo');
+  var projModeBtn = document.getElementById('projModeBtn');
+
+  function applyZoom(idx) {
+    zoomLevels.forEach(function(cls){ if(cls) document.body.classList.remove(cls); });
+    currentZoomIdx = Math.max(0, Math.min(zoomLevels.length - 1, idx));
+    if (zoomLevels[currentZoomIdx]) {
+      document.body.classList.add(zoomLevels[currentZoomIdx]);
+    }
+    zlEl.textContent = zoomLabels[currentZoomIdx];
+  }
+
+  ziBtn.addEventListener('click', function(){ applyZoom(currentZoomIdx + 1); });
+  zoBtn.addEventListener('click', function(){ applyZoom(currentZoomIdx - 1); });
+  if (projModeBtn) {
+    projModeBtn.addEventListener('click', function(){
+      if (currentZoomIdx >= 2) {
+        applyZoom(0);
+        projModeBtn.textContent = '🖥️ 프로젝터 모드';
+      } else {
+        applyZoom(2);
+        projModeBtn.textContent = '🖥️ 표준 모드 복귀';
+      }
+    });
+  }
+
+  // ── 4. 미니멀 5분 실습 타이머 ──
+  var timerToggleBtn = document.getElementById('timerToggleBtn');
+  var timerBanner = document.getElementById('timerBanner');
+  var timerClock = document.getElementById('timerClock');
+  var timerStartBtn = document.getElementById('timerStartBtn');
+  var timerResetBtn = document.getElementById('timerResetBtn');
+  var timerCloseBtn = document.getElementById('timerCloseBtn');
+  
+  var timerDuration = 300; // 5분 = 300초
+  var timerLeft = 300;
+  var timerTimer = null;
+  var timerRunning = false;
+
+  function renderTimer() {
+    var m = Math.floor(timerLeft / 60);
+    var s = timerLeft % 60;
+    timerClock.textContent = (m < 10 ? '0' + m : m) + ':' + (s < 10 ? '0' + s : s);
+    if (timerLeft <= 30) {
+      timerClock.style.color = '#C0392B';
+    } else {
+      timerClock.style.color = '#0C1E38';
+    }
+  }
+
+  function startTimer() {
+    if (timerRunning) {
+      clearInterval(timerTimer);
+      timerRunning = false;
+      timerStartBtn.textContent = '재개';
+      return;
+    }
+    timerRunning = true;
+    timerStartBtn.textContent = '일시정지';
+    timerTimer = setInterval(function(){
+      if (timerLeft > 0) {
+        timerLeft--;
+        renderTimer();
+      } else {
+        clearInterval(timerTimer);
+        timerRunning = false;
+        timerStartBtn.textContent = '시작';
+        alert('⏰ 5분 실습 시간이 종료되었습니다!');
+      }
+    }, 1000);
+  }
+
+  function resetTimer() {
+    clearInterval(timerTimer);
+    timerRunning = false;
+    timerLeft = timerDuration;
+    timerStartBtn.textContent = '시작';
+    renderTimer();
+  }
+
+  timerToggleBtn.addEventListener('click', function(){
+    timerBanner.classList.toggle('on');
+    timerToggleBtn.classList.toggle('active');
+  });
+  timerStartBtn.addEventListener('click', startTimer);
+  timerResetBtn.addEventListener('click', resetTimer);
+  timerCloseBtn.addEventListener('click', function(){
+    timerBanner.classList.remove('on');
+    timerToggleBtn.classList.remove('active');
+  });
+
+  // ── 5. 실습 프롬프트 키워드 실시간 자동 치환 ──
+  var topicInput = document.getElementById('blogTopic');
+  var targetInput = document.getElementById('blogTarget');
+  var promptPre = document.getElementById('promptTemplateText');
+  var copyPromptBtn = document.getElementById('copyPromptBtn');
+
+  function updatePromptTokens() {
+    var topic = topicInput.value.trim() || '중소기업 경영컨설팅';
+    var target = targetInput.value.trim() || '성장기 중소기업 대표';
+    document.querySelectorAll('.token-topic').forEach(function(el){ el.textContent = topic; });
+    document.querySelectorAll('.token-target').forEach(function(el){ el.textContent = target; });
+  }
+
+  if (topicInput && targetInput) {
+    topicInput.addEventListener('input', updatePromptTokens);
+    targetInput.addEventListener('input', updatePromptTokens);
+  }
+
+  if (copyPromptBtn && promptPre) {
+    copyPromptBtn.addEventListener('click', function(){
+      var textToCopy = promptPre.innerText || promptPre.textContent;
+      navigator.clipboard.writeText(textToCopy).then(function(){
+        copyPromptBtn.textContent = '✓ 복사완료!';
+        copyPromptBtn.classList.add('done');
+        setTimeout(function(){
+          copyPromptBtn.textContent = '프롬프트 복사';
+          copyPromptBtn.classList.remove('done');
+        }, 2000);
+      });
+    });
+  }
+
+  // ── 6. Before vs After 탭 토글 ──
+  var tabBefore = document.querySelector('.ba-tab.before');
+  var tabAfter = document.querySelector('.ba-tab.after');
+  var contentBefore = document.getElementById('baBefore');
+  var contentAfter = document.getElementById('baAfter');
+
+  if (tabBefore && tabAfter) {
+    tabBefore.addEventListener('click', function(){
+      tabBefore.classList.add('active');
+      tabAfter.classList.remove('active');
+      contentBefore.style.display = 'block';
+      contentAfter.style.display = 'none';
+    });
+    tabAfter.addEventListener('click', function(){
+      tabAfter.classList.add('active');
+      tabBefore.classList.remove('active');
+      contentAfter.style.display = 'block';
+      contentBefore.style.display = 'none';
+    });
+  }
+
+  updatePageDisplay();
+})();
+</script>
+</body>
+</html>

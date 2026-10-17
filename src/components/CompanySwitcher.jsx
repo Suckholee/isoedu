@@ -1,0 +1,12 @@
+'use client';
+import {useEffect,useRef,useState} from 'react';
+import {useAuth} from '../context/AuthContext';
+import {ChevronDown,Check,Building2} from 'lucide-react';
+import Link from 'next/link';
+import AuthModal from './AuthModal';
+export default function CompanySwitcher({companies=[],currentCompany,onSelectCompany,sidebar=false}){
+ const {user,isLoading}=useAuth();const [open,setOpen]=useState(false),[login,setLogin]=useState(false);const root=useRef(null),trigger=useRef(null);
+ useEffect(()=>{function close(e){if(!root.current?.contains(e.target))setOpen(false);}function escape(e){if(e.key==='Escape'){setOpen(false);trigger.current?.focus();}}document.addEventListener('mousedown',close);if(open)document.addEventListener('keydown',escape);return()=>{document.removeEventListener('mousedown',close);document.removeEventListener('keydown',escape);};},[open]);
+ return <><div className={'company-switcher '+(sidebar?'in-sidebar':'in-header')} ref={root}><button ref={trigger} className={sidebar?'platform-tenant company-switch-trigger':'company-chip'} aria-label="소속 회사 선택" aria-expanded={open} aria-controls={sidebar?'sidebar-company-menu':'header-company-menu'} onClick={()=>setOpen(!open)}><span className={sidebar?'platform-company-avatar':'company-chip-avatar'}>{currentCompany?.name?.slice(0,sidebar?2:1)||<Building2 size={sidebar?23:14}/>}</span><span className="company-current-name"><strong>{currentCompany?.name||'소속 회사 선택'}</strong>{sidebar&&<small>클라우드 회사 문서</small>}</span><ChevronDown size={14}/></button>
+ {open&&<section className="company-switch-menu" id={sidebar?'sidebar-company-menu':'header-company-menu'} aria-label="소속 회사 목록"><header><strong>소속 회사</strong><p>로그인한 계정에 접근 권한이 있는 회사입니다.</p></header>{isLoading?<p className="company-switch-empty" role="status">계정 정보를 확인하고 있습니다.</p>:companies.length?<div className="company-switch-list">{companies.map(c=><button key={c.id} aria-pressed={currentCompany?.id===c.id} onClick={()=>{onSelectCompany?.(c);setOpen(false);}}><span>{c.name}</span>{currentCompany?.id===c.id&&<Check size={15}/>}</button>)}</div>:<div className="company-switch-empty"><p>{user?'접근 가능한 소속 회사가 없습니다. 회사 등록 상태와 구성원 권한을 확인해 주세요.':'로그인하면 접근 가능한 소속 회사를 선택할 수 있습니다.'}</p>{!user&&<button className="company-login" onClick={()=>{setOpen(false);setLogin(true);}}>로그인</button>}</div>}<footer><p>거래처 문서를 찾으시나요?</p><Link href="/documents" onClick={()=>setOpen(false)}>거래처 드라이브 열기 →</Link></footer></section>}</div><AuthModal isOpen={login} onClose={()=>setLogin(false)}/></>;
+}

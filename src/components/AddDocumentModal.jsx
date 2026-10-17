@@ -1,10 +1,12 @@
 'use client';
 
+import Button from './ui/Button';
 import React, { useState, useEffect } from 'react';
 import { X, Plus, FileText, Check, BookOpen, GitPullRequest, ClipboardCheck } from 'lucide-react';
 import { HIERARCHY_LEVELS, CERTIFICATION_CATEGORIES } from '../lib/mockData';
 
 export default function AddDocumentModal({ isOpen, onClose, onAddDocument, currentCompany, initialLevel }) {
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     title: '',
     code: '',
@@ -13,8 +15,7 @@ export default function AddDocumentModal({ isOpen, onClose, onAddDocument, curre
     clauseNumber: '',
     department: '품질경영팀',
     author: '김준호',
-    expiryDate: '2026-06-30',
-    dDay: 365,
+    expiryDate: '',
     penaltyRisk: '',
     summary: '',
     contentDraft: '',
@@ -62,8 +63,9 @@ export default function AddDocumentModal({ isOpen, onClose, onAddDocument, curre
 
   if (!isOpen) return null;
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    if (isSubmitting) return;
     if (!formData.title.trim() || !formData.code.trim()) {
       alert('문서 제목과 문서 코드를 입력해주세요.');
       return;
@@ -81,10 +83,10 @@ export default function AddDocumentModal({ isOpen, onClose, onAddDocument, curre
       author: formData.author || '담당자',
       version: 'v1.0',
       revisionNo: 'Rev. 1.0',
-      status: 'READY',
+      status: 'DRAFT',
       docStatus: '승인 대기',
-      expiryDate: formData.expiryDate || '2026-12-31',
-      dDay: Number(formData.dDay) || 365,
+      expiryDate: formData.expiryDate || null,
+      dDay: formData.expiryDate ? Math.round((new Date(`${formData.expiryDate}T00:00:00`) - new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate())) / 86400000) : null,
       penaltyRisk: formData.penaltyRisk || '만기 미갱신 시 심사 지적 및 규격 불일치 리스크',
       summary: formData.summary || '신규 등록된 ISO 규격 관리 문서입니다.',
       checklist: [
@@ -98,8 +100,11 @@ export default function AddDocumentModal({ isOpen, onClose, onAddDocument, curre
                      formData.hierarchyLevel === 'LEVEL_3' ? 'from-amber-600 to-orange-700' : 'from-purple-600 to-indigo-800'
     };
 
-    onAddDocument(newDoc);
-    onClose();
+    setIsSubmitting(true);
+    try {
+      const saved = await onAddDocument(newDoc);
+      if (saved) onClose();
+    } finally { setIsSubmitting(false); }
   };
 
   return (
@@ -111,7 +116,7 @@ export default function AddDocumentModal({ isOpen, onClose, onAddDocument, curre
             <FileText className="w-5 h-5 text-blue-600" />
             <h3 className="text-base font-bold text-slate-900">신규 ISO 규격 문서 등록</h3>
           </div>
-          <button onClick={onClose} className="text-slate-400 hover:text-slate-700">
+          <button type="button" aria-label="닫기" onClick={onClose} className="text-slate-400 hover:text-slate-700">
             <X className="w-5 h-5" />
           </button>
         </div>
@@ -196,10 +201,9 @@ export default function AddDocumentModal({ isOpen, onClose, onAddDocument, curre
               />
             </div>
             <div>
-              <label className="block text-xs font-bold text-slate-700 mb-1">유효 만료일 *</label>
+              <label className="block text-xs font-bold text-slate-700 mb-1">유효 만료일 (해당 시)</label>
               <input
                 type="date"
-                required
                 value={formData.expiryDate}
                 onChange={(e) => setFormData({ ...formData, expiryDate: e.target.value })}
                 className="w-full px-3 py-2 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:outline-hidden"
@@ -237,13 +241,13 @@ export default function AddDocumentModal({ isOpen, onClose, onAddDocument, curre
             >
               취소
             </button>
-            <button
-              type="submit"
-              className="px-5 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-bold shadow-md shadow-blue-200 transition-all flex items-center gap-1.5"
+            <Button
+              type="submit" disabled={isSubmitting}
+              className="transition-all flex items-center gap-1.5"
             >
               <Plus className="w-4 h-4" />
               <span>문서 등록 완료</span>
-            </button>
+            </Button>
           </div>
 
         </form>

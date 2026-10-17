@@ -32,3 +32,22 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# isolated Next.js development output
+/.next-dev/
+
+# Local customer reference originals and extracted private corpus
+**/사업계획서_작성사례/
+data/business-plan-corpus/
+data/client-drive/
+
+# Private reference inputs, client analysis and visual verification
+/참고자료/
+docs/reference/*.jpg
+docs/reference/*.png
+docs/reference/screenshots/
+docs/reference/business-plan-case-files.json
+docs/reference/business-plan-insights.md
+docs/reference/customer-candidates.*
+docs/reference/customer-document-evidence.md
+**/__pycache__/

@@ -1,0 +1,547 @@
+{
+  "date": "2026-10-18",
+  "scope": "local-development",
+  "conversionResults": [
+    {
+      "id": "case-001",
+      "format": "DOCX",
+      "preview": "PDF",
+      "ok": true
+    },
+    {
+      "id": "case-004",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-005",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-006",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-007",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-008",
+      "format": "HWP",
+      "preview": "PDF",
+      "ok": true
+    },
+    {
+      "id": "case-009",
+      "format": "DOCX",
+      "preview": "PDF",
+      "ok": true
+    },
+    {
+      "id": "case-011",
+      "format": "DOCX",
+      "preview": "PDF",
+      "ok": true
+    },
+    {
+      "id": "case-012",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-013",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-015",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-016",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-017",
+      "format": "DOCX",
+      "preview": "PDF",
+      "ok": true
+    },
+    {
+      "id": "case-018",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-020",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-021",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-022",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-023",
+      "format": "PPTX",
+      "preview": "PDF",
+      "ok": true
+    },
+    {
+      "id": "case-025",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-026",
+      "format": "PPTX",
+      "preview": "PDF",
+      "ok": true
+    },
+    {
+      "id": "case-028",
+      "format": "HWPX",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-029",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-030",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-031",
+      "format": "PPTX",
+      "preview": "PDF",
+      "ok": true
+    },
+    {
+      "id": "case-032",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-033",
+      "format": "DOC",
+      "preview": "PDF",
+      "ok": true
+    },
+    {
+      "id": "case-036",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-040",
+      "format": "DOCX",
+      "preview": "PDF",
+      "ok": true
+    },
+    {
+      "id": "case-041",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-043",
+      "format": "DOCX",
+      "preview": "PDF",
+      "ok": true
+    },
+    {
+      "id": "case-046",
+      "format": "DOCX",
+      "preview": "PDF",
+      "ok": true
+    },
+    {
+      "id": "case-048",
+      "format": "DOCX",
+      "preview": "PDF",
+      "ok": true
+    },
+    {
+      "id": "case-049",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-050",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-051",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-052",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-053",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-054",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-055",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-056",
+      "format": "DOCX",
+      "preview": "PDF",
+      "ok": true
+    },
+    {
+      "id": "case-057",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-058",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-061",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-062",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-063",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-064",
+      "format": "DOCX",
+      "preview": "PDF",
+      "ok": true
+    },
+    {
+      "id": "case-065",
+      "format": "DOCX",
+      "preview": "PDF",
+      "ok": true
+    },
+    {
+      "id": "case-066",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-067",
+      "format": "DOCX",
+      "preview": "PDF",
+      "ok": true
+    },
+    {
+      "id": "case-068",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-069",
+      "format": "DOCX",
+      "preview": "PDF",
+      "ok": true
+    },
+    {
+      "id": "case-070",
+      "format": "DOCX",
+      "preview": "PDF",
+      "ok": true
+    },
+    {
+      "id": "case-071",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-072",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-073",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-074",
+      "format": "PPTX",
+      "preview": "PDF",
+      "ok": true
+    },
+    {
+      "id": "case-076",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-077",
+      "format": "DOC",
+      "preview": "PDF",
+      "ok": true
+    },
+    {
+      "id": "case-078",
+      "format": "HWPX",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-079",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-080",
+      "format": "PPT",
+      "preview": "PDF",
+      "ok": true
+    },
+    {
+      "id": "case-081",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-082",
+      "format": "DOC",
+      "preview": "PDF",
+      "ok": true
+    },
+    {
+      "id": "case-084",
+      "format": "DOCX",
+      "preview": "PDF",
+      "ok": true
+    },
+    {
+      "id": "case-086",
+      "format": "PPTX",
+      "preview": "PDF",
+      "ok": true
+    },
+    {
+      "id": "case-088",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-090",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-091",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-092",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-093",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-094",
+      "format": "DOCX",
+      "preview": "PDF",
+      "ok": true
+    },
+    {
+      "id": "case-096",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-097",
+      "format": "HWPX",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-099",
+      "format": "DOCX",
+      "preview": "PDF",
+      "ok": true
+    },
+    {
+      "id": "case-102",
+      "format": "PPTX",
+      "preview": "PDF",
+      "ok": true
+    },
+    {
+      "id": "case-104",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-105",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-107",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-108",
+      "format": "DOCX",
+      "preview": "PDF",
+      "ok": true
+    },
+    {
+      "id": "case-109",
+      "format": "DOC",
+      "preview": "PDF",
+      "ok": true
+    },
+    {
+      "id": "case-110",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-111",
+      "format": "PPTX",
+      "preview": "PDF",
+      "ok": true
+    },
+    {
+      "id": "case-112",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-113",
+      "format": "DOCX",
+      "preview": "PDF",
+      "ok": true
+    },
+    {
+      "id": "case-115",
+      "format": "HWP",
+      "preview": "PDF",
+      "ok": true
+    },
+    {
+      "id": "case-117",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-118",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-119",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    },
+    {
+      "id": "case-123",
+      "format": "HWP",
+      "preview": "HTML",
+      "ok": true
+    }
+  ],
+  "directPDFCount": 34,
+  "originalHashVerifiedCount": 123,
+  "testCount": 51,
+  "build": "passed",
+  "spreadsheetVerification": "XLS/XLSX 2-sheet fixture conversion; XLSX actual upload -> preview API200 -> browser open; temporary nodes removed",
+  "visualReview": "Representative HWP/DOCX/XLSX pages only; not all pages",
+  "accessCheck": "cross-site preview403; HTML sandbox and restrictive CSP"
+}

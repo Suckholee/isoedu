@@ -118,7 +118,7 @@ export default function OneToOneWorkshop({ standalone = false }) {
   }
   return <div className={`${standalone ? 'min-h-screen bg-[#f6f8f7] px-4 py-6 sm:px-8' : 'py-6'} text-slate-800`}>
     <div className="mx-auto max-w-6xl">
-      <div className="mb-6 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-500">{standalone ? <a href="/" className="inline-flex items-center gap-2 hover:text-teal-800"><ArrowLeft size={14} />ISOEdu 홈</a> : <span>ISOEdu · 콘텐츠 제작 실습</span>}<span role="status">{status}</span></div>
+      <div className="mb-6 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-500">{standalone ? <a href="/" className="inline-flex items-center gap-2 hover:text-teal-800"><ArrowLeft size={14} />어니스톤 홈</a> : <span>어니스톤 · 콘텐츠 제작 실습</span>}<span role="status">{status}</span></div>
       <header className="mb-8 border-b border-slate-200 pb-7">
         <p className="mb-3 text-xs font-bold tracking-widest text-teal-700">BNI 121 · BLOG WORKSHOP</p>
         <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">한 번의 만남, 두 사람의 사업 이야기</h1>

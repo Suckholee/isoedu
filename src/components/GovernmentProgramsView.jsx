@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useMemo } from 'react';
+import GovernmentNoticeAnalysis from './GovernmentNoticeAnalysis';
 import { 
   Building2, 
   Landmark, 
@@ -22,18 +23,21 @@ import {
   ShieldCheck,
   FileText
 } from 'lucide-react';
-import { ALL_GOV_PROGRAMS, GOV_CENTRAL_PROGRAMS, GOV_LOCAL_PROGRAMS } from '../lib/governmentProgramsData';
+import { ALL_GOV_PROGRAMS as DEFAULT_GOV_PROGRAMS, GOV_CENTRAL_PROGRAMS, GOV_LOCAL_PROGRAMS } from '../lib/governmentProgramsData';
 import { matchDocumentsForProgram } from '../lib/crossDocumentMatcher';
 
 export default function GovernmentProgramsView({ 
+  initialProgramId,
+  programs = DEFAULT_GOV_PROGRAMS,
   documents = [], 
   onSelectDocument, 
   onCreateProjectWithProgram,
   onAddDocument
 }) {
+  const ALL_GOV_PROGRAMS = programs;
   const [activeTab, setActiveTab] = useState('ALL'); // 'ALL' | 'CENTRAL' | 'LOCAL' | 'RECOMMENDED'
   const [searchQuery, setSearchQuery] = useState('');
-  const [selectedProgramId, setSelectedProgramId] = useState(ALL_GOV_PROGRAMS[2].id); // Default: 중기부 해외규격인증획득지원사업
+  const [selectedProgramId, setSelectedProgramId] = useState(initialProgramId || ALL_GOV_PROGRAMS[2]?.id || ALL_GOV_PROGRAMS[0]?.id); // Default: 중기부 해외규격인증획득지원사업
   const [checklistFilter, setChecklistFilter] = useState('ALL'); // 'ALL' | 'REUSED' | 'MISSING'
   const [manualPickerItem, setManualPickerItem] = useState(null); // When user wants to connect another existing doc
 
@@ -62,12 +66,12 @@ export default function GovernmentProgramsView({
 
       return true;
     });
-  }, [activeTab, searchQuery, documents]);
+  }, [activeTab, searchQuery, documents, programs]);
 
   // Selected Program object
   const selectedProgram = useMemo(() => {
     return ALL_GOV_PROGRAMS.find(p => p.id === selectedProgramId) || filteredPrograms[0] || ALL_GOV_PROGRAMS[0];
-  }, [selectedProgramId, filteredPrograms]);
+  }, [selectedProgramId, filteredPrograms, programs]);
 
   // Evaluated checklist & cross-document reuse metrics
   const evaluation = useMemo(() => {
@@ -88,7 +92,7 @@ export default function GovernmentProgramsView({
   }, [evaluation, checklistFilter]);
 
   // Handle AI Auto-generation of missing document
-  const handleGenerateAiDoc = (item) => {
+  const handleGenerateAiDoc = async (item) => {
     const newDoc = {
       id: `ai-gov-${Date.now()}`,
       name: `[${selectedProgram.title.split(' ')[0]}] ${item.name} (표준 제출용)`,
@@ -101,11 +105,12 @@ export default function GovernmentProgramsView({
       version: 'v1.0',
       updatedAt: '방금 전',
       author: 'AI 지원사업 전담팀',
-      content: `# ${selectedProgram.title}\n## 필수 제출 서류: ${item.name}\n\n### 1. 제출 기업 개요\n- 지원 사업명: ${selectedProgram.title}\n- 주관 부처/지자체: ${selectedProgram.ministry || selectedProgram.region}\n- 대상 인증 규격: 해외 규격 인증 (CE, FDA, ISO 등)\n\n### 2. 과업 개요 및 목적\n본 문서는 ${selectedProgram.title}의 지원 자격을 충족하고 사업계획의 객관적 타당성을 입증하기 위해 작성된 공식 제출 문서입니다.\n\n### 3. 세부 추진 내용\n- 추진 일정: 협약 체결일로부터 6개월 이내\n- 소요 예산: ${selectedProgram.budgetLimit}\n- 기대 효과: 글로벌 신규 판로 개척 및 수출액 전년 대비 150% 신장 달성.\n\n### 4. 서약 및 승인\n위 기재 내용은 사실과 다름없음을 확인하며, 지원사업 지침을 준수할 것을 서약합니다.\n\n대표이사 직인 (날인 완료)`
+      content: `# ${selectedProgram.title}\n## 필수 제출 서류: ${item.name}\n\n### 1. 제출 기업 개요\n- 지원 사업명: ${selectedProgram.title}\n- 주관 부처/지자체: ${selectedProgram.agency || selectedProgram.ministry || selectedProgram.region}\n- 대상 인증 규격: 해외 규격 인증 (CE, FDA, ISO 등)\n\n### 2. 과업 개요 및 목적\n본 문서는 ${selectedProgram.title}의 지원 자격을 충족하고 사업계획의 객관적 타당성을 입증하기 위해 작성된 공식 제출 문서입니다.\n\n### 3. 세부 추진 내용\n- 추진 일정: 협약 체결일로부터 6개월 이내\n- 소요 예산: ${selectedProgram.budgetLimit}\n- 기대 효과: 글로벌 신규 판로 개척 및 수출액 전년 대비 150% 신장 달성.\n\n### 4. 서약 및 승인\n위 기재 내용은 사실과 다름없음을 확인하며, 지원사업 지침을 준수할 것을 서약합니다.\n\n대표이사 직인 (날인 완료)`
     };
 
     if (onAddDocument) {
-      onAddDocument(newDoc);
+      const saved = await onAddDocument(newDoc);
+      if (!saved) return;
     }
     alert(`"${newDoc.name}" 서류가 생성되어 [${newDoc.category}] 폴더에 자동 등록되었습니다!`);
   };
@@ -116,25 +121,28 @@ export default function GovernmentProgramsView({
     setManualPickerItem(null);
   };
 
+  if (!selectedProgram) return <p className="p-6 text-sm text-slate-500">표시할 공고가 없습니다. 달력에서 수집 상태를 확인해 주세요.</p>;
+
   return (
     <div className="flex-1 flex flex-col h-full bg-[#f8fafd] overflow-hidden">
+      {selectedProgram.requiredDocsTemplate === 'UNVERIFIED' && <div className="p-4 border border-amber-200 bg-amber-50 text-sm text-amber-900">자동 문서매칭은 아직 미연동입니다. 첨부 분석이 있는 공고는 아래 분석에서 조건별 제출서류를 확인하세요. 매칭 0건은 제출서류가 없다는 뜻이 아닙니다. <a className="underline" href={selectedProgram.sourceUrl} target="_blank" rel="noopener noreferrer">공식 공고에서 자격·양식·제출서류 확인 ↗</a></div>}
       {/* 1. Header Banner */}
       <div className="bg-white border-b border-slate-200 px-8 py-5 shrink-0">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
           <div>
             <div className="flex items-center gap-2 mb-1">
               <span className="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-700 border border-indigo-200 flex items-center gap-1">
-                <Landmark className="w-3.5 h-3.5" /> 정부·지자체 53선 마스터
+                <Landmark className="w-3.5 h-3.5" /> 지원사업 공고·구비서류
               </span>
               <span className="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200 flex items-center gap-1">
                 <Sparkles className="w-3.5 h-3.5" /> 기존 구비 문서 크로스 재사용 (Cross-Reuse)
               </span>
             </div>
             <h1 className="text-xl font-bold text-slate-800 tracking-tight">
-              정부 & 지자체 해외인증 지원사업 매니저
+              정부지원사업 구비서류
             </h1>
             <p className="text-xs text-slate-500 mt-0.5">
-              정부 26개 부처 및 지자체 27개 지원사업 필수 서류 체크리스트를 기업이 이미 구비한 ISO 심사/법인/노무 문서와 1:1 자동 매핑합니다.
+              선택 공고의 제출서류를 확인합니다. 확인되지 않은 체크리스트는 자동 생성하지 않습니다.
             </p>
           </div>
 
@@ -159,7 +167,7 @@ export default function GovernmentProgramsView({
                 activeTab === 'ALL' ? 'bg-white text-blue-600 shadow-sm' : 'text-slate-600 hover:text-slate-900'
               }`}
             >
-              전체 53선
+              전체 {programs.length}건
             </button>
             <button
               onClick={() => setActiveTab('CENTRAL')}
@@ -167,7 +175,7 @@ export default function GovernmentProgramsView({
                 activeTab === 'CENTRAL' ? 'bg-white text-blue-600 shadow-sm' : 'text-slate-600 hover:text-slate-900'
               }`}
             >
-              <Landmark className="w-3 h-3" /> 중앙정부 (26선)
+              <Landmark className="w-3 h-3" /> 중앙정부 ({programs.filter(p=>p.category==='CENTRAL').length}건)
             </button>
             <button
               onClick={() => setActiveTab('LOCAL')}
@@ -175,7 +183,7 @@ export default function GovernmentProgramsView({
                 activeTab === 'LOCAL' ? 'bg-white text-blue-600 shadow-sm' : 'text-slate-600 hover:text-slate-900'
               }`}
             >
-              <Building2 className="w-3 h-3" /> 전국 지자체 (27선)
+              <Building2 className="w-3 h-3" /> 지자체 ({programs.filter(p=>p.category==='LOCAL').length}건)
             </button>
             <button
               onClick={() => setActiveTab('RECOMMENDED')}
@@ -282,7 +290,7 @@ export default function GovernmentProgramsView({
                         {selectedProgram.category === 'CENTRAL' ? '🏛️ 중앙정부 지원사업' : '🏢 지자체 해외인증 지원'}
                       </span>
                       <span className="px-3 py-1 rounded-full text-xs font-semibold bg-slate-100 text-slate-700">
-                        주관: {selectedProgram.ministry || selectedProgram.region}
+                        주관: {selectedProgram.agency || selectedProgram.ministry || selectedProgram.region}
                       </span>
                       <span className="px-3 py-1 rounded-full text-xs font-semibold bg-slate-100 text-slate-700">
                         자료 출처: p.{selectedProgram.pageRef}
@@ -309,6 +317,7 @@ export default function GovernmentProgramsView({
                   </div>
                 </div>
 
+                <GovernmentNoticeAnalysis analysis={selectedProgram.analysis}/>
                 {/* Tags */}
                 <div className="mt-4 pt-4 border-t border-slate-100 flex flex-wrap items-center gap-1.5">
                   <span className="text-xs text-slate-400 mr-1">핵심 태그:</span>

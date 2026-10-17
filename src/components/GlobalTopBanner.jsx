@@ -1,5 +1,6 @@
 'use client';
 
+import Button from './ui/Button';
 import React, { useState, useEffect } from 'react';
 import { AlertCircle, AlertTriangle, ChevronLeft, ChevronRight, X, ArrowRight } from 'lucide-react';
 import { EMERGENCY_RISK_TICKERS } from '../lib/mockData';
@@ -46,13 +47,13 @@ export default function GlobalTopBanner({ onSelectDoc }) {
 
         {/* Right: Action Pill Button & Controls */}
         <div className="flex items-center gap-2 shrink-0">
-          <button
+          <Button
             onClick={() => onSelectDoc && onSelectDoc(current.docId)}
-            className="px-4 py-2 rounded-full bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs shadow-xs transition-all flex items-center gap-1 shrink-0"
+            className="text-xs transition-all flex items-center gap-1 shrink-0"
           >
             <span>지금 조치하기</span>
             <ArrowRight className="w-3.5 h-3.5" />
-          </button>
+          </Button>
 
           {/* Navigation & Close */}
           <div className="hidden sm:flex items-center gap-0.5 ml-1 text-slate-400">

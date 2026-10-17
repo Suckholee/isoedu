@@ -115,10 +115,10 @@ export default function AIConsultantPanel({ onImportDocuments, currentCompany })
     if (!docs || docs.length === 0) return;
     setImportingId(msgId);
 
-    setTimeout(() => {
-      onImportDocuments(docs);
+    setTimeout(async () => {
+      const saved = await onImportDocuments(docs);
       setImportingId(null);
-      setImportedIds(prev => new Set([...prev, msgId]));
+      if (saved) setImportedIds(prev => new Set([...prev, msgId]));
     }, 700);
   };
 

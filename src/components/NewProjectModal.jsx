@@ -20,6 +20,7 @@ import { AUDITOR_ACTIVITY_DOMAINS } from '../lib/auditProjectData.js';
 import { ALL_GOV_PROGRAMS } from '../lib/governmentProgramsData.js';
 
 export default function NewProjectModal({ isOpen, onClose, onCreateProject, initialProgram = null }) {
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     clientName: '',
     bizNumber: '',
@@ -53,8 +54,9 @@ export default function NewProjectModal({ isOpen, onClose, onCreateProject, init
 
   const currentDomain = AUDITOR_ACTIVITY_DOMAINS.find(d => d.id === formData.activityDomainId) || AUDITOR_ACTIVITY_DOMAINS[0];
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    if (isSubmitting) return;
     if (!formData.clientName.trim()) {
       alert('고객기업명을 입력해 주세요.');
       return;
@@ -86,8 +88,11 @@ export default function NewProjectModal({ isOpen, onClose, onCreateProject, init
       notes: formData.notes.trim() || '신규 프로젝트 발족. 1단계 서류 진단 착수 예정.'
     };
 
-    onCreateProject(newProject);
-    onClose();
+    setIsSubmitting(true);
+    try {
+      const saved = await onCreateProject(newProject);
+      if (saved) onClose();
+    } finally { setIsSubmitting(false); }
   };
 
   function calculateDDay(dateStr) {
@@ -392,7 +397,7 @@ export default function NewProjectModal({ isOpen, onClose, onCreateProject, init
               취소
             </button>
             <button
-              type="submit"
+              type="submit" disabled={isSubmitting}
               className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white text-xs font-bold shadow-md shadow-blue-200 flex items-center gap-2 transition-all hover:scale-[1.01]"
             >
               <FolderPlus className="w-4 h-4" />

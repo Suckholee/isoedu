@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>수유리 우동집 AI 테크에듀 — 커리큘럼</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      background: #e8e0d8;
+      padding: 40px;
+      font-family: 'Noto Sans KR', sans-serif;
+      color: #3D2B1F;
+    }
+
+    .page {
+      width: 900px;
+      background: #FFFCF8;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.12), 0 4px 16px rgba(0,0,0,0.06);
+    }
+
+    /* Top Banner */
+    .banner {
+      background: linear-gradient(135deg, #E8740C 0%, #F4943B 50%, #F7B267 100%);
+      padding: 40px 48px 32px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .banner::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-image: radial-gradient(circle, rgba(255,255,255,0.08) 1px, transparent 1px);
+      background-size: 18px 18px;
+    }
+
+    .banner-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .banner-badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.2);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 5px 16px;
+      border-radius: 16px;
+      letter-spacing: 2px;
+      margin-bottom: 16px;
+      border: 1px solid rgba(255,255,255,0.25);
+    }
+
+    .banner h1 {
+      font-size: 34px;
+      font-weight: 900;
+      color: #fff;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.12);
+      margin-bottom: 8px;
+    }
+
+    .banner h1 span { color: #FFF3C4; }
+
+    .banner p {
+      font-size: 15px;
+      color: rgba(255,255,255,0.9);
+      font-weight: 400;
+    }
+
+    .banner-meta {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin-top: 18px;
+    }
+
+    .banner-meta-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: rgba(255,255,255,0.88);
+      font-size: 13px;
+    }
+
+    /* Body */
+    .body {
+      padding: 36px 48px 40px;
+    }
+
+    /* Timeline */
+    .timeline {
+      position: relative;
+      padding-left: 36px;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 14px;
+      top: 8px;
+      bottom: 8px;
+      width: 3px;
+      background: linear-gradient(to bottom, #F4943B, #4CAF50, #888, #2196F3, #5B3A0A);
+      border-radius: 3px;
+    }
+
+    .timeline-block {
+      position: relative;
+      margin-bottom: 24px;
+    }
+
+    .timeline-block:last-child {
+      margin-bottom: 0;
+    }
+
+    .timeline-dot {
+      position: absolute;
+      left: -36px;
+      top: 6px;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+      border: 3px solid #FFFCF8;
+    }
+
+    .dot-opening { background: #F4943B; }
+    .dot-act1 { background: linear-gradient(135deg, #FFB347, #FF8C42); }
+    .dot-act2 { background: linear-gradient(135deg, #7BC67E, #4CAF50); }
+    .dot-break { background: #999; }
+    .dot-act3 { background: linear-gradient(135deg, #64B5F6, #2196F3); }
+    .dot-closing { background: linear-gradient(135deg, #8B6B50, #5B3A0A); }
+
+    .timeline-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 20px 24px;
+      border: 1px solid #f0e8df;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    }
+
+    .timeline-card.break-card {
+      background: #F9F5F0;
+      border: 1px dashed #d4c4b0;
+      text-align: center;
+      padding: 14px;
+    }
+
+    .tc-header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+
+    .tc-time {
+      font-size: 12px;
+      font-weight: 600;
+      color: #8B6B50;
+      background: #FFF3E6;
+      padding: 3px 10px;
+      border-radius: 8px;
+    }
+
+    .tc-duration {
+      font-size: 11px;
+      color: #aaa;
+      font-weight: 500;
+    }
+
+    .tc-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: #3D2B1F;
+      margin-bottom: 6px;
+    }
+
+    .tc-title .emoji {
+      margin-right: 6px;
+    }
+
+    .tc-desc {
+      font-size: 13px;
+      color: #6B5744;
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+
+    .tc-tools {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .tc-tool {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 5px 12px;
+      border-radius: 20px;
+      border: 1px solid;
+    }
+
+    .tc-tool.orange { background: #FFF3E6; border-color: #FFD4A8; color: #C65D00; }
+    .tc-tool.green { background: #E8F5E9; border-color: #A5D6A7; color: #2E7D32; }
+    .tc-tool.blue { background: #E3F2FD; border-color: #90CAF9; color: #1565C0; }
+    .tc-tool.purple { background: #F3E5F5; border-color: #CE93D8; color: #7B1FA2; }
+    .tc-tool.red { background: #FFEBEE; border-color: #EF9A9A; color: #C62828; }
+    .tc-tool.teal { background: #E0F2F1; border-color: #80CBC4; color: #00695C; }
+
+    .tc-details {
+      margin-top: 10px;
+    }
+
+    .tc-detail-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .tc-detail-list li {
+      font-size: 12px;
+      color: #7A6555;
+      padding-left: 16px;
+      position: relative;
+      line-height: 1.5;
+    }
+
+    .tc-detail-list li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: #C4A882;
+    }
+
+    /* Key message */
+    .key-message {
+      background: linear-gradient(135deg, #5B3A0A 0%, #7A4E1A 100%);
+      border-radius: 16px;
+      padding: 28px 32px;
+      margin-top: 32px;
+      text-align: center;
+      color: #FFF8F0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .key-message::before {
+      content: '';
+      position: absolute;
+      top: -30px; right: -30px;
+      width: 120px; height: 120px;
+      background: rgba(255,255,255,0.04);
+      border-radius: 50%;
+    }
+
+    .key-message::after {
+      content: '';
+      position: absolute;
+      bottom: -40px; left: -20px;
+      width: 100px; height: 100px;
+      background: rgba(255,255,255,0.03);
+      border-radius: 50%;
+    }
+
+    .km-title {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      color: #D4A862;
+      margin-bottom: 12px;
+    }
+
+    .km-text {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.5;
+      color: #FFD97D;
+      margin-bottom: 10px;
+    }
+
+    .km-sub {
+      font-size: 13px;
+      color: rgba(255,248,240,0.7);
+      line-height: 1.6;
+    }
+
+    /* Bottom info */
+    .bottom-info {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 28px;
+    }
+
+    .info-card {
+      background: #FFF8F0;
+      border: 1px solid #f0e8df;
+      border-radius: 14px;
+      padding: 18px 20px;
+    }
+
+    .info-card-title {
+      font-size: 12px;
+      font-weight: 700;
+      color: #8B6B50;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .info-card-list {
+      list-style: none;
+    }
+
+    .info-card-list li {
+      font-size: 13px;
+      color: #5B3A0A;
+      padding: 3px 0;
+      padding-left: 14px;
+      position: relative;
+    }
+
+    .info-card-list li::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: #D4A862;
+      font-weight: 700;
+    }
+
+    /* Footer */
+    .page-footer {
+      text-align: center;
+      margin-top: 28px;
+      padding-top: 20px;
+      border-top: 1px solid #f0e8df;
+    }
+
+    .page-footer-brand {
+      font-size: 16px;
+      font-weight: 700;
+      color: #5B3A0A;
+    }
+
+    .page-footer-sub {
+      font-size: 11px;
+      color: #8B6B50;
+      margin-top: 2px;
+    }
+
+    @media print {
+      body { background: none; padding: 0; }
+      .page { box-shadow: none; border-radius: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- Top Banner -->
+    <div class="banner">
+      <div class="banner-content">
+        <div class="banner-badge">CURRICULUM OVERVIEW</div>
+        <h1>수유리 우동집 <span>AI 테크에듀</span></h1>
+        <p>2026 AI 트렌드 &times; 실전 업무 &times; 바이브코딩 &mdash; 2시간 집중 세션</p>
+        <div class="banner-meta">
+          <div class="banner-meta-item">⏱️ 총 120분</div>
+          <div class="banner-meta-item">👥 소규모 밀착형</div>
+          <div class="banner-meta-item">🎯 사전 지식 불필요</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Body -->
+    <div class="body">
+
+      <!-- Timeline -->
+      <div class="timeline">
+
+        <!-- Opening -->
+        <div class="timeline-block">
+          <div class="timeline-dot dot-opening">🎤</div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <span class="tc-time">00:00 ~ 00:05</span>
+              <span class="tc-duration">5분</span>
+            </div>
+            <div class="tc-title"><span class="emoji">🎤</span>오프닝</div>
+            <div class="tc-desc">"2026년, AI를 쓰는 게 아니라 AI를 만드는 시대" — 핵심 메시지 전달과 2시간 로드맵 안내</div>
+          </div>
+        </div>
+
+        <!-- ACT 1 -->
+        <div class="timeline-block">
+          <div class="timeline-dot dot-act1">🌐</div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <span class="tc-time">00:05 ~ 00:35</span>
+              <span class="tc-duration">30분</span>
+            </div>
+            <div class="tc-title"><span class="emoji">🌐</span>ACT 1: 2026 AI 파노라마</div>
+            <div class="tc-desc">5대 AI에 동일 질문을 던져 라이브로 비교합니다. 텍스트 AI 3총사의 답변 차이를 체감하고, 이미지 생성 AI로 음식 사진과 포스터를 만들어봅니다.</div>
+            <div class="tc-tools">
+              <span class="tc-tool orange">ChatGPT</span>
+              <span class="tc-tool blue">Gemini</span>
+              <span class="tc-tool purple">Claude</span>
+              <span class="tc-tool teal">Canva</span>
+              <span class="tc-tool red">나노바나나2</span>
+            </div>
+            <div class="tc-details">
+              <ul class="tc-detail-list">
+                <li>같은 질문, 다른 답변 — 각 AI의 캐릭터와 강점 비교</li>
+                <li>Canva로 SNS 포스터 자동 생성 시연</li>
+                <li>나노바나나2로 음식 사진 AI 생성</li>
+                <li>2026 키워드 정리: 멀티모달, AI Agent, 맞춤화</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- ACT 2 -->
+        <div class="timeline-block">
+          <div class="timeline-dot dot-act2">🍜</div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <span class="tc-time">00:35 ~ 01:10</span>
+              <span class="tc-duration">35분</span>
+            </div>
+            <div class="tc-title"><span class="emoji">🍜</span>ACT 2: 수유리 우동집 실전 활용</div>
+            <div class="tc-desc">수유리 우동집의 실제 데이터를 활용하여, 고객 리뷰 분석부터 운영 대시보드 구성, 신메뉴 포스터 제작까지 — 내일부터 바로 쓸 수 있는 실전 업무 플로우를 시연합니다.</div>
+            <div class="tc-tools">
+              <span class="tc-tool green">NotebookLM</span>
+              <span class="tc-tool orange">Notion AI</span>
+              <span class="tc-tool purple">Figma</span>
+            </div>
+            <div class="tc-details">
+              <ul class="tc-detail-list">
+                <li>NotebookLM: 고객 리뷰 분석, 경쟁 분석, 오디오 브리핑</li>
+                <li>Notion AI: 운영 대시보드, SNS 마케팅 문구, 공지문 작성</li>
+                <li>Figma: 신메뉴 포스터 라이브 제작, 커뮤니티 템플릿 활용</li>
+                <li>통합 플로우: 리뷰 분석 → 기획 → 홍보물 = 20분</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Break -->
+        <div class="timeline-block">
+          <div class="timeline-dot dot-break">☕</div>
+          <div class="timeline-card break-card">
+            <span class="tc-time" style="background: #F0EAE0;">01:10 ~ 01:20</span>
+            &nbsp;&nbsp;<strong>☕ 휴식 10분</strong>&nbsp;&nbsp;
+            <span style="font-size: 12px; color: #999;">개별 질문 · 도구 가입 서포트</span>
+          </div>
+        </div>
+
+        <!-- ACT 3 -->
+        <div class="timeline-block">
+          <div class="timeline-dot dot-act3">⚡</div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <span class="tc-time">01:20 ~ 01:50</span>
+              <span class="tc-duration">30분</span>
+            </div>
+            <div class="tc-title"><span class="emoji">⚡</span>ACT 3: 바이브코딩 — 나만의 AI 만들기</div>
+            <div class="tc-desc">코딩을 모르는 사람도, 말로 설명하면 AI가 만들어주는 "바이브코딩"을 라이브로 시연합니다. 수유리 우동집 전용 도구를 실시간으로 만들어내는 장면을 목격합니다.</div>
+            <div class="tc-tools">
+              <span class="tc-tool blue">V0</span>
+              <span class="tc-tool red">Antigravity</span>
+              <span class="tc-tool teal">Gemini CLI</span>
+            </div>
+            <div class="tc-details">
+              <ul class="tc-detail-list">
+                <li>V0: 수유리 우동집 모바일 주문 페이지를 한국어로 만들기</li>
+                <li>Antigravity: 고객 만족도 조사 웹 폼 생성</li>
+                <li>Gemini CLI: 매출 데이터 자동 분석 리포트</li>
+                <li>핵심: "남이 만든 도구"에서 "나만의 도구"로</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Closing -->
+        <div class="timeline-block">
+          <div class="timeline-dot dot-closing">🎯</div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <span class="tc-time">01:50 ~ 02:00</span>
+              <span class="tc-duration">10분</span>
+            </div>
+            <div class="tc-title"><span class="emoji">🎯</span>클로징</div>
+            <div class="tc-desc">"AI를 나에게 맞추는 것, 그게 2026년입니다" — 오늘 배운 것 정리, 내일 바로 해볼 것 안내, 후속 과정 소개</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Key Message -->
+      <div class="key-message">
+        <div class="km-title">핵심 메시지</div>
+        <div class="km-text">
+          AI를 쓰는 시대에서<br>
+          AI를 나에게 맞추는 시대로.
+        </div>
+        <div class="km-sub">
+          범용 AI를 쓰는 것 → 나만의 AI Agent를 구성하는 것<br>
+          바이브코딩으로 코딩 없이 나만의 도구를 만들 수 있습니다.
+        </div>
+      </div>
+
+      <!-- Bottom info -->
+      <div class="bottom-info">
+        <div class="info-card">
+          <div class="info-card-title">📋 참가자 준비물</div>
+          <ul class="info-card-list">
+            <li>노트북 또는 태블릿</li>
+            <li>Google 계정 (Gmail)</li>
+            <li>사전 지식 불필요</li>
+          </ul>
+        </div>
+        <div class="info-card">
+          <div class="info-card-title">🎯 교육 대상</div>
+          <ul class="info-card-list">
+            <li>수유리 우동집 대표 및 스태프</li>
+            <li>AI 비전공자</li>
+            <li>업무 효율화에 관심 있는 분</li>
+          </ul>
+        </div>
+        <div class="info-card">
+          <div class="info-card-title">📚 교육 구성</div>
+          <ul class="info-card-list">
+            <li>트렌드 브리핑 30%</li>
+            <li>실전 라이브 데모 35%</li>
+            <li>바이브코딩 라이브 25%</li>
+            <li>클로징 10%</li>
+          </ul>
+        </div>
+        <div class="info-card">
+          <div class="info-card-title">✨ 교육 후 기대 효과</div>
+          <ul class="info-card-list">
+            <li>2026 AI 트렌드 방향 감각</li>
+            <li>무료 도구로 즉시 업무 적용</li>
+            <li>바이브코딩으로 나만의 도구 제작</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="page-footer">
+        <div class="page-footer-brand">가호서크호 교육팀</div>
+        <div class="page-footer-sub">AI &amp; 생산성 도구 전문 교육</div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

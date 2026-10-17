@@ -99,7 +99,7 @@ export default function Sidebar({
 
   return (
     <aside 
-      className={`bg-[#f8fafd] flex flex-col justify-between select-none shrink-0 h-[calc(100vh-64px)] overflow-y-auto overflow-x-hidden transition-all duration-300 ease-in-out ${
+      className={`iso-sidebar flex flex-col justify-between select-none shrink-0 h-[calc(100vh-64px)] overflow-y-auto overflow-x-hidden transition-all duration-300 ease-in-out ${
         isOpen 
           ? 'w-64 p-3 opacity-100' 
           : 'w-0 p-0 opacity-0 pointer-events-none border-0'

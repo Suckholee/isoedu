@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <title>어니스톤</title>
+  <rect width="64" height="64" rx="15" fill="#001638"/>
+  <path d="M16 10h31l10 16-5 25-25 7L8 40l2-20z" fill="#2563eb"/>
+  <path d="M16 10h31L32 24 10 20z" fill="#60a5fa"/>
+  <path d="M47 10l10 16-5 25-10-10 3-18z" fill="#1d4ed8"/>
+  <path d="M21 20h7v10h9V20h7v27h-7V37h-9v10h-7z" fill="#fff"/>
+</svg>
