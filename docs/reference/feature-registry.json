@@ -1195,5 +1195,12 @@
     "spec": "docs/reference/cloud-client-files.md",
     "behavior": "회사별 비공개 원본·PDF/HTML 뷰어·전체 본문·다운로드",
     "verification": "운영65회사123문서 중120개 원본·미리보기 다운로드 해시 검증. 미래석건 UI 목록1개·뷰어컨트롤/미리보기 HTTP200/익명 차단 확인. 17테스트·빌드 통과. 원본3개는공통50MB 제한으로보류. 비용한도변경없음."
+  },
+  "logoHomeNavigation": {
+    "relatedIds": [
+      "S05"
+    ],
+    "behavior": "열린 사이드바 로고와 접힌 레일 방패 로고 클릭 시 /dashboard 내 업무 홈 이동. 현재 거래처·URL 필터·사이드바 상태 유지. 기존 onSelectNav 경로 재사용.",
+    "permissions": "탐색만 변경; 데이터 저장·권한 변경 없음."
   }
 }
