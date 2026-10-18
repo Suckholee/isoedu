@@ -40,6 +40,7 @@ export default function Header({
   onToggleSidebar,
   currentCompany,
   onSelectCompany,
+  onCreateClient,
   onOpenSearch,
   onOpenAddModal,
   onToggleAiPanel,
@@ -138,7 +139,7 @@ export default function Header({
       <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
 
         {/* Tenant Switcher (Pill Chip) */}
-        <CompanySwitcher companies={companies} currentCompany={currentCompany} onSelectCompany={onSelectCompany}/>
+        <CompanySwitcher companies={companies} currentCompany={currentCompany} onSelectCompany={onSelectCompany} onCreateClient={onCreateClient}/>
 
         {/* Gemini / AI Assistant Sparkle Button */}
         <button

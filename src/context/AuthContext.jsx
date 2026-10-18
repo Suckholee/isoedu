@@ -4,6 +4,7 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 import { supabase, recordAuditLog } from '../lib/supabaseClient';
 import { isCloudMode } from '../lib/dataConfig.js';
 import { INITIAL_COMPANIES } from '../lib/mockData';
+import { profileErrorMessage } from '../lib/authErrors.mjs';
 
 const AuthContext = createContext(null);
 
@@ -45,6 +46,8 @@ export function AuthProvider({ children }) {
   const [profile, setProfile] = useState(isCloudMode ? null : DEMO_PROFILES.ADMIN);
   const [isLoading, setIsLoading] = useState(isCloudMode);
   const [authError, setAuthError] = useState(null);
+  const [profileReload, setProfileReload] = useState(0);
+  const [auditWarning, setAuditWarning] = useState(null);
 
   useEffect(() => {
     if (!isCloudMode) return;
@@ -81,7 +84,7 @@ export function AuthProvider({ children }) {
           mfaEnabled: session.user.factors?.some(factor => factor.status === 'verified') || false,
         });
       } catch (err) {
-        if (mounted && generation === current) setAuthError(`프로필을 불러오지 못했습니다: ${err.message}`);
+        if (mounted && generation === current) setAuthError(profileErrorMessage(err));
       } finally {
         if (mounted && generation === current) setIsLoading(false);
       }
@@ -96,7 +99,7 @@ export function AuthProvider({ children }) {
       if (generation === 0) syncSession(data.session);
     }).catch(err => { if (mounted) { setAuthError(err.message); setIsLoading(false); } });
     return () => { mounted = false; generation++; subscription.unsubscribe(); };
-  }, []);
+  }, [profileReload]);
 
   const login = async (email, password) => {
     setAuthError(null);
@@ -104,7 +107,8 @@ export function AuthProvider({ children }) {
       if (!supabase) return { success: false, error: 'Supabase 연결 설정을 확인해 주세요.' };
       const { error } = await supabase.auth.signInWithPassword({ email, password });
       if (error) { setAuthError(error.message); return { success: false, error: error.message }; }
-      recordAuditLog({ actionType: 'LOGIN' }).catch(err => setAuthError(`로그인 감사 기록 실패: ${err.message}`));
+      setAuditWarning(null);
+      recordAuditLog({ actionType: 'LOGIN' }).catch(() => setAuditWarning('로그인 기록을 저장하지 못했습니다. 서버 설정 확인이 필요합니다.'));
       return { success: true };
     }
     const demo = Object.values(DEMO_PROFILES).find(p => p.email.toLowerCase() === email.toLowerCase())
@@ -140,7 +144,7 @@ export function AuthProvider({ children }) {
   };
 
   return <AuthContext.Provider value={{
-    user, profile, isLoading, authError, isDemoMode: !isCloudMode,
+    user, profile, isLoading, authError, auditWarning, reloadProfile: () => setProfileReload(value => value + 1), isDemoMode: !isCloudMode,
     isAuthenticated: isCloudMode ? Boolean(user) : Boolean(profile),
     isAdmin: profile?.role === 'ADMIN', isAuditor: ['ADMIN', 'AUDITOR'].includes(profile?.role),
     isMember: profile?.role === 'MEMBER', login, signup, logout, switchDemoRole,

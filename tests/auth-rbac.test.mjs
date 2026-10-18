@@ -8,6 +8,7 @@ const member = '10000000-0000-4000-8000-000000000001';
 const other = '10000000-0000-4000-8000-000000000002';
 const auditor = '10000000-0000-4000-8000-000000000003';
 let company, otherCompany, documentId;
+const existingCeo = '10000000-0000-4000-8000-000000000099';
 const root = new URL('../', import.meta.url);
 
 before(async () => {
@@ -31,8 +32,18 @@ before(async () => {
   `);
   const schema = (await readFile(new URL('supabase/schema.sql', root), 'utf8')).replace('CREATE EXTENSION IF NOT EXISTS "uuid-ossp";', '');
   await db.exec(schema);
+  await db.query('INSERT INTO auth.users(id, email, raw_user_meta_data) VALUES ($1, $2, $3)', [existingCeo, 'ceo@honestone.kr', { full_name: 'Test CEO', company_name: 'Private workspace' }]);
   const migration = await readFile(new URL('supabase/platform_migration.sql', root), 'utf8');
   await db.exec(migration);
+  const repair = await readFile(new URL('supabase/repair_existing_ceo_profile.sql', root), 'utf8');
+  await db.exec(repair);
+  await db.exec(repair);
+  const workTasksMigration = await readFile(new URL('supabase/work_tasks_migration.sql', root), 'utf8');
+  await db.exec(workTasksMigration);
+  await db.exec(workTasksMigration);
+  const clientsMigration=await readFile(new URL('supabase/managed_clients_migration.sql',root),'utf8');
+  await db.exec(clientsMigration);
+  await db.exec(clientsMigration);
   await db.exec(migration); // Rerunning must not leave a partially hardened database.
   for (const id of [member, other, auditor]) {
     await db.query('INSERT INTO auth.users(id, email, raw_user_meta_data) VALUES ($1, $2, $3)', [id, `${id}@example.com`, { full_name: 'Test', role: 'ADMIN', company_name: 'Test company' }]);
@@ -120,4 +131,52 @@ test('project creation persists a company, membership and project in one transac
     assert.equal((await db.query('SELECT * FROM public.audit_projects WHERE id = $1', [created.id])).rows.length, 1);
     assert.equal((await db.query('SELECT public.can_edit_company($1) AS allowed', [created.company_id])).rows[0].allowed, true);
   });
+});
+
+
+test('pre-migration account repair is idempotent and creates only a private membership', async () => {
+  const profile = (await db.query('SELECT * FROM public.profiles WHERE id = $1', [existingCeo])).rows[0];
+  assert.equal(profile.role, 'MEMBER');
+  const memberships = (await db.query('SELECT * FROM public.company_members WHERE user_id = $1', [existingCeo])).rows;
+  assert.equal(memberships.length, 1);
+  assert.equal(memberships[0].company_id, profile.company_id);
+  assert.equal(memberships[0].membership_role, 'OWNER');
+  await asUser(existingCeo, async () => {
+    const companies = (await db.query('SELECT * FROM public.companies')).rows;
+    assert.equal(companies.length, 1);
+    assert.equal(companies[0].name, 'Private workspace');
+    assert.equal((await db.query('SELECT * FROM public.documents')).rows.length, 0);
+    await db.query("SELECT public.record_auth_event('LOGIN')");
+    assert.equal((await db.query("SELECT * FROM public.audit_logs WHERE action_type = 'LOGIN'")).rows.length, 1);
+  });
+});
+
+
+test('cloud tasks persist with company isolation, private ownership, document checks and completion', async () => {
+ const task=(await db.query("INSERT INTO public.work_tasks(created_by,company_id,document_id,title,due_date,official_due_date,checklist) VALUES ($1,$2,$3,'Review plan','2026-10-19','2026-10-23',$4) RETURNING *",[member,company,documentId,JSON.stringify([{text:'Review',done:false}])])).rows[0];
+ const taskId=task.id,privateId=(await db.query("INSERT INTO public.work_tasks(created_by,title) VALUES ($1,'Private') RETURNING id",[member])).rows[0].id;
+ await asUser(member, async () => {
+  const created=(await db.query("INSERT INTO public.work_tasks(title) VALUES ('Own') RETURNING *")).rows[0];assert.equal(created.created_by,member);
+  await db.query("UPDATE public.work_tasks SET status='done' WHERE id=$1",[taskId]);
+  assert.equal((await db.query('SELECT * FROM public.work_tasks WHERE id=$1',[taskId])).rows[0].status,'done');
+ });
+ await asUser(other, async()=>{assert.equal((await db.query('SELECT * FROM public.work_tasks WHERE id=ANY($1::uuid[])',[[taskId,privateId]])).rows.length,0);});
+ await assert.rejects(asUser(other,()=>db.query("INSERT INTO public.work_tasks(company_id,title) VALUES ($1,'Cross tenant')",[company])),/row-level security/);
+ await assert.rejects(asUser(member,()=>db.query("INSERT INTO public.work_tasks(company_id,document_id,title) VALUES ($1,$2,'Mismatch')",[otherCompany,documentId])),/Document must belong/);
+ await assert.rejects(asUser(member,()=>db.query('UPDATE public.work_tasks SET created_by=$1 WHERE id=$2',[other,taskId])),/creator/);
+ await assert.rejects(asUser(null,()=>db.query('SELECT * FROM public.work_tasks'),'anon'),/permission denied/);
+ await db.query("INSERT INTO public.company_members(company_id,user_id,membership_role) VALUES ($1,$2,'VIEWER')",[company,other]);
+ await asUser(other,async()=>{assert.equal((await db.query('SELECT * FROM public.work_tasks WHERE id=$1',[taskId])).rows.length,1);assert.equal((await db.query("UPDATE public.work_tasks SET title='Wrong' WHERE id=$1 RETURNING id",[taskId])).rows.length,0);assert.equal((await db.query('SELECT * FROM public.work_tasks WHERE id=$1',[privateId])).rows.length,0);});
+ await db.query('DELETE FROM public.company_members WHERE company_id=$1 AND user_id=$2',[company,other]);
+});
+
+
+test('managed client registration is idempotent, belongs to its creator and never grants an existing tenant',async()=>{
+ await asUser(member,async()=>{
+  const a=(await db.query("SELECT public.register_managed_client('Client example','local-client-1') AS id")).rows[0].id;
+  const b=(await db.query("SELECT public.register_managed_client('Same source','local-client-1') AS id")).rows[0].id;assert.equal(a,b);assert.notEqual(a,otherCompany);
+  assert.equal((await db.query('SELECT public.can_edit_company($1) AS allowed',[a])).rows[0].allowed,true);
+  assert.equal((await db.query('SELECT * FROM public.managed_client_links')).rows.length,1);
+ });
+ await assert.rejects(asUser(null,()=>db.query("SELECT public.register_managed_client('No','x')"),'anon'),/permission denied/);
 });

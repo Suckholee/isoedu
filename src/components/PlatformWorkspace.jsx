@@ -8,6 +8,7 @@ import PlatformUtilityView from '../components/PlatformUtilityView';
 import Sidebar from '../components/PlatformSidebar';
 import DriveExplorer from '../components/DriveExplorer';
 import ClientDrive from './ClientDrive';
+import ManagedClientDrive from './ManagedClientDrive';
 import IsoComplianceMatrixView from '../components/IsoComplianceMatrixView';
 import MyWorkView from './MyWorkView';
 import RadarView from '../components/RadarView';
@@ -26,13 +27,13 @@ import { useDocuments } from '../hooks/useDocuments';
 import { isCloudMode } from '../lib/dataConfig';
 import { mergeImportedDocuments } from '../lib/documentModel';
 import { loadWorkspace, createProject, updateProject } from '../lib/workspaceRepository';
-import { 
-  Sparkles, 
-  Calendar as CalendarIcon, 
-  CheckSquare, 
-  UserCheck, 
-  Plus, 
-  Compass, 
+import {
+  Sparkles,
+  Calendar as CalendarIcon,
+  CheckSquare,
+  UserCheck,
+  Plus,
+  Compass,
   X,
   Lightbulb,
   CheckCircle2,
@@ -45,6 +46,8 @@ import {
   PanelLeftOpen,
   ChevronRight
 } from 'lucide-react';
+
+import {managedClients,resolveClient,clientContextSearch} from '../lib/clientContext.mjs';
 
 export default function PlatformWorkspace() {
   const contentRef = useRef(null);
@@ -59,12 +62,14 @@ export default function PlatformWorkspace() {
   const setActiveNav = nav => navigate(nav);
   const setSelectedStandard = standard => router.replace(platformHref(activeNav, searchParams.toString(), {standard}), {scroll:false});
   const setSelectedFolder = folder => router.replace(platformHref(activeNav, searchParams.toString(), {folder}), {scroll:false});
-  const { user, profile, isLoading: authLoading, authError } = useAuth();
+  const { user, profile, isLoading: authLoading, authError, auditWarning } = useAuth();
   const [companies, setCompanies] = useState(isCloudMode ? [] : INITIAL_COMPANIES);
   const [currentCompany, setCurrentCompany] = useState(null);
   const [projects, setProjects] = useState([]);
   const [activeProject, setActiveProject] = useState(null);
   const [workspaceError, setWorkspaceError] = useState(null);
+  const clientCompanies = managedClients(companies,isCloudMode?profile?.company?.id:null);
+  const requestedClientId = searchParams.get('company');
   const accountId = isCloudMode ? user?.id : 'local';
   const accountRef = useRef(accountId);
   accountRef.current = accountId;
@@ -73,9 +78,9 @@ export default function PlatformWorkspace() {
     enabled: !authLoading && (!isCloudMode || Boolean(user && profile)),
   });
   const documents = documentStore.documents;
-  
+
   // Navigation & View States
-  
+
   // Modal & Drawer States
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
@@ -88,7 +93,7 @@ export default function PlatformWorkspace() {
   const [isAiPanelOpen, setIsAiPanelOpen] = useState(false);
   const [isKeepOpen, setIsKeepOpen] = useState(false);
   const [isAddonModalOpen, setIsAddonModalOpen] = useState(false);
-  
+
   // Keep Memos State
   const [keepNotes, setKeepNotes] = useState([
     {
@@ -204,10 +209,12 @@ export default function PlatformWorkspace() {
       if (cancelled) return;
       setCompanies(loadedCompanies);
       setProjects(loadedProjects);
-      setCurrentCompany(loadedCompanies.find(company => company.id === profile?.company?.id) || loadedCompanies[0] || null);
+      setCurrentCompany(null);
     }).catch(error => { if (!cancelled) setWorkspaceError(error.message); });
     return () => { cancelled = true; };
   }, [accountId, authLoading, profile?.id]);
+
+  useEffect(() => { setCurrentCompany(resolveClient(clientCompanies,requestedClientId)); }, [requestedClientId,companies,profile?.company?.id]);
 
   useEffect(() => {
     setActiveDoc(null);
@@ -244,7 +251,7 @@ export default function PlatformWorkspace() {
       setCompanies(workspace.companies);
       setCurrentCompany(workspace.companies.find(company => company.id === saved.companyId));
       setActiveProject(saved);
-      navigate('project', {projectId: saved.id});
+      navigate('project', {projectId: saved.id,company:saved.companyId});
       showToast(`'${saved.clientName}' 프로젝트가 ${isCloudMode ? 'Supabase에' : '이 브라우저에'} 저장되었습니다.`);
       return saved;
     } catch (error) { showToast(`프로젝트 저장 실패: ${error.message}`); return null; }
@@ -252,7 +259,7 @@ export default function PlatformWorkspace() {
 
   const handleSelectProject = (proj) => {
     setActiveProject(proj);
-    navigate('project', {projectId: proj.id});
+    navigate('project', {projectId: proj.id,company:proj.companyId});
     const matchedComp = companies.find(c => c.id === proj.companyId) || {
       id: proj.companyId,
       name: proj.clientName,
@@ -373,17 +380,18 @@ export default function PlatformWorkspace() {
     }));
   };
 
-  const selectCompany = comp => {setCurrentCompany(comp);setActiveProject(projects.find(p=>p.companyId===comp.id)||null);showToast(`작업 회사가 ${comp.name}(으)로 변경되었습니다.`);};
+  const selectCompany = comp => {setCurrentCompany(comp);setActiveProject(comp?projects.find(p=>p.companyId===comp.id)||null:null);const p=clientContextSearch(searchParams.toString(),comp);router.push((activeNav==='project'?'/certifications':pathname)+(p.size?'?'+p:''),{scroll:false});showToast(comp?`${comp.name} 기준으로 전환했습니다.`:'전체 거래처로 전환했습니다.');};
   return (
     <div className="iso-app ppt-layout h-screen flex flex-col text-slate-800 font-sans overflow-hidden">
-      
+
       {/* 1. Google Drive Material 3 Header */}
       <Header
         isSidebarOpen={isSidebarOpen}
         onToggleSidebar={handleToggleSidebar}
         currentCompany={currentCompany}
-        companies={companies}
+        companies={clientCompanies}
         onSelectCompany={selectCompany}
+        onCreateClient={() => setIsNewProjectModalOpen(true)}
         onOpenSearch={() => setIsSearchOpen(true)}
         onOpenAddModal={(level) => {
           setAddTemplateLevel(level);
@@ -395,19 +403,20 @@ export default function PlatformWorkspace() {
         onSelectNav={setActiveNav}
       />
 
-      {(authError || workspaceError || documentStore.error || (isCloudMode && !user)) && (
+      {(authError || auditWarning || workspaceError || documentStore.error || (isCloudMode && !user)) && (
         <div role="alert" className="platform-connection-notice">
-          {authError || workspaceError || documentStore.error || '클라우드 문서를 보려면 오른쪽 프로필 메뉴에서 로그인해 주세요.'}
+          {authError || workspaceError || documentStore.error || auditWarning || '클라우드 문서를 보려면 오른쪽 프로필 메뉴에서 로그인해 주세요.'}
         </div>
       )}
 
       {/* 2. Main Workspace (Sidebar + Floating Card in Canvas + Companion Bar) */}
       <div className="flex-1 flex overflow-hidden relative">
-        
+
         {/* Left Google Drive Sidebar (Collapsible) */}
         <Sidebar
-          companies={companies}
+          companies={clientCompanies}
           onSelectCompany={selectCompany}
+        onCreateClient={() => setIsNewProjectModalOpen(true)}
           currentCompany={currentCompany}
           isOpen={isSidebarOpen}
           onToggle={handleToggleSidebar}
@@ -425,7 +434,7 @@ export default function PlatformWorkspace() {
             setIsAddModalOpen(true);
           }}
           documents={documents}
-          projects={projects}
+          projects={currentCompany?projects.filter(p=>p.companyId===currentCompany.id):projects}
           activeProject={activeProject}
           onSelectProject={handleSelectProject}
           onOpenNewProjectModal={() => setIsNewProjectModalOpen(true)}
@@ -433,19 +442,24 @@ export default function PlatformWorkspace() {
 
         {/* Center: The Floating White Canvas Panel (핵심 고급스러움 요소) */}
         <div className="flex-1 flex flex-col min-w-0 overflow-hidden">
-          
+
           <div className="iso-workspace flex-1 flex flex-col overflow-hidden">
-            
+
             {/* Scrollable View Content Canvas */}
             <div ref={contentRef} className="platform-scroll flex-1 overflow-auto">
-              
-              {['schedule', 'notifications', 'reports', 'settings'].includes(activeNav) && (
+
+              {currentCompany&&<div className="managed-context-bar"><strong>현재 거래처 · {currentCompany.name}</strong><button onClick={()=>selectCompany(null)}>전체 거래처로 전환</button></div>}
+              {activeNav==='gov_programs'&&currentCompany&&<p className="px-8 text-sm text-slate-500">{currentCompany.name} 작업 중 · 공고는 전체 목록이며 회사 정보에 따른 신청 적합성 판정은 아직 제공되지 않습니다.</p>}
+
+
+              {['schedule','notifications','reports','radar'].includes(activeNav)&&!currentCompany&&<div className="platform-card m-8"><h1>거래처별 현황</h1><p className="my-4 text-slate-500">관리할 거래처를 선택하면 해당 거래처의 일정·알림·리스크·보고서를 확인할 수 있습니다.</p></div>}
+              {(['schedule', 'notifications', 'reports'].includes(activeNav)&&currentCompany||activeNav==='settings') && (
                 <PlatformUtilityView key={activeNav} view={activeNav} documents={documents} currentCompany={currentCompany}
                   onOpenDetail={handleOpenDoc} onNavigate={(nav, standard) => navigate(nav, standard ? {standard} : {})} />
               )}
 
               {/* VIEW 1: Google Drive Document Explorer (핵심 기본 뷰) */}
-              {activeNav === 'drive' && pathname !== '/documents/iso' && <ClientDrive/>}
+              {activeNav === 'drive' && pathname !== '/documents/iso' && (isCloudMode?<ManagedClientDrive clients={clientCompanies} selectedClient={currentCompany} documents={documents} onSelectClient={selectCompany} onOpenDocument={handleOpenDoc} onAddDocument={()=>setIsAddModalOpen(true)} onCreateClient={()=>setIsNewProjectModalOpen(true)}/>:<ClientDrive selectedClient={currentCompany}/>)}
               {activeNav === 'drive' && pathname === '/documents/iso' && (
                 <DriveExplorer
                   documents={documents}
@@ -492,7 +506,8 @@ export default function PlatformWorkspace() {
               )}
 
               {/* VIEW 3: ISO Statutory Compliance & Mandatory Requirements Binder */}
-              {activeNav === 'compliance' && (
+              {activeNav === 'compliance' && !currentCompany && <div className="platform-card m-8"><h1>인증 관리</h1><p className="my-4 text-slate-500">관리할 거래처를 선택하면 해당 거래처의 인증과 구비문서 현황을 확인할 수 있습니다.</p><button className="work-primary" onClick={()=>setIsNewProjectModalOpen(true)}>거래처·프로젝트 추가</button></div>}
+              {activeNav === 'compliance' && currentCompany && (
                 <IsoComplianceMatrixView
                   key={selectedStandard}
                   initialStandard={selectedStandard}
@@ -507,11 +522,11 @@ export default function PlatformWorkspace() {
 
               {/* VIEW 4: ISO Certification Dashboard */}
               {activeNav === 'dashboard' && (
-                <MyWorkView/>
+                <MyWorkView selectedClient={currentCompany} clients={clientCompanies}/>
               )}
 
               {/* VIEW 5: Expiry Radar & Risk Analysis */}
-              {activeNav === 'radar' && (
+              {activeNav === 'radar' && currentCompany && (
                 <RadarView
                   documents={documents}
                   onOpenDetail={handleOpenDoc}
@@ -529,6 +544,7 @@ export default function PlatformWorkspace() {
               {activeNav === 'gov_programs' && (
                 <GovernmentProgramsView
                   documents={documents}
+                  currentCompany={currentCompany}
                   onSelectDocument={handleOpenDoc}
                   onAddDocument={handleAddDocument}
                   onCreateProjectWithProgram={handleCreateProjectWithProgram}
@@ -543,9 +559,9 @@ export default function PlatformWorkspace() {
 
         {/* 3. Google Drive Signature Right Companion Bar (우측 아이콘 레일) */}
         <div className="hidden w-14 bg-slate-50 flex-col items-center py-4 space-y-4 shrink-0 border-l border-slate-200/50 select-none">
-          
+
           {/* Calendar (사후심사 D-26) */}
-          <button 
+          <button
             onClick={() => setActiveNav('dashboard')}
             title="ISO 사후심사 일정 (D-26)"
             className="w-10 h-10 rounded-full flex items-center justify-center hover:bg-slate-200/70 transition-colors relative group"
@@ -560,7 +576,7 @@ export default function PlatformWorkspace() {
           </button>
 
           {/* Keep / Memo Button -> Opens ISO Audit Keep Drawer */}
-          <button 
+          <button
             onClick={() => setIsKeepOpen(true)}
             title="ISO 심사 메모 (Google Keep)"
             className="w-10 h-10 rounded-full flex items-center justify-center hover:bg-slate-200/70 transition-colors relative group"
@@ -574,7 +590,7 @@ export default function PlatformWorkspace() {
           </button>
 
           {/* Tasks / Checklist -> Navigates to Compliance Binder */}
-          <button 
+          <button
             onClick={() => setActiveNav('compliance')}
             title="ISO 법정 필수 규격 바인더 진단"
             className="w-10 h-10 rounded-full flex items-center justify-center hover:bg-slate-200/70 transition-colors relative group"
@@ -588,7 +604,7 @@ export default function PlatformWorkspace() {
           </button>
 
           {/* Radar Quick View */}
-          <button 
+          <button
             onClick={() => setActiveNav('radar')}
             title="만기 레이더 리스크 분석"
             className="w-10 h-10 rounded-full flex items-center justify-center hover:bg-slate-200/70 transition-colors relative group"
@@ -602,7 +618,7 @@ export default function PlatformWorkspace() {
           </button>
 
           {/* Gemini AI Co-pilot */}
-          <button 
+          <button
             onClick={() => setIsAiPanelOpen(!isAiPanelOpen)}
             title="Gemini AI 규격 어시스턴트"
             className="w-10 h-10 rounded-full flex items-center justify-center hover:bg-purple-100 transition-colors relative group"
@@ -618,7 +634,7 @@ export default function PlatformWorkspace() {
           <div className="w-6 h-px bg-slate-200 my-2"></div>
 
           {/* Add Add-on Icon -> Opens Workspace Add-on Marketplace Modal */}
-          <button 
+          <button
             onClick={() => setIsAddonModalOpen(true)}
             title="추가 부가기능 (Google Workspace Add-ons)"
             className="w-9 h-9 rounded-full flex items-center justify-center hover:bg-slate-200 text-slate-500 transition-colors relative group"
@@ -666,11 +682,11 @@ export default function PlatformWorkspace() {
 
       {/* 4. Google Keep Style ISO Audit Memo Drawer */}
       {isKeepOpen && (
-        <div 
+        <div
           className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex justify-end animate-fade-in"
           onClick={() => setIsKeepOpen(false)}
         >
-          <aside 
+          <aside
             onClick={(e) => e.stopPropagation()}
             className="w-full max-w-md bg-white h-full shadow-2xl flex flex-col animate-slide-left"
           >
@@ -706,8 +722,8 @@ export default function PlatformWorkspace() {
                 className="w-full px-3 py-1.5 text-xs border border-slate-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-amber-500 bg-white resize-none"
               />
               <div className="flex justify-end">
-                <button 
-                  type="submit" 
+                <button
+                  type="submit"
                   disabled={!newNoteTitle.trim()}
                   className="px-3 py-1 bg-amber-500 hover:bg-amber-600 disabled:bg-slate-200 text-white rounded-lg text-xs font-bold transition-all shadow-2xs"
                 >
@@ -724,7 +740,7 @@ export default function PlatformWorkspace() {
                     <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-100 text-amber-800">
                       {note.tag}
                     </span>
-                    <button 
+                    <button
                       onClick={() => handleDeleteKeepNote(note.id)}
                       className="p-1 rounded text-slate-400 hover:text-rose-600 opacity-0 group-hover:opacity-100 transition-opacity"
                     >

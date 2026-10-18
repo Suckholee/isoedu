@@ -23,9 +23,10 @@ export async function loadWorkspace() {
   const results = await Promise.all([
     cloud().from('companies').select('*').order('name'),
     cloud().from('audit_projects').select('*').order('created_at', { ascending: false }),
+    cloud().from('managed_client_links').select('company_id,source_client_id'),
   ]);
   for (const result of results) if (result.error) throw result.error;
-  return { companies: results[0].data, projects: results[1].data.map(projectFromRow) };
+  return { companies: results[0].data.map(c=>({...c,source_client_id:results[2].data.find(x=>x.company_id===c.id)?.source_client_id})), projects: results[1].data.map(projectFromRow) };
 }
 
 export async function createProject(project) {

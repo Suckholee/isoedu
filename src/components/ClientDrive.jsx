@@ -8,14 +8,15 @@ import DocumentSpaceHeader from './DocumentSpaceHeader';
 import {CLIENT_INITIALS,clientInitial,clientSortName} from '../lib/clientInitials.mjs';
 import {createReferenceDraft} from '../lib/referenceStandards.mjs';
 async function json(r){if(!r.headers.get('content-type')?.includes('application/json'))throw Error('저장소 응답을 확인하지 못했습니다. 다시 시도해 주세요.');const d=await r.json();if(!r.ok)throw Error(d.error||'작업을 완료하지 못했습니다.');return d;}
-export default function ClientDrive(){
+export default function ClientDrive({selectedClient=null}){
  const router=useRouter(),params=useSearchParams(),input=useRef(),driveTop=useRef();
  const [nodes,setNodes]=useState([]),[loading,setLoading]=useState(true),[error,setError]=useState(''),[busy,setBusy]=useState(false),[notice,setNotice]=useState(''),[query,setQuery]=useState(''),[dialog,setDialog]=useState(null);
  const [loadError,setLoadError]=useState('');
  const initial=CLIENT_INITIALS.includes(params.get('initial'))?params.get('initial'):'전체';
  const fileId=params.get('file')||params.get('reference'),trash=params.get('view')==='trash';
  const file=nodes.find(n=>n.id===fileId&&!n.trashedAt&&n.type==='file');
- const folderId=params.get('folder')||file?.parentId||null;
+ const selectedFolder=selectedClient?.source_client_id||nodes.find(n=>n.kind==='client'&&n.name===selectedClient?.name)?.id;
+ const folderId=params.get('folder')||file?.parentId||selectedFolder||null;
  useEffect(()=>{driveTop.current?.closest('.platform-scroll')?.scrollTo({top:0});},[folderId,trash]);
  const folder=nodes.find(n=>n.id===folderId&&n.type==='folder'&&!n.trashedAt);
  const folders=nodes.filter(n=>n.type==='folder'&&!n.trashedAt),active=nodes.filter(n=>!n.trashedAt);
@@ -31,7 +32,7 @@ export default function ClientDrive(){
  const trail=useMemo(()=>{const p=[];let n=folder;const seen=new Set();while(n&&!seen.has(n.id)){seen.add(n.id);p.unshift(n);n=nodes.find(x=>x.id===n.parentId);}return p;},[nodes,folder]);
  const pathFor=id=>{let n=nodes.find(n=>n.id===id),names=[];const seen=new Set();while(n&&!seen.has(n.id)){seen.add(n.id);names.unshift(n.name);n=nodes.find(x=>x.id===n.parentId);}return names.join(' / ');};
  function chooseInitial(value){const p=new URLSearchParams(params.toString());if(value==='전체')p.delete('initial');else p.set('initial',value);router.replace('/documents'+(p.size?'?'+p:''),{scroll:false});}
- const visible=(trash?nodes.filter(n=>n.trashedAt&&n.deletedWith===n.id):active.filter(n=>query?n.name.toLowerCase().includes(query.toLowerCase()):n.parentId===(folder?.id||null))).filter(n=>folder||trash||initial==='전체'||n.kind==='client'&&clientInitial(n.name)===initial).sort((a,b)=>(a.type==='folder'?0:1)-(b.type==='folder'?0:1)||clientSortName(a.name).localeCompare(clientSortName(b.name),'ko'));
+ const visible=(selectedClient&&!selectedFolder?[]:trash?nodes.filter(n=>n.trashedAt&&n.deletedWith===n.id):active.filter(n=>query?n.name.toLowerCase().includes(query.toLowerCase()):n.parentId===(folder?.id||null))).filter(n=>folder||trash||initial==='전체'||n.kind==='client'&&clientInitial(n.name)===initial).sort((a,b)=>(a.type==='folder'?0:1)-(b.type==='folder'?0:1)||clientSortName(a.name).localeCompare(clientSortName(b.name),'ko'));
  async function post(body){return fetch('/api/client-drive',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)}).then(json);}
  async function perform(body){setBusy(true);setError('');try{const d=await post(body);await load();setNotice('변경사항을 저장했습니다.');return d.node;}catch(e){setError(e.message);return null;}finally{setBusy(false);}}
  async function submitDialog(e){e.preventDefault();const result=await perform(dialog.action==='createFolder'?{action:'createFolder',parentId:folder?.id||null,name:dialog.value}:dialog.action==='move'?{action:'move',id:dialog.node.id,parentId:dialog.value}:{action:'rename',id:dialog.node.id,name:dialog.value});if(result)setDialog(null);}
@@ -40,7 +41,7 @@ export default function ClientDrive(){
  function localPreview(){try{let owner=nodes.find(n=>n.id===target);while(owner?.parentId)owner=nodes.find(x=>x.id===owner.parentId);setPreview(createReferenceDraft({company:owner,item,headings:headings.split('\n').filter(x=>x.trim()),standard:content.standard,reference:{id:file.id,sha256:file.sha256}}).contentDraft);setError('');}catch(e){setError(e.message);}}
 
  const operations=n=><div className="client-drive-operations">{!trash&&n.type==='file'&&<button className="client-preview-open" aria-label={`${n.name} 보기`} onClick={()=>navigate(n.parentId,n.id)}><Eye size={16}/><span>보기</span></button>}{trash?<button disabled={busy} title="복원" aria-label={`${n.name} 복원`} onClick={()=>perform({action:'restore',id:n.id})}><RotateCcw size={16}/></button>:<><button disabled={busy} title="이름 변경" aria-label={`${n.name} 이름 변경`} onClick={()=>setDialog({action:'rename',node:n,value:n.name})}><Pencil size={15}/></button>{n.kind!=='client'&&<button disabled={busy} title="이동" aria-label={`${n.name} 이동`} onClick={()=>setDialog({action:'move',node:n,value:n.parentId})}><Move size={15}/></button>}<button disabled={busy} title="휴지통으로 이동" aria-label={`${n.name} 휴지통으로 이동`} onClick={async()=>{const saved=await perform({action:'trash',id:n.id});if(saved&&file?.id===n.id)navigate(folder?.id);}}><Trash2 size={15}/></button></>}</div>;
- return <div ref={driveTop} className="client-drive"><DocumentSpaceHeader active="clients"/>
+ return <div ref={driveTop} className="client-drive"><DocumentSpaceHeader active="clients"/>{selectedClient&&<p className="my-3 text-sm text-slate-500">{selectedClient.name}의 문서 · {selectedFolder?'거래처 폴더':'연결된 원본 폴더 확인 필요'}</p>}
 
  <div className="client-drive-toolbar"><nav aria-label="현재 폴더"><button onClick={()=>navigate()}>거래처 드라이브</button>{trail.map(n=><span key={n.id}><ChevronRight size={14}/><button onClick={()=>navigate(n.id)}>{n.name}</button></span>)}{trash&&<span><ChevronRight size={14}/>휴지통</span>}</nav><div>{folder&&!trash&&<Button variant="secondary" onClick={()=>router.push('/dashboard?client='+encodeURIComponent(trail[0]?.id||folder.id))}>업무 보기</Button>}<Button variant="secondary" onClick={()=>navigate(null,null,trash?null:'trash')}><Trash2 size={15}/>{trash?'드라이브':'휴지통'}</Button><Button disabled={busy||trash||loading||Boolean(loadError)} variant="secondary" onClick={()=>setDialog({action:'createFolder',value:''})}><FolderPlus size={16}/>{folder?'새 폴더':'거래처 폴더 추가'}</Button>{folder&&!trash&&<Button disabled={busy} onClick={()=>input.current.click()}><Upload size={16}/>파일 업로드</Button>}<input ref={input} type="file" accept=".pdf,.hwp,.hwpx,.doc,.docx,.xls,.xlsx,.ppt,.pptx,.txt,.md,.png,.jpg,.jpeg,.webp" multiple hidden onChange={upload}/></div></div>
  <div className="client-drive-search"><label><Search size={17}/><input aria-label="드라이브 검색" value={query} onChange={e=>setQuery(e.target.value)} placeholder="거래처·폴더·파일 검색"/></label><span>{loading?'문서 목록 확인 중…':loadError?'문서 목록 확인 필요':`${folders.filter(n=>n.kind==='client').length}개 거래처 폴더 · ${active.filter(n=>n.type==='file').length}개 파일`}</span></div>
