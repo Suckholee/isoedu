@@ -1,0 +1,7 @@
+export const DOCUMENT_TYPES={CERT:'인증서',LEVEL_1:'매뉴얼',LEVEL_2:'절차서',LEVEL_3:'지침서',LEVEL_4:'양식·기록'};
+export function registerDate(row){const raw=row.matchedDoc?.lastModified||row.matchedDoc?.updated_at||'';if(!/^\d{4}-\d{2}-\d{2}/.test(raw))return '';if(raw.length===10)return raw;const date=new Date(raw);return Number.isNaN(date.getTime())?'':new Intl.DateTimeFormat('sv-SE',{timeZone:'Asia/Seoul',year:'numeric',month:'2-digit',day:'2-digit'}).format(date);}
+export function selectComplianceRows(rows,{status='ALL',type='ALL',query='',code='',owner='',date='',sort='clause',direction='asc'}={}){
+ const includes=(value,term)=>String(value||'').toLocaleLowerCase().includes(term.trim().toLocaleLowerCase());
+ const value=(r)=>({clause:r.clause,title:r.title,department:r.matchedDoc?.department||'',date:registerDate(r),status:r.status})[sort]||r.clause;
+ return rows.filter(r=>(status==='ALL'||(status==='LINKED'?!!r.matchedDoc:r.status===status))&&(type==='ALL'||r.level===type)&&(!code||includes([r.defaultCode,r.clause,r.matchedDoc?.code].join(' '),code))&&(!query||includes([r.title,r.defaultCode,r.clause,r.matchedDoc?.title,r.matchedDoc?.code].join(' '),query))&&(!owner||includes([r.matchedDoc?.department,r.matchedDoc?.author].join(' '),owner))&&(!date||registerDate(r)===date)).sort((a,b)=>String(value(a)||'').localeCompare(String(value(b)||''),'ko',{numeric:true})*(direction==='desc'?-1:1));
+}

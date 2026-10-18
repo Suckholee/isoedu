@@ -1,30 +1,11 @@
 'use client';
 import ModalLayer from './ui/ModalLayer';
+import CloudFileViewer from './CloudFileViewer';
 
-import React, { useState, useMemo } from 'react';
-import { 
-  Award, 
-  BookOpen, 
-  CheckCircle2, 
-  AlertCircle, 
-  Clock, 
-  Sparkles, 
-  FileText, 
-  ExternalLink, 
-  ShieldCheck, 
-  ShieldAlert, 
-  Plus, 
-  Search, 
-  Check, 
-  ChevronRight, 
-  ChevronDown, 
-  Layers, 
-  Filter, 
-  ArrowRight,
-  RefreshCw,
-  FolderOpen
-} from 'lucide-react';
-import { ISO_STANDARDS_INFO } from '../lib/isoRequirementsData.js';
+import React, { useState, useMemo, useEffect } from 'react';
+import {FileText,ChevronLeft,ChevronRight,RotateCcw} from 'lucide-react';
+import styles from './IsoComplianceMatrixView.module.css';
+import {DOCUMENT_TYPES,registerDate,selectComplianceRows} from '../lib/complianceRegister.mjs';
 import { evaluateComplianceReadiness, evaluateAllStandardsOverview } from '../lib/complianceEngine.js';
 
 export default function IsoComplianceMatrixView({
@@ -41,6 +22,10 @@ export default function IsoComplianceMatrixView({
   const [isLinkingModalOpen, setIsLinkingModalOpen] = useState(false);
   const [activeReqForLink, setActiveReqForLink] = useState(null);
 
+  const [filters,setFilters]=useState({type:'ALL',query:'',code:'',owner:'',date:'',sort:'clause',direction:'asc'});
+  const [page,setPage]=useState(1),[pageSize,setPageSize]=useState(20);
+  const [readerDoc,setReaderDoc]=useState(null);
+  const [busy,setBusy]=useState(false),[actionError,setActionError]=useState('');
   // 1. 전체 규격 종합 개요 계산
   const standardsOverview = useMemo(() => {
     return evaluateAllStandardsOverview(documents, currentCompany?.id);
@@ -51,23 +36,19 @@ export default function IsoComplianceMatrixView({
     return evaluateComplianceReadiness(documents, selectedStandard, currentCompany?.id);
   }, [documents, selectedStandard, currentCompany]);
 
-  // 3. 상태 필터링된 그룹 항목들
-  const filteredGroups = useMemo(() => {
-    return currentAnalysis.groups.map(group => {
-      const filteredItems = group.items.filter(item => {
-        if (statusFilter === 'MISSING') return item.status === 'MISSING';
-        if (statusFilter === 'READY') return item.status === 'READY' || item.status === 'EXPIRING';
-        return true;
-      });
-      return {
-        ...group,
-        items: filteredItems
-      };
-    }).filter(group => group.items.length > 0);
-  }, [currentAnalysis, statusFilter]);
+  const rows=useMemo(()=>selectComplianceRows(currentAnalysis.requirements,{...filters,status:statusFilter}),[currentAnalysis,filters,statusFilter]);
+  const pages=Math.max(1,Math.ceil(rows.length/pageSize)),safePage=Math.min(page,pages);
+  const visible=rows.slice((safePage-1)*pageSize,safePage*pageSize);
+  const setFilter=(field,value)=>{setFilters(prev=>({...prev,[field]:value}));setPage(1);};
+  const sortBy=field=>{setFilters(prev=>({...prev,sort:field,direction:prev.sort===field&&prev.direction==='asc'?'desc':'asc'}));setPage(1);};
+  const reset=()=>{setFilters({type:'ALL',query:'',code:'',owner:'',date:'',sort:'clause',direction:'asc'});setStatusFilter('ALL');setPage(1);};
+  useEffect(()=>{setPage(1);setReaderDoc(null);setIsLinkingModalOpen(false);setActiveReqForLink(null);setActionError('');},[currentCompany?.id,selectedStandard]);
+  const openLink=req=>{setActiveReqForLink(req);setIsLinkingModalOpen(true);setActionError('');};
+  const sortHeader=(field,label)=><button type="button" className={styles.sort} onClick={()=>sortBy(field)}>{label}<span>{filters.sort===field?(filters.direction==='asc'?'▴':'▾'):'▿'}</span></button>;
 
-  // 원클릭 AI 표준 템플릿 즉시 구비 (빈 슬롯 채우기)
-  const handleGenerateTemplate = (req) => {
+  // 기존 기준 양식으로 검토 전 초안을 저장한다.
+  const handleGenerateTemplate = async (req) => {
+    if(busy||!currentCompany?.id)return;setBusy(true);setActionError('');
     const newDoc = {
       id: `doc-${Date.now()}-${Math.random().toString(36).substr(2, 4)}`,
       companyId: currentCompany?.id || 'comp-1',
@@ -77,7 +58,7 @@ export default function IsoComplianceMatrixView({
       hierarchyLevel: req.level,
       clauseNumber: req.clause,
       department: currentAnalysis.standardInfo.primaryDepartment || '품질경영팀',
-      author: 'AI 규격 자동편성기',
+      author: '기준 양식 초안',
       version: 'v1.0',
       revisionNo: 'Rev. 1.0',
       status: 'DRAFT',
@@ -97,12 +78,14 @@ export default function IsoComplianceMatrixView({
                      req.level === 'LEVEL_3' ? 'from-amber-600 to-orange-700' : 'from-purple-600 to-indigo-800'
     };
 
-    onAddDocument && onAddDocument(newDoc);
+    try{const saved=await onAddDocument?.(newDoc);if(!saved)throw Error('양식을 저장하지 못했습니다. 다시 시도해 주세요.');onOpenDetail?.(saved);}catch(e){setActionError(e.message);}finally{setBusy(false);}
   };
 
   // 기존 드라이브 문서와 연결
   const handleLinkExistingDoc = async (doc) => {
-    if (!activeReqForLink) return;
+    if (!activeReqForLink||busy||doc.companyId!==currentCompany?.id) return;
+    setBusy(true);setActionError('');
+    try {
 
     // 해당 문서에 규격 및 조항 매핑 업데이트
     const updated = {
@@ -113,380 +96,37 @@ export default function IsoComplianceMatrixView({
     };
 
     const saved = onUpdateDocument && await onUpdateDocument(updated);
-    if (!saved) return;
+    if (!saved) throw Error('문서 연결을 저장하지 못했습니다. 다시 시도해 주세요.');
     setIsLinkingModalOpen(false);
     setActiveReqForLink(null);
+    }catch(e){setActionError(e.message);}finally{setBusy(false);}
   };
 
   return (
-    <div className="space-y-6 pb-6">
-      
-      {/* 1. Header: Enterprise Tenant & ISO Standards Switcher Tabs */}
-      <div className="space-y-4">
-        
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-1">
-          <div>
-            <div className="flex items-center gap-2">
-              <h1 className="text-[22px] font-normal text-slate-800 tracking-tight font-sans">
-                ISO 규격별 법정 필수 구비 바인더
-              </h1>
-              <span className="px-2.5 py-0.5 rounded-full text-xs font-bold bg-purple-50 text-purple-700 border border-purple-200 flex items-center gap-1">
-                <ShieldCheck className="w-3.5 h-3.5" />
-                <span>심사 레디니스 진단</span>
-              </span>
-            </div>
-            <p className="text-xs text-slate-500 mt-1">
-              국제표준 규격별 사전에 법적으로 정해진 필수 구비 문서 목록에 맞춰 귀사의 준비 상태를 1:1로 검증합니다.
-            </p>
-          </div>
+    <div className={styles.workspace}>
+      <header className={styles.heading}><div><h1>ISO 인증 관리</h1><p>{currentCompany?.name} · 규격과 문서 유형별로 연결 문서를 관리하세요.</p></div></header>
+      <nav className={styles.standards} aria-label="ISO 규격 선택">{standardsOverview.map(std=><button key={std.code} type="button" aria-pressed={selectedStandard===std.code} onClick={()=>onSelectStandard?onSelectStandard(std.code):setSelectedStandard(std.code)}>{std.name}<span className={styles.count}>{std.readyCount}/{std.totalRequired}</span></button>)}</nav>
+      <nav className={styles.states} aria-label="ISO 문서 연결 상태">{[['ALL','전체 요건',currentAnalysis.totalRequired],['MISSING','미연결',currentAnalysis.missingCount],['LINKED','문서 연결됨',currentAnalysis.readyCount],['EXPIRING','기한 확인',currentAnalysis.expiringCount]].map(([id,label,count])=><button type="button" key={id} aria-pressed={statusFilter===id} onClick={()=>{setStatusFilter(id);setPage(1);}}>{label}<span className={styles.count}>{count}</span></button>)}<span className={styles.summary}>문서 연결률 {currentAnalysis.readinessScore}% · 심사 적합 판정과 별도</span></nav>
+      {actionError&&<p role="alert" className={styles.error}>{actionError}</p>}
+      <section className={styles.register} aria-label="ISO 구비문서 관리 대장">
+       <div className={styles.toolbar}><strong>구비문서 관리 대장</strong><span>총 {currentAnalysis.totalRequired}건 중 {rows.length}건 · {currentAnalysis.standardInfo.name}</span><button type="button" onClick={reset}><RotateCcw size={12} className="inline mr-1"/>필터 초기화</button></div>
+       <div className={styles.scroll}>
+        <table className={styles.table}>
+         <colgroup><col style={{width:40}}/><col style={{width:100}}/><col style={{width:105}}/><col/><col style={{width:125}}/><col style={{width:95}}/><col style={{width:105}}/><col style={{width:165}}/></colgroup>
+         <thead>
+          <tr className={styles.filters}><th>필터</th><th><input aria-label="조항·문서 코드 검색" placeholder="코드 검색" value={filters.code} onChange={e=>setFilter('code',e.target.value)}/></th><th><select aria-label="문서 유형 필터" value={filters.type} onChange={e=>setFilter('type',e.target.value)}><option value="ALL">전체 유형</option>{Object.entries(DOCUMENT_TYPES).map(([id,label])=><option key={id} value={id}>{label} ({currentAnalysis.requirements.filter(r=>r.level===id).length})</option>)}</select></th><th><input aria-label="요건·연결 문서명 검색" placeholder="요건·연결 문서명·코드 검색…" value={filters.query} onChange={e=>setFilter('query',e.target.value)}/></th><th><input aria-label="담당자·부서 검색" placeholder="담당자·부서" value={filters.owner} onChange={e=>setFilter('owner',e.target.value)}/></th><th><input aria-label="문서 수정일 필터" type="date" value={filters.date} onChange={e=>setFilter('date',e.target.value)}/></th><th><select aria-label="연결 상태 필터" value={statusFilter} onChange={e=>{setStatusFilter(e.target.value);setPage(1);}}><option value="ALL">전체 상태</option><option value="MISSING">미연결</option><option value="LINKED">연결됨</option><option value="EXPIRING">기한 확인</option></select></th><th/></tr>
+          <tr><th>No.</th><th aria-sort={filters.sort==='clause'?(filters.direction==='asc'?'ascending':'descending'):'none'}>{sortHeader('clause','조항 / 코드')}</th><th>문서 유형</th><th>{sortHeader('title','구비 요건 / 연결 문서')}</th><th>{sortHeader('department','담당 / 부서')}</th><th>{sortHeader('date','수정일')}</th><th>{sortHeader('status','연결 상태')}</th><th>문서 관리</th></tr>
+         </thead>
+         <tbody>{visible.map((req,index)=>{
+          const doc=req.matchedDoc;const date=registerDate(req);const knownDay=typeof doc?.dDay==='number'&&Number.isFinite(doc.dDay);
+          return <tr key={req.id}><td className="text-center text-slate-400">{(safePage-1)*pageSize+index+1}</td><td><span className={styles.code}>§ {req.clause}</span><small className={styles.secondary}>{doc?.code||req.defaultCode}</small></td><td><span className={styles.type}>{DOCUMENT_TYPES[req.level]||req.level}</span></td><td><span className={styles.requirement} title={[req.title,req.legalAuditReason].filter(Boolean).join(' · ')}>{req.title}</span><small className={styles.secondary} title={doc?.title||req.clauseGroup}>{doc?`${doc.title} · ${doc.docStatus||doc.status||'상태 미확인'}`:req.clauseGroup}</small></td><td><span>{doc?.department||'—'}</span><small className={styles.secondary}>{doc?.author||'담당 미지정'}</small></td><td>{date||'—'}</td><td><span className={`${styles.badge} ${req.status==='MISSING'?styles.missing:req.status==='EXPIRING'?styles.expiring:styles.linked}`}>{req.status==='MISSING'?'미연결':req.status==='EXPIRING'?(knownDay?`기한 D${doc.dDay>=0?'-':'+'}${Math.abs(doc.dDay)}`:'기한 미확인'):'연결됨'}</span></td><td><div className={styles.actions}>{doc?<button type="button" onClick={()=>doc.kind==='client-file'?setReaderDoc(doc):onOpenDetail?.(doc)}>열람·편집 →</button>:<button type="button" disabled={busy} onClick={()=>handleGenerateTemplate(req)}>양식으로 작성</button>}<button type="button" disabled={busy} onClick={()=>openLink(req)}>{doc?'변경':'문서 연결'}</button></div></td></tr>;
+         })}{!visible.length&&<tr><td className={styles.empty} colSpan={8}>조건에 맞는 구비 요건이 없습니다. 필터를 초기화해 확인하세요.</td></tr>}</tbody>
+        </table>
+       </div>
+       <footer className={styles.footer}><label>페이지당 표시: <select aria-label="ISO 목록 페이지당 표시" value={pageSize} onChange={e=>{setPageSize(Number(e.target.value));setPage(1);}}>{[10,20,50].map(n=><option value={n} key={n}>{n}건</option>)}</select></label><span>문서 연결 상태는 실제 심사 적합·승인 상태와 별도입니다.</span><div className={styles.pages}><button type="button" aria-label="ISO 목록 이전 페이지" disabled={safePage<=1} onClick={()=>setPage(safePage-1)}><ChevronLeft size={14}/></button><span>{safePage} / {pages}</span><button type="button" aria-label="ISO 목록 다음 페이지" disabled={safePage>=pages} onClick={()=>setPage(safePage+1)}><ChevronRight size={14}/></button></div></footer>
+      </section>
 
-          <div className="flex items-center gap-2">
-            <span className="text-xs font-bold text-slate-500 bg-slate-100 px-3 py-1.5 rounded-xl border border-slate-200">
-              기업: <b className="text-slate-900">{currentCompany?.name || '(주)아이소에듀'}</b>
-            </span>
-          </div>
-        </div>
-
-        {/* 2. Top ISO Standards Selector Tabs with live readiness badges */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-          {standardsOverview.map(std => {
-            const isSelected = selectedStandard === std.code;
-            return (
-              <button
-                key={std.code}
-                onClick={() => onSelectStandard ? onSelectStandard(std.code) : setSelectedStandard(std.code)}
-                className={`p-3.5 rounded-2xl border text-left transition-all relative group ${
-                  isSelected
-                    ? 'bg-white border-blue-500 shadow-md ring-2 ring-blue-100'
-                    : 'bg-[#f0f4f9]/60 hover:bg-white border-slate-200/80'
-                }`}
-              >
-                <div className="flex items-center justify-between mb-1.5">
-                  <span className="font-bold text-xs text-slate-900 truncate">
-                    {std.name}
-                  </span>
-                  <span className={`text-[10px] font-black px-2 py-0.5 rounded-full ${
-                    std.readinessScore >= 80 
-                      ? 'bg-emerald-100 text-emerald-800' 
-                      : std.readinessScore >= 50 
-                      ? 'bg-amber-100 text-amber-800' 
-                      : 'bg-rose-100 text-rose-800'
-                  }`}>
-                    {std.readinessScore}% 완료
-                  </span>
-                </div>
-                <div className="text-[11px] text-slate-500 truncate mb-2">
-                  {std.title}
-                </div>
-                
-                {/* Mini progress bar */}
-                <div className="w-full bg-slate-200/80 h-1.5 rounded-full overflow-hidden">
-                  <div 
-                    className={`h-full rounded-full transition-all duration-500 ${
-                      std.readinessScore >= 80 ? 'bg-emerald-500' : std.readinessScore >= 50 ? 'bg-amber-500' : 'bg-rose-500'
-                    }`}
-                    style={{ width: `${std.readinessScore}%` }}
-                  />
-                </div>
-                <div className="flex justify-between items-center text-[10px] text-slate-400 font-medium mt-1.5">
-                  <span>구비 {std.readyCount} / {std.totalRequired}건</span>
-                  {std.missingCount > 0 && (
-                    <span className="text-rose-600 font-bold">{std.missingCount}건 미비</span>
-                  )}
-                </div>
-              </button>
-            );
-          })}
-        </div>
-
-      </div>
-
-      {/* 3. Audit Preparedness Meter Card */}
-      <div className="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 rounded-2xl p-5 text-white shadow-lg space-y-4">
-        
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-          <div>
-            <div className="flex items-center gap-2">
-              <span className="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-blue-500/20 text-blue-300 border border-blue-400/30">
-                {currentAnalysis.standardInfo.name}
-              </span>
-              <h2 className="text-lg font-bold text-white">
-                {currentAnalysis.standardInfo.title} 심사 수검 준비율
-              </h2>
-            </div>
-            <p className="text-xs text-slate-300 mt-1 max-w-2xl">
-              {currentAnalysis.standardInfo.description}
-            </p>
-          </div>
-
-          <div className="flex items-center gap-4 shrink-0">
-            <div className="text-right">
-              <div className="text-3xl font-black text-white tracking-tight">
-                {currentAnalysis.readinessScore}%
-              </div>
-              <div className="text-[11px] text-slate-400 font-bold">
-                {currentAnalysis.readinessScore >= 80 ? '사후심사 통과 유력 (적합)' : '미비 문서 보완 필요'}
-              </div>
-            </div>
-            
-            {/* Circle Ring / SVG */}
-            <div className="w-14 h-14 relative flex items-center justify-center shrink-0">
-              <svg viewBox="0 0 36 36" className="w-full h-full -rotate-90">
-                <path
-                  d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
-                  fill="none"
-                  stroke="rgba(255,255,255,0.15)"
-                  strokeWidth="3.5"
-                />
-                <path
-                  d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
-                  fill="none"
-                  stroke={currentAnalysis.readinessScore >= 80 ? '#10b981' : currentAnalysis.readinessScore >= 50 ? '#f59e0b' : '#ef4444'}
-                  strokeWidth="3.5"
-                  strokeDasharray={`${currentAnalysis.readinessScore}, 100`}
-                />
-              </svg>
-              <span className="absolute text-[11px] font-black text-white">
-                {currentAnalysis.readyCount}/{currentAnalysis.totalRequired}
-              </span>
-            </div>
-          </div>
-        </div>
-
-        {/* Readiness Status Pills */}
-        <div className="pt-2 border-t border-slate-800/80 flex flex-wrap items-center justify-between gap-3 text-xs">
-          <div className="flex items-center gap-3">
-            <div className="flex items-center gap-1.5">
-              <span className="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
-              <span className="text-slate-300">구비 완료: <b className="text-emerald-400">{currentAnalysis.readyCount}건</b></span>
-            </div>
-            <div className="flex items-center gap-1.5">
-              <span className="w-2.5 h-2.5 rounded-full bg-rose-400 animate-pulse"></span>
-              <span className="text-slate-300">미비/작성 필요: <b className="text-rose-400">{currentAnalysis.missingCount}건</b></span>
-            </div>
-            {currentAnalysis.expiringCount > 0 && (
-              <div className="flex items-center gap-1.5">
-                <span className="w-2.5 h-2.5 rounded-full bg-amber-400"></span>
-                <span className="text-slate-300">만기 임박: <b className="text-amber-400">{currentAnalysis.expiringCount}건</b></span>
-              </div>
-            )}
-          </div>
-
-          <div className="flex items-center gap-1 text-[11px] text-slate-400 font-medium">
-            <span>주관 부서: <b className="text-slate-200">{currentAnalysis.standardInfo.primaryDepartment}</b></span>
-          </div>
-        </div>
-
-      </div>
-
-      {/* 4. Filter Controls (All / Missing / Ready) */}
-      <div className="flex items-center justify-between gap-3 border-b border-slate-200/80 pb-3">
-        <div className="flex items-center gap-1.5 text-xs font-semibold text-slate-500">
-          <Filter className="w-3.5 h-3.5" />
-          <span>구비 요건 필터:</span>
-        </div>
-
-        <div className="flex items-center gap-2">
-          <button
-            onClick={() => setStatusFilter('ALL')}
-            className={`px-3 py-1.5 rounded-full text-xs font-bold transition-all ${
-              statusFilter === 'ALL'
-                ? 'bg-slate-900 text-white shadow-2xs'
-                : 'bg-[#f0f4f9] text-slate-600 hover:bg-[#edf2fc]'
-            }`}
-          >
-            전체 필수 요건 ({currentAnalysis.totalRequired})
-          </button>
-          <button
-            onClick={() => setStatusFilter('MISSING')}
-            className={`px-3 py-1.5 rounded-full text-xs font-bold transition-all flex items-center gap-1.5 ${
-              statusFilter === 'MISSING'
-                ? 'bg-rose-600 text-white shadow-2xs'
-                : 'bg-rose-50 text-rose-700 hover:bg-rose-100 border border-rose-200'
-            }`}
-          >
-            <AlertCircle className="w-3.5 h-3.5" />
-            <span>미비 / 작성 필요 ({currentAnalysis.missingCount})</span>
-          </button>
-          <button
-            onClick={() => setStatusFilter('READY')}
-            className={`px-3 py-1.5 rounded-full text-xs font-bold transition-all flex items-center gap-1.5 ${
-              statusFilter === 'READY'
-                ? 'bg-emerald-600 text-white shadow-2xs'
-                : 'bg-emerald-50 text-emerald-700 hover:bg-emerald-100 border border-emerald-200'
-            }`}
-          >
-            <CheckCircle2 className="w-3.5 h-3.5" />
-            <span>구비 완료 ({currentAnalysis.readyCount})</span>
-          </button>
-        </div>
-      </div>
-
-      {/* 5. Annex SL Clause Groups & Statutory Document Slots */}
-      <div className="space-y-6">
-        {filteredGroups.map(group => (
-          <div key={group.name} className="space-y-3">
-            
-            {/* Clause Group Header */}
-            <div className="flex items-center gap-2 text-sm font-bold text-slate-800 border-b border-slate-200/80 pb-1.5">
-              <Layers className="w-4 h-4 text-blue-600" />
-              <span>{group.name}</span>
-              <span className="text-xs text-slate-400 font-normal">
-                ({group.items.filter(i => i.status !== 'MISSING').length}/{group.items.length} 항목 구비)
-              </span>
-            </div>
-
-            {/* Requirement Slots Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">
-              {group.items.map(req => {
-                const isReady = req.status === 'READY';
-                const isExpiring = req.status === 'EXPIRING';
-                const isMissing = req.status === 'MISSING';
-
-                return (
-                  <div
-                    key={req.id}
-                    className={`rounded-2xl border p-4 transition-all flex flex-col justify-between ${
-                      isMissing
-                        ? 'bg-[#fffbfa] border-rose-200/90 shadow-2xs'
-                        : isExpiring
-                        ? 'bg-[#fffdf5] border-amber-300 shadow-xs'
-                        : 'bg-white border-slate-200/90 shadow-2xs hover:shadow-xs'
-                    }`}
-                  >
-                    <div>
-                      {/* Top Meta: Clause + Level + Status Badge */}
-                      <div className="flex items-center justify-between mb-2">
-                        <div className="flex items-center gap-2">
-                          <span className="px-2 py-0.5 rounded text-[11px] font-mono font-bold bg-slate-100 text-slate-700 border border-slate-200">
-                            § {req.clause}
-                          </span>
-                          <span className="px-1.5 py-0.5 rounded text-[10px] font-bold bg-blue-50 text-blue-700 border border-blue-100">
-                            {req.level === 'CERT' ? '인증서' :
-                             req.level === 'LEVEL_1' ? '1계층 매뉴얼' :
-                             req.level === 'LEVEL_2' ? '2계층 절차서' :
-                             req.level === 'LEVEL_3' ? '3계층 지침서' : '4계층 양식'}
-                          </span>
-                        </div>
-
-                        {/* Readiness Status Badge */}
-                        {isReady && (
-                          <span className="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-emerald-100 text-emerald-800 flex items-center gap-1 border border-emerald-200">
-                            <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                            <span>준비 완료</span>
-                          </span>
-                        )}
-                        {isExpiring && (
-                          <span className="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-amber-100 text-amber-800 flex items-center gap-1 border border-amber-300">
-                            <Clock className="w-3.5 h-3.5 text-amber-600" />
-                            <span>만기 임박 (D-{req.matchedDoc?.dDay})</span>
-                          </span>
-                        )}
-                        {isMissing && (
-                          <span className="px-2.5 py-0.5 rounded-full text-[11px] font-black bg-rose-100 text-rose-700 flex items-center gap-1 border border-rose-300 animate-pulse">
-                            <AlertCircle className="w-3.5 h-3.5 text-rose-600" />
-                            <span>미비 (작성 필요)</span>
-                          </span>
-                        )}
-                      </div>
-
-                      {/* Requirement Title */}
-                      <h4 className="font-bold text-sm text-slate-900 tracking-tight leading-snug">
-                        {req.title}
-                      </h4>
-
-                      {/* Legal/Audit Verification Reason */}
-                      <p className="text-xs text-slate-500 mt-1 leading-relaxed">
-                        {req.legalAuditReason}
-                      </p>
-
-                      {/* Risk Penalty (If Missing) */}
-                      {isMissing && req.penaltyRisk && (
-                        <div className="mt-2.5 p-2 rounded-xl bg-rose-50 border border-rose-200 text-[11px] text-rose-800 font-semibold flex items-center gap-1.5">
-                          <ShieldAlert className="w-3.5 h-3.5 text-rose-600 shrink-0" />
-                          <span className="truncate">⚠️ {req.penaltyRisk}</span>
-                        </div>
-                      )}
-
-                      {/* If Matched Document exists: Show File Chip */}
-                      {req.matchedDoc && (
-                        <div className="mt-3 p-2.5 rounded-xl bg-slate-50 border border-slate-200/80 flex items-center justify-between">
-                          <div className="flex items-center gap-2.5 truncate min-w-0 pr-2">
-                            <div className="w-7 h-7 rounded-lg bg-blue-600 text-white flex items-center justify-center font-bold text-xs shrink-0">
-                              <FileText className="w-4 h-4" />
-                            </div>
-                            <div className="truncate min-w-0">
-                              <div className="font-bold text-xs text-slate-900 truncate">
-                                {req.matchedDoc.title}
-                              </div>
-                              <div className="text-[10px] text-slate-400 font-mono">
-                                {req.matchedDoc.code} • {req.matchedDoc.version || 'v1.0'} • 담당: {req.matchedDoc.author || '담당자'}
-                              </div>
-                            </div>
-                          </div>
-
-                          <span className="text-[10px] px-2 py-0.5 rounded-full font-bold bg-white text-slate-600 border border-slate-200 shrink-0">
-                            {req.matchedDoc.docStatus || '승인 완료'}
-                          </span>
-                        </div>
-                      )}
-                    </div>
-
-                    {/* Bottom Action Footer */}
-                    <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between gap-2">
-                      {req.matchedDoc ? (
-                        <>
-                          <button
-                            onClick={() => onOpenDetail && onOpenDetail(req.matchedDoc)}
-                            className="flex-1 py-1.5 px-3 rounded-xl bg-blue-50 hover:bg-blue-100 text-blue-700 text-xs font-bold transition-all flex items-center justify-center gap-1.5"
-                          >
-                            <span>문서 열람 및 편집 (Docs)</span>
-                            <ExternalLink className="w-3.5 h-3.5" />
-                          </button>
-                          <button
-                            onClick={() => {
-                              setActiveReqForLink(req);
-                              setIsLinkingModalOpen(true);
-                            }}
-                            title="다른 문서로 매핑 변경"
-                            className="py-1.5 px-2.5 rounded-xl border border-slate-200 hover:bg-slate-50 text-slate-500 text-xs font-semibold"
-                          >
-                            변경
-                          </button>
-                        </>
-                      ) : (
-                        <>
-                          {/* One-click AI Standard Template Generation */}
-                          <button
-                            onClick={() => handleGenerateTemplate(req)}
-                            className="flex-1 py-2 px-3 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white text-xs font-bold shadow-xs transition-all flex items-center justify-center gap-1.5 hover:scale-[1.01] active:scale-[0.99]"
-                          >
-                            <Sparkles className="w-3.5 h-3.5 text-amber-300" />
-                            <span>✨ AI 표준 양식 즉시 채우기</span>
-                          </button>
-
-                          <button
-                            onClick={() => {
-                              setActiveReqForLink(req);
-                              setIsLinkingModalOpen(true);
-                            }}
-                            className="py-2 px-3 rounded-xl border border-slate-300 hover:bg-slate-100 text-slate-700 text-xs font-bold transition-colors shrink-0"
-                          >
-                            문서 연결
-                          </button>
-                        </>
-                      )}
-                    </div>
-
-                  </div>
-                );
-              })}
-            </div>
-
-          </div>
-        ))}
-      </div>
-
+      {readerDoc&&<CloudFileViewer document={readerDoc} onClose={()=>setReaderDoc(null)}/>}
       {/* 6. Document Link Modal (내 드라이브의 기존 문서 연결) */}
       {isLinkingModalOpen && activeReqForLink && (
         <ModalLayer onClose={() => {setIsLinkingModalOpen(false);setActiveReqForLink(null);}} className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4 animate-fade-in">
@@ -512,9 +152,11 @@ export default function IsoComplianceMatrixView({
               </button>
             </div>
 
+            {actionError&&<p role="alert" className={styles.error}>{actionError}</p>}
             <div className="flex-1 overflow-y-auto space-y-2 pr-1">
-              {documents.map(doc => (
-                <div
+              {!documents.some(doc=>doc.companyId===currentCompany?.id)&&<p className="p-4 text-sm text-slate-500" role="status">이 거래처에 연결할 수 있는 문서가 없습니다.</p>}
+              {documents.filter(doc=>doc.companyId===currentCompany?.id).map(doc => (
+                <button type="button" disabled={busy}
                   key={doc.id}
                   onClick={() => handleLinkExistingDoc(doc)}
                   className="p-3 rounded-xl border border-slate-200 hover:border-blue-400 hover:bg-blue-50/50 transition-all cursor-pointer flex items-center justify-between group"
@@ -536,7 +178,7 @@ export default function IsoComplianceMatrixView({
                   <span className="text-xs font-bold text-blue-600 opacity-0 group-hover:opacity-100 transition-opacity shrink-0">
                     연결하기 →
                   </span>
-                </div>
+                </button>
               ))}
             </div>
 
