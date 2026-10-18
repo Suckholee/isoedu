@@ -1,4 +1,5 @@
 'use client';
+import ModalLayer from './ui/ModalLayer';
 
 import React, { useState, useEffect, useRef } from 'react';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
@@ -682,9 +683,8 @@ export default function PlatformWorkspace() {
 
       {/* 4. Google Keep Style ISO Audit Memo Drawer */}
       {isKeepOpen && (
-        <div
-          className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex justify-end animate-fade-in"
-          onClick={() => setIsKeepOpen(false)}
+        <ModalLayer
+          onClose={() => setIsKeepOpen(false)} className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex justify-end animate-fade-in"
         >
           <aside
             onClick={(e) => e.stopPropagation()}
@@ -754,12 +754,12 @@ export default function PlatformWorkspace() {
               ))}
             </div>
           </aside>
-        </div>
+        </ModalLayer>
       )}
 
       {/* 5. Google Workspace Add-on Marketplace Modal */}
       {isAddonModalOpen && (
-        <div className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4 animate-fade-in">
+        <ModalLayer onClose={() => setIsAddonModalOpen(false)} className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4 animate-fade-in">
           <div className="bg-white w-full max-w-lg rounded-2xl shadow-2xl border border-slate-200 p-6 space-y-4 animate-scale-up">
             <div className="flex items-center justify-between border-b pb-3">
               <div className="flex items-center gap-2">
@@ -807,7 +807,7 @@ export default function PlatformWorkspace() {
               </button>
             </div>
           </div>
-        </div>
+        </ModalLayer>
       )}
 
       {/* 6. New Client Project Creation Modal (사용자 핵심 요구 기능) */}

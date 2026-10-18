@@ -1,4 +1,5 @@
 'use client';
+import ModalLayer from './ui/ModalLayer';
 
 import React, { useState, useRef, useEffect } from 'react';
 import {
@@ -398,7 +399,7 @@ export default function Header({
 
       {/* 4. Help & Support Modal */}
       {isHelpModalOpen && (
-        <div className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4 animate-fade-in">
+        <ModalLayer onClose={() => setIsHelpModalOpen(false)} className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4 animate-fade-in">
           <div className="bg-white w-full max-w-lg rounded-2xl shadow-2xl border border-slate-200 p-6 space-y-5 animate-scale-up">
             <div className="flex items-center justify-between border-b border-slate-100 pb-3">
               <h3 className="text-base font-bold text-slate-900 flex items-center gap-2">
@@ -438,12 +439,12 @@ export default function Header({
               </button>
             </div>
           </div>
-        </div>
+        </ModalLayer>
       )}
 
       {/* 5. Settings Modal */}
       {isSettingsModalOpen && (
-        <div className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4 animate-fade-in">
+        <ModalLayer onClose={() => setIsSettingsModalOpen(false)} className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4 animate-fade-in">
           <div className="bg-white w-full max-w-lg rounded-2xl shadow-2xl border border-slate-200 p-6 space-y-5 animate-scale-up">
             <div className="flex items-center justify-between border-b border-slate-100 pb-3">
               <h3 className="text-base font-bold text-slate-900 flex items-center gap-2">
@@ -497,7 +498,7 @@ export default function Header({
               </button>
             </div>
           </div>
-        </div>
+        </ModalLayer>
       )}
 
       {/* 5. Auth & Membership Modal */}

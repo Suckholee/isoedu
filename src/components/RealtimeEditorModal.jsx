@@ -1,4 +1,5 @@
 'use client';
+import ModalLayer from './ui/ModalLayer';
 
 import React, { useState, useEffect } from 'react';
 import {
@@ -167,7 +168,7 @@ export default function RealtimeEditorModal({
   };
 
   return (
-    <div className="fixed inset-0 z-50 bg-slate-900/70 backdrop-blur-xs flex items-center justify-center p-2 sm:p-4 animate-fade-in print:p-0 print:bg-white">
+    <ModalLayer onClose={onClose} className="fixed inset-0 z-50 bg-slate-900/70 backdrop-blur-xs flex items-center justify-center p-2 sm:p-4 animate-fade-in print:p-0 print:bg-white">
       <div className="bg-[#f8fafd] w-full max-w-6xl h-[94vh] rounded-2xl shadow-2xl border border-slate-200 flex flex-col overflow-hidden animate-scale-up print:h-auto print:border-none print:shadow-none">
 
         {/* 1. Google Docs Master Header */}
@@ -828,6 +829,6 @@ export default function RealtimeEditorModal({
         </div>
 
       </div>
-    </div>
+    </ModalLayer>
   );
 }

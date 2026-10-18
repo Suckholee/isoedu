@@ -1,4 +1,5 @@
 'use client';
+import ModalLayer from './ui/ModalLayer';
 
 import React, { useState } from 'react';
 import { 
@@ -195,7 +196,7 @@ export default function WorkspaceView({ onResetData }) {
 
       {/* 3. New Workspace Creation Modal */}
       {isCreateModalOpen && (
-        <div className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4 animate-fade-in">
+        <ModalLayer onClose={() => setIsCreateModalOpen(false)} className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4 animate-fade-in">
           <div className="bg-white w-full max-w-md rounded-2xl shadow-2xl border border-slate-200 p-6 space-y-4 animate-scale-up">
             <div className="flex items-center justify-between border-b pb-3">
               <h3 className="text-base font-bold text-slate-900 flex items-center gap-2">
@@ -262,12 +263,12 @@ export default function WorkspaceView({ onResetData }) {
               </div>
             </form>
           </div>
-        </div>
+        </ModalLayer>
       )}
 
       {/* 4. Demo Reset & Rollback Modal */}
       {isResetModalOpen && (
-        <div className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4 animate-fade-in">
+        <ModalLayer onClose={() => setIsResetModalOpen(false)} className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4 animate-fade-in">
           <div className="bg-white w-full max-w-md rounded-2xl shadow-2xl border border-slate-200 p-6 space-y-4 animate-scale-up">
             <div className="w-12 h-12 rounded-2xl bg-rose-100 text-rose-600 flex items-center justify-center mx-auto">
               <AlertOctagon className="w-6 h-6" />
@@ -307,7 +308,7 @@ export default function WorkspaceView({ onResetData }) {
               </button>
             </div>
           </div>
-        </div>
+        </ModalLayer>
       )}
 
     </div>

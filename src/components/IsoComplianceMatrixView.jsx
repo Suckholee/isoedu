@@ -1,4 +1,5 @@
 'use client';
+import ModalLayer from './ui/ModalLayer';
 
 import React, { useState, useMemo } from 'react';
 import { 
@@ -488,7 +489,7 @@ export default function IsoComplianceMatrixView({
 
       {/* 6. Document Link Modal (내 드라이브의 기존 문서 연결) */}
       {isLinkingModalOpen && activeReqForLink && (
-        <div className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4 animate-fade-in">
+        <ModalLayer onClose={() => {setIsLinkingModalOpen(false);setActiveReqForLink(null);}} className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4 animate-fade-in">
           <div className="bg-white w-full max-w-lg rounded-2xl shadow-2xl border border-slate-200 p-6 space-y-4 animate-scale-up max-h-[85vh] flex flex-col">
             
             <div className="flex items-center justify-between border-b pb-3">
@@ -552,7 +553,7 @@ export default function IsoComplianceMatrixView({
             </div>
 
           </div>
-        </div>
+        </ModalLayer>
       )}
 
     </div>

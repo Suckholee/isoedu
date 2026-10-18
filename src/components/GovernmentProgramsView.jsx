@@ -1,4 +1,5 @@
 'use client';
+import ModalLayer from './ui/ModalLayer';
 
 import React, { useState, useMemo } from 'react';
 import GovernmentNoticeAnalysis from './GovernmentNoticeAnalysis';
@@ -528,7 +529,7 @@ export default function GovernmentProgramsView({
 
       {/* 4. Manual Document Picker Modal */}
       {manualPickerItem && (
-        <div className="fixed inset-0 z-50 bg-slate-900/50 backdrop-blur-sm flex items-center justify-center p-4">
+        <ModalLayer onClose={() => setManualPickerItem(null)} className="fixed inset-0 z-50 bg-slate-900/50 backdrop-blur-sm flex items-center justify-center p-4">
           <div className="bg-white rounded-[24px] max-w-lg w-full p-6 shadow-2xl border border-slate-200">
             <div className="flex items-center justify-between mb-4 pb-3 border-b border-slate-200">
               <h3 className="text-base font-bold text-slate-800">
@@ -563,7 +564,7 @@ export default function GovernmentProgramsView({
               ))}
             </div>
           </div>
-        </div>
+        </ModalLayer>
       )}
     </div>
   );

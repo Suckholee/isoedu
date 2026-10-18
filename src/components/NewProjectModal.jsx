@@ -1,4 +1,5 @@
 'use client';
+import ModalLayer from './ui/ModalLayer';
 
 import React, { useState, useEffect } from 'react';
 import { 
@@ -125,7 +126,7 @@ export default function NewProjectModal({ isOpen, onClose, onCreateProject, init
   }
 
   return (
-    <div className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4 animate-fade-in">
+    <ModalLayer onClose={onClose} className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4 animate-fade-in">
       <div className="bg-white rounded-3xl shadow-2xl border border-slate-200 w-full max-w-2xl overflow-hidden animate-scale-up max-h-[90vh] flex flex-col">
         
         {/* Modal Header */}
@@ -408,6 +409,6 @@ export default function NewProjectModal({ isOpen, onClose, onCreateProject, init
         </form>
 
       </div>
-    </div>
+    </ModalLayer>
   );
 }

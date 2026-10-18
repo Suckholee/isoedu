@@ -1,4 +1,5 @@
 'use client';
+import ModalLayer from './ui/ModalLayer';
 
 import Button from './ui/Button';
 import React, { useState } from 'react';
@@ -88,7 +89,7 @@ export default function AuthModal({ isOpen, onClose }) {
   };
 
   return (
-    <div className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4 animate-fade-in">
+    <ModalLayer onClose={onClose} className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4 animate-fade-in">
       <div 
         className="bg-white w-full max-w-md rounded-2xl shadow-2xl border border-slate-200 overflow-hidden animate-scale-up"
         onClick={(e) => e.stopPropagation()}
@@ -308,6 +309,6 @@ export default function AuthModal({ isOpen, onClose }) {
           </div>}
         </form>
       </div>
-    </div>
+    </ModalLayer>
   );
 }

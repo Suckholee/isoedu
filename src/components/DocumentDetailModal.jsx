@@ -1,4 +1,5 @@
 'use client';
+import ModalLayer from './ui/ModalLayer';
 
 import React, { useState } from 'react';
 import { 
@@ -43,7 +44,7 @@ export default function DocumentDetailModal({
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm animate-fade-in">
+    <ModalLayer onClose={onClose} className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm animate-fade-in">
       <div className="bg-white rounded-2xl shadow-2xl border border-slate-200 w-full max-w-3xl max-h-[90vh] flex flex-col overflow-hidden animate-scale-up">
         
         {/* Modal Header */}
@@ -203,6 +204,6 @@ export default function DocumentDetailModal({
         </div>
 
       </div>
-    </div>
+    </ModalLayer>
   );
 }

@@ -1,4 +1,5 @@
 'use client';
+import ModalLayer from './ui/ModalLayer';
 
 import Button from './ui/Button';
 import React, { useState, useEffect } from 'react';
@@ -108,7 +109,7 @@ export default function AddDocumentModal({ isOpen, onClose, onAddDocument, curre
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-xs animate-fade-in">
+    <ModalLayer onClose={onClose} className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-xs animate-fade-in">
       <div className="bg-white rounded-2xl shadow-2xl border border-slate-200 w-full max-w-lg overflow-hidden animate-scale-up">
         
         <div className="px-6 py-4 border-b border-slate-200 flex items-center justify-between bg-slate-50">
@@ -253,6 +254,6 @@ export default function AddDocumentModal({ isOpen, onClose, onAddDocument, curre
         </form>
 
       </div>
-    </div>
+    </ModalLayer>
   );
 }

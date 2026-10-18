@@ -1,4 +1,5 @@
 'use client';
+import ModalLayer from './ui/ModalLayer';
 
 import React, { useState, useEffect } from 'react';
 import { Search, X, BookOpen, FileText, ChevronRight, Hash, Clock, CornerDownLeft } from 'lucide-react';
@@ -8,16 +9,14 @@ export default function GlobalSearchModal({ isOpen, onClose, documents, onSelect
   const [query, setQuery] = useState('');
   const [recentSearches, setRecentSearches] = useState(['QM-01', '4.2.1', 'PR-03', 'A.5.15', 'WI-05']);
 
-  // ESC 키 닫기 및 Cmd+K 바인딩
+  // Cmd+K 바인딩 (Escape 닫기는 공통 ModalLayer에서 처리)
   useEffect(() => {
     function handleKeyDown(e) {
       if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
         e.preventDefault();
         // toggle outside
       }
-      if (e.key === 'Escape' && isOpen) {
-        onClose();
-      }
+
     }
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
@@ -45,7 +44,7 @@ export default function GlobalSearchModal({ isOpen, onClose, documents, onSelect
   });
 
   return (
-    <div className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-start justify-center pt-16 sm:pt-24 px-4 p-4 animate-fade-in">
+    <ModalLayer onClose={onClose} className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-start justify-center pt-16 sm:pt-24 px-4 p-4 animate-fade-in">
       <div className="bg-white w-full max-w-3xl rounded-2xl shadow-2xl border border-slate-200 overflow-hidden flex flex-col max-h-[80vh] animate-scale-up">
         
         {/* Search Input Bar */}
@@ -248,6 +247,6 @@ export default function GlobalSearchModal({ isOpen, onClose, documents, onSelect
         </div>
 
       </div>
-    </div>
+    </ModalLayer>
   );
 }
