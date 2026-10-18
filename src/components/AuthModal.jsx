@@ -1,6 +1,7 @@
 'use client';
 import ModalLayer from './ui/ModalLayer';
 
+import {readLoginFields} from '../lib/authForm.mjs';
 import Button from './ui/Button';
 import React, { useState } from 'react';
 import { 
@@ -39,16 +40,18 @@ export default function AuthModal({ isOpen, onClose }) {
     setErrorMessage('');
     setSuccessMessage('');
 
-    if (!email || !password) {
+    const fields=readLoginFields(new FormData(e.currentTarget),{email,password});
+    if (!fields.email || !fields.password) {
       setErrorMessage('이메일과 비밀번호를 모두 입력해 주세요.');
       return;
     }
 
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(fields.email)){setErrorMessage('이메일 주소를 확인해 주세요.');return;}
     setIsSubmitting(true);
 
     try {
       if (mode === 'login') {
-        const res = await login(email, password);
+        const res = await login(fields.email, fields.password);
         if (res.success) {
           setSuccessMessage('성공적으로 로그인되었습니다.');
           setTimeout(() => {
@@ -63,7 +66,7 @@ export default function AuthModal({ isOpen, onClose }) {
           setIsSubmitting(false);
           return;
         }
-        const res = await signup({ email, password, fullName, role, companyName });
+        const res = await signup({ email:fields.email, password:fields.password, fullName, role, companyName });
         if (res.success) {
           setSuccessMessage(res.needsConfirmation ? '이메일의 인증 링크를 확인한 뒤 로그인해 주세요.' : '회원가입이 완료되었습니다.');
           setTimeout(() => {
@@ -91,7 +94,7 @@ export default function AuthModal({ isOpen, onClose }) {
   return (
     <ModalLayer onClose={onClose} className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4 animate-fade-in">
       <div 
-        className="bg-white w-full max-w-md rounded-2xl shadow-2xl border border-slate-200 overflow-hidden animate-scale-up"
+        className="bg-white w-full max-w-md max-h-[calc(100dvh-32px)] overflow-y-auto rounded-2xl shadow-2xl border border-slate-200 animate-scale-up"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
@@ -145,16 +148,16 @@ export default function AuthModal({ isOpen, onClose }) {
         </div>
 
         {/* Form Body */}
-        <form onSubmit={handleSubmit} className="p-6 space-y-4">
+        <form noValidate onSubmit={handleSubmit} className="p-6 space-y-4">
           {errorMessage && (
-            <div className="p-3 rounded-xl bg-rose-50 border border-rose-200 text-rose-700 text-xs flex items-center gap-2">
+            <div role="alert" className="p-3 rounded-xl bg-rose-50 border border-rose-200 text-rose-700 text-xs flex items-center gap-2">
               <AlertCircle className="w-4 h-4 shrink-0 text-rose-500" />
               <span>{errorMessage}</span>
             </div>
           )}
 
           {successMessage && (
-            <div className="p-3 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-700 text-xs flex items-center gap-2">
+            <div role="status" className="p-3 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-700 text-xs flex items-center gap-2">
               <CheckCircle2 className="w-4 h-4 shrink-0 text-emerald-500" />
               <span>{successMessage}</span>
             </div>
@@ -238,6 +241,8 @@ export default function AuthModal({ isOpen, onClose }) {
               <Mail className="w-4 h-4 absolute left-3 top-3 text-slate-400" />
               <input
                 type="email"
+                name="email" autoComplete="username" autoCapitalize="none" spellCheck={false}
+                aria-label="업무용 이메일"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="name@company.com"
@@ -253,6 +258,8 @@ export default function AuthModal({ isOpen, onClose }) {
               <Lock className="w-4 h-4 absolute left-3 top-3 text-slate-400" />
               <input
                 type="password"
+                name="password" autoComplete={mode==='login'?'current-password':'new-password'}
+                aria-label="비밀번호"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder="••••••••"

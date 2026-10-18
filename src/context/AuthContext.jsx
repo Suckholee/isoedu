@@ -4,6 +4,7 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 import { supabase, recordAuditLog } from '../lib/supabaseClient';
 import { isCloudMode } from '../lib/dataConfig.js';
 import { INITIAL_COMPANIES } from '../lib/mockData';
+import {loginErrorMessage} from '../lib/authForm.mjs';
 import { profileErrorMessage } from '../lib/authErrors.mjs';
 
 const AuthContext = createContext(null);
@@ -72,9 +73,11 @@ export function AuthProvider({ children }) {
       setAuthError(null);
       setIsLoading(Boolean(session?.user));
       if (!session?.user) return;
+      const profileController=new AbortController();
+      const profileTimer=setTimeout(()=>profileController.abort(),20000);
       try {
         const { data, error } = await supabase.from('profiles')
-          .select('*, company:companies(*)').eq('id', session.user.id).single();
+          .select('*, company:companies(*)').eq('id', session.user.id).single().abortSignal(profileController.signal);
         if (error) throw error;
         if (!mounted || generation !== current) return;
         setProfile({
@@ -86,6 +89,7 @@ export function AuthProvider({ children }) {
       } catch (err) {
         if (mounted && generation === current) setAuthError(profileErrorMessage(err));
       } finally {
+        clearTimeout(profileTimer);
         if (mounted && generation === current) setIsLoading(false);
       }
     }
@@ -105,8 +109,14 @@ export function AuthProvider({ children }) {
     setAuthError(null);
     if (isCloudMode) {
       if (!supabase) return { success: false, error: 'Supabase 연결 설정을 확인해 주세요.' };
-      const { error } = await supabase.auth.signInWithPassword({ email, password });
-      if (error) { setAuthError(error.message); return { success: false, error: error.message }; }
+      let result;
+      try { result=await supabase.auth.signInWithPassword({ email:email.trim().toLowerCase(), password }); }
+      catch(error){const message=loginErrorMessage(error);setAuthError(message);return {success:false,error:message};}
+      const {error,data}=result;
+      if (error) { const message=loginErrorMessage(error);setAuthError(message); return { success: false, error: message }; }
+      if(!data?.session||!data?.user)return {success:false,error:'로그인 세션을 받지 못했습니다. 다시 시도해 주세요.'};
+      setUser(data.user);
+      setProfileReload(value=>value+1);
       setAuditWarning(null);
       recordAuditLog({ actionType: 'LOGIN' }).catch(() => setAuditWarning('로그인 기록을 저장하지 못했습니다. 서버 설정 확인이 필요합니다.'));
       return { success: true };

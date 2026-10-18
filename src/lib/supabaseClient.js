@@ -1,9 +1,10 @@
 import { createBrowserClient } from '@supabase/ssr';
+import {createAuthFetch} from './authForm.mjs';
 import { dataConfig, isCloudMode } from './dataConfig.js';
 
 export const isSupabaseConfigured = isCloudMode && dataConfig.configured;
 export const supabase = isSupabaseConfigured
-  ? createBrowserClient(dataConfig.url, dataConfig.key)
+  ? createBrowserClient(dataConfig.url, dataConfig.key, {global:{fetch:createAuthFetch((...args)=>fetch(...args))}})
   : null;
 
 // Cloud audit identity is resolved by the database from auth.uid().
