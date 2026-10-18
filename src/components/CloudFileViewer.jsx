@@ -1,8 +1,13 @@
 'use client';
-import {useEffect,useState} from 'react';
+import {useEffect,useState,useId} from 'react';
+import {createPortal} from 'react-dom';
+import {ArrowLeft,Download,X} from 'lucide-react';
+import ModalLayer from './ui/ModalLayer';
+import styles from './CloudFileViewer.module.css';
 import {decodeCloudPreview} from '../lib/cloudPreview.mjs';
 import {getSecureDownloadUrl} from '../lib/storageVault';
 export default function CloudFileViewer({document:doc,onClose}){
+ const titleId=useId();
  const [preview,setPreview]=useState(''),[download,setDownload]=useState(''),[error,setError]=useState(''),[text,setText]=useState(false);
  useEffect(()=>{let active=true,blobUrl;setPreview('');setDownload('');setError('');setText(false);
  (async()=>{try{
@@ -14,5 +19,23 @@ export default function CloudFileViewer({document:doc,onClose}){
  if(doc.previewFormat==='HTML'){const response=await fetch(url);if(!response.ok)throw Error('미리보기를 읽지 못했습니다.');const html=await decodeCloudPreview(await response.text(),doc.previewEncoding);blobUrl=URL.createObjectURL(new Blob([`<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; font-src data:; base-uri 'none'; form-action 'none'">`,html],{type:'text/html'}));if(active)setPreview(blobUrl);}else if(active)setPreview(url);
  }else if(active)setText(true);
  }catch(e){if(active)setError(e.message);}})();return()=>{active=false;if(blobUrl)URL.revokeObjectURL(blobUrl);};},[doc.id,doc.companyId,doc.originalPath,doc.previewPath,doc.previewFormat,doc.previewEncoding]);
- return <section className="mt-5 rounded-xl border border-slate-200 bg-white p-5" aria-label="거래처 원본 뷰어"><div className="flex flex-wrap items-center gap-4"><button onClick={onClose}>← 파일 목록</button><strong className="flex-1">{doc.title}</strong>{download&&<a href={download} target="_blank" rel="noreferrer">원본 열기·다운로드</a>}<button onClick={()=>setText(v=>!v)}>{text?'원문 미리보기':'전체 본문'}</button></div>{error&&<p role="alert" className="my-4 text-red-600">{error}</p>}{text?<pre className="mt-5 whitespace-pre-wrap break-words text-sm">{doc.contentDraft||'추출된 본문이 없습니다. 원본을 내려받아 확인해 주세요.'}</pre>:preview?<><p className="my-3 text-xs text-slate-500">{doc.format==='PDF'?'PDF 원본':'원문 변환 미리보기 · 글꼴과 일부 배치는 원본과 다를 수 있습니다.'}</p><iframe sandbox={doc.previewFormat==='HTML'?'':undefined} title={doc.title+' 원문'} src={preview} className="w-full border-0" style={{height:'75vh'}}/></>:!error&&<p role="status" className="my-5">원문을 준비하고 있습니다.</p>}</section>;
+ if(typeof window==='undefined')return null;
+ return createPortal(<ModalLayer onClose={onClose} className={styles.overlay}>
+  <section role="dialog" aria-modal="true" aria-labelledby={titleId} className={styles.viewer}>
+   <header className={styles.toolbar}>
+    <button type="button" onClick={onClose} aria-label="문서 닫고 파일 목록으로"><ArrowLeft size={17}/>목록</button>
+    <h2 id={titleId} className={styles.title} title={doc.title}>{doc.title}</h2>
+    <div className={styles.actions}>
+     {download&&<a href={download} target="_blank" rel="noreferrer"><Download size={15}/>원본 다운로드</a>}
+     <button type="button" aria-pressed={text} onClick={()=>setText(v=>!v)}>{text?'원문 미리보기':'전체 본문'}</button>
+     <button type="button" onClick={onClose} aria-label="문서 뷰어 닫기" title="닫기 (Esc)"><X size={20}/></button>
+    </div>
+   </header>
+   {error&&<p role="alert" className={styles.error}>{error}</p>}
+   {!text&&preview&&<p className={styles.note}>{doc.format==='PDF'?'PDF 원본':'원문 변환 미리보기 · 글꼴과 일부 배치는 원본과 다를 수 있습니다.'}</p>}
+   <div className={styles.content}>
+    {text?<pre className={styles.text}>{doc.contentDraft||'추출된 본문이 없습니다. 원본을 내려받아 확인해 주세요.'}</pre>:preview?<iframe sandbox={doc.previewFormat==='HTML'?'':undefined} title={doc.title+' 원문'} src={preview} className={styles.frame}/>:!error&&<p role="status" className={styles.status}>원문을 준비하고 있습니다.</p>}
+   </div>
+  </section>
+ </ModalLayer>,window.document.body);
 }
