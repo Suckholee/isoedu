@@ -19,7 +19,7 @@ export const ALLOWED_MIME_TYPES = {
   'image/jpeg': 'JPG'
 };
 
-export const MAX_FILE_SIZE_BYTES = 100 * 1024 * 1024; // 100MiB private bucket limit
+export const MAX_FILE_SIZE_BYTES = 50 * 1024 * 1024; // Effective project limit while spend cap is enabled
 export const STORAGE_BUCKET_NAME = 'iso-vault';
 
 /**
@@ -34,7 +34,7 @@ export function validateUploadFile(file) {
   if (file.size > MAX_FILE_SIZE_BYTES) {
     return { 
       valid: false, 
-      error: `파일 크기는 최대 100MB까지 지원됩니다. (현재: ${(file.size / (1024 * 1024)).toFixed(1)}MB)` 
+      error: `파일 크기는 최대 50MB까지 지원됩니다. (현재: ${(file.size / (1024 * 1024)).toFixed(1)}MB)` 
     };
   }
 
