@@ -1,0 +1,108 @@
+{
+  "programId": "kstartup-179522",
+  "title": "2026년 11월 동네창업학교 교육생 모집 공고",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-10-21T00:13:24.199142+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179522",
+  "sourceFingerprint": "988e50de3ca8b40b112aab63ab5c3bbd62c84ef38e900fb394ba333d6fc7aabf",
+  "evidenceDirectory": "evidence/kstartup-179522",
+  "reviewScope": "PDF4쪽전문·4쪽전체렌더시각·별첨생계형업종표·상세검토",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/nT1Ln",
+      "verifiedAt": "2026-10-21",
+      "status": "downloaded",
+      "sha256": "e2fbb6b7315a1d48574fe0f4dbf955a0249fe5120794f9a0a6a61e22f3e1107c",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 223821,
+      "format": "PDF",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 2219
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/nT1Ln": "e2fbb6b7315a1d48574fe0f4dbf955a0249fe5120794f9a0a6a61e22f3e1107c"
+  },
+  "lastAttachmentHashCheckedAt": "2026-10-21T00:13:24.199142+00:00",
+  "unresolved": [
+    "PDF1쪽컨설팅대상2026년이후 vs2쪽2025/2026창업자(예비포함)·상세2026~27예비:기준충돌",
+    "표기19~39세와생년월일범위의기준일미명시",
+    "신청폼의필수항목·증빙요구미확인"
+  ],
+  "eligibility": {
+    "summary": "충남소재청년예비/기창업자,19~39세/1986.1.3~2007.1.2동시명시;교육업종무관.컨설팅은충남생활업종특정창업연도한정",
+    "companyFields": [
+      "생년월일",
+      "충남창업예정/사업장",
+      "개업연도",
+      "업종·KSIC",
+      "희망컨설팅",
+      "수강가능과목"
+    ],
+    "reference": "PDF4쪽전문·4쪽전체렌더시각·별첨생계형업종표·상세검토"
+  },
+  "exclusions": {
+    "items": [
+      "수료5/6과목미달",
+      "무단불참시3개월재단경영지도참여불가"
+    ],
+    "reference": "PDF4쪽전문·4쪽전체렌더시각·별첨생계형업종표·상세검토"
+  },
+  "support": {
+    "summary": "무료온라인Zoom100명선착순,11/5~6;임대차/인테리어/세무/상권/SNS/제품디자인6과목,5과목이상수료.컨설팅예산소진조기종료가능",
+    "reference": "PDF4쪽전문·4쪽전체렌더시각·별첨생계형업종표·상세검토"
+  },
+  "period": {
+    "start": "2026-10-07",
+    "end": "2026-11-04",
+    "deadlineTime": "18:00",
+    "timezone": "Asia/Seoul",
+    "reference": "상세신청기간;PDF1쪽은마감날짜만"
+  },
+  "application": {
+    "url": "https://www.cnsinbo.co.kr/education.html",
+    "notes": "재단홈페이지→경영지도→교육신청",
+    "reference": "PDF3쪽"
+  },
+  "requiredDocuments": [
+    {
+      "name": "교육신청서",
+      "condition": "필수온라인",
+      "reference": "상세제출서류·PDF3쪽"
+    }
+  ],
+  "businessPlan": {
+    "format": "교육신청서;사업계획서요구없음.컨설팅신청추가서류미기재",
+    "sections": [],
+    "reference": "PDF4쪽전문·4쪽전체렌더시각·별첨생계형업종표·상세검토"
+  },
+  "evaluation": {
+    "summary": "100명선착순,6과목중5과목수강;10분단위출석확인,만족도조사후수료증",
+    "reference": "PDF4쪽전문·4쪽전체렌더시각·별첨생계형업종표·상세검토"
+  },
+  "contact": {
+    "name": "충남신용보증재단이은주041-530-3803",
+    "reference": "PDF4쪽전문·4쪽전체렌더시각·별첨생계형업종표·상세검토"
+  },
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179522",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확인 후 적합성 비교; 이 분석은 신청가능 판정 아님",
+    "steps": [
+      "회사 필드 및 자격 증빙 확인",
+      "미확인·충돌 해결",
+      "공고 양식 선택",
+      "회사 사실정보로 서류·사업계획서 작성 및 검토"
+    ]
+  }
+}

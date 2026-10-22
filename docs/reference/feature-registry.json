@@ -15,9 +15,14 @@
       "layout": "설정 폼 + 우측 계정 요약",
       "dependsOn": [],
       "dependencyBasis": "제안: 원본 기능 내용을 바탕으로 구성한 선행 데이터 의존성. 슬라이드 순서와 구별한다.",
-      "codeCandidates": [],
-      "status": "미매핑·구현 미검증",
-      "specMissing": true
+      "codeCandidates": [
+        "src/components/AdminCenterView.jsx",
+        "src/components/PlatformUtilityView.jsx",
+        "src/lib/adminRepository.js"
+      ],
+      "status": "구현 후보 있음·완료 미검증",
+      "specMissing": true,
+      "adminCenter20261022": "2026-10-22 관리자 센터(/admin) 및 설정(/settings) 연계: 기업 계정·소속 워크스페이스 환경 설정 및 다중 사업장·소속 구성원 권한 관리 틀 구현."
     },
     {
       "id": "S02",
@@ -64,7 +69,20 @@
         "board": "https://www.figma.com/board/AIOk8BKLYcgkzc3S247FAk/?node-id=1-8",
         "scope": "로그인 전 실제 화면 12개; 편집기 진입 제한 기록; 기업 프로필·맞춤 지원사업 예정 흐름 구분"
       },
-      "managedClientCloudRelease20261018": "2026-10-18 사용자승인후 managed_client_links/거래처등록함수/RLS 운영적용성공. 기존활성65폴더명·원본ID를 CEO계정 관리거래처로 등록,65매핑재조회성공(원본123파일전송0). 소속어니스톤은운영공간으로선택목록에서제외,전체거래처/검색/URL company 공통범위 및메뉴전환유지,거래처전환시이전업무·문서선택제거. S02권한→S03거래처→S05업무/S11문서/S08인증/S23일정/S26리스크 인계. 회사별데이터는RLS검사,전체범위일때개별진단을0으로단정안함. 지원사업적합성·원본파일이관·알림발송미구현명시. 관련19테스트및빌드성공. 웹배포확인예정."
+      "loginRepair20261018": "2026-10-18 로그인 후 회사 미표시 원인: 운영 public에는 companies/documents/certifications/ai_consultation_logs만 존재, profiles/company_members/audit_logs/audit_projects와 auth RPC 미적용. CEO auth계정과 조영빈/어니스톤 가입메타데이터 존재를 읽기전용 SQL로 확인. 기존 platform_migration.sql 및 repair_existing_ceo_profile.sql 준비: 기존 계정에만 새 비공개회사·MEMBER/OWNER 연결, 기존 거래처 접근권한 부여 안함. 재실행 중복방지·로그저장·회사간격리 포함11테스트통과. AuthContext는 프로필오류와 감사기록경고 분리, CompanySwitcher는 서버설정오류와 재조회 제공. S02 사용자ID→S03 회사ID/역할→S05/S11 문서/업무 권한 전달. 운영DB적용은 자동승인검토가 이전스키마변경금지를 근거로 차단하여 명시적승인대기,운영복구완료아님.",
+      "loginRepairApplied20261018": "2026-10-18 사용자 명시승인(연결해) 후 Honestone 운영DB에 platform_migration.sql 및 repair_existing_ceo_profile.sql 적용 성공. 운영SQL에서 조영빈/어니스톤/MEMBER/OWNER 연결 확인. 실제 계정의 Supabase signInWithPassword 성공, RLS로 companies는 어니스톤1곳만 조회, profiles·audit_projects 조회 성공, record_auth_event(LOGIN) 저장 성공. 익명 profiles/audit_projects 접근은401/42501로 차단. 기존화면 새로고침/재로그인으로 프로필 재조회 필요. 브라우저 UI 회사 선택의 최종 시각확인은 미완료. UI 오류안내 수정은 로컬에만 있으며 새 웹배포는 수행안함. 기존거래처문서의 클라우드이관은 포함안함.",
+      "managedClientCloudRelease20261018": "2026-10-18 사용자승인후 managed_client_links/거래처등록함수/RLS 운영적용성공. 기존활성65폴더명·원본ID를 CEO계정 관리거래처로 등록,65매핑재조회성공(원본123파일전송0). 소속어니스톤은운영공간으로선택목록에서제외,전체거래처/검색/URL company 공통범위 및메뉴전환유지,거래처전환시이전업무·문서선택제거. S02권한→S03거래처→S05업무/S11문서/S08인증/S23일정/S26리스크 인계. 회사별데이터는RLS검사,전체범위일때개별진단을0으로단정안함. 지원사업적합성·원본파일이관·알림발송미구현명시. 관련19테스트및빌드성공. 웹배포확인예정.",
+      "socialAuth20261019": "2026-10-19 S02 로그인 3종 준비: 기존 이메일/비밀번호 유지, 카카오·Google OAuth 및 PKCE 서버 콜백/안전한 내부 복귀경로/실패안내 구현. 로그인 모달과 설정의 기존계정 연결 UI는 실제 Supabase 제공자 활성 상태를 조회하며 미설정이면 비활성 표시. S02 사용자ID→S03 회사/구성원권한→S05/S11 프로젝트·문서 인계는 기존 RLS 유지. 소셜 이메일이 다를 때 기존 CEO계정에 연결하도록 설정 진입 제공; 이름·회사명만으로 병합/권한 부여하지 않음. 관련22테스트 및 빌드 성공. 운영 Supabase(dqnblzlgpybhjftopldg) 이메일ON/카카오OFF/GoogleOFF,manual linking OFF 확인. 카카오 조영빈 개발자계정 앱0개이며 어니스톤 생성정보 준비,운영정책확인/저장동의대기. Google Cloud는 다른 사용자 계정이므로 조영빈 소유 Google계정 확인대기. 운영OAuth/실제계정연결/회사·문서재조회 및 신규웹배포 미완료. 인증비밀값 저장소 기록 없음.",
+      "socialAuthAppCreated20261019": "2026-10-19 사용자 운영정책 확인·저장 동의 후 카카오 조영빈 계정에 어니스톤 앱ID1613451 생성 완료(Owner,생산성/도구,https://isoedu-cyan.vercel.app). Google 소유계정 yahoyb@gmail.com 확인,로그인은 패스키 본인확인 대기. 카카오/Google 제공자 활성화·비밀키등록·기존CEO계정연결 및 운영배포는 미완료. 기존 이메일/회사·문서 권한 변경 없음.",
+      "socialAuthRedirects20261019": "2026-10-19 사용자 카카오 로그인ON 저장 화면 확인. 앱1613451 REST로그인복귀URI를 어니스톤 Supabase dqnblzlgpybhjftopldg /auth/v1/callback로 저장. Supabase SiteURL=https://isoedu-cyan.vercel.app 및 운영/localhost/127.0.0.1:3000의 /auth/callback** 3개 허용주소 저장/재조회확인. 카카오 account_email은 권한없음으로 비즈앱 전환 선행 필요(앱아이콘 등록 및 사업자정보 또는 개인본인인증/약관 절차). 현재 DB profiles.email NOT NULL 기준을 유지,이메일누락허용을 켜지 않음. Google yahoyb@gmail.com 패스키확인 여전히 대기. OAuth비밀키 입력/제공자활성화·기존계정연결·실제로그인/회사문서조회·운영배포 미완료. 비밀값 저장소 기록/재발급 없음.",
+      "meetingWorkflow20261019": {
+        "description": "2026-10-19 회의 반영1차: 회사 신청코드→직원 소속요청→OWNER 열람/편집 승인·소속해제(이력보존),프로필회사ID 우회 차단·심사원 명시회사멤버십 적용. 기존거래처별 복수프로젝트/복수ISO규격·사용자검토 구비서류·내부목표일 준비일정 통합저장 및 실제회사문서 연결/기존목록달력 연계. 회사ID→프로젝트ID→요건key/source_version/document_id→work_tasks.project_id/준비기한 인계. 서버 회사격리/문서프로젝트 소속일치/멱등재시도·변조거부/부분실패롤백 적용. 신규파일요청은 현재사용자/RLS를 재확인하는 비캐시 스트리밍으로 전환,기존서명URL만료/다운로드사본회수불가 제한 기록. 회사등록은 법적대표자인증이 아니며 공식심사/기관발급/알림발송과 구분. 상세명세 docs/reference/company-project-workflow.md. 운영DB적용·새웹배포·실계정종단검증 대기,운영완료아님.",
+        "spec": "docs/reference/company-project-workflow.md",
+        "status": "운영 DB·웹 배포 완료 / 직원 교차계정 UI 검증 미완료",
+        "verification": "전체91테스트/빌드통과; 브라우저 복수규격·구비서류미리보기·목표일2026-12-15→11-15/12-01/12-12일정·미로그인저장차단 확인. 운영DB/배포/실계정종단검증 대기."
+      },
+      "meetingWorkflowApplied20261019": "2026-10-19 사용자 명시승인 후 어니스톤 Supabase dqnblzlgpybhjftopldg에 company_projects_migration.sql 적용 성공. CEO 회사 OWNER권한으로 프로젝트·요건·업무 저장/재조회,문서 연결,요청 재시도 중복방지,업무 완료,익명조회/생성차단을 운영SQL 트랜잭션에서 검증한 뒤 전량롤백. 기존67회사/130문서/66멤버십/0프로젝트/2업무 유지. 로그인된 조영빈 운영브라우저에서 회사 관리자·승인대기 UI,접근가능 거래처목록,실제 거래처 HWP미리보기(/api/vault-file 경유) 확인. 비로그인 파일접근HTTP401,인증관리/설정HTTP200. 선택적HEAD기반 배포묶음 /private/tmp/isoedu-meeting-release-20261019 사용,보류 소셜로그인/별도에이전트UI/로컬고객원본 제외. 배포묶음86테스트·빌드통과(전체개발91테스트). 최종 Vercel 배포6M4Y3Y2fywroVcf6ArjUdoq23mEX 및 https://isoedu-cyan.vercel.app 반영. 실제직원 승인/해제 브라우저 교차계정 검증과 영구프로젝트 생성은 수행하지 않음. 기존서명URL은만료까지유효가능/다운로드사본회수불가. 카카오/Google은보류유지.",
+      "headerOverlap20261019": "2026-10-19 공통헤더 겹침 수정: 거래처/계정 헤더의 절대배치를 제거하고 본문 바깥의 독립된 상단 flex행으로 이동. 연결안내도 같은 행의 흐름에 배치,좁은화면 칩폭 제한·업무제목/버튼 줄바꿈. S02 계정/회사선택→S03 회사컨텍스트→S05 및 공통메뉴 작업버튼;데이터·권한·URL·문서선택·사이드바상태 변경없음. 데스크톱/390px에서 헤더하단<=업무제목상단 확인,사이드바 접힘/펼침 유지. 빌드성공. 운영배포후확인예정. 운영반영완료: Vercel Ei3ywnyGMQ8hCBEm1Rq9rVzwp3vf 빌드성공 및 https://isoedu-cyan.vercel.app alias 반영. 운영/로컬 헤더와 업무제목 영역 분리 확인,390px·사이드바접힘/펼침 확인. 데이터·권한 변경없음."
     },
     {
       "id": "S03",
@@ -87,7 +105,19 @@
         "board": "https://www.figma.com/board/AIOk8BKLYcgkzc3S247FAk/?node-id=1-8",
         "scope": "로그인 전 실제 화면 12개; 편집기 진입 제한 기록; 기업 프로필·맞춤 지원사업 예정 흐름 구분"
       },
-      "managedClientCloudRelease20261018": "2026-10-18 사용자승인후 managed_client_links/거래처등록함수/RLS 운영적용성공. 기존활성65폴더명·원본ID를 CEO계정 관리거래처로 등록,65매핑재조회성공(원본123파일전송0). 소속어니스톤은운영공간으로선택목록에서제외,전체거래처/검색/URL company 공통범위 및메뉴전환유지,거래처전환시이전업무·문서선택제거. S02권한→S03거래처→S05업무/S11문서/S08인증/S23일정/S26리스크 인계. 회사별데이터는RLS검사,전체범위일때개별진단을0으로단정안함. 지원사업적합성·원본파일이관·알림발송미구현명시. 관련19테스트및빌드성공. 웹배포확인예정."
+      "loginRepair20261018": "2026-10-18 로그인 후 회사 미표시 원인: 운영 public에는 companies/documents/certifications/ai_consultation_logs만 존재, profiles/company_members/audit_logs/audit_projects와 auth RPC 미적용. CEO auth계정과 조영빈/어니스톤 가입메타데이터 존재를 읽기전용 SQL로 확인. 기존 platform_migration.sql 및 repair_existing_ceo_profile.sql 준비: 기존 계정에만 새 비공개회사·MEMBER/OWNER 연결, 기존 거래처 접근권한 부여 안함. 재실행 중복방지·로그저장·회사간격리 포함11테스트통과. AuthContext는 프로필오류와 감사기록경고 분리, CompanySwitcher는 서버설정오류와 재조회 제공. S02 사용자ID→S03 회사ID/역할→S05/S11 문서/업무 권한 전달. 운영DB적용은 자동승인검토가 이전스키마변경금지를 근거로 차단하여 명시적승인대기,운영복구완료아님.",
+      "loginRepairApplied20261018": "2026-10-18 사용자 명시승인(연결해) 후 Honestone 운영DB에 platform_migration.sql 및 repair_existing_ceo_profile.sql 적용 성공. 운영SQL에서 조영빈/어니스톤/MEMBER/OWNER 연결 확인. 실제 계정의 Supabase signInWithPassword 성공, RLS로 companies는 어니스톤1곳만 조회, profiles·audit_projects 조회 성공, record_auth_event(LOGIN) 저장 성공. 익명 profiles/audit_projects 접근은401/42501로 차단. 기존화면 새로고침/재로그인으로 프로필 재조회 필요. 브라우저 UI 회사 선택의 최종 시각확인은 미완료. UI 오류안내 수정은 로컬에만 있으며 새 웹배포는 수행안함. 기존거래처문서의 클라우드이관은 포함안함.",
+      "managedClientContext20261018": "2026-10-18 거래처 컨텍스트 수정: 소속회사(어니스톤)와 관리거래처 분리. 운영회사 제외한 접근가능 거래처 검색/전체선택, URL company로 메뉴·새로고침 유지. 변경시 task/file/reference/folder/legacy client 선택 제거. S02권한→S03거래처ID→S05업무필터→S11회사문서·S08인증·S23일정·S26리스크 범위 전달. 전체선택에서 개별회사 준비율/알림을0으로 표시하지 않고 선택안내. 기존65폴더명/식별자→계정별managed_client_links→접근권한이있는새companies로등록하는SQL 준비;원본123파일은이관안함. 새운영DB스키마/함수적용은자동승인검토차단으로명시승인대기. UI및관련16테스트/빌드통과,실제운영거래처전환·브라우저검증·배포미완료. 지원사업회사적합성판정은미구현표시.",
+      "managedClientCloudRelease20261018": "2026-10-18 사용자승인후 managed_client_links/거래처등록함수/RLS 운영적용성공. 기존활성65폴더명·원본ID를 CEO계정 관리거래처로 등록,65매핑재조회성공(원본123파일전송0). 소속어니스톤은운영공간으로선택목록에서제외,전체거래처/검색/URL company 공통범위 및메뉴전환유지,거래처전환시이전업무·문서선택제거. S02권한→S03거래처→S05업무/S11문서/S08인증/S23일정/S26리스크 인계. 회사별데이터는RLS검사,전체범위일때개별진단을0으로단정안함. 지원사업적합성·원본파일이관·알림발송미구현명시. 관련19테스트및빌드성공. 웹배포확인예정.",
+      "managedClientDeploymentVerification20261018": "운영반영확인: 커밋ab1d86a GitHub main푸시성공, Vercel 73CNYy7bkuDP44W41zS73u2yidmR 빌드/배포성공 및 https://isoedu-cyan.vercel.app alias반영. HTTP200·관리거래처선택/매핑/선택배너/원본미이관안내배포코드확인. 로그인된 실제운영 문서화면에서 선택거래처 표시·회사URL컨텍스트·구문서로컬제한오류대신회사별문서목록 표시시각확인. 화면근거 /tmp/honestone-managed-client-deployed.png. 파일123개미이관·회사프로필사실미확인·지원사업적합성미판정은구분.",
+      "meetingWorkflow20261019": {
+        "description": "2026-10-19 회의 반영1차: 회사 신청코드→직원 소속요청→OWNER 열람/편집 승인·소속해제(이력보존),프로필회사ID 우회 차단·심사원 명시회사멤버십 적용. 기존거래처별 복수프로젝트/복수ISO규격·사용자검토 구비서류·내부목표일 준비일정 통합저장 및 실제회사문서 연결/기존목록달력 연계. 회사ID→프로젝트ID→요건key/source_version/document_id→work_tasks.project_id/준비기한 인계. 서버 회사격리/문서프로젝트 소속일치/멱등재시도·변조거부/부분실패롤백 적용. 신규파일요청은 현재사용자/RLS를 재확인하는 비캐시 스트리밍으로 전환,기존서명URL만료/다운로드사본회수불가 제한 기록. 회사등록은 법적대표자인증이 아니며 공식심사/기관발급/알림발송과 구분. 상세명세 docs/reference/company-project-workflow.md. 운영DB적용·새웹배포·실계정종단검증 대기,운영완료아님.",
+        "spec": "docs/reference/company-project-workflow.md",
+        "status": "운영 DB·웹 배포 완료 / 직원 교차계정 UI 검증 미완료",
+        "verification": "전체91테스트/빌드통과; 브라우저 복수규격·구비서류미리보기·목표일2026-12-15→11-15/12-01/12-12일정·미로그인저장차단 확인. 운영DB/배포/실계정종단검증 대기."
+      },
+      "meetingWorkflowApplied20261019": "2026-10-19 사용자 명시승인 후 어니스톤 Supabase dqnblzlgpybhjftopldg에 company_projects_migration.sql 적용 성공. CEO 회사 OWNER권한으로 프로젝트·요건·업무 저장/재조회,문서 연결,요청 재시도 중복방지,업무 완료,익명조회/생성차단을 운영SQL 트랜잭션에서 검증한 뒤 전량롤백. 기존67회사/130문서/66멤버십/0프로젝트/2업무 유지. 로그인된 조영빈 운영브라우저에서 회사 관리자·승인대기 UI,접근가능 거래처목록,실제 거래처 HWP미리보기(/api/vault-file 경유) 확인. 비로그인 파일접근HTTP401,인증관리/설정HTTP200. 선택적HEAD기반 배포묶음 /private/tmp/isoedu-meeting-release-20261019 사용,보류 소셜로그인/별도에이전트UI/로컬고객원본 제외. 배포묶음86테스트·빌드통과(전체개발91테스트). 최종 Vercel 배포6M4Y3Y2fywroVcf6ArjUdoq23mEX 및 https://isoedu-cyan.vercel.app 반영. 실제직원 승인/해제 브라우저 교차계정 검증과 영구프로젝트 생성은 수행하지 않음. 기존서명URL은만료까지유효가능/다운로드사본회수불가. 카카오/Google은보류유지.",
+      "headerOverlap20261019": "2026-10-19 공통헤더 겹침 수정: 거래처/계정 헤더의 절대배치를 제거하고 본문 바깥의 독립된 상단 flex행으로 이동. 연결안내도 같은 행의 흐름에 배치,좁은화면 칩폭 제한·업무제목/버튼 줄바꿈. S02 계정/회사선택→S03 회사컨텍스트→S05 및 공통메뉴 작업버튼;데이터·권한·URL·문서선택·사이드바상태 변경없음. 데스크톱/390px에서 헤더하단<=업무제목상단 확인,사이드바 접힘/펼침 유지. 빌드성공. 운영배포후확인예정. 운영반영완료: Vercel Ei3ywnyGMQ8hCBEm1Rq9rVzwp3vf 빌드성공 및 https://isoedu-cyan.vercel.app alias 반영. 운영/로컬 헤더와 업무제목 영역 분리 확인,390px·사이드바접힘/펼침 확인. 데이터·권한 변경없음."
     },
     {
       "id": "S04",
@@ -105,7 +135,14 @@
         "supabase/platform_migration.sql"
       ],
       "status": "구현 후보 있음·완료 미검증",
-      "specMissing": false
+      "specMissing": false,
+      "meetingWorkflow20261019": {
+        "description": "2026-10-19 회의 반영1차: 회사 신청코드→직원 소속요청→OWNER 열람/편집 승인·소속해제(이력보존),프로필회사ID 우회 차단·심사원 명시회사멤버십 적용. 기존거래처별 복수프로젝트/복수ISO규격·사용자검토 구비서류·내부목표일 준비일정 통합저장 및 실제회사문서 연결/기존목록달력 연계. 회사ID→프로젝트ID→요건key/source_version/document_id→work_tasks.project_id/준비기한 인계. 서버 회사격리/문서프로젝트 소속일치/멱등재시도·변조거부/부분실패롤백 적용. 신규파일요청은 현재사용자/RLS를 재확인하는 비캐시 스트리밍으로 전환,기존서명URL만료/다운로드사본회수불가 제한 기록. 회사등록은 법적대표자인증이 아니며 공식심사/기관발급/알림발송과 구분. 상세명세 docs/reference/company-project-workflow.md. 운영DB적용·새웹배포·실계정종단검증 대기,운영완료아님.",
+        "spec": "docs/reference/company-project-workflow.md",
+        "status": "운영 DB·웹 배포 완료 / 직원 교차계정 UI 검증 미완료",
+        "verification": "전체91테스트/빌드통과; 브라우저 복수규격·구비서류미리보기·목표일2026-12-15→11-15/12-01/12-12일정·미로그인저장차단 확인. 운영DB/배포/실계정종단검증 대기."
+      },
+      "meetingWorkflowApplied20261019": "2026-10-19 사용자 명시승인 후 어니스톤 Supabase dqnblzlgpybhjftopldg에 company_projects_migration.sql 적용 성공. CEO 회사 OWNER권한으로 프로젝트·요건·업무 저장/재조회,문서 연결,요청 재시도 중복방지,업무 완료,익명조회/생성차단을 운영SQL 트랜잭션에서 검증한 뒤 전량롤백. 기존67회사/130문서/66멤버십/0프로젝트/2업무 유지. 로그인된 조영빈 운영브라우저에서 회사 관리자·승인대기 UI,접근가능 거래처목록,실제 거래처 HWP미리보기(/api/vault-file 경유) 확인. 비로그인 파일접근HTTP401,인증관리/설정HTTP200. 선택적HEAD기반 배포묶음 /private/tmp/isoedu-meeting-release-20261019 사용,보류 소셜로그인/별도에이전트UI/로컬고객원본 제외. 배포묶음86테스트·빌드통과(전체개발91테스트). 최종 Vercel 배포6M4Y3Y2fywroVcf6ArjUdoq23mEX 및 https://isoedu-cyan.vercel.app 반영. 실제직원 승인/해제 브라우저 교차계정 검증과 영구프로젝트 생성은 수행하지 않음. 기존서명URL은만료까지유효가능/다운로드사본회수불가. 카카오/Google은보류유지."
     },
     {
       "id": "S05",
@@ -185,7 +222,19 @@
         "UX-001",
         "UX-002"
       ],
-      "managedClientCloudRelease20261018": "2026-10-18 사용자승인후 managed_client_links/거래처등록함수/RLS 운영적용성공. 기존활성65폴더명·원본ID를 CEO계정 관리거래처로 등록,65매핑재조회성공(원본123파일전송0). 소속어니스톤은운영공간으로선택목록에서제외,전체거래처/검색/URL company 공통범위 및메뉴전환유지,거래처전환시이전업무·문서선택제거. S02권한→S03거래처→S05업무/S11문서/S08인증/S23일정/S26리스크 인계. 회사별데이터는RLS검사,전체범위일때개별진단을0으로단정안함. 지원사업적합성·원본파일이관·알림발송미구현명시. 관련19테스트및빌드성공. 웹배포확인예정."
+      "cloudWorkTasks20261018": "2026-10-18 내 업무 Supabase 연결: work_tasks 회사ID/작성자ID/문서ID·업무/공식마감·상태·체크리스트·원문링크 저장. 개인업무 작성자만, 회사업무 can_read_company 조회/can_edit_company 수정;작성자변조·타회사문서연결·익명접근 차단. S02 사용자→S03 회사권한→S05 내업무→S11 회사문서 인계,UX-001 접기/필터 유지. 클라우드는 브라우저 세션+RLS 직접 연결하고 기존 로컬API 제한 유지. 실제계정 저장·재조회·완료 성공(검증용개인업무1건 완료보관),관련14테스트 및빌드통과. 운영DB적용완료. 웹배포는 자동승인검토가 정기수집의 공개배포금지를 근거로 차단해 사용자배포승인대기;현재운영UI는이전버전. 기존로컬거래처65개/원본파일이관·알림발송·실시간동기화 미포함. 소속회사/기존클라우드문서만 업무선택목록 제공.",
+      "cloudWorkTasksDeployment20261018": "2026-10-18 사용자 명시배포승인 후 업무 클라우드 연결을 Vercel 운영에 배포. 프로덕션 빌드 성공,기존주소 https://isoedu-cyan.vercel.app 에 alias 반영. 배포ID AoRYcmAqRYDRUQcW9eAhPrYHaDJa. 실제 CEO계정 업무저장/재조회/완료 검증 및 관련14테스트 통과. 고객원본·로컬드라이브데이터 제외한 HEAD기반 선택파일 릴리스 묶음 사용. 기존 로컬거래처 이관·알림 발송·실시간동기화는 미포함.",
+      "managedClientContext20261018": "2026-10-18 거래처 컨텍스트 수정: 소속회사(어니스톤)와 관리거래처 분리. 운영회사 제외한 접근가능 거래처 검색/전체선택, URL company로 메뉴·새로고침 유지. 변경시 task/file/reference/folder/legacy client 선택 제거. S02권한→S03거래처ID→S05업무필터→S11회사문서·S08인증·S23일정·S26리스크 범위 전달. 전체선택에서 개별회사 준비율/알림을0으로 표시하지 않고 선택안내. 기존65폴더명/식별자→계정별managed_client_links→접근권한이있는새companies로등록하는SQL 준비;원본123파일은이관안함. 새운영DB스키마/함수적용은자동승인검토차단으로명시승인대기. UI및관련16테스트/빌드통과,실제운영거래처전환·브라우저검증·배포미완료. 지원사업회사적합성판정은미구현표시.",
+      "managedClientCloudRelease20261018": "2026-10-18 사용자승인후 managed_client_links/거래처등록함수/RLS 운영적용성공. 기존활성65폴더명·원본ID를 CEO계정 관리거래처로 등록,65매핑재조회성공(원본123파일전송0). 소속어니스톤은운영공간으로선택목록에서제외,전체거래처/검색/URL company 공통범위 및메뉴전환유지,거래처전환시이전업무·문서선택제거. S02권한→S03거래처→S05업무/S11문서/S08인증/S23일정/S26리스크 인계. 회사별데이터는RLS검사,전체범위일때개별진단을0으로단정안함. 지원사업적합성·원본파일이관·알림발송미구현명시. 관련19테스트및빌드성공. 웹배포확인예정.",
+      "managedClientDeploymentVerification20261018": "운영반영확인: 커밋ab1d86a GitHub main푸시성공, Vercel 73CNYy7bkuDP44W41zS73u2yidmR 빌드/배포성공 및 https://isoedu-cyan.vercel.app alias반영. HTTP200·관리거래처선택/매핑/선택배너/원본미이관안내배포코드확인. 로그인된 실제운영 문서화면에서 선택거래처 표시·회사URL컨텍스트·구문서로컬제한오류대신회사별문서목록 표시시각확인. 화면근거 /tmp/honestone-managed-client-deployed.png. 파일123개미이관·회사프로필사실미확인·지원사업적합성미판정은구분.",
+      "meetingWorkflow20261019": {
+        "description": "2026-10-19 회의 반영1차: 회사 신청코드→직원 소속요청→OWNER 열람/편집 승인·소속해제(이력보존),프로필회사ID 우회 차단·심사원 명시회사멤버십 적용. 기존거래처별 복수프로젝트/복수ISO규격·사용자검토 구비서류·내부목표일 준비일정 통합저장 및 실제회사문서 연결/기존목록달력 연계. 회사ID→프로젝트ID→요건key/source_version/document_id→work_tasks.project_id/준비기한 인계. 서버 회사격리/문서프로젝트 소속일치/멱등재시도·변조거부/부분실패롤백 적용. 신규파일요청은 현재사용자/RLS를 재확인하는 비캐시 스트리밍으로 전환,기존서명URL만료/다운로드사본회수불가 제한 기록. 회사등록은 법적대표자인증이 아니며 공식심사/기관발급/알림발송과 구분. 상세명세 docs/reference/company-project-workflow.md. 운영DB적용·새웹배포·실계정종단검증 대기,운영완료아님.",
+        "spec": "docs/reference/company-project-workflow.md",
+        "status": "운영 DB·웹 배포 완료 / 직원 교차계정 UI 검증 미완료",
+        "verification": "전체91테스트/빌드통과; 브라우저 복수규격·구비서류미리보기·목표일2026-12-15→11-15/12-01/12-12일정·미로그인저장차단 확인. 운영DB/배포/실계정종단검증 대기."
+      },
+      "meetingWorkflowApplied20261019": "2026-10-19 사용자 명시승인 후 어니스톤 Supabase dqnblzlgpybhjftopldg에 company_projects_migration.sql 적용 성공. CEO 회사 OWNER권한으로 프로젝트·요건·업무 저장/재조회,문서 연결,요청 재시도 중복방지,업무 완료,익명조회/생성차단을 운영SQL 트랜잭션에서 검증한 뒤 전량롤백. 기존67회사/130문서/66멤버십/0프로젝트/2업무 유지. 로그인된 조영빈 운영브라우저에서 회사 관리자·승인대기 UI,접근가능 거래처목록,실제 거래처 HWP미리보기(/api/vault-file 경유) 확인. 비로그인 파일접근HTTP401,인증관리/설정HTTP200. 선택적HEAD기반 배포묶음 /private/tmp/isoedu-meeting-release-20261019 사용,보류 소셜로그인/별도에이전트UI/로컬고객원본 제외. 배포묶음86테스트·빌드통과(전체개발91테스트). 최종 Vercel 배포6M4Y3Y2fywroVcf6ArjUdoq23mEX 및 https://isoedu-cyan.vercel.app 반영. 실제직원 승인/해제 브라우저 교차계정 검증과 영구프로젝트 생성은 수행하지 않음. 기존서명URL은만료까지유효가능/다운로드사본회수불가. 카카오/Google은보류유지.",
+      "headerOverlap20261019": "2026-10-19 공통헤더 겹침 수정: 거래처/계정 헤더의 절대배치를 제거하고 본문 바깥의 독립된 상단 flex행으로 이동. 연결안내도 같은 행의 흐름에 배치,좁은화면 칩폭 제한·업무제목/버튼 줄바꿈. S02 계정/회사선택→S03 회사컨텍스트→S05 및 공통메뉴 작업버튼;데이터·권한·URL·문서선택·사이드바상태 변경없음. 데스크톱/390px에서 헤더하단<=업무제목상단 확인,사이드바 접힘/펼침 유지. 빌드성공. 운영배포후확인예정. 운영반영완료: Vercel Ei3ywnyGMQ8hCBEm1Rq9rVzwp3vf 빌드성공 및 https://isoedu-cyan.vercel.app alias 반영. 운영/로컬 헤더와 업무제목 영역 분리 확인,390px·사이드바접힘/펼침 확인. 데이터·권한 변경없음."
     },
     {
       "id": "S06",
@@ -217,7 +266,14 @@
         "src/components/AddDocumentModal.jsx"
       ],
       "status": "구현 후보 있음·완료 미검증",
-      "specMissing": false
+      "specMissing": false,
+      "meetingWorkflow20261019": {
+        "description": "2026-10-19 회의 반영1차: 회사 신청코드→직원 소속요청→OWNER 열람/편집 승인·소속해제(이력보존),프로필회사ID 우회 차단·심사원 명시회사멤버십 적용. 기존거래처별 복수프로젝트/복수ISO규격·사용자검토 구비서류·내부목표일 준비일정 통합저장 및 실제회사문서 연결/기존목록달력 연계. 회사ID→프로젝트ID→요건key/source_version/document_id→work_tasks.project_id/준비기한 인계. 서버 회사격리/문서프로젝트 소속일치/멱등재시도·변조거부/부분실패롤백 적용. 신규파일요청은 현재사용자/RLS를 재확인하는 비캐시 스트리밍으로 전환,기존서명URL만료/다운로드사본회수불가 제한 기록. 회사등록은 법적대표자인증이 아니며 공식심사/기관발급/알림발송과 구분. 상세명세 docs/reference/company-project-workflow.md. 운영DB적용·새웹배포·실계정종단검증 대기,운영완료아님.",
+        "spec": "docs/reference/company-project-workflow.md",
+        "status": "운영 DB·웹 배포 완료 / 직원 교차계정 UI 검증 미완료",
+        "verification": "전체91테스트/빌드통과; 브라우저 복수규격·구비서류미리보기·목표일2026-12-15→11-15/12-01/12-12일정·미로그인저장차단 확인. 운영DB/배포/실계정종단검증 대기."
+      },
+      "meetingWorkflowApplied20261019": "2026-10-19 사용자 명시승인 후 어니스톤 Supabase dqnblzlgpybhjftopldg에 company_projects_migration.sql 적용 성공. CEO 회사 OWNER권한으로 프로젝트·요건·업무 저장/재조회,문서 연결,요청 재시도 중복방지,업무 완료,익명조회/생성차단을 운영SQL 트랜잭션에서 검증한 뒤 전량롤백. 기존67회사/130문서/66멤버십/0프로젝트/2업무 유지. 로그인된 조영빈 운영브라우저에서 회사 관리자·승인대기 UI,접근가능 거래처목록,실제 거래처 HWP미리보기(/api/vault-file 경유) 확인. 비로그인 파일접근HTTP401,인증관리/설정HTTP200. 선택적HEAD기반 배포묶음 /private/tmp/isoedu-meeting-release-20261019 사용,보류 소셜로그인/별도에이전트UI/로컬고객원본 제외. 배포묶음86테스트·빌드통과(전체개발91테스트). 최종 Vercel 배포6M4Y3Y2fywroVcf6ArjUdoq23mEX 및 https://isoedu-cyan.vercel.app 반영. 실제직원 승인/해제 브라우저 교차계정 검증과 영구프로젝트 생성은 수행하지 않음. 기존서명URL은만료까지유효가능/다운로드사본회수불가. 카카오/Google은보류유지."
     },
     {
       "id": "S08",
@@ -359,7 +415,24 @@
         "UX-001",
         "UX-002"
       ],
-      "managedClientCloudRelease20261018": "2026-10-18 사용자승인후 managed_client_links/거래처등록함수/RLS 운영적용성공. 기존활성65폴더명·원본ID를 CEO계정 관리거래처로 등록,65매핑재조회성공(원본123파일전송0). 소속어니스톤은운영공간으로선택목록에서제외,전체거래처/검색/URL company 공통범위 및메뉴전환유지,거래처전환시이전업무·문서선택제거. S02권한→S03거래처→S05업무/S11문서/S08인증/S23일정/S26리스크 인계. 회사별데이터는RLS검사,전체범위일때개별진단을0으로단정안함. 지원사업적합성·원본파일이관·알림발송미구현명시. 관련19테스트및빌드성공. 웹배포확인예정."
+      "managedClientContext20261018": "2026-10-18 거래처 컨텍스트 수정: 소속회사(어니스톤)와 관리거래처 분리. 운영회사 제외한 접근가능 거래처 검색/전체선택, URL company로 메뉴·새로고침 유지. 변경시 task/file/reference/folder/legacy client 선택 제거. S02권한→S03거래처ID→S05업무필터→S11회사문서·S08인증·S23일정·S26리스크 범위 전달. 전체선택에서 개별회사 준비율/알림을0으로 표시하지 않고 선택안내. 기존65폴더명/식별자→계정별managed_client_links→접근권한이있는새companies로등록하는SQL 준비;원본123파일은이관안함. 새운영DB스키마/함수적용은자동승인검토차단으로명시승인대기. UI및관련16테스트/빌드통과,실제운영거래처전환·브라우저검증·배포미완료. 지원사업회사적합성판정은미구현표시.",
+      "managedClientCloudRelease20261018": "2026-10-18 사용자승인후 managed_client_links/거래처등록함수/RLS 운영적용성공. 기존활성65폴더명·원본ID를 CEO계정 관리거래처로 등록,65매핑재조회성공(원본123파일전송0). 소속어니스톤은운영공간으로선택목록에서제외,전체거래처/검색/URL company 공통범위 및메뉴전환유지,거래처전환시이전업무·문서선택제거. S02권한→S03거래처→S05업무/S11문서/S08인증/S23일정/S26리스크 인계. 회사별데이터는RLS검사,전체범위일때개별진단을0으로단정안함. 지원사업적합성·원본파일이관·알림발송미구현명시. 관련19테스트및빌드성공. 웹배포확인예정.",
+      "managedClientDeploymentVerification20261018": "운영반영확인: 커밋ab1d86a GitHub main푸시성공, Vercel 73CNYy7bkuDP44W41zS73u2yidmR 빌드/배포성공 및 https://isoedu-cyan.vercel.app alias반영. HTTP200·관리거래처선택/매핑/선택배너/원본미이관안내배포코드확인. 로그인된 실제운영 문서화면에서 선택거래처 표시·회사URL컨텍스트·구문서로컬제한오류대신회사별문서목록 표시시각확인. 화면근거 /tmp/honestone-managed-client-deployed.png. 파일123개미이관·회사프로필사실미확인·지원사업적합성미판정은구분.",
+      "meetingWorkflow20261019": {
+        "description": "2026-10-19 회의 반영1차: 회사 신청코드→직원 소속요청→OWNER 열람/편집 승인·소속해제(이력보존),프로필회사ID 우회 차단·심사원 명시회사멤버십 적용. 기존거래처별 복수프로젝트/복수ISO규격·사용자검토 구비서류·내부목표일 준비일정 통합저장 및 실제회사문서 연결/기존목록달력 연계. 회사ID→프로젝트ID→요건key/source_version/document_id→work_tasks.project_id/준비기한 인계. 서버 회사격리/문서프로젝트 소속일치/멱등재시도·변조거부/부분실패롤백 적용. 신규파일요청은 현재사용자/RLS를 재확인하는 비캐시 스트리밍으로 전환,기존서명URL만료/다운로드사본회수불가 제한 기록. 회사등록은 법적대표자인증이 아니며 공식심사/기관발급/알림발송과 구분. 상세명세 docs/reference/company-project-workflow.md. 운영DB적용·새웹배포·실계정종단검증 대기,운영완료아님.",
+        "spec": "docs/reference/company-project-workflow.md",
+        "status": "운영 DB·웹 배포 완료 / 직원 교차계정 UI 검증 미완료",
+        "verification": "전체91테스트/빌드통과; 브라우저 복수규격·구비서류미리보기·목표일2026-12-15→11-15/12-01/12-12일정·미로그인저장차단 확인. 운영DB/배포/실계정종단검증 대기."
+      },
+      "meetingWorkflowApplied20261019": "2026-10-19 사용자 명시승인 후 어니스톤 Supabase dqnblzlgpybhjftopldg에 company_projects_migration.sql 적용 성공. CEO 회사 OWNER권한으로 프로젝트·요건·업무 저장/재조회,문서 연결,요청 재시도 중복방지,업무 완료,익명조회/생성차단을 운영SQL 트랜잭션에서 검증한 뒤 전량롤백. 기존67회사/130문서/66멤버십/0프로젝트/2업무 유지. 로그인된 조영빈 운영브라우저에서 회사 관리자·승인대기 UI,접근가능 거래처목록,실제 거래처 HWP미리보기(/api/vault-file 경유) 확인. 비로그인 파일접근HTTP401,인증관리/설정HTTP200. 선택적HEAD기반 배포묶음 /private/tmp/isoedu-meeting-release-20261019 사용,보류 소셜로그인/별도에이전트UI/로컬고객원본 제외. 배포묶음86테스트·빌드통과(전체개발91테스트). 최종 Vercel 배포6M4Y3Y2fywroVcf6ArjUdoq23mEX 및 https://isoedu-cyan.vercel.app 반영. 실제직원 승인/해제 브라우저 교차계정 검증과 영구프로젝트 생성은 수행하지 않음. 기존서명URL은만료까지유효가능/다운로드사본회수불가. 카카오/Google은보류유지.",
+      "projectRequirementNavigation": {
+        "date": "2026-10-21",
+        "status": "운영 배포·라이브 브라우저 사용성 검증 완료 / 실계정 교차 승인·공식 심사 연동 미포함",
+        "changes": "수강생 3단계 대화형 퀵스타트 가이드(CompanyProjects) 및 내 업무 프로젝트 준비 브리핑 바(MyWorkView), 프로젝트 구비서류 검색·상태별 필터(전체/미연결/연결됨/초안 작성 중/내부 검토 중/내부 확인 완료), 기존 보유 문서 자동 매칭·일괄 연결(코드·패턴·조항·제목 기반, CERT 제외), 미연결 구비서류 단건·일괄 초안 생성·연결 및 파일 업로드·연결, 인라인 빠른 점검 패널(본문 미리보기·점검 체크리스트 토글·검토 메모 reviewNote 저장·확인 상태 변경·이전/다음/다음 미확인 서류 이동), 구비서류 연결·확인 현황과 준비 일정(work_tasks 상태·체크리스트) 자동/수동 동기화 및 인라인 일정 상태 변경, 준비 요약표 인쇄·PDF(@media print A4 레이아웃)·구비서류 현황표(.csv)·연결 문서 통합 바인더(.doc)·개별 Word(.doc)·첨부 원본 파일 다운로드, ManagedClientDrive 행별 즉시 다운로드, client-file 원본 뷰어 연결, NewProjectModal 관리 거래처 목록 통일·규격/거래처 기반 프로젝트명 자동 제안·목표일 선택 시 수동 수정 보존 준비 일정 자동 계산, RealtimeEditorModal 초안 즉시 편집 탭 진입·좌우 분할 비교(편집+A4)·미입력 항목([...]) 자동 감지 및 일괄 치환·미저장 닫기 방지·Cmd/Ctrl+S 저장·편집기 내 확인 상태 변경·Word(.doc)/.md 다운로드·A4 미리보기 실제 거래처명/상태 표시. 문서 연결·내부 확인 완료를 공식 심사 적합/인증기관 승인으로 표시하지 않음.",
+        "flow": "S03 회사·프로젝트 → S07/S12/S13 생성 시 요건·자동 제안 → S14/S15 단건·일괄 초안 생성·편집·확인 상태 → S11/S16 기존 문서 자동 매칭·파일 업로드·다운로드 → S17 버전·이력 → S05/S23 준비 일정·체크리스트 동기화. companyId/projectId/requirement.id/document_id/projectOrigin/reviewStatus/reviewNote/work_tasks.checklist 유지.",
+        "permissions": "기존 loadProjectDetail/RLS, canEdit, documents/document_versions/iso-vault/work_tasks 권한 경로 및 validate_work_task 트리거 제약 준수. 필터는 조회된 현재 프로젝트 자료에만 적용. 사이드바와 검색·필터 상태는 목록 연결·상태 변경으로 초기화하지 않음.",
+        "verification": "npm test 93개 통과(선택적 배포 묶음 88개 통과), npm run build 성공. Vercel 프로덕션(A63FedmUmtiJJf3MXQT6CJNujnRe, https://isoedu-cyan.vercel.app) 반영 및 Playwright 데스크톱(1440px)·모바일(390px) 라이브 검증(3단계 퀵스타트 가이드, NewProjectModal 자동 제안·수동 보존, ProjectPreparationView 3대 자동화·인라인 빠른 점검 패널·검토 메모 저장·일정 동기화, RealtimeEditorModal 편집 탭 직행·좌우 분할 비교·미입력 항목 일괄 치환·미저장 닫기 보호·Ctrl+S 저장, .doc/.csv/.md 다운로드) 통과."
+      }
     },
     {
       "id": "S12",
@@ -381,7 +454,22 @@
       "uxRules": [
         "UX-001",
         "UX-002"
-      ]
+      ],
+      "meetingWorkflow20261019": {
+        "description": "2026-10-19 회의 반영1차: 회사 신청코드→직원 소속요청→OWNER 열람/편집 승인·소속해제(이력보존),프로필회사ID 우회 차단·심사원 명시회사멤버십 적용. 기존거래처별 복수프로젝트/복수ISO규격·사용자검토 구비서류·내부목표일 준비일정 통합저장 및 실제회사문서 연결/기존목록달력 연계. 회사ID→프로젝트ID→요건key/source_version/document_id→work_tasks.project_id/준비기한 인계. 서버 회사격리/문서프로젝트 소속일치/멱등재시도·변조거부/부분실패롤백 적용. 신규파일요청은 현재사용자/RLS를 재확인하는 비캐시 스트리밍으로 전환,기존서명URL만료/다운로드사본회수불가 제한 기록. 회사등록은 법적대표자인증이 아니며 공식심사/기관발급/알림발송과 구분. 상세명세 docs/reference/company-project-workflow.md. 운영DB적용·새웹배포·실계정종단검증 대기,운영완료아님.",
+        "spec": "docs/reference/company-project-workflow.md",
+        "status": "운영 DB·웹 배포 완료 / 직원 교차계정 UI 검증 미완료",
+        "verification": "전체91테스트/빌드통과; 브라우저 복수규격·구비서류미리보기·목표일2026-12-15→11-15/12-01/12-12일정·미로그인저장차단 확인. 운영DB/배포/실계정종단검증 대기."
+      },
+      "meetingWorkflowApplied20261019": "2026-10-19 사용자 명시승인 후 어니스톤 Supabase dqnblzlgpybhjftopldg에 company_projects_migration.sql 적용 성공. CEO 회사 OWNER권한으로 프로젝트·요건·업무 저장/재조회,문서 연결,요청 재시도 중복방지,업무 완료,익명조회/생성차단을 운영SQL 트랜잭션에서 검증한 뒤 전량롤백. 기존67회사/130문서/66멤버십/0프로젝트/2업무 유지. 로그인된 조영빈 운영브라우저에서 회사 관리자·승인대기 UI,접근가능 거래처목록,실제 거래처 HWP미리보기(/api/vault-file 경유) 확인. 비로그인 파일접근HTTP401,인증관리/설정HTTP200. 선택적HEAD기반 배포묶음 /private/tmp/isoedu-meeting-release-20261019 사용,보류 소셜로그인/별도에이전트UI/로컬고객원본 제외. 배포묶음86테스트·빌드통과(전체개발91테스트). 최종 Vercel 배포6M4Y3Y2fywroVcf6ArjUdoq23mEX 및 https://isoedu-cyan.vercel.app 반영. 실제직원 승인/해제 브라우저 교차계정 검증과 영구프로젝트 생성은 수행하지 않음. 기존서명URL은만료까지유효가능/다운로드사본회수불가. 카카오/Google은보류유지.",
+      "projectRequirementNavigation": {
+        "date": "2026-10-21",
+        "status": "운영 배포·라이브 브라우저 사용성 검증 완료 / 실계정 교차 승인·공식 심사 연동 미포함",
+        "changes": "수강생 3단계 대화형 퀵스타트 가이드(CompanyProjects) 및 내 업무 프로젝트 준비 브리핑 바(MyWorkView), 프로젝트 구비서류 검색·상태별 필터(전체/미연결/연결됨/초안 작성 중/내부 검토 중/내부 확인 완료), 기존 보유 문서 자동 매칭·일괄 연결(코드·패턴·조항·제목 기반, CERT 제외), 미연결 구비서류 단건·일괄 초안 생성·연결 및 파일 업로드·연결, 인라인 빠른 점검 패널(본문 미리보기·점검 체크리스트 토글·검토 메모 reviewNote 저장·확인 상태 변경·이전/다음/다음 미확인 서류 이동), 구비서류 연결·확인 현황과 준비 일정(work_tasks 상태·체크리스트) 자동/수동 동기화 및 인라인 일정 상태 변경, 준비 요약표 인쇄·PDF(@media print A4 레이아웃)·구비서류 현황표(.csv)·연결 문서 통합 바인더(.doc)·개별 Word(.doc)·첨부 원본 파일 다운로드, ManagedClientDrive 행별 즉시 다운로드, client-file 원본 뷰어 연결, NewProjectModal 관리 거래처 목록 통일·규격/거래처 기반 프로젝트명 자동 제안·목표일 선택 시 수동 수정 보존 준비 일정 자동 계산, RealtimeEditorModal 초안 즉시 편집 탭 진입·좌우 분할 비교(편집+A4)·미입력 항목([...]) 자동 감지 및 일괄 치환·미저장 닫기 방지·Cmd/Ctrl+S 저장·편집기 내 확인 상태 변경·Word(.doc)/.md 다운로드·A4 미리보기 실제 거래처명/상태 표시. 문서 연결·내부 확인 완료를 공식 심사 적합/인증기관 승인으로 표시하지 않음.",
+        "flow": "S03 회사·프로젝트 → S07/S12/S13 생성 시 요건·자동 제안 → S14/S15 단건·일괄 초안 생성·편집·확인 상태 → S11/S16 기존 문서 자동 매칭·파일 업로드·다운로드 → S17 버전·이력 → S05/S23 준비 일정·체크리스트 동기화. companyId/projectId/requirement.id/document_id/projectOrigin/reviewStatus/reviewNote/work_tasks.checklist 유지.",
+        "permissions": "기존 loadProjectDetail/RLS, canEdit, documents/document_versions/iso-vault/work_tasks 권한 경로 및 validate_work_task 트리거 제약 준수. 필터는 조회된 현재 프로젝트 자료에만 적용. 사이드바와 검색·필터 상태는 목록 연결·상태 변경으로 초기화하지 않음.",
+        "verification": "npm test 93개 통과(선택적 배포 묶음 88개 통과), npm run build 성공. Vercel 프로덕션(A63FedmUmtiJJf3MXQT6CJNujnRe, https://isoedu-cyan.vercel.app) 반영 및 Playwright 데스크톱(1440px)·모바일(390px) 라이브 검증(3단계 퀵스타트 가이드, NewProjectModal 자동 제안·수동 보존, ProjectPreparationView 3대 자동화·인라인 빠른 점검 패널·검토 메모 저장·일정 동기화, RealtimeEditorModal 편집 탭 직행·좌우 분할 비교·미입력 항목 일괄 치환·미저장 닫기 보호·Ctrl+S 저장, .doc/.csv/.md 다운로드) 통과."
+      }
     },
     {
       "id": "S13",
@@ -403,7 +491,22 @@
       "uxRules": [
         "UX-001",
         "UX-002"
-      ]
+      ],
+      "meetingWorkflow20261019": {
+        "description": "2026-10-19 회의 반영1차: 회사 신청코드→직원 소속요청→OWNER 열람/편집 승인·소속해제(이력보존),프로필회사ID 우회 차단·심사원 명시회사멤버십 적용. 기존거래처별 복수프로젝트/복수ISO규격·사용자검토 구비서류·내부목표일 준비일정 통합저장 및 실제회사문서 연결/기존목록달력 연계. 회사ID→프로젝트ID→요건key/source_version/document_id→work_tasks.project_id/준비기한 인계. 서버 회사격리/문서프로젝트 소속일치/멱등재시도·변조거부/부분실패롤백 적용. 신규파일요청은 현재사용자/RLS를 재확인하는 비캐시 스트리밍으로 전환,기존서명URL만료/다운로드사본회수불가 제한 기록. 회사등록은 법적대표자인증이 아니며 공식심사/기관발급/알림발송과 구분. 상세명세 docs/reference/company-project-workflow.md. 운영DB적용·새웹배포·실계정종단검증 대기,운영완료아님.",
+        "spec": "docs/reference/company-project-workflow.md",
+        "status": "운영 DB·웹 배포 완료 / 직원 교차계정 UI 검증 미완료",
+        "verification": "전체91테스트/빌드통과; 브라우저 복수규격·구비서류미리보기·목표일2026-12-15→11-15/12-01/12-12일정·미로그인저장차단 확인. 운영DB/배포/실계정종단검증 대기."
+      },
+      "meetingWorkflowApplied20261019": "2026-10-19 사용자 명시승인 후 어니스톤 Supabase dqnblzlgpybhjftopldg에 company_projects_migration.sql 적용 성공. CEO 회사 OWNER권한으로 프로젝트·요건·업무 저장/재조회,문서 연결,요청 재시도 중복방지,업무 완료,익명조회/생성차단을 운영SQL 트랜잭션에서 검증한 뒤 전량롤백. 기존67회사/130문서/66멤버십/0프로젝트/2업무 유지. 로그인된 조영빈 운영브라우저에서 회사 관리자·승인대기 UI,접근가능 거래처목록,실제 거래처 HWP미리보기(/api/vault-file 경유) 확인. 비로그인 파일접근HTTP401,인증관리/설정HTTP200. 선택적HEAD기반 배포묶음 /private/tmp/isoedu-meeting-release-20261019 사용,보류 소셜로그인/별도에이전트UI/로컬고객원본 제외. 배포묶음86테스트·빌드통과(전체개발91테스트). 최종 Vercel 배포6M4Y3Y2fywroVcf6ArjUdoq23mEX 및 https://isoedu-cyan.vercel.app 반영. 실제직원 승인/해제 브라우저 교차계정 검증과 영구프로젝트 생성은 수행하지 않음. 기존서명URL은만료까지유효가능/다운로드사본회수불가. 카카오/Google은보류유지.",
+      "projectRequirementNavigation": {
+        "date": "2026-10-21",
+        "status": "운영 배포·라이브 브라우저 사용성 검증 완료 / 실계정 교차 승인·공식 심사 연동 미포함",
+        "changes": "수강생 3단계 대화형 퀵스타트 가이드(CompanyProjects) 및 내 업무 프로젝트 준비 브리핑 바(MyWorkView), 프로젝트 구비서류 검색·상태별 필터(전체/미연결/연결됨/초안 작성 중/내부 검토 중/내부 확인 완료), 기존 보유 문서 자동 매칭·일괄 연결(코드·패턴·조항·제목 기반, CERT 제외), 미연결 구비서류 단건·일괄 초안 생성·연결 및 파일 업로드·연결, 인라인 빠른 점검 패널(본문 미리보기·점검 체크리스트 토글·검토 메모 reviewNote 저장·확인 상태 변경·이전/다음/다음 미확인 서류 이동), 구비서류 연결·확인 현황과 준비 일정(work_tasks 상태·체크리스트) 자동/수동 동기화 및 인라인 일정 상태 변경, 준비 요약표 인쇄·PDF(@media print A4 레이아웃)·구비서류 현황표(.csv)·연결 문서 통합 바인더(.doc)·개별 Word(.doc)·첨부 원본 파일 다운로드, ManagedClientDrive 행별 즉시 다운로드, client-file 원본 뷰어 연결, NewProjectModal 관리 거래처 목록 통일·규격/거래처 기반 프로젝트명 자동 제안·목표일 선택 시 수동 수정 보존 준비 일정 자동 계산, RealtimeEditorModal 초안 즉시 편집 탭 진입·좌우 분할 비교(편집+A4)·미입력 항목([...]) 자동 감지 및 일괄 치환·미저장 닫기 방지·Cmd/Ctrl+S 저장·편집기 내 확인 상태 변경·Word(.doc)/.md 다운로드·A4 미리보기 실제 거래처명/상태 표시. 문서 연결·내부 확인 완료를 공식 심사 적합/인증기관 승인으로 표시하지 않음.",
+        "flow": "S03 회사·프로젝트 → S07/S12/S13 생성 시 요건·자동 제안 → S14/S15 단건·일괄 초안 생성·편집·확인 상태 → S11/S16 기존 문서 자동 매칭·파일 업로드·다운로드 → S17 버전·이력 → S05/S23 준비 일정·체크리스트 동기화. companyId/projectId/requirement.id/document_id/projectOrigin/reviewStatus/reviewNote/work_tasks.checklist 유지.",
+        "permissions": "기존 loadProjectDetail/RLS, canEdit, documents/document_versions/iso-vault/work_tasks 권한 경로 및 validate_work_task 트리거 제약 준수. 필터는 조회된 현재 프로젝트 자료에만 적용. 사이드바와 검색·필터 상태는 목록 연결·상태 변경으로 초기화하지 않음.",
+        "verification": "npm test 93개 통과(선택적 배포 묶음 88개 통과), npm run build 성공. Vercel 프로덕션(A63FedmUmtiJJf3MXQT6CJNujnRe, https://isoedu-cyan.vercel.app) 반영 및 Playwright 데스크톱(1440px)·모바일(390px) 라이브 검증(3단계 퀵스타트 가이드, NewProjectModal 자동 제안·수동 보존, ProjectPreparationView 3대 자동화·인라인 빠른 점검 패널·검토 메모 저장·일정 동기화, RealtimeEditorModal 편집 탭 직행·좌우 분할 비교·미입력 항목 일괄 치환·미저장 닫기 보호·Ctrl+S 저장, .doc/.csv/.md 다운로드) 통과."
+      }
     },
     {
       "id": "S14",
@@ -514,7 +617,22 @@
       "uxRules": [
         "UX-001",
         "UX-002"
-      ]
+      ],
+      "meetingWorkflow20261019": {
+        "description": "2026-10-19 회의 반영1차: 회사 신청코드→직원 소속요청→OWNER 열람/편집 승인·소속해제(이력보존),프로필회사ID 우회 차단·심사원 명시회사멤버십 적용. 기존거래처별 복수프로젝트/복수ISO규격·사용자검토 구비서류·내부목표일 준비일정 통합저장 및 실제회사문서 연결/기존목록달력 연계. 회사ID→프로젝트ID→요건key/source_version/document_id→work_tasks.project_id/준비기한 인계. 서버 회사격리/문서프로젝트 소속일치/멱등재시도·변조거부/부분실패롤백 적용. 신규파일요청은 현재사용자/RLS를 재확인하는 비캐시 스트리밍으로 전환,기존서명URL만료/다운로드사본회수불가 제한 기록. 회사등록은 법적대표자인증이 아니며 공식심사/기관발급/알림발송과 구분. 상세명세 docs/reference/company-project-workflow.md. 운영DB적용·새웹배포·실계정종단검증 대기,운영완료아님.",
+        "spec": "docs/reference/company-project-workflow.md",
+        "status": "운영 DB·웹 배포 완료 / 직원 교차계정 UI 검증 미완료",
+        "verification": "전체91테스트/빌드통과; 브라우저 복수규격·구비서류미리보기·목표일2026-12-15→11-15/12-01/12-12일정·미로그인저장차단 확인. 운영DB/배포/실계정종단검증 대기."
+      },
+      "meetingWorkflowApplied20261019": "2026-10-19 사용자 명시승인 후 어니스톤 Supabase dqnblzlgpybhjftopldg에 company_projects_migration.sql 적용 성공. CEO 회사 OWNER권한으로 프로젝트·요건·업무 저장/재조회,문서 연결,요청 재시도 중복방지,업무 완료,익명조회/생성차단을 운영SQL 트랜잭션에서 검증한 뒤 전량롤백. 기존67회사/130문서/66멤버십/0프로젝트/2업무 유지. 로그인된 조영빈 운영브라우저에서 회사 관리자·승인대기 UI,접근가능 거래처목록,실제 거래처 HWP미리보기(/api/vault-file 경유) 확인. 비로그인 파일접근HTTP401,인증관리/설정HTTP200. 선택적HEAD기반 배포묶음 /private/tmp/isoedu-meeting-release-20261019 사용,보류 소셜로그인/별도에이전트UI/로컬고객원본 제외. 배포묶음86테스트·빌드통과(전체개발91테스트). 최종 Vercel 배포6M4Y3Y2fywroVcf6ArjUdoq23mEX 및 https://isoedu-cyan.vercel.app 반영. 실제직원 승인/해제 브라우저 교차계정 검증과 영구프로젝트 생성은 수행하지 않음. 기존서명URL은만료까지유효가능/다운로드사본회수불가. 카카오/Google은보류유지.",
+      "projectRequirementNavigation": {
+        "date": "2026-10-21",
+        "status": "운영 배포·라이브 브라우저 사용성 검증 완료 / 실계정 교차 승인·공식 심사 연동 미포함",
+        "changes": "수강생 3단계 대화형 퀵스타트 가이드(CompanyProjects) 및 내 업무 프로젝트 준비 브리핑 바(MyWorkView), 프로젝트 구비서류 검색·상태별 필터(전체/미연결/연결됨/초안 작성 중/내부 검토 중/내부 확인 완료), 기존 보유 문서 자동 매칭·일괄 연결(코드·패턴·조항·제목 기반, CERT 제외), 미연결 구비서류 단건·일괄 초안 생성·연결 및 파일 업로드·연결, 인라인 빠른 점검 패널(본문 미리보기·점검 체크리스트 토글·검토 메모 reviewNote 저장·확인 상태 변경·이전/다음/다음 미확인 서류 이동), 구비서류 연결·확인 현황과 준비 일정(work_tasks 상태·체크리스트) 자동/수동 동기화 및 인라인 일정 상태 변경, 준비 요약표 인쇄·PDF(@media print A4 레이아웃)·구비서류 현황표(.csv)·연결 문서 통합 바인더(.doc)·개별 Word(.doc)·첨부 원본 파일 다운로드, ManagedClientDrive 행별 즉시 다운로드, client-file 원본 뷰어 연결, NewProjectModal 관리 거래처 목록 통일·규격/거래처 기반 프로젝트명 자동 제안·목표일 선택 시 수동 수정 보존 준비 일정 자동 계산, RealtimeEditorModal 초안 즉시 편집 탭 진입·좌우 분할 비교(편집+A4)·미입력 항목([...]) 자동 감지 및 일괄 치환·미저장 닫기 방지·Cmd/Ctrl+S 저장·편집기 내 확인 상태 변경·Word(.doc)/.md 다운로드·A4 미리보기 실제 거래처명/상태 표시. 문서 연결·내부 확인 완료를 공식 심사 적합/인증기관 승인으로 표시하지 않음.",
+        "flow": "S03 회사·프로젝트 → S07/S12/S13 생성 시 요건·자동 제안 → S14/S15 단건·일괄 초안 생성·편집·확인 상태 → S11/S16 기존 문서 자동 매칭·파일 업로드·다운로드 → S17 버전·이력 → S05/S23 준비 일정·체크리스트 동기화. companyId/projectId/requirement.id/document_id/projectOrigin/reviewStatus/reviewNote/work_tasks.checklist 유지.",
+        "permissions": "기존 loadProjectDetail/RLS, canEdit, documents/document_versions/iso-vault/work_tasks 권한 경로 및 validate_work_task 트리거 제약 준수. 필터는 조회된 현재 프로젝트 자료에만 적용. 사이드바와 검색·필터 상태는 목록 연결·상태 변경으로 초기화하지 않음.",
+        "verification": "npm test 93개 통과(선택적 배포 묶음 88개 통과), npm run build 성공. Vercel 프로덕션(A63FedmUmtiJJf3MXQT6CJNujnRe, https://isoedu-cyan.vercel.app) 반영 및 Playwright 데스크톱(1440px)·모바일(390px) 라이브 검증(3단계 퀵스타트 가이드, NewProjectModal 자동 제안·수동 보존, ProjectPreparationView 3대 자동화·인라인 빠른 점검 패널·검토 메모 저장·일정 동기화, RealtimeEditorModal 편집 탭 직행·좌우 분할 비교·미입력 항목 일괄 치환·미저장 닫기 보호·Ctrl+S 저장, .doc/.csv/.md 다운로드) 통과."
+      }
     },
     {
       "id": "S18",
@@ -603,9 +721,13 @@
         "S02"
       ],
       "dependencyBasis": "제안: 원본 기능 내용을 바탕으로 구성한 선행 데이터 의존성. 슬라이드 순서와 구별한다.",
-      "codeCandidates": [],
-      "status": "미매핑·구현 미검증",
-      "specMissing": false
+      "codeCandidates": [
+        "src/components/AdminCenterView.jsx",
+        "src/lib/adminRepository.js"
+      ],
+      "status": "구현 후보 있음·완료 미검증",
+      "specMissing": false,
+      "adminCenter20261022": "2026-10-22 관리자 센터(/admin?tab=operations) 내 심사원·컨설턴트 인력 풀 대장 및 신규 심사원 프로필(전문규격·자격번호·활동지역·상태) 등록·관리 구현."
     },
     {
       "id": "S22",
@@ -637,10 +759,12 @@
       ],
       "dependencyBasis": "제안: 원본 기능 내용을 바탕으로 구성한 선행 데이터 의존성. 슬라이드 순서와 구별한다.",
       "codeCandidates": [
-        "src/components/ProjectDetailView.jsx"
+        "src/components/ProjectDetailView.jsx",
+        "src/components/PlatformUtilityView.jsx"
       ],
       "status": "구현 후보 있음·완료 미검증",
       "specMissing": false,
+      "pptScreenDifferentiation20261022": "2026-10-22 PPT S23·S28 반영: 전체 거래처(currentCompany===null) 모드에서 심사 일정·리스크 관리·알림 센터가 동일한 안내 카드로 가리던 조건을 해제하고, 심사 일정(/audit-schedule)에 상단 4열 인증 정보 요약 카드·월간 준비 일정 달력(30·14·3일 전 및 목표일)·선택된 일정 상세·우측 5단계 심사 진행 현황 스테퍼·우하단 D-Day 대형 카드를 구현. 공식 인증기관 심사 일정 확정 API 연동과 구분.",
       "buttonAudit": {
         "date": "2026-10-17",
         "scope": "로그인 전 UI 클릭 및 코드 확인",
@@ -656,7 +780,14 @@
         "document": "docs/reference/screen-navigation-map.md",
         "board": "https://www.figma.com/board/AIOk8BKLYcgkzc3S247FAk/?node-id=1-8",
         "scope": "로그인 전 실제 화면 12개; 편집기 진입 제한 기록; 기업 프로필·맞춤 지원사업 예정 흐름 구분"
-      }
+      },
+      "meetingWorkflow20261019": {
+        "description": "2026-10-19 회의 반영1차: 회사 신청코드→직원 소속요청→OWNER 열람/편집 승인·소속해제(이력보존),프로필회사ID 우회 차단·심사원 명시회사멤버십 적용. 기존거래처별 복수프로젝트/복수ISO규격·사용자검토 구비서류·내부목표일 준비일정 통합저장 및 실제회사문서 연결/기존목록달력 연계. 회사ID→프로젝트ID→요건key/source_version/document_id→work_tasks.project_id/준비기한 인계. 서버 회사격리/문서프로젝트 소속일치/멱등재시도·변조거부/부분실패롤백 적용. 신규파일요청은 현재사용자/RLS를 재확인하는 비캐시 스트리밍으로 전환,기존서명URL만료/다운로드사본회수불가 제한 기록. 회사등록은 법적대표자인증이 아니며 공식심사/기관발급/알림발송과 구분. 상세명세 docs/reference/company-project-workflow.md. 운영DB적용·새웹배포·실계정종단검증 대기,운영완료아님.",
+        "spec": "docs/reference/company-project-workflow.md",
+        "status": "운영 DB·웹 배포 완료 / 직원 교차계정 UI 검증 미완료",
+        "verification": "전체91테스트/빌드통과; 브라우저 복수규격·구비서류미리보기·목표일2026-12-15→11-15/12-01/12-12일정·미로그인저장차단 확인. 운영DB/배포/실계정종단검증 대기."
+      },
+      "meetingWorkflowApplied20261019": "2026-10-19 사용자 명시승인 후 어니스톤 Supabase dqnblzlgpybhjftopldg에 company_projects_migration.sql 적용 성공. CEO 회사 OWNER권한으로 프로젝트·요건·업무 저장/재조회,문서 연결,요청 재시도 중복방지,업무 완료,익명조회/생성차단을 운영SQL 트랜잭션에서 검증한 뒤 전량롤백. 기존67회사/130문서/66멤버십/0프로젝트/2업무 유지. 로그인된 조영빈 운영브라우저에서 회사 관리자·승인대기 UI,접근가능 거래처목록,실제 거래처 HWP미리보기(/api/vault-file 경유) 확인. 비로그인 파일접근HTTP401,인증관리/설정HTTP200. 선택적HEAD기반 배포묶음 /private/tmp/isoedu-meeting-release-20261019 사용,보류 소셜로그인/별도에이전트UI/로컬고객원본 제외. 배포묶음86테스트·빌드통과(전체개발91테스트). 최종 Vercel 배포6M4Y3Y2fywroVcf6ArjUdoq23mEX 및 https://isoedu-cyan.vercel.app 반영. 실제직원 승인/해제 브라우저 교차계정 검증과 영구프로젝트 생성은 수행하지 않음. 기존서명URL은만료까지유효가능/다운로드사본회수불가. 카카오/Google은보류유지."
     },
     {
       "id": "S24",
@@ -684,9 +815,12 @@
         "S24"
       ],
       "dependencyBasis": "제안: 원본 기능 내용을 바탕으로 구성한 선행 데이터 의존성. 슬라이드 순서와 구별한다.",
-      "codeCandidates": [],
-      "status": "미매핑·구현 미검증",
-      "specMissing": true
+      "codeCandidates": [
+        "src/components/PlatformUtilityView.jsx"
+      ],
+      "status": "구현 후보 있음·완료 미검증",
+      "specMissing": true,
+      "pptScreenDifferentiation20261022": "2026-10-22 PPT S25·S27 반영: 알림 센터 하단 알림 설정 요약 표를 표시하고 플랫폼 내부 대시보드 집계와 외부 이메일·SMS·카카오 알림톡 미연동을 구분."
     },
     {
       "id": "S26",
@@ -706,6 +840,7 @@
       ],
       "status": "구현 후보 있음·완료 미검증",
       "specMissing": false,
+      "pptScreenDifferentiation20261022": "2026-10-22 PPT S26·S29 반영: 리스크 관리(/risks)가 전체 거래처(currentCompany===null) 모드에서도 동작하도록 해제하고, 상단 4열 KPI(전체·정상·임박·만료), 상태·표준·갱신주기·검색 필터바, 인증 유효기간·갱신주기 관리 테이블(1년/2년/3년 주기 선택·차기 심사 목표일 산출·준비 현황 열기/문서 점검), 하단 차기 심사 5단계 프로세스 및 레이더 차트 토글을 구현.",
       "designProgress": {
         "date": "2026-10-14",
         "status": "공통 UI 적용·업무 완료 미검증",
@@ -763,9 +898,12 @@
         "S34"
       ],
       "dependencyBasis": "제안: 원본 기능 내용을 바탕으로 구성한 선행 데이터 의존성. 슬라이드 순서와 구별한다.",
-      "codeCandidates": [],
-      "status": "미매핑·구현 미검증",
+      "codeCandidates": [
+        "src/components/PlatformUtilityView.jsx"
+      ],
+      "status": "구현 후보 있음·완료 미검증",
       "specMissing": false,
+      "pptScreenDifferentiation20261022": "2026-10-22 PPT S27 반영: 알림 센터(/notifications)에 상단 카테고리 탭(전체·문서 검토·법적/규격 요구사항·일정/만기·시정/보완 조치) 및 중요도 필터(Critical/Warning/Info), 좌측 알림 목록 + 우측 상세(주요 변경·필수 점검 사항 박스 + 영향받는 문서·구비서류 딥링크 표) 2열 레이아웃 구현. 외부 법제처 실시간 API 및 외부 알림 발송과는 구분.",
       "buttonAudit": {
         "date": "2026-10-17",
         "scope": "로그인 전 UI 클릭 및 코드 확인",
@@ -795,9 +933,12 @@
         "S26"
       ],
       "dependencyBasis": "제안: 원본 기능 내용을 바탕으로 구성한 선행 데이터 의존성. 슬라이드 순서와 구별한다.",
-      "codeCandidates": [],
-      "status": "미매핑·구현 미검증",
-      "specMissing": false
+      "codeCandidates": [
+        "src/components/PlatformUtilityView.jsx"
+      ],
+      "status": "구현 후보 있음·완료 미검증",
+      "specMissing": false,
+      "pptScreenDifferentiation20261022": "2026-10-22 PPT S28 반영: 심사 일정(/audit-schedule) 화면에서 내부 목표일 기준 30·14·3일 전 추천 준비 일정 표시 및 D-Day 카운트다운 안내 카드 구현. 공식 인증기관 심사원 배정·예약 확정 API와는 구분."
     },
     {
       "id": "S29",
@@ -812,9 +953,12 @@
         "S28"
       ],
       "dependencyBasis": "제안: 원본 기능 내용을 바탕으로 구성한 선행 데이터 의존성. 슬라이드 순서와 구별한다.",
-      "codeCandidates": [],
-      "status": "미매핑·구현 미검증",
-      "specMissing": false
+      "codeCandidates": [
+        "src/components/RadarView.jsx"
+      ],
+      "status": "구현 후보 있음·완료 미검증",
+      "specMissing": false,
+      "pptScreenDifferentiation20261022": "2026-10-22 PPT S29 반영: 리스크 관리(/risks) 상단 만기 90일 이내·검토 필요 항목 자동 감지 배너 및 하단 차기 심사 연계 5단계 안내(대상 자동 감지→기존 심사 데이터 연동→사전 점검→준비 프로젝트 개설→심사 일정 연계) 구현."
     },
     {
       "id": "S30",
@@ -827,9 +971,15 @@
         "S02"
       ],
       "dependencyBasis": "제안: 원본 기능 내용을 바탕으로 구성한 선행 데이터 의존성. 슬라이드 순서와 구별한다.",
-      "codeCandidates": [],
-      "status": "미매핑·구현 미검증",
-      "specMissing": true
+      "codeCandidates": [
+        "src/components/AdminCenterView.jsx",
+        "src/lib/adminCenter.mjs",
+        "src/lib/adminRepository.js",
+        "supabase/admin_center_migration.sql"
+      ],
+      "status": "구현 후보 있음·완료 미검증",
+      "specMissing": true,
+      "adminCenter20261022": "2026-10-22 좌측 사이드바 및 /admin 전용 관리자 센터 구축: 5개 탭(회원·계정 관리, 기업·소속 권한, 전자발송·알림 설정, 심사원·기준 CMS·운영, 보안 감사 로그) 프레임워크 및 RBAC RPC 구현."
     },
     {
       "id": "S31",
@@ -844,9 +994,13 @@
         "S36"
       ],
       "dependencyBasis": "제안: 원본 기능 내용을 바탕으로 구성한 선행 데이터 의존성. 슬라이드 순서와 구별한다.",
-      "codeCandidates": [],
-      "status": "미매핑·구현 미검증",
-      "specMissing": false
+      "codeCandidates": [
+        "src/components/AdminCenterView.jsx",
+        "src/lib/adminCenter.mjs"
+      ],
+      "status": "구현 후보 있음·완료 미검증",
+      "specMissing": false,
+      "adminCenter20261022": "2026-10-22 UX-007 기준 한 줄 통합 운영 지표 바(회원·활성·관리기업·승인대기·프로젝트·보완대기·전자발송·감사로그) 및 운영 대장 집계(summarizePlatformOperations) 구현."
     },
     {
       "id": "S32",
@@ -859,9 +1013,14 @@
         "S02"
       ],
       "dependencyBasis": "제안: 원본 기능 내용을 바탕으로 구성한 선행 데이터 의존성. 슬라이드 순서와 구별한다.",
-      "codeCandidates": [],
-      "status": "미매핑·구현 미검증",
-      "specMissing": false
+      "codeCandidates": [
+        "src/components/AdminCenterView.jsx",
+        "src/lib/isoRequirementsData.js",
+        "src/lib/companyProjectWorkflow.mjs"
+      ],
+      "status": "구현 후보 있음·완료 미검증",
+      "specMissing": false,
+      "adminCenter20261022": "2026-10-22 관리자 센터(/admin?tab=operations) 내 ISO 9001·14001·45001 표준 템플릿 및 필수 구비서류 기준 정보 CMS 대장 조회·인증관리 연동 구현."
     },
     {
       "id": "S33",
@@ -874,9 +1033,12 @@
         "S19"
       ],
       "dependencyBasis": "제안: 원본 기능 내용을 바탕으로 구성한 선행 데이터 의존성. 슬라이드 순서와 구별한다.",
-      "codeCandidates": [],
-      "status": "미매핑·구현 미검증",
-      "specMissing": false
+      "codeCandidates": [
+        "src/components/AdminCenterView.jsx"
+      ],
+      "status": "구현 후보 있음·완료 미검증",
+      "specMissing": false,
+      "adminCenter20261022": "2026-10-22 관리자 센터 운영 대장에서 기업별 인증 준비 프로젝트·구비서류 보완 현황 조회 및 보완 요청 전자발송(doc_supplement_request) 즉시 인계 구현."
     },
     {
       "id": "S34",
@@ -889,9 +1051,15 @@
         "S02"
       ],
       "dependencyBasis": "제안: 원본 기능 내용을 바탕으로 구성한 선행 데이터 의존성. 슬라이드 순서와 구별한다.",
-      "codeCandidates": [],
-      "status": "미매핑·구현 미검증",
-      "specMissing": false
+      "codeCandidates": [
+        "src/components/AdminCenterView.jsx",
+        "src/lib/adminCenter.mjs",
+        "src/lib/adminRepository.js",
+        "src/app/api/admin-dispatch/route.js"
+      ],
+      "status": "구현 후보 있음·완료 미검증",
+      "specMissing": false,
+      "adminCenter20261022": "2026-10-22 관리자 센터(/admin?tab=dispatch) 내 관리자(조영빈 · ceo@honestone.kr) 명의 회원 개별·그룹·일괄 전자발송 센터(이메일·알림톡·SMS 7종 템플릿, 동봉 문서·양식·인증서·수료증·공문·로컬파일 첨부, 수신자별 개인화 변수 치환, /api/admin-dispatch 서버 실발송 라우트, 발송 대장·재발송·전문 모달·CSV 내보내기·다중 수신자 mailto BCC 연결) 및 S34 이벤트 트리거·발송 시점 규칙 설정 표 구현. 외부 메시징 게이트웨이 키 미설정 시 허위 완료 없이 QUEUED 기록."
     },
     {
       "id": "S35",
@@ -905,9 +1073,12 @@
         "S23"
       ],
       "dependencyBasis": "제안: 원본 기능 내용을 바탕으로 구성한 선행 데이터 의존성. 슬라이드 순서와 구별한다.",
-      "codeCandidates": [],
-      "status": "미매핑·구현 미검증",
-      "specMissing": false
+      "codeCandidates": [
+        "src/components/AdminCenterView.jsx"
+      ],
+      "status": "구현 후보 있음·완료 미검증",
+      "specMissing": false,
+      "adminCenter20261022": "2026-10-22 관리자 센터(/admin?tab=operations) 내 심사·프로젝트 건별 정산 기록 틀 및 외부 PG/ERP 미연동·가격안 미확정 경계 안내 반영."
     },
     {
       "id": "S36",
@@ -990,8 +1161,12 @@
         "status": "K-Startup 15건·중기부 10건 1페이지 수집; API로 달력·목록 연결",
         "analysisScope": "정기 업무는 공고 상세와 첨부 PDF/HWPX/HWP·별첨·사업계획서 양식 분석까지 포함한다. 자격·제외 조건·지원금·자부담·마감 시각·평가·필수/조건부 서류·사업계획서 항목을 원문/첨부 URL·페이지/절·확인 시각과 기록한다. 목록/상세/첨부 완료/일부 미확인을 구별하고 읽지 못한 파일과 본문 충돌은 미확인으로 보존한다. G01 공고 ID와 근거 → S03 회사 프로필 비교 → S12 양식 → S13 회사 정보 → 회사별 구비서류·사업계획서로 인계한다. 회사 데이터 접근은 기존 권한 경로를 유지한다. 회사 정보 없이 적합 여부를 확정하지 않는다. 자동화 지시 갱신은 완료했으나 수집 명령의 첨부 분석 구현·실행 및 앱 표시 검증은 미완료다.",
         "latestAnalysisRun": "2026-10-17 즉시 실행: 공식 목록 25건 갱신 및 상세 HTML 25건·첨부 링크 50개 확보. mss-1071619의 PDF 28쪽 텍스트/HWPX 본문 대조와 4·11쪽 시각 검토로 핵심 조건·서류·추진계획 분석을 analyses/mss-1071619.json에 저장했다. 전체 페이지 시각 검토와 최신 정정 확인은 미완료. 나머지 24건 첨부 내용 분석 대기. API는 공고 ID가 일치하는 분석만 결합하고 달력 상세·목록에서 조건별 서류와 작성 항목을 표시한다. 회사 프로필 판정·서류 자동매칭·작성 저장은 미연동. 기존 인증·회사 권한 변경 없음.",
-        "loop": "반복 분석 루프: 매일09시 목록 갱신 → 상세/첨부 링크 확보 → analysis-queue.json 계획 → 마감 임박·신규/변경·미분석·부분분석·과거 공고 순으로 실제 첨부 분석 → 건별 저장 → 큐 재계산. 다음 실행은 남은 항목을 이어간다. attempts/lastError/nextRetryAt로 재시도하며 한 건 실패로 전체를 중단하지 않는다. complete는 분석 파일 reviewStatus=complete 및 sourceFingerprint 일치 시에만 인정한다. HTML 텍스트·첨부 주소 변경 감지는 구현했고 동일 URL 첨부 교체의 콘텐츠 해시 대조는 에이전트 실행 업무로 남아 있다. 회사별 자격·구비문서·작성으로 인계할 공고 ID·근거·조건을 유지하며 회사 접근 권한은 기존 경로를 따른다. 현재 큐25건 중 미분석24·부분분석1; 전체 분석 완료 아님."
-      }
+        "loop": "반복 분석 루프: 매일09시 목록 갱신 → 상세/첨부 링크 확보 → analysis-queue.json 계획 → 마감 임박·신규/변경·미분석·부분분석·과거 공고 순으로 실제 첨부 분석 → 건별 저장 → 큐 재계산. 다음 실행은 남은 항목을 이어간다. attempts/lastError/nextRetryAt로 재시도하며 한 건 실패로 전체를 중단하지 않는다. complete는 분석 파일 reviewStatus=complete 및 sourceFingerprint 일치 시에만 인정한다. HTML 텍스트·첨부 주소 변경 감지는 구현했고 동일 URL 첨부 교체의 콘텐츠 해시 대조는 에이전트 실행 업무로 남아 있다. 회사별 자격·구비문서·작성으로 인계할 공고 ID·근거·조건을 유지하며 회사 접근 권한은 기존 경로를 따른다. 현재 큐25건 중 미분석24·부분분석1; 전체 분석 완료 아님.",
+        "dailyReview20261018": "2026-10-18 정기 실행: K-Startup·중기부 각 첫 페이지 총25건·상세25건·첨부링크50개 갱신. 마감임박5건의 실제첨부11개 분석을 시작해 각 partial로 저장(마감/접수충돌·신청양식 미확인·스캔OCR실패 등). 기존1건 포함 부분분석6·미분석19·완료0,잔여25. SHA256기준선13개 및 기존클린제조2개동일 확인;나머지19건 콘텐츠해시 미검증. 기업마당·IRIS·KOTRA 공개목록접근200만 확인하고 상세수집으로 간주하지 않음. API3001 200으로25공고/분석6건·마감시각·충돌표시데이터 검증,화면미검증. G01→S03 회사프로필→S12 양식→S13 회사사실/회사별문서의 ID·근거 인계정보 저장;권한회사정보없어 적합판정미실시. DB변경·공개배포없음."
+      },
+      "dailyReview20261020": "2026-10-20 정기 실행: K-Startup15·중기부10 각 첫페이지 갱신, 기존기록 보존26건·상세26건. 나주/과천/소담교육/제주팁스/워터라운드5건 첨부11개 실제 분석을 partial 저장; 기존4건 첨부9개 동일SHA256 확인. 신규기준선11개·동일9개로 총20첨부 확인. 제주평가일·나주기준일/전화/기간충돌, 워터라운드양식누락, 신청폼401/403 및 HWP시각대조 미해결. 큐완료0·부분11·미분석15·잔여26;다음날재시도 기록. 기업마당/IRIS/KOTRA 공개페이지200 확인만, 상세전체수집아님. route.GET직접호출200·26공고/11분석 및5건달력마감시각 검증;localhost3000접속실패·화면미검증. G01→S03→S12/S13 인계ID·근거 보존, 회사적합판정/DB변경/배포없음.",
+      "dailyReview20261021": "2026-10-21 정기 실행: K-Startup15·중기부10 각첫페이지로신규10건,기존포함36기록·상세36건. 신규6공고첨부분석partial저장 및마감임박기존2공고재검토,18첨부다운로드(타임아웃3재시도성공). 클린제조3차연장mss-1071870을기존mss-1071619와연결,PDF1·3쪽근거10/30 18시달력전달확인. 충북데모데이공고10/22와신청폼10/29충돌·동네창업학교컨설팅연도충돌보존. 분석파일17·큐partial16/changed1/pending19·complete0·잔여36;재시도10/22이후. 보완3출처공개페이지접근만확인,전체수집아님. route.GET200(36공고/17분석)·신규6마감시각검증,localhost3000접속실패·화면미검증. G01→S03→S12/S13 ID·근거인계보존;권한회사정보없어적합판정안함,DB변경/배포/외부발송없음.",
+      "dailyReview20261022": "2026-10-22 정기 실행: K-Startup첫페이지15건성공/중기부목록타임아웃·기존보존,신규15·누적51공고·상세51건. 신규5건실제첨부분석:관광교육/ DDM IR교육2건공개첨부·신청폼전체검토complete,문화예술/클리마/빅웨이브3건partial. 기존마감임박3건5첨부동일해시확인·충돌유지. 별도5건은첨부다운로드만(내용분석미완료)으로분리. 총26첨부다운로드. 빅웨이브HWP원본필요·PDF만게시/폼401,클리마일정충돌및OI·IR마감표시보존. 분석22건·큐complete2/partial20/pending29·잔여49,재시도10/23이후. 보완3출처공개페이지접근만확인,전체수집아님. route.GET200으로51공고/22분석·신규5건마감시각검증,localhost3000연결실패·화면미검증. G01→S03→S12/S13 ID·근거·권한인계보존,회사적합판정/DB변경/배포/외부발송없음."
     }
   ],
   "routing": {
@@ -1185,6 +1360,26 @@
     "description": "2026-10-18 사용자 승인으로 Supabase dqnblzlgpybhjftopldg Confirm email을 임시 OFF로 저장. ceo@honestone.kr 계정은 기존 미인증 상태에서 동일 계정 가입 완료 후 email_confirmed_at/session 및 비밀번호 로그인 성공 확인. 비밀번호·세션토큰은 저장소에 기록하지 않음. 향후 이메일 인증 재활성화 예정(사용자 요청 기록, 일정 미정). 로그인 후 profiles 및 audit_projects는 PGRST205로 미설치 상태, companies 조회는 가능. 인증 성공과 회사별 권한/프로필 연결 완료는 구분하며 임의 권한 우회나 기본 관리자 역할 부여 없음.",
     "status": "email confirmation temporarily disabled; auth login verified; profile schema pending"
   },
+  "agentSchedules": {
+    "id": "A01",
+    "relatedFeatures": [
+      "S05",
+      "S27",
+      "S34",
+      "G01"
+    ],
+    "description": "2026-10-18 사용자 추가 요구: /agent-schedules 및 공통 사이드바(펼침/접힘)에 예약된 에이전트 실행목록 추가. 기존 Codex isoedu 예약의 이름·ACTIVE·매일09시 설정과 기존 Asia/Seoul 관리기록을 확인해 1건의 확인시점 스냅샷으로 표시. 첨부 스크린샷 원본과 매일 시작→공고/첨부 수집·분석→결과 확인 흐름, 예약 요청 예시 제공. 네트워크 재연결 화면은 완료 근거로 사용하지 않음. 정부지원사업 결과 화면으로 이동. 실시간 상태 동기화·예약 생성/변경·실행 제어·새 알림 발송은 연동하지 않았으며 기존 예약을 변경하지 않음.",
+    "dataContract": "A01 예약ID isoedu/확인일/주기/한국시간/스크린샷 → G01 정부지원사업 공고ID 및 기존 분석근거 → S03 회사 정보·S12/S13 서류 작성 흐름. 화면 탐색은 기존 query와 회사 컨텍스트 유지.",
+    "permissions": "안내 화면과 사용자 제공 스크린샷만 표시. 로컬 예약파일·프롬프트·토큰·실행 로그를 API로 공개하지 않음. 기존 회사·문서 권한과 저장 경로 변경 없음.",
+    "code": [
+      "src/components/AgentSchedulesView.jsx",
+      "src/lib/platformRoutes.mjs",
+      "src/components/PlatformSidebar.jsx",
+      "src/components/PlatformWorkspace.jsx",
+      "public/images/agent-schedules/daily-run-example.png"
+    ],
+    "verification": "기존 테스트53개 통과, 최종 프로덕션 빌드 성공, 변경 코드/관리문서 diff 공백검사 통과. 직접 경로 및 잘못된 하위경로 판별 확인. 실제 브라우저에서 목록·09시 표시·첨부 원본 렌더링·정부지원사업 결과 이동·접힌 메뉴 재진입·직접 새로고침 확인. 좁은 화면 제목 겹침 보정. 제공 이미지 SHA256 원본 일치. 예약 실행 자체와 실시간 상태 동기화는 검증/구현 범위에 포함하지 않음."
+  },
   "cloudClientFiles": {
     "relatedIds": [
       "S03",
@@ -1259,5 +1454,28 @@
       "S05"
     ],
     "behavior": "사이드바하단 로그인필요/기업담당자중복박스제거. 실제로그인/계정전환은상단계정메뉴유지. 권한변경없음."
+  },
+  "adminCenterFramework": {
+    "date": "2026-10-22",
+    "relatedIds": [
+      "S01",
+      "S02",
+      "S03",
+      "S04",
+      "S21",
+      "S25",
+      "S27",
+      "S30",
+      "S31",
+      "S32",
+      "S33",
+      "S34",
+      "S35",
+      "B01",
+      "B02"
+    ],
+    "behavior": "좌측 사이드바 및 /admin 전용 관리자 센터(5대 탭: 회원·계정 관리, 기업·소속 권한, 전자발송·알림 설정, 심사원·기준 CMS·운영, 보안 감사 로그). 회원 디렉터리 검색·필터(역할/활성상태/소속기업/수강기수/수료상태)·회원/수강생 단건 등록 및 CSV/엑셀 복사 일괄 등록(parseMemberRosterCsv, 샘플 양식 다운로드, 등록 후 즉시 전자발송 이동)·체크박스 다중 선택·선택 수강생 일괄 수료처리 및 수료번호 자동 채번(HN-EDU-YYYYMM-기수-순번)·개인별 A4 수료증(.doc) 발급 다운로드 및 수료증 일괄 전자발송·회원별 관리자 상담/특이사항 메모(adminMemo)·CSV 내보내기, 기업 프로필·다중 사업장(sites) 저장, 직원 가입 신청코드 발급·재발급·승인/반려·권한 변경(VIEWER/EDITOR)·소속 해제, 관리자(조영빈 · ceo@honestone.kr) 명의 회원 개별·그룹(수료생 전체 포함)·일괄 전자발송(이메일/알림톡/SMS 7종 표준 템플릿 + 관리자 커스텀 발송 템플릿 저장/삭제·동봉 문서/수료증/양식/로컬파일 첨부·수신자별 성명/기업명/수강기수/교육과정명/수료번호 개인화 치환·/api/admin-dispatch 실발송 API·발송 대장·대기/실패 건 일괄 재발송·전문 모달·개별 재발송·발송 대장 CSV·다중 수신자 mailto BCC·S34 시점 규칙), 심사원 인력 풀·표준 템플릿 CMS·보안 감사 로그 CSV 내보내기.",
+    "permissions": "can_manage_company(OWNER 또는 ADMIN) 기반 소속/기업 프로필/사전 회원·수강생 명부(admin_upsert_member_roster)/전자발송 제어 및 플랫폼 ADMIN 전용 타 회원 역할·활성 상태 제어(admin_update_member_profile). /api/admin-dispatch는 RESEND_API_KEY 및 DISPATCH_WEBHOOK_URL 설정 시 실발송하며 미설정 시 허위 완료 없이 QUEUED 발송 대장 기록.",
+    "verification": "PGlite RBAC 통합 테스트(member_roster, dispatch_custom_templates 포함)·CSV 명단 파서·수료증(.doc) 생성·일괄 개인화 전자발송·첨부·CSV·경로 유닛 테스트 포함 전체 98개 테스트 통과(npm test), 프로덕션 빌드(npm run build) 성공."
   }
 }

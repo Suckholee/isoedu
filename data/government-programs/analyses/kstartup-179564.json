@@ -1,0 +1,172 @@
+{
+  "programId": "kstartup-179564",
+  "title": "TIPS · LIPS를 준비하는 스타트업을 위한 IR 전략 - 제10차 DDM 벤처스타트업 아카데미",
+  "reviewStatus": "complete",
+  "status": "첨부·신청양식 분석 완료",
+  "analyzedAt": "2026-10-22T00:35:53.136226+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179564",
+  "sourceFingerprint": "061d3919bbdb55c87d5d9ba0f0dbe38cd70f7e22de1cd66270429a79eb932885",
+  "evidenceDirectory": "evidence/kstartup-179564",
+  "reviewScope": "상세·포스터JPG전체시각·TXT전문대조;공개신청폼전체질문메타데이터확인",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/bt2Ln",
+      "verifiedAt": "2026-10-22",
+      "status": "downloaded",
+      "sha256": "2cf20cc8fb68490923f2244634a9ced483b553b2a4c69f48ff904c792e942679",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 440155,
+      "format": "IMAGE",
+      "file": "attachment-01.bin",
+      "contentType": "image/jpeg;charset=UTF-8"
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/ct2Ln",
+      "verifiedAt": "2026-10-22",
+      "status": "downloaded",
+      "sha256": "fa39f82906e5e7b2390f6f64b32336a706a37d438ffd175a4f939b1201ea2a74",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 658,
+      "format": "OTHER",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1"
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/bt2Ln": "2cf20cc8fb68490923f2244634a9ced483b553b2a4c69f48ff904c792e942679",
+    "https://www.k-startup.go.kr/afile/fileDownload/ct2Ln": "fa39f82906e5e7b2390f6f64b32336a706a37d438ffd175a4f939b1201ea2a74"
+  },
+  "lastAttachmentHashCheckedAt": "2026-10-22T00:35:53.136226+00:00",
+  "unresolved": [],
+  "eligibility": {
+    "summary": "TIPS/LIPS준비또는관심예비창업자·스타트업·소상공인및IR관심누구나",
+    "companyFields": [
+      "참가자·소속",
+      "창업단계",
+      "IR관심",
+      "연락처"
+    ],
+    "reference": "상세·포스터JPG전체시각·TXT전문대조"
+  },
+  "exclusions": {
+    "items": [
+      "특별제외조건미명시"
+    ],
+    "reference": "상세·포스터JPG전체시각·TXT전문대조"
+  },
+  "support": {
+    "summary": "무료10/29 15~16:30 DDM청년창업센터유니콘라운지(망우로46하트리움101동2층).TIPS/LIPS개념·차별화·유의사항및질의.투자/추천선정보장아님",
+    "reference": "상세·포스터JPG전체시각·TXT전문대조"
+  },
+  "period": {
+    "start": "2026-10-19",
+    "end": "2026-10-29",
+    "deadlineTime": "15:00",
+    "timezone": "Asia/Seoul",
+    "reference": "상세신청기간"
+  },
+  "application": {
+    "url": "https://forms.gle/gvJUEPgekFM7VuLM6",
+    "notes": "두단축URL이동일Google폼으로연결확인.추가서류없음·8문항공개필수입력확인,스타트업정보제공희망은반대선택가능",
+    "reference": "상세신청링크·TXT",
+    "publicFormQuestions": [
+      {
+        "label": "1. 신청자 성명",
+        "required": true,
+        "options": []
+      },
+      {
+        "label": "2. 신청자 구분",
+        "required": true,
+        "options": [
+          "예비창업자",
+          "기창업자",
+          "기타"
+        ]
+      },
+      {
+        "label": "3. 소속",
+        "required": true,
+        "options": []
+      },
+      {
+        "label": "4. 신청자 연락처",
+        "required": true,
+        "options": []
+      },
+      {
+        "label": "5. 신청자 이메일",
+        "required": true,
+        "options": []
+      },
+      {
+        "label": "6. 공고문 확인 경로",
+        "required": true,
+        "options": []
+      },
+      {
+        "label": "7. 스타트업 정보 제공 희망 여부 (현재 스타트업이 아니어도 추후 DDM과 협업할 기회가 생길 경우 포함)",
+        "required": true,
+        "options": [
+          "찬성",
+          "반대"
+        ]
+      },
+      {
+        "label": "8. 개인정보 수집 이용 동의",
+        "required": true,
+        "options": [
+          "동의",
+          "비동의"
+        ]
+      }
+    ],
+    "formEvidence": "evidence/ddm-a-check-2026-10-22.html",
+    "verifiedAt": "2026-10-22T00:37:17.828134+00:00",
+    "submission": "값입력/전송없음"
+  },
+  "requiredDocuments": [
+    {
+      "name": "온라인신청서",
+      "condition": "필수;첨부파일없음",
+      "reference": "상세제출서류"
+    }
+  ],
+  "businessPlan": {
+    "format": "교육참가신청;IR/사업계획서요구없음",
+    "sections": [],
+    "reference": "상세·포스터JPG전체시각·TXT전문대조"
+  },
+  "evaluation": {
+    "summary": "정원내선착순,정원숫자미명시",
+    "reference": "상세·포스터JPG전체시각·TXT전문대조"
+  },
+  "contact": {
+    "name": "DDM02-2212-5878/yudan@kw.ac.kr",
+    "reference": "상세·포스터JPG전체시각·TXT전문대조"
+  },
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179564",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확인 후 적합성 비교; 이 분석은 신청가능 판정 아님",
+    "steps": [
+      "회사 필드 및 자격 증빙 확인",
+      "미확인·충돌 해결",
+      "공고 양식 선택",
+      "회사 사실정보로 서류·사업계획서 작성 및 검토"
+    ]
+  },
+  "nonPublishedFields": [
+    "정원숫자·수료기준은원문미기재(추정안함)"
+  ],
+  "reviewMeaning": "공개모집내용·관련첨부·신청양식검토완료;개별회사의신청자격확정·실제신청완료아님",
+  "updatedAt": "2026-10-22T00:37:17.828134+00:00"
+}

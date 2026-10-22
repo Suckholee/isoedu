@@ -1,0 +1,146 @@
+{
+  "programId": "kstartup-179516",
+  "title": "2026-9회 충청권 엔젤투자 피칭룸 프로그램 참가기업 모집",
+  "status": "첨부 분석·일부 미확인",
+  "reviewStatus": "partial",
+  "analyzedAt": "2026-10-18T00:07:41.156232Z",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179516",
+  "sourceFingerprint": "3478eb8168cf1ff08e8895279bc8d40abeb877afb48331ee9868c8bc845c8d93",
+  "pdfUrl": "https://www.k-startup.go.kr/afile/fileDownload/gx1Ln",
+  "evidenceDirectory": "evidence/kstartup-179516",
+  "reviewScope": "공식 상세 전체와 PDF 2쪽 전문·2쪽 모두 시각 확인. 외부 접수사이트의 입력 양식은 아직 미확인",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/gx1Ln",
+      "file": "attachment-01.bin",
+      "name": "ºÙÀÓ. 2026-9È¸ ÃæÃ»±Ç ¿£Á©ÅõÀÚ ÇÇÄª·ë Âü°¡±â¾÷ ¸ðÁý.pdf",
+      "bytes": 103228,
+      "sha256": "1afae3732cfb71d973c66278fbe59b97e1e13a203ea077ae044ada76dcf3a94d",
+      "contentType": "application/octet-stream",
+      "verifiedAt": "2026-10-18T00:02:30.673Z",
+      "status": "downloaded",
+      "localPath": "attachment-01.pdf",
+      "format": "PDF",
+      "pages": 2,
+      "extractionStatus": "text-extracted",
+      "characters": 1132,
+      "displayName": "붙임. 2026-9회 충청권 엔젤투자 피칭룸 참가기업 모집.pdf"
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/gx1Ln": "1afae3732cfb71d973c66278fbe59b97e1e13a203ea077ae044ada76dcf3a94d"
+  },
+  "unresolved": [
+    "외부 피칭룸 홈페이지 신청서 필수 입력·업로드 제한 미확인",
+    "상세 분류(예비~7년미만)와 본문 신청자격(스타트업)의 업력 경계 및 예비창업자 포함 범위 확인 필요"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179516",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확보 후에만 회사별 적합성 비교 및 문서 작성",
+    "steps": [
+      "회사 프로필 필드 확인",
+      "조건별 적합성 근거 비교",
+      "공고 지정 양식 선택",
+      "회사 사실정보로 작성 및 검토"
+    ]
+  },
+  "eligibility": {
+    "reference": "PDF1쪽 신청자격·상세 신청대상",
+    "summary": "충청권(대전·세종·충남·충북) 소재 스타트업. 상세는 연구소/지사가 충청권인 경우도 허용. 동일기업 반기별1회. 상세 분류는 예비~7년미만이나 본문은 스타트업으로만 명시하여 7년 경계/예비 신청은 추가 확인",
+    "companyFields": [
+      "본점·지점·연구소 소재지",
+      "창업일·예비창업 여부",
+      "동일 반기 신청이력",
+      "IR자료/사업계획서 보유",
+      "투자유치 희망"
+    ]
+  },
+  "exclusions": {
+    "reference": "PDF1쪽·상세 신청대상",
+    "items": [
+      "동일기업 반기별1회 제한",
+      "14개사 선착순 조기마감 가능",
+      "기타 제외업종·재무조건 명시 없음"
+    ]
+  },
+  "support": {
+    "reference": "PDF2쪽 지원절차",
+    "summary": "기업당50분 내외 투자상담·기술/시장성 평가 및 후속 IR 연계 검토. 투자자1:기업2 매칭하되 각 기업은 투자자와1:1상담. 투자금 보장·지원금 한도·비율·자부담 명시 없음"
+  },
+  "period": {
+    "start": "2026-10-14",
+    "startTime": "13:00",
+    "end": "2026-10-23",
+    "deadlineTime": "23:59",
+    "timezone": "Asia/Seoul",
+    "reference": "PDF1쪽 모집일정·상세 신청기간"
+  },
+  "event": {
+    "date": "2026-11-05",
+    "startTime": "14:00",
+    "endTime": "16:00",
+    "venue": "충북창조경제혁신센터3층(청주시 흥덕구 오송읍 오송생명1로194-25 청주SB플라자)",
+    "reference": "PDF1쪽"
+  },
+  "application": {
+    "url": "http://bit.ly/3XSJDch",
+    "reference": "PDF1쪽 신청방법·상세 제출서류",
+    "notes": "피칭룸 홈페이지 신청서 작성 필수, IR자료 또는 사업계획서 업로드.10/26 참가 확정 안내"
+  },
+  "requiredDocuments": [
+    {
+      "name": "홈페이지 신청서",
+      "condition": "필수",
+      "reference": "상세 제출서류"
+    },
+    {
+      "name": "IR자료 또는 사업계획서",
+      "condition": "준비서류; 홈페이지 업로드 가능",
+      "reference": "PDF1쪽 준비서류"
+    }
+  ],
+  "businessPlan": {
+    "reference": "PDF1쪽 준비서류",
+    "format": "IR자료 또는 사업계획서; 별도 지정 양식/항목/분량 명시 없음. 외부 신청서 입력 필드 확인 대기",
+    "sections": []
+  },
+  "evaluation": {
+    "reference": "PDF1~2쪽",
+    "summary": "14개사 내외 선착순. 투자가능성·기술성·시장성 상담평가 후 투자가능성 높은 기업 후속 IR 추진; 배점 미기재"
+  },
+  "contact": {
+    "reference": "PDF2쪽 문의처",
+    "name": "한국엔젤투자협회 충청권엔젤투자허브 이상우 대리",
+    "phone": "042-710-8070",
+    "email": "swlee@kban.or.kr"
+  },
+  "lastAttachmentHashCheckedAt": "2026-10-22T00:37:17.828134+00:00",
+  "recheck": {
+    "at": "2026-10-22T00:37:17.828134+00:00",
+    "scope": "상세재수집·기존첨부동일URL바이트대조;기존충돌미해결유지",
+    "checks": [
+      {
+        "url": "https://www.k-startup.go.kr/afile/fileDownload/gx1Ln",
+        "verifiedAt": "2026-10-22",
+        "status": "downloaded",
+        "sha256": "1afae3732cfb71d973c66278fbe59b97e1e13a203ea077ae044ada76dcf3a94d",
+        "previousHash": "1afae3732cfb71d973c66278fbe59b97e1e13a203ea077ae044ada76dcf3a94d",
+        "changed": false,
+        "bytes": 103228,
+        "format": "PDF",
+        "file": "attachment-01.bin",
+        "contentType": "application/octet-stream;charset=ISO-8859-1",
+        "extraction": "text",
+        "characters": 1132
+      }
+    ]
+  },
+  "updatedAt": "2026-10-22T00:37:17.828134+00:00"
+}

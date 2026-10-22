@@ -1,6 +1,6 @@
 export const NAV_PATHS = Object.freeze({
  dashboard:'/dashboard', compliance:'/certifications', drive:'/documents', schedule:'/audit-schedule',
- radar:'/risks', notifications:'/notifications', gov_programs:'/government-programs', reports:'/reports', settings:'/settings', workspace:'/workspaces', project:'/projects',
+ radar:'/risks', notifications:'/notifications', gov_programs:'/government-programs', admin:'/admin', agent_schedules:'/agent-schedules', reports:'/reports', settings:'/settings', workspace:'/workspaces', project:'/projects',
 });
 export function navFromPath(pathname) { return Object.entries(NAV_PATHS).find(([,path])=>pathname===path||pathname.startsWith(`${path}/`))?.[0] || null; }
 export function validPlatformPath(section, detail=[]) {
@@ -9,6 +9,7 @@ export function validPlatformPath(section, detail=[]) {
  if(nav==='drive')return detail.length===0 || (detail.length===1 && ['references','iso'].includes(detail[0]));
  if(nav==='project')return detail.length===1 && Boolean(detail[0]);
  if(nav==='gov_programs')return detail.length===0 || (detail.length===1 && ['calendar','list'].includes(detail[0]));
+ if(nav==='admin')return detail.length===0 || (detail.length===1 && ['members','companies','dispatch','operations','audit-logs'].includes(detail[0]));
  return detail.length===0;
 }
 export function platformHref(nav, currentSearch='', patch={}) {

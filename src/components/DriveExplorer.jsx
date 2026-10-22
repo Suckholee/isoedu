@@ -38,7 +38,8 @@ import {
   Stethoscope,
   Zap,
   Globe,
-  Plus
+  Plus,
+  Download
 } from 'lucide-react';
 import { ISO_STANDARDS_INFO, ISO_MANDATORY_REQUIREMENTS } from '../lib/isoRequirementsData.js';
 import {
@@ -49,6 +50,7 @@ import {
 } from '../lib/iso9001Blueprint.js';
 import { evaluateComplianceReadiness } from '../lib/complianceEngine.js';
 import IsoComplianceMatrixView from './IsoComplianceMatrixView.jsx';
+import { safeDownloadFileName, buildWordDocumentHtml, triggerBrowserDownload } from '../lib/documentExport.mjs';
 
 function documentItem(doc) {
   return {
@@ -746,6 +748,28 @@ export default function DriveExplorer({
                             <span>이 예시로 문서 작성</span>
                           </button>
                         )}
+
+                        <button
+                          onClick={() => {
+                            const companyLabel = currentCompany?.name && currentCompany.name !== '회사 선택 필요' ? currentCompany.name : '대상 거래처';
+                            const rawBody = (activePreviewItem.displayContent || activePreviewItem.templateDraft || activePreviewItem.contentDraft || '').replaceAll('(주)아이소에듀', companyLabel);
+                            const html = buildWordDocumentHtml({
+                              title: activePreviewItem.title,
+                              code: activePreviewItem.code || 'DOC',
+                              version: activePreviewItem.registeredDoc?.version || 'v1.0-draft',
+                              summary: activePreviewItem.summary || activePreviewItem.notes || '',
+                              contentDraft: rawBody,
+                              reviewStatus: activePreviewItem.registeredDoc?.reviewStatus || 'DRAFT',
+                            }, { companyName: companyLabel });
+                            const fileName = safeDownloadFileName(`${activePreviewItem.code ? `${activePreviewItem.code}_` : ''}${activePreviewItem.title}`, 'doc');
+                            triggerBrowserDownload(html, fileName, 'application/msword;charset=utf-8');
+                          }}
+                          className="px-3.5 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold rounded-xl text-xs transition-colors flex items-center gap-1.5"
+                          title="한글·Word 호환 서식(.doc) 다운로드"
+                        >
+                          <Download className="w-3.5 h-3.5" />
+                          <span>다운로드(.doc)</span>
+                        </button>
 
                         <button
                           onClick={() => handleCopyExample(activePreviewItem.displayContent || activePreviewItem.templateDraft || activePreviewItem.contentDraft)}

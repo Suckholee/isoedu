@@ -1,0 +1,124 @@
+{
+  "programId": "kstartup-177421",
+  "title": "2026년 영등포구 소상공인 디지털 전환교육 교육생 모집",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-10-21T00:13:24.199142+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177421",
+  "sourceFingerprint": "9d24ff6167c4aacaefdf84e8a21d6728698dcbfcff91ee10d51ad65b42fd5898",
+  "evidenceDirectory": "evidence/kstartup-177421",
+  "reviewScope": "상세·첨부JPG전체시각·HWP전문대조",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/Wv1Ln",
+      "verifiedAt": "2026-10-21",
+      "status": "downloaded",
+      "sha256": "0c71a9c820ba4ff58cb1b0ed6ad13d69d73f7b42c75bc85aeadd79d9a0c42a7d",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 183706,
+      "format": "IMAGE",
+      "file": "attachment-01.bin",
+      "contentType": "image/jpeg;charset=UTF-8"
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/ZL2Ln",
+      "verifiedAt": "2026-10-21",
+      "status": "downloaded",
+      "sha256": "16d36f22632f8de8959cc6e74127c501c5dcc953a7ccb27f814c87245ab84349",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 81920,
+      "format": "HWP",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 657
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/Wv1Ln": "0c71a9c820ba4ff58cb1b0ed6ad13d69d73f7b42c75bc85aeadd79d9a0c42a7d",
+    "https://www.k-startup.go.kr/afile/fileDownload/ZL2Ln": "16d36f22632f8de8959cc6e74127c501c5dcc953a7ccb27f814c87245ab84349"
+  },
+  "lastAttachmentHashCheckedAt": "2026-10-21T00:13:24.199142+00:00",
+  "unresolved": [
+    "상세와첨부HWP신청단축주소1문자차이:최종폼확인필요",
+    "우수수료생추가혜택선정/수료기준·교육비명시미확인",
+    "네이버실제입력필드·첨부용량미검증"
+  ],
+  "eligibility": {
+    "summary": "영등포구 사업장 소재 또는 거주 소상공인",
+    "companyFields": [
+      "사업장주소",
+      "대표자거주지",
+      "소상공인확인서유효기간",
+      "사업자등록",
+      "희망수강회차"
+    ],
+    "reference": "상세·첨부JPG전체시각·HWP전문대조"
+  },
+  "exclusions": {
+    "items": [
+      "소상공인확인서유효기간만료시신청불가"
+    ],
+    "reference": "상세·첨부JPG전체시각·HWP전문대조"
+  },
+  "support": {
+    "summary": "10/27~11/10매주화목15~16:30총5회,소담스퀘어당산양평로2 6층.우수수료생 라이브커머스/팝업전시판매 기회,선정기준미명시.현금지원아님·교육비는원문명시미확인",
+    "reference": "상세·첨부JPG전체시각·HWP전문대조"
+  },
+  "period": {
+    "start": "2026-09-28",
+    "end": "2026-10-23",
+    "deadlineTime": "23:59",
+    "timezone": "Asia/Seoul",
+    "reference": "상세신청기간;홍보물날짜만기재"
+  },
+  "application": {
+    "url": "https://naver.me/xtNRxTJj",
+    "notes": "상세링크문자열 xtNRxTJjj 와 HWP xtNRxTJj 상이;네이버폼 또는 cvetmoy@ydp.go.kr(상세)",
+    "reference": "상세/홍보물HWP"
+  },
+  "requiredDocuments": [
+    {
+      "name": "사업자등록증",
+      "condition": "필수",
+      "reference": "상세제출서류"
+    },
+    {
+      "name": "유효한소상공인확인서",
+      "condition": "필수",
+      "reference": "상세제출서류"
+    }
+  ],
+  "businessPlan": {
+    "format": "교육참가신청;사업계획서양식요구없음",
+    "sections": [],
+    "reference": "상세·첨부JPG전체시각·HWP전문대조"
+  },
+  "evaluation": {
+    "summary": "선착순;10/23개별결과예정.우수수료선발과5회중수료기준 미확인",
+    "reference": "상세·첨부JPG전체시각·HWP전문대조"
+  },
+  "contact": {
+    "name": "영등포구청일자리경제과02-2670-3423",
+    "reference": "상세·첨부JPG전체시각·HWP전문대조"
+  },
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-177421",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확인 후 적합성 비교; 이 분석은 신청가능 판정 아님",
+    "steps": [
+      "회사 필드 및 자격 증빙 확인",
+      "미확인·충돌 해결",
+      "공고 양식 선택",
+      "회사 사실정보로 서류·사업계획서 작성 및 검토"
+    ]
+  }
+}

@@ -1,0 +1,250 @@
+{
+  "programId": "kstartup-179538",
+  "title": "2026년 여성CEO 비즈니스 아카데미 경상권역 시즌 2",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-10-21T00:13:24.199142+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179538",
+  "sourceFingerprint": "5364a8bb11d2de550cdda3c9a0605dac5277011de693c8b8ba5963c283fdb520",
+  "evidenceDirectory": "evidence/kstartup-179538",
+  "reviewScope": "운영계획HWP전문·PDF3쪽전문/모든쪽시각(3쪽포스터포함)대조;첨부2미확인;첨부2재다운로드성공·전체포스터시각검토;공개폼22항목메타데이터검토",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/Zp1Ln",
+      "verifiedAt": "2026-10-21",
+      "status": "downloaded",
+      "sha256": "2e1c9abb5e14f8fac57f433148953ae069b22aea3a38873a027922949f0c9c8e",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 409600,
+      "format": "HWP",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 1178
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/Sp1Ln",
+      "verifiedAt": "2026-10-21",
+      "status": "downloaded",
+      "sha256": "4522f204d57db866fc12fd0aa2dc281a017d16a694de2b0b148bd187d5e3652c",
+      "file": "attachment-02.bin",
+      "bytes": 10608164,
+      "format": "IMAGE",
+      "retrySucceeded": true
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/xp1Ln",
+      "verifiedAt": "2026-10-21",
+      "status": "downloaded",
+      "sha256": "af3c9ca9d98d02a1bee9bd06f0f945a652b206532c6dfa64bbb3a7f20950bae4",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 168755,
+      "format": "PDF",
+      "file": "attachment-03.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 1070
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/Zp1Ln": "2e1c9abb5e14f8fac57f433148953ae069b22aea3a38873a027922949f0c9c8e",
+    "https://www.k-startup.go.kr/afile/fileDownload/Sp1Ln": "4522f204d57db866fc12fd0aa2dc281a017d16a694de2b0b148bd187d5e3652c",
+    "https://www.k-startup.go.kr/afile/fileDownload/xp1Ln": "af3c9ca9d98d02a1bee9bd06f0f945a652b206532c6dfa64bbb3a7f20950bae4"
+  },
+  "lastAttachmentHashCheckedAt": "2026-10-21T00:13:24.199142+00:00",
+  "unresolved": [
+    "신청폼공개문항은확인했으나직접신청과기관최종접수/마감상태미검증;계획안최종확정여부후속확인"
+  ],
+  "eligibility": {
+    "summary": "기업성장고민 여성CEO·여성임원,80명선착순",
+    "companyFields": [
+      "참가자성별·직위",
+      "기업명",
+      "연락처",
+      "1:1상담희망"
+    ],
+    "reference": "운영계획HWP전문·PDF3쪽전문/모든쪽시각(3쪽포스터포함)대조;첨부2미확인"
+  },
+  "exclusions": {
+    "items": [
+      "대상아닌경우참여제한",
+      "1인1신청·동반각자신청"
+    ],
+    "reference": "운영계획HWP전문·PDF3쪽전문/모든쪽시각(3쪽포스터포함)대조;첨부2미확인"
+  },
+  "support": {
+    "summary": "무료11/11 13:30~16:30울산상공회의소그랜드홀B,기업경영/GEO·글로벌성장강연과네트워킹.신청자중5명30분맞춤온라인상담.현금지원아님",
+    "reference": "운영계획HWP전문·PDF3쪽전문/모든쪽시각(3쪽포스터포함)대조;첨부2미확인"
+  },
+  "period": {
+    "start": "2026-10-15",
+    "end": "2026-11-04",
+    "deadlineTime": "23:59",
+    "timezone": "Asia/Seoul",
+    "reference": "상세신청기간;운영계획은날짜만"
+  },
+  "application": {
+    "url": "https://forms.gle/3Ufzv6WDUMDstPxC7",
+    "notes": "공개문항메타데이터확인:기본정보·차량조건부·참여목적최대2·사전질문선택·필수개인정보/선택마케팅동의.값입력/제출안함",
+    "reference": "상세·운영계획",
+    "publicFormQuestions": [
+      {
+        "label": "신청자 유형을 선택해주세요. ",
+        "required": true,
+        "options": [
+          "한국여성경제인협회 정회원(지회소속)",
+          "일반 신청자"
+        ]
+      },
+      {
+        "label": "1. 신청자 성함을 작성해주세요",
+        "required": true,
+        "options": []
+      },
+      {
+        "label": "2. 소속기업을 작성해주세요",
+        "required": true,
+        "options": []
+      },
+      {
+        "label": "3. 소속된 기업의 직위를 선택해주세요 ",
+        "required": true,
+        "options": [
+          "대표",
+          "임원",
+          ""
+        ]
+      },
+      {
+        "label": "4. 참여자의 연령대를 선택해주세요 ",
+        "required": true,
+        "options": [
+          "20대",
+          "30대",
+          "40대",
+          "50대",
+          "60대",
+          "70대 이상"
+        ]
+      },
+      {
+        "label": "5. 연락가능한 핸드폰번호를 작성해주세요.",
+        "required": true,
+        "options": []
+      },
+      {
+        "label": "6. 연락가능한 이메일을 작성해주세요",
+        "required": true,
+        "options": []
+      },
+      {
+        "label": "7. 차량을 이용할 예정이실까요?",
+        "required": true,
+        "options": [
+          "예",
+          "아니요"
+        ]
+      },
+      {
+        "label": "7-1. 차량번호를 정확히 입력해주세요. (오타유의)",
+        "required": true,
+        "options": []
+      },
+      {
+        "label": "1. 본 프로그램을 참여하게 된 경로는 무엇인가요?",
+        "required": true,
+        "options": [
+          "한국여성경제인협회 사이트 또는 추천",
+          "이벤터스 등 행사플랫폼",
+          "SNS, 당근마켓 등 온라인 광고",
+          "지인추천",
+          ""
+        ]
+      },
+      {
+        "label": "2. 본 프로그램을 참여하는 주요 목적은 무엇인가요?",
+        "required": true,
+        "options": [
+          "기업 경영과 성장에 필요한 인사이트 확보",
+          "GEO 전략을 통한 AI 검색 환경 대응 역량 강화",
+          "제품 차별화와 국내외 시장 확장을 위한 성장전략 모색",
+          "네트워크 형성",
+          ""
+        ]
+      },
+      {
+        "label": "3. (선택형 | 네트워크 공통주제) 우리 기업이 겪고 있는 어려움 중 여성기업인들과 함께 논의해보고 싶은 주제가 있으신가요? ",
+        "required": false,
+        "options": []
+      },
+      {
+        "label": "4. (선택형 | 특강 1. GEO 전략) AI 검색 환경에서 우리 기업의 브랜드가 발견되고 선택받기 위한 GEO 전략에 관해 강연자에게 궁금한 사항은 무엇인가요?",
+        "required": false,
+        "options": []
+      },
+      {
+        "label": "5.  (선택형 | 특강 2. 기업 성장전략) 제품의 차별화와 국내외 시장 확장을 위한 성장전략에 관해 강연자에게 궁금한 사항은 무엇인가요?",
+        "required": false,
+        "options": []
+      },
+      {
+        "label": "1. 개인정보 수집 및 이용동의 ",
+        "required": true,
+        "options": [
+          "동의합니다.",
+          "동의하지않습니다. (미동의시, 참여가 불가능합니다.)"
+        ]
+      },
+      {
+        "label": "2. 마케팅 정보 수신 동의 ",
+        "required": true,
+        "options": [
+          "동의합니다.",
+          "동의하지 않습니다."
+        ]
+      }
+    ],
+    "formEvidence": "evidence/ceo-form-check-2026-10-21.html",
+    "formVerifiedAt": "2026-10-21T00:16:23.006931+00:00"
+  },
+  "requiredDocuments": [
+    {
+      "name": "온라인구글설문지",
+      "condition": "필수",
+      "reference": "상세제출서류"
+    }
+  ],
+  "businessPlan": {
+    "format": "교육참가신청;사업계획서요구없음",
+    "sections": [],
+    "reference": "운영계획HWP전문·PDF3쪽전문/모든쪽시각(3쪽포스터포함)대조;첨부2미확인"
+  },
+  "evaluation": {
+    "summary": "80명선착순;1:1상담5명선정기준미기재;공개폼상담신청초과시필요성검토선정",
+    "reference": "운영계획HWP전문·PDF3쪽전문/모든쪽시각(3쪽포스터포함)대조;첨부2미확인"
+  },
+  "contact": {
+    "name": "운영사무국070-8670-2282",
+    "reference": "운영계획HWP전문·PDF3쪽전문/모든쪽시각(3쪽포스터포함)대조;첨부2미확인"
+  },
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179538",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확인 후 적합성 비교; 이 분석은 신청가능 판정 아님",
+    "steps": [
+      "회사 필드 및 자격 증빙 확인",
+      "미확인·충돌 해결",
+      "공고 양식 선택",
+      "회사 사실정보로 서류·사업계획서 작성 및 검토"
+    ]
+  },
+  "updatedAt": "2026-10-21T00:16:23.006931+00:00"
+}

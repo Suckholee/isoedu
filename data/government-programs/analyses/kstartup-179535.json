@@ -1,0 +1,160 @@
+{
+  "programId": "kstartup-179535",
+  "title": "2026년 웰컴 투 팁스 7차 참가기업 모집 (제주권)",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-10-20T00:13:59.239562+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179535",
+  "sourceFingerprint": "3edea96b586ec1d807e6080d9212795a85a0b0941ecd09acfa870615d01c1ae5",
+  "evidenceDirectory": "evidence/kstartup-179535",
+  "reviewScope": "공고HWP1~6절·붙임신청/동의서·포스터HWP 전문 및 PNG 전체 시각 검토",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/WB1Ln",
+      "verifiedAt": "2026-10-20",
+      "status": "downloaded",
+      "sha256": "1dc9a0708643798a1cf794284be9d8b6defb7f77b762bd131b69a7e3b9c2b133",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 152064,
+      "format": "HWP",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 5291
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/XB1Ln",
+      "verifiedAt": "2026-10-20",
+      "status": "downloaded",
+      "sha256": "720e0ec2a3a83360d6c032374a9396e8d83f606f5ed0b396fb8a441da9b77695",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 78336,
+      "format": "HWP",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 723
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/0B1Ln",
+      "verifiedAt": "2026-10-20",
+      "status": "downloaded",
+      "sha256": "e1e84331dd4d671b1dd51a9c9017e03752409b6affa12d2af076623bca36c9c9",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 1947629,
+      "format": "IMAGE",
+      "file": "attachment-03.bin",
+      "contentType": "image/png;charset=UTF-8"
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/WB1Ln": "1dc9a0708643798a1cf794284be9d8b6defb7f77b762bd131b69a7e3b9c2b133",
+    "https://www.k-startup.go.kr/afile/fileDownload/XB1Ln": "720e0ec2a3a83360d6c032374a9396e8d83f606f5ed0b396fb8a441da9b77695",
+    "https://www.k-startup.go.kr/afile/fileDownload/0B1Ln": "e1e84331dd4d671b1dd51a9c9017e03752409b6affa12d2af076623bca36c9c9"
+  },
+  "lastAttachmentHashCheckedAt": "2026-10-20T00:13:59.239562+00:00",
+  "unresolved": [
+    "업력2년3개월 미만과 설립일2024.5.1~가 현 접수일 기준 불일치: 적용 기준 확인 필요",
+    "공고HWP11/3발표평가·PNG포스터10/27발표평가 충돌; 포스터 요건검토10/21~22는 마감10/28보다 빠름. 최신 정정 미확인",
+    "Google폼401로 필수 입력·업로드 제한 미확인",
+    "HWP원본 배치·표 시각대조 미완료"
+  ],
+  "eligibility": {
+    "summary": "제주 소재 창업 후2년3개월 미만; 동시에 설립일2024.5.1 이후 명시. 개인은 사업장/개업일, 법인은 본점/설립일 기준",
+    "companyFields": [
+      "설립/개업일",
+      "본점/사업장주소",
+      "개인/법인",
+      "대표자 프리팁스·팁스 이력",
+      "발표자 직위"
+    ],
+    "reference": "공고HWP1~6절·붙임신청/동의서·포스터HWP 전문 및 PNG 전체 시각 검토"
+  },
+  "exclusions": {
+    "items": [
+      "연도불문 프리팁스·팁스R&D·팁스연계 사업 협약이력 기업 및 대표자"
+    ],
+    "reference": "공고HWP1~6절·붙임신청/동의서·포스터HWP 전문 및 PNG 전체 시각 검토"
+  },
+  "support": {
+    "summary": "8개사내외 IR피칭·멘토링. 우수3개사 2027프리팁스 투자유치요건면제/우선선정 기회(2027공고조건 충족 필요), 상금·상장·본선기회. 최대1억원은 차년도 연계사업 한도이며 이번 확정지원금 아님;상금액/자부담 미기재",
+    "reference": "공고HWP1~6절·붙임신청/동의서·포스터HWP 전문 및 PNG 전체 시각 검토"
+  },
+  "period": {
+    "start": "2026-10-15",
+    "end": "2026-10-28",
+    "deadlineTime": "18:00",
+    "timezone": "Asia/Seoul",
+    "reference": "공고HWP3절·포스터 상단"
+  },
+  "application": {
+    "url": "https://forms.gle/82A2f9w8fFUCucJZ9",
+    "notes": "신청정보·서류업로드.401 접근제한 우회 안함",
+    "reference": "공고3절"
+  },
+  "requiredDocuments": [
+    {
+      "name": "지정 참가신청서·개인정보/제3자동의서",
+      "condition": "필수",
+      "reference": "공고3절·붙임"
+    },
+    {
+      "name": "IR Deck",
+      "condition": "필수, 자율구성",
+      "reference": "공고3~4절"
+    },
+    {
+      "name": "사업자등록증 또는 증명",
+      "condition": "개인",
+      "reference": "공고3절"
+    },
+    {
+      "name": "법인등기사항전부증명서",
+      "condition": "법인",
+      "reference": "공고3절"
+    }
+  ],
+  "businessPlan": {
+    "format": "참가신청서 HWP에 대표자·회사·정부지원/투자이력·아이템개요. IR자율, 페이지 제한 미기재;발표5분+질의5분",
+    "sections": [
+      "대표자·회사 기본정보",
+      "정부지원사업 참여/투자유치",
+      "주요제품·아이템개요",
+      "IR:문제인식·실현가능성·성장전략·팀"
+    ],
+    "reference": "공고HWP1~6절·붙임신청/동의서·포스터HWP 전문 및 PNG 전체 시각 검토"
+  },
+  "evaluation": {
+    "summary": "요건검토 후 IR발표, 고득점순. 대표자/C레벨 발표필수. 공고11/3대전평가·11/4선정·11/17제주피칭이나 PNG포스터10/27평가·10/28결과 등 상충",
+    "reference": "공고HWP1~6절·붙임신청/동의서·포스터HWP 전문 및 PNG 전체 시각 검토"
+  },
+  "contact": {
+    "name": "로우파트너스042-867-9585/042-862-9583 pretips@rowe.kr",
+    "reference": "공고HWP1~6절·붙임신청/동의서·포스터HWP 전문 및 PNG 전체 시각 검토"
+  },
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179535",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확인 후 적합성 비교; 이 분석은 신청가능 판정 아님",
+    "steps": [
+      "회사 필드 및 자격 증빙 확인",
+      "미확인·충돌 해결",
+      "공고 양식 선택",
+      "회사 사실정보로 서류·사업계획서 작성 및 검토"
+    ]
+  },
+  "scheduleConflict": {
+    "noticeEvaluation": "2026-11-03",
+    "posterEvaluation": "2026-10-27",
+    "resolution": "미해결; 모집마감10/28 18시는 공통이나 평가/발표 일정 상충"
+  }
+}

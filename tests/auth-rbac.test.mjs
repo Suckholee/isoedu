@@ -45,12 +45,14 @@ before(async () => {
   await db.exec(clientsMigration);
   await db.exec(clientsMigration);
   await db.exec(migration); // Rerunning must not leave a partially hardened database.
+  await db.exec(await readFile(new URL('supabase/company_projects_migration.sql', root), 'utf8'));
   for (const id of [member, other, auditor]) {
     await db.query('INSERT INTO auth.users(id, email, raw_user_meta_data) VALUES ($1, $2, $3)', [id, `${id}@example.com`, { full_name: 'Test', role: 'ADMIN', company_name: 'Test company' }]);
   }
   company = (await db.query('SELECT company_id FROM public.profiles WHERE id = $1', [member])).rows[0].company_id;
   otherCompany = (await db.query('SELECT company_id FROM public.profiles WHERE id = $1', [other])).rows[0].company_id;
   await db.query("UPDATE public.profiles SET role = 'AUDITOR' WHERE id = $1", [auditor]);
+  await db.query("INSERT INTO public.company_members(company_id,user_id,membership_role) VALUES ($1,$2,'VIEWER')",[company,auditor]);
   documentId = (await db.query("INSERT INTO public.documents(company_id, certification_code, hierarchy_level, title) VALUES ($1, 'ISO_9001', 'LEVEL_1', 'Private manual') RETURNING id", [company])).rows[0].id;
 });
 after(async () => { await db.close(); });
@@ -85,7 +87,7 @@ test('members cannot promote themselves or move their profile to another company
   await assert.rejects(asUser(member, () => db.query('UPDATE public.profiles SET company_id = $1 WHERE id = $2', [otherCompany, member])), /permission denied/);
 });
 
-test('cross-company writes fail; auditor can read but cannot change documents', async () => {
+test('cross-company writes fail; explicitly assigned auditor can read but cannot change documents', async () => {
   await assert.rejects(asUser(other, () => db.query("INSERT INTO public.documents(company_id, title, hierarchy_level, certification_code) VALUES ($1, 'Wrong', 'LEVEL_1', 'ISO_9001')", [company])), /row-level security/);
   await asUser(auditor, async () => {
     assert.equal((await db.query('SELECT * FROM public.documents WHERE id = $1', [documentId])).rows.length, 1);

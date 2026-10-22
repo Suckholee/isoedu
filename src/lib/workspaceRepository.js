@@ -1,3 +1,4 @@
+import { workflowError } from './projectWorkflow.mjs';
 import { supabase } from './supabaseClient.js';
 import { isCloudMode } from './dataConfig.js';
 import { INITIAL_COMPANIES } from './mockData.js';
@@ -34,8 +35,8 @@ export async function createProject(project) {
     saveStoredProjects([project, ...getStoredProjects()]);
     return project;
   }
-  const { data, error } = await cloud().rpc('create_audit_project', { project_data: project });
-  if (error) throw error;
+  const { data, error } = await cloud().rpc(project.workflowVersion === 2 ? 'create_work_project' : 'create_audit_project', project.workflowVersion === 2 ? { payload: project } : { project_data: project });
+  if (error) throw new Error(workflowError(error));
   return projectFromRow(Array.isArray(data) ? data[0] : data);
 }
 
@@ -46,6 +47,6 @@ export async function updateProject(project) {
   }
   const { data, error } = await cloud().from('audit_projects').update({ data: project })
     .eq('id', project.id).eq('company_id', project.companyId).select().single();
-  if (error) throw error;
+  if (error) throw new Error(workflowError(error));
   return projectFromRow(Array.isArray(data) ? data[0] : data);
 }

@@ -113,7 +113,7 @@ export async function uploadDocumentFile(file, { companyId, docId, version = 1, 
   return { ...fromVersion(data), success: true, mode: 'cloud' };
 }
 
-export async function getSecureDownloadUrl(filePath, expiresInSeconds = 3600) {
+export async function getSecureDownloadUrl(filePath) {
   if (!filePath) throw new Error('파일 경로가 없습니다.');
   if (!isCloudMode && filePath.startsWith('local/')) {
     const record = await readLocalFile(filePath.slice(6));
@@ -121,7 +121,6 @@ export async function getSecureDownloadUrl(filePath, expiresInSeconds = 3600) {
     return URL.createObjectURL(record.blob);
   }
   if (!supabase || !isCloudMode || filePath.startsWith('local/')) throw new Error('현재 저장 모드의 파일이 아닙니다.');
-  const { data, error } = await supabase.storage.from(STORAGE_BUCKET_NAME).createSignedUrl(filePath, expiresInSeconds);
-  if (error) throw error;
-  return data.signedUrl;
+  // Every file/range request rechecks the current session and company RLS.
+  return '/api/vault-file?path=' + encodeURIComponent(filePath);
 }

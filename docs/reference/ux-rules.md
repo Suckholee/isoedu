@@ -35,7 +35,7 @@
 
 ## UX-004 기능마다 독립된 URL
 
-- 메뉴는 /dashboard, /certifications, /documents, /audit-schedule, /risks, /notifications, /government-programs, /reports, /settings로 이동한다.
+- 메뉴는 /dashboard, /certifications, /documents, /audit-schedule, /risks, /notifications, /government-programs, /reports, /admin, /settings로 이동한다. 관리자 센터 하위 탭은 /admin?tab={members|companies|dispatch|operations|audit-logs} 및 /admin/{subtab} 경로를 지원한다.
 - 정부사업 보기는 /government-programs/calendar 및 /government-programs/list. 선택 사업은 program 파라미터로 전달한다.
 - 규격·문서 계층은 standard/folder 파라미터로 보존한다. 프로젝트는 /projects/{id}로 접근하며 실제 권한 있는 프로젝트만 표시한다.
 - /는 /dashboard로 이동한다. 직접 접속·새로고침·뒤로/앞으로 가기를 지원한다. 알 수 없는 경로는 404.
@@ -79,3 +79,7 @@
 
 ## UX-REGISTER-001 유형별 관리 화면은 대장형 표를 우선
 ISO 인증 관리는 큰카드·장식요약보다 규격탭·연결상태탭·열필터·행별동작으로 구성한다. 인증서/매뉴얼/절차서/지침서/양식·기록 유형을 구분하고 내용영역 안에서 표헤더를고정한다. 문서연결상태와 실제작성/승인·심사적합상태를 혼동하지않는다. 계정표시는 상단메뉴로통일하고 사이드바하단의 중복 로그인필요 안내는표시하지않는다.
+
+
+## UX-HEADER-001 계정 헤더와 본문 작업 영역 분리
+거래처·계정 제어는 본문 바깥의 상단행에 배치한다. 절대배치로 업무 추가·프로젝트 버튼 위를 덮지 않는다. 좁은 화면에서 칩 이름은 말줄임하고 작업제목/버튼은 줄바꿈한다. 사이드바 접기·펼치기 및 회사/문서/필터 상태를 유지한다.

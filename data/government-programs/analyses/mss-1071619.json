@@ -149,5 +149,10 @@
     "최신 정정/연장 공고의 별도 존재 여부 미확인",
     "사업 전체 페이지 시각 검토 미완료",
     "사업계획서 자동작성 및 회사문서 자동매칭 미연동"
-  ]
+  ],
+  "attachmentContentHashes": {
+    "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071619&cbIdx=310&streFileNm=a4781d7a-655c-4268-85b6-913dd6da2401.hwpx": "873cb8c0c41d7cb8a316ef5966bc2b758ffe1ef3dc66f54e907392b2b5efabdf",
+    "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071619&cbIdx=310&streFileNm=5931246e-3d01-410d-b27d-975669f770be.pdf": "e5620d492ab82df8e6610ff9116904865020dc3e3efa4f55ff47e616b0816708"
+  },
+  "lastAttachmentHashCheckedAt": "2026-10-18T00:09:06.060119Z"
 }

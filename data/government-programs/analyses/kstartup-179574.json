@@ -1,0 +1,144 @@
+{
+  "programId": "kstartup-179574",
+  "title": "2026 관광기업 동반성장 기술역량 강화교육",
+  "reviewStatus": "complete",
+  "status": "첨부·신청양식 분석 완료",
+  "analyzedAt": "2026-10-22T00:35:53.136226+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179574",
+  "sourceFingerprint": "3ed082fcab3d456b1725fd2ab42894288af55b9c7c573535569364edd0fcc5d4",
+  "evidenceDirectory": "evidence/kstartup-179574",
+  "reviewScope": "이미지기반PDF1쪽전체렌더시각검토(텍스트추출5자)·상세;공개신청폼전체질문메타데이터확인",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/as2Ln",
+      "verifiedAt": "2026-10-22",
+      "status": "downloaded",
+      "sha256": "fb1445901f86f8eb68cc8a9d9933dccb8ce162bd0cad916eb1dd9b9ccda92e2c",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 4562286,
+      "format": "PDF",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 5
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/as2Ln": "fb1445901f86f8eb68cc8a9d9933dccb8ce162bd0cad916eb1dd9b9ccda92e2c"
+  },
+  "lastAttachmentHashCheckedAt": "2026-10-22T00:35:53.136226+00:00",
+  "unresolved": [],
+  "eligibility": {
+    "summary": "관광분야기업대표·실무임직원",
+    "companyFields": [
+      "관광업관련성",
+      "소속기업·직위",
+      "참가자연락처",
+      "차량이용"
+    ],
+    "reference": "이미지기반PDF1쪽전체렌더시각검토(텍스트추출5자)·상세"
+  },
+  "exclusions": {
+    "items": [
+      "별도제외조건미기재"
+    ],
+    "reference": "이미지기반PDF1쪽전체렌더시각검토(텍스트추출5자)·상세"
+  },
+  "support": {
+    "summary": "무료10/28 13:00~17:20한국관광공사서울센터7층716호,기술마켓/지재권/납품대금연동교육.현금지원아님",
+    "reference": "이미지기반PDF1쪽전체렌더시각검토(텍스트추출5자)·상세"
+  },
+  "period": {
+    "start": "2026-10-20",
+    "end": "2026-10-27",
+    "deadlineTime": "15:00",
+    "timezone": "Asia/Seoul",
+    "reference": "상세신청기간;첨부포스터마감미표시"
+  },
+  "application": {
+    "url": "https://docs.google.com/forms/d/e/1FAIpQLSeLjYWGHyKBDBANFdi2jWQmrwrQSyMgbCfwQSJlOJZYiW69Cw/viewform?usp=publish-editor",
+    "notes": "공개폼기업/직함/성함/전화/이메일·개인정보동의필수,추가파일없음.차량은사전연락",
+    "reference": "상세신청방법/교육안내",
+    "publicFormQuestions": [
+      {
+        "label": "기업명",
+        "required": true,
+        "options": []
+      },
+      {
+        "label": "직함",
+        "required": true,
+        "options": []
+      },
+      {
+        "label": "성함",
+        "required": true,
+        "options": []
+      },
+      {
+        "label": "연락처",
+        "required": true,
+        "options": []
+      },
+      {
+        "label": "이메일",
+        "required": true,
+        "options": []
+      },
+      {
+        "label": "<개인정보 수집이용 동의서>",
+        "required": true,
+        "options": [
+          "예",
+          "아니오"
+        ]
+      }
+    ],
+    "formEvidence": "evidence/tour-form-check-2026-10-22.html",
+    "verifiedAt": "2026-10-22T00:37:17.828134+00:00",
+    "submission": "값입력/전송없음"
+  },
+  "requiredDocuments": [
+    {
+      "name": "온라인신청서",
+      "condition": "필수입력;별도제출파일없음",
+      "reference": "상세제출서류없음/신청방법"
+    }
+  ],
+  "businessPlan": {
+    "format": "교육신청;사업계획서양식/분량해당없음",
+    "sections": [],
+    "reference": "이미지기반PDF1쪽전체렌더시각검토(텍스트추출5자)·상세"
+  },
+  "evaluation": {
+    "summary": "상세선정절차없음;정원·수료기준미명시",
+    "reference": "이미지기반PDF1쪽전체렌더시각검토(텍스트추출5자)·상세"
+  },
+  "contact": {
+    "name": "ESG033-738-3197/관광기업협력02-729-9489",
+    "reference": "이미지기반PDF1쪽전체렌더시각검토(텍스트추출5자)·상세"
+  },
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179574",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확인 후 적합성 비교; 이 분석은 신청가능 판정 아님",
+    "steps": [
+      "회사 필드 및 자격 증빙 확인",
+      "미확인·충돌 해결",
+      "공고 양식 선택",
+      "회사 사실정보로 서류·사업계획서 작성 및 검토"
+    ]
+  },
+  "nonPublishedFields": [
+    "정원숫자·수료기준은원문미기재(추정안함)"
+  ],
+  "reviewMeaning": "공개모집내용·관련첨부·신청양식검토완료;개별회사의신청자격확정·실제신청완료아님",
+  "updatedAt": "2026-10-22T00:37:17.828134+00:00"
+}

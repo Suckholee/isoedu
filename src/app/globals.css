@@ -128,10 +128,10 @@
 
 /* S05 source geometry: 1792 × 1024; preserve its desktop composition. */
 .ppt-layout { position: relative; background: #fbfcff; }
-.ppt-layout > .iso-header { position: absolute; right: 30px; top: 20px; width: auto; height: 36px; padding: 0; border: 0; background: transparent; z-index: 40; }
-.ppt-layout > .iso-header > :first-child,
-.ppt-layout > .iso-header > :nth-child(2) { display: none; }
-.ppt-layout > .iso-header > :nth-child(3) > :not(:last-child) { display: none; }
+.ppt-layout .iso-header { position: relative; width: auto; min-width: 0; height: 40px; padding: 0; border: 0; background: transparent; z-index: 40; justify-content: flex-end; margin-left: auto; }
+.ppt-layout .iso-header > :first-child,
+.ppt-layout .iso-header > :nth-child(2) { display: none; }
+.ppt-layout .iso-header > :nth-child(3) > :not(:last-child) { display: none; }
 .platform-connection-notice { position: absolute; right: 84px; top: 31px; z-index: 30; font-size: 11px; color: #64748b; max-width: 300px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .ppt-layout .platform-sidebar { width: 260px; padding: 28px 17px; background: #001638; height: 100%; }
 .ppt-layout .platform-sidebar > :first-child { padding: 0 2px; margin-bottom: 34px; white-space: nowrap; font-size: 22px; letter-spacing: -1px; }
@@ -175,7 +175,7 @@
 
 .ppt-layout .platform-tenant > span:nth-child(2) { min-width: 0; }
 .ppt-layout .platform-tenant small { white-space: nowrap; font-size: 11px; }
-.ppt-layout > .iso-header > :nth-child(3) > :first-child { display: block; }
+.ppt-layout .iso-header > :nth-child(3) > :first-child { display: block; }
 
 /* UX-001: Keep navigation controls reachable independently of content scrolling. */
 .platform-sidebar-toggle { display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; width: 32px; height: 36px; border-radius: 6px; color: #dbeafe; }
@@ -243,5 +243,71 @@
 /* UX-007: summary counts belong in filters, not large metric cards. */
 .my-work .work-controls{margin-bottom:14px}.my-work .work-list-toolbar{margin-top:14px;margin-bottom:18px}.work-list-toolbar nav button{display:inline-flex;align-items:center;gap:7px}.work-list-toolbar nav button small{font-size:11px;font-weight:600;color:#64748b;background:#edf1f6;border-radius:4px;min-width:18px;padding:1px 5px}.work-list-toolbar nav button[aria-pressed=true] small{background:#dfeaff;color:#2563eb}
 
+/* A01: daily agent schedule guide; compact list before the execution example. */
+.agent-schedules { padding-top: 30px; max-width: 1440px; margin: 0 auto; }
+.agent-schedules .platform-page-heading { height: auto; min-height: 78px; }
+.agent-schedules .platform-page-heading h1 { font-size: 26px; }
+.agent-schedules .platform-page-heading p { line-height: 1.7; }
+.agent-section-heading { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; }
+.agent-section-heading > span { font-size: 12px; color: #64748b; }
+.agent-count { display: inline-flex; align-items: center; justify-content: center; min-width: 23px; height: 23px; border-radius: 6px; background: #edf4ff; color: #2563eb; font-size: 12px; }
+.agent-table-scroll { overflow-x: auto; margin-top: 14px; }
+.agent-schedule-table { min-width: 670px; }
+.agent-schedule-table td strong { font-size: 14px; font-weight: 600; color: #14213a; }
+.agent-schedule-table td small { display: block; margin-top: 7px; color: #64748b; }
+.agent-time { display: inline-flex; align-items: center; gap: 7px; white-space: nowrap; }
+.agent-status { display: inline-block; padding: 5px 8px; border-radius: 5px; background: #eff5ff; color: #2358a5; font-size: 11px; white-space: nowrap; }
+.agent-link { display: inline-flex; align-items: center; gap: 4px; color: #2563eb; font-size: 12px; white-space: nowrap; }
+.agent-link:hover { text-decoration: underline; }
+.agent-sync-note { margin-top: 14px; color: #64748b; font-size: 12px; line-height: 1.8; }
+.agent-explainer-grid { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 20px; margin-top: 20px; }
+.agent-intro { color: #53627b; font-size: 13px; line-height: 1.8; margin-top: 12px; }
+.agent-steps { display: grid; gap: 23px; margin: 25px 0; }
+.agent-steps li { display: flex; align-items: flex-start; gap: 12px; }
+.agent-step-number { display: grid; place-items: center; flex-shrink: 0; width: 26px; height: 26px; border: 1px solid #dce7f9; border-radius: 50%; color: #2563eb; background: #f5f8ff; font-size: 12px; }
+.agent-steps h3 { color: #14213a; font-size: 14px; font-weight: 600; line-height: 26px; }
+.agent-steps p { margin-top: 4px; color: #53627b; font-size: 13px; line-height: 1.8; }
+.agent-example-request { padding: 16px; background: #f7f9fc; border-radius: 6px; border: 1px solid #e4e9f2; }
+.agent-example-request span { font-size: 11px; color: #64748b; }
+.agent-example-request p { margin-top: 8px; color: #334155; font-size: 13px; line-height: 1.9; word-break: keep-all; }
+.agent-screenshot { margin-top: 18px; }
+.agent-screenshot img { display: block; width: 100%; height: auto; border: 1px solid #e4e9f2; border-radius: 6px; }
+.agent-screenshot figcaption { margin-top: 12px; color: #64748b; font-size: 12px; line-height: 1.8; }
+.agent-schedules a:focus-visible { outline: 2px solid #2563eb; outline-offset: 4px; }
+.ppt-layout .platform-agent-nav { word-break: keep-all; }
+.ppt-layout .platform-agent-nav > svg { flex-shrink: 0; }
+@media(max-width:1100px) { .agent-schedules { padding-top: 80px; } .agent-explainer-grid { grid-template-columns: minmax(0, 1fr); } }
+@media(max-width:767px) { .agent-schedules { padding-top: 80px; } .agent-schedules .platform-page-heading h1 { font-size: 22px; word-break: keep-all; } .agent-schedules .platform-page-heading p { font-size: 13px; } }
+
 .company-switch-search{display:flex;align-items:center;gap:8px;margin:10px;padding:8px 10px;border:1px solid #dce4ef;border-radius:7px}.company-switch-search input{min-width:0;width:100%;font-size:12px;outline:none;color:#334155;background:white}
+
 .managed-context-bar{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:16px 40px 0;padding:10px 14px;background:#edf4ff;border-radius:8px;color:#334155;font-size:12px}.managed-context-bar button{color:#2563eb}.managed-client-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px;margin-top:24px}.managed-client-grid button{display:flex;flex-direction:column;gap:14px;text-align:left;border:1px solid #dce4ef;border-radius:12px;background:white;padding:24px;color:#334155}.managed-client-grid svg{color:#d99b24;fill:#ffe19b}.managed-client-grid small{color:#8190a6}.work-client-search{width:100%;max-width:680px;padding:12px 16px;border:1px solid #dce4ef;border-radius:9px;background:white}
+
+/* UX-001/S05: Reserve a real header row; page actions never sit behind account controls. */
+.platform-workspace-topbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 8px 16px; flex-shrink: 0; min-height: 56px; padding: 8px 30px; }
+.platform-workspace-topbar .iso-header { order: 2; max-width: 100%; flex-shrink: 1; }
+.platform-workspace-topbar .iso-header > :nth-child(3) { min-width: 0; max-width: 100%; }
+.platform-workspace-topbar .company-switcher { min-width: 0; }
+.platform-workspace-topbar .company-chip { max-width: 100%; }
+.platform-workspace-topbar .company-chip > svg, .platform-workspace-topbar .company-chip-avatar { flex-shrink: 0; }
+.platform-workspace-topbar .platform-connection-notice { position: static; flex: 1 1 200px; min-width: 0; max-width: none; order: 1; }
+@media(max-width:767px) {
+ .platform-workspace-topbar { padding: 8px 12px; }
+ .platform-workspace-topbar .iso-header > :nth-child(3) { gap: 4px; }
+ .platform-workspace-topbar .company-chip { padding: 7px 8px; gap: 5px; }
+ .platform-workspace-topbar .company-chip .company-current-name { max-width: min(120px, 16vw); }
+ .work-heading { flex-wrap: wrap; gap: 12px; }
+ .work-heading > div { min-width: 0; }
+ .work-heading > .work-primary { flex-shrink: 0; }
+}
+
+[data-modal-layer="true"] { color: #0f172a; }
+[data-modal-layer="true"] input:not([type="checkbox"]):not([type="radio"]),
+[data-modal-layer="true"] textarea,
+[data-modal-layer="true"] select { color: #0f172a; }
+[data-modal-layer="true"] input:-webkit-autofill,
+[data-modal-layer="true"] input:-webkit-autofill:hover,
+[data-modal-layer="true"] input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #0f172a;
+  box-shadow: 0 0 0 1000px #ffffff inset;
+}

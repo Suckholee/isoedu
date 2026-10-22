@@ -1,5 +1,6 @@
 'use client';
 import ModalLayer from './ui/ModalLayer';
+import SocialLoginButtons from './SocialLoginButtons';
 
 import {readLoginFields} from '../lib/authForm.mjs';
 import Button from './ui/Button';
@@ -8,6 +9,8 @@ import {
   X, 
   Mail, 
   Lock, 
+  Eye,
+  EyeOff,
   User, 
   Building2, 
   ShieldCheck, 
@@ -25,6 +28,7 @@ export default function AuthModal({ isOpen, onClose }) {
   // Form fields
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
   const [fullName, setFullName] = useState('');
   const [companyName, setCompanyName] = useState('');
   const [role, setRole] = useState('MEMBER'); // 'MEMBER' | 'AUDITOR' | 'ADMIN'
@@ -94,7 +98,7 @@ export default function AuthModal({ isOpen, onClose }) {
   return (
     <ModalLayer onClose={onClose} className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4 animate-fade-in">
       <div 
-        className="bg-white w-full max-w-md max-h-[calc(100dvh-32px)] overflow-y-auto rounded-2xl shadow-2xl border border-slate-200 animate-scale-up"
+        className="bg-white text-slate-900 w-full max-w-md max-h-[calc(100dvh-32px)] overflow-y-auto rounded-2xl shadow-2xl border border-slate-200 animate-scale-up"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
@@ -163,6 +167,8 @@ export default function AuthModal({ isOpen, onClose }) {
             </div>
           )}
 
+          {!isDemoMode && <><SocialLoginButtons /><div className="text-center text-xs text-slate-400">또는 이메일로 계속하기</div></>}
+
           {mode === 'signup' && (
             <>
               <div>
@@ -174,7 +180,7 @@ export default function AuthModal({ isOpen, onClose }) {
                     value={fullName}
                     onChange={(e) => setFullName(e.target.value)}
                     placeholder="홍길동"
-                    className="w-full pl-9 pr-3 py-2 text-sm rounded-xl border border-slate-200 focus:outline-hidden focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full pl-9 pr-3 py-2 text-sm bg-white text-slate-900 placeholder:text-slate-400 rounded-xl border border-slate-200 focus:outline-hidden focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                     required
                   />
                 </div>
@@ -189,7 +195,7 @@ export default function AuthModal({ isOpen, onClose }) {
                     value={companyName}
                     onChange={(e) => setCompanyName(e.target.value)}
                     placeholder="(주)하이테크정밀"
-                    className="w-full pl-9 pr-3 py-2 text-sm rounded-xl border border-slate-200 focus:outline-hidden focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full pl-9 pr-3 py-2 text-sm bg-white text-slate-900 placeholder:text-slate-400 rounded-xl border border-slate-200 focus:outline-hidden focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   />
                 </div>
               </div>
@@ -236,43 +242,54 @@ export default function AuthModal({ isOpen, onClose }) {
           )}
 
           <div>
-            <label className="block text-xs font-bold text-slate-700 mb-1">업무용 이메일</label>
+            <label htmlFor="auth-email-input" className="block text-xs font-bold text-slate-700 mb-1">아이디 또는 업무용 이메일</label>
             <div className="relative">
               <Mail className="w-4 h-4 absolute left-3 top-3 text-slate-400" />
               <input
-                type="email"
+                id="auth-email-input"
+                type="text"
                 name="email" autoComplete="username" autoCapitalize="none" spellCheck={false}
                 aria-label="업무용 이메일"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="name@company.com"
-                className="w-full pl-9 pr-3 py-2 text-sm rounded-xl border border-slate-200 focus:outline-hidden focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                placeholder="student1 또는 name@company.com"
+                className="w-full pl-9 pr-3 py-2 text-sm bg-white text-slate-900 placeholder:text-slate-400 rounded-xl border border-slate-200 focus:outline-hidden focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 required
               />
             </div>
           </div>
 
           <div>
-            <label className="block text-xs font-bold text-slate-700 mb-1">비밀번호</label>
+            <label htmlFor="auth-password-input" className="block text-xs font-bold text-slate-700 mb-1">비밀번호</label>
             <div className="relative">
               <Lock className="w-4 h-4 absolute left-3 top-3 text-slate-400" />
               <input
-                type="password"
+                id="auth-password-input"
+                type={showPassword ? 'text' : 'password'}
                 name="password" autoComplete={mode==='login'?'current-password':'new-password'}
                 aria-label="비밀번호"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder="••••••••"
-                className="w-full pl-9 pr-3 py-2 text-sm rounded-xl border border-slate-200 focus:outline-hidden focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full pl-9 pr-10 py-2 text-sm bg-white text-slate-900 placeholder:text-slate-400 rounded-xl border border-slate-200 focus:outline-hidden focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 required
               />
+              <button
+                type="button"
+                onClick={() => setShowPassword((prev) => !prev)}
+                aria-label={showPassword ? '비밀번호 숨기기' : '비밀번호 보기'}
+                title={showPassword ? '비밀번호 숨기기' : '비밀번호 보기'}
+                className="absolute right-2.5 top-2 p-1 rounded-lg text-slate-400 hover:text-slate-700 hover:bg-slate-100 transition-colors cursor-pointer"
+              >
+                {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
+              </button>
             </div>
           </div>
 
           <Button
             type="submit"
             disabled={isSubmitting}
-            className="w-full text-sm hover:shadow-lg transition-all flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50"
+            className="w-full py-2.5 px-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm hover:shadow-lg transition-all flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50"
           >
             {isSubmitting ? (
               <span>처리 중...</span>

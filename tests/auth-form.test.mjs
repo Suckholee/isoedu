@@ -1,6 +1,7 @@
 import test from 'node:test';import assert from 'node:assert/strict';
-import {readLoginFields,loginErrorMessage,createAuthFetch} from '../src/lib/authForm.mjs';
+import {readLoginFields,normalizeLoginIdentifier,loginErrorMessage,createAuthFetch} from '../src/lib/authForm.mjs';
 test('browser autofill fields win over stale React state without changing passwords',()=>{const f=new FormData();f.set('email',' CEO@HONESTONE.KR ');f.set('password',' Password!@ ');assert.deepEqual(readLoginFields(f,{email:'',password:''}),{email:'ceo@honestone.kr',password:' Password!@ '});});
+test('short login identifier without @ expands to honestone.kr email',()=>{const f=new FormData();f.set('email','student1');f.set('password','test6274');assert.deepEqual(readLoginFields(f,{email:'',password:''}),{email:'student1@honestone.kr',password:'test6274'});assert.equal(normalizeLoginIdentifier('student1'),'student1@honestone.kr');});
 test('auth failures provide distinct recovery instructions',()=>{assert.match(loginErrorMessage({code:'invalid_credentials'}),/비밀번호/);assert.match(loginErrorMessage({status:429}),/제한/);assert.match(loginErrorMessage({name:'AbortError'}),/연결/);});
 test('auth network timeout aborts a stalled request',async()=>{const fetcher=(_url,init)=>new Promise((resolve,reject)=>init.signal.addEventListener('abort',()=>reject(new DOMException('Aborted','AbortError'))));await assert.rejects(createAuthFetch(fetcher,5)('https://example.test/auth/v1/token'),{name:'AbortError'});});
 test('document uploads are not subject to auth timeouts',async()=>{const init={body:'file'};await createAuthFetch(async(_url,options)=>assert.equal(options,init),1)('https://example.test/storage/v1/object',init);});

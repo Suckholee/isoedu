@@ -1,0 +1,111 @@
+{
+  "programId": "kstartup-179581",
+  "title": "2026 초격차 클리마 데이 (Clima Day) 행사 개최 안내",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-10-22T00:35:53.136226+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179581",
+  "sourceFingerprint": "7b9f0fdf261b0e8fe66612fcfc94224828580743403f34220d6bd5ae9ac56ff2",
+  "evidenceDirectory": "evidence/kstartup-179581",
+  "reviewScope": "PDF1쪽전문·전체시각·상세검토",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/mC2Ln",
+      "verifiedAt": "2026-10-22",
+      "status": "downloaded",
+      "sha256": "540f61f0b368da219fa1e90d0ecd7b18384cffeaebcc683710c0cf38b5ae5ae8",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 456529,
+      "format": "PDF",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 834
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/mC2Ln": "540f61f0b368da219fa1e90d0ecd7b18384cffeaebcc683710c0cf38b5ae5ae8"
+  },
+  "lastAttachmentHashCheckedAt": "2026-10-22T00:35:53.136226+00:00",
+  "unresolved": [
+    "상세/포스터/링크트리시작종료차이:최종일정확인필요",
+    "링크트리OI/IR신청마감표시;일반사전등록후속양식추가검토필요"
+  ],
+  "eligibility": {
+    "summary": "기후테크오픈이노베이션관심유관기관·기업·시민,포스터대중견·공공·투자·창업관계자",
+    "companyFields": [
+      "소속·직위",
+      "참가부문",
+      "기후테크관심/아이템",
+      "연락처"
+    ],
+    "reference": "PDF1쪽전문·전체시각·상세검토"
+  },
+  "exclusions": {
+    "items": [
+      "별도제외조건미명시"
+    ],
+    "reference": "PDF1쪽전문·전체시각·상세검토"
+  },
+  "support": {
+    "summary": "10/29섬유센터3층Tex+Fa홀,기조·협업사례·오픈이노베이션·투자IR/상담.현금지원금/자부담미기재",
+    "reference": "PDF1쪽전문·전체시각·상세검토"
+  },
+  "period": {
+    "start": "2026-10-20",
+    "end": "2026-10-28",
+    "deadlineTime": "15:00",
+    "timezone": "Asia/Seoul",
+    "reference": "상세신청기간;PDF신청마감미표시"
+  },
+  "application": {
+    "url": "https://linktr.ee/2026climaday",
+    "notes": "링크트리일반사전등록과OI밋업·IR상담분리.2026-10-22확인시OI밋업/투자IR상담은링크라벨(마감),일반참가마감으로일괄추정하지않음",
+    "reference": "PDF사전등록"
+  },
+  "requiredDocuments": [
+    {
+      "name": "참가신청양식",
+      "condition": "필수온라인;별도파일미명시",
+      "reference": "상세제출서류"
+    }
+  ],
+  "businessPlan": {
+    "format": "일반참가양식,IR발표별도양식미확인.투자IR출전신청모집으로단정하지않음",
+    "sections": [],
+    "reference": "PDF1쪽전문·전체시각·상세검토"
+  },
+  "evaluation": {
+    "summary": "사전참가신청후현장참석,배점미기재",
+    "reference": "PDF1쪽전문·전체시각·상세검토"
+  },
+  "contact": {
+    "name": "행사02-3469-8424/dips@ketep.re.kr;투자IR kws@sypip.com",
+    "reference": "PDF1쪽전문·전체시각·상세검토"
+  },
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179581",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확인 후 적합성 비교; 이 분석은 신청가능 판정 아님",
+    "steps": [
+      "회사 필드 및 자격 증빙 확인",
+      "미확인·충돌 해결",
+      "공고 양식 선택",
+      "회사 사실정보로 서류·사업계획서 작성 및 검토"
+    ]
+  },
+  "scheduleConflict": {
+    "listing": "10/29 10:30~12:30",
+    "poster": "10/29 10:30~17:00",
+    "linktree": "10/29 10:00~17:00",
+    "resolution": "부분일정/등록시각차이인지미해결"
+  },
+  "updatedAt": "2026-10-22T00:37:17.828134+00:00"
+}

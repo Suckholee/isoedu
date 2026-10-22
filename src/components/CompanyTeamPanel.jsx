@@ -1,0 +1,25 @@
+'use client';
+import {useEffect,useRef,useState} from 'react';
+import {useAuth} from '../context/AuthContext';
+import {companyRpc} from '../lib/companyProjectRepository';
+
+export default function CompanyTeamPanel({company,onChanged}){
+ const {user,profile}=useAuth(),target=company||profile?.company;
+ const [access,setAccess]=useState(null),[error,setError]=useState(''),[message,setMessage]=useState(''),[busy,setBusy]=useState(false),[code,setCode]=useState(''),[join,setJoin]=useState(''),[confirm,setConfirm]=useState(null),[role,setRole]=useState('VIEWER');
+ const generation=useRef(0),identity=useRef('');identity.current=`${user?.id||''}/${target?.id||''}`;
+ async function load(){const id=identity.current,g=++generation.current;setAccess(null);setCode('');setConfirm(null);setError('');if(!user||!target)return;try{const d=await companyRpc('company_access',{c_id:target.id});if(id===identity.current&&g===generation.current)setAccess(d);}catch(e){if(id===identity.current&&g===generation.current)setError(e.message);}}
+ useEffect(()=>{load();setMessage('');setJoin('');return()=>{generation.current++;};},[user?.id,target?.id]);
+ async function action(fn,success){if(busy)return;const id=identity.current;setBusy(true);setError('');setMessage('');try{const d=await fn();if(id!==identity.current)return;await load();setMessage(success);await onChanged?.();return d;}catch(e){if(id===identity.current)setError(e.message);}finally{setBusy(false);}}
+ if(!user)return <section className="platform-card"><h2>회사 소속·직원 승인</h2><p className="text-sm my-3">로그인 후 회사 소속을 신청하거나 구성원을 관리할 수 있습니다.</p></section>;
+ return <section className="platform-card space-y-4"><h2>회사 소속·직원 승인 {target?`· ${target.name}`:''}</h2>
+ <p className="text-xs text-slate-500">회사 자료는 회사에 남습니다. 관리자는 퇴사·이직을 확인한 뒤 해당 회사 소속을 해제해 주세요. 이미 내려받은 파일은 회수할 수 없습니다.</p>
+ {error&&<p role="alert" className="text-sm text-rose-700">{error} <button onClick={load} className="underline">다시 불러오기</button></p>}{message&&<p role="status" className="text-sm text-emerald-700">{message}</p>}
+ {access&&<><div className="overflow-auto"><table className="platform-table"><thead><tr><th>구성원</th><th>이메일</th><th>회사 역할</th><th>소속</th><th>관리</th></tr></thead><tbody>{access.members.map(m=><tr key={m.userId}><td>{m.name}</td><td>{m.email}</td><td>{{OWNER:'회사 관리자',EDITOR:'편집',VIEWER:'열람'}[m.role]}</td><td>{m.active?'재직·활성':'소속 해제'}</td><td>{access.canManage&&m.active&&m.role!=='OWNER'&&<button disabled={busy} onClick={()=>setConfirm(m)} className="text-rose-700">소속 해제</button>}</td></tr>)}</tbody></table></div>
+ {confirm&&<div className="p-3 bg-rose-50 text-sm space-y-2" role="group" aria-label="소속 해제 확인"><p>{confirm.name} 님의 {target.name} 문서·업무·프로젝트 접근을 해제합니다. 회사 자료는 삭제하지 않습니다.</p><button disabled={busy} onClick={()=>action(()=>companyRpc('end_company_membership',{c_id:target.id,member_id:confirm.userId}),'회사 소속을 해제했습니다.').then(()=>setConfirm(null))} className="text-rose-700 font-bold mr-4">확인 후 소속 해제</button><button onClick={()=>setConfirm(null)}>취소</button></div>}
+ {access.canManage&&<><div className="flex gap-3 items-center flex-wrap"><button disabled={busy} className="text-blue-700 underline" onClick={async()=>{const id=identity.current;try{setError('');const d=await companyRpc('company_join_code',{c_id:target.id});if(id===identity.current)setCode(d);}catch(e){if(id===identity.current)setError(e.message);}}}>직원 소속 신청 코드 확인</button>{code&&<code className="text-xs select-all break-all">{code}</code>}</div><p className="text-xs text-slate-500">직원에게 코드를 전달하세요. 코드를 입력해도 승인 전에는 회사 자료에 접근할 수 없습니다.</p>
+ <h3 className="font-semibold text-sm">승인 대기 · {access.requests.length}명</h3><label className="text-sm">승인 시 회사 역할 <select value={role} onChange={e=>setRole(e.target.value)} className="border rounded p-1"><option value="VIEWER">열람</option><option value="EDITOR">편집</option></select></label>
+ {access.requests.map(r=><div className="flex gap-3 items-center flex-wrap text-sm border-b py-3" key={r.id}><span>{r.name} · {r.email}</span><button disabled={busy} className="text-blue-700" onClick={()=>action(()=>companyRpc('decide_company_join',{request_id:r.id,approve:true,member_role:role}),'회사 소속을 승인했습니다.')}>승인</button><button disabled={busy} onClick={()=>action(()=>companyRpc('decide_company_join',{request_id:r.id,approve:false,member_role:role}),'요청을 반려했습니다.')}>반려</button></div>)}</>}
+ {!access.canManage&&<p className="text-xs text-slate-500">다른 직원의 승인·소속 해제는 회사 관리자만 할 수 있습니다.</p>}</>}
+ <form className="border-t pt-4 space-y-2" onSubmit={e=>{e.preventDefault();if(!/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(join.trim())){setError('회사 관리자가 전달한 신청 코드를 확인해 주세요.');return;}action(()=>companyRpc('request_company_join',{join_code:join.trim()}),'소속 요청을 제출했습니다. 회사 관리자의 승인을 기다려 주세요.');}}><label className="block text-sm">다른 회사 소속 신청<input aria-label="회사 소속 신청 코드" required className="border rounded p-2 w-full mt-2" value={join} onChange={e=>setJoin(e.target.value)} placeholder="회사 관리자가 전달한 신청 코드"/></label><button className="text-blue-700 underline text-sm" disabled={busy}>소속 승인 요청</button></form>
+ </section>;
+}

@@ -1,0 +1,171 @@
+{
+  "programId": "kstartup-179504",
+  "title": "제3회 판다밋업 : Inside Japan 제약·바이오·의료기기 가치사슬 기반 일본 진출 전략",
+  "status": "첨부 분석·일부 미확인",
+  "reviewStatus": "partial",
+  "analyzedAt": "2026-10-18T00:07:41.156232Z",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179504",
+  "sourceFingerprint": "336d286e0efcc8681eabfcd8c13811661980eebb0fca496f6ee6f98f043f3ff5",
+  "pdfUrl": null,
+  "evidenceDirectory": "evidence/kstartup-179504",
+  "reviewScope": "공식 상세 전체·JPG 포스터 시각·TXT 대체본문 대조·공개 신청폼 읽기(제출 안 함)",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/hx1Ln",
+      "file": "attachment-01.bin",
+      "name": "[Æ÷½ºÅÍ]ÆÇ´Ù¹Ô¾÷ 3È¸.jpg",
+      "bytes": 1522007,
+      "sha256": "124326ffe15ce4aba2f73f228c4b8d02f6a35c82bbe79ae5cf46f0ca9b4cc058",
+      "contentType": "image/jpeg;charset=UTF-8",
+      "verifiedAt": "2026-10-18T00:02:30.467Z",
+      "status": "downloaded",
+      "localPath": "attachment-01.jpg",
+      "format": "JPG",
+      "extractionStatus": "visual-review-needed",
+      "characters": 0,
+      "displayName": "[포스터]판다밋업 3회.jpg"
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/3x1Ln",
+      "file": "attachment-02.bin",
+      "name": "[Æ÷½ºÅÍ] ÆÇ´Ù¹Ô¾÷ 3È¸.txt",
+      "bytes": 1161,
+      "sha256": "9490d90d713e22bddcad966c6ba33a5cd7808eee85dbd945a8266a84bf43ee3d",
+      "contentType": "application/octet-stream",
+      "verifiedAt": "2026-10-18T00:02:30.533Z",
+      "status": "downloaded",
+      "localPath": "attachment-02.txt",
+      "format": "TXT",
+      "extractionStatus": "text-extracted",
+      "characters": 646,
+      "displayName": "[포스터] 판다밋업 3회.txt"
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/hx1Ln": "124326ffe15ce4aba2f73f228c4b8d02f6a35c82bbe79ae5cf46f0ca9b4cc058",
+    "https://www.k-startup.go.kr/afile/fileDownload/3x1Ln": "9490d90d713e22bddcad966c6ba33a5cd7808eee85dbd945a8266a84bf43ee3d"
+  },
+  "unresolved": [
+    "K-Startup 상세 마감10/22 14시와 첨부 포스터·TXT 마감10/21 충돌. 신청폼에도 마감 미표시여서 최신 정정 또는 주관기관 확인 필요"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179504",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확보 후에만 회사별 적합성 비교 및 문서 작성",
+    "steps": [
+      "회사 프로필 필드 확인",
+      "조건별 적합성 근거 비교",
+      "공고 지정 양식 선택",
+      "회사 사실정보로 작성 및 검토"
+    ]
+  },
+  "eligibility": {
+    "reference": "상세 신청대상·포스터 모집대상·신청폼 소개",
+    "summary": "글로벌 제약·바이오 시장 진출을 앞둔 스타트업 및 관련 기업·연구원·유관기관 실무자. 전국, 업력 제한 별도 명시 없음",
+    "companyFields": [
+      "산업·기술 분야",
+      "일본/글로벌 진출계획",
+      "참석자 소속·직무",
+      "소재지",
+      "기업/공공/연구/협회 등 유형"
+    ]
+  },
+  "exclusions": {
+    "reference": "상세 선정절차·포스터",
+    "items": [
+      "선착순40명; 확정자 메일·문자 별도 안내",
+      "제외업종·매출·규모 기준 별도 명시 없음"
+    ]
+  },
+  "support": {
+    "reference": "상세 지원내용·포스터 프로그램",
+    "summary": "일본 시장 진출 전략 강연·질의응답·네트워킹 행사. 현금지원 한도·비율·자부담 명시 없음"
+  },
+  "period": {
+    "start": "2026-10-13",
+    "startTime": "15:00",
+    "end": null,
+    "deadlineTime": null,
+    "timezone": "Asia/Seoul",
+    "reference": "상세 신청기간(10/22 14:00) ↔ JPG/TXT 신청마감(10/21), 미해결 충돌"
+  },
+  "dateConflict": {
+    "listingDeadline": "2026-10-22T14:00:00+09:00",
+    "posterDeadlineDate": "2026-10-21",
+    "posterDeadlineTime": null,
+    "resolution": "미해결; 신청폼에는 별도 마감일 미표시. 기존 달력의 상세 출처 날짜를 확정치로 해석하지 말 것"
+  },
+  "event": {
+    "date": "2026-10-22",
+    "startTime": "14:30",
+    "endTime": "16:00",
+    "registrationStart": "14:00",
+    "venue": "경기창조경제혁신센터 7층 경기콘텐츠코리아랩 별똥별",
+    "reference": "상세 행사안내·포스터·공개 신청폼"
+  },
+  "application": {
+    "url": "https://docs.google.com/forms/d/e/1FAIpQLSfCnU_SQaJiKytbIIfieUihDxs-bdzf5iRNMD3Dg2XMEN7TDw/viewform",
+    "reference": "상세 제출서류·공개 신청폼",
+    "notes": "필수: 성함·연락처·이메일·소속(개인은 개인 표기)·소재지·기업구분. 사전질의는 선택. 읽기만 수행"
+  },
+  "requiredDocuments": [
+    {
+      "name": "온라인 참가신청",
+      "condition": "별도 첨부 사업계획서 요구 없음; 필수 입력은 application.notes 참조",
+      "reference": "상세 제출서류·신청폼"
+    }
+  ],
+  "businessPlan": {
+    "format": "사업계획서 양식·분량 요구 없음",
+    "sections": [],
+    "reference": "첨부 JPG/TXT 및 공개 신청폼"
+  },
+  "evaluation": {
+    "reference": "상세 선정절차·포스터",
+    "summary": "40명 선착순; 확정 인원만 메일·문자 안내. 배점 심사 명시 없음"
+  },
+  "contact": {
+    "reference": "상세 문의처·포스터·신청폼",
+    "phone": "031-776-4511 / 031-776-4512 / 02-6933-4821",
+    "email": "mg.kang@comm-on.co.kr",
+    "name": "GBSA 혁신커뮤니티팀 / 커뮤니케이션즈온"
+  },
+  "lastAttachmentHashCheckedAt": "2026-10-22T00:37:17.828134+00:00",
+  "recheck": {
+    "at": "2026-10-22T00:37:17.828134+00:00",
+    "scope": "상세재수집·기존첨부동일URL바이트대조;기존충돌미해결유지",
+    "checks": [
+      {
+        "url": "https://www.k-startup.go.kr/afile/fileDownload/hx1Ln",
+        "verifiedAt": "2026-10-22",
+        "status": "downloaded",
+        "sha256": "124326ffe15ce4aba2f73f228c4b8d02f6a35c82bbe79ae5cf46f0ca9b4cc058",
+        "previousHash": "124326ffe15ce4aba2f73f228c4b8d02f6a35c82bbe79ae5cf46f0ca9b4cc058",
+        "changed": false,
+        "bytes": 1522007,
+        "format": "IMAGE",
+        "file": "attachment-01.bin",
+        "contentType": "image/jpeg;charset=UTF-8"
+      },
+      {
+        "url": "https://www.k-startup.go.kr/afile/fileDownload/3x1Ln",
+        "verifiedAt": "2026-10-22",
+        "status": "downloaded",
+        "sha256": "9490d90d713e22bddcad966c6ba33a5cd7808eee85dbd945a8266a84bf43ee3d",
+        "previousHash": "9490d90d713e22bddcad966c6ba33a5cd7808eee85dbd945a8266a84bf43ee3d",
+        "changed": false,
+        "bytes": 1161,
+        "format": "OTHER",
+        "file": "attachment-02.bin",
+        "contentType": "application/octet-stream;charset=ISO-8859-1"
+      }
+    ]
+  },
+  "updatedAt": "2026-10-22T00:37:17.828134+00:00"
+}

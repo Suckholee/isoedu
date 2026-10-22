@@ -46,17 +46,28 @@ import {
 import { uploadDocumentFile, listDocumentFiles, getSecureDownloadUrl } from '../lib/storageVault';
 import { isCloudMode } from '../lib/dataConfig';
 import { useAuth } from '../context/AuthContext';
+import {
+  DOCUMENT_REVIEW_STATUSES,
+  applyDocumentReviewStatus,
+  extractTemplatePlaceholders,
+  replaceTemplatePlaceholders,
+} from '../lib/projectWorkflow.mjs';
+import { safeDownloadFileName, buildWordDocumentHtml, triggerBrowserDownload } from '../lib/documentExport.mjs';
 
 export default function RealtimeEditorModal({
   doc,
+  currentCompany = null,
   isOpen,
   onClose,
   onSave,
+  onUpdateDocument,
   onToggleChecklist,
   onDeleteDocument
 }) {
-  const [activeTab, setActiveTab] = useState('preview'); // 'preview' | 'edit' | 'audit' | 'vault'
+  const isDraftDoc = doc?.status === 'DRAFT' || doc?.reviewStatus === 'DRAFT';
+  const [activeTab, setActiveTab] = useState(() => (isDraftDoc ? 'edit' : 'preview')); // 'preview' | 'edit' | 'split' | 'audit' | 'vault'
   const [content, setContent] = useState('');
+  const [placeholderValues, setPlaceholderValues] = useState({});
   const [isRealtimePopupOpen, setIsRealtimePopupOpen] = useState(false);
   const [isCopied, setIsCopied] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
@@ -121,21 +132,81 @@ export default function RealtimeEditorModal({
   useEffect(() => {
     if (doc) {
       setContent(doc.contentDraft || doc.content || '');
+      setPlaceholderValues({});
     }
   }, [doc]);
 
+  const savedContent = doc ? (doc.contentDraft || doc.content || '') : '';
+  const hasUnsavedChanges = Boolean(doc && content !== savedContent);
+  const detectedPlaceholders = extractTemplatePlaceholders(content);
+
+  const handleApplyPlaceholders = () => {
+    const next = replaceTemplatePlaceholders(content, placeholderValues);
+    if (next !== content) {
+      setContent(next);
+    }
+  };
+
+  const handleSave = async () => {
+    if (!doc || isSaving) return;
+    setIsSaving(true);
+    try { await onSave?.(doc.id, content); }
+    finally { setIsSaving(false); }
+  };
+
+  useEffect(() => {
+    if (!isOpen || !doc) return;
+    const onKeyDown = (e) => {
+      if ((e.metaKey || e.ctrlKey) && e.key?.toLowerCase() === 's') {
+        e.preventDefault();
+        handleSave();
+      }
+    };
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, [isOpen, doc?.id, content, isSaving]);
+
   if (!isOpen || !doc) return null;
+
+  const companyDisplayName = currentCompany?.name || doc.projectOrigin?.clientName || '대상 거래처';
+  const currentReviewStatus = doc.reviewStatus && Object.hasOwn(DOCUMENT_REVIEW_STATUSES, doc.reviewStatus)
+    ? doc.reviewStatus
+    : (doc.docStatus === '내부 확인 완료' || doc.status === 'READY' || doc.status === 'APPROVED' ? 'VERIFIED' : (['내부 검토 중', '검토 중'].includes(doc.docStatus) ? 'REVIEW' : 'DRAFT'));
+
+  const requestClose = () => {
+    if (isSaving) return;
+    if (hasUnsavedChanges && typeof window !== 'undefined' && !window.confirm('저장하지 않은 변경사항이 있습니다. 저장하지 않고 닫으시겠습니까?')) {
+      return;
+    }
+    onClose?.();
+  };
+
+  const handleReviewStatusChange = async (nextStatus) => {
+    if (!onUpdateDocument || isSaving) return;
+    setIsSaving(true);
+    try {
+      const updated = applyDocumentReviewStatus({ ...doc, contentDraft: content }, nextStatus);
+      await onUpdateDocument(updated);
+    } finally {
+      setIsSaving(false);
+    }
+  };
+
+  const handleExportWord = () => {
+    const html = buildWordDocumentHtml({ ...doc, contentDraft: content }, { companyName: companyDisplayName });
+    const fileName = safeDownloadFileName(`${doc.code ? `${doc.code}_` : ''}${doc.title || doc.name}`, 'doc');
+    triggerBrowserDownload(html, fileName, 'application/msword;charset=utf-8');
+  };
+
+  const handleExportText = () => {
+    const fileName = safeDownloadFileName(`${doc.code ? `${doc.code}_` : ''}${doc.title || doc.name}`, 'md');
+    triggerBrowserDownload(content || '', fileName, 'text/markdown;charset=utf-8');
+  };
 
   const handleCopy = () => {
     navigator.clipboard.writeText(content);
     setIsCopied(true);
     setTimeout(() => setIsCopied(false), 2000);
-  };
-
-  const handleSave = async () => {
-    setIsSaving(true);
-    try { await onSave?.(doc.id, content); }
-    finally { setIsSaving(false); }
   };
 
   const handlePrint = () => {
@@ -168,7 +239,7 @@ export default function RealtimeEditorModal({
   };
 
   return (
-    <ModalLayer onClose={onClose} className="fixed inset-0 z-50 bg-slate-900/70 backdrop-blur-xs flex items-center justify-center p-2 sm:p-4 animate-fade-in print:p-0 print:bg-white">
+    <ModalLayer onClose={requestClose} className="fixed inset-0 z-50 bg-slate-900/70 backdrop-blur-xs flex items-center justify-center p-2 sm:p-4 animate-fade-in print:p-0 print:bg-white">
       <div className="bg-[#f8fafd] w-full max-w-6xl h-[94vh] rounded-2xl shadow-2xl border border-slate-200 flex flex-col overflow-hidden animate-scale-up print:h-auto print:border-none print:shadow-none">
 
         {/* 1. Google Docs Master Header */}
@@ -243,6 +314,24 @@ export default function RealtimeEditorModal({
               )}
             </div>
 
+            {/* Review Status Selector */}
+            {onUpdateDocument && (
+              <label className="flex items-center gap-1.5 text-xs text-slate-600">
+                <span className="sr-only">문서 내부 확인 상태</span>
+                <select
+                  aria-label="문서 내부 확인 상태"
+                  disabled={isSaving}
+                  value={currentReviewStatus}
+                  onChange={(e) => handleReviewStatusChange(e.target.value)}
+                  className="px-2.5 py-1.5 rounded-lg border border-slate-200 bg-slate-50 text-slate-800 text-xs font-semibold"
+                >
+                  {Object.entries(DOCUMENT_REVIEW_STATUSES).map(([k, label]) => (
+                    <option key={k} value={k}>{label}</option>
+                  ))}
+                </select>
+              </label>
+            )}
+
             {/* Print / Export */}
             <button
               onClick={handlePrint}
@@ -250,6 +339,26 @@ export default function RealtimeEditorModal({
               className="p-2 rounded-lg border border-slate-200 hover:bg-slate-100 text-slate-600 transition-colors"
             >
               <Printer className="w-4 h-4" />
+            </button>
+
+            {/* Download Word (.doc) */}
+            <button
+              onClick={handleExportWord}
+              title="한글·Word 호환 공문서 서식(.doc) 다운로드"
+              className="px-2.5 py-1.5 rounded-lg border border-blue-200 bg-blue-50 hover:bg-blue-100 text-blue-700 text-xs font-semibold flex items-center gap-1.5 transition-colors"
+            >
+              <Download className="w-3.5 h-3.5" />
+              <span className="hidden sm:inline">Word(.doc) 다운로드</span>
+            </button>
+
+            {/* Download Markdown (.md) */}
+            <button
+              onClick={handleExportText}
+              title="작성 본문 텍스트(.md) 다운로드"
+              className="px-2.5 py-1.5 rounded-lg border border-slate-200 hover:bg-slate-100 text-slate-700 text-xs font-semibold flex items-center gap-1.5 transition-colors"
+            >
+              <Download className="w-3.5 h-3.5" />
+              <span className="hidden sm:inline">.md</span>
             </button>
 
             {/* Copy Button */}
@@ -273,8 +382,8 @@ export default function RealtimeEditorModal({
 
             {/* Close Button */}
             <button
-              onClick={onClose}
-            aria-label="닫기"
+              onClick={requestClose}
+              aria-label="닫기"
               className="p-2 rounded-lg text-slate-400 hover:text-slate-700 hover:bg-slate-100 transition-colors"
             >
               <X className="w-5 h-5" />
@@ -311,6 +420,18 @@ export default function RealtimeEditorModal({
             >
               <BookOpen className="w-3.5 h-3.5" />
               <span>✏️ 실시간 편집기 (Docs)</span>
+            </button>
+
+            <button
+              onClick={() => setActiveTab('split')}
+              className={`px-3 py-1 rounded-md font-bold transition-all flex items-center gap-1.5 ${
+                activeTab === 'split'
+                  ? 'bg-white text-indigo-700 shadow-2xs'
+                  : 'text-slate-600 hover:text-slate-900'
+              }`}
+            >
+              <FileText className="w-3.5 h-3.5" />
+              <span>📐 좌우 분할 비교 (편집+A4)</span>
             </button>
 
             <button
@@ -360,7 +481,7 @@ export default function RealtimeEditorModal({
               {/* Header: Company Name & Document Title */}
               <div className="border-b-2 border-slate-900 pb-5">
                 <div className="flex items-center justify-between text-xs text-slate-400 font-semibold mb-1">
-                  <span>(주)아이소에듀 사내 표준 규격서</span>
+                  <span>{companyDisplayName} 사내 표준 규격서</span>
                   <span>CONFIDENTIAL • 사내 대외비</span>
                 </div>
                 <div className="flex items-center justify-between">
@@ -389,11 +510,11 @@ export default function RealtimeEditorModal({
                     </tr>
                     <tr className="border-b border-slate-200">
                       <td className="bg-slate-50 font-bold p-2 border-r border-slate-200">제·개정일자</td>
-                      <td className="p-2">{doc.approvalDate || '2024-05-20'}</td>
+                      <td className="p-2">{doc.approvalDate || '미정 (내부 확인 후 기재)'}</td>
                     </tr>
                     <tr className="border-b border-slate-200">
                       <td className="bg-slate-50 font-bold p-2 border-r border-slate-200">유효 만기일</td>
-                      <td className="p-2 font-bold text-rose-600">{doc.expiryDate || '2027-05-19'} ({doc.dDay ? `D-${doc.dDay}` : '상시'})</td>
+                      <td className="p-2 font-bold text-rose-600">{doc.expiryDate ? `${doc.expiryDate} (${doc.dDay ? `D-${doc.dDay}` : '상시'})` : '해당 없음 / 미정'}</td>
                     </tr>
                     <tr>
                       <td className="bg-slate-50 font-bold p-2 border-r border-slate-200">보존 연한</td>
@@ -409,34 +530,33 @@ export default function RealtimeEditorModal({
                       <th className="p-1.5 border-r border-slate-200 font-bold w-12">구분</th>
                       <th className="p-1.5 border-r border-slate-200 font-bold">작성 (Drafter)</th>
                       <th className="p-1.5 border-r border-slate-200 font-bold">검토 (Reviewer)</th>
-                      <th className="p-1.5 font-bold">승인 (Approver)</th>
+                      <th className="p-1.5 font-bold">확인 상태</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr className="h-16 border-b border-slate-200">
-                      <td className="bg-slate-50 font-bold border-r border-slate-200">서명</td>
+                      <td className="bg-slate-50 font-bold border-r border-slate-200">상태</td>
                       <td className="border-r border-slate-200 p-2">
                         <div className="w-10 h-10 mx-auto rounded-full border border-blue-300 bg-blue-50 text-blue-700 flex items-center justify-center font-bold text-[10px]">
-                          기안필
+                          {currentReviewStatus === 'DRAFT' ? '작성중' : '작성필'}
                         </div>
                       </td>
                       <td className="border-r border-slate-200 p-2">
                         <div className="w-10 h-10 mx-auto rounded-full border border-emerald-300 bg-emerald-50 text-emerald-700 flex items-center justify-center font-bold text-[10px]">
-                          검토필
+                          {currentReviewStatus === 'VERIFIED' ? '검토필' : currentReviewStatus === 'REVIEW' ? '검토중' : '대기'}
                         </div>
                       </td>
                       <td className="p-2">
-                        <div className="w-12 h-12 mx-auto rounded-full border-2 border-red-600 text-red-600 flex flex-col items-center justify-center font-black text-[9px] rotate-[-8deg] shadow-2xs">
-                          <span>대표이사</span>
-                          <span>[직인]</span>
+                        <div className="px-2 py-1 mx-auto rounded border border-slate-300 text-slate-700 font-bold text-[10px]">
+                          {DOCUMENT_REVIEW_STATUSES[currentReviewStatus]}
                         </div>
                       </td>
                     </tr>
                     <tr>
-                      <td className="bg-slate-50 font-bold border-r border-slate-200 p-1">성명</td>
-                      <td className="border-r border-slate-200 p-1 font-semibold">{doc.author || '김철수'}</td>
-                      <td className="border-r border-slate-200 p-1 font-semibold">{doc.reviewerRole || '이민정 팀장'}</td>
-                      <td className="p-1 font-bold text-slate-900">{doc.approver || '홍길동 대표'}</td>
+                      <td className="bg-slate-50 font-bold border-r border-slate-200 p-1">담당</td>
+                      <td className="border-r border-slate-200 p-1 font-semibold">{doc.author || '담당자 미지정'}</td>
+                      <td className="border-r border-slate-200 p-1 font-semibold">{doc.reviewerRole || '내부 검토자'}</td>
+                      <td className="p-1 font-bold text-slate-900">{doc.approver || '공식 심사 별도'}</td>
                     </tr>
                   </tbody>
                 </table>
@@ -507,92 +627,158 @@ export default function RealtimeEditorModal({
               {/* Bottom Stamp & Signature Line */}
               <div className="pt-8 border-t border-slate-200 flex items-center justify-between text-xs text-slate-500">
                 <div>
-                  <p className="font-bold text-slate-800">주식회사 아이소에듀 대표이사 홍길동</p>
-                  <p className="text-[11px]">서울특별시 강남구 테헤란로 427, 14층 (아이소타워)</p>
+                  <p className="font-bold text-slate-800">{companyDisplayName} 사내 표준 문서</p>
+                  <p className="text-[11px]">내부 검토 상태: {DOCUMENT_REVIEW_STATUSES[currentReviewStatus]} · 공식 인증기관 심사·승인과 별도</p>
                 </div>
-                <div className="w-16 h-16 rounded-full border-2 border-red-600 text-red-600 flex flex-col items-center justify-center font-black text-[10px] rotate-[-5deg]">
-                  <span>아이소에듀</span>
-                  <span>대표이사</span>
+                <div className="px-3 py-2 rounded-lg border border-slate-300 text-slate-700 font-bold text-[11px]">
+                  {DOCUMENT_REVIEW_STATUSES[currentReviewStatus]}
                 </div>
               </div>
 
             </div>
           )}
 
-          {/* TAB 2: Full Editable Docs Editor Mode */}
-          {activeTab === 'edit' && (
-            <div className="bg-white w-full max-w-4xl min-h-full rounded-2xl shadow-lg border border-slate-200 p-8 flex flex-col">
+          {/* TAB 2 & SPLIT: Editable Docs Mode + Optional Live A4 Split Preview */}
+          {(activeTab === 'edit' || activeTab === 'split') && (
+            <div className={`w-full min-h-full ${activeTab === 'split' ? 'max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-4 items-start' : 'max-w-4xl flex flex-col'}`}>
+              <div className="bg-white w-full min-h-full rounded-2xl shadow-lg border border-slate-200 p-6 sm:p-8 flex flex-col">
 
-              {/* Docs Editing Toolbar */}
-              <div className="flex items-center gap-1 border-b border-slate-200 pb-3 mb-4 text-slate-600 text-xs overflow-x-auto">
-                <span className="font-bold text-slate-900 mr-2">편집 도구</span>
-                <button
-                  onClick={() => setContent(prev => prev + '\n**[강조 조항]** ')}
-                  title="굵게 (Bold)"
-                  className="p-1.5 rounded hover:bg-slate-100 cursor-pointer"
-                >
-                  <Bold className="w-3.5 h-3.5" />
-                </button>
-                <button
-                  onClick={() => setContent(prev => prev + '\n*[참고 사항]* ')}
-                  title="기울임 (Italic)"
-                  className="p-1.5 rounded hover:bg-slate-100 cursor-pointer"
-                >
-                  <Italic className="w-3.5 h-3.5" />
-                </button>
-                <button
-                  onClick={() => setContent(prev => prev + '\n<u>[필수 이행 사항]</u> ')}
-                  title="밑줄 (Underline)"
-                  className="p-1.5 rounded hover:bg-slate-100 cursor-pointer"
-                >
-                  <Underline className="w-3.5 h-3.5" />
-                </button>
-                <div className="h-4 w-px bg-slate-200 mx-1"></div>
-                <button
-                  onClick={() => setContent(prev => prev + '\n- 필수 점검 항목: ')}
-                  title="글머리 기호 목록"
-                  className="p-1.5 rounded hover:bg-slate-100 cursor-pointer"
-                >
-                  <List className="w-3.5 h-3.5" />
-                </button>
-                <button
-                  onClick={() => setContent(prev => prev + '\n1. 제1항: \n2. 제2항: ')}
-                  title="번호 매기기 목록"
-                  className="p-1.5 rounded hover:bg-slate-100 cursor-pointer"
-                >
-                  <ListOrdered className="w-3.5 h-3.5" />
-                </button>
-                <button
-                  onClick={() => setContent(prev => prev + '\n### 제 조 (신설 조항)\n')}
-                  title="조항 헤딩 추가"
-                  className="px-2 py-1 rounded hover:bg-slate-100 cursor-pointer font-bold text-[11px]"
-                >
-                  + 조항 추가
-                </button>
-                <span className="ml-auto text-slate-400 font-mono text-[11px]">
-                  단어수: {content.length} 자
-                </span>
+                {/* Smart Placeholder Replacement Bar */}
+                {detectedPlaceholders.length > 0 && (
+                  <div role="region" aria-label="미입력 항목 일괄 치환" className="mb-4 p-3.5 rounded-xl bg-amber-50/90 border border-amber-200 space-y-2.5">
+                    <div className="flex items-center justify-between gap-2 flex-wrap">
+                      <span className="text-xs font-bold text-amber-900">
+                        📌 본문 내 맞춤 기입 항목 {detectedPlaceholders.length}곳 감지 — 값을 입력해 한 번에 반영하세요
+                      </span>
+                      <button
+                        type="button"
+                        onClick={handleApplyPlaceholders}
+                        className="px-3 py-1 rounded-lg bg-amber-600 hover:bg-amber-700 text-white text-xs font-bold transition-colors"
+                      >
+                        기입값 일괄 치환
+                      </button>
+                    </div>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                      {detectedPlaceholders.slice(0, 6).map((token, idx) => {
+                        const cleanLabel = token.replace(/^\[|\]$/g, '');
+                        const inputId = `placeholder-input-${idx}`;
+                        return (
+                          <div key={token} className="flex flex-col gap-1">
+                            <label htmlFor={inputId} className="text-[11px] font-semibold text-amber-900 truncate" title={cleanLabel}>
+                              {cleanLabel}
+                            </label>
+                            <input
+                              id={inputId}
+                              type="text"
+                              value={placeholderValues[token] || ''}
+                              onChange={(e) => setPlaceholderValues(prev => ({ ...prev, [token]: e.target.value }))}
+                              placeholder={`${cleanLabel} 입력`}
+                              className="px-2.5 py-1.5 rounded-lg border border-amber-300 bg-white text-xs text-slate-800"
+                            />
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                )}
+
+                {/* Docs Editing Toolbar */}
+                <div className="flex items-center gap-1 border-b border-slate-200 pb-3 mb-4 text-slate-600 text-xs overflow-x-auto">
+                  <span className="font-bold text-slate-900 mr-2">편집 도구</span>
+                  <button
+                    onClick={() => setContent(prev => prev + '\n**[강조 조항]** ')}
+                    title="굵게 (Bold)"
+                    className="p-1.5 rounded hover:bg-slate-100 cursor-pointer"
+                  >
+                    <Bold className="w-3.5 h-3.5" />
+                  </button>
+                  <button
+                    onClick={() => setContent(prev => prev + '\n*[참고 사항]* ')}
+                    title="기울임 (Italic)"
+                    className="p-1.5 rounded hover:bg-slate-100 cursor-pointer"
+                  >
+                    <Italic className="w-3.5 h-3.5" />
+                  </button>
+                  <button
+                    onClick={() => setContent(prev => prev + '\n<u>[필수 이행 사항]</u> ')}
+                    title="밑줄 (Underline)"
+                    className="p-1.5 rounded hover:bg-slate-100 cursor-pointer"
+                  >
+                    <Underline className="w-3.5 h-3.5" />
+                  </button>
+                  <div className="h-4 w-px bg-slate-200 mx-1"></div>
+                  <button
+                    onClick={() => setContent(prev => prev + '\n- 필수 점검 항목: ')}
+                    title="글머리 기호 목록"
+                    className="p-1.5 rounded hover:bg-slate-100 cursor-pointer"
+                  >
+                    <List className="w-3.5 h-3.5" />
+                  </button>
+                  <button
+                    onClick={() => setContent(prev => prev + '\n1. 제1항: \n2. 제2항: ')}
+                    title="번호 매기기 목록"
+                    className="p-1.5 rounded hover:bg-slate-100 cursor-pointer"
+                  >
+                    <ListOrdered className="w-3.5 h-3.5" />
+                  </button>
+                  <button
+                    onClick={() => setContent(prev => prev + '\n### 제 조 (신설 조항)\n')}
+                    title="조항 헤딩 추가"
+                    className="px-2 py-1 rounded hover:bg-slate-100 cursor-pointer font-bold text-[11px]"
+                  >
+                    + 조항 추가
+                  </button>
+                  <span className="ml-auto text-slate-400 font-mono text-[11px]">
+                    단어수: {content.length} 자
+                  </span>
+                </div>
+
+                {/* Textarea Canvas */}
+                <textarea
+                  value={content}
+                  onChange={(e) => setContent(e.target.value)}
+                  rows={activeTab === 'split' ? 24 : 28}
+                  className="w-full flex-1 text-sm text-slate-800 leading-relaxed font-sans focus:outline-hidden resize-none border border-slate-200 rounded-xl p-6"
+                  placeholder="문서 조항 및 세부 내용을 입력하세요..."
+                />
+
+                <div className="mt-4 flex items-center justify-between text-xs text-slate-400">
+                  <span>단축키: Cmd+S / Ctrl+S 로 언제든 즉시 저장 가능</span>
+                  <button
+                    onClick={handleSave}
+                    className="px-4 py-2 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition-colors"
+                  >
+                    변경사항 드라이브에 저장
+                  </button>
+                </div>
+
               </div>
 
-              {/* Textarea Canvas */}
-              <textarea
-                value={content}
-                onChange={(e) => setContent(e.target.value)}
-                rows={28}
-                className="w-full flex-1 text-sm text-slate-800 leading-relaxed font-sans focus:outline-hidden resize-none border border-slate-200 rounded-xl p-6"
-                placeholder="문서 조항 및 세부 내용을 입력하세요..."
-              />
-
-              <div className="mt-4 flex items-center justify-between text-xs text-slate-400">
-                <span>단축키: Cmd+S / Ctrl+S 로 언제든 즉시 저장 가능</span>
-                <button
-                  onClick={handleSave}
-                  className="px-4 py-2 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition-colors"
-                >
-                  변경사항 드라이브에 저장
-                </button>
-              </div>
-
+              {activeTab === 'split' && (
+                <div aria-label="실시간 A4 공문서 미리보기" className="bg-white w-full min-h-full rounded-2xl shadow-lg border border-slate-200/80 p-6 sm:p-8 space-y-5">
+                  <div className="border-b-2 border-slate-900 pb-4">
+                    <div className="flex items-center justify-between text-xs text-slate-400 font-semibold mb-1">
+                      <span>{companyDisplayName} 사내 표준 규격서 (실시간 미리보기)</span>
+                      <span>{DOCUMENT_REVIEW_STATUSES[currentReviewStatus]}</span>
+                    </div>
+                    <div className="flex items-center justify-between gap-2">
+                      <h2 className="text-xl font-black text-slate-900 tracking-tight">
+                        {doc.title || doc.name || '사내 표준 규격서'}
+                      </h2>
+                      <span className="px-2.5 py-0.5 rounded text-xs font-mono font-bold bg-blue-50 text-blue-700 border border-blue-200">
+                        {doc.code}
+                      </span>
+                    </div>
+                  </div>
+                  <div className="prose max-w-none text-slate-800 font-sans text-xs sm:text-sm leading-relaxed whitespace-pre-wrap bg-slate-50/60 border border-slate-200/90 rounded-xl p-5">
+                    {content || '등록된 전문 텍스트가 없습니다.'}
+                  </div>
+                  <div className="pt-3 border-t border-slate-200 flex items-center justify-between text-[11px] text-slate-500">
+                    <span>{companyDisplayName} 사내 표준 문서 · 공식 인증기관 심사·승인 별도</span>
+                    <span className="font-bold text-slate-700">{DOCUMENT_REVIEW_STATUSES[currentReviewStatus]}</span>
+                  </div>
+                </div>
+              )}
             </div>
           )}
 

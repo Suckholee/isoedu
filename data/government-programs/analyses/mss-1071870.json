@@ -1,0 +1,172 @@
+{
+  "programId": "mss-1071870",
+  "title": "2026년 소공인 클린제조환경조성사업 3차 모집 공고(연장)",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-10-21T00:14:55.007406+00:00",
+  "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071870&parentSeq=1071870",
+  "sourceFingerprint": "94a4d56ff661b9857fa228a4d3af6f2645ad786f8ecd2352e825d27b8be075d9",
+  "evidenceDirectory": "evidence/mss-1071870",
+  "reviewScope": "연장HWPX변경사항·사업개요·신청/제출서류·평가·붙임1~6·참고표텍스트확인;PDF/원본표검토미완료;PDF28쪽텍스트확보,1·3쪽시각확인(변경기간·자격조건·마감18시).HWPX/PDF핵심조건대조",
+  "attachments": [
+    {
+      "url": "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071870&cbIdx=310&streFileNm=434fd5d6-6682-4aa2-9011-80a58b06e9d9.hwpx",
+      "verifiedAt": "2026-10-21",
+      "status": "downloaded",
+      "sha256": "61d3b3abdaa739a154d47c9ebf53957dfcb3dda1d560c406a3f8e2921227c921",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 482927,
+      "format": "HWPX",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=UTF-8",
+      "extraction": "text",
+      "characters": 37501
+    },
+    {
+      "url": "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071870&cbIdx=310&streFileNm=9985f758-b743-4ec0-938c-1e476614eb8d.pdf",
+      "verifiedAt": "2026-10-21",
+      "status": "downloaded",
+      "sha256": "437980a19112f611e9784087f2904120bc111f02250a9f28de6bf101db8a5d1b",
+      "file": "attachment-02.bin",
+      "bytes": 781948,
+      "format": "PDF",
+      "retrySucceeded": true
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071870&cbIdx=310&streFileNm=434fd5d6-6682-4aa2-9011-80a58b06e9d9.hwpx": "61d3b3abdaa739a154d47c9ebf53957dfcb3dda1d560c406a3f8e2921227c921",
+    "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071870&cbIdx=310&streFileNm=9985f758-b743-4ec0-938c-1e476614eb8d.pdf": "437980a19112f611e9784087f2904120bc111f02250a9f28de6bf101db8a5d1b"
+  },
+  "lastAttachmentHashCheckedAt": "2026-10-21T00:14:55.007406+00:00",
+  "unresolved": [
+    "PDF28쪽중1·3쪽만시각검토:나머지표·붙임/참고전문대조미완료",
+    "기존3차공고와마감외조건전체동일여부문단대조미완료",
+    "주업종확인서본문붙임2 vs참고2붙임3번호오류로보임:제출양식최종확인필요"
+  ],
+  "eligibility": {
+    "summary": "주업종제조업C10~C34·상시근로자10인미만 소상공인;고위험유형은산재보험6개코드일치필수",
+    "companyFields": [
+      "주업종·매출비중",
+      "상시근로자",
+      "산재보험코드",
+      "소상공인확인",
+      "사업장소유/임차",
+      "체납/휴폐업",
+      "당해연도유사수혜",
+      "법인/개인·대표자",
+      "마이데이터동의"
+    ],
+    "reference": "연장HWPX변경사항·사업개요·신청/제출서류·평가·붙임1~6·참고표텍스트확인;PDF/원본표검토미완료"
+  },
+  "exclusions": {
+    "items": [
+      "휴폐업·부도",
+      "체납",
+      "참여제한",
+      "중복수혜",
+      "불건전업종.2026년314·405호및경북268·319호선정(예정)중복불가.단순장비구매·자산성품목불가"
+    ],
+    "reference": "연장HWPX변경사항·사업개요·신청/제출서류·평가·붙임1~6·참고표텍스트확인;PDF/원본표검토미완료"
+  },
+  "support": {
+    "summary": "700개내외.일반국비630만원이내+자부담270만원이상,고위험1050만원이내+450만원이상.국비70%이내·현금30%이상·VAT별도;협약~정산2개월.금액최종현장/원가계산조정",
+    "reference": "연장HWPX변경사항·사업개요·신청/제출서류·평가·붙임1~6·참고표텍스트확인;PDF/원본표검토미완료"
+  },
+  "period": {
+    "start": "2026-10-06",
+    "end": "2026-10-30",
+    "deadlineTime": "18:00",
+    "timezone": "Asia/Seoul",
+    "reference": "연장HWPX 첫머리변경사항·2다 신청기간"
+  },
+  "application": {
+    "url": "https://www.sbiz24.kr",
+    "notes": "대표자직접회원가입/신청,공동대표주대표.플랫폼준비지원과기업직접제출구별;본실행신청안함",
+    "reference": "연장HWPX2라"
+  },
+  "requiredDocuments": [
+    {
+      "name": "온라인사업신청·자가진단·개인정보동의",
+      "condition": "필수",
+      "reference": "2마"
+    },
+    {
+      "name": "교체전현장사진·중복금지확약",
+      "condition": "필수",
+      "reference": "2마"
+    },
+    {
+      "name": "공사산출1+비교2 또는장비견적1+비교2",
+      "condition": "유형별지정붙임5/6",
+      "reference": "2마"
+    },
+    {
+      "name": "최근1년표준재무/부가세신고",
+      "condition": "택1;1년미만주업종확인서",
+      "reference": "2마"
+    },
+    {
+      "name": "국세지방세납세(법인+대표)·근로자증빙",
+      "condition": "법인필수;발급/유효기간조건",
+      "reference": "2마"
+    },
+    {
+      "name": "사업등록증명·3년매출증명·소상공인확인·개인납세/근로자증빙",
+      "condition": "마이데이터미동의시추가",
+      "reference": "2마"
+    },
+    {
+      "name": "가점증빙",
+      "condition": "해당시최대5점",
+      "reference": "2아"
+    },
+    {
+      "name": "폐기완료확약·정산서류",
+      "condition": "해당/선정후",
+      "reference": "붙임4·참고6"
+    }
+  ],
+  "businessPlan": {
+    "format": "온라인사업신청서붙임1:회사소개1000자이내·사업추진목표/계획/필요성/정량기대효과·현장사진.공사/장비산출은VAT제외총공급가액으로지정양식",
+    "sections": [
+      "신청자개요·기업운영현황",
+      "지원신청내용·임대인동의",
+      "회사소개1000자",
+      "사업추진목표·계획·필요성·기대효과",
+      "현장사진",
+      "주업종/중복확약/공사·장비견적"
+    ],
+    "reference": "연장HWPX변경사항·사업개요·신청/제출서류·평가·붙임1~6·참고표텍스트확인;PDF/원본표검토미완료"
+  },
+  "evaluation": {
+    "summary": "기본70(필요20·시급20·재해20·근로자10),42점미만탈락(가점5포함표현).현장30(적정15·효과15)→예비→원가계산/사전진단→최종4자계약.가점집적2·풍수해1·사고2·백년2·재난2최대5",
+    "reference": "연장HWPX변경사항·사업개요·신청/제출서류·평가·붙임1~6·참고표텍스트확인;PDF/원본표검토미완료"
+  },
+  "contact": {
+    "name": "수도권충청1600-1379/영남호남02-741-9809/소진공042-363-7904·7906/시스템1644-5302",
+    "reference": "연장HWPX변경사항·사업개요·신청/제출서류·평가·붙임1~6·참고표텍스트확인;PDF/원본표검토미완료"
+  },
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "mss-1071870",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확인 후 적합성 비교; 이 분석은 신청가능 판정 아님",
+    "steps": [
+      "회사 필드 및 자격 증빙 확인",
+      "미확인·충돌 해결",
+      "공고 양식 선택",
+      "회사 사실정보로 서류·사업계획서 작성 및 검토"
+    ]
+  },
+  "relatedProgramIds": [
+    "mss-1071619"
+  ],
+  "relation": "3차모집기간연장·공고2026-598호",
+  "updatedAt": "2026-10-21T00:16:23.006931+00:00"
+}

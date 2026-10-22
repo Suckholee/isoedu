@@ -1,0 +1,120 @@
+{
+  "programId": "kstartup-179531",
+  "title": "2026년 서울핀테크랩 FIN-오픈이노베이션 Meep-up Day 10회차 - DB손해보험",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-10-21T00:13:24.199142+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179531",
+  "sourceFingerprint": "1e8bd89bfa0358af10306c5209c0ab04f398b38758e9af7cda48f59a51dd8c0d",
+  "evidenceDirectory": "evidence/kstartup-179531",
+  "reviewScope": "상세·첨부TXT전문·PNG전체시각검토",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/kR1Ln",
+      "verifiedAt": "2026-10-21",
+      "status": "downloaded",
+      "sha256": "612be100c1da2d68091d283fe36fce1722874659dab2ef76e1afc79bccdb74ae",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 3551129,
+      "format": "IMAGE",
+      "file": "attachment-01.bin",
+      "contentType": "image/png;charset=UTF-8"
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/lR1Ln",
+      "verifiedAt": "2026-10-21",
+      "status": "downloaded",
+      "sha256": "56c76a3c27d6066c93a713bd99ddd2ee70bd7cb4299fab98077139be8c440c0f",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 654,
+      "format": "OTHER",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1"
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/kR1Ln": "612be100c1da2d68091d283fe36fce1722874659dab2ef76e1afc79bccdb74ae",
+    "https://www.k-startup.go.kr/afile/fileDownload/lR1Ln": "56c76a3c27d6066c93a713bd99ddd2ee70bd7cb4299fab98077139be8c440c0f"
+  },
+  "lastAttachmentHashCheckedAt": "2026-10-21T00:13:24.199142+00:00",
+  "unresolved": [
+    "실제구글폼필수문항·첨부형식/용량미확인",
+    "서울소재본점/사업장기준및세부업력·지원금조건명시없음"
+  ],
+  "eligibility": {
+    "summary": "서울소재핀테크기업,DB손해보험과시너지·공동사업발굴가능 혁신기술/서비스",
+    "companyFields": [
+      "사업장소재지",
+      "핀테크사업개요",
+      "보험협력아이템",
+      "기업소개자료"
+    ],
+    "reference": "상세·첨부TXT전문·PNG전체시각검토"
+  },
+  "exclusions": {
+    "items": [
+      "추가제외조건원문미명시"
+    ],
+    "reference": "상세·첨부TXT전문·PNG전체시각검토"
+  },
+  "support": {
+    "summary": "3~6개사내외,11/18 14~17시서울핀테크랩8층(DB담당자1:1밋업).현금지원한도·비율·자부담미기재",
+    "reference": "상세·첨부TXT전문·PNG전체시각검토"
+  },
+  "period": {
+    "start": "2026-10-15",
+    "end": "2026-11-02",
+    "deadlineTime": "23:59",
+    "timezone": "Asia/Seoul",
+    "reference": "상세·포스터PNG/TXT"
+  },
+  "application": {
+    "url": "https://forms.gle/AtJXW8TGx4LuRToA9",
+    "notes": "구글폼온라인신청",
+    "reference": "첨부TXT"
+  },
+  "requiredDocuments": [
+    {
+      "name": "사업자등록증",
+      "condition": "필수",
+      "reference": "상세제출서류"
+    },
+    {
+      "name": "기업소개서",
+      "condition": "필수",
+      "reference": "상세제출서류"
+    }
+  ],
+  "businessPlan": {
+    "format": "기업소개서요구;사업계획서지정목차/분량미기재",
+    "sections": [],
+    "reference": "상세·첨부TXT전문·PNG전체시각검토"
+  },
+  "evaluation": {
+    "summary": "DB손해보험자체선정;배점·심사항목미공개",
+    "reference": "상세·첨부TXT전문·PNG전체시각검토"
+  },
+  "contact": {
+    "name": "주은희과장02-786-0654,ehju@seoulfintechlab.kr",
+    "reference": "상세·첨부TXT전문·PNG전체시각검토"
+  },
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179531",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확인 후 적합성 비교; 이 분석은 신청가능 판정 아님",
+    "steps": [
+      "회사 필드 및 자격 증빙 확인",
+      "미확인·충돌 해결",
+      "공고 양식 선택",
+      "회사 사실정보로 서류·사업계획서 작성 및 검토"
+    ]
+  }
+}

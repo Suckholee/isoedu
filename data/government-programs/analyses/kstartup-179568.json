@@ -1,0 +1,190 @@
+{
+  "programId": "kstartup-179568",
+  "title": "2026년도 투자기업 발굴 플랫폼 빅웨이브(BiiG WAVE) IR사업 3회차 초격차 분야 IR 참여기업 모집공고",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-10-22T00:35:53.136226+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179568",
+  "sourceFingerprint": "671cda3db7d9aba2a17441bb85b8db310de8b4685870e4ece9d849d4958bf947",
+  "evidenceDirectory": "evidence/kstartup-179568",
+  "reviewScope": "공고PDF6쪽전문·신청PDF1쪽·동의PDF1쪽전문,8쪽렌더축소시각검토(세부표확대대조는미완료)",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/ar2Ln",
+      "verifiedAt": "2026-10-22",
+      "status": "downloaded",
+      "sha256": "ca11801e02b27f936ac4e9f79868f17151a4a1b764d54cf082d5d700354101cd",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 284851,
+      "format": "PDF",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 3913
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/dr2Ln",
+      "verifiedAt": "2026-10-22",
+      "status": "downloaded",
+      "sha256": "a998ee152f22400c514aa65f4dbde033085bc1e051d5a5d08287576f3e6eb6a2",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 93327,
+      "format": "PDF",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 887
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/Yr2Ln",
+      "verifiedAt": "2026-10-22",
+      "status": "downloaded",
+      "sha256": "6fac0a2ab70b2cc09657760963f14f19b9be792318880344dc83f14a7c74f460",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 76205,
+      "format": "PDF",
+      "file": "attachment-03.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 1379
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/ar2Ln": "ca11801e02b27f936ac4e9f79868f17151a4a1b764d54cf082d5d700354101cd",
+    "https://www.k-startup.go.kr/afile/fileDownload/dr2Ln": "a998ee152f22400c514aa65f4dbde033085bc1e051d5a5d08287576f3e6eb6a2",
+    "https://www.k-startup.go.kr/afile/fileDownload/Yr2Ln": "6fac0a2ab70b2cc09657760963f14f19b9be792318880344dc83f14a7c74f460"
+  },
+  "lastAttachmentHashCheckedAt": "2026-10-22T00:35:53.136226+00:00",
+  "unresolved": [
+    "신청서/동의서HWP원본필수이나공개첨부PDF만3개:원본HWP확보필요",
+    "공고10/13과상세상단10/19시작차이·공고번호OOOO미확정표기",
+    "폼의실제업로드규격/추가서류미확인",
+    "신청구글폼401:접근제한우회안함·원본양식후속확인필요"
+  ],
+  "eligibility": {
+    "summary": "공고10/13기준법인설립7년이내(2019.10.13이후)초격차10대분야스타트업,투자단계무관.인천소재/이전예정시기재(인천외자동배제근거없음),공동/각자대표전원충족",
+    "companyFields": [
+      "법인설립일·등록",
+      "초격차분야",
+      "전원대표자자격",
+      "채무/세금/휴업",
+      "소재지/인천지사연구소공장",
+      "매출·고용·지분",
+      "투자라운드·밸류·희망금액"
+    ],
+    "reference": "공고PDF6쪽전문·신청PDF1쪽·동의PDF1쪽전문,8쪽렌더축소시각검토(세부표확대대조는미완료)"
+  },
+  "exclusions": {
+    "items": [
+      "채무불이행규제",
+      "국세지방세체납규제",
+      "마감일휴업",
+      "공고일설립미완료예비창업"
+    ],
+    "reference": "공고PDF6쪽전문·신청PDF1쪽·동의PDF1쪽전문,8쪽렌더축소시각검토(세부표확대대조는미완료)"
+  },
+  "support": {
+    "summary": "5개사이내,IR티저제작·VC1:1밋업·TIPS추천검토·직간접투자검토/연계.11~12월후속;1조모펀드는플랫폼전체규모,개별지원금/투자확정아님.지원비율/자부담미명시",
+    "reference": "공고PDF6쪽전문·신청PDF1쪽·동의PDF1쪽전문,8쪽렌더축소시각검토(세부표확대대조는미완료)"
+  },
+  "period": {
+    "start": "2026-10-13",
+    "end": "2026-10-29",
+    "deadlineTime": "16:00",
+    "timezone": "Asia/Seoul",
+    "reference": "PDF공고2/4쪽모집기간;상세상단시작10/19와차이"
+  },
+  "application": {
+    "url": "https://forms.gle/4A2jzZVS8YFTXq7a7",
+    "notes": "파일업로드,신청서HWP비날인+PDF날인2종필수.본문과상세는다르면공고우선",
+    "reference": "공고PDF4쪽"
+  },
+  "requiredDocuments": [
+    {
+      "name": "참가신청서별첨1",
+      "condition": "필수,HWP원본비날인+PDF날인",
+      "reference": "공고4쪽"
+    },
+    {
+      "name": "개인정보제공이용동의별첨2",
+      "condition": "필수,상세HWP+PDF요구",
+      "reference": "상세제출서류·공고4쪽"
+    },
+    {
+      "name": "기업IR자료",
+      "condition": "필수자유양식",
+      "reference": "공고4쪽"
+    },
+    {
+      "name": "사업자등록증명",
+      "condition": "필수공고최근2개월",
+      "reference": "공고4쪽"
+    },
+    {
+      "name": "주주명부",
+      "condition": "필수최근3개월·법인날인",
+      "reference": "공고4쪽"
+    },
+    {
+      "name": "4대보험가입자명부",
+      "condition": "필수10/13이후발급",
+      "reference": "공고4~5쪽"
+    },
+    {
+      "name": "인천소재증빙",
+      "condition": "인천지사/연구소/공장해당시",
+      "reference": "공고5쪽"
+    },
+    {
+      "name": "표준재무2024/2025",
+      "condition": "최종선정기업추가",
+      "reference": "공고5쪽"
+    }
+  ],
+  "businessPlan": {
+    "format": "공개별첨PDF신청서1쪽:회사/아이템/대표·담당·매출·투자현황,IR자유.신청서날인스캔.본문HWP제출요구대비HWP원본미게시",
+    "sections": [
+      "제품/한줄요약·지원분야",
+      "법인·대표·본점/지사/연구소/공장",
+      "대표자·담당연락처",
+      "2024/25매출내수/수출",
+      "아이템기술력·경쟁력",
+      "기존투자·직전Post밸류·현재라운드·희망Pre밸류·희망/확보투자금"
+    ],
+    "reference": "공고PDF6쪽전문·신청PDF1쪽·동의PDF1쪽전문,8쪽렌더축소시각검토(세부표확대대조는미완료)"
+  },
+  "evaluation": {
+    "summary": "5인내외서면평가:비전사업성20·제품기술30·성장30·투자가능성20.10/30~11/2평가,11/4선정,11/9OT,11/17IR",
+    "reference": "공고PDF6쪽전문·신청PDF1쪽·동의PDF1쪽전문,8쪽렌더축소시각검토(세부표확대대조는미완료)"
+  },
+  "contact": {
+    "name": "인천센터032-458-5066/biigwave@ccei.kr;티비지032-228-1705",
+    "reference": "공고PDF6쪽전문·신청PDF1쪽·동의PDF1쪽전문,8쪽렌더축소시각검토(세부표확대대조는미완료)"
+  },
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179568",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확인 후 적합성 비교; 이 분석은 신청가능 판정 아님",
+    "steps": [
+      "회사 필드 및 자격 증빙 확인",
+      "미확인·충돌 해결",
+      "공고 양식 선택",
+      "회사 사실정보로 서류·사업계획서 작성 및 검토"
+    ]
+  },
+  "dateConflict": {
+    "listingStart": "2026-10-19",
+    "noticeStart": "2026-10-13",
+    "resolution": "마감은동일,시작일근거상이.목록날짜유지하며공고기준분석보존"
+  },
+  "updatedAt": "2026-10-22T00:37:17.828134+00:00"
+}

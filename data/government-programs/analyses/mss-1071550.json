@@ -1,0 +1,285 @@
+{
+  "programId": "mss-1071550",
+  "title": "「민관협력 오픈이노베이션 지원」 2026년 제2차 상호 자율탐색형(바이오 분야) 참여기업 모집공고",
+  "status": "첨부 분석·일부 미확인",
+  "reviewStatus": "partial",
+  "analyzedAt": "2026-10-18T00:08:28.887484Z",
+  "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071550&parentSeq=1071550",
+  "sourceFingerprint": "5dfe9b3d2d3d823677a33eb5dca2ca13488b6c8f6a614a75521a1bc0ff2ddf20",
+  "pdfUrl": "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071550&cbIdx=310&streFileNm=41352459-6243-46d4-8bec-88e3a06290b7.pdf",
+  "evidenceDirectory": "evidence/mss-1071550",
+  "reviewScope": "공식 상세, HWPX 공고 본문·붙임1~5·양식1~4 추출문 전문 검토. 별첨 PDF16쪽은 전체 렌더·축소 시각 확인 및3쪽 확대 확인; 본문 추출44자·Vision OCR 실패로 세부 화면 안내 미완료",
+  "attachments": [
+    {
+      "url": "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071550&cbIdx=310&streFileNm=7f83b904-734c-4862-9dac-94ab24fffef0.hwpx",
+      "file": "attachment-01.bin",
+      "name": "「민관협력_오픈이노베이션_지원」_2026년_제2차_상호_자율탐색형(바이오_분야)_참여기업_모집공고.hwpx",
+      "bytes": 1566726,
+      "sha256": "896bfbcd6f19c7c0b4a3fa85460abfd1c3d5341986418744f7e8cb0990d0761e",
+      "contentType": "application/octet-stream;charset=UTF-8",
+      "verifiedAt": "2026-10-18T00:02:27.694Z",
+      "status": "downloaded",
+      "localPath": "attachment-01.hwpx",
+      "format": "HWPX",
+      "extractionStatus": "text-extracted",
+      "characters": 44932,
+      "displayName": "「민관협력_오픈이노베이션_지원」_2026년_제2차_상호_자율탐색형(바이오_분야)_참여기업_모집공고.hwpx"
+    },
+    {
+      "url": "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071550&cbIdx=310&streFileNm=41352459-6243-46d4-8bec-88e3a06290b7.pdf",
+      "file": "attachment-02.bin",
+      "name": "[별첨]_사업_신청_매뉴얼.pdf",
+      "bytes": 4517938,
+      "sha256": "61479e93e5bcf4eccf658a0a3961488cef7edd8c764aaae62da08323044235e0",
+      "contentType": "application/octet-stream;charset=UTF-8",
+      "verifiedAt": "2026-10-18T00:02:29.992Z",
+      "status": "downloaded",
+      "localPath": "attachment-02.pdf",
+      "format": "PDF",
+      "pages": 16,
+      "extractionStatus": "text-extracted",
+      "characters": 44,
+      "displayName": "[별첨]_사업_신청_매뉴얼.pdf"
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071550&cbIdx=310&streFileNm=7f83b904-734c-4862-9dac-94ab24fffef0.hwpx": "896bfbcd6f19c7c0b4a3fa85460abfd1c3d5341986418744f7e8cb0990d0761e",
+    "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071550&cbIdx=310&streFileNm=41352459-6243-46d4-8bec-88e3a06290b7.pdf": "61479e93e5bcf4eccf658a0a3961488cef7edd8c764aaae62da08323044235e0"
+  },
+  "unresolved": [
+    "별첨 신청매뉴얼PDF16쪽 이미지 기반: pypdf44자, Vision OCR 실패(stderr null). 전체 렌더/축소와3쪽 시각 확인했으나 모든 화면의 세부안내 판독 미완료; 고해상도 시각/OCR 재시도 필요",
+    "HWPX 추출에서 일부 문장·표(업력 기준일 범위·예외조건·사업비/세정지원 등)가 누락됨. 원본 렌더와 문단별 대조 필요",
+    "확약서 제출기산일 안내가 본문 내 혼재(다음영업일 기준 vs 통보다음날): 선정 시 개별통보 확인 필요",
+    "지원비율/자부담은 공고 추출문 명시 미확인, 운영지침·별도 최종안내 확인 필요"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "mss-1071550",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확보 후에만 회사별 적합성 비교 및 문서 작성",
+    "steps": [
+      "회사 프로필 필드 확인",
+      "조건별 적합성 근거 비교",
+      "공고 지정 양식 선택",
+      "회사 사실정보로 작성 및 검토"
+    ]
+  },
+  "eligibility": {
+    "reference": "HWPX Contents/section0.xml §1모집개요·§2신청자격·붙임2",
+    "summary": "바이오 수요기업(국내 제약사·대중견 등)과 창업기업 공동협업. 창업기업은 중소기업 대표자로 공고일 기준 창업7년이내 또는 신산업 창업/중소기업10년이내. 전 공동/각자대표 자격 충족, 사업개시/등록 완료. 바이오5개 협업기술 대상이며 단순 외주과제는 부적합. 지역 제한 명시 없음",
+    "companyFields": [
+      "개인/법인·중소기업 여부",
+      "개업/회사성립일·창업기준 충족일",
+      "이전 사업·폐업·동종전환·상속/양수·지분/과점주주 이력",
+      "공동/각자대표 전원 자격",
+      "바이오 협업기술 및 실제 보유기술",
+      "신산업 해당 여부",
+      "수요기업 파트너·특수관계(MOU/기투자 등)",
+      "세금·채무·환수금·휴폐업·제재·임금체불",
+      "중복사업 선정/확약 이력",
+      "본점 소재지(가점)",
+      "지정은행 계좌 개설 가능 여부"
+    ]
+  },
+  "exclusions": {
+    "reference": "HWPX §2 제외대상①~⑬·붙임2~4",
+    "items": [
+      "채무불이행·국세/지방세 체납·미반환 환수금(예외조건은 해당 절 원문 적용)",
+      "제외업종: 일반유흥56211·무도유흥56212·카지노91242·기타사행91249 등",
+      "2020~22 대스타,2023~26 민관OI,2025~26 딥테크밸류업,2026 글로벌협업/초격차개방형혁신 선정·협약이력 등",
+      "수요기업과 타OI선정·MOU·기투자/확정·대외홍보 등의 특수관계",
+      "참여제재·휴폐업·지정은행 거래불가·주관기관 전담조직 참여자·체불사업주·보조사업 수행배제 등",
+      "붙임4의26개 동시수행 불가사업과 확약 순서 확인 필요",
+      "법인·대표자 모두 제외사유 없어야 함. 창업여부는 단순 업력만으로 판정하지 않고 붙임2 지분·전환·기존사업 기준 대조"
+    ]
+  },
+  "support": {
+    "reference": "HWPX §1지원내용·사업기간·사업비집행 비목",
+    "summary": "창업기업10개사내외, 사업화자금 최대1억원(평가 후 차등확정), 협약시작~7개월이내. 창업성장 디딤돌/구매연계상생협력 후속지원은 별도요건에 따라 달라짐. 지원비율·자부담 금액은 추출 본문에서 명시 확인 못함. 비목별 세부기준은 최종선정 재안내. 붙임5 세정지원은 AI선정기업 중 대상에 한정되며 보장 아님"
+  },
+  "period": {
+    "start": "2026-10-01",
+    "end": "2026-10-21",
+    "deadlineTime": "16:00",
+    "timezone": "Asia/Seoul",
+    "reference": "HWPX §3 ①Pooling신청서 접수기간 (협업제안서 마감과 구별)"
+  },
+  "milestones": [
+    {
+      "name": "Pooling 신청",
+      "start": "2026-10-01",
+      "end": "2026-10-21",
+      "deadlineTime": "16:00",
+      "applicationUrl": "https://oimarket.kr",
+      "reference": "§3 ①"
+    },
+    {
+      "name": "상호 자율탐색",
+      "start": "2026-10-22",
+      "end": "2026-10-30",
+      "reference": "§4 사업운영일정"
+    },
+    {
+      "name": "협업제안서 제출",
+      "start": "2026-10-01",
+      "end": "2026-11-02",
+      "deadlineTime": "16:00",
+      "applicationUrl": "https://www.k-startup.go.kr",
+      "notes": "16시 이전 작성단계 진입·과제번호 부여된 경우에만18시까지 수정/추가업로드 가능.18시를 신규접수 마감으로 표시하지 않음",
+      "reference": "§3 ②"
+    },
+    {
+      "name": "확약서 제출",
+      "date": null,
+      "notes": "요청일 다음 영업일부터3일(마지막날17시,휴일제외) 안내와 통보다음날3일 안내가 혼재, 개별통보 확인",
+      "reference": "§4 최종선정"
+    }
+  ],
+  "application": {
+    "url": "https://oimarket.kr",
+    "reference": "HWPX §3·붙임1·별첨PDF3쪽",
+    "notes": "1)수요·창업기업 각자 OI마켓 Pooling신청(가입·실명인증, 수요기업 기업인증) 2)상호탐색/선택밋업 3)공동협업제안서는 창업기업 대표 본인이 K-Startup 온라인 제출완료. 양 기업 최대1과제. Pooling만으로 자금선정 아님; 로그인·제출 실제 수행 안 함"
+  },
+  "requiredDocuments": [
+    {
+      "name": "Pooling 신청서 양식1/2",
+      "condition": "수요기업1·창업기업2 각필수,2페이지내외",
+      "reference": "HWPX §3제출서류·양식1~4"
+    },
+    {
+      "name": "개인·기업 정보 수집/이용/제공 동의 양식3",
+      "condition": "Pooling필수, 서명/날인; 실제동의 미수행",
+      "reference": "HWPX §3제출서류·양식1~4"
+    },
+    {
+      "name": "사업자등록증",
+      "condition": "Pooling필수",
+      "reference": "HWPX §3제출서류·양식1~4"
+    },
+    {
+      "name": "법인등기사항전부증명서",
+      "condition": "창업기업 법인 해당 시",
+      "reference": "HWPX §3제출서류·양식1~4"
+    },
+    {
+      "name": "창업기업확인서",
+      "condition": "공고시작일 유효기간 내;7년이내창업기업필수 안내. 발급 최대10일(휴일제외) 소요 가능",
+      "reference": "HWPX §3제출서류·양식1~4"
+    },
+    {
+      "name": "기업소개·URL·장점 자료",
+      "condition": "선택",
+      "reference": "HWPX §3제출서류·양식1~4"
+    },
+    {
+      "name": "협업제안서 양식4",
+      "condition": "수요·창업 공동작성,창업대표 제출;지정양식외 평가제외,첨부30MB",
+      "reference": "HWPX §3제출서류·양식1~4"
+    },
+    {
+      "name": "K-Startup 사업신청서",
+      "condition": "온라인입력",
+      "reference": "HWPX §3제출서류·양식1~4"
+    },
+    {
+      "name": "신분확인·사업자등록증명·법인등기 등",
+      "condition": "공공마이데이터 동의 시 연동, 미동의 시 직접첨부. 오류시 추가제출 요청가능",
+      "reference": "HWPX §3제출서류·양식1~4"
+    },
+    {
+      "name": "협약체결확약서",
+      "condition": "선정 통보 후 지정기한",
+      "reference": "HWPX §3제출서류·양식1~4"
+    },
+    {
+      "name": "상호 비밀유지협약(NDA)",
+      "condition": "선정 후 필수체결예정",
+      "reference": "HWPX §3제출서류·양식1~4"
+    }
+  ],
+  "businessPlan": {
+    "reference": "HWPX 양식1~4 및 §3",
+    "format": "Pooling양식1/2 각각2페이지내외,양식4협업제안서 본문7페이지내외·11pt권장(증빙제한없음).청색안내삭제·검정글씨,양식변경/삭제불가·행추가가능·비해당공란.특정고객문서를 복사하지 않고 실제보유기술·회사사실로 작성 후 대표자검토",
+    "sections": [
+      {
+        "name": "Pooling 수요기업(양식1)",
+        "items": [
+          "기본정보",
+          "바이오5개희망기술",
+          "협업과제/활용/지원/기대효과",
+          "밋업여부"
+        ]
+      },
+      {
+        "name": "Pooling 창업기업(양식2)",
+        "items": [
+          "창업일·인력·매출2025·투자/IP·최근2년실적",
+          "BM·주요고객·레퍼런스1~2",
+          "실제보유기술",
+          "팀/해결능력",
+          "성과·기대효과"
+        ]
+      },
+      {
+        "name": "협업제안서(양식4)",
+        "items": [
+          "수요기업소개·필요성·수행팀·제공지원·협업의지",
+          "창업기업소개·필요성·제공기술·협업의지",
+          "과제배경·기대효과",
+          "목표·지표",
+          "세부협업내용",
+          "실현가능성·추진의지",
+          "협약내목표·일정",
+          "정부지원사업비 최대1억 집행계획·산출근거"
+        ]
+      }
+    ]
+  },
+  "evaluation": {
+    "reference": "HWPX §4평가·평가지표",
+    "summary": "Pooling·밋업은 평가아님.협업제안서 서류평가 약2배수→대표발표10분이내+질의 총20분내외→고득점순.60점미만 제외.사업이해도·과제구체성·실현가능성·호혜협업가능성,비수도권본점 가점2점.세부배점 명시 없음"
+  },
+  "contact": {
+    "reference": "HWPX §6",
+    "phone": "충북창조경제혁신센터043-710-5932 / 한국혁신의약품컨소시엄02-6247-0918 / 시스템1357"
+  },
+  "lastAttachmentHashCheckedAt": "2026-10-21T00:16:23.006931+00:00",
+  "recheck": {
+    "at": "2026-10-21T00:16:23.006931+00:00",
+    "attachments": [
+      {
+        "url": "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071550&cbIdx=310&streFileNm=7f83b904-734c-4862-9dac-94ab24fffef0.hwpx",
+        "verifiedAt": "2026-10-21",
+        "status": "downloaded",
+        "sha256": "896bfbcd6f19c7c0b4a3fa85460abfd1c3d5341986418744f7e8cb0990d0761e",
+        "previousHash": "896bfbcd6f19c7c0b4a3fa85460abfd1c3d5341986418744f7e8cb0990d0761e",
+        "changed": false,
+        "bytes": 1566726,
+        "format": "HWPX",
+        "file": "attachment-01.bin",
+        "contentType": "application/octet-stream;charset=UTF-8",
+        "extraction": "text",
+        "characters": 44932
+      },
+      {
+        "url": "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071550&cbIdx=310&streFileNm=41352459-6243-46d4-8bec-88e3a06290b7.pdf",
+        "verifiedAt": "2026-10-21",
+        "status": "downloaded",
+        "sha256": "61479e93e5bcf4eccf658a0a3961488cef7edd8c764aaae62da08323044235e0",
+        "file": "attachment-02.bin",
+        "bytes": 4517938,
+        "format": "PDF",
+        "retrySucceeded": true,
+        "previousHash": "61479e93e5bcf4eccf658a0a3961488cef7edd8c764aaae62da08323044235e0",
+        "changed": false
+      }
+    ],
+    "scope": "공식상세재확인·기존링크재다운로드SHA256비교,기존미해결은유지"
+  },
+  "updatedAt": "2026-10-21T00:16:23.006931+00:00"
+}

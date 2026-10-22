@@ -6,6 +6,7 @@ import { isCloudMode } from '../lib/dataConfig.js';
 import { INITIAL_COMPANIES } from '../lib/mockData';
 import {loginErrorMessage} from '../lib/authForm.mjs';
 import { profileErrorMessage } from '../lib/authErrors.mjs';
+import { socialAuthOptions, socialAuthError } from '../lib/socialAuth.mjs';
 
 const AuthContext = createContext(null);
 
@@ -128,6 +129,16 @@ export function AuthProvider({ children }) {
     return { success: true };
   };
 
+  const startSocial = async (provider, link = false) => {
+    if (!isCloudMode || !supabase) return { success: false, error: '클라우드 로그인 연결 설정을 확인해 주세요.' };
+    if (link && !user) return { success: false, error: '먼저 기존 이메일 계정으로 로그인해 주세요.' };
+    try {
+      const options = socialAuthOptions(provider, window.location);
+      const { error } = await (link ? supabase.auth.linkIdentity(options) : supabase.auth.signInWithOAuth(options));
+      return error ? { success: false, error: socialAuthError(error) } : { success: true };
+    } catch (error) { return { success: false, error: socialAuthError(error) }; }
+  };
+
   const signup = async ({ email, password, fullName, companyName = '' }) => {
     if (!isCloudMode) return login(email, password);
     if (!supabase) return { success: false, error: 'Supabase 연결 설정을 확인해 주세요.' };
@@ -158,6 +169,7 @@ export function AuthProvider({ children }) {
     isAuthenticated: isCloudMode ? Boolean(user) : Boolean(profile),
     isAdmin: profile?.role === 'ADMIN', isAuditor: ['ADMIN', 'AUDITOR'].includes(profile?.role),
     isMember: profile?.role === 'MEMBER', login, signup, logout, switchDemoRole,
+    loginSocial: provider => startSocial(provider), linkSocial: provider => startSocial(provider, true),
   }}>{children}</AuthContext.Provider>;
 }
 

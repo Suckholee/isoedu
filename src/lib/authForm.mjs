@@ -1,5 +1,11 @@
+export function normalizeLoginIdentifier(value=''){
+ const raw=String(value??'').trim().toLowerCase();
+ if(!raw)return '';
+ if(!raw.includes('@')&&/^[a-z0-9._-]+$/i.test(raw))return `${raw}@honestone.kr`;
+ return raw;
+}
 export function readLoginFields(formData,fallback={}){
- return {email:String(formData.get('email')??fallback.email??'').trim().toLowerCase(),password:String(formData.get('password')??fallback.password??'')};
+ return {email:normalizeLoginIdentifier(formData.get('email')??fallback.email??''),password:String(formData.get('password')??fallback.password??'')};
 }
 export function loginErrorMessage(error){
  if(error?.code==='invalid_credentials'||/invalid login credentials/i.test(error?.message||''))return '이메일 또는 비밀번호가 일치하지 않습니다. 영문 대소문자와 특수문자를 확인해 주세요.';

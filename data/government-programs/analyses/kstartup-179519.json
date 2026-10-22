@@ -1,0 +1,215 @@
+{
+  "programId": "kstartup-179519",
+  "title": "2026년 나주형 청년 에너지 창업 사관학교(직·주·락·비) 사업 1차 수행기업 모집",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-10-20T00:13:59.239562+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179519",
+  "sourceFingerprint": "1724309b262938457dce923bf51c4f6c1eded164cdd322fe6ff46157423ddd27",
+  "evidenceDirectory": "evidence/kstartup-179519",
+  "reviewScope": "공고HWP전체·신청서/계획서 본문Ⅰ~Ⅳ·서식2~8·창업기준별첨 텍스트검토;원본시각대조미완료",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/cy1Ln",
+      "verifiedAt": "2026-10-20",
+      "status": "downloaded",
+      "sha256": "5643800c8d194ba192c53f8733300fe885cd4769895a6ce92b426c5096e91bab",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 126976,
+      "format": "HWP",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 10531
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/0y1Ln",
+      "verifiedAt": "2026-10-20",
+      "status": "downloaded",
+      "sha256": "02af08f16480116d500bdff5fa557ac5b92a27ef857d68629dd0798b5a76d8d1",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 175104,
+      "format": "HWP",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 33212
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/cy1Ln": "5643800c8d194ba192c53f8733300fe885cd4769895a6ce92b426c5096e91bab",
+    "https://www.k-startup.go.kr/afile/fileDownload/0y1Ln": "02af08f16480116d500bdff5fa557ac5b92a27ef857d68629dd0798b5a76d8d1"
+  },
+  "lastAttachmentHashCheckedAt": "2026-10-22T00:37:17.828134+00:00",
+  "unresolved": [
+    "공고시작10/6과상세10/15 충돌:청년연령·업력 기준일 및정정여부 확인필요",
+    "연락처337-5049 vs339-5049 충돌",
+    "양식동의서사업기간2027.12.31과공고협약5개월/표지2027.3.31 상충",
+    "양식창업기업확인서 추가요구·예비제출범위 확인필요",
+    "HWP표병합·원본배치시각대조 및 별첨창업기준 원문법령최신성 검증미완료"
+  ],
+  "eligibility": {
+    "summary": "예비청년18~45세 또는 업력7년미만, 나주소재/본점·지사이전 가능. 예비는 선정2개월내 등록, 기존기업 협약내 나주등록. 공고시작일10/6(첨부)과10/15(게시상세) 상충",
+    "companyFields": [
+      "대표자 생년월일",
+      "개업/설립일",
+      "업종·KSIC",
+      "나주주소/이전계획",
+      "예비여부",
+      "지원/제재/세금/재무/신용",
+      "프로그램선택",
+      "최근3년매출·수출·고용·R&D",
+      "투자·지재권"
+    ],
+    "reference": "공고HWP전체·신청서/계획서 본문Ⅰ~Ⅳ·서식2~8·창업기준별첨 텍스트검토;원본시각대조미완료"
+  },
+  "exclusions": {
+    "items": [
+      "부도·휴폐업·제재·의무불이행",
+      "국세지방세체납·채무불이행(회복지원예외)",
+      "파산회생(인가변제정상이행예외)",
+      "자본전액잠식(3년미만예외)",
+      "부채1000%이상(신용/TCB BBB예외)",
+      "외감의견거절/부적정",
+      "동일유사지원 중복"
+    ],
+    "reference": "공고HWP전체·신청서/계획서 본문Ⅰ~Ⅳ·서식2~8·창업기준별첨 텍스트검토;원본시각대조미완료"
+  },
+  "support": {
+    "summary": "총8.3억원은 전체사업예산. 통합패키지20개사2천/3천/4천만원,최대4천만원.선택:TIPS/글로벌 각4백만원·AI5백만원,R&D5백/15백만원,기술사업화2천만원,해외1천만원.지원금10%이상현금+VAT별도.무형자산취득 필수·정산비40/50만원.협약5개월;프로그램별 지급/직접집행 구분",
+    "reference": "공고HWP전체·신청서/계획서 본문Ⅰ~Ⅳ·서식2~8·창업기준별첨 텍스트검토;원본시각대조미완료"
+  },
+  "period": {
+    "start": "2026-10-06",
+    "end": "2026-10-23",
+    "deadlineTime": "18:00",
+    "timezone": "Asia/Seoul",
+    "reference": "첨부공고 접수방법;상세시작일10/15와충돌"
+  },
+  "application": {
+    "url": "mailto:shine004@jntp.or.kr",
+    "notes": "전체서류ZIP기업명,신청서한글+PDF동시제출.원본대조필·기한내도착.본 실행발송안함",
+    "reference": "공고접수/양식유의사항"
+  },
+  "requiredDocuments": [
+    {
+      "name": "사업신청서·계획서 및 견적/비교견적",
+      "condition": "필수,HWP+PDF",
+      "reference": "양식제출서류1"
+    },
+    {
+      "name": "사업자등록·법인등기(법인3개월내)",
+      "condition": "기창업;예비해당없음",
+      "reference": "양식2"
+    },
+    {
+      "name": "최근3년4대보험명부·2023~25재무제표·국세지방세납세증명",
+      "condition": "기창업;1년미만과표증명;예비해당없음",
+      "reference": "양식3~5"
+    },
+    {
+      "name": "입주/부동산등자격증빙",
+      "condition": "해당시",
+      "reference": "공고6"
+    },
+    {
+      "name": "중복지원·수혜이력/자료제공/정보활용/자가진단/개인신용정보/성실이행/창업확인서약",
+      "condition": "서식2~8 필수",
+      "reference": "양식"
+    },
+    {
+      "name": "중기부창업기업확인서",
+      "condition": "양식추가요구;예비해당확인필요",
+      "reference": "양식제출서류14"
+    },
+    {
+      "name": "가점증빙",
+      "condition": "해당시",
+      "reference": "공고14"
+    },
+    {
+      "name": "기업IR",
+      "condition": "TIPS·글로벌신청필수",
+      "reference": "공고15"
+    }
+  ],
+  "businessPlan": {
+    "format": "한글2002이상 지정HWP,본문30쪽내외(별첨제외),쪽수표시.여백위아래15/좌우20/머리꼬리10.작성요령삭제·인용출처·원단위/VAT별도",
+    "sections": [
+      "일반현황·아이템요약",
+      "Ⅰ기업현황·기술우수성·제품화",
+      "Ⅱ지원필요성·프로그램별추진내용/전략·달성지표·결과물·일정·활용·기대효과",
+      "Ⅲ지역사업화·지역거래/고용·창업/이전계획",
+      "Ⅳ사업비총괄/프로그램명세·견적",
+      "서식2~8확약/동의·창업기준별첨"
+    ],
+    "reference": "공고HWP전체·신청서/계획서 본문Ⅰ~Ⅳ·서식2~8·창업기준별첨 텍스트검토;원본시각대조미완료"
+  },
+  "evaluation": {
+    "summary": "기술우수40(25+15)·성장25(10+5+10)·지역정착35(20+15),평균70이상고득점.가점배우자자녀동반2·청년대표2·본사이전5·에너지대회선발5.사전검토→필요시현장→대면",
+    "reference": "공고HWP전체·신청서/계획서 본문Ⅰ~Ⅳ·서식2~8·창업기준별첨 텍스트검토;원본시각대조미완료"
+  },
+  "contact": {
+    "name": "전남TP shine004@jntp.or.kr;공고061-337-5049,양식접수확인061-339-5049(번호충돌)",
+    "reference": "공고HWP전체·신청서/계획서 본문Ⅰ~Ⅳ·서식2~8·창업기준별첨 텍스트검토;원본시각대조미완료"
+  },
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179519",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확인 후 적합성 비교; 이 분석은 신청가능 판정 아님",
+    "steps": [
+      "회사 필드 및 자격 증빙 확인",
+      "미확인·충돌 해결",
+      "공고 양식 선택",
+      "회사 사실정보로 서류·사업계획서 작성 및 검토"
+    ]
+  },
+  "dateConflict": {
+    "listingStart": "2026-10-15",
+    "noticeStart": "2026-10-06",
+    "resolution": "미해결; 연령·업력 기준일 확인 필요. 달력 목록 시작일은 변경하지 않음"
+  },
+  "recheck": {
+    "at": "2026-10-22T00:37:17.828134+00:00",
+    "scope": "상세재수집·기존첨부동일URL바이트대조;기존충돌미해결유지",
+    "checks": [
+      {
+        "url": "https://www.k-startup.go.kr/afile/fileDownload/cy1Ln",
+        "verifiedAt": "2026-10-22",
+        "status": "downloaded",
+        "sha256": "5643800c8d194ba192c53f8733300fe885cd4769895a6ce92b426c5096e91bab",
+        "previousHash": "5643800c8d194ba192c53f8733300fe885cd4769895a6ce92b426c5096e91bab",
+        "changed": false,
+        "bytes": 126976,
+        "format": "HWP",
+        "file": "attachment-01.bin",
+        "contentType": "application/octet-stream;charset=ISO-8859-1",
+        "extraction": "text",
+        "characters": 10531
+      },
+      {
+        "url": "https://www.k-startup.go.kr/afile/fileDownload/0y1Ln",
+        "verifiedAt": "2026-10-22",
+        "status": "downloaded",
+        "sha256": "02af08f16480116d500bdff5fa557ac5b92a27ef857d68629dd0798b5a76d8d1",
+        "previousHash": "02af08f16480116d500bdff5fa557ac5b92a27ef857d68629dd0798b5a76d8d1",
+        "changed": false,
+        "bytes": 175104,
+        "format": "HWP",
+        "file": "attachment-02.bin",
+        "contentType": "application/octet-stream;charset=ISO-8859-1",
+        "extraction": "text",
+        "characters": 33212
+      }
+    ]
+  },
+  "updatedAt": "2026-10-22T00:37:17.828134+00:00"
+}

@@ -1,0 +1,180 @@
+{
+  "programId": "kstartup-179537",
+  "title": "충북테크노파크 차세대에너지 스타트업 DEMO DAY",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-10-21T00:13:24.199142+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179537",
+  "sourceFingerprint": "681e2398d3ab0c0e893460a1cf1409f6999869deeea5615b9f0aaeb2019616d0",
+  "evidenceDirectory": "evidence/kstartup-179537",
+  "reviewScope": "상세·첨부TXT전문·JPG전체시각검토",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/AL2Ln",
+      "verifiedAt": "2026-10-21",
+      "status": "downloaded",
+      "sha256": "74ceb1623db3bacddba85b8041c5f968db4842a83fd3c271a7796ebeb4201107",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 2064,
+      "format": "OTHER",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1"
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/oL2Ln",
+      "verifiedAt": "2026-10-21",
+      "status": "downloaded",
+      "sha256": "801e978b8e99fe2aaa678a434df07a87f6fa7adbe0cdb01ad1c970d8681bf5e8",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 498423,
+      "format": "IMAGE",
+      "file": "attachment-02.bin",
+      "contentType": "image/jpeg;charset=UTF-8"
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/AL2Ln": "74ceb1623db3bacddba85b8041c5f968db4842a83fd3c271a7796ebeb4201107",
+    "https://www.k-startup.go.kr/afile/fileDownload/oL2Ln": "801e978b8e99fe2aaa678a434df07a87f6fa7adbe0cdb01ad1c970d8681bf5e8"
+  },
+  "lastAttachmentHashCheckedAt": "2026-10-21T00:13:24.199142+00:00",
+  "unresolved": [
+    "공고·포스터10/22행사와실제신청폼10/29행사충돌:정정여부확인필요",
+    "상세투자기관대상과포스터대기업/선도기업포함범위차이",
+    "폼상담대상노벨테크놀로지추가·시간15:15~17:15와포스터3개사/15~16:30상충"
+  ],
+  "eligibility": {
+    "summary": "국내 AC·VC·CVC 투자기관 관계자; 포스터는 대기업·선도기업 포함",
+    "companyFields": [
+      "투자기관/기업유형",
+      "참가자소속·직위·연락처"
+    ],
+    "reference": "상세·첨부TXT전문·JPG전체시각검토"
+  },
+  "exclusions": {
+    "items": [
+      "일반스타트업 신규 IR출전모집으로 간주하지 않음;발표3개사기지정"
+    ],
+    "reference": "상세·첨부TXT전문·JPG전체시각검토"
+  },
+  "support": {
+    "summary": "무료10/22 14:00~16:30 충북TP 차세대에너지센터 컨벤션홀,3개사IR 및1:1투자/사업협력밋업.현금지원·자부담비율 해당없음",
+    "reference": "상세·첨부TXT전문·JPG전체시각검토"
+  },
+  "period": {
+    "start": "2026-10-15",
+    "end": "2026-10-21",
+    "deadlineTime": "23:59",
+    "timezone": "Asia/Seoul",
+    "reference": "K-Startup상세;포스터에마감시간미표시"
+  },
+  "application": {
+    "url": "https://forms.gle/1ENie8Cb9TMR1cgo7",
+    "notes": "상세와TXT단축주소는동일Google폼으로확인.공개폼질문메타데이터만검토;입력/제출안함",
+    "reference": "상세제출서류·TXT참가신청",
+    "publicFormQuestions": [
+      {
+        "label": "1. 소속 기업(투자사)명",
+        "required": true,
+        "options": []
+      },
+      {
+        "label": "2. 참석자 성함",
+        "required": true,
+        "options": []
+      },
+      {
+        "label": "3. 참석자 직함",
+        "required": true,
+        "options": []
+      },
+      {
+        "label": "4. 연락처(휴대폰)  예) 010-1111-2222",
+        "required": true,
+        "options": []
+      },
+      {
+        "label": "5. 이메일",
+        "required": false,
+        "options": []
+      },
+      {
+        "label": "6. 참여 프로그램",
+        "required": true,
+        "options": [
+          "IR 피칭과 1:1 투자상담",
+          "1:1 투자상담만",
+          "IR 피칭만"
+        ]
+      },
+      {
+        "label": "1. 1대1 투자상담 희망기업 및 관심 기업(30분 소요, 복수 선택 가능)",
+        "required": true,
+        "options": [
+          "한국전력정보",
+          "쏠라리버",
+          "현태",
+          "노벨테크놀로지"
+        ]
+      },
+      {
+        "label": "2. 밋업 가능 시간대",
+        "required": true,
+        "options": [
+          "1타임 / 15:15 ~ 15:45",
+          "2타임  / 15:45 ~ 16:15",
+          "3타임 / 16:15 ~ 16:45",
+          "4타임 / 16:45 ~ 17:15",
+          "모두 가능"
+        ]
+      }
+    ],
+    "formEvidence": "evidence/demo-form-a-check-2026-10-21.html",
+    "formVerifiedAt": "2026-10-21T00:16:23.006931+00:00"
+  },
+  "requiredDocuments": [
+    {
+      "name": "온라인 구글폼",
+      "condition": "필수;추가입력미확인",
+      "reference": "상세제출서류"
+    }
+  ],
+  "businessPlan": {
+    "format": "참가자신청서,사업계획서요구없음",
+    "sections": [],
+    "reference": "상세·첨부TXT전문·JPG전체시각검토"
+  },
+  "evaluation": {
+    "summary": "온라인접수 후 개별안내,선발배점미기재.기업IR15분(7+8),면담기업당30분",
+    "reference": "상세·첨부TXT전문·JPG전체시각검토"
+  },
+  "contact": {
+    "name": "내비온파트너스 김보라02-6407-7766,bora644@navion.biz",
+    "reference": "상세·첨부TXT전문·JPG전체시각검토"
+  },
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179537",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확인 후 적합성 비교; 이 분석은 신청가능 판정 아님",
+    "steps": [
+      "회사 필드 및 자격 증빙 확인",
+      "미확인·충돌 해결",
+      "공고 양식 선택",
+      "회사 사실정보로 서류·사업계획서 작성 및 검토"
+    ]
+  },
+  "scheduleConflict": {
+    "noticeEvent": "2026-10-22 14:00~16:30",
+    "applicationFormEvent": "2026-10-29 14:00~17:30",
+    "reference": "detail.html/JPG vs demo-form-a-check-2026-10-21.html 제목",
+    "resolution": "미해결;폼만수정되었는지기관정정확인필요"
+  },
+  "updatedAt": "2026-10-21T00:16:23.006931+00:00"
+}

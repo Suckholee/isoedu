@@ -1,0 +1,124 @@
+{
+  "programId": "kstartup-179525",
+  "title": "2026년 워터라운드(wateRound) 제5기 협약파트너사 모집 공고",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-10-20T00:13:59.239562+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179525",
+  "sourceFingerprint": "a7077f2b7a5263f226daa0e9a44fa972f0160a0d18fc91a15d0f5bcad9ef2235",
+  "evidenceDirectory": "evidence/kstartup-179525",
+  "reviewScope": "PDF4쪽 전체 텍스트 및4쪽 모두 렌더 시각검토·K-Startup상세",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/YT1Ln",
+      "verifiedAt": "2026-10-20",
+      "status": "downloaded",
+      "sha256": "ab374530519183c91f5c937920814105d69f45d02c2e33a120dc0de77e7bf93b",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 272795,
+      "format": "PDF",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 2017
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/YT1Ln": "ab374530519183c91f5c937920814105d69f45d02c2e33a120dc0de77e7bf93b"
+  },
+  "lastAttachmentHashCheckedAt": "2026-10-20T00:13:59.239562+00:00",
+  "unresolved": [
+    "PDF가 참조하는 별도 사업계획서양식 미포함: 공식 사이트 추가첨부 필요",
+    "공식 사이트200이나 WebSquare셸만 확보:기업인증 이후 입력필드·비용한도 미확인"
+  ],
+  "eligibility": {
+    "summary": "워터라운드로 기후테크·AI융합 SaaS 개발·서비스할 기업. 예비는 제출마감 전 사업자등록 필수",
+    "companyFields": [
+      "사업자등록 여부·등록일",
+      "기후테크/AI SaaS개요",
+      "기선정 워터라운드이력",
+      "휴폐업·제재",
+      "정부지원수혜이력"
+    ],
+    "reference": "PDF4쪽 전체 텍스트 및4쪽 모두 렌더 시각검토·K-Startup상세"
+  },
+  "exclusions": {
+    "items": [
+      "기선정 워터라운드 협약파트너",
+      "부정당업자 제재",
+      "아이디어·기술 도용·허위",
+      "휴폐업",
+      "기타 기관 인정 제한"
+    ],
+    "reference": "PDF4쪽 전체 텍스트 및4쪽 모두 렌더 시각검토·K-Startup상세"
+  },
+  "support": {
+    "summary": "협약1년;컨설팅·클라우드비용일부(네이버/AWS택1)·실증·물데이터·공통기능·교육·마켓·사업화·전시참여. 현금한도/지원비율/자부담 미기재, 제공사정책에 따름",
+    "reference": "PDF4쪽 전체 텍스트 및4쪽 모두 렌더 시각검토·K-Startup상세"
+  },
+  "period": {
+    "start": "2026-10-19",
+    "end": "2026-11-02",
+    "deadlineTime": "23:59",
+    "timezone": "Asia/Seoul",
+    "reference": "K-Startup 상세 신청기간;PDF1쪽은 날짜만 명시"
+  },
+  "application": {
+    "url": "https://www.wateround.kr",
+    "notes": "회원가입·기업인증 후 참여기업공모 신청;새 계정 생성 안함",
+    "reference": "PDF3~4쪽"
+  },
+  "requiredDocuments": [
+    {
+      "name": "사업계획서",
+      "condition": "필수;공고가 지정양식 참조",
+      "reference": "PDF3~4쪽"
+    },
+    {
+      "name": "사업자등록증",
+      "condition": "필수",
+      "reference": "PDF3쪽"
+    },
+    {
+      "name": "법인등기사항전부증명서",
+      "condition": "법인",
+      "reference": "PDF3쪽"
+    },
+    {
+      "name": "정부지원수혜이력",
+      "condition": "열거된20종사업 참여시 기업정보에기재",
+      "reference": "PDF3쪽"
+    }
+  ],
+  "businessPlan": {
+    "format": "PDF4쪽 별도 사업계획서양식1부 명시하지만 실제PDF4쪽에 양식 없음. 별첨 미확보로 항목·분량 미확인. 사업계획서로10분발표, 별도발표자료 불필요",
+    "sections": [],
+    "reference": "PDF4쪽 전체 텍스트 및4쪽 모두 렌더 시각검토·K-Startup상세"
+  },
+  "evaluation": {
+    "summary": "사전검토→발표(혁신성30·기술성40·사업성30),25/26기후부AX아이디어경진입상 기술성5점가점.11월평가·말협약예정",
+    "reference": "PDF4쪽 전체 텍스트 및4쪽 모두 렌더 시각검토·K-Startup상세"
+  },
+  "contact": {
+    "name": "K-water 기후테크혁신처 AI융합사업팀042-629-2537~8",
+    "reference": "PDF4쪽 전체 텍스트 및4쪽 모두 렌더 시각검토·K-Startup상세"
+  },
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179525",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확인 후 적합성 비교; 이 분석은 신청가능 판정 아님",
+    "steps": [
+      "회사 필드 및 자격 증빙 확인",
+      "미확인·충돌 해결",
+      "공고 양식 선택",
+      "회사 사실정보로 서류·사업계획서 작성 및 검토"
+    ]
+  }
+}

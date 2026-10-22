@@ -1,0 +1,160 @@
+{
+  "programId": "kstartup-179506",
+  "title": "2026 문화예술 창업교육의 모든 것.zip 2기 참여자 모집",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-10-22T00:35:53.136226+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179506",
+  "sourceFingerprint": "4dd686652fca3e3a7f16940fdd24637fa29a58d25e096f0b0a9d5a37392b09e9",
+  "evidenceDirectory": "evidence/kstartup-179506",
+  "reviewScope": "상세·HWP전체본문/붙임1신청·붙임2동의서·PNG전체시각·TXT전문",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/Z52Ln",
+      "verifiedAt": "2026-10-22",
+      "status": "downloaded",
+      "sha256": "7c96cca9d7f3c65d6f1bf8d7d784c5d23bb4a334dd3258fcfd7ab41b74b4cad2",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 313344,
+      "format": "HWP",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 4342
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/IY1Ln",
+      "verifiedAt": "2026-10-22",
+      "status": "downloaded",
+      "sha256": "f2bf6d00158d77f9e0765a2fcb20669b93681d0401828643aea09be8599ed2cf",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 244832,
+      "format": "IMAGE",
+      "file": "attachment-02.bin",
+      "contentType": "image/png;charset=UTF-8"
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/DD2Ln",
+      "verifiedAt": "2026-10-22",
+      "status": "downloaded",
+      "sha256": "58c5b129b8d78db690c643699d419c78e0e1dcda46ec9ab3eda01b81681db8b0",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 2998,
+      "format": "OTHER",
+      "file": "attachment-03.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1"
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/Z52Ln": "7c96cca9d7f3c65d6f1bf8d7d784c5d23bb4a334dd3258fcfd7ab41b74b4cad2",
+    "https://www.k-startup.go.kr/afile/fileDownload/IY1Ln": "f2bf6d00158d77f9e0765a2fcb20669b93681d0401828643aea09be8599ed2cf",
+    "https://www.k-startup.go.kr/afile/fileDownload/DD2Ln": "58c5b129b8d78db690c643699d419c78e0e1dcda46ec9ab3eda01b81681db8b0"
+  },
+  "lastAttachmentHashCheckedAt": "2026-10-22T00:35:53.136226+00:00",
+  "unresolved": [
+    "신청시작일상단10/13과공고/포스터10/12차이;공고기준보존",
+    "초기창업업력범위·만나이산정일·우수팀배점미명시",
+    "HWP본문표텍스트검토,원본모든쪽시각배치대조미완료"
+  ],
+  "eligibility": {
+    "summary": "문화예술 예비·초기 만19~39세 청년,30명.초과시성북구거주·활동청년우선",
+    "companyFields": [
+      "생년월일·만나이",
+      "거주지·성북활동",
+      "예비/초기창업·개업일",
+      "사업아이템",
+      "전과정참여가능"
+    ],
+    "reference": "상세·HWP전체본문/붙임1신청·붙임2동의서·PNG전체시각·TXT전문"
+  },
+  "exclusions": {
+    "items": [
+      "허위사실·자격미충족시취소",
+      "전과정성실참여요구"
+    ],
+    "reference": "상세·HWP전체본문/붙임1신청·붙임2동의서·PNG전체시각·TXT전문"
+  },
+  "support": {
+    "summary": "무료11/6~12/17교육·워크숍·기업별40분컨설팅.출석80%수료.우수팀상장·전시·2027프로그램우선/희망스토어가점.현금한도·비율해당없음",
+    "reference": "상세·HWP전체본문/붙임1신청·붙임2동의서·PNG전체시각·TXT전문"
+  },
+  "period": {
+    "start": "2026-10-12",
+    "end": "2026-10-27",
+    "deadlineTime": "17:00",
+    "timezone": "Asia/Seoul",
+    "reference": "공고HWPⅠ/Ⅲ·포스터;상세상단시작10/13과차이"
+  },
+  "application": {
+    "url": "mailto:okayus@okus.co.kr",
+    "notes": "붙임양식·증빙이메일접수;이번발송안함",
+    "reference": "HWPⅢ"
+  },
+  "requiredDocuments": [
+    {
+      "name": "사업신청서·사업계획서(붙임1)",
+      "condition": "필수",
+      "reference": "HWPⅢ·붙임1"
+    },
+    {
+      "name": "주민등록등본",
+      "condition": "필수",
+      "reference": "HWPⅢ"
+    },
+    {
+      "name": "개인정보수집이용/제3자동의(붙임2)",
+      "condition": "필수;마케팅선택",
+      "reference": "HWP붙임2"
+    },
+    {
+      "name": "성북거주·활동증빙/사업자등록등",
+      "condition": "해당시선택",
+      "reference": "HWPⅢ"
+    }
+  ],
+  "businessPlan": {
+    "format": "지정HWP붙임1,아이템요약3줄내외,분량/페이지상한미기재.마케팅동의선택구별",
+    "sections": [
+      "기본정보·창업경험/역량·경력/수상/분야",
+      "아이템3줄·창업단계·사업자현황",
+      "창업동기·지원동기",
+      "핵심아이디어·사진·목표고객",
+      "경쟁분석/차별성·판매/수익전략"
+    ],
+    "reference": "상세·HWP전체본문/붙임1신청·붙임2동의서·PNG전체시각·TXT전문"
+  },
+  "evaluation": {
+    "summary": "자격/서류검토,초과시성북거주활동우선;10/30선정예정.12/7계획서제출·12/11발표평가·12/17우수발표",
+    "reference": "상세·HWP전체본문/붙임1신청·붙임2동의서·PNG전체시각·TXT전문"
+  },
+  "contact": {
+    "name": "길이음운영오케이어스070-8670-2282,okayus@okus.co.kr",
+    "reference": "상세·HWP전체본문/붙임1신청·붙임2동의서·PNG전체시각·TXT전문"
+  },
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179506",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확인 후 적합성 비교; 이 분석은 신청가능 판정 아님",
+    "steps": [
+      "회사 필드 및 자격 증빙 확인",
+      "미확인·충돌 해결",
+      "공고 양식 선택",
+      "회사 사실정보로 서류·사업계획서 작성 및 검토"
+    ]
+  },
+  "dateConflict": {
+    "listingStart": "2026-10-13",
+    "noticeStart": "2026-10-12",
+    "resolution": "마감은동일,시작일근거상이.목록날짜유지하며공고기준분석보존"
+  },
+  "updatedAt": "2026-10-22T00:37:17.828134+00:00"
+}

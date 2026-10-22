@@ -12,6 +12,7 @@ import ClientDrive from './ClientDrive';
 import ManagedClientDrive from './ManagedClientDrive';
 import IsoComplianceMatrixView from '../components/IsoComplianceMatrixView';
 import MyWorkView from './MyWorkView';
+import AgentSchedulesView from './AgentSchedulesView';
 import RadarView from '../components/RadarView';
 import WorkspaceView from '../components/WorkspaceView';
 import GlobalSearchModal from '../components/GlobalSearchModal';
@@ -19,8 +20,12 @@ import RealtimeEditorModal from '../components/RealtimeEditorModal';
 import AddDocumentModal from '../components/AddDocumentModal';
 import AIConsultantPanel from '../components/AIConsultantPanel';
 import NewProjectModal from '../components/NewProjectModal';
+import CompanyProjects from './CompanyProjects';
+import ProjectPreparationView from './ProjectPreparationView';
 import ProjectDetailView from '../components/ProjectDetailView';
 import GovernmentProgramsView from '../components/GovernmentProgramCalendar';
+import AdminCenterView from './AdminCenterView';
+import { resolveAdminTab } from '../lib/adminCenter.mjs';
 
 import { INITIAL_COMPANIES, SEED_DOCUMENTS } from '../lib/mockData';
 import { useAuth } from '../context/AuthContext';
@@ -230,6 +235,14 @@ export default function PlatformWorkspace() {
     if (project) setCurrentCompany(companies.find(company => company.id === project.companyId) || null);
   }, [pathname, projects, companies, activeNav]);
 
+  useEffect(() => {
+    if (!isCloudMode || !user || !profile) return;
+    let active=true;
+    const refresh=async()=>{const uid=accountId;try{const w=await loadWorkspace();if(active&&accountRef.current===uid){setCompanies(w.companies);setProjects(w.projects);}}catch{if(active){setCompanies([]);setProjects([]);setCurrentCompany(null);setActiveProject(null);}}};
+    window.addEventListener('focus',refresh);
+    return ()=>{active=false;window.removeEventListener('focus',refresh);};
+  }, [accountId,profile?.id]);
+
   const showToast = (msg) => {
     setToastMessage(msg);
     setTimeout(() => setToastMessage(null), 3000);
@@ -296,14 +309,30 @@ export default function PlatformWorkspace() {
   };
 
   const handleAddDocument = async newDoc => {
-    if (!currentCompany) { showToast('회사를 선택해 주세요.'); return null; }
-    const doc = {
-      ...newDoc, id: crypto.randomUUID(), companyId: currentCompany.id,
-      title: newDoc.title || newDoc.name, contentDraft: newDoc.contentDraft || newDoc.content || '',
-      standards: newDoc.standards || [newDoc.standard || selectedStandard],
-    };
-    const saved = await saveDocuments([doc]);
+    const saved = await handleAddDocuments([newDoc]);
     return saved?.[0] || null;
+  };
+
+  const handleAddDocuments = async (newDocs = []) => {
+    if (!newDocs.length) return [];
+    const targetCompanyId = currentCompany?.id || newDocs[0]?.companyId;
+    if (!targetCompanyId) { showToast('회사를 선택해 주세요.'); return null; }
+    if (newDocs.some(doc => doc.companyId && currentCompany?.id && doc.companyId !== currentCompany.id)) {
+      showToast('현재 선택한 거래처의 문서만 추가할 수 있습니다.');
+      return null;
+    }
+    const prepared = newDocs.map(newDoc => {
+      const validUuid = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(newDoc.id || '');
+      return {
+        ...newDoc, id: validUuid ? newDoc.id : crypto.randomUUID(), companyId: targetCompanyId,
+        title: newDoc.title || newDoc.name, contentDraft: newDoc.contentDraft || newDoc.content || '',
+        standards: newDoc.standards || [newDoc.standard || selectedStandard],
+      };
+    });
+    const saved = await saveDocuments(prepared, `${prepared.length}개 문서를 저장했습니다.`);
+    if (!saved) return null;
+    const savedIds = new Set(prepared.map(doc => doc.id));
+    return saved.filter(doc => savedIds.has(doc.id));
   };
 
   const handleUpdateDocument = async updatedDoc => {
@@ -385,31 +414,6 @@ export default function PlatformWorkspace() {
   return (
     <div className="iso-app ppt-layout h-screen flex flex-col text-slate-800 font-sans overflow-hidden">
 
-      {/* 1. Google Drive Material 3 Header */}
-      <Header
-        isSidebarOpen={isSidebarOpen}
-        onToggleSidebar={handleToggleSidebar}
-        currentCompany={currentCompany}
-        companies={clientCompanies}
-        onSelectCompany={selectCompany}
-        onCreateClient={() => setIsNewProjectModalOpen(true)}
-        onOpenSearch={() => setIsSearchOpen(true)}
-        onOpenAddModal={(level) => {
-          setAddTemplateLevel(level);
-          setIsAddModalOpen(true);
-        }}
-        onToggleAiPanel={() => setIsAiPanelOpen(!isAiPanelOpen)}
-        isAiPanelOpen={isAiPanelOpen}
-        onResetData={handleResetData}
-        onSelectNav={setActiveNav}
-      />
-
-      {(authError || auditWarning || workspaceError || documentStore.error || (isCloudMode && !user)) && (
-        <div role="alert" className="platform-connection-notice">
-          {authError || workspaceError || documentStore.error || auditWarning || '클라우드 문서를 보려면 오른쪽 프로필 메뉴에서 로그인해 주세요.'}
-        </div>
-      )}
-
       {/* 2. Main Workspace (Sidebar + Floating Card in Canvas + Companion Bar) */}
       <div className="flex-1 flex overflow-hidden relative">
 
@@ -443,6 +447,34 @@ export default function PlatformWorkspace() {
 
         {/* Center: The Floating White Canvas Panel (핵심 고급스러움 요소) */}
         <div className="flex-1 flex flex-col min-w-0 overflow-hidden">
+          <div className="platform-workspace-topbar">
+      {/* 1. Google Drive Material 3 Header */}
+      <Header
+        isSidebarOpen={isSidebarOpen}
+        onToggleSidebar={handleToggleSidebar}
+        currentCompany={currentCompany}
+        companies={clientCompanies}
+        onSelectCompany={selectCompany}
+        onCreateClient={() => setIsNewProjectModalOpen(true)}
+        onOpenSearch={() => setIsSearchOpen(true)}
+        onOpenAddModal={(level) => {
+          setAddTemplateLevel(level);
+          setIsAddModalOpen(true);
+        }}
+        onToggleAiPanel={() => setIsAiPanelOpen(!isAiPanelOpen)}
+        isAiPanelOpen={isAiPanelOpen}
+        onResetData={handleResetData}
+        onSelectNav={setActiveNav}
+      />
+
+      {(authError || auditWarning || workspaceError || documentStore.error || (isCloudMode && !user)) && (
+        <div role="alert" className="platform-connection-notice">
+          {authError || workspaceError || documentStore.error || auditWarning || '클라우드 문서를 보려면 오른쪽 프로필 메뉴에서 로그인해 주세요.'}
+        </div>
+      )}
+
+          </div>
+
 
           <div className="iso-workspace flex-1 flex flex-col overflow-hidden">
 
@@ -452,11 +484,136 @@ export default function PlatformWorkspace() {
               {currentCompany&&<div className="managed-context-bar"><strong>현재 거래처 · {currentCompany.name}</strong><button onClick={()=>selectCompany(null)}>전체 거래처로 전환</button></div>}
               {activeNav==='gov_programs'&&currentCompany&&<p className="px-8 text-sm text-slate-500">{currentCompany.name} 작업 중 · 공고는 전체 목록이며 회사 정보에 따른 신청 적합성 판정은 아직 제공되지 않습니다.</p>}
 
+              {['schedule', 'radar', 'notifications', 'reports'].includes(activeNav) && (
+                <div className="sticky top-0 z-20 bg-white/95 backdrop-blur border-b border-slate-200 px-6 md:px-8 pt-3">
+                  <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+                    <div className="flex items-center gap-1 overflow-x-auto" role="tablist" aria-label="사후·일정 관리 탭">
+                      {[
+                        { id: 'schedule', label: '심사 일정', sub: 'S23·S28', count: projects.length },
+                        { id: 'radar', label: '유효기간 · 리스크', sub: 'S26·S29', count: projects.length + documents.filter(d => d.expiryDate || d.hierarchyLevel === 'CERT').length },
+                        { id: 'notifications', label: '알림 센터', sub: 'S27·S25', count: documents.filter(d => d.reviewStatus !== 'VERIFIED' && d.docStatus !== '승인 완료').length },
+                        { id: 'reports', label: '준비 보고서', sub: 'S09', count: null },
+                      ].map(tab => {
+                        const isActive = activeNav === tab.id;
+                        return (
+                          <button
+                            key={tab.id}
+                            type="button"
+                            role="tab"
+                            aria-selected={isActive}
+                            onClick={() => navigate(tab.id)}
+                            className={`inline-flex items-center gap-2 px-4 py-2.5 text-sm font-bold border-b-2 transition-colors whitespace-nowrap ${
+                              isActive
+                                ? 'border-blue-600 text-blue-600 bg-blue-50/50 rounded-t-lg'
+                                : 'border-transparent text-slate-600 hover:text-slate-900 hover:border-slate-300'
+                            }`}
+                          >
+                            <span>{tab.label}</span>
+                            {typeof tab.count === 'number' && (
+                              <span
+                                className={`text-[11px] px-1.5 py-0.5 rounded-full font-extrabold ${
+                                  isActive ? 'bg-blue-600 text-white' : 'bg-slate-100 text-slate-600'
+                                }`}
+                              >
+                                {tab.count}
+                              </span>
+                            )}
+                          </button>
+                        );
+                      })}
+                    </div>
+                    <div className="pb-2 text-xs text-slate-500 hidden sm:block">
+                      심사 일정 · 유효기간 리스크 · 문서/규격 알림 · 준비 보고서 통합 관리
+                    </div>
+                  </div>
+                </div>
+              )}
 
-              {['schedule','notifications','reports','radar'].includes(activeNav)&&!currentCompany&&<div className="platform-card m-8"><h1>거래처별 현황</h1><p className="my-4 text-slate-500">관리할 거래처를 선택하면 해당 거래처의 일정·알림·리스크·보고서를 확인할 수 있습니다.</p></div>}
-              {(['schedule', 'notifications', 'reports'].includes(activeNav)&&currentCompany||activeNav==='settings') && (
-                <PlatformUtilityView key={activeNav} view={activeNav} documents={documents} currentCompany={currentCompany}
-                  onOpenDetail={handleOpenDoc} onNavigate={(nav, standard) => navigate(nav, standard ? {standard} : {})} />
+              {['settings', 'agent_schedules'].includes(activeNav) && (
+                <div className="sticky top-0 z-20 bg-white/95 backdrop-blur border-b border-slate-200 px-6 md:px-8 pt-3">
+                  <div className="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-2" role="tablist" aria-label="설정 및 자동화 탭">
+                    <div className="flex items-center gap-1">
+                      {[
+                        { id: 'settings', label: '계정 · 팀 권한 설정' },
+                        { id: 'agent_schedules', label: '예약된 에이전트 실행목록' },
+                      ].map(tab => {
+                        const isActive = activeNav === tab.id;
+                        return (
+                          <button
+                            key={tab.id}
+                            type="button"
+                            role="tab"
+                            aria-selected={isActive}
+                            onClick={() => navigate(tab.id)}
+                            className={`inline-flex items-center gap-2 px-4 py-2.5 text-sm font-bold border-b-2 transition-colors whitespace-nowrap ${
+                              isActive
+                                ? 'border-blue-600 text-blue-600 bg-blue-50/50 rounded-t-lg'
+                                : 'border-transparent text-slate-600 hover:text-slate-900 hover:border-slate-300'
+                            }`}
+                          >
+                            {tab.label}
+                          </button>
+                        );
+                      })}
+                    </div>
+                    <button
+                      type="button"
+                      onClick={() => navigate('admin')}
+                      className="mb-1.5 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-blue-50 hover:bg-blue-100 text-blue-700 text-xs font-bold border border-blue-200 cursor-pointer"
+                    >
+                      <span>관리자 센터 (회원 · 권한 · 전자발송) 열기 →</span>
+                    </button>
+                  </div>
+                </div>
+              )}
+
+              {activeNav === 'admin' && (
+                <AdminCenterView
+                  activeTab={resolveAdminTab(pathname, searchParams)}
+                  onSelectTab={adminTab =>
+                    router.push(
+                      platformHref('admin', searchParams.toString(), {
+                        adminTab: adminTab === 'members' ? null : adminTab,
+                      }),
+                      { scroll: false }
+                    )
+                  }
+                  companies={companies}
+                  currentCompany={currentCompany}
+                  onSelectCompany={selectCompany}
+                  projects={projects}
+                  documents={documents}
+                  onCreateClient={() => setIsNewProjectModalOpen(true)}
+                  onWorkspaceChanged={async () => {
+                    const w = await loadWorkspace();
+                    setCompanies(w.companies);
+                    setProjects(w.projects);
+                  }}
+                  onShowToast={showToast}
+                />
+              )}
+
+              {activeNav === 'agent_schedules' && <AgentSchedulesView/>}
+
+              {['schedule', 'notifications', 'reports', 'settings'].includes(activeNav) && (
+                <PlatformUtilityView
+                  key={activeNav}
+                  view={activeNav}
+                  documents={documents}
+                  projects={projects}
+                  companies={clientCompanies}
+                  currentCompany={currentCompany}
+                  onSelectCompany={selectCompany}
+                  onSelectProject={handleSelectProject}
+                  onCreateProject={() => setIsNewProjectModalOpen(true)}
+                  onWorkspaceChanged={async () => {
+                    const w = await loadWorkspace();
+                    setCompanies(w.companies);
+                    setProjects(w.projects);
+                  }}
+                  onOpenDetail={handleOpenDoc}
+                  onNavigate={(nav, standard) => navigate(nav, standard ? { standard } : {})}
+                />
               )}
 
               {/* VIEW 1: Google Drive Document Explorer (핵심 기본 뷰) */}
@@ -487,7 +644,8 @@ export default function PlatformWorkspace() {
               {activeNav === 'project' && !activeProject && <div role="status" className="p-8 text-sm text-slate-500">로그인 및 회사 권한을 확인한 뒤 프로젝트를 불러올 수 있습니다. 프로젝트가 없거나 접근 권한이 없을 수 있습니다.</div>}
 
               {/* VIEW 2: 고객사 심사 프로젝트 매니징 폴더 전용 뷰 (사용자 핵심 요구 기능) */}
-              {activeNav === 'project' && activeProject && (
+              {activeNav === 'project' && activeProject?.workflowVersion === 2 && <ProjectPreparationView key={activeProject.id} project={activeProject} documents={documents} onOpenDetail={handleOpenDoc} onAddDocument={handleAddDocument} onAddDocuments={handleAddDocuments} onUpdateDocument={handleUpdateDocument}/>}
+              {activeNav === 'project' && activeProject && activeProject.workflowVersion !== 2 && (
                 <ProjectDetailView
                   project={activeProject}
                   documents={documents}
@@ -507,6 +665,7 @@ export default function PlatformWorkspace() {
               )}
 
               {/* VIEW 3: ISO Statutory Compliance & Mandatory Requirements Binder */}
+              {activeNav === 'compliance' && <CompanyProjects projects={projects} company={currentCompany} companies={clientCompanies} documents={documents} onCreate={()=>setIsNewProjectModalOpen(true)} onSelect={handleSelectProject}/>}
               {activeNav === 'compliance' && !currentCompany && <div className="platform-card m-8"><h1>인증 관리</h1><p className="my-4 text-slate-500">관리할 거래처를 선택하면 해당 거래처의 인증과 구비문서 현황을 확인할 수 있습니다.</p><button className="work-primary" onClick={()=>setIsNewProjectModalOpen(true)}>거래처·프로젝트 추가</button></div>}
               {activeNav === 'compliance' && currentCompany && (
                 <IsoComplianceMatrixView
@@ -523,13 +682,19 @@ export default function PlatformWorkspace() {
 
               {/* VIEW 4: ISO Certification Dashboard */}
               {activeNav === 'dashboard' && (
-                <MyWorkView selectedClient={currentCompany} clients={clientCompanies}/>
+                <MyWorkView selectedClient={currentCompany} clients={clientCompanies} projects={projects} onCreateProject={()=>setIsNewProjectModalOpen(true)} onSelectProject={handleSelectProject}/>
               )}
 
               {/* VIEW 5: Expiry Radar & Risk Analysis */}
-              {activeNav === 'radar' && currentCompany && (
+              {activeNav === 'radar' && (
                 <RadarView
                   documents={documents}
+                  projects={projects}
+                  currentCompany={currentCompany}
+                  companies={clientCompanies}
+                  onSelectCompany={selectCompany}
+                  onSelectProject={handleSelectProject}
+                  onCreateProject={() => setIsNewProjectModalOpen(true)}
                   onOpenDetail={handleOpenDoc}
                 />
               )}
@@ -819,6 +984,8 @@ export default function PlatformWorkspace() {
         }}
         onCreateProject={handleCreateProject}
         initialProgram={selectedGovProgram}
+        companies={clientCompanies}
+        currentCompany={currentCompany}
       />
 
       {/* 7. Global Modals */}
@@ -832,12 +999,14 @@ export default function PlatformWorkspace() {
       <RealtimeEditorModal
         key={activeDoc?.id || "closed"}
         doc={activeDoc}
+        currentCompany={currentCompany}
         isOpen={isEditorOpen}
         onClose={() => {
           setIsEditorOpen(false);
           setActiveDoc(null);
         }}
         onSave={handleSaveEditor}
+        onUpdateDocument={handleUpdateDocument}
         onToggleChecklist={handleToggleChecklist}
         onDeleteDocument={handleDeleteDocument}
       />
