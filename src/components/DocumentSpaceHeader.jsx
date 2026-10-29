@@ -5,7 +5,7 @@ import {Folders, BookOpen} from 'lucide-react';
 
 export default function DocumentSpaceHeader({active}) {
   const params=useSearchParams();const company=params.get('company');const suffix=company?'?company='+encodeURIComponent(company):'';
-  return <header className="document-space-header">
+  return <header className={"document-space-header"+(params.get('dateReview')==='1'?' document-space-header-compact':'')}>
     <h1>문서 관리</h1>
     <p>거래처별 문서를 보관하고, ISO 규격별 구비문서와 작성 기준을 확인하세요.</p>
     <nav aria-label="문서 공간">
