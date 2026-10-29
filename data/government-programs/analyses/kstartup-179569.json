@@ -1,0 +1,101 @@
+{
+  "programId": "kstartup-179569",
+  "title": "COMEUP 2026 사전 오프라인 행사 &#039;스타트업 커리어 TALK&#039;",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-10-23T00:10:37.872180+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179569",
+  "sourceFingerprint": "562af7cae56e583a3d3f713aad6a231ca86c094ce5bb07a35db84a38eedd9c97",
+  "evidenceDirectory": "evidence/kstartup-179569",
+  "reviewScope": "상세·이미지형PDF1쪽전체렌더시각검토(추출본문없음)",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/Ls2Ln",
+      "verifiedAt": "2026-10-23",
+      "status": "downloaded",
+      "sha256": "6abf58fc8b93a697d24856a67ab69954e13b1f73ae3ded5848eead002be14877",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 2421446,
+      "format": "PDF",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 0
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/Ls2Ln": "6abf58fc8b93a697d24856a67ab69954e13b1f73ae3ded5848eead002be14877"
+  },
+  "lastAttachmentHashCheckedAt": "2026-10-23T00:10:37.872180+00:00",
+  "unresolved": [
+    "후속신청폼의필수문항·정원·접수상태미확인"
+  ],
+  "eligibility": {
+    "summary": "스타트업취업·커리어관심누구나",
+    "companyFields": [
+      "성명·연락처",
+      "참여관심·사전질문"
+    ],
+    "reference": "상세·이미지형PDF1쪽전체렌더시각검토(추출본문없음)"
+  },
+  "exclusions": {
+    "items": [
+      "정원도달선착순조기마감가능"
+    ],
+    "reference": "상세·이미지형PDF1쪽전체렌더시각검토(추출본문없음)"
+  },
+  "support": {
+    "summary": "무료10/28 14~17시마루180 B1이벤트홀,대표/실무자커리어토크·크로스Q&A·네트워킹.현금지원해당없음",
+    "reference": "상세·이미지형PDF1쪽전체렌더시각검토(추출본문없음)"
+  },
+  "period": {
+    "start": "2026-10-19",
+    "end": "2026-10-28",
+    "deadlineTime": "14:00",
+    "timezone": "Asia/Seoul",
+    "reference": "상세신청기간;포스터행사시작14시"
+  },
+  "application": {
+    "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179569",
+    "notes": "공고접수링크/포스터QR→참가정보·사전설문;후속폼미검토",
+    "reference": "상세제출서류·포스터"
+  },
+  "requiredDocuments": [
+    {
+      "name": "온라인참가신청·사전설문",
+      "condition": "필수;별도첨부없음",
+      "reference": "상세제출서류"
+    }
+  ],
+  "businessPlan": {
+    "format": "행사참가양식,사업계획서요구없음",
+    "sections": [],
+    "reference": "상세·이미지형PDF1쪽전체렌더시각검토(추출본문없음)"
+  },
+  "evaluation": {
+    "summary": "선착순,모집인원미기재.행사14~14:10소개/14:10~14:50사람들/15~15:30성장/15:40~16:30Q&A/16:30~17네트워킹",
+    "reference": "상세·이미지형PDF1쪽전체렌더시각검토(추출본문없음)"
+  },
+  "contact": {
+    "name": "COMEUP운영070-7443-9402/sylee@kstartupforum.org",
+    "reference": "상세·이미지형PDF1쪽전체렌더시각검토(추출본문없음)"
+  },
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179569",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확인 후 적합성 비교; 이 분석은 신청가능 판정 아님",
+    "steps": [
+      "회사 필드 및 자격 증빙 확인",
+      "미확인·충돌 해결",
+      "공고 양식 선택",
+      "회사 사실정보로 서류·사업계획서 작성 및 검토"
+    ]
+  }
+}

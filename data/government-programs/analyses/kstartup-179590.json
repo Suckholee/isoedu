@@ -1,0 +1,106 @@
+{
+  "programId": "kstartup-179590",
+  "title": "구로구 청년창업지원센터 일반 창업교육(하반기: 6회차): 발표평가 자료 작성 및 발표 요령",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-10-24T00:00:39.128035+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179590",
+  "sourceFingerprint": "22fd74157cbace69fbd228e837438270aa21d1e74f7aab214312f557eb477aaa",
+  "evidenceDirectory": "evidence/kstartup-179590",
+  "reviewScope": "상세·모집PDF3쪽 전문 및 모든쪽 시각 검토",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/0M2Ln",
+      "verifiedAt": "2026-10-24",
+      "status": "downloaded",
+      "sha256": "c7b8133a9a3af8e3483ee29315454780ad4ba2f1beceec9e39fde4da5f7b7fdb",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 127795,
+      "format": "PDF",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 1409
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/0M2Ln": "c7b8133a9a3af8e3483ee29315454780ad4ba2f1beceec9e39fde4da5f7b7fdb"
+  },
+  "lastAttachmentHashCheckedAt": "2026-10-24T00:00:39.128035+00:00",
+  "unresolved": [
+    "PDF 필수서류·이메일 제출 요구의 구체목록 및 실제 필드 미확인",
+    "PDF 3년이내 사업자와 업력관계없이 배정 문구 범위 불명확",
+    "전체하반기11/25접수기간과 6회차11/11 마감 구분; 날짜요일 일부오타 보존"
+  ],
+  "eligibility": {
+    "summary": "19~39세 서울거주 청년 예비창업희망자·일반인, PDF에는 3년이내 청년사업자 병기",
+    "companyFields": [
+      "연령",
+      "서울거주",
+      "사업자 업력",
+      "참가자 연락처"
+    ],
+    "reference": "상세·모집PDF3쪽 전문 및 모든쪽 시각 검토"
+  },
+  "exclusions": {
+    "items": [
+      "아이디어·기술모방 민형사 책임(공고 유의사항)"
+    ],
+    "reference": "상세·모집PDF3쪽 전문 및 모든쪽 시각 검토"
+  },
+  "support": {
+    "summary": "11/12 14~17 발표평가 자료작성 교육, 구로구 중앙로6길16. 일반 창업교육·1:1멘토링. 금액·참가비 상세미명시",
+    "reference": "상세·모집PDF3쪽 전문 및 모든쪽 시각 검토"
+  },
+  "period": {
+    "start": "2026-10-21",
+    "end": "2026-11-11",
+    "deadlineTime": "18:00",
+    "timezone": "Asia/Seoul",
+    "reference": "6회차 상세/공고 전일18시.7회차11/26은 별도회차"
+  },
+  "application": "https://lifelong.dongyang.ac.kr/lecture/list.do?menu_idx=10 회원가입→회차신청; PDF는 필수서류 이메일 및 수강자정보 증빙첨부 요구",
+  "requiredDocuments": [
+    {
+      "name": "온라인 수강신청",
+      "condition": "필수",
+      "reference": "상세/공고2쪽"
+    },
+    {
+      "name": "증빙자료",
+      "condition": "필수라고 기재하나 구체목록 미명시; 이메일/수강자정보 첨부 경로 확인필요",
+      "reference": "공고2쪽"
+    }
+  ],
+  "businessPlan": {
+    "format": "발표자료 작성 교육이며 신청 사업계획서 양식 없음",
+    "sections": [],
+    "reference": "상세·모집PDF3쪽 전문 및 모든쪽 시각 검토"
+  },
+  "evaluation": {
+    "summary": "50명 선착순, 참여율에 따른 이수이나 기준 미명시",
+    "reference": "상세·모집PDF3쪽 전문 및 모든쪽 시각 검토"
+  },
+  "contact": {
+    "name": "센터02-2625-9552 dkqktmdals@dongyang.ac.kr / 구청02-860-2080",
+    "reference": "상세·모집PDF3쪽 전문 및 모든쪽 시각 검토"
+  },
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179590",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확인 후 적합성 비교; 이 분석은 신청가능 판정 아님",
+    "steps": [
+      "회사 필드 및 자격 증빙 확인",
+      "미확인·충돌 해결",
+      "공고 양식 선택",
+      "회사 사실정보로 서류·사업계획서 작성 및 검토"
+    ]
+  }
+}

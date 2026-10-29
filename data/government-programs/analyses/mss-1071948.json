@@ -1,0 +1,210 @@
+{
+  "programId": "mss-1071948",
+  "title": "창업도시 조성 프로젝트 창업도시 모집 공고",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-10-24T00:02:00.122663+00:00",
+  "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071948&parentSeq=1071948",
+  "sourceFingerprint": "c06f2fda20e5083b1a80af2a3a5ed1e1ce2b64bdb60c02cabd19c1a3b24f0ce7",
+  "evidenceDirectory": "evidence/mss-1071948",
+  "reviewScope": "6개첨부 다운로드·추출 완료. PDF1~11·13·16~17쪽 핵심문단 및 별첨제목/평가계획표 일부만 검토. 전체검토 미완료",
+  "attachments": [
+    {
+      "url": "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071948&cbIdx=310&streFileNm=15b0fb13-772f-47a1-8ba5-47b421afdc46.hwpx",
+      "verifiedAt": "2026-10-24",
+      "status": "downloaded",
+      "sha256": "8e09e004b2600662893c45a73edaede8906c32f987ea804cffe88cd13525907a",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 175692,
+      "format": "HWPX",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=UTF-8",
+      "extraction": "text",
+      "characters": 32207
+    },
+    {
+      "url": "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071948&cbIdx=310&streFileNm=5088044f-2f61-40a3-8f2c-31e642b73140.pdf",
+      "verifiedAt": "2026-10-24",
+      "status": "downloaded",
+      "sha256": "1c633b036de3b6adb2e21611a6354f633e3bbce8c93249e8160eac419a0e9c61",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 1086196,
+      "format": "PDF",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=UTF-8",
+      "extraction": "text",
+      "characters": 20898
+    },
+    {
+      "url": "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071948&cbIdx=310&streFileNm=d6fe0b81-5e78-452c-b858-487d929ac696.hwpx",
+      "verifiedAt": "2026-10-24",
+      "status": "downloaded",
+      "sha256": "66ef273aeaf8c8a7d23c92bc32783e5fee70acc31634fb38ab9250b7b968d25f",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 81324,
+      "format": "HWPX",
+      "file": "attachment-03.bin",
+      "contentType": "application/octet-stream;charset=UTF-8",
+      "extraction": "text",
+      "characters": 13918
+    },
+    {
+      "url": "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071948&cbIdx=310&streFileNm=1251801c-6a9d-4498-b932-d51ba7e10465.hwpx",
+      "verifiedAt": "2026-10-24",
+      "status": "downloaded",
+      "sha256": "4544ee0e2a7a2e4073f62833e011abf8e39d534539295c9cc91e7506af549f66",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 299207,
+      "format": "HWPX",
+      "file": "attachment-04.bin",
+      "contentType": "application/octet-stream;charset=UTF-8",
+      "extraction": "text",
+      "characters": 105249
+    },
+    {
+      "url": "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071948&cbIdx=310&streFileNm=bf79f18e-2915-47eb-b184-79b4a3650495.hwpx",
+      "verifiedAt": "2026-10-24",
+      "status": "downloaded",
+      "sha256": "13eaecd0c03ee6cd6ddb50e88b4efd056014f33298af0fa45c2f46fbf7c42798",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 47473,
+      "format": "HWPX",
+      "file": "attachment-05.bin",
+      "contentType": "application/octet-stream;charset=UTF-8",
+      "extraction": "text",
+      "characters": 6845
+    },
+    {
+      "url": "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071948&cbIdx=310&streFileNm=e1936d95-0ec2-48a0-b6ad-3d646398cfa7.hwpx",
+      "verifiedAt": "2026-10-24",
+      "status": "downloaded",
+      "sha256": "2dbb387772b4bd5b983f8aad964607f26124a046ea3f8cad7d80b3c1d6ea12b5",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 58072,
+      "format": "HWPX",
+      "file": "attachment-06.bin",
+      "contentType": "application/octet-stream;charset=UTF-8",
+      "extraction": "text",
+      "characters": 8707
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071948&cbIdx=310&streFileNm=15b0fb13-772f-47a1-8ba5-47b421afdc46.hwpx": "8e09e004b2600662893c45a73edaede8906c32f987ea804cffe88cd13525907a",
+    "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071948&cbIdx=310&streFileNm=5088044f-2f61-40a3-8f2c-31e642b73140.pdf": "1c633b036de3b6adb2e21611a6354f633e3bbce8c93249e8160eac419a0e9c61",
+    "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071948&cbIdx=310&streFileNm=d6fe0b81-5e78-452c-b858-487d929ac696.hwpx": "66ef273aeaf8c8a7d23c92bc32783e5fee70acc31634fb38ab9250b7b968d25f",
+    "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071948&cbIdx=310&streFileNm=1251801c-6a9d-4498-b932-d51ba7e10465.hwpx": "4544ee0e2a7a2e4073f62833e011abf8e39d534539295c9cc91e7506af549f66",
+    "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071948&cbIdx=310&streFileNm=bf79f18e-2915-47eb-b184-79b4a3650495.hwpx": "13eaecd0c03ee6cd6ddb50e88b4efd056014f33298af0fa45c2f46fbf7c42798",
+    "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071948&cbIdx=310&streFileNm=e1936d95-0ec2-48a0-b6ad-3d646398cfa7.hwpx": "2dbb387772b4bd5b983f8aad964607f26124a046ea3f8cad7d80b3c1d6ea12b5"
+  },
+  "lastAttachmentHashCheckedAt": "2026-10-24T00:02:00.122663+00:00",
+  "unresolved": [
+    "모집공고 PDF 전체 및 별첨1~4/매뉴얼 전문·시각대조 미완료",
+    "평가계획11/4 15시 사전제출 수신처·양식세부 확정 필요",
+    "일반기업 후속지원 세부선발·예산은 미확정으로 분리"
+  ],
+  "eligibility": {
+    "summary": "비수도권 10개 광역자치단체 모집·6곳선정(안). 일반 기업 직접 신청 공고 아님. 운영은 해당 창조경제혁신센터 총괄책임자 계정. 대표도시·중심구역,15개추진단,지방재원6.4억내외,전담7인 요구",
+    "companyFields": [
+      "기관유형·권역",
+      "대표협력도시",
+      "추진단",
+      "지방재원",
+      "전담인력"
+    ],
+    "reference": "6개첨부 다운로드·추출 완료. PDF1~11·13·16~17쪽 핵심문단 및 별첨제목/평가계획표 일부만 검토. 전체검토 미완료"
+  },
+  "exclusions": {
+    "items": [
+      "수도권 제외",
+      "광역 공문/요건증빙 누락·승인미득 사업계획서 제외",
+      "전남광주통합특별시 기존 광주5구·나주 제외조건"
+    ],
+    "reference": "6개첨부 다운로드·추출 완료. PDF1~11·13·16~17쪽 핵심문단 및 별첨제목/평가계획표 일부만 검토. 전체검토 미완료"
+  },
+  "support": {
+    "summary": "도시별 연간150억내외/최대4년600억내외 계획안,매년 예산·성과평가에 따라 조정. 기업지원은 후속 별도 선발. 연간지방재원 이전기업4억내외·엔젤허브2.4억,허브 중앙60/지방40% 구조",
+    "reference": "6개첨부 다운로드·추출 완료. PDF1~11·13·16~17쪽 핵심문단 및 별첨제목/평가계획표 일부만 검토. 전체검토 미완료"
+  },
+  "period": {
+    "start": "2026-10-23",
+    "end": "2026-11-30",
+    "deadlineTime": "15:00",
+    "timezone": "Asia/Seoul",
+    "reference": "모집PDF2·16쪽; 별도 평가계획11/4 15시 사전제출"
+  },
+  "application": "KStartup 운영기관 총괄책임자 계정 온라인접수; 허용기관 제한,신규가입/신청 미실행",
+  "requiredDocuments": [
+    {
+      "name": "온라인 사업신청서",
+      "condition": "필수",
+      "reference": "공고16쪽"
+    },
+    {
+      "name": "광역자치단체 공문",
+      "condition": "필수",
+      "reference": "공고16쪽"
+    },
+    {
+      "name": "지방정부 추진전략 별첨1",
+      "condition": "필수",
+      "reference": "공고16쪽"
+    },
+    {
+      "name": "운영기관 사업계획서 별첨2",
+      "condition": "필수",
+      "reference": "공고16쪽"
+    },
+    {
+      "name": "증빙자료 별첨3",
+      "condition": "요건/가점별 필수·조건부",
+      "reference": "공고16쪽"
+    },
+    {
+      "name": "평가계획서 별첨4",
+      "condition": "11/4 15시 사전 이메일 제출 후 온라인첨부",
+      "reference": "별첨4 첫머리/공고16쪽"
+    }
+  ],
+  "businessPlan": {
+    "format": "각 별첨HWP계열 양식 준수,온라인파일100MB이하. 분량·각양식세부항목 전체 검토 미완료",
+    "sections": [
+      "지방정부 기본현황·산업구조·창업생태계",
+      "비전·목표·추진전략",
+      "운영기관 사업계획",
+      "요건·전담조직 증빙",
+      "현장평가계획·정량지표증빙"
+    ],
+    "reference": "6개첨부 다운로드·추출 완료. PDF1~11·13·16~17쪽 핵심문단 및 별첨제목/평가계획표 일부만 검토. 전체검토 미완료"
+  },
+  "evaluation": {
+    "summary": "서류→현장→심의,서류단계탈락없이현장검증;7대20지표. 정확한배점 후속검토 필요",
+    "reference": "6개첨부 다운로드·추출 완료. PDF1~11·13·16~17쪽 핵심문단 및 별첨제목/평가계획표 일부만 검토. 전체검토 미완료"
+  },
+  "contact": {
+    "name": "전문기관 창업진흥원(정확한 담당번호/이메일 후속확인)",
+    "reference": "6개첨부 다운로드·추출 완료. PDF1~11·13·16~17쪽 핵심문단 및 별첨제목/평가계획표 일부만 검토. 전체검토 미완료"
+  },
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "mss-1071948",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확인 후 적합성 비교; 이 분석은 신청가능 판정 아님",
+    "steps": [
+      "회사 필드 및 자격 증빙 확인",
+      "미확인·충돌 해결",
+      "공고 양식 선택",
+      "회사 사실정보로 서류·사업계획서 작성 및 검토"
+    ]
+  }
+}

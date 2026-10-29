@@ -1,0 +1,148 @@
+{
+  "programId": "kstartup-179582",
+  "title": "2026년 제4차 관악S밸리 창업 공간 신규 입주기업 모집 공고",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-10-27T00:07:00.926515+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179582",
+  "sourceFingerprint": "85912c47bc9aefc7b663a5ed152608b81e51b40d12d439c3315dd9452710d1a3",
+  "evidenceDirectory": "evidence/kstartup-179582",
+  "reviewScope": "공고PDF주요1~7·10~13쪽텍스트·HWP신청/동의주요필드검토,사진PDF렌더만·미검토",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/NC2Ln",
+      "verifiedAt": "2026-10-27",
+      "status": "downloaded",
+      "sha256": "8138c73ab30ce824fdad329c09b64cfab2574e8a27d83b9480ac5328d1d4b732",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 193509,
+      "format": "PDF",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 7797
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/7C2Ln",
+      "verifiedAt": "2026-10-27",
+      "status": "downloaded",
+      "sha256": "ed0ec8016fd4ed35e1810ff7ebb5acb479181bf83dd6f2bbc65670ee0759b47f",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 64512,
+      "format": "HWP",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 2253
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/8C2Ln",
+      "verifiedAt": "2026-10-27",
+      "status": "downloaded",
+      "sha256": "65fe622add3315e260f26d27d9e242d87ed92d91e5447382c5dc01ecf3b3f8ae",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 2270847,
+      "format": "PDF",
+      "file": "attachment-03.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 0
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/NC2Ln": "8138c73ab30ce824fdad329c09b64cfab2574e8a27d83b9480ac5328d1d4b732",
+    "https://www.k-startup.go.kr/afile/fileDownload/7C2Ln": "ed0ec8016fd4ed35e1810ff7ebb5acb479181bf83dd6f2bbc65670ee0759b47f",
+    "https://www.k-startup.go.kr/afile/fileDownload/8C2Ln": "65fe622add3315e260f26d27d9e242d87ed92d91e5447382c5dc01ecf3b3f8ae"
+  },
+  "lastAttachmentHashCheckedAt": "2026-10-27T00:07:00.926515+00:00",
+  "unresolved": [
+    "전체공고후반일부/원본전체쪽시각·별첨사진미검토",
+    "온라인회원이후실제입력·첨부제한미확인",
+    "일부증빙공고일이후와마감1개월이내조건병기대조필요"
+  ],
+  "eligibility": {
+    "summary": "공고일벤처기업/예비창업/7년이내창업(신산업10년미만).자체핵심기술·공간충분활용,스타트업센터본사이전필수",
+    "companyFields": [
+      "업력·신산업/벤처",
+      "본사지사연구소이전",
+      "상주인력채용",
+      "매출투자성과",
+      "체납"
+    ],
+    "reference": "공고PDF주요1~7·10~13쪽텍스트·HWP신청/동의주요필드검토,사진PDF렌더만·미검토"
+  },
+  "exclusions": {
+    "items": [
+      "창업제외업종·이전불가·채무불이행체납·환경공해"
+    ],
+    "reference": "공고PDF주요1~7·10~13쪽텍스트·HWP신청/동의주요필드검토,사진PDF렌더만·미검토"
+  },
+  "support": {
+    "summary": "21개사2027년1년계약평가1회연장.연사용료1187320~5565130원공간별VAT포함·관리인당월2만원연부과.비상주무료보증50만원,입주15일내선납.별도지원프로그램보장아님",
+    "reference": "공고PDF주요1~7·10~13쪽텍스트·HWP신청/동의주요필드검토,사진PDF렌더만·미검토"
+  },
+  "period": {
+    "start": "2026-10-20",
+    "end": "2026-11-16",
+    "deadlineTime": "23:55",
+    "timezone": "Asia/Seoul",
+    "reference": "상세23:55·공고일자만"
+  },
+  "application": "www.gsva.or.kr 회원가입→공고신청",
+  "requiredDocuments": [
+    {
+      "name": "신청·자유사업계획·동의·발표PPT",
+      "condition": "필수",
+      "reference": "공고5쪽"
+    },
+    {
+      "name": "사업자·법인등기·보험명부·국세지방세",
+      "condition": "조건별필수·유효발급기준확인",
+      "reference": "공고5·12쪽"
+    },
+    {
+      "name": "벤처/실적/24~25과표",
+      "condition": "선택·가점/정량근거",
+      "reference": "공고5·12~13쪽"
+    }
+  ],
+  "businessPlan": {
+    "format": "사업계획자유양식·PPT5분발표5분질의",
+    "sections": [
+      "기업인력",
+      "기술서비스",
+      "시장검증",
+      "사업성과성장",
+      "공간활용·채용계획"
+    ],
+    "reference": "공고PDF주요1~7·10~13쪽텍스트·HWP신청/동의주요필드검토,사진PDF렌더만·미검토"
+  },
+  "evaluation": {
+    "summary": "서류2배수→발표,정량50(투자15매출13고용10인증5운영7)정성50·가점최대3.11/19서류11/25발표11/27선발예정",
+    "reference": "공고PDF주요1~7·10~13쪽텍스트·HWP신청/동의주요필드검토,사진PDF렌더만·미검토"
+  },
+  "contact": {
+    "name": "02-871-9132~9135 space@gsva.or.kr",
+    "reference": "공고PDF주요1~7·10~13쪽텍스트·HWP신청/동의주요필드검토,사진PDF렌더만·미검토"
+  },
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179582",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확인 후 적합성 비교; 이 분석은 신청가능 판정 아님",
+    "steps": [
+      "회사 필드 및 자격 증빙 확인",
+      "미확인·충돌 해결",
+      "공고 양식 선택",
+      "회사 사실정보로 서류·사업계획서 작성 및 검토"
+    ]
+  }
+}

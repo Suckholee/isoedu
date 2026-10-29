@@ -38,7 +38,7 @@
     "https://www.k-startup.go.kr/afile/fileDownload/bt2Ln": "2cf20cc8fb68490923f2244634a9ced483b553b2a4c69f48ff904c792e942679",
     "https://www.k-startup.go.kr/afile/fileDownload/ct2Ln": "fa39f82906e5e7b2390f6f64b32336a706a37d438ffd175a4f939b1201ea2a74"
   },
-  "lastAttachmentHashCheckedAt": "2026-10-22T00:35:53.136226+00:00",
+  "lastAttachmentHashCheckedAt": "2026-10-29T01:44:03.373489+00:00",
   "unresolved": [],
   "eligibility": {
     "summary": "TIPS/LIPS준비또는관심예비창업자·스타트업·소상공인및IR관심누구나",
@@ -168,5 +168,35 @@
     "정원숫자·수료기준은원문미기재(추정안함)"
   ],
   "reviewMeaning": "공개모집내용·관련첨부·신청양식검토완료;개별회사의신청자격확정·실제신청완료아님",
-  "updatedAt": "2026-10-22T00:37:17.828134+00:00"
+  "updatedAt": "2026-10-22T00:37:17.828134+00:00",
+  "recheck": {
+    "at": "2026-10-23T00:13:07.991508+00:00",
+    "checks": [
+      {
+        "url": "https://www.k-startup.go.kr/afile/fileDownload/bt2Ln",
+        "verifiedAt": "2026-10-23",
+        "status": "downloaded",
+        "sha256": "2cf20cc8fb68490923f2244634a9ced483b553b2a4c69f48ff904c792e942679",
+        "previousHash": "2cf20cc8fb68490923f2244634a9ced483b553b2a4c69f48ff904c792e942679",
+        "changed": false,
+        "bytes": 440155,
+        "format": "IMAGE",
+        "file": "attachment-01.bin",
+        "contentType": "image/jpeg;charset=UTF-8"
+      },
+      {
+        "url": "https://www.k-startup.go.kr/afile/fileDownload/ct2Ln",
+        "verifiedAt": "2026-10-23",
+        "status": "downloaded",
+        "sha256": "fa39f82906e5e7b2390f6f64b32336a706a37d438ffd175a4f939b1201ea2a74",
+        "previousHash": "fa39f82906e5e7b2390f6f64b32336a706a37d438ffd175a4f939b1201ea2a74",
+        "changed": false,
+        "bytes": 658,
+        "format": "OTHER",
+        "file": "attachment-02.bin",
+        "contentType": "application/octet-stream;charset=ISO-8859-1"
+      }
+    ],
+    "result": "동일URL첨부이전바이트동일,기존분석유지"
+  }
 }

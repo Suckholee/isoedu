@@ -1,0 +1,178 @@
+{
+  "programId": "kstartup-179570",
+  "title": "대구콘텐츠기업지원센터 2026년 3차 입주기업 모집",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-10-26T00:01:22.300546+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179570",
+  "sourceFingerprint": "5530e86d6f297e223f52a2578b7804856c816ee01c6e78835e266a3bdf7d0ad9",
+  "evidenceDirectory": "evidence/kstartup-179570",
+  "reviewScope": "PDF1~5쪽핵심/신청HWP주요목차·표·체크리스트·동의검토,전체완료아님",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/As2Ln",
+      "verifiedAt": "2026-10-26",
+      "status": "downloaded",
+      "sha256": "d3064ef0da6324041a118fd93a12edc166ddbf70231e74c1f433de5d7bf52c88",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 357317,
+      "format": "PDF",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 7583
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/os2Ln",
+      "verifiedAt": "2026-10-26",
+      "status": "downloaded",
+      "sha256": "6e9cbaf9d4cd11d0ca33196c5a38d34e376e793f7c8c5f5f7a1ba5e067087f45",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 76800,
+      "format": "HWP",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 6361
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/ws2Ln",
+      "verifiedAt": "2026-10-26",
+      "status": "downloaded",
+      "sha256": "a7d82119770437a620d5f6ecbd208147e5c93a3d0d6bb0b49f9741e57a2d73b3",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 84480,
+      "format": "HWP",
+      "file": "attachment-03.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 7589
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/As2Ln": "d3064ef0da6324041a118fd93a12edc166ddbf70231e74c1f433de5d7bf52c88",
+    "https://www.k-startup.go.kr/afile/fileDownload/os2Ln": "6e9cbaf9d4cd11d0ca33196c5a38d34e376e793f7c8c5f5f7a1ba5e067087f45",
+    "https://www.k-startup.go.kr/afile/fileDownload/ws2Ln": "a7d82119770437a620d5f6ecbd208147e5c93a3d0d6bb0b49f9741e57a2d73b3"
+  },
+  "lastAttachmentHashCheckedAt": "2026-10-26T00:01:22.300546+00:00",
+  "unresolved": [
+    "HWP신청체크리스트의신청일과공고문공고일기준7년 차이",
+    "추가입주/변경기준후반·도면·원본모든쪽시각대조미완료",
+    "제3첨부HWP공고중복본상세대조미완료"
+  ],
+  "eligibility": {
+    "summary": "공고일기준설립7년이내문화콘텐츠개인/법인,계약30일내본사이전.자체콘텐츠/IP우선.체크리스트는신청일기준7년표현",
+    "companyFields": [
+      "설립일",
+      "콘텐츠분야·IP",
+      "본사이전",
+      "체납·제재",
+      "임대료타지원",
+      "인력·매출"
+    ],
+    "reference": "PDF1~5쪽핵심/신청HWP주요목차·표·체크리스트·동의검토,전체완료아님"
+  },
+  "exclusions": {
+    "items": [
+      "영화출판게임디자인공연문화예술공예문화재제외",
+      "해외기업국내자본50%미만",
+      "참여제한·체납신용불량·휴폐업",
+      "공해공장등록",
+      "DIP임대기술료미납",
+      "기존2실사용기업"
+    ],
+    "reference": "PDF1~5쪽핵심/신청HWP주요목차·표·체크리스트·동의검토,전체완료아님"
+  },
+  "support": {
+    "summary": "9실·기업최대2실.임관리월5만~252622원VAT포함·공과금실비,보증금월12개월분SGI대체.통상2+2년/207·211등정액1+1년.센터인프라·별도심사사업화지원",
+    "reference": "PDF1~5쪽핵심/신청HWP주요목차·표·체크리스트·동의검토,전체완료아님"
+  },
+  "period": {
+    "start": "2026-10-19",
+    "end": "2026-11-06",
+    "deadlineTime": "10:00",
+    "timezone": "Asia/Seoul",
+    "reference": "공고PDF4쪽"
+  },
+  "application": "shine@dip.or.kr 번호.서류명_기업명→기업명.zip",
+  "requiredDocuments": [
+    {
+      "name": "입주신청/사업계획서",
+      "condition": "작성본과인감날인PDF둘다",
+      "reference": "PDF4쪽"
+    },
+    {
+      "name": "체크리스트",
+      "condition": "날인필수",
+      "reference": "PDF4쪽"
+    },
+    {
+      "name": "개인정보동의",
+      "condition": "기재참여인력전원서명",
+      "reference": "PDF4쪽"
+    },
+    {
+      "name": "사업자·인감증명·등기·4대보험",
+      "condition": "조건별필수·보험1개월이내",
+      "reference": "PDF4쪽"
+    },
+    {
+      "name": "3개년재무/과표·중소기업확인",
+      "condition": "신생기간분·확인서잔여1개월이상",
+      "reference": "PDF4쪽"
+    },
+    {
+      "name": "10분발표PDF",
+      "condition": "필수",
+      "reference": "PDF4쪽"
+    },
+    {
+      "name": "IP·실적·가점·IR",
+      "condition": "해당시",
+      "reference": "PDF4쪽"
+    },
+    {
+      "name": "국세납부내역·지방세세목별증명",
+      "condition": "선정후계약까지필수",
+      "reference": "PDF4쪽"
+    }
+  ],
+  "businessPlan": {
+    "format": "HWP신청양식·분량별도미확인",
+    "sections": [
+      "기업소개연혁전문인력성과",
+      "IP차별성·시장·BM",
+      "추진현황·26~28재무고용해외목표",
+      "재무조달·입주협력·조직인력이력"
+    ],
+    "reference": "PDF1~5쪽핵심/신청HWP주요목차·표·체크리스트·동의검토,전체완료아님"
+  },
+  "evaluation": {
+    "summary": "신규계획40·역량30·기대30+가점3,11/13발표예정.기존추가변경별도정량40정성60.상세기준전체후속검토",
+    "reference": "PDF1~5쪽핵심/신청HWP주요목차·표·체크리스트·동의검토,전체완료아님"
+  },
+  "contact": {
+    "name": "053-215-4906 shine@dip.or.kr",
+    "reference": "PDF1~5쪽핵심/신청HWP주요목차·표·체크리스트·동의검토,전체완료아님"
+  },
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179570",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확인 후 적합성 비교; 이 분석은 신청가능 판정 아님",
+    "steps": [
+      "회사 필드 및 자격 증빙 확인",
+      "미확인·충돌 해결",
+      "공고 양식 선택",
+      "회사 사실정보로 서류·사업계획서 작성 및 검토"
+    ]
+  }
+}

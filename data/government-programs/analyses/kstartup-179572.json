@@ -1,0 +1,153 @@
+{
+  "programId": "kstartup-179572",
+  "title": "2026년 스타트업 법률지원사업 울산광역시 법률상담회 참여 기업 모집 안내",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-10-23T00:10:37.872180+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179572",
+  "sourceFingerprint": "cbeaaca0580fe456f7e8c21d8adf35cbb79cb789d94ba69fe43c44b34a5ba8f6",
+  "evidenceDirectory": "evidence/kstartup-179572",
+  "reviewScope": "모집PDF3쪽전문/3쪽축소시각·HWPX/DOCX신청서전문대조",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/Ns2Ln",
+      "verifiedAt": "2026-10-23",
+      "status": "downloaded",
+      "sha256": "36972926eb7f17578404ecb0b598ca338db44335ca828d19b5106148522a0af4",
+      "previousHash": "36972926eb7f17578404ecb0b598ca338db44335ca828d19b5106148522a0af4",
+      "changed": false,
+      "bytes": 217008,
+      "format": "PDF",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 2735
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/is2Ln",
+      "verifiedAt": "2026-10-23",
+      "status": "downloaded",
+      "sha256": "1fb9ad3a6e2be59f482399c7f5bc89ce92785f1d410ad73c40be0e17f78de9af",
+      "previousHash": "1fb9ad3a6e2be59f482399c7f5bc89ce92785f1d410ad73c40be0e17f78de9af",
+      "changed": false,
+      "bytes": 44903,
+      "format": "HWPX",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 918
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/js2Ln",
+      "verifiedAt": "2026-10-23",
+      "status": "downloaded",
+      "sha256": "88346aa4921bf9c5f74599518adc8b40ad202667e0b02666229f3fd9f5cc923d",
+      "previousHash": "88346aa4921bf9c5f74599518adc8b40ad202667e0b02666229f3fd9f5cc923d",
+      "changed": false,
+      "bytes": 17004,
+      "format": "DOCX",
+      "file": "attachment-03.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 473
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/Ns2Ln": "36972926eb7f17578404ecb0b598ca338db44335ca828d19b5106148522a0af4",
+    "https://www.k-startup.go.kr/afile/fileDownload/is2Ln": "1fb9ad3a6e2be59f482399c7f5bc89ce92785f1d410ad73c40be0e17f78de9af",
+    "https://www.k-startup.go.kr/afile/fileDownload/js2Ln": "88346aa4921bf9c5f74599518adc8b40ad202667e0b02666229f3fd9f5cc923d"
+  },
+  "lastAttachmentHashCheckedAt": "2026-10-23T00:10:37.872180+00:00",
+  "unresolved": [
+    "울산공고첨부HWPX와DOCX제목·안내가대전법률상담회:기관최신양식확인필요",
+    "본문신청서필수첨부와상세필요시양식첨부안내차이",
+    "인증이후실제접수필드/업로드제한미확인"
+  ],
+  "eligibility": {
+    "summary": "예비창업자또는상담일기준7년이내창업기업(신산업10년이내),실명·기업인증필요",
+    "companyFields": [
+      "개업일·신산업해당",
+      "상담분야/질의",
+      "소속·직위·연락처",
+      "희망시간",
+      "제외업종"
+    ],
+    "reference": "모집PDF3쪽전문/3쪽축소시각·HWPX/DOCX신청서전문대조"
+  },
+  "exclusions": {
+    "items": [
+      "창업제외업종",
+      "분쟁·소송상담지원대상아님",
+      "확정후취소/불참시추후불이익가능"
+    ],
+    "reference": "모집PDF3쪽전문/3쪽축소시각·HWPX/DOCX신청서전문대조"
+  },
+  "support": {
+    "summary": "11/6 11~16시울산전시컨벤션A2대면45분,20팀선착순.계약·IP·개인정보·규제·노무·투자·기업법무·재도전·해외9분야.현금한도/비율해당없음;참가비별도명시미확인",
+    "reference": "모집PDF3쪽전문/3쪽축소시각·HWPX/DOCX신청서전문대조"
+  },
+  "period": {
+    "start": "2026-10-20",
+    "end": "2026-11-02",
+    "deadlineTime": "18:00",
+    "timezone": "Asia/Seoul",
+    "reference": "모집PDF2쪽"
+  },
+  "application": {
+    "url": "https://www.k-startup.go.kr",
+    "notes": "실명/기업인증후신청.온라인질의기재와별도양식첨부필수여부본문차이확인필요",
+    "reference": "PDF2쪽"
+  },
+  "requiredDocuments": [
+    {
+      "name": "상담신청서/질의",
+      "condition": "필수;양식1첨부요구",
+      "reference": "PDF2쪽"
+    },
+    {
+      "name": "상담참고자료",
+      "condition": "선택필요시",
+      "reference": "PDF2쪽"
+    },
+    {
+      "name": "사업계획서또는IR",
+      "condition": "선택자유양식PDF",
+      "reference": "PDF2쪽"
+    }
+  ],
+  "businessPlan": {
+    "format": "공개HWPX/DOCX서식은대표·연락·제목·상세질의,예비소속공란.양식제목은대전으로오류.분량미명시",
+    "sections": [
+      "신청자예비/기업",
+      "소속·성명·직위·연락처",
+      "상담제목",
+      "상세질의(45분고려)"
+    ],
+    "reference": "모집PDF3쪽전문/3쪽축소시각·HWPX/DOCX신청서전문대조"
+  },
+  "evaluation": {
+    "summary": "자격+9분야적합성충족제출완료선착순20팀,희망시간미보장·11/3 18시까지안내예정",
+    "reference": "모집PDF3쪽전문/3쪽축소시각·HWPX/DOCX신청서전문대조"
+  },
+  "contact": {
+    "name": "창업진흥원044-410-1745/jyk@kised.or.kr",
+    "reference": "모집PDF3쪽전문/3쪽축소시각·HWPX/DOCX신청서전문대조"
+  },
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179572",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확인 후 적합성 비교; 이 분석은 신청가능 판정 아님",
+    "steps": [
+      "회사 필드 및 자격 증빙 확인",
+      "미확인·충돌 해결",
+      "공고 양식 선택",
+      "회사 사실정보로 서류·사업계획서 작성 및 검토"
+    ]
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "programId": "kstartup-179607",
+  "title": "성남 중장년 기술창업센터 입주기업 모집 공고",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-10-29T01:43:50.215678+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179607",
+  "sourceFingerprint": "ffbc99142b6dfe5303fa9670fdb7620b3838dd2164dc9efebdeb0ff9f4075390",
+  "evidenceDirectory": "evidence/kstartup-179607",
+  "reviewScope": "첨부01공고§1~6·02신청계획동의전문·03연락HWP전문텍스트·상세대조",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/iQ2Ln",
+      "verifiedAt": "2026-10-29",
+      "status": "downloaded",
+      "sha256": "27bafc60483891d998023222d784b5e5556b7cafdb9ac2f2c94f48b5ad606839",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 738816,
+      "format": "HWP",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 3382
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/jQ2Ln",
+      "verifiedAt": "2026-10-29",
+      "status": "downloaded",
+      "sha256": "de0012e60f5c825ca5aa776ee6d76906e593a4472a637d7bd6845e880c7bf015",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 73216,
+      "format": "HWP",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 4084
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/VQ2Ln",
+      "verifiedAt": "2026-10-29",
+      "status": "downloaded",
+      "sha256": "d79bbc4726af60c243be346e66f875e419af0dcf8934880451f06a800f56a70c",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 25088,
+      "format": "HWP",
+      "file": "attachment-03.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 134
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/iQ2Ln": "27bafc60483891d998023222d784b5e5556b7cafdb9ac2f2c94f48b5ad606839",
+    "https://www.k-startup.go.kr/afile/fileDownload/jQ2Ln": "de0012e60f5c825ca5aa776ee6d76906e593a4472a637d7bd6845e880c7bf015",
+    "https://www.k-startup.go.kr/afile/fileDownload/VQ2Ln": "d79bbc4726af60c243be346e66f875e419af0dcf8934880451f06a800f56a70c"
+  },
+  "lastAttachmentHashCheckedAt": "2026-10-29T01:43:50.215678+00:00",
+  "unresolved": [
+    "상세서류11/4 vs 공고11/5,공고입주시기10월 vs 11월중순",
+    "양식9월·1인석만표기 vs 2인석모집,동의서평가위원참여문구혼입",
+    "외국인체류만료입주기간초과하지않는다는원문확인필요",
+    "HWP표/그림전체시각및실제접수필드미검증"
+  ],
+  "eligibility": {
+    "summary": "제조·지식서비스,40세이상예비/3년내80%이상·연령무관7년내20%이하.2인석대표외1인고용필수",
+    "companyFields": [
+      "나이·업력·사업자전체이력",
+      "업종",
+      "이전가능",
+      "고용보험",
+      "체납",
+      "입주이력"
+    ],
+    "reference": "첨부01공고§1~6·02신청계획동의전문·03연락HWP전문텍스트·상세대조"
+  },
+  "exclusions": {
+    "items": [
+      "단순서비스숙박임대유흥·공해",
+      "채무불이행·체납·참여제한"
+    ],
+    "reference": "첨부01공고§1~6·02신청계획동의전문·03연락HWP전문텍스트·상세대조"
+  },
+  "support": {
+    "summary": "1인석4사·2인석1사.보증20만원/석·12개월최장36.예비6개월창업/기창업3개월이전.평일9~21·하이테크밸리주차승강기불가",
+    "reference": "첨부01공고§1~6·02신청계획동의전문·03연락HWP전문텍스트·상세대조"
+  },
+  "period": {
+    "start": "2026-10-22",
+    "end": "2026-10-30",
+    "deadlineTime": "16:00",
+    "timezone": "Asia/Seoul",
+    "reference": "공고§6·상세"
+  },
+  "application": "SNIP사업공고온라인또는방문",
+  "requiredDocuments": [
+    {
+      "name": "신청·계획·동의·대표구성원이력/경력",
+      "condition": "필수",
+      "reference": "첨부01§6/02"
+    },
+    {
+      "name": "총사업자내역·국세지방세",
+      "condition": "필수",
+      "reference": "첨부01§6"
+    },
+    {
+      "name": "사업자·매출고용·2인석보험명부·법인등기2개월내",
+      "condition": "해당시필수",
+      "reference": "첨부01§6"
+    },
+    {
+      "name": "가점증빙",
+      "condition": "선택최대5점",
+      "reference": "첨부01§4"
+    },
+    {
+      "name": "연락처인적사항",
+      "condition": "별첨HWP PDF변경불가",
+      "reference": "첨부03"
+    }
+  ],
+  "businessPlan": {
+    "format": "HWP·별도연락처·계획내연락이메일기재금지·분량미명시",
+    "sections": [
+      "아이템요약·시장·차별성·산출물",
+      "대표팀역량·동기·입주계획",
+      "제품·시장3년전망·목표파급"
+    ],
+    "reference": "첨부01공고§1~6·02신청계획동의전문·03연락HWP전문텍스트·상세대조"
+  },
+  "evaluation": {
+    "summary": "서류/발표각평균70이상·역량계획기술시장,가점최대5.발표11/11",
+    "reference": "첨부01공고§1~6·02신청계획동의전문·03연락HWP전문텍스트·상세대조"
+  },
+  "contact": {
+    "name": "김진겸 jkyeoms@snip.or.kr / 주최본문031-782-3265",
+    "reference": "첨부01공고§1~6·02신청계획동의전문·03연락HWP전문텍스트·상세대조"
+  },
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179607",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확인 후 적합성 비교; 이 분석은 신청가능 판정 아님",
+    "steps": [
+      "회사 필드 및 자격 증빙 확인",
+      "미확인·충돌 해결",
+      "공고 양식 선택",
+      "회사 사실정보로 서류·사업계획서 작성 및 검토"
+    ]
+  },
+  "externalCheckEvidence": "evidence/external-check-2026-10-29.json"
+}

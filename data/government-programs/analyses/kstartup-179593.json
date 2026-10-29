@@ -1,0 +1,125 @@
+{
+  "programId": "kstartup-179593",
+  "title": "&lt;2026년 AI 활용 제조창업 올인원 실전 교육&gt; 프로그램 참여자 모집",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-10-24T00:00:39.128035+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179593",
+  "sourceFingerprint": "c67e1906831f5b8b2e63bb6b275546b1a9b9e6f6622ee9254000108b3e96c82e",
+  "evidenceDirectory": "evidence/kstartup-179593",
+  "reviewScope": "상세·스캔포스터PDF1쪽 전체 시각 검토; 공개 신청폼 전체 문항 검토",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/ON2Ln",
+      "verifiedAt": "2026-10-24",
+      "status": "downloaded",
+      "sha256": "49d07e5262dec543fe899d8ce6748555f1fe4559e3f00de29942f55c55f5d0b5",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 2570403,
+      "format": "PDF",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 0
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/ON2Ln": "49d07e5262dec543fe899d8ce6748555f1fe4559e3f00de29942f55c55f5d0b5"
+  },
+  "lastAttachmentHashCheckedAt": "2026-10-24T00:00:39.128035+00:00",
+  "unresolved": [
+    "회차별 개별마감·20명초과 처리기준 미명시"
+  ],
+  "eligibility": {
+    "summary": "제조창업/사업고도화에 AI활용 희망 예비창업자·창업자, 학생·일반인",
+    "companyFields": [
+      "참가 회차",
+      "창업아이템",
+      "노트북·계정 준비",
+      "참가자 연락처"
+    ],
+    "reference": "상세·스캔포스터PDF1쪽 전체 시각 검토"
+  },
+  "exclusions": {
+    "items": [
+      "별도 제외조건 미명시"
+    ],
+    "reference": "상세·스캔포스터PDF1쪽 전체 시각 검토"
+  },
+  "support": {
+    "summary": "무료 회차별20명, 중복신청 가능. 충북대S1-7동2층 10/27·10/29·11/3·11/5·11/6 각13~16. 개인노트북/구글·ChatGPT무료계정, 제품사진 선택(없으면 샘플)",
+    "reference": "상세·스캔포스터PDF1쪽 전체 시각 검토"
+  },
+  "period": {
+    "start": "2026-10-21",
+    "end": "2026-11-06",
+    "deadlineTime": "13:00",
+    "timezone": "Asia/Seoul",
+    "reference": "상세 전체접수기간; 회차별 개별 마감 미명시"
+  },
+  "application": "온라인 https://forms.gle/hUWxJdH9Lx5fboif7",
+  "requiredDocuments": [
+    {
+      "name": "온라인 참가신청",
+      "condition": "필수; 제출서류 없음",
+      "reference": "상세"
+    },
+    {
+      "name": "개인 노트북·로그인 계정",
+      "condition": "교육 준비물; 제출서류 아님",
+      "reference": "포스터 하단"
+    }
+  ],
+  "businessPlan": {
+    "format": "교육 과정에서 사업계획서·비즈니스모델 작성 실습, 신청용 사업계획서 양식 없음",
+    "sections": [
+      "아이디어 발굴",
+      "제품설계",
+      "비즈니스 실무·사업계획서",
+      "SNS마케팅",
+      "브랜딩"
+    ],
+    "reference": "상세·스캔포스터PDF1쪽 전체 시각 검토"
+  },
+  "evaluation": {
+    "summary": "별도 선정평가 없음, 회차20명 초과처리 기준 미명시",
+    "reference": "상세·스캔포스터PDF1쪽 전체 시각 검토"
+  },
+  "contact": {
+    "name": "충북Pro메이커센터 경영지원팀043-249-1163",
+    "reference": "상세·스캔포스터PDF1쪽 전체 시각 검토"
+  },
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179593",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확인 후 적합성 비교; 이 분석은 신청가능 판정 아님",
+    "steps": [
+      "회사 필드 및 자격 증빙 확인",
+      "미확인·충돌 해결",
+      "공고 양식 선택",
+      "회사 사실정보로 서류·사업계획서 작성 및 검토"
+    ]
+  },
+  "applicationFormReview": {
+    "verifiedAt": "2026-10-24T00:01:12.028365+00:00",
+    "evidence": "evidence/ai-form-2026-10-24.html",
+    "fields": [
+      "성함",
+      "소속(예비창업자팀명)",
+      "휴대폰",
+      "메일",
+      "희망회차 복수선택",
+      "교육시간확인",
+      "노트북계정준비확인",
+      "개인정보동의"
+    ],
+    "scope": "공개 폼 전체 문항 텍스트 확인; 제출·신청 없음"
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "programId": "kstartup-179602",
+  "title": "2026 FAST TRACK 농식품 데모데이",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-10-24T00:00:39.128035+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179602",
+  "sourceFingerprint": "dc0fbc4c259d12f0bf993968cf21d91a57341bcbe1b6e417b4e2de32a6d4787f",
+  "evidenceDirectory": "evidence/kstartup-179602",
+  "reviewScope": "공식 상세 및 PNG 포스터 전체 시각 검토·동일 TXT 전문 대조; 공개 신청폼 전체 문항 검토",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/4i2Ln",
+      "verifiedAt": "2026-10-24",
+      "status": "downloaded",
+      "sha256": "a0ff0e706135be31d06d1a85564619a052fd3ee08298c7116a373ed7c5ea7c99",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 2406272,
+      "format": "IMAGE",
+      "file": "attachment-01.bin",
+      "contentType": "image/png;charset=UTF-8"
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/8V2Ln",
+      "verifiedAt": "2026-10-24",
+      "status": "downloaded",
+      "sha256": "b6dd188fcc1d9a8bf3f7455e4826bfc86aaf941d994cebb64c3f3ba14d12ed36",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 2137,
+      "format": "OTHER",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1"
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/4i2Ln": "a0ff0e706135be31d06d1a85564619a052fd3ee08298c7116a373ed7c5ea7c99",
+    "https://www.k-startup.go.kr/afile/fileDownload/8V2Ln": "b6dd188fcc1d9a8bf3f7455e4826bfc86aaf941d994cebb64c3f3ba14d12ed36"
+  },
+  "lastAttachmentHashCheckedAt": "2026-10-29T01:44:03.373489+00:00",
+  "unresolved": [
+    "폼 이메일 필수 표시와 개인정보동의문 선택 설명 충돌",
+    "개인정보 처리기관·보유기간·문의처가 대괄호 미작성 상태",
+    "전체17:30 종료와 시간표17:00 종료 차이"
+  ],
+  "eligibility": {
+    "summary": "농식품 관심 창업자·예비창업자·투자자, 우수 스타트업 발굴 희망 투자자. 참관 모집이며 발표기업 모집 아님",
+    "companyFields": [
+      "농식품 관심분야",
+      "참가자 소속·연락처"
+    ],
+    "reference": "공식 상세 및 PNG 포스터 전체 시각 검토·동일 TXT 전문 대조"
+  },
+  "exclusions": {
+    "items": [
+      "특별 제외조건 미명시"
+    ],
+    "reference": "공식 상세 및 PNG 포스터 전체 시각 검토·동일 TXT 전문 대조"
+  },
+  "support": {
+    "summary": "무료 IR 참관, 코엑스2층 스타트업브랜치 10/30 13~17:30. 현금지원·투자확약 없음",
+    "reference": "공식 상세 및 PNG 포스터 전체 시각 검토·동일 TXT 전문 대조"
+  },
+  "period": {
+    "start": "2026-10-22",
+    "end": "2026-10-30",
+    "deadlineTime": "13:00",
+    "timezone": "Asia/Seoul",
+    "reference": "공식 상세 신청기간"
+  },
+  "application": "온라인 사전등록 https://forms.gle/A17LY1yVwFR5U5as9",
+  "requiredDocuments": [
+    {
+      "name": "온라인 사전등록",
+      "condition": "필수; 별도 파일 요구 미명시",
+      "reference": "상세 제출서류"
+    }
+  ],
+  "businessPlan": {
+    "format": "참관 신청으로 사업계획서 제출양식 없음",
+    "sections": [],
+    "reference": "공식 상세 및 PNG 포스터 전체 시각 검토·동일 TXT 전문 대조"
+  },
+  "evaluation": {
+    "summary": "온라인 선착순, 정원 미명시",
+    "reference": "공식 상세 및 PNG 포스터 전체 시각 검토·동일 TXT 전문 대조"
+  },
+  "contact": {
+    "name": "씨엔티테크 AC3 02-3152-0920 ac3@cntt.co.kr",
+    "reference": "공식 상세 및 PNG 포스터 전체 시각 검토·동일 TXT 전문 대조"
+  },
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179602",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확인 후 적합성 비교; 이 분석은 신청가능 판정 아님",
+    "steps": [
+      "회사 필드 및 자격 증빙 확인",
+      "미확인·충돌 해결",
+      "공고 양식 선택",
+      "회사 사실정보로 서류·사업계획서 작성 및 검토"
+    ]
+  },
+  "applicationFormReview": {
+    "verifiedAt": "2026-10-24T00:01:12.028365+00:00",
+    "evidence": "evidence/fast-form-2026-10-24.html",
+    "fields": [
+      "이름(필수)",
+      "전화번호(필수)",
+      "이메일(폼 필수이나 동의문 선택으로 충돌)",
+      "소속·직급(선택)",
+      "개인정보동의(필수)",
+      "마케팅동의(선택)"
+    ],
+    "scope": "공개 폼 전체 문항 텍스트 확인; 제출·신청 없음"
+  }
+}

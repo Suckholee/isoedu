@@ -42,7 +42,7 @@
     "https://www.k-startup.go.kr/afile/fileDownload/cy1Ln": "5643800c8d194ba192c53f8733300fe885cd4769895a6ce92b426c5096e91bab",
     "https://www.k-startup.go.kr/afile/fileDownload/0y1Ln": "02af08f16480116d500bdff5fa557ac5b92a27ef857d68629dd0798b5a76d8d1"
   },
-  "lastAttachmentHashCheckedAt": "2026-10-22T00:37:17.828134+00:00",
+  "lastAttachmentHashCheckedAt": "2026-10-23T00:13:07.991508+00:00",
   "unresolved": [
     "공고시작10/6과상세10/15 충돌:청년연령·업력 기준일 및정정여부 확인필요",
     "연락처337-5049 vs339-5049 충돌",
@@ -178,12 +178,11 @@
     "resolution": "미해결; 연령·업력 기준일 확인 필요. 달력 목록 시작일은 변경하지 않음"
   },
   "recheck": {
-    "at": "2026-10-22T00:37:17.828134+00:00",
-    "scope": "상세재수집·기존첨부동일URL바이트대조;기존충돌미해결유지",
+    "at": "2026-10-23T00:13:07.991508+00:00",
     "checks": [
       {
         "url": "https://www.k-startup.go.kr/afile/fileDownload/cy1Ln",
-        "verifiedAt": "2026-10-22",
+        "verifiedAt": "2026-10-23",
         "status": "downloaded",
         "sha256": "5643800c8d194ba192c53f8733300fe885cd4769895a6ce92b426c5096e91bab",
         "previousHash": "5643800c8d194ba192c53f8733300fe885cd4769895a6ce92b426c5096e91bab",
@@ -197,7 +196,7 @@
       },
       {
         "url": "https://www.k-startup.go.kr/afile/fileDownload/0y1Ln",
-        "verifiedAt": "2026-10-22",
+        "verifiedAt": "2026-10-23",
         "status": "downloaded",
         "sha256": "02af08f16480116d500bdff5fa557ac5b92a27ef857d68629dd0798b5a76d8d1",
         "previousHash": "02af08f16480116d500bdff5fa557ac5b92a27ef857d68629dd0798b5a76d8d1",
@@ -209,7 +208,8 @@
         "extraction": "text",
         "characters": 33212
       }
-    ]
+    ],
+    "result": "동일URL첨부이전바이트동일,기존분석유지"
   },
   "updatedAt": "2026-10-22T00:37:17.828134+00:00"
 }

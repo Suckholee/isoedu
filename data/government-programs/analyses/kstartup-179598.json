@@ -1,0 +1,189 @@
+{
+  "programId": "kstartup-179598",
+  "title": "동국대학교 창업보육센터(서울) 신규 입주기업 모집 공고",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-10-26T00:01:22.300546+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179598",
+  "sourceFingerprint": "7bea270bde2b87c23d46c5832719cfce22e126f4b9fa81be4a71b0d8065483f2",
+  "evidenceDirectory": "evidence/kstartup-179598",
+  "reviewScope": "공고PDF부담금·접수·평가·서류절/HWP양식주요항목·선택협력·동의서텍스트,사진PDF첫쪽시각",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/ni2Ln",
+      "verifiedAt": "2026-10-26",
+      "status": "downloaded",
+      "sha256": "db6174d7ca24035a523b911b0e3cc0e46d0fcc5a487e807c91503605c2830ed5",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 206465,
+      "format": "PDF",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 3211
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/Li2Ln",
+      "verifiedAt": "2026-10-26",
+      "status": "downloaded",
+      "sha256": "a165b5b439d331545b5b9e4e3b7f3bc121ca10d868ab51f6a042a52104113e28",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 84480,
+      "format": "HWP",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 5253
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/Ai2Ln",
+      "verifiedAt": "2026-10-26",
+      "status": "downloaded",
+      "sha256": "7f568bb117aedf95ca6d8670a926f0c2095c466da354081bd1c0cbfe5c4356ba",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 81920,
+      "format": "HWP",
+      "file": "attachment-03.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 517
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/oi2Ln",
+      "verifiedAt": "2026-10-26",
+      "status": "downloaded",
+      "sha256": "6d61bf6ae89e5e3a58fae11270a27ce668160bf0f56508f6d21819f0c9153561",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 124928,
+      "format": "HWP",
+      "file": "attachment-04.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 1015
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/wi2Ln",
+      "verifiedAt": "2026-10-26",
+      "status": "downloaded",
+      "sha256": "da2efcd51a774169b4bb536138aeaddeaa4398dff3adb78f4d8b2569c2effae1",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 7903182,
+      "format": "PDF",
+      "file": "attachment-05.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 18
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/ni2Ln": "db6174d7ca24035a523b911b0e3cc0e46d0fcc5a487e807c91503605c2830ed5",
+    "https://www.k-startup.go.kr/afile/fileDownload/Li2Ln": "a165b5b439d331545b5b9e4e3b7f3bc121ca10d868ab51f6a042a52104113e28",
+    "https://www.k-startup.go.kr/afile/fileDownload/Ai2Ln": "7f568bb117aedf95ca6d8670a926f0c2095c466da354081bd1c0cbfe5c4356ba",
+    "https://www.k-startup.go.kr/afile/fileDownload/oi2Ln": "6d61bf6ae89e5e3a58fae11270a27ce668160bf0f56508f6d21819f0c9153561",
+    "https://www.k-startup.go.kr/afile/fileDownload/wi2Ln": "da2efcd51a774169b4bb536138aeaddeaa4398dff3adb78f4d8b2569c2effae1"
+  },
+  "lastAttachmentHashCheckedAt": "2026-10-26T00:01:22.300546+00:00",
+  "unresolved": [
+    "공고1쪽자격·우대/계약조건 전체검토미완료",
+    "HWP원본전체배치및사진PDF남은쪽미검토",
+    "기금반환조건·면적계산최종계약확인필요"
+  ],
+  "eligibility": {
+    "summary": "예비창업자·창업초기기업 세부업력/제외조건공고1쪽추가확인필요",
+    "companyFields": [
+      "설립일",
+      "사업자구분",
+      "입주호실",
+      "세금신용",
+      "창업경력"
+    ],
+    "reference": "공고PDF부담금·접수·평가·서류절/HWP양식주요항목·선택협력·동의서텍스트,사진PDF첫쪽시각"
+  },
+  "exclusions": {
+    "items": [
+      "허위·양식미준수·서류미제출",
+      "신청첫쪽인감없음심사제외"
+    ],
+    "reference": "공고PDF부담금·접수·평가·서류절/HWP양식주요항목·선택협력·동의서텍스트,사진PDF첫쪽시각"
+  },
+  "support": {
+    "summary": "충무로관11/17/19형각1.2026.12.1입주예정,보증60만원/형·기금300~400만원선납.임대월5만원/형1차년·연장5%인상,관리7만원/실·전기냉난방실비VAT별도",
+    "reference": "공고PDF부담금·접수·평가·서류절/HWP양식주요항목·선택협력·동의서텍스트,사진PDF첫쪽시각"
+  },
+  "period": {
+    "start": "2026-10-22",
+    "end": "2026-11-09",
+    "deadlineTime": "11:00",
+    "timezone": "Asia/Seoul",
+    "reference": "공고PDF3쪽"
+  },
+  "application": "dvic@dongguk.edu 서류ZIP 동국대학교 창업보육센터 입주 신청서_기업명",
+  "requiredDocuments": [
+    {
+      "name": "인감신청서·발표PPT/PDF·동의",
+      "condition": "필수",
+      "reference": "PDF3쪽"
+    },
+    {
+      "name": "대표등본·사업자·금융거래확인·법인등기",
+      "condition": "구분별필수",
+      "reference": "PDF3쪽"
+    },
+    {
+      "name": "국세재산세·경력IP",
+      "condition": "증빙공고일이후",
+      "reference": "PDF3쪽"
+    },
+    {
+      "name": "총사업자등록내역/등록사실여부/폐업증명",
+      "condition": "기창업/예비/폐업조건별",
+      "reference": "PDF3쪽"
+    },
+    {
+      "name": "산학협력희망서",
+      "condition": "희망자선택",
+      "reference": "PDF3쪽"
+    }
+  ],
+  "businessPlan": {
+    "format": "HWP양식·추정재무는예측으로구분·분량미확인",
+    "sections": [
+      "기업인력·재무·정책자금",
+      "창업동기·기술성시장성",
+      "시제품개발·양산·사업화일정",
+      "소요자금조달",
+      "선택산학협력희망"
+    ],
+    "reference": "공고PDF부담금·접수·평가·서류절/HWP양식주요항목·선택협력·동의서텍스트,사진PDF첫쪽시각"
+  },
+  "evaluation": {
+    "summary": "서류11/10·발표11/19예정,대표10분발표10분질의·역량경영기술시장성,가점증빙",
+    "reference": "공고PDF부담금·접수·평가·서류절/HWP양식주요항목·선택협력·동의서텍스트,사진PDF첫쪽시각"
+  },
+  "contact": {
+    "name": "02-2088-2132 dvic@dongguk.edu",
+    "reference": "공고PDF부담금·접수·평가·서류절/HWP양식주요항목·선택협력·동의서텍스트,사진PDF첫쪽시각"
+  },
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179598",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확인 후 적합성 비교; 이 분석은 신청가능 판정 아님",
+    "steps": [
+      "회사 필드 및 자격 증빙 확인",
+      "미확인·충돌 해결",
+      "공고 양식 선택",
+      "회사 사실정보로 서류·사업계획서 작성 및 검토"
+    ]
+  }
+}

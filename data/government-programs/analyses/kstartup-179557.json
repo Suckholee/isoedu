@@ -1,0 +1,114 @@
+{
+  "programId": "kstartup-179557",
+  "title": "2026년 스타트업, 중소기업, 소상공인을 위한 M&A 전략 세미나",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-10-23T00:10:37.872180+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179557",
+  "sourceFingerprint": "2f76b1676d6bc790a0eb1f03fe8b77b9c2cdaa5d1c6c9a79277c1f58a5b3b199",
+  "evidenceDirectory": "evidence/kstartup-179557",
+  "reviewScope": "상세·포스터PNG전체시각·TXT전문대조",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/qO2Ln",
+      "verifiedAt": "2026-10-23",
+      "status": "downloaded",
+      "sha256": "b5cbe73d4fd5c8f01a4e7e1de640d6e7cbd1d3e35542891f45f6f2be8c98dd1a",
+      "previousHash": "b5cbe73d4fd5c8f01a4e7e1de640d6e7cbd1d3e35542891f45f6f2be8c98dd1a",
+      "changed": false,
+      "bytes": 3378292,
+      "format": "IMAGE",
+      "file": "attachment-01.bin",
+      "contentType": "image/png;charset=UTF-8"
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/OO2Ln",
+      "verifiedAt": "2026-10-23",
+      "status": "downloaded",
+      "sha256": "35468f00a082f33e52928355cf6a9a6e0446dff38bd8faa9db4229b7533e327e",
+      "previousHash": "35468f00a082f33e52928355cf6a9a6e0446dff38bd8faa9db4229b7533e327e",
+      "changed": false,
+      "bytes": 1475,
+      "format": "OTHER",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1"
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/qO2Ln": "b5cbe73d4fd5c8f01a4e7e1de640d6e7cbd1d3e35542891f45f6f2be8c98dd1a",
+    "https://www.k-startup.go.kr/afile/fileDownload/OO2Ln": "35468f00a082f33e52928355cf6a9a6e0446dff38bd8faa9db4229b7533e327e"
+  },
+  "lastAttachmentHashCheckedAt": "2026-10-23T00:10:37.872180+00:00",
+  "unresolved": [
+    "MSForms실제문항/추가서류·접수상태미확인",
+    "포스터광진구기업대상표현과상세누구나지역범위추가확인필요"
+  ],
+  "eligibility": {
+    "summary": "EXIT/M&A관심중소기업·소상공인·예비창업가,포스터는입주기업·광진구대상병기",
+    "companyFields": [
+      "신청자·소속",
+      "참가동기·질문",
+      "연락처"
+    ],
+    "reference": "상세·포스터PNG전체시각·TXT전문대조"
+  },
+  "exclusions": {
+    "items": [
+      "특별제외조건미명시"
+    ],
+    "reference": "상세·포스터PNG전체시각·TXT전문대조"
+  },
+  "support": {
+    "summary": "무료11/4 14~17시광진경제허브키움관6층광나루로474,다과·입주상담·종료후M&A전략무료진단접수.투자/매각성사보장아님",
+    "reference": "상세·포스터PNG전체시각·TXT전문대조"
+  },
+  "period": {
+    "start": "2026-10-19",
+    "end": "2026-11-04",
+    "deadlineTime": "13:00",
+    "timezone": "Asia/Seoul",
+    "reference": "상세신청기간;포스터마감미표시"
+  },
+  "application": {
+    "url": "https://forms.cloud.microsoft/r/VACVRPyhLg",
+    "notes": "상세구글폼표현이나실제MSForms링크",
+    "reference": "상세/포스터TXT"
+  },
+  "requiredDocuments": [
+    {
+      "name": "온라인MSForms신청서",
+      "condition": "필수;별도첨부미명시",
+      "reference": "상세제출서류"
+    }
+  ],
+  "businessPlan": {
+    "format": "교육참가신청,사업계획서양식요구없음",
+    "sections": [],
+    "reference": "상세·포스터PNG전체시각·TXT전문대조"
+  },
+  "evaluation": {
+    "summary": "별도선발없이신청자전원참여,정원미기재.정책·가치평가·절차리스크3세션",
+    "reference": "상세·포스터PNG전체시각·TXT전문대조"
+  },
+  "contact": {
+    "name": "광진경제허브02-2201-9542",
+    "reference": "상세·포스터PNG전체시각·TXT전문대조"
+  },
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179557",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확인 후 적합성 비교; 이 분석은 신청가능 판정 아님",
+    "steps": [
+      "회사 필드 및 자격 증빙 확인",
+      "미확인·충돌 해결",
+      "공고 양식 선택",
+      "회사 사실정보로 서류·사업계획서 작성 및 검토"
+    ]
+  }
+}

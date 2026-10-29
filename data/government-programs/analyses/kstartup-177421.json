@@ -40,7 +40,7 @@
     "https://www.k-startup.go.kr/afile/fileDownload/Wv1Ln": "0c71a9c820ba4ff58cb1b0ed6ad13d69d73f7b42c75bc85aeadd79d9a0c42a7d",
     "https://www.k-startup.go.kr/afile/fileDownload/ZL2Ln": "16d36f22632f8de8959cc6e74127c501c5dcc953a7ccb27f814c87245ab84349"
   },
-  "lastAttachmentHashCheckedAt": "2026-10-21T00:13:24.199142+00:00",
+  "lastAttachmentHashCheckedAt": "2026-10-23T00:13:07.991508+00:00",
   "unresolved": [
     "상세와첨부HWP신청단축주소1문자차이:최종폼확인필요",
     "우수수료생추가혜택선정/수료기준·교육비명시미확인",
@@ -120,5 +120,37 @@
       "공고 양식 선택",
       "회사 사실정보로 서류·사업계획서 작성 및 검토"
     ]
+  },
+  "recheck": {
+    "at": "2026-10-23T00:13:07.991508+00:00",
+    "checks": [
+      {
+        "url": "https://www.k-startup.go.kr/afile/fileDownload/Wv1Ln",
+        "verifiedAt": "2026-10-23",
+        "status": "downloaded",
+        "sha256": "0c71a9c820ba4ff58cb1b0ed6ad13d69d73f7b42c75bc85aeadd79d9a0c42a7d",
+        "previousHash": "0c71a9c820ba4ff58cb1b0ed6ad13d69d73f7b42c75bc85aeadd79d9a0c42a7d",
+        "changed": false,
+        "bytes": 183706,
+        "format": "IMAGE",
+        "file": "attachment-01.bin",
+        "contentType": "image/jpeg;charset=UTF-8"
+      },
+      {
+        "url": "https://www.k-startup.go.kr/afile/fileDownload/ZL2Ln",
+        "verifiedAt": "2026-10-23",
+        "status": "downloaded",
+        "sha256": "16d36f22632f8de8959cc6e74127c501c5dcc953a7ccb27f814c87245ab84349",
+        "previousHash": "16d36f22632f8de8959cc6e74127c501c5dcc953a7ccb27f814c87245ab84349",
+        "changed": false,
+        "bytes": 81920,
+        "format": "HWP",
+        "file": "attachment-02.bin",
+        "contentType": "application/octet-stream;charset=ISO-8859-1",
+        "extraction": "text",
+        "characters": 657
+      }
+    ],
+    "result": "동일URL첨부이전바이트동일,기존분석유지"
   }
 }

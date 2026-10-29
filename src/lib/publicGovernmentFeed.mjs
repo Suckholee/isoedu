@@ -1,0 +1,5 @@
+// Only official-public notice fields belong in the unauthenticated feed.
+const RECORD_FIELDS=['id','sourceId','title','agency','ministry','category','region','applicationStartDate','applicationEndDate','sourceUrl','sourceName','verifiedAt','verificationLevel','targetIndustry','budgetLimit','description','requiredDocsTemplate','tags','attachments','deadlineTime','timezone','pageRef'];
+const ANALYSIS_FIELDS=['programId','title','analyzedAt','sourceUrl','pdfUrl','status','reviewStatus','reviewScope','reviewMeaning','eligibility','exclusions','support','period','application','requiredDocuments','businessPlan','evaluation','unresolved','contact','dateConflict','scheduleConflict'];
+function pick(value,keys){return Object.fromEntries(keys.filter(key=>Object.hasOwn(value,key)).map(key=>[key,value[key]]));}
+export function publicGovernmentProgram(record,analysis){const result=pick(record,RECORD_FIELDS);const reviewed=analysis||record.analysis;if(reviewed?.programId===record.id)result.analysis=pick(reviewed,ANALYSIS_FIELDS);return result;}

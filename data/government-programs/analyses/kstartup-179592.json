@@ -1,0 +1,118 @@
+{
+  "programId": "kstartup-179592",
+  "title": "[강원ICT융합연구원] 강원 미래산업 AX혁신과 지산학연 신사업 발굴 포럼",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-10-23T00:12:31.148291+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179592",
+  "sourceFingerprint": "d277f7992ee69ee241cf2cf3d134cde261d80c02b5b6b4b3d14bc38ac57ebad1",
+  "evidenceDirectory": "evidence/kstartup-179592",
+  "reviewScope": "공식상세·포스터PDF1쪽전체시각·주관기관공지·공식엑셀sheet1전체저장셀검토",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/dM2Ln",
+      "verifiedAt": "2026-10-23",
+      "status": "downloaded",
+      "sha256": "cdeab23b5d7c91c274a8e0560e957befd822ea709622a497759cc00836d85642",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 2679881,
+      "format": "PDF",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 1515
+    },
+    {
+      "url": "https://grit.kangwon.ac.kr/board/file/download?bf_idx=924",
+      "format": "XLSX",
+      "file": "attendance.xlsx",
+      "sha256": "3a8a802444a3fda32ed2beb416bfdc46d86bd4b76e5ebe46f780a42b8059fcce",
+      "bytes": 12567,
+      "verifiedAt": "2026-10-23T00:13:07.991508+00:00",
+      "status": "downloaded-and-cells-reviewed",
+      "reference": "sheet1 A2:K20"
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/dM2Ln": "cdeab23b5d7c91c274a8e0560e957befd822ea709622a497759cc00836d85642"
+  },
+  "lastAttachmentHashCheckedAt": "2026-10-27T00:07:48.910000+00:00",
+  "unresolved": [
+    "참석자엑셀셀·시트XML전체검토,양식원본레이아웃렌더대조미완료",
+    "석식제공조건·참가비명시없음:숙박은미지원으로명시"
+  ],
+  "eligibility": {
+    "summary": "기업·기업지원관계자·산업정책전문가·연구자/재학생및관심자모두",
+    "companyFields": [
+      "소속·성명·직위",
+      "전화·이메일·성별",
+      "각일참석여부",
+      "10/29석식여부"
+    ],
+    "reference": "공식상세·포스터PDF1쪽전체시각·주관기관공지·공식엑셀sheet1전체저장셀검토"
+  },
+  "exclusions": {
+    "items": [
+      "제외없음"
+    ],
+    "reference": "공식상세·포스터PDF1쪽전체시각·주관기관공지·공식엑셀sheet1전체저장셀검토"
+  },
+  "support": {
+    "summary": "10/29~30 강릉씨마크별관2F/3F,AX강연·산업혁신토론·사례/중간보고·네트워킹.엑셀에숙박미지원명시.참가비/현금지원은미기재",
+    "reference": "공식상세·포스터PDF1쪽전체시각·주관기관공지·공식엑셀sheet1전체저장셀검토"
+  },
+  "period": {
+    "start": "2026-10-21",
+    "end": "2026-10-27",
+    "deadlineTime": "10:00",
+    "timezone": "Asia/Seoul",
+    "reference": "상세·포스터·참석엑셀A2"
+  },
+  "application": {
+    "url": "mailto:seung4455@kangwon.ac.kr",
+    "notes": "주관기관공지 https://grit.kangwon.ac.kr/board/view?bidx=283 의엑셀양식작성후이메일;본실행발송안함",
+    "reference": "상세신청·포스터"
+  },
+  "requiredDocuments": [
+    {
+      "name": "엑셀참석자신청/수요조사",
+      "condition": "필수·주관기관다운로드bf_idx924",
+      "reference": "organizer.html/attendance.xlsx A9:K20"
+    }
+  ],
+  "businessPlan": {
+    "format": "사업계획서요구없음.엑셀참석양식입력:소속/성명/직위/연락처/이메일/성별/양일참석·석식·비고.홍길동행은예시임",
+    "sections": [
+      "소속·참가자정보",
+      "10/29·30참석O/X",
+      "10/29석식O/X·비고"
+    ],
+    "reference": "공식상세·포스터PDF1쪽전체시각·주관기관공지·공식엑셀sheet1전체저장셀검토"
+  },
+  "evaluation": {
+    "summary": "기한내양식이메일제출,심사배점미기재.10/29 13:30등록·14시개회~17:50간담회,10/30 09:30~12시",
+    "reference": "공식상세·포스터PDF1쪽전체시각·주관기관공지·공식엑셀sheet1전체저장셀검토"
+  },
+  "contact": {
+    "name": "강원ICT전략기획033-640-2986",
+    "reference": "공식상세·포스터PDF1쪽전체시각·주관기관공지·공식엑셀sheet1전체저장셀검토"
+  },
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179592",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확인 후 적합성 비교; 이 분석은 신청가능 판정 아님",
+    "steps": [
+      "회사 필드 및 자격 증빙 확인",
+      "미확인·충돌 해결",
+      "공고 양식 선택",
+      "회사 사실정보로 서류·사업계획서 작성 및 검토"
+    ]
+  }
+}

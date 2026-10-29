@@ -121,14 +121,13 @@
     "phone": "042-710-8070",
     "email": "swlee@kban.or.kr"
   },
-  "lastAttachmentHashCheckedAt": "2026-10-22T00:37:17.828134+00:00",
+  "lastAttachmentHashCheckedAt": "2026-10-23T00:13:07.991508+00:00",
   "recheck": {
-    "at": "2026-10-22T00:37:17.828134+00:00",
-    "scope": "상세재수집·기존첨부동일URL바이트대조;기존충돌미해결유지",
+    "at": "2026-10-23T00:13:07.991508+00:00",
     "checks": [
       {
         "url": "https://www.k-startup.go.kr/afile/fileDownload/gx1Ln",
-        "verifiedAt": "2026-10-22",
+        "verifiedAt": "2026-10-23",
         "status": "downloaded",
         "sha256": "1afae3732cfb71d973c66278fbe59b97e1e13a203ea077ae044ada76dcf3a94d",
         "previousHash": "1afae3732cfb71d973c66278fbe59b97e1e13a203ea077ae044ada76dcf3a94d",
@@ -140,7 +139,8 @@
         "extraction": "text",
         "characters": 1132
       }
-    ]
+    ],
+    "result": "동일URL첨부이전바이트동일,기존분석유지"
   },
   "updatedAt": "2026-10-22T00:37:17.828134+00:00"
 }

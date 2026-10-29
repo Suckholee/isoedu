@@ -1,5 +1,6 @@
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
+import {publicGovernmentProgram} from '../../../lib/publicGovernmentFeed.mjs';
 export const dynamic = 'force-dynamic';
 export const runtime = 'nodejs';
 export async function GET() {
@@ -13,6 +14,6 @@ export async function GET() {
     if (analysis.programId === record.id) record.analysis = analysis;
    } catch { /* Missing analysis stays explicitly unreviewed. */ }
   }));
-  return Response.json({programs:records,coverage:'K-Startup·중기부 공개 목록 1페이지 우선 수집. 전체 공고 수집 아님.',lastChecked:records.map(p=>p.verifiedAt).filter(Boolean).sort().at(-1)||null},{headers:{'Cache-Control':'no-store'}});
+  return Response.json({programs:records.map(record=>publicGovernmentProgram(record)),coverage:'K-Startup·중기부 공개 목록 1페이지 우선 수집. 전체 공고 수집 아님.',lastChecked:records.map(p=>p.verifiedAt).filter(Boolean).sort().at(-1)||null},{headers:{'Cache-Control':'no-store'}});
  } catch {return Response.json({error:'수집된 공고를 불러오지 못했습니다.'},{status:503});}
 }

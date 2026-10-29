@@ -1,0 +1,100 @@
+{
+  "programId": "kstartup-179605",
+  "title": "[창업행사] 2026 마포청년 창업데이",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-10-29T01:43:50.215678+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179605",
+  "sourceFingerprint": "5fe08a858302dfc1435aa8f012033b44fddd4ac11786e8a2c9238f97801c5f81",
+  "evidenceDirectory": "evidence/kstartup-179605",
+  "reviewScope": "스캔PDF1쪽전체시각·상세",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/tQ2Ln",
+      "verifiedAt": "2026-10-29",
+      "status": "downloaded",
+      "sha256": "10770f4650cdfc5e1428adee8e4b6b87aea5a867b28c68e1af2d2ee35c06c597",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 289257,
+      "format": "PDF",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 0
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/tQ2Ln": "10770f4650cdfc5e1428adee8e4b6b87aea5a867b28c68e1af2d2ee35c06c597"
+  },
+  "lastAttachmentHashCheckedAt": "2026-10-29T01:43:50.215678+00:00",
+  "unresolved": [
+    "실제참가/멘토링신청문항·정원·초기창업업력상한미명시"
+  ],
+  "eligibility": {
+    "summary": "19~39세예비·초기창업가·마포활동청년우선",
+    "companyFields": [
+      "나이",
+      "창업단계",
+      "마포활동",
+      "멘토링신청"
+    ],
+    "reference": "스캔PDF1쪽전체시각·상세"
+  },
+  "exclusions": {
+    "items": [
+      "별도제외미명시"
+    ],
+    "reference": "스캔PDF1쪽전체시각·상세"
+  },
+  "support": {
+    "summary": "11/3 10:30~18마포나루3F무료체험특강멘토링네트워킹·경진시상은참관모집과구분;주최본문:멘토링분야별선착순6명(사전신청)",
+    "reference": "스캔PDF1쪽전체시각·상세"
+  },
+  "period": {
+    "start": "2026-10-22",
+    "end": "2026-11-02",
+    "deadlineTime": "14:00",
+    "timezone": "Asia/Seoul",
+    "reference": "포스터·상세"
+  },
+  "application": "나루프로그램1312 온라인신청",
+  "requiredDocuments": [
+    {
+      "name": "온라인참가신청",
+      "condition": "필수·별도첨부없음",
+      "reference": "상세"
+    }
+  ],
+  "businessPlan": {
+    "format": "참가모집·사업계획서제출요구없음",
+    "sections": [],
+    "reference": "스캔PDF1쪽전체시각·상세"
+  },
+  "evaluation": {
+    "summary": "초과시마포활동우선·11/2 18시이전개별문자",
+    "reference": "스캔PDF1쪽전체시각·상세"
+  },
+  "contact": {
+    "name": "02-6261-1939",
+    "reference": "스캔PDF1쪽전체시각·상세"
+  },
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179605",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확인 후 적합성 비교; 이 분석은 신청가능 판정 아님",
+    "steps": [
+      "회사 필드 및 자격 증빙 확인",
+      "미확인·충돌 해결",
+      "공고 양식 선택",
+      "회사 사실정보로 서류·사업계획서 작성 및 검토"
+    ]
+  },
+  "externalCheckEvidence": "evidence/external-check-2026-10-29.json"
+}

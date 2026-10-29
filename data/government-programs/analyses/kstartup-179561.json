@@ -1,0 +1,152 @@
+{
+  "programId": "kstartup-179561",
+  "title": "서울동부여성발전센터 창업센터 2027년 신규 입주기업 모집",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-10-26T00:01:22.300546+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179561",
+  "sourceFingerprint": "db4aaaf05d201f4c6638e4c40bdcf135027629cf997d0750974669025d6971e2",
+  "evidenceDirectory": "evidence/kstartup-179561",
+  "reviewScope": "공고PDF3쪽텍스트·포스터1쪽전체시각·TXT전문대조",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/gP2Ln",
+      "verifiedAt": "2026-10-26",
+      "status": "downloaded",
+      "sha256": "8d3fcacfda78e331a65d569b87c08e0a70772d28576518f1985c9feb2370cc73",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 142810,
+      "format": "PDF",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 2573
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/Xi2Ln",
+      "verifiedAt": "2026-10-26",
+      "status": "downloaded",
+      "sha256": "77493439b53a42512df100bee6fce781a4fba5b2ea7488158ce5c1c86e596827",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 422533,
+      "format": "PDF",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 706
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/1i2Ln",
+      "verifiedAt": "2026-10-26",
+      "status": "downloaded",
+      "sha256": "c438964315e02fe92488e29bcd4058c2e47acbce6be9a571f0ccee6f7663a91b",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 1343,
+      "format": "OTHER",
+      "file": "attachment-03.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1"
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/gP2Ln": "8d3fcacfda78e331a65d569b87c08e0a70772d28576518f1985c9feb2370cc73",
+    "https://www.k-startup.go.kr/afile/fileDownload/Xi2Ln": "77493439b53a42512df100bee6fce781a4fba5b2ea7488158ce5c1c86e596827",
+    "https://www.k-startup.go.kr/afile/fileDownload/1i2Ln": "c438964315e02fe92488e29bcd4058c2e47acbce6be9a571f0ccee6f7663a91b"
+  },
+  "lastAttachmentHashCheckedAt": "2026-10-26T00:01:22.300546+00:00",
+  "unresolved": [
+    "시작상세10/19대첨부10/1·마감23:50대24:00충돌",
+    "실제입주신청/사업계획서양식미확보",
+    "문의번호첨부간차이",
+    "연장최장3년이총기간인지추가연장인지확인필요"
+  ],
+  "eligibility": {
+    "summary": "공고일현재서울등본거주여성 예비/설립7년이내창업자.보육IT디자인서비스제조영상등/플라자공예디자인디지털",
+    "companyFields": [
+      "서울거주",
+      "성별",
+      "설립일",
+      "센터기입주경험",
+      "업종",
+      "입주형태"
+    ],
+    "reference": "공고PDF3쪽텍스트·포스터1쪽전체시각·TXT전문대조"
+  },
+  "exclusions": {
+    "items": [
+      "기입주경험자·중도퇴거자",
+      "단순유통판매아이템"
+    ],
+    "reference": "공고PDF3쪽텍스트·포스터1쪽전체시각·TXT전문대조"
+  },
+  "support": {
+    "summary": "보육개방6·독립3/플라자5.보증100만원,월12000/40000/36000~49000원·공공요금별도.2027년1~12월,매년심사최장3년연장문구.플라자01~04전력차단·물화기금지",
+    "reference": "공고PDF3쪽텍스트·포스터1쪽전체시각·TXT전문대조"
+  },
+  "period": {
+    "start": "2026-10-19",
+    "end": "2026-11-08",
+    "deadlineTime": "23:50",
+    "timezone": "Asia/Seoul",
+    "reference": "상세23:50/첨부11/8 24시충돌:빠른상세보존"
+  },
+  "application": "dongbubiz@seoulwomanup.or.kr 보육/플라자택일중복변경불가·대표자이름파일제목",
+  "requiredDocuments": [
+    {
+      "name": "입주신청·사업계획서",
+      "condition": "필수·주최홈페이지양식별도",
+      "reference": "PDF2쪽"
+    },
+    {
+      "name": "3분발표PPT",
+      "condition": "아이템소개·합격후계획·지원동기",
+      "reference": "PDF2쪽"
+    },
+    {
+      "name": "사업자등록증",
+      "condition": "해당시",
+      "reference": "PDF2쪽"
+    },
+    {
+      "name": "상장·수료증",
+      "condition": "공모전3년이내·우대해당시",
+      "reference": "PDF2쪽"
+    }
+  ],
+  "businessPlan": {
+    "format": "실제작성양식KStartup첨부없음·주최추가확인",
+    "sections": [
+      "사업아이템",
+      "향후계획",
+      "지원동기"
+    ],
+    "reference": "공고PDF3쪽텍스트·포스터1쪽전체시각·TXT전문대조"
+  },
+  "evaluation": {
+    "summary": "서류11/9~20→면접→개별통보,사업성시장성상품성비즈니스마인드·세부배점미명시",
+    "reference": "공고PDF3쪽텍스트·포스터1쪽전체시각·TXT전문대조"
+  },
+  "contact": {
+    "name": "보육02-460-2325/플라자02-576-3113;TXT는보육2358로차이",
+    "reference": "공고PDF3쪽텍스트·포스터1쪽전체시각·TXT전문대조"
+  },
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179561",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확인 후 적합성 비교; 이 분석은 신청가능 판정 아님",
+    "steps": [
+      "회사 필드 및 자격 증빙 확인",
+      "미확인·충돌 해결",
+      "공고 양식 선택",
+      "회사 사실정보로 서류·사업계획서 작성 및 검토"
+    ]
+  }
+}

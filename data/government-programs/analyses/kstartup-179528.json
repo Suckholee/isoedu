@@ -1,0 +1,106 @@
+{
+  "programId": "kstartup-179528",
+  "title": "KETI 파트너쉽 대덕특구 연구소기업",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-10-27T00:07:00.926515+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179528",
+  "sourceFingerprint": "893b7f4ec440303cd0ed454c2a6fee707080a39fac646ff7692cf8f680c7b801",
+  "evidenceDirectory": "evidence/kstartup-179528",
+  "reviewScope": "스캔포스터PDF1쪽전체시각 및 상세대조",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/BU1Ln",
+      "verifiedAt": "2026-10-27",
+      "status": "downloaded",
+      "sha256": "c1f1bee9a48243c632fcb335dd6211c125a26143b40f516cd5c53644df4aff49",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 4627797,
+      "format": "PDF",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 166
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/BU1Ln": "c1f1bee9a48243c632fcb335dd6211c125a26143b40f516cd5c53644df4aff49"
+  },
+  "lastAttachmentHashCheckedAt": "2026-10-27T00:07:00.926515+00:00",
+  "unresolved": [
+    "본문/포스터신청폼최종동일여부·실제문항미검증",
+    "이메일상세co.rk대포스터co.kr차이",
+    "선정규모·비용·출자조건미명시",
+    "상세폼401접근제한으로최종문항미확인·우회없음"
+  ],
+  "eligibility": {
+    "summary": "KETI기술이전·출자를통한대덕특구연구소기업설립희망기업·예비창업자",
+    "companyFields": [
+      "연구소기업설립의향",
+      "대덕특구소재계획",
+      "기술분야",
+      "투자출자협의"
+    ],
+    "reference": "스캔포스터PDF1쪽전체시각 및 상세대조"
+  },
+  "exclusions": {
+    "items": [
+      "별도제외미명시"
+    ],
+    "reference": "스캔포스터PDF1쪽전체시각 및 상세대조"
+  },
+  "support": {
+    "summary": "KETI연구자기술매칭·Holdings투자프로그램연계·R&D실증후속연계,확정투자/지원금없음.반도체디스플레이·IT소재·스마트에너지·AX·AI·콘텐츠미디어",
+    "reference": "스캔포스터PDF1쪽전체시각 및 상세대조"
+  },
+  "period": {
+    "start": "2026-10-15",
+    "end": "2026-11-15",
+    "deadlineTime": "18:00",
+    "timezone": "Asia/Seoul",
+    "reference": "상세·포스터접수일자"
+  },
+  "application": "상세Google폼/포스터 https://forms.gle/PxqfTKaADKesPi1u9",
+  "requiredDocuments": [
+    {
+      "name": "온라인수요신청",
+      "condition": "필수·별도공개파일양식없음",
+      "reference": "상세/포스터"
+    }
+  ],
+  "businessPlan": {
+    "format": "기술협력수요신청·사업계획서규격미명시",
+    "sections": [
+      "기술수요",
+      "KETI연구자매칭",
+      "사업화계획"
+    ],
+    "reference": "스캔포스터PDF1쪽전체시각 및 상세대조"
+  },
+  "evaluation": {
+    "summary": "11/17서류→~11/27인터뷰→11/27선정→2027.3.30설립추진예정",
+    "reference": "스캔포스터PDF1쪽전체시각 및 상세대조"
+  },
+  "contact": {
+    "name": "티투비042-341-0907 jhyoon@t2b.co.kr(포스터);상세co.rk오타",
+    "reference": "스캔포스터PDF1쪽전체시각 및 상세대조"
+  },
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179528",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확인 후 적합성 비교; 이 분석은 신청가능 판정 아님",
+    "steps": [
+      "회사 필드 및 자격 증빙 확인",
+      "미확인·충돌 해결",
+      "공고 양식 선택",
+      "회사 사실정보로 서류·사업계획서 작성 및 검토"
+    ]
+  }
+}

@@ -27,7 +27,7 @@
   "attachmentContentHashes": {
     "https://www.k-startup.go.kr/afile/fileDownload/as2Ln": "fb1445901f86f8eb68cc8a9d9933dccb8ce162bd0cad916eb1dd9b9ccda92e2c"
   },
-  "lastAttachmentHashCheckedAt": "2026-10-22T00:35:53.136226+00:00",
+  "lastAttachmentHashCheckedAt": "2026-10-29T01:44:03.373489+00:00",
   "unresolved": [],
   "eligibility": {
     "summary": "관광분야기업대표·실무임직원",
@@ -140,5 +140,25 @@
     "정원숫자·수료기준은원문미기재(추정안함)"
   ],
   "reviewMeaning": "공개모집내용·관련첨부·신청양식검토완료;개별회사의신청자격확정·실제신청완료아님",
-  "updatedAt": "2026-10-22T00:37:17.828134+00:00"
+  "updatedAt": "2026-10-22T00:37:17.828134+00:00",
+  "recheck": {
+    "at": "2026-10-23T00:13:07.991508+00:00",
+    "checks": [
+      {
+        "url": "https://www.k-startup.go.kr/afile/fileDownload/as2Ln",
+        "verifiedAt": "2026-10-23",
+        "status": "downloaded",
+        "sha256": "fb1445901f86f8eb68cc8a9d9933dccb8ce162bd0cad916eb1dd9b9ccda92e2c",
+        "previousHash": "fb1445901f86f8eb68cc8a9d9933dccb8ce162bd0cad916eb1dd9b9ccda92e2c",
+        "changed": false,
+        "bytes": 4562286,
+        "format": "PDF",
+        "file": "attachment-01.bin",
+        "contentType": "application/octet-stream;charset=ISO-8859-1",
+        "extraction": "text",
+        "characters": 5
+      }
+    ],
+    "result": "동일URL첨부이전바이트동일,기존분석유지"
+  }
 }

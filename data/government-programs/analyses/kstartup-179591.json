@@ -1,0 +1,107 @@
+{
+  "programId": "kstartup-179591",
+  "title": "2026 논산시 사회적경제 창업 아카데미 참여자 모집",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-10-25T03:34:52.351493+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179591",
+  "sourceFingerprint": "de837bac6e40e1059cf51fbb9c40a8daf57098ac93ed1e647770b1edb105133d",
+  "evidenceDirectory": "evidence/kstartup-179591",
+  "reviewScope": "스캔PDF1쪽전체시각·공식상세대조",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/GM2Ln",
+      "verifiedAt": "2026-10-25",
+      "status": "downloaded",
+      "sha256": "a0c7ea0b9799cdf1e7c0f0242a9c6dbcbdc37b9a3c239d278a74d8074f4271e4",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 6167350,
+      "format": "PDF",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 0
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/GM2Ln": "a0c7ea0b9799cdf1e7c0f0242a9c6dbcbdc37b9a3c239d278a74d8074f4271e4"
+  },
+  "lastAttachmentHashCheckedAt": "2026-10-25T03:34:52.351493+00:00",
+  "unresolved": [
+    "상세교육10/19·20과포스터11/19·20 월충돌",
+    "모집시작상세10/22대포스터10/19충돌",
+    "소재지상세시민로143번길17대포스터해월로143번길17충돌",
+    "실제신청폼·수료기준·후속특전세부미확인"
+  ],
+  "eligibility": {
+    "summary": "사회문제해결아이디어를가진논산시민·창업3년이내기업등(포스터),상세는시민으로만표현",
+    "companyFields": [
+      "논산거주/소재",
+      "업력",
+      "사회문제아이디어",
+      "연락처"
+    ],
+    "reference": "스캔PDF1쪽전체시각·공식상세대조"
+  },
+  "exclusions": {
+    "items": [
+      "상세없음으로명시"
+    ],
+    "reference": "스캔PDF1쪽전체시각·공식상세대조"
+  },
+  "support": {
+    "summary": "사회적경제이론·미션·문제정의·린캔버스·팀발표.포스터11/19 14~17·11/20 14~18,논산사회적경제센터2층.이수팀추후데모데이총상금1천만원·27년창업지원선발특전 안내(개별보장아님)",
+    "reference": "스캔PDF1쪽전체시각·공식상세대조"
+  },
+  "period": {
+    "start": "2026-10-22",
+    "end": "2026-11-18",
+    "deadlineTime": "15:00",
+    "timezone": "Asia/Seoul",
+    "reference": "상세접수기간;포스터시작10/19로차이"
+  },
+  "application": "Google폼QR·온라인접수(주소후속확인)",
+  "requiredDocuments": [
+    {
+      "name": "온라인참가신청",
+      "condition": "필수·별도서류없음",
+      "reference": "상세/포스터"
+    }
+  ],
+  "businessPlan": {
+    "format": "교육과정BM·린캔버스실습,신청사업계획서양식미게시",
+    "sections": [
+      "소셜미션",
+      "문제정의",
+      "BM린캔버스",
+      "팀발표"
+    ],
+    "reference": "스캔PDF1쪽전체시각·공식상세대조"
+  },
+  "evaluation": {
+    "summary": "상세선정평가없음,수료·데모데이선정/상금배분조건미명시",
+    "reference": "스캔PDF1쪽전체시각·공식상세대조"
+  },
+  "contact": {
+    "name": "논산센터041-746-6036/충남사회경제네트워크041-415-2012",
+    "reference": "스캔PDF1쪽전체시각·공식상세대조"
+  },
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179591",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확인 후 적합성 비교; 이 분석은 신청가능 판정 아님",
+    "steps": [
+      "회사 필드 및 자격 증빙 확인",
+      "미확인·충돌 해결",
+      "공고 양식 선택",
+      "회사 사실정보로 서류·사업계획서 작성 및 검토"
+    ]
+  }
+}

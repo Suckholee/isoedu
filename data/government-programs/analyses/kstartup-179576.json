@@ -1,0 +1,165 @@
+{
+  "programId": "kstartup-179576",
+  "title": "2026년 남동발전 상생형 창업벤처기업 지원사업 참가기업 모집공고(연장)",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-10-29T01:43:50.215678+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179576",
+  "sourceFingerprint": "cbf82dfd1771e22e6ae026f6604e795ead0616df683f9db8b12defd8c1b12198",
+  "evidenceDirectory": "evidence/kstartup-179576",
+  "reviewScope": "첨부01공고§1~6/평가기준·02신청계획전문·03동의전문·04확약전문텍스트·상세대조",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/Yc2Ln",
+      "verifiedAt": "2026-10-29",
+      "status": "downloaded",
+      "sha256": "8dfc7788ae2e137f50c24bfef74670690c2ea8004bb45b3953c5afb807e12171",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 89600,
+      "format": "HWP",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 5994
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/Us2Ln",
+      "verifiedAt": "2026-10-29",
+      "status": "downloaded",
+      "sha256": "2d017b95927f36b0aead2a65c3216d54378f5cbe568bcc53953c50128640f198",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 93184,
+      "format": "HWP",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 7232
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/Rs2Ln",
+      "verifiedAt": "2026-10-29",
+      "status": "downloaded",
+      "sha256": "a0d9d2119569e4268acc7a8d2cfe27960c7843046375a38f4a1a5f4fd4e3c667",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 50176,
+      "format": "HWP",
+      "file": "attachment-03.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 2139
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/ps2Ln",
+      "verifiedAt": "2026-10-29",
+      "status": "downloaded",
+      "sha256": "ef0d41e69f57c372356967d8db715f701093a65e19c4f9c8fa3ec4350739eba9",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 35328,
+      "format": "HWP",
+      "file": "attachment-04.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 626
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/Yc2Ln": "8dfc7788ae2e137f50c24bfef74670690c2ea8004bb45b3953c5afb807e12171",
+    "https://www.k-startup.go.kr/afile/fileDownload/Us2Ln": "2d017b95927f36b0aead2a65c3216d54378f5cbe568bcc53953c50128640f198",
+    "https://www.k-startup.go.kr/afile/fileDownload/Rs2Ln": "a0d9d2119569e4268acc7a8d2cfe27960c7843046375a38f4a1a5f4fd4e3c667",
+    "https://www.k-startup.go.kr/afile/fileDownload/ps2Ln": "ef0d41e69f57c372356967d8db715f701093a65e19c4f9c8fa3ec4350739eba9"
+  },
+  "lastAttachmentHashCheckedAt": "2026-10-29T01:43:50.215678+00:00",
+  "unresolved": [
+    "공고§1 5개사 vs §4 8개사,§4접수9/29~10/16·10/22평가가연장접수보다앞섬",
+    "신청서2025년표기·상세업력예시2024.10.19가3년조건과충돌",
+    "HWP전체텍스트확인·표배치/그림시각미확인·최신정정확인필요",
+    "주최접수URL HTTP404: 최신정정/접수경로 재확인"
+  ],
+  "eligibility": {
+    "summary": "전국 업력3~7년 발전·그린·디지털 연계기업. AI연계가점",
+    "companyFields": [
+      "개업일",
+      "업종·발전사협업",
+      "과거해드림수혜",
+      "체납·휴업",
+      "매출수출투자고용"
+    ],
+    "reference": "첨부01공고§1~6/평가기준·02신청계획전문·03동의전문·04확약전문텍스트·상세대조"
+  },
+  "exclusions": {
+    "items": [
+      "채무불이행·국세지방세체납·휴업·참여제한",
+      "상세:기존해드림수혜기업"
+    ],
+    "reference": "첨부01공고§1~6/평가기준·02신청계획전문·03동의전문·04확약전문텍스트·상세대조"
+  },
+  "support": {
+    "summary": "기업당4000만원·대응자금없음·VAT기업부담·회계감사비필수. 구매상담/투자/글로벌프로그램연계,투자확약아님",
+    "reference": "첨부01공고§1~6/평가기준·02신청계획전문·03동의전문·04확약전문텍스트·상세대조"
+  },
+  "period": {
+    "start": "2026-10-19",
+    "end": "2026-10-29",
+    "deadlineTime": "18:00",
+    "timezone": "Asia/Seoul",
+    "reference": "첨부01 §5·상세"
+  },
+  "application": "경남창업포털10788·온라인오류시sangwuk@ccei.kr(첨부§5)",
+  "requiredDocuments": [
+    {
+      "name": "신청서·사업계획·개인정보동의·확약",
+      "condition": "필수",
+      "reference": "첨부01§5/02~04"
+    },
+    {
+      "name": "중소기업확인·사업자등록·대표주민등록증·국세지방세완납",
+      "condition": "필수",
+      "reference": "첨부01§5"
+    },
+    {
+      "name": "법인등기·실적증빙",
+      "condition": "해당시;벤처확인대체여부확인",
+      "reference": "첨부02표지"
+    }
+  ],
+  "businessPlan": {
+    "format": "HWP지정양식·분량상한미명시",
+    "sections": [
+      "요약·참여목적필요성·성과목표",
+      "BM·일정·경쟁력·남동발전협업",
+      "자금집행·내수해외·EXIT",
+      "대표팀고용·협력·사회가치"
+    ],
+    "reference": "첨부01공고§1~6/평가기준·02신청계획전문·03동의전문·04확약전문텍스트·상세대조"
+  },
+  "evaluation": {
+    "summary": "서류→발표15분/질의.별첨기술30사업50수행20;규모5/8사·일정충돌확인필요",
+    "reference": "첨부01공고§1~6/평가기준·02신청계획전문·03동의전문·04확약전문텍스트·상세대조"
+  },
+  "contact": {
+    "name": "055-291-9382,9366",
+    "reference": "첨부01공고§1~6/평가기준·02신청계획전문·03동의전문·04확약전문텍스트·상세대조"
+  },
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179576",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확인 후 적합성 비교; 이 분석은 신청가능 판정 아님",
+    "steps": [
+      "회사 필드 및 자격 증빙 확인",
+      "미확인·충돌 해결",
+      "공고 양식 선택",
+      "회사 사실정보로 서류·사업계획서 작성 및 검토"
+    ]
+  },
+  "externalCheckEvidence": "evidence/external-check-2026-10-29.json"
+}

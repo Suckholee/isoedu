@@ -1,0 +1,118 @@
+{
+  "programId": "kstartup-179616",
+  "title": "2026 예비창업패키지 ST 창업준비 아카데미 참여자 모집",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-10-29T01:43:50.215678+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179616",
+  "sourceFingerprint": "d522af7b1f4b712809469a1c6691ccb4097b82e656bf53000205c3f8f6c56d54",
+  "evidenceDirectory": "evidence/kstartup-179616",
+  "reviewScope": "첨부포스터전체시각·HWP전문텍스트·상세",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/y02Ln",
+      "verifiedAt": "2026-10-29",
+      "status": "downloaded",
+      "sha256": "a90cc1991ca96de2ac7540c75f18e8bb7f8693787390fde58cc4cb28052b8ac4",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 4271608,
+      "format": "IMAGE",
+      "file": "attachment-01.bin",
+      "contentType": "image/png;charset=UTF-8"
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/T02Ln",
+      "verifiedAt": "2026-10-29",
+      "status": "downloaded",
+      "sha256": "a18feb43b642e2d61d14d7493b62f94cf1f78f5a5fcf28625756e93e5e440025",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 36352,
+      "format": "HWP",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 612
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/y02Ln": "a90cc1991ca96de2ac7540c75f18e8bb7f8693787390fde58cc4cb28052b8ac4",
+    "https://www.k-startup.go.kr/afile/fileDownload/T02Ln": "a18feb43b642e2d61d14d7493b62f94cf1f78f5a5fcf28625756e93e5e440025"
+  },
+  "lastAttachmentHashCheckedAt": "2026-10-29T01:43:50.215678+00:00",
+  "unresolved": [
+    "모집시작첨부10/23 vs 상세10/26·일반예비대상vs7년미만병기",
+    "실제신청폼후속필드·교육일정·비용·시상세부미확인",
+    "신청폼 HTTP401: 접근제한 우회없음"
+  ],
+  "eligibility": {
+    "summary": "포스터일반예비창업희망자·상세7년미만기업병기확인필요",
+    "companyFields": [
+      "창업유무·업력",
+      "아이디어",
+      "참여가능일정"
+    ],
+    "reference": "첨부포스터전체시각·HWP전문텍스트·상세"
+  },
+  "exclusions": {
+    "items": [
+      "별도제외미명시"
+    ],
+    "reference": "첨부포스터전체시각·HWP전문텍스트·상세"
+  },
+  "support": {
+    "summary": "30명내외 BM/사업계획/피칭/멘토링·경진소정상금액미명시·비용미명시",
+    "reference": "첨부포스터전체시각·HWP전문텍스트·상세"
+  },
+  "period": {
+    "start": "2026-10-23",
+    "end": "2026-11-01",
+    "deadlineTime": "23:59",
+    "timezone": "Asia/Seoul",
+    "reference": "첨부시작10/23 vs 상세10/26·마감시각상세"
+  },
+  "application": "https://forms.gle/cafJaUT8BPfPxCyEA",
+  "requiredDocuments": [
+    {
+      "name": "온라인신청서",
+      "condition": "필수",
+      "reference": "첨부HWP"
+    }
+  ],
+  "businessPlan": {
+    "format": "교육에서계획작성·제출계획서규격미확인",
+    "sections": [
+      "아이디어",
+      "BM",
+      "사업계획피칭"
+    ],
+    "reference": "첨부포스터전체시각·HWP전문텍스트·상세"
+  },
+  "evaluation": {
+    "summary": "초과시신청서검토·배점없음",
+    "reference": "첨부포스터전체시각·HWP전문텍스트·상세"
+  },
+  "contact": {
+    "name": "02-970-9296",
+    "reference": "첨부포스터전체시각·HWP전문텍스트·상세"
+  },
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179616",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확인 후 적합성 비교; 이 분석은 신청가능 판정 아님",
+    "steps": [
+      "회사 필드 및 자격 증빙 확인",
+      "미확인·충돌 해결",
+      "공고 양식 선택",
+      "회사 사실정보로 서류·사업계획서 작성 및 검토"
+    ]
+  },
+  "externalCheckEvidence": "evidence/external-check-2026-10-29.json"
+}

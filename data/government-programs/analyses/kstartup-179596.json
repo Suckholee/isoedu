@@ -1,0 +1,180 @@
+{
+  "programId": "kstartup-179596",
+  "title": "「2026년 강원연구개발특구육성(R&D)사업」 강원 특구 배치 프로그램 1기 참여기업 모집공고",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-10-26T00:01:22.300546+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179596",
+  "sourceFingerprint": "4072286c66f097504d7857783c7886dba1d487bfb358c4aebec272ddd0ff58e3",
+  "evidenceDirectory": "evidence/kstartup-179596",
+  "reviewScope": "HWP공고·신청/동의·입주의향텍스트 및 스캔포스터전체시각검토",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/482Ln",
+      "verifiedAt": "2026-10-26",
+      "status": "downloaded",
+      "sha256": "b59b10927321ca93dcef92185ba98259405b1609020e43f965e64edc13629940",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 195072,
+      "format": "HWP",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 5358
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/E82Ln",
+      "verifiedAt": "2026-10-26",
+      "status": "downloaded",
+      "sha256": "483c5256244061dc37d8b7b2317c22f67b61b78a08112277b610ab785737eb32",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 79872,
+      "format": "HWP",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 2046
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/F82Ln",
+      "verifiedAt": "2026-10-26",
+      "status": "downloaded",
+      "sha256": "4915a8e0bf2722e3716522945fb41283eeea4b170031e2d27e72c679364584b6",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 57856,
+      "format": "HWP",
+      "file": "attachment-03.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 966
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/G82Ln",
+      "verifiedAt": "2026-10-26",
+      "status": "downloaded",
+      "sha256": "60fbd14a86cccc34a5a4211ac220dc265cfc0173051704f32045c693ffa5353b",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 1449941,
+      "format": "PDF",
+      "file": "attachment-04.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 0
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/482Ln": "b59b10927321ca93dcef92185ba98259405b1609020e43f965e64edc13629940",
+    "https://www.k-startup.go.kr/afile/fileDownload/E82Ln": "483c5256244061dc37d8b7b2317c22f67b61b78a08112277b610ab785737eb32",
+    "https://www.k-startup.go.kr/afile/fileDownload/F82Ln": "4915a8e0bf2722e3716522945fb41283eeea4b170031e2d27e72c679364584b6",
+    "https://www.k-startup.go.kr/afile/fileDownload/G82Ln": "60fbd14a86cccc34a5a4211ac220dc265cfc0173051704f32045c693ffa5353b"
+  },
+  "lastAttachmentHashCheckedAt": "2026-10-26T00:01:22.300546+00:00",
+  "unresolved": [
+    "본문·포스터신청URL둘다401:접근제한우회없이실제폼·동일최종URL확인보류",
+    "협약기간내이전과포스터투자후1년내이전 적용단계확인필요",
+    "원본HWP전체시각대조미완료·실제폼업로드제한미확인"
+  ],
+  "eligibility": {
+    "summary": "춘천원주강릉특구내본사연구소지사공장1곳이상또는협약내이전설립의향,투자준비진행예비/창업자·바이오신소재/디지털헬스/반도체센서소재부품 모두충족",
+    "companyFields": [
+      "필지단위특구소재",
+      "이전의향",
+      "특화산업",
+      "투자상태",
+      "업력·특허",
+      "세금제재"
+    ],
+    "reference": "HWP공고·신청/동의·입주의향텍스트 및 스캔포스터전체시각검토"
+  },
+  "exclusions": {
+    "items": [
+      "채무불이행·세금체납·정부제재",
+      "창업제외업종·휴폐업·체불사업주·기타부적합"
+    ],
+    "reference": "HWP공고·신청/동의·입주의향텍스트 및 스캔포스터전체시각검토"
+  },
+  "support": {
+    "summary": "6개사모의IR2회·진단·데모데이.최종1개사2027초투자심의5천만~1억RCPS/SAFE등계획안·투자확약아님.이전후3년유지,포스터투자후1년내이전.선택IP평가간접지원·잔여비용VAT기업부담",
+    "reference": "HWP공고·신청/동의·입주의향텍스트 및 스캔포스터전체시각검토"
+  },
+  "period": {
+    "start": "2026-10-21",
+    "end": "2026-11-11",
+    "deadlineTime": "15:00",
+    "timezone": "Asia/Seoul",
+    "reference": "HWP신청절/상세"
+  },
+  "application": "본문 https://forms.gle/NZP2VANG8peaduLz7 포스터 https://forms.gle/ucawuXbEaZ4EVah6A",
+  "requiredDocuments": [
+    {
+      "name": "신청·개인정보동의",
+      "condition": "날인필수",
+      "reference": "HWPⅡ"
+    },
+    {
+      "name": "IRDeck",
+      "condition": "자유양식필수",
+      "reference": "HWPⅡ"
+    },
+    {
+      "name": "창업기업확인·사업자등록",
+      "condition": "기창업자",
+      "reference": "HWPⅡ"
+    },
+    {
+      "name": "사업자등록사실증명",
+      "condition": "예비창업자",
+      "reference": "HWPⅡ"
+    },
+    {
+      "name": "첨단기술/연구소등록",
+      "condition": "우대해당시",
+      "reference": "HWPⅡ"
+    },
+    {
+      "name": "입주의향서",
+      "condition": "이전설립예정·실제입주별도신청",
+      "reference": "HWPⅡ/별첨"
+    }
+  ],
+  "businessPlan": {
+    "format": "HWP신청서최근2년매출이익고용·투자목표/기업가치,IR자유형식",
+    "sections": [
+      "기업현황",
+      "특구주소·지구",
+      "3특화산업",
+      "투자현황목표·Prevalue",
+      "24~25성과"
+    ],
+    "reference": "HWP공고·신청/동의·입주의향텍스트 및 스캔포스터전체시각검토"
+  },
+  "evaluation": {
+    "summary": "서류2배수→대면7분발표8분질의→6개사,제품기술팀시장성장,대표직접참여·부득이4대보험C급임원대참",
+    "reference": "HWP공고·신청/동의·입주의향텍스트 및 스캔포스터전체시각검토"
+  },
+  "contact": {
+    "name": "033-248-7933 kim.taewoon@ccei.kr /입주042-865-7083",
+    "reference": "HWP공고·신청/동의·입주의향텍스트 및 스캔포스터전체시각검토"
+  },
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179596",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확인 후 적합성 비교; 이 분석은 신청가능 판정 아님",
+    "steps": [
+      "회사 필드 및 자격 증빙 확인",
+      "미확인·충돌 해결",
+      "공고 양식 선택",
+      "회사 사실정보로 서류·사업계획서 작성 및 검토"
+    ]
+  }
+}

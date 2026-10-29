@@ -1,0 +1,159 @@
+{
+  "programId": "kstartup-179566",
+  "title": "기업 판로 지원 프로그램 수혜기업 모집(~10/29)",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-10-23T00:10:37.872180+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179566",
+  "sourceFingerprint": "07a631d188d6d2a65ab21e5640f714be94023ca7f1e7778937d1731dfcc3acc1",
+  "evidenceDirectory": "evidence/kstartup-179566",
+  "reviewScope": "공고PDF6쪽전문·6쪽축소시각·별첨HWPX서식1~6전문검토",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/kr2Ln",
+      "verifiedAt": "2026-10-23",
+      "status": "downloaded",
+      "sha256": "8e11f06575823e389267acc75ef6014ebe7fefe7b63ee78befcbb4927ce56dd4",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 80579,
+      "format": "HWPX",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 7298
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/lr2Ln",
+      "verifiedAt": "2026-10-23",
+      "status": "downloaded",
+      "sha256": "54bb7383df6e3b0200a31bb17e84bdcac2dd29dad7c48eba66330914eff260bf",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 316686,
+      "format": "PDF",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 4130
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/kr2Ln": "8e11f06575823e389267acc75ef6014ebe7fefe7b63ee78befcbb4927ce56dd4",
+    "https://www.k-startup.go.kr/afile/fileDownload/lr2Ln": "54bb7383df6e3b0200a31bb17e84bdcac2dd29dad7c48eba66330914eff260bf"
+  },
+  "lastAttachmentHashCheckedAt": "2026-10-29T01:44:03.373489+00:00",
+  "unresolved": [
+    "상세시작10/19와공고10/16차이;공고일조건은첨부기준",
+    "HWPX병합표원본배치전체시각대조미완료(공고PDF6쪽은축소렌더대조)"
+  ],
+  "eligibility": {
+    "summary": "경북대스타트업지원센터 메이커스페이스사업 정상수행 수혜기업 중 대구소재(지점가능),업력무제한.모빌리티/ICT/의료헬스제조우대",
+    "companyFields": [
+      "지원협약·정상수행",
+      "사업장주소",
+      "식음료제조여부",
+      "체납·교부제한",
+      "동일제품지원이력",
+      "대표·담당",
+      "제품·투자단계·3년실적"
+    ],
+    "reference": "공고PDF6쪽전문·6쪽축소시각·별첨HWPX서식1~6전문검토"
+  },
+  "exclusions": {
+    "items": [
+      "협약/수행포기기업",
+      "식료품·음료제조",
+      "보조사업배제/교부제한",
+      "동일제품유사항목중복지원",
+      "4대보험·국세·지방세체납",
+      "단순판매목적참가"
+    ],
+    "reference": "공고PDF6쪽전문·6쪽축소시각·별첨HWPX서식1~6전문검토"
+  },
+  "support": {
+    "summary": "3개사기업당약500만원상당간접지원,현금지급/후정산없음.필수자부담없으나초과비용기업부담.12/9~11 COEX COMEUP부스2x2·집기/대구서울기차·숙박식비일부보험(기업당1~2인)·통역·홍보지원",
+    "reference": "공고PDF6쪽전문·6쪽축소시각·별첨HWPX서식1~6전문검토"
+  },
+  "period": {
+    "start": "2026-10-16",
+    "end": "2026-10-29",
+    "deadlineTime": "16:00",
+    "timezone": "Asia/Seoul",
+    "reference": "공고PDF1쪽;상세상단시작10/19"
+  },
+  "application": {
+    "url": "mailto:cf4000@iact.or.kr",
+    "notes": "메일제목판로 지원 프로그램_기업명;PDF1개파일기업명_판로지원,정상수신확인필수",
+    "reference": "공고1/4/5쪽"
+  },
+  "requiredDocuments": [
+    {
+      "name": "서식1신청서",
+      "condition": "필수1쪽",
+      "reference": "HWPX서식1"
+    },
+    {
+      "name": "서식2기업소개",
+      "condition": "필수1쪽",
+      "reference": "HWPX서식2"
+    },
+    {
+      "name": "서식3프로그램계획",
+      "condition": "필수10쪽이내",
+      "reference": "HWPX서식3"
+    },
+    {
+      "name": "개인정보/제3자동의·성실이행서약",
+      "condition": "필수서식4/5·대표/담당날인",
+      "reference": "HWPX"
+    },
+    {
+      "name": "사업자등록·수혜기업증명·공고일후국세지방세/4대보험납부확인",
+      "condition": "필수증빙",
+      "reference": "HWPX서식6"
+    },
+    {
+      "name": "투자/판로계약/인증등",
+      "condition": "필요시",
+      "reference": "HWPX서식6"
+    }
+  ],
+  "businessPlan": {
+    "format": "지정서식1~6사용,설명삭제·증빙포함PDF1개.신청1쪽·소개1쪽·계획10쪽이내",
+    "sections": [
+      "제품개요·이미지",
+      "목적/필요성·기술/독창성",
+      "정량달성목표",
+      "세부계획·추진방법",
+      "기대효과·결과활용",
+      "향후판로/투자/시장확대"
+    ],
+    "reference": "공고PDF6쪽전문·6쪽축소시각·별첨HWPX서식1~6전문검토"
+  },
+  "evaluation": {
+    "summary": "적부통과후정성30(15+15)·완성50(25+25)·가능성20(10+10),평균70이상고득점3+예비1.11/5평가·11월2주발표예정·12/23결과보고",
+    "reference": "공고PDF6쪽전문·6쪽축소시각·별첨HWPX서식1~6전문검토"
+  },
+  "contact": {
+    "name": "경북대스타트업053-219-4105/cf4000@iact.or.kr",
+    "reference": "공고PDF6쪽전문·6쪽축소시각·별첨HWPX서식1~6전문검토"
+  },
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179566",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확인 후 적합성 비교; 이 분석은 신청가능 판정 아님",
+    "steps": [
+      "회사 필드 및 자격 증빙 확인",
+      "미확인·충돌 해결",
+      "공고 양식 선택",
+      "회사 사실정보로 서류·사업계획서 작성 및 검토"
+    ]
+  }
+}

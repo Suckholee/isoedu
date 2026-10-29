@@ -1,0 +1,83 @@
+{
+  "programId": "kstartup-179544",
+  "title": "[ICT창업트랙] AI를 활용한 창업팀의 일하는 방식",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-10-25T03:34:52.351493+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179544",
+  "sourceFingerprint": "2bf744ab02a12fd65b5ef26a685f636cbba2352123b317694c0ff66474e81439",
+  "evidenceDirectory": "evidence/kstartup-179544",
+  "reviewScope": "상세·주최기관공개페이지텍스트 검토,첨부분석완료아님",
+  "attachments": [],
+  "attachmentContentHashes": {},
+  "lastAttachmentHashCheckedAt": "2026-10-25T03:34:52.351493+00:00",
+  "unresolved": [
+    "수집상세첨부링크0개:주최본문이미지/추가첨부확인미완료",
+    "신청시작일상세10/16대주최10/14충돌",
+    "실제신청필드·선착순여부·초기업력범위미확인"
+  ],
+  "eligibility": {
+    "summary": "1987년이후출생 청년예비·초기창업자",
+    "companyFields": [
+      "출생연도",
+      "창업여부·업력",
+      "온라인참여가능"
+    ],
+    "reference": "상세·주최기관공개페이지텍스트 검토,첨부분석완료아님"
+  },
+  "exclusions": {
+    "items": [
+      "출생기준외참가가능단정금지"
+    ],
+    "reference": "상세·주최기관공개페이지텍스트 검토,첨부분석완료아님"
+  },
+  "support": {
+    "summary": "무료ZOOM11/10·12·17각14~18,AI팀원온보딩·업무위임·시스템구축",
+    "reference": "상세·주최기관공개페이지텍스트 검토,첨부분석완료아님"
+  },
+  "period": {
+    "start": "2026-10-16",
+    "end": "2026-11-02",
+    "deadlineTime": "23:59",
+    "timezone": "Asia/Seoul",
+    "reference": "KStartup상세;주최10/14시작과차이"
+  },
+  "application": "https://www.checkin-gwanak.or.kr/core/?cid=58&role=programvopn&pSeq=1254&tab=",
+  "requiredDocuments": [
+    {
+      "name": "온라인신청",
+      "condition": "필수·상세제출서류없음",
+      "reference": "상세"
+    }
+  ],
+  "businessPlan": {
+    "format": "교육참가·사업계획서요구없음",
+    "sections": [],
+    "reference": "상세·주최기관공개페이지텍스트 검토,첨부분석완료아님"
+  },
+  "evaluation": {
+    "summary": "상세선정평가없음;주최60명모집·조회시37명신청표시",
+    "reference": "상세·주최기관공개페이지텍스트 검토,첨부분석완료아님"
+  },
+  "contact": {
+    "name": "070-7777-7408",
+    "reference": "상세·주최기관공개페이지텍스트 검토,첨부분석완료아님"
+  },
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179544",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확인 후 적합성 비교; 이 분석은 신청가능 판정 아님",
+    "steps": [
+      "회사 필드 및 자격 증빙 확인",
+      "미확인·충돌 해결",
+      "공고 양식 선택",
+      "회사 사실정보로 서류·사업계획서 작성 및 검토"
+    ]
+  }
+}

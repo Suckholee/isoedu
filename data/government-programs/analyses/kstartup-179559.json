@@ -1,0 +1,137 @@
+{
+  "programId": "kstartup-179559",
+  "title": "국민대학교 청년도약 인재양성 부트캠프 참가자 모집(AI 실무교육)",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-10-27T00:07:00.926515+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179559",
+  "sourceFingerprint": "f2a221e4444d7d9812034d4ca6f3c12c618f9d7c78dce5fbd6cab3ed924c9cec",
+  "evidenceDirectory": "evidence/kstartup-179559",
+  "reviewScope": "포스터JPG전체시각·TXT전문·상세대조",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/s72Ln",
+      "verifiedAt": "2026-10-27",
+      "status": "downloaded",
+      "sha256": "a8270fdf1ef69c867677ce0ac56645deaafdf2a87f06c81ca25702799df7aa58",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 1478,
+      "format": "OTHER",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1"
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/t72Ln",
+      "verifiedAt": "2026-10-27",
+      "status": "downloaded",
+      "sha256": "8d1cbe1b7036b57fe8a992c1211cc3c698338d3515e8642b6d4f216d51b8e675",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 1824359,
+      "format": "IMAGE",
+      "file": "attachment-02.bin",
+      "contentType": "image/png;charset=UTF-8"
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/s72Ln": "a8270fdf1ef69c867677ce0ac56645deaafdf2a87f06c81ca25702799df7aa58",
+    "https://www.k-startup.go.kr/afile/fileDownload/t72Ln": "8d1cbe1b7036b57fe8a992c1211cc3c698338d3515e8642b6d4f216d51b8e675"
+  },
+  "lastAttachmentHashCheckedAt": "2026-10-27T00:07:00.926515+00:00",
+  "unresolved": [
+    "실제지원서및NAIS이중신청필수필드·증빙미확인",
+    "장학·자격·학점·구독혜택세부조건미검증",
+    "공식지원서4단계중1단계만확인·사업자소득예외실제적용증빙검토필요"
+  ],
+  "eligibility": {
+    "summary": "19~34미취업청년군복무산정39까지·예비창업/취준/1년이상장기휴학,지역전공무관",
+    "companyFields": [
+      "나이·복무",
+      "취업재학휴학",
+      "수강출석가능",
+      "온라인플랫폼신청"
+    ],
+    "reference": "포스터JPG전체시각·TXT전문·상세대조"
+  },
+  "exclusions": {
+    "items": [
+      "재직자·재학생(장기휴학/교육시작졸업예외확인)"
+    ],
+    "reference": "포스터JPG전체시각·TXT전문·상세대조"
+  },
+  "support": {
+    "summary": "국비무료11/23~12/4국민대·온라인60H+공통45H+초급15H/중급45H 각출석80%.완주최대20만·우수인턴월80만·정규취업100만조건부안내,취업보장아님",
+    "reference": "포스터JPG전체시각·TXT전문·상세대조"
+  },
+  "period": {
+    "start": "2026-10-19",
+    "end": "2026-11-19",
+    "deadlineTime": "23:59",
+    "timezone": "Asia/Seoul",
+    "reference": "상세시각·포스터일자"
+  },
+  "application": "axkookmin.com/apply + nais.or.kr 통합관리신청 모두완료(포스터)",
+  "requiredDocuments": [
+    {
+      "name": "온라인지원서",
+      "condition": "필수",
+      "reference": "상세"
+    },
+    {
+      "name": "통합관리플랫폼신청",
+      "condition": "포스터추가필수·실제경로확인",
+      "reference": "포스터"
+    }
+  ],
+  "businessPlan": {
+    "format": "교육참가·지원양식온라인,교육에서린캔버스MVP·PRD포트폴리오작성",
+    "sections": [
+      "AI리터러시",
+      "시장조사린캔버스",
+      "MVP·피치",
+      "직무포트폴리오"
+    ],
+    "reference": "포스터JPG전체시각·TXT전문·상세대조"
+  },
+  "evaluation": {
+    "summary": "선착순50·11/20최종발표예정",
+    "reference": "포스터JPG전체시각·TXT전문·상세대조"
+  },
+  "contact": {
+    "name": "02-910-5948 tnvedu@kookmin.ac.kr",
+    "reference": "포스터JPG전체시각·TXT전문·상세대조"
+  },
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179559",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확인 후 적합성 비교; 이 분석은 신청가능 판정 아님",
+    "steps": [
+      "회사 필드 및 자격 증빙 확인",
+      "미확인·충돌 해결",
+      "공고 양식 선택",
+      "회사 사실정보로 서류·사업계획서 작성 및 검토"
+    ]
+  },
+  "applicationFormReview": {
+    "evidence": "evidence/kookmin-apply-2026-10-27.html",
+    "scope": "4단계중1단계",
+    "fields": [
+      "이름",
+      "메일",
+      "전화",
+      "출생연도",
+      "최종학력",
+      "학적",
+      "고용",
+      "사업자여부"
+    ],
+    "notes": "사업자보유시휴업·실제활동없음·월사업소득250만원미만예외및확정후증빙요청안내"
+  }
+}

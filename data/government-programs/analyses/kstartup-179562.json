@@ -1,0 +1,108 @@
+{
+  "programId": "kstartup-179562",
+  "title": "2026 서울창업허브 창동 데모데이 참관 신청",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-10-27T00:07:00.926515+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179562",
+  "sourceFingerprint": "52253cde8bb2877ae1dc72b262bf9b3460a66f927bef26da9cf8b609e8a75c2c",
+  "evidenceDirectory": "evidence/kstartup-179562",
+  "reviewScope": "포스터전체시각·TXT전문·상세대조",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/d52Ln",
+      "verifiedAt": "2026-10-27",
+      "status": "downloaded",
+      "sha256": "4a912fe5cf0c0912363dd17b75095b7796a43cbe21d3f3051713ea7b5245f1db",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 1482520,
+      "format": "IMAGE",
+      "file": "attachment-01.bin",
+      "contentType": "image/jpeg;charset=UTF-8"
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/a52Ln",
+      "verifiedAt": "2026-10-27",
+      "status": "downloaded",
+      "sha256": "7a8fe1eef9d383a052267434a53964cbe313187b1205a20d8adbe71ffe197ffe",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 1076,
+      "format": "OTHER",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1"
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/d52Ln": "4a912fe5cf0c0912363dd17b75095b7796a43cbe21d3f3051713ea7b5245f1db",
+    "https://www.k-startup.go.kr/afile/fileDownload/a52Ln": "7a8fe1eef9d383a052267434a53964cbe313187b1205a20d8adbe71ffe197ffe"
+  },
+  "lastAttachmentHashCheckedAt": "2026-10-27T00:07:00.926515+00:00",
+  "unresolved": [
+    "주최플랫폼실제접수필드·참가비·정원미확인"
+  ],
+  "eligibility": {
+    "summary": "예비창업자·VC/AC·창업기관·관심일반인",
+    "companyFields": [
+      "참관자유형",
+      "연락처"
+    ],
+    "reference": "포스터전체시각·TXT전문·상세대조"
+  },
+  "exclusions": {
+    "items": [
+      "상세없음명시"
+    ],
+    "reference": "포스터전체시각·TXT전문·상세대조"
+  },
+  "support": {
+    "summary": "11/19 13~18창동B1·투자특강/우수10사IR/네트워킹.1:1피드백은우수기업대상으로일반참관혜택과구분·참가비미명시",
+    "reference": "포스터전체시각·TXT전문·상세대조"
+  },
+  "period": {
+    "start": "2026-10-19",
+    "end": "2026-11-18",
+    "deadlineTime": "17:00",
+    "timezone": "Asia/Seoul",
+    "reference": "상세기간"
+  },
+  "application": "https://www.startup-plus.kr/project/PRJ007649",
+  "requiredDocuments": [
+    {
+      "name": "온라인참관신청",
+      "condition": "필수·별도첨부없음",
+      "reference": "상세"
+    }
+  ],
+  "businessPlan": {
+    "format": "참관모집·발표기업신규모집아님",
+    "sections": [],
+    "reference": "포스터전체시각·TXT전문·상세대조"
+  },
+  "evaluation": {
+    "summary": "선정평가없음·정원미명시",
+    "reference": "포스터전체시각·TXT전문·상세대조"
+  },
+  "contact": {
+    "name": "02-3778-2717 changdonghub@gmail.com",
+    "reference": "포스터전체시각·TXT전문·상세대조"
+  },
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179562",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확인 후 적합성 비교; 이 분석은 신청가능 판정 아님",
+    "steps": [
+      "회사 필드 및 자격 증빙 확인",
+      "미확인·충돌 해결",
+      "공고 양식 선택",
+      "회사 사실정보로 서류·사업계획서 작성 및 검토"
+    ]
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "programId": "kstartup-179624",
+  "title": "[2026 Beyond OI] 밋업 데이 참여 스타트업 모집(~11.1)",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-10-29T01:43:50.215678+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179624",
+  "sourceFingerprint": "179aa9dfde09a7eaea5abadd94358201fbd2015fc2742e29d696e77f3e390d50",
+  "evidenceDirectory": "evidence/kstartup-179624",
+  "reviewScope": "포스터JPG전체시각·URL별첨확보·상세",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/4X2Ln",
+      "verifiedAt": "2026-10-29",
+      "status": "downloaded",
+      "sha256": "18c8e18e3681570a91a7e944b0ff3e20e0ead6ec4bbadae15a2aa36b29d11b48",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 944835,
+      "format": "IMAGE",
+      "file": "attachment-01.bin",
+      "contentType": "image/jpeg;charset=UTF-8"
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/A22Ln",
+      "verifiedAt": "2026-10-29",
+      "status": "downloaded",
+      "sha256": "b4500aa360d423d524111e262fe7417999441aff81e298c1ab079a66ee391f51",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 839,
+      "format": "OTHER",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1"
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/4X2Ln": "18c8e18e3681570a91a7e944b0ff3e20e0ead6ec4bbadae15a2aa36b29d11b48",
+    "https://www.k-startup.go.kr/afile/fileDownload/A22Ln": "b4500aa360d423d524111e262fe7417999441aff81e298c1ab079a66ee391f51"
+  },
+  "lastAttachmentHashCheckedAt": "2026-10-29T01:43:50.215678+00:00",
+  "unresolved": [
+    "최종신청폼문항·업로드파일제한·세부수요과제미확인",
+    "신청단축URL HTTP308: 최종폼 미확인"
+  ],
+  "eligibility": {
+    "summary": "수요기업협업희망스타트업36사·분야AI데이터로봇제조에너지반도체등",
+    "companyFields": [
+      "사업아이템",
+      "수요기업협업계획",
+      "최신IR",
+      "기술분야"
+    ],
+    "reference": "포스터JPG전체시각·URL별첨확보·상세"
+  },
+  "exclusions": {
+    "items": [
+      "별도제외미명시"
+    ],
+    "reference": "포스터JPG전체시각·URL별첨확보·상세"
+  },
+  "support": {
+    "summary": "11/17 12~16코엑스2F스타트업브랜치 수요기업밋업.지원금·자부담미명시",
+    "reference": "포스터JPG전체시각·URL별첨확보·상세"
+  },
+  "period": {
+    "start": "2026-10-26",
+    "end": "2026-11-01",
+    "deadlineTime": "23:59",
+    "timezone": "Asia/Seoul",
+    "reference": "상세·포스터"
+  },
+  "application": "https://m.site.naver.com/2jwIV",
+  "requiredDocuments": [
+    {
+      "name": "협업계획·최신IR",
+      "condition": "필수",
+      "reference": "상세"
+    }
+  ],
+  "businessPlan": {
+    "format": "협업신청온라인·IR형식/분량미확인",
+    "sections": [
+      "수요기업선택",
+      "협업계획",
+      "IR"
+    ],
+    "reference": "포스터JPG전체시각·URL별첨확보·상세"
+  },
+  "evaluation": {
+    "summary": "수요기업선정·배점미명시",
+    "reference": "포스터JPG전체시각·URL별첨확보·상세"
+  },
+  "contact": {
+    "name": "031-780-9046/9088 songhi@ccei.kr",
+    "reference": "포스터JPG전체시각·URL별첨확보·상세"
+  },
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179624",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확인 후 적합성 비교; 이 분석은 신청가능 판정 아님",
+    "steps": [
+      "회사 필드 및 자격 증빙 확인",
+      "미확인·충돌 해결",
+      "공고 양식 선택",
+      "회사 사실정보로 서류·사업계획서 작성 및 검토"
+    ]
+  },
+  "externalCheckEvidence": "evidence/external-check-2026-10-29.json"
+}

@@ -1,0 +1,166 @@
+{
+  "programId": "kstartup-179543",
+  "title": "2026 TEL VENTURE CAPITAL X 충남창조경제혁신센터 Nexus Connect 투자 밋업 데이",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-10-26T00:01:22.300546+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179543",
+  "sourceFingerprint": "cc46dbf537ccc8dd7b79cb9c0c79bf1510dc8a5472f50dff2f80c58bdf0edc41",
+  "evidenceDirectory": "evidence/kstartup-179543",
+  "reviewScope": "PDF5쪽텍스트·HWP양식주요표·포스터전체시각·TXT별첨전문대조",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/Sm2Ln",
+      "verifiedAt": "2026-10-26",
+      "status": "downloaded",
+      "sha256": "8c6a5f02229183d698595fcd6f9631308c0bc6e6849c730ea72cd10b7fef180b",
+      "previousHash": "8c6a5f02229183d698595fcd6f9631308c0bc6e6849c730ea72cd10b7fef180b",
+      "changed": false,
+      "bytes": 199398,
+      "format": "PDF",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 5241
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/xm2Ln",
+      "verifiedAt": "2026-10-26",
+      "status": "downloaded",
+      "sha256": "a00ff78e0d89d8b6498e8fe2ea325eb7927336410659e302d1974f9eba7bc26e",
+      "previousHash": "a00ff78e0d89d8b6498e8fe2ea325eb7927336410659e302d1974f9eba7bc26e",
+      "changed": false,
+      "bytes": 65024,
+      "format": "HWP",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 2593
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/ym2Ln",
+      "verifiedAt": "2026-10-26",
+      "status": "downloaded",
+      "sha256": "7590af3b9babf54c1936bb447829dd653c3f8a77cf0f398ce4761907e51fa5bd",
+      "previousHash": "7590af3b9babf54c1936bb447829dd653c3f8a77cf0f398ce4761907e51fa5bd",
+      "changed": false,
+      "bytes": 1613171,
+      "format": "IMAGE",
+      "file": "attachment-03.bin",
+      "contentType": "image/jpeg;charset=UTF-8"
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/Tm2Ln",
+      "verifiedAt": "2026-10-26",
+      "status": "downloaded",
+      "sha256": "415def7b5ab1d3e2ff4ea013e14f99e4c582c9bc5ef6afed41b8d374c6033c25",
+      "previousHash": "415def7b5ab1d3e2ff4ea013e14f99e4c582c9bc5ef6afed41b8d374c6033c25",
+      "changed": false,
+      "bytes": 1346,
+      "format": "OTHER",
+      "file": "attachment-04.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1"
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/Sm2Ln": "8c6a5f02229183d698595fcd6f9631308c0bc6e6849c730ea72cd10b7fef180b",
+    "https://www.k-startup.go.kr/afile/fileDownload/xm2Ln": "a00ff78e0d89d8b6498e8fe2ea325eb7927336410659e302d1974f9eba7bc26e",
+    "https://www.k-startup.go.kr/afile/fileDownload/ym2Ln": "7590af3b9babf54c1936bb447829dd653c3f8a77cf0f398ce4761907e51fa5bd",
+    "https://www.k-startup.go.kr/afile/fileDownload/Tm2Ln": "415def7b5ab1d3e2ff4ea013e14f99e4c582c9bc5ef6afed41b8d374c6033c25"
+  },
+  "lastAttachmentHashCheckedAt": "2026-10-26T00:01:22.300546+00:00",
+  "unresolved": [
+    "문의전화지역국번첨부간차이",
+    "공고11/26(화)요일오타·확정일정개별안내미확인",
+    "PDF/HWP전체원본시각대조미완료"
+  ],
+  "eligibility": {
+    "summary": "공고일업력10년미만(2016.10.17이후)전국비상장반도체·AI딥테크스타트업,영어/일본어대면발표질의가능",
+    "companyFields": [
+      "설립일",
+      "비상장",
+      "기술분야·TEL연관",
+      "외국어",
+      "세금신용·참여제한"
+    ],
+    "reference": "PDF5쪽텍스트·HWP양식주요표·포스터전체시각·TXT별첨확인대기"
+  },
+  "exclusions": {
+    "items": [
+      "국세지방세체납·채무불이행",
+      "창업제외업종·휴폐업",
+      "참여제한기타부적합"
+    ],
+    "reference": "PDF5쪽텍스트·HWP양식주요표·포스터전체시각·TXT별첨확인대기"
+  },
+  "support": {
+    "summary": "TEL1:1투자검토·후속연계,직접지원금/투자확약없음.11/26밋업예정",
+    "reference": "PDF5쪽텍스트·HWP양식주요표·포스터전체시각·TXT별첨확인대기"
+  },
+  "period": {
+    "start": "2026-10-16",
+    "end": "2026-11-10",
+    "deadlineTime": "23:59",
+    "timezone": "Asia/Seoul",
+    "reference": "상세시각;PDF일자만명시"
+  },
+  "application": "syp0703@ccei.kr 이메일",
+  "requiredDocuments": [
+    {
+      "name": "참가신청·사업계획·동의",
+      "condition": "직인필수·첨부양식",
+      "reference": "PDF4쪽"
+    },
+    {
+      "name": "사업자등록증",
+      "condition": "법인등기추가",
+      "reference": "PDF4쪽"
+    },
+    {
+      "name": "IR자료·기업소개",
+      "condition": "필수",
+      "reference": "PDF4쪽"
+    },
+    {
+      "name": "창업/벤처확인택1",
+      "condition": "해당시",
+      "reference": "PDF4쪽"
+    }
+  ],
+  "businessPlan": {
+    "format": "HWP제품기술소개1~2장,추정손익2025실적/2026예상/2027~29추정구분",
+    "sections": [
+      "기술IP차별성",
+      "고객파트너실적·BM·시장",
+      "TEL협력가능성",
+      "재무추정",
+      "희망투자·투자내역"
+    ],
+    "reference": "PDF5쪽텍스트·HWP양식주요표·포스터전체시각·TXT별첨확인대기"
+  },
+  "evaluation": {
+    "summary": "요건→서면기술25시장20사업20전략25팀10→밋업,11/19대상안내예정·3년성과모니터링",
+    "reference": "PDF5쪽텍스트·HWP양식주요표·포스터전체시각·TXT별첨확인대기"
+  },
+  "contact": {
+    "name": "PDF041-589-7840/7895;상세포스터041-536-7895/7840,syp0703@ccei.kr ckyshoo@ccei.kr",
+    "reference": "PDF5쪽텍스트·HWP양식주요표·포스터전체시각·TXT별첨확인대기"
+  },
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179543",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확인 후 적합성 비교; 이 분석은 신청가능 판정 아님",
+    "steps": [
+      "회사 필드 및 자격 증빙 확인",
+      "미확인·충돌 해결",
+      "공고 양식 선택",
+      "회사 사실정보로 서류·사업계획서 작성 및 검토"
+    ]
+  }
+}

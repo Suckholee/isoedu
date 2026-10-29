@@ -1,0 +1,167 @@
+{
+  "programId": "kstartup-179577",
+  "title": "[LH한국토지주택공사] 판교제2테크노밸리 기업지원허브 업무지원시설(지상 1층 115호실) 임대공급 공고",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-10-23T00:10:37.872180+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179577",
+  "sourceFingerprint": "96dcd0cd46f40f0a626ace0839597f62c1b41e1151f290ff17f654f82493279f",
+  "evidenceDirectory": "evidence/kstartup-179577",
+  "reviewScope": "공고HWPX주요자격·일정·비용·계약·유의사항텍스트/별첨신청동의전문·도면HWP임대조건표텍스트검토,도면미검토",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/eD2Ln",
+      "verifiedAt": "2026-10-23",
+      "status": "downloaded",
+      "sha256": "cfda294a6bee35dbb7fc922b2a4fb0e067cae10c4adf1f974549c69c79ba6ef1",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 125699,
+      "format": "HWPX",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 12148
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/fD2Ln",
+      "verifiedAt": "2026-10-23",
+      "status": "downloaded",
+      "sha256": "00dd20a2bb36c2cfa79341f52653208879f2a92e39524938ffad633c4bbfbdc8",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 50508,
+      "format": "HWPX",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 2654
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/gD2Ln",
+      "verifiedAt": "2026-10-23",
+      "status": "downloaded",
+      "sha256": "910f1cc3252be8728faf3fee73c2b36202ff1b9f478a41d9c08be4549b440194",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 877568,
+      "format": "HWP",
+      "file": "attachment-03.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 260
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/eD2Ln": "cfda294a6bee35dbb7fc922b2a4fb0e067cae10c4adf1f974549c69c79ba6ef1",
+    "https://www.k-startup.go.kr/afile/fileDownload/fD2Ln": "00dd20a2bb36c2cfa79341f52653208879f2a92e39524938ffad633c4bbfbdc8",
+    "https://www.k-startup.go.kr/afile/fileDownload/gD2Ln": "910f1cc3252be8728faf3fee73c2b36202ff1b9f478a41d9c08be4549b440194"
+  },
+  "lastAttachmentHashCheckedAt": "2026-10-29T01:44:03.373489+00:00",
+  "unresolved": [
+    "공고본문접수2층임대공급운영1팀/계약218호와상세접수218호/계약운영1팀서로역전:장소확인필요",
+    "개인정보동의양식목적이화성동탄2인큐베이팅센터로기재되어판교공고와불일치",
+    "도면HWP이미지미검토·HWPX전체표배치시각대조미완료"
+  ],
+  "eligibility": {
+    "summary": "10/20기준등록된금융·창업/경영컨설팅·특허/법률/회계/마케팅,창업전담조직대학·AC·VC에한함.판교115호단일임대",
+    "companyFields": [
+      "사업자업종·등록일",
+      "기관/ACVC자격",
+      "개인법인·대표/대리",
+      "납부여력",
+      "사용목적"
+    ],
+    "reference": "공고HWPX주요자격·일정·비용·계약·유의사항텍스트/별첨신청동의전문·도면HWP임대조건표텍스트검토,도면미검토"
+  },
+  "exclusions": {
+    "items": [
+      "공고일업종미등록/기관요건미충족",
+      "신청허위·기간내미계약",
+      "전대·양도금지(법인분할합병예외)"
+    ],
+    "reference": "공고HWPX주요자격·일정·비용·계약·유의사항텍스트/별첨신청동의전문·도면HWP임대조건표텍스트검토,도면미검토"
+  },
+  "support": {
+    "summary": "보조금이아닌유상임대.전용850.35㎡·계약1860.7067㎡,보증115026000원(20%23005200/잔금92020800),월19171000+VAT1917100=21088100원.관리예치계약면적x6000원별도,2년최대10년·2027.2이후입점",
+    "reference": "공고HWPX주요자격·일정·비용·계약·유의사항텍스트/별첨신청동의전문·도면HWP임대조건표텍스트검토,도면미검토"
+  },
+  "period": {
+    "start": "2026-10-26",
+    "end": "2026-10-30",
+    "deadlineTime": "16:00",
+    "timezone": "Asia/Seoul",
+    "reference": "공고HWPX공급일정·상세"
+  },
+  "application": {
+    "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179577",
+    "notes": "방문/등기우편10/26~30소인+10/30도착.접수장소는원문끼리상이해기관확인필요.온라인신청아님",
+    "reference": "공고신청방법·공급일정"
+  },
+  "requiredDocuments": [
+    {
+      "name": "지정임대공급신청·개인정보동의·사업등록",
+      "condition": "공통·공고일후발급",
+      "reference": "공고신청구비"
+    },
+    {
+      "name": "주민등록등본·신분증·인감/본인서명확인",
+      "condition": "개인",
+      "reference": "공고신청구비"
+    },
+    {
+      "name": "법인등기·대표신분·법인인감/증명·해당사용인감계",
+      "condition": "법인",
+      "reference": "공고신청구비"
+    },
+    {
+      "name": "자격증빙",
+      "condition": "해당기관/업종",
+      "reference": "공고신청구비"
+    },
+    {
+      "name": "위임장·위임용인감·대리인신분증/인감",
+      "condition": "대리",
+      "reference": "공고신청구비"
+    },
+    {
+      "name": "계약금입금확인·계약용증빙",
+      "condition": "당첨후계약일7일내발급",
+      "reference": "공고계약체결"
+    }
+  ],
+  "businessPlan": {
+    "format": "임대공급신청서2부(공급/신청자용)·개인정보동의,사업계획서요구없음.접수번호공란",
+    "sections": [
+      "호수·계약면적·VAT포함임대료",
+      "신청자·생년·연락처·신청자격",
+      "개인정보동의"
+    ],
+    "reference": "공고HWPX주요자격·일정·비용·계약·유의사항텍스트/별첨신청동의전문·도면HWP임대조건표텍스트검토,도면미검토"
+  },
+  "evaluation": {
+    "summary": "자격검증후전산추첨전원순번,11/3 16시이후발표·차순위계약,11/16~20 10~16시현장계약(점심제외)",
+    "reference": "공고HWPX주요자격·일정·비용·계약·유의사항텍스트/별첨신청동의전문·도면HWP임대조건표텍스트검토,도면미검토"
+  },
+  "contact": {
+    "name": "LH경기남부031-250-6137/8269,1600-1004",
+    "reference": "공고HWPX주요자격·일정·비용·계약·유의사항텍스트/별첨신청동의전문·도면HWP임대조건표텍스트검토,도면미검토"
+  },
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179577",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확인 후 적합성 비교; 이 분석은 신청가능 판정 아님",
+    "steps": [
+      "회사 필드 및 자격 증빙 확인",
+      "미확인·충돌 해결",
+      "공고 양식 선택",
+      "회사 사실정보로 서류·사업계획서 작성 및 검토"
+    ]
+  }
+}

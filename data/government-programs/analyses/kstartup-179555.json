@@ -1,0 +1,110 @@
+{
+  "programId": "kstartup-179555",
+  "title": "2026 글로벌 진출 - 글로벌 진출과 협력 네트워크 확장 전략",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-10-25T03:34:52.351493+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179555",
+  "sourceFingerprint": "3dc8323f387c893218f74eef0ad78cea10db4d6c37fe86208922646e87e6bd5e",
+  "evidenceDirectory": "evidence/kstartup-179555",
+  "reviewScope": "JPG포스터전체시각·TXT전문·상세·주최플랫폼접수기간 검토",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/hq2Ln",
+      "verifiedAt": "2026-10-25",
+      "status": "downloaded",
+      "sha256": "db7df4ead5a2cebf2c62054b951eb269bfd38b8e8f856a63b1e19985c8c4c47d",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 1157951,
+      "format": "IMAGE",
+      "file": "attachment-01.bin",
+      "contentType": "image/jpeg;charset=UTF-8"
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/AO2Ln",
+      "verifiedAt": "2026-10-25",
+      "status": "downloaded",
+      "sha256": "e4095a6053dd8aae14134a6ad8fb109e0e1be78be1550e5dca8a5807a54ce624",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 1669,
+      "format": "OTHER",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1"
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/hq2Ln": "db7df4ead5a2cebf2c62054b951eb269bfd38b8e8f856a63b1e19985c8c4c47d",
+    "https://www.k-startup.go.kr/afile/fileDownload/AO2Ln": "e4095a6053dd8aae14134a6ad8fb109e0e1be78be1550e5dca8a5807a54ce624"
+  },
+  "lastAttachmentHashCheckedAt": "2026-10-25T03:34:52.351493+00:00",
+  "unresolved": [
+    "실제접수필드·로그인이후입력및추가조건미확인",
+    "참가비·정원미명시"
+  ],
+  "eligibility": {
+    "summary": "서울소재 스타트업 중 글로벌진출·해외네트워크확장희망",
+    "companyFields": [
+      "서울소재",
+      "창업상태",
+      "참가자연락처"
+    ],
+    "reference": "JPG포스터전체시각·TXT전문·상세·주최플랫폼접수기간 검토"
+  },
+  "exclusions": {
+    "items": [
+      "별도 제외 미명시"
+    ],
+    "reference": "JPG포스터전체시각·TXT전문·상세·주최플랫폼접수기간 검토"
+  },
+  "support": {
+    "summary": "11/18 15~17 서울창업허브창동B1대강당(도봉구마들로13길84),한국무역협회진형석부장강연.직접지원금없음·참가비미명시",
+    "reference": "JPG포스터전체시각·TXT전문·상세·주최플랫폼접수기간 검토"
+  },
+  "period": {
+    "start": "2026-10-19",
+    "end": "2026-11-17",
+    "deadlineTime": "17:00",
+    "timezone": "Asia/Seoul",
+    "reference": "상세/주최플랫폼접수기간"
+  },
+  "application": "https://www.startup-plus.kr/project/PRJ007565 온라인신청",
+  "requiredDocuments": [
+    {
+      "name": "온라인신청",
+      "condition": "필수·별도제출서류없음",
+      "reference": "상세"
+    }
+  ],
+  "businessPlan": {
+    "format": "세미나참가로사업계획서요구없음",
+    "sections": [],
+    "reference": "JPG포스터전체시각·TXT전문·상세·주최플랫폼접수기간 검토"
+  },
+  "evaluation": {
+    "summary": "별도선정평가없음,정원미명시",
+    "reference": "JPG포스터전체시각·TXT전문·상세·주최플랫폼접수기간 검토"
+  },
+  "contact": {
+    "name": "창동창업사업부운영팀changdonghub@gmail.com/02-3778-2717",
+    "reference": "JPG포스터전체시각·TXT전문·상세·주최플랫폼접수기간 검토"
+  },
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179555",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확인 후 적합성 비교; 이 분석은 신청가능 판정 아님",
+    "steps": [
+      "회사 필드 및 자격 증빙 확인",
+      "미확인·충돌 해결",
+      "공고 양식 선택",
+      "회사 사실정보로 서류·사업계획서 작성 및 검토"
+    ]
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "programId": "kstartup-179533",
+  "title": "[해수부] 2026년 해양수산 통합데모데이 참가자 모집",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-10-25T03:34:52.351493+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179533",
+  "sourceFingerprint": "38db4498289774720603ab177d03f21a39aebbf0b1db7878c7013e49ef0419b7",
+  "evidenceDirectory": "evidence/kstartup-179533",
+  "reviewScope": "포스터JPG전체시각/TXT전문·상세·신청폼공개첫단계 검토",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/2p1Ln",
+      "verifiedAt": "2026-10-25",
+      "status": "downloaded",
+      "sha256": "86237c84d286cdd505e2692d2293236c42418810e1dc93c8c281d7ba479dad49",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 1643380,
+      "format": "IMAGE",
+      "file": "attachment-01.bin",
+      "contentType": "image/jpeg;charset=UTF-8"
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/ov1Ln",
+      "verifiedAt": "2026-10-25",
+      "status": "downloaded",
+      "sha256": "f26eb37a109711b25d00f2a3d22bc3706e9c9d69d3712ee64c7f98534c17bb94",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 1023,
+      "format": "OTHER",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1"
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/2p1Ln": "86237c84d286cdd505e2692d2293236c42418810e1dc93c8c281d7ba479dad49",
+    "https://www.k-startup.go.kr/afile/fileDownload/ov1Ln": "f26eb37a109711b25d00f2a3d22bc3706e9c9d69d3712ee64c7f98534c17bb94"
+  },
+  "lastAttachmentHashCheckedAt": "2026-10-25T03:34:52.351493+00:00",
+  "unresolved": [
+    "공개폼첫단계참가유형·상담여부만확인:후속분기문항미확인",
+    "포스터QR308리디렉션자동추적실패:최종동일폼인지미검증",
+    "공식전체종료17:30·포스터세부17:20 차이"
+  ],
+  "eligibility": {
+    "summary": "해양수산창업생태계 관심 스타트업·예비창업자·투자자·기관·학생일반인 누구나",
+    "companyFields": [
+      "참가자유형",
+      "상담희망",
+      "소속연락처"
+    ],
+    "reference": "포스터JPG전체시각/TXT전문·상세·신청폼공개첫단계 검토"
+  },
+  "exclusions": {
+    "items": [
+      "별도 제외 미명시"
+    ],
+    "reference": "포스터JPG전체시각/TXT전문·상세·신청폼공개첫단계 검토"
+  },
+  "support": {
+    "summary": "무료11/12 13~17:30아스티호텔부산22층,12개사IR참관·전시·강연·네트워킹,사전신청자1:1투자지원상담(현금지원/투자보장없음)",
+    "reference": "포스터JPG전체시각/TXT전문·상세·신청폼공개첫단계 검토"
+  },
+  "period": {
+    "start": "2026-10-15",
+    "end": "2026-11-12",
+    "deadlineTime": "13:59",
+    "timezone": "Asia/Seoul",
+    "reference": "공식 상세 신청기간;행사13시시작과접수마감13:59구분"
+  },
+  "application": "https://forms.gle/2PkaAnHxgo3wC56CA;포스터QR https://m.site.naver.com/2iwbX",
+  "requiredDocuments": [
+    {
+      "name": "사전참가등록",
+      "condition": "필수·별도첨부없음",
+      "reference": "상세"
+    },
+    {
+      "name": "1:1상담선택",
+      "condition": "상담희망시사전신청",
+      "reference": "포스터/폼"
+    }
+  ],
+  "businessPlan": {
+    "format": "참관신청으로사업계획서양식없음",
+    "sections": [],
+    "reference": "포스터JPG전체시각/TXT전문·상세·신청폼공개첫단계 검토"
+  },
+  "evaluation": {
+    "summary": "참가자별도선발없음;상담예약배정추가확인",
+    "reference": "포스터JPG전체시각/TXT전문·상세·신청폼공개첫단계 검토"
+  },
+  "contact": {
+    "name": "부산연합기술지주글로벌투자실051-717-2697/2467",
+    "reference": "포스터JPG전체시각/TXT전문·상세·신청폼공개첫단계 검토"
+  },
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179533",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확인 후 적합성 비교; 이 분석은 신청가능 판정 아님",
+    "steps": [
+      "회사 필드 및 자격 증빙 확인",
+      "미확인·충돌 해결",
+      "공고 양식 선택",
+      "회사 사실정보로 서류·사업계획서 작성 및 검토"
+    ]
+  }
+}

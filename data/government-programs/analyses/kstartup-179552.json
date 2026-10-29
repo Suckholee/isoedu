@@ -1,0 +1,108 @@
+{
+  "programId": "kstartup-179552",
+  "title": "AI 활용 소상공인 및 전통시장 매니저 실무 역량 과정 참가자 모집",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-10-25T03:34:52.351493+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179552",
+  "sourceFingerprint": "ba1f7c62f6bcb4634800520205a2e7e2c9994dec69a73f50a181b13686a817e1",
+  "evidenceDirectory": "evidence/kstartup-179552",
+  "reviewScope": "PDF3쪽전문·모든쪽시각·동일최종URL폼전체문항 검토",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/Cq2Ln",
+      "verifiedAt": "2026-10-25",
+      "status": "downloaded",
+      "sha256": "1366f9a7edf58a95fadbe93b29ebd533edd9a439925205b71535baff60a256fc",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 176744,
+      "format": "PDF",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 2015
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/Cq2Ln": "1366f9a7edf58a95fadbe93b29ebd533edd9a439925205b71535baff60a256fc"
+  },
+  "lastAttachmentHashCheckedAt": "2026-10-25T03:34:52.351493+00:00",
+  "unresolved": [
+    "두링크동일폼이나11/19소상공인폼만표시:11/20매니저접수경로확인필요",
+    "과정별정원수미명시",
+    "AI경험폼필수이나동의문선택으로표현,연령등수집설명범위확인필요",
+    "PDF3쪽1일차/2일차표머리반대표기:대상별일정본문기준보존"
+  ],
+  "eligibility": {
+    "summary": "경남 소재 예비소상공인·소상공인 및 전통시장매니저",
+    "companyFields": [
+      "경남소재",
+      "참여자유형",
+      "업체명·업종",
+      "연락처",
+      "디지털활용수준"
+    ],
+    "reference": "PDF3쪽전문·모든쪽시각·동일최종URL폼전체문항 검토"
+  },
+  "exclusions": {
+    "items": [
+      "별도 제외조건 미명시"
+    ],
+    "reference": "PDF3쪽전문·모든쪽시각·동일최종URL폼전체문항 검토"
+  },
+  "support": {
+    "summary": "무료대상별1일교육,11/19소상공인·11/20매니저10~17,창원대로18번길46경남창조경제혁신센터4층412호.중식다과기념품",
+    "reference": "PDF3쪽전문·모든쪽시각·동일최종URL폼전체문항 검토"
+  },
+  "period": {
+    "start": "2026-10-21",
+    "end": "2026-11-13",
+    "deadlineTime": "18:00",
+    "timezone": "Asia/Seoul",
+    "reference": "공식상세/PDF1쪽/공개폼"
+  },
+  "application": "PDF폼qHcGGsfGe1Fq5EQq9·버튼9jDmZDob7Tq8yFjY9는 동일최종Google폼 확인.055-584-4050전화가능",
+  "requiredDocuments": [
+    {
+      "name": "온라인참가신청",
+      "condition": "또는전화·별도파일없음",
+      "reference": "PDF1쪽"
+    },
+    {
+      "name": "성명·업체·업종·연락처·지역·연령·디지털수준·AI경험·동의",
+      "condition": "공개폼필수문항",
+      "reference": "신청폼"
+    }
+  ],
+  "businessPlan": {
+    "format": "교육참가·사업계획서 제출요구없음",
+    "sections": [],
+    "reference": "PDF3쪽전문·모든쪽시각·동일최종URL폼전체문항 검토"
+  },
+  "evaluation": {
+    "summary": "각과정선착순·예비10명포함,정원숫자미명시.11/16개별통보;신청만으로확정아님",
+    "reference": "PDF3쪽전문·모든쪽시각·동일최종URL폼전체문항 검토"
+  },
+  "contact": {
+    "name": "경남중기청055-268-2564/재도전사관학교055-584-4050",
+    "reference": "PDF3쪽전문·모든쪽시각·동일최종URL폼전체문항 검토"
+  },
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179552",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확인 후 적합성 비교; 이 분석은 신청가능 판정 아님",
+    "steps": [
+      "회사 필드 및 자격 증빙 확인",
+      "미확인·충돌 해결",
+      "공고 양식 선택",
+      "회사 사실정보로 서류·사업계획서 작성 및 검토"
+    ]
+  }
+}
