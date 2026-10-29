@@ -78,7 +78,7 @@ export function AuthProvider({ children }) {
       const profileTimer=setTimeout(()=>profileController.abort(),20000);
       try {
         const { data, error } = await supabase.from('profiles')
-          .select('*, company:companies(*)').eq('id', session.user.id).single().abortSignal(profileController.signal);
+          .select('*, company:companies!profiles_company_id_fkey(*)').eq('id', session.user.id).single().abortSignal(profileController.signal);
         if (error) throw error;
         if (!mounted || generation !== current) return;
         setProfile({

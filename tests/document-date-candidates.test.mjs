@@ -22,3 +22,7 @@ test('neighboring issue dates do not become fiscal years or substitute missing i
  const r=read('사업연도: 2025\n발급일: 2026-10-20');assert.deepEqual(r.coveredYears,[2025]);
  assert.equal(read('발급일:\n유효기간: 2027-10-20').issuedOn,'');
 });
+
+test('aborting a hanging OCR operation exits promptly instead of leaving batch busy',async()=>{
+ const {abortable}=await import('../src/lib/meeting/readDocumentDates.mjs');const control=new AbortController();const pending=abortable(new Promise(()=>{}),control.signal);control.abort();await assert.rejects(pending,e=>e.name==='AbortError');
+});

@@ -1,5 +1,11 @@
 import {unzipSync,strFromU8,inflateSync} from 'fflate';
 import {dateCandidates} from './documentDateCandidates.mjs';
+export async function abortable(promise,signal){
+ if(!signal)return promise;
+ if(signal.aborted)throw new DOMException('취소됨','AbortError');
+ let stop;const cancelled=new Promise((_,reject)=>{stop=()=>reject(new DOMException('취소됨','AbortError'));signal.addEventListener('abort',stop,{once:true});});
+ try{return await Promise.race([promise,cancelled]);}finally{signal.removeEventListener('abort',stop);}
+}
 const MAX_BYTES=50*1024*1024,MAX_PAGES=60,MAX_TEXT=3_000_000;
 function officeUnits(bytes,ext,warnings){
  let total=0;const archive=unzipSync(bytes,{filter:file=>{const selected=ext==='docx'?/^word\/(document|header\d+|footer\d+)\.xml$/.test(file.name):ext==='hwpx'?/^Contents\/section\d+\.xml$/.test(file.name):/^xl\/(sharedStrings|styles|workbook|worksheets\/sheet\d+)\.xml$/.test(file.name);if(selected){total+=file.originalSize;if(total>MAX_TEXT*4)throw Error('본문 크기가 너무 큽니다. PDF로 변환해 확인해 주세요.');}return selected;}});
@@ -50,12 +56,12 @@ export async function readDocumentDates(file,{signal,onProgress=()=>{}}={}){
  const cancelled=()=>{if(signal?.aborted)throw new DOMException('취소됨','AbortError');};cancelled();
  const warnings=[],units=[];let worker,pdf;const bytes=new Uint8Array(await file.arrayBuffer()),ext=file.name.split('.').pop().toLowerCase();
  const ocr=async(image,location)=>{cancelled();onProgress(`${location} 글자 인식 중`);if(!worker){const {createWorker}=await import('tesseract.js');worker=await createWorker('kor+eng',1,{workerPath:'/document-reader/worker.min.js',corePath:'/document-reader',langPath:'/document-reader',gzip:true,workerBlobURL:false,logger:()=>{}});cancelled();}
-  const result=await worker.recognize(image);cancelled();return {location,text:result.data.text,method:'ocr',confidence:result.data.confidence};};
+  const result=await abortable(worker.recognize(image),signal);cancelled();return {location,text:result.data.text,method:'ocr',confidence:result.data.confidence};};
  const abort=()=>{worker?.terminate().catch(()=>{});pdf?.destroy().catch(()=>{});};signal?.addEventListener('abort',abort,{once:true});
  try{
   if(ext==='pdf'){
    const lib=await import('pdfjs-dist/build/pdf.mjs');lib.GlobalWorkerOptions.workerSrc='/document-reader/pdf.worker.min.mjs';
-   const task=lib.getDocument({data:bytes,isEvalSupported:false,cMapUrl:'/document-reader/cmaps/',cMapPacked:true,standardFontDataUrl:'/document-reader/standard_fonts/'});pdf=await task.promise;cancelled();
+   const task=lib.getDocument({data:bytes,isEvalSupported:false,cMapUrl:'/document-reader/cmaps/',cMapPacked:true,standardFontDataUrl:'/document-reader/standard_fonts/'});pdf=await abortable(task.promise,signal);cancelled();
    if(pdf.numPages>MAX_PAGES)warnings.push(`전체 ${pdf.numPages}쪽 중 앞 ${MAX_PAGES}쪽만 읽었습니다. 나머지 원문을 확인해 주세요.`);
    for(let i=1;i<=Math.min(pdf.numPages,MAX_PAGES);i++){
     cancelled();onProgress(`${i}/${pdf.numPages}쪽 읽는 중`);const page=await pdf.getPage(i),content=await page.getTextContent();
@@ -63,7 +69,7 @@ export async function readDocumentDates(file,{signal,onProgress=()=>{}}={}){
     units.push({location:`${i}쪽`,text,method:'text'});
     // OCR also runs on pages containing raster images even when a text layer exists.
     const ops=await page.getOperatorList(),raster=ops.fnArray.some(op=>[lib.OPS.paintImageXObject,lib.OPS.paintInlineImageXObject,lib.OPS.paintImageMaskXObject].includes(op));
-    if(text.replace(/\s/g,'').length<40||raster){const viewport=page.getViewport({scale:Math.min(2,2400/Math.max(page.view[2],page.view[3]))}),canvas=document.createElement('canvas');canvas.width=Math.ceil(viewport.width);canvas.height=Math.ceil(viewport.height);await page.render({canvasContext:canvas.getContext('2d'),viewport}).promise;units.push(await ocr(canvas,`${i}쪽 (스캔)`));canvas.width=canvas.height=0;}
+    if(text.replace(/\s/g,'').length<40||raster){const viewport=page.getViewport({scale:Math.min(2,2400/Math.max(page.view[2],page.view[3]))}),canvas=document.createElement('canvas');canvas.width=Math.ceil(viewport.width);canvas.height=Math.ceil(viewport.height);await abortable(page.render({canvasContext:canvas.getContext('2d'),viewport}).promise,signal);units.push(await ocr(canvas,`${i}쪽 (스캔)`));canvas.width=canvas.height=0;}
     page.cleanup();if(units.reduce((n,u)=>n+u.text.length,0)>MAX_TEXT){warnings.push('본문 크기 제한으로 이후 페이지는 읽지 못했습니다.');break;}
    }
   }else if(['png','jpg','jpeg'].includes(ext)){const url=URL.createObjectURL(file);try{units.push(await ocr(url,'이미지 원문'));}finally{URL.revokeObjectURL(url);}}
