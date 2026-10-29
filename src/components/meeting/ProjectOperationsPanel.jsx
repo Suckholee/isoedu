@@ -15,7 +15,8 @@ import {
   safeDownloadFileName,
   triggerBrowserDownload,
 } from "../../lib/documentExport.mjs";
-import { validateUploadFile, uploadDocumentFile } from "../../lib/storageVault";
+import { validateUploadFile, uploadDocumentFile, getSecureDownloadUrl } from "../../lib/storageVault";
+import {readDocumentDates} from "../../lib/meeting/readDocumentDates.mjs";
 import CloudFileViewer from "../CloudFileViewer";
 import DocumentChecksPanel,{DocumentDateFields} from "./DocumentChecksPanel";
 export default function ProjectOperationsPanel({
@@ -38,6 +39,9 @@ export default function ProjectOperationsPanel({
     [reader, setReader] = useState(null),
     [feedback, setFeedback] = useState({}),
     [selected, setSelected] = useState({});
+  const [readings,setReadings]=useState({});
+  const readingJobs=useRef(new Map());
+  useEffect(()=>{setReadings({});return()=>{for(const job of readingJobs.current.values())job.abort();readingJobs.current.clear();};},[project.id,user?.id]);
   const identity = useRef("");
   identity.current = `${user?.id}/${project.id}`;
   async function load() {
@@ -135,11 +139,24 @@ export default function ProjectOperationsPanel({
         });
         if (id === identity.current)
           setRequests((list) => list.map((x) => (x.id === r.id ? saved : x)));
+        if(id===identity.current&&status==="submitted")void readDates(saved);
       },
       status === "submitted"
         ? "제출 자료를 저장했습니다."
         : "검토 결과를 저장했습니다.",
     );
+  }
+  async function readDates(r,file){
+    if(!canEdit)return;
+    const id=identity.current,controller=new AbortController();readingJobs.current.get(r.id)?.abort();readingJobs.current.set(r.id,controller);
+    const update=value=>{if(id===identity.current&&!controller.signal.aborted)setReadings(list=>({...list,[r.id]:{path:r.submitted_file_path,revision:r.revision,...value}}));};
+    update({status:'reading',progress:'원문을 읽고 있습니다.'});
+    try{
+      if(!file){const url=await getSecureDownloadUrl(r.submitted_file_path,600),response=await fetch(url,{signal:controller.signal});if(!response.ok)throw Error('원본을 읽지 못했습니다. 회사 접근 권한과 파일을 확인해 주세요.');const blob=await response.blob();file=new File([blob],decodeURIComponent(r.submitted_file_path.split('/').pop()),{type:blob.type});}
+      const candidates=await readDocumentDates(file,{signal:controller.signal,onProgress:progress=>update({status:'reading',progress})});
+      if(r.submitted_checksum&&candidates.sourceHash!==r.submitted_checksum)throw Error('제출 당시 원본과 파일이 다릅니다. 최신 제출 상태를 다시 불러와 주세요.');
+      update({status:'ready',candidates});
+    }catch(e){if(e.name!=='AbortError')update({status:'failed',error:e.message});}finally{if(readingJobs.current.get(r.id)===controller)readingJobs.current.delete(r.id);}
   }
   async function upload(r, event) {
     const file = event.target.files?.[0];
@@ -190,6 +207,7 @@ export default function ProjectOperationsPanel({
       });
       if (id === identity.current)
         setRequests((list) => list.map((x) => (x.id === r.id ? saved : x)));
+      if(id===identity.current)void readDates(saved,file);
     }, "원본 파일을 보관하고 제출했습니다. 컨설턴트 검토 대기입니다.");
   }
   return (
@@ -469,7 +487,7 @@ export default function ProjectOperationsPanel({
                           </div>
                         )}
                       </td>
-                      <td><DocumentDateFields request={r} canEdit={canEdit} canPrepare={prepare} onChanged={reloadChecks}/></td>
+                      <td><DocumentDateFields request={r} canEdit={canEdit} canPrepare={prepare} onChanged={reloadChecks} reading={readings[r.id]} onRead={()=>readDates(r)}/></td>
                       <td>
                         <span className="text-sm">
                           {

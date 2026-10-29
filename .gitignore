@@ -51,3 +51,5 @@ docs/reference/business-plan-insights.md
 docs/reference/customer-candidates.*
 docs/reference/customer-document-evidence.md
 **/__pycache__/
+
+/public/document-reader/
