@@ -8,6 +8,7 @@ import {useGrowthIntake} from '../context/GrowthIntakeContext';
 import {INTERESTS,EMPLOYEE_RANGES,validateGrowthDraft} from '../lib/growthIntake.mjs';
 import AuthModal from './AuthModal';
 import styles from './GrowthLanding.module.css';
+import {useLandingMotion} from '../hooks/useLandingMotion';
 const icons={government:Landmark,certification:Building2,iso:ShieldCheck,unsure:Compass};
 function WorkspaceShowcase(){
  return <section className={styles.showcase} aria-labelledby="workspace-title"><div className={styles.showcaseIntro}><p className={styles.eyebrow}>A PLACE FOR EVERY NEXT STEP</p><h2 id="workspace-title">준비는 한곳에.<br/><span>다음 일은 선명하게.</span></h2><p>회사마다 다른 자료와 일정,<br/>우리 회사의 맥락 안에서 이어가세요.</p></div><div className={styles.bento}>
@@ -20,6 +21,7 @@ function JourneyVisual({index}){
  return <div className={`${styles.journeyVisual} ${styles['journeyVisual'+index]}`} aria-hidden="true">{index===0?<><div className={styles.targetOrbit}/><Compass size={60}/><span className={styles.journeyChip}>FIND YOUR DIRECTION <ArrowUpRight size={12}/></span></>:index===1?<><div className={styles.miniPaper}><Files size={24}/><i/><i/><i/></div><div className={styles.miniFolder}>YOUR COMPANY FILES <Files size={20}/></div></>:<><div className={styles.miniCalendar}><span>NEXT STEP</span><div>{Array.from({length:14},(_,i)=><i key={i} className={i===9?styles.calendarActive:''}>{i+1}</i>)}</div></div><span className={styles.calendarCheck}><Check size={21}/></span></>}</div>;
 }
 export default function GrowthLanding(){
+ const landingRoot=useRef(null);useLandingMotion(landingRoot,styles);
  const router=useRouter(),params=useSearchParams(),{user,profile,isLoading}=useAuth(),{draft,hydrated,setDraft,storageWarning}=useGrowthIntake(),form=useRef(null),restored=useRef(false);
  const [step,setStep]=useState(1),[interest,setInterest]=useState(''),[companyName,setCompanyName]=useState(''),[industry,setIndustry]=useState(''),[employees,setEmployees]=useState(''),[region,setRegion]=useState(''),[error,setError]=useState(''),[auth,setAuth]=useState(false),[authMode,setAuthMode]=useState('login'),[resume,setResume]=useState(false),[copied,setCopied]=useState(false);
  useEffect(()=>{if(!hydrated||restored.current)return;restored.current=true;const selected=params.get('interest');if(draft){setInterest(draft.interest);setCompanyName(draft.companyName);setIndustry(draft.industry);setEmployees(draft.employees);setRegion(draft.region);setStep(3);if(draft.awaitingAuth)setResume(true);}else if(Object.hasOwn(INTERESTS,selected||''))setInterest(selected);},[hydrated,draft,params]);
@@ -28,7 +30,7 @@ export default function GrowthLanding(){
  function next(e){e.preventDefault();setError('');try{const value=validateGrowthDraft({id:draft?.id||crypto.randomUUID(),interest,companyName,industry,employees,region,createdAt:draft?.createdAt});setDraft({...value,ownerId:user?.id||null,awaitingAuth:false});setStep(3);}catch(e){setError(e.message);}}
  function continueWork(){if(!draft)return;setDraft({...draft,ownerId:user?.id||null,awaitingAuth:!user});if(user&&profile)router.push('/dashboard?intake=1');else{setResume(true);setAuthMode('signup');setAuth(true);}}
  async function copyLink(){try{const url=new URL('/',window.location.origin);if(interest)url.searchParams.set('interest',interest);await navigator.clipboard.writeText(url.href);setCopied(true);}catch{setError('링크 복사가 제한되어 있습니다. 주소창의 홈페이지 주소를 공유해 주세요.');}}
- return <main className={styles.landing}>
+ return <main ref={landingRoot} className={styles.landing}>
   <header className={styles.nav}><Link href="/" className={styles.brand}><ShieldCheck size={27}/>어니스톤<span className={styles.brandDot}/></Link><nav className={styles.navLinks} aria-label="서비스 안내"><a href="#areas">준비 분야</a><a href="#process">이용 방법</a>{user?<Link href="/dashboard">내 업무 <ArrowUpRight size={13}/></Link>:<button className={styles.textButton} onClick={()=>{setResume(false);setAuthMode('login');setAuth(true);}}>로그인</button>}<button className={styles.navButton} onClick={()=>start()}>우리 회사 시작하기 <ArrowUpRight size={13}/></button></nav></header>
   <section className={styles.hero}><div><p className={styles.eyebrow}><span className={styles.eyebrowDot}/> THE NEXT CHAPTER OF YOUR BUSINESS</p><h1>기업의 다음 기회,<br/><em>어니스톤</em>에서<br/>준비하세요.</h1><p className={styles.lead}>지원사업부터 기업인증, ISO까지.<br/>막막했던 준비를, 우리 회사의 다음 실행으로.</p><button className={styles.primary} onClick={()=>start()}>우리 회사 준비 방향 확인하기 <ArrowRight size={17}/></button><p className={styles.small}>가입 전에 먼저 살펴보세요. 간단한 회사 정보면 시작할 수 있어요.</p></div>
    <div className={styles.heroArt} aria-label="흩어진 준비가 하나로 연결되는 어니스톤 브랜드 그래픽">
