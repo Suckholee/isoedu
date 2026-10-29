@@ -3,6 +3,7 @@ import {useEffect,useState,useId} from 'react';
 import {createPortal} from 'react-dom';
 import {ArrowLeft,Download,X} from 'lucide-react';
 import ModalLayer from './ui/ModalLayer';
+import InlinePdfViewer from './InlinePdfViewer';
 import styles from './CloudFileViewer.module.css';
 import {decodeCloudPreview} from '../lib/cloudPreview.mjs';
 import {getSecureDownloadUrl} from '../lib/storageVault';
@@ -36,7 +37,7 @@ export default function CloudFileViewer({document:doc,onClose,reviewPanel,review
    {error&&<p role="alert" className={styles.error}>{error}</p>}
    {!text&&preview&&<p className={styles.note}>{doc.format==='PDF'?'PDF 원본':'원문 변환 미리보기 · 글꼴과 일부 배치는 원본과 다를 수 있습니다.'}</p>}
    <div className={reviewPanel?styles.reviewBody:styles.body}><div className={styles.content}>
-    {text?<pre className={styles.text}>{doc.contentDraft||'추출된 본문이 없습니다. 원본을 내려받아 확인해 주세요.'}</pre>:preview?<iframe sandbox={doc.previewFormat==='HTML'?'':undefined} title={doc.title+' 원문'} src={preview} className={styles.frame}/>:!error&&<p role="status" className={styles.status}>원문을 준비하고 있습니다.</p>}
+    {text?<pre className={styles.text}>{doc.contentDraft||'추출된 본문이 없습니다. 원본을 내려받아 확인해 주세요.'}</pre>:preview?(doc.previewFormat==='PDF'||(!doc.previewFormat&&doc.format==='PDF')?<InlinePdfViewer key={preview} url={preview} title={doc.title}/>:<iframe sandbox={doc.previewFormat==='HTML'?'':undefined} title={doc.title+' 원문'} src={preview} className={styles.frame}/>):!error&&<p role="status" className={styles.status}>원문을 준비하고 있습니다.</p>}
    </div>{reviewPanel&&<aside className={styles.reviewPanel} aria-label="문서 날짜 검토">{reviewPanel}</aside>}</div>
   </section>
  </ModalLayer>,window.document.body);
