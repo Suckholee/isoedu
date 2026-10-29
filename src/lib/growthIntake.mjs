@@ -1,3 +1,4 @@
+import {programSnapshot} from './publicPrograms.mjs';
 export const GROWTH_KEY='honestone_growth_intake_v1';
 export const INTERESTS={
  government:{label:'정부지원사업',description:'우리 회사에 맞는 공고부터 찾아보고 싶어요',steps:['소재지·업력·업종 등 신청 조건 확인','공고 원문과 제출 양식 확인','보유 서류와 모집 일정 정리']},
@@ -7,16 +8,23 @@ export const INTERESTS={
 };
 const SIZE=['1~4명','5~9명','10~29명','30~99명','100명 이상'];
 export const EMPLOYEE_RANGES=SIZE;
+function validateId(id){if(!/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(id||''))throw Error('입력 정보를 다시 시작해 주세요.');return id;}
 export function validateGrowthDraft(input){
  if(!input||!Object.hasOwn(INTERESTS,input.interest))throw Error('관심 분야를 선택해 주세요.');
  const text=(key,max,required=false)=>{const v=String(input[key]||'').trim();if(v.length>max||required&&!v)throw Error(key==='companyName'?'회사명을 100자 이내로 입력해 주세요.':'입력 내용을 확인해 주세요.');return v;};
+ if(input.kind==='program'){return {id:validateId(input.id),kind:'program',interest:'government',program:programSnapshot(input.program,input.program?.action),createdAt:typeof input.createdAt==='string'&&input.createdAt.length<=40&&!Number.isNaN(Date.parse(input.createdAt))?new Date(input.createdAt).toISOString():new Date().toISOString()};}
  if(!SIZE.includes(input.employees))throw Error('직원 수를 선택해 주세요.');
- if(!/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(input.id||''))throw Error('입력 정보를 다시 시작해 주세요.');
+ validateId(input.id);
  return {id:input.id,interest:input.interest,companyName:text('companyName',100,true),industry:text('industry',80,true),employees:input.employees,region:text('region',60),createdAt:typeof input.createdAt==='string'&&input.createdAt.length<=40&&!Number.isNaN(Date.parse(input.createdAt))?new Date(input.createdAt).toISOString():new Date().toISOString()};
 }
 export const INTAKE_PREFIX='HONESTONE_GROWTH_INTAKE_V1\n';
 export function parseGrowthIntake(notes){try{if(!notes?.startsWith(INTAKE_PREFIX))return null;return validateGrowthDraft(JSON.parse(notes.slice(INTAKE_PREFIX.length)));}catch{return null;}}
-export function growthTaskPayload(draft,{userId,companyId,assignee='나',origin}){const data=validateGrowthDraft(draft);if(!userId||!companyId)throw Error('로그인한 회사 정보를 확인해 주세요.');return {id:data.id,created_by:userId,company_id:companyId,title:`${INTERESTS[data.interest].label} · ${data.companyName} 준비 방향 확인`.slice(0,180),status:'todo',assignee:assignee.slice(0,80),due_date:null,official_due_date:null,notes:INTAKE_PREFIX+JSON.stringify(data),source_url:new URL('/',origin).href,checklist:INTERESTS[data.interest].steps.map((text,i)=>({id:String(i),text,done:false}))};}
+export function growthTaskPayload(draft,{userId,companyId,assignee='나',origin}){
+ const data=validateGrowthDraft(draft);if(!userId||!companyId)throw Error('로그인한 회사 정보를 확인해 주세요.');
+ const program=data.kind==='program'?data.program:null;
+ const steps=program?[program.action==='prepare'?'회사 정보와 신청 조건 대조':'관심 공고의 지원 조건 확인','공식 원문에서 최신 모집 기간 확인',...program.requiredDocuments.map(name=>`제출 요건 확인 · ${name}`),'필요 서류와 준비 일정 정리']:INTERESTS[data.interest].steps;
+ return {id:data.id,created_by:userId,company_id:companyId,title:(program?`${program.action==='prepare'?'지원사업 준비':'관심사업'} · ${program.title}`:`${INTERESTS[data.interest].label} · ${data.companyName} 준비 방향 확인`).slice(0,180),status:'todo',assignee:assignee.slice(0,80),due_date:null,official_due_date:null,notes:INTAKE_PREFIX+JSON.stringify(data),source_url:program?.sourceUrl||new URL('/',origin).href,checklist:steps.map((text,i)=>({id:String(i),text,done:false}))};
+}
 export async function saveGrowthTask(client,payload){
  const result=await client.from('work_tasks').insert(payload).select().single();
  if(!result.error)return result.data;

@@ -26,6 +26,7 @@ export function useLandingMotion(rootRef,styles){
    const cls=key=>'.'+styles[key];
    add(`${cls('hero')} > div:first-child`,'up');
    add(cls('heroArt'),'scale');
+   add('[data-landing-program-preview]');
    add(`${cls('section')} > h2, ${cls('section')} > .${styles.eyebrow}, ${cls('section')} > .${styles.description}`);
    add(`${cls('areas')} > button`,'up',true);
    add(cls('storyHeading'),'left');add(cls('connectionArt'),'scale');
