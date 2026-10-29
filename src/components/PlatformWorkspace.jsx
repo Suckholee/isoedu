@@ -12,6 +12,8 @@ import ClientDrive from './ClientDrive';
 import ManagedClientDrive from './ManagedClientDrive';
 import IsoComplianceMatrixView from '../components/IsoComplianceMatrixView';
 import MyWorkView from './MyWorkView';
+import EnterpriseWorkspace from './EnterpriseWorkspace';
+import {useMemberPortal} from '../hooks/useMemberPortal';
 import AgentSchedulesView from './AgentSchedulesView';
 import RadarView from '../components/RadarView';
 import WorkspaceView from '../components/WorkspaceView';
@@ -69,12 +71,13 @@ export default function PlatformWorkspace() {
   const setSelectedStandard = standard => router.replace(platformHref(activeNav, searchParams.toString(), {standard}), {scroll:false});
   const setSelectedFolder = folder => router.replace(platformHref(activeNav, searchParams.toString(), {folder}), {scroll:false});
   const { user, profile, isLoading: authLoading, authError, auditWarning } = useAuth();
+  const memberPortal=useMemberPortal();
   const [companies, setCompanies] = useState(isCloudMode ? [] : INITIAL_COMPANIES);
   const [currentCompany, setCurrentCompany] = useState(null);
   const [projects, setProjects] = useState([]);
   const [activeProject, setActiveProject] = useState(null);
   const [workspaceError, setWorkspaceError] = useState(null);
-  const clientCompanies = managedClients(companies,isCloudMode?profile?.company?.id:null);
+  const clientCompanies = memberPortal.enterprise?companies.filter(c=>memberPortal.context.companies.some(p=>p.id===c.id)):managedClients(companies,isCloudMode?profile?.company?.id:null);
   const requestedClientId = searchParams.get('company');
   const accountId = isCloudMode ? user?.id : 'local';
   const accountRef = useRef(accountId);
@@ -220,7 +223,7 @@ export default function PlatformWorkspace() {
     return () => { cancelled = true; };
   }, [accountId, authLoading, profile?.id]);
 
-  useEffect(() => { setCurrentCompany(resolveClient(clientCompanies,requestedClientId)); }, [requestedClientId,companies,profile?.company?.id]);
+  useEffect(() => { setCurrentCompany(resolveClient(clientCompanies,requestedClientId)||(memberPortal.enterprise?clientCompanies.find(c=>c.id===profile?.company?.id)||clientCompanies[0]||null:null)); }, [requestedClientId,companies,profile?.company?.id,memberPortal.context]);
 
   useEffect(() => {
     setActiveDoc(null);
@@ -419,9 +422,10 @@ export default function PlatformWorkspace() {
 
         {/* Left Google Drive Sidebar (Collapsible) */}
         <Sidebar
+          enterprise={memberPortal.enterprise}
           companies={clientCompanies}
           onSelectCompany={selectCompany}
-        onCreateClient={() => setIsNewProjectModalOpen(true)}
+        onCreateClient={memberPortal.enterprise?undefined:()=>setIsNewProjectModalOpen(true)}
           currentCompany={currentCompany}
           isOpen={isSidebarOpen}
           onToggle={handleToggleSidebar}
@@ -450,12 +454,13 @@ export default function PlatformWorkspace() {
           <div className="platform-workspace-topbar">
       {/* 1. Google Drive Material 3 Header */}
       <Header
+        enterprise={memberPortal.enterprise}
         isSidebarOpen={isSidebarOpen}
         onToggleSidebar={handleToggleSidebar}
         currentCompany={currentCompany}
         companies={clientCompanies}
         onSelectCompany={selectCompany}
-        onCreateClient={() => setIsNewProjectModalOpen(true)}
+        onCreateClient={memberPortal.enterprise?undefined:()=>setIsNewProjectModalOpen(true)}
         onOpenSearch={() => setIsSearchOpen(true)}
         onOpenAddModal={(level) => {
           setAddTemplateLevel(level);
@@ -481,6 +486,7 @@ export default function PlatformWorkspace() {
             {/* Scrollable View Content Canvas */}
             <div ref={contentRef} className="platform-scroll flex-1 overflow-auto">
 
+              {isCloudMode&&user&&(memberPortal.loading||memberPortal.error)?<div className="p-6"><p role={memberPortal.error?'alert':'status'}>{memberPortal.error?'회원 화면을 불러오지 못했습니다. 회사 연결 설정을 확인해 주세요.':'회원·회사 정보를 확인하고 있습니다.'}</p>{memberPortal.error&&<button className="text-blue-700 underline mt-3" onClick={memberPortal.reload}>다시 불러오기</button>}</div>:memberPortal.enterprise?<EnterpriseWorkspace context={memberPortal.context} company={currentCompany} projects={projects} documents={documents} activeNav={activeNav} activeProject={activeProject} onSelectCompany={c=>{selectCompany(c);if(activeNav==='settings')setActiveNav('dashboard');}} onSelectProject={handleSelectProject} onRefresh={async()=>{const uid=accountRef.current;const w=await loadWorkspace();if(accountRef.current===uid){setCompanies(w.companies);setProjects(w.projects);memberPortal.reload();}}} onOpenDocument={handleOpenDoc} onAddDocument={handleAddDocument} onUpdateDocument={handleUpdateDocument} onOpenUpload={()=>setIsAddModalOpen(true)} onOpenDocuments={()=>setActiveNav('drive')}/>:<>
               {currentCompany&&<div className="managed-context-bar"><strong>현재 거래처 · {currentCompany.name}</strong><button onClick={()=>selectCompany(null)}>전체 거래처로 전환</button></div>}
               {activeNav==='gov_programs'&&currentCompany&&<p className="px-8 text-sm text-slate-500">{currentCompany.name} 작업 중 · 공고는 전체 목록이며 회사 정보에 따른 신청 적합성 판정은 아직 제공되지 않습니다.</p>}
 
@@ -583,7 +589,7 @@ export default function PlatformWorkspace() {
                   onSelectCompany={selectCompany}
                   projects={projects}
                   documents={documents}
-                  onCreateClient={() => setIsNewProjectModalOpen(true)}
+                  onCreateClient={memberPortal.enterprise?undefined:()=>setIsNewProjectModalOpen(true)}
                   onWorkspaceChanged={async () => {
                     const w = await loadWorkspace();
                     setCompanies(w.companies);
@@ -717,6 +723,7 @@ export default function PlatformWorkspace() {
                 />
               )}
 
+              </>}
             </div>
 
           </div>

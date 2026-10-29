@@ -36,6 +36,7 @@ import CompanySwitcher from './CompanySwitcher';
 import { isCloudMode } from '../lib/dataConfig';
 
 export default function Header({
+  enterprise=false,
   companies = [],
   isSidebarOpen = true,
   onToggleSidebar,
@@ -140,7 +141,7 @@ export default function Header({
       <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
 
         {/* Tenant Switcher (Pill Chip) */}
-        <CompanySwitcher companies={companies} currentCompany={currentCompany} onSelectCompany={onSelectCompany} onCreateClient={onCreateClient}/>
+        <CompanySwitcher enterprise={enterprise} companies={companies} currentCompany={currentCompany} onSelectCompany={onSelectCompany} onCreateClient={onCreateClient}/>
 
         {/* Gemini / AI Assistant Sparkle Button */}
         <button

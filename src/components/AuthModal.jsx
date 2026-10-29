@@ -72,7 +72,7 @@ export default function AuthModal({ isOpen, onClose }) {
         }
         const res = await signup({ email:fields.email, password:fields.password, fullName, role, companyName });
         if (res.success) {
-          setSuccessMessage(res.needsConfirmation ? '이메일의 인증 링크를 확인한 뒤 로그인해 주세요.' : '회원가입이 완료되었습니다.');
+          setSuccessMessage(res.needsConfirmation ? '이메일의 인증 링크를 확인한 뒤 로그인해 주세요.' : '회원가입이 완료되었습니다. 승인 없이 회사 공간을 바로 사용할 수 있습니다.');
           setTimeout(() => {
             onClose();
           }, 1000);
@@ -109,7 +109,7 @@ export default function AuthModal({ isOpen, onClose }) {
             </div>
             <div>
               <h2 className="text-lg font-bold">
-                {mode === 'login' ? '어니스톤 회원 로그인' : '어니스톤 회원가입'}
+                {mode === 'login' ? '어니스톤 회원 로그인' : '어니스톤 기업회원 가입'}
               </h2>
               <p className="text-xs text-blue-100">
                 인증 문서 보안 스토리지 및 감사 플랫폼
@@ -187,7 +187,7 @@ export default function AuthModal({ isOpen, onClose }) {
               </div>
 
               <div>
-                <label className="block text-xs font-bold text-slate-700 mb-1">소속 기업/기관명</label>
+                <label className="block text-xs font-bold text-slate-700 mb-1">회사명</label><p className="text-xs text-slate-500 mb-2">가입 즉시 새 회사 공간을 사용할 수 있습니다. 같은 이름의 기존 회사 자료와는 자동 연결되지 않습니다.</p>
                 <div className="relative">
                   <Building2 className="w-4 h-4 absolute left-3 top-3 text-slate-400" />
                   <input

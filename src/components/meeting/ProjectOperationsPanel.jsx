@@ -26,6 +26,7 @@ export default function ProjectOperationsPanel({
   onUpdateDocument,
   canEdit,
   onChanged,
+  enterprise=false,
 }) {
   const { user, profile } = useAuth();
   const [record, setRecord] = useState(null),
@@ -126,7 +127,7 @@ export default function ProjectOperationsPanel({
   }
   async function reloadChecks(){await load();await onChanged?.();}
   const files = documents.filter((d) => d.companyId === project.companyId),
-    prepare = team?.canPrepare === true;
+    prepare = !enterprise && team?.canPrepare === true;
   async function review(r, status, documentId) {
     await run(
       async (id) => {
@@ -213,7 +214,7 @@ export default function ProjectOperationsPanel({
   return (
     <section className="platform-card space-y-3">
       <header className="flex justify-between gap-2">
-        <h2>고객 제출·심사 운영</h2>
+        <h2>{enterprise?'요청 서류 제출':'고객 제출·심사 운영'}</h2>
         <button
           disabled={busy}
           className="text-sm underline text-blue-700"
@@ -250,7 +251,7 @@ export default function ProjectOperationsPanel({
             별도입니다.
           </p>
           {project.kind==='ISO'&&<p className="text-xs text-slate-500"><a className="text-blue-700 underline" href="https://honestone.notion.site/" target="_blank" rel="noreferrer">노션 ISO 신청 안내 원문</a> · 입력이 어려운 부분은 비워 두고 함께 확인합니다. 선입금 후 진행 안내와 가예약 기록은 구분합니다.</p>}
-          <details>
+          {!enterprise&&<details>
             <summary className="cursor-pointer font-semibold text-sm">
               회사 정보·견적·입금·일정·인증서
             </summary>
@@ -389,7 +390,7 @@ export default function ProjectOperationsPanel({
                 제출 자료와 실제 현장을 대조해 작성하세요.
               </p>
             </form>
-          </details>
+          </details>}
           {record?.data?.certificateDocumentId &&
             files.find((d) => d.id === record.data.certificateDocumentId) && (
               <button
@@ -411,7 +412,7 @@ export default function ProjectOperationsPanel({
             </strong>
 
           </div>
-          <DocumentChecksPanel project={project} record={record} canPrepare={prepare} canEdit={canEdit} onChanged={reloadChecks}/>
+          {!enterprise&&<DocumentChecksPanel project={project} record={record} canPrepare={prepare} canEdit={canEdit} onChanged={reloadChecks}/>}
           <div className="overflow-auto">
             <table className="platform-table">
               <thead>

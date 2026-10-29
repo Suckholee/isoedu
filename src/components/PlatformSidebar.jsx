@@ -12,14 +12,15 @@ const items = [
   ['settings', '설정', Settings, ['settings', 'agent_schedules', 'workspace']],
 ];
 
-export default function PlatformSidebar({ isOpen, onToggle, activeNav, onSelectNav, currentCompany, companies = [], onSelectCompany, onCreateClient, projects = [], onSelectProject, onOpenNewProjectModal }) {
+export default function PlatformSidebar({ enterprise=false, isOpen, onToggle, activeNav, onSelectNav, currentCompany, companies = [], onSelectCompany, onCreateClient, projects = [], onSelectProject, onOpenNewProjectModal }) {
+  const navigationItems=enterprise?items.filter(([id])=>['dashboard','compliance','drive','settings'].includes(id)).map(item=>[item[0],{dashboard:'우리 회사 준비',compliance:'진행 현황',drive:'회사 문서함',settings:'회사·계정'}[item[0]],...item.slice(2)]):items;
   const isItemActive = (id, group = [id]) => activeNav === id || group.includes(activeNav);
 
   if (!isOpen) return <aside id="platform-navigation" className="platform-sidebar-collapsed" aria-label="접힌 탐색 메뉴">
     <button type="button" className="platform-sidebar-toggle" onClick={onToggle} aria-label="사이드바 펼치기" aria-expanded={false} aria-controls="platform-navigation" title="사이드바 펼치기 ([ 또는 Ctrl/Cmd+B)"><PanelLeftOpen className="w-5 h-5" aria-hidden="true" /></button>
     <button type="button" className="platform-icon-button" onClick={() => onSelectNav('dashboard')} aria-label="어니스톤 홈으로 이동" title="어니스톤 홈"><ShieldCheck className="w-5 h-5 text-blue-400" aria-hidden="true" /></button>
     <nav className="platform-icon-nav" aria-label="주 메뉴">
-      {items.map(([id, label, Icon, group]) => <button type="button" key={id}
+      {navigationItems.map(([id, label, Icon, group]) => <button type="button" key={id}
         aria-label={label} aria-current={isItemActive(id, group) ? 'page' : undefined}
         className={`platform-icon-button ${isItemActive(id, group) ? 'is-active' : ''}`}
         onClick={() => onSelectNav(id)}>
@@ -30,9 +31,9 @@ export default function PlatformSidebar({ isOpen, onToggle, activeNav, onSelectN
   </aside>;
   return <aside id="platform-navigation" className="platform-sidebar">
     <div className="flex items-center justify-between px-2 mb-7"><button type="button" onClick={() => onSelectNav('dashboard')} aria-label="어니스톤 홈으로 이동" className="flex items-center gap-2 rounded text-lg font-bold focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-400"><ShieldCheck className="text-blue-400" aria-hidden="true" /> 어니스톤</button><button type="button" className="platform-sidebar-toggle" onClick={onToggle} aria-label="사이드바 접기" aria-expanded={true} aria-controls="platform-navigation" title="사이드바 접기 ([ 또는 Ctrl/Cmd+B)"><ChevronLeft className="w-4 h-4" /></button></div>
-    <CompanySwitcher sidebar companies={companies} currentCompany={currentCompany} onSelectCompany={onSelectCompany} onCreateClient={onCreateClient}/>
+    <CompanySwitcher enterprise={enterprise} sidebar companies={companies} currentCompany={currentCompany} onSelectCompany={onSelectCompany} onCreateClient={onCreateClient}/>
     <nav aria-label="주 메뉴" className="space-y-1.5 mt-7">
-      {items.map(([id, label, Icon, group]) => {
+      {navigationItems.map(([id, label, Icon, group]) => {
         const active = isItemActive(id, group);
         return (
           <button
