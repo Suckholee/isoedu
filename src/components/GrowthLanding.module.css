@@ -12,3 +12,4 @@
 /* Touch screens prioritize readable content and stable input over continuous effects. */
 @media(max-width:700px),(hover:none) and (pointer:coarse){.sculpture,.connectionRing,.connectionCore,.nodeOne,.nodeTwo,.nodeThree,.ctaOrbit>i{animation:none!important}.sculpture{filter:none}.visualTag{backdrop-filter:none;background:#24533e}.connectionArt,.fileScene,.startArt,.ctaOrbit{translate:none!important}.serviceArt,.paperFront,.paperBack,.folderFront,.journeyVisual>svg,.miniPaper,.miniFolder,.miniCalendar,.calendarCheck{transition:none!important;translate:none!important}.primary:hover,.area:hover{transform:none}.landing button{transition:background .15s}.formBox input,.formBox select{font-size:16px}}
 .landing h2,.landing h3{word-break:keep-all;overflow-wrap:anywhere}
+.area strong{word-break:keep-all;overflow-wrap:normal}
