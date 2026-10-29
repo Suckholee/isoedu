@@ -4,7 +4,7 @@ import SocialLoginButtons from './SocialLoginButtons';
 
 import {readLoginFields} from '../lib/authForm.mjs';
 import Button from './ui/Button';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { 
   X, 
   Mail, 
@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 
-export default function AuthModal({ isOpen, onClose }) {
+export default function AuthModal({ isOpen, onClose, initialMode='login', initialCompanyName='' }) {
   const { login, signup, switchDemoRole, isDemoMode } = useAuth();
   const [mode, setMode] = useState('login'); // 'login' | 'signup'
   
@@ -37,6 +37,7 @@ export default function AuthModal({ isOpen, onClose }) {
   const [successMessage, setSuccessMessage] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
 
+  useEffect(()=>{if(isOpen){setMode(initialMode);if(initialCompanyName)setCompanyName(initialCompanyName);}},[isOpen,initialMode,initialCompanyName]);
   if (!isOpen) return null;
 
   const handleSubmit = async (e) => {

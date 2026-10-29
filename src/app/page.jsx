@@ -1,3 +1,3 @@
-import { redirect } from 'next/navigation';
-
-export default function HomePage() { redirect('/dashboard'); }
+import {Suspense} from 'react';
+import GrowthLanding from '../components/GrowthLanding';
+export default function HomePage(){return <Suspense><GrowthLanding/></Suspense>;}

@@ -38,7 +38,7 @@
 - 메뉴는 /dashboard, /certifications, /documents, /audit-schedule, /risks, /notifications, /government-programs, /reports, /admin, /settings로 이동한다. 관리자 센터 하위 탭은 /admin?tab={members|companies|dispatch|operations|audit-logs} 및 /admin/{subtab} 경로를 지원한다.
 - 정부사업 보기는 /government-programs/calendar 및 /government-programs/list. 선택 사업은 program 파라미터로 전달한다.
 - 규격·문서 계층은 standard/folder 파라미터로 보존한다. 프로젝트는 /projects/{id}로 접근하며 실제 권한 있는 프로젝트만 표시한다.
-- /는 /dashboard로 이동한다. 직접 접속·새로고침·뒤로/앞으로 가기를 지원한다. 알 수 없는 경로는 404.
+- /는 공개 기업 랜딩이며 /dashboard는 로그인 후 업무 공간이다. 직접 접속·새로고침·뒤로/앞으로 가기를 지원한다. 알 수 없는 경로는 404.
 - 공통 셸은 layout에서 유지해 화면 이동만으로 회사·문서 데이터 저장소를 재생성하지 않는다. 경로 변경 시 작업 영역 스크롤은 위로 이동한다.
 - URL은 접근 권한을 부여하지 않는다. 기존 인증·회사 데이터 저장 경로를 유지한다.
 
