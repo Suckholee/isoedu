@@ -644,7 +644,7 @@ export default function PlatformWorkspace() {
               {activeNav === 'project' && !activeProject && <div role="status" className="p-8 text-sm text-slate-500">로그인 및 회사 권한을 확인한 뒤 프로젝트를 불러올 수 있습니다. 프로젝트가 없거나 접근 권한이 없을 수 있습니다.</div>}
 
               {/* VIEW 2: 고객사 심사 프로젝트 매니징 폴더 전용 뷰 (사용자 핵심 요구 기능) */}
-              {activeNav === 'project' && activeProject?.workflowVersion === 2 && <ProjectPreparationView key={activeProject.id} project={activeProject} documents={documents} onOpenDetail={handleOpenDoc} onAddDocument={handleAddDocument} onAddDocuments={handleAddDocuments} onUpdateDocument={handleUpdateDocument}/>}
+              {activeNav === 'project' && activeProject?.workflowVersion === 2 && <ProjectPreparationView key={activeProject.id} project={activeProject} documents={documents} onOpenDetail={handleOpenDoc} onAddDocument={handleAddDocument} onAddDocuments={handleAddDocuments} onUpdateDocument={handleUpdateDocument} onWorkspaceChanged={async()=>{const uid=accountRef.current;const w=await loadWorkspace();if(accountRef.current===uid){setCompanies(w.companies);setProjects(w.projects);}}}/>}
               {activeNav === 'project' && activeProject && activeProject.workflowVersion !== 2 && (
                 <ProjectDetailView
                   project={activeProject}

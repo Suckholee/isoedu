@@ -3,6 +3,8 @@ import {useEffect,useRef,useState} from 'react';
 import Link from 'next/link';
 import {useAuth} from '../context/AuthContext';
 import CloudFileViewer from './CloudFileViewer';
+import ProjectOperationsPanel from './meeting/ProjectOperationsPanel';
+import ConsultantTeamPanel from './meeting/ConsultantTeamPanel';
 import {ISO_MANDATORY_REQUIREMENTS} from '../lib/isoRequirementsData';
 import {
  loadProjectDetail,
@@ -31,7 +33,7 @@ import {
  triggerBrowserDownload,
 } from '../lib/documentExport.mjs';
 
-export default function ProjectPreparationView({project,documents=[],onOpenDetail,onAddDocument,onAddDocuments,onUpdateDocument}){
+export default function ProjectPreparationView({project,documents=[],onOpenDetail,onAddDocument,onAddDocuments,onUpdateDocument,onWorkspaceChanged}){
  const {user,profile}=useAuth();
  const [requirementSearch,setRequirementSearch]=useState(''),[requirementFilter,setRequirementFilter]=useState('all');
  const [detail,setDetail]=useState(null),[error,setError]=useState(''),[actionError,setActionError]=useState(''),[actionNotice,setActionNotice]=useState(''),[busy,setBusy]=useState(false),[readerDoc,setReaderDoc]=useState(null);
@@ -317,6 +319,8 @@ export default function ProjectPreparationView({project,documents=[],onOpenDetai
  const nextUnverifiedReq=visibleRequirements.find(r=>r.id!==activeQuickReq?.id&&stateOf(r)!=='VERIFIED')||null;
  return <div className="p-5 space-y-4"><header className="flex justify-between gap-3 flex-wrap"><div><h1 className="text-xl font-bold">{p.title}</h1><p className="text-sm text-slate-500">{p.clientName} · {PROJECT_KINDS[p.kind]} · 목표 {p.targetDate||'미정'}</p></div><div className="flex items-center gap-3 flex-wrap"><button type="button" onClick={()=>window.print()} className="text-xs px-3 py-1.5 rounded bg-white text-slate-700 border border-slate-300 font-semibold hover:bg-slate-100 print:hidden">준비 요약표 인쇄·PDF</button><Link className="text-blue-700" href={'/certifications?company='+encodeURIComponent(p.companyId)}>거래처 프로젝트 목록</Link></div></header>
  {p.notes&&<p className="text-sm whitespace-pre-wrap">{p.notes}</p>}
+ <details className="platform-card"><summary className="cursor-pointer text-sm font-semibold">회사 공동 담당자 관리</summary><ConsultantTeamPanel company={{id:p.companyId,name:p.clientName}}/></details>
+ <ProjectOperationsPanel key={p.id} project={p} documents={documents} canEdit={detail.canEdit} onChanged={onWorkspaceChanged} onAddDocument={onAddDocument} onUpdateDocument={onUpdateDocument}/>
  <section className="platform-card"><h2>구비서류 · {detail.requirements.length}개</h2><p className="text-xs text-slate-500 my-3">{!detail.canEdit?'열람 권한으로 보고 있습니다. ':''}프로젝트 생성 시 검토한 기준 목록입니다. 문서 연결·내부 확인 상태는 공식 인증기관의 심사 적합 판정이나 승인을 대신하지 않습니다.</p>
  {detail.requirements.length>0&&<div role="region" aria-label="구비서류 준비 자동화 및 다운로드" className="my-3 p-3 rounded-lg bg-slate-50 border border-slate-200 flex flex-wrap items-center justify-between gap-2"><div className="text-xs text-slate-700"><strong>준비 자동화·다운로드</strong> · 연결 {linkedCount}/{detail.requirements.length}건 · 내부 확인 완료 {verifiedCount}건{detail.canEdit&&autoMatches.length>0?` · 기존 보유 문서 ${autoMatches.length}건 자동 매칭 가능`:''}</div><div className="flex flex-wrap gap-2">{detail.canEdit&&autoMatches.length>0&&<button type="button" disabled={busy} onClick={()=>autoLinkMatchedDocuments(autoMatches)} className="text-xs px-3 py-1.5 rounded bg-emerald-600 text-white font-semibold disabled:opacity-50">기존 문서 자동 매칭·연결 ({autoMatches.length}건)</button>}{detail.canEdit&&unlinkedVisible.length>0&&(onAddDocuments||onAddDocument)&&<button type="button" disabled={busy} onClick={()=>createBatchDraftsAndLink(unlinkedVisible,p)} className="text-xs px-3 py-1.5 rounded bg-blue-600 text-white font-semibold disabled:opacity-50">미연결 구비서류 일괄 초안 생성·연결 ({unlinkedVisible.length}건)</button>}{detail.canEdit&&taskSyncPlan.updates.length>0&&<button type="button" disabled={busy} onClick={()=>syncTasksManually(taskSyncPlan)} className="text-xs px-3 py-1.5 rounded bg-slate-800 text-white font-semibold disabled:opacity-50">준비 일정·체크리스트 동기화 ({taskSyncPlan.updates.length}건)</button>}<button type="button" onClick={()=>downloadProjectCsv(p,detail.requirements,files)} className="text-xs px-3 py-1.5 rounded bg-white text-slate-700 border border-slate-300 font-semibold hover:bg-slate-100">현황표 다운로드 (.csv)</button>{linkedCount>0&&<button type="button" onClick={()=>downloadProjectBinder(p,detail.requirements,files)} className="text-xs px-3 py-1.5 rounded bg-white text-blue-700 border border-blue-300 font-semibold hover:bg-blue-50">연결 문서 통합 다운로드 (.doc)</button>}</div></div>}
  {actionError&&<p role="alert" className="text-sm text-rose-700 my-2">{actionError}</p>}

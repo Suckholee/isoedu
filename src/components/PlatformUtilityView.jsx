@@ -21,6 +21,8 @@ import {
 import { useAuth } from '../context/AuthContext';
 import AuthModal from './AuthModal';
 import CompanyTeamPanel from './CompanyTeamPanel';
+import ConsultantTeamPanel from './meeting/ConsultantTeamPanel';
+import CrmImportPanel from './meeting/CrmImportPanel';
 import SocialLoginButtons from './SocialLoginButtons';
 import Button from './ui/Button';
 import { isCloudMode } from '../lib/dataConfig';
@@ -127,6 +129,8 @@ export default function PlatformUtilityView({
     const targetProjects = activeScheduleProject ? [activeScheduleProject] : scopedProjects;
 
     for (const proj of targetProjects) {
+      if(proj.operations?.auditDate) items.push({id:`${proj.id}-recorded-audit`,date:proj.operations.auditDate,title:`${{tentative:'가예약',confirmed:'일정 확정',completed:'심사 진행 기록'}[proj.operations.scheduleStatus]||'등록 심사일'} · ${proj.clientName}`,type:'audit',project:proj});
+      if(proj.operations?.nextAuditDate) items.push({id:`${proj.id}-next-audit`,date:proj.operations.nextAuditDate,title:`차기 심사 · ${proj.clientName}`,type:'renewal',project:proj});
       const targetDate = proj.targetDate || proj.auditDate || '';
       const stdText = Array.isArray(proj.standards) && proj.standards.length
         ? proj.standards.join(', ')
@@ -1458,7 +1462,11 @@ export default function PlatformUtilityView({
             </section>
           )}
           {isCloudMode && (
-            <CompanyTeamPanel company={currentCompany} onChanged={onWorkspaceChanged} />
+            <>
+<ConsultantTeamPanel company={currentCompany}/>
+<CompanyTeamPanel company={currentCompany} onChanged={onWorkspaceChanged} />
+<CrmImportPanel onChanged={onWorkspaceChanged}/>
+</>
           )}
         </>
       )}

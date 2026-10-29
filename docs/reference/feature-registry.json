@@ -82,7 +82,14 @@
         "verification": "전체91테스트/빌드통과; 브라우저 복수규격·구비서류미리보기·목표일2026-12-15→11-15/12-01/12-12일정·미로그인저장차단 확인. 운영DB/배포/실계정종단검증 대기."
       },
       "meetingWorkflowApplied20261019": "2026-10-19 사용자 명시승인 후 어니스톤 Supabase dqnblzlgpybhjftopldg에 company_projects_migration.sql 적용 성공. CEO 회사 OWNER권한으로 프로젝트·요건·업무 저장/재조회,문서 연결,요청 재시도 중복방지,업무 완료,익명조회/생성차단을 운영SQL 트랜잭션에서 검증한 뒤 전량롤백. 기존67회사/130문서/66멤버십/0프로젝트/2업무 유지. 로그인된 조영빈 운영브라우저에서 회사 관리자·승인대기 UI,접근가능 거래처목록,실제 거래처 HWP미리보기(/api/vault-file 경유) 확인. 비로그인 파일접근HTTP401,인증관리/설정HTTP200. 선택적HEAD기반 배포묶음 /private/tmp/isoedu-meeting-release-20261019 사용,보류 소셜로그인/별도에이전트UI/로컬고객원본 제외. 배포묶음86테스트·빌드통과(전체개발91테스트). 최종 Vercel 배포6M4Y3Y2fywroVcf6ArjUdoq23mEX 및 https://isoedu-cyan.vercel.app 반영. 실제직원 승인/해제 브라우저 교차계정 검증과 영구프로젝트 생성은 수행하지 않음. 기존서명URL은만료까지유효가능/다운로드사본회수불가. 카카오/Google은보류유지.",
-      "headerOverlap20261019": "2026-10-19 공통헤더 겹침 수정: 거래처/계정 헤더의 절대배치를 제거하고 본문 바깥의 독립된 상단 flex행으로 이동. 연결안내도 같은 행의 흐름에 배치,좁은화면 칩폭 제한·업무제목/버튼 줄바꿈. S02 계정/회사선택→S03 회사컨텍스트→S05 및 공통메뉴 작업버튼;데이터·권한·URL·문서선택·사이드바상태 변경없음. 데스크톱/390px에서 헤더하단<=업무제목상단 확인,사이드바 접힘/펼침 유지. 빌드성공. 운영배포후확인예정. 운영반영완료: Vercel Ei3ywnyGMQ8hCBEm1Rq9rVzwp3vf 빌드성공 및 https://isoedu-cyan.vercel.app alias 반영. 운영/로컬 헤더와 업무제목 영역 분리 확인,390px·사이드바접힘/펼침 확인. 데이터·권한 변경없음."
+      "headerOverlap20261019": "2026-10-19 공통헤더 겹침 수정: 거래처/계정 헤더의 절대배치를 제거하고 본문 바깥의 독립된 상단 flex행으로 이동. 연결안내도 같은 행의 흐름에 배치,좁은화면 칩폭 제한·업무제목/버튼 줄바꿈. S02 계정/회사선택→S03 회사컨텍스트→S05 및 공통메뉴 작업버튼;데이터·권한·URL·문서선택·사이드바상태 변경없음. 데스크톱/390px에서 헤더하단<=업무제목상단 확인,사이드바 접힘/펼침 유지. 빌드성공. 운영배포후확인예정. 운영반영완료: Vercel Ei3ywnyGMQ8hCBEm1Rq9rVzwp3vf 빌드성공 및 https://isoedu-cyan.vercel.app alias 반영. 운영/로컬 헤더와 업무제목 영역 분리 확인,390px·사이드바접힘/펼침 확인. 데이터·권한 변경없음.",
+      "meeting20261023": {
+        "priorityBasis": "2026-10-23 회의 및 2026-10-29 사용자 우선순위 지시",
+        "spec": "docs/reference/meeting-2026-10-23.md",
+        "status": "코드·운영 DB 적용·RLS 및 롤백 저장 검증, 실데이터 이관·인증 후 화면·배포 미완료",
+        "handoff": "회사/프로젝트 ID, 주·공동 담당, CRM 원본 ID, 제출 원본 경로·해시, revision, 견적/입금/예약 상태, 인증서/차기 심사일",
+        "verification": "전체 107개 테스트·빌드 통과; 운영 DB 회사69/문서130 보존, 대표 계정 회사66/문서126 접근 및 임시 생성·저장·요청·검토 후 롤백 검증. 실제 심사보고서 전체 작성/자동 발송/기관 접수 미연동"
+      }
     },
     {
       "id": "S03",
@@ -117,7 +124,14 @@
         "verification": "전체91테스트/빌드통과; 브라우저 복수규격·구비서류미리보기·목표일2026-12-15→11-15/12-01/12-12일정·미로그인저장차단 확인. 운영DB/배포/실계정종단검증 대기."
       },
       "meetingWorkflowApplied20261019": "2026-10-19 사용자 명시승인 후 어니스톤 Supabase dqnblzlgpybhjftopldg에 company_projects_migration.sql 적용 성공. CEO 회사 OWNER권한으로 프로젝트·요건·업무 저장/재조회,문서 연결,요청 재시도 중복방지,업무 완료,익명조회/생성차단을 운영SQL 트랜잭션에서 검증한 뒤 전량롤백. 기존67회사/130문서/66멤버십/0프로젝트/2업무 유지. 로그인된 조영빈 운영브라우저에서 회사 관리자·승인대기 UI,접근가능 거래처목록,실제 거래처 HWP미리보기(/api/vault-file 경유) 확인. 비로그인 파일접근HTTP401,인증관리/설정HTTP200. 선택적HEAD기반 배포묶음 /private/tmp/isoedu-meeting-release-20261019 사용,보류 소셜로그인/별도에이전트UI/로컬고객원본 제외. 배포묶음86테스트·빌드통과(전체개발91테스트). 최종 Vercel 배포6M4Y3Y2fywroVcf6ArjUdoq23mEX 및 https://isoedu-cyan.vercel.app 반영. 실제직원 승인/해제 브라우저 교차계정 검증과 영구프로젝트 생성은 수행하지 않음. 기존서명URL은만료까지유효가능/다운로드사본회수불가. 카카오/Google은보류유지.",
-      "headerOverlap20261019": "2026-10-19 공통헤더 겹침 수정: 거래처/계정 헤더의 절대배치를 제거하고 본문 바깥의 독립된 상단 flex행으로 이동. 연결안내도 같은 행의 흐름에 배치,좁은화면 칩폭 제한·업무제목/버튼 줄바꿈. S02 계정/회사선택→S03 회사컨텍스트→S05 및 공통메뉴 작업버튼;데이터·권한·URL·문서선택·사이드바상태 변경없음. 데스크톱/390px에서 헤더하단<=업무제목상단 확인,사이드바 접힘/펼침 유지. 빌드성공. 운영배포후확인예정. 운영반영완료: Vercel Ei3ywnyGMQ8hCBEm1Rq9rVzwp3vf 빌드성공 및 https://isoedu-cyan.vercel.app alias 반영. 운영/로컬 헤더와 업무제목 영역 분리 확인,390px·사이드바접힘/펼침 확인. 데이터·권한 변경없음."
+      "headerOverlap20261019": "2026-10-19 공통헤더 겹침 수정: 거래처/계정 헤더의 절대배치를 제거하고 본문 바깥의 독립된 상단 flex행으로 이동. 연결안내도 같은 행의 흐름에 배치,좁은화면 칩폭 제한·업무제목/버튼 줄바꿈. S02 계정/회사선택→S03 회사컨텍스트→S05 및 공통메뉴 작업버튼;데이터·권한·URL·문서선택·사이드바상태 변경없음. 데스크톱/390px에서 헤더하단<=업무제목상단 확인,사이드바 접힘/펼침 유지. 빌드성공. 운영배포후확인예정. 운영반영완료: Vercel Ei3ywnyGMQ8hCBEm1Rq9rVzwp3vf 빌드성공 및 https://isoedu-cyan.vercel.app alias 반영. 운영/로컬 헤더와 업무제목 영역 분리 확인,390px·사이드바접힘/펼침 확인. 데이터·권한 변경없음.",
+      "meeting20261023": {
+        "priorityBasis": "2026-10-23 회의 및 2026-10-29 사용자 우선순위 지시",
+        "spec": "docs/reference/meeting-2026-10-23.md",
+        "status": "코드·운영 DB 적용·RLS 및 롤백 저장 검증, 실데이터 이관·인증 후 화면·배포 미완료",
+        "handoff": "회사/프로젝트 ID, 주·공동 담당, CRM 원본 ID, 제출 원본 경로·해시, revision, 견적/입금/예약 상태, 인증서/차기 심사일",
+        "verification": "전체 107개 테스트·빌드 통과; 운영 DB 회사69/문서130 보존, 대표 계정 회사66/문서126 접근 및 임시 생성·저장·요청·검토 후 롤백 검증. 실제 심사보고서 전체 작성/자동 발송/기관 접수 미연동"
+      }
     },
     {
       "id": "S04",
@@ -432,6 +446,32 @@
         "flow": "S03 회사·프로젝트 → S07/S12/S13 생성 시 요건·자동 제안 → S14/S15 단건·일괄 초안 생성·편집·확인 상태 → S11/S16 기존 문서 자동 매칭·파일 업로드·다운로드 → S17 버전·이력 → S05/S23 준비 일정·체크리스트 동기화. companyId/projectId/requirement.id/document_id/projectOrigin/reviewStatus/reviewNote/work_tasks.checklist 유지.",
         "permissions": "기존 loadProjectDetail/RLS, canEdit, documents/document_versions/iso-vault/work_tasks 권한 경로 및 validate_work_task 트리거 제약 준수. 필터는 조회된 현재 프로젝트 자료에만 적용. 사이드바와 검색·필터 상태는 목록 연결·상태 변경으로 초기화하지 않음.",
         "verification": "npm test 93개 통과(선택적 배포 묶음 88개 통과), npm run build 성공. Vercel 프로덕션(A63FedmUmtiJJf3MXQT6CJNujnRe, https://isoedu-cyan.vercel.app) 반영 및 Playwright 데스크톱(1440px)·모바일(390px) 라이브 검증(3단계 퀵스타트 가이드, NewProjectModal 자동 제안·수동 보존, ProjectPreparationView 3대 자동화·인라인 빠른 점검 패널·검토 메모 저장·일정 동기화, RealtimeEditorModal 편집 탭 직행·좌우 분할 비교·미입력 항목 일괄 치환·미저장 닫기 보호·Ctrl+S 저장, .doc/.csv/.md 다운로드) 통과."
+      },
+      "meeting20261023": {
+        "priorityBasis": "2026-10-23 회의 및 2026-10-29 사용자 우선순위 지시",
+        "spec": "docs/reference/meeting-2026-10-23.md",
+        "status": "코드·운영 DB 적용·RLS 및 롤백 저장 검증, 실데이터 이관·인증 후 화면·배포 미완료",
+        "handoff": "회사/프로젝트 ID, 주·공동 담당, CRM 원본 ID, 제출 원본 경로·해시, revision, 견적/입금/예약 상태, 인증서/차기 심사일",
+        "verification": "전체 107개 테스트·빌드 통과; 운영 DB 회사69/문서130 보존, 대표 계정 회사66/문서126 접근 및 임시 생성·저장·요청·검토 후 롤백 검증. 실제 심사보고서 전체 작성/자동 발송/기관 접수 미연동"
+      },
+      "notionReview20261029": {
+        "source": "https://honestone.notion.site/applications",
+        "spec": "docs/reference/meeting-2026-10-23.md#노션-세부-대조-2026-10-29",
+        "implementation": "ISO 13개 안내 입력과 신청서 셀 매핑. 유형별 유효기간/최신본 요청은 documentValidity20261029 참조. 운영 적용 상태를 구분한다."
+      },
+      "documentValidity20261029": {
+        "date": "2026-10-29",
+        "ids": [
+          "S11",
+          "S13",
+          "S17",
+          "S26",
+          "S27",
+          "S33"
+        ],
+        "flow": "S03 회사 설립일 → S13 신청 유형/예정일·원본 날짜 → S11 제출 원본 → S17 검토/갱신 이력 → S26/S27 내부 재요청 업무",
+        "implementation": "노션 버전 기준 ISO/벤처 성장·투자/이노비즈/메인비즈/연구소 별도 목록. 14일·달력 1개월·명시 유효기간·3개년과 업력/분기 확인. 미래 날짜·기준 미확인은 완료 차단, 새 파일 날짜 초기화, 재요청 원본/해시 이력 보존·중복 방지. 신청 접수 후 중지. 회사 편집/컨설턴트 권한과 revision 검증.",
+        "verification": "115개 테스트·빌드 통과. 운영 DB 59개 유형별 규칙 적용, 대표 권한 임시 생성·저장 후 롤백 검증. 회사69/문서130 보존. pg_cron GMT 00:00(한국09:00) 예약 활성, 최초 실행 오류0/활성프로젝트0. 프로젝트별 유형 기준 저장 후 검사 활성. 외부 메시지 없음."
       }
     },
     {
@@ -469,6 +509,18 @@
         "flow": "S03 회사·프로젝트 → S07/S12/S13 생성 시 요건·자동 제안 → S14/S15 단건·일괄 초안 생성·편집·확인 상태 → S11/S16 기존 문서 자동 매칭·파일 업로드·다운로드 → S17 버전·이력 → S05/S23 준비 일정·체크리스트 동기화. companyId/projectId/requirement.id/document_id/projectOrigin/reviewStatus/reviewNote/work_tasks.checklist 유지.",
         "permissions": "기존 loadProjectDetail/RLS, canEdit, documents/document_versions/iso-vault/work_tasks 권한 경로 및 validate_work_task 트리거 제약 준수. 필터는 조회된 현재 프로젝트 자료에만 적용. 사이드바와 검색·필터 상태는 목록 연결·상태 변경으로 초기화하지 않음.",
         "verification": "npm test 93개 통과(선택적 배포 묶음 88개 통과), npm run build 성공. Vercel 프로덕션(A63FedmUmtiJJf3MXQT6CJNujnRe, https://isoedu-cyan.vercel.app) 반영 및 Playwright 데스크톱(1440px)·모바일(390px) 라이브 검증(3단계 퀵스타트 가이드, NewProjectModal 자동 제안·수동 보존, ProjectPreparationView 3대 자동화·인라인 빠른 점검 패널·검토 메모 저장·일정 동기화, RealtimeEditorModal 편집 탭 직행·좌우 분할 비교·미입력 항목 일괄 치환·미저장 닫기 보호·Ctrl+S 저장, .doc/.csv/.md 다운로드) 통과."
+      },
+      "meeting20261023": {
+        "priorityBasis": "2026-10-23 회의 및 2026-10-29 사용자 우선순위 지시",
+        "spec": "docs/reference/meeting-2026-10-23.md",
+        "status": "코드·운영 DB 적용·RLS 및 롤백 저장 검증, 실데이터 이관·인증 후 화면·배포 미완료",
+        "handoff": "회사/프로젝트 ID, 주·공동 담당, CRM 원본 ID, 제출 원본 경로·해시, revision, 견적/입금/예약 상태, 인증서/차기 심사일",
+        "verification": "전체 107개 테스트·빌드 통과; 운영 DB 회사69/문서130 보존, 대표 계정 회사66/문서126 접근 및 임시 생성·저장·요청·검토 후 롤백 검증. 실제 심사보고서 전체 작성/자동 발송/기관 접수 미연동"
+      },
+      "notionReview20261029": {
+        "source": "https://honestone.notion.site/applications",
+        "spec": "docs/reference/meeting-2026-10-23.md#노션-세부-대조-2026-10-29",
+        "implementation": "ISO 13개 안내 입력과 신청서 셀 매핑. 유형별 유효기간/최신본 요청은 documentValidity20261029 참조. 운영 적용 상태를 구분한다."
       }
     },
     {
@@ -506,6 +558,32 @@
         "flow": "S03 회사·프로젝트 → S07/S12/S13 생성 시 요건·자동 제안 → S14/S15 단건·일괄 초안 생성·편집·확인 상태 → S11/S16 기존 문서 자동 매칭·파일 업로드·다운로드 → S17 버전·이력 → S05/S23 준비 일정·체크리스트 동기화. companyId/projectId/requirement.id/document_id/projectOrigin/reviewStatus/reviewNote/work_tasks.checklist 유지.",
         "permissions": "기존 loadProjectDetail/RLS, canEdit, documents/document_versions/iso-vault/work_tasks 권한 경로 및 validate_work_task 트리거 제약 준수. 필터는 조회된 현재 프로젝트 자료에만 적용. 사이드바와 검색·필터 상태는 목록 연결·상태 변경으로 초기화하지 않음.",
         "verification": "npm test 93개 통과(선택적 배포 묶음 88개 통과), npm run build 성공. Vercel 프로덕션(A63FedmUmtiJJf3MXQT6CJNujnRe, https://isoedu-cyan.vercel.app) 반영 및 Playwright 데스크톱(1440px)·모바일(390px) 라이브 검증(3단계 퀵스타트 가이드, NewProjectModal 자동 제안·수동 보존, ProjectPreparationView 3대 자동화·인라인 빠른 점검 패널·검토 메모 저장·일정 동기화, RealtimeEditorModal 편집 탭 직행·좌우 분할 비교·미입력 항목 일괄 치환·미저장 닫기 보호·Ctrl+S 저장, .doc/.csv/.md 다운로드) 통과."
+      },
+      "meeting20261023": {
+        "priorityBasis": "2026-10-23 회의 및 2026-10-29 사용자 우선순위 지시",
+        "spec": "docs/reference/meeting-2026-10-23.md",
+        "status": "코드·운영 DB 적용·RLS 및 롤백 저장 검증, 실데이터 이관·인증 후 화면·배포 미완료",
+        "handoff": "회사/프로젝트 ID, 주·공동 담당, CRM 원본 ID, 제출 원본 경로·해시, revision, 견적/입금/예약 상태, 인증서/차기 심사일",
+        "verification": "전체 107개 테스트·빌드 통과; 운영 DB 회사69/문서130 보존, 대표 계정 회사66/문서126 접근 및 임시 생성·저장·요청·검토 후 롤백 검증. 실제 심사보고서 전체 작성/자동 발송/기관 접수 미연동"
+      },
+      "notionReview20261029": {
+        "source": "https://honestone.notion.site/applications",
+        "spec": "docs/reference/meeting-2026-10-23.md#노션-세부-대조-2026-10-29",
+        "implementation": "ISO 13개 안내 입력과 신청서 셀 매핑. 유형별 유효기간/최신본 요청은 documentValidity20261029 참조. 운영 적용 상태를 구분한다."
+      },
+      "documentValidity20261029": {
+        "date": "2026-10-29",
+        "ids": [
+          "S11",
+          "S13",
+          "S17",
+          "S26",
+          "S27",
+          "S33"
+        ],
+        "flow": "S03 회사 설립일 → S13 신청 유형/예정일·원본 날짜 → S11 제출 원본 → S17 검토/갱신 이력 → S26/S27 내부 재요청 업무",
+        "implementation": "노션 버전 기준 ISO/벤처 성장·투자/이노비즈/메인비즈/연구소 별도 목록. 14일·달력 1개월·명시 유효기간·3개년과 업력/분기 확인. 미래 날짜·기준 미확인은 완료 차단, 새 파일 날짜 초기화, 재요청 원본/해시 이력 보존·중복 방지. 신청 접수 후 중지. 회사 편집/컨설턴트 권한과 revision 검증.",
+        "verification": "115개 테스트·빌드 통과. 운영 DB 59개 유형별 규칙 적용, 대표 권한 임시 생성·저장 후 롤백 검증. 회사69/문서130 보존. pg_cron GMT 00:00(한국09:00) 예약 활성, 최초 실행 오류0/활성프로젝트0. 프로젝트별 유형 기준 저장 후 검사 활성. 외부 메시지 없음."
       }
     },
     {
@@ -566,7 +644,19 @@
       "uxRules": [
         "UX-001",
         "UX-002"
-      ]
+      ],
+      "meeting20261023": {
+        "priorityBasis": "2026-10-23 회의 및 2026-10-29 사용자 우선순위 지시",
+        "spec": "docs/reference/meeting-2026-10-23.md",
+        "status": "코드·운영 DB 적용·RLS 및 롤백 저장 검증, 실데이터 이관·인증 후 화면·배포 미완료",
+        "handoff": "회사/프로젝트 ID, 주·공동 담당, CRM 원본 ID, 제출 원본 경로·해시, revision, 견적/입금/예약 상태, 인증서/차기 심사일",
+        "verification": "전체 107개 테스트·빌드 통과; 운영 DB 회사69/문서130 보존, 대표 계정 회사66/문서126 접근 및 임시 생성·저장·요청·검토 후 롤백 검증. 실제 심사보고서 전체 작성/자동 발송/기관 접수 미연동"
+      },
+      "notionReview20261029": {
+        "source": "https://honestone.notion.site/applications",
+        "spec": "docs/reference/meeting-2026-10-23.md#노션-세부-대조-2026-10-29",
+        "implementation": "ISO 13개 안내 입력과 신청서 셀 매핑. 유형별 유효기간/최신본 요청은 documentValidity20261029 참조. 운영 적용 상태를 구분한다."
+      }
     },
     {
       "id": "S16",
@@ -632,6 +722,32 @@
         "flow": "S03 회사·프로젝트 → S07/S12/S13 생성 시 요건·자동 제안 → S14/S15 단건·일괄 초안 생성·편집·확인 상태 → S11/S16 기존 문서 자동 매칭·파일 업로드·다운로드 → S17 버전·이력 → S05/S23 준비 일정·체크리스트 동기화. companyId/projectId/requirement.id/document_id/projectOrigin/reviewStatus/reviewNote/work_tasks.checklist 유지.",
         "permissions": "기존 loadProjectDetail/RLS, canEdit, documents/document_versions/iso-vault/work_tasks 권한 경로 및 validate_work_task 트리거 제약 준수. 필터는 조회된 현재 프로젝트 자료에만 적용. 사이드바와 검색·필터 상태는 목록 연결·상태 변경으로 초기화하지 않음.",
         "verification": "npm test 93개 통과(선택적 배포 묶음 88개 통과), npm run build 성공. Vercel 프로덕션(A63FedmUmtiJJf3MXQT6CJNujnRe, https://isoedu-cyan.vercel.app) 반영 및 Playwright 데스크톱(1440px)·모바일(390px) 라이브 검증(3단계 퀵스타트 가이드, NewProjectModal 자동 제안·수동 보존, ProjectPreparationView 3대 자동화·인라인 빠른 점검 패널·검토 메모 저장·일정 동기화, RealtimeEditorModal 편집 탭 직행·좌우 분할 비교·미입력 항목 일괄 치환·미저장 닫기 보호·Ctrl+S 저장, .doc/.csv/.md 다운로드) 통과."
+      },
+      "meeting20261023": {
+        "priorityBasis": "2026-10-23 회의 및 2026-10-29 사용자 우선순위 지시",
+        "spec": "docs/reference/meeting-2026-10-23.md",
+        "status": "코드·운영 DB 적용·RLS 및 롤백 저장 검증, 실데이터 이관·인증 후 화면·배포 미완료",
+        "handoff": "회사/프로젝트 ID, 주·공동 담당, CRM 원본 ID, 제출 원본 경로·해시, revision, 견적/입금/예약 상태, 인증서/차기 심사일",
+        "verification": "전체 107개 테스트·빌드 통과; 운영 DB 회사69/문서130 보존, 대표 계정 회사66/문서126 접근 및 임시 생성·저장·요청·검토 후 롤백 검증. 실제 심사보고서 전체 작성/자동 발송/기관 접수 미연동"
+      },
+      "notionReview20261029": {
+        "source": "https://honestone.notion.site/applications",
+        "spec": "docs/reference/meeting-2026-10-23.md#노션-세부-대조-2026-10-29",
+        "implementation": "ISO 13개 안내 입력과 신청서 셀 매핑. 유형별 유효기간/최신본 요청은 documentValidity20261029 참조. 운영 적용 상태를 구분한다."
+      },
+      "documentValidity20261029": {
+        "date": "2026-10-29",
+        "ids": [
+          "S11",
+          "S13",
+          "S17",
+          "S26",
+          "S27",
+          "S33"
+        ],
+        "flow": "S03 회사 설립일 → S13 신청 유형/예정일·원본 날짜 → S11 제출 원본 → S17 검토/갱신 이력 → S26/S27 내부 재요청 업무",
+        "implementation": "노션 버전 기준 ISO/벤처 성장·투자/이노비즈/메인비즈/연구소 별도 목록. 14일·달력 1개월·명시 유효기간·3개년과 업력/분기 확인. 미래 날짜·기준 미확인은 완료 차단, 새 파일 날짜 초기화, 재요청 원본/해시 이력 보존·중복 방지. 신청 접수 후 중지. 회사 편집/컨설턴트 권한과 revision 검증.",
+        "verification": "115개 테스트·빌드 통과. 운영 DB 59개 유형별 규칙 적용, 대표 권한 임시 생성·저장 후 롤백 검증. 회사69/문서130 보존. pg_cron GMT 00:00(한국09:00) 예약 활성, 최초 실행 오류0/활성프로젝트0. 프로젝트별 유형 기준 저장 후 검사 활성. 외부 메시지 없음."
       }
     },
     {
@@ -708,7 +824,14 @@
       "dependencyBasis": "제안: 원본 기능 내용을 바탕으로 구성한 선행 데이터 의존성. 슬라이드 순서와 구별한다.",
       "codeCandidates": [],
       "status": "미매핑·구현 미검증",
-      "specMissing": false
+      "specMissing": false,
+      "meeting20261023": {
+        "priorityBasis": "2026-10-23 회의 및 2026-10-29 사용자 우선순위 지시",
+        "spec": "docs/reference/meeting-2026-10-23.md",
+        "status": "코드·운영 DB 적용·RLS 및 롤백 저장 검증, 실데이터 이관·인증 후 화면·배포 미완료",
+        "handoff": "회사/프로젝트 ID, 주·공동 담당, CRM 원본 ID, 제출 원본 경로·해시, revision, 견적/입금/예약 상태, 인증서/차기 심사일",
+        "verification": "전체 107개 테스트·빌드 통과; 운영 DB 회사69/문서130 보존, 대표 계정 회사66/문서126 접근 및 임시 생성·저장·요청·검토 후 롤백 검증. 실제 심사보고서 전체 작성/자동 발송/기관 접수 미연동"
+      }
     },
     {
       "id": "S21",
@@ -787,7 +910,14 @@
         "status": "운영 DB·웹 배포 완료 / 직원 교차계정 UI 검증 미완료",
         "verification": "전체91테스트/빌드통과; 브라우저 복수규격·구비서류미리보기·목표일2026-12-15→11-15/12-01/12-12일정·미로그인저장차단 확인. 운영DB/배포/실계정종단검증 대기."
       },
-      "meetingWorkflowApplied20261019": "2026-10-19 사용자 명시승인 후 어니스톤 Supabase dqnblzlgpybhjftopldg에 company_projects_migration.sql 적용 성공. CEO 회사 OWNER권한으로 프로젝트·요건·업무 저장/재조회,문서 연결,요청 재시도 중복방지,업무 완료,익명조회/생성차단을 운영SQL 트랜잭션에서 검증한 뒤 전량롤백. 기존67회사/130문서/66멤버십/0프로젝트/2업무 유지. 로그인된 조영빈 운영브라우저에서 회사 관리자·승인대기 UI,접근가능 거래처목록,실제 거래처 HWP미리보기(/api/vault-file 경유) 확인. 비로그인 파일접근HTTP401,인증관리/설정HTTP200. 선택적HEAD기반 배포묶음 /private/tmp/isoedu-meeting-release-20261019 사용,보류 소셜로그인/별도에이전트UI/로컬고객원본 제외. 배포묶음86테스트·빌드통과(전체개발91테스트). 최종 Vercel 배포6M4Y3Y2fywroVcf6ArjUdoq23mEX 및 https://isoedu-cyan.vercel.app 반영. 실제직원 승인/해제 브라우저 교차계정 검증과 영구프로젝트 생성은 수행하지 않음. 기존서명URL은만료까지유효가능/다운로드사본회수불가. 카카오/Google은보류유지."
+      "meetingWorkflowApplied20261019": "2026-10-19 사용자 명시승인 후 어니스톤 Supabase dqnblzlgpybhjftopldg에 company_projects_migration.sql 적용 성공. CEO 회사 OWNER권한으로 프로젝트·요건·업무 저장/재조회,문서 연결,요청 재시도 중복방지,업무 완료,익명조회/생성차단을 운영SQL 트랜잭션에서 검증한 뒤 전량롤백. 기존67회사/130문서/66멤버십/0프로젝트/2업무 유지. 로그인된 조영빈 운영브라우저에서 회사 관리자·승인대기 UI,접근가능 거래처목록,실제 거래처 HWP미리보기(/api/vault-file 경유) 확인. 비로그인 파일접근HTTP401,인증관리/설정HTTP200. 선택적HEAD기반 배포묶음 /private/tmp/isoedu-meeting-release-20261019 사용,보류 소셜로그인/별도에이전트UI/로컬고객원본 제외. 배포묶음86테스트·빌드통과(전체개발91테스트). 최종 Vercel 배포6M4Y3Y2fywroVcf6ArjUdoq23mEX 및 https://isoedu-cyan.vercel.app 반영. 실제직원 승인/해제 브라우저 교차계정 검증과 영구프로젝트 생성은 수행하지 않음. 기존서명URL은만료까지유효가능/다운로드사본회수불가. 카카오/Google은보류유지.",
+      "meeting20261023": {
+        "priorityBasis": "2026-10-23 회의 및 2026-10-29 사용자 우선순위 지시",
+        "spec": "docs/reference/meeting-2026-10-23.md",
+        "status": "코드·운영 DB 적용·RLS 및 롤백 저장 검증, 실데이터 이관·인증 후 화면·배포 미완료",
+        "handoff": "회사/프로젝트 ID, 주·공동 담당, CRM 원본 ID, 제출 원본 경로·해시, revision, 견적/입금/예약 상태, 인증서/차기 심사일",
+        "verification": "전체 107개 테스트·빌드 통과; 운영 DB 회사69/문서130 보존, 대표 계정 회사66/문서126 접근 및 임시 생성·저장·요청·검토 후 롤백 검증. 실제 심사보고서 전체 작성/자동 발송/기관 접수 미연동"
+      }
     },
     {
       "id": "S24",
@@ -802,7 +932,14 @@
       "dependencyBasis": "제안: 원본 기능 내용을 바탕으로 구성한 선행 데이터 의존성. 슬라이드 순서와 구별한다.",
       "codeCandidates": [],
       "status": "미매핑·구현 미검증",
-      "specMissing": false
+      "specMissing": false,
+      "meeting20261023": {
+        "priorityBasis": "2026-10-23 회의 및 2026-10-29 사용자 우선순위 지시",
+        "spec": "docs/reference/meeting-2026-10-23.md",
+        "status": "코드·운영 DB 적용·RLS 및 롤백 저장 검증, 실데이터 이관·인증 후 화면·배포 미완료",
+        "handoff": "회사/프로젝트 ID, 주·공동 담당, CRM 원본 ID, 제출 원본 경로·해시, revision, 견적/입금/예약 상태, 인증서/차기 심사일",
+        "verification": "전체 107개 테스트·빌드 통과; 운영 DB 회사69/문서130 보존, 대표 계정 회사66/문서126 접근 및 임시 생성·저장·요청·검토 후 롤백 검증. 실제 심사보고서 전체 작성/자동 발송/기관 접수 미연동"
+      }
     },
     {
       "id": "S25",
@@ -882,6 +1019,27 @@
         "document": "docs/reference/screen-navigation-map.md",
         "board": "https://www.figma.com/board/AIOk8BKLYcgkzc3S247FAk/?node-id=1-8",
         "scope": "로그인 전 실제 화면 12개; 편집기 진입 제한 기록; 기업 프로필·맞춤 지원사업 예정 흐름 구분"
+      },
+      "meeting20261023": {
+        "priorityBasis": "2026-10-23 회의 및 2026-10-29 사용자 우선순위 지시",
+        "spec": "docs/reference/meeting-2026-10-23.md",
+        "status": "코드·운영 DB 적용·RLS 및 롤백 저장 검증, 실데이터 이관·인증 후 화면·배포 미완료",
+        "handoff": "회사/프로젝트 ID, 주·공동 담당, CRM 원본 ID, 제출 원본 경로·해시, revision, 견적/입금/예약 상태, 인증서/차기 심사일",
+        "verification": "전체 107개 테스트·빌드 통과; 운영 DB 회사69/문서130 보존, 대표 계정 회사66/문서126 접근 및 임시 생성·저장·요청·검토 후 롤백 검증. 실제 심사보고서 전체 작성/자동 발송/기관 접수 미연동"
+      },
+      "documentValidity20261029": {
+        "date": "2026-10-29",
+        "ids": [
+          "S11",
+          "S13",
+          "S17",
+          "S26",
+          "S27",
+          "S33"
+        ],
+        "flow": "S03 회사 설립일 → S13 신청 유형/예정일·원본 날짜 → S11 제출 원본 → S17 검토/갱신 이력 → S26/S27 내부 재요청 업무",
+        "implementation": "노션 버전 기준 ISO/벤처 성장·투자/이노비즈/메인비즈/연구소 별도 목록. 14일·달력 1개월·명시 유효기간·3개년과 업력/분기 확인. 미래 날짜·기준 미확인은 완료 차단, 새 파일 날짜 초기화, 재요청 원본/해시 이력 보존·중복 방지. 신청 접수 후 중지. 회사 편집/컨설턴트 권한과 revision 검증.",
+        "verification": "115개 테스트·빌드 통과. 운영 DB 59개 유형별 규칙 적용, 대표 권한 임시 생성·저장 후 롤백 검증. 회사69/문서130 보존. pg_cron GMT 00:00(한국09:00) 예약 활성, 최초 실행 오류0/활성프로젝트0. 프로젝트별 유형 기준 저장 후 검사 활성. 외부 메시지 없음."
       }
     },
     {
@@ -919,6 +1077,27 @@
         "document": "docs/reference/screen-navigation-map.md",
         "board": "https://www.figma.com/board/AIOk8BKLYcgkzc3S247FAk/?node-id=1-8",
         "scope": "로그인 전 실제 화면 12개; 편집기 진입 제한 기록; 기업 프로필·맞춤 지원사업 예정 흐름 구분"
+      },
+      "meeting20261023": {
+        "priorityBasis": "2026-10-23 회의 및 2026-10-29 사용자 우선순위 지시",
+        "spec": "docs/reference/meeting-2026-10-23.md",
+        "status": "코드·운영 DB 적용·RLS 및 롤백 저장 검증, 실데이터 이관·인증 후 화면·배포 미완료",
+        "handoff": "회사/프로젝트 ID, 주·공동 담당, CRM 원본 ID, 제출 원본 경로·해시, revision, 견적/입금/예약 상태, 인증서/차기 심사일",
+        "verification": "전체 107개 테스트·빌드 통과; 운영 DB 회사69/문서130 보존, 대표 계정 회사66/문서126 접근 및 임시 생성·저장·요청·검토 후 롤백 검증. 실제 심사보고서 전체 작성/자동 발송/기관 접수 미연동"
+      },
+      "documentValidity20261029": {
+        "date": "2026-10-29",
+        "ids": [
+          "S11",
+          "S13",
+          "S17",
+          "S26",
+          "S27",
+          "S33"
+        ],
+        "flow": "S03 회사 설립일 → S13 신청 유형/예정일·원본 날짜 → S11 제출 원본 → S17 검토/갱신 이력 → S26/S27 내부 재요청 업무",
+        "implementation": "노션 버전 기준 ISO/벤처 성장·투자/이노비즈/메인비즈/연구소 별도 목록. 14일·달력 1개월·명시 유효기간·3개년과 업력/분기 확인. 미래 날짜·기준 미확인은 완료 차단, 새 파일 날짜 초기화, 재요청 원본/해시 이력 보존·중복 방지. 신청 접수 후 중지. 회사 편집/컨설턴트 권한과 revision 검증.",
+        "verification": "115개 테스트·빌드 통과. 운영 DB 59개 유형별 규칙 적용, 대표 권한 임시 생성·저장 후 롤백 검증. 회사69/문서130 보존. pg_cron GMT 00:00(한국09:00) 예약 활성, 최초 실행 오류0/활성프로젝트0. 프로젝트별 유형 기준 저장 후 검사 활성. 외부 메시지 없음."
       }
     },
     {
@@ -1038,7 +1217,33 @@
       ],
       "status": "구현 후보 있음·완료 미검증",
       "specMissing": false,
-      "adminCenter20261022": "2026-10-22 관리자 센터 운영 대장에서 기업별 인증 준비 프로젝트·구비서류 보완 현황 조회 및 보완 요청 전자발송(doc_supplement_request) 즉시 인계 구현."
+      "adminCenter20261022": "2026-10-22 관리자 센터 운영 대장에서 기업별 인증 준비 프로젝트·구비서류 보완 현황 조회 및 보완 요청 전자발송(doc_supplement_request) 즉시 인계 구현.",
+      "meeting20261023": {
+        "priorityBasis": "2026-10-23 회의 및 2026-10-29 사용자 우선순위 지시",
+        "spec": "docs/reference/meeting-2026-10-23.md",
+        "status": "코드·운영 DB 적용·RLS 및 롤백 저장 검증, 실데이터 이관·인증 후 화면·배포 미완료",
+        "handoff": "회사/프로젝트 ID, 주·공동 담당, CRM 원본 ID, 제출 원본 경로·해시, revision, 견적/입금/예약 상태, 인증서/차기 심사일",
+        "verification": "전체 107개 테스트·빌드 통과; 운영 DB 회사69/문서130 보존, 대표 계정 회사66/문서126 접근 및 임시 생성·저장·요청·검토 후 롤백 검증. 실제 심사보고서 전체 작성/자동 발송/기관 접수 미연동"
+      },
+      "notionReview20261029": {
+        "source": "https://honestone.notion.site/applications",
+        "spec": "docs/reference/meeting-2026-10-23.md#노션-세부-대조-2026-10-29",
+        "implementation": "ISO 13개 안내 입력과 신청서 셀 매핑. 유형별 유효기간/최신본 요청은 documentValidity20261029 참조. 운영 적용 상태를 구분한다."
+      },
+      "documentValidity20261029": {
+        "date": "2026-10-29",
+        "ids": [
+          "S11",
+          "S13",
+          "S17",
+          "S26",
+          "S27",
+          "S33"
+        ],
+        "flow": "S03 회사 설립일 → S13 신청 유형/예정일·원본 날짜 → S11 제출 원본 → S17 검토/갱신 이력 → S26/S27 내부 재요청 업무",
+        "implementation": "노션 버전 기준 ISO/벤처 성장·투자/이노비즈/메인비즈/연구소 별도 목록. 14일·달력 1개월·명시 유효기간·3개년과 업력/분기 확인. 미래 날짜·기준 미확인은 완료 차단, 새 파일 날짜 초기화, 재요청 원본/해시 이력 보존·중복 방지. 신청 접수 후 중지. 회사 편집/컨설턴트 권한과 revision 검증.",
+        "verification": "115개 테스트·빌드 통과. 운영 DB 59개 유형별 규칙 적용, 대표 권한 임시 생성·저장 후 롤백 검증. 회사69/문서130 보존. pg_cron GMT 00:00(한국09:00) 예약 활성, 최초 실행 오류0/활성프로젝트0. 프로젝트별 유형 기준 저장 후 검사 활성. 외부 메시지 없음."
+      }
     },
     {
       "id": "S34",

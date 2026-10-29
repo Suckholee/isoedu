@@ -25,9 +25,10 @@ export async function loadWorkspace() {
     cloud().from('companies').select('*').order('name'),
     cloud().from('audit_projects').select('*').order('created_at', { ascending: false }),
     cloud().from('managed_client_links').select('company_id,source_client_id'),
+    cloud().from('project_operations').select('project_id,data'),
   ]);
-  for (const result of results) if (result.error) throw result.error;
-  return { companies: results[0].data.map(c=>({...c,source_client_id:results[2].data.find(x=>x.company_id===c.id)?.source_client_id})), projects: results[1].data.map(projectFromRow) };
+  for (const result of results.slice(0,3)) if (result.error) throw result.error;
+  return { companies: results[0].data.map(c=>({...c,source_client_id:results[2].data.find(x=>x.company_id===c.id)?.source_client_id})), projects: results[1].data.map(row=>({...projectFromRow(row),operations:results[3].data?.find(o=>o.project_id===row.id)?.data||null})) };
 }
 
 export async function createProject(project) {

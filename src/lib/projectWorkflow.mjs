@@ -314,6 +314,14 @@ export function summarizeQuickstartProgress({ companies = [], projects = [], doc
  };
 }
 export function workflowError(error) {
+ if(/Document validity check required/.test(error?.message||''))return '기간·자료 연도 검사에서 확인할 항목이 있습니다. 원문 날짜와 최신본을 확인해 주세요.';
+ if(/Latest original required/.test(error?.message||''))return '기간이 지난 같은 파일은 다시 제출할 수 없습니다. 최신 원본을 업로드해 주세요.';
+
+ if(/Concurrent update/.test(error?.message||''))return '다른 담당자가 먼저 변경했습니다. 저장 내용을 다시 불러온 뒤 반영해 주세요.';
+ if(/source changed/.test(error?.message||''))return '이미 이관한 원본의 내용이 변경됐습니다. 기존 프로젝트와 대조한 뒤 반영해 주세요.';
+ if(/Feedback required/.test(error?.message||''))return '보완할 내용을 입력해 주세요.';
+ if(/scope confirmation/.test(error?.message||''))return '인증 범위를 고객에게 확인한 뒤 일정을 확정해 주세요.';
+
  if(/Request content changed/.test(error?.message||''))return '이미 저장된 요청입니다. 프로젝트 목록을 확인하거나 입력창을 다시 열어 새 프로젝트를 만들어 주세요.';
  if(['PGRST202','PGRST205','42P01','42703'].includes(error?.code))return '프로젝트·회사 권한 저장소 설정이 아직 적용되지 않았습니다. 서버 설정 적용 후 다시 시도해 주세요.';
  if(error?.code==='42501'||/denied|required|permission|row.level/i.test(error?.message||''))return '회사 접근 권한을 확인해 주세요. 소속이 변경됐다면 화면을 새로 불러와 주세요.';
