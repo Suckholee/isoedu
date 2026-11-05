@@ -1,0 +1,191 @@
+{
+  "programId": "kstartup-179608",
+  "title": "2026 용인 반도체 스타트업 육성 전략 포럼 참가자 모집",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-10-30T01:43:07.316288+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179608",
+  "evidenceDirectory": "evidence/kstartup-179608",
+  "reviewScope": "공식상세·포스터01 전체시각·접근성 텍스트02 전체·NextStep 공개 전체일정/신청문항/개인정보·촬영·광고안내",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/yQ2Ln",
+      "verifiedAt": "2026-10-30",
+      "status": "downloaded",
+      "sha256": "e3ec52d869e0e83a919807735e23762b5dfff838ea6d04c60d77b711f4156121",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 11348164,
+      "format": "IMAGE",
+      "file": "attachment-01.bin",
+      "contentType": "image/png;charset=UTF-8",
+      "review": {
+        "method": "visual",
+        "at": "2026-10-30T01:43:07.316288+00:00",
+        "scope": "전체 포스터 시각 검토·본문/동반 문서 대조"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/TQ2Ln",
+      "verifiedAt": "2026-10-30",
+      "status": "downloaded",
+      "sha256": "e4dc36ab239d9a10d3994d4438dc66d1258f571d328c7bc7d95a62d54256fbfd",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 3481,
+      "format": "TEXT",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 1579,
+      "review": {
+        "method": "text",
+        "at": "2026-10-30T01:43:07.316288+00:00",
+        "scope": "전체 추출 본문·표·별첨 양식 확인; 원본 배치·그림 전체 시각 검증 아님"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/yQ2Ln": "e3ec52d869e0e83a919807735e23762b5dfff838ea6d04c60d77b711f4156121",
+    "https://www.k-startup.go.kr/afile/fileDownload/TQ2Ln": "e4dc36ab239d9a10d3994d4438dc66d1258f571d328c7bc7d95a62d54256fbfd"
+  },
+  "lastAttachmentHashCheckedAt": "2026-10-30T01:43:07.316288+00:00",
+  "unresolved": [
+    "신청기간 충돌:K-Startup10/23~11/3 14시 vs 실제신청페이지10/14~11/3 23:59(행사종료뒤):기관 최신안내 필요",
+    "신청폼 동의안내에 주민등록번호·성별·거주지 수집이 기재돼 있으나 실제 입력필드에는 없음; 필요정보 불일치 미해결(플랫폼 수집필드 추가하지 않음)",
+    "공개폼 정적 전체 문항·동의본문만 검토,제출/동적저장 미검증"
+  ],
+  "conflicts": [
+    {
+      "field": "applicationPeriod",
+      "values": [
+        "K-Startup10/23 00:00~11/3 14:00",
+        "NextStep10/14~11/3 23:59"
+      ],
+      "resolution": "미해결·공식상세 날짜 유지,연장으로단정하지않음",
+      "references": [
+        "상세 신청기간",
+        "공개 NextStep 모집기간"
+      ]
+    }
+  ],
+  "eligibility": {
+    "summary": "반도체 예비창업자·스타트업·기업·투자자·연구/정책/지원기관 등 반도체 생태계 관심자. 전국대상, 개최지 용인을 거주조건으로 해석하지 않음.",
+    "companyFields": [
+      "반도체관련 분야·소속구분",
+      "기업/연구기관/투자기관",
+      "참석가능일"
+    ],
+    "reference": "공식상세·포스터01 전체시각·접근성 텍스트02 전체·NextStep 공개 전체일정/신청문항/개인정보·촬영·광고안내"
+  },
+  "exclusions": {
+    "items": [
+      "별도 업종/업력/규모 제외규정 미명시"
+    ],
+    "reference": "공식상세·포스터01 전체시각·접근성 텍스트02 전체·NextStep 공개 전체일정/신청문항/개인정보·촬영·광고안내"
+  },
+  "support": {
+    "summary": "11/3 14:30~17:30 용인특례시 미디어센터. 무료 포럼:정책·기업지원·스타트업·VC발표 및 패널토론. 직접지원금·자부담비율 없음.",
+    "reference": "공식상세·포스터01 전체시각·접근성 텍스트02 전체·NextStep 공개 전체일정/신청문항/개인정보·촬영·광고안내"
+  },
+  "period": {
+    "start": "2026-10-23",
+    "end": "2026-11-03",
+    "deadlineTime": "14:00",
+    "startTime": "00:00",
+    "timezone": "Asia/Seoul",
+    "reference": "K-Startup 신청기간(10/23 00:00~11/3 14시). 신청페이지10/14~11/3 23:59와 충돌"
+  },
+  "application": {
+    "summary": "https://nextstep.io.kr/2026-yongin-semicon-forum; 포스터QR https://andone-erpsystem.vercel.app/q/ysemicon 도 동일 최종페이지로200 연결 확인. 신청제출은 수행하지 않음.",
+    "publicLinkChecks": [
+      {
+        "id": "179608",
+        "url": "https://nextstep.io.kr/2026-yongin-semicon-forum",
+        "checkedAt": "2026-10-30T01:37:19.012543+00:00",
+        "status": 200,
+        "finalUrl": "https://nextstep.io.kr/2026-yongin-semicon-forum",
+        "bytes": 113280,
+        "evidence": "data/government-programs/evidence/179608-publiccheck-20261030-1275792176892754112.html"
+      },
+      {
+        "id": "179608",
+        "url": "https://andone-erpsystem.vercel.app/q/ysemicon",
+        "checkedAt": "2026-10-30T01:37:19.012708+00:00",
+        "status": 200,
+        "finalUrl": "https://nextstep.io.kr/2026-yongin-semicon-forum",
+        "bytes": 113280,
+        "evidence": "data/government-programs/evidence/179608-publiccheck-20261030-1277126371792162337.html"
+      }
+    ],
+    "reference": "공식상세·포스터01 전체시각·접근성 텍스트02 전체·NextStep 공개 전체일정/신청문항/개인정보·촬영·광고안내"
+  },
+  "requiredDocuments": [
+    {
+      "name": "온라인 참가신청서",
+      "condition": "필수:이름·소속·직책·이메일·연락처·소속구분·개인정보동의",
+      "reference": "상세 제출서류·NextStep 신청서"
+    },
+    {
+      "name": "패널토론 질문",
+      "condition": "선택 최대1000자",
+      "reference": "NextStep 신청서"
+    }
+  ],
+  "businessPlan": {
+    "format": "행사참가:별도 사업계획서·첨부 요구 없음",
+    "sections": [],
+    "reference": "공식상세·포스터01 전체시각·접근성 텍스트02 전체·NextStep 공개 전체일정/신청문항/개인정보·촬영·광고안내"
+  },
+  "evaluation": {
+    "summary": "온라인 선착순·좌석 소진시 조기마감. 배점심사 없음.",
+    "reference": "공식상세·포스터01 전체시각·접근성 텍스트02 전체·NextStep 공개 전체일정/신청문항/개인정보·촬영·광고안내"
+  },
+  "contact": {
+    "name": "02-6494-7776, hjkim@kaist.vc",
+    "reference": "공식상세·포스터01 전체시각·접근성 텍스트02 전체·NextStep 공개 전체일정/신청문항/개인정보·촬영·광고안내"
+  },
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179608",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확보 후 근거별 적합성 검토. 이 분석은 신청 가능 확정 아님. 기존 고객 개인정보·비밀키·주민등록번호를 수집하지 않음.",
+    "steps": [
+      "회사 사실·증빙 확인",
+      "미확인/충돌 해결 및 최신 양식 확보",
+      "공고 ID와 회사 ID를 유지해 S12 양식 및 S13 사실정보 전달",
+      "회사별 서류·사업계획서 작성 및 검토"
+    ]
+  },
+  "resolvedDifferences": [
+    {
+      "field": "applicationUrl",
+      "resolution": "두링크최종URL동일·본문바이트동일",
+      "checkedAt": "2026-10-30T01:43:07.316288+00:00"
+    }
+  ],
+  "registrationPrivacy": {
+    "requiredFormFields": [
+      "이름",
+      "소속",
+      "직책",
+      "이메일",
+      "연락처",
+      "소속구분"
+    ],
+    "noticeAdditionalFieldsNotPresent": [
+      "주민등록번호",
+      "성별",
+      "거주지"
+    ],
+    "retention": "제출후2년 또는삭제신청시까지(원문표현보존)",
+    "photoVideoUse": "행사기록/홍보·거부시일부참여제한안내",
+    "advertisingNotice": "Meta픽셀 기기/쿠키·방문/완료정보전송 안내;폼입력내용전송하지않는다고명시·실제트래킹검증아님",
+    "reference": "NextStep 신청서 개인정보 안내"
+  }
+}

@@ -40,7 +40,7 @@
     "https://www.k-startup.go.kr/afile/fileDownload/y02Ln": "a90cc1991ca96de2ac7540c75f18e8bb7f8693787390fde58cc4cb28052b8ac4",
     "https://www.k-startup.go.kr/afile/fileDownload/T02Ln": "a18feb43b642e2d61d14d7493b62f94cf1f78f5a5fcf28625756e93e5e440025"
   },
-  "lastAttachmentHashCheckedAt": "2026-10-29T01:43:50.215678+00:00",
+  "lastAttachmentHashCheckedAt": "2026-11-01T02:30:10.974581+00:00",
   "unresolved": [
     "모집시작첨부10/23 vs 상세10/26·일반예비대상vs7년미만병기",
     "실제신청폼후속필드·교육일정·비용·시상세부미확인",
@@ -114,5 +114,6 @@
       "회사 사실정보로 서류·사업계획서 작성 및 검토"
     ]
   },
-  "externalCheckEvidence": "evidence/external-check-2026-10-29.json"
+  "externalCheckEvidence": "evidence/external-check-2026-10-29.json",
+  "lastHashCheckEvidence": "evidence/kstartup-179616/attachment-check-2026-11-01.json"
 }

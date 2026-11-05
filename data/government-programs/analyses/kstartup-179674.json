@@ -1,0 +1,132 @@
+{
+  "programId": "kstartup-179674",
+  "title": "스타트업을 위한 정부 R&D 특강",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-10-31T06:29:54.881062+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179674",
+  "reviewScope": "공식상세·첨부01포스터전체시각·첨부02대체텍스트전체/QRURL",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/4d2Ln",
+      "verifiedAt": "2026-10-31",
+      "status": "downloaded",
+      "sha256": "5b997f86daf6b15ace048e1292bfbdc133a72029e63493007528d38299034587",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 413481,
+      "format": "IMAGE",
+      "file": "attachment-01.bin",
+      "contentType": "image/png;charset=UTF-8",
+      "review": {
+        "at": "2026-10-31T06:29:54.881062+00:00",
+        "method": "visual",
+        "scope": "전체 포스터 시각 검토·동반 텍스트 대조; 긴 이미지 작은글씨 전부검증아님"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/Ed2Ln",
+      "verifiedAt": "2026-10-31",
+      "status": "downloaded",
+      "sha256": "7d8bf9e9ae1c85b7c2e81583d705ef5968685207f1c494d480e99cf55a6add82",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 1133,
+      "format": "TEXT",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "characters": 557,
+      "extraction": "text",
+      "review": {
+        "at": "2026-10-31T06:29:54.881062+00:00",
+        "method": "text",
+        "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/4d2Ln": "5b997f86daf6b15ace048e1292bfbdc133a72029e63493007528d38299034587",
+    "https://www.k-startup.go.kr/afile/fileDownload/Ed2Ln": "7d8bf9e9ae1c85b7c2e81583d705ef5968685207f1c494d480e99cf55a6add82"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-03T00:04:18.438028+00:00",
+  "eligibility": {
+    "summary": "충남 예비·초기창업자(업력3년미만),정부R&D관심자;포스터는충남예비초기로표기",
+    "companyFields": [
+      "소재지",
+      "창업단계·개업일",
+      "참석가능일"
+    ],
+    "reference": "공식상세·첨부01포스터전체시각·첨부02대체텍스트전체/QRURL"
+  },
+  "exclusions": {
+    "items": [
+      "정원30명선착순·조기마감가능"
+    ],
+    "reference": "공식상세·첨부01포스터전체시각·첨부02대체텍스트전체/QRURL"
+  },
+  "support": {
+    "summary": "무료R&D입문교육11/4 14~16시 충남창업마루나비4층(천안불당동1415).정부R&D자격/연간공고·일반/R&D계획서차이·2027준비체크리스트교육.지원금지급사업아님.주차별도등록불가.",
+    "reference": "공식상세·첨부01포스터전체시각·첨부02대체텍스트전체/QRURL"
+  },
+  "period": {
+    "start": "2026-10-30",
+    "end": "2026-11-03",
+    "deadlineTime": "23:59",
+    "timezone": "Asia/Seoul",
+    "reference": "K-Startup 신청방법·첨부대조(충돌은 unresolved 보존)"
+  },
+  "application": {
+    "summary": "https://forms.gle/GgF2LhcWToiLaZk17 온라인참가신청",
+    "reference": "공식상세·첨부01포스터전체시각·첨부02대체텍스트전체/QRURL",
+    "publicLinkChecks": [
+      {
+        "id": "179674",
+        "url": "https://forms.gle/GgF2LhcWToiLaZk17",
+        "checkedAt": "2026-10-31T06:28:09.834183+00:00",
+        "error": "HTTP Error 401: Unauthorized"
+      }
+    ]
+  },
+  "requiredDocuments": [
+    {
+      "name": "온라인참가신청",
+      "condition": "성명·연락처·소속(팀명)·창업단계",
+      "reference": "상세제출서류"
+    }
+  ],
+  "businessPlan": {
+    "format": "참가모집·사업계획서제출요구없음",
+    "sections": [],
+    "reference": "공식상세·첨부01포스터전체시각·첨부02대체텍스트전체/QRURL"
+  },
+  "evaluation": {
+    "summary": "선착순30명,배점심사없음",
+    "reference": "공식상세·첨부01포스터전체시각·첨부02대체텍스트전체/QRURL"
+  },
+  "contact": {
+    "name": "041-580-4865,hammy33@koreatech.ac.kr",
+    "reference": "공식상세·첨부01포스터전체시각·첨부02대체텍스트전체/QRURL"
+  },
+  "unresolved": [
+    "실제구글폼필수문항/동의안내·정원잔여미확인",
+    "충남외일반관심자허용범위가상세누구나와포스터대상에차이·확인필요",
+    "공개신청링크HTTP401·접근제한우회없이중단·다음날재시도"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179674",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확보 후 근거별 적합성 검토·신청가능확정 아님",
+    "steps": [
+      "회사필드·자격증빙확인",
+      "미확인·충돌해결·최신양식확보",
+      "S12양식·S13회사정보로회사별서류/계획작성"
+    ]
+  },
+  "latestHashEvidence": "evidence/kstartup-179674/attachment-check-2026-11-03.json"
+}

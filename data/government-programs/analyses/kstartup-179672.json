@@ -1,0 +1,135 @@
+{
+  "programId": "kstartup-179672",
+  "title": "트레일 신산업 로컬창업지원 참여기업 모집",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-10-31T06:29:54.881062+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179672",
+  "reviewScope": "공식상세·첨부01포스터전체시각·첨부02HWPX전체본문대조",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/kd2Ln",
+      "verifiedAt": "2026-10-31",
+      "status": "downloaded",
+      "sha256": "ce819546c089bd4a346727b8b0003904d730d56709ae7dd0b078016f25b48dae",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 1501259,
+      "format": "IMAGE",
+      "file": "attachment-01.bin",
+      "contentType": "image/png;charset=UTF-8",
+      "review": {
+        "at": "2026-10-31T06:29:54.881062+00:00",
+        "method": "visual",
+        "scope": "전체 포스터 시각 검토·동반 텍스트 대조; 긴 이미지 작은글씨 전부검증아님"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/ld2Ln",
+      "verifiedAt": "2026-10-31",
+      "status": "downloaded",
+      "sha256": "140e440458c4e8c604542f7721997f4077e4eaee6e44962f91a022c4edf89571",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 31248,
+      "format": "HWPX",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 478,
+      "review": {
+        "at": "2026-10-31T06:29:54.881062+00:00",
+        "method": "text",
+        "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/kd2Ln": "ce819546c089bd4a346727b8b0003904d730d56709ae7dd0b078016f25b48dae",
+    "https://www.k-startup.go.kr/afile/fileDownload/ld2Ln": "140e440458c4e8c604542f7721997f4077e4eaee6e44962f91a022c4edf89571"
+  },
+  "lastAttachmentHashCheckedAt": "2026-10-31T06:29:54.881062+00:00",
+  "eligibility": {
+    "summary": "업력7년이내로컬(예비)창업기업10곳·장수군소재또는이전예정",
+    "companyFields": [
+      "개업일",
+      "장수주소/이전가능시기",
+      "지역자원연계분야",
+      "IR자료",
+      "사업비집행계획"
+    ],
+    "reference": "공식상세·첨부01포스터전체시각·첨부02HWPX전체본문대조"
+  },
+  "exclusions": {
+    "items": [
+      "별도제외세부미명시",
+      "구글로그인필수(IR업로드)"
+    ],
+    "reference": "공식상세·첨부01포스터전체시각·첨부02HWPX전체본문대조"
+  },
+  "support": {
+    "summary": "기업당1000만원부가세제외:외주용역·광고선전·지재권출원등.교육·멘토링/컨설팅·인사이트트립·고객검증·투자지원·데모데이.투자확약아님.지원비율/자부담/VAT실부담구조미명시.",
+    "reference": "공식상세·첨부01포스터전체시각·첨부02HWPX전체본문대조"
+  },
+  "period": {
+    "start": "2026-10-30",
+    "end": "2026-11-06",
+    "deadlineTime": "18:00",
+    "timezone": "Asia/Seoul",
+    "reference": "K-Startup 신청방법·첨부대조(충돌은 unresolved 보존)"
+  },
+  "application": {
+    "summary": "http://vo.la/GbHdE9e 구글폼접수·IR피칭자료업로드",
+    "reference": "공식상세·첨부01포스터전체시각·첨부02HWPX전체본문대조",
+    "publicLinkChecks": [
+      {
+        "id": "179672",
+        "url": "http://vo.la/GbHdE9e",
+        "checkedAt": "2026-10-31T06:28:09.834973+00:00",
+        "error": "HTTP Error 401: Unauthorized"
+      }
+    ]
+  },
+  "requiredDocuments": [
+    {
+      "name": "IR피칭발표자료",
+      "condition": "필수·구글로그인후업로드",
+      "reference": "상세제출서류"
+    }
+  ],
+  "businessPlan": {
+    "format": "IR발표자료필수·지정양식/용량미명시",
+    "sections": [],
+    "reference": "공식상세·첨부01포스터전체시각·첨부02HWPX전체본문대조"
+  },
+  "evaluation": {
+    "summary": "IR자료기반내부서류심사100%,10기업·오피스아워최대2팀선정(없을수있음),세부배점없음",
+    "reference": "공식상세·첨부01포스터전체시각·첨부02HWPX전체본문대조"
+  },
+  "contact": {
+    "name": "크립톤지역창업생태계팀070-8064-7122,k-local@krypton36.co",
+    "reference": "공식상세·첨부01포스터전체시각·첨부02HWPX전체본문대조"
+  },
+  "unresolved": [
+    "원문제목추가모집이나10기업전체/이번추가정원구분미확인",
+    "장수이전기한·지속기간·사업비정산/VAT/자부담조건·실제신청폼/필수양식미확인",
+    "HWPX원본배치및추가별첨유무미확인",
+    "공개신청링크HTTP401·접근제한우회없이중단·다음날재시도"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179672",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확보 후 근거별 적합성 검토·신청가능확정 아님",
+    "steps": [
+      "회사필드·자격증빙확인",
+      "미확인·충돌해결·최신양식확보",
+      "S12양식·S13회사정보로회사별서류/계획작성"
+    ]
+  }
+}

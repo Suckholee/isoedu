@@ -1,0 +1,118 @@
+{
+  "programId": "kstartup-179708",
+  "title": "2026년 스타트업 법률지원사업 전남광주통합특별시 법률상담회 참여기업 모집",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-04T00:45:52.940286+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179708",
+  "reviewScope": "공식상세·PDF01 p1대상/규모일정·p2접수서류·p3유의·p4지도시각·p5교통",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v194RsyFTRuk0Pu2r5faEr8GRr14ZdtpZ7YhhAJKJMHolztQ",
+      "verifiedAt": "2026-11-04",
+      "status": "downloaded",
+      "sha256": "8bef25080a6ce82dd3035327b4504cdb9d9a616c46cfc977a924030584e9b1dc",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 454309,
+      "format": "PDF",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 3178,
+      "review": {
+        "at": "2026-11-04T00:45:52.940286+00:00",
+        "method": "text",
+        "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/v194RsyFTRuk0Pu2r5faEr8GRr14ZdtpZ7YhhAJKJMHolztQ": "8bef25080a6ce82dd3035327b4504cdb9d9a616c46cfc977a924030584e9b1dc"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-04T00:45:52.940286+00:00",
+  "eligibility": {
+    "summary": "예비또는상담일기준7년이내창업기업·신산업10년이내.법률8분야경영고민15팀내외",
+    "companyFields": [
+      "창업일/신산업",
+      "상담분야질의",
+      "실명/기업인증",
+      "희망시간·11/12현장참석"
+    ],
+    "reference": "공식상세·PDF01 p1대상/규모일정·p2접수서류·p3유의·p4지도시각·p5교통"
+  },
+  "exclusions": {
+    "items": [
+      "창업제외업종",
+      "분쟁·소송상담불가",
+      "확정후취소/노쇼향후불이익"
+    ],
+    "reference": "공식상세·PDF01 p1대상/규모일정·p2접수서류·p3유의·p4지도시각·p5교통"
+  },
+  "support": {
+    "summary": "11/12 10~16시국립순천대열린광장인근버스·3테이블5회·기업45분대면·현장접수15시마감.계약/IP/개인정보/인허가/노무/투자/운영/정리8분야·지원금한도/비율자부담미명시.",
+    "reference": "공식상세·PDF01 p1대상/규모일정·p2접수서류·p3유의·p4지도시각·p5교통"
+  },
+  "period": {
+    "start": "2026-11-03",
+    "end": "2026-11-09",
+    "deadlineTime": "18:00",
+    "timezone": "Asia/Seoul",
+    "reference": "K-Startup 신청방법·첨부대조(충돌은 unresolved 보존)"
+  },
+  "application": {
+    "summary": "KStartup로그인·실명인증공통/기업인증해당(공동금융인증·SCI·국세청중택1)·제출완료선착순.실명미등록최대3일사전등록",
+    "reference": "공식상세·PDF01 p1대상/규모일정·p2접수서류·p3유의·p4지도시각·p5교통"
+  },
+  "requiredDocuments": [
+    {
+      "name": "법률상담신청서",
+      "condition": "필수·상세온라인기본/필요추가양식 vs 첨부양식1작성업로드충돌",
+      "reference": "PDFp2/상세"
+    },
+    {
+      "name": "상담참고자료",
+      "condition": "선택",
+      "reference": "PDFp2"
+    },
+    {
+      "name": "사업계획/IR PDF",
+      "condition": "선택자유양식",
+      "reference": "PDFp2"
+    }
+  ],
+  "businessPlan": {
+    "format": "상담질의양식1참조이나공개별도파일미포함",
+    "sections": [],
+    "reference": "공식상세·PDF01 p1대상/규모일정·p2접수서류·p3유의·p4지도시각·p5교통"
+  },
+  "evaluation": {
+    "summary": "자격및법률분야충족제출완료순15팀·시간TO없으면임의배정·접수영업2일내확정안내(상세)",
+    "reference": "공식상세·PDF01 p1대상/규모일정·p2접수서류·p3유의·p4지도시각·p5교통"
+  },
+  "contact": {
+    "name": "044-410-1753,acs@kised.or.kr",
+    "reference": "공식상세·PDF01 p1대상/규모일정·p2접수서류·p3유의·p4지도시각·p5교통"
+  },
+  "unresolved": [
+    "첨부양식1필수업로드 vs 상세온라인기본/추가선택 충돌·실제로그인필드및양식미확인",
+    "첨부지역명/주소는원문표기보존·현장장소기관최종확인필요",
+    "PDF본문5쪽및p4지도사진시각·그외전쪽배치시각미검증"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179708",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확보 후 근거별 적합성 검토·신청가능확정 아님",
+    "steps": [
+      "회사필드·자격증빙확인",
+      "미확인·충돌해결·최신양식확보",
+      "S12양식·S13회사정보로회사별서류/계획작성"
+    ]
+  }
+}

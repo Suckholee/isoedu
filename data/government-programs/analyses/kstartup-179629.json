@@ -1,0 +1,125 @@
+{
+  "programId": "kstartup-179629",
+  "title": "[강동구 청년해냄센터] 전문분야 창업멘토링 11월 참가자 모집",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-03T00:03:26.113645+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179629",
+  "reviewScope": "공식상세·01대체텍스트전문·02포스터전체시각",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/n22Ln",
+      "verifiedAt": "2026-11-03",
+      "status": "downloaded",
+      "sha256": "3aee1170c9948a7ddff74f614b110afc57e5cb63c38d3cec83ad54edc59641a4",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 1738,
+      "format": "TEXT",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "characters": 906,
+      "extraction": "text",
+      "review": {
+        "at": "2026-11-03T00:03:26.113645+00:00",
+        "method": "text",
+        "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/L22Ln",
+      "verifiedAt": "2026-11-03",
+      "status": "downloaded",
+      "sha256": "dea1d88d5082d762600aeaa1d1077bfe6959b55ac865d0faa81c0aa670b555fd",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 630534,
+      "format": "IMAGE",
+      "file": "attachment-02.bin",
+      "contentType": "image/png;charset=UTF-8",
+      "review": {
+        "at": "2026-11-03T00:03:26.113645+00:00",
+        "method": "visual",
+        "scope": "전체 포스터 시각 검토·동반 텍스트 대조; 긴 이미지 작은글씨 전부검증아님"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/n22Ln": "3aee1170c9948a7ddff74f614b110afc57e5cb63c38d3cec83ad54edc59641a4",
+    "https://www.k-startup.go.kr/afile/fileDownload/L22Ln": "dea1d88d5082d762600aeaa1d1077bfe6959b55ac865d0faa81c0aa670b555fd"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-03T00:03:26.113645+00:00",
+  "eligibility": {
+    "summary": "예비/기창업자6팀선착순·강동구민우선·1팀1회(1인1회원칙·없으면추가가능)",
+    "companyFields": [
+      "강동거주여부",
+      "창업단계",
+      "법률/세무수요",
+      "희망시간",
+      "노쇼이력"
+    ],
+    "reference": "공식상세·01대체텍스트전문·02포스터전체시각"
+  },
+  "exclusions": {
+    "items": [
+      "당일취소/무단노쇼향후참여제한",
+      "조기마감가능·제출이확정아님"
+    ],
+    "reference": "공식상세·01대체텍스트전문·02포스터전체시각"
+  },
+  "support": {
+    "summary": "무료법률(권지민변호사)/세무(이영준세무사)멘토링.11/19 14~14:50·15~15:50·16~16:50 강동구청년해냄센터오프라인·현금지원없음.",
+    "reference": "공식상세·01대체텍스트전문·02포스터전체시각"
+  },
+  "period": {
+    "start": "2026-10-27",
+    "end": "2026-11-10",
+    "deadlineTime": "14:00",
+    "timezone": "Asia/Seoul",
+    "reference": "K-Startup 신청방법·첨부대조(충돌은 unresolved 보존)"
+  },
+  "application": {
+    "summary": "http://www.gdhaenaem.com/?c=168 →신청하기→프로그램신청.접수완료별도연락없음·11/12선정개별연락·일정확인전화필수",
+    "reference": "공식상세·01대체텍스트전문·02포스터전체시각"
+  },
+  "requiredDocuments": [
+    {
+      "name": "홈페이지신청서",
+      "condition": "필수·추가첨부요구미명시",
+      "reference": "상세·포스터"
+    }
+  ],
+  "businessPlan": {
+    "format": "멘토링신청·사업계획서제출요구없음",
+    "sections": [],
+    "reference": "공식상세·01대체텍스트전문·02포스터전체시각"
+  },
+  "evaluation": {
+    "summary": "제출순서·강동구민우선6팀·11/12개별선정연락·접수완료알림없음",
+    "reference": "공식상세·01대체텍스트전문·02포스터전체시각"
+  },
+  "contact": {
+    "name": "02-488-6880(평일09~18시)",
+    "reference": "공식상세·01대체텍스트전문·02포스터전체시각"
+  },
+  "unresolved": [
+    "공식HTTPS www.gdhaenaem.com 인증서호스트불일치로읽지못함·TLS검증우회하지않음·실제신청문항/개인정보동의미확인",
+    "잔여팀/조기마감여부는실시간확인필요·폼제출만으로확정아님"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179629",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확보 후 근거별 적합성 검토·신청가능확정 아님",
+    "steps": [
+      "회사필드·자격증빙확인",
+      "미확인·충돌해결·최신양식확보",
+      "S12양식·S13회사정보로회사별서류/계획작성"
+    ]
+  }
+}

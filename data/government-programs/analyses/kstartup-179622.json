@@ -1,0 +1,137 @@
+{
+  "programId": "kstartup-179622",
+  "title": "[서초창업스테이션] 11월 창업 교육 프로그램 - 초기 스타트업을 위한 브랜드 만들기",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-02T00:10:50.858912+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179622",
+  "reviewScope": "공식상세·첨부01HWP전문/02포스터전체시각·주최공개안내전문",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/CW2Ln",
+      "verifiedAt": "2026-11-02",
+      "status": "downloaded",
+      "sha256": "05f5562215fa7ef1e7bbab16d68142397a097d4c84bb9b8ee12ec6836542daae",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 32768,
+      "format": "HWP",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 465,
+      "review": {
+        "at": "2026-11-02T00:10:50.858912+00:00",
+        "method": "text",
+        "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/DW2Ln",
+      "verifiedAt": "2026-11-02",
+      "status": "downloaded",
+      "sha256": "aeaf209497b47e450d4d937f1996e7cab4bf4119d001a1501cd49cae411f5ec1",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 887324,
+      "format": "IMAGE",
+      "file": "attachment-02.bin",
+      "contentType": "image/jpeg;charset=UTF-8",
+      "review": {
+        "at": "2026-11-02T00:10:50.858912+00:00",
+        "method": "visual",
+        "scope": "전체 포스터 시각 검토·동반 텍스트 대조; 긴 이미지 작은글씨 전부검증아님"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/CW2Ln": "05f5562215fa7ef1e7bbab16d68142397a097d4c84bb9b8ee12ec6836542daae",
+    "https://www.k-startup.go.kr/afile/fileDownload/DW2Ln": "aeaf209497b47e450d4d937f1996e7cab4bf4119d001a1501cd49cae411f5ec1"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-02T00:10:50.858912+00:00",
+  "eligibility": {
+    "summary": "예비/초기창업자및교육희망자·서초거주/서초기업우대·첨부센터멤버십표기",
+    "companyFields": [
+      "서초거주/기업소재지",
+      "센터회원여부",
+      "창업단계",
+      "참석가능일"
+    ],
+    "reference": "공식상세·첨부01HWP전문/02포스터전체시각·주최공개안내전문"
+  },
+  "exclusions": {
+    "items": [
+      "주최공개안내추가:체납/금융채무불이행규제·유흥/사행등창업제외업종",
+      "무단불참시향후참여제한·빈칸신청제외"
+    ],
+    "reference": "공식상세·첨부01HWP전문/02포스터전체시각·주최공개안내전문"
+  },
+  "support": {
+    "summary": "15명오프라인브랜딩교육11/11 14~16시 서초창업스테이션홀·윤선미링케치대표.지원금없음·참가비미명시.",
+    "reference": "공식상세·첨부01HWP전문/02포스터전체시각·주최공개안내전문"
+  },
+  "period": {
+    "start": "2026-10-26",
+    "end": "2026-11-09",
+    "deadlineTime": "23:59",
+    "timezone": "Asia/Seoul",
+    "reference": "K-Startup 신청방법·첨부대조(충돌은 unresolved 보존)"
+  },
+  "application": {
+    "summary": "https://www.xn--2i4bieu3bszgvtc6wlunby2r.com/sub_program/operate_view.php?idx=70 홈페이지접수",
+    "reference": "공식상세·첨부01HWP전문/02포스터전체시각·주최공개안내전문",
+    "publicLinkChecks": [
+      {
+        "id": "179622",
+        "url": "https://www.xn--2i4bieu3bszgvtc6wlunby2r.com/sub_program/operate_view.php?idx=70",
+        "checkedAt": "2026-11-02T00:07:50.734941+00:00",
+        "status": 200,
+        "finalUrl": "https://www.xn--2i4bieu3bszgvtc6wlunby2r.com/sub_program/operate_view.php?idx=70",
+        "evidence": "179622-publiccheck-20261102.html",
+        "bytes": 65450
+      }
+    ]
+  },
+  "requiredDocuments": [
+    {
+      "name": "온라인신청",
+      "condition": "필수·별도첨부없음",
+      "reference": "상세·주최안내"
+    }
+  ],
+  "businessPlan": {
+    "format": "교육참가·사업계획서요구없음",
+    "sections": [],
+    "reference": "공식상세·첨부01HWP전문/02포스터전체시각·주최공개안내전문"
+  },
+  "evaluation": {
+    "summary": "별도평가없음·초과시서초우대·조기마감가능·11/10 11시선정/미선정알림톡",
+    "reference": "공식상세·첨부01HWP전문/02포스터전체시각·주최공개안내전문"
+  },
+  "contact": {
+    "name": "070-4185-5491~2,seocho.opk@gmail.com",
+    "reference": "공식상세·첨부01HWP전문/02포스터전체시각·주최공개안내전문"
+  },
+  "unresolved": [
+    "실제회원로그인이후신청문항·동의안내미확인",
+    "상세미기재제외조건이주최본문에있음·센터회원요건필수여부확인필요",
+    "HWP원본전체배치시각대조미완료"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179622",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확보 후 근거별 적합성 검토·신청가능확정 아님",
+    "steps": [
+      "회사필드·자격증빙확인",
+      "미확인·충돌해결·최신양식확보",
+      "S12양식·S13회사정보로회사별서류/계획작성"
+    ]
+  },
+  "supplementaryAttachments": []
+}

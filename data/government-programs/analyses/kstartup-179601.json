@@ -27,7 +27,7 @@
   "attachmentContentHashes": {
     "https://www.k-startup.go.kr/afile/fileDownload/0i2Ln": "156f48e11915c5a1c353b6a671a501d07eb16a5dcf0f33514a3645633ecfd27a"
   },
-  "lastAttachmentHashCheckedAt": "2026-10-25T03:34:52.351493+00:00",
+  "lastAttachmentHashCheckedAt": "2026-10-30T01:43:07.316288+00:00",
   "unresolved": [
     "가점표100총점과중복시높은것만반영 규정 해석 확인 필요",
     "자부담·500만원초과분 처리 미명시",
@@ -130,5 +130,6 @@
       "공고 양식 선택",
       "회사 사실정보로 서류·사업계획서 작성 및 검토"
     ]
-  }
+  },
+  "lastHashCheckEvidence": "evidence/kstartup-179601/attachment-check-2026-10-30.json"
 }

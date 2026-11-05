@@ -1,0 +1,186 @@
+{
+  "programId": "kstartup-179615",
+  "title": "제6차 해양수산 투자기관협의회(정기IR) 참여기업 모집공고",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-04T00:45:52.940286+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179615",
+  "reviewScope": "공식상세·HWP01신청/기업재무/기술/자금/별첨동의3종전문·HWP02공고§1~4전문·바다봄공개상세",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1QevUAVRL--Hilz-NPaNAg7sOwEIzyeoJ5VthyZhwNuK78g",
+      "verifiedAt": "2026-11-04",
+      "status": "downloaded",
+      "sha256": "004638d969e9d00e13afb58f089a15455f82136069bbad4714e1d35f8c76d2a1",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 81408,
+      "format": "HWP",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 5029,
+      "review": {
+        "at": "2026-11-04T00:45:52.940286+00:00",
+        "method": "text",
+        "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1p_P1vqgfEd6QKG46oSMOjGTgJmDbdp0Glg616bMa3tWnJA",
+      "verifiedAt": "2026-11-04",
+      "status": "downloaded",
+      "sha256": "91f916a9f9d8d31f59f791dbaa40dfb52221eeb53e674d4da85f7d173d8dbeda",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 58368,
+      "format": "HWP",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 2545,
+      "review": {
+        "at": "2026-11-04T00:45:52.940286+00:00",
+        "method": "text",
+        "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/v1QevUAVRL--Hilz-NPaNAg7sOwEIzyeoJ5VthyZhwNuK78g": "004638d969e9d00e13afb58f089a15455f82136069bbad4714e1d35f8c76d2a1",
+    "https://www.k-startup.go.kr/afile/fileDownload/v1p_P1vqgfEd6QKG46oSMOjGTgJmDbdp0Glg616bMa3tWnJA": "91f916a9f9d8d31f59f791dbaa40dfb52221eeb53e674d4da85f7d173d8dbeda"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-04T00:45:52.940286+00:00",
+  "eligibility": {
+    "summary": "북극항로연관해운항만물류조선에너지등창업/중소/벤처4사내외·팁스/딥테크/스케일업/글로벌미수행우선",
+    "companyFields": [
+      "산업연계",
+      "중소벤처증빙",
+      "TIPS이력",
+      "재무2023~25/신용",
+      "대표조직IP",
+      "투자이력·희망금액용도",
+      "정부참여제한/체납"
+    ],
+    "reference": "공식상세·HWP01신청/기업재무/기술/자금/별첨동의3종전문·HWP02공고§1~4전문·바다봄공개상세"
+  },
+  "exclusions": {
+    "items": [
+      "부도휴폐업·체납처분·신용불량·파산회생개인회생신청(인가변제정상이행예외증빙)",
+      "양식추가:기업대표수행책임자마감일국가R&D참여제한"
+    ],
+    "reference": "공식상세·HWP01신청/기업재무/기술/자금/별첨동의3종전문·HWP02공고§1~4전문·바다봄공개상세"
+  },
+  "support": {
+    "summary": "12/8투자협의회원사/TIPS운영사IR·단기계획/피칭컨설팅·현금지원/투자확약아님·한도비율자부담미명시.11/20결과예정.의무불이행향후3년투자지원제한가능.",
+    "reference": "공식상세·HWP01신청/기업재무/기술/자금/별첨동의3종전문·HWP02공고§1~4전문·바다봄공개상세"
+  },
+  "period": {
+    "start": "2026-10-26",
+    "end": "2026-11-13",
+    "deadlineTime": "17:00",
+    "timezone": "Asia/Seoul",
+    "reference": "K-Startup 신청방법·첨부대조(충돌은 unresolved 보존)"
+  },
+  "application": {
+    "summary": "바다봄 https://badabom.go.kr/stup/pbanc/detail/view.do?pbancMngNo=S-ANN202600023 창업투자공고온라인·17시자동차단·접속중이라도추가입력불가",
+    "reference": "공식상세·HWP01신청/기업재무/기술/자금/별첨동의3종전문·HWP02공고§1~4전문·바다봄공개상세"
+  },
+  "requiredDocuments": [
+    {
+      "name": "신청/자격적정성/개인정보/통합정보동의",
+      "condition": "필수지정HWP01대표·수행책임자날인",
+      "reference": "HWP02§2/HWP01"
+    },
+    {
+      "name": "IR/계획/제품서비스소개",
+      "condition": "필수자유형식",
+      "reference": "HWP02§2"
+    },
+    {
+      "name": "사업자등록",
+      "condition": "필수",
+      "reference": "HWP02§2"
+    },
+    {
+      "name": "법인등기/중소벤처확인/투자계약",
+      "condition": "해당시",
+      "reference": "HWP02§2"
+    },
+    {
+      "name": "최근3년재무",
+      "condition": "기업신용조회불가시추가요청",
+      "reference": "HWP02§2"
+    }
+  ],
+  "businessPlan": {
+    "format": "지정신청양식+별도자유IR계획",
+    "sections": [
+      {
+        "name": "기업현황",
+        "items": [
+          "설립연혁/2023~25매출증가자산부채자본영업이자·조직대표경력IP·4대보험대표포함인원"
+        ],
+        "limit": "분량/용량미명시·재무투자단위천원"
+      },
+      {
+        "name": "기술제품",
+        "items": [
+          "특장점경쟁력사진·국내외시장/사업화현황및향후계획"
+        ],
+        "limit": "분량/용량미명시·재무투자단위천원"
+      },
+      {
+        "name": "신청목적기대효과",
+        "items": [
+          "선정중요지표구체작성"
+        ],
+        "limit": "분량/용량미명시·재무투자단위천원"
+      },
+      {
+        "name": "자금조달",
+        "items": [
+          "과거투자/희망금액용도·희망컨설팅요청"
+        ],
+        "limit": "분량/용량미명시·재무투자단위천원"
+      },
+      {
+        "name": "별도IR",
+        "items": [
+          "기술시장영업·성장로드맵·재무계획"
+        ],
+        "limit": "분량/용량미명시·재무투자단위천원"
+      }
+    ],
+    "reference": "공식상세·HWP01신청/기업재무/기술/자금/별첨동의3종전문·HWP02공고§1~4전문·바다봄공개상세"
+  },
+  "evaluation": {
+    "summary": "서류경영20/기술30/시장사업25/투자가능회수25.가점콘테스트23~25입상3(다음해3년최초1회)·25블루우수/24사업화R&D85점이상주관/신기술물류/R&D이전우수각1",
+    "reference": "공식상세·HWP01신청/기업재무/기술/자금/별첨동의3종전문·HWP02공고§1~4전문·바다봄공개상세"
+  },
+  "contact": {
+    "name": "KIMST02-3460-0373,ynkim212@kimst.re.kr·KVCA02-3017-7070/7064,invest@kvca.or.kr",
+    "reference": "공식상세·HWP01신청/기업재무/기술/자금/별첨동의3종전문·HWP02공고§1~4전문·바다봄공개상세"
+  },
+  "unresolved": [
+    "공고제외항목에없는국가R&D참여제한이자격확인서추가·기관최종적용범위확인",
+    "개인정보동의보유기간미명시·기업정보플랫폼운영종료/전3년후5년범위구분·필요범위확인",
+    "로그인후신청필드/파일용량·실제접수동작미확인·HWP원본배치그림시각미검증"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179615",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확보 후 근거별 적합성 검토·신청가능확정 아님",
+    "steps": [
+      "회사필드·자격증빙확인",
+      "미확인·충돌해결·최신양식확보",
+      "S12양식·S13회사정보로회사별서류/계획작성"
+    ]
+  }
+}

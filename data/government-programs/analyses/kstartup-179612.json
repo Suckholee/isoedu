@@ -1,0 +1,238 @@
+{
+  "programId": "kstartup-179612",
+  "title": "상지대학교 창업보육센터 입주기업 모집 공고",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-03T00:03:26.113645+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179612",
+  "reviewScope": "공식상세·PDF01 1~3쪽본문/§2~4·p3사진시각·HWP02계획서전문/HWP03동의전문·PDF04스캔1쪽전체시각",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/Al2Ln",
+      "verifiedAt": "2026-11-03",
+      "status": "downloaded",
+      "sha256": "5ef62d8d6a4bd5fb8d6ce867fe2883a7ce7f2d2cf08eb9f8c178c7831c63fefd",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 226338,
+      "format": "PDF",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 1693,
+      "review": {
+        "at": "2026-11-03T00:03:26.113645+00:00",
+        "method": "text",
+        "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/ol2Ln",
+      "verifiedAt": "2026-11-03",
+      "status": "downloaded",
+      "sha256": "438c0f081d4ce15485faa2bc4049a662cbb1fd74b1eed1e011ecc06064072f6d",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 46592,
+      "format": "HWP",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 3479,
+      "review": {
+        "at": "2026-11-03T00:03:26.113645+00:00",
+        "method": "text",
+        "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/wl2Ln",
+      "verifiedAt": "2026-11-03",
+      "status": "downloaded",
+      "sha256": "7f669f9523ebc0b9ddf4dfa27a2c5b2450a969e1ae4d1a39d3aa7e5539044bbb",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 57344,
+      "format": "HWP",
+      "file": "attachment-03.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 1566,
+      "review": {
+        "at": "2026-11-03T00:03:26.113645+00:00",
+        "method": "text",
+        "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/ql2Ln",
+      "verifiedAt": "2026-11-03",
+      "status": "downloaded",
+      "sha256": "35f9161d116cebc8259bb04da2d45831e5c418a83decb1a070f105ca54b539d6",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 1014231,
+      "format": "PDF",
+      "file": "attachment-04.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 0,
+      "review": {
+        "at": "2026-11-03T00:04:18.437056+00:00",
+        "method": "visual",
+        "scope": "스캔PDF1쪽전체시각·텍스트추출0자를내용미확인으로오인하지않음",
+        "renderedEvidence": "상지11월창업준비실3개/예비창업자/30만원6개월/이메일접수/전화033-738-7863"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/Al2Ln": "5ef62d8d6a4bd5fb8d6ce867fe2883a7ce7f2d2cf08eb9f8c178c7831c63fefd",
+    "https://www.k-startup.go.kr/afile/fileDownload/ol2Ln": "438c0f081d4ce15485faa2bc4049a662cbb1fd74b1eed1e011ecc06064072f6d",
+    "https://www.k-startup.go.kr/afile/fileDownload/wl2Ln": "7f669f9523ebc0b9ddf4dfa27a2c5b2450a969e1ae4d1a39d3aa7e5539044bbb",
+    "https://www.k-startup.go.kr/afile/fileDownload/ql2Ln": "35f9161d116cebc8259bb04da2d45831e5c418a83decb1a070f105ca54b539d6"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-03T00:03:26.113645+00:00",
+  "eligibility": {
+    "summary": "첨부공고§2/3·포스터예비창업자전용창업준비실3개·상세는예비또는7년미만기창업자까지표기충돌",
+    "companyFields": [
+      "창업이력/현재사업자/폐업",
+      "예비/기창업자",
+      "업종",
+      "국세지방세체납",
+      "희망입주일·비용",
+      "가점"
+    ],
+    "reference": "공식상세·PDF01 1~3쪽본문/§2~4·p3사진시각·HWP02계획서전문/HWP03동의전문·PDF04스캔1쪽전체시각"
+  },
+  "exclusions": {
+    "items": [
+      "유흥주점/무도유흥주점/사행시설/질서미풍양속위반업종·국세지방세체납",
+      "기한내미계약/미입주/허위입주취소"
+    ],
+    "reference": "공식상세·PDF01 1~3쪽본문/§2~4·p3사진시각·HWP02계획서전문/HWP03동의전문·PDF04스캔1쪽전체시각"
+  },
+  "support": {
+    "summary": "다산관101-2/3/4호창업준비실3실·시설사용료30만원/6개월.표월보육료·보증금대시(면제확약아님).상세15평형/입주3년미만1년재계약·첨부12/1예정/11월말계약·일정조율.사업화시제품마케팅·교육멘토링·대학자원연계.개별현금한도비율미명시.",
+    "reference": "공식상세·PDF01 1~3쪽본문/§2~4·p3사진시각·HWP02계획서전문/HWP03동의전문·PDF04스캔1쪽전체시각"
+  },
+  "period": {
+    "start": "2026-10-23",
+    "end": "2026-11-10",
+    "deadlineTime": "23:59",
+    "timezone": "Asia/Seoul",
+    "reference": "K-Startup 신청방법·첨부대조(충돌은 unresolved 보존)"
+  },
+  "application": {
+    "summary": "sjbic2002@naver.com 이메일(어려우면방문/우편)·원주상지대길83벤처창업관센터",
+    "reference": "공식상세·PDF01 1~3쪽본문/§2~4·p3사진시각·HWP02계획서전문/HWP03동의전문·PDF04스캔1쪽전체시각",
+    "privacyNotice": {
+      "retention": "목적달성/삭제요청시파기·협약종료후이력3년",
+      "thirdParty": "중기부·기보등유관기관·졸업퇴거후3년",
+      "reference": "첨부03HWP§1~2"
+    }
+  },
+  "requiredDocuments": [
+    {
+      "name": "입주신청서/사업계획서",
+      "condition": "필수지정HWP02·대표서명",
+      "reference": "PDF01§4/HWP02"
+    },
+    {
+      "name": "개인신용정보수집이용제공동의",
+      "condition": "필수지정HWP03서명",
+      "reference": "PDF01§4/HWP03"
+    },
+    {
+      "name": "주민등록등본/통장사본",
+      "condition": "필수",
+      "reference": "PDF01§4"
+    },
+    {
+      "name": "사실증명",
+      "condition": "창업이력없음사업자등록사실여부/있음총사업자등록내역중1(양식)·폐업사실있으면폐업증명(공고)",
+      "reference": "PDF01§4/HWP02첨부목록"
+    },
+    {
+      "name": "사업자등록/법인등기말소포함",
+      "condition": "해당시",
+      "reference": "PDF01§4"
+    },
+    {
+      "name": "대표자이력/특허출원등록/가점",
+      "condition": "양식별추가·IP보유해당/가점해당시",
+      "reference": "HWP02입주서/기술항목"
+    }
+  ],
+  "businessPlan": {
+    "format": "지정HWP02·신청서+사업계획+별도동의HWP03",
+    "sections": [
+      {
+        "name": "창업자/기업현황",
+        "items": [
+          "학력경력IP자격·기술보유관계·공동창업/경영실권별지·참여인력"
+        ],
+        "limit": "분량/파일용량미명시·1년사업비천원"
+      },
+      {
+        "name": "기술성/사업성",
+        "items": [
+          "제품목표사양성능활용·핵심기술실적IP·국내외기술시장3년·수요경쟁/수입대체"
+        ],
+        "limit": "분량/파일용량미명시·1년사업비천원"
+      },
+      {
+        "name": "사업화계획1년",
+        "items": [
+          "현재준비·월별설립/개발/상품화/생산경영전략·실패대응"
+        ],
+        "limit": "분량/파일용량미명시·1년사업비천원"
+      },
+      {
+        "name": "총사업비1년",
+        "items": [
+          "자본/차입조달금액비율·단위천원"
+        ],
+        "limit": "분량/파일용량미명시·1년사업비천원"
+      },
+      {
+        "name": "입주동기/희망지원",
+        "items": [
+          "반입시설설비전원규격크기중량수량금액·대학자원희망"
+        ],
+        "limit": "분량/파일용량미명시·1년사업비천원"
+      }
+    ],
+    "reference": "공식상세·PDF01 1~3쪽본문/§2~4·p3사진시각·HWP02계획서전문/HWP03동의전문·PDF04스캔1쪽전체시각"
+  },
+  "evaluation": {
+    "summary": "1차서면→2차대면→11월말개별결과→계약·모든기준공고일현재.가점항목배점미명시",
+    "reference": "공식상세·PDF01 1~3쪽본문/§2~4·p3사진시각·HWP02계획서전문/HWP03동의전문·PDF04스캔1쪽전체시각"
+  },
+  "contact": {
+    "name": "033-738-7863/033-730-0547,sjbic2002@naver.com",
+    "reference": "공식상세·PDF01 1~3쪽본문/§2~4·p3사진시각·HWP02계획서전문/HWP03동의전문·PDF04스캔1쪽전체시각"
+  },
+  "unresolved": [
+    "자격충돌:상세예비/7년미만 vs 첨부공고/스캔포스터예비전용·최신정정기관확인필요",
+    "위치본문벤처창업관3층 vs 공간표다산관101호·상세15평형표기지만첨부면적대시·호실/면적확정필요",
+    "사실증명범위/대표이력양식추가·대표주민번호전체공개요구는기관필요성확인전플랫폼추가수집안함",
+    "재계약/총기간·VAT/보증금면제·서류유효기간·가점배점미명시·공고/계약확인필요",
+    "HWP02/03전체텍스트검토·스캔PDF04전체시각·PDF01사진p3시각,모든HWP배치시각미검증"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179612",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확보 후 근거별 적합성 검토·신청가능확정 아님",
+    "steps": [
+      "회사필드·자격증빙확인",
+      "미확인·충돌해결·최신양식확보",
+      "S12양식·S13회사정보로회사별서류/계획작성"
+    ]
+  }
+}

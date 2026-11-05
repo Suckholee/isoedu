@@ -1,0 +1,145 @@
+{
+  "programId": "kstartup-179652",
+  "title": "[행사 안내] 2026 네이버클라우드 그린하우스 : MARKET CONNECT",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-10-31T06:29:54.881062+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179652",
+  "reviewScope": "공식상세·포스터01전체시각·대체텍스트02전체",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/C42Ln",
+      "verifiedAt": "2026-10-31",
+      "status": "downloaded",
+      "sha256": "21269ffe1f60cbe2ac24116e2122d2ac3bf4cc3081f95e3cac3959a71f02c5d6",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 1319952,
+      "format": "IMAGE",
+      "file": "attachment-01.bin",
+      "contentType": "image/png;charset=UTF-8",
+      "review": {
+        "at": "2026-10-31T06:29:54.881062+00:00",
+        "method": "visual",
+        "scope": "전체 포스터 시각 검토·동반 텍스트 대조; 긴 이미지 작은글씨 전부검증아님"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/642Ln",
+      "verifiedAt": "2026-10-31",
+      "status": "downloaded",
+      "sha256": "6bf58fbad42d69397b6c32e23d684afa809fe3291df5d02a94d526ac3e702ecd",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 772,
+      "format": "TEXT",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "characters": 456,
+      "extraction": "text",
+      "review": {
+        "at": "2026-10-31T06:29:54.881062+00:00",
+        "method": "text",
+        "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/C42Ln": "21269ffe1f60cbe2ac24116e2122d2ac3bf4cc3081f95e3cac3959a71f02c5d6",
+    "https://www.k-startup.go.kr/afile/fileDownload/642Ln": "6bf58fbad42d69397b6c32e23d684afa809fe3291df5d02a94d526ac3e702ecd"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-03T00:04:18.438650+00:00",
+  "eligibility": {
+    "summary": "시장검증·사업화·OI·협력관심 스타트업/대중견기업/투자·지원기관 관계자;지역·업력한도미명시",
+    "companyFields": [
+      "기관유형",
+      "협력관심분야",
+      "참석가능일"
+    ],
+    "reference": "공식상세·포스터01전체시각·대체텍스트02전체"
+  },
+  "exclusions": {
+    "items": [
+      "약100명선착순"
+    ],
+    "reference": "공식상세·포스터01전체시각·대체텍스트02전체"
+  },
+  "support": {
+    "summary": "11/4 13:30~17시 SVCSeoul2/3층(마포양화로136).시장검증스타트업6사사례·NVIDIA피지컬AI/삼일PwC AI전환세션·네트워킹.투자확약/기업지원금아님;참가비미명시.",
+    "reference": "공식상세·포스터01전체시각·대체텍스트02전체"
+  },
+  "period": {
+    "start": "2026-10-28",
+    "end": "2026-11-03",
+    "deadlineTime": "00:00",
+    "timezone": "Asia/Seoul",
+    "reference": "K-Startup 신청방법·첨부대조(충돌은 unresolved 보존)"
+  },
+  "application": {
+    "summary": "https://forms.markettest.kr/r/e5ZLLQ 온라인신청",
+    "reference": "공식상세·포스터01전체시각·대체텍스트02전체",
+    "publicLinkChecks": [
+      {
+        "id": "179652",
+        "url": "https://forms.markettest.kr/r/e5ZLLQ",
+        "checkedAt": "2026-10-31T06:28:09.834509+00:00",
+        "status": 200,
+        "finalUrl": "https://forms.markettest.kr/r/e5ZLLQ",
+        "evidence": "179652-publiccheck-20261031.html",
+        "bytes": 94093
+      }
+    ],
+    "formEvidence": "evidence/179652-form-blocks-20261031.json",
+    "review": "공개7페이지질문메타데이터전체검토·값입력/제출없음",
+    "fields": [
+      "성함·소속·소재지·업종·직함·전화·이메일",
+      "참가유형",
+      "투자기관해당시유형·단계·분야·금액·협력희망",
+      "관심스타트업6개중선택",
+      "참가기대·교류관심분야",
+      "개인정보수집이용/마케팅동의"
+    ]
+  },
+  "requiredDocuments": [
+    {
+      "name": "온라인참가신청",
+      "condition": "온라인필수인적/소속정보·참가유형·관심기업·기대사항·동의,투자기관분기추가문항.파일업로드블록없음",
+      "reference": "상세 제출서류"
+    }
+  ],
+  "businessPlan": {
+    "format": "참관행사모집·별도사업계획서제출요구없음",
+    "sections": [],
+    "reference": "공식상세·포스터01전체시각·대체텍스트02전체"
+  },
+  "evaluation": {
+    "summary": "온라인선착순약100명",
+    "reference": "공식상세·포스터01전체시각·대체텍스트02전체"
+  },
+  "contact": {
+    "name": "070-4285-0712,jji2@alphabrothers.co.kr",
+    "reference": "공식상세·포스터01전체시각·대체텍스트02전체"
+  },
+  "unresolved": [
+    "공개폼7페이지질문은확인했으나동적분기/접수잔여·최종제출작동미검증",
+    "개인정보/마케팅통합동의는거부시참여제한안내·보유기간구체명시미확인",
+    "참가비·신청폼최종마감시각미명시;K-Startup11/3 00:00그대로유지"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179652",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확보 후 근거별 적합성 검토·신청가능확정 아님",
+    "steps": [
+      "회사필드·자격증빙확인",
+      "미확인·충돌해결·최신양식확보",
+      "S12양식·S13회사정보로회사별서류/계획작성"
+    ]
+  },
+  "latestHashEvidence": "evidence/kstartup-179652/attachment-check-2026-11-03.json"
+}

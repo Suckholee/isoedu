@@ -1,0 +1,233 @@
+{
+  "programId": "kstartup-179603",
+  "title": "[2027 Dream Play] LGD 스타트업 육성프로그램 9기 참가기업 모집",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-05T03:10:39.104704+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179603",
+  "reviewScope": "공식상세·PDF01/HWP02공고§1~5대조·HWP03신청/계획전문·HWP04동의전문·주최공개페이지",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1hqFPxkppHD8QpimP-XmK9jeF4hXGuQPUCgKwDBdWVfVTVA",
+      "verifiedAt": "2026-11-05",
+      "status": "downloaded",
+      "sha256": "cdb2403dfbd65e47d9384b47b7539b3e0764593383333f8a7e50c45d42317867",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 308289,
+      "format": "PDF",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 4136,
+      "review": {
+        "at": "2026-11-05T03:10:39.104704+00:00",
+        "scope": "공식상세·PDF01/HWP02공고§1~5대조·HWP03신청/계획전문·HWP04동의전문·주최공개페이지",
+        "method": "text (visual exceptions in reviewScope)"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1OxbP5qI3KLPLuihM9RUD2Ghf35orUr3BiYg9zcqzHS0N5Q",
+      "verifiedAt": "2026-11-05",
+      "status": "downloaded",
+      "sha256": "4210364e710572c9ee8db1fbac14daff4f3eebcd974e447e6268595a9253248a",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 81920,
+      "format": "HWP",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 4494,
+      "review": {
+        "at": "2026-11-05T03:10:39.104704+00:00",
+        "scope": "공식상세·PDF01/HWP02공고§1~5대조·HWP03신청/계획전문·HWP04동의전문·주최공개페이지",
+        "method": "text (visual exceptions in reviewScope)"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1sngFPA1nQSYlTTrJDoHFA9egn3tlCGS3znUVc2AeAM9xLQ",
+      "verifiedAt": "2026-11-05",
+      "status": "downloaded",
+      "sha256": "ea4710a86b0222dd29982daaf56148c1eb35d9abff59af863742fff324171deb",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 76800,
+      "format": "HWP",
+      "file": "attachment-03.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 2095,
+      "review": {
+        "at": "2026-11-05T03:10:39.104704+00:00",
+        "scope": "공식상세·PDF01/HWP02공고§1~5대조·HWP03신청/계획전문·HWP04동의전문·주최공개페이지",
+        "method": "text (visual exceptions in reviewScope)"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v14lsbf80dnyAFqzaWg8yL9JTXfBR4o8TJtrDHoo8OCciYkg",
+      "verifiedAt": "2026-11-05",
+      "status": "downloaded",
+      "sha256": "bbd0e8934c34a102100a62e93839910f316a75a1d83a8a3f19045dba0a63558a",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 60928,
+      "format": "HWP",
+      "file": "attachment-04.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 837,
+      "review": {
+        "at": "2026-11-05T03:10:39.104704+00:00",
+        "scope": "공식상세·PDF01/HWP02공고§1~5대조·HWP03신청/계획전문·HWP04동의전문·주최공개페이지",
+        "method": "text (visual exceptions in reviewScope)"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/v1hqFPxkppHD8QpimP-XmK9jeF4hXGuQPUCgKwDBdWVfVTVA": "cdb2403dfbd65e47d9384b47b7539b3e0764593383333f8a7e50c45d42317867",
+    "https://www.k-startup.go.kr/afile/fileDownload/v1OxbP5qI3KLPLuihM9RUD2Ghf35orUr3BiYg9zcqzHS0N5Q": "4210364e710572c9ee8db1fbac14daff4f3eebcd974e447e6268595a9253248a",
+    "https://www.k-startup.go.kr/afile/fileDownload/v1sngFPA1nQSYlTTrJDoHFA9egn3tlCGS3znUVc2AeAM9xLQ": "ea4710a86b0222dd29982daaf56148c1eb35d9abff59af863742fff324171deb",
+    "https://www.k-startup.go.kr/afile/fileDownload/v14lsbf80dnyAFqzaWg8yL9JTXfBR4o8TJtrDHoo8OCciYkg": "bbd0e8934c34a102100a62e93839910f316a75a1d83a8a3f19045dba0a63558a"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-05T03:10:39.104704+00:00",
+  "eligibility": {
+    "summary": "모집분야혁신기술스타트업·PoC전담1인이상·즉시OI논의가능기술/솔루션·관련기술1개이상.디스플레이3/신사업7최대10사",
+    "companyFields": [
+      "기술/분야적합",
+      "전담1인이상",
+      "채무체납예외증빙",
+      "총괄재직",
+      "2023~25재무·IP/투자",
+      "협업제안"
+    ],
+    "reference": "공식상세·PDF01/HWP02공고§1~5대조·HWP03신청/계획전문·HWP04동의전문·주최공개페이지"
+  },
+  "exclusions": {
+    "items": [
+      "채무불이행(변제/워크아웃/회생인가/재기보증예외)",
+      "세금체납(징수유예/변제예외)",
+      "유흥사행제외업종",
+      "마감일휴업"
+    ],
+    "reference": "공식상세·PDF01/HWP02공고§1~5대조·HWP03신청/계획전문·HWP04동의전문·주최공개페이지"
+  },
+  "support": {
+    "summary": "PoC각최대5000만원·신사업외아이템도출필요시PrePoC1000+PoC4000.가속/고도화·후속협업/투자/TIPS추천기회(확약아님).지재권/시험인증BM디자인·물류통관·홍보·시제품SW·교육·시장조사등증빙지원.인건비/대리성공보수불가·비율자부담미명시.",
+    "reference": "공식상세·PDF01/HWP02공고§1~5대조·HWP03신청/계획전문·HWP04동의전문·주최공개페이지"
+  },
+  "period": {
+    "start": "2026-10-22",
+    "end": "2026-11-13",
+    "deadlineTime": "16:00",
+    "timezone": "Asia/Seoul",
+    "reference": "공식상세·PDF01/HWP02공고§1~5대조·HWP03신청/계획전문·HWP04동의전문·주최공개페이지"
+  },
+  "application": {
+    "summary": "https://www.startup-plus.kr/project/PRJ007657 온라인·모든서류PDF·각파일양식명_기업명(대표자)·가이드/청색삭제·인감날인·마감후수정삭제불가",
+    "reference": "공식상세·PDF01/HWP02공고§1~5대조·HWP03신청/계획전문·HWP04동의전문·주최공개페이지"
+  },
+  "requiredDocuments": [
+    {
+      "name": "신청/사업계획",
+      "condition": "필수지정HWP03→PDF·표지포함5쪽이상·본문13pt이하",
+      "reference": "PDF01p4/HWP03"
+    },
+    {
+      "name": "기업개인정보동의/IR소개",
+      "condition": "필수PDF·동의HWP04·IR자유",
+      "reference": "PDF01p4"
+    },
+    {
+      "name": "총괄책임자재직",
+      "condition": "대표제외해당",
+      "reference": "PDF01p4"
+    },
+    {
+      "name": "사업자등록/법인등기",
+      "condition": "3개월내발급·사업자요건HWP03체크추가",
+      "reference": "PDF01p4/HWP03"
+    },
+    {
+      "name": "2023~25재무상태표",
+      "condition": "홈택스발급본",
+      "reference": "PDF01p4"
+    },
+    {
+      "name": "대면협업제안발표",
+      "condition": "대면평가시별도",
+      "reference": "PDF01p4"
+    }
+  ],
+  "businessPlan": {
+    "format": "지정HWP03계획PDF·별도IR",
+    "limit": "표지포함최소5쪽(최대미명시)·13pt이하",
+    "sections": [
+      {
+        "name": "기업",
+        "items": [
+          "연혁조직·핵심혁신역량·2023~25매출백만원/투자라운드누적/기술IP"
+        ],
+        "limit": "표지포함최소5쪽(최대미명시)·13pt이하"
+      },
+      {
+        "name": "제품서비스",
+        "items": [
+          "보유기술/IP이전협력·경쟁우위"
+        ],
+        "limit": "표지포함최소5쪽(최대미명시)·13pt이하"
+      },
+      {
+        "name": "팀",
+        "items": [
+          "담당직급역량역할"
+        ],
+        "limit": "표지포함최소5쪽(최대미명시)·13pt이하"
+      },
+      {
+        "name": "협업",
+        "items": [
+          "LGD대상제안구체화·첫신청요약제품2줄/제안4줄"
+        ],
+        "limit": "표지포함최소5쪽(최대미명시)·13pt이하"
+      },
+      {
+        "name": "기타",
+        "items": [
+          "사업수행선정/수상특허실적필요시"
+        ],
+        "limit": "표지포함최소5쪽(최대미명시)·13pt이하"
+      }
+    ],
+    "reference": "공식상세·PDF01/HWP02공고§1~5대조·HWP03신청/계획전문·HWP04동의전문·주최공개페이지"
+  },
+  "evaluation": {
+    "summary": "서류/대면12월→12/4최종·27/3킥오프~10월운영/11월데모·평가기준배점미명시",
+    "reference": "공식상세·PDF01/HWP02공고§1~5대조·HWP03신청/계획전문·HWP04동의전문·주최공개페이지"
+  },
+  "contact": {
+    "name": "02-6097-8334,syhong@enslpartners.com·02-2115-2046,keh1026@sba.seoul.kr",
+    "reference": "공식상세·PDF01/HWP02공고§1~5대조·HWP03신청/계획전문·HWP04동의전문·주최공개페이지"
+  },
+  "unresolved": [
+    "서류대면12월중/12/4최종세부일정기관확정필요·배점미명시",
+    "지원비율자부담/VAT/개인기업법인등기대체·실제로그인파일한도미확인",
+    "공고PDF5쪽/HWP중복·양식동의전문읽음·원본모든쪽배치그림시각미검증"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179603",
+    "companyId": null,
+    "permission": "권한회사프로필확보후근거별검토·현재신청가능확정아님",
+    "steps": [
+      "회사필드/증빙확인",
+      "충돌/미확인해결",
+      "S12양식·S13회사정보로서류/계획작성"
+    ]
+  }
+}

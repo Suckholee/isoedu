@@ -1,0 +1,115 @@
+{
+  "programId": "kstartup-179627",
+  "title": "[창업행사] 서울마포 대학연계 AI 청년창업포럼",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-01T02:29:24.757028+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179627",
+  "reviewScope": "상세·첨부01스캔PDF1쪽전체렌더시각·주최공개안내전문대조",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/ne2Ln",
+      "verifiedAt": "2026-11-01",
+      "status": "downloaded",
+      "sha256": "8d1b495521c439f6e04f1d15b2c24aa6a2b76052fa35d1c371b12b8f72b5e24e",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 420774,
+      "format": "PDF",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 0,
+      "review": {
+        "at": "2026-11-01T02:30:10.974581+00:00",
+        "method": "visual",
+        "scope": "스캔PDF1쪽전체렌더시각검토·주최안내전문대조"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/ne2Ln": "8d1b495521c439f6e04f1d15b2c24aa6a2b76052fa35d1c371b12b8f72b5e24e"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-01T02:29:24.757028+00:00",
+  "eligibility": {
+    "summary": "예비및초기만19~39세청년창업가·마포활동우선",
+    "companyFields": [
+      "나이",
+      "창업단계",
+      "마포활동",
+      "행사참석가능일"
+    ],
+    "reference": "상세·첨부01스캔PDF1쪽전체렌더시각·주최공개안내전문대조"
+  },
+  "exclusions": {
+    "items": [
+      "정원초과시마포활동청년우선"
+    ],
+    "reference": "상세·첨부01스캔PDF1쪽전체렌더시각·주최공개안내전문대조"
+  },
+  "support": {
+    "summary": "무료11/7 10~17시 마포청년나루3층. AI데이터비즈니스/콘텐츠·자금법률·IP·토크콘서트·점심네트워킹.현금지원아님.",
+    "reference": "상세·첨부01스캔PDF1쪽전체렌더시각·주최공개안내전문대조"
+  },
+  "period": {
+    "start": "2026-10-27",
+    "end": "2026-11-06",
+    "deadlineTime": "14:00",
+    "timezone": "Asia/Seoul",
+    "reference": "K-Startup 신청방법·첨부대조(충돌은 unresolved 보존)"
+  },
+  "application": {
+    "summary": "https://www.naroo.or.kr/bbs/content.php?co_id=program_view&np_seq=1311 → 신청서작성",
+    "reference": "상세·첨부01스캔PDF1쪽전체렌더시각·주최공개안내전문대조",
+    "publicLinkChecks": [
+      {
+        "id": "179627",
+        "url": "https://www.naroo.or.kr/bbs/content.php?co_id=program_view&np_seq=1311",
+        "checkedAt": "2026-11-01T02:27:57.326184+00:00",
+        "status": 200,
+        "finalUrl": "https://www.naroo.or.kr/bbs/content.php?co_id=program_view&np_seq=1311",
+        "evidence": "179627-publiccheck-20261101.html",
+        "bytes": 29511
+      }
+    ]
+  },
+  "requiredDocuments": [
+    {
+      "name": "온라인참가신청서",
+      "condition": "필수·실제문항미확인",
+      "reference": "상세·주최안내"
+    }
+  ],
+  "businessPlan": {
+    "format": "행사참가·사업계획서제출요구없음",
+    "sections": [],
+    "reference": "상세·첨부01스캔PDF1쪽전체렌더시각·주최공개안내전문대조"
+  },
+  "evaluation": {
+    "summary": "정원초과마포활동청년우선·평가없음·11/6 18시이전개별문자",
+    "reference": "상세·첨부01스캔PDF1쪽전체렌더시각·주최공개안내전문대조"
+  },
+  "contact": {
+    "name": "02-6261-1939",
+    "reference": "상세·첨부01스캔PDF1쪽전체렌더시각·주최공개안내전문대조"
+  },
+  "unresolved": [
+    "실제신청문항·개인정보동의·정원·초기업력상한미확인"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179627",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확보 후 근거별 적합성 검토·신청가능확정 아님",
+    "steps": [
+      "회사필드·자격증빙확인",
+      "미확인·충돌해결·최신양식확보",
+      "S12양식·S13회사정보로회사별서류/계획작성"
+    ]
+  }
+}

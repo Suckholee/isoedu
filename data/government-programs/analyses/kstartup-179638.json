@@ -1,0 +1,128 @@
+{
+  "programId": "kstartup-179638",
+  "title": "2026 서구토탈창업아카데미 참가자 모집",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-05T03:10:39.104704+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179638",
+  "reviewScope": "공식상세·HWPX01본문/표/붙임참가/동의전문·신청2링크실패기록",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1g-sLhGpA-4bnpQ6Ia_XB31DKxJr3wxmbPzKENrI9oRJ8nw",
+      "verifiedAt": "2026-11-05",
+      "status": "downloaded",
+      "sha256": "18904ee5e34b67c3f40fe6ce9c4a72b907bcd66fe54662af701fd903c0ec7094",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 4964710,
+      "format": "HWPX",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 5142,
+      "review": {
+        "at": "2026-11-05T03:10:39.104704+00:00",
+        "scope": "공식상세·HWPX01본문/표/붙임참가/동의전문·신청2링크실패기록",
+        "method": "text (visual exceptions in reviewScope)"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/v1g-sLhGpA-4bnpQ6Ia_XB31DKxJr3wxmbPzKENrI9oRJ8nw": "18904ee5e34b67c3f40fe6ce9c4a72b907bcd66fe54662af701fd903c0ec7094"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-05T03:10:39.104704+00:00",
+  "eligibility": {
+    "summary": "예비및업력3년이내초기기업관계자·20팀팀당최대3명총60명내외",
+    "companyFields": [
+      "창업단계업력",
+      "아이템",
+      "참석2일",
+      "IR유무",
+      "멘토링수요"
+    ],
+    "reference": "공식상세·HWPX01본문/표/붙임참가/동의전문·신청2링크실패기록"
+  },
+  "exclusions": {
+    "items": [
+      "별도제외조건미명시"
+    ],
+    "reference": "공식상세·HWPX01본문/표/붙임참가/동의전문·신청2링크실패기록"
+  },
+  "support": {
+    "summary": "11/24~25대전토요코인/KW컨벤션1박2일·BM계획멘토링IR교육/경진.대상1팀100만원/최우수2각50/우수3각30/장려4각20총10팀370만원안.참가비/숙박비/교통자부담범위미명시.",
+    "reference": "공식상세·HWPX01본문/표/붙임참가/동의전문·신청2링크실패기록"
+  },
+  "period": {
+    "start": "2026-10-27",
+    "end": "2026-11-18",
+    "deadlineTime": "16:00",
+    "timezone": "Asia/Seoul",
+    "reference": "공식상세·HWPX01본문/표/붙임참가/동의전문·신청2링크실패기록"
+  },
+  "application": {
+    "summary": "onlab.cyj@gmail.com 이메일또는온라인 https://forms.gle/9MvM7TScPa1RRobh9 (본문다른구글URL·양쪽401)",
+    "reference": "공식상세·HWPX01본문/표/붙임참가/동의전문·신청2링크실패기록"
+  },
+  "requiredDocuments": [
+    {
+      "name": "참가신청/개인정보동의",
+      "condition": "이메일지정붙임2/3또는온라인",
+      "reference": "HWPX§2/붙임"
+    },
+    {
+      "name": "사업계획요약/IR",
+      "condition": "선정후11/23이메일·미보유공통양식제공예정",
+      "reference": "HWPX§2"
+    }
+  ],
+  "businessPlan": {
+    "format": "선정후사업계획요약/IR·미보유양식추후제공",
+    "limit": "분량미명시",
+    "sections": [
+      {
+        "name": "신청",
+        "items": [
+          "기업팀/대표업종주소·작성자직급연락·IR유무·사업내용·컨설팅애로"
+        ],
+        "limit": "분량미명시"
+      },
+      {
+        "name": "사전계획/IR",
+        "items": [
+          "고객문제해결실행·시장고객경쟁수익·발표요청(교육내용·지정양식대체아님)"
+        ],
+        "limit": "분량미명시"
+      }
+    ],
+    "reference": "공식상세·HWPX01본문/표/붙임참가/동의전문·신청2링크실패기록"
+  },
+  "evaluation": {
+    "summary": "자격아이템참여적합종합선정·개별안내·경진대면팀별8분·세부배점미명시",
+    "reference": "공식상세·HWPX01본문/표/붙임참가/동의전문·신청2링크실패기록"
+  },
+  "contact": {
+    "name": "온랩최윤제,onlab.cyj@gmail.com",
+    "reference": "공식상세·HWPX01본문/표/붙임참가/동의전문·신청2링크실패기록"
+  },
+  "unresolved": [
+    "공식신청링크2종모두HTTP401·필수동적문항/실시간접수미확인·접근제한우회안함",
+    "선정후제공계획/IR공통양식미확보·비용숙박조건/평가배점미명시",
+    "본문11/18금 vs 첨부수요일차이·날짜11/18유지·HWPX내장포스터시각미검토"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179638",
+    "companyId": null,
+    "permission": "권한회사프로필확보후근거별검토·현재신청가능확정아님",
+    "steps": [
+      "회사필드/증빙확인",
+      "충돌/미확인해결",
+      "S12양식·S13회사정보로서류/계획작성"
+    ]
+  }
+}

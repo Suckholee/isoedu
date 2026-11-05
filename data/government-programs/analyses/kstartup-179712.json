@@ -1,0 +1,202 @@
+{
+  "programId": "kstartup-179712",
+  "title": "청년 창업의 꿈, 『성동청년 창업이룸센터』 입주자 모집 공고【10차】",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-05T03:10:39.104704+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179712",
+  "reviewScope": "공식상세·HWPX01공고/평가/신청/계획/동의/별첨전문·PDF02포스터텍스트대조·IMAGE03포스터전체시각·주최공개공지",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v11zsMyR8MFJaIr1bYZG9bJB1tLucxaQYO6k1kOW82B_CxPw",
+      "verifiedAt": "2026-11-05",
+      "status": "downloaded",
+      "sha256": "c09c208ed07665a26c2fb8c20a93fd2c0e2a2b25e088f912f83ca0e72cf454ce",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 932920,
+      "format": "HWPX",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 15175,
+      "review": {
+        "at": "2026-11-05T03:10:39.104704+00:00",
+        "scope": "공식상세·HWPX01공고/평가/신청/계획/동의/별첨전문·PDF02포스터텍스트대조·IMAGE03포스터전체시각·주최공개공지",
+        "method": "text (visual exceptions in reviewScope)"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1igyNC3oXMBm68zd1BdKcSF4JB2ESIYTybpI7jBfCO5Hu6A",
+      "verifiedAt": "2026-11-05",
+      "status": "downloaded",
+      "sha256": "2f564b9dfaf4fb850b012de8357c04e1ca30174c5d36d1ee498af1a612fa6613",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 67898,
+      "format": "PDF",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 1008,
+      "review": {
+        "at": "2026-11-05T03:10:39.104704+00:00",
+        "scope": "공식상세·HWPX01공고/평가/신청/계획/동의/별첨전문·PDF02포스터텍스트대조·IMAGE03포스터전체시각·주최공개공지",
+        "method": "text (visual exceptions in reviewScope)"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1KJtTw-rVXIJzVJtyesdY-ymtkOY_FNB_rdTKgggNh4yHng",
+      "verifiedAt": "2026-11-05",
+      "status": "downloaded",
+      "sha256": "8128e4af30bd0c30571eaeb8039b0be8a903e37064a2699fa7338735c4dde968",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 339131,
+      "format": "IMAGE",
+      "file": "attachment-03.bin",
+      "contentType": "image/jpeg;charset=UTF-8",
+      "review": {
+        "at": "2026-11-05T03:10:39.104704+00:00",
+        "scope": "공식상세·HWPX01공고/평가/신청/계획/동의/별첨전문·PDF02포스터텍스트대조·IMAGE03포스터전체시각·주최공개공지",
+        "method": "visual"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/v11zsMyR8MFJaIr1bYZG9bJB1tLucxaQYO6k1kOW82B_CxPw": "c09c208ed07665a26c2fb8c20a93fd2c0e2a2b25e088f912f83ca0e72cf454ce",
+    "https://www.k-startup.go.kr/afile/fileDownload/v1igyNC3oXMBm68zd1BdKcSF4JB2ESIYTybpI7jBfCO5Hu6A": "2f564b9dfaf4fb850b012de8357c04e1ca30174c5d36d1ee498af1a612fa6613",
+    "https://www.k-startup.go.kr/afile/fileDownload/v1KJtTw-rVXIJzVJtyesdY-ymtkOY_FNB_rdTKgggNh4yHng": "8128e4af30bd0c30571eaeb8039b0be8a903e37064a2699fa7338735c4dde968"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-05T03:10:39.104704+00:00",
+  "eligibility": {
+    "summary": "39세이하성동청년예비/7년이내기업및창업지원유관기관.첨부예비공고일성동주민/계약5개월창업·기업3개월이전(상세반대충돌)",
+    "companyFields": [
+      "대표나이",
+      "주민/사업주소기준일",
+      "창업일·창업/이전기한",
+      "유관기관유형",
+      "공공입주중복",
+      "2024/25재무·매출",
+      "투자정부사업가점",
+      "세금보험"
+    ],
+    "reference": "공식상세·HWPX01공고/평가/신청/계획/동의/별첨전문·PDF02포스터텍스트대조·IMAGE03포스터전체시각·주최공개공지"
+  },
+  "exclusions": {
+    "items": [
+      "체납/채무규제·휴업·유흥사행제외업종",
+      "타공공시설수혜(3개월주소이전가능예외첨부)"
+    ],
+    "reference": "공식상세·HWPX01공고/평가/신청/계획/동의/별첨전문·PDF02포스터텍스트대조·IMAGE03포스터전체시각·주최공개공지"
+  },
+  "support": {
+    "summary": "고정석6·독립4/5/5/6인4실총10.12/1예정·고정최초6개월/독립1년최대3년.인당월20/24만원VAT별도·독립정원전체분납(실인원적어도정원기준)·관리비별도없음·선납6/12월·분납보증보험/이자.멘토링교육/회의실OA냉난방24시·지원금확정없음.",
+    "reference": "공식상세·HWPX01공고/평가/신청/계획/동의/별첨전문·PDF02포스터텍스트대조·IMAGE03포스터전체시각·주최공개공지"
+  },
+  "period": {
+    "start": "2026-11-02",
+    "end": "2026-11-13",
+    "deadlineTime": "23:59",
+    "timezone": "Asia/Seoul",
+    "reference": "공식상세·HWPX01공고/평가/신청/계획/동의/별첨전문·PDF02포스터텍스트대조·IMAGE03포스터전체시각·주최공개공지"
+  },
+  "application": {
+    "summary": "sdstartup7@gmail.com 이메일1개스캔PDF·입주기업모집신청_기업명·첨부11/13 24시도착 vs 상세23:59",
+    "reference": "공식상세·HWPX01공고/평가/신청/계획/동의/별첨전문·PDF02포스터텍스트대조·IMAGE03포스터전체시각·주최공개공지"
+  },
+  "requiredDocuments": [
+    {
+      "name": "신청/계획/동의·신분증·국세지방세",
+      "condition": "공통필수지정붙임2/2-1/3",
+      "reference": "HWPX§2/붙임"
+    },
+    {
+      "name": "재무/근로명부4대보험/사업자등록법인등기",
+      "condition": "기창업해당·외부전문가검토재무2024 vs 첨부후반2025충돌",
+      "reference": "HWPX§2/후반"
+    },
+    {
+      "name": "주민등록초본",
+      "condition": "예비필수",
+      "reference": "HWPX§2"
+    },
+    {
+      "name": "투자/정부지원선정/기타증빙",
+      "condition": "가점/기재사항해당",
+      "reference": "HWPX§2"
+    }
+  ],
+  "businessPlan": {
+    "format": "지정HWPX·목차표변경삭제금지행추가가능·청색삭제검정작성",
+    "limit": "본문10쪽내외·요약2쪽이내·유관기관아이템개요대신협업사업",
+    "sections": [
+      {
+        "name": "일반기업대표",
+        "items": [
+          "신청24년말매출/계획25년매출·자본투자고용현재·대표경력교육IP"
+        ],
+        "limit": "본문10쪽내외·요약2쪽이내·유관기관아이템개요대신협업사업"
+      },
+      {
+        "name": "아이템요약2쪽",
+        "items": [
+          "기능소비자용도·차별성진척·기대지역고용효과·입주계획"
+        ],
+        "limit": "본문10쪽내외·요약2쪽이내·유관기관아이템개요대신협업사업"
+      },
+      {
+        "name": "개발목적/BM사업화·시장실적경쟁차별판매",
+        "items": [
+          "개발목적/BM사업화·시장실적경쟁차별판매"
+        ],
+        "limit": "본문10쪽내외·요약2쪽이내·유관기관아이템개요대신협업사업"
+      },
+      {
+        "name": "자금",
+        "items": [
+          "엔젤VC크라우드정부R&D정책자금조달"
+        ],
+        "limit": "본문10쪽내외·요약2쪽이내·유관기관아이템개요대신협업사업"
+      },
+      {
+        "name": "인력",
+        "items": [
+          "대표제외현재/추가고용역량채용계획"
+        ],
+        "limit": "본문10쪽내외·요약2쪽이내·유관기관아이템개요대신협업사업"
+      }
+    ],
+    "reference": "공식상세·HWPX01공고/평가/신청/계획/동의/별첨전문·PDF02포스터텍스트대조·IMAGE03포스터전체시각·주최공개공지"
+  },
+  "evaluation": {
+    "summary": "11/16~17서류→11/18중간→11/23대표5분+질의5(대리위임)→11/26결과.역량20/기술30/시장30/입주20·최근3년투자/정부과제건당1최대5.유관기관대표20/사업30/협업30/적정20·점수순좌석선택·동점투자정부→수상→성장.선정14일내계약입주",
+    "reference": "공식상세·HWPX01공고/평가/신청/계획/동의/별첨전문·PDF02포스터텍스트대조·IMAGE03포스터전체시각·주최공개공지"
+  },
+  "contact": {
+    "name": "02-2291-0501,sdstartup7@gmail.com",
+    "reference": "공식상세·HWPX01공고/평가/신청/계획/동의/별첨전문·PDF02포스터텍스트대조·IMAGE03포스터전체시각·주최공개공지"
+  },
+  "unresolved": [
+    "창업/이전기한충돌:상세예비3/기업5개월 vs 첨부모집예비5/기업3 vs 유의입주후일괄5개월·기관최신확인필요",
+    "재무기준2024공통목록/신청매출24 vs 계획매출25/후반재무25 혼재·최신양식기관확인",
+    "포스터PDF02자격기준일2026.5.8잔존 vs 공고11/2·방문접수허용범위및23:59/24시차이확인",
+    "평면/시설HWPX내장시각미검토·후반동의고유식별번호필요범위미확정·확인전플랫폼추가수집안함"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179712",
+    "companyId": null,
+    "permission": "권한회사프로필확보후근거별검토·현재신청가능확정아님",
+    "steps": [
+      "회사필드/증빙확인",
+      "충돌/미확인해결",
+      "S12양식·S13회사정보로서류/계획작성"
+    ]
+  }
+}

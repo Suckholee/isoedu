@@ -1,0 +1,106 @@
+{
+  "programId": "kstartup-179680",
+  "title": "&lt;2026년 AI 활용 온라인 플랫폼 제작 교육&gt; 참여자 모집",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-05T03:10:39.104704+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179680",
+  "reviewScope": "공식상세·PDF01스캔1쪽전체시각·공개신청폼정적문항전문",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1a_4MLL1cCb5e_Q1aH9KNrtf8cIs65nsrOU6jkWitF6IF5w",
+      "verifiedAt": "2026-11-05",
+      "status": "downloaded",
+      "sha256": "66633c7db09ac231126aef6b43a3a75d6fa3d6f76ed2cdbcd0e01db0c864f43a",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 2208681,
+      "format": "PDF",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 0,
+      "review": {
+        "at": "2026-11-05T03:10:39.104704+00:00",
+        "scope": "공식상세·PDF01스캔1쪽전체시각·공개신청폼정적문항전문",
+        "method": "visual"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/v1a_4MLL1cCb5e_Q1aH9KNrtf8cIs65nsrOU6jkWitF6IF5w": "66633c7db09ac231126aef6b43a3a75d6fa3d6f76ed2cdbcd0e01db0c864f43a"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-05T03:10:39.104704+00:00",
+  "eligibility": {
+    "summary": "AI웹플랫폼제작희망예비/창업자·관심학생일반인",
+    "companyFields": [
+      "회차선택",
+      "노트북/구글AI계정",
+      "참석날짜",
+      "이메일수료증"
+    ],
+    "reference": "공식상세·PDF01스캔1쪽전체시각·공개신청폼정적문항전문"
+  },
+  "exclusions": {
+    "items": [
+      "별도제외없음·회차개별가능/전체권장"
+    ],
+    "reference": "공식상세·PDF01스캔1쪽전체시각·공개신청폼정적문항전문"
+  },
+  "support": {
+    "summary": "무료충북대S1-7동2층대형실·11/17 10~13기초/14~17심화1·11/18 10~13심화2.기획/프론트/디자인→구글폼DB/푸터→SNS호스팅도메인반응형실습.노트북구글및AI계정준비·현금지원없음.",
+    "reference": "공식상세·PDF01스캔1쪽전체시각·공개신청폼정적문항전문"
+  },
+  "period": {
+    "start": "2026-10-30",
+    "end": "2026-11-18",
+    "deadlineTime": "10:00",
+    "timezone": "Asia/Seoul",
+    "reference": "공식상세·PDF01스캔1쪽전체시각·공개신청폼정적문항전문"
+  },
+  "application": {
+    "summary": "https://forms.gle/UbLPVojyhPL9fTx28 공개폼·제출완료시참가확정안내",
+    "reference": "공식상세·PDF01스캔1쪽전체시각·공개신청폼정적문항전문"
+  },
+  "requiredDocuments": [
+    {
+      "name": "참가폼",
+      "condition": "필수성명소속(예비/팀가능)전화메일·희망회차/일정/준비확인·개인정보예아니오",
+      "reference": "공개폼"
+    }
+  ],
+  "businessPlan": {
+    "format": "교육참가·계획서요구없음",
+    "limit": "제품아이템사진있으면지참",
+    "sections": [],
+    "reference": "공식상세·PDF01스캔1쪽전체시각·공개신청폼정적문항전문"
+  },
+  "evaluation": {
+    "summary": "별도심사없음·제출완료확정·메일수료증예정",
+    "reference": "공식상세·PDF01스캔1쪽전체시각·공개신청폼정적문항전문"
+  },
+  "contact": {
+    "name": "043-249-1163",
+    "reference": "공식상세·PDF01스캔1쪽전체시각·공개신청폼정적문항전문"
+  },
+  "unresolved": [
+    "신청전체마감11/18 10시가1/2회차11/17이후·회차별마감/잔여현황미명시·기관확인필요",
+    "개인정보동의고지이미지/보유기간텍스트미확인·실제제출/동적필수검증미수행"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179680",
+    "companyId": null,
+    "permission": "권한회사프로필확보후근거별검토·현재신청가능확정아님",
+    "steps": [
+      "회사필드/증빙확인",
+      "충돌/미확인해결",
+      "S12양식·S13회사정보로서류/계획작성"
+    ]
+  }
+}

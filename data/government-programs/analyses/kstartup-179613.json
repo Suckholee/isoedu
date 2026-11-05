@@ -1,0 +1,187 @@
+{
+  "programId": "kstartup-179613",
+  "title": "인천중장년기술창업센터 4차 입주기업 모집",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-01T02:29:24.757028+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179613",
+  "reviewScope": "공식상세·첨부01신청서/PSST계획/동의서전문·첨부02시설안내본문83자/내장사진4개시각검토",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/5l2Ln",
+      "verifiedAt": "2026-11-01",
+      "status": "downloaded",
+      "sha256": "64d19500f5ac9e474ca45c63422d4c25af0b0651ba0ac8b62f0508d1a90e2505",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 98816,
+      "format": "HWP",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 6884,
+      "review": {
+        "at": "2026-11-01T02:29:24.757028+00:00",
+        "method": "text",
+        "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/6l2Ln",
+      "verifiedAt": "2026-11-01",
+      "status": "downloaded",
+      "sha256": "55917257f1d68fec309ce785a17e26bab81a42004e00d0b61b715e4d49f7eb3f",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 19629568,
+      "format": "HWP",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 83,
+      "review": {
+        "at": "2026-11-01T02:30:10.974581+00:00",
+        "method": "text+visual",
+        "scope": "본문83자·내장시설사진4개모두시각검토"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/5l2Ln": "64d19500f5ac9e474ca45c63422d4c25af0b0651ba0ac8b62f0508d1a90e2505",
+    "https://www.k-startup.go.kr/afile/fileDownload/6l2Ln": "55917257f1d68fec309ce785a17e26bab81a42004e00d0b61b715e4d49f7eb3f"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-01T02:29:24.757028+00:00",
+  "eligibility": {
+    "summary": "만40세이상예비창업자또는창업3년이하중장년사업자·벤처/기술/지식서비스.제조/지식서비스대상",
+    "companyFields": [
+      "생년월일",
+      "개업일",
+      "업종",
+      "주소이전가능일",
+      "타기관입주이력",
+      "매출수출고용투자",
+      "자격가점증빙"
+    ],
+    "reference": "공식상세·첨부01신청서/PSST계획/동의서전문·첨부02시설안내본문83자/내장사진4개시각검토"
+  },
+  "exclusions": {
+    "items": [
+      "금융보험·부동산·숙박음식등제외(공고표현)"
+    ],
+    "reference": "공식상세·첨부01신청서/PSST계획/동의서전문·첨부02시설안내본문83자/내장사진4개시각검토"
+  },
+  "support": {
+    "summary": "3개사내외·기업당4.9㎡/전체299㎡,최대2년·2026년11월부터.사무공간무료·창업교육정보·우수참여기업지재권/시제품/ISO비용지원(한도·선정별도미명시).현금지원확정아님.인천남동대로215번길30 7층.",
+    "reference": "공식상세·첨부01신청서/PSST계획/동의서전문·첨부02시설안내본문83자/내장사진4개시각검토"
+  },
+  "period": {
+    "start": "2026-10-26",
+    "end": "2026-11-06",
+    "deadlineTime": "15:00",
+    "timezone": "Asia/Seoul",
+    "reference": "K-Startup 신청방법·첨부대조(충돌은 unresolved 보존)"
+  },
+  "application": {
+    "summary": "senior7802@inva.or.kr 이메일신청→서류→사업계획발표",
+    "reference": "공식상세·첨부01신청서/PSST계획/동의서전문·첨부02시설안내본문83자/내장사진4개시각검토",
+    "publicLinkChecks": []
+  },
+  "requiredDocuments": [
+    {
+      "name": "입주신청·사업계획·개인정보동의",
+      "condition": "필수서식1~3",
+      "reference": "첨부01"
+    },
+    {
+      "name": "대표자이력서/경력기술서",
+      "condition": "필수자유양식",
+      "reference": "상세·첨부01"
+    },
+    {
+      "name": "발표자료PPT",
+      "condition": "첨부신청서제출목록요구",
+      "reference": "첨부01서식1"
+    },
+    {
+      "name": "신분증",
+      "condition": "첨부신청서제출목록요구",
+      "reference": "첨부01서식1"
+    },
+    {
+      "name": "사업자등록/법인등기·자격면허·가점증빙",
+      "condition": "해당시",
+      "reference": "상세·첨부01"
+    }
+  ],
+  "businessPlan": {
+    "format": "HWP서식2·안내페이지삭제·이미지도표출처표시",
+    "sections": [
+      {
+        "name": "요약",
+        "items": [
+          "아이템범주소개시장차별화산출물이미지"
+        ],
+        "limit": "분량상한미명시"
+      },
+      {
+        "name": "문제인식",
+        "items": [
+          "동기경과·목적·시장분석"
+        ],
+        "limit": "분량상한미명시"
+      },
+      {
+        "name": "실현가능성",
+        "items": [
+          "개발방안/준비단계·기술보호·차별화"
+        ],
+        "limit": "분량상한미명시"
+      },
+      {
+        "name": "성장전략",
+        "items": [
+          "BM·시장진입·전체/협약기간로드맵"
+        ],
+        "limit": "분량상한미명시"
+      },
+      {
+        "name": "팀",
+        "items": [
+          "대표및팀역량·장비인력계획"
+        ],
+        "limit": "분량상한미명시"
+      }
+    ],
+    "reference": "공식상세·첨부01신청서/PSST계획/동의서전문·첨부02시설안내본문83자/내장사진4개시각검토"
+  },
+  "evaluation": {
+    "summary": "이메일신청후서류→발표,창업의지/자질/수행역량/사업화/BM경쟁력/성과.배점미명시.",
+    "reference": "공식상세·첨부01신청서/PSST계획/동의서전문·첨부02시설안내본문83자/내장사진4개시각검토"
+  },
+  "contact": {
+    "name": "인천중장년기술창업센터032-726-3883",
+    "reference": "공식상세·첨부01신청서/PSST계획/동의서전문·첨부02시설안내본문83자/내장사진4개시각검토"
+  },
+  "unresolved": [
+    "센터지정기한까지사업자등록/주소이전필수이나구체기한미명시",
+    "공고00명표기와3개사내외병기·정원최종확인필요",
+    "동의서제3자제공기관열거와사업외제3자미제공문구적용범위확인필요(5년보유)",
+    "HWP신청서전문검토·안내HWP내4개시설사진시각확인;원본양식전체배치검증미완료"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179613",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확보 후 근거별 적합성 검토·신청가능확정 아님",
+    "steps": [
+      "회사필드·자격증빙확인",
+      "미확인·충돌해결·최신양식확보",
+      "S12양식·S13회사정보로회사별서류/계획작성"
+    ]
+  }
+}

@@ -1,11 +1,10 @@
 {
   "programId": "kstartup-179564",
   "title": "TIPS · LIPS를 준비하는 스타트업을 위한 IR 전략 - 제10차 DDM 벤처스타트업 아카데미",
-  "reviewStatus": "complete",
-  "status": "첨부·신청양식 분석 완료",
+  "reviewStatus": "partial",
+  "status": "원문 변경 감지·재확인 필요",
   "analyzedAt": "2026-10-22T00:35:53.136226+00:00",
   "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179564",
-  "sourceFingerprint": "061d3919bbdb55c87d5d9ba0f0dbe38cd70f7e22de1cd66270429a79eb932885",
   "evidenceDirectory": "evidence/kstartup-179564",
   "reviewScope": "상세·포스터JPG전체시각·TXT전문대조;공개신청폼전체질문메타데이터확인",
   "attachments": [
@@ -39,7 +38,9 @@
     "https://www.k-startup.go.kr/afile/fileDownload/ct2Ln": "fa39f82906e5e7b2390f6f64b32336a706a37d438ffd175a4f939b1201ea2a74"
   },
   "lastAttachmentHashCheckedAt": "2026-10-29T01:44:03.373489+00:00",
-  "unresolved": [],
+  "unresolved": [
+    "상세 텍스트/첨부주소 fingerprint가 기존 완료 근거와 다름. 변경내용 및 첨부 콘텐츠를 다시 확인하기 전 완료로 표시하지 않음. 실제정정 여부 미확정."
+  ],
   "eligibility": {
     "summary": "TIPS/LIPS준비또는관심예비창업자·스타트업·소상공인및IR관심누구나",
     "companyFields": [
@@ -198,5 +199,7 @@
       }
     ],
     "result": "동일URL첨부이전바이트동일,기존분석유지"
-  }
+  },
+  "previousCompletedFingerprint": "061d3919bbdb55c87d5d9ba0f0dbe38cd70f7e22de1cd66270429a79eb932885",
+  "sourceChangeDetectedAt": "2026-10-30T01:44:14.301057+00:00"
 }

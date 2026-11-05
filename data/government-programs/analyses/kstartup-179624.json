@@ -38,10 +38,10 @@
     "https://www.k-startup.go.kr/afile/fileDownload/4X2Ln": "18c8e18e3681570a91a7e944b0ff3e20e0ead6ec4bbadae15a2aa36b29d11b48",
     "https://www.k-startup.go.kr/afile/fileDownload/A22Ln": "b4500aa360d423d524111e262fe7417999441aff81e298c1ab079a66ee391f51"
   },
-  "lastAttachmentHashCheckedAt": "2026-10-29T01:43:50.215678+00:00",
+  "lastAttachmentHashCheckedAt": "2026-11-01T02:30:10.974581+00:00",
   "unresolved": [
-    "최종신청폼문항·업로드파일제한·세부수요과제미확인",
-    "신청단축URL HTTP308: 최종폼 미확인"
+    "동적수요기업목록/기업별협업제안필드·최대선택수·IR PDF용량제한미확인",
+    "개인정보동의보유기간정적본문빈값·동적값확인필요,실제제출미검증"
   ],
   "eligibility": {
     "summary": "수요기업협업희망스타트업36사·분야AI데이터로봇제조에너지반도체등",
@@ -70,12 +70,32 @@
     "timezone": "Asia/Seoul",
     "reference": "상세·포스터"
   },
-  "application": "https://m.site.naver.com/2jwIV",
+  "application": {
+    "url": "https://m.site.naver.com/2jwIV",
+    "reviewedAt": "2026-11-01T02:30:52.604608+00:00",
+    "evidence": "evidence/179624-publiccheck-20261101.txt",
+    "notes": "공개신청폼정적문항확인·입력/제출없음",
+    "fields": [
+      "신청경로·기업대표설립일·인원·주소·담당연락처/이메일",
+      "아이템소개·기술복수선택·제품단계",
+      "2025/2026현재매출·투자단계·2026.10누적투자",
+      "수요기업지망및협업제안(동적세부미확인)",
+      "PoC경험·있으면내용",
+      "최신IR Deck PDF",
+      "참석자1~2명성명/직책/연락처/이메일",
+      "개인정보수집이용·제3자제공필수동의"
+    ]
+  },
   "requiredDocuments": [
     {
       "name": "협업계획·최신IR",
       "condition": "필수",
       "reference": "상세"
+    },
+    {
+      "name": "2026년기준최신IR Deck",
+      "condition": "PDF필수·용량제한미확인",
+      "reference": "공개신청폼 IR업로드"
     }
   ],
   "businessPlan": {
@@ -112,5 +132,6 @@
       "회사 사실정보로 서류·사업계획서 작성 및 검토"
     ]
   },
-  "externalCheckEvidence": "evidence/external-check-2026-10-29.json"
+  "externalCheckEvidence": "evidence/external-check-2026-10-29.json",
+  "lastHashCheckEvidence": "evidence/kstartup-179624/attachment-check-2026-11-01.json"
 }

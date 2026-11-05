@@ -57,7 +57,7 @@
     "https://www.k-startup.go.kr/afile/fileDownload/jQ2Ln": "de0012e60f5c825ca5aa776ee6d76906e593a4472a637d7bd6845e880c7bf015",
     "https://www.k-startup.go.kr/afile/fileDownload/VQ2Ln": "d79bbc4726af60c243be346e66f875e419af0dcf8934880451f06a800f56a70c"
   },
-  "lastAttachmentHashCheckedAt": "2026-10-29T01:43:50.215678+00:00",
+  "lastAttachmentHashCheckedAt": "2026-10-30T01:43:07.316288+00:00",
   "unresolved": [
     "상세서류11/4 vs 공고11/5,공고입주시기10월 vs 11월중순",
     "양식9월·1인석만표기 vs 2인석모집,동의서평가위원참여문구혼입",
@@ -156,5 +156,6 @@
       "회사 사실정보로 서류·사업계획서 작성 및 검토"
     ]
   },
-  "externalCheckEvidence": "evidence/external-check-2026-10-29.json"
+  "externalCheckEvidence": "evidence/external-check-2026-10-29.json",
+  "lastHashCheckEvidence": "evidence/kstartup-179607/attachment-check-2026-10-30.json"
 }

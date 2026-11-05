@@ -1,0 +1,283 @@
+{
+  "programId": "kstartup-179677",
+  "title": "2026년 대전 테스트베드 연계사업 공모",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-03T00:03:26.113645+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179677",
+  "reviewScope": "공식상세·첨부01개요/02평가/03참여신청요약상세계획/04집행기준/06공고전문·05내장포스터시각",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/BZ2Ln",
+      "verifiedAt": "2026-11-03",
+      "status": "downloaded",
+      "sha256": "0abb6bc90f4a4b623d5303b9c716fc2748ae851ba4000fc91c329b0f0c8a86c6",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 137728,
+      "format": "HWP",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 725,
+      "review": {
+        "at": "2026-11-03T00:03:26.113645+00:00",
+        "method": "text",
+        "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/mS2Ln",
+      "verifiedAt": "2026-11-03",
+      "status": "downloaded",
+      "sha256": "96db8516427caaa3427d125d772d2f9d4b9487186a9f7bbfe4e6ca80c0a8a5d2",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 60928,
+      "format": "HWP",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 885,
+      "review": {
+        "at": "2026-11-03T00:03:26.113645+00:00",
+        "method": "text",
+        "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/nS2Ln",
+      "verifiedAt": "2026-11-03",
+      "status": "downloaded",
+      "sha256": "acaf32bc10fb4be395479903a16e4dd1d6b8aa92b6373d008d6b836f8a5bd29e",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 60928,
+      "format": "HWP",
+      "file": "attachment-03.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 4256,
+      "review": {
+        "at": "2026-11-03T00:03:26.113645+00:00",
+        "method": "text",
+        "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/LS2Ln",
+      "verifiedAt": "2026-11-03",
+      "status": "downloaded",
+      "sha256": "c7f1bd548442e8d1b0023b86e7e42d075c323acbae9ef9c20c920765ddeadbec",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 75264,
+      "format": "HWP",
+      "file": "attachment-04.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 2422,
+      "review": {
+        "at": "2026-11-03T00:03:26.113645+00:00",
+        "method": "text",
+        "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/AS2Ln",
+      "verifiedAt": "2026-11-03",
+      "status": "downloaded",
+      "sha256": "ad1cdf94c756cc5293ef99bcfdcede7f935401500032eeabfa65a2cae565fbe8",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 821248,
+      "format": "HWP",
+      "file": "attachment-05.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 29,
+      "review": {
+        "at": "2026-11-03T00:04:18.437489+00:00",
+        "method": "embedded-image-visual",
+        "scope": "HWP BinData PNG추출·포스터전체시각검토",
+        "evidence": "evidence/kstartup-179677/poster-image-1.bin"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/oS2Ln",
+      "verifiedAt": "2026-11-03",
+      "status": "downloaded",
+      "sha256": "c77903e4c4912218363ad198ad94de8f86fe03a53fafca85b3e5e9cb24774855",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 137728,
+      "format": "HWP",
+      "file": "attachment-06.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 1845,
+      "review": {
+        "at": "2026-11-03T00:03:26.113645+00:00",
+        "method": "text",
+        "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/BZ2Ln": "0abb6bc90f4a4b623d5303b9c716fc2748ae851ba4000fc91c329b0f0c8a86c6",
+    "https://www.k-startup.go.kr/afile/fileDownload/mS2Ln": "96db8516427caaa3427d125d772d2f9d4b9487186a9f7bbfe4e6ca80c0a8a5d2",
+    "https://www.k-startup.go.kr/afile/fileDownload/nS2Ln": "acaf32bc10fb4be395479903a16e4dd1d6b8aa92b6373d008d6b836f8a5bd29e",
+    "https://www.k-startup.go.kr/afile/fileDownload/LS2Ln": "c7f1bd548442e8d1b0023b86e7e42d075c323acbae9ef9c20c920765ddeadbec",
+    "https://www.k-startup.go.kr/afile/fileDownload/AS2Ln": "ad1cdf94c756cc5293ef99bcfdcede7f935401500032eeabfa65a2cae565fbe8",
+    "https://www.k-startup.go.kr/afile/fileDownload/oS2Ln": "c77903e4c4912218363ad198ad94de8f86fe03a53fafca85b3e5e9cb24774855"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-03T00:03:26.113645+00:00",
+  "eligibility": {
+    "summary": "현재국가K테스트베드기술성능확인진행중+대전소재중소벤처기업5개사·창업도시창업기업Pool등록기업(붙임1)",
+    "companyFields": [
+      "대전소재증빙",
+      "현재K테스트베드성능확인협약/진행",
+      "Pool등록",
+      "실증제품TRL",
+      "재료/외주/인증예산증빙",
+      "관련업종외주경력/특수관계"
+    ],
+    "reference": "공식상세·첨부01개요/02평가/03참여신청요약상세계획/04집행기준/06공고전문·05내장포스터시각"
+  },
+  "exclusions": {
+    "items": [
+      "K테스트베드기술성능확인미진행·비대전제외",
+      "평균60미만정원무관탈락",
+      "재하청/프리랜서/중개/동일사업기업·대표현전직기업외주집행불가",
+      "기계/인건비/무형자산/관세/VAT집행불가"
+    ],
+    "reference": "공식상세·첨부01개요/02평가/03참여신청요약상세계획/04집행기준/06공고전문·05내장포스터시각"
+  },
+  "support": {
+    "summary": "최대5개사각2000만원실증비·2026.3월이후재료/외주/인증3비목소급가능·증빙적정시지급.인프라→현장성능확인서발급예정→요청시교육컨설팅판로.구매의무/투자보장없음.고정지원비율/자부담미명시·한도초과/부적격비목/VAT별도부담검토.",
+    "reference": "공식상세·첨부01개요/02평가/03참여신청요약상세계획/04집행기준/06공고전문·05내장포스터시각"
+  },
+  "period": {
+    "start": "2026-10-28",
+    "end": "2026-11-11",
+    "deadlineTime": "18:00",
+    "timezone": "Asia/Seoul",
+    "reference": "K-Startup 신청방법·첨부대조(충돌은 unresolved 보존)"
+  },
+  "application": {
+    "summary": "https://www.ktestbed.net →사업지원공모→공모신청·회원로그인필수·제출확정후수정불가",
+    "reference": "공식상세·첨부01개요/02평가/03참여신청요약상세계획/04집행기준/06공고전문·05내장포스터시각"
+  },
+  "requiredDocuments": [
+    {
+      "name": "참여신청서/참여제안서",
+      "condition": "각1필수지정붙임3·요약2쪽/본문10쪽",
+      "reference": "공고§2/붙임3"
+    },
+    {
+      "name": "재료비증빙",
+      "condition": "정산시세금계산서또는카드/견적/검수사진/거래처등록통장/재료활용계획",
+      "reference": "붙임4§1~2"
+    },
+    {
+      "name": "외주증빙",
+      "condition": "정산시지출결의/세금계산서/계약과업/결과검수사진/거래처등록통장·선급보증필요시",
+      "reference": "붙임4§2"
+    },
+    {
+      "name": "시험인증증빙",
+      "condition": "정산시세금계산서또는카드/거래처등록통장/계약/시험인증서협약기간내발급",
+      "reference": "붙임4§2"
+    },
+    {
+      "name": "외주사전심의",
+      "condition": "VAT포함2000만원이상·승인사업계획에기재/사전심의필수",
+      "reference": "붙임4§2"
+    }
+  ],
+  "businessPlan": {
+    "format": "붙임3HWP신청·요약·집행계획·상세제안",
+    "sections": [
+      {
+        "name": "신청현황",
+        "items": [
+          "기술제품·실증인프라/기관사업장/협약기간/설치비·참여기업1/2·담당자"
+        ],
+        "limit": "요약2쪽이내·본문10쪽이내(11쪽부터삭제)·집행표원단위/소요표천원구분"
+      },
+      {
+        "name": "요약",
+        "items": [
+          "우수성/사업성/실증적합/지역연계/예산·사진설계·별도실증비집행계획"
+        ],
+        "limit": "요약2쪽이내·본문10쪽이내(11쪽부터삭제)·집행표원단위/소요표천원구분"
+      },
+      {
+        "name": "기술현황",
+        "items": [
+          "개요/배경필요/목표내용원리·TRL증빙·정량차별경쟁·실현기대효과"
+        ],
+        "limit": "요약2쪽이내·본문10쪽이내(11쪽부터삭제)·집행표원단위/소요표천원구분"
+      },
+      {
+        "name": "사업성",
+        "items": [
+          "시장규모·수요·파급·BM/판로"
+        ],
+        "limit": "요약2쪽이내·본문10쪽이내(11쪽부터삭제)·집행표원단위/소요표천원구분"
+      },
+      {
+        "name": "실증계획",
+        "items": [
+          "목적세부일정조직분장·성능조건항목방법/분석주기기관·필요부지전기/폐기처리"
+        ],
+        "limit": "요약2쪽이내·본문10쪽이내(11쪽부터삭제)·집행표원단위/소요표천원구분"
+      },
+      {
+        "name": "지역연계/예산",
+        "items": [
+          "지역기반성장·매출고용효과·실증사업비산출"
+        ],
+        "limit": "요약2쪽이내·본문10쪽이내(11쪽부터삭제)·집행표원단위/소요표천원구분"
+      },
+      {
+        "name": "공동참여업무분장/기타참고",
+        "items": [
+          "2개사이상시·참고증빙"
+        ],
+        "limit": "요약2쪽이내·본문10쪽이내(11쪽부터삭제)·집행표원단위/소요표천원구분"
+      }
+    ],
+    "reference": "공식상세·첨부01개요/02평가/03참여신청요약상세계획/04집행기준/06공고전문·05내장포스터시각"
+  },
+  "evaluation": {
+    "summary": "11월3~4주평가8분발표+12분질의·참석불가서면대체.기술우수30/사업20/실증20/지역20/예산10·산술평균60이상고득점",
+    "reference": "공식상세·첨부01개요/02평가/03참여신청요약상세계획/04집행기준/06공고전문·05내장포스터시각"
+  },
+  "contact": {
+    "name": "제도김경완042-629-2531·운영정현민2532·시스템조민경2533(포스터운영2536추가)",
+    "reference": "공식상세·첨부01개요/02평가/03참여신청요약상세계획/04집행기준/06공고전문·05내장포스터시각"
+  },
+  "unresolved": [
+    "공식HTTPS www.ktestbed.net 인증서호스트불일치·TLS우회안함·실제로그인신청/파일한도/등록증빙미확인",
+    "붙임3신청유형대중견/개인도포함하나공고대전중소벤처/Pool조건별도확인·자격자동확정안함",
+    "외주집행가능여부/잔여예산·지원비율·일반VAT자부담정산최종협약확인필요",
+    "HWP6개본문·표·양식전문검토·붙임5내장포스터전체시각·나머지전쪽배치시각미검증"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179677",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확보 후 근거별 적합성 검토·신청가능확정 아님",
+    "steps": [
+      "회사필드·자격증빙확인",
+      "미확인·충돌해결·최신양식확보",
+      "S12양식·S13회사정보로회사별서류/계획작성"
+    ]
+  }
+}

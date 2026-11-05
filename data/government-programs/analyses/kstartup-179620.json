@@ -1,0 +1,190 @@
+{
+  "programId": "kstartup-179620",
+  "title": "[제주창조경제혁신센터] 글로벌(중국) 기업 수요기반 비즈캠프형 오픈이노베이션「2026 오픈 아일랜드 부트캠프」참가기업 모집(~11/5)",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-10-31T06:29:54.881062+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179620",
+  "reviewScope": "공식상세·첨부01포스터시각·첨부02긴포스터개요시각·첨부03대체텍스트전체/협업과제·워케이션내용",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/202Ln",
+      "verifiedAt": "2026-10-31",
+      "status": "downloaded",
+      "sha256": "5385ca2195b075993fe0bfacfd6f4cad5b96db1d95cd3b2018de087b1360eea3",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 7985931,
+      "format": "IMAGE",
+      "file": "attachment-01.bin",
+      "contentType": "image/jpeg;charset=UTF-8",
+      "review": {
+        "at": "2026-10-31T06:29:54.881062+00:00",
+        "method": "visual",
+        "scope": "전체 포스터 시각 검토·동반 텍스트 대조; 긴 이미지 작은글씨 전부검증아님"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/e02Ln",
+      "verifiedAt": "2026-10-31",
+      "status": "downloaded",
+      "sha256": "3b00366657e78cb89ad0633e77c2d5db70dc61b040ee9fad2215b06a5c1d11d5",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 7699328,
+      "format": "IMAGE",
+      "file": "attachment-02.bin",
+      "contentType": "image/jpeg;charset=UTF-8",
+      "review": {
+        "at": "2026-10-31T06:29:54.881062+00:00",
+        "method": "visual",
+        "scope": "전체 포스터 시각 검토·동반 텍스트 대조; 긴 이미지 작은글씨 전부검증아님"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/f02Ln",
+      "verifiedAt": "2026-10-31",
+      "status": "downloaded",
+      "sha256": "0956e402b05213e1d352d3a1fa2727d7a4804ef33f162fb5108cbfbd692d6eb2",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 3617,
+      "format": "TEXT",
+      "file": "attachment-03.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "characters": 1773,
+      "extraction": "text",
+      "review": {
+        "at": "2026-10-31T06:29:54.881062+00:00",
+        "method": "text",
+        "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/202Ln": "5385ca2195b075993fe0bfacfd6f4cad5b96db1d95cd3b2018de087b1360eea3",
+    "https://www.k-startup.go.kr/afile/fileDownload/e02Ln": "3b00366657e78cb89ad0633e77c2d5db70dc61b040ee9fad2215b06a5c1d11d5",
+    "https://www.k-startup.go.kr/afile/fileDownload/f02Ln": "0956e402b05213e1d352d3a1fa2727d7a4804ef33f162fb5108cbfbd692d6eb2"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-05T03:11:46.629585+00:00",
+  "eligibility": {
+    "summary": "글로벌물류기업기술협업희망7년이내국내물류·자동화스타트업약4사",
+    "companyFields": [
+      "개업일",
+      "물류자동화기술/솔루션",
+      "풀필먼트자동화/설비운영/라스트마일협업계획",
+      "체납",
+      "국영중소개/IR",
+      "제주참석가능일"
+    ],
+    "reference": "공식상세·첨부01포스터시각·첨부02긴포스터개요시각·첨부03대체텍스트전체/협업과제·워케이션내용"
+  },
+  "exclusions": {
+    "items": [
+      "자격미부합",
+      "허위/필수서류누락",
+      "국세지방세체납(해당시)",
+      "센터부적합판정"
+    ],
+    "reference": "공식상세·첨부01포스터시각·첨부02긴포스터개요시각·첨부03대체텍스트전체/협업과제·워케이션내용"
+  },
+  "support": {
+    "summary": "11/25~26아일랜드워크랩함덕. SFExpress심화밋업·피칭·중국시장세션·워케이션.숙박1박2일/공항함덕이동·식사네트워크/체험지원;상세항공지원표기와한도/자부담범위확인필요.현금지원액/비율미명시·PoC검토이지계약확약아님.",
+    "reference": "공식상세·첨부01포스터시각·첨부02긴포스터개요시각·첨부03대체텍스트전체/협업과제·워케이션내용"
+  },
+  "period": {
+    "start": "2026-10-26",
+    "end": "2026-11-05",
+    "deadlineTime": "23:59",
+    "timezone": "Asia/Seoul",
+    "reference": "K-Startup 신청방법·첨부대조(충돌은 unresolved 보존)"
+  },
+  "application": {
+    "summary": "https://maize-manatee-b6e.notion.site/2026-OPEN-ISLAND-BOOT-CAMP-40136f809ea880f1b999d7fd3b744594 공개노션안내통한신청폼/협업제안",
+    "reference": "공식상세·첨부01포스터시각·첨부02긴포스터개요시각·첨부03대체텍스트전체/협업과제·워케이션내용",
+    "publicLinkChecks": [
+      {
+        "id": "179620",
+        "url": "https://maize-manatee-b6e.notion.site/2026-OPEN-ISLAND-BOOT-CAMP-40136f809ea880f1b999d7fd3b744594",
+        "checkedAt": "2026-10-31T06:28:09.835081+00:00",
+        "status": 200,
+        "finalUrl": "https://maize-manatee-b6e.notion.site/2026-OPEN-ISLAND-BOOT-CAMP-40136f809ea880f1b999d7fd3b744594",
+        "evidence": "179620-publiccheck-20261031.html",
+        "bytes": 19984
+      }
+    ]
+  },
+  "requiredDocuments": [
+    {
+      "name": "온라인신청·사업자등록증",
+      "condition": "필수",
+      "reference": "상세제출서류"
+    },
+    {
+      "name": "협업제안서",
+      "condition": "필수·실제지정양식미확인",
+      "reference": "상세·포스터"
+    },
+    {
+      "name": "국문및영문/중문기업소개서또는IR",
+      "condition": "필수",
+      "reference": "상세"
+    },
+    {
+      "name": "투자계약서/기술평가등급",
+      "condition": "선택",
+      "reference": "상세"
+    }
+  ],
+  "businessPlan": {
+    "format": "협업제안서·국문및외국어소개/IR,양식/분량미확인",
+    "sections": [
+      {
+        "name": "협업과제",
+        "items": [
+          "풀필먼트자동화·설비구축운영·라스트마일중매칭기술"
+        ],
+        "limit": "미확인"
+      },
+      {
+        "name": "기업/솔루션소개",
+        "items": [
+          "글로벌사업확장및후속PoC논의"
+        ],
+        "limit": "미확인"
+      }
+    ],
+    "reference": "공식상세·첨부01포스터시각·첨부02긴포스터개요시각·첨부03대체텍스트전체/협업과제·워케이션내용"
+  },
+  "evaluation": {
+    "summary": "서류평가및수요기업심사약4개사·배점미명시",
+    "reference": "공식상세·첨부01포스터시각·첨부02긴포스터개요시각·첨부03대체텍스트전체/협업과제·워케이션내용"
+  },
+  "contact": {
+    "name": "제주창조경제혁신센터064-710-1924,axy@ccei.kr",
+    "reference": "공식상세·첨부01포스터시각·첨부02긴포스터개요시각·첨부03대체텍스트전체/협업과제·워케이션내용"
+  },
+  "unresolved": [
+    "모집기간충돌:상세10/26~11/5 vs 포스터10/23~11/5 vs 대체텍스트10/22~11/3,최신정정기관확인필요",
+    "실제협업제안양식·신청폼입력/파일한도·항공지원범위미확인",
+    "긴포스터02작은글씨전체시각대조미완료;대체텍스트는전체읽었으나최신포스터와다른날짜보존",
+    "공개노션200은JavaScript셸뿐·상세안내/실제제안서양식미확보"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179620",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확보 후 근거별 적합성 검토·신청가능확정 아님",
+    "steps": [
+      "회사필드·자격증빙확인",
+      "미확인·충돌해결·최신양식확보",
+      "S12양식·S13회사정보로회사별서류/계획작성"
+    ]
+  },
+  "latestHashEvidence": "evidence/kstartup-179620/attachment-check-2026-11-05.json"
+}

@@ -1,0 +1,145 @@
+{
+  "programId": "kstartup-179646",
+  "title": "[2026 아트 스타트업 데이] 일반 참가자 모집",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-10-30T01:43:07.316288+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179646",
+  "evidenceDirectory": "evidence/kstartup-179646",
+  "reviewScope": "공식상세·포스터01 전체개요시각/세부 DOCX02 전체텍스트·이벤터스 공개 행사소개/일정·티켓가격/잔여정보",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/O32Ln",
+      "verifiedAt": "2026-10-30",
+      "status": "downloaded",
+      "sha256": "f2043f97bc69e1065c5ee5ce9b480e92b023064fa94dab79767d170ded507770",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 2302421,
+      "format": "IMAGE",
+      "file": "attachment-01.bin",
+      "contentType": "image/png;charset=UTF-8",
+      "review": {
+        "method": "visual",
+        "at": "2026-10-30T01:43:07.316288+00:00",
+        "scope": "전체 포스터 검토; 작은 글씨는 동반 텍스트와 대조, 전체 세부 시각 검증 완료 아님"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/SK2Ln",
+      "verifiedAt": "2026-10-30",
+      "status": "downloaded",
+      "sha256": "034c260949e7c40e215ae0b77e176ba79d7ae5c9d829bd2f71f779be075c34fb",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 33924,
+      "format": "DOCX",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 3580,
+      "review": {
+        "method": "text",
+        "at": "2026-10-30T01:43:07.316288+00:00",
+        "scope": "전체 추출 본문·표·별첨 양식 확인; 원본 배치·그림 전체 시각 검증 아님"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/O32Ln": "f2043f97bc69e1065c5ee5ce9b480e92b023064fa94dab79767d170ded507770",
+    "https://www.k-startup.go.kr/afile/fileDownload/SK2Ln": "034c260949e7c40e215ae0b77e176ba79d7ae5c9d829bd2f71f779be075c34fb"
+  },
+  "lastAttachmentHashCheckedAt": "2026-10-30T01:43:07.316288+00:00",
+  "unresolved": [
+    "이벤터스 티켓/가격/잔여표시 공개본문은 확인; 로그인 이후 실제신청 필드·최종잔여석 미확인",
+    "포스터의 비즈니스매칭·투자컨설팅 소개를 신규접수 가능으로 오인하지 않도록 상세 마감안내 함께 보존",
+    "초장문 포스터 작은표/원본 DOCX 배치 전체 시각 검증 미완료"
+  ],
+  "conflicts": [],
+  "eligibility": {
+    "summary": "예술창업·산업 관심 창업자/임직원·투자자·학생·일반인 등 누구나. 상세 상단7년미만 분류와 본문 누구나가 다르므로 회사업력 제한을 확정하지 않음.",
+    "companyFields": [
+      "관심 예술분야",
+      "참가 세션·개별티켓",
+      "참석가능일"
+    ],
+    "reference": "공식상세·포스터01 전체개요시각/세부 DOCX02 전체텍스트·이벤터스 공개 행사소개/일정·티켓가격/잔여정보"
+  },
+  "exclusions": {
+    "items": [
+      "비즈니스매칭·투자컨설팅 모집은 상세에 이미 마감으로 명시",
+      "티켓은 프로그램별 개별 신청, 미소지시 입장제한·노쇼 잔여 현장입장 가능"
+    ],
+    "reference": "공식상세·포스터01 전체개요시각/세부 DOCX02 전체텍스트·이벤터스 공개 행사소개/일정·티켓가격/잔여정보"
+  },
+  "support": {
+    "summary": "11/9~10 13~18시 아트코리아랩6F/B1(서울 종로 율곡로6 트윈트리A). 오픈토론·상담·IR참관·전시·네트워킹. 공개 이벤터스 참가티켓 무료. 지원금/투자확약 없음.",
+    "reference": "공식상세·포스터01 전체개요시각/세부 DOCX02 전체텍스트·이벤터스 공개 행사소개/일정·티켓가격/잔여정보"
+  },
+  "period": {
+    "start": "2026-10-21",
+    "end": "2026-11-03",
+    "deadlineTime": "14:00",
+    "startTime": "16:00",
+    "timezone": "Asia/Seoul",
+    "reference": "상세 신청기간·이벤터스 신청 Apply"
+  },
+  "application": {
+    "summary": "https://event-us.kr/26artstartupday/event/137790. 프로그램별 티켓 별도 발급. 공개페이지에 오픈토론 잔여62/58·커피챗 및 IR참관 마감 등 표시; 10/30 조회시점 스냅샷이며 현재잔여 확정 아님. 11/4 개별문자 안내.",
+    "publicLinkChecks": [
+      {
+        "id": "179646",
+        "url": "https://event-us.kr/26artstartupday/event/137790",
+        "checkedAt": "2026-10-30T01:37:19.012348+00:00",
+        "status": 200,
+        "finalUrl": "https://event-us.kr/26artstartupday/event/137790",
+        "bytes": 553339,
+        "evidence": "data/government-programs/evidence/179646-publiccheck-20261030-6854736524907951413.html"
+      }
+    ],
+    "reference": "공식상세·포스터01 전체개요시각/세부 DOCX02 전체텍스트·이벤터스 공개 행사소개/일정·티켓가격/잔여정보"
+  },
+  "requiredDocuments": [
+    {
+      "name": "프로그램별 온라인 티켓 신청",
+      "condition": "필수; 별도 제출서류 없음",
+      "reference": "상세 제출서류·이벤터스 티켓"
+    }
+  ],
+  "businessPlan": {
+    "format": "일반 참가모집:사업계획서 제출 요구 없음",
+    "sections": [],
+    "reference": "공식상세·포스터01 전체개요시각/세부 DOCX02 전체텍스트·이벤터스 공개 행사소개/일정·티켓가격/잔여정보"
+  },
+  "evaluation": {
+    "summary": "프로그램별 선착순 정원·오픈컨설팅은 부스별1인1회차; 일부 프로그램 이미 마감. 별도 심사배점 미명시.",
+    "reference": "공식상세·포스터01 전체개요시각/세부 DOCX02 전체텍스트·이벤터스 공개 행사소개/일정·티켓가격/잔여정보"
+  },
+  "contact": {
+    "name": "예술경영지원센터02-708-2235 / 운영사무국070-7575-3244,2026artstartupday@gmail.com",
+    "reference": "공식상세·포스터01 전체개요시각/세부 DOCX02 전체텍스트·이벤터스 공개 행사소개/일정·티켓가격/잔여정보"
+  },
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179646",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확보 후 근거별 적합성 검토. 이 분석은 신청 가능 확정 아님. 기존 고객 개인정보·비밀키·주민등록번호를 수집하지 않음.",
+    "steps": [
+      "회사 사실·증빙 확인",
+      "미확인/충돌 해결 및 최신 양식 확보",
+      "공고 ID와 회사 ID를 유지해 S12 양식 및 S13 사실정보 전달",
+      "회사별 서류·사업계획서 작성 및 검토"
+    ]
+  },
+  "ticketAvailability": {
+    "checkedAt": "2026-10-30T01:43:07.316288+00:00",
+    "evidence": "evidence/179646-publiccheck-20261030-6854736524907951413.html",
+    "snapshotOnly": true,
+    "notes": "오픈토론 62/58표시, 커피챗/IR참관 모집마감, 일부 상담잔여. 전체공고를 마감으로 변경하지 않음."
+  }
+}

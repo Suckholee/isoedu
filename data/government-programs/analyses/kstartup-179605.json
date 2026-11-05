@@ -27,7 +27,7 @@
   "attachmentContentHashes": {
     "https://www.k-startup.go.kr/afile/fileDownload/tQ2Ln": "10770f4650cdfc5e1428adee8e4b6b87aea5a867b28c68e1af2d2ee35c06c597"
   },
-  "lastAttachmentHashCheckedAt": "2026-10-29T01:43:50.215678+00:00",
+  "lastAttachmentHashCheckedAt": "2026-10-30T01:43:07.316288+00:00",
   "unresolved": [
     "실제참가/멘토링신청문항·정원·초기창업업력상한미명시"
   ],
@@ -96,5 +96,6 @@
       "회사 사실정보로 서류·사업계획서 작성 및 검토"
     ]
   },
-  "externalCheckEvidence": "evidence/external-check-2026-10-29.json"
+  "externalCheckEvidence": "evidence/external-check-2026-10-29.json",
+  "lastHashCheckEvidence": "evidence/kstartup-179605/attachment-check-2026-10-30.json"
 }

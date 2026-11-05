@@ -1,0 +1,134 @@
+{
+  "programId": "kstartup-179664",
+  "title": "대덕 원스톱 Bridge 연계 제 108회 대전창업포럼 참가 모집",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-03T00:03:26.113645+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179664",
+  "reviewScope": "공식상세·첨부01포스터전체시각·02대체텍스트전문·공식구글폼공개안내(11/2조기마감명시)",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/3G2Ln",
+      "verifiedAt": "2026-11-03",
+      "status": "downloaded",
+      "sha256": "9c282e208c89d803343284f639f9197b70d773057d46cff5f0286634feac891e",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 283568,
+      "format": "IMAGE",
+      "file": "attachment-01.bin",
+      "contentType": "image/png;charset=UTF-8",
+      "review": {
+        "at": "2026-11-03T00:03:26.113645+00:00",
+        "method": "visual",
+        "scope": "전체 포스터 시각 검토·동반 텍스트 대조; 긴 이미지 작은글씨 전부검증아님"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/JG2Ln",
+      "verifiedAt": "2026-11-03",
+      "status": "downloaded",
+      "sha256": "827d8b3bb75e0f23b4fd47a4e59077ab1ad72b7c5cdb3a1661265d0acb8189bd",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 1609,
+      "format": "TEXT",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "characters": 762,
+      "extraction": "text",
+      "review": {
+        "at": "2026-11-03T00:03:26.113645+00:00",
+        "method": "text",
+        "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/3G2Ln": "9c282e208c89d803343284f639f9197b70d773057d46cff5f0286634feac891e",
+    "https://www.k-startup.go.kr/afile/fileDownload/JG2Ln": "827d8b3bb75e0f23b4fd47a4e59077ab1ad72b7c5cdb3a1661265d0acb8189bd"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-03T00:03:26.113645+00:00",
+  "eligibility": {
+    "summary": "딥테크스타트업/예비팀1:1밋업·기업/연구자/투자자/지원기관/일반인포럼참관.신청폼11/2전체모집조기마감안내",
+    "companyFields": [
+      "참가유형",
+      "딥테크분야/상담수요",
+      "참석가능일",
+      "조기마감상태재확인"
+    ],
+    "reference": "공식상세·첨부01포스터전체시각·02대체텍스트전문·공식구글폼공개안내(11/2조기마감명시)"
+  },
+  "exclusions": {
+    "items": [
+      "신청폼11/2조기마감:1:1밋업및전체모집·신규접수가능으로표시금지",
+      "IR발표는별도섭외·이번신청대상아님"
+    ],
+    "reference": "공식상세·첨부01포스터전체시각·02대체텍스트전문·공식구글폼공개안내(11/2조기마감명시)"
+  },
+  "support": {
+    "summary": "11/10 14~18 대덕TBC지하1층원스톱센터(유성대덕대로593),13:40등록.팁스/투자전략/공공기술자금강연·토크·IR참관·16:30~18밋업/명함네트워킹.상담30분3회·검토/매칭후확정·희망상담보장없음.현금지원·투자보장아님·참가비미명시.",
+    "reference": "공식상세·첨부01포스터전체시각·02대체텍스트전문·공식구글폼공개안내(11/2조기마감명시)"
+  },
+  "period": {
+    "start": "2026-10-29",
+    "end": "2026-11-09",
+    "deadlineTime": "23:59",
+    "timezone": "Asia/Seoul",
+    "reference": "K-Startup 신청방법·첨부대조(충돌은 unresolved 보존)"
+  },
+  "application": {
+    "summary": "https://forms.gle/q61cvcRxJwF4Jiq88 ·공개폼11/2조기마감표시(공고표기11/9마감은유지·실제상태별도기록)",
+    "reference": "공식상세·첨부01포스터전체시각·02대체텍스트전문·공식구글폼공개안내(11/2조기마감명시)",
+    "recruitmentStatus": {
+      "status": "EARLY_CLOSED",
+      "announcedOn": "2026-11-02",
+      "exactClosedAt": null,
+      "checkedAt": "2026-11-03T00:03:26.113645+00:00",
+      "sourceUrl": "https://docs.google.com/forms/d/e/1FAIpQLSd666SleL9Jj8nIesVpV1kuF858xVr_Un5afNZHBXehgGR3Uw/viewform?usp=send_form",
+      "evidence": "evidence/179664-publiccheck-20261103.txt",
+      "text": "(2026.11.2.) 1:1 밋업은 조기 마감되었습니다. / 제108회 대전창업포럼 참가 모집이 조기 마감되었습니다."
+    }
+  },
+  "requiredDocuments": [
+    {
+      "name": "참가온라인신청",
+      "condition": "본문별도제출서류없음·실제뒷단문항미확인",
+      "reference": "상세·공개폼첫페이지"
+    }
+  ],
+  "businessPlan": {
+    "format": "포럼참관/밋업·사업계획서제출요구없음",
+    "sections": [],
+    "reference": "공식상세·첨부01포스터전체시각·02대체텍스트전문·공식구글폼공개안내(11/2조기마감명시)"
+  },
+  "evaluation": {
+    "summary": "사전신청→내부검토/상담수요매칭→확정·IR4개사내외는별도섭외·본폼신청아님.조기마감공개문구확인·폼뒤단미접근",
+    "reference": "공식상세·첨부01포스터전체시각·02대체텍스트전문·공식구글폼공개안내(11/2조기마감명시)"
+  },
+  "contact": {
+    "name": "042-385-0765,mjwon0777@ccei.kr",
+    "reference": "공식상세·첨부01포스터전체시각·02대체텍스트전문·공식구글폼공개안내(11/2조기마감명시)"
+  },
+  "unresolved": [
+    "공고11/9 23:59와공식신청폼11/2조기마감충돌:폼최신상태우선경고·정확조기종료시각미명시",
+    "포스터/대체텍스트기술보증기금박홍준 vs 상세/폼박홍진 연사이름차이·확정명단기관확인",
+    "공개폼첫안내페이지이후실제문항/개인정보동의미확인·제출/로그인미수행"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179664",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확보 후 근거별 적합성 검토·신청가능확정 아님",
+    "steps": [
+      "회사필드·자격증빙확인",
+      "미확인·충돌해결·최신양식확보",
+      "S12양식·S13회사정보로회사별서류/계획작성"
+    ]
+  }
+}

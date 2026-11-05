@@ -1,0 +1,280 @@
+{
+  "programId": "kstartup-179676",
+  "title": "2026 별별상상 스타트업 챌린지",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-03T00:03:26.113645+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179676",
+  "reviewScope": "공식상세·HWP01/PDF02 1~6쪽대조·별도PDF03/HWPX04전체양식·05포스터/06텍스트·주최10/26운영계획안2쪽",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/CZ2Ln",
+      "verifiedAt": "2026-11-03",
+      "status": "downloaded",
+      "sha256": "ca39b4dc60b4c94ec001ef5f3c422121579e500733c2ba9e306415d617b0fbe7",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 1145344,
+      "format": "HWP",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 4356,
+      "review": {
+        "at": "2026-11-03T00:03:26.113645+00:00",
+        "method": "text",
+        "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/DZ2Ln",
+      "verifiedAt": "2026-11-03",
+      "status": "downloaded",
+      "sha256": "3217dd63526e351eb21edf9c528558e1c6a1000484c7ccb84a4e5371ea2f560a",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 557742,
+      "format": "PDF",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 3854,
+      "review": {
+        "at": "2026-11-03T00:03:26.113645+00:00",
+        "method": "text",
+        "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/6Z2Ln",
+      "verifiedAt": "2026-11-03",
+      "status": "downloaded",
+      "sha256": "a5440ea9558102abead5c17d5d5af667bb7162dd9b3fc5e4ebe6e2933d3a4569",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 221758,
+      "format": "PDF",
+      "file": "attachment-03.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 2035,
+      "review": {
+        "at": "2026-11-03T00:03:26.113645+00:00",
+        "method": "text",
+        "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/MZ2Ln",
+      "verifiedAt": "2026-11-03",
+      "status": "downloaded",
+      "sha256": "7dd0c6de0787c77e9e42486927a670815f7dcda1f805f8b588d86ab2d4c5a2ce",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 51618,
+      "format": "HWPX",
+      "file": "attachment-04.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 5174,
+      "review": {
+        "at": "2026-11-03T00:03:26.113645+00:00",
+        "method": "text",
+        "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/tZ2Ln",
+      "verifiedAt": "2026-11-03",
+      "status": "downloaded",
+      "sha256": "af1081cfebc5e774f3bdb21203c7be0fd00eec5ed1316ae3e6ea8a0c559d1a9b",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 870449,
+      "format": "IMAGE",
+      "file": "attachment-05.bin",
+      "contentType": "image/png;charset=UTF-8",
+      "review": {
+        "at": "2026-11-03T00:03:26.113645+00:00",
+        "method": "visual",
+        "scope": "전체 포스터 시각 검토·동반 텍스트 대조; 긴 이미지 작은글씨 전부검증아님"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/1p2Ln",
+      "verifiedAt": "2026-11-03",
+      "status": "downloaded",
+      "sha256": "07ecdf17c3407e3f35987208b606b13ce073b93df8114b47192054d6191d63af",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 1671,
+      "format": "TEXT",
+      "file": "attachment-06.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "characters": 859,
+      "extraction": "text",
+      "review": {
+        "at": "2026-11-03T00:03:26.113645+00:00",
+        "method": "text",
+        "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/CZ2Ln": "ca39b4dc60b4c94ec001ef5f3c422121579e500733c2ba9e306415d617b0fbe7",
+    "https://www.k-startup.go.kr/afile/fileDownload/DZ2Ln": "3217dd63526e351eb21edf9c528558e1c6a1000484c7ccb84a4e5371ea2f560a",
+    "https://www.k-startup.go.kr/afile/fileDownload/6Z2Ln": "a5440ea9558102abead5c17d5d5af667bb7162dd9b3fc5e4ebe6e2933d3a4569",
+    "https://www.k-startup.go.kr/afile/fileDownload/MZ2Ln": "7dd0c6de0787c77e9e42486927a670815f7dcda1f805f8b588d86ab2d4c5a2ce",
+    "https://www.k-startup.go.kr/afile/fileDownload/tZ2Ln": "af1081cfebc5e774f3bdb21203c7be0fd00eec5ed1316ae3e6ea8a0c559d1a9b",
+    "https://www.k-startup.go.kr/afile/fileDownload/1p2Ln": "07ecdf17c3407e3f35987208b606b13ce073b93df8114b47192054d6191d63af"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-03T00:03:26.113645+00:00",
+  "eligibility": {
+    "summary": "전국 대학생·대학원생 개인/팀·충북 지역자원(기술·로컬등)활용 창업아이디어·팀인원늘면양식표조정가능.기업업력한도는첨부미명시",
+    "companyFields": [
+      "대학/대학원재학여부·팀원",
+      "충북자원연계아이디어",
+      "대표발표/전원참석가능",
+      "사업화단계"
+    ],
+    "reference": "공식상세·HWP01/PDF02 1~6쪽대조·별도PDF03/HWPX04전체양식·05포스터/06텍스트·주최10/26운영계획안2쪽"
+  },
+  "exclusions": {
+    "items": [
+      "대학생·대학원생아닌경우자격미충족",
+      "대표자미발표감점·발표선정팀필수참석",
+      "별도체납/업종제외미명시"
+    ],
+    "reference": "공식상세·HWP01/PDF02 1~6쪽대조·별도PDF03/HWPX04전체양식·05포스터/06텍스트·주최10/26운영계획안2쪽"
+  },
+  "support": {
+    "summary": "총6팀시상:대상1팀100만원·최우수2팀각50만원·우수3팀각30만원(합계290만원안).시상변동가능·지원금비율/자부담조건미명시.11/13국립한국교통대국제청년협력센터1층.",
+    "reference": "공식상세·HWP01/PDF02 1~6쪽대조·별도PDF03/HWPX04전체양식·05포스터/06텍스트·주최10/26운영계획안2쪽"
+  },
+  "period": {
+    "start": "2026-11-01",
+    "end": "2026-11-08",
+    "deadlineTime": "23:59",
+    "timezone": "Asia/Seoul",
+    "reference": "K-Startup 신청방법·첨부대조(충돌은 unresolved 보존)"
+  },
+  "application": {
+    "summary": "knut-startup@ut.ac.kr 이메일·제목2026학년도별별상상스타트업챌린지_신청자(팀)명·발표PPT자유형식PDF변환",
+    "reference": "공식상세·HWP01/PDF02 1~6쪽대조·별도PDF03/HWPX04전체양식·05포스터/06텍스트·주최10/26운영계획안2쪽",
+    "privacyNotice": {
+      "retention": "목적달성파기·사업종료후증빙5년",
+      "thirdParty": "교통대/행사대행사제공일부터5년·행사운영안마케팅1년",
+      "reference": "PDF02p6/별도PDF03p3"
+    }
+  },
+  "requiredDocuments": [
+    {
+      "name": "참가신청서",
+      "condition": "필수·대표서명·팀성명학교학과전화·팀원증가표조정",
+      "reference": "PDF02p4/별도PDF03p1·HWPX04"
+    },
+    {
+      "name": "사업계획서",
+      "condition": "필수지정양식",
+      "reference": "PDF02p5/별도PDF03p2"
+    },
+    {
+      "name": "개인정보제공동의서",
+      "condition": "필수·대표/팀원서명,개인은대표만",
+      "reference": "PDF02p6/별도PDF03p3"
+    },
+    {
+      "name": "자율발표자료PDF",
+      "condition": "필수·PPT작성후PDF제출",
+      "reference": "PDF02p2·상세"
+    }
+  ],
+  "businessPlan": {
+    "format": "지정HWP/HWPX계획서+자유발표PDF",
+    "sections": [
+      {
+        "name": "문제인식",
+        "items": [
+          "외적·내적개발동기·문제해결/고객혜택·목적·경쟁차별성"
+        ],
+        "limit": "계획서양식1쪽·최대분량/용량미명시"
+      },
+      {
+        "name": "실현가능성",
+        "items": [
+          "최종산출형태수량·개발방법/인력외주·진척/시제품테스트"
+        ],
+        "limit": "계획서양식1쪽·최대분량/용량미명시"
+      },
+      {
+        "name": "성장전략",
+        "items": [
+          "BM·제작·창업일정·시장규모경쟁/전망고객·우위마케팅"
+        ],
+        "limit": "계획서양식1쪽·최대분량/용량미명시"
+      },
+      {
+        "name": "팀",
+        "items": [
+          "대표/팀원역량경험·명확한역할/적정규모"
+        ],
+        "limit": "계획서양식1쪽·최대분량/용량미명시"
+      }
+    ],
+    "reference": "공식상세·HWP01/PDF02 1~6쪽대조·별도PDF03/HWPX04전체양식·05포스터/06텍스트·주최10/26운영계획안2쪽"
+  },
+  "evaluation": {
+    "summary": "11/9서류(3일내문자)→11/13대표발표5분+질의5분·대표미발표감점.성장20/기술30/사업30/팀20.주최운영계획안p2:서류발표2배수·발표약12팀계획.",
+    "reference": "공식상세·HWP01/PDF02 1~6쪽대조·별도PDF03/HWPX04전체양식·05포스터/06텍스트·주최10/26운영계획안2쪽"
+  },
+  "contact": {
+    "name": "국립한국교통대043-849-1727·툰즈070-7786-1203(10~17시)",
+    "reference": "공식상세·HWP01/PDF02 1~6쪽대조·별도PDF03/HWPX04전체양식·05포스터/06텍스트·주최10/26운영계획안2쪽"
+  },
+  "unresolved": [
+    "발표행사시간상세/주최본문13~17시 vs 첨부/포스터12:30~16:30충돌·내부변동가능표기·최종안확인필요",
+    "주최운영계획안10/26·게시10/29와KStartup10/30공고의최신확정범위미확인(서류2배수는계획안만명시)",
+    "동의서보유기간:목적달성파기/사업종료후5년·제3자5년/운영사마케팅1년 구분;실제행사대행사선정예정·수탁자미확정",
+    "HWP/HWPX전문대조·PDF5/6쪽시각·포스터전체시각,모든중복원본쪽배치미검증"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179676",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확보 후 근거별 적합성 검토·신청가능확정 아님",
+    "steps": [
+      "회사필드·자격증빙확인",
+      "미확인·충돌해결·최신양식확보",
+      "S12양식·S13회사정보로회사별서류/계획작성"
+    ]
+  },
+  "additionalSourceReviews": [
+    {
+      "id": "179676-officialpdf",
+      "url": "https://www.ut.ac.kr/cmm/fms/FileDown.do?atchFileId=FILE_000000000293328&fileSn=0",
+      "checkedAt": "2026-11-03T00:01:12.935303+00:00",
+      "status": 200,
+      "finalUrl": "https://www.ut.ac.kr/cmm/fms/FileDown.do?atchFileId=FILE_000000000293328&fileSn=0",
+      "evidence": "179676-officialpdf-publiccheck-20261103.html",
+      "bytes": 174695,
+      "sha256": "7d32b7167b958d219cd98986a7115ea8e666202ae2b3ebc7a00290025cbff8de",
+      "format": "PDF"
+    },
+    {
+      "id": "179676-officialhwpx",
+      "url": "https://www.ut.ac.kr/cmm/fms/FileDown.do?atchFileId=FILE_000000000293328&fileSn=1",
+      "checkedAt": "2026-11-03T00:01:12.935687+00:00",
+      "status": 200,
+      "finalUrl": "https://www.ut.ac.kr/cmm/fms/FileDown.do?atchFileId=FILE_000000000293328&fileSn=1",
+      "evidence": "179676-officialhwpx-publiccheck-20261103.html",
+      "bytes": 51618,
+      "sha256": "7dd0c6de0787c77e9e42486927a670815f7dcda1f805f8b588d86ab2d4c5a2ce",
+      "format": "HWPX"
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "programId": "kstartup-179665",
+  "title": "2026 년 홍익대 아트앤디자인테크 창업보육센터 입주기업 모집(2 차) 공고문",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-05T03:10:39.104704+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179665",
+  "reviewScope": "공식상세·PDF01공고3쪽·HWP02신청계획전문·PDF03동의전문·PDF04시설사진전체시각",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v17MEPbOulaAhWpteLGQH6oNMD0Ft1D9e71DmM3qGHwlj1ZQ",
+      "verifiedAt": "2026-11-05",
+      "status": "downloaded",
+      "sha256": "9ce8c4ca15e421bb93f9c66479d46487188d9af147dbff36a9bb1bfa14b3d927",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 109521,
+      "format": "PDF",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 1848,
+      "review": {
+        "at": "2026-11-05T03:10:39.104704+00:00",
+        "scope": "공식상세·PDF01공고3쪽·HWP02신청계획전문·PDF03동의전문·PDF04시설사진전체시각",
+        "method": "text (visual exceptions in reviewScope)"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v14Fl4XbNpXIYGyw1r5TWfa-XStoeSKqJwESLifbUHAb9dCg",
+      "verifiedAt": "2026-11-05",
+      "status": "downloaded",
+      "sha256": "864845cc54e4b13b663c66f1326fa6c85a74bc13b3961ef00337362df1095496",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 114176,
+      "format": "HWP",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 4654,
+      "review": {
+        "at": "2026-11-05T03:10:39.104704+00:00",
+        "scope": "공식상세·PDF01공고3쪽·HWP02신청계획전문·PDF03동의전문·PDF04시설사진전체시각",
+        "method": "text (visual exceptions in reviewScope)"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1agb4sT14aZztkmckHO7GCFze5pxFI27TZDJx2PfkP-MT6g",
+      "verifiedAt": "2026-11-05",
+      "status": "downloaded",
+      "sha256": "c34cc1e60cea63683426032c47f0b22799d4d55a0bd3366df51b99eef9543c15",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 41899,
+      "format": "PDF",
+      "file": "attachment-03.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 585,
+      "review": {
+        "at": "2026-11-05T03:10:39.104704+00:00",
+        "scope": "공식상세·PDF01공고3쪽·HWP02신청계획전문·PDF03동의전문·PDF04시설사진전체시각",
+        "method": "text (visual exceptions in reviewScope)"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1-OzMGiqobyexep1sF78sBLsADJNWU5AUruBEJkySxomAWA",
+      "verifiedAt": "2026-11-05",
+      "status": "downloaded",
+      "sha256": "8f183b61c5d37964c97a3a3fae94ef77a2784c27ebabf92f2d53dd1e435bd0dc",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 54679,
+      "format": "PDF",
+      "file": "attachment-04.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 20,
+      "review": {
+        "at": "2026-11-05T03:10:39.104704+00:00",
+        "scope": "공식상세·PDF01공고3쪽·HWP02신청계획전문·PDF03동의전문·PDF04시설사진전체시각",
+        "method": "text (visual exceptions in reviewScope)"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/v17MEPbOulaAhWpteLGQH6oNMD0Ft1D9e71DmM3qGHwlj1ZQ": "9ce8c4ca15e421bb93f9c66479d46487188d9af147dbff36a9bb1bfa14b3d927",
+    "https://www.k-startup.go.kr/afile/fileDownload/v14Fl4XbNpXIYGyw1r5TWfa-XStoeSKqJwESLifbUHAb9dCg": "864845cc54e4b13b663c66f1326fa6c85a74bc13b3961ef00337362df1095496",
+    "https://www.k-startup.go.kr/afile/fileDownload/v1agb4sT14aZztkmckHO7GCFze5pxFI27TZDJx2PfkP-MT6g": "c34cc1e60cea63683426032c47f0b22799d4d55a0bd3366df51b99eef9543c15",
+    "https://www.k-startup.go.kr/afile/fileDownload/v1-OzMGiqobyexep1sF78sBLsADJNWU5AUruBEJkySxomAWA": "8f183b61c5d37964c97a3a3fae94ef77a2784c27ebabf92f2d53dd1e435bd0dc"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-05T03:10:39.104704+00:00",
+  "eligibility": {
+    "summary": "예비또는7년이내공고일기준·입주30일내본점이전가능·부설연구소허용.여성/내일채움/특화아트디자인·바이오/홍익구성원우대",
+    "companyFields": [
+      "창업일",
+      "본점연구소이전",
+      "벌금/신용",
+      "우대증빙",
+      "발급일",
+      "2023~25매출투자·전년VAT",
+      "비용"
+    ],
+    "reference": "공식상세·PDF01공고3쪽·HWP02신청계획전문·PDF03동의전문·PDF04시설사진전체시각"
+  },
+  "exclusions": {
+    "items": [
+      "100만원이상벌금형·불량신용·공해다발·사회물의/위원회부적합"
+    ],
+    "reference": "공식상세·PDF01공고3쪽·HWP02신청계획전문·PDF03동의전문·PDF04시설사진전체시각"
+  },
+  "support": {
+    "summary": "예문관6층619/620/624호45.18/41.29/35.63㎡3사·사용료평당월5만원/관리5090원VAT별도·보증사용료10개월·공과인터넷실비.최초6개월~3년평가최대5년·11/23입주예정.시설멘토링/일부집기·정기주차자부담.",
+    "reference": "공식상세·PDF01공고3쪽·HWP02신청계획전문·PDF03동의전문·PDF04시설사진전체시각"
+  },
+  "period": {
+    "start": "2026-11-01",
+    "end": "2026-11-13",
+    "deadlineTime": "23:59",
+    "timezone": "Asia/Seoul",
+    "reference": "공식상세·PDF01공고3쪽·HWP02신청계획전문·PDF03동의전문·PDF04시설사진전체시각"
+  },
+  "application": {
+    "summary": "bornchu@hongik.ac.kr 이메일·서류1개PDF·2026_2차_아트앤디자인테크창업보육센터_(기업명)입주신청서",
+    "reference": "공식상세·PDF01공고3쪽·HWP02신청계획전문·PDF03동의전문·PDF04시설사진전체시각"
+  },
+  "requiredDocuments": [
+    {
+      "name": "입주신청/계획·개인정보동의·대표신분증",
+      "condition": "필수지정HWP02/PDF03",
+      "reference": "PDF01§2"
+    },
+    {
+      "name": "전년VAT과세표준/사업자등록",
+      "condition": "필수목록·예비대체미명시",
+      "reference": "PDF01§2"
+    },
+    {
+      "name": "인감증명",
+      "condition": "선정후개인/법인",
+      "reference": "PDF01§2"
+    },
+    {
+      "name": "법인등기/국세지방세완납",
+      "condition": "법인/기창업해당·공고일1개월내·사업자등록도1개월내",
+      "reference": "PDF01§2"
+    },
+    {
+      "name": "재무/4대보험/벤처IP/수료수상·우대증빙",
+      "condition": "해당시·기타서류3개월내",
+      "reference": "PDF01§2"
+    }
+  ],
+  "businessPlan": {
+    "format": "지정HWP02·동의PDF03·전체묶음PDF",
+    "limit": "전체분량미명시·요약양식페이지초과금지",
+    "sections": [
+      {
+        "name": "창업자팀",
+        "items": [
+          "대표학력경력기술/공동대표별지·참여인력이력"
+        ],
+        "limit": "전체분량미명시·요약양식페이지초과금지"
+      },
+      {
+        "name": "기업",
+        "items": [
+          "연혁시설·2023~25신청매출투자원·계획24/25매출수출천원·회사백만원단위구분"
+        ],
+        "limit": "전체분량미명시·요약양식페이지초과금지"
+      },
+      {
+        "name": "사업목표",
+        "items": [
+          "제품성능활용·핵심기술IP증빙·시장3년/경쟁·기술가격"
+        ],
+        "limit": "전체분량미명시·요약양식페이지초과금지"
+      },
+      {
+        "name": "추진",
+        "items": [
+          "현개발/양산/공정외주·자재조달·1년이내일정·판매계획"
+        ],
+        "limit": "전체분량미명시·요약양식페이지초과금지"
+      },
+      {
+        "name": "자금",
+        "items": [
+          "시설운전소요/조달·자기차입/추가조달근거백만원"
+        ],
+        "limit": "전체분량미명시·요약양식페이지초과금지"
+      },
+      {
+        "name": "희망지원/요약",
+        "items": [
+          "경영기술자금설비·기술시장사업성·자금·이미지·인력"
+        ],
+        "limit": "전체분량미명시·요약양식페이지초과금지"
+      }
+    ],
+    "reference": "공식상세·PDF01공고3쪽·HWP02신청계획전문·PDF03동의전문·PDF04시설사진전체시각"
+  },
+  "evaluation": {
+    "summary": "서류11/17예정→발표/결과11/18~22예정개별통지·세부배점미명시",
+    "reference": "공식상세·PDF01공고3쪽·HWP02신청계획전문·PDF03동의전문·PDF04시설사진전체시각"
+  },
+  "contact": {
+    "name": "02-336-1163,bornchu@hongik.ac.kr",
+    "reference": "공식상세·PDF01공고3쪽·HWP02신청계획전문·PDF03동의전문·PDF04시설사진전체시각"
+  },
+  "unresolved": [
+    "예비창업자필수VAT/세금증빙대체·평가기준배점·발급일기준일확인필요",
+    "모집619/620/624인데사진PDF623도포함·실제선택대상은공고3호실로유지",
+    "원본HWP배치및모든PDF쪽시각미검증·사진PDF1쪽전체시각확인"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179665",
+    "companyId": null,
+    "permission": "권한회사프로필확보후근거별검토·현재신청가능확정아님",
+    "steps": [
+      "회사필드/증빙확인",
+      "충돌/미확인해결",
+      "S12양식·S13회사정보로서류/계획작성"
+    ]
+  }
+}

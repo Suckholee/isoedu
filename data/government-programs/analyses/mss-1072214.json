@@ -1,0 +1,141 @@
+{
+  "programId": "mss-1072214",
+  "title": "2027년도 초기창업·창업도약 패키지 사업신규 주관기관 모집 수정 공고",
+  "reviewStatus": "partial",
+  "status": "정정 핵심사항 확인·나머지 분석 대기",
+  "analyzedAt": "2026-11-03T00:05:45.661351+00:00",
+  "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1072214&parentSeq=1072214",
+  "reviewScope": "수정공고PDF02물리1쪽수정표/3~6쪽자격접수평가·HWPX01앞부분대조,구공고제2026-621호와KStartup재게시01공고마감대조",
+  "attachments": [
+    {
+      "url": "https://www.mss.go.kr/common/board/Download.do?bcIdx=1072214&cbIdx=310&streFileNm=351acb8b-5bf0-4178-9e5a-3e9cde6c24f6.hwpx",
+      "verifiedAt": "2026-11-03",
+      "status": "downloaded",
+      "sha256": "77c608fbbd7450e7c861af5634f760c4d5e7f2e3f96048ec50f95b841f3fb3c7",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 273242,
+      "format": "HWPX",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=UTF-8",
+      "extraction": "text",
+      "characters": 27062
+    },
+    {
+      "url": "https://www.mss.go.kr/common/board/Download.do?bcIdx=1072214&cbIdx=310&streFileNm=0659212f-cb50-4bff-a950-7ad4c9c1356b.pdf",
+      "verifiedAt": "2026-11-03",
+      "status": "downloaded",
+      "sha256": "25838db4d0189e1304a05bfa59b94b9cefac5f86f1b1b264788194abf8a37995",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 668560,
+      "format": "PDF",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=UTF-8",
+      "extraction": "text",
+      "characters": 16723
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.mss.go.kr/common/board/Download.do?bcIdx=1072214&cbIdx=310&streFileNm=351acb8b-5bf0-4178-9e5a-3e9cde6c24f6.hwpx": "77c608fbbd7450e7c861af5634f760c4d5e7f2e3f96048ec50f95b841f3fb3c7",
+    "https://www.mss.go.kr/common/board/Download.do?bcIdx=1072214&cbIdx=310&streFileNm=0659212f-cb50-4bff-a950-7ad4c9c1356b.pdf": "25838db4d0189e1304a05bfa59b94b9cefac5f86f1b1b264788194abf8a37995"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-03T00:05:45.661351+00:00",
+  "period": {
+    "start": "2026-10-30",
+    "end": "2026-11-23",
+    "deadlineTime": "16:00",
+    "timezone": "Asia/Seoul",
+    "reference": "수정공고PDFp1수정대조표·p4신청기간"
+  },
+  "eligibility": {
+    "summary": "창업기업지원역량보유공공·대학연구·민간기관등주관기관모집.일반기업지원금신청공고아님.민간기업신용평가등급요건·유형별인력/공간/재원요건후속검토필요",
+    "companyFields": [
+      "기관유형",
+      "공고~마감내평가발급신용확인서·등급",
+      "전담조직/인력/공간",
+      "대응자금/투자재원",
+      "지원유형",
+      "제재체납채무등"
+    ],
+    "reference": "PDFp3~4·유형별후반미확인"
+  },
+  "exclusions": {
+    "items": [
+      "참여제한제재/채무불이행(원문예외)",
+      "국세지방세체납·환수금미종결",
+      "지정은행/PMS회계불가",
+      "체불사업주·최근3년협약해약",
+      "정부가제한하는정당사유"
+    ],
+    "reference": "PDFp4"
+  },
+  "support": {
+    "summary": "주관기관운영모집35기관안(초기21/도약14)·기본2+연장2년.기업당지원한도표는향후지원사업규모안이지본신청기관지원금확정아님.정부예산변동시전담인력/대응자금/투자재원변경가능문구추가.유형별지원비율/자부담/세부규모미분석.",
+    "reference": "PDFp1~3및p18변경안내"
+  },
+  "application": {
+    "summary": "대표자개인회원KStartup로그인→사업신청관리→온라인작성제출완료·초기/도약별도신청.16시정각종료·이후수정삭제불가.",
+    "reference": "PDFp4~5"
+  },
+  "requiredDocuments": [
+    {
+      "name": "기관장직인제출공문",
+      "condition": "필수HWPX또는PDF",
+      "reference": "PDFp5"
+    },
+    {
+      "name": "사업계획서",
+      "condition": "필수·실제유형별양식미검토",
+      "reference": "PDFp5"
+    },
+    {
+      "name": "전담조직전원개인정보동의",
+      "condition": "필수증빙",
+      "reference": "PDFp5"
+    },
+    {
+      "name": "기업신용평가등급확인서",
+      "condition": "민간기관해당·평가발급기간공고~마감내",
+      "reference": "PDFp3/5"
+    }
+  ],
+  "businessPlan": {
+    "format": "초기/도약유형별별도HWPX양식8개KStartup첨부중미검토",
+    "sections": [],
+    "reference": "KStartup179660첨부목록/다운로드만·후속전문검토필요"
+  },
+  "evaluation": {
+    "summary": "서류→발표→위원회·서류유형권역2배수고득점·단계60미만탈락·대표또는전담조직장20분발표+10분질의·세부유형배점후반미검토·이의통보6일내1회",
+    "reference": "PDFp5~6"
+  },
+  "unresolved": [
+    "수정신청기간11/23이나채무변제예외마감11/20문구PDFp4잔존·기준일충돌기관확인필요",
+    "수정본문후반유형별요건·평가배점·재원/운영비·첨부신청양식전체아직읽지않음·분석완료아님",
+    "KStartup구양식다운로드8개중공고마감만대조·서류/계획/증빙양식전문미검토·재시도필요",
+    "로그인이후실제신청입력/제출미확인"
+  ],
+  "correction": {
+    "noticeNumber": "2026-622",
+    "previousNoticeNumber": "2026-621",
+    "publishedOn": "2026-11-02",
+    "supersedes": [
+      "mss-1072172",
+      "kstartup-179660"
+    ],
+    "previousDeadline": "2026-11-20T16:00:00+09:00",
+    "newDeadline": "2026-11-23T16:00:00+09:00",
+    "reference": "PDFp1시각/텍스트일치·구공고본문4쪽"
+  },
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "mss-1072214",
+    "companyId": null,
+    "permission": "권한회사프로필확보전적합성판정안함·주관기관모집유형확인선행"
+  }
+}

@@ -20,7 +20,7 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179515/detail.html",
       "attachmentUrls": []
@@ -55,7 +55,7 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179524/detail.html",
       "attachmentUrls": []
@@ -90,10 +90,14 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179535/detail.html",
-      "attachmentUrls": []
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v13i9xhh4qySwLFaAOsH7F1QjOv7YmWb8IvzmK2HkvYeoGAw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1-P6iW2PcWmy0arz2mwzdXmoqlK67A5Zn5rfREIdFu10xTw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1UH7cO86aIZRL_iqIOsPvMTu44tzKmSgW7dEQ5IjRAcmraQ"
+      ]
     },
     "analysisUpdatedAt": "2026-10-20T00:13:59.239562+00:00",
     "deadlineTime": "18:00",
@@ -125,12 +129,10 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179525/detail.html",
-      "attachmentUrls": [
-        "https://www.k-startup.go.kr/afile/fileDownload/YT1Ln"
-      ]
+      "attachmentUrls": []
     },
     "analysisUpdatedAt": "2026-10-20T00:13:59.239562+00:00",
     "deadlineTime": "23:59",
@@ -162,7 +164,7 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179523/detail.html",
       "attachmentUrls": []
@@ -197,12 +199,10 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179522/detail.html",
-      "attachmentUrls": [
-        "https://www.k-startup.go.kr/afile/fileDownload/nT1Ln"
-      ]
+      "attachmentUrls": []
     },
     "analysisUpdatedAt": "2026-10-21T00:13:24.199142+00:00",
     "deadlineTime": "18:00",
@@ -234,7 +234,7 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179519/detail.html",
       "attachmentUrls": []
@@ -269,7 +269,7 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179504/detail.html",
       "attachmentUrls": []
@@ -308,7 +308,7 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179516/detail.html",
       "attachmentUrls": []
@@ -346,7 +346,7 @@
       "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071565&cbIdx=310&cbIdx=310&streFileNm=aa7e7dae-4b9f-486c-b8e6-19124e703fad.hwpx"
     ],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/mss-1071565/detail.html",
       "attachmentUrls": [
@@ -379,7 +379,7 @@
       "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071550&cbIdx=310&cbIdx=310&streFileNm=7f83b904-734c-4862-9dac-94ab24fffef0.hwpx"
     ],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/mss-1071550/detail.html",
       "attachmentUrls": [
@@ -417,14 +417,10 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179572/detail.html",
-      "attachmentUrls": [
-        "https://www.k-startup.go.kr/afile/fileDownload/Ns2Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/is2Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/js2Ln"
-      ]
+      "attachmentUrls": []
     },
     "analysisUpdatedAt": "2026-10-23T00:10:37.872180+00:00",
     "deadlineTime": "18:00",
@@ -456,13 +452,10 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179557/detail.html",
-      "attachmentUrls": [
-        "https://www.k-startup.go.kr/afile/fileDownload/qO2Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/OO2Ln"
-      ]
+      "attachmentUrls": []
     },
     "analysisUpdatedAt": "2026-10-23T00:10:37.872180+00:00",
     "deadlineTime": "13:00",
@@ -494,12 +487,12 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179555/detail.html",
       "attachmentUrls": [
-        "https://www.k-startup.go.kr/afile/fileDownload/hq2Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/AO2Ln"
+        "https://www.k-startup.go.kr/afile/fileDownload/v1HOnRQYqZQ6-jfLSA0ut10iG4fuOlSAbPhAk8o1nbjpktvQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v138cknPdhaTjA6w-WfKuEtSldiE6YeA73GZOdglqxLD5sHQ"
       ]
     },
     "analysisUpdatedAt": "2026-10-25T03:34:52.351493+00:00",
@@ -532,7 +525,7 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179554/detail.html",
       "attachmentUrls": []
@@ -559,11 +552,11 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179552/detail.html",
       "attachmentUrls": [
-        "https://www.k-startup.go.kr/afile/fileDownload/Cq2Ln"
+        "https://www.k-startup.go.kr/afile/fileDownload/v1frje6jQVBeMUkJ038X5g0U1hFIejxaruE-ibI9UpOz53cg"
       ]
     },
     "analysisUpdatedAt": "2026-10-25T03:34:52.351493+00:00",
@@ -596,7 +589,7 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-177421/detail.html",
       "attachmentUrls": []
@@ -631,7 +624,7 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179537/detail.html",
       "attachmentUrls": []
@@ -666,14 +659,14 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179543/detail.html",
       "attachmentUrls": [
-        "https://www.k-startup.go.kr/afile/fileDownload/Sm2Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/xm2Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/ym2Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/Tm2Ln"
+        "https://www.k-startup.go.kr/afile/fileDownload/v1MjOqaqhvbV270EXb5vKXf1kBZn6pmAfguQ9Wz-ouU9X3wA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1_D8u9s6EuDPNibnhZhdUQ-e1irj3tBxDBGkHy_NIBUmSvA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1MwxcKA5ZTCUJtN1uHRNVnr9xWxAkDxgwSU0gzdzYrLp0Rw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1_vOcXKuuhytWzwcrq-oDx9WJ-BwVVxdGBbxrSm7X8-ohjQ"
       ]
     },
     "analysisUpdatedAt": "2026-10-26T00:01:22.300546+00:00",
@@ -706,12 +699,12 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179533/detail.html",
       "attachmentUrls": [
-        "https://www.k-startup.go.kr/afile/fileDownload/2p1Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/ov1Ln"
+        "https://www.k-startup.go.kr/afile/fileDownload/v1fQDkQS4SMz-E6tt5W8T3wYdeyiA9wjSBVqPiRVZgWX5B0w",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1NiggxV0RIQLBSit7VtKB61DPwjH2S08f8I2dxfEzshr-TQ"
       ]
     },
     "analysisUpdatedAt": "2026-10-25T03:34:52.351493+00:00",
@@ -744,7 +737,7 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179529/detail.html",
       "attachmentUrls": []
@@ -779,11 +772,11 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179528/detail.html",
       "attachmentUrls": [
-        "https://www.k-startup.go.kr/afile/fileDownload/BU1Ln"
+        "https://www.k-startup.go.kr/afile/fileDownload/v1k7PXt1A7Qyuz9QAfiUsOvXpBfmO0Ny-VCU2MuBPbyJkZaA"
       ]
     },
     "analysisUpdatedAt": "2026-10-27T00:07:00.926515+00:00",
@@ -816,11 +809,11 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179520/detail.html",
       "attachmentUrls": [
-        "https://www.k-startup.go.kr/afile/fileDownload/IU1Ln"
+        "https://www.k-startup.go.kr/afile/fileDownload/v1Uo4xFq5ymLgHqb-VGhchs14Nl9xGje6fBXBjYJ10tfgoCA"
       ]
     },
     "analysisUpdatedAt": "2026-10-24T00:00:39.128035+00:00",
@@ -853,13 +846,10 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179531/detail.html",
-      "attachmentUrls": [
-        "https://www.k-startup.go.kr/afile/fileDownload/kR1Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/lR1Ln"
-      ]
+      "attachmentUrls": []
     },
     "analysisUpdatedAt": "2026-10-21T00:13:24.199142+00:00",
     "deadlineTime": "23:59",
@@ -891,11 +881,11 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179536/detail.html",
       "attachmentUrls": [
-        "https://www.k-startup.go.kr/afile/fileDownload/jp1Ln"
+        "https://www.k-startup.go.kr/afile/fileDownload/v1pve_1YOO-lojsLBhMDF09J5LaMl_EZaQU5096PYphSmzrg"
       ]
     },
     "analysisUpdatedAt": "2026-10-24T00:00:39.128035+00:00",
@@ -928,14 +918,10 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179538/detail.html",
-      "attachmentUrls": [
-        "https://www.k-startup.go.kr/afile/fileDownload/Zp1Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/Sp1Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/xp1Ln"
-      ]
+      "attachmentUrls": []
     },
     "analysisUpdatedAt": "2026-10-21T00:13:24.199142+00:00",
     "deadlineTime": "23:59",
@@ -970,7 +956,7 @@
       "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071619&cbIdx=310&cbIdx=310&streFileNm=a4781d7a-655c-4268-85b6-913dd6da2401.hwpx"
     ],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/mss-1071619/detail.html",
       "attachmentUrls": [
@@ -1012,7 +998,7 @@
       "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071591&cbIdx=310&cbIdx=310&streFileNm=3f9a5f7f-de6d-4524-b4b4-4eb98eb57e61.hwpx"
     ],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/mss-1071591/detail.html",
       "attachmentUrls": [
@@ -1042,7 +1028,7 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179581/detail.html",
       "attachmentUrls": []
@@ -1077,13 +1063,10 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179564/detail.html",
-      "attachmentUrls": [
-        "https://www.k-startup.go.kr/afile/fileDownload/bt2Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/ct2Ln"
-      ]
+      "attachmentUrls": []
     },
     "analysisUpdatedAt": "2026-10-22T00:35:53.136226+00:00",
     "deadlineTime": "15:00",
@@ -1115,12 +1098,12 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179562/detail.html",
       "attachmentUrls": [
-        "https://www.k-startup.go.kr/afile/fileDownload/d52Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/a52Ln"
+        "https://www.k-startup.go.kr/afile/fileDownload/v1GMH0T1UTtNsS1J7c98C5wiTAiIjKl2Cw2tUDWCy6KFq69A",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1PZD5QMQmUYuFSLVRU66d5pM2-cRZ58F7oqfT_4vXZKoQoQ"
       ]
     },
     "analysisUpdatedAt": "2026-10-27T00:07:00.926515+00:00",
@@ -1153,7 +1136,7 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179574/detail.html",
       "attachmentUrls": []
@@ -1188,13 +1171,13 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179570/detail.html",
       "attachmentUrls": [
-        "https://www.k-startup.go.kr/afile/fileDownload/As2Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/os2Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/ws2Ln"
+        "https://www.k-startup.go.kr/afile/fileDownload/v1deTW0C1MeYHNUTu0m20Sh7on-BB9fgZ3GJAQe9esF4gIbw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v14ksVqqp4tb4R1Bjeie8VuahLzMcWV3LJYts74bb5lf0SBw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v14OFNLuWLdI8WGt3B0IlHX-_g1iVU7xOvUKTM9eXCW5LQaw"
       ]
     },
     "analysisUpdatedAt": "2026-10-26T00:01:22.300546+00:00",
@@ -1227,7 +1210,7 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179569/detail.html",
       "attachmentUrls": []
@@ -1262,14 +1245,10 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179568/detail.html",
-      "attachmentUrls": [
-        "https://www.k-startup.go.kr/afile/fileDownload/ar2Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/dr2Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/Yr2Ln"
-      ]
+      "attachmentUrls": []
     },
     "analysisUpdatedAt": "2026-10-22T00:35:53.136226+00:00",
     "deadlineTime": "16:00",
@@ -1301,13 +1280,10 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179566/detail.html",
-      "attachmentUrls": [
-        "https://www.k-startup.go.kr/afile/fileDownload/kr2Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/lr2Ln"
-      ]
+      "attachmentUrls": []
     },
     "analysisUpdatedAt": "2026-10-23T00:10:37.872180+00:00",
     "deadlineTime": "16:00",
@@ -1339,7 +1315,7 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179544/detail.html",
       "attachmentUrls": []
@@ -1378,7 +1354,7 @@
       "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071646&cbIdx=310&cbIdx=310&streFileNm=272801bf-0749-4e48-aca7-ab6a8e09ef85.hwpx"
     ],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/mss-1071646/detail.html",
       "attachmentUrls": [
@@ -1408,12 +1384,10 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179601/detail.html",
-      "attachmentUrls": [
-        "https://www.k-startup.go.kr/afile/fileDownload/0i2Ln"
-      ]
+      "attachmentUrls": []
     },
     "analysisUpdatedAt": "2026-10-25T03:34:52.351493+00:00",
     "deadlineTime": "14:00",
@@ -1445,15 +1419,15 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179598/detail.html",
       "attachmentUrls": [
-        "https://www.k-startup.go.kr/afile/fileDownload/ni2Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/Li2Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/Ai2Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/oi2Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/wi2Ln"
+        "https://www.k-startup.go.kr/afile/fileDownload/v1iyQJI-ifXX9ifUL-opu2N09sApzWkGtv_7YvCGcVJL563A",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1RK1lKF7XlSYDByQaKRIwFFoD6bR3ZsI4ATDihGy7qRTrYQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v13e7HuNsXa-V8bVBqxs_yMkQHgNOeitvCuLDZUVNma0C-MQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v175AaxskUsvBjfBHi96gTXaosmkWz_a27bd97jAnIXX712w",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1Ur7lFZvqEgR38SCK7CGnbqkWDddrNSU3elZVMfcSn4TN1g"
       ]
     },
     "analysisUpdatedAt": "2026-10-26T00:01:22.300546+00:00",
@@ -1486,14 +1460,14 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179596/detail.html",
       "attachmentUrls": [
-        "https://www.k-startup.go.kr/afile/fileDownload/482Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/E82Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/F82Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/G82Ln"
+        "https://www.k-startup.go.kr/afile/fileDownload/v1ui_dLrekQcp1sm9dx2SAj10MuHmwEyyxtkA5sPZVRGV7WQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1cVvMsoI0euLfJfUoTtKgwy7ZXgXsWZXVRF9qrXxSl89thA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1VJmAlaok-5yZ0yhD2Ppgs3wM850BOQVl-Qxy-8V2c2J_rQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1PxDgTYQ7Qp_o4BbgZWrDsYd6s30A8KG22HAhUuUFXN82kg"
       ]
     },
     "analysisUpdatedAt": "2026-10-26T00:01:22.300546+00:00",
@@ -1526,11 +1500,11 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179593/detail.html",
       "attachmentUrls": [
-        "https://www.k-startup.go.kr/afile/fileDownload/ON2Ln"
+        "https://www.k-startup.go.kr/afile/fileDownload/v1ZIYeOrmco0dfrvILVSt2_C-ATuU8ijujTK9OKliRE-A2Fg"
       ]
     },
     "analysisUpdatedAt": "2026-10-24T00:00:39.128035+00:00",
@@ -1563,7 +1537,7 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179545/detail.html",
       "attachmentUrls": []
@@ -1590,12 +1564,12 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179559/detail.html",
       "attachmentUrls": [
-        "https://www.k-startup.go.kr/afile/fileDownload/s72Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/t72Ln"
+        "https://www.k-startup.go.kr/afile/fileDownload/v1mIDs5PNYlmnH0c8CWkY1VUFeFQw2knMtJ2Y5AAef5c9KMQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1uf_bilRoB-J1d6RSbjUZLKcSa-3u3I_ETA2y2lbsgUeRVA"
       ]
     },
     "analysisUpdatedAt": "2026-10-27T00:07:00.926515+00:00",
@@ -1628,7 +1602,7 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179592/detail.html",
       "attachmentUrls": []
@@ -1663,13 +1637,13 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179577/detail.html",
       "attachmentUrls": [
-        "https://www.k-startup.go.kr/afile/fileDownload/eD2Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/fD2Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/gD2Ln"
+        "https://www.k-startup.go.kr/afile/fileDownload/v1n-aiND1UNz8pvIexAv0at7PDrlF4UhFXd5mz2gyBa9Ck5Q",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1J1lAKCo-t9OG5twDBOVw1SsB5o8L2n8Oig9b9xCTjevJWQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v19Q4lUWDRB99wBpex0vEZymOn0UgZiLLfAwuyl9aUWAc5MA"
       ]
     },
     "analysisUpdatedAt": "2026-10-23T00:10:37.872180+00:00",
@@ -1702,13 +1676,13 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179582/detail.html",
       "attachmentUrls": [
-        "https://www.k-startup.go.kr/afile/fileDownload/NC2Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/7C2Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/8C2Ln"
+        "https://www.k-startup.go.kr/afile/fileDownload/v1S-4v4eVoVlZ0_z2Gg0Xs8hX1-vMO3hO7S66eO0kHyb7zPQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1lwu5zSuf7vF_SrkNVVPsvBaGv_Stxp5kxzCiduEG5Bpmrg",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1uMqOj6sEwWstkhR3cYzOOKTeKTEDe6zG7tYb8qTc1uAOUg"
       ]
     },
     "analysisUpdatedAt": "2026-10-27T00:07:00.926515+00:00",
@@ -1741,11 +1715,11 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179590/detail.html",
       "attachmentUrls": [
-        "https://www.k-startup.go.kr/afile/fileDownload/0M2Ln"
+        "https://www.k-startup.go.kr/afile/fileDownload/v1-pGRs9rwAvUausQMQ5Z-qZsX3T0ZQ0hpkNUbdGASif6dQw"
       ]
     },
     "analysisUpdatedAt": "2026-10-24T00:00:39.128035+00:00",
@@ -1778,12 +1752,12 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179586/detail.html",
       "attachmentUrls": [
-        "https://www.k-startup.go.kr/afile/fileDownload/3C2Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/JC2Ln"
+        "https://www.k-startup.go.kr/afile/fileDownload/v189tGlwDf4qBQLXa85s_Qvr1jLds1_BFfwVyxIlfiLhKuQA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1IcI9AiG2KiDI0YET1Mykxclfz929qc228hPEua0sD3jT9Q"
       ]
     },
     "analysisUpdatedAt": "2026-10-27T00:07:00.926515+00:00",
@@ -1816,11 +1790,11 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179591/detail.html",
       "attachmentUrls": [
-        "https://www.k-startup.go.kr/afile/fileDownload/GM2Ln"
+        "https://www.k-startup.go.kr/afile/fileDownload/v1-BpW9UV7hsxwGHtKzCkfBMic9PiyELEnZ9-vdRhPZRn96A"
       ]
     },
     "analysisUpdatedAt": "2026-10-25T03:34:52.351493+00:00",
@@ -1854,7 +1828,7 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179506/detail.html",
       "attachmentUrls": []
@@ -1889,7 +1863,7 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179585/detail.html",
       "attachmentUrls": []
@@ -1916,14 +1890,10 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179607/detail.html",
-      "attachmentUrls": [
-        "https://www.k-startup.go.kr/afile/fileDownload/iQ2Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/jQ2Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/VQ2Ln"
-      ]
+      "attachmentUrls": []
     },
     "analysisUpdatedAt": "2026-10-29T01:43:50.215678+00:00",
     "deadlineTime": "16:00",
@@ -1955,12 +1925,10 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179605/detail.html",
-      "attachmentUrls": [
-        "https://www.k-startup.go.kr/afile/fileDownload/tQ2Ln"
-      ]
+      "attachmentUrls": []
     },
     "analysisUpdatedAt": "2026-10-29T01:43:50.215678+00:00",
     "deadlineTime": "14:00",
@@ -1982,7 +1950,7 @@
     "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179608",
     "sourceName": "K-Startup",
     "verifiedAt": "2026-10-27T00:04:10.213Z",
-    "verificationLevel": "공식 목록 확인",
+    "verificationLevel": "공식 상세·첨부 분석(일부 미확인)",
     "targetIndustry": "상세 공고에서 확인",
     "budgetLimit": "상세 공고에서 확인",
     "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
@@ -1992,13 +1960,18 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179608/detail.html",
-      "attachmentUrls": [
-        "https://www.k-startup.go.kr/afile/fileDownload/yQ2Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/TQ2Ln"
-      ]
+      "attachmentUrls": []
+    },
+    "analysisUpdatedAt": "2026-10-30T01:43:07.316288+00:00",
+    "deadlineTime": "14:00",
+    "timezone": "Asia/Seoul",
+    "dateVerification": {
+      "status": "conflict",
+      "reference": "K-Startup 신청기간(10/23 00:00~11/3 14시). 신청페이지10/14~11/3 23:59와 충돌",
+      "verifiedAt": "2026-10-30T01:43:07.316288+00:00"
     }
   },
   {
@@ -2022,7 +1995,7 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179611/detail.html",
       "attachmentUrls": []
@@ -2039,7 +2012,7 @@
     "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179613",
     "sourceName": "K-Startup",
     "verifiedAt": "2026-10-27T00:04:10.213Z",
-    "verificationLevel": "공식 목록 확인",
+    "verificationLevel": "공식 상세·첨부 분석(일부 미확인)",
     "targetIndustry": "상세 공고에서 확인",
     "budgetLimit": "상세 공고에서 확인",
     "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
@@ -2049,13 +2022,21 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179613/detail.html",
       "attachmentUrls": [
-        "https://www.k-startup.go.kr/afile/fileDownload/5l2Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/6l2Ln"
+        "https://www.k-startup.go.kr/afile/fileDownload/v17puVfQ0e7NqXECYJWmX2RaoodYcVXhTjXJFysR66bx52sw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1Q4PXT-h74VxPro1-R3FOKfYRvO8enRU9qm51q-xl0dwPoA"
       ]
+    },
+    "analysisUpdatedAt": "2026-11-01T02:29:24.757028+00:00",
+    "deadlineTime": "15:00",
+    "timezone": "Asia/Seoul",
+    "dateVerification": {
+      "status": "official-detail-confirmed",
+      "verifiedAt": "2026-11-01T02:29:24.757028+00:00",
+      "reference": "공식상세·첨부01신청서/PSST계획/동의서전문·첨부02시설안내본문83자/내장사진4개시각검토"
     }
   },
   {
@@ -2069,7 +2050,7 @@
     "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179606",
     "sourceName": "K-Startup",
     "verifiedAt": "2026-10-27T00:04:10.213Z",
-    "verificationLevel": "공식 목록 확인",
+    "verificationLevel": "공식 상세·첨부 분석(일부 미확인)",
     "targetIndustry": "상세 공고에서 확인",
     "budgetLimit": "상세 공고에서 확인",
     "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
@@ -2079,15 +2060,23 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179606/detail.html",
       "attachmentUrls": [
-        "https://www.k-startup.go.kr/afile/fileDownload/CQ2Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/DQ2Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/6Q2Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/MQ2Ln"
+        "https://www.k-startup.go.kr/afile/fileDownload/v1y-pQ59im9lrhw6dRqPFt5xjcIAhmgkNqWt3bQ0B1qy3XcQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1j8oL0of6cvwxB0mcBmTWHd6sJnOe_NKVSBNHtxs10m0qdw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1XVOoxD0YNH3pVS5KQlRUEN7sOqZ6ZLVQtos2lfenVEZ1Ww",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1eKmXSKpoFZGN07SPPyHHpYaoEk1IoL78MiQmT6YLuzUs2Q"
       ]
+    },
+    "analysisUpdatedAt": "2026-11-01T02:29:24.757028+00:00",
+    "deadlineTime": "13:00",
+    "timezone": "Asia/Seoul",
+    "dateVerification": {
+      "status": "official-detail-confirmed",
+      "verifiedAt": "2026-11-01T02:29:24.757028+00:00",
+      "reference": "공식상세·HWP01공고§1~5·HWP02서식1~3전문·PDF03 IT/SW65업종2쪽전체텍스트·PDF04사진1쪽전체시각"
     }
   },
   {
@@ -2101,7 +2090,7 @@
     "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179599",
     "sourceName": "K-Startup",
     "verifiedAt": "2026-10-27T00:04:10.213Z",
-    "verificationLevel": "공식 목록 확인",
+    "verificationLevel": "공식 상세·첨부 분석(일부 미확인)",
     "targetIndustry": "상세 공고에서 확인",
     "budgetLimit": "상세 공고에서 확인",
     "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
@@ -2111,15 +2100,23 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179599/detail.html",
       "attachmentUrls": [
-        "https://www.k-startup.go.kr/afile/fileDownload/Oi2Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/Pi2Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/ri2Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/wc2Ln"
+        "https://www.k-startup.go.kr/afile/fileDownload/v142Nv-ra_rrXj5vdIjn_5gJtz16gFQoSbBPp0dblrF7mbmQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1V3fEpvkP3xs09NQThkpzu4zzmNGSxKgGuLiXaU0uadsJ7w",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1sWykbt6oHwT5_Zaq8XlzH9BaVmjrkdBqjW-MsbD1qGhDvA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v19p2uDw25CafGF53p3Q6FNvOFAg1Y6Ue0m2cnmk_1puxlMw"
       ]
+    },
+    "analysisUpdatedAt": "2026-11-01T02:29:24.757028+00:00",
+    "deadlineTime": "18:00",
+    "timezone": "Asia/Seoul",
+    "dateVerification": {
+      "status": "conflict",
+      "verifiedAt": "2026-11-01T02:29:24.757028+00:00",
+      "reference": "공식상세·PDF01 1~18쪽본문/서식1~5·HWP02대응본문/양식텍스트비교·포스터03시각·04대체텍스트"
     }
   },
   {
@@ -2133,7 +2130,7 @@
     "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179603",
     "sourceName": "K-Startup",
     "verifiedAt": "2026-10-27T00:04:10.213Z",
-    "verificationLevel": "공식 목록 확인",
+    "verificationLevel": "공식 상세·첨부 분석(일부 미확인)",
     "targetIndustry": "상세 공고에서 확인",
     "budgetLimit": "상세 공고에서 확인",
     "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
@@ -2143,16 +2140,20 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
-      "status": "본문 확보·내용 분석 대기",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "첨부 분석·일부 미확인",
       "evidence": "evidence/kstartup-179603/detail.html",
       "attachmentUrls": [
-        "https://www.k-startup.go.kr/afile/fileDownload/Hi2Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/Pl2Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/ai2Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/di2Ln"
-      ]
-    }
+        "https://www.k-startup.go.kr/afile/fileDownload/v1hqFPxkppHD8QpimP-XmK9jeF4hXGuQPUCgKwDBdWVfVTVA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1OxbP5qI3KLPLuihM9RUD2Ghf35orUr3BiYg9zcqzHS0N5Q",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1sngFPA1nQSYlTTrJDoHFA9egn3tlCGS3znUVc2AeAM9xLQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v14lsbf80dnyAFqzaWg8yL9JTXfBR4o8TJtrDHoo8OCciYkg"
+      ],
+      "analyzedAt": "2026-11-05T03:10:39.104704+00:00"
+    },
+    "analysisUpdatedAt": "2026-11-05T03:10:39.104704+00:00",
+    "deadlineTime": "16:00",
+    "timezone": "Asia/Seoul"
   },
   {
     "id": "kstartup-179602",
@@ -2175,13 +2176,10 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179602/detail.html",
-      "attachmentUrls": [
-        "https://www.k-startup.go.kr/afile/fileDownload/4i2Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/8V2Ln"
-      ]
+      "attachmentUrls": []
     },
     "analysisUpdatedAt": "2026-10-24T00:00:39.128035+00:00",
     "deadlineTime": "13:00",
@@ -2213,13 +2211,13 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179561/detail.html",
       "attachmentUrls": [
-        "https://www.k-startup.go.kr/afile/fileDownload/gP2Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/Xi2Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/1i2Ln"
+        "https://www.k-startup.go.kr/afile/fileDownload/v1GiPK8ZAV4cAAUdvmur5gvBfbIyLIQ6H99mYCk2QhrB4wXg",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1iWMPThPh0C2uUOoK8pUjjMYA8x9jdQ4vpwEQXAZqERP27w",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1fqzUYTMSQjQ_xTEc0-p5lpu_OyEC7HiQWXwYTiXi5pdREQ"
       ]
     },
     "analysisUpdatedAt": "2026-10-26T00:01:22.300546+00:00",
@@ -2229,91 +2227,6 @@
       "status": "attachment-confirmed",
       "reference": "상세23:50/첨부11/8 24시충돌:빠른상세보존",
       "verifiedAt": "2026-10-26T00:01:22.300546+00:00"
-    }
-  },
-  {
-    "id": "kstartup-179635",
-    "sourceId": "179635",
-    "title": "[도봉구청년창업센터] 2026 도봉 오픈 창업 스쿨 - 2027 NEXT STAGE",
-    "agency": "광운대학교산학협력단",
-    "category": "CENTRAL",
-    "applicationStartDate": "2026-10-27",
-    "applicationEndDate": "2026-11-12",
-    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179635",
-    "sourceName": "K-Startup",
-    "verifiedAt": "2026-10-29T01:38:51.473Z",
-    "verificationLevel": "공식 목록 확인",
-    "targetIndustry": "상세 공고에서 확인",
-    "budgetLimit": "상세 공고에서 확인",
-    "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
-    "requiredDocsTemplate": "UNVERIFIED",
-    "tags": [
-      "교육"
-    ],
-    "attachments": [],
-    "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
-      "status": "본문 확보·내용 분석 대기",
-      "evidence": "evidence/kstartup-179635/detail.html",
-      "attachmentUrls": []
-    }
-  },
-  {
-    "id": "kstartup-179628",
-    "sourceId": "179628",
-    "title": "[창업] 합격하는 창업 사업계획서 실전",
-    "agency": "마포청년창업취업지원센터 나루",
-    "category": "CENTRAL",
-    "applicationStartDate": "2026-10-27",
-    "applicationEndDate": "2026-11-06",
-    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179628",
-    "sourceName": "K-Startup",
-    "verifiedAt": "2026-10-29T01:38:51.473Z",
-    "verificationLevel": "공식 목록 확인",
-    "targetIndustry": "상세 공고에서 확인",
-    "budgetLimit": "상세 공고에서 확인",
-    "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
-    "requiredDocsTemplate": "UNVERIFIED",
-    "tags": [
-      "공공"
-    ],
-    "attachments": [],
-    "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
-      "status": "본문 확보·내용 분석 대기",
-      "evidence": "evidence/kstartup-179628/detail.html",
-      "attachmentUrls": [
-        "https://www.k-startup.go.kr/afile/fileDownload/Le2Ln"
-      ]
-    }
-  },
-  {
-    "id": "kstartup-179627",
-    "sourceId": "179627",
-    "title": "[창업행사] 서울마포 대학연계 AI 청년창업포럼",
-    "agency": "마포청년창업취업지원센터 나루",
-    "category": "CENTRAL",
-    "applicationStartDate": "2026-10-27",
-    "applicationEndDate": "2026-11-06",
-    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179627",
-    "sourceName": "K-Startup",
-    "verifiedAt": "2026-10-29T01:38:51.473Z",
-    "verificationLevel": "공식 목록 확인",
-    "targetIndustry": "상세 공고에서 확인",
-    "budgetLimit": "상세 공고에서 확인",
-    "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
-    "requiredDocsTemplate": "UNVERIFIED",
-    "tags": [
-      "공공"
-    ],
-    "attachments": [],
-    "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
-      "status": "본문 확보·내용 분석 대기",
-      "evidence": "evidence/kstartup-179627/detail.html",
-      "attachmentUrls": [
-        "https://www.k-startup.go.kr/afile/fileDownload/ne2Ln"
-      ]
     }
   },
   {
@@ -2337,12 +2250,12 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179631/detail.html",
       "attachmentUrls": [
-        "https://www.k-startup.go.kr/afile/fileDownload/x22Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/y22Ln"
+        "https://www.k-startup.go.kr/afile/fileDownload/v1_hIaxCxBJVliTYs02xprKiRZkdqwRXcSAY8VQr9qrFxuOA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1HyMsGub85ekTujvKvqYyyDWzeluxPN62dQnOGK2K1Vob7Q"
       ]
     }
   },
@@ -2357,7 +2270,7 @@
     "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179633",
     "sourceName": "K-Startup",
     "verifiedAt": "2026-10-29T01:38:51.473Z",
-    "verificationLevel": "공식 목록 확인",
+    "verificationLevel": "공식 상세·첨부 분석(일부 미확인)",
     "targetIndustry": "상세 공고에서 확인",
     "budgetLimit": "상세 공고에서 확인",
     "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
@@ -2367,12 +2280,18 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179633/detail.html",
-      "attachmentUrls": [
-        "https://www.k-startup.go.kr/afile/fileDownload/Y22Ln"
-      ]
+      "attachmentUrls": []
+    },
+    "analysisUpdatedAt": "2026-10-30T01:43:07.316288+00:00",
+    "deadlineTime": "17:00",
+    "timezone": "Asia/Seoul",
+    "dateVerification": {
+      "status": "official-detail-confirmed",
+      "reference": "K-Startup 신청기간",
+      "verifiedAt": "2026-10-30T01:43:07.316288+00:00"
     }
   },
   {
@@ -2386,7 +2305,7 @@
     "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179625",
     "sourceName": "K-Startup",
     "verifiedAt": "2026-10-29T01:38:51.473Z",
-    "verificationLevel": "공식 목록 확인",
+    "verificationLevel": "공식 상세·첨부 분석(일부 미확인)",
     "targetIndustry": "상세 공고에서 확인",
     "budgetLimit": "상세 공고에서 확인",
     "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
@@ -2396,12 +2315,20 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179625/detail.html",
       "attachmentUrls": [
-        "https://www.k-startup.go.kr/afile/fileDownload/IX2Ln"
+        "https://www.k-startup.go.kr/afile/fileDownload/v1e0WF1xH-W3-0vbyQ2cB-tqvepf2VSI3r2E8a0NG0KIKeXQ"
       ]
+    },
+    "analysisUpdatedAt": "2026-10-30T01:43:07.316288+00:00",
+    "deadlineTime": "14:00",
+    "timezone": "Asia/Seoul",
+    "dateVerification": {
+      "status": "official-detail-confirmed",
+      "reference": "상세 신청기간·HWP§1/6",
+      "verifiedAt": "2026-10-30T01:43:07.316288+00:00"
     }
   },
   {
@@ -2425,13 +2352,10 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179624/detail.html",
-      "attachmentUrls": [
-        "https://www.k-startup.go.kr/afile/fileDownload/4X2Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/A22Ln"
-      ]
+      "attachmentUrls": []
     },
     "analysisUpdatedAt": "2026-10-29T01:43:50.215678+00:00",
     "deadlineTime": "23:59",
@@ -2453,7 +2377,7 @@
     "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179629",
     "sourceName": "K-Startup",
     "verifiedAt": "2026-10-29T01:38:51.473Z",
-    "verificationLevel": "공식 목록 확인",
+    "verificationLevel": "공식 상세·첨부 분석(일부 미확인)",
     "targetIndustry": "상세 공고에서 확인",
     "budgetLimit": "상세 공고에서 확인",
     "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
@@ -2463,13 +2387,21 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179629/detail.html",
       "attachmentUrls": [
-        "https://www.k-startup.go.kr/afile/fileDownload/n22Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/L22Ln"
+        "https://www.k-startup.go.kr/afile/fileDownload/v1qHfbpSK5MDETVF5BBflMOYewliTF9PgKkwlKnMnNTslJOQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1FZV_CHGhtLemQWRzQzz_q8OvQ943BqXSmpiBMFo7bC4W2A"
       ]
+    },
+    "analysisUpdatedAt": "2026-11-03T00:03:26.113645+00:00",
+    "deadlineTime": "14:00",
+    "timezone": "Asia/Seoul",
+    "dateVerification": {
+      "status": "official-detail-confirmed",
+      "verifiedAt": "2026-11-03T00:03:26.113645+00:00",
+      "reference": "공식상세·01대체텍스트전문·02포스터전체시각"
     }
   },
   {
@@ -2493,15 +2425,10 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179576/detail.html",
-      "attachmentUrls": [
-        "https://www.k-startup.go.kr/afile/fileDownload/Yc2Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/Us2Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/Rs2Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/ps2Ln"
-      ]
+      "attachmentUrls": []
     },
     "analysisUpdatedAt": "2026-10-29T01:43:50.215678+00:00",
     "deadlineTime": "18:00",
@@ -2533,15 +2460,15 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179623/detail.html",
       "attachmentUrls": [
-        "https://www.k-startup.go.kr/afile/fileDownload/UW2Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/RW2Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/pW2Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/vW2Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/IW2Ln"
+        "https://www.k-startup.go.kr/afile/fileDownload/v1Ar6QBQyLCO_FkcW38PxmLrS2ztKpXQr8oWdax292PQGJXA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1CtXkNbx3iOcmN8oQO7MXm2WTSymqPTp9tEEDVXe9dSqzmw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1v10dudzLkG7A44I9NYMMLJBWPjNdpIgSdzKlGnV61xY6Dw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1J1F3zy8uq_jBdtOmQsZ2LB7-eqF04Q5twduh0Um4tDvkog",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1ORCPa6r0nubhX5oDy6tFwpcoYUN1ruAo0BmSl_nI7W0Hvg"
       ]
     }
   },
@@ -2556,7 +2483,7 @@
     "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179622",
     "sourceName": "K-Startup",
     "verifiedAt": "2026-10-29T01:38:51.473Z",
-    "verificationLevel": "공식 목록 확인",
+    "verificationLevel": "공식 상세·첨부 분석(일부 미확인)",
     "targetIndustry": "상세 공고에서 확인",
     "budgetLimit": "상세 공고에서 확인",
     "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
@@ -2566,13 +2493,21 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179622/detail.html",
       "attachmentUrls": [
-        "https://www.k-startup.go.kr/afile/fileDownload/CW2Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/DW2Ln"
+        "https://www.k-startup.go.kr/afile/fileDownload/v1YxiJpme0JAaOmyMtttfV5-Zs7y8iXC25qbBtRZJ-uXdw0g",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1AvWv2b52NFai1S0Uy3yIU9fecv44vi_J7tNmSkFXXT02dA"
       ]
+    },
+    "analysisUpdatedAt": "2026-11-02T00:10:50.858912+00:00",
+    "deadlineTime": "23:59",
+    "timezone": "Asia/Seoul",
+    "dateVerification": {
+      "status": "official-detail-confirmed",
+      "verifiedAt": "2026-11-02T00:10:50.858912+00:00",
+      "reference": "공식상세·첨부01HWP전문/02포스터전체시각·주최공개안내전문"
     }
   },
   {
@@ -2586,7 +2521,7 @@
     "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179620",
     "sourceName": "K-Startup",
     "verifiedAt": "2026-10-29T01:38:51.473Z",
-    "verificationLevel": "공식 목록 확인",
+    "verificationLevel": "공식 상세·첨부 분석(일부 미확인)",
     "targetIndustry": "상세 공고에서 확인",
     "budgetLimit": "상세 공고에서 확인",
     "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
@@ -2596,14 +2531,22 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179620/detail.html",
       "attachmentUrls": [
-        "https://www.k-startup.go.kr/afile/fileDownload/202Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/e02Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/f02Ln"
+        "https://www.k-startup.go.kr/afile/fileDownload/v1sStXYHet2ik1zVCsJKkeCKmUgv2SKWQ21Rtc1ssGZyH2zA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1o_hvsygauM_VtZwGHuMvBXW2U7N_BRMNGoOwXHP5TUJFYg",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1kRdEINEyK0hX5H9J-7LeagxZaUPy52RRCOw7mfbUirKreg"
       ]
+    },
+    "analysisUpdatedAt": "2026-10-31T06:29:54.881062+00:00",
+    "deadlineTime": "23:59",
+    "timezone": "Asia/Seoul",
+    "dateVerification": {
+      "status": "conflict",
+      "verifiedAt": "2026-10-31T06:29:54.881062+00:00",
+      "reference": "공식상세·첨부01포스터시각·첨부02긴포스터개요시각·첨부03대체텍스트전체/협업과제·워케이션내용"
     }
   },
   {
@@ -2617,7 +2560,7 @@
     "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179612",
     "sourceName": "K-Startup",
     "verifiedAt": "2026-10-29T01:38:51.473Z",
-    "verificationLevel": "공식 목록 확인",
+    "verificationLevel": "공식 상세·첨부 분석(일부 미확인)",
     "targetIndustry": "상세 공고에서 확인",
     "budgetLimit": "상세 공고에서 확인",
     "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
@@ -2627,15 +2570,23 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179612/detail.html",
       "attachmentUrls": [
-        "https://www.k-startup.go.kr/afile/fileDownload/Al2Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/ol2Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/wl2Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/ql2Ln"
+        "https://www.k-startup.go.kr/afile/fileDownload/v1ooCgZiyfS9HkLtd5vhd9NWL6zV9OqgmkziMEJYw79behjw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1PNKj-5_-tvv-EzgKuJ4wD_ij7CG85hhfQUDPGd7yRJnKXw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v13gWHSWWieqQOnVA_p5nBJ0lu58Oh5UyTBaJNb-U-T2HFHQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1WkTCLisrpyGUXRr3-2HcFLfcCRgJdXZRhqyUsQXzDPRVxg"
       ]
+    },
+    "analysisUpdatedAt": "2026-11-03T00:03:26.113645+00:00",
+    "deadlineTime": "23:59",
+    "timezone": "Asia/Seoul",
+    "dateVerification": {
+      "status": "conflict",
+      "verifiedAt": "2026-11-03T00:03:26.113645+00:00",
+      "reference": "공식상세·PDF01 1~3쪽본문/§2~4·p3사진시각·HWP02계획서전문/HWP03동의전문·PDF04스캔1쪽전체시각"
     }
   },
   {
@@ -2649,7 +2600,7 @@
     "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179615",
     "sourceName": "K-Startup",
     "verifiedAt": "2026-10-29T01:38:51.473Z",
-    "verificationLevel": "공식 목록 확인",
+    "verificationLevel": "공식 상세·첨부 분석(일부 미확인)",
     "targetIndustry": "상세 공고에서 확인",
     "budgetLimit": "상세 공고에서 확인",
     "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
@@ -2659,13 +2610,21 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179615/detail.html",
       "attachmentUrls": [
-        "https://www.k-startup.go.kr/afile/fileDownload/ac2Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/dc2Ln"
+        "https://www.k-startup.go.kr/afile/fileDownload/v1BNnWVSXgi2zTVjH9s4BAy8fcCgAkwyTFs_a1LRkfFUp3Gg",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1anvMvCB0v3yNS8pqYZyi_bIuJN6476n0tmqFSPnxtGUysw"
       ]
+    },
+    "analysisUpdatedAt": "2026-11-04T00:45:52.940286+00:00",
+    "deadlineTime": "17:00",
+    "timezone": "Asia/Seoul",
+    "dateVerification": {
+      "status": "official-detail-confirmed",
+      "verifiedAt": "2026-11-04T00:45:52.940286+00:00",
+      "reference": "공식상세·HWP01신청/기업재무/기술/자금/별첨동의3종전문·HWP02공고§1~4전문·바다봄공개상세"
     }
   },
   {
@@ -2689,13 +2648,10 @@
     ],
     "attachments": [],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/kstartup-179616/detail.html",
-      "attachmentUrls": [
-        "https://www.k-startup.go.kr/afile/fileDownload/y02Ln",
-        "https://www.k-startup.go.kr/afile/fileDownload/T02Ln"
-      ]
+      "attachmentUrls": []
     },
     "analysisUpdatedAt": "2026-10-29T01:43:50.215678+00:00",
     "deadlineTime": "23:59",
@@ -2704,6 +2660,1999 @@
       "status": "conflict",
       "reference": "첨부시작10/23 vs 상세10/26·마감시각상세",
       "verifiedAt": "2026-10-29T01:43:50.215678+00:00"
+    }
+  },
+  {
+    "id": "mss-1071647",
+    "sourceId": "1071647",
+    "title": "2026년 납품대금 연동 우수기업 포상 모집 수정공고(연장)",
+    "agency": "중소벤처기업부",
+    "category": "CENTRAL",
+    "applicationStartDate": null,
+    "applicationEndDate": null,
+    "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071647&parentSeq=1071647",
+    "sourceName": "중소벤처기업부",
+    "verifiedAt": "2026-10-29T01:38:51.473Z",
+    "verificationLevel": "공식 목록 확인",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "중소벤처기업부 공식 사업공고. 신청자격과 제출서류는 첨부 원문 확인이 필요합니다.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [],
+    "attachments": [
+      "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071647&cbIdx=310&streFileNm=6d4a89a6-aa98-4a61-a912-5f87d873785c.hwpx",
+      "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071647&cbIdx=310&streFileNm=4016cb6d-64f6-4c0d-8679-d8408097a0f9.pdf",
+      "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071647&cbIdx=310&cbIdx=310&streFileNm=6d4a89a6-aa98-4a61-a912-5f87d873785c.hwpx",
+      "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071647&cbIdx=310&cbIdx=310&streFileNm=4016cb6d-64f6-4c0d-8679-d8408097a0f9.pdf"
+    ],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/mss-1071647/detail.html",
+      "attachmentUrls": [
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071647&cbIdx=310&streFileNm=4016cb6d-64f6-4c0d-8679-d8408097a0f9.pdf",
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071647&cbIdx=310&streFileNm=6d4a89a6-aa98-4a61-a912-5f87d873785c.hwpx"
+      ]
+    }
+  },
+  {
+    "id": "kstartup-179645",
+    "sourceId": "179645",
+    "title": "2026 연구개발특구 딥테크 스타트업 챌린지 Final Day 행사 사전접수",
+    "agency": "리벤처스",
+    "category": "PRIVATE",
+    "applicationStartDate": "2026-10-28",
+    "applicationEndDate": "2026-10-30",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179645",
+    "sourceName": "K-Startup",
+    "verifiedAt": "2026-10-30T01:34:23.807Z",
+    "verificationLevel": "공식 상세·첨부 분석(일부 미확인)",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [
+      "민간"
+    ],
+    "attachments": [],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/kstartup-179645/detail.html",
+      "attachmentUrls": []
+    },
+    "analysisUpdatedAt": "2026-10-30T01:43:07.316288+00:00",
+    "deadlineTime": "23:59",
+    "timezone": "Asia/Seoul",
+    "dateVerification": {
+      "status": "conflict",
+      "reference": "K-Startup 신청방법·행사안내; 포스터01·HWPX02",
+      "verifiedAt": "2026-10-30T01:43:07.316288+00:00"
+    }
+  },
+  {
+    "id": "kstartup-179646",
+    "sourceId": "179646",
+    "title": "[2026 아트 스타트업 데이] 일반 참가자 모집",
+    "agency": "예술경영지원센터",
+    "category": "CENTRAL",
+    "applicationStartDate": "2026-10-21",
+    "applicationEndDate": "2026-11-03",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179646",
+    "sourceName": "K-Startup",
+    "verifiedAt": "2026-10-30T01:34:23.807Z",
+    "verificationLevel": "공식 상세·첨부 분석(일부 미확인)",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [
+      "공공"
+    ],
+    "attachments": [],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/kstartup-179646/detail.html",
+      "attachmentUrls": []
+    },
+    "analysisUpdatedAt": "2026-10-30T01:43:07.316288+00:00",
+    "deadlineTime": "14:00",
+    "timezone": "Asia/Seoul",
+    "dateVerification": {
+      "status": "official-detail-confirmed",
+      "reference": "상세 신청기간·이벤터스 신청 Apply",
+      "verifiedAt": "2026-10-30T01:43:07.316288+00:00"
+    }
+  },
+  {
+    "id": "kstartup-179635",
+    "sourceId": "179635",
+    "title": "[도봉구청년창업센터] 2026 도봉 오픈 창업 스쿨 - 2027 NEXT STAGE",
+    "agency": "광운대학교산학협력단",
+    "category": "CENTRAL",
+    "applicationStartDate": "2026-10-27",
+    "applicationEndDate": "2026-11-12",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179635",
+    "sourceName": "K-Startup",
+    "verifiedAt": "2026-10-30T01:34:23.807Z",
+    "verificationLevel": "공식 목록 확인",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [
+      "교육"
+    ],
+    "attachments": [],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/kstartup-179635/detail.html",
+      "attachmentUrls": []
+    }
+  },
+  {
+    "id": "kstartup-179628",
+    "sourceId": "179628",
+    "title": "[창업] 합격하는 창업 사업계획서 실전",
+    "agency": "마포청년창업취업지원센터 나루",
+    "category": "CENTRAL",
+    "applicationStartDate": "2026-10-27",
+    "applicationEndDate": "2026-11-06",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179628",
+    "sourceName": "K-Startup",
+    "verifiedAt": "2026-10-30T01:34:23.807Z",
+    "verificationLevel": "공식 상세·첨부 분석(일부 미확인)",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [
+      "공공"
+    ],
+    "attachments": [],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/kstartup-179628/detail.html",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v144EP620qoFQP5wAlbb7u8PtHDNixym2KsRCB4AgnEpReBw"
+      ]
+    },
+    "analysisUpdatedAt": "2026-11-01T02:29:24.757028+00:00",
+    "deadlineTime": "14:00",
+    "timezone": "Asia/Seoul",
+    "dateVerification": {
+      "status": "official-detail-confirmed",
+      "verifiedAt": "2026-11-01T02:29:24.757028+00:00",
+      "reference": "상세·첨부01스캔PDF1쪽전체렌더시각·주최공개안내전문대조"
+    }
+  },
+  {
+    "id": "kstartup-179627",
+    "sourceId": "179627",
+    "title": "[창업행사] 서울마포 대학연계 AI 청년창업포럼",
+    "agency": "마포청년창업취업지원센터 나루",
+    "category": "CENTRAL",
+    "applicationStartDate": "2026-10-27",
+    "applicationEndDate": "2026-11-06",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179627",
+    "sourceName": "K-Startup",
+    "verifiedAt": "2026-10-30T01:34:23.807Z",
+    "verificationLevel": "공식 상세·첨부 분석(일부 미확인)",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [
+      "공공"
+    ],
+    "attachments": [],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/kstartup-179627/detail.html",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1sRbp6QaAUlY6Umgl__-XJ8EBZ5LsQJtiK9SWK21IYXb6ZQ"
+      ]
+    },
+    "analysisUpdatedAt": "2026-11-01T02:29:24.757028+00:00",
+    "deadlineTime": "14:00",
+    "timezone": "Asia/Seoul",
+    "dateVerification": {
+      "status": "official-detail-confirmed",
+      "verifiedAt": "2026-11-01T02:29:24.757028+00:00",
+      "reference": "상세·첨부01스캔PDF1쪽전체렌더시각·주최공개안내전문대조"
+    }
+  },
+  {
+    "id": "mss-1071648",
+    "sourceId": "1071648",
+    "title": "2027년 초격차 스타트업 프로젝트 정부 첫 실증·구매 프로젝트 주관기관 모집공고",
+    "agency": "중소벤처기업부",
+    "category": "CENTRAL",
+    "applicationStartDate": null,
+    "applicationEndDate": null,
+    "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071648&parentSeq=1071648",
+    "sourceName": "중소벤처기업부",
+    "verifiedAt": "2026-10-30T01:34:23.807Z",
+    "verificationLevel": "공식 목록 확인",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "중소벤처기업부 공식 사업공고. 신청자격과 제출서류는 첨부 원문 확인이 필요합니다.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [],
+    "attachments": [
+      "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071648&cbIdx=310&streFileNm=cf8334cc-60a1-48e6-8fd9-f7f9a738347f.pdf",
+      "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071648&cbIdx=310&streFileNm=ca0f024d-e028-40f2-aa7f-4c4feba19e82.hwpx",
+      "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071648&cbIdx=310&cbIdx=310&streFileNm=cf8334cc-60a1-48e6-8fd9-f7f9a738347f.pdf",
+      "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071648&cbIdx=310&cbIdx=310&streFileNm=ca0f024d-e028-40f2-aa7f-4c4feba19e82.hwpx"
+    ],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/mss-1071648/detail.html",
+      "attachmentUrls": [
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071648&cbIdx=310&streFileNm=ca0f024d-e028-40f2-aa7f-4c4feba19e82.hwpx",
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071648&cbIdx=310&streFileNm=cf8334cc-60a1-48e6-8fd9-f7f9a738347f.pdf"
+      ]
+    }
+  },
+  {
+    "id": "kstartup-179630",
+    "sourceId": "179630",
+    "title": "[은행연합회] 청년 소상공인 컨설팅 지원 사업",
+    "agency": "한국생산성본부",
+    "category": "CENTRAL",
+    "applicationStartDate": "2026-10-28",
+    "applicationEndDate": "2026-11-30",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179630",
+    "sourceName": "K-Startup",
+    "verifiedAt": "2026-10-31T06:23:29.043Z",
+    "verificationLevel": "공식 목록 확인",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [
+      "교육"
+    ],
+    "attachments": [],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/kstartup-179630/detail.html",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1q3_2XBHZeViJchV9rtf3EvaXPi6uiI40CnuUMyzjDiuCtA"
+      ]
+    }
+  },
+  {
+    "id": "kstartup-179642",
+    "sourceId": "179642",
+    "title": "[한국국제협력단]「 KOICA IMPACT TOGETHER 2026 」 행사",
+    "agency": "한국국제협력단(KOICA)",
+    "category": "CENTRAL",
+    "applicationStartDate": "2026-10-28",
+    "applicationEndDate": "2026-11-16",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179642",
+    "sourceName": "K-Startup",
+    "verifiedAt": "2026-11-01T02:26:35.401Z",
+    "verificationLevel": "공식 목록 확인",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [
+      "공공"
+    ],
+    "attachments": [],
+    "detailReview": {
+      "fetchedAt": "2026-11-04T00:03:37.912Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/kstartup-179642/detail.html",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1-_deFb0Mr3RRpc9CK_Jg0tiRgXCCZoBNeeNqkAQ1g-soIw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1WO3elztDbYhbVhjzeniCEZ_Ex8j30hvaLDNlGzqR3mNERg",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1aGKzsTYaj4RyvtNQOe566_5iniBe6shvRs-iGBgLEIr_nA"
+      ]
+    }
+  },
+  {
+    "id": "kstartup-179595",
+    "sourceId": "179595",
+    "title": "2026년 충청남도 로컬 창업 특화 교육생 모집",
+    "agency": "한국능률협회",
+    "category": "PRIVATE",
+    "applicationStartDate": "2026-10-21",
+    "applicationEndDate": "2027-01-31",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179595",
+    "sourceName": "K-Startup",
+    "verifiedAt": "2026-11-01T02:26:35.401Z",
+    "verificationLevel": "공식 목록 확인",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [
+      "민간"
+    ],
+    "attachments": [],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/kstartup-179595/detail.html",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1CbQTylDlHORUPBBjh_sdvU9jOKh-yMf7czTtMaBL40c00g",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1I9yJaT-A0R97qwDaXtNUbyLy3w5hACDXcJ4QSSgwglZQfA"
+      ]
+    }
+  },
+  {
+    "id": "kstartup-179661",
+    "sourceId": "179661",
+    "title": "2026년 초기창업패키지 SM엔터테인먼트 오픈이노베이션 밋업 CultureTech Challenge",
+    "agency": "씨엔티테크(주)",
+    "category": "PRIVATE",
+    "applicationStartDate": "2026-11-02",
+    "applicationEndDate": "2026-11-20",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179661",
+    "sourceName": "K-Startup",
+    "verifiedAt": "2026-11-02T00:05:27.480Z",
+    "verificationLevel": "공식 상세·첨부 분석(일부 미확인)",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [
+      "민간"
+    ],
+    "attachments": [],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/kstartup-179661/detail.html",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1TY9vF4uh0wr74Gp_CzI2e40_X4JYyEHy4CJk-YFWtdHpgg",
+        "https://www.k-startup.go.kr/afile/fileDownload/v14DHuEAaZ7AzeqrNOdDB1izwN0GQgcMeAEFtWSFGgpwE5-A",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1qiu8mh_Zt3gApou4Xird4q2Bvz29ogbEvEvuWARidCOHTQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1ZdpTMobFLeS9CSTh4hQr6xuJTbREuS9d0zWMq9Lbc8FUiw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1033R7vgMQt74HFyaWFG7REpL2Qoi6fdxGQ__vBNMXpbW6w"
+      ]
+    },
+    "analysisUpdatedAt": "2026-11-02T00:10:50.858912+00:00",
+    "deadlineTime": "18:00",
+    "timezone": "Asia/Seoul",
+    "dateVerification": {
+      "status": "conflict",
+      "verifiedAt": "2026-11-02T00:10:50.858912+00:00",
+      "reference": "공식상세·공고PDF03 1~5쪽/HWP02대조·붙임HWP04신청/동의/확인서전체·01포스터시각/05텍스트"
+    }
+  },
+  {
+    "id": "kstartup-179662",
+    "sourceId": "179662",
+    "title": "한국기술교육대학교 오픈이노베이션 프로그램 참여기업 모집 통합 공고",
+    "agency": "한국기술교육대학교 산학협력단",
+    "category": "CENTRAL",
+    "applicationStartDate": "2026-10-29",
+    "applicationEndDate": "2026-11-27",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179662",
+    "sourceName": "K-Startup",
+    "verifiedAt": "2026-11-02T00:05:27.480Z",
+    "verificationLevel": "공식 목록 확인",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [
+      "교육"
+    ],
+    "attachments": [],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/kstartup-179662/detail.html",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1A3RXvia70DUa55_5VSWC_Yr7GW40V-Lcz4bYQCPXEuSGsQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1emA0hHaB12wA8kDgD7_f6XAtz-m2UlRebnKyZyl4r8gUTg",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1Z_ZUJ2-pcQKnxkN8BmxilOn0l1z5ChdLtXRn5It12_72mg",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1isVvDuywUxU8YD6twxNy-jFm4osbVhzzpLpZCB_nQaxaQw"
+      ]
+    }
+  },
+  {
+    "id": "kstartup-179656",
+    "sourceId": "179656",
+    "title": "[대전창조경제혁신센터] 2026년 웰컴 스테이 지원사업 참여기업 모집 재공고",
+    "agency": "대전창조경제혁신센터",
+    "category": "CENTRAL",
+    "applicationStartDate": "2026-10-28",
+    "applicationEndDate": "2027-02-28",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179656",
+    "sourceName": "K-Startup",
+    "verifiedAt": "2026-11-02T00:05:27.480Z",
+    "verificationLevel": "공식 목록 확인",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [
+      "공공"
+    ],
+    "attachments": [],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/kstartup-179656/detail.html",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1Q8l968BdMe9Vy4W-7R36kLkWwq1Qns3j_GocE8TxNYZtdQ"
+      ]
+    }
+  },
+  {
+    "id": "kstartup-179654",
+    "sourceId": "179654",
+    "title": "2026년 K-바이오랩허브 멤버십 기업 모집",
+    "agency": "인천창조경제혁신센터",
+    "category": "CENTRAL",
+    "applicationStartDate": "2026-10-29",
+    "applicationEndDate": "2026-11-17",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179654",
+    "sourceName": "K-Startup",
+    "verifiedAt": "2026-11-02T00:05:27.480Z",
+    "verificationLevel": "공식 목록 확인",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [
+      "공공"
+    ],
+    "attachments": [],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/kstartup-179654/detail.html",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1eK-e3il9GjbohJpSkk0fLChaMCH5zxebyVy6pS2ds-e1vg",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1Eo77lKPiLY9Tt_PDtd47cv-LeLTfcjPd_Z34aEqOkcW5Hw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1rb3PPWHjt3srIXMvTm3FQNCghSbk6Mv1752uwhPnZbRrDQ"
+      ]
+    }
+  },
+  {
+    "id": "kstartup-179653",
+    "sourceId": "179653",
+    "title": "2026년도 키친인큐베이터 개별·공유주방 25기 및 제조주방 13기 모집",
+    "agency": "서울경제진흥원",
+    "category": "CENTRAL",
+    "applicationStartDate": "2026-11-02",
+    "applicationEndDate": "2026-11-26",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179653",
+    "sourceName": "K-Startup",
+    "verifiedAt": "2026-11-02T00:05:27.480Z",
+    "verificationLevel": "공식 상세·첨부 분석(일부 미확인)",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [
+      "공공"
+    ],
+    "attachments": [],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/kstartup-179653/detail.html",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1NSFqa-F2vzbh6Zhi5nUsYkleSUx-KEJV9FIHNuQGmlLy9w",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1bKe8fVuO0CA7AyH1hv7fRHOYpTRauI6KvqNBz_7V4txkJA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1huf4i15R798WRcBxOScKE2aIGjfPc9AOCYzjVJyG0y27Ew"
+      ]
+    },
+    "analysisUpdatedAt": "2026-11-02T00:10:50.858912+00:00",
+    "deadlineTime": "13:00",
+    "timezone": "Asia/Seoul",
+    "dateVerification": {
+      "status": "conflict",
+      "verifiedAt": "2026-11-02T00:10:50.858912+00:00",
+      "reference": "공식상세·PDF01 1~10쪽/5·7쪽시각·02포스터/03HWP텍스트·공식ZIP14파일(신규PPT3·HWP10·매뉴얼PDF1)핵심검토"
+    }
+  },
+  {
+    "id": "kstartup-179652",
+    "sourceId": "179652",
+    "title": "[행사 안내] 2026 네이버클라우드 그린하우스 : MARKET CONNECT",
+    "agency": "알파브라더스",
+    "category": "PRIVATE",
+    "applicationStartDate": "2026-10-28",
+    "applicationEndDate": "2026-11-03",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179652",
+    "sourceName": "K-Startup",
+    "verifiedAt": "2026-11-02T00:05:27.480Z",
+    "verificationLevel": "공식 목록 확인",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [
+      "민간"
+    ],
+    "attachments": [],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/kstartup-179652/detail.html",
+      "attachmentUrls": []
+    },
+    "analysisUpdatedAt": "2026-10-31T06:29:54.881062+00:00",
+    "deadlineTime": "00:00",
+    "timezone": "Asia/Seoul",
+    "dateVerification": {
+      "status": "official-detail-confirmed",
+      "verifiedAt": "2026-10-31T06:29:54.881062+00:00",
+      "reference": "공식상세·포스터01전체시각·대체텍스트02전체"
+    }
+  },
+  {
+    "id": "kstartup-179637",
+    "sourceId": "179637",
+    "title": "서울디자인재단 「2026 서울디자인런 포럼」 참가 신청",
+    "agency": "(주)오픈놀",
+    "category": "PRIVATE",
+    "applicationStartDate": "2026-10-27",
+    "applicationEndDate": "2026-11-09",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179637",
+    "sourceName": "K-Startup",
+    "verifiedAt": "2026-11-02T00:05:27.480Z",
+    "verificationLevel": "공식 상세·첨부 분석(일부 미확인)",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [
+      "민간"
+    ],
+    "attachments": [],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/kstartup-179637/detail.html",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1X6fcA03AVNcynpzaKGHuKv7goi2F4MtMpXBSGAw5gsllvg",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1xF-Mrg2msK73myumEYNSevQ_NEeZ03Bttj35Hs3NsOZ-NQ"
+      ]
+    },
+    "analysisUpdatedAt": "2026-11-02T00:10:50.858912+00:00",
+    "deadlineTime": "18:00",
+    "timezone": "Asia/Seoul",
+    "dateVerification": {
+      "status": "official-detail-confirmed",
+      "verifiedAt": "2026-11-02T00:10:50.858912+00:00",
+      "reference": "공식상세·첨부01포스터전체시각·02대체텍스트전체·공개이벤터스접근"
+    }
+  },
+  {
+    "id": "kstartup-179649",
+    "sourceId": "179649",
+    "title": "NCI 민/관/학 창업포럼(2026 강북창업포럼) 참관객 모집",
+    "agency": "광운대학교산학협력단",
+    "category": "CENTRAL",
+    "applicationStartDate": "2026-10-29",
+    "applicationEndDate": "2026-11-13",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179649",
+    "sourceName": "K-Startup",
+    "verifiedAt": "2026-11-02T00:05:27.480Z",
+    "verificationLevel": "공식 목록 확인",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [
+      "교육"
+    ],
+    "attachments": [],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/kstartup-179649/detail.html",
+      "attachmentUrls": []
+    }
+  },
+  {
+    "id": "kstartup-179636",
+    "sourceId": "179636",
+    "title": "2026 서울게임콘텐츠센터 게임랩 신규 입주기업 모집",
+    "agency": "서울경제진흥원",
+    "category": "CENTRAL",
+    "applicationStartDate": "2026-10-23",
+    "applicationEndDate": "2026-11-10",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179636",
+    "sourceName": "K-Startup",
+    "verifiedAt": "2026-11-02T00:05:27.480Z",
+    "verificationLevel": "공식 상세·첨부 분석(일부 미확인)",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [
+      "공공"
+    ],
+    "attachments": [],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/kstartup-179636/detail.html",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1MA6COpeJfIx_xwpyQjiowvVzVTjWtlfC2QZYce-iwjjuZQ"
+      ]
+    },
+    "analysisUpdatedAt": "2026-11-02T00:10:50.858912+00:00",
+    "deadlineTime": "15:00",
+    "timezone": "Asia/Seoul",
+    "dateVerification": {
+      "status": "official-detail-confirmed",
+      "verifiedAt": "2026-11-02T00:10:50.858912+00:00",
+      "reference": "공식상세·PDF01 1~6쪽본문/4~5쪽시각·SBA공개상세및별도양식URL"
+    }
+  },
+  {
+    "id": "mss-1071736",
+    "sourceId": "1071736",
+    "title": "2026년 해외규격인증획득지원사업(일반지원) 3차 참여기업 모집공고",
+    "agency": "중소벤처기업부",
+    "category": "CENTRAL",
+    "applicationStartDate": "2026-10-14",
+    "applicationEndDate": "2026-11-13",
+    "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071736&parentSeq=1071736",
+    "sourceName": "중소벤처기업부",
+    "verifiedAt": "2026-11-02T00:05:27.480Z",
+    "verificationLevel": "공식 목록 확인",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "중소벤처기업부 공식 사업공고. 신청자격과 제출서류는 첨부 원문 확인이 필요합니다.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [],
+    "attachments": [
+      "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071736&cbIdx=310&streFileNm=9a18f7e0-ab6e-4ad6-a9bc-0262cea931ca.pdf",
+      "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071736&cbIdx=310&streFileNm=1b724635-9fb9-4d2f-b5b2-8d6e6040b1af.hwpx",
+      "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071736&cbIdx=310&cbIdx=310&streFileNm=9a18f7e0-ab6e-4ad6-a9bc-0262cea931ca.pdf",
+      "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071736&cbIdx=310&cbIdx=310&streFileNm=1b724635-9fb9-4d2f-b5b2-8d6e6040b1af.hwpx"
+    ],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/mss-1071736/detail.html",
+      "attachmentUrls": [
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071736&cbIdx=310&streFileNm=1b724635-9fb9-4d2f-b5b2-8d6e6040b1af.hwpx",
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071736&cbIdx=310&streFileNm=9a18f7e0-ab6e-4ad6-a9bc-0262cea931ca.pdf"
+      ]
+    }
+  },
+  {
+    "id": "kstartup-179660",
+    "sourceId": "179660",
+    "title": "2027년도 초기창업·창업도약 패키지 사업 신규 주관기관 모집 공고",
+    "agency": "창업진흥원",
+    "category": "CENTRAL",
+    "applicationStartDate": "2026-10-30",
+    "applicationEndDate": "2026-11-20",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179660",
+    "sourceName": "K-Startup",
+    "verifiedAt": "2026-11-02T23:58:29.103Z",
+    "verificationLevel": "공식 목록 확인",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "이 공고 제2026-621호는 11/2 수정공고 제2026-622호(mss-1072214)로 정정됐습니다. 최신 마감은 11/23 16시입니다. 이 항목은 이전 공고/양식 이력으로 보존합니다.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [
+      "공공"
+    ],
+    "attachments": [],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/kstartup-179660/detail.html",
+      "attachmentUrls": []
+    },
+    "supersededBy": "mss-1072214",
+    "sameOriginalNoticeIds": [
+      "mss-1072172",
+      "kstartup-179660"
+    ]
+  },
+  {
+    "id": "kstartup-179674",
+    "sourceId": "179674",
+    "title": "스타트업을 위한 정부 R&D 특강",
+    "agency": "한국기술교육대학교 산학협력단",
+    "category": "CENTRAL",
+    "applicationStartDate": "2026-10-30",
+    "applicationEndDate": "2026-11-03",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179674",
+    "sourceName": "K-Startup",
+    "verifiedAt": "2026-11-02T23:58:29.103Z",
+    "verificationLevel": "공식 목록 확인",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [
+      "교육"
+    ],
+    "attachments": [],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/kstartup-179674/detail.html",
+      "attachmentUrls": []
+    },
+    "analysisUpdatedAt": "2026-10-31T06:29:54.881062+00:00",
+    "deadlineTime": "23:59",
+    "timezone": "Asia/Seoul",
+    "dateVerification": {
+      "status": "official-detail-confirmed",
+      "verifiedAt": "2026-10-31T06:29:54.881062+00:00",
+      "reference": "공식상세·첨부01포스터전체시각·첨부02대체텍스트전체/QRURL"
+    }
+  },
+  {
+    "id": "kstartup-179672",
+    "sourceId": "179672",
+    "title": "트레일 신산업 로컬창업지원 참여기업 모집",
+    "agency": "크립톤",
+    "category": "PRIVATE",
+    "applicationStartDate": "2026-10-30",
+    "applicationEndDate": "2026-11-06",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179672",
+    "sourceName": "K-Startup",
+    "verifiedAt": "2026-11-02T23:58:29.103Z",
+    "verificationLevel": "공식 목록 확인",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [
+      "민간"
+    ],
+    "attachments": [],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/kstartup-179672/detail.html",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1WVkKPrptUGLLbYw3_Cy6Uf1a01ZNNgT87POI5z78P7ohng",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1JZGRzJrhZa7ok9mITJLXp-_EEFfUbBOeSACse_2B8VNiAA"
+      ]
+    },
+    "analysisUpdatedAt": "2026-10-31T06:29:54.881062+00:00",
+    "deadlineTime": "18:00",
+    "timezone": "Asia/Seoul",
+    "dateVerification": {
+      "status": "official-detail-confirmed",
+      "verifiedAt": "2026-10-31T06:29:54.881062+00:00",
+      "reference": "공식상세·첨부01포스터전체시각·첨부02HWPX전체본문대조"
+    }
+  },
+  {
+    "id": "kstartup-179664",
+    "sourceId": "179664",
+    "title": "대덕 원스톱 Bridge 연계 제 108회 대전창업포럼 참가 모집",
+    "agency": "대전창조경제혁신센터",
+    "category": "CENTRAL",
+    "applicationStartDate": "2026-10-29",
+    "applicationEndDate": "2026-11-09",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179664",
+    "sourceName": "K-Startup",
+    "verifiedAt": "2026-11-02T23:58:29.103Z",
+    "verificationLevel": "공식 상세·첨부 분석(일부 미확인)",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "공식 신청폼에 2026-11-02 전체 참가모집·1:1 밋업 조기마감 안내가 있습니다. 공고상 마감일 11/9와 실제 접수상태를 구분해 확인하세요.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [
+      "공공"
+    ],
+    "attachments": [],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/kstartup-179664/detail.html",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1f-EFOEOjxlC7BA7IXQbFMF3G1BAqFMvIpY6m-OYw0ARPpA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1yjxxiXo5baJreiJFkJWMHOrOQGYDkZ8E45xWn2IZWwcIMw"
+      ]
+    },
+    "analysisUpdatedAt": "2026-11-03T00:03:26.113645+00:00",
+    "deadlineTime": "23:59",
+    "timezone": "Asia/Seoul",
+    "dateVerification": {
+      "status": "conflict",
+      "verifiedAt": "2026-11-03T00:03:26.113645+00:00",
+      "reference": "공식상세·첨부01포스터전체시각·02대체텍스트전문·공식구글폼공개안내(11/2조기마감명시)"
+    },
+    "recruitmentStatus": {
+      "status": "EARLY_CLOSED",
+      "announcedOn": "2026-11-02",
+      "exactClosedAt": null,
+      "checkedAt": "2026-11-03T00:03:26.113645+00:00",
+      "sourceUrl": "https://docs.google.com/forms/d/e/1FAIpQLSd666SleL9Jj8nIesVpV1kuF858xVr_Un5afNZHBXehgGR3Uw/viewform?usp=send_form",
+      "evidence": "evidence/179664-publiccheck-20261103.txt",
+      "text": "(2026.11.2.) 1:1 밋업은 조기 마감되었습니다. / 제108회 대전창업포럼 참가 모집이 조기 마감되었습니다."
+    }
+  },
+  {
+    "id": "mss-1071785",
+    "sourceId": "1071785",
+    "title": "2027년 도약(Jump-Up) 프로그램 참여기업 모집 공고",
+    "agency": "중소벤처기업부",
+    "category": "CENTRAL",
+    "applicationStartDate": null,
+    "applicationEndDate": null,
+    "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071785&parentSeq=1071785",
+    "sourceName": "중소벤처기업부",
+    "verifiedAt": "2026-11-02T23:58:29.103Z",
+    "verificationLevel": "공식 목록 확인",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "중소벤처기업부 공식 사업공고. 신청자격과 제출서류는 첨부 원문 확인이 필요합니다.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [],
+    "attachments": [
+      "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071785&cbIdx=310&streFileNm=616ad874-cee9-458c-8b63-873d955be3cc.pdf",
+      "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071785&cbIdx=310&streFileNm=5ec2eccf-5588-4d6d-9633-e9dd7bbf1358.hwpx",
+      "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071785&cbIdx=310&cbIdx=310&streFileNm=616ad874-cee9-458c-8b63-873d955be3cc.pdf",
+      "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071785&cbIdx=310&cbIdx=310&streFileNm=5ec2eccf-5588-4d6d-9633-e9dd7bbf1358.hwpx"
+    ],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/mss-1071785/detail.html",
+      "attachmentUrls": [
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071785&cbIdx=310&streFileNm=5ec2eccf-5588-4d6d-9633-e9dd7bbf1358.hwpx",
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071785&cbIdx=310&streFileNm=616ad874-cee9-458c-8b63-873d955be3cc.pdf"
+      ]
+    }
+  },
+  {
+    "id": "kstartup-179708",
+    "sourceId": "179708",
+    "title": "2026년 스타트업 법률지원사업 전남광주통합특별시 법률상담회 참여기업 모집",
+    "agency": "창업진흥원",
+    "category": "CENTRAL",
+    "applicationStartDate": "2026-11-03",
+    "applicationEndDate": "2026-11-09",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179708",
+    "sourceName": "K-Startup",
+    "verifiedAt": "2026-11-04T00:03:27.078Z",
+    "verificationLevel": "공식 상세·첨부 분석(일부 미확인)",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [
+      "공공"
+    ],
+    "attachments": [],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/kstartup-179708/detail.html",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v14wxlfdyYZ_7rDttXcVo4s9zJPjcXBuWn_REDLCm2JvkSxQ"
+      ]
+    },
+    "analysisUpdatedAt": "2026-11-04T00:45:52.940286+00:00",
+    "deadlineTime": "18:00",
+    "timezone": "Asia/Seoul",
+    "dateVerification": {
+      "status": "conflict",
+      "verifiedAt": "2026-11-04T00:45:52.940286+00:00",
+      "reference": "공식상세·PDF01 p1대상/규모일정·p2접수서류·p3유의·p4지도시각·p5교통"
+    }
+  },
+  {
+    "id": "kstartup-179705",
+    "sourceId": "179705",
+    "title": "2027년도 초기창업·창업도약 패키지 사업 신규 주관기관 모집 수정공고",
+    "agency": "창업진흥원",
+    "category": "CENTRAL",
+    "applicationStartDate": "2026-10-30",
+    "applicationEndDate": "2026-11-23",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179705",
+    "sourceName": "K-Startup",
+    "verifiedAt": "2026-11-04T00:03:27.078Z",
+    "verificationLevel": "공식 목록 확인",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "중기부 제2026-622호 수정공고 재게시본. 기존 mss-1072214와 같은 공고이며 마감11/23 16시. 주관기관 모집으로 일반 기업 직접지원 공고와 구분합니다. 첨부 유형별 양식 분석은 대기 중입니다.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [
+      "공공"
+    ],
+    "attachments": [],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/kstartup-179705/detail.html",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1PUpOSFGi6LfOgDquRf8bsRrwZZjOpNnGuqO7q3BynSeREA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1YCI4dJ7hAee1gklUvCwddZXa8vRlccwdCK4_m70GWfx-Zg",
+        "https://www.k-startup.go.kr/afile/fileDownload/v198VUxByPMVyXgcDlXvHRaR7Or60LJZ35XlNo6HjuMVAE4g",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1IB4C8cqm8a4xN2L8WCm2kQXs2VYle-twbKWxrhmvxOcOhg",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1dpHLm51pZ_XUiTP86KoaXgD7_eTezKBw4EnAC52yvM5hcw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v14e74XT5UL1vAYtjxQEOgrityqBDJ_0qUxda58hiFuh7BvA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1Pkots2EGU8tCuHnBN9Vjtrs94fp09J3JUfCLAnSD7bEcqg",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1fD9baP5NmmKtRAl4b-tzOL01qm_I9BRQ83qRF9OS6ZVtkg"
+      ]
+    },
+    "sameOriginalNoticeIds": [
+      "mss-1072214",
+      "kstartup-179705"
+    ],
+    "deadlineTime": "16:00",
+    "timezone": "Asia/Seoul"
+  },
+  {
+    "id": "kstartup-179688",
+    "sourceId": "179688",
+    "title": "2026 맞춤형 창업과정 교육생 모집",
+    "agency": "김해의생명산업진흥원",
+    "category": "CENTRAL",
+    "applicationStartDate": "2026-11-02",
+    "applicationEndDate": "2026-11-20",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179688",
+    "sourceName": "K-Startup",
+    "verifiedAt": "2026-11-04T00:03:27.078Z",
+    "verificationLevel": "공식 상세·첨부 분석(일부 미확인)",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [
+      "공공"
+    ],
+    "attachments": [],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/kstartup-179688/detail.html",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1LDSgd9blF1EHn_6mx5Z192S1icBk05SSmLoeOSgR2OpLRQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1UlkfJCLKpx7SFiX2LZLypyf2c9EOKbNPpAT3OMAMzuUr8Q",
+        "https://www.k-startup.go.kr/afile/fileDownload/v122ApdvLxGWMOlrAyhMLIzC6kO74fet7k3oHqfc16ibCjAQ"
+      ]
+    },
+    "analysisUpdatedAt": "2026-11-04T00:45:52.940286+00:00",
+    "deadlineTime": "18:00",
+    "timezone": "Asia/Seoul",
+    "dateVerification": {
+      "status": "conflict",
+      "verifiedAt": "2026-11-04T00:45:52.940286+00:00",
+      "reference": "공식상세·PDF01 1~2쪽전문·포스터02전체시각/03텍스트·구글폼공개문항전문"
+    }
+  },
+  {
+    "id": "kstartup-179691",
+    "sourceId": "179691",
+    "title": "2026년 5차 국립공주대학교 창업보육센터 입주기업 모집 연장공고",
+    "agency": "국립공주대학교 산학협력단",
+    "category": "CENTRAL",
+    "applicationStartDate": "2026-11-02",
+    "applicationEndDate": "2026-11-13",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179691",
+    "sourceName": "K-Startup",
+    "verifiedAt": "2026-11-04T00:03:27.078Z",
+    "verificationLevel": "공식 상세·첨부 분석(일부 미확인)",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [
+      "교육"
+    ],
+    "attachments": [],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/kstartup-179691/detail.html",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1DjYbDuzIfpQFb7bEkd-5Mu1w6AcjI2nn8Zlce9G4sxO5-w",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1UjFz5dPAQH2FeQ5VPgBSu79eBi-vInH5coCPnGh5-T0Abg",
+        "https://www.k-startup.go.kr/afile/fileDownload/v13F3ZAB6tkbthDWPQyhHkh9tQ7E7P5C5EVM7DmwzRqVDwNw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1ziUvVaueaW0ue1wZ-ahz8YuERv4DdmW8XtQC3kj1um14rw"
+      ]
+    },
+    "analysisUpdatedAt": "2026-11-04T00:45:52.940286+00:00",
+    "deadlineTime": "18:00",
+    "timezone": "Asia/Seoul",
+    "dateVerification": {
+      "status": "official-detail-confirmed",
+      "verifiedAt": "2026-11-04T00:45:52.940286+00:00",
+      "reference": "공식상세·HWP01공고§1~7/별지KSIC전문·02계획전문·03동의전문·04스캔PDF2쪽전체시각"
+    }
+  },
+  {
+    "id": "kstartup-179676",
+    "sourceId": "179676",
+    "title": "2026 별별상상 스타트업 챌린지",
+    "agency": "주식회사 툰즈",
+    "category": "PRIVATE",
+    "applicationStartDate": "2026-11-01",
+    "applicationEndDate": "2026-11-08",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179676",
+    "sourceName": "K-Startup",
+    "verifiedAt": "2026-11-04T00:03:27.078Z",
+    "verificationLevel": "공식 목록 확인",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [
+      "민간"
+    ],
+    "attachments": [],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/kstartup-179676/detail.html",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1S20Twbg_iWjQrh381_mMoAtIrCPDPZmeeBbp0AnC76c98w",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1NM2VgFc3TaYhUvKnSq1UYU7fku2YaVYkxV0k2hBAjtak1Q",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1j7nD5pkYkMB6nBfuxwTcEIRhbw2sIetjuJ3H4Zia7o3yFA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1hj_3aoManleWIo-wu0mXv0nqNKS5TPCddjaxyzY1tZWk_w",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1vZKn7bI_VXJwQCfwcQQ_fmhEHpNm0Ws3jgnJB61Xoto08g",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1ioCiQAXvmaRVhUSbBc9sQgKO9g3eBvmAG9lSFhUUrpJydg"
+      ]
+    },
+    "analysisUpdatedAt": "2026-11-03T00:03:26.113645+00:00",
+    "deadlineTime": "23:59",
+    "timezone": "Asia/Seoul",
+    "dateVerification": {
+      "status": "conflict",
+      "verifiedAt": "2026-11-03T00:03:26.113645+00:00",
+      "reference": "공식상세·HWP01/PDF02 1~6쪽대조·별도PDF03/HWPX04전체양식·05포스터/06텍스트·주최10/26운영계획안2쪽"
+    }
+  },
+  {
+    "id": "kstartup-179680",
+    "sourceId": "179680",
+    "title": "&lt;2026년 AI 활용 온라인 플랫폼 제작 교육&gt; 참여자 모집",
+    "agency": "충북대학교 충북Pro메이커센터",
+    "category": "CENTRAL",
+    "applicationStartDate": "2026-10-30",
+    "applicationEndDate": "2026-11-18",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179680",
+    "sourceName": "K-Startup",
+    "verifiedAt": "2026-11-04T00:03:27.078Z",
+    "verificationLevel": "공식 상세·첨부 분석(일부 미확인)",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [
+      "교육"
+    ],
+    "attachments": [],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "첨부 분석·일부 미확인",
+      "evidence": "evidence/kstartup-179680/detail.html",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1a_4MLL1cCb5e_Q1aH9KNrtf8cIs65nsrOU6jkWitF6IF5w"
+      ],
+      "analyzedAt": "2026-11-05T03:10:39.104704+00:00"
+    },
+    "analysisUpdatedAt": "2026-11-05T03:10:39.104704+00:00",
+    "deadlineTime": "10:00",
+    "timezone": "Asia/Seoul"
+  },
+  {
+    "id": "kstartup-179678",
+    "sourceId": "179678",
+    "title": "[로컬창업트랙 2기]기억되는 브랜드가 되는 법",
+    "agency": "관악구청",
+    "category": "LOCAL",
+    "applicationStartDate": "2026-10-19",
+    "applicationEndDate": "2026-11-12",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179678",
+    "sourceName": "K-Startup",
+    "verifiedAt": "2026-11-04T00:03:27.078Z",
+    "verificationLevel": "공식 목록 확인",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [
+      "지자체"
+    ],
+    "attachments": [],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/kstartup-179678/detail.html",
+      "attachmentUrls": []
+    }
+  },
+  {
+    "id": "kstartup-179685",
+    "sourceId": "179685",
+    "title": "2027년 청년농산업 창업지원센터 보육생 모집",
+    "agency": "경북대학교 상주캠퍼스",
+    "category": "CENTRAL",
+    "applicationStartDate": "2026-11-02",
+    "applicationEndDate": "2027-03-31",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179685",
+    "sourceName": "K-Startup",
+    "verifiedAt": "2026-11-04T00:03:27.078Z",
+    "verificationLevel": "공식 목록 확인",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [
+      "교육"
+    ],
+    "attachments": [],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/kstartup-179685/detail.html",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1n32uL4XS9j8tlIO7WXD4EQUx7vbNCES7jbwshiopBiurNQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1UH8VgtjDZuN36fa_LG2JXjIYuZMHU2Z8bOkwVqw9ZrUCAg",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1s93jrDP9HwIRGAWUDB0LDvGlWQt01LrL4GNZ-rwKMuIhBQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1mjPvQTwYCN6rmDojmFaVPqcbPIJsj1acJ0pFKePcL2gm_w",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1cqMuJmjMJtWHoYeGREl16mLVq3IR2wx0LB_xGz_3N10CSw"
+      ]
+    }
+  },
+  {
+    "id": "kstartup-179638",
+    "sourceId": "179638",
+    "title": "2026 서구토탈창업아카데미 참가자 모집",
+    "agency": "온랩",
+    "category": "PRIVATE",
+    "applicationStartDate": "2026-10-27",
+    "applicationEndDate": "2026-11-18",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179638",
+    "sourceName": "K-Startup",
+    "verifiedAt": "2026-11-04T00:03:27.078Z",
+    "verificationLevel": "공식 상세·첨부 분석(일부 미확인)",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [
+      "민간"
+    ],
+    "attachments": [],
+    "detailReview": {
+      "fetchedAt": "2026-11-04T00:03:37.912Z",
+      "status": "첨부 분석·일부 미확인",
+      "evidence": "evidence/kstartup-179638/detail.html",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1g-sLhGpA-4bnpQ6Ia_XB31DKxJr3wxmbPzKENrI9oRJ8nw"
+      ],
+      "analyzedAt": "2026-11-05T03:10:39.104704+00:00"
+    },
+    "analysisUpdatedAt": "2026-11-05T03:10:39.104704+00:00",
+    "deadlineTime": "16:00",
+    "timezone": "Asia/Seoul"
+  },
+  {
+    "id": "kstartup-179679",
+    "sourceId": "179679",
+    "title": "2026년 위치정보 보호조치 교육 (7차)",
+    "agency": "(주)아이전스",
+    "category": "PRIVATE",
+    "applicationStartDate": "2026-10-30",
+    "applicationEndDate": "2026-11-11",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179679",
+    "sourceName": "K-Startup",
+    "verifiedAt": "2026-11-04T00:03:27.078Z",
+    "verificationLevel": "공식 상세·첨부 분석(일부 미확인)",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [
+      "민간"
+    ],
+    "attachments": [],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/kstartup-179679/detail.html",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v11BLkJ4cSqoNVWTi3KSD24Lq5VrZTIlhNtZ0yobTChFNaUA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v11BxeTzV_sU3hGfToYoWSCsqybYMnKRFZIxKYFNP5NPz4MA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v13JRvn_VfmjU_kiLY1rD7Cyp7sIMNxfly5mcmNZ1KDOlsQw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1affgoOqfWsnXpuJMG3aOxqsnoMl5w_HTlVp09959txYAwg"
+      ]
+    },
+    "analysisUpdatedAt": "2026-11-04T00:45:52.940286+00:00",
+    "deadlineTime": "15:00",
+    "timezone": "Asia/Seoul",
+    "dateVerification": {
+      "status": "conflict",
+      "verifiedAt": "2026-11-04T00:45:52.940286+00:00",
+      "reference": "공식상세·배너01/포스터02전체시각·대체텍스트03/04전문"
+    }
+  },
+  {
+    "id": "kstartup-179677",
+    "sourceId": "179677",
+    "title": "2026년 대전 테스트베드 연계사업 공모",
+    "agency": "한국수자원공사",
+    "category": "CENTRAL",
+    "applicationStartDate": "2026-10-28",
+    "applicationEndDate": "2026-11-11",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179677",
+    "sourceName": "K-Startup",
+    "verifiedAt": "2026-11-04T00:03:27.078Z",
+    "verificationLevel": "공식 목록 확인",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [
+      "공공"
+    ],
+    "attachments": [],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/kstartup-179677/detail.html",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1O_uDMwle1AvIVX4AoM8oFCNzX-idZBIMMHUJSf33pB_qVw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1c-jM9WFw4qzwakROHw8nqRckkMRYDTWAabgE7Ar0AidbRA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1Gv793A4SEctSzEYKWEpc9IHERTzXTvY94zlo_1yw4bvrFA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1VV1fOW6iEDFUO8eh5h2Yibjym1YRXiskoUsJTbNUItmTwg",
+        "https://www.k-startup.go.kr/afile/fileDownload/v136TXJVqN2OOSuIfi_NWKEsvZ7jUhs_A5GWVz5STgP39ssA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1Irb6I7EEkGkO_pFoSBeR-otPt-Y6KEASjlUbJr1f64C4lg"
+      ]
+    },
+    "analysisUpdatedAt": "2026-11-03T00:03:26.113645+00:00",
+    "deadlineTime": "18:00",
+    "timezone": "Asia/Seoul",
+    "dateVerification": {
+      "status": "official-detail-confirmed",
+      "verifiedAt": "2026-11-03T00:03:26.113645+00:00",
+      "reference": "공식상세·첨부01개요/02평가/03참여신청요약상세계획/04집행기준/06공고전문·05내장포스터시각"
+    }
+  },
+  {
+    "id": "kstartup-179675",
+    "sourceId": "179675",
+    "title": "2026 대덕특구 딥테크 혁신성장 플랫폼(전략기술 발굴 및 매칭) (11/1 ~ 12/31)",
+    "agency": "연구개발특구진흥재단",
+    "category": "CENTRAL",
+    "applicationStartDate": "2026-11-01",
+    "applicationEndDate": "2026-12-31",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179675",
+    "sourceName": "K-Startup",
+    "verifiedAt": "2026-11-04T00:03:27.078Z",
+    "verificationLevel": "공식 목록 확인",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [
+      "공공"
+    ],
+    "attachments": [],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/kstartup-179675/detail.html",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1TXDfS4os_Tv_UH46pC6pg-A8EKQTpm3DdRePKi4x4_XlAg",
+        "https://www.k-startup.go.kr/afile/fileDownload/v12lz6zs2_bl0NN4tM8hnpkkBPmU4o5nDb2gAHrp1jnTuZbQ"
+      ]
+    }
+  },
+  {
+    "id": "kstartup-179668",
+    "sourceId": "179668",
+    "title": "2026 서울 기후테크 글로벌 B2G 매칭데이 행사 참여기업 모집",
+    "agency": "국가녹색기술연구소",
+    "category": "CENTRAL",
+    "applicationStartDate": "2026-10-30",
+    "applicationEndDate": "2026-11-06",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179668",
+    "sourceName": "K-Startup",
+    "verifiedAt": "2026-11-04T00:03:27.078Z",
+    "verificationLevel": "공식 목록 확인",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [
+      "공공"
+    ],
+    "attachments": [],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/kstartup-179668/detail.html",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1nyX-9EdkoEvHLi_CnhkMyvJhtt-IFsD5b2xFFJRtPBd1bw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1YRYOH8jQ9zeRXyrpJNvSw53ZCaR4vaM61UUEFQGcBikAQQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1er9iGKiJSUQlDlEitxrF2wNnlEbjzr6IJWV0_ABz3ohSdA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1eMVCHkYD476gl-a7z4oj2vFIyIPXoNy7q1EdkrV17ovuaQ"
+      ]
+    },
+    "analysisUpdatedAt": "2026-10-31T06:29:54.881062+00:00",
+    "deadlineTime": "18:00",
+    "timezone": "Asia/Seoul",
+    "dateVerification": {
+      "status": "conflict",
+      "verifiedAt": "2026-10-31T06:29:54.881062+00:00",
+      "reference": "공식상세·첨부01공고§1~5/국가28개/기후기술38분류표·첨부02신청양식/중복부록대조·첨부03포스터시각·04텍스트"
+    }
+  },
+  {
+    "id": "kstartup-179665",
+    "sourceId": "179665",
+    "title": "2026 년 홍익대 아트앤디자인테크 창업보육센터 입주기업 모집(2 차) 공고문",
+    "agency": "홍익대학교",
+    "category": "CENTRAL",
+    "applicationStartDate": "2026-11-01",
+    "applicationEndDate": "2026-11-13",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179665",
+    "sourceName": "K-Startup",
+    "verifiedAt": "2026-11-04T00:03:27.078Z",
+    "verificationLevel": "공식 상세·첨부 분석(일부 미확인)",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [
+      "교육"
+    ],
+    "attachments": [],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "첨부 분석·일부 미확인",
+      "evidence": "evidence/kstartup-179665/detail.html",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v17MEPbOulaAhWpteLGQH6oNMD0Ft1D9e71DmM3qGHwlj1ZQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v14Fl4XbNpXIYGyw1r5TWfa-XStoeSKqJwESLifbUHAb9dCg",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1agb4sT14aZztkmckHO7GCFze5pxFI27TZDJx2PfkP-MT6g",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1-OzMGiqobyexep1sF78sBLsADJNWU5AUruBEJkySxomAWA"
+      ],
+      "analyzedAt": "2026-11-05T03:10:39.104704+00:00"
+    },
+    "analysisUpdatedAt": "2026-11-05T03:10:39.104704+00:00",
+    "deadlineTime": "23:59",
+    "timezone": "Asia/Seoul"
+  },
+  {
+    "id": "kstartup-179698",
+    "sourceId": "179698",
+    "title": "신산업 분야 및 시장전문가 예비위원단 공개모집",
+    "agency": "창업진흥원",
+    "category": "CENTRAL",
+    "applicationStartDate": "2026-11-05",
+    "applicationEndDate": "2026-12-11",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179698",
+    "sourceName": "K-Startup",
+    "verifiedAt": "2026-11-05T00:36:23.297Z",
+    "verificationLevel": "공식 목록 확인",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [
+      "공공"
+    ],
+    "attachments": [],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/kstartup-179698/detail.html",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1ZY_tPgEPzHJQUqzH4CpeRxLReZEg2sSwKY__rU3DLRL8kA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1UfWrCE6p098CsslAox-UdfRw1l2TNu7sCs4cI8k2da5n7w",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1GUM0pIqjr_AOTK3dHVkDVu8jk3fcambNfyddWrtQtZb9CA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1PHlIveAbsCb3vzVykNEFibQMHh1INVtJy35310JCorBIMw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1cVDSyoTtmRz1fmPPh8zWzA90vi4svhoXLWlmdpcptyFbFQ"
+      ]
+    }
+  },
+  {
+    "id": "kstartup-179694",
+    "sourceId": "179694",
+    "title": "출연연, 대학 연구소기업 Business Development 프로그램 참여 예비창업자 모집 (11월)",
+    "agency": "연구개발특구진흥재단",
+    "category": "CENTRAL",
+    "applicationStartDate": "2026-11-04",
+    "applicationEndDate": "2026-11-30",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179694",
+    "sourceName": "K-Startup",
+    "verifiedAt": "2026-11-05T00:36:23.297Z",
+    "verificationLevel": "공식 목록 확인",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [
+      "공공"
+    ],
+    "attachments": [],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/kstartup-179694/detail.html",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1UAzoW_Q-30BSFO41CJn-vGxCLzFeg-OLLPx0oLul4KCCtg",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1uhSIrIbgzwBxAob-G4aY0aSqMcrqY2nyllnOOH-5jUBi4g"
+      ]
+    }
+  },
+  {
+    "id": "kstartup-179683",
+    "sourceId": "179683",
+    "title": "2026 KOREA LBS Day(~11.17)｜선도기업·투자자·전문가와 만나는 1:1 비즈니스 미팅",
+    "agency": "한국능률협회컨설팅",
+    "category": "PRIVATE",
+    "applicationStartDate": "2026-11-01",
+    "applicationEndDate": "2026-11-18",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179683",
+    "sourceName": "K-Startup",
+    "verifiedAt": "2026-11-05T00:36:23.297Z",
+    "verificationLevel": "공식 목록 확인",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [
+      "민간"
+    ],
+    "attachments": [],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/kstartup-179683/detail.html",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1V6hcVeg9Vdh_Hj_LmcJ_W_sS9PxEh-UnnmVQxXAS3Kiwgg",
+        "https://www.k-startup.go.kr/afile/fileDownload/v14HMUtt5y9C8wD1dQ7tyZuKBU2O1Xg2Y72RbXLoNG7cHiVw"
+      ]
+    }
+  },
+  {
+    "id": "kstartup-179703",
+    "sourceId": "179703",
+    "title": "(하반기) 2026년 서울창업허브M+ 입주기업 모집",
+    "agency": "서울경제진흥원",
+    "category": "CENTRAL",
+    "applicationStartDate": "2026-11-02",
+    "applicationEndDate": "2026-11-13",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179703",
+    "sourceName": "K-Startup",
+    "verifiedAt": "2026-11-05T00:36:23.297Z",
+    "verificationLevel": "공식 목록 확인",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [
+      "공공"
+    ],
+    "attachments": [],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/kstartup-179703/detail.html",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1YjS0kmz8itufmSbNIHBEFwhbUjGHeYtSZYnQ6SBRihC-IA"
+      ]
+    }
+  },
+  {
+    "id": "kstartup-179701",
+    "sourceId": "179701",
+    "title": "2026년 경기창업혁신공간 북동부권(구리) 신규 입주기업 모집",
+    "agency": "(재)경기도경제과학진흥원",
+    "category": "CENTRAL",
+    "applicationStartDate": "2026-11-02",
+    "applicationEndDate": "2026-11-27",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179701",
+    "sourceName": "K-Startup",
+    "verifiedAt": "2026-11-05T00:36:23.297Z",
+    "verificationLevel": "공식 목록 확인",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [
+      "공공"
+    ],
+    "attachments": [],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/kstartup-179701/detail.html",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1kweXq4gqkaT0gYCwk1kEVuBA6-Dgl338jax5GgCyVapCbQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1IYIRawMSvvLj6X0Tg1i-wlfdBJCdAGOH6vwJF6AiQvKsUw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1Hy0IuS-t9JQcecS8gEESn03tP-iR5I3YH646ED6EhK37kA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1IjULvu-oLt1rcsP88szw8WkCef2TJvkQYXQtaQuGHDqsbA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1b15AHz9mhEyzlLP-3jDpl1Yy8z0BEeNq87Nk3VWT8Xy_eg"
+      ]
+    }
+  },
+  {
+    "id": "kstartup-179714",
+    "sourceId": "179714",
+    "title": "김해시중장년기술창업센터 2026년 하반기 신규 입주(자)기업 모집",
+    "agency": "김해의생명산업진흥원",
+    "category": "LOCAL",
+    "applicationStartDate": "2026-11-02",
+    "applicationEndDate": "2026-11-27",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179714",
+    "sourceName": "K-Startup",
+    "verifiedAt": "2026-11-05T00:36:23.297Z",
+    "verificationLevel": "공식 목록 확인",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [
+      "지자체"
+    ],
+    "attachments": [],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/kstartup-179714/detail.html",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1bBesHBrDrTbsR4oHMXU_kvN1R8rmOeYgDDsr4trfJ4WmFw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v10z05D-NnsCKdA-7WZkCcQAfI-ZLRRN4-VfgksWfD5Lf4RA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1AJBQN-3NUwe0Q189E_JJx3JZx3bx-jvK5MULLQP-dU3fqw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v10Fpu3v7qZdSSPF5AzQbZCHmpp0sD0KYURf3b19wtkyAVvQ"
+      ]
+    }
+  },
+  {
+    "id": "kstartup-179696",
+    "sourceId": "179696",
+    "title": "[부산대학교병원]「의료·헬스케어 스타트업 인큐베이터 사업」입주기업 모집공고",
+    "agency": "부산대학교병원",
+    "category": "CENTRAL",
+    "applicationStartDate": "2026-11-02",
+    "applicationEndDate": "2026-11-30",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179696",
+    "sourceName": "K-Startup",
+    "verifiedAt": "2026-11-05T00:36:23.297Z",
+    "verificationLevel": "공식 목록 확인",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [
+      "공공"
+    ],
+    "attachments": [],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/kstartup-179696/detail.html",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v18ZoaWg9zezBeedMcQWyEV7lba5T3i0fxPGEli1tcWIQMlQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1XdowEvqKq-liKXGoexn5oj4AqWwGL8pXDqhhQkWeb28rUw"
+      ]
+    }
+  },
+  {
+    "id": "kstartup-179712",
+    "sourceId": "179712",
+    "title": "청년 창업의 꿈, 『성동청년 창업이룸센터』 입주자 모집 공고【10차】",
+    "agency": "(재)성동벤처밸리",
+    "category": "PRIVATE",
+    "applicationStartDate": "2026-11-02",
+    "applicationEndDate": "2026-11-13",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179712",
+    "sourceName": "K-Startup",
+    "verifiedAt": "2026-11-05T00:36:23.297Z",
+    "verificationLevel": "공식 상세·첨부 분석(일부 미확인)",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [
+      "민간"
+    ],
+    "attachments": [],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "첨부 분석·일부 미확인",
+      "evidence": "evidence/kstartup-179712/detail.html",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v11zsMyR8MFJaIr1bYZG9bJB1tLucxaQYO6k1kOW82B_CxPw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1igyNC3oXMBm68zd1BdKcSF4JB2ESIYTybpI7jBfCO5Hu6A",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1KJtTw-rVXIJzVJtyesdY-ymtkOY_FNB_rdTKgggNh4yHng"
+      ],
+      "analyzedAt": "2026-11-05T03:10:39.104704+00:00"
+    },
+    "analysisUpdatedAt": "2026-11-05T03:10:39.104704+00:00",
+    "deadlineTime": "23:59",
+    "timezone": "Asia/Seoul"
+  },
+  {
+    "id": "kstartup-179707",
+    "sourceId": "179707",
+    "title": "[동대문구 창업지원센터] 11월 메이커스페이스(레이저커터, 3D프린팅) 교육 일정",
+    "agency": "서울시립대학교창업보육센터",
+    "category": "CENTRAL",
+    "applicationStartDate": "2026-11-03",
+    "applicationEndDate": "2026-11-24",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179707",
+    "sourceName": "K-Startup",
+    "verifiedAt": "2026-11-05T00:36:23.297Z",
+    "verificationLevel": "공식 목록 확인",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [
+      "교육"
+    ],
+    "attachments": [],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/kstartup-179707/detail.html",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1m7is6A3fBNDGY3x-crIiDWADvGsIIWjM-QYCT7y3-4s8Ug",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1LmxPlS0lksqGao0OWsf3WaarMECcgnFiZG-a-waFdTc2-w"
+      ]
+    }
+  },
+  {
+    "id": "kstartup-179695",
+    "sourceId": "179695",
+    "title": "2026년 대전 스타트업 원스톱 지원센터 아카데미 4회차",
+    "agency": "주식회사 렛츠",
+    "category": "PRIVATE",
+    "applicationStartDate": "2026-11-02",
+    "applicationEndDate": "2026-11-22",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179695",
+    "sourceName": "K-Startup",
+    "verifiedAt": "2026-11-05T00:36:23.297Z",
+    "verificationLevel": "공식 목록 확인",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [
+      "민간"
+    ],
+    "attachments": [],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/kstartup-179695/detail.html",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1phEJP-6O3_Rb_C6M-xd-Cb1LsTcoOKLc95vLvWT3ie8C5Q",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1XsjXKgyLtyuienwnPrn4alEFaHBWPLl8kCBaGyTs-QAP2g"
+      ]
+    }
+  },
+  {
+    "id": "kstartup-179704",
+    "sourceId": "179704",
+    "title": "2026년 청주미래누리터(공공지식산업센터) 입주기업 모집공고",
+    "agency": "(사)한국산업진흥협회 청주미래누리터",
+    "category": "PRIVATE",
+    "applicationStartDate": "2026-11-04",
+    "applicationEndDate": "2026-12-31",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179704",
+    "sourceName": "K-Startup",
+    "verifiedAt": "2026-11-05T00:36:23.297Z",
+    "verificationLevel": "공식 목록 확인",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [
+      "민간"
+    ],
+    "attachments": [],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/kstartup-179704/detail.html",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1-j9ZcQ2ejubwz7361M_sTYTa0iuAq-PN6DbaK5koR8vCqQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1PgVeeDxadssDoZUZE-JXonKWMEmKoTLPfQLXuuiGL97U3w",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1KZAl3XnBhxFXR5QCFa4hv4UwKUTYjbfzXjGEvMgHlDDiLQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v12IiDaybCq-5632KkKkk2YQHCo0EZ2kCtkiyyOZiFXI5hTQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v12klYaxAG1-7Z-cBt9iJtonDfzhoM6mIUjqOWjWh_myHAmw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1b1_3gVbcnKRsKj5hqMUrj7uFUAapHbyxcRf7qwfsxaCZIw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1mKkCp886VfalISwTBzjMTP65s20WeS9NOEcVQoM9o6CRGA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1ehpscAJJGdeW03xpkQjPgVMfGKi21j80PIuGNyeMctcbOg"
+      ]
+    }
+  },
+  {
+    "id": "kstartup-179700",
+    "sourceId": "179700",
+    "title": "2026 제4차 노원사회적경제지원센터 입주기업 신규 공모",
+    "agency": "노원사회적경제연대사회적협동조합",
+    "category": "PRIVATE",
+    "applicationStartDate": "2026-11-02",
+    "applicationEndDate": "2026-11-20",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179700",
+    "sourceName": "K-Startup",
+    "verifiedAt": "2026-11-05T00:36:23.297Z",
+    "verificationLevel": "공식 목록 확인",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [
+      "민간"
+    ],
+    "attachments": [],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/kstartup-179700/detail.html",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1H5-OFGempUPm9e6rzZYC3XNARJpRSZxHdunvTLA2S03r6Q",
+        "https://www.k-startup.go.kr/afile/fileDownload/v19Ny5gCxSeZ0mqfcwXQFkKWl0aQq2TRa-4yoyqYipzCE6Kw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1GwGNGZqrSpmqeQCpnjOg_X2dmMI4pFSlKMsRLhTz9MEBuA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1trJxVe9HVW_TOoedeEcweqve6Fr0CqdthHuL6YkrJHtqzA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1laY_zOiEFQZzzyzYSdYoqN7GBV9O3Cd76HejU55AIpKXDA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1S4mz937FaUQPPoIqT7F0Ee3B-eF1tquq4_vapqATdDrXbQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1pdAJoHReG8UX6BqAkQGd9dYOD6VwGidadfb7ZVIcHrb6AQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1Fd_xjtwb_Zy6vR2PVrgSEjrkOcOeBYQkf63iZYUIhvxgEw"
+      ]
+    }
+  },
+  {
+    "id": "kstartup-179699",
+    "sourceId": "179699",
+    "title": "2026년 탄소배출권 실무교육 안내",
+    "agency": "국가녹색기술연구소",
+    "category": "CENTRAL",
+    "applicationStartDate": "2026-11-02",
+    "applicationEndDate": "2026-11-24",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179699",
+    "sourceName": "K-Startup",
+    "verifiedAt": "2026-11-05T00:36:23.297Z",
+    "verificationLevel": "공식 목록 확인",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [
+      "공공"
+    ],
+    "attachments": [],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/kstartup-179699/detail.html",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1j6QotGeZNsocGkcAPVak6s1bVfBPVHHPdsRuQXT0YFJMrw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1l59b8oNSglwjAraVDhoIGFGFmMbpjZYN8JnNVML7Og8SKA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1f4h-DkZVmB9sMxJHyKO7jlHaNHMQURbRwy7aMk5DcrNrtQ"
+      ]
+    }
+  },
+  {
+    "id": "kstartup-179687",
+    "sourceId": "179687",
+    "title": "2027년 청년 쿡 비즈니스·푸드테크 센터 스타트업 모집 공고",
+    "agency": "서울특별시",
+    "category": "CENTRAL",
+    "applicationStartDate": "2026-11-02",
+    "applicationEndDate": "2026-11-20",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179687",
+    "sourceName": "K-Startup",
+    "verifiedAt": "2026-11-05T00:36:23.297Z",
+    "verificationLevel": "공식 목록 확인",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [
+      "공공"
+    ],
+    "attachments": [],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/kstartup-179687/detail.html",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v14MXO-3XZhqXS1kyuJ-uEmjF8HyaYqYVZ9bHW7klPbY-pYA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1MmB4eGp57QEBI1jDcoivxiRP4c0WqzExXOtgBNdijTnIbw"
+      ]
+    }
+  },
+  {
+    "id": "kstartup-179709",
+    "sourceId": "179709",
+    "title": "한국외국어대학교 창업보육센터 입주기업 모집",
+    "agency": "한국외국어대학교연구산학협력단",
+    "category": "CENTRAL",
+    "applicationStartDate": "2026-11-03",
+    "applicationEndDate": "2026-11-22",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179709",
+    "sourceName": "K-Startup",
+    "verifiedAt": "2026-11-05T00:36:23.297Z",
+    "verificationLevel": "공식 목록 확인",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "K-Startup 공식 모집 공고. 지원 대상·제외 조건·제출 양식은 원문에서 확인하세요.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [
+      "교육"
+    ],
+    "attachments": [],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/kstartup-179709/detail.html",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1Y3cHELuSiC203jU5ods1UOX6REAv5IfPPKO9IwvMdZBtFw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1KCiqMAFbBv4HzV83XZoXOgeRfoVTj0rjD8pkDsuSiCGEJQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1ImDsqM03CuWzfh1avFHczZHf0rQSGVaIVF_nsv-ATtvpew",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1AIclGh8ww5ggsrQ_sP1wSUdYvUoXzwbBrz4lbz_82T-Zaw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1yWUOOEQqp40HqpjSmlAM7ewEb0Z4eeI0MISNsnq-s6rSJA"
+      ]
+    }
+  },
+  {
+    "id": "mss-1072252",
+    "sourceId": "1072252",
+    "title": "2026년 1인 창조기업 지원센터‧중장년 기술창업센터 신규 주관기관 모집 공고",
+    "agency": "중소벤처기업부",
+    "category": "CENTRAL",
+    "applicationStartDate": "2026-11-03",
+    "applicationEndDate": "2026-11-13",
+    "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1072252&parentSeq=1072252",
+    "sourceName": "중소벤처기업부",
+    "verifiedAt": "2026-11-05T00:36:23.297Z",
+    "verificationLevel": "공식 목록 확인",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "중소벤처기업부 공식 사업공고. 신청자격과 제출서류는 첨부 원문 확인이 필요합니다.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [],
+    "attachments": [
+      "https://www.mss.go.kr/common/board/Download.do?bcIdx=1072252&cbIdx=310&streFileNm=a9c066da-619f-42de-b401-d2691338e82a.pdf",
+      "https://www.mss.go.kr/common/board/Download.do?bcIdx=1072252&cbIdx=310&streFileNm=25a03638-cecc-4b01-9fc3-4eb444a4d8fc.hwpx",
+      "https://www.mss.go.kr/common/board/Download.do?bcIdx=1072252&cbIdx=310&cbIdx=310&streFileNm=a9c066da-619f-42de-b401-d2691338e82a.pdf",
+      "https://www.mss.go.kr/common/board/Download.do?bcIdx=1072252&cbIdx=310&cbIdx=310&streFileNm=25a03638-cecc-4b01-9fc3-4eb444a4d8fc.hwpx"
+    ],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/mss-1072252/detail.html",
+      "attachmentUrls": [
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1072252&cbIdx=310&streFileNm=25a03638-cecc-4b01-9fc3-4eb444a4d8fc.hwpx",
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1072252&cbIdx=310&streFileNm=a9c066da-619f-42de-b401-d2691338e82a.pdf"
+      ]
+    }
+  },
+  {
+    "id": "mss-1072214",
+    "sourceId": "1072214",
+    "title": "2027년도 초기창업·창업도약 패키지 사업신규 주관기관 모집 수정 공고",
+    "agency": "중소벤처기업부",
+    "category": "CENTRAL",
+    "applicationStartDate": "2026-10-30",
+    "applicationEndDate": "2026-11-23",
+    "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1072214&parentSeq=1072214",
+    "sourceName": "중소벤처기업부",
+    "verifiedAt": "2026-11-05T00:36:23.297Z",
+    "verificationLevel": "공식 목록 확인",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "중소벤처기업부 공식 사업공고. 신청자격과 제출서류는 첨부 원문 확인이 필요합니다.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [],
+    "attachments": [
+      "https://www.mss.go.kr/common/board/Download.do?bcIdx=1072214&cbIdx=310&streFileNm=0659212f-cb50-4bff-a950-7ad4c9c1356b.pdf",
+      "https://www.mss.go.kr/common/board/Download.do?bcIdx=1072214&cbIdx=310&streFileNm=351acb8b-5bf0-4178-9e5a-3e9cde6c24f6.hwpx",
+      "https://www.mss.go.kr/common/board/Download.do?bcIdx=1072214&cbIdx=310&cbIdx=310&streFileNm=0659212f-cb50-4bff-a950-7ad4c9c1356b.pdf",
+      "https://www.mss.go.kr/common/board/Download.do?bcIdx=1072214&cbIdx=310&cbIdx=310&streFileNm=351acb8b-5bf0-4178-9e5a-3e9cde6c24f6.hwpx"
+    ],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/mss-1072214/detail.html",
+      "attachmentUrls": [
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1072214&cbIdx=310&streFileNm=351acb8b-5bf0-4178-9e5a-3e9cde6c24f6.hwpx",
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1072214&cbIdx=310&streFileNm=0659212f-cb50-4bff-a950-7ad4c9c1356b.pdf"
+      ]
+    },
+    "deadlineTime": "16:00",
+    "timezone": "Asia/Seoul",
+    "replaces": [
+      "mss-1072172",
+      "kstartup-179660"
+    ],
+    "sameOriginalNoticeIds": [
+      "mss-1072214",
+      "kstartup-179705"
+    ]
+  },
+  {
+    "id": "mss-1072172",
+    "sourceId": "1072172",
+    "title": "2027년도 초기창업·창업도약 패키지 사업 신규 주관기관 모집 공고",
+    "agency": "중소벤처기업부",
+    "category": "CENTRAL",
+    "applicationStartDate": "2026-10-30",
+    "applicationEndDate": "2026-11-20",
+    "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1072172&parentSeq=1072172",
+    "sourceName": "중소벤처기업부",
+    "verifiedAt": "2026-11-05T00:36:23.297Z",
+    "verificationLevel": "공식 목록 확인",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "중소벤처기업부 공식 사업공고. 신청자격과 제출서류는 첨부 원문 확인이 필요합니다.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [],
+    "attachments": [
+      "https://www.mss.go.kr/common/board/Download.do?bcIdx=1072172&cbIdx=310&streFileNm=8b2f3a0a-a6c7-45c6-98c8-3af47abe027e.pdf",
+      "https://www.mss.go.kr/common/board/Download.do?bcIdx=1072172&cbIdx=310&streFileNm=42ff2b8f-7f88-4e8d-a7f0-3153545de5b3.hwpx",
+      "https://www.mss.go.kr/common/board/Download.do?bcIdx=1072172&cbIdx=310&cbIdx=310&streFileNm=8b2f3a0a-a6c7-45c6-98c8-3af47abe027e.pdf",
+      "https://www.mss.go.kr/common/board/Download.do?bcIdx=1072172&cbIdx=310&cbIdx=310&streFileNm=42ff2b8f-7f88-4e8d-a7f0-3153545de5b3.hwpx"
+    ],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/mss-1072172/detail.html",
+      "attachmentUrls": [
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1072172&cbIdx=310&streFileNm=42ff2b8f-7f88-4e8d-a7f0-3153545de5b3.hwpx",
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1072172&cbIdx=310&streFileNm=8b2f3a0a-a6c7-45c6-98c8-3af47abe027e.pdf"
+      ]
+    },
+    "supersededBy": "mss-1072214",
+    "sameOriginalNoticeIds": [
+      "mss-1072172",
+      "kstartup-179660"
+    ]
+  },
+  {
+    "id": "mss-1072138",
+    "sourceId": "1072138",
+    "title": "2027년 스마트 제조혁신 지원사업 통합공고",
+    "agency": "중소벤처기업부",
+    "category": "CENTRAL",
+    "applicationStartDate": null,
+    "applicationEndDate": null,
+    "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1072138&parentSeq=1072138",
+    "sourceName": "중소벤처기업부",
+    "verifiedAt": "2026-11-05T00:36:23.297Z",
+    "verificationLevel": "공식 목록 확인",
+    "targetIndustry": "상세 공고에서 확인",
+    "budgetLimit": "상세 공고에서 확인",
+    "description": "중소벤처기업부 공식 사업공고. 신청자격과 제출서류는 첨부 원문 확인이 필요합니다.",
+    "requiredDocsTemplate": "UNVERIFIED",
+    "tags": [],
+    "attachments": [
+      "https://www.mss.go.kr/common/board/Download.do?bcIdx=1072138&cbIdx=310&streFileNm=008b1236-66ba-463e-a181-e5bc0912a772.pdf",
+      "https://www.mss.go.kr/common/board/Download.do?bcIdx=1072138&cbIdx=310&streFileNm=46e8dc89-e5ca-4a96-ba26-987c862bba08.hwpx",
+      "https://www.mss.go.kr/common/board/Download.do?bcIdx=1072138&cbIdx=310&cbIdx=310&streFileNm=008b1236-66ba-463e-a181-e5bc0912a772.pdf",
+      "https://www.mss.go.kr/common/board/Download.do?bcIdx=1072138&cbIdx=310&cbIdx=310&streFileNm=46e8dc89-e5ca-4a96-ba26-987c862bba08.hwpx"
+    ],
+    "detailReview": {
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
+      "status": "본문 확보·내용 분석 대기",
+      "evidence": "evidence/mss-1072138/detail.html",
+      "attachmentUrls": [
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1072138&cbIdx=310&streFileNm=46e8dc89-e5ca-4a96-ba26-987c862bba08.hwpx",
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1072138&cbIdx=310&streFileNm=008b1236-66ba-463e-a181-e5bc0912a772.pdf"
+      ]
     }
   },
   {
@@ -2716,7 +4665,7 @@
     "applicationEndDate": "2026-11-30",
     "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071948&parentSeq=1071948",
     "sourceName": "중소벤처기업부",
-    "verifiedAt": "2026-10-29T01:38:51.473Z",
+    "verifiedAt": "2026-11-05T00:36:23.297Z",
     "verificationLevel": "공식 목록 확인",
     "targetIndustry": "상세 공고에서 확인",
     "budgetLimit": "상세 공고에서 확인",
@@ -2738,7 +4687,7 @@
       "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071948&cbIdx=310&cbIdx=310&streFileNm=38703d8f-fff6-4c62-b854-d4c2cb4f5ebd.hwpx"
     ],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/mss-1071948/detail.html",
       "attachmentUrls": [
@@ -2769,7 +4718,7 @@
     "applicationEndDate": "2026-11-16",
     "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071932&parentSeq=1071932",
     "sourceName": "중소벤처기업부",
-    "verifiedAt": "2026-10-29T01:38:51.473Z",
+    "verifiedAt": "2026-11-05T00:36:23.297Z",
     "verificationLevel": "공식 목록 확인",
     "targetIndustry": "상세 공고에서 확인",
     "budgetLimit": "상세 공고에서 확인",
@@ -2785,7 +4734,7 @@
       "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071932&cbIdx=310&cbIdx=310&streFileNm=54b500d9-7ee9-4a23-b0fa-8969d9a9d1ed.hwpx"
     ],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/mss-1071932/detail.html",
       "attachmentUrls": [
@@ -2811,7 +4760,7 @@
     "applicationEndDate": null,
     "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071892&parentSeq=1071892",
     "sourceName": "중소벤처기업부",
-    "verifiedAt": "2026-10-29T01:38:51.473Z",
+    "verifiedAt": "2026-11-05T00:36:23.297Z",
     "verificationLevel": "공식 목록 확인",
     "targetIndustry": "상세 공고에서 확인",
     "budgetLimit": "상세 공고에서 확인",
@@ -2829,7 +4778,7 @@
       "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071892&cbIdx=310&cbIdx=310&streFileNm=9ffe4346-1147-4bcb-a485-b88932a09495.hwpx"
     ],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/mss-1071892/detail.html",
       "attachmentUrls": [
@@ -2850,7 +4799,7 @@
     "applicationEndDate": null,
     "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071870&parentSeq=1071870",
     "sourceName": "중소벤처기업부",
-    "verifiedAt": "2026-10-29T01:38:51.473Z",
+    "verifiedAt": "2026-11-05T00:36:23.297Z",
     "verificationLevel": "공식 목록 확인",
     "targetIndustry": "상세 공고에서 확인",
     "budgetLimit": "상세 공고에서 확인",
@@ -2864,7 +4813,7 @@
       "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071870&cbIdx=310&cbIdx=310&streFileNm=434fd5d6-6682-4aa2-9011-80a58b06e9d9.hwpx"
     ],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/mss-1071870/detail.html",
       "attachmentUrls": [
@@ -2896,7 +4845,7 @@
     "applicationEndDate": "2026-11-16",
     "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071864&parentSeq=1071864",
     "sourceName": "중소벤처기업부",
-    "verifiedAt": "2026-10-29T01:38:51.473Z",
+    "verifiedAt": "2026-11-05T00:36:23.297Z",
     "verificationLevel": "공식 목록 확인",
     "targetIndustry": "상세 공고에서 확인",
     "budgetLimit": "상세 공고에서 확인",
@@ -2912,7 +4861,7 @@
       "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071864&cbIdx=310&cbIdx=310&streFileNm=9b19a823-8024-4a48-b537-5ddcc3c4b088.hwpx"
     ],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/mss-1071864/detail.html",
       "attachmentUrls": [
@@ -2932,7 +4881,7 @@
     "applicationEndDate": "2026-11-16",
     "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071793&parentSeq=1071793",
     "sourceName": "중소벤처기업부",
-    "verifiedAt": "2026-10-29T01:38:51.473Z",
+    "verifiedAt": "2026-11-05T00:36:23.297Z",
     "verificationLevel": "공식 목록 확인",
     "targetIndustry": "상세 공고에서 확인",
     "budgetLimit": "상세 공고에서 확인",
@@ -2946,144 +4895,12 @@
       "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071793&cbIdx=310&cbIdx=310&streFileNm=1b6c7e7d-6be6-4dfa-8d25-a3fe424b7678.hwpx"
     ],
     "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
+      "fetchedAt": "2026-11-05T01:01:17.345Z",
       "status": "본문 확보·내용 분석 대기",
       "evidence": "evidence/mss-1071793/detail.html",
       "attachmentUrls": [
         "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071793&cbIdx=310&streFileNm=1b6c7e7d-6be6-4dfa-8d25-a3fe424b7678.hwpx",
         "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071793&cbIdx=310&streFileNm=9d7abf34-923c-453f-8163-b4b79d2b87dd.pdf"
-      ]
-    }
-  },
-  {
-    "id": "mss-1071785",
-    "sourceId": "1071785",
-    "title": "2027년 도약(Jump-Up) 프로그램 참여기업 모집 공고",
-    "agency": "중소벤처기업부",
-    "category": "CENTRAL",
-    "applicationStartDate": null,
-    "applicationEndDate": null,
-    "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071785&parentSeq=1071785",
-    "sourceName": "중소벤처기업부",
-    "verifiedAt": "2026-10-29T01:38:51.473Z",
-    "verificationLevel": "공식 목록 확인",
-    "targetIndustry": "상세 공고에서 확인",
-    "budgetLimit": "상세 공고에서 확인",
-    "description": "중소벤처기업부 공식 사업공고. 신청자격과 제출서류는 첨부 원문 확인이 필요합니다.",
-    "requiredDocsTemplate": "UNVERIFIED",
-    "tags": [],
-    "attachments": [
-      "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071785&cbIdx=310&streFileNm=616ad874-cee9-458c-8b63-873d955be3cc.pdf",
-      "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071785&cbIdx=310&streFileNm=5ec2eccf-5588-4d6d-9633-e9dd7bbf1358.hwpx",
-      "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071785&cbIdx=310&cbIdx=310&streFileNm=616ad874-cee9-458c-8b63-873d955be3cc.pdf",
-      "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071785&cbIdx=310&cbIdx=310&streFileNm=5ec2eccf-5588-4d6d-9633-e9dd7bbf1358.hwpx"
-    ],
-    "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
-      "status": "본문 확보·내용 분석 대기",
-      "evidence": "evidence/mss-1071785/detail.html",
-      "attachmentUrls": [
-        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071785&cbIdx=310&streFileNm=5ec2eccf-5588-4d6d-9633-e9dd7bbf1358.hwpx",
-        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071785&cbIdx=310&streFileNm=616ad874-cee9-458c-8b63-873d955be3cc.pdf"
-      ]
-    }
-  },
-  {
-    "id": "mss-1071736",
-    "sourceId": "1071736",
-    "title": "2026년 해외규격인증획득지원사업(일반지원) 3차 참여기업 모집공고",
-    "agency": "중소벤처기업부",
-    "category": "CENTRAL",
-    "applicationStartDate": "2026-10-14",
-    "applicationEndDate": "2026-11-13",
-    "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071736&parentSeq=1071736",
-    "sourceName": "중소벤처기업부",
-    "verifiedAt": "2026-10-29T01:38:51.473Z",
-    "verificationLevel": "공식 목록 확인",
-    "targetIndustry": "상세 공고에서 확인",
-    "budgetLimit": "상세 공고에서 확인",
-    "description": "중소벤처기업부 공식 사업공고. 신청자격과 제출서류는 첨부 원문 확인이 필요합니다.",
-    "requiredDocsTemplate": "UNVERIFIED",
-    "tags": [],
-    "attachments": [
-      "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071736&cbIdx=310&streFileNm=9a18f7e0-ab6e-4ad6-a9bc-0262cea931ca.pdf",
-      "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071736&cbIdx=310&streFileNm=1b724635-9fb9-4d2f-b5b2-8d6e6040b1af.hwpx",
-      "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071736&cbIdx=310&cbIdx=310&streFileNm=9a18f7e0-ab6e-4ad6-a9bc-0262cea931ca.pdf",
-      "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071736&cbIdx=310&cbIdx=310&streFileNm=1b724635-9fb9-4d2f-b5b2-8d6e6040b1af.hwpx"
-    ],
-    "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
-      "status": "본문 확보·내용 분석 대기",
-      "evidence": "evidence/mss-1071736/detail.html",
-      "attachmentUrls": [
-        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071736&cbIdx=310&streFileNm=1b724635-9fb9-4d2f-b5b2-8d6e6040b1af.hwpx",
-        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071736&cbIdx=310&streFileNm=9a18f7e0-ab6e-4ad6-a9bc-0262cea931ca.pdf"
-      ]
-    }
-  },
-  {
-    "id": "mss-1071648",
-    "sourceId": "1071648",
-    "title": "2027년 초격차 스타트업 프로젝트 정부 첫 실증·구매 프로젝트 주관기관 모집공고",
-    "agency": "중소벤처기업부",
-    "category": "CENTRAL",
-    "applicationStartDate": null,
-    "applicationEndDate": null,
-    "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071648&parentSeq=1071648",
-    "sourceName": "중소벤처기업부",
-    "verifiedAt": "2026-10-29T01:38:51.473Z",
-    "verificationLevel": "공식 목록 확인",
-    "targetIndustry": "상세 공고에서 확인",
-    "budgetLimit": "상세 공고에서 확인",
-    "description": "중소벤처기업부 공식 사업공고. 신청자격과 제출서류는 첨부 원문 확인이 필요합니다.",
-    "requiredDocsTemplate": "UNVERIFIED",
-    "tags": [],
-    "attachments": [
-      "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071648&cbIdx=310&streFileNm=cf8334cc-60a1-48e6-8fd9-f7f9a738347f.pdf",
-      "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071648&cbIdx=310&streFileNm=ca0f024d-e028-40f2-aa7f-4c4feba19e82.hwpx",
-      "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071648&cbIdx=310&cbIdx=310&streFileNm=cf8334cc-60a1-48e6-8fd9-f7f9a738347f.pdf",
-      "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071648&cbIdx=310&cbIdx=310&streFileNm=ca0f024d-e028-40f2-aa7f-4c4feba19e82.hwpx"
-    ],
-    "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
-      "status": "본문 확보·내용 분석 대기",
-      "evidence": "evidence/mss-1071648/detail.html",
-      "attachmentUrls": [
-        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071648&cbIdx=310&streFileNm=ca0f024d-e028-40f2-aa7f-4c4feba19e82.hwpx",
-        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071648&cbIdx=310&streFileNm=cf8334cc-60a1-48e6-8fd9-f7f9a738347f.pdf"
-      ]
-    }
-  },
-  {
-    "id": "mss-1071647",
-    "sourceId": "1071647",
-    "title": "2026년 납품대금 연동 우수기업 포상 모집 수정공고(연장)",
-    "agency": "중소벤처기업부",
-    "category": "CENTRAL",
-    "applicationStartDate": null,
-    "applicationEndDate": null,
-    "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071647&parentSeq=1071647",
-    "sourceName": "중소벤처기업부",
-    "verifiedAt": "2026-10-29T01:38:51.473Z",
-    "verificationLevel": "공식 목록 확인",
-    "targetIndustry": "상세 공고에서 확인",
-    "budgetLimit": "상세 공고에서 확인",
-    "description": "중소벤처기업부 공식 사업공고. 신청자격과 제출서류는 첨부 원문 확인이 필요합니다.",
-    "requiredDocsTemplate": "UNVERIFIED",
-    "tags": [],
-    "attachments": [
-      "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071647&cbIdx=310&streFileNm=6d4a89a6-aa98-4a61-a912-5f87d873785c.hwpx",
-      "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071647&cbIdx=310&streFileNm=4016cb6d-64f6-4c0d-8679-d8408097a0f9.pdf",
-      "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071647&cbIdx=310&cbIdx=310&streFileNm=6d4a89a6-aa98-4a61-a912-5f87d873785c.hwpx",
-      "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071647&cbIdx=310&cbIdx=310&streFileNm=4016cb6d-64f6-4c0d-8679-d8408097a0f9.pdf"
-    ],
-    "detailReview": {
-      "fetchedAt": "2026-10-29T01:39:22.477Z",
-      "status": "본문 확보·내용 분석 대기",
-      "evidence": "evidence/mss-1071647/detail.html",
-      "attachmentUrls": [
-        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071647&cbIdx=310&streFileNm=4016cb6d-64f6-4c0d-8679-d8408097a0f9.pdf",
-        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071647&cbIdx=310&streFileNm=6d4a89a6-aa98-4a61-a912-5f87d873785c.hwpx"
       ]
     }
   }

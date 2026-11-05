@@ -27,7 +27,7 @@
   "attachmentContentHashes": {
     "https://www.k-startup.go.kr/afile/fileDownload/nT1Ln": "e2fbb6b7315a1d48574fe0f4dbf955a0249fe5120794f9a0a6a61e22f3e1107c"
   },
-  "lastAttachmentHashCheckedAt": "2026-10-21T00:13:24.199142+00:00",
+  "lastAttachmentHashCheckedAt": "2026-11-04T00:46:40.070828+00:00",
   "unresolved": [
     "PDF1쪽컨설팅대상2026년이후 vs2쪽2025/2026창업자(예비포함)·상세2026~27예비:기준충돌",
     "표기19~39세와생년월일범위의기준일미명시",
@@ -104,5 +104,6 @@
       "공고 양식 선택",
       "회사 사실정보로 서류·사업계획서 작성 및 검토"
     ]
-  }
+  },
+  "latestHashEvidence": "evidence/kstartup-179522/attachment-check-2026-11-04.json"
 }

@@ -1,0 +1,235 @@
+{
+  "programId": "kstartup-179606",
+  "title": "2026년 안산정보산업진흥센터(경기TP안산창업보육센터) 제4차 신규 입주자 모집 공고",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-01T02:29:24.757028+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179606",
+  "reviewScope": "공식상세·HWP01공고§1~5·HWP02서식1~3전문·PDF03 IT/SW65업종2쪽전체텍스트·PDF04사진1쪽전체시각",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/CQ2Ln",
+      "verifiedAt": "2026-11-01",
+      "status": "downloaded",
+      "sha256": "25aab877125a7a0deab9acd651898e20a6243d4c58f097484049b0b4c04a7da7",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 64000,
+      "format": "HWP",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 2990,
+      "review": {
+        "at": "2026-11-01T02:29:24.757028+00:00",
+        "method": "text",
+        "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/DQ2Ln",
+      "verifiedAt": "2026-11-01",
+      "status": "downloaded",
+      "sha256": "1b902d66873700d1d568df9bbcce45627c06ee5d6117d5fcd3ad6b638e0ebbdb",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 83456,
+      "format": "HWP",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 5294,
+      "review": {
+        "at": "2026-11-01T02:29:24.757028+00:00",
+        "method": "text",
+        "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/6Q2Ln",
+      "verifiedAt": "2026-11-01",
+      "status": "downloaded",
+      "sha256": "2621bc741527586e90ead42a8c3c70e671464f527c638bbe9d64d6784d0bf880",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 38468,
+      "format": "PDF",
+      "file": "attachment-03.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 1975,
+      "review": {
+        "at": "2026-11-01T02:29:24.757028+00:00",
+        "method": "text",
+        "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/MQ2Ln",
+      "verifiedAt": "2026-11-01",
+      "status": "downloaded",
+      "sha256": "6bf630feb5861be315f4c2a56e84387bee1fc3444309746375f4fd0a765c72bd",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 422143,
+      "format": "PDF",
+      "file": "attachment-04.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 56,
+      "review": {
+        "at": "2026-11-01T02:30:10.974581+00:00",
+        "method": "visual",
+        "scope": "1쪽사진기반PDF전체렌더시각검토"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/CQ2Ln": "25aab877125a7a0deab9acd651898e20a6243d4c58f097484049b0b4c04a7da7",
+    "https://www.k-startup.go.kr/afile/fileDownload/DQ2Ln": "1b902d66873700d1d568df9bbcce45627c06ee5d6117d5fcd3ad6b638e0ebbdb",
+    "https://www.k-startup.go.kr/afile/fileDownload/6Q2Ln": "2621bc741527586e90ead42a8c3c70e671464f527c638bbe9d64d6784d0bf880",
+    "https://www.k-startup.go.kr/afile/fileDownload/MQ2Ln": "6bf630feb5861be315f4c2a56e84387bee1fc3444309746375f4fd0a765c72bd"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-01T02:29:24.757028+00:00",
+  "eligibility": {
+    "summary": "신청일기준3년이내IT/SW중소기업또는예비창업자·첨부제11차KSIC65개업종확인",
+    "companyFields": [
+      "개업일",
+      "중소기업여부",
+      "KSIC업종",
+      "입주3개월내본점이전/IT업종등록",
+      "세금체납",
+      "서류발급일/유효기간",
+      "자금·인력·성과·IP"
+    ],
+    "reference": "공식상세·HWP01공고§1~5·HWP02서식1~3전문·PDF03 IT/SW65업종2쪽전체텍스트·PDF04사진1쪽전체시각"
+  },
+  "exclusions": {
+    "items": [
+      "서류누락/자격부적합/대표외발표평가제외가능",
+      "허위·입주3개월내주사업장이전/소프트웨어등명시미이행시퇴거가능"
+    ],
+    "reference": "공식상세·HWP01공고§1~5·HWP02서식1~3전문·PDF03 IT/SW65업종2쪽전체텍스트·PDF04사진1쪽전체시각"
+  },
+  "support": {
+    "summary": "2개사내외58.18㎡(17.6평).월사용료약2000원/㎡·보증3만원/㎡(예1745400원)·관리실비,최초3년+평가2년최대5년.공용회의무료·교육컨설팅/네트워크.입주12/1예정.",
+    "reference": "공식상세·HWP01공고§1~5·HWP02서식1~3전문·PDF03 IT/SW65업종2쪽전체텍스트·PDF04사진1쪽전체시각"
+  },
+  "period": {
+    "start": "2026-10-26",
+    "end": "2026-11-09",
+    "deadlineTime": "13:00",
+    "timezone": "Asia/Seoul",
+    "reference": "K-Startup 신청방법·첨부대조(충돌은 unresolved 보존)"
+  },
+  "application": {
+    "summary": "https://pms.gtp.or.kr 온라인정상접수확인필수·장애때별도이메일안내",
+    "reference": "공식상세·HWP01공고§1~5·HWP02서식1~3전문·PDF03 IT/SW65업종2쪽전체텍스트·PDF04사진1쪽전체시각",
+    "publicLinkChecks": [
+      {
+        "id": "179606",
+        "url": "https://pms.gtp.or.kr/",
+        "checkedAt": "2026-11-01T02:27:57.326602+00:00",
+        "status": 200,
+        "finalUrl": "https://pms.gtp.or.kr/web/main/index.do",
+        "evidence": "179606-publiccheck-20261101.html",
+        "bytes": 27131
+      }
+    ]
+  },
+  "requiredDocuments": [
+    {
+      "name": "신청/사업계획서식1/2·대표신분증·동의서식3",
+      "condition": "필수PDF1면1쪽",
+      "reference": "공고§3"
+    },
+    {
+      "name": "국세지방세완납",
+      "condition": "필수·마감일기준유효기간내",
+      "reference": "공고§3"
+    },
+    {
+      "name": "사업자등록/법인등기",
+      "condition": "해당시·마감일기준3개월내발급",
+      "reference": "공고§3"
+    },
+    {
+      "name": "부가세과세표준증명",
+      "condition": "해당시·2025.1~2026.6.30",
+      "reference": "공고§3"
+    },
+    {
+      "name": "4대보험가입자명부",
+      "condition": "해당시·제출일기준",
+      "reference": "공고§3"
+    },
+    {
+      "name": "IP/인증/수상",
+      "condition": "해당시증빙",
+      "reference": "공고§3"
+    }
+  ],
+  "businessPlan": {
+    "format": "HWP서식2작성·객관근거자료·PDF제출",
+    "sections": [
+      {
+        "name": "회사개요",
+        "items": [
+          "인력주주금융성과IP인증투자정책자금"
+        ],
+        "limit": "사업계획분량제한없음"
+      },
+      {
+        "name": "대표/개발책임자",
+        "items": [
+          "이력연구실적·동일인생략규칙"
+        ],
+        "limit": "사업계획분량제한없음"
+      },
+      {
+        "name": "세부사업",
+        "items": [
+          "개발/상품화기간·2년자금·3년매출·기능/국내외경쟁·파급고용"
+        ],
+        "limit": "사업계획분량제한없음"
+      },
+      {
+        "name": "추진계획",
+        "items": [
+          "2026~27일정·인력확보·시장진입마케팅상품화"
+        ],
+        "limit": "사업계획분량제한없음"
+      }
+    ],
+    "reference": "공식상세·HWP01공고§1~5·HWP02서식1~3전문·PDF03 IT/SW65업종2쪽전체텍스트·PDF04사진1쪽전체시각"
+  },
+  "evaluation": {
+    "summary": "대표직접대면15분내외·경영30/사업35/기술35·평균70이상고득점,동점사업→기술→경영.11/18심사→11/24사용허가→11/30납부계약→12/1입주(변경가능).",
+    "reference": "공식상세·HWP01공고§1~5·HWP02서식1~3전문·PDF03 IT/SW65업종2쪽전체텍스트·PDF04사진1쪽전체시각"
+  },
+  "contact": {
+    "name": "031-492-9936,rladnjs03@gtp.or.kr",
+    "reference": "공식상세·HWP01공고§1~5·HWP02서식1~3전문·PDF03 IT/SW65업종2쪽전체텍스트·PDF04사진1쪽전체시각"
+  },
+  "unresolved": [
+    "신청양식47평선택지와이번공고17.6평2실차이·원문고득점배정확인필요",
+    "공고대표신분증필수지만양식제출목록누락·공고기준으로필수보존",
+    "실제온라인신청필드/파일한도로그인이후미검증·HWP원본전체배치시각미확인"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179606",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확보 후 근거별 적합성 검토·신청가능확정 아님",
+    "steps": [
+      "회사필드·자격증빙확인",
+      "미확인·충돌해결·최신양식확보",
+      "S12양식·S13회사정보로회사별서류/계획작성"
+    ]
+  }
+}

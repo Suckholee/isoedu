@@ -1,0 +1,304 @@
+{
+  "programId": "kstartup-179691",
+  "title": "2026년 5차 국립공주대학교 창업보육센터 입주기업 모집 연장공고",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-04T00:45:52.940286+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179691",
+  "reviewScope": "공식상세·HWP01공고§1~7/별지KSIC전문·02계획전문·03동의전문·04스캔PDF2쪽전체시각",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1X3eIqqSVh3P0uBIlpZt7ilAU5APQKSRhl17cUHIcNfIE3Q",
+      "verifiedAt": "2026-11-04",
+      "status": "downloaded",
+      "sha256": "b7d3b20af059aae79ace889198364b8273648e44593e1bc94d6e4a77595bf647",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 4243456,
+      "format": "HWP",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 6353,
+      "review": {
+        "at": "2026-11-04T00:45:52.940286+00:00",
+        "method": "text",
+        "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v17Ha8zHWVWAvqpDP2Bt6LI6SbS-Sm3H1eadCscmDmzdXNBg",
+      "verifiedAt": "2026-11-04",
+      "status": "downloaded",
+      "sha256": "f1d00c9c78942ab8eac207e87740d62fa336f2e95f8dee4e12a0764a39cc0776",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 91648,
+      "format": "HWP",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 5971,
+      "review": {
+        "at": "2026-11-04T00:45:52.940286+00:00",
+        "method": "text",
+        "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1OlMesEzqsbPcxNdrPRxHFSpxSYfBi1n4bM_5F3Nqiu-d6Q",
+      "verifiedAt": "2026-11-04",
+      "status": "downloaded",
+      "sha256": "4bfc63ff341c0d68c0a6a9e935f8edfa86d5f37d79ac0fbe3563a14b4afade54",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 64512,
+      "format": "HWP",
+      "file": "attachment-03.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 1003,
+      "review": {
+        "at": "2026-11-04T00:45:52.940286+00:00",
+        "method": "text",
+        "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1ebN4541FqUiZ-p4yH8OarIbnpl3D2mJkw_2I6Z7eTZNv3g",
+      "verifiedAt": "2026-11-04",
+      "status": "downloaded",
+      "sha256": "e550f44dd55d5ef87b991e3f9f3036cd6e01a8fe7a550add39812fe226303155",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 1940092,
+      "format": "PDF",
+      "file": "attachment-04.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 0,
+      "review": {
+        "method": "visual",
+        "scope": "스캔PDF2쪽전체·공주평면/시설사진확인"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/v1X3eIqqSVh3P0uBIlpZt7ilAU5APQKSRhl17cUHIcNfIE3Q": "b7d3b20af059aae79ace889198364b8273648e44593e1bc94d6e4a77595bf647",
+    "https://www.k-startup.go.kr/afile/fileDownload/v17Ha8zHWVWAvqpDP2Bt6LI6SbS-Sm3H1eadCscmDmzdXNBg": "f1d00c9c78942ab8eac207e87740d62fa336f2e95f8dee4e12a0764a39cc0776",
+    "https://www.k-startup.go.kr/afile/fileDownload/v1OlMesEzqsbPcxNdrPRxHFSpxSYfBi1n4bM_5F3Nqiu-d6Q": "4bfc63ff341c0d68c0a6a9e935f8edfa86d5f37d79ac0fbe3563a14b4afade54",
+    "https://www.k-startup.go.kr/afile/fileDownload/v1ebN4541FqUiZ-p4yH8OarIbnpl3D2mJkw_2I6Z7eTZNv3g": "e550f44dd55d5ef87b991e3f9f3036cd6e01a8fe7a550add39812fe226303155"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-04T00:45:52.940286+00:00",
+  "eligibility": {
+    "summary": "예비기술창업자입주후3개월등록·기창업기술집약7년이내공고일기준/3개월본점이전.부설연구소는본사공공지원공간미입주.대학산학성장가능",
+    "companyFields": [
+      "개업일/본점이전·연구소",
+      "공공입주중복",
+      "업종KSIC",
+      "체납채무",
+      "공주대학내/창업지원이력",
+      "매출IP벤처",
+      "입주비용"
+    ],
+    "reference": "공식상세·HWP01공고§1~7/별지KSIC전문·02계획전문·03동의전문·04스캔PDF2쪽전체시각"
+  },
+  "exclusions": {
+    "items": [
+      "체납채무규제·유흥사행/공해다발·위원회부적합",
+      "연구소본사공공지원공간중복",
+      "3개월내등록이전안하면퇴거"
+    ],
+    "reference": "공식상세·HWP01공고§1~7/별지KSIC전문·02계획전문·03동의전문·04스캔PDF2쪽전체시각"
+  },
+  "support": {
+    "summary": "공주산학연구관503/504각44㎡·507호72㎡.입주~2027/3/31·연평가최대5년.관리1~2년월4500원/㎡·3~5년7500원/㎡연납원칙+최초발전150만원+내부사업지원금20%발전기금+국유재산료연1회선납+전기인터넷실비.진단/시제품마케팅IP멘토링·확정지원금없음.",
+    "reference": "공식상세·HWP01공고§1~7/별지KSIC전문·02계획전문·03동의전문·04스캔PDF2쪽전체시각"
+  },
+  "period": {
+    "start": "2026-11-02",
+    "end": "2026-11-13",
+    "deadlineTime": "18:00",
+    "timezone": "Asia/Seoul",
+    "reference": "K-Startup 신청방법·첨부대조(충돌은 unresolved 보존)"
+  },
+  "application": {
+    "summary": "knubi@kongju.ac.kr 이메일·지정서류·대학홈페이지발표양식추가필요",
+    "reference": "공식상세·HWP01공고§1~7/별지KSIC전문·02계획전문·03동의전문·04스캔PDF2쪽전체시각"
+  },
+  "requiredDocuments": [
+    {
+      "name": "입주신청/사업계획",
+      "condition": "필수지정HWP02·표지포함20쪽",
+      "reference": "HWP01§3/HWP02"
+    },
+    {
+      "name": "개인정보동의/대표등본",
+      "condition": "필수·HWP03서명",
+      "reference": "HWP01§3/03"
+    },
+    {
+      "name": "발표자료",
+      "condition": "필수지정양식별도홈페이지",
+      "reference": "HWP01§3"
+    },
+    {
+      "name": "사업자등록/법인등기주주명부",
+      "condition": "기창업/법인해당시·주주명부신청양식추가",
+      "reference": "HWP01§3/02"
+    },
+    {
+      "name": "매출재무/벤처/IP/수상/정부사업",
+      "condition": "해당시실적·가점증빙필수",
+      "reference": "HWP01§3~4/02"
+    }
+  ],
+  "businessPlan": {
+    "format": "지정HWP·발표지정양식별도",
+    "sections": [
+      {
+        "name": "일반",
+        "items": [
+          "기업재무전년도/최근월·인력시설연혁·대표경력/공동대표별지·IP증빙·아이템1쪽요약"
+        ],
+        "limit": "계획표지포함20쪽·아이템요약1쪽·명칭/사용분야20자"
+      },
+      {
+        "name": "문제인식",
+        "items": [
+          "시장문제근거·필요·아이템규격기능/고객가치이미지"
+        ],
+        "limit": "계획표지포함20쪽·아이템요약1쪽·명칭/사용분야20자"
+      },
+      {
+        "name": "실현",
+        "items": [
+          "준비/개발일정2026~28·최종산출/차별경쟁"
+        ],
+        "limit": "계획표지포함20쪽·아이템요약1쪽·명칭/사용분야20자"
+      },
+      {
+        "name": "성장",
+        "items": [
+          "시장경쟁근거·BM가격·진입매출·로드맵·자금조달"
+        ],
+        "limit": "계획표지포함20쪽·아이템요약1쪽·명칭/사용분야20자"
+      },
+      {
+        "name": "팀",
+        "items": [
+          "대표/파트너역량·인력채용및시설계획"
+        ],
+        "limit": "계획표지포함20쪽·아이템요약1쪽·명칭/사용분야20자"
+      },
+      {
+        "name": "산학협력",
+        "items": [
+          "공동연구/졸업생고용/대학기여·경영기술자금희망"
+        ],
+        "limit": "계획표지포함20쪽·아이템요약1쪽·명칭/사용분야20자"
+      }
+    ],
+    "reference": "공식상세·HWP01공고§1~7/별지KSIC전문·02계획전문·03동의전문·04스캔PDF2쪽전체시각",
+    "presentation": {
+      "format": "지정PPTX템플릿변경가능·항목및순서변경불가",
+      "limit": "페이지제한없음·10분발표+10분질의",
+      "submission": "11/13 18시·이메일기업명_성함·별도폰트포함저장",
+      "instructions": "작성유의페이지/페이지별요령삭제",
+      "sections": [
+        "문제인식",
+        "실현가능성",
+        "성장전략",
+        "팀",
+        "산학협력/희망지원"
+      ],
+      "reference": "공식host-659495.txt slide1/3~18"
+    }
+  },
+  "evaluation": {
+    "summary": "11/16~17요건→11/20대표발표10+질의10→11/30개별→12/16계약·12월입주예정.문제25/실현25/성장20/팀20/산학10·평균70미만탈락·동점산학우선·가점최대5(학내벤처3/매출3억정부과제지원이력IP2/주력산업수상1)",
+    "reference": "공식상세·HWP01공고§1~7/별지KSIC전문·02계획전문·03동의전문·04스캔PDF2쪽전체시각"
+  },
+  "contact": {
+    "name": "041-850-8918~9·천안041-521-9107~8,knubi@kongju.ac.kr",
+    "reference": "공식상세·HWP01공고§1~7/별지KSIC전문·02계획전문·03동의전문·04스캔PDF2쪽전체시각"
+  },
+  "unresolved": [
+    "주최별도PPT19장확보·핵심작성요령/항목확인·추가포스터/홍보리플릿은텍스트0자이며이번시각미검토·재시도필요",
+    "상세구주력산업 vs 첨부친환경모빌리티/차세대디스플레이/스마트휴먼바이오및KSIC차이보존",
+    "이전기준입주확정시3개월 vs 유의입주일부터3개월 차이·계약확인",
+    "공고연장제목이나원본직전차수공고미확보·정정전후단정안함·HWP그림전체미검증"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179691",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확보 후 근거별 적합성 검토·신청가능확정 아님",
+    "steps": [
+      "회사필드·자격증빙확인",
+      "미확인·충돌해결·최신양식확보",
+      "S12양식·S13회사정보로회사별서류/계획작성"
+    ]
+  },
+  "additionalAttachments": [
+    {
+      "url": "https://sanhak.kongju.ac.kr/bbs/M00015/562/659492/download.do",
+      "format": "HWP",
+      "file": "host-659492.bin",
+      "sha256": "b7d3b20af059aae79ace889198364b8273648e44593e1bc94d6e4a77595bf647",
+      "bytes": 4243456,
+      "extractionExit": 0,
+      "characters": 6353
+    },
+    {
+      "url": "https://sanhak.kongju.ac.kr/bbs/M00015/562/659493/download.do",
+      "format": "PDF",
+      "file": "host-659493.bin",
+      "sha256": "a73a6ec050b5289e50fdf289a0b0cf299a988f2c8a46e7637307b22f3666bca6",
+      "bytes": 1522987,
+      "extractionExit": 0,
+      "characters": 0
+    },
+    {
+      "url": "https://sanhak.kongju.ac.kr/bbs/M00015/562/659494/download.do",
+      "format": "HWP",
+      "file": "host-659494.bin",
+      "sha256": "f1d00c9c78942ab8eac207e87740d62fa336f2e95f8dee4e12a0764a39cc0776",
+      "bytes": 91648,
+      "extractionExit": 0,
+      "characters": 5971
+    },
+    {
+      "url": "https://sanhak.kongju.ac.kr/bbs/M00015/562/659495/download.do",
+      "format": "PPTX",
+      "file": "host-659495.bin",
+      "sha256": "25752d6349c92af9c0fbe26eb3bb628976d0ecf4e94e19e674686a0553b74e37",
+      "bytes": 6750733,
+      "extractionExit": 0,
+      "characters": 6641
+    },
+    {
+      "url": "https://sanhak.kongju.ac.kr/bbs/M00015/562/659496/download.do",
+      "format": "HWP",
+      "file": "host-659496.bin",
+      "sha256": "4bfc63ff341c0d68c0a6a9e935f8edfa86d5f37d79ac0fbe3563a14b4afade54",
+      "bytes": 64512,
+      "extractionExit": 0,
+      "characters": 1003
+    },
+    {
+      "url": "https://sanhak.kongju.ac.kr/bbs/M00015/562/659497/download.do",
+      "format": "PDF",
+      "file": "host-659497.bin",
+      "sha256": "b130f0ed31846c6b5678c9a7f29563e7e2e519faac26b3b2d1cdb2b2388b4731",
+      "bytes": 6588876,
+      "extractionExit": 0,
+      "characters": 0
+    }
+  ]
+}

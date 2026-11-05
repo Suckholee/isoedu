@@ -1,0 +1,202 @@
+{
+  "programId": "kstartup-179668",
+  "title": "2026 서울 기후테크 글로벌 B2G 매칭데이 행사 참여기업 모집",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-10-31T06:29:54.881062+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179668",
+  "reviewScope": "공식상세·첨부01공고§1~5/국가28개/기후기술38분류표·첨부02신청양식/중복부록대조·첨부03포스터시각·04텍스트",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/Xa2Ln",
+      "verifiedAt": "2026-10-31",
+      "status": "downloaded",
+      "sha256": "df9516cf5f06d8771c002958d9fe8ca3d0068f14e89cbe278d8f11a8db3429c3",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 80896,
+      "format": "HWP",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 6121,
+      "review": {
+        "at": "2026-10-31T06:29:54.881062+00:00",
+        "method": "text",
+        "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/Wa2Ln",
+      "verifiedAt": "2026-10-31",
+      "status": "downloaded",
+      "sha256": "5e3371d307f9c3dad410552c4972095d72896d3bb72f8b25871917b15774156e",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 63488,
+      "format": "HWP",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 5139,
+      "review": {
+        "at": "2026-10-31T06:29:54.881062+00:00",
+        "method": "text",
+        "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/fY2Ln",
+      "verifiedAt": "2026-10-31",
+      "status": "downloaded",
+      "sha256": "611e43071c2d7fd1906be27c7aee04cdce7880e430a0239a982bee5eb9ee40d9",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 2997912,
+      "format": "IMAGE",
+      "file": "attachment-03.bin",
+      "contentType": "image/png;charset=UTF-8",
+      "review": {
+        "at": "2026-10-31T06:29:54.881062+00:00",
+        "method": "visual",
+        "scope": "전체 포스터 시각 검토·동반 텍스트 대조; 긴 이미지 작은글씨 전부검증아님"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/2a2Ln",
+      "verifiedAt": "2026-10-31",
+      "status": "downloaded",
+      "sha256": "31da5bfa80593250423a165326b5745aa818d6d81762cb2827fe0dceff4af91b",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 947,
+      "format": "TEXT",
+      "file": "attachment-04.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "characters": 451,
+      "extraction": "text",
+      "review": {
+        "at": "2026-10-31T06:29:54.881062+00:00",
+        "method": "text",
+        "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/Xa2Ln": "df9516cf5f06d8771c002958d9fe8ca3d0068f14e89cbe278d8f11a8db3429c3",
+    "https://www.k-startup.go.kr/afile/fileDownload/Wa2Ln": "5e3371d307f9c3dad410552c4972095d72896d3bb72f8b25871917b15774156e",
+    "https://www.k-startup.go.kr/afile/fileDownload/fY2Ln": "611e43071c2d7fd1906be27c7aee04cdce7880e430a0239a982bee5eb9ee40d9",
+    "https://www.k-startup.go.kr/afile/fileDownload/2a2Ln": "31da5bfa80593250423a165326b5745aa818d6d81762cb2827fe0dceff4af91b"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-05T03:11:46.629585+00:00",
+  "eligibility": {
+    "summary": "서울소재 기후기술38대분류에해당하는기술/제품보유중소기업·초기포함예비제외.완료제품해외판매추진.본문사업화/상용화앞둔기업과§3개발완료조건차이보존",
+    "companyFields": [
+      "본사/공장/지사/연구소주소·공고일기준",
+      "중소기업여부",
+      "기후기술분류",
+      "제품완료/해외판매가능",
+      "희망국가5순위",
+      "기업매출·사업자"
+    ],
+    "reference": "공식상세·첨부01공고§1~5/국가28개/기후기술38분류표·첨부02신청양식/중복부록대조·첨부03포스터시각·04텍스트"
+  },
+  "exclusions": {
+    "items": [
+      "예비창업자제외",
+      "서울주소증빙필요"
+    ],
+    "reference": "공식상세·첨부01공고§1~5/국가28개/기후기술38분류표·첨부02신청양식/중복부록대조·첨부03포스터시각·04텍스트"
+  },
+  "support": {
+    "summary": "11/27오후서울비공개장소.기업10분이내발표·공무원4인순환상담·기업전용통역.28개국후보리스트중실제매칭국만참가.현금지원한도/비율/자부담·참가비미명시.",
+    "reference": "공식상세·첨부01공고§1~5/국가28개/기후기술38분류표·첨부02신청양식/중복부록대조·첨부03포스터시각·04텍스트"
+  },
+  "period": {
+    "start": "2026-10-30",
+    "end": "2026-11-06",
+    "deadlineTime": "18:00",
+    "timezone": "Asia/Seoul",
+    "reference": "K-Startup 신청방법·첨부대조(충돌은 unresolved 보존)"
+  },
+  "application": {
+    "summary": "greeninfo@nigt.re.kr 이메일접수 → 서울소재/서면평가 →11월중순개별결과 →11/27행사",
+    "reference": "공식상세·첨부01공고§1~5/국가28개/기후기술38분류표·첨부02신청양식/중복부록대조·첨부03포스터시각·04텍스트",
+    "publicLinkChecks": []
+  },
+  "requiredDocuments": [
+    {
+      "name": "양식제1호 참가신청서",
+      "condition": "필수·서명날인",
+      "reference": "공고§5·첨부02"
+    },
+    {
+      "name": "사업자등록증",
+      "condition": "필수·서울사업장주소반영",
+      "reference": "공고§5"
+    },
+    {
+      "name": "주소증빙",
+      "condition": "사업자등록증/법인등기부상주소대조",
+      "reference": "공고§3·상세"
+    }
+  ],
+  "businessPlan": {
+    "format": "HWP지정양식·파란안내삭제",
+    "sections": [
+      {
+        "name": "기본사항",
+        "items": [
+          "대표이름생년월일·이메일전화주소/기업명매출(해당시)·소재제품업종사업자"
+        ],
+        "limit": "최대2페이지"
+      },
+      {
+        "name": "사업정보",
+        "items": [
+          "아이템·기후기술번호/기술내용"
+        ],
+        "limit": "최대2페이지"
+      },
+      {
+        "name": "해외진출사업계획요약",
+        "items": [
+          "사업필요성·진출희망국5순위"
+        ],
+        "limit": "최대2페이지"
+      }
+    ],
+    "reference": "공식상세·첨부01공고§1~5/국가28개/기후기술38분류표·첨부02신청양식/중복부록대조·첨부03포스터시각·04텍스트"
+  },
+  "evaluation": {
+    "summary": "서면서울주소확인·기후대응효과·개도국공공수요연계해외가능성;배점미명시.11월중순개별통지.",
+    "reference": "공식상세·첨부01공고§1~5/국가28개/기후기술38분류표·첨부02신청양식/중복부록대조·첨부03포스터시각·04텍스트"
+  },
+  "contact": {
+    "name": "서울기후테크산업지원센터02-6261-0881~5,greeninfo@nigt.re.kr",
+    "reference": "공식상세·첨부01공고§1~5/국가28개/기후기술38분류표·첨부02신청양식/중복부록대조·첨부03포스터시각·04텍스트"
+  },
+  "unresolved": [
+    "접수시작충돌:상세10/30 09시 vs 공고§5/포스터10/22,최신정정확인필요",
+    "자격공고§3 본사또는공장 vs 소재지항목본사/지사/연구소;개발완료 vs 상용화앞둔기업 표현차이확인필요",
+    "기후기술부록물부문32정의가건강31내용반복:공식최신분류대조전임의수정안함",
+    "HWP공고/신청양식전체텍스트·부록표확인했으나원본배치/그림전체시각미검증"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179668",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확보 후 근거별 적합성 검토·신청가능확정 아님",
+    "steps": [
+      "회사필드·자격증빙확인",
+      "미확인·충돌해결·최신양식확보",
+      "S12양식·S13회사정보로회사별서류/계획작성"
+    ]
+  },
+  "latestHashEvidence": "evidence/kstartup-179668/attachment-check-2026-11-05.json"
+}

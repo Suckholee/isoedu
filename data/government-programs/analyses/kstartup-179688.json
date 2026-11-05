@@ -1,0 +1,141 @@
+{
+  "programId": "kstartup-179688",
+  "title": "2026 맞춤형 창업과정 교육생 모집",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-04T00:45:52.940286+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179688",
+  "reviewScope": "공식상세·PDF01 1~2쪽전문·포스터02전체시각/03텍스트·구글폼공개문항전문",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1_9HryQumpOGS5tg5wVjKzIOSpIHjQNLWG98Z8lXQJQYr5Q",
+      "verifiedAt": "2026-11-04",
+      "status": "downloaded",
+      "sha256": "6a463c52f183dd1bd8d388fca66cf71782b395172a87af53c01a0324b5b5b26d",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 198387,
+      "format": "PDF",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 1847,
+      "review": {
+        "at": "2026-11-04T00:45:52.940286+00:00",
+        "method": "text",
+        "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1eom0AnAZQLFhsSpgCEm1LJM55KFpYbnc13JdxN2sSYm39A",
+      "verifiedAt": "2026-11-04",
+      "status": "downloaded",
+      "sha256": "911c704a2155ff67c6804a1880c937cf2f9195b486bc7de46cd43d23d1f2108b",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 1970072,
+      "format": "IMAGE",
+      "file": "attachment-02.bin",
+      "contentType": "image/png;charset=UTF-8",
+      "review": {
+        "at": "2026-11-04T00:45:52.940286+00:00",
+        "method": "visual",
+        "scope": "전체 포스터 시각 검토·동반 텍스트 대조; 긴 이미지 작은글씨 전부검증아님"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v13DjxDTnu0vLQWpkmu7YWYNslkjRM-Wo5kzenU98q5tD_pA",
+      "verifiedAt": "2026-11-04",
+      "status": "downloaded",
+      "sha256": "220f81cea3466358e0e523a8c3e3b78b721413d16a185f291c9f2a6779149182",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 1141,
+      "format": "OTHER",
+      "file": "attachment-03.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "review": {
+        "at": "2026-11-04T00:45:52.940286+00:00",
+        "method": "text",
+        "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/v1_9HryQumpOGS5tg5wVjKzIOSpIHjQNLWG98Z8lXQJQYr5Q": "6a463c52f183dd1bd8d388fca66cf71782b395172a87af53c01a0324b5b5b26d",
+    "https://www.k-startup.go.kr/afile/fileDownload/v1eom0AnAZQLFhsSpgCEm1LJM55KFpYbnc13JdxN2sSYm39A": "911c704a2155ff67c6804a1880c937cf2f9195b486bc7de46cd43d23d1f2108b",
+    "https://www.k-startup.go.kr/afile/fileDownload/v13DjxDTnu0vLQWpkmu7YWYNslkjRM-Wo5kzenU98q5tD_pA": "220f81cea3466358e0e523a8c3e3b78b721413d16a185f291c9f2a6779149182"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-04T00:45:52.940286+00:00",
+  "eligibility": {
+    "summary": "기술창업아이템보유예비창업자·퇴직자/예정자·10명내외·나이/지역제한미명시",
+    "companyFields": [
+      "창업단계/퇴직예정",
+      "기술아이템",
+      "교육시간참석",
+      "희망후속연계"
+    ],
+    "reference": "공식상세·PDF01 1~2쪽전문·포스터02전체시각/03텍스트·구글폼공개문항전문"
+  },
+  "exclusions": {
+    "items": [
+      "선착순조기마감·일정참여가능자신청·별도제외미명시"
+    ],
+    "reference": "공식상세·PDF01 1~2쪽전문·포스터02전체시각/03텍스트·구글폼공개문항전문"
+  },
+  "support": {
+    "summary": "무료11/27김해중소기업비즈니스센터4층정보화실·5시간고객중심검증실습.목표고객문제→경쟁벤치마킹→제품서비스흐름→정부지원탐색.수료후센터입주신청우대(입주확약/현금지원아님).",
+    "reference": "공식상세·PDF01 1~2쪽전문·포스터02전체시각/03텍스트·구글폼공개문항전문"
+  },
+  "period": {
+    "start": "2026-11-02",
+    "end": "2026-11-20",
+    "deadlineTime": "18:00",
+    "timezone": "Asia/Seoul",
+    "reference": "K-Startup 신청방법·첨부대조(충돌은 unresolved 보존)"
+  },
+  "application": {
+    "summary": "https://forms.gle/1z1TutqXonW5jTD1A 구글폼→확정문자",
+    "reference": "공식상세·PDF01 1~2쪽전문·포스터02전체시각/03텍스트·구글폼공개문항전문"
+  },
+  "requiredDocuments": [
+    {
+      "name": "온라인참가신청",
+      "condition": "필수이메일성명연락·희망연계·개인정보동의",
+      "reference": "공개폼/공고PDF§3"
+    }
+  ],
+  "businessPlan": {
+    "format": "교육참가·사업계획서제출요구없음",
+    "sections": [],
+    "reference": "공식상세·PDF01 1~2쪽전문·포스터02전체시각/03텍스트·구글폼공개문항전문"
+  },
+  "evaluation": {
+    "summary": "선착순10명내외·확정문자",
+    "reference": "공식상세·PDF01 1~2쪽전문·포스터02전체시각/03텍스트·구글폼공개문항전문"
+  },
+  "contact": {
+    "name": "055-310-9260~1",
+    "reference": "공식상세·PDF01 1~2쪽전문·포스터02전체시각/03텍스트·구글폼공개문항전문"
+  },
+  "unresolved": [
+    "교육시간충돌:공고/포스터13:30~18:30 vs 공식구글폼13~18·최종기관확인필요",
+    "구글폼개인정보활용동의이미지고지본문·보유기간미확인(텍스트동의만확인)·실제제출미수행"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179688",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확보 후 근거별 적합성 검토·신청가능확정 아님",
+    "steps": [
+      "회사필드·자격증빙확인",
+      "미확인·충돌해결·최신양식확보",
+      "S12양식·S13회사정보로회사별서류/계획작성"
+    ]
+  }
+}

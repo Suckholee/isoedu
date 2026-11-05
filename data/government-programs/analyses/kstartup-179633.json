@@ -1,0 +1,165 @@
+{
+  "programId": "kstartup-179633",
+  "title": "강남구 개포동지역 ㈜오피스허브 1인 창조기업 지원센터 입주기업 모집(1인실)",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-10-30T01:43:07.316288+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179633",
+  "evidenceDirectory": "evidence/kstartup-179633",
+  "reviewScope": "공식상세·첨부01 입주신청서전체/첨부1사업계획서전체/첨부2개인정보동의전체텍스트",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/Y22Ln",
+      "verifiedAt": "2026-10-30",
+      "status": "downloaded",
+      "sha256": "3a04340ec7cf6ec5d84d05dea826f8e74a93cb3077b7ad1a95cb0515455fe173",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 27136,
+      "format": "HWP",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 3464,
+      "review": {
+        "method": "text",
+        "at": "2026-10-30T01:43:07.316288+00:00",
+        "scope": "전체 추출 본문·표·별첨 양식 확인; 원본 배치·그림 전체 시각 검증 아님"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/Y22Ln": "3a04340ec7cf6ec5d84d05dea826f8e74a93cb3077b7ad1a95cb0515455fe173"
+  },
+  "lastAttachmentHashCheckedAt": "2026-10-30T01:43:07.316288+00:00",
+  "unresolved": [
+    "개인정보동의서에 신청기업과 무관한 평가위원참여불가 문구 혼입; 최신동의양식 확인필요",
+    "동의안내 주민등록번호표기와 실제 생년월일필드 불일치:주민등록번호 플랫폼수집필드 추가하지않음",
+    "HWP전문/표/사업계획/동의 텍스트 검토했으나 원본배치·이미지 전체시각미확인",
+    "업종별 입주제외·7년산정일 등 상세기준이없어 자격확정하지않음"
+  ],
+  "conflicts": [],
+  "eligibility": {
+    "summary": "예비창업자 또는 창업7년 이내 기업; 제조·지식서비스 등 신청분류 확인필요. 서울거주조건 명시없음. 센터로 사업자등록주소 등록·이전 필수; 예비창업자는 입주후6개월내 등록(첨부).",
+    "companyFields": [
+      "개업일·모든사업자이력",
+      "업종·1인창조기업구분",
+      "주소이전가능",
+      "대표건강보험자격",
+      "직원수·보험명부",
+      "월비용지급가능"
+    ],
+    "reference": "공식상세·첨부01 입주신청서전체/첨부1사업계획서전체/첨부2개인정보동의전체텍스트"
+  },
+  "exclusions": {
+    "items": [
+      "첨부에 중장년40세·청년 구분 있으나 각 유형 별도선정쿼터·신청제외 명시없음"
+    ],
+    "reference": "공식상세·첨부01 입주신청서전체/첨부1사업계획서전체/첨부2개인정보동의전체텍스트"
+  },
+  "support": {
+    "summary": "1인실1개4㎡,보증금450000원·월180000원VAT별도. 최소6개월 최대2년·즉시입주. 24시간공간·회의실/업무시설·컨설팅·마케팅 등 연계,현금지원한도는 미명시.",
+    "reference": "공식상세·첨부01 입주신청서전체/첨부1사업계획서전체/첨부2개인정보동의전체텍스트"
+  },
+  "period": {
+    "start": "2026-10-28",
+    "end": "2026-11-04",
+    "deadlineTime": "17:00",
+    "startTime": "09:00",
+    "timezone": "Asia/Seoul",
+    "reference": "K-Startup 신청기간"
+  },
+  "application": {
+    "summary": "officehub1@naver.com 이메일접수 → 서류심사 → 통과자면담 → 입주/주소이전",
+    "publicLinkChecks": [],
+    "reference": "공식상세·첨부01 입주신청서전체/첨부1사업계획서전체/첨부2개인정보동의전체텍스트"
+  },
+  "requiredDocuments": [
+    {
+      "name": "입주신청서",
+      "condition": "필수",
+      "reference": "상세 제출서류·첨부 양식1"
+    },
+    {
+      "name": "사업계획서",
+      "condition": "첨부의 신청서 첨부1로 요구",
+      "reference": "첨부 양식1 제출목록/첨부1"
+    },
+    {
+      "name": "개인정보수집이용동의서",
+      "condition": "첨부의 신청서 첨부2로 요구; 평가위원문구혼입 주의",
+      "reference": "첨부 양식1/첨부2"
+    },
+    {
+      "name": "건강보험자격득실확인서",
+      "condition": "필수",
+      "reference": "상세 제출서류"
+    },
+    {
+      "name": "사업자등록증",
+      "condition": "사업자있는경우",
+      "reference": "상세 제출서류"
+    },
+    {
+      "name": "4대보험가입자명부",
+      "condition": "직원있는경우",
+      "reference": "상세 제출서류"
+    }
+  ],
+  "businessPlan": {
+    "format": "HWP지정양식·분량상한 미명시",
+    "sections": [
+      {
+        "name": "아이템개요",
+        "items": [
+          "명칭분야·사양기능혜택·시장차별성·산출물·이미지"
+        ],
+        "limit": "분량상한 미명시"
+      },
+      {
+        "name": "창업동기/추진경과",
+        "items": [
+          "대표팀역량·배경·동기·목표·입주후계획"
+        ],
+        "limit": "분량상한 미명시"
+      },
+      {
+        "name": "사업화계획",
+        "items": [
+          "제품필요성·준비단계·향후3년시장/수요·목표/실행·고용파급"
+        ],
+        "limit": "분량상한 미명시"
+      }
+    ],
+    "reference": "공식상세·첨부01 입주신청서전체/첨부1사업계획서전체/첨부2개인정보동의전체텍스트"
+  },
+  "evaluation": {
+    "summary": "1차서류(신청서)→2차면담(통과자); 세부배점/발표일미명시.",
+    "reference": "공식상세·첨부01 입주신청서전체/첨부1사업계획서전체/첨부2개인정보동의전체텍스트"
+  },
+  "contact": {
+    "name": "오피스허브1인창조기업지원센터02-445-8005,officehub1@naver.com",
+    "reference": "공식상세·첨부01 입주신청서전체/첨부1사업계획서전체/첨부2개인정보동의전체텍스트"
+  },
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179633",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확보 후 근거별 적합성 검토. 이 분석은 신청 가능 확정 아님. 기존 고객 개인정보·비밀키·주민등록번호를 수집하지 않음.",
+    "steps": [
+      "회사 사실·증빙 확인",
+      "미확인/충돌 해결 및 최신 양식 확보",
+      "공고 ID와 회사 ID를 유지해 S12 양식 및 S13 사실정보 전달",
+      "회사별 서류·사업계획서 작성 및 검토"
+    ]
+  },
+  "registrationPrivacy": {
+    "retention": "선정후5년(양식원문)",
+    "issue": "평가위원문구·주민번호고지/생년월일필드 불일치"
+  }
+}

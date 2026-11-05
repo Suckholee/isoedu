@@ -1,0 +1,134 @@
+{
+  "programId": "kstartup-179637",
+  "title": "서울디자인재단 「2026 서울디자인런 포럼」 참가 신청",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-02T00:10:50.858912+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179637",
+  "reviewScope": "공식상세·첨부01포스터전체시각·02대체텍스트전체·공개이벤터스접근",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/NE2Ln",
+      "verifiedAt": "2026-11-02",
+      "status": "downloaded",
+      "sha256": "cff807c11024218caa6852d00ea425dc06d52b0852fcdab39d290f1952f85c88",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 1731012,
+      "format": "IMAGE",
+      "file": "attachment-01.bin",
+      "contentType": "image/jpeg;charset=UTF-8",
+      "review": {
+        "at": "2026-11-02T00:10:50.858912+00:00",
+        "method": "visual",
+        "scope": "전체 포스터 시각 검토·동반 텍스트 대조; 긴 이미지 작은글씨 전부검증아님"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/7E2Ln",
+      "verifiedAt": "2026-11-02",
+      "status": "downloaded",
+      "sha256": "5b071c5ec9f9c592997fbc61c812d4a1049557f552b5cb3d0e680c71d134efd0",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 3023,
+      "format": "TEXT",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "characters": 1410,
+      "extraction": "text",
+      "review": {
+        "at": "2026-11-02T00:10:50.858912+00:00",
+        "method": "text",
+        "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/NE2Ln": "cff807c11024218caa6852d00ea425dc06d52b0852fcdab39d290f1952f85c88",
+    "https://www.k-startup.go.kr/afile/fileDownload/7E2Ln": "5b071c5ec9f9c592997fbc61c812d4a1049557f552b5cb3d0e680c71d134efd0"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-02T00:10:50.858912+00:00",
+  "eligibility": {
+    "summary": "디자인/라이프스타일/브랜드및디자인창업관심누구나·나이/지역/업력제한미명시",
+    "companyFields": [
+      "관심분야",
+      "세션참석",
+      "참가비결제"
+    ],
+    "reference": "공식상세·첨부01포스터전체시각·02대체텍스트전체·공개이벤터스접근"
+  },
+  "exclusions": {
+    "items": [
+      "별도제외조건미명시"
+    ],
+    "reference": "공식상세·첨부01포스터전체시각·02대체텍스트전체·공개이벤터스접근"
+  },
+  "support": {
+    "summary": "11/10 14~18:10 DDP디자인랩3층디자인홀·세션1가치소비/세션2취향브랜드·자유네트워킹18:10.참가비1만원·선착순150기프티콘/질문자30도서추첨은마감시별도안내.현금지원아님.",
+    "reference": "공식상세·첨부01포스터전체시각·02대체텍스트전체·공개이벤터스접근"
+  },
+  "period": {
+    "start": "2026-10-27",
+    "end": "2026-11-09",
+    "deadlineTime": "18:00",
+    "timezone": "Asia/Seoul",
+    "reference": "K-Startup 신청방법·첨부대조(충돌은 unresolved 보존)"
+  },
+  "application": {
+    "summary": "https://event-us.kr/openknowldgt/event/137008 이벤터스신청",
+    "reference": "공식상세·첨부01포스터전체시각·02대체텍스트전체·공개이벤터스접근",
+    "publicLinkChecks": [
+      {
+        "id": "179637",
+        "url": "https://event-us.kr/openknowldgt/event/137008",
+        "checkedAt": "2026-11-02T00:07:50.735312+00:00",
+        "status": 200,
+        "finalUrl": "https://event-us.kr/openknowldgt/event/137008",
+        "evidence": "179637-publiccheck-20261102.html",
+        "bytes": 351123
+      }
+    ]
+  },
+  "requiredDocuments": [
+    {
+      "name": "온라인참가신청",
+      "condition": "필수·별도제출서류없음",
+      "reference": "상세·첨부텍스트"
+    }
+  ],
+  "businessPlan": {
+    "format": "행사참가·사업계획서요구없음",
+    "sections": [],
+    "reference": "공식상세·첨부01포스터전체시각·02대체텍스트전체·공개이벤터스접근"
+  },
+  "evaluation": {
+    "summary": "별도선정절차없음·확정자개별문자·이벤트잔여보장아님",
+    "reference": "공식상세·첨부01포스터전체시각·02대체텍스트전체·공개이벤터스접근"
+  },
+  "contact": {
+    "name": "knowlmentor@naver.com",
+    "reference": "공식상세·첨부01포스터전체시각·02대체텍스트전체·공개이벤터스접근"
+  },
+  "unresolved": [
+    "실제티켓접수문항·잔여석·결제/환불조건미검증",
+    "이벤트잔여/사전질문추첨상세미확인"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179637",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확보 후 근거별 적합성 검토·신청가능확정 아님",
+    "steps": [
+      "회사필드·자격증빙확인",
+      "미확인·충돌해결·최신양식확보",
+      "S12양식·S13회사정보로회사별서류/계획작성"
+    ]
+  },
+  "supplementaryAttachments": []
+}

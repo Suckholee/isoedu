@@ -38,7 +38,7 @@
     "https://www.k-startup.go.kr/afile/fileDownload/kR1Ln": "612be100c1da2d68091d283fe36fce1722874659dab2ef76e1afc79bccdb74ae",
     "https://www.k-startup.go.kr/afile/fileDownload/lR1Ln": "56c76a3c27d6066c93a713bd99ddd2ee70bd7cb4299fab98077139be8c440c0f"
   },
-  "lastAttachmentHashCheckedAt": "2026-10-21T00:13:24.199142+00:00",
+  "lastAttachmentHashCheckedAt": "2026-11-02T00:11:32.189913+00:00",
   "unresolved": [
     "실제구글폼필수문항·첨부형식/용량미확인",
     "서울소재본점/사업장기준및세부업력·지원금조건명시없음"
@@ -116,5 +116,6 @@
       "공고 양식 선택",
       "회사 사실정보로 서류·사업계획서 작성 및 검토"
     ]
-  }
+  },
+  "lastHashCheckEvidence": "evidence/kstartup-179531/attachment-check-2026-11-02.json"
 }

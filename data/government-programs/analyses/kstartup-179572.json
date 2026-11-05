@@ -57,7 +57,7 @@
     "https://www.k-startup.go.kr/afile/fileDownload/is2Ln": "1fb9ad3a6e2be59f482399c7f5bc89ce92785f1d410ad73c40be0e17f78de9af",
     "https://www.k-startup.go.kr/afile/fileDownload/js2Ln": "88346aa4921bf9c5f74599518adc8b40ad202667e0b02666229f3fd9f5cc923d"
   },
-  "lastAttachmentHashCheckedAt": "2026-10-23T00:10:37.872180+00:00",
+  "lastAttachmentHashCheckedAt": "2026-11-02T00:11:32.189913+00:00",
   "unresolved": [
     "울산공고첨부HWPX와DOCX제목·안내가대전법률상담회:기관최신양식확인필요",
     "본문신청서필수첨부와상세필요시양식첨부안내차이",
@@ -149,5 +149,6 @@
       "공고 양식 선택",
       "회사 사실정보로 서류·사업계획서 작성 및 검토"
     ]
-  }
+  },
+  "lastHashCheckEvidence": "evidence/kstartup-179572/attachment-check-2026-11-02.json"
 }

@@ -42,7 +42,7 @@
     "https://www.k-startup.go.kr/afile/fileDownload/kr2Ln": "8e11f06575823e389267acc75ef6014ebe7fefe7b63ee78befcbb4927ce56dd4",
     "https://www.k-startup.go.kr/afile/fileDownload/lr2Ln": "54bb7383df6e3b0200a31bb17e84bdcac2dd29dad7c48eba66330914eff260bf"
   },
-  "lastAttachmentHashCheckedAt": "2026-10-29T01:44:03.373489+00:00",
+  "lastAttachmentHashCheckedAt": "2026-10-30T01:43:07.316288+00:00",
   "unresolved": [
     "상세시작10/19와공고10/16차이;공고일조건은첨부기준",
     "HWPX병합표원본배치전체시각대조미완료(공고PDF6쪽은축소렌더대조)"
@@ -155,5 +155,6 @@
       "공고 양식 선택",
       "회사 사실정보로 서류·사업계획서 작성 및 검토"
     ]
-  }
+  },
+  "lastHashCheckEvidence": "evidence/kstartup-179566/attachment-check-2026-10-30.json"
 }

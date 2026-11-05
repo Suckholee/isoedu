@@ -1,0 +1,335 @@
+{
+  "programId": "kstartup-179653",
+  "title": "2026년도 키친인큐베이터 개별·공유주방 25기 및 제조주방 13기 모집",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-02T00:10:50.858912+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179653",
+  "reviewScope": "공식상세·PDF01 1~10쪽/5·7쪽시각·02포스터/03HWP텍스트·공식ZIP14파일(신규PPT3·HWP10·매뉴얼PDF1)핵심검토",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/H42Ln",
+      "verifiedAt": "2026-11-02",
+      "status": "downloaded",
+      "sha256": "b207432392a588db6189c89733400a3ed4d2fe3431be216f861e981982fac348",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 1183829,
+      "format": "PDF",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 9025,
+      "review": {
+        "at": "2026-11-02T00:10:50.858912+00:00",
+        "method": "text",
+        "scope": "PDF10쪽전체본문·5/7쪽표시각·전체그림미확인"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/d42Ln",
+      "verifiedAt": "2026-11-02",
+      "status": "downloaded",
+      "sha256": "5d349a4d4a14df73e754843968683ccac7433c6a1299ca70d779bf6e837f552e",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 6424845,
+      "format": "IMAGE",
+      "file": "attachment-02.bin",
+      "contentType": "image/jpeg;charset=UTF-8",
+      "review": {
+        "at": "2026-11-02T00:10:50.858912+00:00",
+        "method": "visual",
+        "scope": "전체 포스터 시각 검토·동반 텍스트 대조; 긴 이미지 작은글씨 전부검증아님"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/Y42Ln",
+      "verifiedAt": "2026-11-02",
+      "status": "downloaded",
+      "sha256": "74225bba1080b2f018d23cca45a788195103ec0e19928b7c04b9ba9e7cc735e4",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 12800,
+      "format": "HWP",
+      "file": "attachment-03.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 784,
+      "review": {
+        "at": "2026-11-02T00:10:50.858912+00:00",
+        "method": "text",
+        "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/H42Ln": "b207432392a588db6189c89733400a3ed4d2fe3431be216f861e981982fac348",
+    "https://www.k-startup.go.kr/afile/fileDownload/d42Ln": "5d349a4d4a14df73e754843968683ccac7433c6a1299ca70d779bf6e837f552e",
+    "https://www.k-startup.go.kr/afile/fileDownload/Y42Ln": "74225bba1080b2f018d23cca45a788195103ec0e19928b7c04b9ba9e7cc735e4"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-02T00:10:50.858912+00:00",
+  "eligibility": {
+    "summary": "신규서울7년이내F&B예비/스타트업.졸업공유/제조는2023이후선정이력(양식2024표기충돌).개별3팀·공유30(신규15졸업15)·제조10(신규5졸업5)",
+    "companyFields": [
+      "서울소재/창업예정",
+      "개업일",
+      "신규/졸업트랙·기수",
+      "제품유형/HACCP",
+      "영업신고/위생교육/보건증",
+      "예산자부담",
+      "메뉴가격·시제품",
+      "기존성과·매출3개월"
+    ],
+    "reference": "공식상세·PDF01 1~10쪽/5·7쪽시각·02포스터/03HWP텍스트·공식ZIP14파일(신규PPT3·HWP10·매뉴얼PDF1)핵심검토"
+  },
+  "exclusions": {
+    "items": [
+      "유흥등제외업종·채무/체납/신용사고(공고예외)",
+      "휴폐업·서류허위누락·제재/IP분쟁",
+      "졸업기업/타유사활동제외문구는졸업허용과충돌"
+    ],
+    "reference": "공식상세·PDF01 1~10쪽/5·7쪽시각·02포스터/03HWP텍스트·공식ZIP14파일(신규PPT3·HWP10·매뉴얼PDF1)핵심검토"
+  },
+  "support": {
+    "summary": "2027.1/1~4/30약4개월주방무료·교육멘토링판로.개별19㎡관리비/전기가스/식자재소모품자비·메인2개이상단품9000이하.공유/제조130.68㎡월50시간·일8시간예약.제조HACCP의무제품시제품만(영업신고유형별제한원문).월성과보고·5년사후자료.",
+    "reference": "공식상세·PDF01 1~10쪽/5·7쪽시각·02포스터/03HWP텍스트·공식ZIP14파일(신규PPT3·HWP10·매뉴얼PDF1)핵심검토"
+  },
+  "period": {
+    "start": "2026-11-02",
+    "end": "2026-11-26",
+    "deadlineTime": "13:00",
+    "timezone": "Asia/Seoul",
+    "reference": "K-Startup 신청방법·첨부대조(충돌은 unresolved 보존)"
+  },
+  "application": {
+    "summary": "https://www.startup-plus.kr/project/PRJ007656 →키친인큐베이터로그인온라인·10MB초과오류주의·마감후수정추가불가",
+    "reference": "공식상세·PDF01 1~10쪽/5·7쪽시각·02포스터/03HWP텍스트·공식ZIP14파일(신규PPT3·HWP10·매뉴얼PDF1)핵심검토",
+    "publicLinkChecks": [
+      {
+        "id": "179653",
+        "url": "https://www.startup-plus.kr/project/PRJ007656",
+        "checkedAt": "2026-11-02T00:07:50.735886+00:00",
+        "status": 200,
+        "finalUrl": "https://www.startup-plus.kr/project/PRJ007656",
+        "evidence": "179653-publiccheck-20261102.html",
+        "bytes": 123242
+      },
+      {
+        "id": "179653-tour",
+        "url": "https://forms.gle/2aNii1nmtUvrSyWy6",
+        "checkedAt": "2026-11-02T00:07:50.735982+00:00",
+        "status": 200,
+        "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSffqQlJZSutkNY2xuga1cb3NCFm53CB6epS2ql0tmvwv7o8fQ/viewform?usp=send_form",
+        "evidence": "179653-tour-publiccheck-20261102.html",
+        "bytes": 119836
+      }
+    ]
+  },
+  "requiredDocuments": [
+    {
+      "name": "신규트랙신청/서약·발표PDF·유의확인",
+      "condition": "필수·ZIP트랙별양식",
+      "reference": "공고3쪽/ZIP"
+    },
+    {
+      "name": "졸업트랙신청/서약·유의확인",
+      "condition": "필수·발표평가없음",
+      "reference": "공고3/7쪽/ZIP"
+    },
+    {
+      "name": "키친투어확인",
+      "condition": "선택서류가점2·11/5·10·12·18·24각10/15시30분",
+      "reference": "공고9쪽"
+    },
+    {
+      "name": "보건증/위생교육/영업신고",
+      "condition": "선정후활동시작전필수·보건증6개월내(확인서)·개별사업자등록필수",
+      "reference": "공고8쪽/ZIP유의확인"
+    },
+    {
+      "name": "개별시식메뉴5인분",
+      "condition": "신규개별발표필수·공유제조선택",
+      "reference": "공고5~6쪽"
+    }
+  ],
+  "businessPlan": {
+    "format": "5트랙별HWP·신규3트랙PPTX를PDF로변환·안내삭제",
+    "sections": [
+      {
+        "name": "신규",
+        "items": [
+          "지원동기·대표팀경력·메뉴/제품사진·차별성/완성도·프로그램목표·수료후계획"
+        ],
+        "limit": "신청15쪽이내·발표표15P이내/제조본문20P병기충돌·10MB"
+      },
+      {
+        "name": "제조추가",
+        "items": [
+          "제품규격/유통기한/보관포장/HACCP·생산/OEM·판매시장계획"
+        ],
+        "limit": "신청15쪽이내·발표표15P이내/제조본문20P병기충돌·10MB"
+      },
+      {
+        "name": "졸업",
+        "items": [
+          "기존성과·추가필요·향후목표·월매출3개월평균/제품/채널/시장검증수치·기대효과"
+        ],
+        "limit": "신청15쪽이내·발표표15P이내/제조본문20P병기충돌·10MB"
+      },
+      {
+        "name": "발표",
+        "items": [
+          "16:9·공유/개별대표팀/아이템/메뉴·신규출시·활동후서울창업예상지역시기"
+        ],
+        "limit": "신청15쪽이내·발표표15P이내/제조본문20P병기충돌·10MB"
+      }
+    ],
+    "reference": "공식상세·PDF01 1~10쪽/5·7쪽시각·02포스터/03HWP텍스트·공식ZIP14파일(신규PPT3·HWP10·매뉴얼PDF1)핵심검토"
+  },
+  "evaluation": {
+    "summary": "신규서류기본40/아이템20/사업40+투어2→PT개별20/30/50(역량아이템사업)·공유20/40/40·제조20/30/50.개별10분(5+5)·공유제조7분(4+3).졸업정량50(시간30참여20)+정성50(성과10필요10목표20효과10)70미만제외.11/30서류·12/3PT·12/4결과",
+    "reference": "공식상세·PDF01 1~10쪽/5·7쪽시각·02포스터/03HWP텍스트·공식ZIP14파일(신규PPT3·HWP10·매뉴얼PDF1)핵심검토"
+  },
+  "contact": {
+    "name": "02-2115-2008/2034,wngudals@sba.seoul.kr(공고)·wnudals@gmail.com(공개페이지)",
+    "reference": "공식상세·PDF01 1~10쪽/5·7쪽시각·02포스터/03HWP텍스트·공식ZIP14파일(신규PPT3·HWP10·매뉴얼PDF1)핵심검토"
+  },
+  "unresolved": [
+    "졸업2023이후허용vs제조졸업양식2024이후·공고제외목록졸업기업일괄문구충돌",
+    "제조발표15쪽표vs20쪽본문·공고7년이내vs신규양식7년미만 충돌·최신양식확인필요",
+    "개별운영시간공고10~18/판매11:30~13:30vs확인서9~18/영업14시까지 차이",
+    "확인서보건증6개월이내vs사용등록매뉴얼일반1년/급식6개월표현차이·지원기관운영기준확인필요(법적판정아님)",
+    "ZIP14파일중핵심신청/확인/발표항목·매뉴얼검토,일부반복동의/양식전문및모든시각미검증·로그인후필드미확인"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179653",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확보 후 근거별 적합성 검토·신청가능확정 아님",
+    "steps": [
+      "회사필드·자격증빙확인",
+      "미확인·충돌해결·최신양식확보",
+      "S12양식·S13회사정보로회사별서류/계획작성"
+    ]
+  },
+  "supplementaryAttachments": [
+    {
+      "programId": "179653",
+      "url": "https://www.startup-plus.kr/api/common/download?attachFilePath=%2fproject%2fattachment%2f261028091151%eb%b6%99%ec%9e%842.+%ec%8b%a0%ec%b2%ad%ec%84%9c%eb%a5%98+%ec%96%91%ec%8b%9d+%eb%b0%8f+%ec%82%ac%ec%9a%a9%eb%93%b1%eb%a1%9d+%eb%a9%94%eb%89%b4%ec%96%bc.zip",
+      "checkedAt": "2026-11-02T00:08:53.450055+00:00",
+      "file": "official-extra.zip",
+      "bytes": 843121,
+      "sha256": "fdc911630aafd545c563355ef50980a3496fbfc391c651b743e6d7305ec7c15a",
+      "status": "downloaded",
+      "members": [
+        "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-1. 발표자료양식, 신청서, 유의사항확인서_개별주방_25기/(팀명작성)발표자료양식_개별주방_25기.pptx",
+        "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-1. 발표자료양식, 신청서, 유의사항확인서_개별주방_25기/(팀명작성)신청서 및 서약서_개별주방 25기.hwp",
+        "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-1. 발표자료양식, 신청서, 유의사항확인서_개별주방_25기/(팀명작성)유의사항확인서_개별주방_25기.hwp",
+        "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-2. 발표자료양식, 신청서, 유의사항확인서_(신규)공유주방_25기/(팀명작성)발표자료양식_(신규)공유주방 25기.pptx",
+        "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-2. 발표자료양식, 신청서, 유의사항확인서_(신규)공유주방_25기/(팀명작성)신청서 및 서약서_(신규)공유주방 25기.hwp",
+        "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-2. 발표자료양식, 신청서, 유의사항확인서_(신규)공유주방_25기/(팀명작성)유의사항확인서_(신규)공유주방_25기.hwp",
+        "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-3. 발표자료양식, 신청서, 유의사항확인서_(신규)제조주방_13기/(팀명)발표자료양식_키친인큐베이터 제조주방_13기.pptx",
+        "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-3. 발표자료양식, 신청서, 유의사항확인서_(신규)제조주방_13기/(팀명작성)신청서 및 서약서_(신규)제조주방 13기.hwp",
+        "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-3. 발표자료양식, 신청서, 유의사항확인서_(신규)제조주방_13기/(팀명작성)유의사항확인서_(신규)제조주방_13기.hwp",
+        "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-4. 신청서, 유의사항확인서_(졸업)공유주방_25기/(팀명작성)신청서 및 서약서_(졸업)공유주방_25기.hwp",
+        "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-4. 신청서, 유의사항확인서_(졸업)공유주방_25기/(팀명작성)유의사항확인서_(졸업)공유주방_25기.hwp",
+        "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-5. 신청서, 유의사항확인서_(졸업)제조주방_13기/(팀명작성)신청서 및 서약서_(졸업)제조주방_13기.hwp",
+        "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-5. 신청서, 유의사항확인서_(졸업)제조주방_13기/(팀명작성)유의사항확인서_(졸업)제조주방_13기.hwp",
+        "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-6. 서울창업허브 공덕 키친인큐베이터 공유, 제조주방 사용등록 메뉴얼.pdf"
+      ],
+      "extractions": [
+        {
+          "name": "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-1. 발표자료양식, 신청서, 유의사항확인서_개별주방_25기/(팀명작성)발표자료양식_개별주방_25기.pptx",
+          "file": "zip-member-03.pptx",
+          "status": "text-extracted",
+          "characters": 2101
+        },
+        {
+          "name": "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-1. 발표자료양식, 신청서, 유의사항확인서_개별주방_25기/(팀명작성)신청서 및 서약서_개별주방 25기.hwp",
+          "file": "zip-member-04.hwp",
+          "characters": 3588,
+          "status": "text-extracted"
+        },
+        {
+          "name": "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-1. 발표자료양식, 신청서, 유의사항확인서_개별주방_25기/(팀명작성)유의사항확인서_개별주방_25기.hwp",
+          "file": "zip-member-05.hwp",
+          "characters": 1413,
+          "status": "text-extracted"
+        },
+        {
+          "name": "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-2. 발표자료양식, 신청서, 유의사항확인서_(신규)공유주방_25기/(팀명작성)발표자료양식_(신규)공유주방 25기.pptx",
+          "file": "zip-member-07.pptx",
+          "status": "text-extracted",
+          "characters": 1666
+        },
+        {
+          "name": "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-2. 발표자료양식, 신청서, 유의사항확인서_(신규)공유주방_25기/(팀명작성)신청서 및 서약서_(신규)공유주방 25기.hwp",
+          "file": "zip-member-08.hwp",
+          "characters": 3560,
+          "status": "text-extracted"
+        },
+        {
+          "name": "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-2. 발표자료양식, 신청서, 유의사항확인서_(신규)공유주방_25기/(팀명작성)유의사항확인서_(신규)공유주방_25기.hwp",
+          "file": "zip-member-09.hwp",
+          "characters": 1698,
+          "status": "text-extracted"
+        },
+        {
+          "name": "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-3. 발표자료양식, 신청서, 유의사항확인서_(신규)제조주방_13기/(팀명)발표자료양식_키친인큐베이터 제조주방_13기.pptx",
+          "file": "zip-member-11.pptx",
+          "status": "text-extracted",
+          "characters": 2126
+        },
+        {
+          "name": "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-3. 발표자료양식, 신청서, 유의사항확인서_(신규)제조주방_13기/(팀명작성)신청서 및 서약서_(신규)제조주방 13기.hwp",
+          "file": "zip-member-12.hwp",
+          "characters": 3729,
+          "status": "text-extracted"
+        },
+        {
+          "name": "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-3. 발표자료양식, 신청서, 유의사항확인서_(신규)제조주방_13기/(팀명작성)유의사항확인서_(신규)제조주방_13기.hwp",
+          "file": "zip-member-13.hwp",
+          "characters": 1952,
+          "status": "text-extracted"
+        },
+        {
+          "name": "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-4. 신청서, 유의사항확인서_(졸업)공유주방_25기/(팀명작성)신청서 및 서약서_(졸업)공유주방_25기.hwp",
+          "file": "zip-member-15.hwp",
+          "characters": 3783,
+          "status": "text-extracted"
+        },
+        {
+          "name": "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-4. 신청서, 유의사항확인서_(졸업)공유주방_25기/(팀명작성)유의사항확인서_(졸업)공유주방_25기.hwp",
+          "file": "zip-member-16.hwp",
+          "characters": 1794,
+          "status": "text-extracted"
+        },
+        {
+          "name": "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-5. 신청서, 유의사항확인서_(졸업)제조주방_13기/(팀명작성)신청서 및 서약서_(졸업)제조주방_13기.hwp",
+          "file": "zip-member-18.hwp",
+          "characters": 3783,
+          "status": "text-extracted"
+        },
+        {
+          "name": "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-5. 신청서, 유의사항확인서_(졸업)제조주방_13기/(팀명작성)유의사항확인서_(졸업)제조주방_13기.hwp",
+          "file": "zip-member-19.hwp",
+          "characters": 2049,
+          "status": "text-extracted"
+        },
+        {
+          "name": "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-6. 서울창업허브 공덕 키친인큐베이터 공유, 제조주방 사용등록 메뉴얼.pdf",
+          "file": "zip-member-20.pdf",
+          "characters": 1965,
+          "status": "text-extracted"
+        }
+      ],
+      "reviewScope": "ZIP14파일 핵심 신청항목·주의사항·PPT3본문·등록절차 확인. 일부반복동의/전체이미지 미확인."
+    }
+  ]
+}

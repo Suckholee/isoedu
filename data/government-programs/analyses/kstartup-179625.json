@@ -1,0 +1,209 @@
+{
+  "programId": "kstartup-179625",
+  "title": "2026 신한금융희망재단 - 함께일하는재단, 사회연대경제 먹거리 으뜸경연대회 참여기업 모집",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-10-30T01:43:07.316288+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179625",
+  "evidenceDirectory": "evidence/kstartup-179625",
+  "reviewScope": "공식상세·첨부01공고§1~6·전체일정/지원금/심사표·양식1~4전문/표 대조",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/IX2Ln",
+      "verifiedAt": "2026-10-30",
+      "status": "downloaded",
+      "sha256": "0e0c9b30bc2eac6d39c0afd9daf2e19c621376e372befbcecf0c3ce0937137d1",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 100864,
+      "format": "HWP",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 7224,
+      "review": {
+        "method": "text",
+        "at": "2026-10-30T01:43:07.316288+00:00",
+        "scope": "전체 추출 본문·표·별첨 양식 확인; 원본 배치·그림 전체 시각 검증 아님"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/IX2Ln": "0e0c9b30bc2eac6d39c0afd9daf2e19c621376e372befbcecf0c3ce0937137d1"
+  },
+  "lastAttachmentHashCheckedAt": "2026-10-30T01:43:07.316288+00:00",
+  "unresolved": [
+    "구글폼HTTP401:실제양식1필드/파일용량·업로드제한·현재접수여부 미확인,접근제한우회안함",
+    "HWP§6추출링크끝에이상문자(汫h)혼입:상세의정상URL사용하되 원본하이퍼링크/최신양식 확인필요",
+    "HWP전문·표·양식1~4확인했으나 원본배치·이미지 전체시각검토미완료"
+  ],
+  "conflicts": [],
+  "eligibility": {
+    "summary": "HWP§2:로컬브릿지2024~25 또는 임팩트업2026 참여기업 OR 사회연대경제조직((예비)사회적기업·(사회적)협동조합·마을/자활기업·소셜벤처등). 자체제조/OEM 가공식품·커피/차·건강식품으로 아래제품조건 모두 충족. 일반기업/10년미만 상단분류만으로 자격단정하지않음.",
+    "companyFields": [
+      "조직유형·인증증빙",
+      "기존프로젝트참여",
+      "자체/OEM제조·업종",
+      "제품보관/개별포장·기성품",
+      "부가세포함소비자가",
+      "원재료알레르기표시",
+      "샘플배송·110인분준비가능",
+      "11/28까지제품책임보험유효"
+    ],
+    "reference": "공식상세·첨부01공고§1~6·전체일정/지원금/심사표·양식1~4전문/표 대조"
+  },
+  "exclusions": {
+    "items": [
+      "단순유통제품 제외",
+      "쌀/곡류·육류·수산물·주류·냉장냉동신선식품등 제외",
+      "현장조리·가열·희석·세척·절단이 필요한제품 제외",
+      "1개제품/1개맛만출품,선물가능완제품·개별소분·소비자가VAT포함5만원이하"
+    ],
+    "reference": "공식상세·첨부01공고§1~6·전체일정/지원금/심사표·양식1~4전문/표 대조"
+  },
+  "support": {
+    "summary": "시상총1000만원:으뜸400만원1팀/버금300만원1팀/희망100만원3팀. 본선110회분 시식실비기업당최대100만원. 서류통과 제품적합샘플 배송비 기업부담. 세금 법정처리; 일반지원비율·의무자부담률 미명시. 본선11/28 13:45~15시 킨텍스제1전시장회의실.",
+    "reference": "공식상세·첨부01공고§1~6·전체일정/지원금/심사표·양식1~4전문/표 대조"
+  },
+  "period": {
+    "start": "2026-10-26",
+    "end": "2026-11-05",
+    "deadlineTime": "14:00",
+    "startTime": "16:00",
+    "timezone": "Asia/Seoul",
+    "reference": "상세 신청기간·HWP§1/6"
+  },
+  "application": {
+    "summary": "https://forms.gle/Mqi7q1HDFUsCdkzE6 구글폼작성 + 양식2~4 PDF업로드. 공개접근401로 실제폼문항/파일제한 미확인. 서류11/10→제품적합11/11~16→최종5+예비2 11/17~18→본선시식준비11/19~25→본선11/28.",
+    "publicLinkChecks": [
+      {
+        "id": "179625",
+        "url": "https://forms.gle/Mqi7q1HDFUsCdkzE6",
+        "checkedAt": "2026-10-30T01:37:19.013845+00:00",
+        "error": "HTTP Error 401: Unauthorized"
+      }
+    ],
+    "reference": "공식상세·첨부01공고§1~6·전체일정/지원금/심사표·양식1~4전문/표 대조"
+  },
+  "requiredDocuments": [
+    {
+      "name": "양식1 온라인 참가신청서",
+      "condition": "필수",
+      "reference": "HWP§6/양식1"
+    },
+    {
+      "name": "양식2 출품제품기술서",
+      "condition": "필수PDF업로드",
+      "reference": "HWP§6/양식2"
+    },
+    {
+      "name": "양식3 출품제품자가확인서",
+      "condition": "필수PDF업로드·서명",
+      "reference": "HWP§6/양식3"
+    },
+    {
+      "name": "양식4 개인정보수집이용및제3자제공동의",
+      "condition": "필수PDF업로드",
+      "reference": "HWP§6/양식4"
+    },
+    {
+      "name": "사업자등록증",
+      "condition": "필수",
+      "reference": "상세·HWP§6"
+    },
+    {
+      "name": "사회연대경제조직증빙",
+      "condition": "해당시필수",
+      "reference": "상세·HWP§6"
+    },
+    {
+      "name": "제품전면·표시사항면사진",
+      "condition": "필수:원재료·알레르기·보관조건",
+      "reference": "상세·HWP양식2"
+    },
+    {
+      "name": "기업/상품소개서·홍보물",
+      "condition": "선택",
+      "reference": "상세·HWP§6"
+    },
+    {
+      "name": "제조물배상책임보험",
+      "condition": "선택가점:11/28까지유효",
+      "reference": "상세·HWP§6"
+    },
+    {
+      "name": "제품적합검토샘플",
+      "condition": "서류통과시배송비기업부담",
+      "reference": "HWP절차"
+    },
+    {
+      "name": "동시시식제품110회분",
+      "condition": "본선진출시11/25까지준비",
+      "reference": "HWP절차"
+    }
+  ],
+  "businessPlan": {
+    "format": "HWP양식1~4;2~4작성후PDF업로드. 별도사업계획서없음,제품기술서가핵심. 기업소개5줄이내(양식1),다른분량상한미명시",
+    "sections": [
+      {
+        "name": "양식1",
+        "items": [
+          "기업/사업자/주소/설립/홈페이지/유형/참여이력/대표담당·제품가격제조보험·기업소개5줄/미션"
+        ],
+        "limit": "분량제한 미명시(기업소개5줄은 해당양식 항목만)"
+      },
+      {
+        "name": "양식2",
+        "items": [
+          "판매채널/OEM·제품스토리·경쟁력·사회가치수치·규격보관원재료알레르기유통기한·110인분역량·전면라벨사진"
+        ],
+        "limit": "분량제한 미명시(기업소개5줄은 해당양식 항목만)"
+      },
+      {
+        "name": "양식3",
+        "items": [
+          "표시포장소분보관준비역량품목제조가격8개체크·서명"
+        ],
+        "limit": "분량제한 미명시(기업소개5줄은 해당양식 항목만)"
+      },
+      {
+        "name": "양식4",
+        "items": [
+          "수집이용/제3자제공·본선촬영홍보동의"
+        ],
+        "limit": "분량제한 미명시(기업소개5줄은 해당양식 항목만)"
+      }
+    ],
+    "reference": "공식상세·첨부01공고§1~6·전체일정/지원금/심사표·양식1~4전문/표 대조"
+  },
+  "evaluation": {
+    "summary": "서류20개내외:스토리40/경쟁력30/사회가치30. 기존프로젝트5점·제조물배상보험5점 가점. 제품적합/재심후본선5+예비2. 본선시민70%+전문위원30%;전문스토리40/경쟁30/사회30.",
+    "reference": "공식상세·첨부01공고§1~6·전체일정/지원금/심사표·양식1~4전문/표 대조"
+  },
+  "contact": {
+    "name": "운영사무국02-330-0720/0703/0735,wt_local@hamkke.org(10~17시,12~13시제외)",
+    "reference": "공식상세·첨부01공고§1~6·전체일정/지원금/심사표·양식1~4전문/표 대조"
+  },
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179625",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확보 후 근거별 적합성 검토. 이 분석은 신청 가능 확정 아님. 기존 고객 개인정보·비밀키·주민등록번호를 수집하지 않음.",
+    "steps": [
+      "회사 사실·증빙 확인",
+      "미확인/충돌 해결 및 최신 양식 확보",
+      "공고 ID와 회사 ID를 유지해 S12 양식 및 S13 사실정보 전달",
+      "회사별 서류·사업계획서 작성 및 검토"
+    ]
+  },
+  "registrationPrivacy": {
+    "retention": "수집3년(사업종료후),제3자제공사업종료시까지",
+    "photoVideoUse": "본선촬영/홍보동의,거부시참여제한원문",
+    "reference": "첨부양식4"
+  }
+}

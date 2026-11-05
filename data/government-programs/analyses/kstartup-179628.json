@@ -1,0 +1,125 @@
+{
+  "programId": "kstartup-179628",
+  "title": "[창업] 합격하는 창업 사업계획서 실전",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-01T02:29:24.757028+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179628",
+  "reviewScope": "상세·첨부01스캔PDF1쪽전체렌더시각·주최공개안내전문대조",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/Le2Ln",
+      "verifiedAt": "2026-11-01",
+      "status": "downloaded",
+      "sha256": "49f2d27f7b723093df361083f251bb4d184abe8cee0138812bb91447d7a8c23c",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 291176,
+      "format": "PDF",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 0,
+      "review": {
+        "at": "2026-11-01T02:30:10.974581+00:00",
+        "method": "visual",
+        "scope": "스캔PDF1쪽전체렌더시각검토·주최안내전문대조"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/Le2Ln": "49f2d27f7b723093df361083f251bb4d184abe8cee0138812bb91447d7a8c23c"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-01T02:29:24.757028+00:00",
+  "eligibility": {
+    "summary": "예비및초기청년창업가만19~39세.초기업력상한미명시·마포활동청년우선",
+    "companyFields": [
+      "나이",
+      "창업단계",
+      "마포활동여부",
+      "5회참여가능일",
+      "온라인/현장선택"
+    ],
+    "reference": "상세·첨부01스캔PDF1쪽전체렌더시각·주최공개안내전문대조"
+  },
+  "exclusions": {
+    "items": [
+      "정원초과시마포활동청년우선선발"
+    ],
+    "reference": "상세·첨부01스캔PDF1쪽전체렌더시각·주최공개안내전문대조"
+  },
+  "support": {
+    "summary": "무료5회교육11/9·11·13·16·18 각14~17시.마포청년나루3층또는Zoom중1가지선택.정부사업이해·아이디어·BMC·PSST실습/피드백.지원금/합격보장아님.",
+    "reference": "상세·첨부01스캔PDF1쪽전체렌더시각·주최공개안내전문대조"
+  },
+  "period": {
+    "start": "2026-10-27",
+    "end": "2026-11-06",
+    "deadlineTime": "14:00",
+    "timezone": "Asia/Seoul",
+    "reference": "K-Startup 신청방법·첨부대조(충돌은 unresolved 보존)"
+  },
+  "application": {
+    "summary": "https://www.naroo.or.kr/bbs/content.php?co_id=program_view&np_seq=1309 → 신청서작성",
+    "reference": "상세·첨부01스캔PDF1쪽전체렌더시각·주최공개안내전문대조",
+    "publicLinkChecks": [
+      {
+        "id": "179628",
+        "url": "https://www.naroo.or.kr/bbs/content.php?co_id=program_view&np_seq=1309",
+        "checkedAt": "2026-11-01T02:27:57.325866+00:00",
+        "status": 200,
+        "finalUrl": "https://www.naroo.or.kr/bbs/content.php?co_id=program_view&np_seq=1309",
+        "evidence": "179628-publiccheck-20261101.html",
+        "bytes": 33750
+      }
+    ]
+  },
+  "requiredDocuments": [
+    {
+      "name": "온라인참가신청서",
+      "condition": "필수·최종폼문항미확인",
+      "reference": "상세·주최안내"
+    }
+  ],
+  "businessPlan": {
+    "format": "교육참가신청·별도제출사업계획서명시없음",
+    "sections": [
+      {
+        "name": "교육작성",
+        "items": [
+          "정부사업탐색·BMC9요소·PSST계획서실습/검토"
+        ],
+        "limit": "해당없음"
+      }
+    ],
+    "reference": "상세·첨부01스캔PDF1쪽전체렌더시각·주최공개안내전문대조"
+  },
+  "evaluation": {
+    "summary": "정원초과시마포활동청년우선·평가없음·11/6 18시이전개별문자",
+    "reference": "상세·첨부01스캔PDF1쪽전체렌더시각·주최공개안내전문대조"
+  },
+  "contact": {
+    "name": "02-6261-1939",
+    "reference": "상세·첨부01스캔PDF1쪽전체렌더시각·주최공개안내전문대조"
+  },
+  "unresolved": [
+    "실제신청서문항·개인정보동의·정원·초기업력범위미확인",
+    "정부지원사업합격홍보문구는교육안내주장이며성과확약으로전환하지않음"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179628",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확보 후 근거별 적합성 검토·신청가능확정 아님",
+    "steps": [
+      "회사필드·자격증빙확인",
+      "미확인·충돌해결·최신양식확보",
+      "S12양식·S13회사정보로회사별서류/계획작성"
+    ]
+  }
+}

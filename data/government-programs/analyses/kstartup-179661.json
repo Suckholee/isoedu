@@ -1,0 +1,218 @@
+{
+  "programId": "kstartup-179661",
+  "title": "2026년 초기창업패키지 SM엔터테인먼트 오픈이노베이션 밋업 CultureTech Challenge",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-02T00:10:50.858912+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179661",
+  "reviewScope": "공식상세·공고PDF03 1~5쪽/HWP02대조·붙임HWP04신청/동의/확인서전체·01포스터시각/05텍스트",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/EF2Ln",
+      "verifiedAt": "2026-11-02",
+      "status": "downloaded",
+      "sha256": "a6dff963cb333d577b2813e637ae1b8f096a85ea7c0ce11fe2f6630bfec32ef5",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 13210144,
+      "format": "IMAGE",
+      "file": "attachment-01.bin",
+      "contentType": "image/png;charset=UTF-8",
+      "review": {
+        "at": "2026-11-02T00:10:50.858912+00:00",
+        "method": "visual",
+        "scope": "전체 포스터 시각 검토·동반 텍스트 대조; 긴 이미지 작은글씨 전부검증아님"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/FF2Ln",
+      "verifiedAt": "2026-11-02",
+      "status": "downloaded",
+      "sha256": "2d58c525fe15cdfc98952a14d8d62eec332f62292f494063657a08fa0a7f9e92",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 67584,
+      "format": "HWP",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 3303,
+      "review": {
+        "at": "2026-11-02T00:10:50.858912+00:00",
+        "method": "text",
+        "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/GF2Ln",
+      "verifiedAt": "2026-11-02",
+      "status": "downloaded",
+      "sha256": "84e9ef48ec7e882e2d98163062e977ff5b97eca1d8778c5716c09f519ac8ea66",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 317637,
+      "format": "PDF",
+      "file": "attachment-03.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 2963,
+      "review": {
+        "at": "2026-11-02T00:10:50.858912+00:00",
+        "method": "text",
+        "scope": "공고PDF5쪽전체본문·4쪽시각·HWP중복대조"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/HF2Ln",
+      "verifiedAt": "2026-11-02",
+      "status": "downloaded",
+      "sha256": "0bf1f7edf51af8e637996c332d46f8e8654ef1a312ec3ddad3f911c55fab6a07",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 59904,
+      "format": "HWP",
+      "file": "attachment-04.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 3215,
+      "review": {
+        "at": "2026-11-02T00:10:50.858912+00:00",
+        "method": "text",
+        "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/aF2Ln",
+      "verifiedAt": "2026-11-02",
+      "status": "downloaded",
+      "sha256": "54e0e306d0a37808ddfbb7194d2aa9f8c3eaf88221bfab2bdbfb4ac681c4995f",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 1573,
+      "format": "TEXT",
+      "file": "attachment-05.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "characters": 835,
+      "extraction": "text",
+      "review": {
+        "at": "2026-11-02T00:10:50.858912+00:00",
+        "method": "text",
+        "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/EF2Ln": "a6dff963cb333d577b2813e637ae1b8f096a85ea7c0ce11fe2f6630bfec32ef5",
+    "https://www.k-startup.go.kr/afile/fileDownload/FF2Ln": "2d58c525fe15cdfc98952a14d8d62eec332f62292f494063657a08fa0a7f9e92",
+    "https://www.k-startup.go.kr/afile/fileDownload/GF2Ln": "84e9ef48ec7e882e2d98163062e977ff5b97eca1d8778c5716c09f519ac8ea66",
+    "https://www.k-startup.go.kr/afile/fileDownload/HF2Ln": "0bf1f7edf51af8e637996c332d46f8e8654ef1a312ec3ddad3f911c55fab6a07",
+    "https://www.k-startup.go.kr/afile/fileDownload/aF2Ln": "54e0e306d0a37808ddfbb7194d2aa9f8c3eaf88221bfab2bdbfb4ac681c4995f"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-02T00:10:50.858912+00:00",
+  "eligibility": {
+    "summary": "2023~2026초기창업패키지선정/졸업기업·주관기관최종협약확인필요·K-Culture및SM협업혁신기술전분야",
+    "companyFields": [
+      "초기창업패키지연도/협약증명",
+      "SM협업기술제안",
+      "체납/채무/예외",
+      "2023~25매출수출·투자·설립/본점·대표전원"
+    ],
+    "reference": "공식상세·공고PDF03 1~5쪽/HWP02대조·붙임HWP04신청/동의/확인서전체·01포스터시각/05텍스트"
+  },
+  "exclusions": {
+    "items": [
+      "유흥/사행등창업제외업종",
+      "채무불이행/국세지방세체납(회생/재기지원/분납성실/협약전완납등원문예외)",
+      "협약기업미확인·허위"
+    ],
+    "reference": "공식상세·공고PDF03 1~5쪽/HWP02대조·붙임HWP04신청/동의/확인서전체·01포스터시각/05텍스트"
+  },
+  "support": {
+    "summary": "20팀내외→유망10팀현장밋업.11~12월SM/SMCP온라인1:N·현장1:1상담·PMF/협업고도화.현금지원한도/비율/자부담미명시·투자확약아님.",
+    "reference": "공식상세·공고PDF03 1~5쪽/HWP02대조·붙임HWP04신청/동의/확인서전체·01포스터시각/05텍스트"
+  },
+  "period": {
+    "start": "2026-11-02",
+    "end": "2026-11-20",
+    "deadlineTime": "18:00",
+    "timezone": "Asia/Seoul",
+    "reference": "K-Startup 신청방법·첨부대조(충돌은 unresolved 보존)"
+  },
+  "application": {
+    "summary": "ac4@cntt.co.kr 이메일·전서류PDF변환후순번기재각파일별제출",
+    "reference": "공식상세·공고PDF03 1~5쪽/HWP02대조·붙임HWP04신청/동의/확인서전체·01포스터시각/05텍스트",
+    "publicLinkChecks": []
+  },
+  "requiredDocuments": [
+    {
+      "name": "참가신청/개인정보동의/의무사항확인",
+      "condition": "필수지정붙임1·서명날인",
+      "reference": "공고§5·HWP04"
+    },
+    {
+      "name": "IR Deck/사업계획또는협업제안",
+      "condition": "필수자율양식",
+      "reference": "공고§5"
+    },
+    {
+      "name": "초기창업패키지협약증명/사업자등록",
+      "condition": "필수",
+      "reference": "공고§5"
+    },
+    {
+      "name": "법인등기말소포함제출용",
+      "condition": "법인해당시",
+      "reference": "HWP04"
+    }
+  ],
+  "businessPlan": {
+    "format": "신청서협업요약1쪽+별도자율IR/계획/제안",
+    "sections": [
+      {
+        "name": "기업현황",
+        "items": [
+          "대표실무자·설립주소·2023~25국내외매출·투자5곳내외·선정연도/주관기관·실적"
+        ],
+        "limit": "요약1Page이내·자율IR분량미명시"
+      },
+      {
+        "name": "요약",
+        "items": [
+          "핵심기술고객시장·차별성·SM협업방안·이미지"
+        ],
+        "limit": "요약1Page이내·자율IR분량미명시"
+      }
+    ],
+    "reference": "공식상세·공고PDF03 1~5쪽/HWP02대조·붙임HWP04신청/동의/확인서전체·01포스터시각/05텍스트"
+  },
+  "evaluation": {
+    "summary": "자격→11/27서류→12/4사전→12/18현장.최고최저제외평균고득점·역량15/우수20/경쟁20/사업20/협업25",
+    "reference": "공식상세·공고PDF03 1~5쪽/HWP02대조·붙임HWP04신청/동의/확인서전체·01포스터시각/05텍스트"
+  },
+  "contact": {
+    "name": "씨엔티테크02-3152-0924/6953,ac4@cntt.co.kr(평일10~17점심제외)",
+    "reference": "공식상세·공고PDF03 1~5쪽/HWP02대조·붙임HWP04신청/동의/확인서전체·01포스터시각/05텍스트"
+  },
+  "unresolved": [
+    "공고§3/포스터12/18목 vs §5일정표금 요일충돌·기관최신확인필요",
+    "개인정보고지주민등록번호포함이나신청필드생년월일:플랫폼추가수집안함·필요범위확인",
+    "개인정보사업종료후5년/제3자제공일부터5년 구분보존·HWP전체배치시각미검증"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179661",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확보 후 근거별 적합성 검토·신청가능확정 아님",
+    "steps": [
+      "회사필드·자격증빙확인",
+      "미확인·충돌해결·최신양식확보",
+      "S12양식·S13회사정보로회사별서류/계획작성"
+    ]
+  },
+  "supplementaryAttachments": []
+}

@@ -1,0 +1,230 @@
+{
+  "programId": "kstartup-179599",
+  "title": "[경남 창원 강소연구개발특구] 청년 기술창업 아이디어 경진대회",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-01T02:29:24.757028+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179599",
+  "reviewScope": "공식상세·PDF01 1~18쪽본문/서식1~5·HWP02대응본문/양식텍스트비교·포스터03시각·04대체텍스트",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/Oi2Ln",
+      "verifiedAt": "2026-11-01",
+      "status": "downloaded",
+      "sha256": "cac34f91f76db0b9aa19236c28db14ad8a0023b7ed5eaec49e71d7db0177cfd3",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 751216,
+      "format": "PDF",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 14308,
+      "review": {
+        "at": "2026-11-01T02:29:24.757028+00:00",
+        "method": "text",
+        "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/Pi2Ln",
+      "verifiedAt": "2026-11-01",
+      "status": "downloaded",
+      "sha256": "7efb24e598951e8a6638c42ba033f989a27296d9a8c08c9edf999b119ea3f468",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 238592,
+      "format": "HWP",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 15729,
+      "review": {
+        "at": "2026-11-01T02:29:24.757028+00:00",
+        "method": "text",
+        "scope": "중복공고PDF와주요본문/양식대조;HWP일부추가내용/전체배치미검증"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/ri2Ln",
+      "verifiedAt": "2026-11-01",
+      "status": "downloaded",
+      "sha256": "1c5c378badeaa81aaa47f67aeb575ca66c27826a7c7cf456e335d7acd50292ad",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 2714501,
+      "format": "IMAGE",
+      "file": "attachment-03.bin",
+      "contentType": "image/png;charset=UTF-8",
+      "review": {
+        "at": "2026-11-01T02:29:24.757028+00:00",
+        "method": "visual",
+        "scope": "전체 포스터 시각 검토·동반 텍스트 대조; 긴 이미지 작은글씨 전부검증아님"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/wc2Ln",
+      "verifiedAt": "2026-11-01",
+      "status": "downloaded",
+      "sha256": "ccbb38e02dc918e8f564e53f1f95b6934ae2923c89a5efde16184866599d13d3",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 1149,
+      "format": "TEXT",
+      "file": "attachment-04.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "characters": 589,
+      "extraction": "text",
+      "review": {
+        "at": "2026-11-01T02:29:24.757028+00:00",
+        "method": "text",
+        "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/Oi2Ln": "cac34f91f76db0b9aa19236c28db14ad8a0023b7ed5eaec49e71d7db0177cfd3",
+    "https://www.k-startup.go.kr/afile/fileDownload/Pi2Ln": "7efb24e598951e8a6638c42ba033f989a27296d9a8c08c9edf999b119ea3f468",
+    "https://www.k-startup.go.kr/afile/fileDownload/ri2Ln": "1c5c378badeaa81aaa47f67aeb575ca66c27826a7c7cf456e335d7acd50292ad",
+    "https://www.k-startup.go.kr/afile/fileDownload/wc2Ln": "ccbb38e02dc918e8f564e53f1f95b6934ae2923c89a5efde16184866599d13d3"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-01T02:29:24.757028+00:00",
+  "eligibility": {
+    "summary": "창원본점기업또는창원예정예비창업자·7년이내(신산업10년).공고10/19기준19~39세/일반부40~64세허용·공동대표전원연령충족.다사업자모두업력조건충족.일반부10팀내외",
+    "companyFields": [
+      "본점/창업예정주소",
+      "전원대표생년",
+      "모든사업자개업일·법인설립/폐업/전환",
+      "신산업분류",
+      "지분/기존창업판정",
+      "최근3년수상누적/투자",
+      "체납채무/예외증빙",
+      "2023~25수상여부"
+    ],
+    "reference": "공식상세·PDF01 1~18쪽본문/서식1~5·HWP02대응본문/양식텍스트비교·포스터03시각·04대체텍스트"
+  },
+  "exclusions": {
+    "items": [
+      "사행/유흥업종·IP침해/표절/허위/대리작성",
+      "최근3년동유사아이템누적상금5천만원이상",
+      "누적투자50억원초과",
+      "1팀1건초과",
+      "체납·채무불이행(유예/변제·회생등공고예외별증빙)",
+      "체불사업주·휴업",
+      "2023~25기존수상기업"
+    ],
+    "reference": "공식상세·PDF01 1~18쪽본문/서식1~5·HWP02대응본문/양식텍스트비교·포스터03시각·04대체텍스트"
+  },
+  "support": {
+    "summary": "일반부상금총2100만원:대상1000/최우수600/우수300/장려100만원2팀,제세공과금수상자부담.12/9 09:30~12시진해공공임대지식산업센터·후속지원사업연계별도.참가비없음.",
+    "reference": "공식상세·PDF01 1~18쪽본문/서식1~5·HWP02대응본문/양식텍스트비교·포스터03시각·04대체텍스트"
+  },
+  "period": {
+    "start": "2026-10-19",
+    "end": "2026-11-06",
+    "deadlineTime": "18:00",
+    "timezone": "Asia/Seoul",
+    "reference": "K-Startup 신청방법·첨부대조(충돌은 unresolved 보존)"
+  },
+  "application": {
+    "summary": "kaigee@knvi.co.kr 이메일·지정양식PDF1면1쪽·서명·안내삭제",
+    "reference": "공식상세·PDF01 1~18쪽본문/서식1~5·HWP02대응본문/양식텍스트비교·포스터03시각·04대체텍스트",
+    "publicLinkChecks": []
+  },
+  "requiredDocuments": [
+    {
+      "name": "참가신청·개인정보동의·서약·사업계획서",
+      "condition": "서식1~4필수·대표전원자필서명스캔",
+      "reference": "PDF4/12~17쪽"
+    },
+    {
+      "name": "대표주민등록등본또는초본",
+      "condition": "주소확인용1종",
+      "reference": "PDF4/12쪽"
+    },
+    {
+      "name": "국세지방세납세증명",
+      "condition": "예비대표개인/기업각각·최근1개월·공고이후발급",
+      "reference": "PDF4/12쪽"
+    },
+    {
+      "name": "사업자등록증명·법인등기",
+      "condition": "개인/법인해당시·증명원vs사본표기차이",
+      "reference": "PDF4/12쪽"
+    },
+    {
+      "name": "증빙서류",
+      "condition": "서면통과후별도접수안내와최초목록간시점확인필요",
+      "reference": "PDF4쪽"
+    },
+    {
+      "name": "PPT발표자료",
+      "condition": "본선진출자11/30까지·7분내외·최대20장/표지외10장권장",
+      "reference": "PDF18쪽"
+    }
+  ],
+  "businessPlan": {
+    "format": "서식4지정·파란안내삭제·페이지추가가능",
+    "sections": [
+      {
+        "name": "아이템소개",
+        "items": [
+          "기능혜택트렌드차별성/IP보호"
+        ],
+        "limit": "계획서상한미명시;신청개요100자이내"
+      },
+      {
+        "name": "시장사업화",
+        "items": [
+          "문제고객·수익·시장진입파급"
+        ],
+        "limit": "계획서상한미명시;신청개요100자이내"
+      },
+      {
+        "name": "성장글로벌",
+        "items": [
+          "고도화·신시장·국내외경쟁점유"
+        ],
+        "limit": "계획서상한미명시;신청개요100자이내"
+      },
+      {
+        "name": "팀역량",
+        "items": [
+          "전공경험기술·역할/부족역량보완·이미지"
+        ],
+        "limit": "계획서상한미명시;신청개요100자이내"
+      }
+    ],
+    "reference": "공식상세·PDF01 1~18쪽본문/서식1~5·HWP02대응본문/양식텍스트비교·포스터03시각·04대체텍스트"
+  },
+  "evaluation": {
+    "summary": "서류문제20/실현40/성장30/팀10→본선혁신20/시장40/성장30/팀10.최고최저제외평균·고득점·동점협의.대표직접7분IR·불참탈락가능.",
+    "reference": "공식상세·PDF01 1~18쪽본문/서식1~5·HWP02대응본문/양식텍스트비교·포스터03시각·04대체텍스트"
+  },
+  "contact": {
+    "name": "경남벤처투자055-606-0046 kaigee@knvi.co.kr / KERI055-280-1061 dbheo@keri.re.kr / 창원산업진흥원055-716-7743",
+    "reference": "공식상세·PDF01 1~18쪽본문/서식1~5·HWP02대응본문/양식텍스트비교·포스터03시각·04대체텍스트"
+  },
+  "unresolved": [
+    "개인정보동의서5년보유와프로그램종료시파기병기충돌·최신문구확인필요",
+    "공고4쪽증빙서류서면통과후별도접수 vs 제출목록필수시점불명확·사업자등록증명원vs사본차이",
+    "동일공고PDF/HWP주요조건/양식대조·PDF18쪽본문읽음;HWP일부추가부록/전체시각검토미완료",
+    "공고인용법률/IP보호설명은기관원문주장으로보존·현재법적효력별도검증아님"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179599",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확보 후 근거별 적합성 검토·신청가능확정 아님",
+    "steps": [
+      "회사필드·자격증빙확인",
+      "미확인·충돌해결·최신양식확보",
+      "S12양식·S13회사정보로회사별서류/계획작성"
+    ]
+  }
+}

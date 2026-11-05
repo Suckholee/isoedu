@@ -1,0 +1,165 @@
+{
+  "programId": "kstartup-179636",
+  "title": "2026 서울게임콘텐츠센터 게임랩 신규 입주기업 모집",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-02T00:10:50.858912+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179636",
+  "reviewScope": "공식상세·PDF01 1~6쪽본문/4~5쪽시각·SBA공개상세및별도양식URL",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/fe2Ln",
+      "verifiedAt": "2026-11-02",
+      "status": "downloaded",
+      "sha256": "d654d26f5ffddaffdf8fa4c03791b67ba4164d61dafd893a2410e15c28190921",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 362452,
+      "format": "PDF",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 6617,
+      "review": {
+        "at": "2026-11-02T00:10:50.858912+00:00",
+        "method": "text",
+        "scope": "PDF6쪽전체텍스트·4/5쪽표시각 확인·전쪽이미지미확인"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/fe2Ln": "d654d26f5ffddaffdf8fa4c03791b67ba4164d61dafd893a2410e15c28190921"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-02T00:10:50.858912+00:00",
+  "eligibility": {
+    "summary": "서울소재/이전희망게임개발사·모집시작일4대보험명부직원5인이하.기업/팀최대3석·경영진급책임자1인이상상주.미등록자계약후30일내사업자등록",
+    "companyFields": [
+      "직원수/명부기준일",
+      "게임개발여부",
+      "서울이전가능",
+      "과거게임랩수혜",
+      "타공공공간수혜종료",
+      "체납채무/예외",
+      "재무3년·서류발급일",
+      "가점증빙"
+    ],
+    "reference": "공식상세·PDF01 1~6쪽본문/4~5쪽시각·SBA공개상세및별도양식URL"
+  },
+  "exclusions": {
+    "items": [
+      "휴업·채무불이행/체납(공고예외별증빙)",
+      "타정부/지자체공간수혜중(입주전종료/포기예외)",
+      "참여제재·과거게임랩입주수혜",
+      "공해/센터부적합"
+    ],
+    "reference": "공식상세·PDF01 1~6쪽본문/4~5쪽시각·SBA공개상세및별도양식URL"
+  },
+  "support": {
+    "summary": "총6석·임대료/보증금/관리비전액·집기·테스트기기·게임사업연계.2026.12/1~2027.11/30기본1년·평가2회최장3년.30일내입주/주소변경(해외/연구소3개월예외원문별도).",
+    "reference": "공식상세·PDF01 1~6쪽본문/4~5쪽시각·SBA공개상세및별도양식URL"
+  },
+  "period": {
+    "start": "2026-10-23",
+    "end": "2026-11-10",
+    "deadlineTime": "15:00",
+    "timezone": "Asia/Seoul",
+    "reference": "K-Startup 신청방법·첨부대조(충돌은 unresolved 보존)"
+  },
+  "application": {
+    "summary": "SBA공개사업페이지→로그인온라인접수·서류순서명명ZIP10MB·초과시신청서외서류이메일별도(홈페이지신청필수·마감전도착)",
+    "reference": "공식상세·PDF01 1~6쪽본문/4~5쪽시각·SBA공개상세및별도양식URL",
+    "publicLinkChecks": [
+      {
+        "id": "179636",
+        "url": "https://www.sba.seoul.kr/Pages/BusinessApply/PostingDetail.aspx?p=0&mid=61860843-d4cd-f111-b404-d4f5ef4a1e33",
+        "checkedAt": "2026-11-02T00:07:50.735761+00:00",
+        "status": 200,
+        "finalUrl": "https://www.sba.seoul.kr/Pages/BusinessApply/PostingDetail.aspx?p=0&mid=61860843-d4cd-f111-b404-d4f5ef4a1e33",
+        "evidence": "179636-publiccheck-20261102.html",
+        "bytes": 273541
+      }
+    ]
+  },
+  "requiredDocuments": [
+    {
+      "name": "입주신청/사업계획",
+      "condition": "필수·한글원본과날인PDF",
+      "reference": "PDF4쪽"
+    },
+    {
+      "name": "사업자등록·국세지방세·최근3년재무",
+      "condition": "필수공통·업력짧으면전기간·공고일기준3개월내발급작성",
+      "reference": "PDF4쪽"
+    },
+    {
+      "name": "법인등기/대표등본/비영리증명",
+      "condition": "사업자유형별해당·공고일3개월내",
+      "reference": "PDF4쪽"
+    },
+    {
+      "name": "개인정보/홍보활용동의",
+      "condition": "필수날인PDF·별도HWP양식필요",
+      "reference": "PDF4쪽"
+    },
+    {
+      "name": "IP/인증/사업증빙",
+      "condition": "선택공개가능범위",
+      "reference": "PDF4쪽"
+    },
+    {
+      "name": "SBA지원/여성기업등가점증빙",
+      "condition": "해당시필수",
+      "reference": "PDF4~5쪽"
+    }
+  ],
+  "businessPlan": {
+    "format": "별도게임랩HWP양식·공식URL400으로아직미확보",
+    "sections": [
+      {
+        "name": "평가기준기반인계(지정양식대체아님)",
+        "items": [
+          "게임기획개발마케팅·자금인력·시장성·차별성·BM"
+        ],
+        "limit": "양식별분량미확인"
+      }
+    ],
+    "reference": "공식상세·PDF01 1~6쪽본문/4~5쪽시각·SBA공개상세및별도양식URL"
+  },
+  "evaluation": {
+    "summary": "서면통합심사발표없음·경영15/실행20/성장30/콘텐츠35·최고최저제외평균70이상고득점·가점최대5(SBA게임2/시설하이서울2/여성1),동점콘텐츠→성장→실행→경영",
+    "reference": "공식상세·PDF01 1~6쪽본문/4~5쪽시각·SBA공개상세및별도양식URL"
+  },
+  "contact": {
+    "name": "02-2124-2907,gamecenter@sba.seoul.kr",
+    "reference": "공식상세·PDF01 1~6쪽본문/4~5쪽시각·SBA공개상세및별도양식URL"
+  },
+  "unresolved": [
+    "공식SBAHWP양식다운로드HTTP400·공고에명시된실제양식/동의서본문미확인·재시도필요",
+    "공고게임수상가점증빙목록과평가표세부배점대응미명확",
+    "PDF6쪽전체본문·4/5쪽표시각확인했으나전쪽이미지/도면시각미검증"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179636",
+    "companyId": null,
+    "permission": "권한 있는 회사 프로필 확보 후 근거별 적합성 검토·신청가능확정 아님",
+    "steps": [
+      "회사필드·자격증빙확인",
+      "미확인·충돌해결·최신양식확보",
+      "S12양식·S13회사정보로회사별서류/계획작성"
+    ]
+  },
+  "supplementaryAttachments": [
+    {
+      "programId": "179636",
+      "url": "https://smc.sba.kr/AttachFiles/new_display/2026/10/22/61860843-D4CD-F111-B404-D4F5EF4A1E33/%5B%EC%9E%91%EC%84%B1_%EC%96%91%EC%8B%9D%5D_%EC%9E%85%EC%A3%BC%EC%8B%A0%EC%B2%AD%EC%84%9C_%EB%B0%8F_%EC%82%AC%EC%97%85%EA%B3%84%ED%9A%8D%EC%84%9C_%EA%B2%8C%EC%9E%84%EB%9E%A9.hwp",
+      "checkedAt": "2026-11-02T00:08:53.339392+00:00",
+      "error": "HTTP Error 400: Bad Request"
+    }
+  ]
+}
