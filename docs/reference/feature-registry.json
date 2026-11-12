@@ -29,7 +29,9 @@
       "https://www.safetykorea.kr/",
       "https://single-market-economy.ec.europa.eu/single-market/goods/ce-marking/manufacturers_en"
     ],
-    "verification": "16개 리포트/입력/경로/기사 테스트 통과. 빌드 통과. 운영 화면 검증 전."
+    "verification": "16개 리포트/입력/경로/기사 테스트 및 운영 빌드 통과. 공개 첫 화면 고객 링크 복사, 별도 탭 비회원 해외 제품 리포트 생성·TXT 다운로드, 두 문의 유형의 공식 상담 링크, 스마트공장 배너·공고·사업계획서 링크, 390px 가로 넘침 없음 확인. 실제 상담 제출은 실행하지 않았다.",
+    "sourceCommit": "d5bb4e0",
+    "productionUrl": "https://isoedu-cyan.vercel.app/"
   },
   "certimentoLanding20261112": {
     "featureIds": [
