@@ -1,6 +1,6 @@
 {
   "articlePublishing20261112": {
-    "status": "implemented_deployment_verification_pending",
+    "status": "deployed_and_verified",
     "featureIds": [
       "S02",
       "S05",
@@ -18,10 +18,21 @@
       "Production build passed",
       "Live RSS 50 records; anonymous admin API 401",
       "Supabase migration applied successfully",
-      "Existing OpenAI key added as sensitive Vercel production env with explicit user approval; real AI draft generated successfully (992 Korean characters)"
+      "Existing OpenAI key added as sensitive Vercel production env with explicit user approval; real AI draft generated successfully (992 Korean characters)",
+      "Vercel production deployment succeeded; production API RSS 50 items and anonymous admin API 401",
+      "1280px/390px public filters and no horizontal overflow verified",
+      "User explicitly approved ceo@honestone.kr promotion; active ADMIN persisted with audit log; existing company memberships unchanged",
+      "Production SQL transaction passed save/publish/anonymous-public-read/edit-keeps-public/unpublish, all verification writes rolled back",
+      "Production anon access: public snapshot 200, private drafts/AI request records 401, nonexistent/unpublished detail 404",
+      "Production browser: real AI generated 754-character Korean draft, saved privately, reloaded and reopened with same body and sources",
+      "Publish button disabled until saved and review checked; sidebar collapse/expand preserves draft; no public post created during UI QA",
+      "Screenshots: article-feed-20261112.png and article-editor-20261112.png (local evidence)"
     ],
-    "limits": "RSS publication delay belongs to Naver. Request-driven 300-second server refresh and visible-page polling. No scheduled AI generation or unreviewed auto-publication.",
-    "productionUrl": "https://isoedu-cyan.vercel.app"
+    "limits": "RSS publication delay belongs to Naver. Request-driven 300-second server refresh and visible-page polling. No scheduled AI generation or unreviewed auto-publication. No test post published. Production publish/unpublish persistence verified in rolled-back SQL transaction; browser generation/save/reload and review gate verified. Draft intentionally remains unpublished.",
+    "productionUrl": "https://isoedu-cyan.vercel.app",
+    "sourceCommit": "1855323",
+    "deploymentUrl": "https://isoedu-qksbohpwv-peter15975345-8667s-projects.vercel.app",
+    "privateDraft": "어니스톤 홈페이지에서 새로운 글을 만나는 방법"
   },
   "publicInsights20261112": {
     "status": "deployed_and_verified",
@@ -314,7 +325,8 @@
       },
       "enterpriseDocumentPriority20261105": "루트 enterpriseDocumentPriority20261105 기록 참조. 미연동 AI 생성은 후속 최우선 구현이며 완료 상태로 변경하지 않음.",
       "ventureGrowthAi20261105": "ventureGrowthAi20261105 공통 기록: 공식 자료 분석·사업계획서 생성/검토/저장 연결 검증. 이 기능의 혁신성장 문서 준비 범위이며 전체 인증 서비스 완료 판정 아님.",
-      "certificationCuration20261106": "루트 certificationCuration20261106 및 docs/reference/certification-curation.md 참조. 공통 준비 추천 범위, 공식 자격 확정 아님."
+      "certificationCuration20261106": "루트 certificationCuration20261106 및 docs/reference/certification-curation.md 참조. 공통 준비 추천 범위, 공식 자격 확정 아님.",
+      "articlePublishing20261112": "사용자 추가 요구: 블로그 RSS 자동 표시·관리자 AI/수동 초안·검토 후 홈페이지 발행. 상단 articlePublishing20261112에 데이터/권한/검증 기록. 기존 장표 기능 전체 완료를 뜻하지 않음."
     },
     {
       "id": "S03",
@@ -578,7 +590,8 @@
       "documentPanelsAndLiveQa20261105": "공통 documentPanelsAndLiveQa20261105 참조: 문서별 주소·패널·실제 생성/검토/저장/복원 검증.",
       "ventureConversation20261105": "공통 ventureConversation20261105 기록: gahoseokho 인터뷰 구조 참고·대화형 AI/반영본/검토 저장·실제 검증.",
       "ventureFormDocument20261105": "ventureFormDocument20261105 공통 기록: 문항별 문서 양식·AI 인터뷰·동일 양식 내보내기.",
-      "ventureDetailedFields20261105": "공통 ventureDetailedFields20261105 참조: 카테고리별 행과 내용 배치·세부 칸 저장·Word 일치."
+      "ventureDetailedFields20261105": "공통 ventureDetailedFields20261105 참조: 카테고리별 행과 내용 배치·세부 칸 저장·Word 일치.",
+      "articlePublishing20261112": "사용자 추가 요구: 블로그 RSS 자동 표시·관리자 AI/수동 초안·검토 후 홈페이지 발행. 상단 articlePublishing20261112에 데이터/권한/검증 기록. 기존 장표 기능 전체 완료를 뜻하지 않음."
     },
     {
       "id": "S06",
@@ -1863,7 +1876,8 @@
       ],
       "status": "구현 후보 있음·완료 미검증",
       "specMissing": false,
-      "adminCenter20261022": "2026-10-22 관리자 센터(/admin?tab=operations) 내 ISO 9001·14001·45001 표준 템플릿 및 필수 구비서류 기준 정보 CMS 대장 조회·인증관리 연동 구현."
+      "adminCenter20261022": "2026-10-22 관리자 센터(/admin?tab=operations) 내 ISO 9001·14001·45001 표준 템플릿 및 필수 구비서류 기준 정보 CMS 대장 조회·인증관리 연동 구현.",
+      "articlePublishing20261112": "사용자 추가 요구: 블로그 RSS 자동 표시·관리자 AI/수동 초안·검토 후 홈페이지 발행. 상단 articlePublishing20261112에 데이터/권한/검증 기록. 기존 장표 기능 전체 완료를 뜻하지 않음."
     },
     {
       "id": "S33",
