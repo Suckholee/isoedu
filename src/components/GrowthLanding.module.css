@@ -3,3 +3,31 @@
 @media(max-width:1000px){.formBand{scroll-margin-top:110px}}
 @media(max-width:600px){.formSection{padding:42px 7%;grid-template-columns:1fr;gap:27px}.sectionTitle{font-size:29px;margin-bottom:20px}.description{font-size:12px}.formPromise{margin-top:20px}.formBox{padding:23px 18px}.progress{font-size:9px;gap:8px}.formBox h3{font-size:22px}.field input,.field select{font-size:16px}.grid{grid-template-columns:1fr}.choices{grid-template-columns:1fr 1fr;gap:8px}.choice{font-size:11px;padding:14px 10px}.primary{font-size:11px;padding:14px 15px}.actions{gap:10px}.actions>.small{width:100%;margin:0}.publicPreview>section{padding:42px 7%!important}.publicPreview h2{font-size:27px!important}}
 @media(prefers-reduced-motion:reduce){.landing *{scroll-behavior:auto!important}}
+
+.report { min-width: 0; }
+.reportHeader { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+.reportHeader .eyebrow { margin-bottom: 4px; }
+.reportDownload, .reportServiceChoices > button, .reportServiceDetail > a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 40px;
+  padding: 7px 11px;
+  border: 1px solid #78958a;
+  border-radius: 5px;
+  background: #fff;
+  color: #173b30;
+  font-size: 12px;
+  font-weight: 650;
+}
+.reportFacts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 12px; margin-bottom: 15px; }
+.reportFacts dt { font-size: 11px; color: #57645d; }
+.reportFacts dd { margin: 2px 0; overflow-wrap: anywhere; font-size: 13px; }
+.reportMissing { margin: 12px 0; padding: 9px 12px; background: #fcf7e9; font-size: 13px; }
+.reportMissing ul { margin: 4px 0 0; list-style: disc; padding-left: 17px; }
+.reportServices { margin: 16px 0; padding-top: 13px; border-top: 1px solid #d9dfd8; }
+.reportServices h4 { margin: 0 0 9px; font-weight: 700; }
+.reportServiceChoices { display: flex; flex-wrap: wrap; gap: 8px; }
+.reportServiceChoices > button[aria-pressed="true"] { background: #173b30; color: #fff; }
+.reportServiceDetail { padding: 10px 12px; margin-top: 10px; background: #f2f6f3; }
+.reportServiceDetail > p { margin: 0 0 7px; font-size: 13px; line-height: 1.55; }

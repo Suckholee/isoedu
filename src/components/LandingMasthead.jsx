@@ -4,29 +4,35 @@ import {useEffect, useState} from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import {
-  ArrowUp, ArrowUpRight, Building2, CalendarDays, ChevronLeft, Compass,
-  Files, Globe2, LogIn, Menu, PackageCheck, PanelLeftOpen, Plane, ShieldCheck,
+  ArrowRight, ArrowUp, ArrowUpRight, Building2, CalendarDays, ChevronLeft, Compass,
+  Factory, Files, Globe2, Link2, LogIn, Menu, PackageCheck, PanelLeftOpen, Plane, ShieldCheck,
   UserRound, X,
 } from 'lucide-react';
 import styles from './LandingMasthead.module.css';
 import FeaturedInsights from './FeaturedInsights';
+import {INTERESTS} from '../lib/growthIntake.mjs';
+import {SMART_FACTORY_NOTICE} from '../lib/certificationReport.mjs';
 
 const certificationAreas = [
   {
     key: 'certification', title: '국내 기업인증', Icon: Building2, tone: 'domesticBusiness',
     description: '벤처기업확인·기업부설연구소 등 국내 제도와 회사 요건을 확인합니다.',
+    sourceLabel: '벤처기업확인제도 공식 안내', sourceUrl: 'https://www.smes.go.kr/venturein/institution/systemGuide',
   },
   {
     key: 'internationalCertification', title: '해외 기업인증', Icon: Globe2, tone: 'globalBusiness',
     description: '해외 거래처의 요구사항과 경영시스템 인증 범위를 정리합니다.',
+    sourceLabel: 'ISO 공식 인증 안내', sourceUrl: 'https://www.iso.org/certification.html',
   },
   {
     key: 'domesticProduct', title: '국내 제품인증', Icon: PackageCheck, tone: 'domesticProduct',
     description: '국내 판매를 위한 제품별 시험, 표시, 신청 자료를 준비합니다.',
+    sourceLabel: '제품안전정보센터 공식 안내', sourceUrl: 'https://www.safetykorea.kr/',
   },
   {
     key: 'internationalProduct', title: '해외 제품인증', Icon: Plane, tone: 'globalProduct',
     description: '수출 대상국을 기준으로 제품 시험과 적합성 요건을 확인합니다.',
+    sourceLabel: '유럽연합 CE 표시 안내', sourceUrl: 'https://single-market-economy.ec.europa.eu/single-market/goods/ce-marking/manufacturers_en',
   },
 ];
 
@@ -39,10 +45,10 @@ const representativePhotos = [
   {file:'ep09.jpg',title:'ISO 심사원 교육 이야기',kind:'OFFICIAL CONTENT',credit:'어니스톤 공식 영상 썸네일',href:'https://honestone.kr/'},
 ];
 
-const preparationSteps = [
-  ['적용 범위 확인', '기업의 인증 목적이나 제품의 판매 국가와 용도를 확인합니다.'],
-  ['자료와 일정 정리', '필요한 서류와 시험·심사 준비 항목을 정리합니다.'],
-  ['신청 준비', '제출 자료를 검토하고 해당 기관의 신청 절차를 확인합니다.'],
+const reportSteps = [
+  {title:'무료 인증 리포트', badge:'무료', detail:'회사와 제품 정보를 바탕으로 필요한 준비 항목을 확인하고 리포트를 내려받습니다.'},
+  {title:'전문가 검토', badge:'선택', detail:'적용 요건과 보유 자료를 전문가와 확인하고, 준비 순서를 구체화합니다.'},
+  {title:'인증 준비 용역', badge:'선택', detail:'시험·심사 준비, 신청 서류, 일정 관리에 필요한 지원 범위와 견적을 협의합니다.'},
 ];
 
 function Mark() {
@@ -52,6 +58,20 @@ function Mark() {
 export default function LandingMasthead({user, onLogin, onStart, children}) {
   const [open, setOpen] = useState(true);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [shareStatus, setShareStatus] = useState('');
+  const [shareUrl, setShareUrl] = useState('');
+
+  async function copyReportLink() {
+    const url = new URL('/#start', window.location.origin).href;
+    try {
+      await navigator.clipboard.writeText(url);
+      setShareStatus('고객에게 보낼 링크를 복사했습니다.');
+      setShareUrl('');
+    } catch {
+      setShareUrl(url);
+      setShareStatus('아래 링크를 복사해서 고객에게 보내세요.');
+    }
+  }
 
   useEffect(() => {
     try {
@@ -124,12 +144,13 @@ export default function LandingMasthead({user, onLogin, onStart, children}) {
           <Link href="/dashboard" aria-label="내 업무 공간" title="내 업무 공간" onClick={close}><Compass size={17}/><span>내 업무 공간</span></Link>
         </div>
         <div>
+          <a href="#areas" aria-label="분야별 인증 가이드" title="분야별 인증 가이드" onClick={close}><ShieldCheck size={17}/><span>분야별 인증 가이드</span></a>
           <a href="#honestone-story" aria-label="써티멘토 소개" title="써티멘토 소개" onClick={close}><UserRound size={17}/><span>써티멘토 소개</span></a>
           <a href="#insights" aria-label="블로그·홈페이지 글" title="블로그·홈페이지 글" onClick={close}><Files size={17}/><span>블로그·홈페이지 글</span></a>
         </div>
       </nav>
       <div className={styles.sidebarPromos}>
-        <button className={styles.certPromo} onClick={() => start()}>인증 준비 시작<ArrowUpRight size={17}/></button>
+        <a href="#smart-factory" className={styles.smartFactoryPromo} onClick={close}>스마트공장 지원사업<small>공식 공고·사업계획서 준비</small><ArrowUpRight size={17}/></a>
       </div>
       <div className={styles.sidebarBottom}>
         {user
@@ -139,38 +160,65 @@ export default function LandingMasthead({user, onLogin, onStart, children}) {
     </aside>
 
     <div id="landing-content" className={styles.content}>
-      <section id="areas" className={styles.certPortfolio} aria-label="써티멘토 인증 준비 서비스">
-        <div className={styles.certHero}>
-          <Image src="/images/honestone/cho-youngbin/hero-ceo.jpg" alt="조영빈 대표" fill priority sizes="(max-width: 760px) 100vw, 55vw"/>
-          <div className={styles.certHeroCopy}>
-            <p className={styles.certEyebrow}>써티멘토 · CERTIMENTO</p>
-            <h1>국내외 기업인증과<br/>제품인증 준비</h1>
-            <p className={styles.certDescription}>국내 판매부터 해외 진출까지.<br/>필요한 인증을 확인하고 시험·심사 자료와 신청 서류를 준비하세요.</p>
-            <div className={styles.certActions}>
-              <button type="button" onClick={() => start()}>인증 준비 시작 <ArrowUpRight size={17}/></button>
-              <Link href="/business-plan">사업계획서 만들기 <ArrowUpRight size={15}/></Link>
-            </div>
-          </div>
+      <section id="process" className={styles.reportHero} aria-labelledby="report-hero-title">
+        <span className={styles.reportMark}><ShieldCheck size={30} strokeWidth={1.6} aria-hidden="true"/></span>
+        <p className={styles.reportHeroScope}>국내외 기업인증 · 제품인증</p>
+        <h1 id="report-hero-title">인증 준비, 무료 리포트부터.</h1>
+        <p className={styles.reportHeroIntro}>전문자격사와 컨설턴트가 고객에게 공유하는 인증 준비 리포트. 기업은 직접 작성하고, 필요할 때 전문가 검토와 준비 용역을 문의할 수 있습니다.</p>
+        <ol className={styles.serviceSteps}>
+          {reportSteps.map(({title, detail, badge}, index) =>
+            <li key={title}>
+              <div className={styles.serviceStepMeta}>
+                <span className={styles.serviceStepNumber}>{index + 1}</span>
+                <span className={index === 0 ? styles.freeStep : styles.optionalStep}>{badge}</span>
+              </div>
+              <h2>{title}</h2>
+              <p>{detail}</p>
+              {index < reportSteps.length - 1 && <span className={styles.serviceStepArrow} aria-hidden="true"><ArrowRight size={16}/></span>}
+            </li>
+          )}
+        </ol>
+        <button className={styles.reportHeroButton} type="button" onClick={() => start()}>무료 인증 리포트 받기 <ArrowUpRight size={19}/></button>
+        <div className={styles.reportHeroLinks}>
+          <button type="button" onClick={copyReportLink}><Link2 size={16}/> 고객에게 리포트 링크 복사</button>
+          <Link href="/business-plan">사업계획서 만들기 <ArrowUpRight size={15}/></Link>
         </div>
+        {shareStatus && <p className={styles.shareStatus} role="status">{shareStatus}</p>}
+        {shareUrl && <input className={styles.shareInput} aria-label="복사할 리포트 링크" value={shareUrl} readOnly onFocus={event => event.target.select()}/>}
+      </section>
+
+      {children}
+
+      <section id="areas" className={styles.certGuide} aria-labelledby="cert-guide-title">
+        <h2 id="cert-guide-title">분야별 인증 가이드</h2>
+        <p>고객 상담에서 확인할 항목과 공식 안내를 분야별로 모았습니다.</p>
         <div className={styles.certAreas}>
-          {certificationAreas.map(({key, title, Icon, tone, description}) =>
-            <button className={`${styles.certCard} ${styles[tone]}`} key={key} type="button" onClick={() => start(key)}>
+          {certificationAreas.map(({key, title, Icon, tone, description, sourceLabel, sourceUrl}) =>
+            <article className={`${styles.certCard} ${styles[tone]}`} key={key}>
               <Icon className={styles.certIcon} size={25} strokeWidth={1.5} aria-hidden="true"/>
-              <span className={styles.certCardCopy}><strong>{title}</strong><span>{description}</span></span>
-              <ArrowUpRight className={styles.certArrow} size={19} aria-hidden="true"/>
-            </button>
+              <div className={styles.certCardCopy}><h3>{title}</h3><p>{description}</p></div>
+              <ul>{INTERESTS[key].steps.map(step => <li key={step}>{step}</li>)}</ul>
+              <div className={styles.guideActions}>
+                <a href={sourceUrl} target="_blank" rel="noopener noreferrer">{sourceLabel} <ArrowUpRight size={15}/></a>
+                <button type="button" onClick={() => start(key)}>이 분야 리포트 받기 <ArrowRight size={15}/></button>
+              </div>
+            </article>
           )}
         </div>
       </section>
 
-      <section id="process" className={styles.process}>
-        <div><h2>인증 준비 절차</h2><p>시험·심사와 인증서 발급은 해당 기관의 절차에 따릅니다.</p></div>
-        <ol>{preparationSteps.map(([title, description]) =>
-          <li key={title}><h3>{title}</h3><p>{description}</p></li>
-        )}</ol>
+      <section id="smart-factory" className={styles.smartFactory} aria-labelledby="smart-factory-title">
+        <Factory size={30} strokeWidth={1.6} aria-hidden="true"/>
+        <div>
+          <h2 id="smart-factory-title">스마트공장 지원사업</h2>
+          <p>도입하려는 공정과 현장의 개선 과제를 정리하고, 통합 안내와 세부사업 공고를 확인하세요.</p>
+          <div className={styles.guideActions}>
+            <a href={SMART_FACTORY_NOTICE} target="_blank" rel="noopener noreferrer">2027 통합공고 안내 <ArrowUpRight size={16}/></a>
+            <a href="https://www.smart-factory.kr/" target="_blank" rel="noopener noreferrer">스마트공장 사업관리시스템 <ArrowUpRight size={16}/></a>
+            <Link href="/business-plan">사업계획서 만들기 <ArrowUpRight size={16}/></Link>
+          </div>
+        </div>
       </section>
-
-      {children}
 
       <section id="honestone-story" className={styles.about}>
         <p className={styles.aboutLabel}>써티멘토 소개</p>
@@ -198,7 +246,7 @@ export default function LandingMasthead({user, onLogin, onStart, children}) {
         <nav aria-label="하단 메뉴"><Link href="/business-plan">사업계획서 만들기</Link><Link href="/dashboard">내 업무 공간</Link></nav>
       </footer>
       <div className={styles.quickActions}>
-        <button onClick={() => start()} title="인증 준비 시작" aria-label="인증 준비 시작"><Compass size={22}/><span>시작</span></button>
+        <button onClick={() => start()} title="무료 리포트 받기" aria-label="무료 리포트 받기"><Compass size={22}/><span>리포트</span></button>
         <a href="#landing-content" title="맨 위로" aria-label="맨 위로"><ArrowUp size={20}/></a>
       </div>
     </div>

@@ -1,4 +1,36 @@
 {
+  "certificationReportLanding20261112": {
+    "featureIds": [
+      "S02",
+      "S03",
+      "S05",
+      "S08",
+      "S09",
+      "S10",
+      "S11",
+      "S12",
+      "S13",
+      "S14",
+      "S15",
+      "S16",
+      "S17",
+      "B03",
+      "B04"
+    ],
+    "scope": "전문자격사·컨설턴트 고객 공유 링크, 국내외 기업·제품인증 사전 준비 리포트, 무료 TXT, 선택형 검토/용역 안내, 분야별 공식 가이드 및 스마트공장 지원사업 배너.",
+    "handoff": "공개 회사 정보·interest·선택 준비 대상/시장 → 준비 단계·미확인 항목 → TXT 다운로드 또는 S02 로그인·S03 편집 회사에서 준비 업무. 선택 상담은 외부 공식 페이지에서 별도 제출.",
+    "permissions": "리포트는 탭 임시 보관 및 공개 열람. 공유 URL에 입력값 없음. 외부 상담 페이지에 고객 정보 자동 전달 없음. 기존 회사 편집 권한, UX-001 유지.",
+    "sources": [
+      "https://brandio.co.kr/theme/wm-type1/sub/ai_intro.php",
+      "https://honestone.kr/contact",
+      "https://www.smart-factory.kr/usr/np/nm/ma/noticeMatterDetail?bbsCd=00000002&bbsSn=1207&bizClsfCd=88888888",
+      "https://www.smes.go.kr/venturein/institution/systemGuide",
+      "https://www.iso.org/certification.html",
+      "https://www.safetykorea.kr/",
+      "https://single-market-economy.ec.europa.eu/single-market/goods/ce-marking/manufacturers_en"
+    ],
+    "verification": "16개 리포트/입력/경로/기사 테스트 통과. 빌드 통과. 운영 화면 검증 전."
+  },
   "certimentoLanding20261112": {
     "featureIds": [
       "S02",

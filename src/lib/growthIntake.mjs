@@ -18,7 +18,8 @@ export function validateGrowthDraft(input){
  if(input.kind==='program'){return {id:validateId(input.id),kind:'program',interest:'government',program:programSnapshot(input.program,input.program?.action),createdAt:typeof input.createdAt==='string'&&input.createdAt.length<=40&&!Number.isNaN(Date.parse(input.createdAt))?new Date(input.createdAt).toISOString():new Date().toISOString()};}
  if(!SIZE.includes(input.employees))throw Error('직원 수를 선택해 주세요.');
  validateId(input.id);
- return {id:input.id,interest:input.interest,companyName:text('companyName',100,true),industry:text('industry',80,true),employees:input.employees,region:text('region',60),createdAt:typeof input.createdAt==='string'&&input.createdAt.length<=40&&!Number.isNaN(Date.parse(input.createdAt))?new Date(input.createdAt).toISOString():new Date().toISOString()};
+ const certificationTarget=text('certificationTarget',120),targetMarket=text('targetMarket',80);
+ return {id:input.id,interest:input.interest,companyName:text('companyName',100,true),industry:text('industry',80,true),employees:input.employees,region:text('region',60),...(certificationTarget?{certificationTarget}:{}),...(targetMarket?{targetMarket}:{}),createdAt:typeof input.createdAt==='string'&&input.createdAt.length<=40&&!Number.isNaN(Date.parse(input.createdAt))?new Date(input.createdAt).toISOString():new Date().toISOString()};
 }
 export const INTAKE_PREFIX='HONESTONE_GROWTH_INTAKE_V1\n';
 export function parseGrowthIntake(notes){try{if(!notes?.startsWith(INTAKE_PREFIX))return null;return validateGrowthDraft(JSON.parse(notes.slice(INTAKE_PREFIX.length)));}catch{return null;}}
