@@ -2922,6 +2922,8 @@
     "scope": "공개 홈의 배너·카드·메뉴와 업무 사이드바에서 /business-plan에 진입. 회사 선택 후 기존 프로젝트 열기 또는 새 계획서 작성.",
     "handoff": "인증 계정과 회사 연결 → companyId 및 편집 권한 → 기존 projectId 또는 GENERAL 프로젝트 생성(requestId 재시도 식별) → 기존 양식·자료·AI 초안·검토·회사 문서 저장.",
     "permissions": "회사 연결과 읽기/편집 구분. 기존 create_work_project와 venture-documents의 서버 권한 사용. UX-001 공통 사이드바.",
-    "verification": "관련 경로·프로젝트·문서 테스트 25개 통과."
+    "verification": "관련 경로·프로젝트·문서 테스트 25개 통과. Vercel 운영 빌드 및 공개 카드에서 /business-plan 이동, 로그인 버튼, 업무 주 메뉴 표시 확인. 운영 신규 프로젝트 생성은 실행하지 않았으며 회사별 저장·권한은 기존 프로젝트 테스트에서 확인.",
+    "sourceCommit": "413a81c",
+    "productionUrl": "https://isoedu-cyan.vercel.app/business-plan"
   }
 }
