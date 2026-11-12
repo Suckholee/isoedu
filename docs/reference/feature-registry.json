@@ -2691,5 +2691,37 @@
       "docs/reference/business-plan-oneclick-20261112.md",
       "docs/reference/business-plan-oneclick-20261112.png"
     ]
+  },
+  "productionDeployment20261112": {
+    "date": "2026-11-12",
+    "status": "deployed_with_external_service_configuration_pending",
+    "sourceCommit": "cd894ec",
+    "url": "https://isoedu-cyan.vercel.app",
+    "deploymentUrl": "https://isoedu-ke4o1fryq-peter15975345-8667s-projects.vercel.app",
+    "featureIds": [
+      "S03",
+      "S05",
+      "S11",
+      "S12",
+      "S13",
+      "S14",
+      "S15",
+      "S16",
+      "S17"
+    ],
+    "flow": "S03 -> S11/S16 -> S12/S13 -> S14 -> S15 -> S17",
+    "dataAndPermissions": "Existing companyId/projectId/documentId, provenance, versions, company RLS, edit permissions, CAS and history preserved. No production database/storage mutations during deployment.",
+    "verification": [
+      "233 tests passed",
+      "Local and Vercel builds passed",
+      "Home, programs and dashboard HTTP 200",
+      "Venture documents and certification curation APIs HTTP 401 without login",
+      "26 official form downloads HTTP 200 and SHA256 matched",
+      "Source commit pushed to GitHub main"
+    ],
+    "limitations": [
+      "Production OPENAI_API_KEY and KIPRIS_API_KEY remain unset. Automatic approval review rejected transfer of local secrets to Vercel without explicit authorization.",
+      "Previous AI credit exhaustion unresolved. Live production generation and document/image persistence not tested."
+    ]
   }
 }

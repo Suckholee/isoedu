@@ -744,3 +744,14 @@ S03→S11/S16→S12/S13→S14/S15→S17. 이전 공식 양식 8종 점검 이후
 범위·한계: 실제 OpenAI 요청은 HTTP429 credit_balance_exhausted/insufficient_quota로 실패하여 이번 실제 본문·이미지 생성 전체 성공을 확인하지 못함. 운영 DB/스토리지 저장·운영 배포 미수행. 이미지 생성 API 구현은 모의 응답 계약 검증 단계. 가상 화면은 모델 품질 증거가 아님. 원문 HWP/PDF 페이지 배치 복제·자동 제출·실제 Word 앱 렌더링은 미검증. 실제 제품/현장 사진 및 증빙은 AI 개념 그림으로 대체하지 않음. PDF 내 그림 자동 추출·기존 사진 자동 선택은 미구현. 영상 제출은 촬영 대본/표 지원이며 생성 그림으로 촬영 대체 금지.
 
 이전 기록의 별도 원문 읽기/확인 버튼 및 일반 삽화 미구현 상태는 이 후속 기록으로 갱신한다. UX-001 공통 셸·사이드바 및 회사/문서 상태 유지. 공식 제출·인증 심사·발급을 대신하지 않는다. 기존 신청 사업 30종의 종류·차수·분량·미확보8범위 안내 유지. 레지스트리 applicationOneClick20261112와 동기화.
+
+
+## Production deployment verification (2026-11-12)
+
+Source commit cd894ec pushed to GitHub main and deployed to https://isoedu-cyan.vercel.app . Immutable deployment: https://isoedu-ke4o1fryq-peter15975345-8667s-projects.vercel.app .
+
+S03 -> S11/S16 -> S12/S13 -> S14 -> S15 -> S17. Existing companyId/projectId/documentId, provenance, versions, company RLS, edit permissions, CAS and history remain unchanged. No production database/storage mutations during deployment.
+
+Verification: 233 tests passed, local and Vercel builds succeeded. Home/programs/dashboard HTTP 200; venture documents and certification curation APIs HTTP 401 without login; all 26 official form downloads HTTP 200 with matching SHA256. Private customer/import files and agent logs excluded.
+
+Limitations: production OPENAI_API_KEY and KIPRIS_API_KEY remain unset. Automatic approval review rejected transfer of local secrets to Vercel without explicit authorization. Previous AI credit exhaustion remains unresolved. Live production generation and document/image persistence were not tested. This record supersedes earlier deployment-pending statements while preserving functional verification limits. Synced with registry productionDeployment20261112.
