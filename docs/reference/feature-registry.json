@@ -1,4 +1,15 @@
 {
+  "publicMasthead20261112": {
+    "status": "implemented_and_locally_verified",
+    "referenceUrl": "https://sike.kr/",
+    "featureIds": ["S02", "S03", "S05", "S11", "S12", "S13", "S14", "S15", "S16", "S17"],
+    "files": ["src/components/LandingMasthead.jsx", "src/components/LandingMasthead.module.css", "src/components/GrowthLanding.jsx"],
+    "photo": "public/instructors/cho-youngbin.png",
+    "flow": "Public home -> existing interest/company intake -> login/company confirmation -> preparation tasks/documents",
+    "dataAndPermissions": "Existing interest/companyName/industry/employees/region, draft.id/ownerId, auth and company permissions preserved. UX-001 workspace shell and company/document/filter state unchanged.",
+    "verification": ["Production build passed", "8 existing intake/public-program tests passed", "1470px and 390px visual inspection; portrait loaded and no horizontal overflow", "Start button reaches existing intake; calendar link opens programs; signed-in account sees dashboard link"],
+    "limits": "Visual refresh only. No new claims of AI generation, official submission, certification issuance or production document persistence. Original portrait preserved; reference logo, copy and product photos not reused."
+  },
   "version": 1,
   "reviewedAt": "2026-10-14",
   "sources": [
