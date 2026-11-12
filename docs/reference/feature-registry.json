@@ -1,4 +1,42 @@
 {
+  "publicInsights20261112": {
+    "status": "locally_verified_deployment_pending",
+    "featureIds": [
+      "S02",
+      "S03",
+      "S05",
+      "S11",
+      "S12",
+      "S13",
+      "S14",
+      "S15",
+      "S16",
+      "S17"
+    ],
+    "scope": "Six curated public article cards with publication dates and paired honestone.kr detail / Naver blog original links; sidebar anchor and full archive/home links. Static selection, not automated synchronization.",
+    "sources": [
+      "https://honestone.kr/insights",
+      "https://blog.naver.com/honest_stone"
+    ],
+    "articleIds": [
+      "224473222331",
+      "224470038591",
+      "224447142360",
+      "224425309366",
+      "224360668675",
+      "224359633624"
+    ],
+    "checkedAt": "2026-11-12",
+    "flow": "Public landing -> article/source reading in new tab; existing intake -> S02 login -> S03 company -> S05 work -> S11-S17 documents unchanged",
+    "dataAndPermissions": "Public titles/dates/URLs only. No customer data sent. No companyId/projectId/documentId, ownership, auth, draft, persistence or permission changes. UX-001 sidebar collapse/state retained; external links noopener noreferrer.",
+    "verification": [
+      "Six official article URLs returned HTTP200 and matched heading; paired Naver URLs extracted from each official article",
+      "Production build passed",
+      "1280px desktop and 390px mobile article layouts and menu anchor verified; no horizontal overflow",
+      "All 6 paired article links and 3 channel links inspected in rendered DOM with new-tab/noopener/noreferrer"
+    ],
+    "limits": "Links and curated title/date metadata only; no full article copying, eligibility claims, official submission or automatic feed synchronization."
+  },
   "representativePhotos20261112": {
     "status": "deployed_and_verified",
     "featureIds": [

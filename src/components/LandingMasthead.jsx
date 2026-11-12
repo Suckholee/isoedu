@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import {ArrowUp,ArrowUpRight,ArrowLeft,ArrowRight,Building2,CalendarDays,ChevronLeft,Compass,Files,LayoutGrid,LogIn,Menu,PanelLeftOpen,Pause,Play,ShieldCheck,Sparkles,UserRound,X} from 'lucide-react';
 import styles from './LandingMasthead.module.css';
+import FeaturedInsights from './FeaturedInsights';
 const slides=[
  {eyebrow:'HONESTONE / BUSINESS PLAN',title:<>생각을 계획으로.<br/>계획을 다음 기회로.</>,description:'사업계획서부터 기업인증까지, 어니스톤.',action:'우리 회사 준비 시작',type:'plan'},
  {eyebrow:'HONESTONE / OUR PEOPLE',title:<>기업의 가능성에,<br/>진심을 더합니다.</>,description:'조영빈 대표와 함께하는 기업의 다음 준비.',action:'어니스톤 소개',type:'people'},
@@ -34,7 +35,7 @@ export default function LandingMasthead({user,onLogin,onStart,children}){
   {mobileOpen&&<button className={styles.backdrop} aria-label="메뉴 닫기" onClick={close}/>}
   <aside id="public-navigation" className={`${styles.sidebar} ${mobileOpen?styles.mobileOpen:''}`} aria-label="어니스톤 공개 메뉴">
    <div className={styles.sidebarTop}><Link href="/" className={styles.logo} aria-label="어니스톤 홈"><Mark/><span>HONESTONE<small>어니스톤</small></span></Link><button className={styles.toggle} aria-label={open?'사이드바 접기':'사이드바 펼치기'} aria-expanded={open} title="사이드바 접기·펼치기 ([ 또는 Ctrl/Cmd+B)" onClick={toggle}>{open?<ChevronLeft size={17}/>:<PanelLeftOpen size={19}/>}</button></div>
-   <nav className={styles.nav} aria-label="서비스 메뉴"><div>{nav('서비스 둘러보기',LayoutGrid,'#areas')}{nav('어니스톤 소개',UserRound,'#honestone-story')}{nav('대표 사진·콘텐츠',UserRound,'#people-gallery')}{nav('우리 회사 준비 시작',Compass)}</div><div>{nav('사업계획서',Files,null,'government')}{nav('기업인증',Building2,null,'certification')}{nav('ISO 인증',ShieldCheck,null,'iso')}{nav('정부지원사업',CalendarDays,'/programs')}{nav('회사 문서함',Files,'/documents')}{nav('AI 문서 작성',Sparkles,null,'government')}</div><div>{nav('이용 방법',Compass,'#process')}{nav('내 업무 공간',LayoutGrid,'/dashboard')}</div></nav>
+   <nav className={styles.nav} aria-label="서비스 메뉴"><div>{nav('서비스 둘러보기',LayoutGrid,'#areas')}{nav('어니스톤 소개',UserRound,'#honestone-story')}{nav('대표 사진·콘텐츠',UserRound,'#people-gallery')}{nav('블로그·홈페이지 글',Files,'#insights')}{nav('우리 회사 준비 시작',Compass)}</div><div>{nav('사업계획서',Files,null,'government')}{nav('기업인증',Building2,null,'certification')}{nav('ISO 인증',ShieldCheck,null,'iso')}{nav('정부지원사업',CalendarDays,'/programs')}{nav('회사 문서함',Files,'/documents')}{nav('AI 문서 작성',Sparkles,null,'government')}</div><div>{nav('이용 방법',Compass,'#process')}{nav('내 업무 공간',LayoutGrid,'/dashboard')}</div></nav>
    <div className={styles.sidebarPromos}><Link href="/programs" className={styles.bluePromo}>정부지원사업 일정<small>가입 없이 공고 확인</small><ArrowUpRight size={17}/></Link><button className={styles.orangePromo} onClick={()=>start()}>우리 회사 준비 시작<small>정보부터 문서·일정까지</small><ArrowUpRight size={17}/></button></div>
    <div className={styles.sidebarBottom}><p>기업의 다음 준비를 연결합니다.</p><div>{user?<Link href="/dashboard" aria-label="내 업무"><LogIn size={14}/><span>MY WORK</span></Link>:<button aria-label="로그인" onClick={()=>{close();onLogin();}}><LogIn size={14}/><span>LOGIN</span></button>}<a href="#honestone-story" onClick={close}><span>ABOUT US</span></a></div></div>
   </aside>
@@ -62,6 +63,7 @@ export default function LandingMasthead({user,onLogin,onStart,children}){
     <div className={styles.photoGrid}>{representativePhotos.map((photo,index)=><a key={photo.file} href={photo.href} target="_blank" rel="noopener noreferrer" className={styles.photoCard} aria-label={`${photo.title} — 출처 보기 (새 창)`}><div className={styles.photoImage}><Image src={`/images/honestone/cho-youngbin/${photo.file}`} alt={`${photo.title} — 조영빈 대표${photo.kind==='OFFICIAL CONTENT'?' 공식 영상 썸네일':''}`} fill sizes="(max-width: 600px) 44vw, (max-width: 1150px) 28vw, 15vw"/><span>{String(index+1).padStart(2,'0')}</span></div><div className={styles.photoCaption}><small>{photo.kind}</small><h3>{photo.title}</h3><p>{photo.credit}<ArrowUpRight size={13}/></p></div></a>)}</div>
     <div className={styles.photoLinks}><span>영상 썸네일을 누르면 원문 사이트로 이동합니다.</span><a href="https://www.youtube.com/channel/UC4bv_sw6JudKORw7lbLxe6w" target="_blank" rel="noopener noreferrer">조영빈의 사업은 처음이라 <ArrowUpRight size={15}/></a><a href="https://www.instagram.com/honestone_kevin/" target="_blank" rel="noopener noreferrer">인스타그램 <ArrowUpRight size={15}/></a></div>
    </section>
+   <FeaturedInsights/>
    {children}
    <section id="process" className={styles.process}><div><p>HOW WE WORK</p><h2>준비의 시작부터,<br/>다음 단계까지.</h2></div><ol>{[['방향을 정리합니다','관심 분야와 회사의 기본 정보를 바탕으로 준비할 일을 확인합니다.'],['자료를 모읍니다','회사별 문서함에 원본을 보관하고 필요한 내용을 확인합니다.'],['업무를 이어갑니다','회사·프로젝트의 준비 업무와 문서, 일정을 연결합니다.']].map(([title,text],index)=><li key={title}><span>0{index+1}</span><h3>{title}</h3><p>{text}</p></li>)}</ol></section>
    <div className={styles.serviceStrip}><span>BUSINESS PLAN</span><span>CERTIFICATION</span><span>GOVERNMENT SUPPORT</span><span>COMPANY WORKSPACE</span></div>
