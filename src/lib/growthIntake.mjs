@@ -1,10 +1,13 @@
 import {programSnapshot} from './publicPrograms.mjs';
 export const GROWTH_KEY='honestone_growth_intake_v1';
 export const INTERESTS={
- government:{label:'정부지원사업',description:'우리 회사에 맞는 공고부터 찾아보고 싶어요',steps:['소재지·업력·업종 등 신청 조건 확인','공고 원문과 제출 양식 확인','보유 서류와 모집 일정 정리']},
- certification:{label:'기업인증',description:'벤처·연구소 등 기업인증을 준비하고 싶어요',steps:['필요한 인증 종류와 목적 정리','회사 현황과 보유 증빙 확인','유형별 신청 서류 준비']},
+ certification:{label:'국내 기업인증',description:'벤처기업확인·기업부설연구소 등 국내 기업 제도를 준비하고 싶어요',steps:['필요한 인증·확인·인정 제도와 목적 정리','회사 현황과 보유 증빙 확인','유형별 신청 서류 준비']},
+ internationalCertification:{label:'해외 기업인증',description:'해외 거래처가 요구하는 경영시스템 인증을 준비하고 싶어요',steps:['대상 시장과 해외 거래처 요구사항 확인','적용 규격과 사업장 범위 정리','경영시스템 문서와 심사 준비 자료 확인']},
+ domesticProduct:{label:'국내 제품인증',description:'국내 판매를 위한 제품 시험·인증을 준비하고 싶어요',steps:['제품 종류·모델·용도 확인','국내 적용 요건과 시험 범위 확인','시험성적서·표시·신청 자료 정리']},
+ internationalProduct:{label:'해외 제품인증',description:'수출 대상국의 제품 시험·인증 요건을 알아보고 싶어요',steps:['수출 대상국·제품 종류·용도 확인','대상국의 제품 적합성·시험·표시 요건 확인','기술문서와 시험·신청 자료 정리']},
  iso:{label:'ISO 인증',description:'ISO 인증과 갱신에 필요한 준비를 하고 싶어요',steps:['인증 규격과 적용 범위 확인','기존 문서와 부족한 자료 확인','준비 서류와 심사 일정 정리']},
- unsure:{label:'아직 잘 모르겠어요',description:'회사 상황에 맞춰 준비할 일을 정리하고 싶어요',steps:['사업 현황과 현재 목표 정리','지원사업·기업인증·ISO 중 우선순위 확인','먼저 준비할 자료 정리']},
+ government:{label:'정부지원사업',description:'우리 회사에 맞는 공고부터 찾아보고 싶어요',steps:['소재지·업력·업종 등 신청 조건 확인','공고 원문과 제출 양식 확인','보유 서류와 모집 일정 정리']},
+ unsure:{label:'아직 잘 모르겠어요',description:'회사 상황에 맞춰 준비할 일을 정리하고 싶어요',steps:['사업 현황과 현재 목표 정리','기업인증·제품인증·지원사업 중 우선순위 확인','먼저 준비할 자료 정리']},
 };
 const SIZE=['1~4명','5~9명','10~29명','30~99명','100명 이상'];
 export const EMPLOYEE_RANGES=SIZE;

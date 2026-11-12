@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 
-export default function AuthModal({ isOpen, onClose, initialMode='login', initialCompanyName='' }) {
+export default function AuthModal({ isOpen, onClose, initialMode='login', initialCompanyName='', brandName='어니스톤' }) {
   const { login, signup, switchDemoRole, isDemoMode } = useAuth();
   const [mode, setMode] = useState('login'); // 'login' | 'signup'
   
@@ -110,7 +110,7 @@ export default function AuthModal({ isOpen, onClose, initialMode='login', initia
             </div>
             <div>
               <h2 className="text-lg font-bold">
-                {mode === 'login' ? '어니스톤 회원 로그인' : '어니스톤 기업회원 가입'}
+                {brandName} {mode === 'login' ? '회원 로그인' : '기업회원 가입'}
               </h2>
               <p className="text-xs text-blue-100">
                 인증 문서 보안 스토리지 및 감사 플랫폼
