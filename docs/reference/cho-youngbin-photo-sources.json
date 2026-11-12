@@ -1,0 +1,82 @@
+[
+  {
+    "file": "public/images/honestone/cho-youngbin/hero-ceo.jpg",
+    "imageUrl": "https://honestone.kr/brand/photos/hero-ceo.jpg",
+    "sourcePage": "https://honestone.kr/",
+    "credit": "어니스톤 공식 홈페이지",
+    "kind": "portrait",
+    "sha256": "9c5605e8d1f89cdfc71d3f8e44feed838ff407e4bc8e1dcad8338d6d0ddc5dd1",
+    "retrievedAt": "2026-11-12",
+    "verification": "Source explicitly identifies Honestone CEO Cho Youngbin; reviewed image and source context. No facial alteration."
+  },
+  {
+    "file": "public/images/honestone/cho-youngbin/ceo-standing.jpg",
+    "imageUrl": "https://honestone.kr/brand/photos/ceo-standing.jpg",
+    "sourcePage": "https://honestone.kr/",
+    "credit": "어니스톤 공식 홈페이지",
+    "kind": "portrait",
+    "sha256": "4ce38a2bf2e0029166b910fb1cd71f2797a91b2db7ec6d62163df33fc4ebbbed",
+    "retrievedAt": "2026-11-12",
+    "verification": "Source explicitly identifies Honestone CEO Cho Youngbin; reviewed image and source context. No facial alteration."
+  },
+  {
+    "file": "public/images/honestone/cho-youngbin/ep03.jpg",
+    "imageUrl": "https://honestone.kr/shorts-media/ep03.jpg",
+    "sourcePage": "https://honestone.kr/",
+    "credit": "어니스톤 공식 홈페이지",
+    "kind": "video_thumbnail",
+    "sha256": "a2ee514faf88c7ec94618ecab2df7085b7513227b8ede60ac0b3ddf7337dc549",
+    "retrievedAt": "2026-11-12",
+    "verification": "Source explicitly identifies Honestone CEO Cho Youngbin; reviewed image and source context. No facial alteration."
+  },
+  {
+    "file": "public/images/honestone/cho-youngbin/ep04.jpg",
+    "imageUrl": "https://honestone.kr/shorts-media/ep04.jpg",
+    "sourcePage": "https://honestone.kr/",
+    "credit": "어니스톤 공식 홈페이지",
+    "kind": "video_thumbnail",
+    "sha256": "fb5c619c5e067d3fad3705d80858f508c0f40f250d17322735fd099fea5be5c4",
+    "retrievedAt": "2026-11-12",
+    "verification": "Source explicitly identifies Honestone CEO Cho Youngbin; reviewed image and source context. No facial alteration."
+  },
+  {
+    "file": "public/images/honestone/cho-youngbin/ep05.jpg",
+    "imageUrl": "https://honestone.kr/shorts-media/ep05.jpg",
+    "sourcePage": "https://honestone.kr/",
+    "credit": "어니스톤 공식 홈페이지",
+    "kind": "video_thumbnail",
+    "sha256": "f200a1d200f195e2d9abe2a1c2a60bee460c14c846b5f13b33da64c33ada7c82",
+    "retrievedAt": "2026-11-12",
+    "verification": "Source explicitly identifies Honestone CEO Cho Youngbin; reviewed image and source context. No facial alteration."
+  },
+  {
+    "file": "public/images/honestone/cho-youngbin/ep07.jpg",
+    "imageUrl": "https://honestone.kr/shorts-media/ep07.jpg",
+    "sourcePage": "https://honestone.kr/",
+    "credit": "어니스톤 공식 홈페이지",
+    "kind": "video_thumbnail",
+    "sha256": "2fa7901154690fda9eaee5d9f1b3869743305c7675f9e7ab4e0f4c3c16f5c0cd",
+    "retrievedAt": "2026-11-12",
+    "verification": "Source explicitly identifies Honestone CEO Cho Youngbin; reviewed image and source context. No facial alteration."
+  },
+  {
+    "file": "public/images/honestone/cho-youngbin/ep09.jpg",
+    "imageUrl": "https://honestone.kr/shorts-media/ep09.jpg",
+    "sourcePage": "https://honestone.kr/",
+    "credit": "어니스톤 공식 홈페이지",
+    "kind": "video_thumbnail",
+    "sha256": "0ec926035c46b32715830faaca7025f0305d7ace48b9f7f7d8c55f0deb60f0b5",
+    "retrievedAt": "2026-11-12",
+    "verification": "Source explicitly identifies Honestone CEO Cho Youngbin; reviewed image and source context. No facial alteration."
+  },
+  {
+    "file": "public/images/honestone/cho-youngbin/press-portrait.jpg",
+    "imageUrl": "https://cdn.alphabiz.co.kr/news/photo/202304/88482_1_3346.jpg",
+    "sourcePage": "https://alphabiz.co.kr/news/view/1065580439174902",
+    "credit": "어니스톤 제공 / 알파경제 게재",
+    "kind": "portrait",
+    "sha256": "091443fdee2b2bc9adaa1345ed3bb2ecd84b8a1e002b161a2da4f08a61e99e56",
+    "retrievedAt": "2026-11-12",
+    "verification": "Source explicitly identifies Honestone CEO Cho Youngbin; reviewed image and source context. No facial alteration."
+  }
+]

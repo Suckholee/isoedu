@@ -1,4 +1,30 @@
 {
+  "representativePhotos20261112": {
+    "status": "locally_verified_deployment_pending",
+    "featureIds": [
+      "S02",
+      "S03",
+      "S05",
+      "S11",
+      "S12",
+      "S13",
+      "S14",
+      "S15",
+      "S16",
+      "S17"
+    ],
+    "scope": "8 sourced public images: official portraits 2, official video thumbnails 5, company-provided press portrait 1. Hero/founder portrait updates and 6-card public photo/content gallery. Existing smiling portrait retained.",
+    "sources": "docs/reference/cho-youngbin-photo-sources.json",
+    "flow": "Public home/photo gallery -> source pages, or existing intake -> S02 login -> S03 company -> S05 preparation -> S11-S17 documents",
+    "dataAndPermissions": "No changes to companyId/projectId/documentId, intake fields, draft ownership, login, company permissions or storage. UX-001 sidebar control/state retained. External source links use noopener noreferrer.",
+    "limits": "Video thumbnails are labeled and link to original source pages; no new video playback, customer outcomes, certification issuance or AI success claims. Source attribution is not a separate license grant.",
+    "verification": [
+      "Production build passed",
+      "1280px desktop gallery: all 6 cards loaded; hero portrait visually checked",
+      "390px mobile: 2-column gallery, source captions and mobile menu anchor checked; document width 390px",
+      "Public source URLs, identity captions and image checksums recorded; no face modifications"
+    ]
+  },
   "brandioLanding20261112": {
     "status": "deployed_and_verified",
     "referenceUrl": "https://brandio.co.kr/",
