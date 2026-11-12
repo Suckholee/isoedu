@@ -1,6 +1,6 @@
 {
   "representativePhotos20261112": {
-    "status": "locally_verified_deployment_pending",
+    "status": "deployed_and_verified",
     "featureIds": [
       "S02",
       "S03",
@@ -22,8 +22,12 @@
       "Production build passed",
       "1280px desktop gallery: all 6 cards loaded; hero portrait visually checked",
       "390px mobile: 2-column gallery, source captions and mobile menu anchor checked; document width 390px",
-      "Public source URLs, identity captions and image checksums recorded; no face modifications"
-    ]
+      "Public source URLs, identity captions and image checksums recorded; no face modifications",
+      "Vercel deployment succeeded; 6 gallery images loaded on production. Local screenshot landing-photos-20261112.jpg."
+    ],
+    "sourceCommit": "dbf8922",
+    "productionUrl": "https://isoedu-cyan.vercel.app",
+    "deploymentUrl": "https://isoedu-p4crqarw3-peter15975345-8667s-projects.vercel.app"
   },
   "brandioLanding20261112": {
     "status": "deployed_and_verified",
