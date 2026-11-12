@@ -504,3 +504,12 @@ Limitations: production OPENAI_API_KEY and KIPRIS_API_KEY remain unset. Automati
 
 ### Public masthead deployment (2026-11-12)
 Source 1fb2e7e deployed to https://isoedu-cyan.vercel.app (https://isoedu-4mk7gxlag-peter15975345-8667s-projects.vercel.app). Production heading and portrait load verified with no horizontal overflow. Guest login modal verified in production build. Evidence: landing-masthead-20261112.jpg (local-only). Synced with publicMasthead20261112.
+
+
+## 브랜디오 참고 공개 랜딩 개편 (2026-11-12)
+
+사용자의 후속 참고 https://brandio.co.kr/ 에 맞춰 앞선 sike형 구성을 대체했다. 왼쪽 고정 메뉴·접기/펼치기, 검은 상단 안내, 여백 없는 서비스 타일, 3개 배너 전환, 흰 소개/회사 입력 영역, 조영빈 대표 사진으로 구성한다. 참고 사이트의 로고·고객 사례·실적·사진은 재사용하지 않고 자체 그래픽과 생성한 사업계획서 콘셉트 이미지를 사용한다. 이미지가 실제 성과를 뜻하지 않음을 표시한다.
+
+연결: 공개 홈 → 관심 분야/회사 입력 → S02 로그인 → S03 회사 확인 → S05 준비 업무 → S11~S17 문서. 사업계획서·AI 문서 작성 메뉴는 기존 정부지원 준비 입력으로 연결하며 문서를 즉시 생성하지 않는다. interest/companyName/industry/employees/region, draft.id/ownerId 및 회사/프로젝트/문서 권한을 유지한다. 새 저장소·API·상담 접수 기능은 추가하지 않는다. UX-001: isoedu_sidebar_open 접기 상태, 입력 중 회사 정보, 업무 셸의 회사/문서/필터 상태 유지.
+
+검증: 운영용 빌드 및 기존 입력/공고 테스트8개 통과. 1470px/390px 화면·사진/이미지 로딩·모바일 가로 넘침 없음, 배너 선택/정지, 사업계획서에서 회사 입력 진입, 메뉴 접기/펼치기 후 회사명 유지, 모바일 메뉴 열기/닫기와 입력 배치 확인. 실제 운영 문서 저장·AI 생성·공식 제출은 이번 변경의 검증 범위 밖이다. 운영 배포 대기. feature-registry의 brandioLanding20261112와 동기화.
