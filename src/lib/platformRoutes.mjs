@@ -1,6 +1,6 @@
 import {parsePreparationPath} from './preparationRoutes.mjs';
 export const NAV_PATHS = Object.freeze({
- dashboard:'/dashboard', curation:'/certification-curation', compliance:'/certifications', drive:'/documents', schedule:'/audit-schedule',
+ dashboard:'/dashboard', business_plan:'/business-plan', curation:'/certification-curation', compliance:'/certifications', drive:'/documents', schedule:'/audit-schedule',
  radar:'/risks', notifications:'/notifications', gov_programs:'/government-programs', admin:'/admin', agent_schedules:'/agent-schedules', reports:'/reports', settings:'/settings', workspace:'/workspaces', project:'/projects',
 });
 export function navFromPath(pathname) { return Object.entries(NAV_PATHS).find(([,path])=>pathname===path||pathname.startsWith(`${path}/`))?.[0] || null; }

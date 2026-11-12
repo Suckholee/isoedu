@@ -2905,5 +2905,23 @@
       "Production OPENAI_API_KEY and KIPRIS_API_KEY remain unset. Automatic approval review rejected transfer of local secrets to Vercel without explicit authorization.",
       "Previous AI credit exhaustion unresolved. Live production generation and document/image persistence not tested."
     ]
+  },
+  "businessPlanEntry20261112": {
+    "featureIds": [
+      "S02",
+      "S03",
+      "S05",
+      "S11",
+      "S12",
+      "S13",
+      "S14",
+      "S15",
+      "S16",
+      "S17"
+    ],
+    "scope": "공개 홈의 배너·카드·메뉴와 업무 사이드바에서 /business-plan에 진입. 회사 선택 후 기존 프로젝트 열기 또는 새 계획서 작성.",
+    "handoff": "인증 계정과 회사 연결 → companyId 및 편집 권한 → 기존 projectId 또는 GENERAL 프로젝트 생성(requestId 재시도 식별) → 기존 양식·자료·AI 초안·검토·회사 문서 저장.",
+    "permissions": "회사 연결과 읽기/편집 구분. 기존 create_work_project와 venture-documents의 서버 권한 사용. UX-001 공통 사이드바.",
+    "verification": "관련 경로·프로젝트·문서 테스트 25개 통과."
   }
 }
