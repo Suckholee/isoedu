@@ -500,3 +500,7 @@ S03 -> S11/S16 -> S12/S13 -> S14 -> S15 -> S17. Existing companyId/projectId/doc
 Verification: 233 tests passed, local and Vercel builds succeeded. Home/programs/dashboard HTTP 200; venture documents and certification curation APIs HTTP 401 without login; all 26 official form downloads HTTP 200 with matching SHA256. Private customer/import files and agent logs excluded.
 
 Limitations: production OPENAI_API_KEY and KIPRIS_API_KEY remain unset. Automatic approval review rejected transfer of local secrets to Vercel without explicit authorization. Previous AI credit exhaustion remains unresolved. Live production generation and document/image persistence were not tested. This record supersedes earlier deployment-pending statements while preserving functional verification limits. Synced with registry productionDeployment20261112.
+
+
+### Public masthead deployment (2026-11-12)
+Source 1fb2e7e deployed to https://isoedu-cyan.vercel.app (https://isoedu-4mk7gxlag-peter15975345-8667s-projects.vercel.app). Production heading and portrait load verified with no horizontal overflow. Guest login modal verified in production build. Evidence: landing-masthead-20261112.jpg (local-only). Synced with publicMasthead20261112.
