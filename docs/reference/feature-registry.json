@@ -1,6 +1,6 @@
 {
   "publicInsights20261112": {
-    "status": "locally_verified_deployment_pending",
+    "status": "deployed_and_verified",
     "featureIds": [
       "S02",
       "S03",
@@ -33,9 +33,13 @@
       "Six official article URLs returned HTTP200 and matched heading; paired Naver URLs extracted from each official article",
       "Production build passed",
       "1280px desktop and 390px mobile article layouts and menu anchor verified; no horizontal overflow",
-      "All 6 paired article links and 3 channel links inspected in rendered DOM with new-tab/noopener/noreferrer"
+      "All 6 paired article links and 3 channel links inspected in rendered DOM with new-tab/noopener/noreferrer",
+      "Vercel build/deployment succeeded; 6 article cards and sidebar entry visible in production. Local evidence landing-insights-20261112.jpg."
     ],
-    "limits": "Links and curated title/date metadata only; no full article copying, eligibility claims, official submission or automatic feed synchronization."
+    "limits": "Links and curated title/date metadata only; no full article copying, eligibility claims, official submission or automatic feed synchronization.",
+    "sourceCommit": "cbee38b",
+    "productionUrl": "https://isoedu-cyan.vercel.app",
+    "deploymentUrl": "https://isoedu-e5mdnfm4t-peter15975345-8667s-projects.vercel.app"
   },
   "representativePhotos20261112": {
     "status": "deployed_and_verified",
