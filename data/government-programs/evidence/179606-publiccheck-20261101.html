@@ -1,0 +1,763 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>경기테크노파크 성과관리시스템</title>
+<link rel="stylesheet" type="text/css" href="../../common/css/main.css" />
+<script type="text/javascript" src="../../common/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="../../common/js/jquery-ui-1.10.3.custom.min.js"></script>
+<script type="text/javascript" src="../../common/js/jquery.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+	function popupOpen(no,w,h,l,t){        
+	        window.open("/web/main/popup.do?idx="+no,"pop"+no,"width="+w+"px,height="+(parseInt(h,10)+25)+"px,left="+l+"px,top="+t+"px"); 
+	}  
+
+	$(window).load(function() {
+	 
+		var popup_open = "";
+	   	/** 새창 팝업 **/
+	   	if(popup_open != ""){
+	   		if(confirm("[] 내용의 새창 팝업을 여시겠습니까?")){
+	   	   		
+	   	   	};	
+	   	}
+	});
+	
+	function resetToday(){
+		sessionStorage.setItem("selected","today");
+		location.href= "/web/main/index.do;jsessionid=294DB68EAC7DAD83E93D0A82F9AC8B81";
+	}
+
+//]]>
+</script>
+</head>
+<body>
+	<!--wrap-->
+	<div id="wrap" class="bg">
+		<div id="accessibility">
+			<a href="#container">본문 바로가기</a>
+			<a href="#gnb">주메뉴 바로가기</a>
+		</div>
+		<span class="gLine"></span>
+		
+		<!--header-->
+		<div id="header">
+			<div class="headerWrap">
+				<h1><a href="javascript:resetToday();"><img src="../../common/img/main/logo.png" alt="경기테크노파크 성과관리시스템"/></a></h1>
+				<h2 class="blind">유저메뉴</h2>
+				<ul class="userMenu">
+					<li><a href="javascript:resetToday();">HOME</a></li>
+					
+						
+							<li><a href="/web/main/webMemberLogin.do">로그인</a></li>
+						
+						
+					
+					<!-- <li><a href="#">회원가입</a></li> -->
+					<li><a href="/web/main/webSitemap.do">사이트맵</a></li>
+				</ul>
+				<h2 class="blind">상단메뉴</h2>
+				<ul id="gnb">
+
+					<li><a href="/web/business/webBusinessList.do;jsessionid=294DB68EAC7DAD83E93D0A82F9AC8B81">지원사업</a></li>
+
+					<li><a href="/web/board/350.do;jsessionid=294DB68EAC7DAD83E93D0A82F9AC8B81?mode=list">고객광장</a></li>
+					<li class="l"><a href="/web/mypage/webMypageBusinessApplyList.do;jsessionid=294DB68EAC7DAD83E93D0A82F9AC8B81">마이페이지</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--headerEnd-->
+
+		<div id="containerWrap">
+			
+			<!--container-->
+			<div id="container" class="main">
+				<div class="topbox">
+					<div class="sliderContent">
+						<h2 class="blind">비쥬얼 롤링</h2>
+						<ul class="sliderBull">
+							
+							
+								<li>
+									<span class="imgWrap">
+										<span class="img"><a href="#none"><img src="../../common/img/main/bull.png" alt="1번 비쥬얼 이미지"/></a></span>
+									</span>
+									<div class="bigImg"><a href="#none"><img src="../../common/img/main/visual01.png" alt=""/></a></div>
+								</li>
+							
+						</ul>
+						<h3><img src="../../common/img/main/gtpTxt.png" alt="꿈과 희망을 지원하는 경기 테크노파크"/></h3>
+						<a href="/web/business/webBusinessList.do" class="b_supbus"><img src="../../common/img/main/btn_supbus.png" alt="지원사업검색"/></a>
+					</div>
+				</div>
+
+				<div class="botbox">
+					<div class="t">
+						<h3 class="mb20">사업 유형별 지원사업</h3>
+						<ul class="sup">
+							<li><a href="/web/business/webBusinessThemeList.do">전체</a></li>
+							
+							<li><a href="/web/business/webBusinessThemeList.do?schBusinessdivcd=CD004001001">창업</a></li>
+							
+							<li><a href="/web/business/webBusinessThemeList.do?schBusinessdivcd=CD004001002">기술</a></li>
+							
+							<li><a href="/web/business/webBusinessThemeList.do?schBusinessdivcd=CD004001003">경영</a></li>
+							
+							<li><a href="/web/business/webBusinessThemeList.do?schBusinessdivcd=CD004001004">마케팅/판로</a></li>
+							
+							<li><a href="/web/business/webBusinessThemeList.do?schBusinessdivcd=CD004001005">사업화</a></li>
+							
+							<li><a href="/web/business/webBusinessThemeList.do?schBusinessdivcd=CD004001007">기타</a></li>
+							
+						</ul>
+					</div>
+
+					<div class="t">
+						<h3 class="mb30">공지사항</h3><a href="/web/board/350.do?mode=list" class="btn_min org viewMore">더보기</a>
+						<ul class="lately">
+							
+								
+									<li>- <a href="/web/board/350.do?mode=view&idx=30031">2023년 중소기업 지식재산 보호...</a></li>
+								
+									<li>- <a href="/web/board/350.do?mode=view&idx=30029">경기테크노파크 &#039;스마트제조혁신...</a></li>
+								
+									<li>- <a href="/web/board/350.do?mode=view&idx=30028">[선정결과공지]2020 안산시 중소...</a></li>
+								
+									<li>- <a href="/web/board/350.do?mode=view&idx=30027">2019년 사업화 신속 지원사업(Fa...</a></li>
+								
+									<li>- <a href="/web/board/350.do?mode=view&idx=30026">2019년 사업화 신속지원사업 &#034;첫...</a></li>
+								
+							
+							
+						</ul>
+						
+					</div>
+
+					<div class="t t2">
+						<h3 class="mb30">지원사업 공고</h3><a href="/web/business/webBusinessList.do" class="btn_min org viewMore">더보기</a>
+						<ul class="lately">
+							
+								
+									<li>- <a href="/web/business/webBusinessView.do?b_idx=172345">2026년 제조로봇 도입지원 (제조로봇 ...</a></li>
+								
+									<li>- <a href="/web/business/webBusinessView.do?b_idx=172343">2026년 경기경제자유구역 혁신생태계 ...</a></li>
+								
+									<li>- <a href="/web/business/webBusinessView.do?b_idx=172342">『AI를 위한 데이터, 어떻게 준비해야...</a></li>
+								
+									<li>- <a href="/web/business/webBusinessView.do?b_idx=172341">2026년 안산정보산업진흥센터(경기TP...</a></li>
+								
+									<li>- <a href="/web/business/webBusinessView.do?b_idx=172340">『생성형 AI와 AI Agent로 바꾸는 제...</a></li>
+								
+							
+							
+						</ul>
+					</div>
+
+					<div class="r">
+						<h3 class="mb15">기간별 지원사업</h3>
+						<div class="cal" >
+							
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>경기 테크노파크 성과관리 시스템</title>
+
+<link rel="stylesheet" type="text/css" href="../../common/css/calendar.css" />
+<script type="text/javascript" src="../../common/js/jquery-1.8.2.min.js"></script>
+<!-- <script type="text/javascript" src="../../common/js/jquery.js"></script> -->
+<script type="text/javascript" src="../../common/js/rolling.js"></script>
+
+<style>
+.admin_schList li:hover{text-decoration: underline;}
+</style>
+
+<script type="text/javascript">
+//<![CDATA[
+
+// 날짜 데이터를 프로토 타입으로 등록
+Date.prototype.format = function(f) {
+    if (!this.valueOf()) return " ";
+
+    var weekName = ["일요일", "월요일", "화요일", "수요일", "목요일", "금요일", "토요일"];
+    var d = this;
+
+    return f.replace(/(yyyy|yy|MM|dd|E|hh|mm|ss|a\/p)/gi, function($1) {
+        switch ($1) {
+            case "yyyy": return d.getFullYear();
+            case "yy": return (d.getFullYear() % 1000).zf(2);
+            case "MM": return (d.getMonth() + 1).zf(2);
+            case "dd": return d.getDate().zf(2);
+            case "E": return weekName[d.getDay()];
+            case "HH": return d.getHours().zf(2);
+            case "hh": return ((h = d.getHours() % 12) ? h : 12).zf(2);
+            case "mm": return d.getMinutes().zf(2);
+            case "ss": return d.getSeconds().zf(2);
+            case "a/p": return d.getHours() < 12 ? "오전" : "오후";
+            default: return $1;
+        }
+    });
+};
+
+String.prototype.string = function(len){var s = '', i = 0; while (i++ < len) { s += this; } return s;};
+String.prototype.zf = function(len){return "0".string(len - this.length) + this;};
+Number.prototype.zf = function(len){return this.toString().zf(len);};
+
+$(document).ready(function() {
+	var sdate;
+	var edate;
+	var isNan_chk = false;
+
+	// 사용자 메인화면 캘린터 내용 클릭 시 링크
+	$(".admin_schList").live("click", function(){
+		var t = $(this).val();
+		$("#b_idx").val(t);
+
+		frm = document.form1;
+		frm.method="post";
+		frm.enctype="application/x-www-form-urlencoded";
+		frm.action="/web/business/webBusinessView.do";
+		frm.submit();
+
+	});
+
+	//날짜를 클릭했을시
+    $("#admin_calendar tbody td").click(function() {
+    	// 선택한 날짜 세션등록처리
+    	var selected_day = $(this).text();								//선택한 날짜
+    	var year_month = $(".day_num").text();							//현재 년도.월 ex) 2014.11
+    	sessionStorage.setItem("selected",year_month+"."+selected_day); //현재 년도.월 + 선택한 날짜 ex) 2014.11.11
+
+    	var chk_day	= $(this).attr("id");
+        var chk_week = $(this).parent().attr("id");
+        var w = chk_week.substring(6, 7);								//선택한 날의 주 ex ) 2014.11 의 28일을 클릭했다면 -> 5 출력
+
+        //선택한 주 이외 색깔 초기화 구문
+        for (var k = 1; k < 7; k++) {
+            for (var d = 2; d < 7; d++) {
+                if ($("#day_0" + k + "_" + d).attr('class') != 'plan01') {
+                    $("#day_0" + k + "_" + d).css({
+                        background: "#fff"
+                    });
+                }
+            }
+        }
+
+        var array = new Array();
+        var max_count = 5;
+		//선택된 주 토요일, 일요일을 제외한 나머지 색깔 처리
+        for (var i = 2; i < 7; i++) {
+            if ($("#day_0" + w + "_" + i).attr('class') != 'plan01') {
+                $("#day_0" + w + "_" + i).css({
+                    background: "rgb(216, 223, 235)"
+                });
+                var subString_text = $("#day_0" + w + "_" + i).attr('id');
+                if (typeof(subString_text) != 'undefined') {
+                    array.push(subString_text.substring(7, 9));
+                } else {
+                    max_count -= 1;
+                }
+            }
+        }
+
+        var year = $(".day_num").text().substring(0, 4);				//해당 년도
+        var month = $(".day_num strong").text().trim();					//해당 월
+        var lastDay = ( new Date( year, month, 0) ).getDate();			//해당년도 해당 월의 마지막 날짜
+        //alert(typeof(lastDay));
+		//선택된 날짜가 몇째주 인지 계산 하여 해당 주의 가장 낮은 날짜 계산
+        var min_day = "#day_0" + w + "_" + Math.min.apply(null, array);
+        var max_day = '';
+
+        // 해당 주의 가장 높은 날짜가 31을 넘지 않도록 계산
+        if (parseInt($(min_day).text()) + 6 >= lastDay) {
+            max_day = lastDay;
+        } else {
+            max_day = parseInt($(min_day).text().trim()) + max_count;
+        };
+
+
+        if (month.length < 2) {
+            month = "0" + month;
+        }
+
+        var year_month = year + "-" + month;							//해당 년도 + 월 표기를  ex) 2014.3 이라면 -> 2014.03 으로 표기
+        var sdate_zero = $(min_day).text().trim();
+
+        if (max_day < 10) {
+            max_day = "0" + max_day;
+        }
+
+        var change_sdate = parseInt(sdate_zero)-1;
+        var string_sdate = "";
+        if(change_sdate == 0){
+        	string_sdate = "01";
+        }else if(change_sdate < 10){
+        	string_sdate = "0"+change_sdate;
+        }else{
+        	string_sdate = ""+change_sdate;
+        }
+
+        sdate = year_month + "-" + string_sdate ;						//최종 시작일 계산
+        edate = year_month + "-" + max_day;								//최종 종료일 계산
+
+
+        if(!isNaN(string_sdate)){
+        	$("#h3_div").text(sdate +" ~ "+ edate+" 까지");
+        	sessionStorage.setItem("click_day",sdate +" ~ "+ edate+" 까지");
+        }
+
+		if(!isNaN(max_day)){
+			isNan_chk = true;
+			var prev_text = $(".prev a").attr("href");
+			var next_text = $(".next a").attr("href");
+			var prev_count = prev_text.indexOf("&sdate=");
+			var next_count = prev_text.indexOf("&sdate=");
+			var param_prev_count = prev_count + 7;
+			var param_next_count = next_count + 7;
+			var prev_param = prev_text.substring(0,param_prev_count);
+			var next_param = next_text.substring(0,param_next_count);
+			var send_prev_param = prev_param + sdate + "&edate=" + edate + "&checked_day=" +chk_day ;
+			var send_next_param = next_param + sdate + "&edate=" + edate + "&checked_day=" +chk_day;
+			$(".prev a").attr("href",send_prev_param);
+			$(".next a").attr("href",send_next_param);
+
+			jQuery.ajax({
+	            type: 'POST',
+	            url: '/web/main/calendalAjax.do',
+	            data: 'sdate=' + sdate + '&edate=' + edate,
+	            dataType: 'json',
+	            success: function(data) {
+	                $(".admin_sch_value").empty();
+	                if(data.list.length > 0){
+		                for(var i =0; i<data.list.length ; i++){
+		                	var syear = data.list[i].BS_SDT.substring(0,4);
+		                	var eyear = data.list[i].BS_EDT.substring(0,4);
+		                	var smonth = data.list[i].BS_SDT.substring(5,7);
+		                	var emonth = data.list[i].BS_EDT.substring(5,7);
+		                	var sdt = data.list[i].BS_SDT.substring(8,10);
+		                	var edt = data.list[i].BS_EDT.substring(8,10);
+
+		                	var admin_sch = $("<div>").attr("class", "admin_sch").appendTo(".admin_sch_value");
+		                	var p1 = $("<p>").appendTo(admin_sch);
+		                	var p2 = $("<p>").appendTo(admin_sch);
+		                	$("<strong>").text(syear+"-"+smonth+"-"+sdt+" ~ "+eyear+"-"+emonth+"-"+edt).appendTo(p1);
+		                	$("<strong>").css("color","rgb(92, 92, 92)").text(data.list[i].BUSINESSNM).appendTo(p2);
+		                    var ul = $("<ul>").attr({"class" : "admin_schList", "value" : data.list[i].B_IDX, "style" : "cursor: pointer"}).appendTo(admin_sch);
+		                    $("<li>").text(" - "+data.list[i].BS_TITLE).appendTo(ul);
+		                }
+	                }else{
+	                	var admin_sch = $("<div>").attr("class", "admin_sch").appendTo(".admin_sch_value");
+	                	var ul = $("<ul>").attr("class", "admin_schList").appendTo(admin_sch);
+	                    $("<li>").text(" - 지원사업이 없습니다.").appendTo(ul);
+	                }
+
+	            },
+	            error: function(xhr, textStatus) {
+					//alert("데이터 오류 입니다. 다시 시도하세요.");
+	            },
+	            complete: function(xhr, textStatus) {
+
+	            }
+	        });
+		}
+    });
+});
+
+$(window).load(function() {
+
+    var year_month = $(".day_num").text();
+
+    if (sessionStorage.getItem("selected") == null || sessionStorage.getItem("selected") == "today") {
+        $(".plan01").click();
+    } else {
+        var getSeleted = sessionStorage.getItem("selected");
+        var select_array = getSeleted.split(".");
+        var year = select_array[0];
+        var month = select_array[1];
+        var day = select_array[2];
+        var get_year_month = year+"."+month;
+        var get_date = day;
+
+        if (get_year_month == year_month) {
+            var selected_id = $("td:contains('" + get_date + "')").attr("id");
+            $("#" + selected_id).click();
+        }
+        if(sessionStorage.getItem("click_day") != null){
+	        var getClick_day = sessionStorage.getItem("click_day");
+	        $("#h3_div").text(getClick_day);
+        }
+    }
+});
+
+
+//]]>
+</script>
+</head>
+
+
+
+
+
+
+
+					<form name="form1">
+						<input type="hidden" id="b_idx" name="b_idx" value=""/>
+					</form>
+					<div class="cal">
+						<div class="calDate">
+							<span class="prev" style="position: relative; top: 18px; right:10px;"><a href="?month=10&year=2026&action=0&sdate=&edate="><img src="../../common/img/main/calPrev.png" alt="이전 달" /></a></span>
+							<span class="day_num">2026.<strong style="font-size: 20px; color: #000; font-weight: bold;">11</strong></span>
+							<span class="next" style="position: relative; top: 18px; left:10px;"><a href="?month=10&year=2026&action=1&sdate=&edate="><img src="../../common/img/main/calNext.png" alt="다음 달" /></a></span>
+						</div>
+						<table cellspacing="0" cellpadding="0" summary="" class="calTable" id="admin_calendar">
+							<caption>달력</caption>
+							<colgroup>
+								<col width="14.2%" />
+								<col width="14.2%" />
+								<col width="14.2%" />
+								<col width="14.2%" />
+								<col width="14.2%" />
+								<col width="14.2%" />
+								<col width="14.2%" />
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col" class="org">S</th>
+									<th scope="col">M</th>
+									<th scope="col">T</th>
+									<th scope="col">W</th>
+									<th scope="col">T</th>
+									<th scope="col">F</th>
+									<th scope="col" class="org">S</th>
+								</tr>
+							</thead>
+							<tbody>
+								
+							  	<tr id="week_01">
+								
+											<td class="plan01" id="day_01_1">1<br/>
+											</td>
+								
+											<td class="#ffffff" id="day_01_2">2<br/>
+											</td>
+								
+											<td class="#ffffff" id="day_01_3">3<br/>
+											</td>
+								
+											<td class="#ffffff" id="day_01_4">4<br/>
+											</td>
+								
+											<td class="#ffffff" id="day_01_5">5<br/>
+											</td>
+								
+											<td class="#ffffff" id="day_01_6">6<br/>
+											</td>
+								
+											<td class="plan02" id="day_01_7">7<br/>
+											</td>
+								
+							  	</tr>
+								
+							  	<tr id="week_02">
+								
+											<td class="plan03" id="day_02_1">8<br/>
+											</td>
+								
+											<td class="#ffffff" id="day_02_2">9<br/>
+											</td>
+								
+											<td class="#ffffff" id="day_02_3">10<br/>
+											</td>
+								
+											<td class="#ffffff" id="day_02_4">11<br/>
+											</td>
+								
+											<td class="#ffffff" id="day_02_5">12<br/>
+											</td>
+								
+											<td class="#ffffff" id="day_02_6">13<br/>
+											</td>
+								
+											<td class="plan02" id="day_02_7">14<br/>
+											</td>
+								
+							  	</tr>
+								
+							  	<tr id="week_03">
+								
+											<td class="plan03" id="day_03_1">15<br/>
+											</td>
+								
+											<td class="#ffffff" id="day_03_2">16<br/>
+											</td>
+								
+											<td class="#ffffff" id="day_03_3">17<br/>
+											</td>
+								
+											<td class="#ffffff" id="day_03_4">18<br/>
+											</td>
+								
+											<td class="#ffffff" id="day_03_5">19<br/>
+											</td>
+								
+											<td class="#ffffff" id="day_03_6">20<br/>
+											</td>
+								
+											<td class="plan02" id="day_03_7">21<br/>
+											</td>
+								
+							  	</tr>
+								
+							  	<tr id="week_04">
+								
+											<td class="plan03" id="day_04_1">22<br/>
+											</td>
+								
+											<td class="#ffffff" id="day_04_2">23<br/>
+											</td>
+								
+											<td class="#ffffff" id="day_04_3">24<br/>
+											</td>
+								
+											<td class="#ffffff" id="day_04_4">25<br/>
+											</td>
+								
+											<td class="#ffffff" id="day_04_5">26<br/>
+											</td>
+								
+											<td class="#ffffff" id="day_04_6">27<br/>
+											</td>
+								
+											<td class="plan02" id="day_04_7">28<br/>
+											</td>
+								
+							  	</tr>
+								
+							  	<tr id="week_05">
+								
+											<td class="plan03" id="day_05_1">29<br/>
+											</td>
+								
+											<td class="#ffffff" id="day_05_2">30<br/>
+											</td>
+								
+											<td>&nbsp;</td>
+								
+											<td>&nbsp;</td>
+								
+											<td>&nbsp;</td>
+								
+											<td>&nbsp;</td>
+								
+											<td>&nbsp;</td>
+								
+							  	</tr>
+								
+							  	<tr id="week_06">
+								
+											<td>&nbsp;</td>
+								
+											<td>&nbsp;</td>
+								
+											<td>&nbsp;</td>
+								
+											<td>&nbsp;</td>
+								
+											<td>&nbsp;</td>
+								
+											<td>&nbsp;</td>
+								
+											<td>&nbsp;</td>
+								
+							  	</tr>
+								
+
+							</tbody>
+						</table>
+					</div>
+				<div class="sch">
+					<strong id="h3_div"> - 지원사업이 없습니다. </strong>
+					<div class="admin_sch_value" style="overflow-y:scroll; height: 90px;">
+
+					
+					 
+						<div class="admin_sch">
+							<p>
+							    <strong>
+
+								</strong>
+							</p>
+							<p>
+								<strong style="color:rgb(92, 92, 92);">
+
+								</strong>
+							</p>
+						    <ul class="admin_schList">
+						        <li>
+						            - 지원사업이 없습니다.
+						        </li>
+						    </ul>
+					    </div>
+
+					
+					</div>
+				</div>
+
+							<!-- <iframe name="mainCal" id="mainCal" src="/web/calendar/webInclude_Cal.jsp" scrolling="no" frameborder="0" width="230px" height="650px" ></iframe> -->
+						</div>
+					</div>
+ 					
+					<div class="t b">
+						
+						<h3 class="mb20">경기도 지역별 사업</h3>
+						<a href="/web/business/webBusinessAreaList.do"><img src="../../common/img/main/locMap.png" alt="포천시 30개" class="ml25"/></a>
+					</div>
+
+					<div class="t b">
+						<h3 class="mb30">지원사업 FAQ</h3>
+						<ul class="lately">
+							
+							
+								<li class="b"><strong>등록된 지원사업 FAQ가 없습니다.</strong></li>
+							
+						</ul>
+					</div>
+
+					<div class="t b advice">
+<!-- 	상담메뉴삭제 : 관련 부분은 상담메뉴삭제로 검색해서 모두 해제 또는 적용.					<h3 class="mb10">상담소개</h3> -->
+<!-- 	상담메뉴삭제 : 관련 부분은 상담메뉴삭제로 검색해서 모두 해제 또는 적용.					<p class="mb10">경기테크노파크의<br/>상담사업을 소개해<br/>드립니다.</p> -->
+<!-- 	상담메뉴삭제 : 관련 부분은 상담메뉴삭제로 검색해서 모두 해제 또는 적용.					<a href="/web/consult/webConsultIntro.do"><img src="../../common/img/main/btnGo.png" alt="자세히보기"/></a> -->
+						
+					</div>
+				</div>
+				
+				
+					
+					
+						<a href="/web/main/webMemberLogin.do;jsessionid=294DB68EAC7DAD83E93D0A82F9AC8B81"><button type="button" class="btn_mypage"><span class="blind">마이페이지 보기</span></button></a>
+					
+				
+				
+				<div class="bBg" style="display:none"></div>
+			</div>
+			<!--containerEnd-->
+
+			<div id="myPage">
+				<h2 class="mypageTitle"><img src="../../common/img/main/mypageTitle.png" alt="마이페이지"/></h2>
+				
+					
+					
+				
+
+				<div class="mypageQuick">
+					<ul>
+						
+							
+							
+						
+					</ul>
+				</div>
+				<button type="button" class="btn_mypageClose" onclick="closeMp()"><span class="blind">마이페이지 닫기</span></button>
+				<!--<div class="bBg"></div>-->
+			</div>
+			<!--mypageEnd-->
+		</div><!--containerWrapEnd-->
+		
+
+
+
+
+
+
+
+
+
+		</div>
+		<!--containerEnd-->
+
+		<!--footer-->
+		<div id="footer">
+			
+			<div class="bannerZone">
+				<h2>배너존</h2>
+				<ul class="c">
+					<li><button type="button" class="prev"><span class="blind">이전</span></button></li>
+					<li><button type="button" class="stop"><span class="blind">정지</span></button></li>
+					<li><button type="button" class="next"><span class="blind">다음</span></button></li>
+				</ul>
+				<div class="banner">
+					<ul class="bList">
+						
+					</ul>
+				</div>
+			</div>
+			
+			<h2 class="blind">하단컨텐츠</h2>
+			<div class="footerBox">
+				<ul class="fc">
+					<li><a href="#none" onclick="javascript : window.open('http://www.gtp.or.kr/antp/rule01.html','rule','scrollbars=yes,width=545,height=700')">개인정보처리방침</a></li>
+					<li><a href="#none" onclick="javascript : window.open('http://www.gtp.or.kr/antp/rule02.html','rule2','scrollbars=yes,width=545,height=450')">이메일무단수집거부</a></li>
+					<li><a href="#none" onclick="window.open('http://www.gtp.or.kr/antp/intro/greetings.jsp','','resizable=yes toolbar=yes menubar=yes location=yes scrollbars=yes status=yes channelmode=yes'); return false;" target="_blank" title="새창으로 열림">경기TP소개</a></li>
+					<li><a href="/web/main/webSitemap.do">사이트맵</a></li>
+					<li>
+						<select title="" onchange="window.open(this.value,'','resizable=yes toolbar=yes menubar=yes location=yes scrollbars=yes status=yes channelmode=yes'); return false;" title="관련기관 선택 [새창]">
+							<option value="http://www.gtp.or.kr">경기테크노파크</option>
+							<option value="http://www.technopark.or.kr">한국테크노파크협의회</option>
+							<option value="http://gdtp.or.kr">경기대전테크노파크</option>
+							<option value="http://www.itp.or.kr">인천테크노파크</option>
+							<option value="http://www.gwtp.or.kr">강원테크노파크</option>
+							<option value="http://www.ctp.or.kr">충남테크노파크</option>
+							<option value="http://www.daejeontp.or.kr">대전테크노파크</option>
+							<option value="http://www.cbtp.or.kr">충북테크노파크</option>
+							<option value="http://www.jbtp.or.kr">전북테크노파크</option>
+							<option value="http://gjtp.or.kr">광주테크노파크</option>
+							<option value="http://www.jntp.or.kr">전남테크노파크</option>
+							<option value="http://www.ttp.org">대구테크노파크</option>
+							<option value="http://www.ktp.or.kr">경북테크노파크</option>
+							<option value="http://www.mk21.org">경남테크노파크</option>
+							<option value="http://www.pohangtp.org">포항테크노파크</option>
+							<option value="http://www.utp.or.kr">울산테크노파크</option>
+							<option value="http://www.btp.or.kr">부산테크노파크</option>
+							<option value="http://www.seoultp.or.kr">서울테크노파크</option>
+						</select>
+					</li>
+				</ul>
+				<address>
+					<p class="fs11">경기도 안산시 상록구 해안로 705 | TEL : 031-500-3000 | FAX : 031-500-3301 | 사업자등록번호 : 134-82-03927</p>
+					<p class="fs10">COPYRIGHT(C) 2014 GYEONGGI TECHNOPARK ALL RIGHTS RESERVED.</p>
+				</address>
+			</div>
+		</div>
+		<!--footerEnd-->
+	</div>
+</body>
+</html>
+
+	</div>
+	<!--wrapEnd-->
+</body>
+</html>

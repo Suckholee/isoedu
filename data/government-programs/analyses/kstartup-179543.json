@@ -68,7 +68,7 @@
     "https://www.k-startup.go.kr/afile/fileDownload/ym2Ln": "7590af3b9babf54c1936bb447829dd653c3f8a77cf0f398ce4761907e51fa5bd",
     "https://www.k-startup.go.kr/afile/fileDownload/Tm2Ln": "415def7b5ab1d3e2ff4ea013e14f99e4c582c9bc5ef6afed41b8d374c6033c25"
   },
-  "lastAttachmentHashCheckedAt": "2026-10-26T00:01:22.300546+00:00",
+  "lastAttachmentHashCheckedAt": "2026-11-10T00:20:07.796965+00:00",
   "unresolved": [
     "문의전화지역국번첨부간차이",
     "공고11/26(화)요일오타·확정일정개별안내미확인",
@@ -162,5 +162,7 @@
       "공고 양식 선택",
       "회사 사실정보로 서류·사업계획서 작성 및 검토"
     ]
-  }
+  },
+  "latestHashEvidence": "evidence/kstartup-179543/attachment-check-2026-11-10.json",
+  "latestHashCheckScope": "오늘마감기존4첨부동일바이트대조·본문재분석아님·미해결유지"
 }

@@ -1,0 +1,24 @@
+.layout{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(240px,1fr);gap:18px;align-items:start;border-top:1px solid #e2e8e5;padding-top:16px}.layout>aside{grid-column:2;grid-row:1}.layout>div{grid-column:1;grid-row:1}@media(max-width:1100px){.layout{grid-template-columns:minmax(0,1fr)}.layout>aside{grid-column:1;grid-row:2}.layout>div{grid-column:1;grid-row:1}}
+
+.workspace{display:flex;flex-direction:column;flex:1;min-width:0;min-height:0;background:white;overflow:hidden}
+.tools{display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:46px;padding:5px 12px;border-bottom:1px solid #e2e8e5;flex-shrink:0}
+.tools strong{font-size:14px;white-space:nowrap}.tools small{font-size:11px;font-weight:400;color:#708078;margin-left:5px}.tools>div{display:flex;gap:6px;align-items:center;flex-wrap:wrap}.tools button{font-size:12px;white-space:nowrap;padding:6px 9px}.tools button[aria-expanded]{border:1px solid #e2e8e5;border-radius:5px}.tools button[aria-expanded=true]{background:#e8efec;color:#065f46}
+.settings{flex-shrink:0;overflow:auto;max-height:45%;font-size:13px;border-bottom:1px solid #e2e8e5}.settings:not([open]){display:none}.settings>div{padding:0 12px 12px}
+.fillLayout{flex:1;min-height:0;gap:0;padding:0;border:0;align-items:stretch;grid-template-columns:minmax(0,1.8fr) minmax(285px,1fr)}
+.editPanel{min-width:0;min-height:0;display:flex;flex-direction:column;overflow:hidden}.editPanel>details,.editPanel>[role=status]{flex-shrink:0;max-height:25%;overflow:auto;margin:0;border-radius:0;padding:8px 12px}
+.reviewPanel{flex-shrink:0;max-height:40%;overflow:auto;border-top:1px solid #dce5df;padding:10px 12px;font-size:12px}.reviewPanel>label,.reviewPanel>p,.reviewPanel>details{margin-bottom:8px}.reviewPanel[hidden]{display:none}
+.workspace>[role=status],.workspace>[role=alert]{font-size:12px;padding:6px 12px;flex-shrink:0}
+.fillLayout>aside{position:static;border-width:0 0 0 1px;border-radius:0;max-height:none;min-height:0;height:100%;overflow:hidden}
+@media(min-width:1051px) and (max-width:1100px){.fillLayout{grid-template-columns:minmax(0,1.5fr) minmax(265px,1fr)}.fillLayout>aside{grid-column:2;grid-row:1}.fillLayout>div{grid-column:1;grid-row:1}}
+@media(max-width:1050px){.workspace{overflow:visible;min-height:100%}.tools{align-items:flex-start;flex-wrap:wrap;padding:6px 8px}.tools>div{gap:3px}.tools button{font-size:11px;padding:5px}.fillLayout{display:flex;flex-direction:column;overflow:visible;flex:none}.fillLayout>div{order:0;min-height:65vh}.fillLayout>aside{order:1;min-height:540px;height:70vh;border-width:1px 0 0}.settings{max-height:45vh}.editPanel{overflow:visible}.reviewPanel{max-height:35vh}}
+
+.assistantPanel{display:flex;flex-direction:column;min-width:0;min-height:0;height:calc(100vh - 100px)}
+.tabs{display:flex;gap:4px;flex-shrink:0;height:36px;border-bottom:1px solid #e2e8e5;padding:0 8px;background:white}
+.tabs button{font-size:12px;padding:6px 10px;border-bottom:2px solid transparent;color:#748178}.tabs button[aria-selected=true]{color:#065f46;border-color:#065f46;font-weight:600}
+.assistantPanel>div[role=tabpanel]{flex:1;min-height:0;overflow:hidden}
+.assistantPanel>div[hidden]{display:none}
+.assistantPanel>div[role=tabpanel]>aside{height:100%;max-height:none;position:static;border:0;border-radius:0;overflow:hidden}
+.fillLayout>.assistantPanel{height:100%}
+@media(max-width:1050px){.fillLayout>.assistantPanel{height:75vh;min-height:580px}}
+
+.sourceStart{flex:1;min-height:0;overflow:hidden;max-width:850px;width:100%;margin:0 auto}

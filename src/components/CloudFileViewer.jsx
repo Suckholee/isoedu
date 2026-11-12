@@ -7,7 +7,7 @@ import InlinePdfViewer from './InlinePdfViewer';
 import styles from './CloudFileViewer.module.css';
 import {decodeCloudPreview} from '../lib/cloudPreview.mjs';
 import {getSecureDownloadUrl} from '../lib/storageVault';
-export default function CloudFileViewer({document:doc,onClose,reviewPanel,reviewNavigation}){
+export default function CloudFileViewer({document:doc,onClose,reviewPanel,reviewNavigation,inline=false}){
  const titleId=useId();
  const [preview,setPreview]=useState(''),[download,setDownload]=useState(''),[error,setError]=useState(''),[text,setText]=useState(false);
  useEffect(()=>{let active=true,blobUrl;setPreview('');setDownload('');setError('');setText(false);
@@ -22,8 +22,7 @@ export default function CloudFileViewer({document:doc,onClose,reviewPanel,review
  }else if(active)setText(true);
  }catch(e){if(active)setError(e.message);}})();return()=>{active=false;if(blobUrl)URL.revokeObjectURL(blobUrl);};},[doc.id,doc.companyId,doc.originalPath,doc.previewPath,doc.previewFormat,doc.previewEncoding]);
  if(typeof window==='undefined')return null;
- return createPortal(<ModalLayer onClose={onClose} className={styles.overlay}>
-  <section role="dialog" aria-modal="true" aria-labelledby={titleId} className={styles.viewer}>
+ const content=(<section role={inline?"region":"dialog"} aria-modal={inline?undefined:true} aria-labelledby={titleId} className={`${styles.viewer} ${inline?styles.inline:""}`}>
    <header className={styles.toolbar}>
     <button type="button" onClick={onClose} aria-label="문서 닫고 파일 목록으로"><ArrowLeft size={17}/>목록</button>
     <h2 id={titleId} className={styles.title} title={doc.title}>{doc.title}</h2>
@@ -39,6 +38,6 @@ export default function CloudFileViewer({document:doc,onClose,reviewPanel,review
    <div className={reviewPanel?styles.reviewBody:styles.body}><div className={styles.content}>
     {text?<pre className={styles.text}>{doc.contentDraft||'추출된 본문이 없습니다. 원본을 내려받아 확인해 주세요.'}</pre>:preview?(doc.previewFormat==='PDF'||(!doc.previewFormat&&doc.format==='PDF')?<InlinePdfViewer key={preview} url={preview} title={doc.title}/>:<iframe sandbox={doc.previewFormat==='HTML'?'':undefined} title={doc.title+' 원문'} src={preview} className={styles.frame}/>):!error&&<p role="status" className={styles.status}>원문을 준비하고 있습니다.</p>}
    </div>{reviewPanel&&<aside className={styles.reviewPanel} aria-label="문서 날짜 검토">{reviewPanel}</aside>}</div>
-  </section>
- </ModalLayer>,window.document.body);
+  </section>);
+ return inline?content:createPortal(<ModalLayer onClose={onClose} className={styles.overlay}>{content}</ModalLayer>,window.document.body);
 }

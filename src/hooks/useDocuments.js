@@ -34,6 +34,20 @@ export function useDocuments({ companyId, userId, enabled }) {
     return () => { cancelled = true; };
   }, [key, companyId, enabled]);
 
+  useEffect(() => {
+    const refresh = event => {
+      if (!enabled || event.detail?.companyId !== companyId) return;
+      queue.current = queue.current.catch(() => {}).then(async () => {
+        const documents = await repository().list(companyId);
+        if (scope.current !== key) return;
+        store.current = { key, documents, ready: true };
+        setSnapshot(store.current);
+      }).catch(err => { if (scope.current === key) setError(err.message); });
+    };
+    window.addEventListener('honestone:documents-saved', refresh);
+    return () => window.removeEventListener('honestone:documents-saved', refresh);
+  }, [key, companyId, enabled]);
+
   function mutate(operation) {
     const requestedKey = key;
     const task = queue.current.catch(() => {}).then(async () => {

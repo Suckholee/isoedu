@@ -1,0 +1,116 @@
+[
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/BZ2Ln",
+    "verifiedAt": "2026-11-03",
+    "status": "downloaded",
+    "sha256": "0abb6bc90f4a4b623d5303b9c716fc2748ae851ba4000fc91c329b0f0c8a86c6",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 137728,
+    "format": "HWP",
+    "file": "attachment-01.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 725,
+    "review": {
+      "at": "2026-11-03T00:03:26.113645+00:00",
+      "method": "text",
+      "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+    }
+  },
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/mS2Ln",
+    "verifiedAt": "2026-11-03",
+    "status": "downloaded",
+    "sha256": "96db8516427caaa3427d125d772d2f9d4b9487186a9f7bbfe4e6ca80c0a8a5d2",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 60928,
+    "format": "HWP",
+    "file": "attachment-02.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 885,
+    "review": {
+      "at": "2026-11-03T00:03:26.113645+00:00",
+      "method": "text",
+      "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+    }
+  },
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/nS2Ln",
+    "verifiedAt": "2026-11-03",
+    "status": "downloaded",
+    "sha256": "acaf32bc10fb4be395479903a16e4dd1d6b8aa92b6373d008d6b836f8a5bd29e",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 60928,
+    "format": "HWP",
+    "file": "attachment-03.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 4256,
+    "review": {
+      "at": "2026-11-03T00:03:26.113645+00:00",
+      "method": "text",
+      "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+    }
+  },
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/LS2Ln",
+    "verifiedAt": "2026-11-03",
+    "status": "downloaded",
+    "sha256": "c7f1bd548442e8d1b0023b86e7e42d075c323acbae9ef9c20c920765ddeadbec",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 75264,
+    "format": "HWP",
+    "file": "attachment-04.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 2422,
+    "review": {
+      "at": "2026-11-03T00:03:26.113645+00:00",
+      "method": "text",
+      "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+    }
+  },
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/AS2Ln",
+    "verifiedAt": "2026-11-03",
+    "status": "downloaded",
+    "sha256": "ad1cdf94c756cc5293ef99bcfdcede7f935401500032eeabfa65a2cae565fbe8",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 821248,
+    "format": "HWP",
+    "file": "attachment-05.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 29,
+    "review": {
+      "at": "2026-11-03T00:03:26.113645+00:00",
+      "method": "text",
+      "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+    }
+  },
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/oS2Ln",
+    "verifiedAt": "2026-11-03",
+    "status": "downloaded",
+    "sha256": "c77903e4c4912218363ad198ad94de8f86fe03a53fafca85b3e5e9cb24774855",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 137728,
+    "format": "HWP",
+    "file": "attachment-06.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 1845,
+    "review": {
+      "at": "2026-11-03T00:03:26.113645+00:00",
+      "method": "text",
+      "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+    }
+  }
+]

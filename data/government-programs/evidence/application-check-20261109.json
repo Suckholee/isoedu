@@ -1,0 +1,47 @@
+[
+  {
+    "id": "179728",
+    "url": "https://m.site.naver.com/2gKrl",
+    "checkedAt": "2026-11-09T00:08:22.389298+00:00",
+    "status": 200,
+    "finalUrl": "https://form.naver.com/response/JpvgbG8Lot9",
+    "evidence": "179728-publiccheck-20261109.html",
+    "bytes": 2411
+  },
+  {
+    "id": "179736",
+    "url": "https://m.site.naver.com/2jTh2",
+    "checkedAt": "2026-11-09T00:08:22.389594+00:00",
+    "status": 200,
+    "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdaKCR_VfPzMbZAePA2XnmdBeeSp34YzOirsEznAHnjojvkIQ/viewform?usp=send_form",
+    "evidence": "179736-publiccheck-20261109.html",
+    "bytes": 93162
+  },
+  {
+    "id": "179736-poc",
+    "url": "https://m.site.naver.com/2jPzT",
+    "checkedAt": "2026-11-09T00:08:22.389708+00:00",
+    "status": 200,
+    "finalUrl": "https://sandan.koreatech.ac.kr/kor/CMS/Board/Board.do?mCode=MN062&searchCategory=c001&mgr_seq=9&mode=view&mgr_seq=9&board_seq=3886",
+    "evidence": "179736-poc-publiccheck-20261109.html",
+    "bytes": 179115
+  },
+  {
+    "id": "1071736",
+    "url": "https://www.smes.go.kr/globalcerti/",
+    "checkedAt": "2026-11-09T00:08:22.390085+00:00",
+    "status": 200,
+    "finalUrl": "https://www.smes.go.kr/globalcerti/",
+    "evidence": "1071736-publiccheck-20261109.html",
+    "bytes": 252
+  },
+  {
+    "id": "1071736-esg",
+    "url": "https://kdoctor.kosmes.or.kr/esgplatform/service/intro_esg.do",
+    "checkedAt": "2026-11-09T00:08:22.390185+00:00",
+    "status": 200,
+    "finalUrl": "https://kdoctor.kosmes.or.kr/esgplatform/service/intro_esg.do",
+    "evidence": "1071736-esg-publiccheck-20261109.html",
+    "bytes": 39798
+  }
+]

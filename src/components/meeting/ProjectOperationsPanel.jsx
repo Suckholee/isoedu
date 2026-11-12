@@ -1,4 +1,6 @@
 "use client";
+import {usePathname,useRouter} from 'next/navigation';
+import {parsePreparationPath,preparationPath} from '../../lib/preparationRoutes.mjs';
 import { useEffect, useRef, useState } from "react";
 import { useAuth } from "../../context/AuthContext";
 import { supabase } from "../../lib/supabaseClient";
@@ -19,6 +21,9 @@ import { validateUploadFile, uploadDocumentFile, getSecureDownloadUrl } from "..
 import {readDocumentDates} from "../../lib/meeting/readDocumentDates.mjs";
 import CloudFileViewer from "../CloudFileViewer";
 import DocumentChecksPanel,{DocumentDateFields} from "./DocumentChecksPanel";
+import { policyCatalog, typeRequestItems } from "../../lib/meeting/documentValidity.mjs";
+import VentureDocumentWorkspace from "../venture/VentureDocumentWorkspace";
+import {OFFICIAL_DOCUMENTS,VENTURE_GUIDE_URL} from "../../lib/venture/catalog.mjs";
 export default function ProjectOperationsPanel({
   project,
   documents = [],
@@ -27,8 +32,11 @@ export default function ProjectOperationsPanel({
   canEdit,
   onChanged,
   enterprise=false,
+  focused=false,
+  requestId=null,
 }) {
   const { user, profile } = useAuth();
+  const pathname=usePathname(),router=useRouter(),detailRoute=parsePreparationPath(pathname);
   const [record, setRecord] = useState(null),
     [data, setData] = useState({ ...EMPTY_OPERATIONS }),
     [requests, setRequests] = useState([]),
@@ -106,6 +114,7 @@ export default function ProjectOperationsPanel({
     }
   }
   function viewFile(doc, path) {
+    if(focused&&detailRoute&&detailRoute.fileId!==doc.id)router.push(preparationPath({...detailRoute,fileId:doc.id,documentId:null,companyId:project.companyId}),{scroll:false});
     const originalPath = path || doc.originalPath || doc.fileUrl;
     const format = String(
       doc.format ||
@@ -125,7 +134,19 @@ export default function ProjectOperationsPanel({
       previewFormat: format,
     });
   }
+  useEffect(()=>{
+    if(!focused||!detailRoute?.fileId){setReader(null);return;}
+    const file=documents.find(d=>d.id===detailRoute.fileId&&d.companyId===project.companyId);
+    if(file)viewFile(file,file.originalPath||file.fileUrl);
+  },[detailRoute?.fileId,focused,project.id,documents]);
+  function closeReader(){setReader(null);if(focused&&detailRoute?.fileId)router.replace(preparationPath({...detailRoute,fileId:null,companyId:project.companyId}),{scroll:false});}
   async function reloadChecks(){await load();await onChanged?.();}
+  async function reloadRequestList(){
+    const scope=identity.current;
+    const result=await supabase.from('project_document_requests').select('*').eq('project_id',project.id).order('request_key');
+    if(result.error)throw result.error;
+    if(scope===identity.current)setRequests(result.data);
+  }
   const files = documents.filter((d) => d.companyId === project.companyId),
     prepare = !enterprise && team?.canPrepare === true;
   async function review(r, status, documentId) {
@@ -211,10 +232,12 @@ export default function ProjectOperationsPanel({
       if(id===identity.current)void readDates(saved,file);
     }, "원본 파일을 보관하고 제출했습니다. 컨설턴트 검토 대기입니다.");
   }
+  const visibleRequests=focused&&requestId!=='overview'?requests.filter(r=>r.id===requestId):requests;
+  const activeRequest=requests.find(r=>r.id===requestId);
   return (
-    <section className="platform-card space-y-3">
-      <header className="flex justify-between gap-2">
-        <h2>{enterprise?'요청 서류 제출':'고객 제출·심사 운영'}</h2>
+    <section className={focused&&requestId==='business-plan'?'venture-focused-operations':'platform-card space-y-3'}>
+      <header style={{display:focused&&requestId==='business-plan'?'none':undefined}} className="flex justify-between gap-2">
+        <h2>{focused?(requestId==='business-plan'?'작성·검토·저장':'매뉴얼·원본 업로드'):enterprise?'필요문서 체크리스트':'고객 제출·심사 운영'}</h2>
         <button
           disabled={busy}
           className="text-sm underline text-blue-700"
@@ -235,6 +258,8 @@ export default function ProjectOperationsPanel({
       )}
       {loaded && (
         <>
+          {!focused&&<VentureDocumentWorkspace applicationType={data.applicationType} key={`${user?.id}/${project.id}`} project={project} documents={files} canEdit={canEdit} compact={focused&&requestId==='business-plan'} selectedRequest={activeRequest} requests={requests} onChecklistChanged={reloadRequestList}/>}
+          <div hidden={focused}>
           <div className="flex gap-2 flex-wrap text-xs">
             {Object.entries(OPERATION_STATES).map(([key, states]) => (
               <span className="bg-slate-100 rounded px-2 py-1" key={key}>
@@ -406,9 +431,11 @@ export default function ProjectOperationsPanel({
                 발급 인증서 열람
               </button>
             )}
+          </div>
+          <div hidden={focused&&requestId==='business-plan'}>
           <div className="flex justify-between flex-wrap gap-2 border-t pt-3">
             <strong className="text-sm">
-              고객 제출 요청 · {requests.length}개
+              {focused?(activeRequest?.title||'작성 문서 준비'):'필요문서 체크리스트'} · {visibleRequests.length}개
             </strong>
 
           </div>
@@ -424,16 +451,28 @@ export default function ProjectOperationsPanel({
                 </tr>
               </thead>
               <tbody>
-                {requests.map((r) => {
+                {visibleRequests.map((r) => {
                   const doc = files.find((d) => d.id === r.document_id);
+                  const guideType = r.policy?.applicationType || record?.data?.applicationType;
+                  const guide = policyCatalog.types[guideType];
+                  const hasGuide = guide && typeRequestItems(guideType).some(item => item.key === r.request_key);
+                  const official = guideType==='VENTURE_GROWTH'&&OFFICIAL_DOCUMENTS.find(item=>item.key===r.request_key);
                   return (
                     <tr key={r.id}>
                       <td>
                         <strong>{r.title}</strong>
-                        {r.conditional && (
+                        {(official?official.conditional:r.conditional) && (
                           <span className="text-xs ml-1">(해당 시)</span>
                         )}
-                        <p className="text-xs text-slate-500">{r.guidance}</p>
+                        <p className="text-xs text-slate-500">{official?`[${official.group}] ${official.guidance}`:r.guidance}</p>
+                        {(hasGuide||official)&&(
+                          <details open={focused||undefined} className="text-xs mt-2">
+                            <summary className="cursor-pointer text-blue-700">매뉴얼·준비 안내</summary>
+                            <p className="my-2">보유한 원본을 업로드하거나 회사 문서함의 파일을 선택해 제출하세요. 발급기관의 증명서·경력 증빙은 실제 원본이 필요하며 AI 초안으로 대체할 수 없습니다.</p>
+                            <a className="text-blue-700 underline" href={official?VENTURE_GUIDE_URL:guide.url} target="_blank" rel="noreferrer">유형별 준비 매뉴얼 열기</a>
+                            <p className="text-slate-500 mt-1">{official?'공식 공개자료 확인: 2026-11-05':'어니스톤 운영 안내: '+policyCatalog.reviewedAt} · 최종 제출 범위는 신청기관에서 확인합니다.</p>
+                          </details>
+                        )}
                       </td>
                       <td>
                         {doc && (
@@ -536,16 +575,18 @@ export default function ProjectOperationsPanel({
                     </tr>
                   );
                 })}
-                {!requests.length && (
+                {!visibleRequests.length && (
                   <tr>
                     <td colSpan={4} className="text-sm text-slate-500 py-3">
-                      아직 요청한 서류가 없습니다.
+                      {focused&&requestId==='business-plan'?'사업계획서는 아래 AI 작성 영역에서 생성·검토·저장하세요. 보유한 사업계획서는 회사 문서함에 올릴 수 있습니다.':'아직 요청한 서류가 없습니다.'}
                     </td>
                   </tr>
                 )}
               </tbody>
             </table>
           </div>
+          </div>
+          {focused&&(requestId==='business-plan'||data.applicationType==='VENTURE_GROWTH')&&<VentureDocumentWorkspace applicationType={data.applicationType} key={`${user?.id}/${project.id}`} project={project} documents={files} canEdit={canEdit} compact={focused&&requestId==='business-plan'} selectedRequest={activeRequest} requests={requests} onChecklistChanged={reloadRequestList}/>}
           {project.kind === "ISO" && (
             <div className="text-sm border-t pt-3 space-y-2">
               <button
@@ -586,7 +627,7 @@ export default function ProjectOperationsPanel({
         </>
       )}
       {reader && (
-        <CloudFileViewer document={reader} onClose={() => setReader(null)} />
+        <CloudFileViewer document={reader} inline={focused} onClose={closeReader} />
       )}
     </section>
   );

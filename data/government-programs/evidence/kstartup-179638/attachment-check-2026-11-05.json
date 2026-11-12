@@ -1,0 +1,16 @@
+[
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/v1g-sLhGpA-4bnpQ6Ia_XB31DKxJr3wxmbPzKENrI9oRJ8nw",
+    "verifiedAt": "2026-11-05",
+    "status": "downloaded",
+    "sha256": "18904ee5e34b67c3f40fe6ce9c4a72b907bcd66fe54662af701fd903c0ec7094",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 4964710,
+    "format": "HWPX",
+    "file": "attachment-01.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 5142
+  }
+]

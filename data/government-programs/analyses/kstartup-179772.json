@@ -1,0 +1,174 @@
+{
+  "programId": "kstartup-179772",
+  "title": "2026 전북콘텐츠코리아랩 AI 활용 콘텐츠(캐릭터) 아이디어 발굴 캠프",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-12T00:09:09.610510+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179772",
+  "reviewScope": "K-Startup 접수기간 / 진흥원 공고 제2026-151호 / 모집 PDF 1~5쪽 전문 및 전체 시각 / Google 폼 필수·선택·동의 문항",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v14rraLa5qqDgveJWfFhw_GVGCS4YEIlwOyDyiMj02dszjTg",
+      "verifiedAt": "2026-11-11T23:59:52.775285+00:00",
+      "status": "downloaded",
+      "sha256": "ac126da38fd0ee3e9f7155936cca3522060815e72a966e98407da6056d91c96f",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 244748,
+      "format": "PDF",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 3372,
+      "review": {
+        "at": "2026-11-12T00:09:09.610510+00:00",
+        "scope": "K-Startup 접수기간 / 진흥원 공고 제2026-151호 / 모집 PDF 1~5쪽 전문 및 전체 시각 / Google 폼 필수·선택·동의 문항",
+        "method": "text/visual scope recorded in reviewScope"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/v14rraLa5qqDgveJWfFhw_GVGCS4YEIlwOyDyiMj02dszjTg": "ac126da38fd0ee3e9f7155936cca3522060815e72a966e98407da6056d91c96f"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-12T00:09:09.610510+00:00",
+  "eligibility": {
+    "summary": "주민등록상 전북특별자치도 거주 만 18~39세 청년 15명. 창업 전 단계도 가능하며 업력·매출·직원 규모 제한 미기재.",
+    "companyFields": [
+      "생년월일",
+      "주민등록상 거주지(폼 읍·면·동까지)",
+      "캐릭터 디자인 경험",
+      "창작 아이디어·타깃 및 활용",
+      "창업 의지와 보유 역량",
+      "양일 참여 가능"
+    ],
+    "reference": "K-Startup 접수기간 / 진흥원 공고 제2026-151호 / 모집 PDF 1~5쪽 전문 및 전체 시각 / Google 폼 필수·선택·동의 문항"
+  },
+  "exclusions": {
+    "items": [
+      "접수기한 이후 미접수. 허위 서류 시 선정·지원 취소 가능. 연락두절·무단결석·지각 누적 시 수료 및 후속 참여 제한 가능."
+    ],
+    "reference": "K-Startup 접수기간 / 진흥원 공고 제2026-151호 / 모집 PDF 1~5쪽 전문 및 전체 시각 / Google 폼 필수·선택·동의 문항"
+  },
+  "support": {
+    "summary": "전액 무료, 양일 중식, 수료증·우수 결과물 시상, 다음 해 제작지원 신청 가점 1점(신청서 안내). 현금 보조금·자부담 미기재. 수료는 산출물 제출 및 교육 70% 이상 참여.",
+    "reference": "K-Startup 접수기간 / 진흥원 공고 제2026-151호 / 모집 PDF 1~5쪽 전문 및 전체 시각 / Google 폼 필수·선택·동의 문항"
+  },
+  "period": {
+    "start": "2026-11-10",
+    "end": "2026-11-23",
+    "deadlineTime": "15:00",
+    "timezone": "Asia/Seoul",
+    "reference": "K-Startup 접수기간 / 진흥원 공고 제2026-151호 / 모집 PDF 1~5쪽 전문 및 전체 시각 / Google 폼 필수·선택·동의 문항",
+    "checkedAt": "2026-11-12T00:17:22.034859+00:00",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179772",
+    "attachmentUrls": [
+      "https://www.k-startup.go.kr/afile/fileDownload/v14rraLa5qqDgveJWfFhw_GVGCS4YEIlwOyDyiMj02dszjTg"
+    ],
+    "startTime": "09:00"
+  },
+  "application": {
+    "summary": "공개 Google 폼으로 신청. 11/28~29 각 10:00~18:00 전주시 덕진구 만성북로 21-26 진흥원 1층 JCON SPACE. 정원 초과 시 조기 마감 가능.",
+    "reference": "K-Startup 접수기간 / 진흥원 공고 제2026-151호 / 모집 PDF 1~5쪽 전문 및 전체 시각 / Google 폼 필수·선택·동의 문항",
+    "url": "https://docs.google.com/forms/d/e/1FAIpQLSdS02mXhO6ICKltlsNbqrwOnIGCq7xDrR7MvNcuyeA0sWqhMA/viewform?usp=send_form"
+  },
+  "requiredDocuments": [
+    {
+      "name": "Google 참가 신청서",
+      "condition": "성명·생년월일, 연락처·메일, 읍·면·동 주소, 디자인 경험, 캐릭터 아이디어, 창업 의지·역량, 개인정보 동의 문항 필수. 요청사항 선택. 별도 업로드 문항 없음.",
+      "reference": "공개 신청서 문항 1~7 및 동의서(보유 5년)"
+    }
+  ],
+  "businessPlan": {
+    "format": "계획서는 신청 시 첨부가 아닌 캠프 산출물. 지정 분량·파일 양식 미기재. 최종 발표 1인 4분.",
+    "limit": null,
+    "sections": [
+      {
+        "name": "캐릭터 설정",
+        "items": [
+          "콘셉트·대상·메시지·세계관·스토리"
+        ],
+        "limit": null
+      },
+      {
+        "name": "비주얼 시트",
+        "items": [
+          "실루엣·포즈·소품·색감"
+        ],
+        "limit": null
+      },
+      {
+        "name": "사업계획",
+        "items": [
+          "문제·해결·시장·BM·실행계획, 수치와 근거, 발표자료"
+        ],
+        "limit": null
+      }
+    ],
+    "reference": "K-Startup 접수기간 / 진흥원 공고 제2026-151호 / 모집 PDF 1~5쪽 전문 및 전체 시각 / Google 폼 필수·선택·동의 문항"
+  },
+  "evaluation": {
+    "summary": "서류심사 및 전북 거주 확인. 배점 미기재. 캠프 산출물 심사는 신청자 선발과 별개.",
+    "reference": "K-Startup 접수기간 / 진흥원 공고 제2026-151호 / 모집 PDF 1~5쪽 전문 및 전체 시각 / Google 폼 필수·선택·동의 문항"
+  },
+  "contact": {
+    "name": "운영 1533-4260 / ib_office@naver.com. 진흥원 063-288-8354/063-282-2460, 평일 10~18시.",
+    "reference": "K-Startup 접수기간 / 진흥원 공고 제2026-151호 / 모집 PDF 1~5쪽 전문 및 전체 시각 / Google 폼 필수·선택·동의 문항"
+  },
+  "unresolved": [
+    "공고 PDF 2쪽 선발 발표 11/25, 5쪽 추진일정 결과 통보 11/26으로 차이. 공식 페이지에도 별도 정정 없음.",
+    "진흥원 게시물 내부 소제목에 별개 홍보 콘텐츠 제작 교육 문구 잔존. 게시물 제목·공고번호·첨부·본문 모집명으로 캐릭터 캠프 식별.",
+    "진흥원 첨부 응답은 PDF 대신 403 Forbidden HTML을 반환했습니다. K-Startup 공고 PDF 5쪽은 열람했으며 진흥원 사본 비교는 재시도 필요."
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179772",
+    "companyId": null,
+    "permission": "권한회사프로필확보후근거별검토·현재신청가능확정아님",
+    "steps": [
+      "회사필드/증빙확인",
+      "충돌/미확인해결",
+      "S12양식·S13회사정보로서류/계획작성"
+    ]
+  },
+  "evidence": {
+    "detail": "evidence/kstartup-179772/detail.html",
+    "detailFetchedAt": "2026-11-11T23:58:47.835Z",
+    "attachmentManifest": "evidence/kstartup-179772/attachment-check-2026-11-12.json",
+    "publicChecks": [
+      {
+        "id": "179772",
+        "url": "https://forms.gle/pqE4dQ3izE16pCVC9",
+        "checkedAt": "2026-11-12T00:00:06.395498+00:00",
+        "status": 200,
+        "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdS02mXhO6ICKltlsNbqrwOnIGCq7xDrR7MvNcuyeA0sWqhMA/viewform?usp=send_form",
+        "evidence": "179772-publiccheck-20261112.html",
+        "bytes": 120977
+      },
+      {
+        "id": "179772-host",
+        "url": "https://www.jcon.or.kr/board/view.php?bbsId=BBSMSTR_000000000001&nttId=4694&pageId=C000000016",
+        "checkedAt": "2026-11-12T00:08:14.842392+00:00",
+        "status": 200,
+        "finalUrl": "https://www.jcon.or.kr/board/view.php?bbsId=BBSMSTR_000000000001&nttId=4694&pageId=C000000016",
+        "evidence": "179772-host-publiccheck-20261112.html",
+        "bytes": 31277
+      }
+    ],
+    "hostAttachmentFailure": {
+      "url": "https://www.jcon.or.kr/board/files/download.php?nttId=4694&bbsId=BBSMSTR_000000000001&fileSn=1",
+      "reason": "진흥원 첨부 응답은 PDF 대신 403 Forbidden HTML을 반환했습니다. K-Startup 공고 PDF 5쪽은 열람했으며 진흥원 사본 비교는 재시도 필요.",
+      "file": "evidence/kstartup-179772/host-download-error-2026-11-12.html",
+      "checkedAt": "2026-11-12T00:17:22.034859+00:00"
+    }
+  },
+  "scheduleConflict": {
+    "summary": "선발 발표 11/25(첨부 p2)와 결과 안내 11/26(첨부 p5) 표기가 다름. 모집 마감은 11/23 15시 일치.",
+    "url": "https://www.jcon.or.kr/board/view.php?bbsId=BBSMSTR_000000000001&nttId=4694&pageId=C000000016",
+    "checkedAt": "2026-11-12T00:17:22.034859+00:00"
+  }
+}

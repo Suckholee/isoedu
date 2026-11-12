@@ -1,0 +1,197 @@
+{
+  "programId": "kstartup-179690",
+  "title": "2026년 경희대학교 캠퍼스타운 제6회 데모데이: 刮目相對괄목상대",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-11T02:37:54.824912+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179690",
+  "reviewScope": "K-Startup 신청기간·행사 안내 / 포스터 2면 전면 시각 및 대체 텍스트 2건 / 공식 초청장 양식·공개 RSVP 상태",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1B320_YAdwNySdxZq0LVTvpnSDHzC655woH09xWiJs45FNg",
+      "verifiedAt": "2026-11-11",
+      "status": "downloaded",
+      "sha256": "0b0028e4d4333463853232bf35e6bf0a498cd933ef7be9615ea9bb03895e0503",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 353226,
+      "format": "IMAGE",
+      "file": "attachment-01.bin",
+      "contentType": "image/jpeg;charset=UTF-8",
+      "review": {
+        "at": "2026-11-11T02:37:54.824912+00:00",
+        "scope": "K-Startup 신청기간·행사 안내 / 포스터 2면 전면 시각 및 대체 텍스트 2건 / 공식 초청장 양식·공개 RSVP 상태",
+        "method": "visual"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1kiqgNAB4FEqFagkRmaSXXn4Vj6CX8or46iLD14T68C9YRA",
+      "verifiedAt": "2026-11-11",
+      "status": "downloaded",
+      "sha256": "57aeda33de7e31640a4984d52b5f2e854f8307001df539f8905652946d0be250",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 402733,
+      "format": "IMAGE",
+      "file": "attachment-02.bin",
+      "contentType": "image/jpeg;charset=UTF-8",
+      "review": {
+        "at": "2026-11-11T02:37:54.824912+00:00",
+        "scope": "K-Startup 신청기간·행사 안내 / 포스터 2면 전면 시각 및 대체 텍스트 2건 / 공식 초청장 양식·공개 RSVP 상태",
+        "method": "visual"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1ON-y7n7HZX5Mm5BuqkQRX_ogcWfAHItvA673Ptx-v8Q16Q",
+      "verifiedAt": "2026-11-11",
+      "status": "downloaded",
+      "sha256": "b82b8677393fc861ece284ac18cea96a0bc9d10f27724b8f6bcc0e204b252d78",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 768,
+      "format": "OTHER",
+      "file": "attachment-03.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "review": {
+        "at": "2026-11-11T02:37:54.824912+00:00",
+        "scope": "K-Startup 신청기간·행사 안내 / 포스터 2면 전면 시각 및 대체 텍스트 2건 / 공식 초청장 양식·공개 RSVP 상태",
+        "method": "text/visual scope recorded in reviewScope"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v19_u7pVFJwMyFbGuINTtuDxfy7bGsMsGlegbctgdd6xXn_Q",
+      "verifiedAt": "2026-11-11",
+      "status": "downloaded",
+      "sha256": "eed7dc157f6390004d5e0c597871f84fc9da3681a4104cd12028d9103691d312",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 1705,
+      "format": "OTHER",
+      "file": "attachment-04.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "review": {
+        "at": "2026-11-11T02:37:54.824912+00:00",
+        "scope": "K-Startup 신청기간·행사 안내 / 포스터 2면 전면 시각 및 대체 텍스트 2건 / 공식 초청장 양식·공개 RSVP 상태",
+        "method": "text/visual scope recorded in reviewScope"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/v1B320_YAdwNySdxZq0LVTvpnSDHzC655woH09xWiJs45FNg": "0b0028e4d4333463853232bf35e6bf0a498cd933ef7be9615ea9bb03895e0503",
+    "https://www.k-startup.go.kr/afile/fileDownload/v1kiqgNAB4FEqFagkRmaSXXn4Vj6CX8or46iLD14T68C9YRA": "57aeda33de7e31640a4984d52b5f2e854f8307001df539f8905652946d0be250",
+    "https://www.k-startup.go.kr/afile/fileDownload/v1ON-y7n7HZX5Mm5BuqkQRX_ogcWfAHItvA673Ptx-v8Q16Q": "b82b8677393fc861ece284ac18cea96a0bc9d10f27724b8f6bcc0e204b252d78",
+    "https://www.k-startup.go.kr/afile/fileDownload/v19_u7pVFJwMyFbGuINTtuDxfy7bGsMsGlegbctgdd6xXn_Q": "eed7dc157f6390004d5e0c597871f84fc9da3681a4104cd12028d9103691d312"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-11T02:37:54.824912+00:00",
+  "eligibility": {
+    "summary": "데모데이 참석자 및 발표기업 미팅 희망자. 발표 8개사는 이미 지정. 업종·소재지·업력·규모 제한 미기재.",
+    "companyFields": [
+      "참석 또는 미팅 목적",
+      "신청자 소속·직책",
+      "연락처",
+      "미팅 희망기업"
+    ],
+    "reference": "K-Startup 신청기간·행사 안내 / 포스터 2면 전면 시각 및 대체 텍스트 2건 / 공식 초청장 양식·공개 RSVP 상태"
+  },
+  "exclusions": {
+    "items": [
+      "별도 자격 제외 미기재",
+      "필수 개인정보 동의 거부 시 접수 제한",
+      "행사 주차권 미제공"
+    ],
+    "reference": "K-Startup 신청기간·행사 안내 / 포스터 2면 전면 시각 및 대체 텍스트 2건 / 공식 초청장 양식·공개 RSVP 상태"
+  },
+  "support": {
+    "summary": "8개사 IR 발표·네트워킹·경품. 참가 지원금·비율·자부담 미기재.",
+    "reference": "K-Startup 신청기간·행사 안내 / 포스터 2면 전면 시각 및 대체 텍스트 2건 / 공식 초청장 양식·공개 RSVP 상태"
+  },
+  "period": {
+    "start": "2026-11-02",
+    "end": "2026-11-19",
+    "deadlineTime": "23:59",
+    "timezone": "Asia/Seoul",
+    "reference": "K-Startup 신청기간·행사 안내 / 포스터 2면 전면 시각 및 대체 텍스트 2건 / 공식 초청장 양식·공개 RSVP 상태",
+    "checkedAt": "2026-11-11T02:38:50.665484+00:00",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179690"
+  },
+  "application": {
+    "summary": "초청장 내 사전등록 또는 기업 연락처 전달을 별도 신청. 11/19 13:00~17:30 동대문구 왕산로 200 타워동 5층 아르코 로즈홀. 11/11 공개 상태 응답 open. 미팅 일정 별도 안내.",
+    "reference": "K-Startup 신청기간·행사 안내 / 포스터 2면 전면 시각 및 대체 텍스트 2건 / 공식 초청장 양식·공개 RSVP 상태"
+  },
+  "requiredDocuments": [
+    {
+      "name": "참석 사전등록",
+      "condition": "참석 희망 시 성함·소속·직책·이메일·연락처·수집 이용 동의",
+      "reference": "공식 초청장 사전등록 양식"
+    },
+    {
+      "name": "미팅 신청",
+      "condition": "미팅 희망기업 1곳·목적·성함·소속·직책·연락처·수집 이용 및 제3자 제공 동의",
+      "reference": "공식 초청장 미팅 양식"
+    }
+  ],
+  "businessPlan": {
+    "format": "별도 사업계획서 미기재. 미팅 신청은 미팅 목적 입력.",
+    "limit": null,
+    "sections": [],
+    "reference": "K-Startup 신청기간·행사 안내 / 포스터 2면 전면 시각 및 대체 텍스트 2건 / 공식 초청장 양식·공개 RSVP 상태"
+  },
+  "evaluation": {
+    "summary": "참석·미팅 신청 평가 배점 미기재. 미팅 정보는 선택 기업에 제공되며 보유 기한은 2027-02-19.",
+    "reference": "K-Startup 신청기간·행사 안내 / 포스터 2면 전면 시각 및 대체 텍스트 2건 / 공식 초청장 양식·공개 RSVP 상태"
+  },
+  "contact": {
+    "name": "경희대 서울 캠퍼스타운센터 02-961-9514~5 / camtacenter@khu.ac.kr",
+    "reference": "K-Startup 신청기간·행사 안내 / 포스터 2면 전면 시각 및 대체 텍스트 2건 / 공식 초청장 양식·공개 RSVP 상태"
+  },
+  "unresolved": [
+    "K-Startup 명목 종료 11/19 23:59가 행사 종료 17:30 이후. 초청장과 현재 접수 상태 응답에서 각각 실제 종료 시각은 확인되지 않음."
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179690",
+    "companyId": null,
+    "permission": "권한회사프로필확보후근거별검토·현재신청가능확정아님",
+    "steps": [
+      "회사필드/증빙확인",
+      "충돌/미확인해결",
+      "S12양식·S13회사정보로서류/계획작성"
+    ]
+  },
+  "evidence": {
+    "detail": "evidence/kstartup-179690/detail.html",
+    "detailFetchedAt": "2026-11-11T02:27:27.394Z",
+    "attachmentManifest": "evidence/kstartup-179690/attachment-check-2026-11-11.json",
+    "publicChecks": [
+      {
+        "id": "179690",
+        "url": "https://inviteme.kr/6th-KHUDemoDay/",
+        "checkedAt": "2026-11-11T02:33:52.583078+00:00",
+        "status": 200,
+        "finalUrl": "https://inviteme.kr/6th-KHUDemoDay/",
+        "evidence": "179690-publiccheck-20261111.html",
+        "bytes": 12339
+      },
+      {
+        "id": "179690-rsvp",
+        "url": "https://inviteme.kr/6th-KHUDemoDay/js/rsvp.js?ver=1793596923",
+        "checkedAt": "2026-11-11T02:36:04.954360+00:00",
+        "status": 200,
+        "finalUrl": "https://inviteme.kr/6th-KHUDemoDay/js/rsvp.js?ver=1793596923",
+        "evidence": "179690-rsvp-publiccheck-20261111.html",
+        "bytes": 8187
+      }
+    ],
+    "liveRegistrationStatus": {
+      "url": "https://inviteme.kr/6th-KHUDemoDay/registration_status.php",
+      "result": "open",
+      "checkedAt": "2026-11-11T02:38:50.665484+00:00",
+      "file": "evidence/179690-registration-status-20261111.json"
+    }
+  }
+}

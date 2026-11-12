@@ -1,0 +1,44 @@
+{
+  "status": 200,
+  "records": 87,
+  "analyses": 55,
+  "dates": [
+    {
+      "id": "kstartup-179607",
+      "deadlineTime": "16:00",
+      "analysis": "partial",
+      "applicationStartDate": "2026-10-22",
+      "applicationEndDate": "2026-10-30"
+    },
+    {
+      "id": "kstartup-179605",
+      "deadlineTime": "14:00",
+      "analysis": "partial",
+      "applicationStartDate": "2026-10-22",
+      "applicationEndDate": "2026-11-02"
+    },
+    {
+      "id": "kstartup-179624",
+      "deadlineTime": "23:59",
+      "analysis": "partial",
+      "applicationStartDate": "2026-10-26",
+      "applicationEndDate": "2026-11-01"
+    },
+    {
+      "id": "kstartup-179576",
+      "deadlineTime": "18:00",
+      "analysis": "partial",
+      "applicationStartDate": "2026-10-19",
+      "applicationEndDate": "2026-10-29"
+    },
+    {
+      "id": "kstartup-179616",
+      "deadlineTime": "23:59",
+      "analysis": "partial",
+      "applicationStartDate": "2026-10-26",
+      "applicationEndDate": "2026-11-01"
+    }
+  ],
+  "screen": "미검증",
+  "localHttpError": "fetch failed"
+}

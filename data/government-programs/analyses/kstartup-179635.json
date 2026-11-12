@@ -1,0 +1,106 @@
+{
+  "programId": "kstartup-179635",
+  "title": "[도봉구청년창업센터] 2026 도봉 오픈 창업 스쿨 - 2027 NEXT STAGE",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-08T10:18:01.435819+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179635",
+  "reviewScope": "상세전문·공개Google폼전체문항/안내대조. 실제첨부분석아닌폼분석·양식미확보,2026-11-08",
+  "attachments": [],
+  "attachmentContentHashes": {},
+  "lastAttachmentHashCheckedAt": "2026-11-08T10:18:01.435819+00:00",
+  "eligibility": {
+    "summary": "19~45세1인창업희망/3년미만예비초기,도봉구민우선10명·전기술분야. 상단연령20~39/40이상분류대본문19~45는본문기준기록.",
+    "companyFields": [
+      "생년월일",
+      "주소/도봉구민",
+      "개업일·창업여부",
+      "아이템·계획",
+      "교육100%참여/IR완성",
+      "센터홈페이지ID"
+    ],
+    "reference": "상세전문·공개Google폼전체문항/안내대조. 실제첨부분석아닌폼분석·양식미확보,2026-11-08"
+  },
+  "exclusions": {
+    "items": [
+      "미자격연령·업력확인",
+      "온라인+서류메일미완료접수불인정"
+    ],
+    "reference": "상세전문·공개Google폼전체문항/안내대조. 실제첨부분석아닌폼분석·양식미확보,2026-11-08"
+  },
+  "support": {
+    "summary": "교육11/17·20·25 14~16,그룹멘토11/19·23 14~18,모의IR11/30 14~18 창동씨드큐브C동4층. 100%출석+최종발표완성 수료 및SNS후기2회이상조건 활동비10만원. 보조비율별도미기재.",
+    "reference": "상세전문·공개Google폼전체문항/안내대조. 실제첨부분석아닌폼분석·양식미확보,2026-11-08"
+  },
+  "period": {
+    "start": "2026-10-27",
+    "end": "2026-11-12",
+    "deadlineTime": "16:00",
+    "timezone": "Asia/Seoul",
+    "reference": "상세전문·공개Google폼전체문항/안내대조. 실제첨부분석아닌폼분석·양식미확보,2026-11-08"
+  },
+  "application": {
+    "summary": "Googleform+dobongstartup@gmail.com 지정서류서명날인PDF메일 모두완료시접수. 폼센터홈페이지ID/대표명/전화/메일/생년/등본상동주소·창업여부·교육확인필수;성별/모두의창업경험 선택. 폼소개등본3개월 vs확인란6개월 충돌.",
+    "reference": "상세전문·공개Google폼전체문항/안내대조. 실제첨부분석아닌폼분석·양식미확보,2026-11-08"
+  },
+  "requiredDocuments": [
+    {
+      "name": "지정참가신청서·사업계획서·개인정보동의",
+      "condition": "폼/이메일모두·공개첨부누락으로원본양식미확보",
+      "reference": "상세/폼설명"
+    },
+    {
+      "name": "주민등록등본",
+      "condition": "상세/폼설명3개월·폼확인란6개월충돌",
+      "reference": "공개폼"
+    }
+  ],
+  "businessPlan": {
+    "format": "센터지정양식",
+    "limit": "양식미게시·항목/분량미확인",
+    "sections": [],
+    "reference": "상세전문·공개Google폼전체문항/안내대조. 실제첨부분석아닌폼분석·양식미확보,2026-11-08"
+  },
+  "evaluation": {
+    "summary": "서류검토후10명개별선정·배점없음.",
+    "reference": "상세전문·공개Google폼전체문항/안내대조. 실제첨부분석아닌폼분석·양식미확보,2026-11-08"
+  },
+  "contact": {
+    "name": "02-6315-9901 dobongstartup@gmail.com",
+    "reference": "상세전문·공개Google폼전체문항/안내대조. 실제첨부분석아닌폼분석·양식미확보,2026-11-08"
+  },
+  "unresolved": [
+    "공고첨부0개이나지정신청·계획·동의양식요구·원본미확보",
+    "등본3개월대6개월충돌·최신기준확인필요",
+    "폼개인정보상세동의/보유기간미확인",
+    "교육전참여10명최종선발·활동비조건추가확인필요"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179635",
+    "companyId": null,
+    "permission": "권한회사프로필확보후근거별검토·현재신청가능확정아님",
+    "steps": [
+      "회사필드/증빙확인",
+      "충돌/미확인해결",
+      "S12양식·S13회사정보로서류/계획작성"
+    ]
+  },
+  "applicationChecks": [
+    {
+      "id": "179635",
+      "url": "https://forms.gle/KK5ebFgC3K3bgun6A",
+      "checkedAt": "2026-11-08T10:11:40.931453+00:00",
+      "status": 200,
+      "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfSjekZ96fGS_fyUIQ7UWqjBYVnuJRrBQXu4G9ZtNH_e5rk4g/viewform?usp=send_form",
+      "evidence": "179635-publiccheck-20261108.html",
+      "bytes": 140036
+    }
+  ],
+  "evidenceReferences": []
+}

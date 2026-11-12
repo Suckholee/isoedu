@@ -1,0 +1,37 @@
+[
+  {
+    "url": "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071619&cbIdx=310&streFileNm=a4781d7a-655c-4268-85b6-913dd6da2401.hwpx",
+    "file": "attachment-01.bin",
+    "name": "2026년_소공인_클린제조환경조성_사업_3차_모집_공고.hwpx",
+    "bytes": 478415,
+    "sha256": "873cb8c0c41d7cb8a316ef5966bc2b758ffe1ef3dc66f54e907392b2b5efabdf",
+    "contentType": "application/octet-stream;charset=UTF-8",
+    "verifiedAt": "2026-10-18T00:02:31.006Z",
+    "status": "downloaded",
+    "localPath": "attachment-01.hwpx",
+    "format": "HWPX",
+    "extractionStatus": "text-extracted",
+    "characters": 37291,
+    "previousOriginalHash": "873cb8c0c41d7cb8a316ef5966bc2b758ffe1ef3dc66f54e907392b2b5efabdf",
+    "contentChanged": false,
+    "comparisonStatus": "same-as-previous-original"
+  },
+  {
+    "url": "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071619&cbIdx=310&streFileNm=5931246e-3d01-410d-b27d-975669f770be.pdf",
+    "file": "attachment-02.bin",
+    "name": "2026년_소공인_클린제조환경조성_사업_3차_모집_공고.pdf",
+    "bytes": 780172,
+    "sha256": "e5620d492ab82df8e6610ff9116904865020dc3e3efa4f55ff47e616b0816708",
+    "contentType": "application/octet-stream;charset=UTF-8",
+    "verifiedAt": "2026-10-18T00:02:31.354Z",
+    "status": "downloaded",
+    "localPath": "attachment-02.pdf",
+    "format": "PDF",
+    "pages": 28,
+    "extractionStatus": "text-extracted",
+    "characters": 20722,
+    "previousOriginalHash": "e5620d492ab82df8e6610ff9116904865020dc3e3efa4f55ff47e616b0816708",
+    "contentChanged": false,
+    "comparisonStatus": "same-as-previous-original"
+  }
+]

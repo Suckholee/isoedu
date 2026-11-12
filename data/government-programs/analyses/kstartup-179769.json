@@ -1,0 +1,142 @@
+{
+  "programId": "kstartup-179769",
+  "title": "스타트업을 위한 B2B 영업 전략 특강",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-12T00:07:34.061202+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179769",
+  "reviewScope": "K-Startup 신청기간·대상·교육·선정, 포스터 이미지 전체 시각 검토, 첨부 대체텍스트 전문 및 공개 신청 URL 확인",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1wqX65QSp-6qXXFVmJqOd7ehsTdiauXJXZqjK9b8_9d6eWQ",
+      "verifiedAt": "2026-11-11T23:59:53.285857+00:00",
+      "status": "downloaded",
+      "sha256": "a0a82b678caf150bb05906bb5c096dfad4f4fb69026a3c149665b6763bf3e8f9",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 321455,
+      "format": "IMAGE",
+      "file": "attachment-01.bin",
+      "contentType": "image/png;charset=UTF-8",
+      "review": {
+        "at": "2026-11-12T00:07:34.061202+00:00",
+        "scope": "K-Startup 신청기간·대상·교육·선정, 포스터 이미지 전체 시각 검토, 첨부 대체텍스트 전문 및 공개 신청 URL 확인",
+        "method": "visual"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1Mn6dWSu3D_MNBu6ugzSViqGTT_yLMN_kl3kDKG-Itn_OjA",
+      "verifiedAt": "2026-11-11T23:59:53.603416+00:00",
+      "status": "downloaded",
+      "sha256": "6d20898c71ed6fdc51c845ba786dd70ec03970878d35998fec7ba2f16793968f",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 1181,
+      "format": "OTHER",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "review": {
+        "at": "2026-11-12T00:07:34.061202+00:00",
+        "scope": "K-Startup 신청기간·대상·교육·선정, 포스터 이미지 전체 시각 검토, 첨부 대체텍스트 전문 및 공개 신청 URL 확인",
+        "method": "text/visual scope recorded in reviewScope"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/v1wqX65QSp-6qXXFVmJqOd7ehsTdiauXJXZqjK9b8_9d6eWQ": "a0a82b678caf150bb05906bb5c096dfad4f4fb69026a3c149665b6763bf3e8f9",
+    "https://www.k-startup.go.kr/afile/fileDownload/v1Mn6dWSu3D_MNBu6ugzSViqGTT_yLMN_kl3kDKG-Itn_OjA": "6d20898c71ed6fdc51c845ba786dd70ec03970878d35998fec7ba2f16793968f"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-12T00:07:34.061202+00:00",
+  "eligibility": {
+    "summary": "충남 지역 예비·초기창업자. 초기창업 업력 산정과 충남 지역 인정 기준의 구체 증빙은 미기재.",
+    "companyFields": [
+      "충남 연고 유형·소재지",
+      "예비창업 여부",
+      "설립일·업력",
+      "참석 가능 여부"
+    ],
+    "reference": "K-Startup 신청기간·대상·교육·선정, 포스터 이미지 전체 시각 검토, 첨부 대체텍스트 전문 및 공개 신청 URL 확인"
+  },
+  "exclusions": {
+    "items": [
+      "선착순 정원 충원 시 접수 마감 가능. 별도 업종·규모·연령 제외 조건 미기재."
+    ],
+    "reference": "K-Startup 신청기간·대상·교육·선정, 포스터 이미지 전체 시각 검토, 첨부 대체텍스트 전문 및 공개 신청 URL 확인"
+  },
+  "support": {
+    "summary": "무료 2시간 교육. 첫 고객 발굴·콜드메일·제안서·고객 미팅·초기 신뢰 확보 및 생성형 AI 초안 활용. 지원금·자부담 없음/미기재 범위는 참가비 무료로 확인.",
+    "reference": "K-Startup 신청기간·대상·교육·선정, 포스터 이미지 전체 시각 검토, 첨부 대체텍스트 전문 및 공개 신청 URL 확인"
+  },
+  "period": {
+    "start": "2026-11-10",
+    "end": "2026-11-17",
+    "deadlineTime": "10:00",
+    "timezone": "Asia/Seoul",
+    "reference": "K-Startup 신청기간·대상·교육·선정, 포스터 이미지 전체 시각 검토, 첨부 대체텍스트 전문 및 공개 신청 URL 확인",
+    "checkedAt": "2026-11-12T00:17:22.034859+00:00",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179769",
+    "attachmentUrls": [
+      "https://www.k-startup.go.kr/afile/fileDownload/v1wqX65QSp-6qXXFVmJqOd7ehsTdiauXJXZqjK9b8_9d6eWQ",
+      "https://www.k-startup.go.kr/afile/fileDownload/v1Mn6dWSu3D_MNBu6ugzSViqGTT_yLMN_kl3kDKG-Itn_OjA"
+    ],
+    "startTime": "00:00"
+  },
+  "application": {
+    "summary": "11/18 14:00~16:00 천안시 충남창업마루나비 4층 컨퍼런스룸. K-Startup 및 포스터 QR의 Google 참가신청서.",
+    "reference": "K-Startup 신청기간·대상·교육·선정, 포스터 이미지 전체 시각 검토, 첨부 대체텍스트 전문 및 공개 신청 URL 확인",
+    "url": "https://forms.gle/QnDxFp1p3BAmkMeF8"
+  },
+  "requiredDocuments": [
+    {
+      "name": "온라인 참가 신청서",
+      "condition": "필수, 실제 항목·별첨 미확인",
+      "reference": "상세 제출서류 및 포스터 신청"
+    }
+  ],
+  "businessPlan": {
+    "format": "공고·포스터에 별도 사업계획서 지정 없음",
+    "limit": null,
+    "sections": [],
+    "reference": "K-Startup 신청기간·대상·교육·선정, 포스터 이미지 전체 시각 검토, 첨부 대체텍스트 전문 및 공개 신청 URL 확인"
+  },
+  "evaluation": {
+    "summary": "온라인 신청 선착순. 정원 수 및 심사 배점 미기재.",
+    "reference": "K-Startup 신청기간·대상·교육·선정, 포스터 이미지 전체 시각 검토, 첨부 대체텍스트 전문 및 공개 신청 URL 확인"
+  },
+  "contact": {
+    "name": "한국기술교육대학교 앵커사업단 041-580-4865 / hammy33@koreatech.ac.kr",
+    "reference": "K-Startup 신청기간·대상·교육·선정, 포스터 이미지 전체 시각 검토, 첨부 대체텍스트 전문 및 공개 신청 URL 확인"
+  },
+  "unresolved": [
+    "공식 신청서 https://forms.gle/QnDxFp1p3BAmkMeF8 HTTP 401. 필수 문항·추가 증빙·동의 안내 재시도 필요."
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179769",
+    "companyId": null,
+    "permission": "권한회사프로필확보후근거별검토·현재신청가능확정아님",
+    "steps": [
+      "회사필드/증빙확인",
+      "충돌/미확인해결",
+      "S12양식·S13회사정보로서류/계획작성"
+    ]
+  },
+  "evidence": {
+    "detail": "evidence/kstartup-179769/detail.html",
+    "detailFetchedAt": "2026-11-11T23:58:47.835Z",
+    "attachmentManifest": "evidence/kstartup-179769/attachment-check-2026-11-12.json",
+    "publicChecks": [
+      {
+        "id": "179769",
+        "url": "https://forms.gle/QnDxFp1p3BAmkMeF8",
+        "checkedAt": "2026-11-12T00:00:06.394700+00:00",
+        "error": "HTTP Error 401: Unauthorized"
+      }
+    ]
+  }
+}

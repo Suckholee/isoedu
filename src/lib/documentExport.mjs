@@ -1,3 +1,4 @@
+import {buildPlanFormHtml} from './venture/planForm.mjs';
 import { DOCUMENT_REVIEW_STATUSES, requirementReviewState } from './projectWorkflow.mjs';
 
 export function escapeHtml(value = '') {
@@ -97,7 +98,8 @@ function renderDocumentSectionHtml(doc, { companyName = '' } = {}) {
  </section>`;
 }
 
-export function buildWordDocumentHtml(doc, { companyName = '' } = {}) {
+export function buildWordDocumentHtml(doc, { companyName = '',visualImages={} } = {}) {
+ if(doc?.ai?.kind==='venture-document')return buildPlanFormHtml(doc,{companyName,visualImages});
  if (!doc || (!doc.title && !doc.name)) throw Error('다운로드할 문서 정보를 확인해 주세요.');
  const title = doc.title || doc.name;
  return `<!DOCTYPE html>
@@ -218,3 +220,5 @@ export function triggerBrowserDownload(content, fileName, mimeType = 'applicatio
  anchor.remove();
  setTimeout(() => URL.revokeObjectURL(url), 30000);
 }
+
+export async function prepareWordDocumentHtml(doc,options={}){const {prepareVisualImages}=await import('./venture/visualClient.mjs');const visualImages=await prepareVisualImages(doc?.ai?.visuals||[]);return buildWordDocumentHtml(doc,{...options,visualImages});}

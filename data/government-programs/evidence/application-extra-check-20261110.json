@@ -1,0 +1,26 @@
+[
+  {
+    "id": "179746-detail",
+    "url": "https://event.jbci.or.kr/sub/s1_1_view.html?id=369",
+    "checkedAt": "2026-11-10T00:12:26.524042+00:00",
+    "status": 200,
+    "finalUrl": "https://event.jbci.or.kr/sub/s1_1_view.html?id=369",
+    "evidence": "179746-detail-publiccheck-20261110.html",
+    "bytes": 10151
+  },
+  {
+    "id": "179654",
+    "url": "https://forms.gle/5Pdn5Z9bcPmUESv87",
+    "checkedAt": "2026-11-10T00:12:26.524382+00:00",
+    "error": "HTTP Error 401: Unauthorized"
+  },
+  {
+    "id": "179762",
+    "url": "https://www.k-startup.go.kr/web/contents/webPMSBizUnvs.do?returnUrl=/screen/BMO0101M01?pbancId=0690901",
+    "checkedAt": "2026-11-10T00:12:26.524500+00:00",
+    "status": 200,
+    "finalUrl": "https://www.k-startup.go.kr/web/contents/webPMSBizUnvs.do?returnUrl=/screen/BMO0101M01?pbancId=0690901",
+    "evidence": "179762-publiccheck-20261110.html",
+    "bytes": 18917
+  }
+]

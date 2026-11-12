@@ -1,0 +1,95 @@
+{
+  "programId": "kstartup-179545",
+  "title": "G밸리의료기기개발지원센터 글로벌역량강화 교육프로그램 참가자 모집",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-08T10:18:01.435819+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179545",
+  "reviewScope": "공식상세본문전문·공개CatchForm주소확인; 실제첨부분석아닌 무첨부상세분석으로구분,2026-11-08",
+  "attachments": [],
+  "attachmentContentHashes": {},
+  "lastAttachmentHashCheckedAt": "2026-11-08T10:18:01.435819+00:00",
+  "eligibility": {
+    "summary": "서울본사또는지사 의료기기/디지털헬스케어 기업·글로벌진출희망스타트업실무자. 상세업력선택구간으로자동연차자격확정않음.",
+    "companyFields": [
+      "서울본사/지사",
+      "제품·의료기기/헬스케어",
+      "실무담당·희망진출국"
+    ],
+    "reference": "공식상세본문전문·공개CatchForm주소확인; 실제첨부분석아닌 무첨부상세분석으로구분,2026-11-08"
+  },
+  "exclusions": {
+    "items": [
+      "별도제외미기재"
+    ],
+    "reference": "공식상세본문전문·공개CatchForm주소확인; 실제첨부분석아닌 무첨부상세분석으로구분,2026-11-08"
+  },
+  "support": {
+    "summary": "무료교육. 11/13 FDA·NMPA,11/17 유럽MDR/GSPR·중국미국전략,11/19 동남아6개국·대만홍콩. 구로디지털로26길111 105호. 현금·비율지원아님.",
+    "reference": "공식상세본문전문·공개CatchForm주소확인; 실제첨부분석아닌 무첨부상세분석으로구분,2026-11-08"
+  },
+  "period": {
+    "start": "2026-10-20",
+    "end": "2026-11-10",
+    "deadlineTime": "19:00",
+    "timezone": "Asia/Seoul",
+    "reference": "공식상세본문전문·공개CatchForm주소확인; 실제첨부분석아닌 무첨부상세분석으로구분,2026-11-08"
+  },
+  "application": {
+    "summary": "https://catchform.vercel.app/form/GMSC 공개200이나 로딩셸만확보·동적질문미확인.",
+    "reference": "공식상세본문전문·공개CatchForm주소확인; 실제첨부분석아닌 무첨부상세분석으로구분,2026-11-08"
+  },
+  "requiredDocuments": [
+    {
+      "name": "참가등록",
+      "condition": "공통·세부필드미확인",
+      "reference": "상세 신청방법"
+    }
+  ],
+  "businessPlan": {
+    "format": "교육등록",
+    "limit": "공고상제출서류없음·계획서요구없음",
+    "sections": [],
+    "reference": "공식상세본문전문·공개CatchForm주소확인; 실제첨부분석아닌 무첨부상세분석으로구분,2026-11-08"
+  },
+  "evaluation": {
+    "summary": "공고선정평가없음·정원미기재.",
+    "reference": "공식상세본문전문·공개CatchForm주소확인; 실제첨부분석아닌 무첨부상세분석으로구분,2026-11-08"
+  },
+  "contact": {
+    "name": "070-4464-8055 newcenter@kist.re.kr",
+    "reference": "공식상세본문전문·공개CatchForm주소확인; 실제첨부분석아닌 무첨부상세분석으로구분,2026-11-08"
+  },
+  "unresolved": [
+    "공고첨부0개·CatchForm로딩셸로필수문항/동의·접수상태미확인",
+    "회차시작/종료시각·정원미기재"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179545",
+    "companyId": null,
+    "permission": "권한회사프로필확보후근거별검토·현재신청가능확정아님",
+    "steps": [
+      "회사필드/증빙확인",
+      "충돌/미확인해결",
+      "S12양식·S13회사정보로서류/계획작성"
+    ]
+  },
+  "applicationChecks": [
+    {
+      "id": "179545",
+      "url": "https://catchform.vercel.app/form/GMSC",
+      "checkedAt": "2026-11-08T10:11:40.748407+00:00",
+      "status": 200,
+      "finalUrl": "https://catchform.vercel.app/form/GMSC",
+      "evidence": "179545-publiccheck-20261108.html",
+      "bytes": 14991
+    }
+  ],
+  "evidenceReferences": []
+}

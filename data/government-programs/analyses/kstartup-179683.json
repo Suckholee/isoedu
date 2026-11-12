@@ -1,0 +1,318 @@
+{
+  "programId": "kstartup-179683",
+  "title": "2026 KOREA LBS Day(~11.17)｜선도기업·투자자·전문가와 만나는 1:1 비즈니스 미팅",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-10T00:17:44.901095+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179683",
+  "reviewScope": "포스터PNG전체3구간시각·대체TXT전문·상세본문·Google폼공개HTML질문/분기/동의전체18항목(3페이지)·주최홈/추가협업링크접근확인;2026-11-10",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1BTTxa10ZgbguzMwvvo_LjWKQusWfrpBhDx-PSHqyzkSPmA",
+      "verifiedAt": "2026-11-10",
+      "status": "downloaded",
+      "sha256": "03a1f2646b3b015a7c39127831d87475980e24bf490fa03047d92d05c513b95b",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 3133643,
+      "format": "IMAGE",
+      "file": "attachment-01.bin",
+      "contentType": "image/png;charset=UTF-8",
+      "review": {
+        "at": "2026-11-10T00:17:44.901095+00:00",
+        "scope": "포스터PNG전체3구간시각·대체TXT전문·상세본문·Google폼공개HTML질문/분기/동의전체19항목(3페이지)·주최홈/추가협업링크접근확인;2026-11-10",
+        "method": "visual"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1-5-8XU3--PAaIEcji_ArWxP1gW1LLcGJaFZevqWU5ot79Q",
+      "verifiedAt": "2026-11-10",
+      "status": "downloaded",
+      "sha256": "96f65483dd4609708f4cfd79a6e1223af21c5ce1ba91993a04e462b2117c459f",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 9065,
+      "format": "TEXT",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "textFile": "attachment-02.bin.txt",
+      "review": {
+        "at": "2026-11-10T00:17:44.901095+00:00",
+        "scope": "포스터PNG전체3구간시각·대체TXT전문·상세본문·Google폼공개HTML질문/분기/동의전체19항목(3페이지)·주최홈/추가협업링크접근확인;2026-11-10",
+        "method": "text/visual scope recorded in reviewScope"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/v1BTTxa10ZgbguzMwvvo_LjWKQusWfrpBhDx-PSHqyzkSPmA": "03a1f2646b3b015a7c39127831d87475980e24bf490fa03047d92d05c513b95b",
+    "https://www.k-startup.go.kr/afile/fileDownload/v1-5-8XU3--PAaIEcji_ArWxP1gW1LLcGJaFZevqWU5ot79Q": "96f65483dd4609708f4cfd79a6e1223af21c5ce1ba91993a04e462b2117c459f"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-10T00:17:44.901095+00:00",
+  "eligibility": {
+    "summary": "일반행사·강연·IR참관은위치정보산업/창업투자관심누구나.1:1상담은관련기술서비스스타트업중소기업등사전신청매칭·신청만으로확정아님.1:1사전기한11/9로일반참가11/17과별도.행사IR10개사명단은기정발표기업으로새IR피칭모집단정금지.",
+    "companyFields": [
+      "기관/기업명(개인가능)",
+      "성명/연락처/이메일",
+      "선택부서직함",
+      "프로그램관심",
+      "상담신청여부",
+      "제품명/한줄50~100자",
+      "희망기업/전문가/판로",
+      "상담우선분야/오전오후가능",
+      "개인정보동의"
+    ],
+    "reference": "상세대상·공개폼안내; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179683"
+  },
+  "exclusions": {
+    "items": [
+      "1:1상담사전신청11/9기한경과·일반참가와구별",
+      "매칭심사/기관수요및일정따라불확정",
+      "잔여상담시현장가능안내·잔여수미확인"
+    ],
+    "reference": "공개폼일반/상담기간·현장조건; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179683"
+  },
+  "support": {
+    "summary": "무료강연/위치정보사업자교육·정책/사업화법률특허행정AX·판로상담/선도8기업미팅·IR참관·네트워킹.11/18양재aT5층10~16:10(등록9시).상담10~12/13~15회당20분·IR504호/상담502~503.기념품/추첨경품은예정현장참석대상·현금지원/투자보장아님.",
+    "reference": "포스터전체·상세지원·공개폼; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179683"
+  },
+  "period": {
+    "start": "2026-11-01",
+    "end": "2026-11-18",
+    "deadlineTime": "00:00",
+    "timezone": "Asia/Seoul",
+    "reference": "상세11/18 00시·폼일반11/17/상담11/9; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179683",
+    "rounds": [
+      {
+        "type": "일반참가",
+        "end": "2026-11-17",
+        "deadlineTime": null,
+        "reference": "공개Google폼안내·명목마감11/18 00:00별도보존"
+      },
+      {
+        "type": "1:1상담사전",
+        "end": "2026-11-09",
+        "deadlineTime": null,
+        "reference": "상세/폼안내·시간미명시·잔여현장가능"
+      }
+    ]
+  },
+  "application": {
+    "summary": "Google폼 https://forms.gle/ofMzRcnVthJWy99V8 (상세긴URL동일폼).일반참가11/17까지·명목마감11/18 00:00은18일종일접수아님.1:1사전11/9까지/잔여현장가능.공개폼1~3페이지구성·공개HTML내전체질문/분기/동의데이터확인(입력/전송안함).관련기업주제자료 buly.kr/CB7ddtF→Claude공개artifact·본문실제자료별도미확인.",
+    "reference": "공개폼3페이지질문/분기·추가자료링크; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179683"
+  },
+  "requiredDocuments": [
+    {
+      "name": "온라인참가등록·개인정보동의",
+      "condition": "필수기관명·성명·연락처·이메일·상담여부/동의",
+      "reference": "Google폼공개전체질문/분기"
+    },
+    {
+      "name": "제품명·한줄소개·우선상담분야·가능시간",
+      "condition": "상담신청분기필수/소개50~100자권장",
+      "reference": "Google폼2페이지공개데이터"
+    },
+    {
+      "name": "회사소개자료",
+      "condition": "사전매칭위해추가요청예정·현재파일필수업로드문항없음",
+      "reference": "포스터미팅하단·공개폼"
+    },
+    {
+      "name": "사업계획서/IR덱",
+      "condition": "일반참관필수요구없음·별도IR선정접수아님",
+      "reference": "상세/포스터IR명단"
+    }
+  ],
+  "businessPlan": {
+    "format": "온라인등록·상담간편신청/별도사업계획서양식없음",
+    "limit": "상담한줄소개50~100자권장·공공판로최대2선택",
+    "sections": [
+      {
+        "name": "참가",
+        "items": [
+          "기관개인/이름/부서직함/전화이메일/관심프로그램"
+        ],
+        "limit": "상담한줄소개50~100자권장·공공판로최대2선택"
+      },
+      {
+        "name": "상담",
+        "items": [
+          "제품명한줄/8개기업분야복수·법률특허행정AX·판로최대2"
+        ],
+        "limit": "상담한줄소개50~100자권장·공공판로최대2선택"
+      },
+      {
+        "name": "우선순위",
+        "items": [
+          "가장우선상담1분야/오전10~12·오후13~15·모두가능"
+        ],
+        "limit": "상담한줄소개50~100자권장·공공판로최대2선택"
+      },
+      {
+        "name": "동의",
+        "items": [
+          "성명소속연락이메일행사상담정보/참가안내매칭운영/행사후1년보유후파기"
+        ],
+        "limit": "상담한줄소개50~100자권장·공공판로최대2선택"
+      }
+    ],
+    "reference": "공개폼상담질문/소개50~100자·판로최대2; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179683"
+  },
+  "evaluation": {
+    "summary": "일반참가별도평가없음.상담은기업검토수요적합/분야우선·시간종합사전매칭개별안내.최종미팅확정은추후·IR10개사발표명단과일반참관분리.",
+    "reference": "상세사전매칭·공개폼안내; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179683"
+  },
+  "contact": {
+    "name": "2026KOREALBSDay운영사무국02-3786-0546,lbs@kmac.co.kr",
+    "reference": "포스터하단/공개폼문의; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179683"
+  },
+  "unresolved": [
+    "공개폼상담사전11/9기한경과에도상담선택문항노출·현재추가신청허용/잔여일정기관확인",
+    "공개폼안내11/9(금)대상담문항11/9(월)요일충돌·날짜11/9유지/일반참가11/17구분",
+    "외부협업주제공개artifact실제전체자료/동적분기작동/접수확정미검증",
+    "포스터시간표8번브레인치즈대로고AXCUBE표기차이·실제발표명단정정여부확인"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179683",
+    "companyId": null,
+    "permission": "권한회사프로필확보후근거별검토·현재신청가능확정아님",
+    "steps": [
+      "회사필드/증빙확인",
+      "충돌/미확인해결",
+      "S12양식·S13회사정보로서류/계획작성"
+    ]
+  },
+  "formEvidence": {
+    "file": "evidence/kstartup-179683/public-form-data-20261110.json",
+    "scope": "공개폼HTML에포함된질문/조건분기/개인정보동의만·제출없음",
+    "conditionalPages": 3,
+    "itemCountIncludingSections": 18
+  },
+  "applicationChecks": [
+    {
+      "id": "179683",
+      "url": "https://forms.gle/ofMzRcnVthJWy99V8",
+      "checkedAt": "2026-11-10T00:11:18.546145+00:00",
+      "status": 200,
+      "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfRMnAQIEAtIbTm3ObqTtF6mLGospRMrQcrjCvx28dx89imcg/viewform?usp=send_form",
+      "evidence": "179683-publiccheck-20261110.html",
+      "bytes": 138768
+    },
+    {
+      "id": "179683-site",
+      "url": "https://www.korealbs.or.kr/2026/lbsday.asp",
+      "checkedAt": "2026-11-10T00:11:18.546523+00:00",
+      "status": 200,
+      "finalUrl": "https://www.korealbs.or.kr/2026/lbsday",
+      "evidence": "179683-site-publiccheck-20261110.html",
+      "bytes": 7291
+    },
+    {
+      "id": "179683-brief",
+      "url": "https://buly.kr/CB7ddtF",
+      "checkedAt": "2026-11-10T00:16:53.125450+00:00",
+      "status": 200,
+      "finalUrl": "https://claude.ai/artifact/EVruy23SyqFnWGP1mfw8HJ",
+      "evidence": "179683-brief-publiccheck-20261110.html",
+      "bytes": 37026
+    }
+  ],
+  "evidenceReferences": [
+    {
+      "field": "eligibility",
+      "reference": "상세대상·공개폼안내",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179683",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1BTTxa10ZgbguzMwvvo_LjWKQusWfrpBhDx-PSHqyzkSPmA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1-5-8XU3--PAaIEcji_ArWxP1gW1LLcGJaFZevqWU5ot79Q"
+      ]
+    },
+    {
+      "field": "exclusions",
+      "reference": "공개폼일반/상담기간·현장조건",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179683",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1BTTxa10ZgbguzMwvvo_LjWKQusWfrpBhDx-PSHqyzkSPmA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1-5-8XU3--PAaIEcji_ArWxP1gW1LLcGJaFZevqWU5ot79Q"
+      ]
+    },
+    {
+      "field": "support",
+      "reference": "포스터전체·상세지원·공개폼",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179683",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1BTTxa10ZgbguzMwvvo_LjWKQusWfrpBhDx-PSHqyzkSPmA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1-5-8XU3--PAaIEcji_ArWxP1gW1LLcGJaFZevqWU5ot79Q"
+      ]
+    },
+    {
+      "field": "period",
+      "reference": "상세11/18 00시·폼일반11/17/상담11/9",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179683",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1BTTxa10ZgbguzMwvvo_LjWKQusWfrpBhDx-PSHqyzkSPmA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1-5-8XU3--PAaIEcji_ArWxP1gW1LLcGJaFZevqWU5ot79Q"
+      ]
+    },
+    {
+      "field": "application",
+      "reference": "공개폼3페이지질문/분기·추가자료링크",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179683",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1BTTxa10ZgbguzMwvvo_LjWKQusWfrpBhDx-PSHqyzkSPmA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1-5-8XU3--PAaIEcji_ArWxP1gW1LLcGJaFZevqWU5ot79Q"
+      ]
+    },
+    {
+      "field": "requiredDocuments",
+      "reference": "공개폼질문/조건분기/개인정보",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179683",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1BTTxa10ZgbguzMwvvo_LjWKQusWfrpBhDx-PSHqyzkSPmA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1-5-8XU3--PAaIEcji_ArWxP1gW1LLcGJaFZevqWU5ot79Q"
+      ]
+    },
+    {
+      "field": "businessPlan",
+      "reference": "공개폼상담질문/소개50~100자·판로최대2",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179683",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1BTTxa10ZgbguzMwvvo_LjWKQusWfrpBhDx-PSHqyzkSPmA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1-5-8XU3--PAaIEcji_ArWxP1gW1LLcGJaFZevqWU5ot79Q"
+      ]
+    },
+    {
+      "field": "evaluation",
+      "reference": "상세사전매칭·공개폼안내",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179683",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1BTTxa10ZgbguzMwvvo_LjWKQusWfrpBhDx-PSHqyzkSPmA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1-5-8XU3--PAaIEcji_ArWxP1gW1LLcGJaFZevqWU5ot79Q"
+      ]
+    },
+    {
+      "field": "contact",
+      "reference": "포스터하단/공개폼문의",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179683",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1BTTxa10ZgbguzMwvvo_LjWKQusWfrpBhDx-PSHqyzkSPmA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1-5-8XU3--PAaIEcji_ArWxP1gW1LLcGJaFZevqWU5ot79Q"
+      ]
+    }
+  ],
+  "attachmentManifest": "evidence/kstartup-179683/attachment-check-2026-11-10.json"
+}

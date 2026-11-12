@@ -1,0 +1,58 @@
+[
+  {
+    "programId": "kstartup-179737",
+    "url": "https://drive.google.com/uc?export=download&id=19_Rd73mwats0i4ByOJqXtynEttrPvTuq",
+    "file": "kstartup-179737/extra-c4df900eb66f.bin",
+    "sha256": "c4df900eb66f1aeaa989844c422cbefb371163388f45ec2e8d082d452827a493",
+    "format": "HWP",
+    "bytes": 68096
+  },
+  {
+    "programId": "kstartup-179739",
+    "url": "https://drive.google.com/uc?export=download&id=1pxtVfNGATftYWHz6T12SV3xg5Y4OmRxn",
+    "file": "kstartup-179739/extra-b8074f1fd592.bin",
+    "sha256": "b8074f1fd592518e0bc8622a8d52a9a925a966d862de546aaa1c16ba13eb565f",
+    "format": "HWP",
+    "bytes": 110080
+  },
+  {
+    "programId": "kstartup-179723",
+    "url": "https://smc.sba.kr/AttachFiles/new_display/2026/10/28/4e62240d-abd2-f111-b404-d4f5ef4a1e33/%5B%EA%B3%B5%EA%B3%A0%EB%AC%B8_%EC%88%98%ED%98%9C%EA%B8%B0%EC%97%85_%EB%AA%A8%EC%A7%91%5D_2026%EB%85%84_%EC%A4%91%EB%8F%99_%EC%83%81%ED%99%A9_%EB%8C%80%EC%9D%91_%EA%B7%9C%EA%B2%A9_%EC%BB%A8%EC%84%A4%ED%8C%85_%EC%A7%80%EC%9B%90%EC%82%AC%EC%97%85_%EC%88%98%ED%98%9C%EA%B8%B0%EC%97%85_%EB%AA%A8%EC%A7%91(1).hwp",
+    "error": "HTTP Error 400: Bad Request"
+  },
+  {
+    "programId": "kstartup-179723",
+    "url": "https://smc.sba.kr/AttachFiles/new_display/2026/10/30/4E62240D-ABD2-F111-B404-D4F5EF4A1E33/%5B%EC%B0%B8%EA%B0%80_%EC%8B%A0%EC%B2%AD%EC%84%9C_%EC%88%98%ED%96%89%EA%B3%84%ED%9A%8D%EC%84%9C_%EC%88%98%ED%98%9C%EA%B8%B0%EC%97%85%5D_%EC%A4%91%EB%8F%99%EC%83%81%ED%99%A9%EB%8C%80%EC%9D%91_%E3%80%8E%EA%B7%9C%EA%B2%A9%EC%BB%A8%EC%84%A4%ED%8C%85_%EC%A7%80%EC%9B%90%EC%82%AC%EC%97%85%E3%80%8F_%EC%88%98%ED%98%9C%EA%B8%B0%EC%97%85.hwp",
+    "error": "HTTP Error 400: Bad Request"
+  },
+  {
+    "programId": "kstartup-179703",
+    "url": "https://mplus.startup-plus.kr/api/common/download?attachFilePath=%2fproject%2fattachment%2f261102141005%e2%98%85+(%ea%b3%b5%ea%b3%a0%eb%ac%b8)+%ec%84%9c%ec%9a%b8%ec%b0%bd%ec%97%85%ed%97%88%eb%b8%8cM%2b+%ec%8b%a0%ea%b7%9c+%ec%9e%85%ec%a3%bc%ea%b8%b0%ec%97%85+%eb%aa%a8%ec%a7%91+%ea%b3%b5%ea%b3%a0(%ed%95%98%eb%b0%98%ea%b8%b0).pdf",
+    "file": "kstartup-179703/extra-d9eeb1654a0d.bin",
+    "sha256": "d9eeb1654a0d506d3e3a31b9e9e5cd767eb271a383ac3429981a0bd89f9c8cb1",
+    "format": "PDF",
+    "bytes": 1464757
+  },
+  {
+    "programId": "kstartup-179703",
+    "url": "https://mplus.startup-plus.kr/api/common/download?attachFilePath=%2fproject%2fattachment%2f261102141005%eb%b6%99%ec%9e%842.+%eb%aa%a8%ec%a7%91%ea%b3%b5%ea%b3%a0%eb%ac%b8+%eb%b0%8f+%ec%82%ac%ec%97%85%ec%8b%a0%ec%b2%ad%ec%84%9c+%ec%96%91%ec%8b%9d.zip",
+    "file": "kstartup-179703/extra-57d2a23298ad.bin",
+    "sha256": "57d2a23298ad1ae7b82f065e59bfd1d794c9de05f10e58959cf99b55d54dca4e",
+    "format": "ZIP",
+    "bytes": 1497007,
+    "members": [
+      "\u2605 (\uacf5\uace0\ubb38) \uc11c\uc6b8\ucc3d\uc5c5\ud5c8\ube0cM+ \uc2e0\uaddc \uc785\uc8fc\uae30\uc5c5 \ubaa8\uc9d1 \uacf5\uace0(\ud558\ubc18\uae30).pdf",
+      "[\uc11c\uc2dd1] \uc785\uc8fc\uc2e0\uccad\uc11c \ubc0f \uc0ac\uc5c5\uacc4\ud68d\uc11c.hwp",
+      "[\uc11c\uc2dd2] \uac1c\uc778 \ubc0f \uae30\uc5c5 \uc815\ubcf4\uc81c\uacf5\ub3d9\uc758\uc11c.hwp",
+      "[\uc11c\uc2dd3] \uc785\uc8fc \uc790\uaca9 \uc694\uac74 \ud655\uc778\uc11c.hwp"
+    ]
+  },
+  {
+    "programId": "kstartup-179703",
+    "url": "https://mplus.startup-plus.kr/api/common/download?attachFilePath=%2fproject%2fattachment%2f261102141005%eb%b6%99%ec%9e%843.+%ec%8b%a0%ec%82%b0%ec%97%85+%ec%b0%bd%ec%97%85+%eb%b6%84%ec%95%bc.pdf",
+    "file": "kstartup-179703/extra-0916d6f9d9cd.bin",
+    "sha256": "0916d6f9d9cd1afbafaa34f9a62c1bd329a54b82b4690b6813680b351cf7a62b",
+    "format": "PDF",
+    "bytes": 48104
+  }
+]

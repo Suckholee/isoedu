@@ -1,0 +1,74 @@
+[
+  {
+    "id": "179622",
+    "url": "https://www.xn--2i4bieu3bszgvtc6wlunby2r.com/sub_program/operate_view.php?idx=70",
+    "checkedAt": "2026-11-02T00:07:50.734941+00:00",
+    "status": 200,
+    "finalUrl": "https://www.xn--2i4bieu3bszgvtc6wlunby2r.com/sub_program/operate_view.php?idx=70",
+    "evidence": "179622-publiccheck-20261102.html",
+    "bytes": 65450
+  },
+  {
+    "id": "179637",
+    "url": "https://event-us.kr/openknowldgt/event/137008",
+    "checkedAt": "2026-11-02T00:07:50.735312+00:00",
+    "status": 200,
+    "finalUrl": "https://event-us.kr/openknowldgt/event/137008",
+    "evidence": "179637-publiccheck-20261102.html",
+    "bytes": 351123
+  },
+  {
+    "id": "179636",
+    "url": "https://www.sba.seoul.kr/Pages/BusinessApply/PostingDetail.aspx?p=0&mid=61860843-d4cd-f111-b404-d4f5ef4a1e33",
+    "checkedAt": "2026-11-02T00:07:50.735761+00:00",
+    "status": 200,
+    "finalUrl": "https://www.sba.seoul.kr/Pages/BusinessApply/PostingDetail.aspx?p=0&mid=61860843-d4cd-f111-b404-d4f5ef4a1e33",
+    "evidence": "179636-publiccheck-20261102.html",
+    "bytes": 273541
+  },
+  {
+    "id": "179653",
+    "url": "https://www.startup-plus.kr/project/PRJ007656",
+    "checkedAt": "2026-11-02T00:07:50.735886+00:00",
+    "status": 200,
+    "finalUrl": "https://www.startup-plus.kr/project/PRJ007656",
+    "evidence": "179653-publiccheck-20261102.html",
+    "bytes": 123242
+  },
+  {
+    "id": "179653-tour",
+    "url": "https://forms.gle/2aNii1nmtUvrSyWy6",
+    "checkedAt": "2026-11-02T00:07:50.735982+00:00",
+    "status": 200,
+    "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSffqQlJZSutkNY2xuga1cb3NCFm53CB6epS2ql0tmvwv7o8fQ/viewform?usp=send_form",
+    "evidence": "179653-tour-publiccheck-20261102.html",
+    "bytes": 119836
+  },
+  {
+    "id": "bizinfo",
+    "url": "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/list.do",
+    "checkedAt": "2026-11-02T00:07:50.736074+00:00",
+    "status": 200,
+    "finalUrl": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200View.do?null",
+    "evidence": "bizinfo-publiccheck-20261102.html",
+    "bytes": 111148
+  },
+  {
+    "id": "iris",
+    "url": "https://www.iris.go.kr/index.do",
+    "checkedAt": "2026-11-02T00:07:50.736174+00:00",
+    "status": 200,
+    "finalUrl": "https://www.iris.go.kr/index.do",
+    "evidence": "iris-publiccheck-20261102.html",
+    "bytes": 1531571
+  },
+  {
+    "id": "kotra",
+    "url": "https://kotra.or.kr/subList/20000020753",
+    "checkedAt": "2026-11-02T00:07:50.901240+00:00",
+    "status": 200,
+    "finalUrl": "https://kotra.or.kr/subList/20000020753",
+    "evidence": "kotra-publiccheck-20261102.html",
+    "bytes": 152169
+  }
+]

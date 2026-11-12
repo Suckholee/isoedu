@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes, initial-scale=1.0, user-scalable=no" /> 
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="title" content="강동구 청년해냄센터" />
+<meta name="description" content="서울 동남권 창업 거점. 창업 아이디어 발굴 공간" />
+<meta name="keywords" content="강동구, 강동구 청년해냄센터,서울창업카페,서울창업카페 천호점,창업지원,스타트업지원,창업멘토링,창업교육" />
+<meta name="author" content="강동구 청년해냄센터" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://www.gdhaenaem.com/?c=168" id="og_link"/> 
+<meta property="og:title" content="강동구 청년해냄센터" id="og_title" />
+<meta property="og:description" content="서울 동남권 창업 거점. 창업 아이디어 발굴 공간" id="og_desc" />	
+<meta property="og:image" content="http://www.gdhaenaem.com/upload/site/20190408110154_71a9f0d5.jpg"  id="og_image"/> 
+<title>강동구 청년해냄센터</title>
+<link rel="shortcut icon" href="/images/common/favicon.ico">
+<link rel="stylesheet" href="/common/css/default.css?d=241217"> 
+<link rel="stylesheet" href="/common/theme/layout2/_layout.css">
+<link rel="canonical" href="http://창업카페천호.com">
+<script type="text/javascript" src="/common/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="/common/js/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="/common/theme/layout2/_layout.js"></script>
+<script type="text/javascript" src="/common/js/ui.common.js"></script>
+<script type="text/javascript" src="/common/js/ui.message.js"></script>
+<script type="text/javascript" src="/common/js/ui.jquery.form.js"></script>
+<script type="text/javascript" src="/common/js/isotope.pkgd.min.js"></script>
+<script type="text/javascript" src="/common/js/imagesloaded.pkgd.min.js"></script>
+<script type="text/javascript" src="/common/js/fastclick.js"></script>
+<script type="text/javascript" src="/common/js/jquery.fittext.js"></script>
+<script type="text/javascript" src="/common/js/jquery.lettering.js"></script>
+<script type="text/javascript" src="/common/js/jquery.textillate.js"></script>
+<script type="text/javascript" src="/common/ckeditor/ckeditor.js"></script>
+<script type="text/javascript" src="/common/ckeditor/config.js"></script>
+<script>
+function logoutSNSNew(val){
+	if(val=='naver' || val=='kakao' || val=='facebook'){
+		location.href='/common/snsauth/logout.php?mode='+ val +'&returl=%2F%3Fc%3D168'; 
+	} else { 
+		location.href='/common/modules/logout.php?returl=%2F%3Fc%3D168'; 
+	}
+}
+$(function(){
+	$('#array_layout').on('change', function(){
+		var data = $(this).val();
+		$.Layout('layout', data); 
+	});
+	$('#array_main').on('change', function(){
+		var data = $(this).val();
+		$.Layout('main', data); 
+	});
+});
+</script>
+<!--[if lt IE 9]>
+    <script src="/common/js/html5shiv.js"></script>
+<![endif]-->
+</head>
+<body class="s">    
+    <!-- skip -->
+    <div id="skip"><a href="#container">본문바로가기</a></div>
+    <!-- //skip -->  
+
+	<!-- 달력 -->
+	<script src="common/js/ui.calendar.js"></script>
+	<div id='cDiv1' style='width:322px; position:absolute;;visibility:hidden;z-index:100;' onmouseover='javascript:fwCal.clayer=1'>
+		<div class="cDiv1_close" onclick="fwCal.clayer=-1;fwCal.HideLayer(1)">닫기</div>
+		<table width="100%" border='0' cellpadding='1' cellspacing='1' bgcolor='#999999' style='padding:1px;'>
+			<tr>
+				<td  bgcolor='#FFFFFF'><div id='calendarDiv1' style='left:5;top:5;' class='noprint' onmouseover='javascript:fwCal.clayer=1'></div></td>
+			</tr>
+		</table>
+	</div>
+	<!-- 달력 -->
+    
+	<!-- Popup Layer -->
+	<div class="popup-wrap">
+		<div class="popup-layer">
+					</div>
+	</div>
+
+    <!-- wrap -->
+    <div id="wrap">
+
+        <!-- header -->                  
+        <div id="header">
+
+            <header>
+            	<div class="header__top">
+	            	<div class="header__inner">
+		                <h1><a href="?c=main"><img src="/upload/site/20231025142329_65771f7f.png" alt="강동구 청년해냄센터" /></a></h1>           
+
+		                <button id="header__mobile">
+		                	<span class="icon">
+			                    <span class="mid1"></span>
+			                    <span class="mid mid2"></span>
+			                    <span class="mid3"></span>
+		                    </span>
+		                </button><!-- //header__mobile --> 
+
+	                    <div id="header__search">
+							<script type="text/javascript">
+								function sSearch() {
+									var f = document.ssfrm;
+									if(!$.inValid("", f.sw, "검색어를 입력해주세요")) return false;
+								}
+							</script>
+							<form action="#none" method="get" name="ssfrm" onsubmit=" return sSearch()">
+								<input type="hidden" name="c" value="search" />
+								<input type="text" name="sw" value="" placeholder='검색어 입력' onkeypress="if(event.keyCode==13){ this.submit() }">
+								<button>검색</button>
+							</form>
+	                    </div>    
+	                </div>
+                </div><!-- //header__top -->
+
+
+                <div id="header__lnb">
+                	<div class="l-table">
+	                	<div class="l-cell">
+		                    <div class="nav">
+		                        <ul class="lnb-menu">
+																			<li  id="lnb_1">
+											<a href="?c=165" ><span>센터소개</span></a>
+											<div class="lnb_sub_menu">
+												<a href="?c=165">센터소개</a>
+																									<ol class="lnb_menu_list">
+																												<li class=""><a href="?c=165">센터소개</a></li>
+																													<li class=""><a href="?c=166">시설안내</a></li>
+																											</ol>
+																							</div><!-- //lnb_sub_menu -->
+										</li>
+																			<li  id="lnb_2">
+											<a href="?c=151" ><span>사업소개</span></a>
+											<div class="lnb_sub_menu">
+												<a href="?c=151">사업소개</a>
+																							</div><!-- //lnb_sub_menu -->
+										</li>
+																			<li  id="lnb_3">
+											<a href="?c=152" ><span>입주안내</span></a>
+											<div class="lnb_sub_menu">
+												<a href="?c=152">입주안내</a>
+																							</div><!-- //lnb_sub_menu -->
+										</li>
+																			<li class='on' id="lnb_4">
+											<a href="?c=169" ><span>신청하기</span></a>
+											<div class="lnb_sub_menu">
+												<a href="?c=169">신청하기</a>
+																									<ol class="lnb_menu_list">
+																												<li class=""><a href="?c=169">멘토링 신청</a></li>
+																													<li class="on"><a href="?c=168">프로그램 신청</a></li>
+																											</ol>
+																							</div><!-- //lnb_sub_menu -->
+										</li>
+																			<li  id="lnb_5">
+											<a href="?c=160" ><span>소식 · 알림</span></a>
+											<div class="lnb_sub_menu">
+												<a href="?c=160">소식 · 알림</a>
+																									<ol class="lnb_menu_list">
+																												<li class=""><a href="?c=160">공지사항</a></li>
+																													<li class=""><a href="?c=158">유관기관 소식</a></li>
+																													<li class=""><a href="?c=173">스타트업 뉴스</a></li>
+																													<li class=""><a href="?c=172">입주기업 소식</a></li>
+																											</ol>
+																							</div><!-- //lnb_sub_menu -->
+										</li>
+																			<li  id="lnb_6">
+											<a href="?c=162" ><span>고객센터</span></a>
+											<div class="lnb_sub_menu">
+												<a href="?c=162">고객센터</a>
+																									<ol class="lnb_menu_list">
+																												<li class=""><a href="?c=162">이용안내</a></li>
+																													<li class=""><a href="?c=163">FAQ</a></li>
+																													<li class=""><a href="?c=164">고객 게시판</a></li>
+																											</ol>
+																							</div><!-- //lnb_sub_menu -->
+										</li>
+											                        </ul><!-- //lnb-menu -->
+
+								<script>
+								// sub menu on
+								$(function(){
+									$('.lnb_menu_list li').each(function(){
+										var on = $(this).hasClass('on'); 
+										if(on){
+											$(this).parent().parent().addClass('on');
+										}
+									});
+								}); 
+								</script>
+		                    </div><!-- //nav -->
+	                    </div>
+                    </div>
+                </div><!-- //header__lnb -->
+
+				<!--
+									<ul class="header__loginBtn row">
+													<li><a href="?c=lgn&amp;s=login">로그인</a></li>
+							<li><a href="?c=lgn&amp;s=join">회원가입</a></li>
+											</ul><!- - //header__loginBtn - ->
+								-->
+            </header>
+        </div><!-- //header -->
+        <!-- //header --><!-- container -->
+
+<div id="container" tabindex="0">
+    <div id="sub">
+
+		<section class="l-content inner portfolio">
+
+								<section class="spot" id="slider">
+						<ul class="sub-slider">
+							<li>
+		<div class='slider-inner'>
+			<div class='slider-bg' style='background:url(/upload/banner/20190327154936_8f1643c5.jpg) no-repeat center top;'></div> 
+<a href='javascript:void(0)'>			<div class='slider-box'><div class='slider-table'><div class='slider-tit'> 
+				<img src='/upload/banner/20190327153727_fde2305f.png' alt='서브 비주얼'> 
+			</div></div></div> 
+</a>		</div></li>						</ul>
+						<div class="sub__navbar">
+							<div class="maxWidth">
+								<span class="home"></span> 홈 <span class="blit"></span> 신청하기 <span class="blit"></span> <strong>프로그램 신청</strong>
+							</div>
+						</div>
+					</section><!-- //spot -->
+					<script>
+					$(function(){
+						$('.sub-slider').bxSlider({
+							auto:true,
+							responsive: true,
+							infiniteLoop: false,
+							hideControlOnEnd: true,
+							pager:false,
+							onSliderLoad : function (current) {
+								$('.sub-slider li').eq(current+0).find('.slider-tit img').addClass('on');
+							},
+							onSlideAfter : function(current,oldEle,newEle) {   
+								var showEle = $('.sub-slider li').eq(newEle+1);
+								$('.slider-tit img').removeClass('on');
+								showEle.find('.slider-tit img').addClass('on');
+							}
+						});
+					});
+					</script>
+			
+			<div class="maxWidth">
+				
+					<div class="sub-menu" id="area">
+						<ul class="row">						
+																						<li ><a href="?c=169"><span>멘토링 신청</span></a></li>
+															<li class='on'><a href="?c=168"><span>프로그램 신청</span></a></li>
+													</ul>
+					</div>
+								<div class="top-inner">
+				    <h2 class="title">
+				        프로그램 신청				        <span></span>
+				    </h2><!-- //title -->
+				</div><!-- //top-inner -->
+				
+
+				<!--div class="sub__tab">
+					<ul class="tab-menu row">
+											</ul>
+				</div-->
+
+																											</div>
+						<!-- 부분 컨텐츠 상단 출력 -->
+						<!-- 부분 컨텐츠 상단 출력 끝 -->
+			<div class="maxWidth">
+<script type="text/javascript" src="/common/js/ui.board.ko.js"></script>
+<script type="text/javascript" src="/common/js/ui.file.ko.js"></script>
+<script type="text/javascript">
+var fwBbs, fwFile, fwFilePop;
+$(function(){ 
+	try{
+		fwBbs=new $.board('photo');
+		fwFile=new $.file('3', 'photo','168', '');	
+		fwFilePop = new $.message("", "", "fileupload"); 
+	}
+	catch (e){ $.Error(e); }
+});
+</script>
+
+<form name="downfrm" action="/common/modules/filedown.ko.php" method="post">
+<input type="hidden" name="ix" value="">
+</form>
+<!-- 20161221 방소정 추가 -->
+<form name="sfrm" action="" method="get">
+<input type="hidden" name="c" value="168">
+<input type="hidden" name="s" value="">
+<input type="hidden" name="cate" value="">
+<input type="hidden" name="bbsid" value="168">
+
+<div id="bbsSearch">
+		
+	<div class="bbs-search-form">
+		<div class="bbs-search-total">
+							총 <span>297</span>건
+					</div>
+
+		<select name="sp" style="min-width: 100px;" class="ipt ipt-slt small">
+			<option value="subject" >제목</option>
+			<option value="contents" >내용</option>
+			<option value="name" >이름</option>
+		</select>
+        <span class="search-ipt">
+			<input type="text" name="sw" value="" class="ipt search">
+			<input type="button" class="btn search" value="검색" onclick="this.form.submit();">
+        </span>
+			</div>
+</div>
+</form>
+<div id="bbsMultiWrap " class='bbsMultiWrap--2'>
+		<div class="bbs-wrap">
+		<ul class="bbs-multi">
+							<li>
+					<div class="bbs-multi-img">
+						<a href="?c=168&s=&gp=1&gbn=view&ix=12004">
+							<img src='/upload/168/20261106152725_8ae0b321.png' border='0' align='absmiddle' class='thumbphoto'>																				</a>
+					</div>
+					<div class="bbs-multi-info">
+						<div class="bbs-multi-tit">
+							<a href="?c=168&s=&gp=1&gbn=view&ix=12004" title="2027년 정부 지원 사업 대비 성공 창업 스쿨 참가자 모집 공고">[접수중] 2027년 정부 지원 사업 대비..</a>
+						</div>
+						<div class="bbs-multi-date">2026.11.06</div>
+					</div>
+				</li>
+								<li>
+					<div class="bbs-multi-img">
+						<a href="?c=168&s=&gp=1&gbn=view&ix=11961">
+							<img src='/upload/168/20261027101950_eaafad80.png' border='0' align='absmiddle' class='thumbphoto'>							<div class='endimg'><img src='/images/board/end_img.png' /></div>													</a>
+					</div>
+					<div class="bbs-multi-info">
+						<div class="bbs-multi-tit">
+							<a href="?c=168&s=&gp=1&gbn=view&ix=11961" title="전문분야 창업멘토링 11월 참가자 모집">[접수마감] 전문분야 창업멘토링 11월 참가..</a>
+						</div>
+						<div class="bbs-multi-date">2026.10.27</div>
+					</div>
+				</li>
+								<li>
+					<div class="bbs-multi-img">
+						<a href="?c=168&s=&gp=1&gbn=view&ix=11900">
+							<img src='/upload/168/20261008092312_4005288e.png' border='0' align='absmiddle' class='thumbphoto'>							<div class='endimg'><img src='/images/board/end_img.png' /></div>													</a>
+					</div>
+					<div class="bbs-multi-info">
+						<div class="bbs-multi-tit">
+							<a href="?c=168&s=&gp=1&gbn=view&ix=11900" title="2026 모의 창업 스쿨 2차 참가자 모집 공고">[접수마감] 2026 모의 창업 스쿨 2차 참..</a>
+						</div>
+						<div class="bbs-multi-date">2026.10.08</div>
+					</div>
+				</li>
+								<li>
+					<div class="bbs-multi-img">
+						<a href="?c=168&s=&gp=1&gbn=view&ix=11871">
+							<img src='/upload/168/20261001085826_04034022.png' border='0' align='absmiddle' class='thumbphoto'>							<div class='endimg'><img src='/images/board/end_img.png' /></div>													</a>
+					</div>
+					<div class="bbs-multi-info">
+						<div class="bbs-multi-tit">
+							<a href="?c=168&s=&gp=1&gbn=view&ix=11871" title="고덕비즈밸리 강동 U1센터 청년창업공간 입주기업 모집 공고">[접수마감] 고덕비즈밸리 강동 U1센터 청년창..</a>
+						</div>
+						<div class="bbs-multi-date">2026.10.01</div>
+					</div>
+				</li>
+								<li>
+					<div class="bbs-multi-img">
+						<a href="?c=168&s=&gp=1&gbn=view&ix=11868">
+							<img src='/upload/168/20260930094926_d5acc8d4.png' border='0' align='absmiddle' class='thumbphoto'>							<div class='endimg'><img src='/images/board/end_img.png' /></div>													</a>
+					</div>
+					<div class="bbs-multi-info">
+						<div class="bbs-multi-tit">
+							<a href="?c=168&s=&gp=1&gbn=view&ix=11868" title="청년 창업가 네트워킹 데이">[접수마감] 청년 창업가 네트워킹 데이..</a>
+						</div>
+						<div class="bbs-multi-date">2026.09.30</div>
+					</div>
+				</li>
+								<li>
+					<div class="bbs-multi-img">
+						<a href="?c=168&s=&gp=1&gbn=view&ix=11838">
+							<img src='/upload/168/20260922105352_a008d069.png' border='0' align='absmiddle' class='thumbphoto'>							<div class='endimg'><img src='/images/board/end_img.png' /></div>													</a>
+					</div>
+					<div class="bbs-multi-info">
+						<div class="bbs-multi-tit">
+							<a href="?c=168&s=&gp=1&gbn=view&ix=11838" title="전문분야 창업멘토링 10월 참가자 모집">[접수마감] 전문분야 창업멘토링 10월 참가..</a>
+						</div>
+						<div class="bbs-multi-date">2026.09.22</div>
+					</div>
+				</li>
+								<li>
+					<div class="bbs-multi-img">
+						<a href="?c=168&s=&gp=1&gbn=view&ix=11744">
+							<img src='/upload/168/20260904164424_232f0c29.png' border='0' align='absmiddle' class='thumbphoto'>							<div class='endimg'><img src='/images/board/end_img.png' /></div>													</a>
+					</div>
+					<div class="bbs-multi-info">
+						<div class="bbs-multi-tit">
+							<a href="?c=168&s=&gp=1&gbn=view&ix=11744" title="모두의 창업 최종 점검 멘토링">[접수마감] 모두의 창업 최종 점검 멘토링..</a>
+						</div>
+						<div class="bbs-multi-date">2026.09.04</div>
+					</div>
+				</li>
+								<li>
+					<div class="bbs-multi-img">
+						<a href="?c=168&s=&gp=1&gbn=view&ix=11673">
+							<img src='/upload/168/20260824100643_12c4b4ad.png' border='0' align='absmiddle' class='thumbphoto'>							<div class='endimg'><img src='/images/board/end_img.png' /></div>													</a>
+					</div>
+					<div class="bbs-multi-info">
+						<div class="bbs-multi-tit">
+							<a href="?c=168&s=&gp=1&gbn=view&ix=11673" title="전문분야 창업멘토링 9월 참가자 모집">[접수마감] 전문분야 창업멘토링 9월 참가자..</a>
+						</div>
+						<div class="bbs-multi-date">2026.08.24</div>
+					</div>
+				</li>
+								<li>
+					<div class="bbs-multi-img">
+						<a href="?c=168&s=&gp=1&gbn=view&ix=11578">
+							<img src='/upload/168/20260804094453_11b5ab94.jpg' border='0' align='absmiddle' class='thumbphoto'>							<div class='endimg'><img src='/images/board/end_img.png' /></div>													</a>
+					</div>
+					<div class="bbs-multi-info">
+						<div class="bbs-multi-tit">
+							<a href="?c=168&s=&gp=1&gbn=view&ix=11578" title="투자유치 마스터 스쿨 참가자 모집">[접수마감] 투자유치 마스터 스쿨 참가자 모..</a>
+						</div>
+						<div class="bbs-multi-date">2026.08.04</div>
+					</div>
+				</li>
+								<li>
+					<div class="bbs-multi-img">
+						<a href="?c=168&s=&gp=1&gbn=view&ix=11520">
+							<img src='/upload/168/20260721102950_8104d485.png' border='0' align='absmiddle' class='thumbphoto'>							<div class='endimg'><img src='/images/board/end_img.png' /></div>													</a>
+					</div>
+					<div class="bbs-multi-info">
+						<div class="bbs-multi-tit">
+							<a href="?c=168&s=&gp=1&gbn=view&ix=11520" title="전문분야 창업멘토링 8월 참가자 모집">[접수마감] 전문분야 창업멘토링 8월 참가자..</a>
+						</div>
+						<div class="bbs-multi-date">2026.07.21</div>
+					</div>
+				</li>
+								<li>
+					<div class="bbs-multi-img">
+						<a href="?c=168&s=&gp=1&gbn=view&ix=11504">
+							<img src='/upload/168/20260715104213_7115c2c7.png' border='0' align='absmiddle' class='thumbphoto'>							<div class='endimg'><img src='/images/board/end_img.png' /></div>													</a>
+					</div>
+					<div class="bbs-multi-info">
+						<div class="bbs-multi-tit">
+							<a href="?c=168&s=&gp=1&gbn=view&ix=11504" title="2026 성공 창업 스쿨 참가자 모집 공고">[접수마감] 2026 성공 창업 스쿨 참가자 ..</a>
+						</div>
+						<div class="bbs-multi-date">2026.07.15</div>
+					</div>
+				</li>
+								<li>
+					<div class="bbs-multi-img">
+						<a href="?c=168&s=&gp=1&gbn=view&ix=11474">
+							<img src='/upload/168/20260710093300_5cc3b86f.png' border='0' align='absmiddle' class='thumbphoto'>							<div class='endimg'><img src='/images/board/end_img.png' /></div>													</a>
+					</div>
+					<div class="bbs-multi-info">
+						<div class="bbs-multi-tit">
+							<a href="?c=168&s=&gp=1&gbn=view&ix=11474" title="스타트업 영 그라운드 MVP 개발 해커톤 참가자 모집">[접수마감] 스타트업 영 그라운드 MVP 개..</a>
+						</div>
+						<div class="bbs-multi-date">2026.07.10</div>
+					</div>
+				</li>
+						</ul>
+	</div>
+	</div>	<div id="bbs-btn">
+			</div>
+<div class='page-navi'><a class='prev10'><img src='/images/board/btn_prev10.gif' alt='이전10페이지'></a><a class='prev1'><img src='/images/board/btn_prev1.gif' alt='이전1페이지'></a><a href='?c=168&s=&gbn=list&gp=1' class='on'>1</a><a href='?c=168&s=&gbn=list&gp=2' >2</a><a href='?c=168&s=&gbn=list&gp=3' >3</a><a href='?c=168&s=&gbn=list&gp=4' >4</a><a href='?c=168&s=&gbn=list&gp=5' >5</a><a href='?c=168&s=&gbn=list&gp=6' >6</a><a href='?c=168&s=&gbn=list&gp=7' >7</a><a href='?c=168&s=&gbn=list&gp=8' >8</a><a href='?c=168&s=&gbn=list&gp=9' >9</a><a href='?c=168&s=&gbn=list&gp=10' >10</a><a class='next1' href='?c=168&s=&gbn=list&gp=2'><img src='/images/board/btn_next1.gif' alt='다음1페이지'></a><a class='next10' href='?c=168&s=&gbn=list&gp=11'><img src='/images/board/btn_next10.gif' alt='다음10페이지'></a></div></div>			<!-- 부분 컨텐츠 하단 출력 -->
+						<!-- 부분 컨텐츠 하단 출력 끝 -->
+		</section><!-- //l-content --> 
+
+    </div>
+</div>        
+<!-- //container -->	
+
+<script>
+
+$(window).load(function(){
+    $('#information, #information2').find('.obj').each(function(i) {
+        var obj = $(this);
+        setTimeout(function() {
+            obj.addClass('active');
+        }, 100*i);
+    });
+});
+
+</script>        <!-- footer -->
+        <div id="footer">
+            <footer>
+            
+                <div class="footer__top">
+                    <div class="maxWidth row">
+                        <div class="footer__sns">
+                            <a href="http://blog.naver.com/gdhaenaem" target="_blank"><img src="./images/common/f_sns2.gif" alt="SNS"> <span>강동구 청년해냄센터 블로그</span></a>
+							<a href="https://www.youtube.com/channel/UCIfhglj6q7YiluC84esF3sw" target="_blank"><img src="./images/common/f_sns3.png" alt="YOUTUBE"> <span>강동구 청년해냄센터 유튜브</span></a>
+                        </div>
+                        <div class="familySite_inner">
+							<select name="" id="familySite" class="right "onchange="if(this.value) window.open(this.value);">
+                                <option value="">창업 유관기관</option>
+                                <option value="https://www.k-startup.go.kr">K-startup</option>
+                                <option value="https://www.bizinfo.go.kr">기업마당</option>
+                                <option value="https://startup-plus.kr">스타트업플러스</option>
+                                <option value="https://www.sba.seoul.kr">서울산업진흥원</option>
+                                <option value="https://www.kosmes.or.kr">중소벤처기업진흥공단</option>
+                                <option value="https://www.sbiz24.kr">소상공인마당</option>
+                                <option value="https://thevc.kr">THE VC</option>
+                            </select>
+							<!--
+                            <select name="" id="familySite" class="left "onchange="if(this.value) window.open(this.value);">
+                                <option value="">서울시 유관기관</option>
+                                <option value="http://seoulstartuphub.com">서울창업허브</option>
+                                <option value="http://startup.ssu.ac.kr">서울창업카페 숭실대입구역점</option>
+                                <option value="https://honghapvalley.org">서울창업카페 홍대점</option>
+                                <option value="http://seoulstartupcafe.com">서울창업카페 신촌점</option>
+                                <option value="http://kstartupcafe.com">서울창업카페 대학로점</option>
+                                <option value="https://blog.naver.com/cubestup">서울창업카페 충무로점</option>
+                                <option value="https://blog.naver.com/seoul_esc">서울창업카페 은평불광점</option>
+								<option value="https://ycstartup.co.kr">서울창업카페 양천신정점</option>
+								<option value="http://창업카페상봉.com">서울창업카페 상봉점</option>
+								<option value="https://blog.naver.com/dodostartup">서울창업카페 서초교대점</option>
+								<option value="http://www.nvsc.co.kr">서울창업카페 낙성대점</option>
+                            </select>
+                            <select name="" id="familySite" class="right" onchange="if(this.value) window.open(this.value);">
+                                <option value="">강동구 유관기관</option>
+                                <option value="http://www.gangdong.go.kr">강동구청</option>
+                                <option value="http://youthmaru.co.kr">청년마루</option>
+                                <option value="http://www.gdse.org">강동구사회적경제지원센터</option>
+								<option value="http://www.gangdongmaeul.org">강동구마을공동체지원센터</option>
+								<option value="https://amsacrc.modoo.at">암사도시재생 상상나루來</option>
+								<option value="https://blog.naver.com/gangdong_orang">서울청년센터 강동오랑</option>
+								<option value="http://www.gdangelhub.or.kr">엔젤공방허브센터</option>
+                            </select>
+							-->
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__inner">
+                    <div class="maxWidth row">
+                        <div class="footer__address">
+                            <address>
+                                서울특별시 강동구 올림픽로 610, 천호역 효성해링턴타워 B동 2층 강동구 청년해냄센터 <br>
+                                <span class="ls-05">
+                                    <strong>T.</strong> 02-488-6880 / 6881 
+                                </span>
+                                <span class="ls-05">
+                                    <strong>F.</strong> 02-470-3444                                </span>
+                                <strong>E.</strong> haenaemcenter@gmail.com 
+                            </address>
+                            <small class="copyright">Copyright@ 2020 HAENAEMCENTER. All right reserved.</small>
+                        </div>
+                        <h2><img src="./images/common/f_logo.gif" alt="로고"></h2>
+                    </div>
+                </div>
+				<!--
+				<div class="f_quick_bnr">
+					<ul>
+						<li><a href="http://workplaytown.com" target="_blank"><img src="./images/common/quick_banner01.png" alt="강동청년work-play타운"></a></li>
+						<li><a href="?c=169"><img src="./images/common/quick_banner02.png" alt="멘토링 신청"></a></li>
+						<li><a href="?c=168"><img src="./images/common/quick_banner03.png" alt="프로그램 신청"></a></li>
+						<li><a href="?c=176"><img src="./images/common/quick_banner05.png" alt="콘텐츠 크리에이터실 대관 신청"></a></li>
+						<li><a href="?c=170"><img src="./images/common/quick_banner04.png" alt="회의실 대관 신청"></a></li>
+					</ul>
+                </div>
+				-->
+            </footer>        
+        </div>
+        <!-- //footer -->
+    </div>    
+<iframe name="actionfrm" id="actionfrm" src="about:blank" width="0" height="0" style="display:none;"></iframe>
+<script>
+$(function() {
+FastClick.attach(document.body);
+});
+</script>
+    
+<script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+<script type="text/javascript">
+if(!wcs_add) var wcs_add = {};
+wcs_add["wa"] = "3af63dfc4ea";
+wcs_do();
+</script>
+</body>
+</html>

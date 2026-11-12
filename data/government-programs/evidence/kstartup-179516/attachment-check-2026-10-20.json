@@ -1,0 +1,16 @@
+[
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/gx1Ln",
+    "verifiedAt": "2026-10-20",
+    "status": "downloaded",
+    "sha256": "1afae3732cfb71d973c66278fbe59b97e1e13a203ea077ae044ada76dcf3a94d",
+    "previousHash": "1afae3732cfb71d973c66278fbe59b97e1e13a203ea077ae044ada76dcf3a94d",
+    "changed": false,
+    "bytes": 103228,
+    "format": "PDF",
+    "file": "attachment-01.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 1132
+  }
+]

@@ -1,0 +1,54 @@
+[
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/v1nyX-9EdkoEvHLi_CnhkMyvJhtt-IFsD5b2xFFJRtPBd1bw",
+    "verifiedAt": "2026-11-05",
+    "status": "downloaded",
+    "sha256": "df9516cf5f06d8771c002958d9fe8ca3d0068f14e89cbe278d8f11a8db3429c3",
+    "previousHash": "df9516cf5f06d8771c002958d9fe8ca3d0068f14e89cbe278d8f11a8db3429c3",
+    "changed": false,
+    "bytes": 80896,
+    "format": "HWP",
+    "file": "attachment-01.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 6121
+  },
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/v1YRYOH8jQ9zeRXyrpJNvSw53ZCaR4vaM61UUEFQGcBikAQQ",
+    "verifiedAt": "2026-11-05",
+    "status": "downloaded",
+    "sha256": "5e3371d307f9c3dad410552c4972095d72896d3bb72f8b25871917b15774156e",
+    "previousHash": "5e3371d307f9c3dad410552c4972095d72896d3bb72f8b25871917b15774156e",
+    "changed": false,
+    "bytes": 63488,
+    "format": "HWP",
+    "file": "attachment-02.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 5139
+  },
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/v1er9iGKiJSUQlDlEitxrF2wNnlEbjzr6IJWV0_ABz3ohSdA",
+    "verifiedAt": "2026-11-05",
+    "status": "downloaded",
+    "sha256": "611e43071c2d7fd1906be27c7aee04cdce7880e430a0239a982bee5eb9ee40d9",
+    "previousHash": "611e43071c2d7fd1906be27c7aee04cdce7880e430a0239a982bee5eb9ee40d9",
+    "changed": false,
+    "bytes": 2997912,
+    "format": "IMAGE",
+    "file": "attachment-03.bin",
+    "contentType": "image/png;charset=UTF-8"
+  },
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/v1eMVCHkYD476gl-a7z4oj2vFIyIPXoNy7q1EdkrV17ovuaQ",
+    "verifiedAt": "2026-11-05",
+    "status": "downloaded",
+    "sha256": "31da5bfa80593250423a165326b5745aa818d6d81762cb2827fe0dceff4af91b",
+    "previousHash": "31da5bfa80593250423a165326b5745aa818d6d81762cb2827fe0dceff4af91b",
+    "changed": false,
+    "bytes": 947,
+    "format": "OTHER",
+    "file": "attachment-04.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/jp1Ln",
+    "verifiedAt": "2026-10-24",
+    "status": "downloaded",
+    "sha256": "3d7c044f4ea004b09153d727068e12a8ace0d0ad84fe366962875c63c7ade0d5",
+    "previousHash": "3d7c044f4ea004b09153d727068e12a8ace0d0ad84fe366962875c63c7ade0d5",
+    "changed": false,
+    "bytes": 3593396,
+    "format": "PDF",
+    "file": "attachment-01.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 0
+  }
+]

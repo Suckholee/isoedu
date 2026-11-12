@@ -1,0 +1,315 @@
+{
+  "programId": "kstartup-179740",
+  "title": "용인시산업진흥원 2026년 제5차 창업지원센터 입주기업 모집공고(~11. 25. 수 16:00까지)",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-08T10:16:05.128465+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179740",
+  "reviewScope": "공식상세·모집HWP전체(1~9절·비용표/서류발급기준)·별첨HWP신청/계획/서약/동의전문·HWP내시설사진/배치6이미지시각,2026-11-08",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1sfScAfUzizuLo6Yj2TG4AhCdWkkkKhxGELHYgfoA7fFbEg",
+      "verifiedAt": "2026-11-08",
+      "status": "downloaded",
+      "sha256": "7a618da70783d54fcbc45dcdda96b9ec519091ed12cc7221683a38a2cc7147e6",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 873472,
+      "format": "HWP",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 6188,
+      "review": {
+        "at": "2026-11-08T10:16:05.128465+00:00",
+        "scope": "공식상세·모집HWP전체(1~9절·비용표/서류발급기준)·별첨HWP신청/계획/서약/동의전문·HWP내시설사진/배치6이미지시각,2026-11-08",
+        "method": "text/visual scope recorded in reviewScope"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1f_1Bsm8Qysge883ShVXBCfT3RSkSiZmFJKfk7Lg03y06iA",
+      "verifiedAt": "2026-11-08",
+      "status": "downloaded",
+      "sha256": "8c9279b9eb44aae9abc5155347ab5e0d40c380cb1254f9a43200453434fa2fb7",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 58880,
+      "format": "HWP",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 3904,
+      "review": {
+        "at": "2026-11-08T10:16:05.128465+00:00",
+        "scope": "공식상세·모집HWP전체(1~9절·비용표/서류발급기준)·별첨HWP신청/계획/서약/동의전문·HWP내시설사진/배치6이미지시각,2026-11-08",
+        "method": "text/visual scope recorded in reviewScope"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/v1sfScAfUzizuLo6Yj2TG4AhCdWkkkKhxGELHYgfoA7fFbEg": "7a618da70783d54fcbc45dcdda96b9ec519091ed12cc7221683a38a2cc7147e6",
+    "https://www.k-startup.go.kr/afile/fileDownload/v1f_1Bsm8Qysge883ShVXBCfT3RSkSiZmFJKfk7Lg03y06iA": "8c9279b9eb44aae9abc5155347ab5e0d40c380cb1254f9a43200453434fa2fb7"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-08T10:16:05.128465+00:00",
+  "eligibility": {
+    "summary": "공고11/5기준 창업7년미만 또는예비. 동백S바이오헬스2기업(디지털헬스·AgeTech·의료기기·바이오·유전체·식품·뷰티·돌봄로봇·AI진단등). 개인개업일/법인설립일. 본점또는기업부설연구소변경·계약1개월내변경증등록. 예비3개월내창업,특별사유6개월.",
+    "companyFields": [
+      "업력·개인/법인전환",
+      "바이오헬스제품기술",
+      "중소기업확인서·유효기간",
+      "다른동종사업/재창업이력",
+      "주소이전/등록일",
+      "세금·신용·제재",
+      "과거역북/영덕/동백졸업퇴거",
+      "매출/수출·고용·투자",
+      "대표/팀이력",
+      "호실·보증금"
+    ],
+    "reference": "HWP공고1모집개요/3신청자격·입주조건; 확인 2026-11-08T10:20:39.754794+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179740"
+  },
+  "exclusions": {
+    "items": [
+      "사행·유흥등창업제외업종",
+      "비기술·비제조단순점포/도소매/음식/유통",
+      "동종다른사업운영/폐업3년내동종재창업",
+      "소음진동오폐수",
+      "채무불이행·제재·체납·부도휴폐업",
+      "중소기업초과",
+      "진흥원센터졸업퇴거기업/대표",
+      "허위서류"
+    ],
+    "reference": "HWP공고3지원제외대상; 확인 2026-11-08T10:20:39.754794+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179740"
+  },
+  "support": {
+    "summary": "동백S기흥구동백죽전대로444클리닉동7층. 계약~2027.11.30,평가후1년씩최대4회연장. 6호27.34평 전용12.33 월481800원/보증1445400원,10호25.33평 전용11.42 월446600원/보증1339800원. 월부담금임대+관리고정,보증3개월분/보험대체. 가구·사무용품·인터넷·전화별도자비. 시설장비·AC/IR/BM·KAIST/ETRI/병원연계 기회,투자확약없음.",
+    "reference": "HWP공고2시설·비용표·유의사항7; 확인 2026-11-08T10:20:39.754794+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179740"
+  },
+  "period": {
+    "start": "2026-11-05",
+    "end": "2026-11-25",
+    "deadlineTime": "16:00",
+    "timezone": "Asia/Seoul",
+    "reference": "HWP공고6신청기간; 확인 2026-11-08T10:20:39.754794+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179740"
+  },
+  "application": {
+    "summary": "https://ybs.ypa.or.kr 회원가입·기업정보사전등록후온라인PDF일괄업로드. 이메일/오프라인불가. 마감11/25 16시,26~27일적격,11/30~12/4예정발표,12월중순계약·입주,27.10연장평가.",
+    "reference": "HWP공고6방법·5일정표; 확인 2026-11-08T10:20:39.754794+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179740"
+  },
+  "requiredDocuments": [
+    {
+      "name": "날인입주신청/계획·서약·개인정보동의·기입인증IP/수상/인력이력증빙",
+      "condition": "공통·서명/직인은인감증명과동일",
+      "reference": "공고9제출표·첨부2 HWP"
+    },
+    {
+      "name": "발표자료 자유양식",
+      "condition": "공통·신청서로대체불가",
+      "reference": "공고9제출표"
+    },
+    {
+      "name": "총사업자등록내역/무사업사실증명",
+      "condition": "공통·11/5이후발급",
+      "reference": "공고9"
+    },
+    {
+      "name": "법인/개인인감증명 또는본인서명사실확인",
+      "condition": "공통·11/5기준6개월내",
+      "reference": "공고9"
+    },
+    {
+      "name": "법인등기/개인·예비대표주민등록등본",
+      "condition": "공통·11/5기준3개월내",
+      "reference": "공고9"
+    },
+    {
+      "name": "국세·지방세납입증명 합본",
+      "condition": "법인/개인·11/5기준1개월내",
+      "reference": "공고9"
+    },
+    {
+      "name": "사업자등록증전체·폐업사실증명·중소기업확인서",
+      "condition": "사업자해당시·SME유효기간모집기간에포함",
+      "reference": "공고9"
+    }
+  ],
+  "businessPlan": {
+    "format": "지정HWP 신청·계획/서약/동의→모두PDF,발표는자유별도",
+    "limit": "분량미명시·작성참고삭제·증빙표추가가능",
+    "sections": [
+      {
+        "name": "기본현황",
+        "items": [
+          "희망호실2개/입주시기·업력·투자백만원·전년매출백만원/수출백만불·인원·주소·대표"
+        ],
+        "limit": "분량미명시·작성참고삭제·증빙표추가가능"
+      },
+      {
+        "name": "지원필요",
+        "items": [
+          "현재애로·입주타당성"
+        ],
+        "limit": "분량미명시·작성참고삭제·증빙표추가가능"
+      },
+      {
+        "name": "역량/기술",
+        "items": [
+          "대표학경력·구성원·실적·추진의지·혁신차별성·시장진출"
+        ],
+        "limit": "분량미명시·작성참고삭제·증빙표추가가능"
+      },
+      {
+        "name": "성장",
+        "items": [
+          "활동목표/지표현재대목표·신제품/매출수출고용·투자·용인상생"
+        ],
+        "limit": "분량미명시·작성참고삭제·증빙표추가가능"
+      },
+      {
+        "name": "실적증빙",
+        "items": [
+          "인증IP/수상/팀이력·성과캡처"
+        ],
+        "limit": "분량미명시·작성참고삭제·증빙표추가가능"
+      },
+      {
+        "name": "별첨2~3",
+        "items": [
+          "서약·대표와참여인력전체5년수집/제3자제공동의"
+        ],
+        "limit": "분량미명시·작성참고삭제·증빙표추가가능"
+      }
+    ],
+    "reference": "별첨1신청서·계획1~3/실적표; 확인 2026-11-08T10:20:39.754794+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179740"
+  },
+  "evaluation": {
+    "summary": "서류적격→발표10분/질의10분·최대2명참석·대표원칙대체사전연락. 외부5명이상 최고최저제외평균70이상고득점·협상호실배정. 필요20/역량기술40/성장40. 시간변경불가·미참석탈락.",
+    "reference": "HWP공고4평가기준; 확인 2026-11-08T10:20:39.754794+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179740"
+  },
+  "contact": {
+    "name": "김정환031-890-7843 jhkim@ypa.or.kr / AC김현지02-6494-7776",
+    "reference": "HWP공고8문의; 확인 2026-11-08T10:20:39.754794+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179740"
+  },
+  "unresolved": [
+    "용인온라인접수주소200이지만134바이트JS안내로로그인뒤필드/접수확인미검증",
+    "월부담금VAT포함여부원문미기재·계약시확인필요"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179740",
+    "companyId": null,
+    "permission": "권한회사프로필확보후근거별검토·현재신청가능확정아님",
+    "steps": [
+      "회사필드/증빙확인",
+      "충돌/미확인해결",
+      "S12양식·S13회사정보로서류/계획작성"
+    ]
+  },
+  "applicationChecks": [
+    {
+      "id": "179740",
+      "url": "https://ybs.ypa.or.kr",
+      "checkedAt": "2026-11-08T10:11:40.664121+00:00",
+      "status": 200,
+      "finalUrl": "https://ybs.ypa.or.kr",
+      "evidence": "179740-publiccheck-20261108.html",
+      "bytes": 134
+    }
+  ],
+  "evidenceReferences": [
+    {
+      "field": "eligibility",
+      "reference": "HWP공고1모집개요/3신청자격·입주조건",
+      "checkedAt": "2026-11-08T10:20:39.754794+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179740",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1sfScAfUzizuLo6Yj2TG4AhCdWkkkKhxGELHYgfoA7fFbEg",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1f_1Bsm8Qysge883ShVXBCfT3RSkSiZmFJKfk7Lg03y06iA"
+      ]
+    },
+    {
+      "field": "exclusions",
+      "reference": "HWP공고3지원제외대상",
+      "checkedAt": "2026-11-08T10:20:39.754794+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179740",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1sfScAfUzizuLo6Yj2TG4AhCdWkkkKhxGELHYgfoA7fFbEg",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1f_1Bsm8Qysge883ShVXBCfT3RSkSiZmFJKfk7Lg03y06iA"
+      ]
+    },
+    {
+      "field": "support",
+      "reference": "HWP공고2시설·비용표·유의사항7",
+      "checkedAt": "2026-11-08T10:20:39.754794+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179740",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1sfScAfUzizuLo6Yj2TG4AhCdWkkkKhxGELHYgfoA7fFbEg",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1f_1Bsm8Qysge883ShVXBCfT3RSkSiZmFJKfk7Lg03y06iA"
+      ]
+    },
+    {
+      "field": "period",
+      "reference": "HWP공고6신청기간",
+      "checkedAt": "2026-11-08T10:20:39.754794+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179740",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1sfScAfUzizuLo6Yj2TG4AhCdWkkkKhxGELHYgfoA7fFbEg",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1f_1Bsm8Qysge883ShVXBCfT3RSkSiZmFJKfk7Lg03y06iA"
+      ]
+    },
+    {
+      "field": "application",
+      "reference": "HWP공고6방법·5일정표",
+      "checkedAt": "2026-11-08T10:20:39.754794+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179740",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1sfScAfUzizuLo6Yj2TG4AhCdWkkkKhxGELHYgfoA7fFbEg",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1f_1Bsm8Qysge883ShVXBCfT3RSkSiZmFJKfk7Lg03y06iA"
+      ]
+    },
+    {
+      "field": "requiredDocuments",
+      "reference": "HWP공고9서류표·HWP별첨1~3",
+      "checkedAt": "2026-11-08T10:20:39.754794+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179740",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1sfScAfUzizuLo6Yj2TG4AhCdWkkkKhxGELHYgfoA7fFbEg",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1f_1Bsm8Qysge883ShVXBCfT3RSkSiZmFJKfk7Lg03y06iA"
+      ]
+    },
+    {
+      "field": "businessPlan",
+      "reference": "별첨1신청서·계획1~3/실적표",
+      "checkedAt": "2026-11-08T10:20:39.754794+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179740",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1sfScAfUzizuLo6Yj2TG4AhCdWkkkKhxGELHYgfoA7fFbEg",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1f_1Bsm8Qysge883ShVXBCfT3RSkSiZmFJKfk7Lg03y06iA"
+      ]
+    },
+    {
+      "field": "evaluation",
+      "reference": "HWP공고4평가기준",
+      "checkedAt": "2026-11-08T10:20:39.754794+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179740",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1sfScAfUzizuLo6Yj2TG4AhCdWkkkKhxGELHYgfoA7fFbEg",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1f_1Bsm8Qysge883ShVXBCfT3RSkSiZmFJKfk7Lg03y06iA"
+      ]
+    },
+    {
+      "field": "contact",
+      "reference": "HWP공고8문의",
+      "checkedAt": "2026-11-08T10:20:39.754794+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179740",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1sfScAfUzizuLo6Yj2TG4AhCdWkkkKhxGELHYgfoA7fFbEg",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1f_1Bsm8Qysge883ShVXBCfT3RSkSiZmFJKfk7Lg03y06iA"
+      ]
+    }
+  ]
+}

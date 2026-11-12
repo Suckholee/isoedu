@@ -1,0 +1,63 @@
+[
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/PT1Ln",
+    "file": "attachment-01.bin",
+    "name": "ºÙÀÓ2.  2026Ãæ³²Ã¢¾÷¸¶·ç³ªºñ ÀÔÁÖ½ÅÃ»¼­ ¹× »ç¾÷°èÈ¹¼­.hwp",
+    "bytes": 187904,
+    "sha256": "b3ad07f24bbb7fb8a20cf1f211e8fe0bec21c37215321ddc38a7f14e20e3cdc5",
+    "contentType": "application/octet-stream",
+    "verifiedAt": "2026-10-18T00:02:25.039Z",
+    "status": "downloaded",
+    "localPath": "attachment-01.hwp",
+    "format": "HWP",
+    "extractionStatus": "text-extracted",
+    "characters": 5929,
+    "displayName": "붙임2.  2026충남창업마루나비 입주신청서 및 사업계획서.hwp"
+  },
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/rT1Ln",
+    "file": "attachment-02.bin",
+    "name": "ºÙÀÓ1. 2026³â ÇÏ¹Ý±â Ãæ³²Ã¢¾÷¸¶·ç³ªºñ ÀÔÁÖ±â¾÷ ¸ðÁý_°ø°í¹®.pdf",
+    "bytes": 825089,
+    "sha256": "e21ad1161fe4eff226ac6d73ef349e585fede2db4d73aae5093e5c3a52e1fb0e",
+    "contentType": "application/octet-stream",
+    "verifiedAt": "2026-10-18T00:02:25.293Z",
+    "status": "downloaded",
+    "localPath": "attachment-02.pdf",
+    "format": "PDF",
+    "pages": 9,
+    "extractionStatus": "text-extracted",
+    "characters": 5941,
+    "displayName": "붙임1. 2026년 하반기 충남창업마루나비 입주기업 모집_공고문.pdf"
+  },
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/sT1Ln",
+    "file": "attachment-03.bin",
+    "name": "Æ÷½ºÅÍ_¿øº».jpg",
+    "bytes": 819198,
+    "sha256": "4091bb5a9c7d9eb8f8a1a329ef7f88ea08d4de493d317a22d640d7530d20c069",
+    "contentType": "image/jpeg;charset=UTF-8",
+    "verifiedAt": "2026-10-18T00:02:25.493Z",
+    "status": "downloaded",
+    "localPath": "attachment-03.jpg",
+    "format": "JPG",
+    "extractionStatus": "visual-review-needed",
+    "characters": 0,
+    "displayName": "포스터_원본.jpg"
+  },
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/Tp1Ln",
+    "file": "attachment-04.bin",
+    "name": "Æ÷½ºÅÍ_¿øº».hwpx",
+    "bytes": 34838,
+    "sha256": "e0cd7dc188e3fa5005db8ba702279806b8c59dac3fda8ba88bd063a0184d502d",
+    "contentType": "application/octet-stream",
+    "verifiedAt": "2026-10-18T00:02:25.536Z",
+    "status": "downloaded",
+    "localPath": "attachment-04.hwpx",
+    "format": "HWPX",
+    "extractionStatus": "text-extracted",
+    "characters": 478,
+    "displayName": "포스터_원본.hwpx"
+  }
+]

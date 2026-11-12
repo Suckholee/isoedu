@@ -1,0 +1,6295 @@
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 기본 파비콘 설정 -->
+  <link rel="icon" href="/resources/images/meta/favicon.ico" type="image/x-icon">
+
+  <!-- PNG 포맷 파비콘 (더 많은 브라우저와 플랫폼에서 지원) -->
+  <link rel="icon" href="/resources/images/meta/favicon-16x16.png" type="image/png">
+
+  <!-- 애플 터치 아이콘 (iOS) -->
+  <link rel="apple-touch-icon" href="/resources/images/meta/apple-icon.png">
+
+  <!-- 다양한 크기의 애플 터치 아이콘 -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/resources/images/meta/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/resources/images/meta/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/resources/images/meta/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/resources/images/meta/apple-icon-144x144.png">
+
+  <!-- 다양한 크기의 파비콘 설정 -->
+  <link rel="icon" sizes="16x16" href="/resources/images/meta/favicon-16x16.png">
+  <link rel="icon" sizes="32x32" href="/resources/images/meta/favicon-32x32.png">
+  <link rel="icon" sizes="96x96" href="/resources/images/meta/favicon-96x96.png">
+  <link rel="icon" sizes="192x192" href="/resources/images/meta/android-icon-192x192.png">
+
+  <!-- Meta Description: 페이지 내용을 요약하여 클릭을 유도 -->
+  <meta name="description" content="지원사업 검색은 쉽고 빠르게 경기기업비서로 지원사업 찾아보기">
+  <!-- Meta Keywords: (사용 빈도가 낮지만 참고용) -->
+  <meta name="keywords" content="중소기업 지원, 경기기업비서, 정부 지원 정보, 기업 지원 프로그램, 지원사업">
+  <!-- Canonical 태그: 중복 URL 방지 -->
+  <link rel="canonical" href="https://www.egbiz.or.kr/">
+  <!-- Robots 태그: 크롤링 및 인덱싱 제어 -->
+  <meta name="robots" content="index, follow">
+  <!-- 사이트명 -->
+  <meta property="og:site_name" content="경기기업비서">
+  <!-- 콘텐츠 타입 (일반적으로 'website' 또는 'article') -->
+  <meta property="og:type" content="website">
+  
+
+     <!-- Open Graph (OG) 태그: 소셜 미디어 공유를 위한 설정 -->
+  <meta property="og:title" content="경기기업비서">
+  <meta property="og:url" content="https://www.egbiz.or.kr/">
+  <meta property="og:description" content="지원사업 검색은 쉽고 빠르게 경기기업비서로 지원사업 찾아보기">
+  <meta property="og:image" content="/resources/images/meta/og-img.png">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card: 트위터에서 공유될 때 표시되는 정보 -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="경기기업비서">
+  <meta name="twitter:description" content="중소기업 지원과 관련된 최신 정보를 확인하세요!">
+  <meta name="twitter:image" content="/resources/images/meta/og-img.png">
+  <meta name="_csrf" content="6dde6f69-de1e-4516-a467-1619f3ff118d">
+
+
+
+<title>
+    
+    분야별지원사업 &lt; 지원사업 | 경기기업비서
+</title>
+
+  <link rel="stylesheet" href="/resources/css/style.css"><!--기본스타일-->
+  <link rel="stylesheet" href="/resources/css/main.css"><!--메인스타일-->
+
+
+  <!--제이쿼리-->
+  <script src="/resources/plugin/jquery/jquery.min.js"></script>
+
+  <!--제이쿼리 ui-->
+  <link rel="stylesheet" href="/resources/plugin/jquery-ui-1.13.2/jquery-ui.min.css">
+  <script src="/resources/plugin/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+
+  <!--제이쿼리 cookie-->
+  <script src="/resources/plugin/jquery-cookie/jquery.cookie.min.js"></script>
+
+  
+  <!--swiper-->
+  <link rel="stylesheet" href="/resources/plugin/swiper-4.5.3/swiper.css">
+  <script src="/resources/plugin/swiper-4.5.3/swiper.min.js"></script>
+
+  <!--aos-->
+  <link rel="stylesheet" href="/resources/plugin/aos/aos.css">
+  <script src="/resources/plugin/aos/aos.js"></script>
+  
+
+  <script src="/resources/js/check.js"></script><!--체크박스 접근성 스크립트-->
+  <script src="/resources/js/modal.js"></script><!--모달 접근성 스크립트-->
+  <script src="/resources/js/style.js"></script><!--공통 스크립트-->
+  
+  <script src="/resources/plugin/gsap/gsap.min.js"></script> <!--gsap 스크립트-->
+  <script src="/resources/js/stringUtil.js"></script> <!-- StringUtil.js -->
+  <script src="/resources/js/ajax-common.js"></script> <!-- jquery ajax 공통 설정 -->
+  <script src="/resources/js/modalUtil.js"></script><!--modal msg popup(layer) 스크립트-->
+  <!-- <script src="/resources/js/require.js"></script> -->
+  <script src="/resources/js/can-ndjson-stream.js"></script>
+  
+  <!--sso-->
+  <script src="/resources/js/sso.js"></script>
+  <script src="/resources/js/sha256.js"></script>
+
+  
+<script>
+/****************************************************************************************************
+화면 로딩시 발생하는 이벤트 시작
+****************************************************************************************************/
+	$(document).ready(function() {
+		
+		//로그인 콜백
+  		var appid = "";
+  		var retUrl = "";
+  		var failUrl = "";
+  		var baseUrl = "";
+  		var loginUrl = "";
+  		var ssoChallenge = "";
+  		var returnCode = "";
+  		var returnMessage = "";
+  		//""
+  		
+		if(appid == "egbiz"){
+	  		$("#appid").val(appid);
+	  		$("#retUrl").val(retUrl);
+	  		$("#failUrl").val(failUrl);
+	  		$("#baseUrl").val(baseUrl);
+	  		$("#loginUrl").val(loginUrl);
+	  		$("#ssoChallenge").val(ssoChallenge);
+	  		
+			$('#login').attr("class"," modal_pop on");
+			
+			var returnMessage = "";
+			if (returnMessage != '') {
+				alert(returnMessage);
+			}
+			var iDchk = getCookie('iDchk');
+			if(iDchk != null && iDchk != ""){
+				$('#login_id').val(iDchk);
+				$('#iDchk').prop('checked',true);
+				
+			}
+			
+			$("#loginText").click();
+
+			$(document).off('click','.modal-btn');
+			$("#loginText").off().click(function(){
+				if($('#mbrId').val() == ""){
+		    		document.ssoReadyForm.submit();
+				}else{
+		            $('#loginText').text("로그인");
+		            $('#regist').show();
+			    	fn_removeSession();
+				}
+			});
+			
+		}else{
+			$(document).off('click','.modal-btn');
+			$("#loginText").click(function(){
+				if($('#mbrId').val() == ""){
+		    		document.ssoReadyForm.submit();
+				}else{
+		            $('#loginText').text("로그인");
+		            $('#regist').show();
+			    	fn_removeSession();
+				}
+			});
+		}
+		
+		
+		$("#loginBtn").click(function(){
+            $('#loginText').text("로그아웃");
+            $('#regist').hide();
+            $('#mbrId').val('1');
+
+        	if($('#iDchk').prop('checked') == 'true'){
+        		setCookie('iDchk',$('#login_id').val(),7);
+        	}else{
+        		setCookie('iDchk',$('#login_id').val(),-1);
+        	}
+        	
+            //$('#login').toggleClass('modal_pop on');    
+            //$("#login .modal_pop_close").click();
+            fn_setSession();
+
+            // 스크롤 위치 저장
+            var nowScrollPos = $(window).scrollTop();
+
+            // 모달 닫기 전 스크롤 재활성화
+            $("body").removeClass("scroll-off").css("top", "").off("scroll touchmove mousewheel");
+
+            // lpClose 함수 정의
+            function lpClose() {
+                $(window).scrollTop(nowScrollPos);
+                $(".modal_pop").removeClass("on");
+                $(".skip-links, .masthead, .initial-content, .search-content, .page__footer").removeAttr("aria-hidden");
+                $("#loginBtn").focus();
+                $(document).off("keydown.lp_keydown");
+            }
+
+            lpClose(); // 팝업창 닫기
+        });
+	});
+
+	/****************************************************************************************************
+	화면 로딩시 발생하는 이벤트 끝
+	****************************************************************************************************/
+
+	
+	/****************************************************************************************************
+    login시 세션생성
+   ****************************************************************************************************/
+     function fn_loginPop(){
+		//$('#login').show();
+	}
+     function fn_setSession() {
+		   	
+		}
+     
+		function fn_removeSession(){
+			
+				$.ajax({
+					url : "/member/logout.do",
+				    type : "POST",
+				    success: function(response) {
+		            	$('#mbrId').val('');
+				    },
+				    error: function(xhr, status, error) {
+				    	
+				    }
+				});
+
+		}
+
+	    /****************************************************************************************************
+	    회원가입 버튼 기능 시작
+	    ****************************************************************************************************/
+
+		//로그인
+		function jsSSOLoginAction() {
+
+
+	    	if($('#iDchk').prop('checked') == 'true'){
+	    		setCookie('iDchk',$('#login_id').val(),7);
+	    	}else{
+	    		setCookie('iDchk',$('#login_id').val(),-1);
+	    	}
+	    	
+			var login_id = $("#login_id").val();
+			var login_pw = $("#login_pw").val();
+			if (login_id == '') {
+				alert( '아이디를 입력하여 주십시요.' );
+				$("#login_id").focus();
+				return false;
+			}
+			if (login_pw == '') {
+				alert( '비밀번호를 입력하여 주십시요.' );
+				$("#login_pw").focus();
+				return false;
+			}
+			var enclogin_pw = hex_sha256(login_pw);
+			$("#login_pw").val(enclogin_pw);
+			var ssoChallenge = $('#ssoChallenge').val();
+			var jsonObj = {
+				'userid' : login_id,
+				'userpw' : login_pw,
+				'ssoChallenge' : ssoChallenge
+			};
+		
+			var jsonStr = JSON.stringify(jsonObj);
+			$("#E2").val(rstr2hex(jsonStr));
+			return true;
+//	 		return false;
+		}
+
+	  /****************************************************************************************************
+	  회원가입 버튼 기능 끝
+	  ****************************************************************************************************/
+	  
+	
+</script>
+<!-- head [S] -->
+
+
+
+
+
+	<script type="text/javascript" src="/resources/openworks4/js/openworks.form.js"></script>
+    
+	<script type="text/javascript" src="/resources/libs/js-cookie-1.5.1/js.cookie.js"></script>
+    
+
+	<!-- 기능별 스크립트 삽입 부 -->
+	<script type="text/javascript" src="/resources/user/bbs/js/bbs.js"></script>
+
+	
+
+	<script type="text/javascript">
+		/* 공통 초기화 기능 */
+		$(document).ready(function() {
+
+      	  $('.bookmark, .btn-bookmark').off('click');
+		});
+
+        // 북마크 버튼 클릭 이벤트
+		function fn_bookMark(bizCyclId){
+
+			
+				
+					if(confirm("로그인이 필요한 기능입니다. \n로그인 화면으로 이동하시겠습니까?")){
+						//로그인화면 이동
+						fnLogin();
+						return;
+					}
+				
+				
+			
+        }
+
+
+		function fn_newDataChk(){
+            if ('Y' == 'N') {
+                window.open("https://ob.egbiz.or.kr/prjCategory/a/m/selectPrjView.do?prjDegreeId=PD000000057653", "_blank");
+            } else {
+                var option = 'target="_blank" title="지원사업 신청"';
+                
+                    
+                        if(confirm("로그인이 필요한 기능입니다. \n로그인 화면으로 이동하시겠습니까?")){
+                            //로그인화면 이동
+                            fnLogin();
+                            return;
+                        }
+                    
+                    
+                
+            }
+        }
+
+		function fn_clipUrl(){
+			var url = '';
+			var textarea = document.createElement("textarea");
+			document.body.appendChild(textarea);
+			url="https://egbiz.or.kr/pd/57653.do"
+			//url = window.document.location.href;
+			textarea.value = url;
+			textarea.select();
+			document.execCommand("copy");
+			document.body.removeChild(textarea);
+			alert("URL이 복사되었습니다.")
+		}
+
+		function fn_historyBack(){
+			var url = new URL(location.href);
+			var urlParams = url.searchParams;
+			var tag = urlParams.get('listUrl');
+			if(document.referrer.indexOf(location.host) >= 0 && history.length > 1){
+				history.back();
+			}else{
+				if(tag.indexOf('support') >= 0){
+					location.href = '/sp/'+tag+'.do';
+				}else{
+					location.href = '/ms/ma/'+tag+'.do';
+				}
+			}
+		}
+		
+
+
+	</script>
+
+<!-- head [E] -->
+</head>
+
+<body>
+
+	<!-- skipNav [S] -->
+	
+
+
+
+
+
+
+
+
+  <div id="skipNav">
+    <h1 class="skip">경기기업비서</h1>
+    <div class="accessibility">
+      <a href="#gnb">메뉴 바로가기</a>
+      <a href="#contents">본문 바로가기</a>
+    </div>
+  </div>
+	<!-- skipNav [E] -->
+	
+	<!-- header [S] -->
+	
+
+
+
+
+
+
+
+
+<!-- Google tag (gtag.js) --> 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2RBRTQN6FP">
+</script> 
+<script> window.dataLayer = window.dataLayer || []; 
+	function gtag(){
+		dataLayer.push(arguments);
+	} 
+	gtag('js', new Date()); gtag('config', 'G-2RBRTQN6FP'); 
+</script>
+
+	<header id="header">
+		<div class="menu-wrap">
+			<nav>
+		<!-- logo [S] -->
+		
+
+
+
+
+
+
+
+
+				<div class="logo">
+					<a href="/" title="홈으로 페이지이동">경기기업비서</a>
+				</div>
+		<!-- logo [E] -->
+		
+		<!-- gnb 메뉴[S] -->
+		
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    //<![CDATA[
+    /* 공통 초기화 기능 */
+    $(document).ready(function() {
+    	let gnbObj = null;
+    	$(".dropdown").on("click",
+    	    function(){
+    			gnbObj = this;
+    	        setTimeout(
+    	            function(){
+    	                $(".menu-list").scrollTop($(gnbObj).position().top);
+    	                obj = null;
+    	            } 
+    	        ,300)
+    	    }
+    	);
+    });
+    //]]>
+</script>
+
+<ul id="gnb" class="gnb" role="menu">
+	<!-- logo [S] -->
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+//const userId = "";
+//const user_data = '';
+const agent_id = 'gbsa-egbiz-java';
+//const server_id = 'gbsa-ext-sso-server';
+const sso_url = 'https://sso.gbsa.or.kr:8443/sso';
+const sso_login_url = sso_url + '/gbsa/user/login/link';
+const sso_logout_url = sso_url + '/user/logout';
+const sign_up_url = sso_url + '/gbsa/user/self/userRegist';
+
+//const sign_out_url = sso_url + '/gbsa/user/self/userOut';				//회원탈퇴
+const sign_out_url = sso_url + '/gbsa/user/self/userOutUpdate';			//회원탈퇴
+//const modify_url = sso_url + '/gbsa/user/self/userModify';			//회원 정보수정
+const modify_url = sso_url + '/gbsa/user/self/userModifyUpdate';		//회원 정보수정
+
+//회원가입
+const fnSignUp = function () {
+	var agt_url = $(location).attr('protocol') + '//' + $(location).attr('host');
+	document.loginForm.agt_url.value = agt_url;
+	$('#loginForm').attr('action', sign_up_url).submit();
+};
+
+//로그인
+const fnLogin = function () {
+	var agt_url = $(location).attr('protocol') + '//' + $(location).attr('host');
+	document.loginForm.agt_url.value = agt_url;
+	$('#loginForm').attr('action', sso_login_url).submit();
+};
+
+//sso통합로그아웃
+const fnSsoLogout = function () {
+	var agt_url = $(location).attr('protocol') + '//' + $(location).attr('host');
+	document.logoutForm.agt_url.value = agt_url;
+	$('#logoutForm').attr('action', sso_logout_url).submit();
+};
+
+//로그아웃
+const fnLogout = function () {
+	modalUtil.confirm("로그아웃 하시겠습니까?", ()=>location.href="/MI/logoutProc.do");
+};
+
+//나의지원사업
+const fnMyPage = function () {
+	location.href="/ms/ma/myPrtpinPscd.do";
+};
+
+//회원정보수정
+const fnModify = function () {
+	var agt_url = $(location).attr('protocol') + '//' + $(location).attr('host');
+	document.modifyForm.agt_url.value = agt_url;
+	$('#modifyForm').attr('action', modify_url).submit();
+};
+
+//회원탈퇴
+const fnUserOut = function () {
+	var agt_url = $(location).attr('protocol') + '//' + $(location).attr('host');
+	document.modifyForm.agt_url.value = agt_url;
+	$('#modifyForm').attr('action', sign_out_url).submit();
+};
+
+</script>
+
+	<form name="loginForm" id="loginForm" method="get" action="">
+		<input type="hidden" id="agt_id" name="agt_id" value="gbsa-egbiz-java" />
+		<input type="hidden" id="agt_url" name="agt_url" value="" />
+		<input type="hidden" id="add_param" name="add_param" value="add_param_value" />	<!-- 추가 파라미터가 있을 경우 -->
+	</form>
+	
+	<form name="logoutForm" id="logoutForm" method="post" action="">
+		<input type="hidden" id="agt_id" name="agt_id" value="gbsa-egbiz-java" />
+		<input type="hidden" id="agt_url" name="agt_url" value="" />
+		<input type="hidden" id="pni_token" name="pni_token" value="" />
+	</form>
+	
+	<form name="modifyForm" id="modifyForm" method="post" action="">
+		<input type="hidden" id="agt_id" name="agt_id" value="gbsa-egbiz-java" />
+		<input type="hidden" id="agt_url" name="agt_url" value="" />
+		<input type="hidden" id="pni_token" name="pni_token" value=""/>
+	</form>
+		
+	
+		
+			<li role="menuitem">
+				<button type="button" class="ico-regist" aria-label="회원가입" onclick="fnSignUp()">회원가입</button>
+			</li>
+			<li role="menuitem">
+				<button type="button" aria-label="로그인" class="modal-btn" aria-haspopup="dialog" aria-controls="login" onclick="fnLogin()">로그인</button>
+			</li>
+		
+		
+	
+	<!-- logo [E] -->
+	<li class="gnb-menu" role="menuitem">
+		<button type="button" id="menuBtn" aria-expanded="false" aria-controls="lnb" aria-label="메뉴 열기">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button> <!--gnb 메뉴-->
+		<div id="lnb" role="menu" aria-hidden="true">
+			<div class="menu-list scrollbar">
+				<button type="button" aria-label="닫기" class="gnbClose"></button>
+				<div class="tit">경기기업비서</div>
+				<ul class="menu-depth1" role="menu">
+					
+						
+							
+							
+								
+									
+									
+										
+									
+								
+								
+							
+							
+								
+									
+										
+										
+											
+										
+									
+								
+							
+							
+								
+									
+								
+								
+							
+							
+								
+								
+								
+									
+									
+								
+							
+							
+								
+								
+									
+									
+									
+								
+							
+
+							
+							
+								
+
+								
+									<li role="menuitem" style="height:26px;"><!-- #3 -->
+										<!--<a href="/cbnSrch.do"  title="통합검색 페이지 이동" class="dropdown" aria-expanded="false">--> 
+										<a href="/cbnSrch.do"  title="통합검색 페이지 이동" class="" aria-expanded="false"> 
+											
+												
+												
+													통합검색
+												
+											
+										</a>
+									</li>
+								
+							
+							
+
+						
+					
+						
+							
+							
+								
+									
+									
+										
+									
+								
+								
+							
+							
+								
+									
+										
+										
+											
+										
+									
+								
+							
+							
+								
+								
+									
+								
+							
+							
+								
+								
+								
+									
+									
+										
+									
+								
+							
+							
+								
+									
+									
+									
+								
+								
+							
+
+							
+							
+								
+									
+										
+											<li role="menuitem"><!-- 1depth -->
+												<a href="#"  title="지원사업" class="dropdown on" aria-expanded="true">
+													
+														
+														
+															지원사업
+														
+													
+												</a>
+												<ul class="menu-depth2" role="menu" style="display:block">
+													
+														
+															
+															
+																
+																	
+																	
+																		
+																	
+																
+																
+															
+															
+																
+																	
+																		
+																		
+																			
+																		
+																	
+																
+															
+															
+																
+																	
+																
+																
+															
+															
+																
+																
+																
+																	
+																	
+																
+															
+
+															
+															
+																
+															<li role="menuitem"><!-- 2depth (3depth no have)  -->
+																<a href="/sp/supportPrjCatList.do"  title="분야별지원사업 페이지 이동">
+																	
+																		
+																		
+																			분야별지원사업
+																		
+																	
+																</a>
+															</li>
+																
+																
+															
+															
+															
+															
+
+														
+													
+														
+															
+															
+																
+																	
+																	
+																		
+																	
+																
+																
+															
+															
+																
+																	
+																		
+																		
+																			
+																		
+																	
+																
+															
+															
+																
+																	
+																
+																
+															
+															
+																
+																
+																
+																	
+																	
+																
+															
+
+															
+															
+																
+															<li role="menuitem"><!-- 2depth (3depth no have)  -->
+																<a href="/sp/supportPrjAreaList.do"  title="지역별지원사업 페이지 이동">
+																	
+																		
+																		
+																			지역별지원사업
+																		
+																	
+																</a>
+															</li>
+																
+																
+															
+															
+															
+															
+
+														
+													
+														
+															
+															
+																
+																	
+																	
+																		
+																	
+																
+																
+															
+															
+																
+																	
+																		
+																		
+																			
+																		
+																	
+																
+															
+															
+																
+																	
+																
+																
+															
+															
+																
+																
+																
+																	
+																	
+																
+															
+
+															
+															
+																
+															<li role="menuitem"><!-- 2depth (3depth no have)  -->
+																<a href="/sp/supportPrjGiupList.do"  title="기업마당지원사업 페이지 이동">
+																	
+																		
+																		
+																			기업마당지원사업
+																		
+																	
+																</a>
+															</li>
+																
+																
+															
+															
+															
+															
+
+														
+													
+														
+															
+															
+																
+																	
+																	
+																		
+																	
+																
+																
+															
+															
+																
+																	
+																		
+																		
+																			
+																		
+																	
+																
+															
+															
+																
+																	
+																
+																
+															
+															
+																
+																
+																
+																	
+																	
+																
+															
+
+															
+															
+																
+															<li role="menuitem"><!-- 2depth (3depth no have)  -->
+																<a href="/sp/supportPrjPlanList.do"  title="일정별지원사업 페이지 이동">
+																	
+																		
+																		
+																			일정별지원사업
+																		
+																	
+																</a>
+															</li>
+																
+																
+															
+															
+															
+															
+
+														
+													
+														
+													
+												</ul></li>
+										
+										
+									
+								
+
+								
+							
+							
+
+						
+					
+						
+							
+							
+								
+									
+									
+										
+									
+								
+								
+							
+							
+								
+									
+										
+										
+											
+										
+									
+								
+							
+							
+								
+								
+									
+								
+							
+							
+								
+								
+								
+									
+									
+										
+									
+								
+							
+							
+								
+								
+									
+									
+									
+								
+							
+
+							
+							
+								
+									
+										
+											<li role="menuitem"><!-- 1depth -->
+												<a href="#"  title="이용안내" class="dropdown" aria-expanded="false">
+													
+														
+														
+															이용안내
+														
+													
+												</a>
+												<ul class="menu-depth2" role="menu" style="">
+													
+														
+															
+															
+																
+																	
+																	
+																		
+																	
+																
+																
+															
+															
+																
+																	
+																		
+																		
+																			
+																		
+																	
+																
+															
+															
+																
+																	
+																
+																
+															
+															
+																
+																
+																
+																	
+																	
+																
+															
+
+															
+															
+																
+															<li role="menuitem"><!-- 2depth (3depth no have)  -->
+																<a href="/ug/userPrjManual.do"  title="사업지원이용안내 페이지 이동">
+																	
+																		
+																		
+																			사업지원이용안내
+																		
+																	
+																</a>
+															</li>
+																
+																
+															
+															
+															
+															
+
+														
+													
+														
+															
+															
+																
+																	
+																	
+																		
+																	
+																
+																
+															
+															
+																
+																	
+																		
+																		
+																			
+																		
+																	
+																
+															
+															
+																
+																	
+																
+																
+															
+															
+																
+																
+																
+																	
+																	
+																
+															
+
+															
+															
+																
+															<li role="menuitem"><!-- 2depth (3depth no have)  -->
+																<a href="/ug/serviceManual.do"  title="서비스이용안내 페이지 이동">
+																	
+																		
+																		
+																			서비스이용안내
+																		
+																	
+																</a>
+															</li>
+																
+																
+															
+															
+															
+															
+
+														
+													
+														
+															
+															
+																
+																	
+																	
+																		
+																	
+																
+																
+															
+															
+																
+																	
+																		
+																		
+																			
+																		
+																	
+																
+															
+															
+																
+																	
+																
+																
+															
+															
+																
+																
+																
+																	
+																	
+																
+															
+
+															
+															
+																
+															<li role="menuitem"><!-- 2depth (3depth no have)  -->
+																<a href="/ug/bizNotiManual.do"  title="사업공고등록안내 페이지 이동">
+																	
+																		
+																		
+																			사업공고등록안내
+																		
+																	
+																</a>
+															</li>
+																
+																
+															
+															
+															
+															
+
+														
+													
+														
+															
+															
+																
+																	
+																	
+																		
+																	
+																
+																
+															
+															
+																
+																	
+																		
+																		
+																			
+																		
+																	
+																
+															
+															
+																
+																	
+																
+																
+															
+															
+																
+																
+																
+																	
+																	
+																
+															
+
+															
+															
+																
+															<li role="menuitem"><!-- 2depth (3depth no have)  -->
+																<a href="/ug/esgSelfDiagnosis.do"  title="ESG자가진단안내 페이지 이동">
+																	
+																		
+																		
+																			ESG자가진단안내
+																		
+																	
+																</a>
+															</li>
+																
+																
+															
+															
+															
+															
+
+														
+													
+														
+															
+															
+																
+																	
+																	
+																		
+																	
+																
+																
+															
+															
+																
+																	
+																		
+																		
+																			
+																		
+																	
+																
+															
+															
+																
+																	
+																
+																
+															
+															
+																
+																
+																
+																	
+																	
+																
+															
+
+															
+															
+																
+															<li role="menuitem"><!-- 2depth (3depth no have)  -->
+																<a href="/user/bbs/BD_selectBbsList.do?q_bbsSn=1006"  title="자주묻는질문(FAQ) 페이지 이동">
+																	
+																		
+																		
+																			자주묻는질문(FAQ)
+																		
+																	
+																</a>
+															</li>
+																
+																
+															
+															
+															
+															
+
+														
+													
+														
+															
+															
+																
+																	
+																	
+																		
+																	
+																
+																
+															
+															
+																
+																	
+																		
+																		
+																			
+																		
+																	
+																
+															
+															
+																
+																	
+																
+																
+															
+															
+																
+																
+																
+																	
+																	
+																
+															
+
+															
+															
+																
+															<li role="menuitem"><!-- 2depth (3depth no have)  -->
+																<a href="/user/bbs/BD_selectBbsList.do?q_bbsSn=1007"  title="질의응답(Q&A) 페이지 이동">
+																	
+																		
+																		
+																			질의응답(Q&amp;A)
+																		
+																	
+																</a>
+															</li>
+																
+																
+															
+															
+															
+															
+
+														
+													
+												</ul></li>
+										
+										
+									
+								
+
+								
+							
+							
+
+						
+					
+						
+							
+							
+								
+									
+									
+										
+									
+								
+								
+							
+							
+								
+									
+										
+										
+											
+										
+									
+								
+							
+							
+								
+								
+									
+								
+							
+							
+								
+								
+								
+									
+									
+										
+									
+								
+							
+							
+								
+								
+									
+									
+									
+								
+							
+
+							
+							
+								
+									
+										
+											<li role="menuitem"><!-- 1depth -->
+												<a href="#"  title="정보광장" class="dropdown" aria-expanded="false">
+													
+														
+														
+															정보광장
+														
+													
+												</a>
+												<ul class="menu-depth2" role="menu" style="">
+													
+														
+															
+															
+																
+																	
+																	
+																		
+																	
+																
+																
+															
+															
+																
+																	
+																		
+																		
+																			
+																		
+																	
+																
+															
+															
+																
+																	
+																
+																
+															
+															
+																
+																
+																
+																	
+																	
+																
+															
+
+															
+															
+																
+															<li role="menuitem"><!-- 2depth (3depth no have)  -->
+																<a href="/user/bbs/BD_selectBbsList.do?q_bbsSn=1003"  title="공지사항 페이지 이동">
+																	
+																		
+																		
+																			공지사항
+																		
+																	
+																</a>
+															</li>
+																
+																
+															
+															
+															
+															
+
+														
+													
+														
+															
+															
+																
+																	
+																	
+																		
+																	
+																
+																
+															
+															
+																
+																	
+																		
+																		
+																			
+																		
+																	
+																
+															
+															
+																
+																	
+																
+																
+															
+															
+																
+																
+																
+																	
+																	
+																
+															
+
+															
+															
+																
+															<li role="menuitem"><!-- 2depth (3depth no have)  -->
+																<a href="/user/bbs/BD_selectBbsList.do?q_bbsSn=1004"  title="입찰정보 페이지 이동">
+																	
+																		
+																		
+																			입찰정보
+																		
+																	
+																</a>
+															</li>
+																
+																
+															
+															
+															
+															
+
+														
+													
+														
+															
+															
+																
+																	
+																	
+																		
+																	
+																
+																
+															
+															
+																
+																	
+																		
+																		
+																			
+																		
+																	
+																
+															
+															
+																
+																	
+																
+																
+															
+															
+																
+																
+																
+																	
+																	
+																
+															
+
+															
+															
+																
+															<li role="menuitem"><!-- 2depth (3depth no have)  -->
+																<a href="/user/bbs/BD_selectBbsList.do?q_bbsSn=1005"  title="전시정보 페이지 이동">
+																	
+																		
+																		
+																			전시정보
+																		
+																	
+																</a>
+															</li>
+																
+																
+															
+															
+															
+															
+
+														
+													
+														
+															
+															
+																
+																	
+																	
+																		
+																	
+																
+																
+															
+															
+																
+																	
+																		
+																		
+																			
+																		
+																	
+																
+															
+															
+																
+																	
+																
+																
+															
+															
+																
+																
+																
+																	
+																	
+																
+															
+
+															
+															
+																
+															<li role="menuitem"><!-- 2depth (3depth no have)  -->
+																<a href="/user/bbs/BD_selectBbsList.do?q_bbsSn=1002"  title="경기도 소식 페이지 이동">
+																	
+																		
+																		
+																			경기도 소식
+																		
+																	
+																</a>
+															</li>
+																
+																
+															
+															
+															
+															
+
+														
+													
+														
+															
+															
+																
+																	
+																	
+																		
+																	
+																
+																
+															
+															
+																
+																	
+																		
+																		
+																			
+																		
+																	
+																
+															
+															
+																
+																	
+																
+																
+															
+															
+																
+																
+																
+																	
+																	
+																
+															
+
+															
+															
+																
+															<li role="menuitem"><!-- 2depth (3depth no have)  -->
+																<a href="/ip/bannerList.do"  title="배너존 페이지 이동">
+																	
+																		
+																		
+																			배너존
+																		
+																	
+																</a>
+															</li>
+																
+																
+															
+															
+															
+															
+
+														
+													
+												</ul></li>
+										
+										
+									
+								
+
+								
+							
+							
+
+						
+					
+						
+							
+							
+								
+									
+									
+										
+									
+								
+								
+							
+							
+								
+									
+										
+										
+											
+										
+									
+								
+							
+							
+								
+								
+									
+								
+							
+							
+								
+								
+								
+									
+									
+										
+									
+								
+							
+							
+								
+								
+									
+									
+									
+								
+							
+
+							
+							
+								
+									
+										
+											<li role="menuitem"><!-- 1depth -->
+												<a href="#"  title="경기기업비서소개" class="dropdown" aria-expanded="false">
+													
+														
+														
+															경기기업비서소개
+														
+													
+												</a>
+												<ul class="menu-depth2" role="menu" style="">
+													
+														
+															
+															
+																
+																	
+																	
+																		
+																	
+																
+																
+															
+															
+																
+																	
+																		
+																		
+																			
+																		
+																	
+																
+															
+															
+																
+																	
+																
+																
+															
+															
+																
+																
+																
+																	
+																	
+																
+															
+
+															
+															
+																
+															<li role="menuitem"><!-- 2depth (3depth no have)  -->
+																<a href="/gc/gyeonggiCorpIntro.do"  title="경기기업비서소개 페이지 이동">
+																	
+																		
+																		
+																			경기기업비서소개
+																		
+																	
+																</a>
+															</li>
+																
+																
+															
+															
+															
+															
+
+														
+													
+												</ul></li>
+										
+										
+									
+								
+
+								
+							
+							
+
+						
+					
+						
+					
+						
+							
+							
+								
+									
+									
+								
+								
+							
+							
+								
+									
+										
+										
+											
+										
+									
+								
+							
+							
+								
+								
+									
+								
+							
+							
+								
+								
+								
+									
+									
+										
+									
+								
+							
+							
+								
+								
+									
+									
+									
+								
+							
+
+							
+
+						
+					
+
+				</ul>
+			</div>
+		</div> <!--gnb 메뉴-->
+	</li>
+</ul>
+		<!-- gnb 메뉴[E] -->
+			</nav>
+        </div>
+
+		<!-- 로그인 팝업[S] -->
+		
+		<!-- 로그인 팝업[E] -->
+	</header> <!-- header / 메뉴-->
+	
+	<!-- login session getter -->
+	
+	<!-- header [E] -->
+
+    <!-- 위치정보 동의 start -->
+    
+
+
+
+
+
+
+
+
+<!-- main-popup 영역에 클래스 on 추가 하면 팝업 노출 -->
+<div class="main-popup locPopup" id="locationTermsPopup" role="dialog" aria-modal="true" style="display:none;">
+  <div class="popup-content">
+    <button class="btn-close popup-close-btn" type="button" aria-label="닫기" onclick="locationPopupClose()"></button>
+    <div class="cont">
+      <h2 class="popup-heading">경기기업비서 서비스 이용을 위해 <br>
+
+        아래 위치정보에 동의가 필요합니다.</h2>
+      <i class="ico-location"></i>
+      <p class="popup-description">현재위치로 지역별 지원사업을<br>
+
+        제공받으실 수 있습니다.<br>
+      </p>
+    </div>
+
+    <div class="cont__agree">
+      <button class="btn-term" type="button" id="viewTermsButton" onclick="viewTerms()">약관전문보기</button>
+    </div>
+
+    <div class="btn-list">
+      <button type="button" class="btn btn-white cancel-close" onclick="locationPopupClose()">취소</button>
+      <button type="button" class="btn btn-primary" id="btnAgree" onclick="fn_agreeLocationTerms()" disabled>약관동의</button>
+    </div>
+    <p class="noti">약관전문을 확인 후 동의해 주세요 </p>
+
+  </div>
+</div>
+
+<!--위치정보 이용약관  start-->
+<div class="main-popup locPopupAgree" id="locationTermsPopup-agree" role="dialog" aria-modal="true">
+  <div class="popup-content">
+    <button class="btn-close popup-close-btn" type="button" aria-label="닫기" onclick="locationPopupClose()"></button>
+
+    <h2 class="popup-heading">위치정보 이용약관</h2>
+    <div class="term">
+      <!--
+      경기기업비서 위치정보 이용약관<br><br>
+
+
+
+      제1조 (목적)<br>
+
+      본 약관은 회원(본 약관에 동의한 자를 말합니다. 이하 “회원”이라고 합니다)이 주식회사 경기기업비서(이하 “회사”라고 합니다)가 제공하는 위치정보서비스 및 위치기반서비스(이하 “서비스”라고 합니다)를
+      이용함에 있어 회사와 회원의 권리•의무 및 책임사항을 규정함을 목적으로 합니다.<br><br>
+
+
+      제2조 (약관의 효력 및 변경)<br>
+
+      본 약관은 서비스를 신청한 고객 또는 개인위치정보주체가 본 약관에 동의하고 회사가 정한 소정의 절차에 따라 서비스의 이용자로 등록함으로써 효력이 발생합니다.
+
+      회사는 본 약관의 내용을 회원이 쉽게 알 수 있도록 서비스 초기 화면에 게시하거나 기타의 방법으로 공지합니다.
+      회사는 필요하다고 인정되면 본 약관을 변경할 수 있으며, 회사가 약관을 개정할 경우에는 기존약관과 개정약관 및 개정약관의 적용일자와 개정사유를 명시하여 현행약관과 함께 그 적용일자 7일 전부터 적용일
+      이후 상당한 기간 동안 공지합니다. 다만, 개정 내용이 회원에게 불리한 경우에는 그 적용일자 30일 전부터 적용일 이후 상당한 기간 동안 각각 이를 서비스 홈페이지에 게시하거나 회원에게 전자적
+      형태(전자우편, SMS 등)로 약관 개정 사실을 발송하여 고지합니다.<br>
+
+      회사가 전항에 따라 회원에게 공지하거나 통지하면서 공지 또는 통지ㆍ고지일로부터 개정약관 시행일 7일 후까지 거부의사를 표시하지 아니하면 승인한 것으로 본다는 뜻을 명확하게 고지하였음에도 불구하고 거부의
+      의사표시가 없는 경우에는 변경된 약관에 승인한 것으로 봅니다. <br>
+      -->
+    </div>
+
+
+    <div class="btn-list mt30">
+      <button type="button" class="btn btn-primary btn-agree" id="btnAgreeChk" onclick="agreeTerms()">약관내용을
+        확인하였습니다.</button>
+    </div>
+
+
+  </div>
+
+</div>
+<!--위치정보 이용약관  end-->
+
+<script>
+  $(document).ready(function () {
+	if(location.pathname == "/index.do"){
+	    //fn_initLocationTermsPopup();	
+	}
+
+    // 위치정보 동의 팝업 닫기 함수
+    window.locationPopupClose = function () {
+      $(event.target).closest('.main-popup').removeClass('on');
+    };
+
+    // 약관 전문 보기 버튼 클릭 이벤트
+    window.viewTerms = function () {
+      $('#locationTermsPopup-agree').addClass('on');
+    };
+
+    // 약관 확인 버튼 클릭 이벤트
+    window.agreeTerms = function () {
+      $('#locationTermsPopup-agree').removeClass('on');
+      $('#locationTermsPopup').addClass('on');
+      $('#btnAgree').prop('disabled', false);
+    };
+  });
+
+  function fn_initLocationTermsPopup(){
+    $.ajax({
+      url: "/selectPstnInfoUtztnTrmsInfoAjax.do",
+      type: "POST",
+      success: function (retunVal) {
+
+        if (retunVal.result) {
+          if (retunVal.value && (retunVal.value.pstnInfoUtztnTrmsAgreYn == "Y")) {
+            result = false;
+          } else {
+            result = true;
+          }
+        } else {
+          result = false;
+        }
+
+        if (result) {
+          $('#locationTermsPopup').addClass('on');
+          $('#locationTermsPopup-agree .term').html(retunVal.value.pstnInfoUtztnTrmsDocConts);
+        }else{
+          $('#locationTermsPopup').removeClass('on');
+        }
+      },
+		error: function (jqXHR, textStatus, errorThrown) {
+			console.error('오류 발생:', textStatus, errorThrown);
+		}
+    });
+  }
+
+  function fn_agreeLocationTerms(){
+    $.ajax({
+      url: "/updatePstnInfoUtztnTrmsAjax.do",
+      type: "POST",
+      success: function (retunVal) {
+        if (retunVal.result) {
+          $('#locationTermsPopup').removeClass('on');
+        }
+      },
+		error: function (jqXHR, textStatus, errorThrown) {
+			console.error('오류 발생:', textStatus, errorThrown);
+		}
+    });
+  }
+</script>
+
+    <!-- 위치정보 동의 end -->
+
+	<div id="contents" class="sub-page">
+	
+		<div class="inner">
+			
+				<div class="main-tab board-menu">
+					<!-- 상단 서브 메뉴[S] -->
+					
+
+
+
+
+
+
+
+
+<ul class="board-menu__ul">
+
+	
+		
+			
+				
+			
+			
+		
+		
+		
+			
+			
+			
+				
+			
+		
+		
+		<!-- <li class="on"> -->
+		<li class="on">
+			<a href="/sp/supportPrjCatList.do;jsessionid=59A362C8610E7BCA86C9A6559870D40D"  >
+			
+				
+				
+				
+					분야별지원사업
+				
+			
+			</a>
+		</li>
+
+		
+	
+
+	
+		
+			
+			
+				
+			
+		
+		
+		
+			
+			
+			
+				
+			
+		
+		
+		<!-- <li class="on"> -->
+		<li class="">
+			<a href="/sp/supportPrjAreaList.do;jsessionid=59A362C8610E7BCA86C9A6559870D40D"  >
+			
+				
+				
+				
+					지역별지원사업
+				
+			
+			</a>
+		</li>
+
+		
+	
+
+	
+		
+			
+			
+				
+			
+		
+		
+		
+			
+			
+			
+				
+			
+		
+		
+		<!-- <li class="on"> -->
+		<li class="">
+			<a href="/sp/supportPrjGiupList.do;jsessionid=59A362C8610E7BCA86C9A6559870D40D"  >
+			
+				
+				
+				
+					기업마당지원사업
+				
+			
+			</a>
+		</li>
+
+		
+	
+
+	
+		
+			
+			
+				
+			
+		
+		
+		
+			
+			
+			
+				
+			
+		
+		
+		<!-- <li class="on"> -->
+		<li class="">
+			<a href="/sp/supportPrjPlanList.do;jsessionid=59A362C8610E7BCA86C9A6559870D40D"  >
+			
+				
+				
+				
+					일정별지원사업
+				
+			
+			</a>
+		</li>
+
+		
+	
+
+	
+
+</ul>
+					<!-- 상단 서브 메뉴[E] -->
+				</div>
+				
+				<!--공통 네비게이션 start -->
+				
+
+
+
+
+
+
+
+
+			<div class="navi">
+				<ul class="navi-list">
+					<li><a title="홈으로 페이지 이동" class="ico-home"></a></li>
+			
+				
+					<li><a>지원사업</a></li>
+			
+					<li><a>분야별지원사업</a></li>
+				</ul>
+			</div>
+				<!--공통 네비게이션 end -->
+			
+			
+			
+			
+			<!-- body [S] -->
+			
+
+				 	<div class="pageWrap" >
+						<div class="inner">
+						<div class="page-header">
+						 	<div class="left"><div class="title-ico1">지원사업신청</div></div>
+						 	<div class="right">
+								<ul class="btn-group">
+									<li>
+									<button type="button" class="btn-text ico-list" aria-label="목록가기" onclick="fn_historyBack();"><p>목록가기</p></button>
+									</li>
+								<li>
+								 	<button type="button" class="btn-text ico-sns" aria-label="공유하기" onclick="fn_clipUrl();"><p>공유하기</p></button>
+<!-- 								 	<div> -->
+<!-- 										공유하기 레이어 -->
+<!-- 								 	</div> -->
+								</li>
+								<li>
+								 	<button type="button" class="btn-text ico-print" aria-label="프린트" onclick="window.print();"><p>프린트</p></button>
+								</li>
+								</ul>
+						 	</div>
+						</div>
+						<div class="page-content">
+						 	<!--사업개요 start-->
+						 	<section class="conSec">
+								<div class="conSec__title bgBlue">
+								<p>사업개요</p>
+								</div>
+								<div class="conSec__con">
+								<ul>
+								 	<li>
+										<div class="conSec__con__title">지원사업명</div>
+										<div class="conSec__con__desc">
+										<div class="tit">
+										 	<p>2026 경기도 R&amp;D 성과공유회 및 2027년 경기도 R&amp;D 사업설명회</p>
+										</div>
+										<div class="conSec_Btn_list">
+										 	<div class="pj_state">
+												
+													
+													
+													
+													 				<span class="state">접수중</span>
+													
+													
+													
+												
+
+										 	</div>
+										 	<button type="button" class="btn-bookmark " onclick="fn_bookMark('PD000000057653');">관심사업 등록</button>
+										</div>
+										</div>
+								 	</li>
+								 	<li>
+										<div class="conSec__con__title">진행구분</div>
+										<div class="conSec__con__desc">
+											<p>
+												2026년도
+											</p>
+										</div>
+								 	</li>
+								 	
+									 	<li>
+											<div class="conSec__con__title">사업기간</div>
+											<div class="conSec__con__desc">
+											<p class="main-color">2026-11-20	~	2026-11-20</p>
+											</div>
+									 	</li>
+								 	
+								 	
+									 	<li>
+											<div class="conSec__con__title">공고기간</div>
+											<div class="conSec__con__desc">
+											<p class="main-color">2026-11-09 09:00	~	2026-11-20 18:00</p>
+											</div>
+									 	</li>
+								 	
+								 	
+									 	<li>
+											<div class="conSec__con__title">접수기간</div>
+											<div class="conSec__con__desc">
+											<p class="main-color">
+												
+												
+													2026-11-10 09:00	~	2026-11-20 17:00
+												
+											</p>
+											</div>
+									 	</li>
+								 	
+
+								 	<li>
+										<div class="conSec__con__title">관련사이트</div>
+										<div class="conSec__con__desc">
+										<ul>
+										 	<li>
+												
+													
+                                                    
+                                                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfOnWIJhPanmhfGr72KyrkPHpzTwFZXVnk8PRXOaogMEYR_6Q/viewform" title="새창열림" class="file_p" target="_blank">
+                                                            <p>https://docs.google.com/forms/d/e/1FAIpQLSfOnWIJhPanmhfGr72KyrkPHpzTwFZXVnk8PRXOaogMEYR_6Q/viewform</p>
+                                                        </a>
+                                                    
+													
+												
+										 	</li>
+										</ul>
+										</div>
+								 	</li>
+	
+								 	<li>
+										<div class="conSec__con__title">단축URL</div>
+										<div class="conSec__con__desc">
+											
+											
+											
+											<a href="https://egbiz.or.kr/pd/57653.do" title="새창열림" class="file_p" target="_blank">
+												<p>https://egbiz.or.kr/pd/57653.do</p>
+											</a>
+										</div>
+								 	</li>
+								 	<li>
+										<div class="conSec__con__title">수행기관</div>
+										<div class="conSec__con__desc">
+										<p>경기도경제과학진흥원</p>
+										</div>
+								 	</li>
+								 	<li>
+										<div class="conSec__con__title">사업분류</div>
+										<div class="conSec__con__desc">
+											<p>
+												
+													
+														
+															
+																
+																	기술
+																
+																
+															
+														
+													
+													
+												
+											</p>
+										</div>
+								 	</li>
+									
+										
+									
+								 	<li>
+										<div class="conSec__con__title">검색키워드</div>
+										<div class="conSec__con__desc">
+										<p>R&amp;D / 기술개발 </p>
+										</div>
+								 	</li>
+								 	<li>
+										<div class="conSec__con__title">첨부파일</div>
+										<div class="conSec__con__desc">
+										<ul>
+									 		
+										</ul>
+
+										</div>
+								 	</li>
+								 	<li>
+										<div class="conSec__con__title">사업담당</div>
+										<div class="conSec__con__desc">
+											<p>
+												
+													
+														
+															R&amp;D지원팀&nbsp;김지영(031-259-6782)
+														
+														
+													
+												
+											</p>
+										</div>
+								 	</li>
+
+									<li>
+                                        
+                                        
+                                            
+                                                
+                                                <div class="conSec__con__contnets">
+                                                    <p></p>
+                                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfOnWIJhPanmhfGr72KyrkPHpzTwFZXVnk8PRXOaogMEYR_6Q/viewform" target="_blank"><img src="/resources/common/imgView.view?type=thumb&amp;path=/webcontent/pms/PD000000057653/2026/11/9/e2799da2-a5ae-42ae-9ac4-04c25716df65.jpg" alt="공고이미지"/></a>
+                                                </div>
+                                                
+                                                
+                                                
+                                            
+                                        
+									</li>
+
+
+								</ul>
+								</div>
+								
+						 	</section>
+						 	<!--사업개요 end-->
+
+
+
+						 	<!--신청자격 start-->
+						 	<section class="conSec">
+								<div class="conSec__title">
+								<p>신청자격</p>
+								</div>
+								<div class="conSec__con">
+								<ul>
+								 	<li>
+										<div class="conSec__con__title">신청가능지역</div>
+										<div class="conSec__con__desc">
+											<p>
+												
+													
+													
+														
+															
+																
+																	과천시
+																
+																
+															
+														
+															
+																
+																
+																	,&nbsp;성남시
+																
+															
+														
+															
+																
+																
+																	,&nbsp;안성시
+																
+															
+														
+															
+																
+																
+																	,&nbsp;안양시
+																
+															
+														
+															
+																
+																
+																	,&nbsp;용인시
+																
+															
+														
+															
+																
+																
+																	,&nbsp;이천시
+																
+															
+														
+															
+																
+																
+																	,&nbsp;평택시
+																
+															
+														
+															
+																
+																
+																	,&nbsp;가평군
+																
+															
+														
+															
+																
+																
+																	,&nbsp;고양시
+																
+															
+														
+															
+																
+																
+																	,&nbsp;구리시
+																
+															
+														
+															
+																
+																
+																	,&nbsp;남양주시
+																
+															
+														
+															
+																
+																
+																	,&nbsp;동두천시
+																
+															
+														
+															
+																
+																
+																	,&nbsp;양주시
+																
+															
+														
+															
+																
+																
+																	,&nbsp;연천군
+																
+															
+														
+															
+																
+																
+																	,&nbsp;의정부시
+																
+															
+														
+															
+																
+																
+																	,&nbsp;파주시
+																
+															
+														
+															
+																
+																
+																	,&nbsp;포천시
+																
+															
+														
+															
+																
+																
+																	,&nbsp;광명시
+																
+															
+														
+															
+																
+																
+																	,&nbsp;김포시
+																
+															
+														
+															
+																
+																
+																	,&nbsp;부천시
+																
+															
+														
+															
+																
+																
+																	,&nbsp;시흥시
+																
+															
+														
+															
+																
+																
+																	,&nbsp;안산시
+																
+															
+														
+															
+																
+																
+																	,&nbsp;광주시
+																
+															
+														
+															
+																
+																
+																	,&nbsp;군포시
+																
+															
+														
+															
+																
+																
+																	,&nbsp;수원시
+																
+															
+														
+															
+																
+																
+																	,&nbsp;양평군
+																
+															
+														
+															
+																
+																
+																	,&nbsp;여주시
+																
+															
+														
+															
+																
+																
+																	,&nbsp;오산시
+																
+															
+														
+															
+																
+																
+																	,&nbsp;의왕시
+																
+															
+														
+															
+																
+																
+																	,&nbsp;하남시
+																
+															
+														
+															
+																
+																
+																	,&nbsp;화성시
+																
+															
+														
+													
+													
+												
+											</p>
+										</div>
+								 	</li>
+
+
+									
+										
+										
+													 	<li>
+															<div class="conSec__con__title">지원대상</div>
+															<div class="conSec__con__desc">
+															<p>전체</p>
+															</div>
+													 	</li>
+										
+									
+
+								</ul>
+								</div>
+						 	</section>
+						 	<!--신청자격 end-->
+
+
+						 	<!--신청접수 start-->
+						 	<section class="conSec">
+								<div class="conSec__title">
+								<p>신청접수</p>
+								</div>
+								<div class="conSec__con">
+								<ul>
+								 	<li>
+										<div class="conSec__con__title">접수(신청)기간</div>
+										<div class="conSec__con__desc">
+										<p>
+										
+											
+											
+											
+												2026-11-10 09:00 - 2026-11-20 17:00
+											
+										
+										</p>
+										</div>
+								 	</li>
+								 	<li>
+										<div class="conSec__con__title">접수(신청)방법</div>
+										<div class="conSec__con__desc">
+										<p>
+											
+												
+													
+														
+															구글폼 제출
+														
+														
+													
+												
+												
+											
+										</p>
+										</div>
+								 	</li>
+
+									
+										
+										
+									
+								</ul>
+								</div>
+						 	</section>
+						 	<!--신청접수 end-->
+							
+
+							
+								
+								
+								
+							
+							
+							
+							 	<!--문의처 start-->
+							 	<section class="conSec">
+									<div class="conSec__title">
+									<p>문의처</p>
+									</div>
+									<div class="conSec__con">
+									<ul>
+									 	<li>
+											<div class="conSec__con__title">문의처</div>
+											<div class="conSec__con__desc">
+												<ul>
+													
+														<li>
+															<p>경기도경제과학진흥원&nbsp;R&amp;D지원팀&nbsp;김지영(031-259-6782)</p>
+														</li>
+													
+													
+														
+															<li>
+																<p></p>
+															</li>
+														
+														
+													
+												</ul>
+											</div>
+									 	</li>
+
+									</ul>
+									</div>
+							 	</section>
+							 	<!--문의처 end-->
+							
+
+						 	
+							 	<!-- 사업신청 시 제출서류 및 기업인증서 start -->
+								
+									
+									
+									
+								
+							 	<!-- 사업신청 시 제출서류 및 기업인증서 end -->
+						 	
+							
+								
+							
+						</div>
+						</div>
+
+				 	</div>
+
+
+
+			<!-- body [E] -->
+			
+			
+
+		    <p />
+		
+		    
+		    
+
+
+
+		
+		    
+		    
+
+
+
+<script type="text/javascript" src="/resources/libs/form-3.51.0/jquery.form.js"></script>
+    
+
+
+
+		    
+		    <!--왼쪽 플로팅 버튼 -->
+		    
+
+
+
+
+
+
+
+
+<script src="/resources/plugin/showdown-2.0.3/showdown.min.js"></script>
+
+
+<script type="text/javascript">
+
+	function get_html_string(val) {
+		return String(val).replaceAll("\n", "<br>");
+	}
+	
+	function markdown2html(msg_text) {
+		//var converter = new showdown.Converter();
+		var converter = new showdown.Converter({
+			'tables':true,
+			'strikethrough':true,
+			'simpleLineBreaks':true
+		});
+		return converter.makeHtml(msg_text);
+	}
+
+	//AI 검색
+	function create_common_ref_info(ref, num) {
+		
+		var file_names = [];
+		var file_fileSn = [];
+		var file_fileId = [];
+		//var file_links = [];
+ 		if ( (ref['atchFile'] !== undefined) && (ref['atchFile'] !== null) && (Array.isArray(ref['atchFile'])) ) {
+ 			var f_counter = 0;
+ 			while (f_counter < ref['atchFile'].length) {
+ 				if ( 	
+ 						(ref['atchFile'][f_counter]['orgnlFileNm'] !== undefined) && 
+ 						(ref['atchFile'][f_counter]['fileUrlAddr'] !== undefined) && 
+ 						(ref['atchFile'][f_counter]['orgnlFileNm'] !== null) && 
+ 						(ref['atchFile'][f_counter]['fileUrlAddr'] !== null) 
+ 					) {
+ 	 				file_names[f_counter] = ref['atchFile'][f_counter]['orgnlFileNm'];
+ 	 				file_fileSn[f_counter] = ref['atchFile'][f_counter]['fileSn'];
+ 	 				file_fileId[f_counter] = ref['atchFile'][f_counter]['fileId'];
+ 	 				//file_links[file_links.length] = ref['atchFile'][f_counter]['fileUrlAddr'];
+ 	 				f_counter++;	
+ 				}
+ 			}
+ 		}
+		
+		var ref_html = '';
+		
+		ref_html += '<li class="li" role="listitem">';
+		ref_html += '  <div class="li_con">';
+		ref_html += '    <a style="cursor: pointer;" onclick="toggleDropdown(this)" aria-expanded="false" aria-controls="details1" aria-label="세부 정보 열기" title="레이어열림" class="tit modal-btn" aria-haspopup="dialog" aria-controls="linkModal">';
+		ref_html += '      <span class="num" aria-hidden="true">' + num + '</span>';
+		ref_html += '      <p>' + get_html_string(ref['bizNm']) + '</p>';
+		ref_html += '    </a>';
+		ref_html += '    <button type="button" class="plusBtn" onclick="javascript:mainOpenDtl(\'' + ref['bizCyclId'] + '\');"></button>';
+		ref_html += '  </div>';
+		ref_html += '  <ul class="li_con_plus" id="details1" role="list">';
+		if ( (ref['sprtTrgtCn'] !== undefined) && (ref['sprtTrgtCn'] !== null) && (ref['sprtTrgtCn'] !== "None") ) {
+			ref_html += '    <li class="plus_line" role="listitem">';
+			ref_html += '      <div class="tit">지원대상</div>';
+			ref_html += '      <p>' + get_html_string(ref['sprtTrgtCn']) + '</p>';
+			ref_html += '    </li>';
+		}
+		ref_html += '    <li class="plus_line" role="listitem">';
+		//ref_html += '      <div class="tit">신청기간</div>';
+		ref_html += '      <div class="tit">접수기간</div>';
+		if( ref['bgtExhRcptYn'] === 'Y' ){
+			ref_html += '      <p>예산 소진시까지</p>';
+		}else{
+			ref_html += '      <p>' + ref['aplyBgngDt'] + ' ~ ' + ref['aplyEndDt'] + '</p>';
+		}
+		ref_html += '    </li>';
+		if (file_names.length > 0) {
+			ref_html += '    <li class="plus_line" role="listitem">';
+			ref_html += '      <div class="tit">첨부파일</div>';
+			ref_html += '      <ul>';
+			var f_counter = 0;
+			while (f_counter < file_names.length) {
+				ref_html += '        <li>';
+				//ref_html += '          <p><a href="' + file_links[f_counter] + '" target="_blank">' + file_names[f_counter] + '</a></p>';
+				ref_html += '          <p><a href="/component/file/ND_fileDownload.do?q_fileSn='+file_fileSn[f_counter]+'&q_fileId='+file_fileId[f_counter]+'">' + file_names[f_counter] + '</a></p>';
+				ref_html += '        </li>';
+				f_counter++;
+			}
+			ref_html += '      </ul>';
+			ref_html += '    </li>';	
+		}
+		if ( (ref['outsdInstNm'] !== undefined) && (ref['outsdInstNm'] !== null) && (ref['outsdInstNm'] !== "None") ) {
+			ref_html += '    <li class="plus_line" role="listitem">';
+			ref_html += '      <div class="tit">수행기관</div>';
+			ref_html += '      <p>' + get_html_string(ref['outsdInstNm']) + '</p>';
+			ref_html += '    </li>';				
+		}
+		ref_html += '  </ul>';
+		ref_html += '</li>';
+		
+		return ref_html;
+	}
+
+    function isMobileDevice() {
+        return /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    }
+
+	//지원시책
+	function create_support_ref_info(ref, num) {
+		
+		var ref_html = '';
+
+		ref_html += '<li class="li" role="listitem">';
+		ref_html += '  <div class="li_con">';
+		ref_html += '    <a style="cursor: pointer;" onclick="toggleDropdown(this)" aria-expanded="false" aria-controls="details1" aria-label="세부 정보 열기" title="레이어열림" class="tit modal-btn" aria-haspopup="dialog" aria-controls="linkModal">';
+		ref_html += '      <span class="num" aria-hidden="true">' + num + '</span>';
+		ref_html += '      <p>' + get_html_string(ref['bizNm']) + '</p>';
+		ref_html += '    </a>';
+		//ref_html += '    <button type="button" class="plusBtn" onclick="javascript:mainOpenDtl(\'' + ref['bizCyclId'] + '\');"></button>';
+		ref_html += '  </div>';
+		ref_html += '  <ul class="li_con_plus" id="details1" role="list">';
+		if ( (ref['sprtTrg'] !== undefined) && (ref['sprtTrg'] !== null) && (ref['sprtTrg'] !== "None") ) {
+			ref_html += '    <li class="plus_line" role="listitem">';
+			ref_html += '      <div class="tit">지원대상</div>';
+			ref_html += '      <p>' + get_html_string(ref['sprtTrg']) + '</p>';
+			ref_html += '    </li>';
+		}
+		if ( (ref['fileNm'] !== undefined) && (ref['fileNm'] !== null) && (ref['fileLnk'] !== undefined) ) {
+            ref_html += '    <li class="plus_line" role="listitem">';
+            ref_html += '      <div class="tit">첨부파일</div>';
+            ref_html += '      <ul>';
+            ref_html += '        <li>';
+
+            if(isMobileDevice()){
+                ref_html += '          <a href="javascript:void(0);" onclick="openPdfPreview(\'' + ref['fileLnk'] + '\')">' + ref['fileNm'] + '</a>';
+            }else{
+                ref_html += '          <p><a href="' + ref['fileLnk'] + '" target="_blank">' + ref['fileNm'] + '</a></p>';
+            }
+
+            ref_html += '        </li>';
+            ref_html += '      </ul>';
+            ref_html += '    </li>';
+        }
+        ref_html += '  </ul>';
+        ref_html += '</li>';
+
+        return ref_html;
+    }
+
+
+    function create_recommended_question(ref, rum) {
+        let ref_html = '';
+        let ref_recommended_question = ref;
+
+        // 추천 질문 항목 추가
+        if (ref_recommended_question !== undefined && ref_recommended_question !== null && ref_recommended_question !== "None") {
+	        ref_html += "<li class='recommended-queries__item'>";
+	        ref_html += "  <button type='button' onclick=\"fn_keyWordInSearch('" + ref_recommended_question + "')\">";
+	        ref_html += "    " + rum;
+	        ref_html += "    <span>" + ref_recommended_question + "</span>";
+	        ref_html += "  </button>";
+	        ref_html += "</li>";
+	    }
+
+	   
+
+
+	    return ref_html;
+	}
+
+
+	
+	
+	function create_similar_ref_info(ref, num) {
+		
+		var ref_html = '';
+		
+		ref_html += '<li class="li" role="listitem">';
+		ref_html += '  <div class="li_con">';
+		ref_html += '    <a style="cursor: pointer;" onclick="toggleDropdown(this)" aria-expanded="false" aria-controls="details1" aria-label="세부 정보 열기" title="레이어열림" class="tit modal-btn" aria-haspopup="dialog" aria-controls="linkModal">';
+		ref_html += '      <span class="num" aria-hidden="true">' + num + '</span>';
+		ref_html += '      <p>' + get_html_string(ref['title']) + '</p>';
+		ref_html += '    </a>';
+		//ref_html += '    <button type="button" class="plusBtn" onclick="javascript:mainOpenDtl(\'' + ref['bizCyclId'] + '\');"></button>';
+		ref_html += '  </div>';
+		ref_html += '  <ul class="li_con_plus" id="details1" role="list">';
+		if ( (ref['projectOrganNm'] !== undefined) && (ref['projectOrganNm'] !== null) && (ref['projectOrganNm'] !== "None") ) {
+			ref_html += '    <li class="plus_line" role="listitem">';
+			ref_html += '      <div class="tit">사업기관</div>';
+			ref_html += '      <p>' + get_html_string(ref['projectOrganNm']) + '</p>';
+			ref_html += '    </li>';
+		}
+		if ( (ref['projectTarget'] !== undefined) && (ref['projectTarget'] !== null) && (ref['projectTarget'] !== "None") ) {
+			ref_html += '    <li class="plus_line" role="listitem">';
+			ref_html += '      <div class="tit">지원대상</div>';
+			ref_html += '      <p>' + get_html_string(ref['projectTarget']) + '</p>';
+			ref_html += '    </li>';
+		}
+		if ( (ref['projectContent'] !== undefined) && (ref['projectContent'] !== null) && (ref['projectContent'] !== "None") ) {
+			ref_html += '    <li class="plus_line" role="listitem">';
+			ref_html += '      <div class="tit">사업내용</div>';
+			ref_html += '      <p>' + get_html_string(ref['projectContent']) + '</p>';
+			ref_html += '    </li>';				
+		}
+		ref_html += '  </ul>';
+		
+		return ref_html;
+	}
+	
+	function parse_ai_search_refs(json_obj, req_login) {
+		
+		
+		console.log("parse_ai_searh_refs has been loaded");
+		
+		
+		
+		
+		$('#div_main_refs').css("display", "none");
+		$('#div_category_refs').css("display", "none");
+		$('#div_location_refs').css("display", "none");
+		$('#div_support_refs').css("display", "none");
+		$('#div_similar_refs').css("display", "none");
+		
+		$('#main_refs_list').empty();
+    	$('#category_refs_list').empty();
+    	$('#location_refs_list').empty();
+		$('#support_refs_list').empty();
+		$('#similar_refs_list').empty();
+		$('#rec-q-container').empty();
+		
+
+		var refs = undefined;
+		var refs_counter = undefined;
+		
+		if (req_login === "0" || req_login === "1") {
+			
+			
+			 
+			// main
+			if (json_obj['main_reference'] !== undefined && (Array.isArray(json_obj['main_reference']))) {
+				
+				refs = json_obj['main_reference'];
+				refs_counter = 0;
+				refs.forEach(function(ref) {
+					refs_counter++;
+					$('#main_refs_list').append(create_common_ref_info(ref, refs_counter));
+				});
+				if (refs_counter > 0) {
+					console.log("MAIN REFS: " + String(refs_counter));
+					$('#div_main_refs').css("display", "flex");					
+				}
+				
+			}
+			
+
+			// support
+			if ( (json_obj['support'] !== undefined) && (json_obj['support']['support_reference'] !== undefined) && (Array.isArray(json_obj['support']['support_reference'])) ) {
+				refs = json_obj['support']['support_reference'];
+				refs_counter = 0;
+				refs.forEach(function(ref) {
+					refs_counter++;
+					$('#support_refs_list').append(create_support_ref_info(ref, refs_counter));
+				});
+				if (refs_counter > 0) {
+					$("#span_support_refs_title").text(refs = json_obj['support']['support_response']);
+					$('#div_support_refs').css("display", "flex");
+					console.log("SUPPORT REFS: " + String(refs_counter));
+				}
+			}
+			
+			if (json_obj['recommended_questions'] !== undefined && Array.isArray(json_obj['recommended_questions'])) {
+			    refs = json_obj['recommended_questions'];
+			    
+			    
+			    
+			    refs_counter = 0;
+			    let ref_html = '';
+
+			    ref_html += '<div class="recommended-queries">';
+			    ref_html += '<div class="mob-title">추천 질의어</div>';
+			    ref_html += '<div class="recommended-queries__content">';
+			    ref_html += '<div class="recommended-queries__image">';
+			    ref_html += '<img src="../resources/images/main/rec-robot_search.png" alt="추천 질의어">';
+			    ref_html += '</div>';
+			    ref_html += '<ul class="recommended-queries__list" id="recommended-queries-list">';
+
+			    refs.forEach(function(ref) {
+			        refs_counter++;
+			        
+			        ref_html += create_recommended_question(ref, refs_counter);
+			    });
+
+			    ref_html += '</ul>';
+			    ref_html += '</div>'; 
+			    ref_html += '</div>'; 
+
+			    
+			    
+			    
+			    $('#rec-q-container').append(ref_html);
+			    
+			    
+			    console.log("RECOMMENDED_QUESTIONS: " + String(refs_counter));
+			    
+			    
+			}
+
+			
+				
+		} else {
+			
+			console.log('business loaded');
+			// 기업			
+			// references
+			if (json_obj['reference'] !== undefined) {
+				
+					// main
+				if ( (json_obj['reference']['main_reference'] !== undefined) && (Array.isArray(json_obj['reference']['main_reference'])) ) {
+					refs = json_obj['reference']['main_reference'];
+					refs_counter = 0;
+					refs.forEach(function(ref) {
+						refs_counter++;
+						$('#main_refs_list').append(create_common_ref_info(ref, refs_counter));
+					});
+					if (refs_counter > 0) {
+						console.log("MAIN REFS: " + String(refs_counter));
+						$('#div_main_refs').css("display", "flex");					
+					}
+				}
+					
+				// general refs
+				if ( (json_obj['reference']['general'] !== undefined) && (json_obj['reference']['general']['general_reference'] !== undefined) && (Array.isArray(json_obj['reference']['general']['general_reference'])) ) {
+					
+					refs = json_obj['reference']['general']['general_reference'];
+					refs_counter = 0;
+					refs.forEach(function(ref) {
+						refs_counter++;
+						$('#general_refs_list').append(create_common_ref_info(ref, refs_counter));
+					});
+					if (refs_counter > 0) {
+						console.log("GENERAL REFS: " + String(refs_counter));
+						$('#div_general_refs').css("display", "flex");
+						if (json_obj['reference']['general']['general_response'] !== undefined) {
+							$('#span_general_refs_title').text(json_obj['reference']['general']['general_response']);
+						}
+					}
+				}
+					
+				
+				// category
+				if ( (json_obj['reference']['category'] !== undefined) && (Array.isArray(json_obj['reference']['category']['category_reference'])) ) {
+					refs = json_obj['reference']['category']['category_reference'];
+					refs_counter = 0;
+					refs.forEach(function(ref) {
+						refs_counter++;
+						$('#category_refs_list').append(create_common_ref_info(ref, refs_counter));
+					});
+					if (refs_counter > 0) {
+						if (json_obj['reference']['category']['category_response'] !== undefined) {
+							$("#span_category_refs_title").text(json_obj['reference']['category']['category_response']);
+						}
+						$('#div_category_refs').css("display", "flex");
+						console.log("CATEGORY REFS: " + String(refs_counter));
+					}
+				}
+				
+				// location
+				if ( (json_obj['reference']['location'] !== undefined) && (Array.isArray(json_obj['reference']['location']['category_reference'])) ) {
+					refs = json_obj['reference']['location']['category_reference'];
+					refs_counter = 0;
+					refs.forEach(function(ref) {
+						refs_counter++;
+						$('#location_refs_list').append(create_common_ref_info(ref, refs_counter));
+					});
+					if (refs_counter > 0) {
+						$("#span_location_refs_title").text(json_obj['reference']['location']['location_response']);
+						$('#div_location_refs').css("display", "flex");
+						console.log("LOCATION REFS: " + String(refs_counter));
+					}
+				}
+				
+				// support
+				if ( (json_obj['reference']['support'] !== undefined) && (Array.isArray(json_obj['reference']['support']['support_reference'])) ) {
+					refs = json_obj['reference']['support']['support_reference'];
+					
+					refs_counter = 0;
+					refs.forEach(function(ref) {
+						refs_counter++;
+						$('#support_refs_list').append(create_support_ref_info(ref, refs_counter));
+					});
+					if (refs_counter > 0) {
+						$("#span_support_refs_title").text(json_obj['reference']['support']['support_response']);
+						$('#div_support_refs').css("display", "flex");
+						console.log("SUPPORT REFS COUNT: " + String(refs_counter));
+					}
+				}
+				
+				// similar
+				if ( (json_obj['reference']['similar'] !== undefined) && (Array.isArray(json_obj['reference']['similar']['similar_reference'])) ) {
+					refs = json_obj['reference']['similar']['similar_reference'];
+					refs_counter = 0;
+					refs.forEach(function(ref) {
+						refs_counter++;
+						$('#similar_refs_list').append(create_common_ref_info(ref, refs_counter));
+					});
+					if (refs_counter > 0) {
+						$("#span_similar_refs_title").text(json_obj['reference']['similar']['similar_response']);
+						$('#div_similar_refs').css("display", "flex");
+						console.log("SIMILAR REFS: " + String(refs_counter));
+					}
+				}
+				
+				if (json_obj['recommended_questions'] !== undefined && Array.isArray(json_obj['recommended_questions'])) {
+				    refs = json_obj['recommended_questions'];
+				    
+				    
+				    
+				    refs_counter = 0;
+				    let ref_html = '';
+
+				    ref_html += '<div class="recommended-queries">';
+				    ref_html += '<div class="mob-title">추천 질의어</div>';
+				    ref_html += '<div class="recommended-queries__content">';
+				    ref_html += '<div class="recommended-queries__image">';
+				    ref_html += '<img src="../resources/images/main/rec-robot_search.png" alt="추천 질의어">';
+				    ref_html += '</div>';
+				    ref_html += '<ul class="recommended-queries__list" id="recommended-queries-list">';
+
+				    refs.forEach(function(ref) {
+				        refs_counter++;
+				        
+				        ref_html += create_recommended_question(ref, refs_counter);
+				    });
+
+				    ref_html += '</ul>';
+				    ref_html += '</div>'; 
+				    ref_html += '</div>'; 
+
+				    
+				    
+				    
+				    $('#rec-q-container').append(ref_html);
+				    
+				    
+				    console.log("RECOMMENDED_QUESTIONS: " + String(refs_counter));
+				    
+				    
+				}
+				
+			}
+		}
+	}
+	
+	
+	function fn_keyWordInSearch(val) {
+		textSearchVal = val;
+		stop_ai_search();
+		$("#searchInput").val("");
+		fn_aiSearch();
+	}
+	
+</script>
+
+<script src="/resources/plugin/pdf.js-3.4.120/pdf.min.js"></script>
+
+<style>
+    /* Modal styles */
+    .modal-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    .modal-content {
+        position: relative;
+        background: white;
+        padding: 20px;
+        width: 90%;
+        max-width: 1200px;
+        max-height: 90vh;
+        overflow-y: auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .modal-content img {
+        max-width: 100%;
+        margin: 20px 0;
+        display: block;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border: 1px solid #000;
+    }
+
+    .modal-content .page-number {
+        text-align: center;
+        color: #666;
+        margin-bottom: 10px;
+        font-family: Arial, sans-serif;
+    }
+
+    .modal-close-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        font-size: 20px;
+        color: #333;
+    }
+</style>
+
+
+<div id="pdfModal" class="modal-overlay">
+	<button type="button" aria-label="닫기" class="modal_pop_close btn-close"onclick="closePdfModal()"></button>
+    <div class="modal-content pdf-modal-size">
+        <div id="modalContentPlaceholder"></div>
+    </div>
+</div>
+
+<script>
+    //pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.worker.min.js';
+    pdfjsLib.GlobalWorkerOptions.workerSrc = '/resources/plugin/pdf.js-3.4.120/pdf.worker.min.js';
+
+    function getPageRangeFromUrl(url) {
+        try {
+            const urlObj = new URL(url);
+            const hash = urlObj.hash;
+            const targetMatch = hash.match(/#page=(\d+)/);
+
+            const targetPage = targetMatch ? parseInt(targetMatch[1], 10) : 1;
+            const startPage = targetPage - 5 < 1 ? 1 : targetPage - 5;
+            const endPage = targetPage + 5;
+
+            return {
+                targetPage: targetPage,
+                startPage: startPage,
+                endPage: endPage
+            };
+        } catch (error) {
+            console.error('URL 파싱 에러:');
+            return { startPage: 1, endPage: 1 };
+        }
+    }
+
+    async function renderPage(pdf, pageNum, scale = 2.0) {
+        const page = await pdf.getPage(pageNum);
+        const canvas = document.createElement('canvas');
+        const context = canvas.getContext('2d');
+
+        const viewport = page.getViewport({ scale: scale });
+        canvas.width = viewport.width;
+        canvas.height = viewport.height;
+
+        const renderContext = {
+            canvasContext: context,
+            viewport: viewport
+        };
+
+        await page.render(renderContext).promise;
+        return canvas.toDataURL('image/png');
+    }
+
+    function focusTargetPage(targetPage){
+        setTimeout(() => {
+            const targetImage = document.getElementById('page-' + targetPage);
+            if (targetImage) {
+                targetImage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        }, 100);
+    }
+
+    async function openPdfPreview(pdfUrl) {
+        try {
+            const { targetPage, startPage, endPage } = getPageRangeFromUrl(pdfUrl);
+            const baseUrl = pdfUrl.split('#')[0];
+            const proxyUrl = '/common/proxyPdf.do?pdfUrl=' + baseUrl;
+            //const proxyUrl = '/common/proxyPdf2.do?pdfUrl=' + baseUrl;
+
+            $(".loading").show();
+
+            const pdf = await pdfjsLib.getDocument(proxyUrl).promise;
+
+            const imageDataArray = [];
+            for (let pageNum = startPage; pageNum <= endPage; pageNum++) {
+                const imageData = await renderPage(pdf, pageNum);
+                imageDataArray.push({ pageNum, imageData });
+            }
+
+            $(".loading").hide();
+
+            let imageContent = '';
+            for (const item of imageDataArray) {
+                //imageContent += '<div class="page-number">Page ' + item.pageNum + '</div>';
+                //imageContent += '<img src="' + item.imageData + '" alt="Page ' + item.pageNum + '">';
+
+                let imgId = 'page-' + item.pageNum;
+                imageContent += '<img id="' + imgId + '" src="' + item.imageData + '" alt="Page ' + item.pageNum + '">';
+            }
+
+            document.getElementById('modalContentPlaceholder').innerHTML = imageContent;
+            document.getElementById('pdfModal').style.display = 'flex';
+
+            //targetPage로 focus이동
+            focusTargetPage(targetPage);
+
+        } catch (error) {
+            console.error('PDF 처리 중 에러:');
+            alert('PDF를 처리하는 중 오류가 발생했습니다.');
+        }
+    }
+
+    function closePdfModal() {
+        document.getElementById('pdfModal').style.display = 'none';
+        document.getElementById('modalContentPlaceholder').innerHTML = '';
+    }
+
+    /*
+    function closeOnOverlayClick(event) {
+        if (event.target === document.getElementById('pdfModal')) {
+            closePdfModal();
+        }
+    }
+    */
+</script>
+
+
+	<script>
+	  //가이드 열기
+	  function guideMainView() {
+      $('body').addClass('overflow-hidden'); // body 스크롤 숨기기
+	    $('#mainGuide').fadeIn('fast');
+	  }
+	
+  // 가이드 닫기
+  function guideViewClose() {
+    $('.intro-tuto').fadeOut('fast', function() {
+      $('body').removeClass('overflow-hidden'); // body 스크롤 복원
+    });
+  }
+	</script>
+
+    <ul class="float-btnWrap">
+
+      <li>
+        <div class="btnBox">
+          <button type="button" class="float-btn ico-guide" aria-label="메인 가이드 열기" onclick="guideMainView()"></button>
+          <span class="tooltip">가이드</span>
+        </div>
+      </li>  
+     
+      <li>
+        <div class="btnBox">
+          <button type="button" class="float-btn ico-chat chatbot_toggle" aria-label="AI 상담 시작"
+            onclick="chatnotView()"></button>
+          <span class="tooltip">AI 상담</span>
+        </div>
+        <div>
+          <!--플로팅 영역-->
+        </div>
+      </li>
+      <li  style="display: none;" >
+        <div class="btnBox">
+          <button type="button" class="float-btn ico-setting setting_toggle" onclick="settingView()"></button>
+          <span class="tooltip">설정하기</span>
+        </div>
+      </li>
+      <li>
+        <div class="btnBox">
+          <button type="button" class="float-btn ico-rightmenu btn-rightmenu" onclick="openRightMenu()"></button>
+          <span class="tooltip">우측메뉴</span>
+        </div>
+      </li>
+      <li>
+        <div class="btnBox mobFloatToggle">
+          <button type="button" class="float-btn mob-floatingBtn" aria-label="플로팅 버튼"
+            onclick="floatingToggle()"></button>
+        </div>
+      </li>
+    </ul>
+    
+	<!-- 메인 가이드 팝업 [start] -->
+	<div class="intro-tuto" id="mainGuide" style="display: none;">
+	  <picture>
+	    <source media="(max-width: 1024px)" srcset="/resources/images/main/mttr-main_2024.jpg" />
+	    <img src="/resources/images/main/ttr-1024.jpg" alt="경기기업비서를 누르면
+	    메인 홈으로 이동합니다. 전체 메뉴를 보실 수 있습니다. 대화하듯이 질문을 하면 AI가 지원사업을 파악하여 해당 지원 사업을 찾아 드립니다. AI가 사용자가 원하는 분야의 지원사업을 더욱 정확하게 찾아 드립니다. 네이버, 구글과 같이 질문이나, 단어를 적으면,검색엔진이 찾아서 제시합니다. 이전에 검색했던 질문으로 다시검색할 때 편리합니다. AI 검색 화면을 아래로 내리시면 경기기업비서의 HOT 지원사업, 마감임박, 분야별지원사업, 나의지원사업, 경기기업비서 소개를 보실 수 있습니다. 탭메뉴를 클릭 하시면 해당 지원사업을 보실 수 있습니다. 넓은 화면으로 상담이 가능합니다. AI 상담사와 진행한 상담 내용이 표시됩니다. 경기기업비서 AI 상담사가 기업경영 관련 상담을 도와드립니다. 대화창에 기업 운영 관련 궁금하신 내용을 대화하듯이 질문해 주세요. 전송 버튼" style="width: 100%;">
+	  </picture>
+	
+	  <div class="intro-tuto__text">
+	    <button class="btn btn-sm" id="tutoClose" onclick="guideViewClose()">가이드 닫기</button>
+	  </div>
+	</div>
+	<!-- 메인 가이드 팝업 [end] -->
+
+    <script>
+      //모바일 화면일 때 float 버튼 숨김 처리 함수
+      // 1024px 이하일 시 float-btnWrap에 mobFloat 클래스 추가
+      function addMobFloatClass() {
+        if ($(window).width() <= 1024) {
+          $('.float-btnWrap').addClass('mobFloat');
+          $('.mob-floatingBtn').removeClass('show');
+        } else {
+          $('.float-btnWrap').removeClass('mobFloat');
+          $('.mob-floatingBtn').removeClass('show');
+        }
+      }
+    
+
+      $(document).ready(function () {
+        // 로드 시 1024px 이하일 시 mobFloat 클래스 추가
+        addMobFloatClass();
+      });
+    
+      $(window).resize(function () {
+        // 윈도우 리사이즈 시 mobFloat 클래스 추가/제거
+        addMobFloatClass();
+      });
+    
+  
+    function floatingToggle() {
+      $('.float-btnWrap').toggleClass('mobFloat');
+      
+      if ($('.float-btnWrap').hasClass('mobFloat')) {
+        $('.mob-floatingBtn').removeClass('show');
+      } else {
+        $('.mob-floatingBtn').addClass('show');
+      }
+    }
+    </script>
+
+
+    
+    <!--챗봇 영역 start-->
+    
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+/****************************************************************************************************
+AI검색버튼 클릭시 발생하는 이벤트 시작
+****************************************************************************************************/
+
+//메세지 전송 버튼 클릭했을때 발생하는 이벤트
+$(".message").on("click", function(event) {
+    event.preventDefault();
+    ai_chat_send();
+});
+
+if( !_mbrId ){
+	var _loginType = "";//로그인 구분
+	var _mbrNm = "";// 회원 이름
+	var _mbrId = "";// 회원 ID
+	var _tel = "";// 회원 tel
+	var _email = "";// 회원 email
+	var _emailYn = "";// 회원 email Yn
+	var _smsYn = "";// 회원 sms Yn
+	var _bizCoNm = "";// 기업이름
+	
+	var _bizTyp = "";
+	var _bizYear = "";
+	var _empCnt = "";
+	var _venYn = "";
+	var _woYn = "";
+	var _disYn = "";
+	var _smBs = "";
+	var _induCdId = "";
+	var _indtCd = "";
+	var _indtNm = "";
+	var _bscn = "";
+	var _mainPrd = "";
+	var _slsAmt = "";
+	var _slsAmtCd = "";
+	
+	var _bizCriGrd = "";//CRI 등급
+	var _bizWatchGrd = "";//WATCH 등급
+	var _bizCashFlowGrd = "";//Cash Flow 등급
+	var _category = "";//카테고리(경영, 기술, 내수, 수출, 인력, 제도, 창업)
+	var _location = "";//경기도 시·군
+}
+
+//챗봇 디자인용 스크립트
+const ai_chat_repeat_delay = 1000;
+var ai_chat_client = undefined;
+var ai_chat_is_running = false;
+var ai_chat_is_waiting_reply = false;
+var ai_chat_chat_req_processed = false;
+var ai_chat_msg_id = 0;
+var ai_chat_resp_text_temp = "";
+var ai_chat_resp_text_full = "";
+var ai_chat_resp_text_diff = "";
+var ai_chat_printing_buffer = "";
+var ai_chat_req_messages = [{"role": "system","content": ""}];
+var ai_chat_reply_text = "";
+
+const ai_chat_slice_size = 1;
+const ai_chat_slice_delay = 10;
+const ai_chat_waiting_delay = 5;
+function ai_chat_print_response() {
+	var delay_time = ai_chat_waiting_delay;
+	if (ai_chat_printing_buffer.length > 0) {
+		//ai_chat_reply_text += ai_chat_printing_buffer.substr(0, ai_chat_slice_size).replaceAll("\n", "<br>");
+		ai_chat_reply_text += ai_chat_printing_buffer.substr(0, ai_chat_slice_size);
+		document.getElementById("messageDiv"+ai_chat_msg_id).innerHTML = markdown2html(ai_chat_reply_text);
+		$(".message-box").scrollTop($(".message-box")[0].scrollHeight);
+		ai_chat_printing_buffer = ai_chat_printing_buffer.substr(ai_chat_slice_size, (ai_chat_printing_buffer.length - ai_chat_slice_size));
+		delay_time = ai_chat_slice_delay;
+	} else {
+		if (ai_chat_chat_req_processed) {
+			ai_chat_is_running = false;
+			document.getElementById("ai_chatbot_btn_send").classList.remove('stop');
+			
+		}
+	}
+	if (ai_chat_is_running) {
+		setTimeout(() => {
+			ai_chat_print_response();
+		}, delay_time);
+	}
+}
+
+const ai_chat_update_pd_interval = 500;
+var ai_chat_progress_dots_timer;
+function ai_chat_update_progress_dots() {
+	
+	if (!ai_chat_is_waiting_reply) return;
+	
+	var pd_elem = document.getElementById("messageDiv"+ai_chat_msg_id);
+	var pd_elem_value = pd_elem.innerHTML;
+	if (pd_elem_value.length >= 4) {
+		pd_elem_value = ".";
+	} else {
+		pd_elem_value += ".";
+	}
+	pd_elem.innerHTML = pd_elem_value; 
+	$(".message-box").scrollTop($(".message-box")[0].scrollHeight);
+}
+
+function ai_chat_stop() {
+	
+	try {
+		ai_chat_client.abort();
+	} catch (err) {
+		console.log('error');
+	}
+	
+	if (ai_chat_is_waiting_reply) {
+		$("#messageDiv"+ai_chat_msg_id).css("display", "none");
+	}
+	document.getElementById("ai_chatbot_btn_send").classList.remove('stop');
+	
+	ai_chat_is_running = false;
+	ai_chat_chat_req_processed = true;
+	clearInterval(ai_chat_progress_dots_timer);
+	ai_chat_is_waiting_reply = false;
+	ai_chat_printing_buffer = "";
+}
+
+function ai_chat_send() {
+	
+	if (ai_chat_is_running) {
+		ai_chat_stop();
+		return;
+	}
+	
+	let msg = $(".message").val();
+	if (msg.length == 0) return;
+	
+	document.getElementById("ai_chatbot_btn_send").classList.add('stop');
+
+	let div = $("<div></div>");
+    div.html("<span style='flex-grow:1'></span><div class='chat-message-sent'>" + msg + "</div>");
+    div.addClass("chat-message-div");
+    $(".message-box").append(div);
+    $(".message").val("");
+    $(".message-box").scrollTop($(".message-box")[0].scrollHeight);
+	
+	ai_chat_msg_id++;
+	ai_chat_resp_text_full = "";
+	ai_chat_resp_text_diff = "";
+	ai_chat_printing_buffer = "";
+	ai_chat_reply_text = "";
+	
+	var rText1 = "<div class='chat-message-received' id='messageDiv"+ai_chat_msg_id+"' style='display: none;'></div>";
+	$("#messageBox").append(rText1);
+	$("#messageDiv"+ai_chat_msg_id).addClass("chat-message-div");
+	
+	ai_chat_send_request(msg);
+}
+
+function ai_chat_send_request(msg) {
+	
+	//개발환경은 클라비 도메인 개발로 변경
+	//const url = "https://api.egbiz.clabi.co.kr/api/v1/clario/clova/stream";	
+	let url = "https://api.egbiz.clabi.co.kr/api/v1/clario/clova/QA_stream";
+	if( /^https:\/\/(www\.|admin\.)?egbiz\.or\.kr/.test(location.origin) === false ){
+		url = url.replace(/api\./,'dev.');
+	}
+	
+	/* ClabiAPI Reqiest Params */
+	var req_login = (!_loginType?"0":(_loginType==="P"?"1":"2")); // 비로그인 : 0 , 로그인(일반유저) : 1, 로그인(기업유저) : 2
+	var req_biz_nm = (!_loginType?"":(_loginType==="P"?_mbrNm:_bizCoNm)); // 기업 또는 회원 이름
+	var req_mbr_id = _mbrId;//회원 ID
+	var req_tel = _tel;//연락처
+	var req_email= _email;//이메일
+	var req_email_yn = _emailYn;//이메일 수신여부
+	var req_sms_yn = _smsYn;//sms 수신여부
+	
+	var req_bizCoNm = _bizCoNm;
+	var req_bizTyp = _bizTyp;
+	var req_bizYear = _bizYear;
+	var req_empCnt = _empCnt;
+	var req_venYn = _venYn;
+	var req_woYn = _woYn;
+	var req_disYn = _disYn;
+	var req_smBs = _smBs;
+	var req_induCdId = _induCdId;
+	var req_indtNm = (!_indtNm?'':_indtNm);
+	var req_indtCd = (!_indtCd?'':_indtCd);
+	var req_bscn = (!_bscn?'':_bscn)
+	var req_mainPrd = (!_mainPrd?'':_mainPrd)
+	var req_slsAmt = (!_slsAmt?'':_slsAmt)
+	var req_slsAmtCd = (!_slsAmtCd?'':_slsAmtCd)
+	
+	var req_cri_grd = (!_loginType?"":(_loginType==="P"?"":_bizCriGrd)); // CRI 등급
+	var req_watch_grd = (!_loginType?"":(_loginType==="P"?"":_bizWatchGrd)); // WATCH 등급
+	var req_cash_flow_grd = (!_loginType?"":(_loginType==="P"?"":_bizCashFlowGrd)); // Cash Flow 등급
+	
+	var req_category = (!_loginType?"": (_category?JSON.stringify(Array.of(_category.split(","))[0]):"")); // 카테고리(경영, 기술, 내수, 수출, 인력, 제도, 창업)
+	var req_location = (!_loginType?"":_location); // 경기도 시·군
+	/* ClabiAPI Reqiest Params [end] */
+	
+	ai_chat_is_running = true;
+	ai_chat_chat_req_processed = false;
+	$("#messageDiv"+ai_chat_msg_id).css("display", "block");
+	ai_chat_is_waiting_reply = true;
+	ai_chat_progress_dots_timer = setInterval(function() {
+		ai_chat_update_progress_dots();
+	}, ai_chat_update_pd_interval);
+	
+	ai_chat_client = new XMLHttpRequest();
+	ai_chat_client.open('post', url);
+	ai_chat_client.setRequestHeader('Content-Type', 'application/json');
+	ai_chat_client.setRequestHeader('X-Accel-Buffering', 'no');
+	ai_chat_client.setRequestHeader('Cache-Control', 'no-cache');
+	ai_chat_client.onprogress = function() {
+		
+		if (this.status != 200) {
+			ai_chat_stop();
+			try {
+				ai_chat_client.abort();
+			} catch (err) {
+				console.log('error');
+			}
+			setTimeout(() => {
+				ai_chat_send_request(msg);
+			}, ai_chat_repeat_delay);
+			return;
+		}
+		
+		ai_chat_resp_text_temp = this.responseText;
+		if (this.responseText.lastIndexOf("}") > 0) {
+			ai_chat_resp_text_temp = this.responseText.substring(0, this.responseText.lastIndexOf("}") + 1);
+		}
+		ai_chat_resp_text_diff = ai_chat_resp_text_temp.substring(ai_chat_resp_text_full.length);
+		ai_chat_resp_text_full = ai_chat_resp_text_temp;
+		
+		json_strings = ai_chat_resp_text_diff.split("\n");
+		
+		let errMsg = "";
+		json_strings.forEach(function(json_string) {
+			try {
+				json_obj = JSON.parse(json_string);
+				
+				if ( (json_obj['role'] !== undefined) && (json_obj['action'] !== undefined) ) {
+					if ( (json_obj['role'] == "assistant") && (json_obj['action'] == "chat") ) {
+						if (ai_chat_is_waiting_reply) {
+							clearInterval(ai_chat_progress_dots_timer);
+							ai_chat_is_waiting_reply = false;
+							document.getElementById("messageDiv"+ai_chat_msg_id).innerHTML = "";
+							ai_chat_print_response();
+						}
+						if (json_obj['content'] !== undefined) {
+							ai_chat_printing_buffer += json_obj['content'];
+						}
+					}
+				}
+			} catch (err) {
+				errMsg += "";
+			}
+		});
+	}
+	ai_chat_client.onload = function(){
+		
+		if (this.status != 200) {
+			ai_chat_stop();
+			try {
+				ai_chat_client.abort();
+			} catch (err) {
+				console.log('error');
+			}
+			setTimeout(() => {
+				ai_chat_send_request(msg);
+			}, ai_chat_repeat_delay);
+			return;
+		}
+		
+		json_strings = this.responseText.split("\n");
+		json_last_string = json_strings[json_strings.length-1];
+		try {
+			json_obj = JSON.parse(json_last_string);
+			if ( (json_obj['last_result'] !== undefined) && (json_obj['last_result'] == true) ) {
+				console.log(json_obj);
+				
+				if ( (json_obj['input_text'] !== undefined) && (json_obj['response'] !== undefined) ) {
+					ai_chat_req_messages[ai_chat_req_messages.length] = {
+						"role": "user",
+						"content": json_obj['input_text']
+					};
+					ai_chat_req_messages[ai_chat_req_messages.length] = {
+						"role": "assistant",
+						"content": json_obj['response']
+					};
+				}
+			}
+		} catch (err) {
+			console.log('error');
+		}
+		
+		ai_chat_chat_req_processed = true;
+		if (ai_chat_printing_buffer.length == 0) {
+			ai_chat_is_running = false;
+			document.getElementById("ai_chatbot_btn_send").classList.remove('stop');
+		}
+	}
+	ai_chat_client.onerror = function (e) {
+		try{
+			console.log(e);
+		}catch(e){
+			console.log('clabi api error');
+		}
+		
+		ai_chat_stop();
+		try {
+			ai_chat_client.abort();
+		} catch (err) {
+			console.log('error');
+		}
+		
+		setTimeout(() => {
+			ai_chat_send_request(msg);
+		}, ai_chat_repeat_delay);
+	}
+	
+	/*
+	if( /^https:\/\/(www\.|admin\.)?egbiz\.or\.kr/.test(location.origin) === true ){
+		//ai_chat_client.send(JSON.stringify({ "query": msg, "messages": ai_chat_req_messages }));
+		ai_chat_client.send(JSON.stringify({ 
+			"query": msg, 
+			"messages": ai_chat_req_messages 
+		}));
+	}else{
+	*/
+		let _oParam = null;
+		let _sParam = "";
+			
+		try{
+			_oParam = { 
+				"user_info": [{
+		    		//"mbr_id": req_mbr_id,
+		    		//"biz_nm": req_biz_nm, 
+		    		"userId": req_mbr_id,
+		    		"userNm": req_biz_nm,
+		    		"tel": req_tel,
+		    		"email": req_email,
+		    		"emailYn": req_email_yn,
+		    		"smsYn": req_sms_yn
+				}],
+				"biz_info": [{
+		    		"bizNm": req_bizCoNm, 
+		    		"bizTyp": req_bizTyp, 
+		    		"bizYear": req_bizTyp, 
+		    		"empCnt": req_empCnt,
+		    		"venYn": req_venYn,
+		    		"woYn": req_woYn,
+		    		"disYn": req_disYn,
+		    		"smBs": req_smBs,
+		    		"induCdId": req_induCdId,
+		       		"indtNm": req_indtNm,        		
+		       		"indtCd": req_indtCd,        		
+		       		"bscn": req_bscn,
+		       		"mainPrd": req_mainPrd,
+		       		"slsAmt": req_slsAmt,
+		       		"slsAmtCd": req_slsAmtCd,
+		    		"CriGrd": req_cri_grd, 
+		    		"WatchGrd": req_watch_grd, 
+		    		"CashFlowGrd": req_cash_flow_grd,
+		    		"Category": req_category, 
+		    		"Location": req_location, 
+				}],
+				"login": req_login,
+				"query": msg, 
+				"messages": ai_chat_req_messages 
+			};
+		}catch(e){
+			console.log(e);
+		}
+		console.log('_oParam : ', _oParam);
+		
+		try{
+			if( _oParam ){
+				_sParam = JSON.stringify(_oParam);
+			}
+		}catch(e){
+			console.log(e);
+		}
+		console.log('_sParam : ', _sParam);
+		
+		ai_chat_client.send(_sParam);
+	//}
+}
+
+//쳇봇 화면 열고 닫는 함수
+function chatnotView(){
+	if ($(".chatbot").hasClass("collapsed")) {
+        $(".chatbot").removeClass("collapsed");
+    } else {
+        $(".chatbot").addClass("collapsed");
+    }
+
+	if (!$(".setting").hasClass("collapsed")) {
+		$(".setting").addClass("collapsed");
+	}
+}
+
+/****************************************************************************************************
+AI검색버튼 클릭시 발생하는 이벤트 끝
+****************************************************************************************************/
+</script>
+
+
+	<script>
+  // 가이드 열기
+  function guideChatbotView() {
+    $('body').addClass('overflow-hidden'); // body 스크롤 숨기기
+    $('#chatbotGuide').fadeIn('fast');
+  }
+
+  // 가이드 닫기
+  function guideViewClose() {
+    $('.intro-tuto').fadeOut('fast', function() {
+      $('body').removeClass('overflow-hidden'); // body 스크롤 복원
+    });
+  }
+	</script>
+
+    <!--챗봇 영역 start-->
+    <div class="chatbot main-card collapsed" role="dialog">
+	
+		<!-- 챗봇가이드 팝업 [start] -->
+		<div class="intro-tuto" id="chatbotGuide" style="display: none;">
+		    <img src="/resources/images/main/mttr-chatbot_2024.png" alt="경기기업비서 상담 상담종료 AI 상담사와 진행한 상담 내용이 표시됩니다. 대화창에 기업 운영 관련 궁금하신 
+		    내용을 대화하듯이 질문해 주세요. 음성상담 전송 버튼" style="width: 100%;">
+		  <div class="intro-tuto__text">
+		    <button class="btn btn-sm" id="tutoClose" onclick="guideViewClose()">가이드 닫기</button>
+		  </div>
+		</div>
+		<!-- 챗봇가이드 팝업 [end] -->
+      <div class="main-title">
+        <span>AI 상담사
+					<i class="ico ico-guideBlue" onclick="guideChatbotView()"></i>
+				</span>
+        <div class="btn-list">
+          <button type="button" class="btn-ww only-pc" aria-label="창크기변경"></button>
+          <button type="button" class="btn-close chatbot_toggle" onclick="chatnotView()" aria-label="챗봇 닫기"></button>
+        </div>
+      </div>
+      <div class="notice" id="chatbotDesc">
+        <p>안녕하세요. 경기기업비서 <strong>AI 상담사</strong>입니다.</p>
+        <p>기업경영 관련 문의가 있으신가요?</p>
+      </div>
+      <div class="chat-area message-box" id="messageBox"></div>
+      <input type="hidden" id="dscsnYmd" name="dscsnYmd"/>
+      <input type="hidden" id="dscsnSeq" name="dscsnSeq"/>
+      <form action="#" onsubmit="return false;">
+        <div class="input-div">
+          <div class="chatSendStyle">
+            <label for="message" class="sr-only">ai상담</label>
+            <input id="message" class="input-message message" type="text" placeholder="대화하듯이 질문해 주세요." />
+            <!-- <button class="input-send" onclick="ai_chat_send()" aria-label="메시지 전송"></button>-->
+            <!--챗봇 전송 버튼-->
+            <button class="input-send" id="ai_chatbot_btn_send" onclick="ai_chat_send()" aria-label="메시지 전송"></button>
+            <!--챗봇 정지 버튼-->
+          </div>
+				
+					<!--챗봇 음성검색 버튼 클릭시 call 함수명 aiChatbotVoiceModal() 이것으로 넣어주세요.... -->
+					<button type="button" class="input-voice" onclick="aiChatbotVoiceModal()"></button>
+        </div>
+      </form>
+    </div>
+
+    <!--챗봇 영역 end-->
+    
+    <!--설정하기 영역 start-->
+    
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+	$(document).ready(function() {
+		$('#sortNo1,#sortNo2,#sortNo3,#sortNo4,#sortNo5').on('change', function(e) {
+			var selectorId = this.id;
+			var cngId = selectorId.replace('sortNo','');
+	
+			var trgId = "";
+			if(this.value == '1'){
+				trgId = "hotSprtBizSeq";
+			}else if(this.value == '2'){
+				trgId = "ddlnImntSprtBizSeq";
+			}else if(this.value == '3'){
+				trgId = "fldIdntfSprtBizSeq";
+			}else if(this.value == '4'){
+				trgId = "mySprtBizSeq";
+			}else if(this.value == '5'){
+				trgId = "ggEntBizSeq";
+			}
+			
+			var oldSeq = $('#'+trgId).val();
+			if($('#hotSprtBizSeq').val() == cngId){
+				$('#hotSprtBizSeq').val(oldSeq);
+			}else if($('#ddlnImntSprtBizSeq').val() == cngId){
+				$('#ddlnImntSprtBizSeq').val(oldSeq);
+			}else if($('#fldIdntfSprtBizSeq').val() == cngId){
+				$('#fldIdntfSprtBizSeq').val(oldSeq);
+			}else if($('#mySprtBizSeq').val() == cngId){
+				$('#mySprtBizSeq').val(oldSeq);
+			}else if($('#ggEntBizSeq').val() == cngId){
+				$('#ggEntBizSeq').val(oldSeq);
+			}
+			$('#' + trgId).val(cngId);
+	
+			$('#sortNo' + $('#hotSprtBizSeq').val()).val(1);
+			$('#sortNo' + $('#ddlnImntSprtBizSeq').val()).val(2);
+			$('#sortNo' + $('#fldIdntfSprtBizSeq').val()).val(3);
+			$('#sortNo' + $('#mySprtBizSeq').val()).val(4);
+			$('#sortNo' + $('#ggEntBizSeq').val()).val(5);
+			
+		});
+		$('#bannerSwich01').on('change', function(e) {
+			if($('#bannerSwich01').prop('checked')){
+	    		$('#cldrYn').val('Y');
+			}else{
+	    		$('#cldrYn').val('N');
+			}
+		});
+	});
+	
+	//설정하기 토글 함수
+	function settingView() {
+		if ($(".setting").hasClass("collapsed")) {
+			$.ajax({
+				url : "/selectPrivateSettingAjax.do",
+				type : "POST",
+				data : {},
+				success : function(retunVal) {
+					var response = retunVal.value;
+	            	if(response == null || response == ""){
+	            		$('#bannerSwich01').prop('checked',true);
+	            		$('#sortNo1').val(1);
+	            		$('#sortNo2').val(2);
+	            		$('#sortNo3').val(3);
+	            		$('#sortNo4').val(4);
+	            		$('#sortNo5').val(5);
+	
+	            		$('#cldrYn').val('Y');
+	            		$('#hotSprtBizSeq').val('1');
+	            		$('#ddlnImntSprtBizSeq').val('2');
+	            		$('#fldIdntfSprtBizSeq').val('3');
+	            		$('#mySprtBizSeq').val('4');
+	            		$('#ggEntBizSeq').val('5');
+	            	}else{
+	            		if(response.cldrYn == 'Y'){
+	            			$('#bannerSwich01').prop('checked',true);
+	            		}else{
+	            			$('#bannerSwich01').prop('checked',false);
+	            		}
+	            		$('#cldrYn').val(response.cldrYn);
+	
+	            		$('#hotSprtBizSeq').val(response.hotSprtBizSeq);
+	            		$('#ddlnImntSprtBizSeq').val(response.ddlnImntSprtBizSeq);
+	            		$('#fldIdntfSprtBizSeq').val(response.fldIdntfSprtBizSeq);
+	            		$('#mySprtBizSeq').val(response.mySprtBizSeq);
+	            		$('#ggEntBizSeq').val(response.ggEntBizSeq);
+
+	        			$('#sortNo' + $('#hotSprtBizSeq').val()).val(1);
+	        			$('#sortNo' + $('#ddlnImntSprtBizSeq').val()).val(2);
+	        			$('#sortNo' + $('#fldIdntfSprtBizSeq').val()).val(3);
+	        			$('#sortNo' + $('#mySprtBizSeq').val()).val(4);
+	        			$('#sortNo' + $('#ggEntBizSeq').val()).val(5);
+	            		
+	            	}
+	            	
+					$(".setting").removeClass("collapsed");
+					$(".setting.main-card .btn-close").focus(); // 닫기로 포커스 이동
+				}
+			});
+		} else {
+			$(".setting").addClass("collapsed");
+
+		}
+		
+		if (!$(".chatbot").hasClass("collapsed")) {
+			$(".chatbot").addClass("collapsed");
+		}
+	}
+
+	//저장버튼 기능
+	function fn_saveSetting(){
+		$.ajax({
+			url : "/updatePrivateSettingAjax.do",
+			type : "POST",
+			data : {
+				cldrYn : $('#cldrYn').val(),
+				hotSprtBizSeq : $('#hotSprtBizSeq').val(),
+				ddlnImntSprtBizSeq : $('#ddlnImntSprtBizSeq').val(),
+				fldIdntfSprtBizSeq : $('#fldIdntfSprtBizSeq').val(),
+				mySprtBizSeq : $('#mySprtBizSeq').val(),
+				ggEntBizSeq : $('#ggEntBizSeq').val()
+			},
+			success : function(response) {
+				alert('설정이 저장되었습니다.');
+				settingView();
+                if (typeof fn_initBannerCalendar === 'function') {
+                  fn_initBannerCalendar();  // 함수가 존재하는 경우에만 호출
+                }
+			}
+		});
+	}
+</script>
+
+    <div class="setting main-card collapsed" role="dialog">
+      <div class="main-title">
+        <h2>메인화면 설정하기</h2>
+        <div class="btn-list">
+          <button type="button" class="btn-close" aria-label="설정하기 닫기" onclick="settingView()"></button>
+        </div>
+      </div>
+      <form action="#" id="inputForm" name="inputForm">
+      	<input type="hidden" id="cldrYn" name="cldrYn" value="">
+      	<input type="hidden" id="hotSprtBizSeq" name="hotSprtBizSeq" value="">
+      	<input type="hidden" id="ddlnImntSprtBizSeq" name="ddlnImntSprtBizSeq" value="">
+      	<input type="hidden" id="fldIdntfSprtBizSeq" name="fldIdntfSprtBizSeq" value="">
+      	<input type="hidden" id="mySprtBizSeq" name="mySprtBizSeq" value="">
+      	<input type="hidden" id="ggEntBizSeq" name="ggEntBizSeq" value="">
+      </form>
+      <div class="main-conf">
+        <div class="text">
+          <p>메인화면영역에서 배너와 캘린더를 추가하시거나<br>
+          
+            주요서비스의 순서를 변경할 수 있습니다.</p>
+        </div>
+				<div class="setting-list">
+          <div class="item">검색영역</div>
+          <div class="item">
+            <span class="itme__num">1</span>
+            <div class="item__banner">배너영역</div>
+            <div class="item__banner">캘린더영역</div>
+          </div>
+          <div class="item">
+            <span class="itme__num">2</span>
+            주요서비스영역
+          </div>
+        </div>
+
+				<div class="sec01-layout">
+          <div class="title">
+            <h3 class="tit01">배너와 캘린더 추가하기 </h3>
+            <p class="text">배너와 캘린더를 사용하시려면 사용으로 하세요.</p>
+          </div>
+          <div class="setting-chk">
+            <p class="setting-chk__ttl">배너/캘린더 사용</p>
+            <div class="setting-chk__input"">
+              미사용
+							<input type="checkbox" id="bannerSwich01" class="chk-switch">
+              <label for="bannerSwich01" class="">배너/캘린더</label>
+              사용
+            </div>
+          </div>
+        </div>
+
+
+        <div class="sec02-order">
+					<div class="title">
+            <h3 class="tit02">주요서비스 우선순위  변경하기 </h3>
+            <p class="text">주요서비스 5가지의  순서를 지정하세요.</p>
+          </div>
+          <ul class="sec02-order__list">
+            <li class="li">
+              <div class="num">
+                <span class="value">1</span>
+              </div>
+              <select class="select" id="sortNo1">
+                <option value="1" selected> HOT 지원사업</option>
+                <option value="2"> 마감 임박 지원사업</option>
+                <option value="3"> 분야별 지원사업</option>
+                <option value="4"> 나의 지원사업</option>
+                <option value="5"> 경기기업비서 소개</option>
+              </select>
+            </li>
+            <li class="li">
+              <div class="num">
+                <span class="value">2</span>
+              </div>
+              <select class="select" id="sortNo2">
+                <option value="1"> HOT 지원사업</option>
+                <option value="2" selected> 마감 임박 지원사업</option>
+                <option value="3"> 분야별 지원사업</option>
+                <option value="4"> 나의 지원사업</option>
+                <option value="5"> 경기기업비서 소개</option>
+              </select>
+            </li>
+            <li class="li">
+              <div class="num">
+                <span class="value">3</span>
+              </div>
+              <select class="select" id="sortNo3">
+                <option value="1"> HOT 지원사업</option>
+                <option value="2"> 마감 임박 지원사업</option>
+                <option value="3" selected> 분야별 지원사업</option>
+                <option value="4"> 나의 지원사업</option>
+                <option value="5"> 경기기업비서 소개</option>
+              </select>
+            </li>
+            <li class="li">
+              <div class="num">
+                <span class="value">4</span>
+              </div>
+              <select class="select" id="sortNo4">
+                <option value="1"> HOT 지원사업</option>
+                <option value="2"> 마감 임박 지원사업</option>
+                <option value="3"> 분야별 지원사업</option>
+                <option value="4" selected> 나의 지원사업</option>
+                <option value="5"> 경기기업비서 소개</option>
+              </select>
+            </li>
+            <li class="li">
+              <div class="num">
+                <span class="value">5</span>
+              </div>
+              <select class="select" id="sortNo5">
+                <option value="1"> HOT 지원사업</option>
+                <option value="2"> 마감 임박 지원사업</option>
+                <option value="3"> 분야별 지원사업</option>
+                <option value="4"> 나의 지원사업</option>
+                <option value="5" selected> 경기기업비서 소개</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+				<div class="notice-text">
+          <p>변경된 사항은 새로고침 시 반영됩니다.</p>
+        </div>
+        <div class="btn-wrap">
+          <button class="btn btn-cancel" onclick="settingView()">취소</button>
+          <button class="btn btn-primary" onclick="fn_saveSetting()">저장</button>
+        </div>
+      </div>
+    </div>
+    <!--설정하기 영역 end-->
+    
+    <!--우측메뉴 start-->
+    
+
+
+
+
+
+
+
+
+<script>
+  $(function () {
+    fn_initPopupBanner();
+  });
+
+  function fn_initPopupBanner(){
+    $.ajax({
+      url: '/ip/bannerListAjax.do',
+      data: {bnnTypeNm : "1020"},
+      type: 'GET',
+      success: function(response) {
+
+        $('#popBanner.swiper-wrapper').empty();
+
+        if (response.result && response.value) {
+          response.value.forEach(function(banner) {
+            $('#popBanner.swiper-wrapper').append(fn_createPopBannerHtml(banner));
+          });
+
+        } else {
+          console.error('Failed to retrieve banners');
+        }
+      },
+      error: function(xhr, status, error) {
+        console.error('AJAX Error: ' + status + error);
+      }
+    });
+  }
+
+  function fn_createPopBannerHtml(banner){
+    var linkUrlAddr = banner.linkUrlAddr || '#'; // 값이 없을 경우 기본값 설정
+    var ttl = banner.ttl || '';
+    var filePathNm = banner.filePathNm || '';
+    var imgAltrtvNm = banner.imgAltrtvNm || '';
+    var linkTypeNm = banner.linkTypeNm || '';
+    
+    var _title = '페이지이동';
+    var _target = '_self';
+    if( linkTypeNm === '2010' ){
+    	_title ='새창열림';
+    	_target = '_blank';
+    }
+
+    var slideTemplate = `
+          <div class="swiper-slide">
+            <a href="{linkUrlAddr}" title="{_title}" target="{_target}">
+              <img src="/resources/common/imgView.view?type=banner&path={filePathNm}" alt="{imgAltrtvNm}">
+            </a>
+          </div>`;
+
+    var slide = slideTemplate
+            .replaceAll('{linkUrlAddr}', linkUrlAddr)
+            .replaceAll('{ttl}', ttl)
+            .replaceAll('{filePathNm}', filePathNm)
+            .replaceAll('{imgAltrtvNm}', imgAltrtvNm)
+            .replaceAll('{_title}', _title)
+            .replaceAll('{_target}', _target);
+
+    return slide;
+  }
+
+</script>
+
+
+<script type="text/javascript">
+function closeRightMenu() {
+	$('.right-menu').animate({
+		right: '-400px'
+	}, 200, function () {
+		$(this).css('display', 'none').removeClass('active');
+	});
+}
+
+function closeRightMenu_mob() {
+	$('.right-menu').css('right', '-400px');
+	$('.right-menu').removeClass('active');
+}
+
+/**
+ *우측 메뉴 이벤트
+ *_swiper 객체명 일시 마우스로 이미지를 끌었을때 swiper-pagination 같이 넘어가지 않는 오류 발생하여 수정
+ */
+
+ let swiper; // 스와이퍼 객체
+
+ $(document).ready(function () {
+ 	// Swiper 초기화 코드
+ 	swiper = new Swiper('.use-info .swiper-container', {
+     // 키보드 컨트롤 활성화
+     keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+      pageUpDown: true,
+    },
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    // 오른쪽 메뉴 버벅임 때문에 추가
+    observer: true,	
+    observeParents: true,	
+ 	});
+ });
+
+ function openRightMenu() {
+ 	$('.right-menu').css('display', 'block');
+ 	$('.right-menu').addClass('active');
+ 	$('.right-menu').animate({
+ 		right: '0'
+ 	}, 200, function () {
+ 		if (swiper) swiper.update(); // 스와이퍼 업데이트 호출
+ 	});
+ }
+</script>
+
+    <div class="right-menu">
+      <div class="right-menu__inner" role="region" aria-label="오른쪽 메뉴">
+        <!--모바일만 보이는 상단-->
+        <div class="right-menu__header only-mob">
+          <button type="button" class="btn-back rm-closeBtn" onclick="closeRightMenu_mob()">
+            <span class="sr-only">뒤로가기</span>
+          </button>
+          <div class="right-menu__title">메인가기</div>
+        </div>
+        <button class="btn-close only-pc" type="button" aria-label="닫기" onclick="closeRightMenu()"></button>
+
+        <p class="right-menu__p">
+          경기기업비서 이용안내를<br>
+          살펴 볼 수 있는 자료를 모았습니다.
+        </p>
+
+        <!--슬라이드 영역-->
+        <div class="use-info">
+          <div class="swiper-container swiper-container-right">
+            <div class="swiper-wrapper" id="popBanner">
+              <!--
+              <div class="swiper-slide">
+                <a href="#" title="새창열림">
+                  <img src="/resources/images/swiper_img01.png" alt="경기기업비서 플랫폼 이용안내" srcset="">
+                  <p>경기기업비서 이용안내</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" title="새창열림">
+                  <img src="/resources/images/swiper_img01.png" alt="경기기업비서 플랫폼 이용안내" srcset="">
+                  <p>경기기업비서 이용안내</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" title="새창열림">
+                  <img src="/resources/images/swiper_img01.png" alt="경기기업비서 플랫폼 이용안내" srcset="">
+                  <p>경기기업비서 이용안내</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" title="새창열림">
+                  <img src="/resources/images/swiper_img01.png" alt="경기기업비서 플랫폼 이용안내" srcset="">
+                  <p>경기기업비서 이용안내</p>
+                </a>
+              </div>
+              -->
+            </div>
+
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+
+        <p class="right-menu__p">
+          궁금한 점이 있으신가요?
+        </p>
+        <ul class="right-menu__list">
+          <li class="li">
+            <a href="/sp/supportPrjAreaList.do" title="페이지 이동">
+              <div class="text">
+                <p class="txt">
+                  경기기업비서에서 제공하는
+                  지역별 서비스를 이용하세요.</p>
+                <i class="ico ico-right01"></i>
+              </div>
+              <p class="tit">지역별 지원사업 바로가기</p>
+            </a>
+          </li>
+          <li class="li">
+            <a href="/ug/bizNotiManual.do" title="페이지 이동">
+              <div class="text">
+                <p class="txt">공고등록은 어떻게 하는지
+                  알려드립니다.</p>
+                <i class="ico ico-right02"></i>
+              </div>
+              <!--<p class="tit">공고등록 신청하기</p>-->
+              <p class="tit">사업공고등록안내 바로가기</p>
+            </a>
+          </li>
+          <!-- 
+          <li class="li">
+
+              <a href="/user/bbs/BD_selectBbsList.do?q_bbsSn=1007" title="페이지 이동">
+              <div class="text">
+
+                <p class="txt">시스템 관련 문의는 아래 링크를 통해 남겨주세요.<br>평일 09:00~18:00</p>
+                <i class="ico ico-right03"></i>
+              </div>
+              <p class="tit">시스템 문의</p>
+            </a>
+          </li>
+           -->
+         <li class="li">
+           <a href="/user/bbs/BD_selectBbsList.do?q_bbsSn=1007" title="페이지 이동">
+             <div class="text">
+               <p class="tel">031-259-6299</p>
+               <p class="txt">평일 09:00~18:00<br>
+                 점심시간 12:00~13:00<br>
+                 (토/일 법정공휴일 휴무)</p>
+               <i class="ico ico-right04"></i>
+             </div>
+             <p class="tit">시스템 문의</p>
+           </a>
+         </li>
+          <li class="li">
+            <a href="/user/bbs/BD_selectBbsList.do?q_bbsSn=1006" title="페이지 이동">
+              <div class="text">
+                <p class="txt">자주 묻는 질문을
+                  활용하세요.</p>
+                <i class="ico ico-right05"></i>
+              </div>
+              <p class="tit">자주 묻는 질문</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 우측 메뉴 닫기 버튼 -->
+      <button type="button" class="float-btn ico-rightmenu right-menu-close" aria-label="오른쪽 메뉴 닫기"
+        onclick="closeRightMenu()"></button>
+    </div>
+    <!--우측메뉴 end-->
+
+	<!-- 음성검색 플로팅 영역 start-->
+	
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    //<![CDATA[
+    /* 공통 초기화 기능 */
+    $(document).ready(function() {
+    	//$('.voice-modal .btn-close').on('click', toggleVoiceModal);
+    	//$('.voice-modal').on('click', toggleVoiceModal);
+    });
+    
+	var onAbort = false;
+	var onStartEvent = false;
+	var onEndEvent = false;
+	var onSpeechstartEvent = false;
+	var onResultEvent = false;
+	
+    var SpeechRecognition = SpeechRecognition || window.webkitSpeechRecognition;
+    var SpeechGrammarList = SpeechGrammarList || window.webkitSpeechGrammarList;
+    var SpeechRecognitionEvent = SpeechRecognitionEvent || window.webkitSpeechRecognitionEvent;
+	
+    var recognition = new SpeechRecognition();
+	var nTimeout = 1500;
+	var objTimeout;
+    
+    const fnStartSpeech = () => {
+	    
+    	try{
+    		recognition.grammars = new SpeechGrammarList();
+    	}catch(e){
+    		console.log("[SpeechGrammarList] Function is not supported in Safari browser.")
+    	}
+    	recognition.lang = 'ko-KR';
+    	recognition.interimResults = true; // true: 중간 결과를 반환, false: 최종 결과만 반환
+    	recognition.continious = false; // true: 음성인식을 계속해서 수행, false: 음성인식을 한번만 수행
+    	recognition.maxAlternatives = 1;
+
+    	recognition.onresult = (event) => {
+    		var speechResult = event.results[0][0].transcript.toLowerCase();
+    		console.log(speechResult);
+    		$(".voice-wrap p").text(speechResult);
+    		console.log('recognition.onresult');
+    		onResultEvent = true;
+    	};
+
+    	recognition.onnomatch = (event) => {
+    		console.log('recognition.onnomatch');
+    	};
+    	
+    	recognition.onstart = (event) => {
+    		console.log('recognition.onstart');
+    		onStartEvent = true;
+    		$(".voice-wrap p").text("말씀하세요. 듣는중입니다...");
+    	};
+    	recognition.onend = (event) => {
+    		console.log('recognition.onend');
+    		onEndEvent = true;
+    		
+    		if( !onAbort ){
+	    		if( !onStartEvent && onEndEvent ){
+	    			onStartEvent = true;
+   					$(".voice-modal .btn-close").show();
+	    			$(".voice-wrap p").text("마이크 사용권한이 없습니다.");
+	    			nTimeout = 3000;
+	    		}else{
+		    		if( !onResultEvent ) {
+    					$(".voice-modal .btn-close").show();
+		    			$(".voice-wrap p").text("마이크와 오디오 음량을 확인해주세요.");
+		    			nTimeout = 3000;
+		    		}
+	    		}
+	    		
+	    		objTimeout = setTimeout(()=>{
+    				if( nTimeout === 1500 ){
+		    			if( onResultEvent ) { 
+		    				//AI검색
+		    				if( $(".chatbot.main-card.collapsed").length === 1 ){
+			    				$("#search").val( $(".voice-wrap p").text() ); 
+			    				$("#btn_ai").click();//즉시검색(버튼 클릭)
+		    				}
+		    				//AI챗봇
+		    				else{
+		    					$(".chatSendStyle #message").val( $(".voice-wrap p").text() );
+		    					setTimeout(() => {
+		    						$("#ai_chatbot_btn_send").click();//즉시검색(버튼 클릭)
+								}, 1000);
+		    				}
+		   				}
+		    			closeVoiceModal();
+    				}else{
+    					//$(".voice-wrap p").html($(".voice-wrap p").text()+"<br/>닫기버튼을 눌러 창을 닫아주세요.");
+    					$(".voice-wrap p").text("닫기버튼을 눌러 창을 닫아주세요.");
+    				}
+	    		},nTimeout);
+    		}
+    		
+    		if( onAbort ){
+    			clearTimeout(objTimeout);
+    			objTimeout = null;
+    			fnInitVarSpeech();
+    		}
+    	};	
+    	
+    	recognition.onaudiostart = (event) => {
+    		console.log('recognition.onaudiostart');
+    	};
+    	recognition.onaudioend = (event) => {
+    		console.log('recognition.onaudioend');
+    	};
+    	
+    	recognition.onsoundstart = (event) => {
+    		console.log('recognition.onsoundstart');
+    	};
+    	recognition.onsoundend = (event) => {
+    		console.log('recognition.onsoundend');
+    	};
+
+    	recognition.onspeechstart = (event) => {
+    		console.log('recognition.onspeechstart');
+    		onSpeechstartEvent = true;
+    	};
+    	recognition.onspeechend = (event) => {
+    		console.log('recognition.onspeechend');
+    	};
+    	
+    	try{
+    		recognition.start();
+    		$(".voice-modal .btn-close").show();
+    	}catch(e){
+    		clickCloseVoiceModal();    			
+    	}
+    };
+    
+   	//상태변수 초기화
+    const fnInitVarSpeech = () => {
+    	$(".voice-modal .btn-close").hide();
+    	recognition.abort();
+		onAbort = false;
+		onStartEvent = false;
+		onEndEvent = false;
+		onSpeechstartEvent = false;
+		onResultEvent = false;
+    }
+    
+    //AI챗봇 > 음성검색
+    const aiChatbotVoiceModal = () => {
+    	if( $(".mainsSearchBox.widePage").length === 0 || $(".mainsSearchBox.widePage").css("display") === 'none' ){
+	    	fnInitVarSpeech();
+	    	openVoiceModal();
+    	}
+    };
+    
+    //AI검색 > 음성검색
+    const toggleVoiceModal = () => {
+    	if( $(".chatbot.main-card.collapsed").length === 1 ){
+	    	fnInitVarSpeech();
+	    	openVoiceModal();
+    	}
+    };
+    
+    const openVoiceModal = () => {
+		var $voiceModal = $('#voiceModal');
+		var isHidden = $voiceModal.is(':hidden');
+		var $btnVoice = $('.btn_voice');
+		//보이기
+		$voiceModal.fadeIn('fast').attr('aria-hidden', 'false');
+		$btnVoice.attr('aria-expanded', 'true');
+		
+		$(".voice-wrap p").text("준비중입니다. 잠시만 기다려주세요.");
+    	setTimeout(() => fnStartSpeech(), 1500);//음성 듣기 시작
+    };
+    
+    const clickCloseVoiceModal = () => {
+    	recognition.onend = (event) => {
+			console.log('recognition.onend~');
+   		}
+    	onAbort = true;
+   		onEndEvent = true;
+    	onStartEvent = true;
+    	recognition.abort();
+    	closeVoiceModal();
+    	nTimeout = 0;
+    };
+    
+    const closeVoiceModal = () => {
+		var $voiceModal = $('#voiceModal');
+		var isHidden = $voiceModal.is(':hidden');
+		var $btnVoice = $('.btn_voice');
+		//숨기기
+		$voiceModal.fadeOut('fast').attr('aria-hidden', 'true');
+		$btnVoice.attr('aria-expanded', 'false');
+		
+		fnInitVarSpeech();
+		$(".voice-wrap p").text("");
+		
+		$(".voice-modal .btn-close").hide();
+		
+		clearTimeout(objTimeout);
+		objTimeout = null;
+    };
+    
+    //]]>
+</script>
+
+<div class="voice-modal" id="voiceModal" role="dialog" aria-labelledby="voiceModalTitle" aria-hidden="true" style="display: none;z-index:999999">
+	<button class="btn-close" aria-label="닫기" onclick="clickCloseVoiceModal()" style="display:none;"></button>
+	<!--음성동작-->
+	<div class="voice-wrap">
+		<div class="txt" style="width:350px;">
+			<p>말씀하세요.</p>
+		</div>
+		<div class="voice-svg">
+			<div class="bg"></div>
+			<div class="bg"></div>
+			<div class="bg"></div>
+			<div class="svg"></div>
+		</div>
+	</div>
+</div>
+	<!-- 음성검색 플로팅 영역 end-->
+
+        
+			
+		</div>
+		
+	</div>
+	<!-- 컨텐츠 : html end -->
+	
+	<!--footer start-->
+	
+
+
+
+
+
+
+
+
+  <footer id="footer">
+    <div class="inner">
+      <div class="top_nav">
+        <ul class="top_nav__alink">
+          <li class=""><a href="/common/footer/emailAbuse.do" title="페이지 이동">이메일주소무단수집거부</a></li>
+          <li class=""><a href="/common/footer/personInfo.do" title="페이지 이동" class="point">개인정보처리방침</a></li>
+          <!-- <li class=""><a href="#" title="페이지 이동">이메일주소무단수집거부</a></li> -->
+<!--           <li><a href="/common/footer/positionBase.do" title="페이지 이동">위치기반 서비스 이용약관</a></li> -->
+        </ul>
+        <div class="fs-list">
+          <ul class="">
+            <li><a href="/ug/userPrjManual.do" title="페이지 이동">이용안내</a></li>
+            <li><a href="/common/footer/linkedRelateSite.do" title="페이지 이동">유관기관</a></li>
+            <li><a href="/common/footer/familySite.do" title="페이지 이동">패밀리 사이트</a></li>
+            <li><a href="/user/bbs/BD_selectBbsList.do?q_bbsSn=1007" title="페이지 이동">시스템문의</a></li>
+          </ul>
+          <button class="service-view" onclick="toggleSiteMapModal()"><span>서비스</span> 전체보기</button>
+        </div>
+      </div>
+      <div class="conf">
+        <p class="tel">시스템 장애 문의 : 031-259-6299, 문의 시간 : 평일 09:00~18:00 (점심 12:00~13:00)</p>
+<!--         <p class="tel">문의 시간 : 평일 09:00~18:00 (점심 12:00~13:00)</p> -->
+        <p>(16229)경기도 수원시 영통구 광교로 107 사업자등록번호 : 124-82-08755</p>
+        <p class="copyright">
+          COPYRIGHT(C) 2018 EGBIZ.OR.KR ALL RIGHTS RESERVED.
+        </p>
+      </div>
+
+    </div>
+
+  </footer>        
+	<!--footer end-->
+	
+    <!--사이트맵 start -->
+    
+
+
+
+
+
+
+
+
+  <script>
+     //사이트맵 토글
+     function toggleSiteMapModal() {
+      const $siteMapModal = $('#siteMap');
+      const isHidden = $siteMapModal.is(':hidden');
+      const $btnSiteMap = $('.btn_voice');
+
+      if (isHidden) {
+        $siteMapModal.fadeIn('fast').attr('aria-hidden', 'false');
+        $btnSiteMap.attr('aria-expanded', 'true');
+        $('body').css('overflow', 'hidden'); //스크롤 수정
+				$('.siteMap .rt-pos').focus(); // 접근성 이동
+				
+      } else {
+        $siteMapModal.fadeOut('fast').attr('aria-hidden', 'true');
+        $btnSiteMap.attr('aria-expanded', 'false');
+        $('body').css('overflow','auto');
+
+      }
+    }
+  </script>
+
+  <div class="siteMap" id="siteMap" aria-hidden="true">
+    <div class="inner">
+      <button type="button" aria-label="닫기" class="btn-close rt-pos" onclick="toggleSiteMapModal()"></button>
+      <div class="siteMap__container">
+        <ul class="site-list">
+
+        
+
+	
+		
+		
+			
+				
+				
+					
+				
+			
+			
+		
+		
+			
+				
+					
+					
+						
+					
+				
+			
+		
+		
+			
+				
+			
+			
+		
+		
+			
+			
+			
+				
+				
+			
+		
+
+		
+		
+			
+			
+				<li><!-- #3 -->
+					<div class="depth01"><!-- 1depth (2depth no have)  -->
+					<!-- <a href="/cbnSrch.do"  title="통합검색 페이지 이동"> -->
+						<a href="/cbnSrch.do"  title="통합검색 페이지 이동" >
+							
+								
+								
+									통합검색
+								
+							
+						</a>
+					</div>
+				</li>
+			
+		
+		
+
+	
+
+	
+		
+		
+			
+				
+				
+					
+				
+			
+			
+		
+		
+			
+				
+					
+					
+						
+					
+				
+			
+		
+		
+			
+			
+				
+			
+		
+		
+			
+			
+			
+				
+				
+					
+				
+			
+		
+
+		
+		
+			
+				
+					
+						<li><!-- #1 -->
+							<div class="depth01"><!-- 1depth -->
+								
+									
+									
+										지원사업
+									
+								
+							</div>
+							<ul class="site-list02">
+								
+									
+										
+										
+											
+												
+												
+													
+												
+											
+											
+										
+										
+											
+												
+													
+													
+														
+													
+												
+											
+										
+										
+											
+												
+											
+											
+										
+										
+											
+											
+											
+												
+												
+											
+										
+
+										
+										
+											
+										<li ><!-- 2depth (3depth no have)  -->
+											<a href="/sp/supportPrjCatList.do"  title="분야별지원사업 페이지 이동" class="depth02">
+												
+													
+													
+														분야별지원사업
+													
+												
+											</a>
+										</li>
+											
+											
+										
+										
+
+									
+								
+									
+										
+										
+											
+												
+												
+													
+												
+											
+											
+										
+										
+											
+												
+													
+													
+														
+													
+												
+											
+										
+										
+											
+												
+											
+											
+										
+										
+											
+											
+											
+												
+												
+											
+										
+
+										
+										
+											
+										<li ><!-- 2depth (3depth no have)  -->
+											<a href="/sp/supportPrjAreaList.do"  title="지역별지원사업 페이지 이동" class="depth02">
+												
+													
+													
+														지역별지원사업
+													
+												
+											</a>
+										</li>
+											
+											
+										
+										
+
+									
+								
+									
+										
+										
+											
+												
+												
+													
+												
+											
+											
+										
+										
+											
+												
+													
+													
+														
+													
+												
+											
+										
+										
+											
+												
+											
+											
+										
+										
+											
+											
+											
+												
+												
+											
+										
+
+										
+										
+											
+										<li ><!-- 2depth (3depth no have)  -->
+											<a href="/sp/supportPrjGiupList.do"  title="기업마당지원사업 페이지 이동" class="depth02">
+												
+													
+													
+														기업마당지원사업
+													
+												
+											</a>
+										</li>
+											
+											
+										
+										
+
+									
+								
+									
+										
+										
+											
+												
+												
+													
+												
+											
+											
+										
+										
+											
+												
+													
+													
+														
+													
+												
+											
+										
+										
+											
+												
+											
+											
+										
+										
+											
+											
+											
+												
+												
+											
+										
+
+										
+										
+											
+										<li ><!-- 2depth (3depth no have)  -->
+											<a href="/sp/supportPrjPlanList.do"  title="일정별지원사업 페이지 이동" class="depth02">
+												
+													
+													
+														일정별지원사업
+													
+												
+											</a>
+										</li>
+											
+											
+										
+										
+
+									
+								
+									
+								
+							</ul>
+						</li>
+					
+					
+				
+			
+			
+		
+		
+
+	
+
+	
+		
+		
+			
+				
+				
+					
+				
+			
+			
+		
+		
+			
+				
+					
+					
+						
+					
+				
+			
+		
+		
+			
+			
+				
+			
+		
+		
+			
+			
+			
+				
+				
+					
+				
+			
+		
+
+		
+		
+			
+				
+					
+						<li><!-- #1 -->
+							<div class="depth01"><!-- 1depth -->
+								
+									
+									
+										이용안내
+									
+								
+							</div>
+							<ul class="site-list02">
+								
+									
+										
+										
+											
+												
+												
+													
+												
+											
+											
+										
+										
+											
+												
+													
+													
+														
+													
+												
+											
+										
+										
+											
+												
+											
+											
+										
+										
+											
+											
+											
+												
+												
+											
+										
+
+										
+										
+											
+										<li ><!-- 2depth (3depth no have)  -->
+											<a href="/ug/userPrjManual.do"  title="사업지원이용안내 페이지 이동" class="depth02">
+												
+													
+													
+														사업지원이용안내
+													
+												
+											</a>
+										</li>
+											
+											
+										
+										
+
+									
+								
+									
+										
+										
+											
+												
+												
+													
+												
+											
+											
+										
+										
+											
+												
+													
+													
+														
+													
+												
+											
+										
+										
+											
+												
+											
+											
+										
+										
+											
+											
+											
+												
+												
+											
+										
+
+										
+										
+											
+										<li ><!-- 2depth (3depth no have)  -->
+											<a href="/ug/serviceManual.do"  title="서비스이용안내 페이지 이동" class="depth02">
+												
+													
+													
+														서비스이용안내
+													
+												
+											</a>
+										</li>
+											
+											
+										
+										
+
+									
+								
+									
+										
+										
+											
+												
+												
+													
+												
+											
+											
+										
+										
+											
+												
+													
+													
+														
+													
+												
+											
+										
+										
+											
+												
+											
+											
+										
+										
+											
+											
+											
+												
+												
+											
+										
+
+										
+										
+											
+										<li ><!-- 2depth (3depth no have)  -->
+											<a href="/ug/bizNotiManual.do"  title="사업공고등록안내 페이지 이동" class="depth02">
+												
+													
+													
+														사업공고등록안내
+													
+												
+											</a>
+										</li>
+											
+											
+										
+										
+
+									
+								
+									
+										
+										
+											
+												
+												
+													
+												
+											
+											
+										
+										
+											
+												
+													
+													
+														
+													
+												
+											
+										
+										
+											
+												
+											
+											
+										
+										
+											
+											
+											
+												
+												
+											
+										
+
+										
+										
+											
+										<li ><!-- 2depth (3depth no have)  -->
+											<a href="/ug/esgSelfDiagnosis.do"  title="ESG자가진단안내 페이지 이동" class="depth02">
+												
+													
+													
+														ESG자가진단안내
+													
+												
+											</a>
+										</li>
+											
+											
+										
+										
+
+									
+								
+									
+										
+										
+											
+												
+												
+													
+												
+											
+											
+										
+										
+											
+												
+													
+													
+														
+													
+												
+											
+										
+										
+											
+												
+											
+											
+										
+										
+											
+											
+											
+												
+												
+											
+										
+
+										
+										
+											
+										<li ><!-- 2depth (3depth no have)  -->
+											<a href="/user/bbs/BD_selectBbsList.do?q_bbsSn=1006"  title="자주묻는질문(FAQ) 페이지 이동" class="depth02">
+												
+													
+													
+														자주묻는질문(FAQ)
+													
+												
+											</a>
+										</li>
+											
+											
+										
+										
+
+									
+								
+									
+										
+										
+											
+												
+												
+													
+												
+											
+											
+										
+										
+											
+												
+													
+													
+														
+													
+												
+											
+										
+										
+											
+												
+											
+											
+										
+										
+											
+											
+											
+												
+												
+											
+										
+
+										
+										
+											
+										<li ><!-- 2depth (3depth no have)  -->
+											<a href="/user/bbs/BD_selectBbsList.do?q_bbsSn=1007"  title="질의응답(Q&A) 페이지 이동" class="depth02">
+												
+													
+													
+														질의응답(Q&amp;A)
+													
+												
+											</a>
+										</li>
+											
+											
+										
+										
+
+									
+								
+							</ul>
+						</li>
+					
+					
+				
+			
+			
+		
+		
+
+	
+
+	
+		
+		
+			
+				
+				
+					
+				
+			
+			
+		
+		
+			
+				
+					
+					
+						
+					
+				
+			
+		
+		
+			
+			
+				
+			
+		
+		
+			
+			
+			
+				
+				
+					
+				
+			
+		
+
+		
+		
+			
+				
+					
+						<li><!-- #1 -->
+							<div class="depth01"><!-- 1depth -->
+								
+									
+									
+										정보광장
+									
+								
+							</div>
+							<ul class="site-list02">
+								
+									
+										
+										
+											
+												
+												
+													
+												
+											
+											
+										
+										
+											
+												
+													
+													
+														
+													
+												
+											
+										
+										
+											
+												
+											
+											
+										
+										
+											
+											
+											
+												
+												
+											
+										
+
+										
+										
+											
+										<li ><!-- 2depth (3depth no have)  -->
+											<a href="/user/bbs/BD_selectBbsList.do?q_bbsSn=1003"  title="공지사항 페이지 이동" class="depth02">
+												
+													
+													
+														공지사항
+													
+												
+											</a>
+										</li>
+											
+											
+										
+										
+
+									
+								
+									
+										
+										
+											
+												
+												
+													
+												
+											
+											
+										
+										
+											
+												
+													
+													
+														
+													
+												
+											
+										
+										
+											
+												
+											
+											
+										
+										
+											
+											
+											
+												
+												
+											
+										
+
+										
+										
+											
+										<li ><!-- 2depth (3depth no have)  -->
+											<a href="/user/bbs/BD_selectBbsList.do?q_bbsSn=1004"  title="입찰정보 페이지 이동" class="depth02">
+												
+													
+													
+														입찰정보
+													
+												
+											</a>
+										</li>
+											
+											
+										
+										
+
+									
+								
+									
+										
+										
+											
+												
+												
+													
+												
+											
+											
+										
+										
+											
+												
+													
+													
+														
+													
+												
+											
+										
+										
+											
+												
+											
+											
+										
+										
+											
+											
+											
+												
+												
+											
+										
+
+										
+										
+											
+										<li ><!-- 2depth (3depth no have)  -->
+											<a href="/user/bbs/BD_selectBbsList.do?q_bbsSn=1005"  title="전시정보 페이지 이동" class="depth02">
+												
+													
+													
+														전시정보
+													
+												
+											</a>
+										</li>
+											
+											
+										
+										
+
+									
+								
+									
+										
+										
+											
+												
+												
+													
+												
+											
+											
+										
+										
+											
+												
+													
+													
+														
+													
+												
+											
+										
+										
+											
+												
+											
+											
+										
+										
+											
+											
+											
+												
+												
+											
+										
+
+										
+										
+											
+										<li ><!-- 2depth (3depth no have)  -->
+											<a href="/user/bbs/BD_selectBbsList.do?q_bbsSn=1002"  title="경기도 소식 페이지 이동" class="depth02">
+												
+													
+													
+														경기도 소식
+													
+												
+											</a>
+										</li>
+											
+											
+										
+										
+
+									
+								
+									
+										
+										
+											
+												
+												
+													
+												
+											
+											
+										
+										
+											
+												
+													
+													
+														
+													
+												
+											
+										
+										
+											
+												
+											
+											
+										
+										
+											
+											
+											
+												
+												
+											
+										
+
+										
+										
+											
+										<li ><!-- 2depth (3depth no have)  -->
+											<a href="/ip/bannerList.do"  title="배너존 페이지 이동" class="depth02">
+												
+													
+													
+														배너존
+													
+												
+											</a>
+										</li>
+											
+											
+										
+										
+
+									
+								
+							</ul>
+						</li>
+					
+					
+				
+			
+			
+		
+		
+
+	
+
+	
+		
+		
+			
+				
+				
+					
+				
+			
+			
+		
+		
+			
+				
+					
+					
+						
+					
+				
+			
+		
+		
+			
+			
+				
+			
+		
+		
+			
+			
+			
+				
+				
+					
+				
+			
+		
+
+		
+		
+			
+				
+					
+						<li><!-- #1 -->
+							<div class="depth01"><!-- 1depth -->
+								
+									
+									
+										경기기업비서소개
+									
+								
+							</div>
+							<ul class="site-list02">
+								
+									
+										
+										
+											
+												
+												
+													
+												
+											
+											
+										
+										
+											
+												
+													
+													
+														
+													
+												
+											
+										
+										
+											
+												
+											
+											
+										
+										
+											
+											
+											
+												
+												
+											
+										
+
+										
+										
+											
+										<li ><!-- 2depth (3depth no have)  -->
+											<a href="/gc/gyeonggiCorpIntro.do"  title="경기기업비서소개 페이지 이동" class="depth02">
+												
+													
+													
+														경기기업비서소개
+													
+												
+											</a>
+										</li>
+											
+											
+										
+										
+
+									
+								
+							</ul>
+						</li>
+					
+					
+				
+			
+			
+		
+		
+
+	
+
+	
+
+	
+		
+		
+			
+				
+				
+			
+			
+		
+		
+			
+				
+					
+					
+						
+					
+				
+			
+		
+		
+			
+			
+				
+			
+		
+		
+			
+			
+			
+				
+				
+					
+				
+			
+		
+
+		
+
+	
+
+          
+        </ul>
+
+      </div>
+    </div>
+  </div>
+
+    <!--사이트맵 end -->
+	
+	<!--메시지 팝업 start-->
+	
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    //<![CDATA[
+    /* 공통 초기화 기능 */
+    $(document).ready(()=>{
+    	fnSetFormCsrfAttr();
+    });
+    
+    let fnSetFormCsrfAttr = () => {
+    	$("form").each(function(){
+    	    if( $(this).find("input[name='_csrf']").length === 0 ){
+    	        $(this).append( $('<input/>',{type:'hidden',name:'_csrf',value:"6dde6f69-de1e-4516-a467-1619f3ff118d"}) );
+    	    }
+    	});
+    }
+    
+    //]]>
+</script>
+
+	<!-- alert 팝업 start -->
+	<div class="modal_pop" id="modal_lp6" role="alertdialog" aria-modal="true" aria-labelledby="modal-title">
+		<div class="modal_pop_inner modal_alert">
+			<button type="button" aria-label="닫기" class="modal_pop_close btn-close modal_top_close"></button>
+			<div class="modal_content">
+				<p>로그인 후 사용하실 수 있습니다.</p>
+				<p>로그인 화면으로 이동할까요?</p>
+			</div>
+			<div class="modal_footer border-top-0">
+				<a href="#none" class="btn btn-xs btn-cancel">취소</a>
+				<button class="modal_pop_close btn btn-xs btn-primary">확인</button>
+			</div>
+		</div>
+	</div>
+	<!-- alert 팝업 end -->
+	<!--메시지 팝업 end-->
+
+	<!--로딩 팝업 start-->
+	
+
+
+
+
+
+
+
+
+	<!-- loading start -->
+	<div class="loading" style="display:none;">
+		<div class="container">
+			<div class="loading-img">
+				<img src="/resources/images/ico/loding.svg" alt="로딩중">
+			</div>
+		</div>
+	</div>
+	<!-- loading end -->
+	<!--로딩 팝업 end-->
+
+</body>
+
+</html>

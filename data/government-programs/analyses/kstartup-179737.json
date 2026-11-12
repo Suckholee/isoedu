@@ -1,0 +1,201 @@
+{
+  "programId": "kstartup-179737",
+  "title": "2026 아산 스타트업 Scale-UP 프로그램 참여기업 모집",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-06T01:28:27.988925+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179737",
+  "reviewScope": "포스터전체시각·대체TEXT대조; 공개Drive HWP 공고/신청서 전부 본문추출; Googleform첫페이지 2026-11-06, 첨부 및 추가URL/hash 보존",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1bmi_zvwob97OwZ-3ufvaTtYbXkBz6DU_VHnASrVhpoZqjA",
+      "verifiedAt": "2026-11-06",
+      "status": "downloaded",
+      "sha256": "0b43f49f1f7a7dd1979c87345442ae423df8d7a2a435d0633030f6d23678428c",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 1930310,
+      "format": "IMAGE",
+      "file": "attachment-01.bin",
+      "contentType": "image/jpeg;charset=UTF-8",
+      "review": {
+        "at": "2026-11-06T01:28:27.988925+00:00",
+        "scope": "포스터전체시각·대체TEXT대조; 공개Drive HWP 공고/신청서 전부 본문추출; Googleform첫페이지 2026-11-06, 첨부 및 추가URL/hash 보존",
+        "method": "visual"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1o4UK5q8DOpCSdTqJnk3DzZMlBx3XhE8rHPyZzhomh54uRw",
+      "verifiedAt": "2026-11-06",
+      "status": "downloaded",
+      "sha256": "b74dd86a63d4fe219fc6ad3f730d6da8c95f39598f07d378702016325d133678",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 1459,
+      "format": "OTHER",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "review": {
+        "at": "2026-11-06T01:28:27.988925+00:00",
+        "scope": "포스터전체시각·대체TEXT대조; 공개Drive HWP 공고/신청서 전부 본문추출; Googleform첫페이지 2026-11-06, 첨부 및 추가URL/hash 보존",
+        "method": "text (visual exceptions in reviewScope)"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/v1bmi_zvwob97OwZ-3ufvaTtYbXkBz6DU_VHnASrVhpoZqjA": "0b43f49f1f7a7dd1979c87345442ae423df8d7a2a435d0633030f6d23678428c",
+    "https://www.k-startup.go.kr/afile/fileDownload/v1o4UK5q8DOpCSdTqJnk3DzZMlBx3XhE8rHPyZzhomh54uRw": "b74dd86a63d4fe219fc6ad3f730d6da8c95f39598f07d378702016325d133678",
+    "https://drive.google.com/uc?export=download&id=19_Rd73mwats0i4ByOJqXtynEttrPvTuq": "c4df900eb66f1aeaa989844c422cbefb371163388f45ec2e8d082d452827a493"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-06T01:28:27.988925+00:00",
+  "eligibility": {
+    "summary": "아산소재 업력7년이내 창업기업·예비창업자 또는 아산이전/창업예정자. HWP20팀. 상세이전기한2027.12.31과 프로그램기간내 이전조건이 충돌해 확인필요.",
+    "companyFields": [
+      "설립일·사업자유형",
+      "아산소재/이전일정",
+      "창업아이템·개발단계",
+      "매출·투자계획",
+      "지식재산·인증·수상",
+      "대표자·실무연락처"
+    ],
+    "reference": "포스터전체시각·대체TEXT대조; 공개Drive HWP 공고/신청서 전부 본문추출; Googleform첫페이지 2026-11-06, 첨부 및 추가URL/hash 보존"
+  },
+  "exclusions": {
+    "items": [
+      "상세제외업종·중복수혜·제재 조건 미기재로 확인필요"
+    ],
+    "reference": "포스터전체시각·대체TEXT대조; 공개Drive HWP 공고/신청서 전부 본문추출; Googleform첫페이지 2026-11-06, 첨부 및 추가URL/hash 보존"
+  },
+  "support": {
+    "summary": "역량교육BM/시장/투자, 1:1멘토링, 투자자네트워크. 기업분석보고서는 전원아닌 별도평가5팀, 예비/이전자는 기간내사업자등록조건. 우수기업1억원이상 직접투자·TIPS연계 기회로서 보장금액 아님. 11월3주~2027.1 프로그램. 비용/자부담 미기재.",
+    "reference": "포스터전체시각·대체TEXT대조; 공개Drive HWP 공고/신청서 전부 본문추출; Googleform첫페이지 2026-11-06, 첨부 및 추가URL/hash 보존"
+  },
+  "period": {
+    "start": "2026-11-05",
+    "end": "2026-11-13",
+    "deadlineTime": "23:59",
+    "timezone": "Asia/Seoul",
+    "reference": "포스터전체시각·대체TEXT대조; 공개Drive HWP 공고/신청서 전부 본문추출; Googleform첫페이지 2026-11-06, 첨부 및 추가URL/hash 보존"
+  },
+  "application": {
+    "summary": "Googleform 응답과 서명HWP 이메일 jp@jptnr.com 모두 제출; 제목 [아산 스타트업 Scale-UP]. HWP접수11/3~11/13 23:59, 결과메일11/16~18. 폼 첫페이지·공개드라이브HWP 확인, 후속페이지 미확인.",
+    "reference": "포스터전체시각·대체TEXT대조; 공개Drive HWP 공고/신청서 전부 본문추출; Googleform첫페이지 2026-11-06, 첨부 및 추가URL/hash 보존"
+  },
+  "requiredDocuments": [
+    {
+      "name": "참가신청서 HWP",
+      "condition": "공통·서명",
+      "reference": "HWP 신청방법/신청서"
+    },
+    {
+      "name": "사업자등록증",
+      "condition": "해당기업",
+      "reference": "HWP 제출서류"
+    },
+    {
+      "name": "회사소개자료 자유양식",
+      "condition": "HWP 제출목록",
+      "reference": "HWP 제출서류"
+    }
+  ],
+  "businessPlan": {
+    "format": "지정HWP 신청서 + 자유회사소개",
+    "limit": "별도 사업계획 분량 미기재",
+    "sections": [
+      {
+        "name": "신청인",
+        "items": [
+          "성명·생년월일·전화·메일·주소"
+        ],
+        "limit": "별도 사업계획 분량 미기재"
+      },
+      {
+        "name": "기업현황",
+        "items": [
+          "개업/법인설립·법인/개인/예비·등록번호·본점/지점"
+        ],
+        "limit": "별도 사업계획 분량 미기재"
+      },
+      {
+        "name": "아이템",
+        "items": [
+          "기술제품한줄·개발단계R&D/시제품/양산/출시"
+        ],
+        "limit": "별도 사업계획 분량 미기재"
+      },
+      {
+        "name": "역량",
+        "items": [
+          "특허·인증·MOU·기술이전·수상·중소기업/납품실적"
+        ],
+        "limit": "별도 사업계획 분량 미기재"
+      }
+    ],
+    "reference": "포스터전체시각·대체TEXT대조; 공개Drive HWP 공고/신청서 전부 본문추출; Googleform첫페이지 2026-11-06, 첨부 및 추가URL/hash 보존"
+  },
+  "evaluation": {
+    "summary": "20팀선발 HWP. 분석보고서대상5팀은 전체참여자 중 별도평가. 세부선발배점 미공개.",
+    "reference": "포스터전체시각·대체TEXT대조; 공개Drive HWP 공고/신청서 전부 본문추출; Googleform첫페이지 2026-11-06, 첨부 및 추가URL/hash 보존"
+  },
+  "contact": {
+    "name": "제이파트너스 042-364-1001 jp@jptnr.com / 호서대 041-622-9155 sang@hoseo.edu",
+    "reference": "포스터전체시각·대체TEXT대조; 공개Drive HWP 공고/신청서 전부 본문추출; Googleform첫페이지 2026-11-06, 첨부 및 추가URL/hash 보존"
+  },
+  "unresolved": [
+    "대체텍스트2027년 vs 실제포스터/양식2026년 및 접수시작11/2·11/3·11/5 상이",
+    "아산이전2027.12.31과 프로그램기간내(2027.1종료) 등록조건 충돌",
+    "Googleform 다음페이지 필드·동의내용 미확인",
+    "세부제외/선정배점·비용 미명시"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179737",
+    "companyId": null,
+    "permission": "권한회사프로필확보후근거별검토·현재신청가능확정아님",
+    "steps": [
+      "회사필드/증빙확인",
+      "충돌/미확인해결",
+      "S12양식·S13회사정보로서류/계획작성"
+    ]
+  },
+  "conflicts": [
+    {
+      "field": "period",
+      "values": [
+        "포스터2026.11.2",
+        "HWP/form2026.11.3",
+        "목록2026.11.5",
+        "대체TEXT2027년"
+      ],
+      "resolution": "unresolved; 목록일정유지·2027대체TEXT오류표시"
+    },
+    {
+      "field": "relocation",
+      "values": [
+        "2027.12.31",
+        "프로그램기간내 2027.1전"
+      ],
+      "resolution": "unresolved"
+    }
+  ],
+  "additionalReview": "공개드라이브 HWP 전부 검토. 포스터시각상 2026년, 대체TEXT2027년과 대조. Googleform 첫페이지 이후는 검토대기.",
+  "additionalAttachments": [
+    {
+      "programId": "kstartup-179737",
+      "url": "https://drive.google.com/uc?export=download&id=19_Rd73mwats0i4ByOJqXtynEttrPvTuq",
+      "file": "kstartup-179737/extra-c4df900eb66f.bin",
+      "sha256": "c4df900eb66f1aeaa989844c422cbefb371163388f45ec2e8d082d452827a493",
+      "format": "HWP",
+      "bytes": 68096,
+      "verifiedAt": "2026-11-06T01:28:27.988925+00:00",
+      "reviewStatus": "text-reviewed",
+      "reference": "공개드라이브 HWP 전부 검토. 포스터시각상 2026년, 대체TEXT2027년과 대조. Googleform 첫페이지 이후는 검토대기."
+    }
+  ],
+  "evidenceManifest": "evidence/official-extra-check-20261106.json"
+}

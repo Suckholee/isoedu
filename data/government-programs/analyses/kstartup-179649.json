@@ -1,0 +1,98 @@
+{
+  "programId": "kstartup-179649",
+  "title": "NCI 민/관/학 창업포럼(2026 강북창업포럼) 참관객 모집",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-08T10:18:01.435819+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179649",
+  "reviewScope": "공식상세·Google폼전체필드/프로그램문항검토. 무첨부공고로구분,2026-11-08",
+  "attachments": [],
+  "attachmentContentHashes": {},
+  "lastAttachmentHashCheckedAt": "2026-11-08T10:18:01.435819+00:00",
+  "eligibility": {
+    "summary": "창업/AI관심 일반인·예비·기창업자 누구나,별도제외없음.",
+    "companyFields": [
+      "참가구분",
+      "소속/직책",
+      "성명·성별·지역구",
+      "전화·메일",
+      "신청경로",
+      "개인정보동의"
+    ],
+    "reference": "공식상세·Google폼전체필드/프로그램문항검토. 무첨부공고로구분,2026-11-08"
+  },
+  "exclusions": {
+    "items": [
+      "상세별도제외없음"
+    ],
+    "reference": "공식상세·Google폼전체필드/프로그램문항검토. 무첨부공고로구분,2026-11-08"
+  },
+  "support": {
+    "summary": "무료11/13 13:30~16:30 강북문화예술회관소나무홀 삼각산로85. AI정부지원/트렌드/디자인강연·패널·경품·네트워킹. 현금지원아님.",
+    "reference": "공식상세·Google폼전체필드/프로그램문항검토. 무첨부공고로구분,2026-11-08"
+  },
+  "period": {
+    "start": "2026-10-29",
+    "end": "2026-11-13",
+    "deadlineTime": "13:30",
+    "timezone": "Asia/Seoul",
+    "reference": "공식상세·Google폼전체필드/프로그램문항검토. 무첨부공고로구분,2026-11-08"
+  },
+  "application": {
+    "summary": "Google폼사전신청 또는현장등록. 필수성명/성별/하이픈전화/구단위주소/메일/참가구분/소속직책/신청경로/동의. 13~13:30현장등록. 개인정보동의선택은있으나목적/보유기간상세고지미확인.",
+    "reference": "공식상세·Google폼전체필드/프로그램문항검토. 무첨부공고로구분,2026-11-08"
+  },
+  "requiredDocuments": [
+    {
+      "name": "참관신청폼",
+      "condition": "사전/현장접수",
+      "reference": "공개폼전체"
+    }
+  ],
+  "businessPlan": {
+    "format": "행사참관폼",
+    "limit": "계획서/서류첨부없음",
+    "sections": [],
+    "reference": "공식상세·Google폼전체필드/프로그램문항검토. 무첨부공고로구분,2026-11-08"
+  },
+  "evaluation": {
+    "summary": "선정없음·현장접수가능.",
+    "reference": "공식상세·Google폼전체필드/프로그램문항검토. 무첨부공고로구분,2026-11-08"
+  },
+  "contact": {
+    "name": "02-908-8247",
+    "reference": "공식상세·Google폼전체필드/프로그램문항검토. 무첨부공고로구분,2026-11-08"
+  },
+  "unresolved": [
+    "공고첨부0개·개인정보목적/항목/보유기간구체고지미확인",
+    "선정절선정없음/현장접수표현적용범위·실제잔여상태미검증"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179649",
+    "companyId": null,
+    "permission": "권한회사프로필확보후근거별검토·현재신청가능확정아님",
+    "steps": [
+      "회사필드/증빙확인",
+      "충돌/미확인해결",
+      "S12양식·S13회사정보로서류/계획작성"
+    ]
+  },
+  "applicationChecks": [
+    {
+      "id": "179649",
+      "url": "https://forms.gle/QEF9uYMjgVh3KNSp9",
+      "checkedAt": "2026-11-08T10:11:41.070596+00:00",
+      "status": 200,
+      "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeGJFX5uqMi0-et4aF-ifbCV-bStxEKe2_Q1gn7XEVBmnRewA/viewform?usp=send_form",
+      "evidence": "179649-publiccheck-20261108.html",
+      "bytes": 138870
+    }
+  ],
+  "evidenceReferences": []
+}

@@ -1,0 +1,331 @@
+{
+  "programId": "mss-1071793",
+  "title": "2026년도 공급망안정화 선도사업자 제2차 선정계획 공고",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-10T00:16:49.487545+00:00",
+  "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071793&parentSeq=1071793",
+  "reviewScope": "PDF38쪽본문·부처표·추가결격·서식1/2-1/2-2/3-1/3-2/4/5·참고예시2종전체읽기·HWPX중복핵심대조·PDF2,3,4,7,8,11,12,15,16,18,19,20,21,22시각;2026-11-10",
+  "attachments": [
+    {
+      "url": "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071793&cbIdx=310&streFileNm=1b6c7e7d-6be6-4dfa-8d25-a3fe424b7678.hwpx",
+      "verifiedAt": "2026-11-10",
+      "status": "downloaded",
+      "sha256": "bda731481ce710e91441e42fdb7e041b0ff334fbbc08cd08864803972e658cea",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 196316,
+      "format": "HWPX",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=UTF-8",
+      "extraction": "text",
+      "characters": 54365,
+      "review": {
+        "at": "2026-11-10T00:16:49.487545+00:00",
+        "scope": "PDF38쪽본문·부처표·추가결격·서식1/2-1/2-2/3-1/3-2/4/5·참고예시2종전체읽기·HWPX중복핵심대조·PDF2,3,4,7,8,11,12,15,16,18,19,20,21,22시각;2026-11-10",
+        "method": "text/visual scope recorded in reviewScope"
+      }
+    },
+    {
+      "url": "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071793&cbIdx=310&streFileNm=9d7abf34-923c-453f-8163-b4b79d2b87dd.pdf",
+      "verifiedAt": "2026-11-10",
+      "status": "downloaded",
+      "sha256": "2e5e59d1958c0c070120df29979e61b78ba3d27d29830a9665ac8d162c2ee10e",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 1222845,
+      "format": "PDF",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=UTF-8",
+      "extraction": "text",
+      "characters": 25093,
+      "review": {
+        "at": "2026-11-10T00:16:49.487545+00:00",
+        "scope": "PDF38쪽본문·부처표·추가결격·서식1/2-1/2-2/3-1/3-2/4/5·참고예시2종전체읽기·HWPX중복핵심대조·PDF2,3,4,7,8,11,12,15,16,18,19,20,21,22시각;2026-11-10",
+        "method": "text/visual scope recorded in reviewScope"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071793&cbIdx=310&streFileNm=1b6c7e7d-6be6-4dfa-8d25-a3fe424b7678.hwpx": "bda731481ce710e91441e42fdb7e041b0ff334fbbc08cd08864803972e658cea",
+    "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071793&cbIdx=310&streFileNm=9d7abf34-923c-453f-8163-b4b79d2b87dd.pdf": "2e5e59d1958c0c070120df29979e61b78ba3d27d29830a9665ac8d162c2ee10e"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-10T00:16:49.487545+00:00",
+  "eligibility": {
+    "summary": "경제안보품목/경제안보서비스의안정도입·생산·제공에기여하는사업자/단체.대·중견·중소가능·일괄업력지역제한미명시.신청전소관부처에비공개경제안보품목관련성확인필수·공개업종목록만으로대상단정금지.관련성/기본계획적합/자금조달·현금흐름여건+부처추가기준모두충족.공고별품목당4(대기업2),물류20(대10),사이버보안5(대3)한도.",
+    "companyFields": [
+      "제품/서비스/HSK·KSIC",
+      "소관부처사전관련성확인",
+      "기업규모",
+      "지분/주주",
+      "산업수급/국내비중/공급망위험",
+      "사업유형/정량목표/연도자금현금흐름",
+      "3년영업손익/자본잠식",
+      "2년부채비율500%",
+      "세금체납/차입대매출",
+      "최근감사의견/5년감사결산",
+      "협력기업",
+      "부처추천/국산비율/보안전문성",
+      "기존지정/변경대상"
+    ],
+    "reference": "PDF2~3선정기준·9~11부처업종/추가기준; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071793&parentSeq=1071793"
+  },
+  "exclusions": {
+    "items": [
+      "허위신청/계획하자보완미응답",
+      "최근감사의견한정이하",
+      "부처별결격취소",
+      "재무저하5항목(3년연속영업적자/자본잠식/2년부채500%이상/체납/차입>매출)·표시후개별판단",
+      "부도휴폐업/의무미이행시취소및3년재선정제한/지원회수"
+    ],
+    "reference": "PDF2/5~6결격/취소·11부처기준; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071793&parentSeq=1071793"
+  },
+  "support": {
+    "summary": "선도사업자지정3년(부처필요시최장5년)·기금우선지원/금리우대·중소추가우대수수료경감가능.선정만으로정부자금지원확정아님:수출입은행대출등별도심사/부처별정책검토.보조금액·지원비율·자부담일괄한도없음·참고예시US$사업비/자금비율을지원한도로사용금지.가격구입생산재고등자료제출/EWS/계획이행의무.",
+    "reference": "PDF4~5선정효과/기금·23~38샘플구분; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071793&parentSeq=1071793"
+  },
+  "period": {
+    "start": "2026-10-15",
+    "end": "2026-11-16",
+    "deadlineTime": "18:00",
+    "timezone": "Asia/Seoul",
+    "reference": "PDF3접수11/16 18시; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071793&parentSeq=1071793"
+  },
+  "application": {
+    "summary": "11/16 18시까지PDF7~8소관부처별이메일등접수.신청전품목서비스관련성전화확인→서식1/품목2-1또는서비스2-2/청렴3-1·3-2/개인정보4·증빙제출.재경부총괄은접수기관아님.심사~12/7·최종~12/17예정.중기부대외환경대응과044-204-7426/7665 rjseh5122@korea.kr .산업소재분야sobujang.net 등부처별별도경로.",
+    "reference": "PDF3/7~8부처별접수; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071793&parentSeq=1071793"
+  },
+  "requiredDocuments": [
+    {
+      "name": "선정신청서별지1",
+      "condition": "필수서명날인/어두운행행정용미작성",
+      "reference": "PDF12"
+    },
+    {
+      "name": "공급망안정화계획품목2-1/서비스2-2",
+      "condition": "해당분야필수·법인인감날인스캔",
+      "reference": "PDF13~18"
+    },
+    {
+      "name": "청렴체크리스트3-1·서약3-2",
+      "condition": "필수·신청기업/대표날인",
+      "reference": "PDF7·19~20"
+    },
+    {
+      "name": "개인정보제공활용동의별지4",
+      "condition": "기업담당자필수·소관장관/제3자제공",
+      "reference": "PDF21"
+    },
+    {
+      "name": "사업자등록사본·주주명부원본대조필",
+      "condition": "필수/행정정보동의미동의시직접제출",
+      "reference": "PDF12·15/18"
+    },
+    {
+      "name": "법인등기·법인인감증명",
+      "condition": "제출일기준3개월이내",
+      "reference": "PDF12·15/18"
+    },
+    {
+      "name": "최근5개연도연결/개별감사보고",
+      "condition": "연결대상아니면개별만·외부감사아니면공인회계/세무확인날인결산자료대체",
+      "reference": "PDF15/18"
+    },
+    {
+      "name": "소관부처추가증빙/추천/국산비율/관련매출분리",
+      "condition": "품목/부처해당시사전문의",
+      "reference": "PDF3·11"
+    },
+    {
+      "name": "변경신청별지5+변경계획등",
+      "condition": "기존지정사업내용변경시수시·경제안보품목추가변경은신규신청",
+      "reference": "PDF6~7·22"
+    }
+  ],
+  "businessPlan": {
+    "format": "HWPX/PDF별지2-1품목/2-2서비스지정양식·참고샘플별도",
+    "limit": "분량/글꼴제한미기재·A4양식;샘플수치/연도/국가기업설정은실제회사사실아님",
+    "sections": [
+      {
+        "name": "1기업",
+        "items": [
+          "규모·설립·KSIC·주주/지분·본점·감사의견/비감사사유"
+        ],
+        "limit": "분량/글꼴제한미기재·A4양식;샘플수치/연도/국가기업설정은실제회사사실아님"
+      },
+      {
+        "name": "2분야현황",
+        "items": [
+          "품목명HSK또는서비스명산업코드·국내산업/기업활용·공급수요수입비축/비중·위험"
+        ],
+        "limit": "분량/글꼴제한미기재·A4양식;샘플수치/연도/국가기업설정은실제회사사실아님"
+      },
+      {
+        "name": "2사업계획",
+        "items": [
+          "다변화생산비축R&D또는서비스시설해외인프라운송/사업개요구조경과/세부·연도자금조달·일정"
+        ],
+        "limit": "분량/글꼴제한미기재·A4양식;샘플수치/연도/국가기업설정은실제회사사실아님"
+      },
+      {
+        "name": "2서비스기술",
+        "items": [
+          "연구조직전문인력·인증IP·확충역량"
+        ],
+        "limit": "분량/글꼴제한미기재·A4양식;샘플수치/연도/국가기업설정은실제회사사실아님"
+      },
+      {
+        "name": "2목표/협력",
+        "items": [
+          "정량현재/목표시점·실적·협력회사사업자/역할"
+        ],
+        "limit": "분량/글꼴제한미기재·A4양식;샘플수치/연도/국가기업설정은실제회사사실아님"
+      },
+      {
+        "name": "3재무",
+        "items": [
+          "영업3년/잠식/부채2년500%/체납/차입매출5체크"
+        ],
+        "limit": "분량/글꼴제한미기재·A4양식;샘플수치/연도/국가기업설정은실제회사사실아님"
+      },
+      {
+        "name": "4담당",
+        "items": [
+          "성명직책전화메일·진실성/수은신보기보공유동의·법인인감"
+        ],
+        "limit": "분량/글꼴제한미기재·A4양식;샘플수치/연도/국가기업설정은실제회사사실아님"
+      }
+    ],
+    "reference": "PDF13~18품목/서비스계획·25~38샘플; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071793&parentSeq=1071793"
+  },
+  "evaluation": {
+    "summary": "관련성·안정화계획적합·기본재무3기준+부처별추가기준모두검토.농식품국산비율/품목별단체추천,해수부관련매출별구분,과기부보안전문기술·결함등.수치배점미공개·필요현장실사/평가위.",
+    "reference": "PDF2/3/11종합요건·심사; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071793&parentSeq=1071793"
+  },
+  "contact": {
+    "name": "중기부대외환경대응과044-204-7426/7665 rjseh5122@korea.kr;총괄재경부044-215-7883/7878(접수제외);모든부처접수표PDF7~8",
+    "reference": "PDF7~8부처표(재경부접수제외); 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071793&parentSeq=1071793"
+  },
+  "unresolved": [
+    "소관부처비공개경제안보품목관련성·추가서류/별도지원심사미확인·권한회사프로필없이자격확정불가",
+    "PDF20청렴서약제1차잔존대이번제2차공고충돌·제출서식정정확인필요",
+    "PDF6변경별지5/2대p7표별지2/4표현불일치·변경은서식5실물보존/담당확인",
+    "참고샘플p28US$10억대p29US$100백만및예시연도차이·작성예시로만보존·회사자금/지원금추정금지",
+    "PDF38쪽전체텍스트/양식전체·HWPX중복핵심대조/핵심14쪽시각·전체페이지시각대조미완료"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "mss-1071793",
+    "companyId": null,
+    "permission": "권한회사프로필확보후근거별검토·현재신청가능확정아님",
+    "steps": [
+      "회사필드/증빙확인",
+      "충돌/미확인해결",
+      "S12양식·S13회사정보로서류/계획작성"
+    ]
+  },
+  "applicationChecks": [],
+  "evidenceReferences": [
+    {
+      "field": "eligibility",
+      "reference": "PDF2~3선정기준·9~11부처업종/추가기준",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071793&parentSeq=1071793",
+      "attachmentUrls": [
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071793&cbIdx=310&streFileNm=1b6c7e7d-6be6-4dfa-8d25-a3fe424b7678.hwpx",
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071793&cbIdx=310&streFileNm=9d7abf34-923c-453f-8163-b4b79d2b87dd.pdf"
+      ]
+    },
+    {
+      "field": "exclusions",
+      "reference": "PDF2/5~6결격/취소·11부처기준",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071793&parentSeq=1071793",
+      "attachmentUrls": [
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071793&cbIdx=310&streFileNm=1b6c7e7d-6be6-4dfa-8d25-a3fe424b7678.hwpx",
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071793&cbIdx=310&streFileNm=9d7abf34-923c-453f-8163-b4b79d2b87dd.pdf"
+      ]
+    },
+    {
+      "field": "support",
+      "reference": "PDF4~5선정효과/기금·23~38샘플구분",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071793&parentSeq=1071793",
+      "attachmentUrls": [
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071793&cbIdx=310&streFileNm=1b6c7e7d-6be6-4dfa-8d25-a3fe424b7678.hwpx",
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071793&cbIdx=310&streFileNm=9d7abf34-923c-453f-8163-b4b79d2b87dd.pdf"
+      ]
+    },
+    {
+      "field": "period",
+      "reference": "PDF3접수11/16 18시",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071793&parentSeq=1071793",
+      "attachmentUrls": [
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071793&cbIdx=310&streFileNm=1b6c7e7d-6be6-4dfa-8d25-a3fe424b7678.hwpx",
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071793&cbIdx=310&streFileNm=9d7abf34-923c-453f-8163-b4b79d2b87dd.pdf"
+      ]
+    },
+    {
+      "field": "application",
+      "reference": "PDF3/7~8부처별접수",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071793&parentSeq=1071793",
+      "attachmentUrls": [
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071793&cbIdx=310&streFileNm=1b6c7e7d-6be6-4dfa-8d25-a3fe424b7678.hwpx",
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071793&cbIdx=310&streFileNm=9d7abf34-923c-453f-8163-b4b79d2b87dd.pdf"
+      ]
+    },
+    {
+      "field": "requiredDocuments",
+      "reference": "PDF7/12/15/18~22서류·양식",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071793&parentSeq=1071793",
+      "attachmentUrls": [
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071793&cbIdx=310&streFileNm=1b6c7e7d-6be6-4dfa-8d25-a3fe424b7678.hwpx",
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071793&cbIdx=310&streFileNm=9d7abf34-923c-453f-8163-b4b79d2b87dd.pdf"
+      ]
+    },
+    {
+      "field": "businessPlan",
+      "reference": "PDF13~18품목/서비스계획·25~38샘플",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071793&parentSeq=1071793",
+      "attachmentUrls": [
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071793&cbIdx=310&streFileNm=1b6c7e7d-6be6-4dfa-8d25-a3fe424b7678.hwpx",
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071793&cbIdx=310&streFileNm=9d7abf34-923c-453f-8163-b4b79d2b87dd.pdf"
+      ]
+    },
+    {
+      "field": "evaluation",
+      "reference": "PDF2/3/11종합요건·심사",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071793&parentSeq=1071793",
+      "attachmentUrls": [
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071793&cbIdx=310&streFileNm=1b6c7e7d-6be6-4dfa-8d25-a3fe424b7678.hwpx",
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071793&cbIdx=310&streFileNm=9d7abf34-923c-453f-8163-b4b79d2b87dd.pdf"
+      ]
+    },
+    {
+      "field": "contact",
+      "reference": "PDF7~8부처표(재경부접수제외)",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071793&parentSeq=1071793",
+      "attachmentUrls": [
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071793&cbIdx=310&streFileNm=1b6c7e7d-6be6-4dfa-8d25-a3fe424b7678.hwpx",
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071793&cbIdx=310&streFileNm=9d7abf34-923c-453f-8163-b4b79d2b87dd.pdf"
+      ]
+    }
+  ],
+  "attachmentManifest": "evidence/mss-1071793/attachment-check-2026-11-10.json",
+  "duplicateAttachments": {
+    "primary": "attachment-02.bin",
+    "comparison": "attachment-01.bin",
+    "scope": "동일공고590호38쪽/본문·신청·품목/서비스계획·청렴/동의/변경및샘플구성대조;중복파일로계수·별첨은각각검토"
+  }
+}

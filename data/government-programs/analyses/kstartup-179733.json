@@ -1,0 +1,358 @@
+{
+  "programId": "kstartup-179733",
+  "title": "NEST G밸리 4기 입주기업 모집",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-08T10:16:05.128465+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179733",
+  "reviewScope": "공식상세·포스터전체/TXT대조·PDF32쪽기본텍스트+로컬kor/engOCR 전부검토; p2/3/4/16/17/18/21/22/25/30 시각대조·별표1~4/서식1~2,2026-11-08",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1YUH1dO3Br-u4UK4yhmb6PO69gM3El91Nk2QeZKkKDrzo2Q",
+      "verifiedAt": "2026-11-08",
+      "status": "downloaded",
+      "sha256": "b1fdeaf12ef9f855aaff3a944428f70cb1efa098c0c5b7e8b7f3bca6835cb226",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 6702391,
+      "format": "PDF",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 2760,
+      "review": {
+        "at": "2026-11-08T10:16:05.128465+00:00",
+        "scope": "공식상세·포스터전체/TXT대조·PDF32쪽기본텍스트+로컬kor/engOCR 전부검토; p2/3/4/16/17/18/21/22/25/30 시각대조·별표1~4/서식1~2,2026-11-08",
+        "method": "text/visual scope recorded in reviewScope"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v10IKpWgFBBUvcKGa9_WRF7eQ812altpfdskB98N5OJXzDfA",
+      "verifiedAt": "2026-11-08",
+      "status": "downloaded",
+      "sha256": "f0f7a981c77b28c8a8c5129a35bb83c6f85cb6516b864dae9eefd702d687f52b",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 199267,
+      "format": "IMAGE",
+      "file": "attachment-02.bin",
+      "contentType": "image/png;charset=UTF-8",
+      "review": {
+        "at": "2026-11-08T10:16:05.128465+00:00",
+        "scope": "공식상세·포스터전체/TXT대조·PDF32쪽기본텍스트+로컬kor/engOCR 전부검토; p2/3/4/16/17/18/21/22/25/30 시각대조·별표1~4/서식1~2,2026-11-08",
+        "method": "visual"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1QOpjMgsPEhy7Nlk7aCi6x5xrLqBYeLQdayXVDytYzrZNCQ",
+      "verifiedAt": "2026-11-08",
+      "status": "downloaded",
+      "sha256": "412e2cc5838f4551dee83c85bfb5433c453ad35eaeeeae7af208dc2e9a4950bc",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 1174,
+      "format": "TEXT",
+      "file": "attachment-03.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "review": {
+        "at": "2026-11-08T10:16:05.128465+00:00",
+        "scope": "공식상세·포스터전체/TXT대조·PDF32쪽기본텍스트+로컬kor/engOCR 전부검토; p2/3/4/16/17/18/21/22/25/30 시각대조·별표1~4/서식1~2,2026-11-08",
+        "method": "text/visual scope recorded in reviewScope"
+      },
+      "extraction": "decoded-text",
+      "textFile": "attachment-03.bin.txt"
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/v1YUH1dO3Br-u4UK4yhmb6PO69gM3El91Nk2QeZKkKDrzo2Q": "b1fdeaf12ef9f855aaff3a944428f70cb1efa098c0c5b7e8b7f3bca6835cb226",
+    "https://www.k-startup.go.kr/afile/fileDownload/v10IKpWgFBBUvcKGa9_WRF7eQ812altpfdskB98N5OJXzDfA": "f0f7a981c77b28c8a8c5129a35bb83c6f85cb6516b864dae9eefd702d687f52b",
+    "https://www.k-startup.go.kr/afile/fileDownload/v1QOpjMgsPEhy7Nlk7aCi6x5xrLqBYeLQdayXVDytYzrZNCQ": "412e2cc5838f4551dee83c85bfb5433c453ad35eaeeeae7af208dc2e9a4950bc"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-08T10:16:05.128465+00:00",
+  "eligibility": {
+    "summary": "공모시작11/6기준 업력4년이내 혁신스타트업(예비포함). 개인개업/법인설립기준·동종법인전환은이전업력합산. 혁신9테마31분야 별표1제품대조필요. 예비신청일무사업자·입주3개월내창업. 2027.3입주예정.",
+    "companyFields": [
+      "창업일/동종전환",
+      "혁신9테마31분야기술품목",
+      "예비창업등록계획",
+      "대표/실제경영자/과점주주·연대보증이력",
+      "신용/부실/허위자료",
+      "표준산업분류·보증제한/유의업종",
+      "NEST과거입주·현공공공간/퇴거일",
+      "입주전체/일부/대표·본점이전",
+      "NEST선정이력",
+      "인원·매출·투자·IP"
+    ],
+    "reference": "PDF p2/20·별표1 p8~15; 확인 2026-11-08T10:20:39.754794+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179733"
+  },
+  "exclusions": {
+    "items": [
+      "보증금지·구상채권미변제/실제경영·과점주주등연관",
+      "휴업·빈번연체·현재연체·신용관리정보",
+      "보험/팩토링대위채권·보증부실·연대보증등별표2해당",
+      "도박/향락/주거부동산등보증제한 및담배/사치/금융보험/가상자산등유의업종별표대조",
+      "기존NEST Space·창업드림센터입주이력",
+      "공고일공공공간지원수혜(입주30일내퇴거예정예외)",
+      "허위·무사유철회1년제한"
+    ],
+    "reference": "PDF p2·별표2 p16~18; 확인 2026-11-08T10:20:39.754794+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179733"
+  },
+  "support": {
+    "summary": "구로디지털로26길123 3층 폐쇄6인/8인실각1·총2기업. PDFp4/FAQ는기본6개월+1회연장1년·우수최대1년6개월, 상세/포스터는기본1년으로충돌. 보증·월세없음,6개월당입회비100만원VAT별도/연장추가. 보증상품·UCONNECT/투자연계·보험·멘토링·데모·베네핏 기회,자동대출/투자아님. 27.3입주2주전OT/계약,개시10일내입주·1회연기.",
+    "reference": "PDF p4~5/20~21·포스터기본기간충돌; 확인 2026-11-08T10:20:39.754794+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179733"
+  },
+  "period": {
+    "start": "2026-11-06",
+    "end": "2026-11-20",
+    "deadlineTime": "14:00",
+    "timezone": "Asia/Seoul",
+    "reference": "PDF p2; 확인 2026-11-08T10:20:39.754794+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179733"
+  },
+  "application": {
+    "summary": "신보ONBiz→창업지원→스타트업공모→신청. 전산오류시화면증빙제출+담당자이메일예외. 11/20 14시접수→11/23~24서류/필요현장→11/25온라인발표→11/30결과메일예정.",
+    "reference": "PDF p2~3·진행일정p3; 확인 2026-11-08T10:20:39.754794+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179733"
+  },
+  "requiredDocuments": [
+    {
+      "name": "입주신청서·사업계획서 서식1",
+      "condition": "공통·법인인감/개인예비대표서명",
+      "reference": "PDF p22~27"
+    },
+    {
+      "name": "정보수집이용제공조회동의 서식2",
+      "condition": "온라인지원서면생략가능·대표2명이상이면각각서명/날인",
+      "reference": "PDF p22·28~32"
+    },
+    {
+      "name": "사업자등록증·4대보험가입자명부",
+      "condition": "예비제외·명부최근1개월",
+      "reference": "PDF p22"
+    },
+    {
+      "name": "법인등기말소포함·주주명부인감",
+      "condition": "법인·최근1개월내발급",
+      "reference": "PDF p22"
+    },
+    {
+      "name": "IR Deck",
+      "condition": "선택",
+      "reference": "PDF p22"
+    }
+  ],
+  "businessPlan": {
+    "format": "PDF내서식1신청/계획·서식2신용정보동의",
+    "limit": "사업계획p25부터최대10쪽·12pt이상,사진/도면첨부가능",
+    "sections": [
+      {
+        "name": "기업현황",
+        "items": [
+          "설립/등록형태·주소아이템·전년/당년매출·투자/보증·지원이력"
+        ],
+        "limit": "사업계획p25부터최대10쪽·12pt이상,사진/도면첨부가능"
+      },
+      {
+        "name": "입주조건",
+        "items": [
+          "전체/일부·본점1개월내이전·대표입주/인원·다른기관공간이력"
+        ],
+        "limit": "사업계획p25부터최대10쪽·12pt이상,사진/도면첨부가능"
+      },
+      {
+        "name": "대표·팀",
+        "items": [
+          "연령/성별/거주/경영기술자격경력·구성원역할"
+        ],
+        "limit": "사업계획p25부터최대10쪽·12pt이상,사진/도면첨부가능"
+      },
+      {
+        "name": "입주사유/활동계획",
+        "items": [
+          "공간필요·보육참여계획"
+        ],
+        "limit": "사업계획p25부터최대10쪽·12pt이상,사진/도면첨부가능"
+      },
+      {
+        "name": "핵심/경쟁력",
+        "items": [
+          "문제/계기·제품서비스·핵심기술·차별성"
+        ],
+        "limit": "사업계획p25부터최대10쪽·12pt이상,사진/도면첨부가능"
+      },
+      {
+        "name": "시장/계획",
+        "items": [
+          "목표시장규모경쟁·입지진입·판매수익·자금조달"
+        ],
+        "limit": "사업계획p25부터최대10쪽·12pt이상,사진/도면첨부가능"
+      },
+      {
+        "name": "기타",
+        "items": [
+          "투자기관/시기/금액·정부과제·IP출원등록·수상/인증"
+        ],
+        "limit": "사업계획p25부터최대10쪽·12pt이상,사진/도면첨부가능"
+      }
+    ],
+    "reference": "PDF p23~27(분량규칙p25); 확인 2026-11-08T10:20:39.754794+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179733"
+  },
+  "evaluation": {
+    "summary": "서류(필요현장)→온라인발표. 역량입주필요20·사업30·성장30·계획적정20. 가점최고1개만:1개월내본점이전+대표포함전체5/일부3(대표미입주0),Start-upNEST선정5. 동점역량필요→사업→성장.",
+    "reference": "PDF p3평가/가점표; 확인 2026-11-08T10:20:39.754794+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179733"
+  },
+  "contact": {
+    "name": "박기현02-710-4681 pkh5555@kodit.or.kr; 최석호02-2204-6738 seoko3467@kodit.or.kr; ONBiz장애1588-6565",
+    "reference": "PDF p7; 확인 2026-11-08T10:20:39.754794+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179733"
+  },
+  "unresolved": [
+    "기본입주기간 상세/포스터1년 vs PDF본문/FAQ6개월 충돌·최신정정확인필요",
+    "PDF32쪽본문/OCR전부읽고핵심/평가/서류/제외/동의시각대조했으나혁신품목8~15쪽일부OCR불명확·전체세목시각재대조필요",
+    "독립편집형신청양식/로그인후실제접수필드미확인",
+    "신용정보동의는5년·정부기관3년 등수집·제공상대/정보별구분필요·고유식별정보를플랫폼일반회사필드로수집하지않음"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179733",
+    "companyId": null,
+    "permission": "권한회사프로필확보후근거별검토·현재신청가능확정아님",
+    "steps": [
+      "회사필드/증빙확인",
+      "충돌/미확인해결",
+      "S12양식·S13회사정보로서류/계획작성"
+    ]
+  },
+  "applicationChecks": [
+    {
+      "id": "179733",
+      "url": "https://www.kodit.or.kr/sut/index.do",
+      "checkedAt": "2026-11-08T10:11:40.624784+00:00",
+      "status": 200,
+      "finalUrl": "https://www.kodit.or.kr/apps/index.do",
+      "evidence": "179733-publiccheck-20261108.html",
+      "bytes": 405166
+    }
+  ],
+  "evidenceReferences": [
+    {
+      "field": "eligibility",
+      "reference": "PDF p2/20·별표1 p8~15",
+      "checkedAt": "2026-11-08T10:20:39.754794+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179733",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1YUH1dO3Br-u4UK4yhmb6PO69gM3El91Nk2QeZKkKDrzo2Q",
+        "https://www.k-startup.go.kr/afile/fileDownload/v10IKpWgFBBUvcKGa9_WRF7eQ812altpfdskB98N5OJXzDfA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1QOpjMgsPEhy7Nlk7aCi6x5xrLqBYeLQdayXVDytYzrZNCQ"
+      ]
+    },
+    {
+      "field": "exclusions",
+      "reference": "PDF p2·별표2 p16~18",
+      "checkedAt": "2026-11-08T10:20:39.754794+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179733",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1YUH1dO3Br-u4UK4yhmb6PO69gM3El91Nk2QeZKkKDrzo2Q",
+        "https://www.k-startup.go.kr/afile/fileDownload/v10IKpWgFBBUvcKGa9_WRF7eQ812altpfdskB98N5OJXzDfA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1QOpjMgsPEhy7Nlk7aCi6x5xrLqBYeLQdayXVDytYzrZNCQ"
+      ]
+    },
+    {
+      "field": "support",
+      "reference": "PDF p4~5/20~21·포스터기본기간충돌",
+      "checkedAt": "2026-11-08T10:20:39.754794+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179733",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1YUH1dO3Br-u4UK4yhmb6PO69gM3El91Nk2QeZKkKDrzo2Q",
+        "https://www.k-startup.go.kr/afile/fileDownload/v10IKpWgFBBUvcKGa9_WRF7eQ812altpfdskB98N5OJXzDfA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1QOpjMgsPEhy7Nlk7aCi6x5xrLqBYeLQdayXVDytYzrZNCQ"
+      ]
+    },
+    {
+      "field": "period",
+      "reference": "PDF p2",
+      "checkedAt": "2026-11-08T10:20:39.754794+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179733",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1YUH1dO3Br-u4UK4yhmb6PO69gM3El91Nk2QeZKkKDrzo2Q",
+        "https://www.k-startup.go.kr/afile/fileDownload/v10IKpWgFBBUvcKGa9_WRF7eQ812altpfdskB98N5OJXzDfA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1QOpjMgsPEhy7Nlk7aCi6x5xrLqBYeLQdayXVDytYzrZNCQ"
+      ]
+    },
+    {
+      "field": "application",
+      "reference": "PDF p2~3·진행일정p3",
+      "checkedAt": "2026-11-08T10:20:39.754794+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179733",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1YUH1dO3Br-u4UK4yhmb6PO69gM3El91Nk2QeZKkKDrzo2Q",
+        "https://www.k-startup.go.kr/afile/fileDownload/v10IKpWgFBBUvcKGa9_WRF7eQ812altpfdskB98N5OJXzDfA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1QOpjMgsPEhy7Nlk7aCi6x5xrLqBYeLQdayXVDytYzrZNCQ"
+      ]
+    },
+    {
+      "field": "requiredDocuments",
+      "reference": "PDF p22·서식2 p28~32",
+      "checkedAt": "2026-11-08T10:20:39.754794+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179733",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1YUH1dO3Br-u4UK4yhmb6PO69gM3El91Nk2QeZKkKDrzo2Q",
+        "https://www.k-startup.go.kr/afile/fileDownload/v10IKpWgFBBUvcKGa9_WRF7eQ812altpfdskB98N5OJXzDfA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1QOpjMgsPEhy7Nlk7aCi6x5xrLqBYeLQdayXVDytYzrZNCQ"
+      ]
+    },
+    {
+      "field": "businessPlan",
+      "reference": "PDF p23~27(분량규칙p25)",
+      "checkedAt": "2026-11-08T10:20:39.754794+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179733",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1YUH1dO3Br-u4UK4yhmb6PO69gM3El91Nk2QeZKkKDrzo2Q",
+        "https://www.k-startup.go.kr/afile/fileDownload/v10IKpWgFBBUvcKGa9_WRF7eQ812altpfdskB98N5OJXzDfA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1QOpjMgsPEhy7Nlk7aCi6x5xrLqBYeLQdayXVDytYzrZNCQ"
+      ]
+    },
+    {
+      "field": "evaluation",
+      "reference": "PDF p3평가/가점표",
+      "checkedAt": "2026-11-08T10:20:39.754794+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179733",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1YUH1dO3Br-u4UK4yhmb6PO69gM3El91Nk2QeZKkKDrzo2Q",
+        "https://www.k-startup.go.kr/afile/fileDownload/v10IKpWgFBBUvcKGa9_WRF7eQ812altpfdskB98N5OJXzDfA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1QOpjMgsPEhy7Nlk7aCi6x5xrLqBYeLQdayXVDytYzrZNCQ"
+      ]
+    },
+    {
+      "field": "contact",
+      "reference": "PDF p7",
+      "checkedAt": "2026-11-08T10:20:39.754794+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179733",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1YUH1dO3Br-u4UK4yhmb6PO69gM3El91Nk2QeZKkKDrzo2Q",
+        "https://www.k-startup.go.kr/afile/fileDownload/v10IKpWgFBBUvcKGa9_WRF7eQ812altpfdskB98N5OJXzDfA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1QOpjMgsPEhy7Nlk7aCi6x5xrLqBYeLQdayXVDytYzrZNCQ"
+      ]
+    }
+  ],
+  "ocrEvidence": {
+    "unitsFile": "evidence/kstartup-179733/attachment-01.ocr.units.json",
+    "pages": 32,
+    "engine": "local Tesseract kor+eng",
+    "visualPages": [
+      2,
+      3,
+      4,
+      16,
+      17,
+      18,
+      21,
+      22,
+      25,
+      30
+    ],
+    "remaining": "혁신품목별표일부OCR불명확·전체쪽시각대조추가필요"
+  }
+}

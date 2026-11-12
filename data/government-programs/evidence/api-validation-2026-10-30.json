@@ -1,0 +1,55 @@
+{
+  "checkedAt": "2026-10-30T01:45:41.968Z",
+  "status": 200,
+  "records": 100,
+  "analyses": 60,
+  "dates": [
+    {
+      "id": "kstartup-179645",
+      "applicationStartDate": "2026-10-28",
+      "applicationEndDate": "2026-10-30",
+      "deadlineTime": "23:59",
+      "reviewStatus": "partial",
+      "calendarDeadlineIncluded": true
+    },
+    {
+      "id": "kstartup-179646",
+      "applicationStartDate": "2026-10-21",
+      "applicationEndDate": "2026-11-03",
+      "deadlineTime": "14:00",
+      "reviewStatus": "partial",
+      "calendarDeadlineIncluded": true
+    },
+    {
+      "id": "kstartup-179608",
+      "applicationStartDate": "2026-10-23",
+      "applicationEndDate": "2026-11-03",
+      "deadlineTime": "14:00",
+      "reviewStatus": "partial",
+      "calendarDeadlineIncluded": true
+    },
+    {
+      "id": "kstartup-179633",
+      "applicationStartDate": "2026-10-28",
+      "applicationEndDate": "2026-11-04",
+      "deadlineTime": "17:00",
+      "reviewStatus": "partial",
+      "calendarDeadlineIncluded": true
+    },
+    {
+      "id": "kstartup-179625",
+      "applicationStartDate": "2026-10-26",
+      "applicationEndDate": "2026-11-05",
+      "deadlineTime": "14:00",
+      "reviewStatus": "partial",
+      "calendarDeadlineIncluded": true
+    }
+  ],
+  "validation": "route.GET direct invocation; calendar date mapping and public field filtering assertions passed",
+  "http": {
+    "url": "http://127.0.0.1:3001/api/government-programs",
+    "status": "connection-refused"
+  },
+  "screenVerified": false,
+  "deployed": false
+}

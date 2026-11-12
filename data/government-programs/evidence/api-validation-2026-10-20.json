@@ -1,0 +1,39 @@
+{
+  "at": "2026-10-20T00:14:38.940Z",
+  "validation": "실제 route GET 직접 호출; HTTP서버/화면 미검증",
+  "status": 200,
+  "total": 26,
+  "analyses": 11,
+  "checked": [
+    {
+      "id": "kstartup-179519",
+      "date": "2026-10-23",
+      "time": "18:00",
+      "status": "partial"
+    },
+    {
+      "id": "kstartup-179529",
+      "date": "2026-10-25",
+      "time": "23:59",
+      "status": "partial"
+    },
+    {
+      "id": "kstartup-179523",
+      "date": "2026-10-26",
+      "time": "15:00",
+      "status": "partial"
+    },
+    {
+      "id": "kstartup-179535",
+      "date": "2026-10-28",
+      "time": "18:00",
+      "status": "partial"
+    },
+    {
+      "id": "kstartup-179525",
+      "date": "2026-11-02",
+      "time": "23:59",
+      "status": "partial"
+    }
+  ]
+}

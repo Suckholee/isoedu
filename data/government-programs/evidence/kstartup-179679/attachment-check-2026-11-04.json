@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/v1bjw4TiYJ0T53ARBUFaz6UA6BZRjhJfhBUlFL3w9eNx8_Uw",
+    "verifiedAt": "2026-11-04",
+    "status": "downloaded",
+    "sha256": "d8f2cd5042d69f284ab11cc477cad7295600f9f077b6a7f30012a122b980d9d8",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 411375,
+    "format": "IMAGE",
+    "file": "attachment-01.bin",
+    "contentType": "image/png;charset=UTF-8",
+    "review": {
+      "at": "2026-11-04T00:45:52.940286+00:00",
+      "method": "visual",
+      "scope": "전체 포스터 시각 검토·동반 텍스트 대조; 긴 이미지 작은글씨 전부검증아님"
+    }
+  },
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/v1y8GyQocyZwRpUlAZP6Fb796l0pfKoZz5p0d7njldE2vWkA",
+    "verifiedAt": "2026-11-04",
+    "status": "downloaded",
+    "sha256": "112b180d4b705158e31b5f448a3e70062db65c289c98f151e77871b01537a958",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 863013,
+    "format": "IMAGE",
+    "file": "attachment-02.bin",
+    "contentType": "image/png;charset=UTF-8",
+    "review": {
+      "at": "2026-11-04T00:45:52.940286+00:00",
+      "method": "visual",
+      "scope": "전체 포스터 시각 검토·동반 텍스트 대조; 긴 이미지 작은글씨 전부검증아님"
+    }
+  },
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/v1VL3A81aU93uJLhI6bsFN4AA_zE5ZTgm59y_8hOd0giElIw",
+    "verifiedAt": "2026-11-04",
+    "status": "downloaded",
+    "sha256": "0f3d4c85f20f85f5839fa57919d5dc1d856613d97728292f87617de0bb52bbbe",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 598,
+    "format": "TEXT",
+    "file": "attachment-03.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "characters": 356,
+    "extraction": "text",
+    "review": {
+      "at": "2026-11-04T00:45:52.940286+00:00",
+      "method": "text",
+      "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+    }
+  },
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/v15-vrjCoU5Yo7w2HOUB19aBai9u4TOspcSNhYTuAA9mgGRA",
+    "verifiedAt": "2026-11-04",
+    "status": "downloaded",
+    "sha256": "da69082a88754e6b8b51352d725b2cbd568b0f4c7ab3726679137e77b7d4fd1d",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 1476,
+    "format": "TEXT",
+    "file": "attachment-04.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "characters": 788,
+    "extraction": "text",
+    "review": {
+      "at": "2026-11-04T00:45:52.940286+00:00",
+      "method": "text",
+      "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+    }
+  }
+]

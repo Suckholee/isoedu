@@ -1,0 +1,86 @@
+{
+  "programId": "kstartup-179554",
+  "title": "[GBSA] 2026 판교스타트업 투자교류회 제 4차 투자교류회",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-08T10:18:01.435819+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179554",
+  "reviewScope": "공식상세대상/제출/행사/문의절전문. 무첨부공고상세수준,2026-11-08",
+  "attachments": [],
+  "attachmentContentHashes": {},
+  "lastAttachmentHashCheckedAt": "2026-11-08T10:18:01.435819+00:00",
+  "eligibility": {
+    "summary": "AC/VC/CVC 및대중견기업 오픈이노베이션담당자 참가모집. 스타트업피칭기업 신규선발모집으로해석하지않음.",
+    "companyFields": [
+      "투자기관/대중견기업담당역할",
+      "IR관심분야",
+      "미팅희망기업·연락처"
+    ],
+    "reference": "공식상세대상/제출/행사/문의절전문. 무첨부공고상세수준,2026-11-08"
+  },
+  "exclusions": {
+    "items": [
+      "창업기업전체자동피칭신청아님",
+      "별도제외미기재"
+    ],
+    "reference": "공식상세대상/제출/행사/문의절전문. 무첨부공고상세수준,2026-11-08"
+  },
+  "support": {
+    "summary": "11/12 13~17 판교스타트업캠퍼스2층 창업라운지(판교로289번길20). AI/반도체/모빌리티/로봇/친환경에너지IR참관·1:1미팅·투자OI기회·투자확약아님. 참가비/한도미기재.",
+    "reference": "공식상세대상/제출/행사/문의절전문. 무첨부공고상세수준,2026-11-08"
+  },
+  "period": {
+    "start": "2026-10-19",
+    "end": "2026-11-10",
+    "deadlineTime": "18:00",
+    "timezone": "Asia/Seoul",
+    "reference": "공식상세대상/제출/행사/문의절전문. 무첨부공고상세수준,2026-11-08"
+  },
+  "application": {
+    "summary": "이메일kbs@navion.biz 또는eDM QR/참가신청구글폼. eDM기업로고티저PDF 안내있으나 이번공개상세에첨부/실제URL없어미확보.",
+    "reference": "공식상세대상/제출/행사/문의절전문. 무첨부공고상세수준,2026-11-08"
+  },
+  "requiredDocuments": [
+    {
+      "name": "참가신청",
+      "condition": "공통·본문신청서류없음",
+      "reference": "상세 신청/제출절"
+    }
+  ],
+  "businessPlan": {
+    "format": "투자자참관/미팅신청",
+    "limit": "계획서제출아님",
+    "sections": [],
+    "reference": "공식상세대상/제출/행사/문의절전문. 무첨부공고상세수준,2026-11-08"
+  },
+  "evaluation": {
+    "summary": "eDM링크신청·배점미기재.",
+    "reference": "공식상세대상/제출/행사/문의절전문. 무첨부공고상세수준,2026-11-08"
+  },
+  "contact": {
+    "name": "김병수02-6407-7746 kbs@navion.biz",
+    "reference": "공식상세대상/제출/행사/문의절전문. 무첨부공고상세수준,2026-11-08"
+  },
+  "unresolved": [
+    "첨부0개·eDM원본/신청폼·기업티저PDF 실URL미확보",
+    "참가비/동의/실제접수상태미확인"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179554",
+    "companyId": null,
+    "permission": "권한회사프로필확보후근거별검토·현재신청가능확정아님",
+    "steps": [
+      "회사필드/증빙확인",
+      "충돌/미확인해결",
+      "S12양식·S13회사정보로서류/계획작성"
+    ]
+  },
+  "applicationChecks": [],
+  "evidenceReferences": []
+}

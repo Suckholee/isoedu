@@ -1,0 +1,47 @@
+[
+  {
+    "id": "179676",
+    "url": "https://www.ut.ac.kr/cop/bbs/BBSMSTR_000000000059/selectBoardArticle.do?nttId=1125705",
+    "checkedAt": "2026-11-02T23:59:55.552516+00:00",
+    "status": 200,
+    "finalUrl": "https://www.ut.ac.kr/cop/bbs/BBSMSTR_000000000059/selectBoardArticle.do?nttId=1125705",
+    "evidence": "179676-publiccheck-20261103.html",
+    "bytes": 95812
+  },
+  {
+    "id": "179664",
+    "url": "https://forms.gle/q61cvcRxJwF4Jiq88",
+    "checkedAt": "2026-11-02T23:59:55.552820+00:00",
+    "status": 200,
+    "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSd666SleL9Jj8nIesVpV1kuF858xVr_Un5afNZHBXehgGR3Uw/viewform?usp=send_form",
+    "evidence": "179664-publiccheck-20261103.html",
+    "bytes": 120453
+  },
+  {
+    "id": "bizinfo",
+    "url": "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/list.do",
+    "checkedAt": "2026-11-02T23:59:55.552961+00:00",
+    "status": 200,
+    "finalUrl": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200View.do?null",
+    "evidence": "bizinfo-publiccheck-20261103.html",
+    "bytes": 111436
+  },
+  {
+    "id": "iris",
+    "url": "https://www.iris.go.kr/index.do",
+    "checkedAt": "2026-11-02T23:59:55.553343+00:00",
+    "status": 200,
+    "finalUrl": "https://www.iris.go.kr/index.do",
+    "evidence": "iris-publiccheck-20261103.html",
+    "bytes": 1531598
+  },
+  {
+    "id": "kotra",
+    "url": "https://kotra.or.kr/subList/20000020753",
+    "checkedAt": "2026-11-02T23:59:55.553458+00:00",
+    "status": 200,
+    "finalUrl": "https://kotra.or.kr/subList/20000020753",
+    "evidence": "kotra-publiccheck-20261103.html",
+    "bytes": 152169
+  }
+]

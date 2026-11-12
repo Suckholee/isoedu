@@ -1,0 +1,32 @@
+[
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/mx1Ln",
+    "file": "attachment-01.bin",
+    "name": "2026 Invest Seoul Partners Æ÷½ºÅÍ_¹èÆ÷¿ë_1008.jpg",
+    "bytes": 2306185,
+    "sha256": "de6c343d44adb112ea63f2df8b51580283656195aabfb63a321c1123a4bff3d5",
+    "contentType": "image/jpeg;charset=UTF-8",
+    "verifiedAt": "2026-10-18T00:02:24.812Z",
+    "status": "downloaded",
+    "localPath": "attachment-01.jpg",
+    "format": "JPG",
+    "extractionStatus": "visual-review-needed",
+    "characters": 0,
+    "displayName": "2026 Invest Seoul Partners 포스터_배포용_1008.jpg"
+  },
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/Qy1Ln",
+    "file": "attachment-02.bin",
+    "name": "2026 Invest Seoul Partners Æ÷½ºÅÍ_¹èÆ÷¿ë_1008_¼öÁ¤.txt",
+    "bytes": 2040,
+    "sha256": "9d0077537be0db7ec288579f27fb7e366b78a9d807dc6b8fca8b90595c1e0f66",
+    "contentType": "application/octet-stream",
+    "verifiedAt": "2026-10-18T00:02:24.846Z",
+    "status": "downloaded",
+    "localPath": "attachment-02.txt",
+    "format": "TXT",
+    "extractionStatus": "text-extracted",
+    "characters": 1091,
+    "displayName": "2026 Invest Seoul Partners 포스터_배포용_1008_수정.txt"
+  }
+]

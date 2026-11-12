@@ -1,0 +1,1142 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+<link rel="stylesheet" href="/web/cportal/_GLOBAL/css/global.css?update=241210">
+<script src="/web/assets/js/plugins/gsap.min.js"></script>
+<script src="/assets/js/application.code.js"></script>
+
+
+
+
+
+<script>
+  
+  
+  
+  
+
+  if(navigator.userAgent.indexOf("Trident") > 0){
+    alert("스타트업 플러스는 은 Microsoft Edge, Chrome 브라우저에 최적화 되어있습니다. " +
+            "원활한 사용을 원하시면 Microsoft Edge, Chrome 브라우저를 권장합니다. 확인버튼을 누르면 Edge브라우저로 자동으로 이동됩니다.")
+    window.location = 'microsoft-edge:' + window.location.href
+  } else if(/MSIE \d |Trident.*rv:/.test(navigator.userAgent)) {
+    alert("스타트업 플러스는 Microsoft Edge, Chrome 브라우저에 최적화 되어있습니다. " +
+            "원활한 사용을 원하시면 Microsoft Edge, Chrome 브라우저를 권장합니다.  확인버튼을 누르면 Edge브라우저로 자동으로 이동됩니다.")
+    window.location = 'microsoft-edge:http:' + window.location.href
+  }
+
+  // 언어 변경할 때 <html> 태그 안에 lang="ko", lang="en" 넣어주기
+  if("en" == "kr") { // kr -> ko로 변경하여 넣어줌
+    let krChangeKo = "en";
+    krChangeKo = "ko";
+  }
+  document.documentElement.setAttribute("lang", "en");
+
+  // 언어 변경 버튼 클릭 시,
+  function btnClickChangeLanguage() {
+    const lang = String(document.querySelector("text.KR tspan").innerHTML.replace(" ",""));
+    const url = new URL(document.location.href);
+    url.searchParams.set("lang", lang.toLowerCase());
+    window.location.href = url.href;
+  }
+
+  //기업 회원 체크 함수
+  function moveCompanyCheckTo(url){
+    
+    
+    alert('로그인 후 이용 가능합니다.');
+    document.forms.isLoginCheckForm.action="/cms_for_portal/process/etc/login/list.do?show_no=149&check_no=147&c_relation=245&c_relation2=830";
+    document.forms.isLoginCheckForm.return_url.value=url;
+    document.forms.isLoginCheckForm.submit();
+    
+    
+    
+    
+  }
+
+  function moveLoginCheckTo(url){
+    
+    
+    
+    alert('로그인 후 이용 가능합니다.');
+    document.forms.isLoginCheckForm.action="/cms_for_portal/process/etc/login/list.do";
+    document.forms.isLoginCheckForm.return_url.value=url;
+    document.forms.isLoginCheckForm.submit();
+    
+    
+  }
+</script>
+
+
+
+    
+    
+        
+
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta property="og:image" content="https://www.startup-plus.kr/web/assets/other/image/opengrape_startup.png" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
+<meta name="msapplication-TileColor" content="#ffffff" />
+<meta name="msapplication-TileImage" content="/assets/images/favicon/ms-icon-144x144.png" />
+<meta name="theme-color" content="#ffffff" />
+
+<meta name="title" content="서울창업허브 공덕">
+<meta name="description" content="서울창업허브는 우수기업을 투자자와 함께 검증 및 선발하고，창업지원 전문기관인 허브파트너와 함께 육성하여 투자 및 글로벌 진출을 지원합니다.
+
+">
+
+<title>서울창업허브 공덕</title>
+        
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&family=Montserrat:wght@300;400;500&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
+
+
+<link rel="stylesheet" href="/web/cportal/DEFAULT/css/style.css?update=240614"/>
+
+
+<script src="/web/cportal/vendor/jquery/jquery-3.1.1.min.js"></script>
+<script src="/web/assets/js/plugins/jquery-ui.min.js"></script>
+<script src="/web/assets/plugins/input-mask/jquery.mask.min.js"></script>
+<script src="//unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="/web/assets/js/plugins/slick.min.js"></script>
+<script src="/web/assets/js/plugins/underscore-min.js"></script>
+<script src="/web/assets/js/plugins/moment.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://uicdn.toast.com/calendar/latest/toastui-calendar.ie11.min.js"></script>
+<link rel="stylesheet" href="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.css" />
+<script type="text/javascript" src="/assets/js/ckeditor5/ckeditor.js"></script>
+
+
+<script src="/web/cportal/DEFAULT/js/common.js"></script>
+<script src="/web/cportal/DEFAULT/js/main.js"></script>
+<script src="/web/assets/js/_util_common.js?update=20240718_2"></script>
+<script src="/web/assets/js/common/common.js"></script>
+<script src="/assets/js/application.util.js"></script>
+
+<script>
+    var ctsConfig = {
+        prefix : {
+            APP: 'sspmanager',
+            USERID : 'USER_ID',
+            USERINFO : 'userInfo',
+            TABINFO : 'tab'
+        },
+        // 로거 사용여부(true=>콘솔 로그 출력, false, 콘솔 로그 미출력)
+        logger: true,
+        // 콘텐츠 영역 화면 DOM ID
+        container : "#main-container",
+        // 콘텐츠 영역 자동 높이 계산 여부
+        containerAutoHeight: true,
+    }
+</script>
+
+<script src="/assets/js/application.util.js"></script>
+<script src="/web/cts/cts.datasource.js"></script>
+<script src="/web/cts/cts.list.js"></script>
+<script src="/web/cts/cts.file.js"></script>
+<script src="/web/cts/cts.paging.js"></script>
+<script src="/web/cts/cts.validator.js"></script>
+<script src="/web/cts/cts.loading.js"></script>
+<script src="/assets/js/application.component.Editor.js"></script>
+
+<script>
+    var MainObj = function(){
+
+        var centerX = $(window).width()/2;
+        var centerY = $(window).height()/2;
+
+        // background 마우스에 따른 움직임 효과
+        var marginPer = 153.2;
+        var targetVisualBg = $(".sub-visual");
+        var currIdx = 0;
+        var currTarget = targetVisualBg[currIdx];
+
+        if(targetVisualBg.length > 0) {
+            $(document.body).on('mousemove', function (e) {
+                var difX = centerX - e.pageX;
+                var difY = centerY - e.pageY;
+
+                var perX = difX / centerX * marginPer;
+                var perY = difY / centerY * marginPer;
+
+                var idx = 0;
+                if (currIdx != idx) {
+                    currIdx = idx;
+                    currTarget = targetVisualBg[currIdx];
+                }
+                moveBgItems(perX, perY);
+            });
+        }
+
+
+        function moveBgItems( perX, perY,bgPerX, bgPerY, bgDuration){
+            if( !bgPerX ) bgPerX = perX;
+            if( !bgPerY ) bgPerY = perY;
+            if( !bgDuration ) bgDuration = 1.2;
+            TweenMax.killTweensOf( targetVisualBg );
+            TweenMax.to( currTarget, bgDuration, { backgroundPosition:bgPerX + "px "+ bgPerY + "px", ease:Cubic.easeOut });
+        }
+
+
+        var posX = 0, posY = 0,prevX = 0, prevY = 0, speedRate=30;
+        function onDeviceOrientation( event ){
+
+            var sumX = isNaN( parseFloat( event.gamma ) ) ? 0 : parseFloat( event.gamma )*speedRate;
+            var sumY = isNaN( parseFloat( event.beta ) ) ? 0 : parseFloat( event.beta )*speedRate;
+
+            var perX = (centerX - sumX) / centerX;
+            var perY = (centerY - sumY) / centerY;
+
+            perX = Math.max( -6.9, Math.min( perX, 7 ) );
+            perY = Math.max( -6.9, Math.min( perY, 7 ) );
+
+            moveBgItems(perX,perY,perX*1.4,perY*1.4,1);
+        }
+
+
+        this.registOrientationEvent = function(){
+            window.addEventListener( "deviceorientation" , onDeviceOrientation );
+        }
+
+        this.removeOrientationEvent = function(){
+            window.removeEventListener( "deviceorientation" , onDeviceOrientation );
+        }
+
+
+        $(window).on('resize', function(){
+            centerX = $(window).width()/2;
+            centerY = $(window).height()/2;
+        });
+    }
+    $(document).ready(function(){
+        mainObj = new MainObj();
+    });
+</script>
+
+        </head>
+        <body>
+            
+
+
+
+
+
+<form name="isLoginCheckForm" id="isLoginCheckForm" method="POST">
+    <input type="hidden" name="return_url" value="" >
+</form>
+
+
+<!-- 헤더 -->
+<header class="header">
+    <div class="logo-area bx-max">
+
+        
+            
+            <h1 style="background:url('/api/common/download?attachFilePath=%2fold%2fcenter%2flogo22.png') 0 50% /
+             auto 100% no-repeat;cursor:pointer;" onclick="window.location.href='/'">
+                
+            </h1>
+        
+        
+        <ul class="gnb-area">
+            <li><a href="/">서울창업허브 공덕</a></li>
+            
+            <li><a href="/login" class="active">로그인</a></li>
+            
+            
+            
+            	<li><a href="https://hubgongdeok.startup-plus.kr/en">ENGLISH</a></li>
+            
+            
+            
+        </ul>
+    </div>
+
+    
+    
+    
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+    <nav class="nav-area bx-max">
+        <ul class="nav-menu clearfix">
+            
+                
+                        
+                            
+                                
+                            
+                            
+                        
+                    <li>
+                        <script>
+                            console.info("item", ctsApp.util.javaListToJson('MenuApiResponseVO(seqNo=2039, portalSeqNo=316, parentSeqNo=0, name=창업서비스, uri=/, orderNo=4, status=1, contentType=DEFAULT, residentOnly=false, subMenuList=[MenuApiResponseVO(seqNo=2044, portalSeqNo=316, parentSeqNo=2039, name=입주, uri=/project?support=MOV, orderNo=12, status=1, contentType=DEFAULT, residentOnly=false, subMenuList=null), MenuApiResponseVO(seqNo=2046, portalSeqNo=316, parentSeqNo=2039, name=액셀러레이팅, uri=/project?support=ACC, orderNo=14, status=1, contentType=DEFAULT, residentOnly=false, subMenuList=null), MenuApiResponseVO(seqNo=2049, portalSeqNo=316, parentSeqNo=2039, name=장소대관, uri=/rental/place, orderNo=22, status=1, contentType=DEFAULT, residentOnly=false, subMenuList=null)])'))</script>
+                        
+                        
+                            
+                            
+                                
+                                
+                            
+                        
+                            
+                        
+                            
+                                <a href="#" class="has-sub">창업서비스<i></i></a>
+                            
+                            
+                        
+                        <div class="nav-sub">
+                            <ul>
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                        <li>
+                                            <script>console.warn('TSET:',ctsApp.util.javaListToJson('MenuApiResponseVO(seqNo=2044, portalSeqNo=316, parentSeqNo=2039, name=입주, uri=/project?support=MOV, orderNo=12, status=1, contentType=DEFAULT, residentOnly=false, subMenuList=[])') )</script>
+                                            
+                                                
+                                                
+                                                    <a href="/project?support=MOV">입주</a>
+                                                
+                                            
+                                        </li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <script>console.warn('TSET:',ctsApp.util.javaListToJson('MenuApiResponseVO(seqNo=2046, portalSeqNo=316, parentSeqNo=2039, name=액셀러레이팅, uri=/project?support=ACC, orderNo=14, status=1, contentType=DEFAULT, residentOnly=false, subMenuList=[])') )</script>
+                                            
+                                                
+                                                
+                                                    <a href="/project?support=ACC">액셀러레이팅</a>
+                                                
+                                            
+                                        </li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <script>console.warn('TSET:',ctsApp.util.javaListToJson('MenuApiResponseVO(seqNo=2049, portalSeqNo=316, parentSeqNo=2039, name=장소대관, uri=/rental/place, orderNo=22, status=1, contentType=DEFAULT, residentOnly=false, subMenuList=[])') )</script>
+                                            
+                                                
+                                                
+                                                    <a href="/rental/place">장소대관</a>
+                                                
+                                            
+                                        </li>
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                            </ul>
+                        </div>
+                    </li>
+                
+            
+                
+                        
+                            
+                                
+                            
+                            
+                        
+                    <li>
+                        <script>
+                            console.info("item", ctsApp.util.javaListToJson('MenuApiResponseVO(seqNo=2040, portalSeqNo=316, parentSeqNo=0, name=창업정보, uri=/, orderNo=6, status=1, contentType=DEFAULT, residentOnly=false, subMenuList=[MenuApiResponseVO(seqNo=2070, portalSeqNo=316, parentSeqNo=2040, name=기업정보, uri=/company, orderNo=28, status=1, contentType=DEFAULT, residentOnly=false, subMenuList=null)])'))</script>
+                        
+                        
+                            
+                            
+                                
+                                
+                            
+                        
+                            
+                        
+                            
+                                <a href="#" class="has-sub">창업정보<i></i></a>
+                            
+                            
+                        
+                        <div class="nav-sub">
+                            <ul>
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                        <li>
+                                            <script>console.warn('TSET:',ctsApp.util.javaListToJson('MenuApiResponseVO(seqNo=2070, portalSeqNo=316, parentSeqNo=2040, name=기업정보, uri=/company, orderNo=28, status=1, contentType=DEFAULT, residentOnly=false, subMenuList=[])') )</script>
+                                            
+                                                
+                                                
+                                                    <a href="/company">기업정보</a>
+                                                
+                                            
+                                        </li>
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                            </ul>
+                        </div>
+                    </li>
+                
+            
+                
+                        
+                            
+                                
+                            
+                            
+                        
+                    <li>
+                        <script>
+                            console.info("item", ctsApp.util.javaListToJson('MenuApiResponseVO(seqNo=2041, portalSeqNo=316, parentSeqNo=0, name=이용알림, uri=/, orderNo=8, status=1, contentType=DEFAULT, residentOnly=false, subMenuList=[MenuApiResponseVO(seqNo=2055, portalSeqNo=316, parentSeqNo=2041, name=공지사항, uri=/board/B000090, orderNo=34, status=1, contentType=DEFAULT, residentOnly=false, subMenuList=null)])'))</script>
+                        
+                        
+                            
+                            
+                                
+                                
+                            
+                        
+                            
+                        
+                            
+                                <a href="#" class="has-sub">이용알림<i></i></a>
+                            
+                            
+                        
+                        <div class="nav-sub">
+                            <ul>
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                        <li>
+                                            <script>console.warn('TSET:',ctsApp.util.javaListToJson('MenuApiResponseVO(seqNo=2055, portalSeqNo=316, parentSeqNo=2041, name=공지사항, uri=/board/B000090, orderNo=34, status=1, contentType=DEFAULT, residentOnly=false, subMenuList=[])') )</script>
+                                            
+                                                
+                                                
+                                                    <a href="/board/B000090">공지사항</a>
+                                                
+                                            
+                                        </li>
+                                    
+                                
+                                    
+                                
+                            </ul>
+                        </div>
+                    </li>
+                
+            
+                
+                        
+                            
+                                
+                            
+                            
+                        
+                    <li>
+                        <script>
+                            console.info("item", ctsApp.util.javaListToJson('MenuApiResponseVO(seqNo=2042, portalSeqNo=316, parentSeqNo=0, name=센터소개, uri=/, orderNo=10, status=1, contentType=DEFAULT, residentOnly=false, subMenuList=[MenuApiResponseVO(seqNo=2059, portalSeqNo=316, parentSeqNo=2042, name=센터소개, uri=/info, orderNo=42, status=1, contentType=DEFAULT, residentOnly=false, subMenuList=null)])'))</script>
+                        
+                        
+                            
+                            
+                                
+                                
+                            
+                        
+                            
+                        
+                            
+                                <a href="#" class="has-sub">센터소개<i></i></a>
+                            
+                            
+                        
+                        <div class="nav-sub">
+                            <ul>
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                        <li>
+                                            <script>console.warn('TSET:',ctsApp.util.javaListToJson('MenuApiResponseVO(seqNo=2059, portalSeqNo=316, parentSeqNo=2042, name=센터소개, uri=/info, orderNo=42, status=1, contentType=DEFAULT, residentOnly=false, subMenuList=[])') )</script>
+                                            
+                                                
+                                                
+                                                    <a href="/info">센터소개</a>
+                                                
+                                            
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </div>
+                    </li>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+        </ul>
+    </nav>
+</header>
+<!-- //헤더 -->
+    
+    
+    
+    
+    
+    
+
+
+<script>
+    let postfixLang = "";
+</script>
+
+
+
+
+  
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 바디 -->
+<div class="container bg-f9">
+    
+    
+    
+    
+    
+    
+    
+    <section class="sub-visual">
+        <h2 class="hidden"></h2>
+        <div class="bx-max">
+            <p class="title"></p>
+            <p></p>
+        </div>
+    </section>
+
+    <section class="res-detail bx-max">
+        <h2 class="hidden">공고내용 상세보기</h2>
+        <div class="detail-header clearfix">
+            <p class="title">STARTUP STARRY NIGHT in Seoul 1:1 밋업(투자, O.I.) 참여기업 모집(11월 허브아워)</p>
+        </div>
+        <fieldset>
+            <legend class="hidden">채용정보 상세보기</legend>
+            <table class="table table-B mb10 ta-lt">
+                <colgroup>
+                    <col width="150">
+                    <col>
+                    <col width="150">
+                    <col>
+                </colgroup>
+                <tbody>
+                <tr class="response-row">
+                    <th>분야</th>
+                    <td>
+                        
+                            액셀러레이팅
+                        
+                    </td>
+                    <th>사업유형</th>
+                    <td>
+                        
+                            온·오프라인교육,대중견기업_오픈이노베이션,투자·정책자금 연계지원,멘토링·컨설팅,밋업
+                        
+                    </td>
+                </tr>
+                <tr class="response-row">
+                    <th>사업대상</th>
+                    <td>
+                        
+                            전체(무관)
+                        
+                    </td>
+                    <th>문의처</th>
+                    <td>
+                        
+                            startup_bi@sba.seoul.kr
+                        
+
+                        
+                            /
+                        
+
+                        
+                            0221152035
+                        
+                    </td>
+                </tr>
+                <tr class="response-row">
+                    <th>접수기간</th>
+                    <td>2026-11-04 09:00 ~ 2026-11-17 23:59</td>
+                    <th>기관명</th>
+                    <td>서울경제진흥원</td>
+                </tr>
+                <tr class="response-row">
+                    <th>첨부파일</th>
+                    <td colspan="3" class="download">
+                        
+                            
+                            <a href="/api/common/download?attachFilePath=%2fproject%2fattachment%2f261104134911%ed%8f%ac%ec%8a%a4%ed%84%b0.jpg" class="common__button attachment-btn color__bg--content outline-gray">
+                                    포스터.jpg
+                            </a>
+                        
+
+                        
+
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <div class="bx-detail">
+                            <div class="cts-editor-content">
+                                
+                                    <img src="/api/common/download?attachFilePath=/project/poster/261104134911포스터.jpg">
+                                
+                                
+                                    <p>안녕하세요<br>서울창업허브 공덕입니다<br>&nbsp;</p><p><span style="color:rgb(255,1,255);"><strong>STARTUP STARRY NIGHT in Seoul</strong></span></p><p><span style="color:rgb(255,1,255);"><strong>11월의 허브아워 참여기업 모집</strong></span></p><p>&nbsp;</p><p><span style="color:rgb(23,23,23);">서울창업허브 공덕은</span><span style="color:rgb(0,0,255);"><strong> 매월 테마별 정기 네트워크 연결</strong></span><span style="color:rgb(23,23,23);">을 하고 있습니다</span><br><span style="color:rgb(23,23,23);">(</span><strong><u>투자, 글로벌, O.I., 기타분야 등</u></strong><span style="color:rgb(23,23,23);">)</span><br><br><span style="color:rgb(23,23,23);">이에, </span><span style="color:hsl(0,75%,60%);"><strong>서울시 창업지원시설 통합 데모데이 STARTUP STARRY NIGHT in Seoul</strong></span><span style="color:rgb(23,23,23);">과 연계하여</span></p><p><span style="color:rgb(23,23,23);">11월의 허브아워(투자, O.I.)를 개최하고자 합니다</span><br><span style="color:rgb(23,23,23);">아래사항 및 포스터 참고하시어 관심있으신 분들께서는 지원 부탁드립니다</span><br><br><span style="color:rgb(255,0,0);"><strong>○ 신청링크:</strong>&nbsp;</span><a target="_blank" rel="noopener noreferrer" href="https://forms.gle/GWG9hTDADAYtkqQh6">https://forms.gle/GWG9hTDADAYtkqQh6</a></p><p><br><span style="color:rgb(23,23,23);"><strong>■ 건&nbsp; &nbsp; &nbsp; 명: STARTUP STARRY NIGHT in Seoul 1:1 밋업(2026 서울창업허브 공덕 11월의 허브아워) - 투자, O.I.</strong></span></p><p><strong>■ 주&nbsp; &nbsp; &nbsp; 제: </strong><span style="color:rgb(0,0,254);"><strong><u>투자, O.I.</u></strong></span></p><p><strong>&nbsp; &nbsp;</strong><span style="color:rgb(254,0,0);"><strong>※ 세부내용은 포스터 참조</strong></span></p><p><strong>■ 모집기간: ~ 2026. 11. 17.(화)까지</strong></p><p><strong>■ 모집대상: 서울 소재 스타트업(업력은 파트너별 상이)</strong></p><p><span style="color:rgb(23,23,23);"><strong>&nbsp; &nbsp;※ 서울 소재 본점, 지점 혹은 기업부설연구소 中 1가지라도 해당 될 경우 서울 소재로 인정</strong></span></p><p><strong>■ 개최일자: 2026. 11. 25.(수) 15:00 ~ 18:00, 기업당 30분 내외</strong></p><p><strong>&nbsp; &nbsp; &nbsp; &nbsp;※ 접수 현황에 따라 일정 변경 될 수 있음</strong></p><p><strong>■&nbsp;개최장소: 노보텔 앰배서더 서울 동대문 호텔 B1 그랜드볼룸 (서울 중구 을지로6가 58-5)</strong></p><p><strong>■ 선정안내: 2026. 11. 18.(수) ~ 11. 20.(금) ※ 일정 확정 후 순차적으로 안내 예정</strong></p><p><span style="color:rgb(255,1,255);"><strong>■&nbsp;선정규모: 파트너당 6개사 내외(총 30개사 내외)</strong></span></p><p><span style="color:rgb(255,1,255);"><strong>■ 티켓사이즈/투자라운드 등은 포스터 참조</strong></span></p><p>&nbsp;</p><p>&nbsp;</p><p><strong>■ 문의사항</strong></p><p><strong>&nbsp; ○ 주관기관: 서울경제진흥원 창업허브1팀 / 02-2115-2033, 2035 / </strong><a href="mailto:startup_bi@sba.seoul.kr"><strong>startup_bi@sba.seoul.kr</strong></a></p><p><strong>&nbsp; ○ 운영지원: 낭만고래 / 02-6959-4683~6 / romanwhales_1@naver.com</strong></p><p>&nbsp;</p><p><strong>■ 유의사항</strong></p><p>&nbsp; ○ 투자/O.I. 밋업 선정 사실이 <span style="color:rgb(0,0,255);"><strong>투자 및 오픈이노베이션 실시 등의 최종선정으로 무조건 직결되는 것은 아닙니다</strong></span><br>&nbsp; ○ <span style="color:rgb(0,0,255);"><strong>선정 안내 후, 개최까지 소요되는 시간이 짧으므로</strong></span> 유의 바랍니다<br>&nbsp;&nbsp;</p><p>감사합니다<br>서울창업허브 공덕 드림.</p>
+                                
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </fieldset>
+        <div class="btn-group">
+            
+                
+                    
+                        <a href="#" onclick="openLink('https://forms.gle/GWG9hTDADAYtkqQh6', '_blank'); return false;" class="btn-A md">바로가기</a>
+                    
+                    
+                
+            
+            
+            
+                <button class="btn-D md" onclick="location.href='/project?support=ACC'">목록</button>
+            
+            
+        </div>
+    </section>
+</div>
+<!-- //바디 -->
+  
+  
+  
+  
+  
+  
+
+
+<script>
+
+  /** 상세 보기 신청 버튼 [data-apply-btn]*/
+  /** 날짜 계산으로 신청 버튼 없애기*/
+
+  let detailController={
+    applyBtn : null,
+    receiptBeginDate : `2026-11-04 09:00`,
+    receiptEndDate : `2026-11-17 23:59`,
+    today : null,
+    init : function (){
+      this.applyBtn = document.querySelector('[data-apply-btn]');
+      this.today = moment("2026-11-12 09:00:06").format('yyyy-MM-DD HH:mm');
+      if(this.receiptBeginDate > this.today || this.today > this.receiptEndDate){
+        this.applyBtn.remove();
+      }
+    }
+  };
+
+  (function (){
+    detailController.init();
+  })()
+
+  function openLink(url) {
+    if (!url.startsWith('http://') && !url.startsWith('https://')) {
+      url = 'http://' + url;
+    }
+    window.open(url, '_blank');
+  }
+
+</script>
+
+
+
+
+
+    
+        
+
+
+<!-- 푸터 -->
+<footer class="footer">
+  <div class="footer-area bx-max clearfix">
+
+    
+      
+      
+      <h2 style="filter: grayscale(1);background:url('/api/common/download?attachFilePath=%2fold%2fcenter%2flogo22.png') 0 50% / 106px auto no-repeat; background-position: top left; height:107px !important">
+
+      </h2>
+    
+    
+    <div class="bx-fl">
+      <div>
+        
+          <span>상호 : (재)서울경제진흥원</span>&nbsp;&nbsp;
+        
+        
+          <span>사업자등록번호 : <span id="siteOperBizLicenseNo"></span></span>&nbsp;&nbsp;
+        
+        
+          <span>대표자 : 박보경</span>
+        
+      </div>
+      <div>
+        
+          <span>주소 : 서울시 마포구 백범로 31길 21 서울창업허브</span>&nbsp;&nbsp;
+        
+        
+          <span>대표전화 : 0221152000</span>&nbsp;&nbsp;
+        
+        
+          <span>이메일 : startup_bi@sba.seoul.kr</span>&nbsp;&nbsp;
+        
+        
+          <span>정보책임 담당자 : 서울창업허브 공덕</span>
+        
+      </div>
+      <div>
+        <span>시스템•오류 문의 : 02-6952-3125 | help@startup-plus.kr (오전10시~오후5시 / 주말, 공휴일 휴무)</span>
+      </div>
+      <div>
+        Copyright ©All Rights Reserved.
+      </div>
+      <br/>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="bx-fr">
+      <div class="f-terms ta-rt">
+        <a href="/term">개인정보취급방법</a>
+        <a href="/term?type=2">이용약관</a>
+
+      </div>
+
+
+
+
+
+
+    </div>
+  </div>
+</footer><!-- //푸터 -->
+    
+    
+    
+    
+    
+    
+
+</body>
+<script>
+    
+        
+            $('#siteOperBizLicenseNo').text(ctsApp.util.autoHyphenValue(`1028209623`,2))
+        
+        
+    
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/web/assets/js/plugins/jquery-ui.min.js"></script>
+<div class="layer-container">
+  <div class="layer-content">
+    
+    
+    <div class="auto_logout__wrap">
+      <div class="logout_title">
+        <p>
+          <span>자동 로그아웃</span> 안내
+        </p>
+      </div>
+      <div class="logout_content">
+        <div>
+          자동 로그아웃 남은 시간: <span class="logout_time"></span>
+        </div>
+        <div>
+          고객님의 안전한 서비스 이용을 위해<br/>
+          로그인 후 약 2시간 동안 서비스 이용이 없어 로그아웃 합니다.<br/><br/>
+          로그인 시간을 연장하시겠습니까?
+        </div>
+        <div class="button__wrap">
+          <div class="logout_prepare">
+            <button class="common__button color-purple"
+                    onclick="javascript:logoutExtend()">
+              연장하기
+            </button>
+            <button class="common__button" onclick="javascript:logout()">
+              로그아웃
+            </button>
+          </div>
+          <div class="logout_ok">
+            <button class="common__button color-purple"
+                    style="padding: 17px 58px;"
+                    onclick="location.href='/cms_for_portal/process/etc/login/list.do'">
+              다시 로그인
+            </button>
+            <button class="common__button"
+                    style="padding: 17px 50px;"
+                    onclick="location.href='/'">
+              메인화면 이동
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="layer-popup-close" onclick="javascript:logoutPopupClose()"></div>
+</div>
+<script>
+  function logoutPopupOpen() {
+    document.querySelector(".layer-container").style.display = "block";
+    document.querySelector(".layer-container").style.opacity = 1;
+  }
+  function logoutPopupClose() {
+    document.querySelector(".layer-container").style.display = "none";
+    document.querySelector(".layer-container").style.opacity = 0;
+  }
+  function logoutExtend() {
+    // self.location = "/common/sessionExpend.do";
+    $.ajax({
+      type: "POST",
+      url: "/front/session/extend.jsp",
+      success: function(data) {
+        logoutPopupClose();
+        sessionTime = parseInt(7200);
+        popupView = false;
+        
+        
+        
+        
+        
+        
+        
+      },
+      fail: function (error) {
+        console.log(error)
+        self.location = "/";
+      }
+    });
+  }
+  function logout() {
+    self.location = "/logout";
+  }
+  $(function() {
+    $(".layer-container").draggable({
+      containment: '.page__index',
+      scroll: false
+    });
+  });
+</script>
+
+
+
+
+
+
+</html>
+
+
+

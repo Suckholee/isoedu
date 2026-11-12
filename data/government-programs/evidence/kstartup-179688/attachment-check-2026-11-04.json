@@ -1,0 +1,55 @@
+[
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/v1_9HryQumpOGS5tg5wVjKzIOSpIHjQNLWG98Z8lXQJQYr5Q",
+    "verifiedAt": "2026-11-04",
+    "status": "downloaded",
+    "sha256": "6a463c52f183dd1bd8d388fca66cf71782b395172a87af53c01a0324b5b5b26d",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 198387,
+    "format": "PDF",
+    "file": "attachment-01.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 1847,
+    "review": {
+      "at": "2026-11-04T00:45:52.940286+00:00",
+      "method": "text",
+      "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+    }
+  },
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/v1eom0AnAZQLFhsSpgCEm1LJM55KFpYbnc13JdxN2sSYm39A",
+    "verifiedAt": "2026-11-04",
+    "status": "downloaded",
+    "sha256": "911c704a2155ff67c6804a1880c937cf2f9195b486bc7de46cd43d23d1f2108b",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 1970072,
+    "format": "IMAGE",
+    "file": "attachment-02.bin",
+    "contentType": "image/png;charset=UTF-8",
+    "review": {
+      "at": "2026-11-04T00:45:52.940286+00:00",
+      "method": "visual",
+      "scope": "전체 포스터 시각 검토·동반 텍스트 대조; 긴 이미지 작은글씨 전부검증아님"
+    }
+  },
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/v13DjxDTnu0vLQWpkmu7YWYNslkjRM-Wo5kzenU98q5tD_pA",
+    "verifiedAt": "2026-11-04",
+    "status": "downloaded",
+    "sha256": "220f81cea3466358e0e523a8c3e3b78b721413d16a185f291c9f2a6779149182",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 1141,
+    "format": "OTHER",
+    "file": "attachment-03.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "review": {
+      "at": "2026-11-04T00:45:52.940286+00:00",
+      "method": "text",
+      "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+    }
+  }
+]

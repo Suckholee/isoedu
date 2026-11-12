@@ -1,0 +1,42 @@
+[
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/v11zsMyR8MFJaIr1bYZG9bJB1tLucxaQYO6k1kOW82B_CxPw",
+    "verifiedAt": "2026-11-05",
+    "status": "downloaded",
+    "sha256": "c09c208ed07665a26c2fb8c20a93fd2c0e2a2b25e088f912f83ca0e72cf454ce",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 932920,
+    "format": "HWPX",
+    "file": "attachment-01.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 15175
+  },
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/v1igyNC3oXMBm68zd1BdKcSF4JB2ESIYTybpI7jBfCO5Hu6A",
+    "verifiedAt": "2026-11-05",
+    "status": "downloaded",
+    "sha256": "2f564b9dfaf4fb850b012de8357c04e1ca30174c5d36d1ee498af1a612fa6613",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 67898,
+    "format": "PDF",
+    "file": "attachment-02.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 1008
+  },
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/v1KJtTw-rVXIJzVJtyesdY-ymtkOY_FNB_rdTKgggNh4yHng",
+    "verifiedAt": "2026-11-05",
+    "status": "downloaded",
+    "sha256": "8128e4af30bd0c30571eaeb8039b0be8a903e37064a2699fa7338735c4dde968",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 339131,
+    "format": "IMAGE",
+    "file": "attachment-03.bin",
+    "contentType": "image/jpeg;charset=UTF-8"
+  }
+]

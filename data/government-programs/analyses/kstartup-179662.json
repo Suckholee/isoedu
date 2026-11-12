@@ -1,0 +1,388 @@
+{
+  "programId": "kstartup-179662",
+  "title": "한국기술교육대학교 오픈이노베이션 프로그램 참여기업 모집 통합 공고",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-10T00:14:45.458702+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179662",
+  "reviewScope": "공고PDF9쪽본문/신청/동의전체텍스트·HWP제안/동의각별도전문·PDF부록스캔8~9쪽및포스터전체시각/대체TXT대조·상세본문;2026-11-10",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1dCvFZ0WqOEYdXC14lev74O55UiRE3ADgyXg-10Z0amJtWA",
+      "verifiedAt": "2026-11-10",
+      "status": "downloaded",
+      "sha256": "7d49227c37e8e41067fe15bba86da999e74f62567be49b0b955a55bed0601405",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 738428,
+      "format": "PDF",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 5316,
+      "review": {
+        "at": "2026-11-10T00:14:45.458702+00:00",
+        "scope": "공고PDF9쪽본문/신청/동의전체텍스트·HWP제안/동의각별도전문·PDF부록스캔8~9쪽및포스터전체시각/대체TXT대조·상세본문;2026-11-10",
+        "method": "text/visual scope recorded in reviewScope"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1Pdd8FMCQjz4Xjfz863Zq94p3d_TzO4Src434vvS3vvPtUA",
+      "verifiedAt": "2026-11-10",
+      "status": "downloaded",
+      "sha256": "912850ab9968af7b3d0b0eefa7297caeb4db0316fbbc9b0cb6b5802378e29634",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 81408,
+      "format": "HWP",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 2496,
+      "review": {
+        "at": "2026-11-10T00:14:45.458702+00:00",
+        "scope": "공고PDF9쪽본문/신청/동의전체텍스트·HWP제안/동의각별도전문·PDF부록스캔8~9쪽및포스터전체시각/대체TXT대조·상세본문;2026-11-10",
+        "method": "text/visual scope recorded in reviewScope"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1OtiVg7rKpfQdgal0X0DLlVrXLbth2R-fCm-BEA3mSczAyQ",
+      "verifiedAt": "2026-11-10",
+      "status": "downloaded",
+      "sha256": "21835bc7263faecf04d50df38d7193735689e061bcbc058a7d9e5194cdb5e664",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 632739,
+      "format": "IMAGE",
+      "file": "attachment-03.bin",
+      "contentType": "image/png;charset=UTF-8",
+      "review": {
+        "at": "2026-11-10T00:14:45.458702+00:00",
+        "scope": "공고PDF9쪽본문/신청/동의전체텍스트·HWP제안/동의각별도전문·PDF부록스캔8~9쪽및포스터전체시각/대체TXT대조·상세본문;2026-11-10",
+        "method": "visual"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1owHQde2-b880gLRmXqC5euuXzzVeJMR7wiXMrzEGoWJCkg",
+      "verifiedAt": "2026-11-10",
+      "status": "downloaded",
+      "sha256": "18e53afb517458bb2ce47ec69d65bcc4871121547ca427abcc03ca1def14debe",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 1710,
+      "format": "TEXT",
+      "file": "attachment-04.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "textFile": "attachment-04.bin.txt",
+      "review": {
+        "at": "2026-11-10T00:14:45.458702+00:00",
+        "scope": "공고PDF9쪽본문/신청/동의전체텍스트·HWP제안/동의각별도전문·PDF부록스캔8~9쪽및포스터전체시각/대체TXT대조·상세본문;2026-11-10",
+        "method": "text/visual scope recorded in reviewScope"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/v1dCvFZ0WqOEYdXC14lev74O55UiRE3ADgyXg-10Z0amJtWA": "7d49227c37e8e41067fe15bba86da999e74f62567be49b0b955a55bed0601405",
+    "https://www.k-startup.go.kr/afile/fileDownload/v1Pdd8FMCQjz4Xjfz863Zq94p3d_TzO4Src434vvS3vvPtUA": "912850ab9968af7b3d0b0eefa7297caeb4db0316fbbc9b0cb6b5802378e29634",
+    "https://www.k-startup.go.kr/afile/fileDownload/v1OtiVg7rKpfQdgal0X0DLlVrXLbth2R-fCm-BEA3mSczAyQ": "21835bc7263faecf04d50df38d7193735689e061bcbc058a7d9e5194cdb5e664",
+    "https://www.k-startup.go.kr/afile/fileDownload/v1owHQde2-b880gLRmXqC5euuXzzVeJMR7wiXMrzEGoWJCkg": "18e53afb517458bb2ce47ec69d65bcc4871121547ca427abcc03ca1def14debe"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-10T00:14:45.458702+00:00",
+  "eligibility": {
+    "summary": "충남신성장동력산업창업기업·수요과제에맞는기술솔루션.사업자등록소재기준/충남외는협약전일까지이전.데이터/환경착수전확보·단일가설/최소범위/정량성과/성공판정사전서면확정.수요기업별HardGate·IP권리·PoC레퍼런스/규제등부록개별검토필요.포럼참석과별도선정사업.",
+    "companyFields": [
+      "회사소재/이전가능",
+      "설립/KSIC신성장분야",
+      "대상수요기업과제",
+      "TRL/개발단계/상용납품실적",
+      "인증허가/IP권리",
+      "기술/의약기기등규제",
+      "연매출/고용/투자단계",
+      "검증데이터환경/인력12주확보",
+      "정량기준/자금/일정",
+      "의사결정참석/NDA/IP데이터합의"
+    ],
+    "reference": "PDF1/3과제요건·8~9수요처이미지; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179662"
+  },
+  "exclusions": {
+    "items": [
+      "착수데이터/환경미확보불인정",
+      "단일가설/범위최소화/판정기준변경불가",
+      "주간점검등미성실지원중단",
+      "4/8주중간판정조기종료가능",
+      "수요처별필수Gate/권리확보"
+    ],
+    "reference": "PDF2~3이행/데이터기준·8~9Gate; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179662"
+  },
+  "support": {
+    "summary": "과제당2000만원내외/공급기업100%사용·협약후12주PoC.재료/원료데이터/일부외주공정비·시험인증/멘토링/IP수수료집행.중간결과순차지급25/50/100%는누적/단계정확의미기관확인필요·합175%해석금지.주간회의/4·8주게이트,13~14주결과/15~16주후속/16주정산.자부담률미기재·계약투자보장아님.",
+    "reference": "PDF2/4예산/집행비목; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179662"
+  },
+  "period": {
+    "start": "2026-10-29",
+    "end": "2026-11-27",
+    "deadlineTime": "21:00",
+    "timezone": "Asia/Seoul",
+    "reference": "PDF3수요별마감·4접수21시; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179662",
+    "rounds": [
+      {
+        "buyer": "세라젬/CP그룹·DTGO",
+        "end": "2026-11-13",
+        "deadlineTime": "21:00",
+        "reference": "PDF3~4"
+      },
+      {
+        "buyer": "엠아이텍/아이티센글로벌/마루베니",
+        "end": "2026-11-27",
+        "deadlineTime": "21:00",
+        "reference": "PDF3~4"
+      },
+      {
+        "buyer": "상상인그룹",
+        "end": null,
+        "status": "추후별도공고",
+        "reference": "PDF3"
+      }
+    ]
+  },
+  "application": {
+    "summary": "이메일 heron100@koreatech.ac.kr .세라젬/CP·DTGO 11/13 21시,엠아이텍/아이티센/마루베니11/27 21시·상상인별도미정.통합마감11/27로조기차수확대금지.서류→2차발표수요당3~4→수요포함3차과제당1→3자협약.11/17세라젬CP/12/17아이티센/2027.1.14상상인마루베니발표예정·일정변경가능.",
+    "reference": "PDF2~4절차/접수; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179662"
+  },
+  "requiredDocuments": [
+    {
+      "name": "공급기업제안서",
+      "condition": "필수/대표서명·날인/별첨1지정",
+      "reference": "PDF4~6·HWP별첨1"
+    },
+    {
+      "name": "회사·기술소개자료",
+      "condition": "필수",
+      "reference": "PDF4"
+    },
+    {
+      "name": "개인정보수집이용·제3자제공동의",
+      "condition": "필수·보유5년/삭제요청·서명",
+      "reference": "PDF7·HWP별첨2"
+    },
+    {
+      "name": "사업자등록증",
+      "condition": "필수",
+      "reference": "PDF4표5"
+    },
+    {
+      "name": "최근3년재무제표또는부가세표준증명",
+      "condition": "공고PDF필수목록/상세해당시표기충돌",
+      "reference": "PDF4표6·상세제출"
+    },
+    {
+      "name": "인증·특허목록·적용사례",
+      "condition": "해당시필수",
+      "reference": "PDF4·HWP붙임3"
+    },
+    {
+      "name": "NDA/IP데이터권한합의·LOI",
+      "condition": "착수전필요조건/수요기업성공4주내발주판단조항",
+      "reference": "PDF3·HWP확인"
+    },
+    {
+      "name": "주간/중간/최종검증·정산자료",
+      "condition": "선정후이행단계",
+      "reference": "PDF2"
+    }
+  ],
+  "businessPlan": {
+    "format": "HWP별첨1제안서/2동의·PDF5~7중복양식",
+    "limit": "총쪽수/글꼴제한미명시·문제/해결각2~3문장·PoC범위1~2문장",
+    "sections": [
+      {
+        "name": "접수기업",
+        "items": [
+          "지원수요기업/분야·대표/설립/매출고용/담당"
+        ],
+        "limit": "총쪽수/글꼴제한미명시·문제/해결각2~3문장·PoC범위1~2문장"
+      },
+      {
+        "name": "솔루션",
+        "items": [
+          "TRL5~8/개발단계/인증인허가IP/납품정량레퍼런스"
+        ],
+        "limit": "총쪽수/글꼴제한미명시·문제/해결각2~3문장·PoC범위1~2문장"
+      },
+      {
+        "name": "제안",
+        "items": [
+          "고정한문장문제해결/수요과제재정의/방식/경쟁대안차이"
+        ],
+        "limit": "총쪽수/글꼴제한미명시·문제/해결각2~3문장·PoC범위1~2문장"
+      },
+      {
+        "name": "적용요건",
+        "items": [
+          "데이터설비샘플인력요청/정량현재목표근거"
+        ],
+        "limit": "총쪽수/글꼴제한미명시·문제/해결각2~3문장·PoC범위1~2문장"
+      },
+      {
+        "name": "PoC",
+        "items": [
+          "검증범위기간비용유무상/산출물/성공수치"
+        ],
+        "limit": "총쪽수/글꼴제한미명시·문제/해결각2~3문장·PoC범위1~2문장"
+      },
+      {
+        "name": "협업",
+        "items": [
+          "공동개발납품라이선스OEM투자M&A/의사결정자참석·NDA·IP데이터서면"
+        ],
+        "limit": "총쪽수/글꼴제한미명시·문제/해결각2~3문장·PoC범위1~2문장"
+      }
+    ],
+    "reference": "HWP별첨1제안전체·PDF5~6; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179662"
+  },
+  "evaluation": {
+    "summary": "적격서류·2차발표내부2/외부3·수요담당포함3차실제니즈매칭.수치평가배점미공개.부록8~9쪽:엠아이텍의료기기소재/시험/생산/AI/데이터/제조,마루베니일본Pain/상용/검증,세라젬6종서킷/저소음저충격스마트·A/S,CPCloud11/MQDC크리에이터웰빙공간검증Gate/매출인력단계는권장항목과필수구분.",
+    "reference": "PDF2선발매칭표·PDF8~9; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179662"
+  },
+  "contact": {
+    "name": "한국기술교육대학교 앵커사업단 heron100@koreatech.ac.kr",
+    "reference": "PDF4접수문의; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179662"
+  },
+  "unresolved": [
+    "25/50/100%지급은단계또는누적의미미명시·지급회차/정산비율확인필요",
+    "PDF4재무3년필수목록대상세해당시표기충돌·제출조건확인",
+    "본문매칭2차대선정단계3차표표현차이·평가배점/발표분량미공개",
+    "부록8~9이미지시각검토·세부HardGate수치/최신수요기업니즈별추가확인·상상인모집미정"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179662",
+    "companyId": null,
+    "permission": "권한회사프로필확보후근거별검토·현재신청가능확정아님",
+    "steps": [
+      "회사필드/증빙확인",
+      "충돌/미확인해결",
+      "S12양식·S13회사정보로서류/계획작성"
+    ]
+  },
+  "relatedProgramIds": [
+    "kstartup-179736"
+  ],
+  "applicationChecks": [],
+  "evidenceReferences": [
+    {
+      "field": "eligibility",
+      "reference": "PDF1/3과제요건·8~9수요처이미지",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179662",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1dCvFZ0WqOEYdXC14lev74O55UiRE3ADgyXg-10Z0amJtWA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1Pdd8FMCQjz4Xjfz863Zq94p3d_TzO4Src434vvS3vvPtUA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1OtiVg7rKpfQdgal0X0DLlVrXLbth2R-fCm-BEA3mSczAyQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1owHQde2-b880gLRmXqC5euuXzzVeJMR7wiXMrzEGoWJCkg"
+      ]
+    },
+    {
+      "field": "exclusions",
+      "reference": "PDF2~3이행/데이터기준·8~9Gate",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179662",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1dCvFZ0WqOEYdXC14lev74O55UiRE3ADgyXg-10Z0amJtWA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1Pdd8FMCQjz4Xjfz863Zq94p3d_TzO4Src434vvS3vvPtUA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1OtiVg7rKpfQdgal0X0DLlVrXLbth2R-fCm-BEA3mSczAyQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1owHQde2-b880gLRmXqC5euuXzzVeJMR7wiXMrzEGoWJCkg"
+      ]
+    },
+    {
+      "field": "support",
+      "reference": "PDF2/4예산/집행비목",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179662",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1dCvFZ0WqOEYdXC14lev74O55UiRE3ADgyXg-10Z0amJtWA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1Pdd8FMCQjz4Xjfz863Zq94p3d_TzO4Src434vvS3vvPtUA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1OtiVg7rKpfQdgal0X0DLlVrXLbth2R-fCm-BEA3mSczAyQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1owHQde2-b880gLRmXqC5euuXzzVeJMR7wiXMrzEGoWJCkg"
+      ]
+    },
+    {
+      "field": "period",
+      "reference": "PDF3수요별마감·4접수21시",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179662",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1dCvFZ0WqOEYdXC14lev74O55UiRE3ADgyXg-10Z0amJtWA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1Pdd8FMCQjz4Xjfz863Zq94p3d_TzO4Src434vvS3vvPtUA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1OtiVg7rKpfQdgal0X0DLlVrXLbth2R-fCm-BEA3mSczAyQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1owHQde2-b880gLRmXqC5euuXzzVeJMR7wiXMrzEGoWJCkg"
+      ]
+    },
+    {
+      "field": "application",
+      "reference": "PDF2~4절차/접수",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179662",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1dCvFZ0WqOEYdXC14lev74O55UiRE3ADgyXg-10Z0amJtWA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1Pdd8FMCQjz4Xjfz863Zq94p3d_TzO4Src434vvS3vvPtUA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1OtiVg7rKpfQdgal0X0DLlVrXLbth2R-fCm-BEA3mSczAyQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1owHQde2-b880gLRmXqC5euuXzzVeJMR7wiXMrzEGoWJCkg"
+      ]
+    },
+    {
+      "field": "requiredDocuments",
+      "reference": "PDF4표·HWP별첨1/2",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179662",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1dCvFZ0WqOEYdXC14lev74O55UiRE3ADgyXg-10Z0amJtWA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1Pdd8FMCQjz4Xjfz863Zq94p3d_TzO4Src434vvS3vvPtUA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1OtiVg7rKpfQdgal0X0DLlVrXLbth2R-fCm-BEA3mSczAyQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1owHQde2-b880gLRmXqC5euuXzzVeJMR7wiXMrzEGoWJCkg"
+      ]
+    },
+    {
+      "field": "businessPlan",
+      "reference": "HWP별첨1제안전체·PDF5~6",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179662",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1dCvFZ0WqOEYdXC14lev74O55UiRE3ADgyXg-10Z0amJtWA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1Pdd8FMCQjz4Xjfz863Zq94p3d_TzO4Src434vvS3vvPtUA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1OtiVg7rKpfQdgal0X0DLlVrXLbth2R-fCm-BEA3mSczAyQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1owHQde2-b880gLRmXqC5euuXzzVeJMR7wiXMrzEGoWJCkg"
+      ]
+    },
+    {
+      "field": "evaluation",
+      "reference": "PDF2선발매칭표·PDF8~9",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179662",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1dCvFZ0WqOEYdXC14lev74O55UiRE3ADgyXg-10Z0amJtWA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1Pdd8FMCQjz4Xjfz863Zq94p3d_TzO4Src434vvS3vvPtUA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1OtiVg7rKpfQdgal0X0DLlVrXLbth2R-fCm-BEA3mSczAyQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1owHQde2-b880gLRmXqC5euuXzzVeJMR7wiXMrzEGoWJCkg"
+      ]
+    },
+    {
+      "field": "contact",
+      "reference": "PDF4접수문의",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179662",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1dCvFZ0WqOEYdXC14lev74O55UiRE3ADgyXg-10Z0amJtWA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1Pdd8FMCQjz4Xjfz863Zq94p3d_TzO4Src434vvS3vvPtUA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1OtiVg7rKpfQdgal0X0DLlVrXLbth2R-fCm-BEA3mSczAyQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1owHQde2-b880gLRmXqC5euuXzzVeJMR7wiXMrzEGoWJCkg"
+      ]
+    }
+  ],
+  "attachmentManifest": "evidence/kstartup-179662/attachment-check-2026-11-10.json"
+}

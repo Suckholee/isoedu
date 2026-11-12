@@ -1,0 +1,142 @@
+{
+  "at": "2026-10-21T00:17:19.528995+00:00",
+  "stage": "daily-attachment-analysis",
+  "status": "partial-success",
+  "scope": {
+    "listing": "K-Startup15·중기부10 각첫페이지",
+    "newRecords": 10,
+    "retainedRecords": 36,
+    "detailPages": 36,
+    "newAnalyses": [
+      "kstartup-179537",
+      "kstartup-177421",
+      "kstartup-179531",
+      "kstartup-179522",
+      "kstartup-179538",
+      "mss-1071870"
+    ],
+    "rechecks": [
+      "kstartup-179524",
+      "mss-1071550"
+    ],
+    "attachmentsDownloaded": 18,
+    "attachmentsFailed": 0,
+    "remaining": 36,
+    "analysisFiles": 17,
+    "complete": 0,
+    "partialQueue": 16,
+    "changedQueue": 1,
+    "pendingQueue": 19,
+    "hashCoverage": "8공고18첨부다운로드:기존6첨부동일확인(바이오PDF는기존해시와재시도값대조),나머지기준선;전36공고모든첨부해시검증아님",
+    "supplementalSources": [
+      {
+        "source": "demo-form-a",
+        "url": "https://forms.gle/1ENie8Cb9TMR1cgo7",
+        "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdSKMcs0H_LyfDatWEDD0oenF7psXlcmuvVfpsM2uIHhsD3bw/viewform?usp=send_form",
+        "http": 200,
+        "bytes": 100865,
+        "scope": "공개 페이지 접근만; 상세 전건 수집 아님"
+      },
+      {
+        "source": "demo-form-b",
+        "url": "https://forms.gle/YtTmJXaMVRiiEDpQ8",
+        "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdSKMcs0H_LyfDatWEDD0oenF7psXlcmuvVfpsM2uIHhsD3bw/viewform?usp=send_form",
+        "http": 200,
+        "bytes": 101018,
+        "scope": "공개 페이지 접근만; 상세 전건 수집 아님"
+      },
+      {
+        "source": "ydp-form",
+        "url": "https://naver.me/xtNRxTJj",
+        "finalUrl": "https://form.naver.com/response/E23OXfKn7gm",
+        "http": 200,
+        "bytes": 2403,
+        "scope": "공개 페이지 접근만; 상세 전건 수집 아님"
+      },
+      {
+        "source": "db-form",
+        "url": "https://forms.gle/AtJXW8TGx4LuRToA9",
+        "error": "HTTP Error 401: Unauthorized"
+      },
+      {
+        "source": "ceo-form",
+        "url": "https://forms.gle/3Ufzv6WDUMDstPxC7",
+        "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfGopLdfUz5KzaILycc_QOlZtxmeoNUyncaOhPdHTLoW04_Pg/viewform?usp=send_form",
+        "http": 200,
+        "bytes": 113922,
+        "scope": "공개 페이지 접근만; 상세 전건 수집 아님"
+      },
+      {
+        "source": "school-form",
+        "url": "https://www.cnsinbo.co.kr/education.html",
+        "finalUrl": "https://www.cnsinbo.co.kr/education.html",
+        "http": 200,
+        "bytes": 87,
+        "scope": "공개 페이지 접근만; 상세 전건 수집 아님"
+      },
+      {
+        "source": "bizinfo",
+        "url": "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/list.do",
+        "finalUrl": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200View.do?null",
+        "http": 200,
+        "bytes": 111559,
+        "scope": "공개 페이지 접근만; 상세 전건 수집 아님"
+      },
+      {
+        "source": "iris",
+        "url": "https://www.iris.go.kr/contents/retrieveBsnsAncmBtinSituListView.do",
+        "finalUrl": "https://www.iris.go.kr/contents/retrieveBsnsAncmBtinSituListView.do",
+        "http": 200,
+        "bytes": 111904,
+        "scope": "공개 페이지 접근만; 상세 전건 수집 아님"
+      },
+      {
+        "source": "kotra",
+        "url": "https://kotra.or.kr/subList/20000020753",
+        "finalUrl": "https://kotra.or.kr/subList/20000020753",
+        "http": 200,
+        "bytes": 152169,
+        "scope": "공개 페이지 접근만; 상세 전건 수집 아님"
+      }
+    ]
+  },
+  "importantChanges": [
+    "mss-1071870은mss-1071619동일3차모집연장,PDF1·3쪽10/30 18시확인·기존ID유지",
+    "충북데모데이상세/포스터10/22 vs실제폼10/29충돌,단축주소둘은동일폼으로해결",
+    "동네창업학교컨설팅창업연도1쪽/2쪽불일치"
+  ],
+  "failures": [
+    "충남입주상세이번HTML첨부0:기존증거/링크유지·마감추정안함",
+    "DB손보구글폼401·충남재단교육페이지87바이트/빈내용·네이버폼JS셸로신청필드미확인",
+    "최초PDF/포스터3건타임아웃후재시도성공",
+    "연장공고28쪽중1/3쪽시각확인;나머지전체대조미완료",
+    "기존바이오16쪽스캔OCR미해결유지"
+  ],
+  "apiValidation": {
+    "at": "2026-10-21T00:16:42.922Z",
+    "status": 200,
+    "total": 36,
+    "analyses": 17,
+    "checked": [
+      "kstartup-179537",
+      "kstartup-177421",
+      "kstartup-179531",
+      "kstartup-179522",
+      "kstartup-179538",
+      "mss-1071870"
+    ],
+    "extension": {
+      "id": "mss-1071870",
+      "date": "2026-10-30",
+      "time": "18:00"
+    },
+    "scope": "route.GET직접호출;화면미검증",
+    "localHttp": {
+      "error": "fetch failed"
+    }
+  },
+  "companyMatching": "권한회사프로필미확보·판정안함",
+  "screenValidation": "미검증",
+  "deployment": "없음",
+  "schemaChanges": "없음"
+}

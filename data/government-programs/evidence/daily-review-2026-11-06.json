@@ -1,0 +1,139 @@
+{
+  "at": "2026-11-06T01:30:04.673492+00:00",
+  "date": "2026-11-06",
+  "automationId": "isoedu",
+  "stage": "daily-analysis-summary",
+  "summary": "2026-11-06 정기 실행: K-Startup15·중기부10 각 첫 페이지·신규10·누적148. 표준상세수집26성공/122실패(fetch failed); 공개상세 재시도12건성공(신규10/기존2), 실패이력보존. 중동규격/아산ScaleUP/BuildUP/M+입주/KOICA행사5건 실제공고첨부9개와 추가공식5파일(ZIP내4개포함) 분석후partial. 중동지원최대1500만원·자부담지원금10%이상/VAT전액·서류3개월·마감15:59대16:00충돌 및 공고/신청HWP2URL400 재시도. 아산HWP2종 원문확인·포스터2026대대체TEXT2027오류·ScaleUP이전2027.12.31대기간내충돌·BuildUP3쪽내외/개요2쪽/PSST·23~25매출고용. M+PDF8쪽·ZIP공고중복대조/HWP3종·신산업27PDF확인,시설사진/스캔목록시각;계획10쪽내외·예비창업등록/이전기한/제외범위·304호최소임대료충돌. KOICA등록폼/개인정보1년/상담예약후속URL미확인·구헤더잔존기록. 총15공고첨부해시확인·동일해시10(기존임박2건6개포함)·변경0. 신규10중3분석·나머지7상세/첨부링크확보까지만. 큐{'partial': 96, 'pending': 45, 'changed': 7}·잔여148·이번5건11/7재시도. 기업마당/IRIS/KOTRA HTTP200 공개자료보존·기업마당리다이렉트포함·전체목록수집아님. route.GET200·148공고96분석·5건마감/달력배치검증;localhost3001연결실패·화면미검증. G01→S03→S12/S13 ID/회사필드/근거/권한인계보존·회사적합판정/DB변경/배포/외부발송없음. 최종공개상세확보로 미분석신규7건 changed 분류, 원문첨부검토는 다음실행대기; 미복구상세실패110건 attempts/error/11월7일이후재시도 큐저장.",
+  "coverage": {
+    "k-startup": "first page15",
+    "mss": "first page10",
+    "newRecords": 10,
+    "totalRecords": 148,
+    "standardDetailSuccess": 26,
+    "standardDetailFailures": 122,
+    "publicDetailRetrySuccess": 12,
+    "fullCollection": false
+  },
+  "reviewedProgramIds": [
+    "kstartup-179723",
+    "kstartup-179737",
+    "kstartup-179739",
+    "kstartup-179703",
+    "kstartup-179642"
+  ],
+  "actualReviewedNoticeAttachments": 9,
+  "additionalFilesReviewed": 5,
+  "zipMembers": 4,
+  "additionalDownloadFailures": 2,
+  "unreviewedNewRecords": 7,
+  "hashDownloads": 15,
+  "sameExistingHashes": 10,
+  "changedHashes": 0,
+  "queueCounts": {
+    "partial": 96,
+    "pending": 45,
+    "changed": 7
+  },
+  "remaining": 148,
+  "nextRetryAt": "2026-11-07T09:00:00+09:00",
+  "sourceChecks": [
+    {
+      "id": "bizinfo",
+      "url": "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/list.do",
+      "checkedAt": "2026-11-06T01:17:40.023251+00:00",
+      "status": 200,
+      "finalUrl": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200View.do?null",
+      "evidence": "bizinfo-publiccheck-20261106.html",
+      "bytes": 111120
+    },
+    {
+      "id": "iris",
+      "url": "https://www.iris.go.kr/index.do",
+      "checkedAt": "2026-11-06T01:17:40.023600+00:00",
+      "status": 200,
+      "finalUrl": "https://www.iris.go.kr/index.do",
+      "evidence": "iris-publiccheck-20261106.html",
+      "bytes": 1510317
+    },
+    {
+      "id": "kotra",
+      "url": "https://kotra.or.kr/subList/20000020753",
+      "checkedAt": "2026-11-06T01:17:40.023739+00:00",
+      "status": 200,
+      "finalUrl": "https://kotra.or.kr/subList/20000020753",
+      "evidence": "kotra-publiccheck-20261106.html",
+      "bytes": 151048
+    }
+  ],
+  "applicationChecks": [
+    {
+      "id": "179723",
+      "url": "https://www.sba.seoul.kr/Pages/BusinessApply/PostingDetail.aspx?p=0&mid=4e62240d-abd2-f111-b404-d4f5ef4a1e33",
+      "checkedAt": "2026-11-06T01:19:27.311001+00:00",
+      "status": 200,
+      "finalUrl": "https://www.sba.seoul.kr/Pages/BusinessApply/PostingDetail.aspx?p=0&mid=4e62240d-abd2-f111-b404-d4f5ef4a1e33",
+      "evidence": "179723-publiccheck-20261106.html",
+      "bytes": 274712
+    },
+    {
+      "id": "179737",
+      "url": "https://forms.gle/kJRtMspksUWjgtus7",
+      "checkedAt": "2026-11-06T01:19:27.311362+00:00",
+      "status": 200,
+      "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdVr6Xh9HqE6I6nq3cyJ7F6LCDBF5LFnnwmorBS2K4izp33tw/viewform?usp=send_form",
+      "evidence": "179737-publiccheck-20261106.html",
+      "bytes": 98030
+    },
+    {
+      "id": "179739",
+      "url": "https://forms.gle/ryHx22aymGc9yFUL8",
+      "checkedAt": "2026-11-06T01:19:27.311878+00:00",
+      "status": 200,
+      "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdb8HiDmir9bFlbF7XP0TZ9PBC7ia_Qsi-YzgQYrBLdqvHXKA/viewform?usp=send_form",
+      "evidence": "179739-publiccheck-20261106.html",
+      "bytes": 110824
+    },
+    {
+      "id": "179737-files",
+      "url": "https://drive.google.com/drive/folders/1CLEpC71-DzamiJvG8ibA3IIcaEIEQJDK?usp=drive_link",
+      "checkedAt": "2026-11-06T01:19:27.312012+00:00",
+      "status": 200,
+      "finalUrl": "https://drive.google.com/drive/folders/1CLEpC71-DzamiJvG8ibA3IIcaEIEQJDK?usp=drive_link",
+      "evidence": "179737-files-publiccheck-20261106.html",
+      "bytes": 313656
+    },
+    {
+      "id": "179739-files",
+      "url": "https://drive.google.com/drive/folders/1ERtLhyimt7pbazvQ5voLkPRuK0PqyS36?usp=drive_link",
+      "checkedAt": "2026-11-06T01:19:27.312127+00:00",
+      "status": 200,
+      "finalUrl": "https://drive.google.com/drive/folders/1ERtLhyimt7pbazvQ5voLkPRuK0PqyS36?usp=drive_link",
+      "evidence": "179739-files-publiccheck-20261106.html",
+      "bytes": 313360
+    },
+    {
+      "id": "179703",
+      "url": "https://mplus.startup-plus.kr/project/PRJ007682",
+      "checkedAt": "2026-11-06T01:19:27.312237+00:00",
+      "status": 200,
+      "finalUrl": "https://mplus.startup-plus.kr/project/PRJ007682",
+      "evidence": "179703-publiccheck-20261106.html",
+      "bytes": 32957
+    },
+    {
+      "id": "179642",
+      "url": "https://koicaibs.mlive.kr",
+      "checkedAt": "2026-11-06T01:19:27.312387+00:00",
+      "status": 200,
+      "finalUrl": "https://koicaibs.mlive.kr/regist_1116.php",
+      "evidence": "179642-publiccheck-20261106.html",
+      "bytes": 26226
+    }
+  ],
+  "validationEvidence": "evidence/api-validation-2026-11-06.json",
+  "screenVerified": false,
+  "databaseModified": false,
+  "deployed": false,
+  "externalMessagesSent": false,
+  "detailFailuresRetryQueued": 110
+}

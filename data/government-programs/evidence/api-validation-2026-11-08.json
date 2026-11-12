@@ -1,0 +1,90 @@
+{
+  "at": "2026-11-08T10:18:41.056Z",
+  "status": 200,
+  "records": 156,
+  "analyses": 107,
+  "checks": [
+    {
+      "id": "kstartup-179735",
+      "start": "2026-11-05",
+      "end": "2026-11-09",
+      "deadlineTime": "23:59",
+      "calendar": true
+    },
+    {
+      "id": "kstartup-179732",
+      "start": "2026-11-05",
+      "end": "2026-11-19",
+      "deadlineTime": "18:00",
+      "calendar": true
+    },
+    {
+      "id": "kstartup-179730",
+      "start": "2026-11-05",
+      "end": "2026-11-26",
+      "deadlineTime": "18:00",
+      "calendar": true
+    },
+    {
+      "id": "kstartup-179740",
+      "start": "2026-11-05",
+      "end": "2026-11-25",
+      "deadlineTime": "16:00",
+      "calendar": true
+    },
+    {
+      "id": "kstartup-179733",
+      "start": "2026-11-06",
+      "end": "2026-11-20",
+      "deadlineTime": "14:00",
+      "calendar": true
+    },
+    {
+      "id": "kstartup-179545",
+      "start": "2026-10-20",
+      "end": "2026-11-10",
+      "deadlineTime": "19:00",
+      "calendar": true
+    },
+    {
+      "id": "kstartup-179554",
+      "start": "2026-10-19",
+      "end": "2026-11-10",
+      "deadlineTime": "18:00",
+      "calendar": true
+    },
+    {
+      "id": "kstartup-179635",
+      "start": "2026-10-27",
+      "end": "2026-11-12",
+      "deadlineTime": "16:00",
+      "calendar": true
+    },
+    {
+      "id": "kstartup-179678",
+      "start": "2026-10-19",
+      "end": "2026-11-12",
+      "deadlineTime": "23:59",
+      "calendar": true
+    },
+    {
+      "id": "kstartup-179649",
+      "start": "2026-10-29",
+      "end": "2026-11-13",
+      "deadlineTime": "13:30",
+      "calendar": true
+    },
+    {
+      "id": "kstartup-179741",
+      "start": "2026-11-06",
+      "end": "2026-11-18",
+      "deadlineTime": "17:00",
+      "calendar": true
+    }
+  ],
+  "screenVerified": false,
+  "http": {
+    "url": "http://127.0.0.1:3010/api/government-programs",
+    "error": "curl exit7 connection refused"
+  }
+}

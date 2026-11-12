@@ -27,7 +27,7 @@ import {validateUploadFile,uploadDocumentFile,listDocumentFiles,getSecureDownloa
 import {TASK_STATUSES} from '../lib/workTaskDates.mjs';
 import {
  safeDownloadFileName,
- buildWordDocumentHtml,
+ prepareWordDocumentHtml,
  buildProjectBinderHtml,
  buildProjectRequirementsCsv,
  triggerBrowserDownload,
@@ -220,9 +220,9 @@ export default function ProjectPreparationView({project,documents=[],onOpenDetai
   }catch(e){if(uid===identity.current)setActionError(e.message||'일정 상태 변경에 실패했습니다.');}finally{setBusy(false);}
  }
 
- function downloadWordDoc(doc,p){
+ async function downloadWordDoc(doc,p){
   try{
-   const html=buildWordDocumentHtml(doc,{companyName:p.clientName});
+   const html=await prepareWordDocumentHtml(doc,{companyName:p.clientName});
    const fileName=safeDownloadFileName(`${doc.code?`${doc.code}_`:''}${doc.title||doc.name}`,'doc');
    triggerBrowserDownload(html,fileName,'application/msword;charset=utf-8');
    setActionNotice(`'${doc.title||doc.name}' 문서를 Word(.doc) 서식으로 다운로드했습니다.`);

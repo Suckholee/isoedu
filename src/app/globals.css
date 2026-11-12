@@ -321,3 +321,11 @@
 .document-space-header-compact nav a{padding:8px 2px 10px;font-size:14px}
 .client-drive-review-mode .client-drive-toolbar{margin:0 0 12px;padding:8px 0}
 @media(max-width:640px){.document-space-header-compact{gap:14px;flex-wrap:wrap}.client-drive-review-mode{padding:12px}.document-space-header-compact nav{gap:14px}}
+
+/* Detailed document work uses the available canvas instead of stacked page padding. */
+.platform-scroll.platform-document-content { padding: 0; min-height: 0; overflow: hidden; }
+
+.platform-document-topbar{padding:4px 12px;gap:8px;border-bottom:1px solid #e2e8e5;background:white}
+.platform-document-toolbar-slot{flex:1;min-width:0;order:1}
+.platform-document-topbar .iso-header{flex-shrink:0}
+@media(max-width:700px){.platform-document-toolbar-slot{flex-basis:100%;order:3}.platform-document-topbar{gap:0;padding:4px 8px}.platform-document-topbar .iso-header{margin-left:auto}}

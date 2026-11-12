@@ -1,0 +1,58 @@
+[
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/v1s6o2S6ZZZ_JUg3WhLwHqgRPn3Jyvp0GVtFzN-PI-Dm5SyA",
+    "verifiedAt": "2026-11-11",
+    "status": "downloaded",
+    "sha256": "c4ac2d3130e7356dd985e6e6a174c4adc20a8666dad2f7ee41c860be3763634d",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 53248,
+    "format": "HWP",
+    "file": "attachment-01.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 1507
+  },
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/v1AtD9VzNO2vqu3py_ASSAg1hibAa5QjwLsmuYBMQLT0b3Vg",
+    "verifiedAt": "2026-11-11",
+    "status": "downloaded",
+    "sha256": "0cd1b56e4c1b10124e657483ef3714d664fb1f918247423622061a8ee4083112",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 148118,
+    "format": "PDF",
+    "file": "attachment-02.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 1552
+  },
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/v1_r2S3r8zZM8ZIW0KlSoA0Ugf_1BULP0TkxKEGOvo-3nzhQ",
+    "verifiedAt": "2026-11-11",
+    "status": "downloaded",
+    "sha256": "c017b161c77a18356902d6681819c4c8ee730de74638ea5ffb16fba8e6060e16",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 266542,
+    "format": "PDF",
+    "file": "attachment-03.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 1144
+  },
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/v1Li5bSJqaOtLCOmijQe_9oNNxPZqjX-pyIcYHlGKucnZ12A",
+    "verifiedAt": "2026-11-11",
+    "status": "downloaded",
+    "sha256": "6610e2a7f79380fdfe15771f9d588d0ddb04f7e58250d487ab967d751434baf4",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 158473,
+    "format": "PDF",
+    "file": "attachment-04.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 719
+  }
+]

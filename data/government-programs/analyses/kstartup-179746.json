@@ -1,0 +1,333 @@
+{
+  "programId": "kstartup-179746",
+  "title": "전북핀테크지원센터 「핀테크 라이징 스타 챌린지」참가자 모집",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-10T00:13:40.372379+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179746",
+  "reviewScope": "공고PDF10쪽전체/붙임업종·창업기준표·HWP안내/신청/계획/동의/성과별첨전문·PDF1~8시각·주최공개사업상세;2026-11-10",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v14HZJrr0YDjN2UcbpEge_e4EPRcoilgN0DkU_DkaeAnHCgw",
+      "verifiedAt": "2026-11-10",
+      "status": "downloaded",
+      "sha256": "8d2c3c6aace7db5fdc74978e6317d6052ebf402a71e06809644c854d7a319af6",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 257381,
+      "format": "PDF",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 7342,
+      "review": {
+        "at": "2026-11-10T00:13:40.372379+00:00",
+        "scope": "공고PDF10쪽전체/붙임업종·창업기준표·HWP안내/신청/계획/동의/성과별첨전문·PDF1~8시각·주최공개사업상세;2026-11-10",
+        "method": "text/visual scope recorded in reviewScope"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1J3eoHk3DoLi9Jmjc-1IS32V9oy2-X0MipRnVpW_5skp_dQ",
+      "verifiedAt": "2026-11-10",
+      "status": "downloaded",
+      "sha256": "6e8d245c4fde5ec4dce2b0447af5e22459c969177368689a1cbb3c43c39e8450",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 98304,
+      "format": "HWP",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 5810,
+      "review": {
+        "at": "2026-11-10T00:13:40.372379+00:00",
+        "scope": "공고PDF10쪽전체/붙임업종·창업기준표·HWP안내/신청/계획/동의/성과별첨전문·PDF1~8시각·주최공개사업상세;2026-11-10",
+        "method": "text/visual scope recorded in reviewScope"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/v14HZJrr0YDjN2UcbpEge_e4EPRcoilgN0DkU_DkaeAnHCgw": "8d2c3c6aace7db5fdc74978e6317d6052ebf402a71e06809644c854d7a319af6",
+    "https://www.k-startup.go.kr/afile/fileDownload/v1J3eoHk3DoLi9Jmjc-1IS32V9oy2-X0MipRnVpW_5skp_dQ": "6e8d245c4fde5ec4dce2b0447af5e22459c969177368689a1cbb3c43c39e8450"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-12T00:17:22.034859+00:00",
+  "eligibility": {
+    "summary": "전국예비창업자/공고일2026.10.14기준창업5년이내기업(팀포함).예비는본인명의사업자·법인등기없어야하며팀원전원충족;공동각자대표전원충족.지역/농생명/AI/데이터/기후에너지금융분야.전북이전은지원자격일괄필수아닌대상수상추가사업화금조건.",
+    "companyFields": [
+      "창업여부/개업법인설립일",
+      "대표/팀전원사업자보유",
+      "과거동종사업/폐업/포괄양수도/지분",
+      "KSIC",
+      "핀테크분야/아이템",
+      "채무/체납/미반환환수",
+      "참여제한/중도포기/동일아이템수혜",
+      "휴폐업/임금체불",
+      "2024~2026실적/2027계획",
+      "전북본점이전/창업계획",
+      "자금지급계좌/세금처리단계"
+    ],
+    "reference": "PDF2신청자격·10창업판단표; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179746"
+  },
+  "exclusions": {
+    "items": [
+      "금융채무규제",
+      "국세지방세체납",
+      "창업지원환수미반환",
+      "유사사업중도포기/제재중단",
+      "동일유사아이템사업화지원중복",
+      "휴폐업",
+      "창업제외업종56211/56212/91242/91249등",
+      "체불공개",
+      "가상자산매매중개교환주업",
+      "금융보험/대부중개/불법사금융주업",
+      "목적부적합심의"
+    ],
+    "reference": "PDF2제외/9업종표; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179746"
+  },
+  "support": {
+    "summary": "5개사:대상1팀시상1000만원/우수4팀각500만원(시상총3000만원).대상추가사업화3000만원은협약1년내전북본점이전/창업확인후5일내(기존도내는동시),이후1년내휴폐업/타지역이전전액환수.총사업지원6000만원을기업당한도로오인금지.제세공과공제·별도부담률미명시.차년도우선/서면면제·대상공유오피스1년일부임차지원은추후공고변경가능.",
+    "reference": "PDF5~6시상/지원·8공과; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179746"
+  },
+  "period": {
+    "start": "2026-10-14",
+    "end": "2026-11-12",
+    "deadlineTime": "16:00",
+    "timezone": "Asia/Seoul",
+    "reference": "PDF3접수기간16시; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179746"
+  },
+  "application": {
+    "summary": "11/12 16시까지 event.jbci.or.kr/sub/s1_1_view.html?id=369 온라인제출.필수신청·계획·동의1PDF/해당증빙별도1PDF,파일명신청자/기업명.증빙10/14공고일이후발급.서류8팀→대표직접발표5팀,12/10시상/12/15협약예정.공개사업상세확인·실제신청입력화면미검증.",
+    "reference": "PDF3·공개주최상세id369; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179746"
+  },
+  "requiredDocuments": [
+    {
+      "name": "참가신청서·사업계획서·개인정보동의",
+      "condition": "필수/서명날인/1PDF",
+      "reference": "PDF3표·HWP전체"
+    },
+    {
+      "name": "사업자등록사실여부증명",
+      "condition": "예비창업해당/공고표선택",
+      "reference": "PDF3"
+    },
+    {
+      "name": "기업성과/지원수혜별첨·사업자등록·법인등기·기타증빙",
+      "condition": "기창업해당시/작성성과증빙필수·공고일이후발급",
+      "reference": "PDF3·HWP별첨"
+    },
+    {
+      "name": "지급계좌/본인·세무서류",
+      "condition": "수상금지급단계추가요청가능·미성년법정대리동의/가족증명",
+      "reference": "PDF8"
+    },
+    {
+      "name": "선정후자료/이력성과협조",
+      "condition": "협약부터5년",
+      "reference": "PDF8"
+    }
+  ],
+  "businessPlan": {
+    "format": "HWP지정신청·계획·동의·성과별첨;파란안내삭제검정작성",
+    "limit": "서식분량기본·필요행/칸/페이지추가가능·총쪽수제한미명시",
+    "sections": [
+      {
+        "name": "신청",
+        "items": [
+          "유형/팀구성/대표·본점/개업/핀테크분야/한문장아이템"
+        ],
+        "limit": "서식분량기본·필요행/칸/페이지추가가능·총쪽수제한미명시"
+      },
+      {
+        "name": "Ⅰ팀",
+        "items": [
+          "대표전문경력역량/팀원직위역할"
+        ],
+        "limit": "서식분량기본·필요행/칸/페이지추가가능·총쪽수제한미명시"
+      },
+      {
+        "name": "Ⅱ아이템",
+        "items": [
+          "금융기술기능/이미지구성도/IP"
+        ],
+        "limit": "서식분량기본·필요행/칸/페이지추가가능·총쪽수제한미명시"
+      },
+      {
+        "name": "Ⅱ구현",
+        "items": [
+          "시장고객/문제수요검증/기능프로세스/혁신차별/BM"
+        ],
+        "limit": "서식분량기본·필요행/칸/페이지추가가능·총쪽수제한미명시"
+      },
+      {
+        "name": "Ⅱ성장",
+        "items": [
+          "현단계/향후1년핵심2~3성과/확장매출투자고용/단계실행/전북협력"
+        ],
+        "limit": "서식분량기본·필요행/칸/페이지추가가능·총쪽수제한미명시"
+      },
+      {
+        "name": "별첨",
+        "items": [
+          "2024/25/26실적·2027계획매출고용투자MOU특허/수혜협약금액증빙"
+        ],
+        "limit": "서식분량기본·필요행/칸/페이지추가가능·총쪽수제한미명시"
+      }
+    ],
+    "reference": "HWP신청/계획Ⅰ~Ⅱ/별첨; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179746"
+  },
+  "evaluation": {
+    "summary": "서류혁신성·시장성·성장/실현가능성(외부5인이내)고득점8팀,발표경쟁력실행역량성장확장전략고득점5팀.수치항목배점비공개.심사/평가결과세부미공개.",
+    "reference": "PDF4서류/발표; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179746"
+  },
+  "contact": {
+    "name": "전북핀테크지원센터063-220-8993",
+    "reference": "PDF3문의; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179746"
+  },
+  "unresolved": [
+    "온라인신청하기이후실제필드/업로드한도미검증",
+    "공고필수목록은참가신청/동의이나HWP내계획서포함·계획함께작성보존/선택증빙해당조건최종확인",
+    "HWP동의서주민번호등고유식별필수범위대시상세무처리근거단서·제출단계별요구기관확인·플랫폼회사필드로수집안함",
+    "HWP전체레이아웃시각대조미완료·PDF10쪽본문/별첨텍스트검토/1~8쪽시각"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179746",
+    "companyId": null,
+    "permission": "권한회사프로필확보후근거별검토·현재신청가능확정아님",
+    "steps": [
+      "회사필드/증빙확인",
+      "충돌/미확인해결",
+      "S12양식·S13회사정보로서류/계획작성"
+    ]
+  },
+  "applicationChecks": [
+    {
+      "id": "179746",
+      "url": "https://event.jbci.or.kr/",
+      "checkedAt": "2026-11-10T00:11:18.546036+00:00",
+      "status": 200,
+      "finalUrl": "https://event.jbci.or.kr/",
+      "evidence": "179746-publiccheck-20261110.html",
+      "bytes": 9892
+    },
+    {
+      "id": "179746-detail",
+      "url": "https://event.jbci.or.kr/sub/s1_1_view.html?id=369",
+      "checkedAt": "2026-11-10T00:12:26.524042+00:00",
+      "status": 200,
+      "finalUrl": "https://event.jbci.or.kr/sub/s1_1_view.html?id=369",
+      "evidence": "179746-detail-publiccheck-20261110.html",
+      "bytes": 10151
+    }
+  ],
+  "evidenceReferences": [
+    {
+      "field": "eligibility",
+      "reference": "PDF2신청자격·10창업판단표",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179746",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v14HZJrr0YDjN2UcbpEge_e4EPRcoilgN0DkU_DkaeAnHCgw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1J3eoHk3DoLi9Jmjc-1IS32V9oy2-X0MipRnVpW_5skp_dQ"
+      ]
+    },
+    {
+      "field": "exclusions",
+      "reference": "PDF2제외/9업종표",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179746",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v14HZJrr0YDjN2UcbpEge_e4EPRcoilgN0DkU_DkaeAnHCgw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1J3eoHk3DoLi9Jmjc-1IS32V9oy2-X0MipRnVpW_5skp_dQ"
+      ]
+    },
+    {
+      "field": "support",
+      "reference": "PDF5~6시상/지원·8공과",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179746",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v14HZJrr0YDjN2UcbpEge_e4EPRcoilgN0DkU_DkaeAnHCgw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1J3eoHk3DoLi9Jmjc-1IS32V9oy2-X0MipRnVpW_5skp_dQ"
+      ]
+    },
+    {
+      "field": "period",
+      "reference": "PDF3접수기간16시",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179746",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v14HZJrr0YDjN2UcbpEge_e4EPRcoilgN0DkU_DkaeAnHCgw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1J3eoHk3DoLi9Jmjc-1IS32V9oy2-X0MipRnVpW_5skp_dQ"
+      ]
+    },
+    {
+      "field": "application",
+      "reference": "PDF3·공개주최상세id369",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179746",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v14HZJrr0YDjN2UcbpEge_e4EPRcoilgN0DkU_DkaeAnHCgw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1J3eoHk3DoLi9Jmjc-1IS32V9oy2-X0MipRnVpW_5skp_dQ"
+      ]
+    },
+    {
+      "field": "requiredDocuments",
+      "reference": "PDF3제출표·HWP서식안내/첨부",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179746",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v14HZJrr0YDjN2UcbpEge_e4EPRcoilgN0DkU_DkaeAnHCgw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1J3eoHk3DoLi9Jmjc-1IS32V9oy2-X0MipRnVpW_5skp_dQ"
+      ]
+    },
+    {
+      "field": "businessPlan",
+      "reference": "HWP신청/계획Ⅰ~Ⅱ/별첨",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179746",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v14HZJrr0YDjN2UcbpEge_e4EPRcoilgN0DkU_DkaeAnHCgw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1J3eoHk3DoLi9Jmjc-1IS32V9oy2-X0MipRnVpW_5skp_dQ"
+      ]
+    },
+    {
+      "field": "evaluation",
+      "reference": "PDF4서류/발표",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179746",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v14HZJrr0YDjN2UcbpEge_e4EPRcoilgN0DkU_DkaeAnHCgw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1J3eoHk3DoLi9Jmjc-1IS32V9oy2-X0MipRnVpW_5skp_dQ"
+      ]
+    },
+    {
+      "field": "contact",
+      "reference": "PDF3문의",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179746",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v14HZJrr0YDjN2UcbpEge_e4EPRcoilgN0DkU_DkaeAnHCgw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1J3eoHk3DoLi9Jmjc-1IS32V9oy2-X0MipRnVpW_5skp_dQ"
+      ]
+    }
+  ],
+  "attachmentManifest": "evidence/kstartup-179746/attachment-check-2026-11-10.json",
+  "lastAttachmentHashManifest": "evidence/kstartup-179746/attachment-check-2026-11-12.json",
+  "publicFormRecheck": [
+    {
+      "id": "179746-form",
+      "url": "https://event.jbci.or.kr/sub/s1_1_view.html?id=369",
+      "checkedAt": "2026-11-12T00:10:01.947940+00:00",
+      "status": 200,
+      "finalUrl": "https://event.jbci.or.kr/sub/s1_1_view.html?id=369",
+      "evidence": "179746-form-publiccheck-20261112.html",
+      "bytes": 10151
+    }
+  ]
+}

@@ -1,0 +1,240 @@
+{
+  "programId": "kstartup-179735",
+  "title": "[벤처기업협회] 2026년 예비창업패키지 특화분야(소셜벤처)「임팩트스타 IR 데모데이」개최 (11/10)",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-08T10:13:36.931982+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179735",
+  "reviewScope": "상세 신청/대상/참관절·PDF1쪽전체스캔시각·대체TXT전부대조·공개Google폼전체 및2링크동일확인,2026-11-08",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1jOGANqoNOmTnrBWydWNuvVMYSXw6RUO7igLo_nYbk6mhzQ",
+      "verifiedAt": "2026-11-08",
+      "status": "downloaded",
+      "sha256": "2140964412fb224c9685bbbf4eac09c2521dd432819dc73d6f0c679b670fd024",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 4899484,
+      "format": "PDF",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 0,
+      "review": {
+        "at": "2026-11-08T10:13:36.931982+00:00",
+        "scope": "상세 신청/대상/참관절·PDF1쪽전체스캔시각·대체TXT전부대조·공개Google폼전체 및2링크동일확인,2026-11-08",
+        "method": "text/visual scope recorded in reviewScope"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1WqUCk0QdFV2_nE1_-Pm6HDY7HUfUBhNsf2pWgx1sZfkjVw",
+      "verifiedAt": "2026-11-08",
+      "status": "downloaded",
+      "sha256": "1705825c88983dc6ff044c6f78796feeb016b15ae0655b83bfe79ef06fe0b2ff",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 1256,
+      "format": "TEXT",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "review": {
+        "at": "2026-11-08T10:13:36.931982+00:00",
+        "scope": "상세 신청/대상/참관절·PDF1쪽전체스캔시각·대체TXT전부대조·공개Google폼전체 및2링크동일확인,2026-11-08",
+        "method": "text/visual scope recorded in reviewScope"
+      },
+      "extraction": "decoded-text",
+      "textFile": "attachment-02.bin.txt"
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/v1jOGANqoNOmTnrBWydWNuvVMYSXw6RUO7igLo_nYbk6mhzQ": "2140964412fb224c9685bbbf4eac09c2521dd432819dc73d6f0c679b670fd024",
+    "https://www.k-startup.go.kr/afile/fileDownload/v1WqUCk0QdFV2_nE1_-Pm6HDY7HUfUBhNsf2pWgx1sZfkjVw": "1705825c88983dc6ff044c6f78796feeb016b15ae0655b83bfe79ef06fe0b2ff"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-08T10:13:36.931982+00:00",
+  "eligibility": {
+    "summary": "창업 관심 누구나 참관 가능. 예비창업패키지 소셜벤처70개사 중9개사 IR발표행사이며 참관신청자를 신규 지원/피칭기업으로 선정하는 모집 아님.",
+    "companyFields": [
+      "참관유형",
+      "회사/소속·직위",
+      "이름·전화·이메일",
+      "개인정보동의"
+    ],
+    "reference": "상세 신청대상·공개폼안내; 확인 2026-11-08T10:20:39.754794+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179735"
+  },
+  "exclusions": {
+    "items": [
+      "공고상별도제외없음",
+      "실제잔여·동적접수상태미확인"
+    ],
+    "reference": "상세 신청대상; 확인 2026-11-08T10:20:39.754794+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179735"
+  },
+  "support": {
+    "summary": "11/10 14~18 서울삼성동 소노펠리체3층 사파이어홀. 9기업 IR/Q&A·벤처확인제도·미팅·네트워킹. 포스터13시등록/18~19클로징 추가. 지원금·투자확약/자부담금액 미기재.",
+    "reference": "상세행사절·스캔PDF p1포스터; 확인 2026-11-08T10:20:39.754794+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179735"
+  },
+  "period": {
+    "start": "2026-11-05",
+    "end": "2026-11-09",
+    "deadlineTime": "23:59",
+    "timezone": "Asia/Seoul",
+    "reference": "상세 신청기간; 확인 2026-11-08T10:20:39.754794+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179735"
+  },
+  "application": {
+    "summary": "공개Google폼; 상세/포스터 단축URL2개는 같은최종폼으로확인. 필수 참관객유형(투자/AC/멘토/기관/기업/예비/언론/기타),소속,직책,성명,하이픈없는010전화,메일·동의. 보유1년 후파기. 직책·참관유형은수집항목고지에직접열거없음.",
+    "reference": "상세신청·공개Google폼전문; 확인 2026-11-08T10:20:39.754794+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179735"
+  },
+  "requiredDocuments": [
+    {
+      "name": "참관등록폼·개인정보동의",
+      "condition": "공통",
+      "reference": "공개폼전체문항·동의절"
+    }
+  ],
+  "businessPlan": {
+    "format": "온라인참관폼",
+    "limit": "사업계획서·증빙업로드 요구없음",
+    "sections": [],
+    "reference": "상세 제출서류; 확인 2026-11-08T10:20:39.754794+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179735"
+  },
+  "evaluation": {
+    "summary": "상세선정없음/모두참관. IR9개사는기선정기업으로별도구분.",
+    "reference": "상세 선정절차; 확인 2026-11-08T10:20:39.754794+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179735"
+  },
+  "contact": {
+    "name": "상세/폼02-6331-7125 sv@seoulvi.com; 포스터7123/7124/7129",
+    "reference": "상세/폼문의·PDF p1; 확인 2026-11-08T10:20:39.754794+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179735"
+  },
+  "unresolved": [
+    "행사14~18과포스터13등록/18~19추가일정·연락처차이 정정여부미확인",
+    "개인정보고지에직책/참관유형누락 범위확인필요",
+    "동적접수·잔여정원/비용 미확인"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179735",
+    "companyId": null,
+    "permission": "권한회사프로필확보후근거별검토·현재신청가능확정아님",
+    "steps": [
+      "회사필드/증빙확인",
+      "충돌/미확인해결",
+      "S12양식·S13회사정보로서류/계획작성"
+    ]
+  },
+  "applicationChecks": [
+    {
+      "id": "179735",
+      "url": "https://forms.gle/t8R375VTga1sTnDb8",
+      "checkedAt": "2026-11-08T10:11:40.401363+00:00",
+      "status": 200,
+      "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSe5C5G3djuOZULSySDoYoIUaRKEA6ApMa-Vgdii5WPc8acY5g/viewform?usp=send_form",
+      "evidence": "179735-publiccheck-20261108.html",
+      "bytes": 124440
+    },
+    {
+      "id": "179735-poster",
+      "url": "https://forms.gle/xzdWGRKUg4BaAwyB6",
+      "checkedAt": "2026-11-08T10:11:40.401685+00:00",
+      "status": 200,
+      "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSe5C5G3djuOZULSySDoYoIUaRKEA6ApMa-Vgdii5WPc8acY5g/viewform?usp=send_form",
+      "evidence": "179735-poster-publiccheck-20261108.html",
+      "bytes": 124366
+    }
+  ],
+  "evidenceReferences": [
+    {
+      "field": "eligibility",
+      "reference": "상세 신청대상·공개폼안내",
+      "checkedAt": "2026-11-08T10:20:39.754794+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179735",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1jOGANqoNOmTnrBWydWNuvVMYSXw6RUO7igLo_nYbk6mhzQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1WqUCk0QdFV2_nE1_-Pm6HDY7HUfUBhNsf2pWgx1sZfkjVw"
+      ]
+    },
+    {
+      "field": "exclusions",
+      "reference": "상세 신청대상",
+      "checkedAt": "2026-11-08T10:20:39.754794+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179735",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1jOGANqoNOmTnrBWydWNuvVMYSXw6RUO7igLo_nYbk6mhzQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1WqUCk0QdFV2_nE1_-Pm6HDY7HUfUBhNsf2pWgx1sZfkjVw"
+      ]
+    },
+    {
+      "field": "support",
+      "reference": "상세행사절·스캔PDF p1포스터",
+      "checkedAt": "2026-11-08T10:20:39.754794+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179735",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1jOGANqoNOmTnrBWydWNuvVMYSXw6RUO7igLo_nYbk6mhzQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1WqUCk0QdFV2_nE1_-Pm6HDY7HUfUBhNsf2pWgx1sZfkjVw"
+      ]
+    },
+    {
+      "field": "period",
+      "reference": "상세 신청기간",
+      "checkedAt": "2026-11-08T10:20:39.754794+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179735",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1jOGANqoNOmTnrBWydWNuvVMYSXw6RUO7igLo_nYbk6mhzQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1WqUCk0QdFV2_nE1_-Pm6HDY7HUfUBhNsf2pWgx1sZfkjVw"
+      ]
+    },
+    {
+      "field": "application",
+      "reference": "상세신청·공개Google폼전문",
+      "checkedAt": "2026-11-08T10:20:39.754794+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179735",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1jOGANqoNOmTnrBWydWNuvVMYSXw6RUO7igLo_nYbk6mhzQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1WqUCk0QdFV2_nE1_-Pm6HDY7HUfUBhNsf2pWgx1sZfkjVw"
+      ]
+    },
+    {
+      "field": "requiredDocuments",
+      "reference": "공개Google폼전체",
+      "checkedAt": "2026-11-08T10:20:39.754794+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179735",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1jOGANqoNOmTnrBWydWNuvVMYSXw6RUO7igLo_nYbk6mhzQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1WqUCk0QdFV2_nE1_-Pm6HDY7HUfUBhNsf2pWgx1sZfkjVw"
+      ]
+    },
+    {
+      "field": "businessPlan",
+      "reference": "상세 제출서류",
+      "checkedAt": "2026-11-08T10:20:39.754794+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179735",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1jOGANqoNOmTnrBWydWNuvVMYSXw6RUO7igLo_nYbk6mhzQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1WqUCk0QdFV2_nE1_-Pm6HDY7HUfUBhNsf2pWgx1sZfkjVw"
+      ]
+    },
+    {
+      "field": "evaluation",
+      "reference": "상세 선정절차",
+      "checkedAt": "2026-11-08T10:20:39.754794+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179735",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1jOGANqoNOmTnrBWydWNuvVMYSXw6RUO7igLo_nYbk6mhzQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1WqUCk0QdFV2_nE1_-Pm6HDY7HUfUBhNsf2pWgx1sZfkjVw"
+      ]
+    },
+    {
+      "field": "contact",
+      "reference": "상세/폼문의·PDF p1",
+      "checkedAt": "2026-11-08T10:20:39.754794+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179735",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1jOGANqoNOmTnrBWydWNuvVMYSXw6RUO7igLo_nYbk6mhzQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1WqUCk0QdFV2_nE1_-Pm6HDY7HUfUBhNsf2pWgx1sZfkjVw"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "checkedAt": "2026-11-03T00:06:16.168Z",
+  "status": 200,
+  "records": 119,
+  "analyses": 81,
+  "dates": [
+    {
+      "id": "kstartup-179676",
+      "start": "2026-11-01",
+      "end": "2026-11-08",
+      "deadlineTime": "23:59"
+    },
+    {
+      "id": "kstartup-179664",
+      "start": "2026-10-29",
+      "end": "2026-11-09",
+      "deadlineTime": "23:59"
+    },
+    {
+      "id": "kstartup-179629",
+      "start": "2026-10-27",
+      "end": "2026-11-10",
+      "deadlineTime": "14:00"
+    },
+    {
+      "id": "kstartup-179612",
+      "start": "2026-10-23",
+      "end": "2026-11-10",
+      "deadlineTime": "23:59"
+    },
+    {
+      "id": "kstartup-179677",
+      "start": "2026-10-28",
+      "end": "2026-11-11",
+      "deadlineTime": "18:00"
+    },
+    {
+      "id": "mss-1072214",
+      "start": "2026-10-30",
+      "end": "2026-11-23",
+      "deadlineTime": "16:00"
+    }
+  ],
+  "calendarDateMappingVerified": true,
+  "earlyClosureWarningVerified": true,
+  "method": "route.GET direct invocation",
+  "screenVerified": false,
+  "deployed": false,
+  "http": {
+    "url": "http://127.0.0.1:3001/api/government-programs",
+    "status": null,
+    "error": "curl exit7 connection refused",
+    "screenVerified": false
+  }
+}

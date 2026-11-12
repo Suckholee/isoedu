@@ -1,0 +1,64 @@
+[
+  {
+    "name": "keti",
+    "url": "https://docs.google.com/forms/d/e/1FAIpQLSc7D5wYhf-fHXn0IM2kE3Xgzs0CyXUFsJVqT9TcbOCOqXp6Ug/viewform",
+    "checkedAt": "2026-10-27T00:06:12.838256+00:00",
+    "error": "HTTP Error 401: Unauthorized"
+  },
+  {
+    "name": "kookmin",
+    "url": "https://axkookmin.com/",
+    "checkedAt": "2026-10-27T00:06:12.838662+00:00",
+    "status": 200,
+    "finalUrl": "https://axkookmin.com/",
+    "bytes": 250263
+  },
+  {
+    "name": "kookmin-apply",
+    "url": "https://axkookmin.com/apply",
+    "checkedAt": "2026-10-27T00:06:12.838817+00:00",
+    "status": 200,
+    "finalUrl": "https://axkookmin.com/apply",
+    "bytes": 33671
+  },
+  {
+    "name": "changdong",
+    "url": "https://www.startup-plus.kr/project/PRJ007649",
+    "checkedAt": "2026-10-27T00:06:12.838946+00:00",
+    "status": 200,
+    "finalUrl": "https://www.startup-plus.kr/project/PRJ007649",
+    "bytes": 105235
+  },
+  {
+    "name": "seocho",
+    "url": "https://www.xn--2i4bieu3bszgvtc6wlunby2r.com/sub_program/operate_view.php?idx=69",
+    "checkedAt": "2026-10-27T00:06:12.839700+00:00",
+    "status": 200,
+    "finalUrl": "https://www.xn--2i4bieu3bszgvtc6wlunby2r.com/sub_program/operate_view.php?idx=69",
+    "bytes": 69749
+  },
+  {
+    "name": "bizinfo",
+    "url": "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/list.do",
+    "checkedAt": "2026-10-27T00:06:12.839841+00:00",
+    "status": 200,
+    "finalUrl": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200View.do?null",
+    "bytes": 111166
+  },
+  {
+    "name": "iris",
+    "url": "https://www.iris.go.kr/index.do",
+    "checkedAt": "2026-10-27T00:06:12.839994+00:00",
+    "status": 200,
+    "finalUrl": "https://www.iris.go.kr/index.do",
+    "bytes": 2512938
+  },
+  {
+    "name": "kotra",
+    "url": "https://kotra.or.kr/subList/20000020753",
+    "checkedAt": "2026-10-27T00:06:12.840130+00:00",
+    "status": 200,
+    "finalUrl": "https://kotra.or.kr/subList/20000020753",
+    "bytes": 152169
+  }
+]

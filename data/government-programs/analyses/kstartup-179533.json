@@ -3,7 +3,7 @@
   "title": "[해수부] 2026년 해양수산 통합데모데이 참가자 모집",
   "reviewStatus": "partial",
   "status": "첨부 분석·일부 미확인",
-  "analyzedAt": "2026-10-25T03:34:52.351493+00:00",
+  "analyzedAt": "2026-11-12T00:17:22.034859+00:00",
   "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179533",
   "sourceFingerprint": "38db4498289774720603ab177d03f21a39aebbf0b1db7878c7013e49ef0419b7",
   "evidenceDirectory": "evidence/kstartup-179533",
@@ -38,11 +38,10 @@
     "https://www.k-startup.go.kr/afile/fileDownload/2p1Ln": "86237c84d286cdd505e2692d2293236c42418810e1dc93c8c281d7ba479dad49",
     "https://www.k-startup.go.kr/afile/fileDownload/ov1Ln": "f26eb37a109711b25d00f2a3d22bc3706e9c9d69d3712ee64c7f98534c17bb94"
   },
-  "lastAttachmentHashCheckedAt": "2026-10-25T03:34:52.351493+00:00",
+  "lastAttachmentHashCheckedAt": "2026-11-12T00:17:22.034859+00:00",
   "unresolved": [
-    "공개폼첫단계참가유형·상담여부만확인:후속분기문항미확인",
-    "포스터QR308리디렉션자동추적실패:최종동일폼인지미검증",
-    "공식전체종료17:30·포스터세부17:20 차이"
+    "K-Startup 전체 행사 종료 17:30과 포스터 세부 종료 17:20 차이.",
+    "폼에 밋업 10/30 마감이 표시되나 1:1 신청 분기 선택지가 잔존. 참관과 밋업의 접수 일정을 별도 기록."
   ],
   "eligibility": {
     "summary": "해양수산창업생태계 관심 스타트업·예비창업자·투자자·기관·학생일반인 누구나",
@@ -70,17 +69,16 @@
     "timezone": "Asia/Seoul",
     "reference": "공식 상세 신청기간;행사13시시작과접수마감13:59구분"
   },
-  "application": "https://forms.gle/2PkaAnHxgo3wC56CA;포스터QR https://m.site.naver.com/2iwbX",
+  "application": {
+    "url": "https://docs.google.com/forms/d/e/1FAIpQLSf_pjoivvk6H_f-QYbP6fkqHG8S3PWe2y7-IEbx2eXlrFOwKA/viewform?usp=send_form",
+    "summary": "공개 데모데이 참관 등록. 신청서의 밋업 분기 표제에 10/30 마감 표시. 일반 참관 공고는 11/12 13:59, 행사는 13:00 시작.",
+    "reference": "K-Startup 상세 신청기간 및 포스터 QR와 동일한 공개 폼의 상담 분기"
+  },
   "requiredDocuments": [
     {
-      "name": "사전참가등록",
-      "condition": "필수·별도첨부없음",
-      "reference": "상세"
-    },
-    {
-      "name": "1:1상담선택",
-      "condition": "상담희망시사전신청",
-      "reference": "포스터/폼"
+      "name": "참가 등록 양식",
+      "condition": "참가 유형·상담 여부, 성명·소속·직함·전화·이메일·성별·연령 필수. 별도 업로드 문항 없음.",
+      "reference": "공개 Google 신청서 참가자 신청 개요"
     }
   ],
   "businessPlan": {
@@ -112,5 +110,31 @@
       "공고 양식 선택",
       "회사 사실정보로 서류·사업계획서 작성 및 검토"
     ]
+  },
+  "lastAttachmentHashManifest": "evidence/kstartup-179533/attachment-check-2026-11-12.json",
+  "publicFormRecheck": [
+    {
+      "id": "179533-form",
+      "url": "https://forms.gle/2PkaAnHxgo3wC56CA",
+      "checkedAt": "2026-11-12T00:10:01.947246+00:00",
+      "status": 200,
+      "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSf_pjoivvk6H_f-QYbP6fkqHG8S3PWe2y7-IEbx2eXlrFOwKA/viewform?usp=send_form",
+      "evidence": "179533-form-publiccheck-20261112.html",
+      "bytes": 103087
+    },
+    {
+      "id": "179533-qr",
+      "url": "https://m.site.naver.com/2iwbX",
+      "checkedAt": "2026-11-12T00:10:01.947771+00:00",
+      "status": 200,
+      "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSf_pjoivvk6H_f-QYbP6fkqHG8S3PWe2y7-IEbx2eXlrFOwKA/viewform?usp=send_form",
+      "evidence": "179533-qr-publiccheck-20261112.html",
+      "bytes": 102960
+    }
+  ],
+  "scheduleConflict": {
+    "summary": "참관 마감 11/12 13:59. 1:1 밋업 신청서 분기에는 10/30 마감 표시.",
+    "url": "https://docs.google.com/forms/d/e/1FAIpQLSf_pjoivvk6H_f-QYbP6fkqHG8S3PWe2y7-IEbx2eXlrFOwKA/viewform?usp=send_form",
+    "checkedAt": "2026-11-12T00:17:22.034859+00:00"
   }
 }

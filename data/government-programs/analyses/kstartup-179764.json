@@ -1,0 +1,165 @@
+{
+  "programId": "kstartup-179764",
+  "title": "[알파브라더스] 「2026 충청 스타트업 벤처포럼」 2회차-오픈이노베이션 교류회 참가 안내의 건",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-11T02:33:34.647201+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179764",
+  "reviewScope": "K-Startup 신청·일정·문의 / 첨부1 대체 텍스트 전부·첨부2 포스터 시각 검토 / Tally 공개 스키마",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v14IzlPhTkrHy8ClW8e1s09OCdUYPhXvVT4xD-CMoRsi1W9g",
+      "verifiedAt": "2026-11-11",
+      "status": "downloaded",
+      "sha256": "d0af1fc3d9c9d6135407ad5a4a11863d010d24dfa45041be21a2d4d01f7e6110",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 1140,
+      "format": "OTHER",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "review": {
+        "at": "2026-11-11T02:33:34.647201+00:00",
+        "scope": "K-Startup 신청·일정·문의 / 첨부1 대체 텍스트 전부·첨부2 포스터 시각 검토 / Tally 공개 스키마",
+        "method": "text/visual scope recorded in reviewScope"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1aEqij3cCSKxlVM0cCFhunHekZvppIj_1MgFJNeHx2HwCwQ",
+      "verifiedAt": "2026-11-11",
+      "status": "downloaded",
+      "sha256": "85eef4d2bb3219ea3a4db9ed0fb8d660e96f4f96928502505daeb07de2ade6da",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 8494684,
+      "format": "IMAGE",
+      "file": "attachment-02.bin",
+      "contentType": "image/png;charset=UTF-8",
+      "review": {
+        "at": "2026-11-11T02:33:34.647201+00:00",
+        "scope": "K-Startup 신청·일정·문의 / 첨부1 대체 텍스트 전부·첨부2 포스터 시각 검토 / Tally 공개 스키마",
+        "method": "visual"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/v14IzlPhTkrHy8ClW8e1s09OCdUYPhXvVT4xD-CMoRsi1W9g": "d0af1fc3d9c9d6135407ad5a4a11863d010d24dfa45041be21a2d4d01f7e6110",
+    "https://www.k-startup.go.kr/afile/fileDownload/v1aEqij3cCSKxlVM0cCFhunHekZvppIj_1MgFJNeHx2HwCwQ": "85eef4d2bb3219ea3a4db9ed0fb8d660e96f4f96928502505daeb07de2ade6da"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-11T02:33:34.647201+00:00",
+  "eligibility": {
+    "summary": "전국 오픈이노베이션 관심 기업·관계자. 상세는 충남 기업과 예비·초기창업자 우대, 폼은 충남·아산 기업 우대. AI·반도체·디스플레이·미래 모빌리티 중심.",
+    "companyFields": [
+      "기업·기관명 또는 예비창업자",
+      "소재지 시군구",
+      "기업 업종",
+      "직함",
+      "참가 유형",
+      "연락처",
+      "이메일"
+    ],
+    "reference": "K-Startup 신청·일정·문의 / 첨부1 대체 텍스트 전부·첨부2 포스터 시각 검토 / Tally 공개 스키마"
+  },
+  "exclusions": {
+    "items": [
+      "별도 제외 조건 미기재. 개인정보 미동의 시 참여 제한 가능."
+    ],
+    "reference": "K-Startup 신청·일정·문의 / 첨부1 대체 텍스트 전부·첨부2 포스터 시각 검토 / Tally 공개 스키마"
+  },
+  "support": {
+    "summary": "11/18 특강·대중견 5개사 리버스 피칭·네트워킹 및 밋업. 현금 지원·비율·자부담 미기재.",
+    "reference": "K-Startup 신청·일정·문의 / 첨부1 대체 텍스트 전부·첨부2 포스터 시각 검토 / Tally 공개 스키마"
+  },
+  "period": {
+    "start": "2026-11-10",
+    "end": "2026-11-17",
+    "deadlineTime": "00:00",
+    "timezone": "Asia/Seoul",
+    "reference": "K-Startup 신청·일정·문의 / 첨부1 대체 텍스트 전부·첨부2 포스터 시각 검토 / Tally 공개 스키마",
+    "checkedAt": "2026-11-11T02:38:50.665484+00:00",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179764"
+  },
+  "application": {
+    "summary": "Tally 사전 등록. 희망 밋업 관련 분기와 주차 안내 확인. 참가자 개별 신청. 11/17 00:00은 17일 하루 전체 접수로 해석하지 않음.",
+    "reference": "K-Startup 신청·일정·문의 / 첨부1 대체 텍스트 전부·첨부2 포스터 시각 검토 / Tally 공개 스키마"
+  },
+  "requiredDocuments": [
+    {
+      "name": "온라인 참가 신청 및 동의",
+      "condition": "필수, 파일 제출 없음",
+      "reference": "Tally 공개 스키마 인적사항·참가유형·동의"
+    }
+  ],
+  "businessPlan": {
+    "format": "온라인 신청, 별도 계획서 없음",
+    "limit": null,
+    "sections": [
+      {
+        "name": "인적사항",
+        "items": [
+          "성명·소속·시군구·업종·직급·전화·이메일"
+        ],
+        "limit": null
+      },
+      {
+        "name": "참가 유형",
+        "items": [
+          "유형 선택, 밋업 관련 조건 분기"
+        ],
+        "limit": null
+      },
+      {
+        "name": "동의",
+        "items": [
+          "개인정보·마케팅 활용 선택 및 주차 안내 확인"
+        ],
+        "limit": null
+      }
+    ],
+    "reference": "K-Startup 신청·일정·문의 / 첨부1 대체 텍스트 전부·첨부2 포스터 시각 검토 / Tally 공개 스키마"
+  },
+  "evaluation": {
+    "summary": "상세 선착순. 1:1 매칭 배점 및 현재 유효 조건 미확인.",
+    "reference": "K-Startup 신청·일정·문의 / 첨부1 대체 텍스트 전부·첨부2 포스터 시각 검토 / Tally 공개 스키마"
+  },
+  "contact": {
+    "name": "알파브라더스 070-4285-0712, ows@alphabrothers.co.kr",
+    "reference": "K-Startup 신청·일정·문의 / 첨부1 대체 텍스트 전부·첨부2 포스터 시각 검토 / Tally 공개 스키마"
+  },
+  "unresolved": [
+    "11/18 행사 시작 상세 13:00 대 포스터·폼 13:30, 장소 대체텍스트 120호 대 상세·포스터·폼 102호.",
+    "공개 Tally에 숨김 상태의 밋업 마감 문구와 조건부 희망 입력이 공존. 활성 마감 여부나 현장 추가 접수 확정 불가."
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179764",
+    "companyId": null,
+    "permission": "권한회사프로필확보후근거별검토·현재신청가능확정아님",
+    "steps": [
+      "회사필드/증빙확인",
+      "충돌/미확인해결",
+      "S12양식·S13회사정보로서류/계획작성"
+    ]
+  },
+  "evidence": {
+    "detail": "evidence/kstartup-179764/detail.html",
+    "detailFetchedAt": "2026-11-11T02:27:27.394Z",
+    "attachmentManifest": "evidence/kstartup-179764/attachment-check-2026-11-11.json",
+    "publicChecks": [
+      {
+        "id": "179764",
+        "url": "https://tally.so/r/2jBg8j",
+        "checkedAt": "2026-11-11T02:29:37.856362+00:00",
+        "status": 200,
+        "finalUrl": "https://tally.so/r/2jBg8j",
+        "evidence": "179764-publiccheck-20261111.html",
+        "bytes": 85109
+      }
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+[
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/5l2Ln",
+    "verifiedAt": "2026-11-01",
+    "status": "downloaded",
+    "sha256": "64d19500f5ac9e474ca45c63422d4c25af0b0651ba0ac8b62f0508d1a90e2505",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 98816,
+    "format": "HWP",
+    "file": "attachment-01.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 6884,
+    "review": {
+      "at": "2026-11-01T02:29:24.757028+00:00",
+      "method": "text",
+      "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+    }
+  },
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/6l2Ln",
+    "verifiedAt": "2026-11-01",
+    "status": "downloaded",
+    "sha256": "55917257f1d68fec309ce785a17e26bab81a42004e00d0b61b715e4d49f7eb3f",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 19629568,
+    "format": "HWP",
+    "file": "attachment-02.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 83,
+    "review": {
+      "at": "2026-11-01T02:30:10.974581+00:00",
+      "method": "text+visual",
+      "scope": "본문83자·내장시설사진4개모두시각검토"
+    }
+  }
+]

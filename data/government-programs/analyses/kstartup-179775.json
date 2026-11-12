@@ -1,0 +1,162 @@
+{
+  "programId": "kstartup-179775",
+  "title": "2026 여성벤처활성화사업 「여성벤처&스타트업 혁신성장 포럼」참여자 모집",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-12T00:09:09.610510+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179775",
+  "reviewScope": "K-Startup 접수·교육 / 한국여성벤처협회 공식 공지 / 포스터 전면 시각 및 HWP 전문 / 공개 Google 양식 동의 및 후속 문항",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1sRlzcBKBCCOQJh08pp03KD3w4F_0xxHoOW_wI_myfe9sHQ",
+      "verifiedAt": "2026-11-11T23:59:52.775345+00:00",
+      "status": "downloaded",
+      "sha256": "88ef248b4b5cee17d44050d424037ac6b0f025ca4c8cea4e1d5289211814c344",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 286678,
+      "format": "IMAGE",
+      "file": "attachment-01.bin",
+      "contentType": "image/jpeg;charset=UTF-8",
+      "review": {
+        "at": "2026-11-12T00:09:09.610510+00:00",
+        "scope": "K-Startup 접수·교육 / 한국여성벤처협회 공식 공지 / 포스터 전면 시각 및 HWP 전문 / 공개 Google 양식 동의 및 후속 문항",
+        "method": "visual"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v10X2oZ7GggdKG1H6U3FBjCj55xm1nMgr3jD4E_ncwBKY30g",
+      "verifiedAt": "2026-11-11T23:59:53.035886+00:00",
+      "status": "downloaded",
+      "sha256": "1422673aa049a101eba7d8558a8c22552d5b8e546238aebb8cc81b60b1788db9",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 40448,
+      "format": "HWP",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 657,
+      "review": {
+        "at": "2026-11-12T00:09:09.610510+00:00",
+        "scope": "K-Startup 접수·교육 / 한국여성벤처협회 공식 공지 / 포스터 전면 시각 및 HWP 전문 / 공개 Google 양식 동의 및 후속 문항",
+        "method": "text/visual scope recorded in reviewScope"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/v1sRlzcBKBCCOQJh08pp03KD3w4F_0xxHoOW_wI_myfe9sHQ": "88ef248b4b5cee17d44050d424037ac6b0f025ca4c8cea4e1d5289211814c344",
+    "https://www.k-startup.go.kr/afile/fileDownload/v10X2oZ7GggdKG1H6U3FBjCj55xm1nMgr3jD4E_ncwBKY30g": "1422673aa049a101eba7d8558a8c22552d5b8e546238aebb8cc81b60b1788db9"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-12T00:09:09.610510+00:00",
+  "eligibility": {
+    "summary": "여성 벤처·스타트업 대표, 예비창업자 등. 지역·업력·업종·규모 제한 미기재.",
+    "companyFields": [
+      "참가자 성명·직함",
+      "기업명 또는 예비창업 여부",
+      "연락처·이메일",
+      "온라인 참여 가능"
+    ],
+    "reference": "K-Startup 접수·교육 / 한국여성벤처협회 공식 공지 / 포스터 전면 시각 및 HWP 전문 / 공개 Google 양식 동의 및 후속 문항"
+  },
+  "exclusions": {
+    "items": [
+      "공개 신청서는 개인정보 동의 여부 문항 필수. 별도 사업 제외 조건 미기재."
+    ],
+    "reference": "K-Startup 접수·교육 / 한국여성벤처협회 공식 공지 / 포스터 전면 시각 및 HWP 전문 / 공개 Google 양식 동의 및 후속 문항"
+  },
+  "support": {
+    "summary": "무료 유튜브 라이브. 11/30 법률·B2B·SNS 마케팅, 12/1 동기·브랜딩·소비 전망. 양일 10:30~17:00, 링크 11/27 안내. 현금 지원·보조율·자부담 미기재.",
+    "reference": "K-Startup 접수·교육 / 한국여성벤처협회 공식 공지 / 포스터 전면 시각 및 HWP 전문 / 공개 Google 양식 동의 및 후속 문항"
+  },
+  "period": {
+    "start": "2026-11-11",
+    "end": "2026-11-26",
+    "deadlineTime": "23:59",
+    "timezone": "Asia/Seoul",
+    "reference": "K-Startup 접수·교육 / 한국여성벤처협회 공식 공지 / 포스터 전면 시각 및 HWP 전문 / 공개 Google 양식 동의 및 후속 문항",
+    "checkedAt": "2026-11-12T00:17:22.034859+00:00",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179775",
+    "attachmentUrls": [
+      "https://www.k-startup.go.kr/afile/fileDownload/v1sRlzcBKBCCOQJh08pp03KD3w4F_0xxHoOW_wI_myfe9sHQ",
+      "https://www.k-startup.go.kr/afile/fileDownload/v10X2oZ7GggdKG1H6U3FBjCj55xm1nMgr3jD4E_ncwBKY30g"
+    ],
+    "startTime": "09:00"
+  },
+  "application": {
+    "summary": "한국여성벤처협회 공식 공지 및 K-Startup 상세가 연결하는 Google 양식. 공개 폼의 동의·참여 신청 섹션을 읽었으며 제출은 검증하지 않음.",
+    "reference": "K-Startup 접수·교육 / 한국여성벤처협회 공식 공지 / 포스터 전면 시각 및 HWP 전문 / 공개 Google 양식 동의 및 후속 문항",
+    "url": "https://docs.google.com/forms/d/e/1FAIpQLSf-YCbNBC3BZkFPIn4kINfnHlx0yysdZbHkMuOiNzLZemwCxw/viewform?usp=send_form"
+  },
+  "requiredDocuments": [
+    {
+      "name": "온라인 참가신청서",
+      "condition": "동의 선택, 성명·직함, 기업명(예비창업자는 예비), 접속 경로, 연락처, 이메일 필수. 강의 문의 선택.",
+      "reference": "공개 Google 양식 첫 화면 및 공개 페이지에 포함된 참여신청서 문항"
+    }
+  ],
+  "businessPlan": {
+    "format": "사업계획서 및 별도 업로드 문항 미기재.",
+    "limit": null,
+    "sections": [],
+    "reference": "K-Startup 접수·교육 / 한국여성벤처협회 공식 공지 / 포스터 전면 시각 및 HWP 전문 / 공개 Google 양식 동의 및 후속 문항"
+  },
+  "evaluation": {
+    "summary": "선정 절차·평가 없음.",
+    "reference": "K-Startup 접수·교육 / 한국여성벤처협회 공식 공지 / 포스터 전면 시각 및 HWP 전문 / 공개 Google 양식 동의 및 후속 문항"
+  },
+  "contact": {
+    "name": "한국여성벤처협회 기업지원본부 02-3440-7467, 7469",
+    "reference": "K-Startup 접수·교육 / 한국여성벤처협회 공식 공지 / 포스터 전면 시각 및 HWP 전문 / 공개 Google 양식 동의 및 후속 문항"
+  },
+  "unresolved": [
+    "K-Startup 본문 교육 일시 11/4는 동일 본문 세션별 11/30·12/1과 충돌. 협회 공식 포스터 및 HWP 교육 정보의 11/30~12/1을 행사 기준으로 기록.",
+    "HWP 추출본의 단축링크 문자열이 공식 공지/상세의 실제 공개 신청 링크와 달라, 실제 입력은 협회 공지의 검증된 폼을 기준으로 기록. HWP 내 링크 원형/별도 경로 미확인."
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179775",
+    "companyId": null,
+    "permission": "권한회사프로필확보후근거별검토·현재신청가능확정아님",
+    "steps": [
+      "회사필드/증빙확인",
+      "충돌/미확인해결",
+      "S12양식·S13회사정보로서류/계획작성"
+    ]
+  },
+  "evidence": {
+    "detail": "evidence/kstartup-179775/detail.html",
+    "detailFetchedAt": "2026-11-11T23:58:47.835Z",
+    "attachmentManifest": "evidence/kstartup-179775/attachment-check-2026-11-12.json",
+    "publicChecks": [
+      {
+        "id": "179775",
+        "url": "https://forms.gle/uTjVyDLqaQ4PFHS36",
+        "checkedAt": "2026-11-12T00:00:06.395591+00:00",
+        "status": 200,
+        "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSf-YCbNBC3BZkFPIn4kINfnHlx0yysdZbHkMuOiNzLZemwCxw/viewform?usp=send_form",
+        "evidence": "179775-publiccheck-20261112.html",
+        "bytes": 95710
+      },
+      {
+        "id": "179775-host",
+        "url": "https://kovwa.or.kr/94/?bmode=view&idx=175564123",
+        "checkedAt": "2026-11-12T00:00:06.715935+00:00",
+        "status": 200,
+        "finalUrl": "https://kovwa.or.kr/94/?bmode=view&idx=175564123",
+        "evidence": "179775-host-publiccheck-20261112.html",
+        "bytes": 467770
+      }
+    ]
+  },
+  "scheduleConflict": {
+    "summary": "K-Startup 교육 일시 11/4와 포스터·HWP 교육 정보 11/30~12/1 상충. 포스터 및 강의별 일정에 근거해 11/30~12/1로 안내. 접수기간은 별도.",
+    "url": "https://kovwa.or.kr/94/?bmode=view&idx=175564123",
+    "checkedAt": "2026-11-12T00:17:22.034859+00:00"
+  }
+}

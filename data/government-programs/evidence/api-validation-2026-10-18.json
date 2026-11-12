@@ -1,0 +1,48 @@
+{
+  "at": "2026-10-18T00:10:04.383651Z",
+  "stage": "local-api-validation",
+  "status": "success",
+  "url": "http://127.0.0.1:3001/api/government-programs",
+  "httpStatus": 200,
+  "programs": 25,
+  "analysesTotal": 6,
+  "verified": [
+    {
+      "id": "kstartup-179515",
+      "calendarDate": "2026-10-19",
+      "deadlineTime": "14:00",
+      "analysisReviewStatus": "partial",
+      "dateVerification": "attachment-confirmed"
+    },
+    {
+      "id": "kstartup-179524",
+      "calendarDate": "2026-10-21",
+      "deadlineTime": "09:00",
+      "analysisReviewStatus": "partial",
+      "dateVerification": "attachment-confirmed"
+    },
+    {
+      "id": "mss-1071550",
+      "calendarDate": "2026-10-21",
+      "deadlineTime": "16:00",
+      "analysisReviewStatus": "partial",
+      "dateVerification": "attachment-confirmed"
+    },
+    {
+      "id": "kstartup-179504",
+      "calendarDate": "2026-10-22",
+      "deadlineTime": null,
+      "analysisReviewStatus": "partial",
+      "dateVerification": "conflict"
+    },
+    {
+      "id": "kstartup-179516",
+      "calendarDate": "2026-10-23",
+      "deadlineTime": "23:59",
+      "analysisReviewStatus": "partial",
+      "dateVerification": "attachment-confirmed"
+    }
+  ],
+  "screenValidation": "未実施 / 화면 미검증",
+  "port3000": "응답404: 이 프로젝트 API 검증에 사용하지 않음"
+}

@@ -1,0 +1,158 @@
+{
+  "programId": "kstartup-179763",
+  "title": "[행사 안내] 2026 경기도 R&D 성과공유회",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-11T02:33:34.647201+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179763",
+  "reviewScope": "K-Startup 신청·지원·문의 / 첨부 PDF p1 텍스트 및 시각 검토 / 경기기업비서 PD000000057653 사업개요·접수 / 공개 Google Forms 8문항",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1ARu4wy6y94n8efW6vAs50FXp5YamVRXQ03rrUJ-A9AQ-Bg",
+      "verifiedAt": "2026-11-11",
+      "status": "downloaded",
+      "sha256": "3ecd665725e02fa9d2af85557da26f187ebb5db76cfa9857224836f6b671acf5",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 29475373,
+      "format": "PDF",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 511,
+      "review": {
+        "at": "2026-11-11T02:33:34.647201+00:00",
+        "scope": "K-Startup 신청·지원·문의 / 첨부 PDF p1 텍스트 및 시각 검토 / 경기기업비서 PD000000057653 사업개요·접수 / 공개 Google Forms 8문항",
+        "method": "text/visual scope recorded in reviewScope"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/v1ARu4wy6y94n8efW6vAs50FXp5YamVRXQ03rrUJ-A9AQ-Bg": "3ecd665725e02fa9d2af85557da26f187ebb5db76cfa9857224836f6b671acf5"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-11T02:33:34.647201+00:00",
+  "eligibility": {
+    "summary": "경기도 R&D 및 AGI 기술·네트워킹에 관심 있는 유관기관·투자사·스타트업·예비창업자. 경기기업비서 자격란은 경기도 시군 표기, 폼에는 주소 항목 없음.",
+    "companyFields": [
+      "참가 유형",
+      "소속·직책",
+      "연락처",
+      "이메일",
+      "참석 의사",
+      "관심 프로그램",
+      "소재지 확인 필요"
+    ],
+    "reference": "K-Startup 신청·지원·문의 / 첨부 PDF p1 텍스트 및 시각 검토 / 경기기업비서 PD000000057653 사업개요·접수 / 공개 Google Forms 8문항"
+  },
+  "exclusions": {
+    "items": [
+      "별도 업력·규모·제외 조건 미기재. 폼 개인정보 동의 필수."
+    ],
+    "reference": "K-Startup 신청·지원·문의 / 첨부 PDF p1 텍스트 및 시각 검토 / 경기기업비서 PD000000057653 사업개요·접수 / 공개 Google Forms 8문항"
+  },
+  "support": {
+    "summary": "무료 참가. R&D 사례 3개사, AGI 특별강연, 2027 사업 설명 및 교류. 당일 선착순 200명 상품권. 현금 지원·보조율 미기재.",
+    "reference": "K-Startup 신청·지원·문의 / 첨부 PDF p1 텍스트 및 시각 검토 / 경기기업비서 PD000000057653 사업개요·접수 / 공개 Google Forms 8문항"
+  },
+  "period": {
+    "start": "2026-11-10",
+    "end": "2026-11-20",
+    "deadlineTime": "14:00",
+    "timezone": "Asia/Seoul",
+    "reference": "K-Startup 신청·지원·문의 / 첨부 PDF p1 텍스트 및 시각 검토 / 경기기업비서 PD000000057653 사업개요·접수 / 공개 Google Forms 8문항",
+    "checkedAt": "2026-11-11T02:38:50.665484+00:00",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179763"
+  },
+  "application": {
+    "summary": "공개 Google 참가신청서 입력. 11/20 14~17시 경기도경제과학진흥원 1층 광교홀.",
+    "reference": "K-Startup 신청·지원·문의 / 첨부 PDF p1 텍스트 및 시각 검토 / 경기기업비서 PD000000057653 사업개요·접수 / 공개 Google Forms 8문항"
+  },
+  "requiredDocuments": [
+    {
+      "name": "온라인 참가 신청서",
+      "condition": "필수 8문항, 파일 없음",
+      "reference": "Google Forms 공개 화면"
+    }
+  ],
+  "businessPlan": {
+    "format": "공개 Google 신청서, 별도 계획서 없음",
+    "limit": null,
+    "sections": [
+      {
+        "name": "등록",
+        "items": [
+          "성명·소속/직책·연락처·이메일·참가 유형·참석 의사·관심 프로그램·개인정보 동의"
+        ],
+        "limit": null
+      }
+    ],
+    "reference": "K-Startup 신청·지원·문의 / 첨부 PDF p1 텍스트 및 시각 검토 / 경기기업비서 PD000000057653 사업개요·접수 / 공개 Google Forms 8문항"
+  },
+  "evaluation": {
+    "summary": "온라인 등록. 별도 선정 배점 없음. 상품권은 당일 참석 선착순.",
+    "reference": "K-Startup 신청·지원·문의 / 첨부 PDF p1 텍스트 및 시각 검토 / 경기기업비서 PD000000057653 사업개요·접수 / 공개 Google Forms 8문항"
+  },
+  "contact": {
+    "name": "경기도경제과학진흥원 031-259-6782 jykim@gbsa.or.kr / 내비온 02-6407-7743 kh.kong@navion.biz",
+    "reference": "K-Startup 신청·지원·문의 / 첨부 PDF p1 텍스트 및 시각 검토 / 경기기업비서 PD000000057653 사업개요·접수 / 공개 Google Forms 8문항"
+  },
+  "unresolved": [
+    "접수 시각 K-Startup 11/10 00:00~11/20 14:00 대 수행기관 11/10 09:00~11/20 17:00. 같은 폼으로 연결됨. 달력은 현재 확인된 이른 마감 14시 유지.",
+    "수행기관 지역 목록이 실제 참가 제한인지 미확인. 폼의 개인정보 보유기간 미표기."
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179763",
+    "companyId": null,
+    "permission": "권한회사프로필확보후근거별검토·현재신청가능확정아님",
+    "steps": [
+      "회사필드/증빙확인",
+      "충돌/미확인해결",
+      "S12양식·S13회사정보로서류/계획작성"
+    ]
+  },
+  "evidence": {
+    "detail": "evidence/kstartup-179763/detail.html",
+    "detailFetchedAt": "2026-11-11T02:27:27.394Z",
+    "attachmentManifest": "evidence/kstartup-179763/attachment-check-2026-11-11.json",
+    "publicChecks": [
+      {
+        "id": "179763",
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSfOnWIJhPanmhfGr72KyrkPHpzTwFZXVnk8PRXOaogMEYR_6Q/viewform",
+        "checkedAt": "2026-11-11T02:29:37.856784+00:00",
+        "status": 200,
+        "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfOnWIJhPanmhfGr72KyrkPHpzTwFZXVnk8PRXOaogMEYR_6Q/viewform",
+        "evidence": "179763-publiccheck-20261111.html",
+        "bytes": 118263
+      },
+      {
+        "id": "179763-host",
+        "url": "https://egbiz.or.kr/pd/57653.do",
+        "checkedAt": "2026-11-11T02:29:37.856896+00:00",
+        "status": 200,
+        "finalUrl": "https://egbiz.or.kr/sp/supportPrjDtl.do?listUrl=supportPrjCatList&bizCyclId=PD000000057653",
+        "evidence": "179763-host-publiccheck-20261111.html",
+        "bytes": 151148
+      }
+    ]
+  },
+  "scheduleConflict": {
+    "summary": "같은 신청서에 연결된 K-Startup과 수행기관의 표시 시각이 다름. 확인 전 달력 마감은 이른 14시 유지.",
+    "kStartup": {
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179763",
+      "startTime": "00:00",
+      "deadlineTime": "14:00"
+    },
+    "organizer": {
+      "url": "https://egbiz.or.kr/sp/supportPrjDtl.do?listUrl=supportPrjCatList&bizCyclId=PD000000057653",
+      "startTime": "09:00",
+      "deadlineTime": "17:00"
+    },
+    "checkedAt": "2026-11-11T02:38:50.665484+00:00"
+  }
+}

@@ -1,0 +1,423 @@
+
+
+
+
+
+<meta charset="UTF-8"/>
+
+<script type="text/javascript" src="/bos/js/lib/jquery.js"></script>
+<script type="text/javascript" src="/bos/js/lib/jquery.form.js"></script>
+<!-- <script type="text/javascript" src="/portal/chart/js/jqxcore.js"></script> -->
+<!-- <script type="text/javascript" src="/portal/chart/js/jqxdata.js"></script> -->
+<!-- <script type="text/javascript" src="/portal/chart/js/jqxdraw.js"></script> -->
+<!-- <script type="text/javascript" src="/portal/chart/js/jqxchart.core.js"></script> -->
+
+<!-- <script type="text/javascript" src="/js/jquery/jquery-3.6.0.js"></script> -->
+
+
+<link rel="stylesheet" href="/css2/common.css">
+<link rel="stylesheet" href="/css2/main.css">
+<link rel="stylesheet" href="/css2/style.css">
+<link rel="stylesheet" href="/css2/admin.css">
+<link rel="stylesheet" href="/css2/prqudo_style.css">
+
+
+<link rel="stylesheet" type="text/css" href="/js/ax5/ax5ui-grid-1.4.127/dist/ax5grid.css">
+<link rel="stylesheet" type="text/css" href="/js/ax5/ax5ui-calendar-1.4.127/dist/ax5calendar.css">
+<link rel="stylesheet" type="text/css" href="/js/ax5/ax5ui-picker-1.4.127/dist/ax5picker.css">
+<link rel="stylesheet" type="text/css" href="/js/ax5/ax5ui-select-1.4.127/dist/ax5select.css">
+<link rel="stylesheet" type="text/css" href="/js/ax5/ax5ui-formatter-1.4.127/dist/ax5formatter.css">
+<script type="text/javascript" src="/js/ax5/ax5core-1.4.127/dist/ax5core.min.js"></script>
+<script type="text/javascript" src="/js/ax5/ax5ui-grid-1.4.127/dist/ax5grid.js"></script>
+<script type="text/javascript" src="/js/ax5/ax5ui-grid-1.4.127/src/modules/ax5grid-scroller.js"></script>
+<script type="text/javascript" src="/js/ax5/ax5ui-calendar-1.4.127/dist/ax5calendar.min.js"></script>
+<script type="text/javascript" src="/js/ax5/ax5ui-picker-1.4.127/dist/ax5picker.min.js"></script>
+<script type="text/javascript" src="/js/ax5/ax5ui-select-1.4.127/dist/ax5select.min.js"></script>
+<script type="text/javascript" src="/js/ax5/ax5ui-formatter-1.4.127/dist/ax5formatter.min.js"></script>
+<script type="text/javascript" src="/js/ax5/kipris.custom.grid.0.1.js"></script>
+
+<!-- doc.autoTable 출력용 -->
+<script type="text/javascript" src="/js/jspdf/jspdf.umd.min.js"></script>
+<script type="text/javascript" src="/js/jspdf/jspdf.plugin.autotable.js"></script>
+
+
+
+<!-- doc.addHTML 출력용 -->
+<!-- <script type="text/javascript" src="/js/jspdf/html2canvas.js"></script> -->
+<!-- <script type="text/javascript" src="/js/jspdf/jspdf.debug.js"></script> -->
+
+<!-- 한글 폰트 셋팅 -->
+
+<!-- <script type="text/javascript" src="/js/jspdf/font/fonts.js"></script> -->
+<!-- <link rel="stylesheet" href="/js/jspdf/font/jspdfFont.css"> -->
+
+<!-- 엑셀 다운로드 셋팅 -->
+<script src="/js/xlsx.mini.min.js"></script>
+<script type="text/javascript">
+
+function excelDown(colTall, gridNo, sheetNm, fileName){
+
+	var conf = confirm("API 입출력값을 EXCEL 파일로 생성하시겠습니까?\n");
+	if(!conf) return ;
+	
+    var wb = XLSX.utils.book_new();
+    var ws = XLSX.utils.table_to_sheet(document.getElementById('divExcel'));
+    
+    ws["!cols"] = [ {wch: 10}, {wch: 10}, {wch: 10}, {wch: 40}, {wch: 40}, {wch: 100} ];
+    XLSX.utils.book_append_sheet(wb, ws, 'Sheet1');
+    
+    return XLSX.writeFile( wb, fileName + '.xlsx' );
+}
+
+function csvDown(colTall, gridNo, sheetNm, fileName){
+
+	var conf = confirm("API 입출력값을 CSV 파일로 생성하시겠습니까?\n");
+	if(!conf) return ;
+	
+    var wb = XLSX.utils.book_new();
+    var ws = XLSX.utils.table_to_sheet(document.getElementById('divExcel'));
+    var csv = XLSX.utils.sheet_to_csv(ws, {strip: true});
+    	
+//     console.log(csv);
+    
+    return downloadFile(csv, fileName + '.csv', 'text/csv;charset:utf-8');
+}
+
+function jsonDown(colTall, gridNo, sheetNm, fileName){
+
+	var conf = confirm("API 입출력값을 JSON 파일로 생성하시겠습니까?\n");
+	if(!conf) return ;
+	
+    var wb = XLSX.utils.book_new();
+    var ws = XLSX.utils.table_to_sheet(document.getElementById('divExcel'));
+    var json = XLSX.utils.sheet_to_json(ws, {header: 1, raw: false});
+    	
+//     console.log(json);
+    
+//     console.log(JSON.stringify(json));
+    
+    return downloadFile(JSON.stringify(json), fileName + '.json', 'application/json;charset:utf-8');
+}
+
+function downloadFile(data, fileName, mimeType){
+	var a = document.createElement('a');
+	mimeType = mimeType || 'application/octet-stream';
+	
+	if(navigator.msSaveBlob){
+		navigator.msSaveBlob(new Blob(["\ufeff"+data], {
+			type: mimeType
+		}), fileName);
+	} else if (URL&&'download' in a) {
+		a.href = URL.createObjectURL(new Blob(["\ufeff"+data], {
+			type: mimeType
+		}));
+		a.setAttribute('download', fileName);
+		document.body.appendChild(a);
+		a.click();
+		document.body.removeChild(a);
+	} else {
+		location.href = 'data:application/octet-stream, '+encodeURIComponent("\ufeff"+data);
+	}
+}
+
+
+function serviceOpen(){
+	$("#service_open").hide();
+	$("#service_close").show();
+	$("#apiDescription1").slideDown();
+		
+// 	console.log("serviceOpen");
+}
+
+function serviceClose(){
+	$("#service_open").show();
+	$("#service_close").hide();
+	$("#apiDescription1").slideUp();
+		
+// 	console.log("serviceClose");
+		
+}
+
+
+</script>
+
+
+<!-- <input type="button" class="btnBasic" id="input2" title="검색" value="PDF다운로드" title="PDF다운로드" onclick="javascript:pdfPrint();"> -->
+
+
+
+<script type="text/javascript">
+
+// var labelIn = ['레벨', '구분', '데이터항목', '설명', '부가정보'];
+// var labelOut = ['레벨', '구분', '데이터항목', '설명', '부가정보'];
+
+
+
+// function pdfPrint(){
+	
+//	font_malgun_Base64
+// 	console.log(font_malgun_Base64);
+	
+//	CASE 1. 테스트
+// 	window.jsPDF = window.jspdf.jsPDF;
+// 	var doc = new jsPDF("p", "mm", "a4");
+// 	doc.line(15, 19, 195, 19);
+// 	doc.text(15, 40, 'zzz');
+// 	doc.save('test.pdf');
+
+
+//	CASE 2. 테이블 출력 
+// 	if(!window.jsPDF) window.jsPDF = window.jspdf.jsPDF;
+// 	var doc = new jsPDF("p", "mm", "a4");
+	
+// 	doc.addFileToVFS('myfont.ttf', _fonts);
+// 	doc.addFont('myfont.ttf', 'malgun', 'normal');
+// 	doc.setFont('malgun');
+	
+// 	doc.autoTable({
+// // 		head:[labelIn],
+// 		head:[['abc', '구분', 'edd']],
+// 		body: [
+// 			["01", "스붕", "KR"],
+// 			["02", "gu", "스방방"]
+// 		]	
+// 	});
+// 	doc.save('test.pdf');
+	
+	
+
+
+//미사용
+// 	CASE 3. HTML BODY 출력
+// 	var doc = new jsPDF();
+// 	doc.addHTML(document.body, function(){
+// 		doc.save('htmlBody.pdf');
+// 	});
+	
+	
+// 	doc.autoTable({ html: '#table'} );
+
+</script>
+
+
+<body>
+<div class="container container-wrap" style="padding:10px;">
+<p class="titPage">
+
+ 	전체검색 - getAdvancedSearch
+	<input type="button" class="btnBasicSmall" id="service_open" title="서비스 열기" value="open" onclick="javascript:serviceOpen();">
+	<input type="button" class="btnBasicSmall" id="service_close" title="서비스 닫기" value="close" onclick="javascript:serviceClose();">
+</p>
+<span style="line-height:30%"><br></span>
+
+<div class="api-group">
+
+	<form id="apiDetailFrm">
+		<input type="hidden" name="bCode" value="">
+		
+		<div id="apiDescription1">
+		
+			<article class="mt-10">
+				<p class="tit">서비스명칭 (Service Name)</p>
+			</article>
+			<p class="p-type1"> 특허·실용 공개·등록공보 </p>
+
+			<article class="mt-10">
+				<p class="tit">유형 및 분류 (Style & Class)</p>
+			</article>
+			<p class="p-type1"> REST - 항목별검색 </p>
+		
+<!-- 			<article class="mt-10"> -->
+<!-- 				<p class="tit">오퍼레이션명칭 (Operation Name)</p> -->
+<!-- 			</article> -->
+
+	
+	
+			<article class="mt-10">
+				<p class="tit">요청 주소 (Request URL)</p>
+			</article>
+			<p class="p-type1"><span class="txt-blue">http://plus.kipris.or.kr/</span></p>
+<!-- 			<article class="mt-10"> -->
+<!-- 				<p class="tit">입력값 (Request Parameter)</p> -->
+<!-- 			</article> -->
+<!-- 			<div class="brdCont_table brd-t1 firstTd"> -->
+
+
+	
+	
+
+	 
+
+
+
+
+
+	<script>
+//     var label = ['레벨', '구분', '데이터항목', '설명', '부가정보'];
+//     var label = ['입출력', '레벨', '구분', '데이터항목', '설명', '부가정보', '레벨ID', '상위레벨ID', '레벨트리'];
+//     console.log([{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"word","paramDataInfo1":"자유검색","paramDataInfo2":"","paramOrder":"I0001","parentParamOrder":"NONE","path":"-[I0001]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"inventionTitle","paramDataInfo1":"발명의명칭","paramDataInfo2":"","paramOrder":"I0002","parentParamOrder":"NONE","path":"-[I0002]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"astrtCont","paramDataInfo1":"초록","paramDataInfo2":"","paramOrder":"I0003","parentParamOrder":"NONE","path":"-[I0003]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"claimScope","paramDataInfo1":"청구범위","paramDataInfo2":"","paramOrder":"I0004","parentParamOrder":"NONE","path":"-[I0004]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"ipcNumber","paramDataInfo1":"IPC 분류코드","paramDataInfo2":"","paramOrder":"I0005","parentParamOrder":"NONE","path":"-[I0005]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"applicationNumber","paramDataInfo1":"출원번호","paramDataInfo2":"","paramOrder":"I0006","parentParamOrder":"NONE","path":"-[I0006]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"openNumber","paramDataInfo1":"공개번호","paramDataInfo2":"","paramOrder":"I0007","parentParamOrder":"NONE","path":"-[I0007]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"publicationNumber","paramDataInfo1":"공보(고)번호","paramDataInfo2":"","paramOrder":"I0008","parentParamOrder":"NONE","path":"-[I0008]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"registerNumber","paramDataInfo1":"등록번호","paramDataInfo2":"","paramOrder":"I0009","parentParamOrder":"NONE","path":"-[I0009]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"priorityApplicationNumber","paramDataInfo1":"우선권주장번호","paramDataInfo2":"","paramOrder":"I0010","parentParamOrder":"NONE","path":"-[I0010]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"internationalApplicationNumber","paramDataInfo1":"국제출원번호","paramDataInfo2":"","paramOrder":"I0011","parentParamOrder":"NONE","path":"-[I0011]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"internationOpenNumber","paramDataInfo1":"국제공개번호","paramDataInfo2":"","paramOrder":"I0012","parentParamOrder":"NONE","path":"-[I0012]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"applicationDate","paramDataInfo1":"출원일자","paramDataInfo2":"YYYYMMDD~YYYYMMDD","paramOrder":"I0013","parentParamOrder":"NONE","path":"-[I0013]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"openDate","paramDataInfo1":"공개일자","paramDataInfo2":"YYYYMMDD~YYYYMMDD","paramOrder":"I0014","parentParamOrder":"NONE","path":"-[I0014]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"publicationDate","paramDataInfo1":"공고일자","paramDataInfo2":"YYYYMMDD~YYYYMMDD","paramOrder":"I0015","parentParamOrder":"NONE","path":"-[I0015]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"registerDate","paramDataInfo1":"등록일자","paramDataInfo2":"YYYYMMDD~YYYYMMDD","paramOrder":"I0016","parentParamOrder":"NONE","path":"-[I0016]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"priorityApplicationDate","paramDataInfo1":"우선권주장일자","paramDataInfo2":"YYYYMMDD~YYYYMMDD","paramOrder":"I0017","parentParamOrder":"NONE","path":"-[I0017]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"internationalApplicationDate","paramDataInfo1":"국제출원일자","paramDataInfo2":"YYYYMMDD~YYYYMMDD","paramOrder":"I0018","parentParamOrder":"NONE","path":"-[I0018]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"internationOpenDate","paramDataInfo1":"국제공개일자","paramDataInfo2":"YYYYMMDD~YYYYMMDD","paramOrder":"I0019","parentParamOrder":"NONE","path":"-[I0019]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"applicant","paramDataInfo1":"출원인명/특허고객번호","paramDataInfo2":"","paramOrder":"I0020","parentParamOrder":"NONE","path":"-[I0020]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"inventors","paramDataInfo1":"발명자명/특허고객번호","paramDataInfo2":"","paramOrder":"I0021","parentParamOrder":"NONE","path":"-[I0021]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"agent","paramDataInfo1":"대리인명/대리인코드","paramDataInfo2":"","paramOrder":"I0022","parentParamOrder":"NONE","path":"-[I0022]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"rightHoler","paramDataInfo1":"등록권자 (특허권자)","paramDataInfo2":"","paramOrder":"I0023","parentParamOrder":"NONE","path":"-[I0023]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"patent","paramDataInfo1":"특허","paramDataInfo2":"true/false","paramOrder":"I0024","parentParamOrder":"NONE","path":"-[I0024]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"utility","paramDataInfo1":"실용","paramDataInfo2":"true/false","paramOrder":"I0025","parentParamOrder":"NONE","path":"-[I0025]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"lastvalue","paramDataInfo1":"행정처분(권리상태) 필터","paramDataInfo2":"전체:공백입력, 공개:A, 취하:C, 소멸:F, 포기:G, 무효:I, 거절:J, 등록:R","paramOrder":"I0026","parentParamOrder":"NONE","path":"-[I0026]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"pageNo","paramDataInfo1":"페이지 번호","paramDataInfo2":"기본 1","paramOrder":"I0027","parentParamOrder":"NONE","path":"-[I0027]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"numOfRows","paramDataInfo1":"페이지당 출력 건수","paramDataInfo2":"기본 10, 최대 500","paramOrder":"I0028","parentParamOrder":"NONE","path":"-[I0028]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"sortSpec","paramDataInfo1":"정렬 기준 항목","paramDataInfo2":"PD-공고일자, AD-출원일자, GD-등록일자, OPD-공개일자, FD-국제출원일자, FOD-국제공개일자, RD-우선권주장일자","paramOrder":"I0029","parentParamOrder":"NONE","path":"-[I0029]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"descSort","paramDataInfo1":"정렬 방향","paramDataInfo2":"true=내림차순/false=오름차순, sortSpec 함께 사용","paramOrder":"I0030","parentParamOrder":"NONE","path":"-[I0030]"}]);
+    
+//     $g.extend({
+//     	id : 'grid1' ,
+//     	target : $("[data-ax5grid='apiInutparameterGrid']"),
+//    		columns : [
+//  		        	{ key : 'lvl', label : label[0], align : 'center', width : 80},
+//   		        	{ key : 'paramType2' , label : label[1], align : 'center', width : 118 },
+//   		        	{ key : 'paramData', label : label[2], align : 'left', width : 250
+//   		        		, formatter: function(){
+//   		        			var data = this.value;
+//   		        			for(var i=1; i<this.item.lvl; ++i){
+//   		        				data = data.replace(" ", "&nbsp;&nbsp;");
+//   		        			}
+//   		        			return data;
+//   		        		} },
+//   		        	{ key : 'paramDataInfo1', label : label[3], align : 'center', width : 250 },
+//   		        	{ key : 'paramDataInfo2', label : label[4], align : 'center', width : 450 }
+//   		    	],
+//   		body : {
+//   			onClick : function(){
+//   				alert(this.value);
+//   				console.log(this);
+//   			}
+//    		}
+//     });
+
+//     var data = [{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"word","paramDataInfo1":"자유검색","paramDataInfo2":"","paramOrder":"I0001","parentParamOrder":"NONE","path":"-[I0001]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"inventionTitle","paramDataInfo1":"발명의명칭","paramDataInfo2":"","paramOrder":"I0002","parentParamOrder":"NONE","path":"-[I0002]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"astrtCont","paramDataInfo1":"초록","paramDataInfo2":"","paramOrder":"I0003","parentParamOrder":"NONE","path":"-[I0003]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"claimScope","paramDataInfo1":"청구범위","paramDataInfo2":"","paramOrder":"I0004","parentParamOrder":"NONE","path":"-[I0004]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"ipcNumber","paramDataInfo1":"IPC 분류코드","paramDataInfo2":"","paramOrder":"I0005","parentParamOrder":"NONE","path":"-[I0005]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"applicationNumber","paramDataInfo1":"출원번호","paramDataInfo2":"","paramOrder":"I0006","parentParamOrder":"NONE","path":"-[I0006]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"openNumber","paramDataInfo1":"공개번호","paramDataInfo2":"","paramOrder":"I0007","parentParamOrder":"NONE","path":"-[I0007]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"publicationNumber","paramDataInfo1":"공보(고)번호","paramDataInfo2":"","paramOrder":"I0008","parentParamOrder":"NONE","path":"-[I0008]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"registerNumber","paramDataInfo1":"등록번호","paramDataInfo2":"","paramOrder":"I0009","parentParamOrder":"NONE","path":"-[I0009]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"priorityApplicationNumber","paramDataInfo1":"우선권주장번호","paramDataInfo2":"","paramOrder":"I0010","parentParamOrder":"NONE","path":"-[I0010]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"internationalApplicationNumber","paramDataInfo1":"국제출원번호","paramDataInfo2":"","paramOrder":"I0011","parentParamOrder":"NONE","path":"-[I0011]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"internationOpenNumber","paramDataInfo1":"국제공개번호","paramDataInfo2":"","paramOrder":"I0012","parentParamOrder":"NONE","path":"-[I0012]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"applicationDate","paramDataInfo1":"출원일자","paramDataInfo2":"YYYYMMDD~YYYYMMDD","paramOrder":"I0013","parentParamOrder":"NONE","path":"-[I0013]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"openDate","paramDataInfo1":"공개일자","paramDataInfo2":"YYYYMMDD~YYYYMMDD","paramOrder":"I0014","parentParamOrder":"NONE","path":"-[I0014]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"publicationDate","paramDataInfo1":"공고일자","paramDataInfo2":"YYYYMMDD~YYYYMMDD","paramOrder":"I0015","parentParamOrder":"NONE","path":"-[I0015]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"registerDate","paramDataInfo1":"등록일자","paramDataInfo2":"YYYYMMDD~YYYYMMDD","paramOrder":"I0016","parentParamOrder":"NONE","path":"-[I0016]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"priorityApplicationDate","paramDataInfo1":"우선권주장일자","paramDataInfo2":"YYYYMMDD~YYYYMMDD","paramOrder":"I0017","parentParamOrder":"NONE","path":"-[I0017]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"internationalApplicationDate","paramDataInfo1":"국제출원일자","paramDataInfo2":"YYYYMMDD~YYYYMMDD","paramOrder":"I0018","parentParamOrder":"NONE","path":"-[I0018]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"internationOpenDate","paramDataInfo1":"국제공개일자","paramDataInfo2":"YYYYMMDD~YYYYMMDD","paramOrder":"I0019","parentParamOrder":"NONE","path":"-[I0019]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"applicant","paramDataInfo1":"출원인명/특허고객번호","paramDataInfo2":"","paramOrder":"I0020","parentParamOrder":"NONE","path":"-[I0020]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"inventors","paramDataInfo1":"발명자명/특허고객번호","paramDataInfo2":"","paramOrder":"I0021","parentParamOrder":"NONE","path":"-[I0021]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"agent","paramDataInfo1":"대리인명/대리인코드","paramDataInfo2":"","paramOrder":"I0022","parentParamOrder":"NONE","path":"-[I0022]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"rightHoler","paramDataInfo1":"등록권자 (특허권자)","paramDataInfo2":"","paramOrder":"I0023","parentParamOrder":"NONE","path":"-[I0023]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"patent","paramDataInfo1":"특허","paramDataInfo2":"true/false","paramOrder":"I0024","parentParamOrder":"NONE","path":"-[I0024]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"utility","paramDataInfo1":"실용","paramDataInfo2":"true/false","paramOrder":"I0025","parentParamOrder":"NONE","path":"-[I0025]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"lastvalue","paramDataInfo1":"행정처분(권리상태) 필터","paramDataInfo2":"전체:공백입력, 공개:A, 취하:C, 소멸:F, 포기:G, 무효:I, 거절:J, 등록:R","paramOrder":"I0026","parentParamOrder":"NONE","path":"-[I0026]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"pageNo","paramDataInfo1":"페이지 번호","paramDataInfo2":"기본 1","paramOrder":"I0027","parentParamOrder":"NONE","path":"-[I0027]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"numOfRows","paramDataInfo1":"페이지당 출력 건수","paramDataInfo2":"기본 10, 최대 500","paramOrder":"I0028","parentParamOrder":"NONE","path":"-[I0028]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"sortSpec","paramDataInfo1":"정렬 기준 항목","paramDataInfo2":"PD-공고일자, AD-출원일자, GD-등록일자, OPD-공개일자, FD-국제출원일자, FOD-국제공개일자, RD-우선권주장일자","paramOrder":"I0029","parentParamOrder":"NONE","path":"-[I0029]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"descSort","paramDataInfo1":"정렬 방향","paramDataInfo2":"true=내림차순/false=오름차순, sortSpec 함께 사용","paramOrder":"I0030","parentParamOrder":"NONE","path":"-[I0030]"}];
+//     $g.setData( {data : data , id : "grid1"});
+	</script>
+
+
+		
+		<article class="mt-10">
+			<p class="tit">입력값 예시(Request Sample)</p>
+		</article>
+		
+		
+			<textarea id="xmlTextarea" wrap="off" readonly="readonly" title="입력값(샘플)" style="height:28px">http://plus.kipris.or.kr/kipo-api/kipi/patUtiModInfoSearchSevice/getAdvancedSearch?astrtCont=발명&inventionTitle=센서&ServiceKey=write your service key</textarea>
+		
+	
+	
+<!-- 		<article class="mt-10"> -->
+<!-- 			<p class="tit">출력값 (Response Parameter) -->
+<!-- 			</p> -->
+<!-- 		</article> -->
+<!-- 		<div class="brdCont_table brd-t1 firstTd"> -->
+
+<!-- 		</div> -->
+	
+
+
+
+	<script>
+//     var label = ['레벨', '구분', '데이터항목', '설명', '부가정보'];
+
+//     $g.extend({
+//     	id : 'grid2' ,
+//     	target : $("[data-ax5grid='apiOutputparameterGrid']"),
+//    		columns : [
+// 		        	{ key : 'lvl', label : label[0], align : 'center', width : 80},
+//   		        	{ key : 'paramType2' , label : label[1], align : 'center', width : 118 },
+//   		        	{ key : 'paramData', label : label[2], align : 'left', width : 250
+//   		        		, formatter: function(){
+//   		        			var data = this.value;
+//   		        			for(var i=1; i<this.item.lvl; ++i){
+//   		        				data = data.replace(" ", "&nbsp;&nbsp;");
+//   		        			}
+//   		        			return data;
+//   		        		} },
+//   		        	{ key : 'paramDataInfo1', label : label[3], align : 'center', width : 250 },
+//   		        	{ key : 'paramDataInfo2', label : label[4], align : 'center', width : 450 }
+//   		    	],
+//   		body : {
+//   			onClick : function(){
+//   				alert(this.value);
+//   				console.log(this);
+//   			}
+//    		}
+//     });
+
+//     var data = [{"lvl":1,"paramType1":"OUT","paramType2":"GROUP","paramData":"items","paramDataInfo1":"","paramDataInfo2":"","paramOrder":"G0001","parentParamOrder":"NONE","path":"-[G0001]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" indexNo","paramDataInfo1":"일련번호","paramDataInfo2":"","paramOrder":"D0001","parentParamOrder":"G0001","path":"-[G0001]-[D0001]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" registerStatus","paramDataInfo1":"등록상태","paramDataInfo2":"공개, 등록, 거절, 무효, 소멸, 취하, 포기","paramOrder":"D0002","parentParamOrder":"G0001","path":"-[G0001]-[D0002]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" inventionTitle","paramDataInfo1":"발명의명칭","paramDataInfo2":"","paramOrder":"D0003","parentParamOrder":"G0001","path":"-[G0001]-[D0003]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" ipcNumber","paramDataInfo1":"IPC코드","paramDataInfo2":"복수값 '|' 구분","paramOrder":"D0004","parentParamOrder":"G0001","path":"-[G0001]-[D0004]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" registerNumber","paramDataInfo1":"등록번호","paramDataInfo2":"","paramOrder":"D0005","parentParamOrder":"G0001","path":"-[G0001]-[D0005]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" registerDate","paramDataInfo1":"등록일자","paramDataInfo2":"","paramOrder":"D0006","parentParamOrder":"G0001","path":"-[G0001]-[D0006]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" applicationNumber","paramDataInfo1":"출원번호","paramDataInfo2":"","paramOrder":"D0007","parentParamOrder":"G0001","path":"-[G0001]-[D0007]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" applicationDate","paramDataInfo1":"출원일자","paramDataInfo2":"","paramOrder":"D0008","parentParamOrder":"G0001","path":"-[G0001]-[D0008]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" openNumber","paramDataInfo1":"공개번호","paramDataInfo2":"","paramOrder":"D0009","parentParamOrder":"G0001","path":"-[G0001]-[D0009]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" openDate","paramDataInfo1":"공개일자","paramDataInfo2":"","paramOrder":"D0010","parentParamOrder":"G0001","path":"-[G0001]-[D0010]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" publicationNumber","paramDataInfo1":"공고번호","paramDataInfo2":"","paramOrder":"D0011","parentParamOrder":"G0001","path":"-[G0001]-[D0011]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" publicationDate","paramDataInfo1":"공고일자","paramDataInfo2":"","paramOrder":"D0012","parentParamOrder":"G0001","path":"-[G0001]-[D0012]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" astrtCont","paramDataInfo1":"초록","paramDataInfo2":"","paramOrder":"D0013","parentParamOrder":"G0001","path":"-[G0001]-[D0013]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" drawing","paramDataInfo1":"이미지경로","paramDataInfo2":"","paramOrder":"D0014","parentParamOrder":"G0001","path":"-[G0001]-[D0014]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" bigDrawing","paramDataInfo1":"큰이미지경로","paramDataInfo2":"","paramOrder":"D0015","parentParamOrder":"G0001","path":"-[G0001]-[D0015]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" applicantName","paramDataInfo1":"출원인","paramDataInfo2":"","paramOrder":"D0016","parentParamOrder":"G0001","path":"-[G0001]-[D0016]"},{"lvl":1,"paramType1":"OUT","paramType2":"GROUP","paramData":"count","paramDataInfo1":"","paramDataInfo2":"","paramOrder":"G0002","parentParamOrder":"NONE","path":"-[G0002]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" numOfRows","paramDataInfo1":"페이지당건수","paramDataInfo2":"","paramOrder":"D0017","parentParamOrder":"G0002","path":"-[G0002]-[D0017]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" pageNo","paramDataInfo1":"페이지번호","paramDataInfo2":"","paramOrder":"D0018","parentParamOrder":"G0002","path":"-[G0002]-[D0018]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" totalCount","paramDataInfo1":"전체건수","paramDataInfo2":"","paramOrder":"D0019","parentParamOrder":"G0002","path":"-[G0002]-[D0019]"}];
+//     $g.setData({data : data , id : "grid2"});
+	</script>
+	
+	
+<!-- 	<article class="mt-10"> -->
+<!-- 		<p class="tit">출력값 예시(Response Sample)</p> -->
+<!-- 	</article> -->
+
+		
+
+<!-- 	<form id="smpResultFrm"> -->
+<!-- 		<input type="hidden" name="serviceNm" id="serviceNm"> -->
+<!-- 		<input type="hidden" name="operation" id="operation"> -->
+<!-- 		<input type="hidden" name="kindofData" id="kindofData"> -->
+<!-- 		<div id="apiSampleCall"></div>Sample Test Call(REST)  -->
+<!-- 		<div id="apiSampleResult"></div>Sample Test Result(REST)  -->
+<!-- 	</form> -->
+
+		</div>
+		
+		<div id="apiDescription2">	
+
+			<article class="mt-10">
+				<p class="tit">
+					입출력값 (Request & Response Parameter)
+					
+					<input type="button" class="btnBasic" value="EXCEL" title="엑셀 내려받기" 
+					onclick="excelDown( 1, '', '전체검색 - getAdvancedSearch', 'patUtiModInfoSearchSevice_ REST_항목별검색_전체검색 - getAdvancedSearch');">
+					
+					<input type="button" class="btnBasic" value="CSV" title="CSV 내려받기" 
+					onclick="csvDown( 1, '', '전체검색 - getAdvancedSearch', 'patUtiModInfoSearchSevice_ REST_항목별검색_전체검색 - getAdvancedSearch');">
+					
+					<input type="button" class="btnBasic" value="JSON" title="JSON 내려받기" 
+					onclick="jsonDown( 1, '', '전체검색 - getAdvancedSearch', 'patUtiModInfoSearchSevice_ REST_항목별검색_전체검색 - getAdvancedSearch');">
+				</p>
+			</article>
+			<div id="divExcel" name="divExcel" data-ax5grid="apiAllParameterGrid" data-ax5grid-config="{ }" style="height: 1368px; "></div>
+
+		</div> <!-- //.api-group -->
+	</form>
+</div>
+
+	<script>
+    $("#service_close").hide();
+	
+    var label = ['입출력', '레벨', '구분', '데이터항목', '설명', '부가정보'];
+//     var label = ['입출력', '레벨', '구분', '데이터항목', '설명', '부가정보', '레벨ID', '상위레벨ID', '레벨트리'];
+//     console.log([{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"word","paramDataInfo1":"자유검색","paramDataInfo2":"","paramOrder":"I0001","parentParamOrder":"NONE","path":"-[I0001]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"inventionTitle","paramDataInfo1":"발명의명칭","paramDataInfo2":"","paramOrder":"I0002","parentParamOrder":"NONE","path":"-[I0002]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"astrtCont","paramDataInfo1":"초록","paramDataInfo2":"","paramOrder":"I0003","parentParamOrder":"NONE","path":"-[I0003]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"claimScope","paramDataInfo1":"청구범위","paramDataInfo2":"","paramOrder":"I0004","parentParamOrder":"NONE","path":"-[I0004]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"ipcNumber","paramDataInfo1":"IPC 분류코드","paramDataInfo2":"","paramOrder":"I0005","parentParamOrder":"NONE","path":"-[I0005]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"applicationNumber","paramDataInfo1":"출원번호","paramDataInfo2":"","paramOrder":"I0006","parentParamOrder":"NONE","path":"-[I0006]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"openNumber","paramDataInfo1":"공개번호","paramDataInfo2":"","paramOrder":"I0007","parentParamOrder":"NONE","path":"-[I0007]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"publicationNumber","paramDataInfo1":"공보(고)번호","paramDataInfo2":"","paramOrder":"I0008","parentParamOrder":"NONE","path":"-[I0008]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"registerNumber","paramDataInfo1":"등록번호","paramDataInfo2":"","paramOrder":"I0009","parentParamOrder":"NONE","path":"-[I0009]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"priorityApplicationNumber","paramDataInfo1":"우선권주장번호","paramDataInfo2":"","paramOrder":"I0010","parentParamOrder":"NONE","path":"-[I0010]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"internationalApplicationNumber","paramDataInfo1":"국제출원번호","paramDataInfo2":"","paramOrder":"I0011","parentParamOrder":"NONE","path":"-[I0011]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"internationOpenNumber","paramDataInfo1":"국제공개번호","paramDataInfo2":"","paramOrder":"I0012","parentParamOrder":"NONE","path":"-[I0012]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"applicationDate","paramDataInfo1":"출원일자","paramDataInfo2":"YYYYMMDD~YYYYMMDD","paramOrder":"I0013","parentParamOrder":"NONE","path":"-[I0013]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"openDate","paramDataInfo1":"공개일자","paramDataInfo2":"YYYYMMDD~YYYYMMDD","paramOrder":"I0014","parentParamOrder":"NONE","path":"-[I0014]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"publicationDate","paramDataInfo1":"공고일자","paramDataInfo2":"YYYYMMDD~YYYYMMDD","paramOrder":"I0015","parentParamOrder":"NONE","path":"-[I0015]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"registerDate","paramDataInfo1":"등록일자","paramDataInfo2":"YYYYMMDD~YYYYMMDD","paramOrder":"I0016","parentParamOrder":"NONE","path":"-[I0016]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"priorityApplicationDate","paramDataInfo1":"우선권주장일자","paramDataInfo2":"YYYYMMDD~YYYYMMDD","paramOrder":"I0017","parentParamOrder":"NONE","path":"-[I0017]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"internationalApplicationDate","paramDataInfo1":"국제출원일자","paramDataInfo2":"YYYYMMDD~YYYYMMDD","paramOrder":"I0018","parentParamOrder":"NONE","path":"-[I0018]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"internationOpenDate","paramDataInfo1":"국제공개일자","paramDataInfo2":"YYYYMMDD~YYYYMMDD","paramOrder":"I0019","parentParamOrder":"NONE","path":"-[I0019]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"applicant","paramDataInfo1":"출원인명/특허고객번호","paramDataInfo2":"","paramOrder":"I0020","parentParamOrder":"NONE","path":"-[I0020]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"inventors","paramDataInfo1":"발명자명/특허고객번호","paramDataInfo2":"","paramOrder":"I0021","parentParamOrder":"NONE","path":"-[I0021]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"agent","paramDataInfo1":"대리인명/대리인코드","paramDataInfo2":"","paramOrder":"I0022","parentParamOrder":"NONE","path":"-[I0022]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"rightHoler","paramDataInfo1":"등록권자 (특허권자)","paramDataInfo2":"","paramOrder":"I0023","parentParamOrder":"NONE","path":"-[I0023]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"patent","paramDataInfo1":"특허","paramDataInfo2":"true/false","paramOrder":"I0024","parentParamOrder":"NONE","path":"-[I0024]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"utility","paramDataInfo1":"실용","paramDataInfo2":"true/false","paramOrder":"I0025","parentParamOrder":"NONE","path":"-[I0025]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"lastvalue","paramDataInfo1":"행정처분(권리상태) 필터","paramDataInfo2":"전체:공백입력, 공개:A, 취하:C, 소멸:F, 포기:G, 무효:I, 거절:J, 등록:R","paramOrder":"I0026","parentParamOrder":"NONE","path":"-[I0026]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"pageNo","paramDataInfo1":"페이지 번호","paramDataInfo2":"기본 1","paramOrder":"I0027","parentParamOrder":"NONE","path":"-[I0027]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"numOfRows","paramDataInfo1":"페이지당 출력 건수","paramDataInfo2":"기본 10, 최대 500","paramOrder":"I0028","parentParamOrder":"NONE","path":"-[I0028]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"sortSpec","paramDataInfo1":"정렬 기준 항목","paramDataInfo2":"PD-공고일자, AD-출원일자, GD-등록일자, OPD-공개일자, FD-국제출원일자, FOD-국제공개일자, RD-우선권주장일자","paramOrder":"I0029","parentParamOrder":"NONE","path":"-[I0029]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"descSort","paramDataInfo1":"정렬 방향","paramDataInfo2":"true=내림차순/false=오름차순, sortSpec 함께 사용","paramOrder":"I0030","parentParamOrder":"NONE","path":"-[I0030]"},{"lvl":1,"paramType1":"OUT","paramType2":"GROUP","paramData":"items","paramDataInfo1":"","paramDataInfo2":"","paramOrder":"G0001","parentParamOrder":"NONE","path":"-[G0001]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" indexNo","paramDataInfo1":"일련번호","paramDataInfo2":"","paramOrder":"D0001","parentParamOrder":"G0001","path":"-[G0001]-[D0001]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" registerStatus","paramDataInfo1":"등록상태","paramDataInfo2":"공개, 등록, 거절, 무효, 소멸, 취하, 포기","paramOrder":"D0002","parentParamOrder":"G0001","path":"-[G0001]-[D0002]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" inventionTitle","paramDataInfo1":"발명의명칭","paramDataInfo2":"","paramOrder":"D0003","parentParamOrder":"G0001","path":"-[G0001]-[D0003]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" ipcNumber","paramDataInfo1":"IPC코드","paramDataInfo2":"복수값 '|' 구분","paramOrder":"D0004","parentParamOrder":"G0001","path":"-[G0001]-[D0004]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" registerNumber","paramDataInfo1":"등록번호","paramDataInfo2":"","paramOrder":"D0005","parentParamOrder":"G0001","path":"-[G0001]-[D0005]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" registerDate","paramDataInfo1":"등록일자","paramDataInfo2":"","paramOrder":"D0006","parentParamOrder":"G0001","path":"-[G0001]-[D0006]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" applicationNumber","paramDataInfo1":"출원번호","paramDataInfo2":"","paramOrder":"D0007","parentParamOrder":"G0001","path":"-[G0001]-[D0007]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" applicationDate","paramDataInfo1":"출원일자","paramDataInfo2":"","paramOrder":"D0008","parentParamOrder":"G0001","path":"-[G0001]-[D0008]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" openNumber","paramDataInfo1":"공개번호","paramDataInfo2":"","paramOrder":"D0009","parentParamOrder":"G0001","path":"-[G0001]-[D0009]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" openDate","paramDataInfo1":"공개일자","paramDataInfo2":"","paramOrder":"D0010","parentParamOrder":"G0001","path":"-[G0001]-[D0010]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" publicationNumber","paramDataInfo1":"공고번호","paramDataInfo2":"","paramOrder":"D0011","parentParamOrder":"G0001","path":"-[G0001]-[D0011]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" publicationDate","paramDataInfo1":"공고일자","paramDataInfo2":"","paramOrder":"D0012","parentParamOrder":"G0001","path":"-[G0001]-[D0012]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" astrtCont","paramDataInfo1":"초록","paramDataInfo2":"","paramOrder":"D0013","parentParamOrder":"G0001","path":"-[G0001]-[D0013]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" drawing","paramDataInfo1":"이미지경로","paramDataInfo2":"","paramOrder":"D0014","parentParamOrder":"G0001","path":"-[G0001]-[D0014]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" bigDrawing","paramDataInfo1":"큰이미지경로","paramDataInfo2":"","paramOrder":"D0015","parentParamOrder":"G0001","path":"-[G0001]-[D0015]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" applicantName","paramDataInfo1":"출원인","paramDataInfo2":"","paramOrder":"D0016","parentParamOrder":"G0001","path":"-[G0001]-[D0016]"},{"lvl":1,"paramType1":"OUT","paramType2":"GROUP","paramData":"count","paramDataInfo1":"","paramDataInfo2":"","paramOrder":"G0002","parentParamOrder":"NONE","path":"-[G0002]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" numOfRows","paramDataInfo1":"페이지당건수","paramDataInfo2":"","paramOrder":"D0017","parentParamOrder":"G0002","path":"-[G0002]-[D0017]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" pageNo","paramDataInfo1":"페이지번호","paramDataInfo2":"","paramOrder":"D0018","parentParamOrder":"G0002","path":"-[G0002]-[D0018]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" totalCount","paramDataInfo1":"전체건수","paramDataInfo2":"","paramOrder":"D0019","parentParamOrder":"G0002","path":"-[G0002]-[D0019]"}]);
+
+    $("#apiDescription1").slideUp();
+    $g.extend({
+    	id : 'grid3',
+    	target : $("[data-ax5grid='apiAllParameterGrid']"),
+   		columns : [
+ 		        	{ key : 'paramType1', label : label[0], align : 'center', width : 60},
+ 		        	{ key : 'lvl', label : label[1], align : 'center', width : 60},
+  		        	{ key : 'paramType2' , label : label[2], align : 'center', width : 98 },
+  		        	{ key : 'paramData', label : label[3], align : 'left', width : 250
+  		        		, formatter: function(){
+  		        			var data = this.value;
+  		        			for(var i=1; i<this.item.lvl; ++i){
+  		        				data = data.replace(" ", "&nbsp;&nbsp;");
+  		        			}
+  		        			return data;
+  		        		} },
+  		        	{ key : 'paramDataInfo1', label : label[4], align : 'center', width : 250 },
+  		        	{ key : 'paramDataInfo2', label : label[5], align : 'center', width : 430 }
+  		    	],
+  		body : {
+  			//align : 'center',
+// 	     	columnHeight : 40,
+  			onClick : function(){
+  				alert(this.value);
+//   				console.log(this);
+  			}
+   		}
+    });
+
+    var data = [{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"word","paramDataInfo1":"자유검색","paramDataInfo2":"","paramOrder":"I0001","parentParamOrder":"NONE","path":"-[I0001]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"inventionTitle","paramDataInfo1":"발명의명칭","paramDataInfo2":"","paramOrder":"I0002","parentParamOrder":"NONE","path":"-[I0002]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"astrtCont","paramDataInfo1":"초록","paramDataInfo2":"","paramOrder":"I0003","parentParamOrder":"NONE","path":"-[I0003]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"claimScope","paramDataInfo1":"청구범위","paramDataInfo2":"","paramOrder":"I0004","parentParamOrder":"NONE","path":"-[I0004]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"ipcNumber","paramDataInfo1":"IPC 분류코드","paramDataInfo2":"","paramOrder":"I0005","parentParamOrder":"NONE","path":"-[I0005]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"applicationNumber","paramDataInfo1":"출원번호","paramDataInfo2":"","paramOrder":"I0006","parentParamOrder":"NONE","path":"-[I0006]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"openNumber","paramDataInfo1":"공개번호","paramDataInfo2":"","paramOrder":"I0007","parentParamOrder":"NONE","path":"-[I0007]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"publicationNumber","paramDataInfo1":"공보(고)번호","paramDataInfo2":"","paramOrder":"I0008","parentParamOrder":"NONE","path":"-[I0008]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"registerNumber","paramDataInfo1":"등록번호","paramDataInfo2":"","paramOrder":"I0009","parentParamOrder":"NONE","path":"-[I0009]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"priorityApplicationNumber","paramDataInfo1":"우선권주장번호","paramDataInfo2":"","paramOrder":"I0010","parentParamOrder":"NONE","path":"-[I0010]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"internationalApplicationNumber","paramDataInfo1":"국제출원번호","paramDataInfo2":"","paramOrder":"I0011","parentParamOrder":"NONE","path":"-[I0011]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"internationOpenNumber","paramDataInfo1":"국제공개번호","paramDataInfo2":"","paramOrder":"I0012","parentParamOrder":"NONE","path":"-[I0012]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"applicationDate","paramDataInfo1":"출원일자","paramDataInfo2":"YYYYMMDD~YYYYMMDD","paramOrder":"I0013","parentParamOrder":"NONE","path":"-[I0013]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"openDate","paramDataInfo1":"공개일자","paramDataInfo2":"YYYYMMDD~YYYYMMDD","paramOrder":"I0014","parentParamOrder":"NONE","path":"-[I0014]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"publicationDate","paramDataInfo1":"공고일자","paramDataInfo2":"YYYYMMDD~YYYYMMDD","paramOrder":"I0015","parentParamOrder":"NONE","path":"-[I0015]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"registerDate","paramDataInfo1":"등록일자","paramDataInfo2":"YYYYMMDD~YYYYMMDD","paramOrder":"I0016","parentParamOrder":"NONE","path":"-[I0016]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"priorityApplicationDate","paramDataInfo1":"우선권주장일자","paramDataInfo2":"YYYYMMDD~YYYYMMDD","paramOrder":"I0017","parentParamOrder":"NONE","path":"-[I0017]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"internationalApplicationDate","paramDataInfo1":"국제출원일자","paramDataInfo2":"YYYYMMDD~YYYYMMDD","paramOrder":"I0018","parentParamOrder":"NONE","path":"-[I0018]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"internationOpenDate","paramDataInfo1":"국제공개일자","paramDataInfo2":"YYYYMMDD~YYYYMMDD","paramOrder":"I0019","parentParamOrder":"NONE","path":"-[I0019]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"applicant","paramDataInfo1":"출원인명/특허고객번호","paramDataInfo2":"","paramOrder":"I0020","parentParamOrder":"NONE","path":"-[I0020]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"inventors","paramDataInfo1":"발명자명/특허고객번호","paramDataInfo2":"","paramOrder":"I0021","parentParamOrder":"NONE","path":"-[I0021]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"agent","paramDataInfo1":"대리인명/대리인코드","paramDataInfo2":"","paramOrder":"I0022","parentParamOrder":"NONE","path":"-[I0022]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"rightHoler","paramDataInfo1":"등록권자 (특허권자)","paramDataInfo2":"","paramOrder":"I0023","parentParamOrder":"NONE","path":"-[I0023]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"patent","paramDataInfo1":"특허","paramDataInfo2":"true/false","paramOrder":"I0024","parentParamOrder":"NONE","path":"-[I0024]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"utility","paramDataInfo1":"실용","paramDataInfo2":"true/false","paramOrder":"I0025","parentParamOrder":"NONE","path":"-[I0025]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"lastvalue","paramDataInfo1":"행정처분(권리상태) 필터","paramDataInfo2":"전체:공백입력, 공개:A, 취하:C, 소멸:F, 포기:G, 무효:I, 거절:J, 등록:R","paramOrder":"I0026","parentParamOrder":"NONE","path":"-[I0026]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"pageNo","paramDataInfo1":"페이지 번호","paramDataInfo2":"기본 1","paramOrder":"I0027","parentParamOrder":"NONE","path":"-[I0027]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"numOfRows","paramDataInfo1":"페이지당 출력 건수","paramDataInfo2":"기본 10, 최대 500","paramOrder":"I0028","parentParamOrder":"NONE","path":"-[I0028]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"sortSpec","paramDataInfo1":"정렬 기준 항목","paramDataInfo2":"PD-공고일자, AD-출원일자, GD-등록일자, OPD-공개일자, FD-국제출원일자, FOD-국제공개일자, RD-우선권주장일자","paramOrder":"I0029","parentParamOrder":"NONE","path":"-[I0029]"},{"lvl":1,"paramType1":"IN","paramType2":"DATA","paramData":"descSort","paramDataInfo1":"정렬 방향","paramDataInfo2":"true=내림차순/false=오름차순, sortSpec 함께 사용","paramOrder":"I0030","parentParamOrder":"NONE","path":"-[I0030]"},{"lvl":1,"paramType1":"OUT","paramType2":"GROUP","paramData":"items","paramDataInfo1":"","paramDataInfo2":"","paramOrder":"G0001","parentParamOrder":"NONE","path":"-[G0001]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" indexNo","paramDataInfo1":"일련번호","paramDataInfo2":"","paramOrder":"D0001","parentParamOrder":"G0001","path":"-[G0001]-[D0001]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" registerStatus","paramDataInfo1":"등록상태","paramDataInfo2":"공개, 등록, 거절, 무효, 소멸, 취하, 포기","paramOrder":"D0002","parentParamOrder":"G0001","path":"-[G0001]-[D0002]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" inventionTitle","paramDataInfo1":"발명의명칭","paramDataInfo2":"","paramOrder":"D0003","parentParamOrder":"G0001","path":"-[G0001]-[D0003]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" ipcNumber","paramDataInfo1":"IPC코드","paramDataInfo2":"복수값 '|' 구분","paramOrder":"D0004","parentParamOrder":"G0001","path":"-[G0001]-[D0004]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" registerNumber","paramDataInfo1":"등록번호","paramDataInfo2":"","paramOrder":"D0005","parentParamOrder":"G0001","path":"-[G0001]-[D0005]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" registerDate","paramDataInfo1":"등록일자","paramDataInfo2":"","paramOrder":"D0006","parentParamOrder":"G0001","path":"-[G0001]-[D0006]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" applicationNumber","paramDataInfo1":"출원번호","paramDataInfo2":"","paramOrder":"D0007","parentParamOrder":"G0001","path":"-[G0001]-[D0007]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" applicationDate","paramDataInfo1":"출원일자","paramDataInfo2":"","paramOrder":"D0008","parentParamOrder":"G0001","path":"-[G0001]-[D0008]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" openNumber","paramDataInfo1":"공개번호","paramDataInfo2":"","paramOrder":"D0009","parentParamOrder":"G0001","path":"-[G0001]-[D0009]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" openDate","paramDataInfo1":"공개일자","paramDataInfo2":"","paramOrder":"D0010","parentParamOrder":"G0001","path":"-[G0001]-[D0010]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" publicationNumber","paramDataInfo1":"공고번호","paramDataInfo2":"","paramOrder":"D0011","parentParamOrder":"G0001","path":"-[G0001]-[D0011]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" publicationDate","paramDataInfo1":"공고일자","paramDataInfo2":"","paramOrder":"D0012","parentParamOrder":"G0001","path":"-[G0001]-[D0012]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" astrtCont","paramDataInfo1":"초록","paramDataInfo2":"","paramOrder":"D0013","parentParamOrder":"G0001","path":"-[G0001]-[D0013]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" drawing","paramDataInfo1":"이미지경로","paramDataInfo2":"","paramOrder":"D0014","parentParamOrder":"G0001","path":"-[G0001]-[D0014]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" bigDrawing","paramDataInfo1":"큰이미지경로","paramDataInfo2":"","paramOrder":"D0015","parentParamOrder":"G0001","path":"-[G0001]-[D0015]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" applicantName","paramDataInfo1":"출원인","paramDataInfo2":"","paramOrder":"D0016","parentParamOrder":"G0001","path":"-[G0001]-[D0016]"},{"lvl":1,"paramType1":"OUT","paramType2":"GROUP","paramData":"count","paramDataInfo1":"","paramDataInfo2":"","paramOrder":"G0002","parentParamOrder":"NONE","path":"-[G0002]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" numOfRows","paramDataInfo1":"페이지당건수","paramDataInfo2":"","paramOrder":"D0017","parentParamOrder":"G0002","path":"-[G0002]-[D0017]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" pageNo","paramDataInfo1":"페이지번호","paramDataInfo2":"","paramOrder":"D0018","parentParamOrder":"G0002","path":"-[G0002]-[D0018]"},{"lvl":2,"paramType1":"OUT","paramType2":"DATA","paramData":" totalCount","paramDataInfo1":"전체건수","paramDataInfo2":"","paramOrder":"D0019","parentParamOrder":"G0002","path":"-[G0002]-[D0019]"}];
+    $g.setData( {data : data , id : "grid3"});
+	</script>
+
+
+</body>

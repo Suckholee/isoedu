@@ -1,0 +1,56 @@
+[
+  {
+    "id": "179760",
+    "url": "https://www.e4c.kr/forum/index.html?event=f0173fdb-5b6e-4bf8-b3da-50563a1bab12",
+    "checkedAt": "2026-11-11T02:29:37.856051+00:00",
+    "status": 200,
+    "finalUrl": "https://www.e4c.kr/forum/index.html?event=f0173fdb-5b6e-4bf8-b3da-50563a1bab12",
+    "evidence": "179760-publiccheck-20261111.html",
+    "bytes": 1436
+  },
+  {
+    "id": "179764",
+    "url": "https://tally.so/r/2jBg8j",
+    "checkedAt": "2026-11-11T02:29:37.856362+00:00",
+    "status": 200,
+    "finalUrl": "https://tally.so/r/2jBg8j",
+    "evidence": "179764-publiccheck-20261111.html",
+    "bytes": 85109
+  },
+  {
+    "id": "179763",
+    "url": "https://docs.google.com/forms/d/e/1FAIpQLSfOnWIJhPanmhfGr72KyrkPHpzTwFZXVnk8PRXOaogMEYR_6Q/viewform",
+    "checkedAt": "2026-11-11T02:29:37.856784+00:00",
+    "status": 200,
+    "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfOnWIJhPanmhfGr72KyrkPHpzTwFZXVnk8PRXOaogMEYR_6Q/viewform",
+    "evidence": "179763-publiccheck-20261111.html",
+    "bytes": 118263
+  },
+  {
+    "id": "179763-host",
+    "url": "https://egbiz.or.kr/pd/57653.do",
+    "checkedAt": "2026-11-11T02:29:37.856896+00:00",
+    "status": 200,
+    "finalUrl": "https://egbiz.or.kr/sp/supportPrjDtl.do?listUrl=supportPrjCatList&bizCyclId=PD000000057653",
+    "evidence": "179763-host-publiccheck-20261111.html",
+    "bytes": 151148
+  },
+  {
+    "id": "179766",
+    "url": "http://www.gdhaenaem.com/?c=168",
+    "checkedAt": "2026-11-11T02:29:37.856995+00:00",
+    "status": 200,
+    "finalUrl": "http://www.gdhaenaem.com/?c=168",
+    "evidence": "179766-publiccheck-20261111.html",
+    "bytes": 27828
+  },
+  {
+    "id": "179759",
+    "url": "https://sfsc-gangdong.or.kr/announcement/?uid=244&mod=document&pageid=1",
+    "checkedAt": "2026-11-11T02:29:38.155211+00:00",
+    "status": 200,
+    "finalUrl": "https://sfsc-gangdong.or.kr/announcement/?uid=244&mod=document&pageid=1",
+    "evidence": "179759-publiccheck-20261111.html",
+    "bytes": 429619
+  }
+]

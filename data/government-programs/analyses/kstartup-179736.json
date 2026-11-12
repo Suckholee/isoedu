@@ -1,0 +1,244 @@
+{
+  "programId": "kstartup-179736",
+  "title": "제8차 충남 오픈이노베이션 포럼",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-09T00:10:10.078931+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179736",
+  "reviewScope": "포스터PNG전체시각·대체TXT전문·상세본문·공개Google폼전문·PoC연결공고본문만확인(추가첨부내용은미분석);2026-11-09",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1PDD-OFVcG5w60iPnrSnRgcmrIyiDJRA2WUM5G3gOhAK2Aw",
+      "verifiedAt": "2026-11-09",
+      "status": "downloaded",
+      "sha256": "c7c42ef995bb6bd956fec6e010b51ccf162b248d5cb83d4be4ce548106318394",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 2883299,
+      "format": "IMAGE",
+      "file": "attachment-01.bin",
+      "contentType": "image/png;charset=UTF-8",
+      "review": {
+        "at": "2026-11-09T00:10:10.078931+00:00",
+        "scope": "포스터PNG전체시각·대체TXT전문·상세본문·공개Google폼전문·PoC연결공고본문만확인(추가첨부내용은미분석);2026-11-09",
+        "method": "visual"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1Dv8YprpRMfsO1Keokqh1Pnt-6Ikvb0jol4k8uP-sPvIOKQ",
+      "verifiedAt": "2026-11-09",
+      "status": "downloaded",
+      "sha256": "90cafc46118bfb8bd94cb1ee6476863cbc10bc9e8891d816ad7983b9aab82f81",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 1294,
+      "format": "TEXT",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "decoded-text",
+      "textFile": "attachment-02.bin.txt",
+      "review": {
+        "at": "2026-11-09T00:10:10.078931+00:00",
+        "scope": "포스터PNG전체시각·대체TXT전문·상세본문·공개Google폼전문·PoC연결공고본문만확인(추가첨부내용은미분석);2026-11-09",
+        "method": "text/visual scope recorded in reviewScope"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/v1PDD-OFVcG5w60iPnrSnRgcmrIyiDJRA2WUM5G3gOhAK2Aw": "c7c42ef995bb6bd956fec6e010b51ccf162b248d5cb83d4be4ce548106318394",
+    "https://www.k-startup.go.kr/afile/fileDownload/v1Dv8YprpRMfsO1Keokqh1Pnt-6Ikvb0jol4k8uP-sPvIOKQ": "90cafc46118bfb8bd94cb1ee6476863cbc10bc9e8891d816ad7983b9aab82f81"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-09T00:10:10.078931+00:00",
+  "eligibility": {
+    "summary": "오픈이노베이션에관심있는스타트업대표자/유관기관관계자등의포럼참가.충남PoC공급기업사업모집은별도원문(kstartup-179662)이며포럼참가자에지원금/협업선정확정아님.",
+    "companyFields": [
+      "소속",
+      "직위/직책",
+      "성명",
+      "연락처",
+      "관심수요기업",
+      "PoC검토시별도회사소재/신산업/기술"
+    ],
+    "reference": "상세대상/포스터왼쪽·Google폼4문항; 확인 2026-11-09T00:13:27.071339+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179736"
+  },
+  "exclusions": {
+    "items": [
+      "포럼상세별도제외조건미기재·신청폼개인정보고지미확인"
+    ],
+    "reference": "상세신청절; 확인 2026-11-09T00:13:27.071339+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179736"
+  },
+  "support": {
+    "summary": "포럼참가무료·다과예정.11/17 10~13:30 한기대2캠퍼스소강당105호,필요성강연/세라젬수요발표/세라젬CP참여기업발표/네트워킹.포스터별도PoC12주/과제당2000만원내외는관련사업조건으로분리.",
+    "reference": "상세지원·포스터왼쪽행사/오른쪽별도PoC; 확인 2026-11-09T00:13:27.071339+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179736"
+  },
+  "period": {
+    "start": "2026-11-05",
+    "end": "2026-11-16",
+    "deadlineTime": "23:59",
+    "timezone": "Asia/Seoul",
+    "reference": "상세신청기간; 확인 2026-11-09T00:13:27.071339+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179736"
+  },
+  "application": {
+    "summary": "11/16 23:59까지 https://m.site.naver.com/2jTh2 →공개Google폼참가등록.필수문항4개:소속·직위/직책·성명·연락처.별도PoC https://m.site.naver.com/2jPzT 원문에서세라젬/CP·DTGO 11/13 21시,엠아이텍/아이티센/마루베니11/27 21시 이메일제출,상상인추후공고로확인(포럼마감과혼합금지).",
+    "reference": "Google폼전체4문항·별도PoC공고3886본문; 확인 2026-11-09T00:13:27.071339+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179736"
+  },
+  "requiredDocuments": [
+    {
+      "name": "온라인참가신청4필수문항",
+      "condition": "포럼참가필수·파일첨부요구없음",
+      "reference": "공개Google폼전체질문4개·상세제출서류"
+    },
+    {
+      "name": "PoC신청서/구비서류",
+      "condition": "별도사업에신청할때만·해당공고179662에서분석",
+      "reference": "별도주최공고board_seq3886"
+    }
+  ],
+  "businessPlan": {
+    "format": "포럼사업계획서요구없음·PoC양식은별도",
+    "limit": "해당없음",
+    "sections": [],
+    "reference": "상세온라인참가신청/포럼양식; 확인 2026-11-09T00:13:27.071339+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179736"
+  },
+  "evaluation": {
+    "summary": "사전신청접수;포럼별도수치평가없음·수요기업PoC선정과별도",
+    "reference": "상세사전신청접수; 확인 2026-11-09T00:13:27.071339+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179736"
+  },
+  "contact": {
+    "name": "한국기술교육대학교 앵커사업단041-580-4865/heron100@koreatech.ac.kr,상단대표연락041-580-4846",
+    "reference": "상세문의4865·상단4846; 확인 2026-11-09T00:13:27.071339+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179736"
+  },
+  "unresolved": [
+    "공개Google폼은필수4문항확인했으나수집목적/보유기간/동의고지미발견·개인정보처리세부확인필요",
+    "포스터별도PoC상상인그룹표기대주최본문추후별도공고·이번포럼참가/지원선정과구분",
+    "연락처상단4846대문의4865역할차이·실제접수/잔여정원미검증"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179736",
+    "companyId": null,
+    "permission": "권한회사프로필확보후근거별검토·현재신청가능확정아님",
+    "steps": [
+      "회사필드/증빙확인",
+      "충돌/미확인해결",
+      "S12양식·S13회사정보로서류/계획작성"
+    ]
+  },
+  "applicationChecks": [
+    {
+      "id": "179736",
+      "url": "https://m.site.naver.com/2jTh2",
+      "checkedAt": "2026-11-09T00:08:22.389594+00:00",
+      "status": 200,
+      "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdaKCR_VfPzMbZAePA2XnmdBeeSp34YzOirsEznAHnjojvkIQ/viewform?usp=send_form",
+      "evidence": "179736-publiccheck-20261109.html",
+      "bytes": 93162
+    },
+    {
+      "id": "179736-poc",
+      "url": "https://m.site.naver.com/2jPzT",
+      "checkedAt": "2026-11-09T00:08:22.389708+00:00",
+      "status": 200,
+      "finalUrl": "https://sandan.koreatech.ac.kr/kor/CMS/Board/Board.do?mCode=MN062&searchCategory=c001&mgr_seq=9&mode=view&mgr_seq=9&board_seq=3886",
+      "evidence": "179736-poc-publiccheck-20261109.html",
+      "bytes": 179115
+    }
+  ],
+  "evidenceReferences": [
+    {
+      "field": "eligibility",
+      "reference": "상세대상/포스터왼쪽·Google폼4문항",
+      "checkedAt": "2026-11-09T00:13:27.071339+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179736",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1PDD-OFVcG5w60iPnrSnRgcmrIyiDJRA2WUM5G3gOhAK2Aw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1Dv8YprpRMfsO1Keokqh1Pnt-6Ikvb0jol4k8uP-sPvIOKQ"
+      ]
+    },
+    {
+      "field": "exclusions",
+      "reference": "상세신청절",
+      "checkedAt": "2026-11-09T00:13:27.071339+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179736",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1PDD-OFVcG5w60iPnrSnRgcmrIyiDJRA2WUM5G3gOhAK2Aw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1Dv8YprpRMfsO1Keokqh1Pnt-6Ikvb0jol4k8uP-sPvIOKQ"
+      ]
+    },
+    {
+      "field": "support",
+      "reference": "상세지원·포스터왼쪽행사/오른쪽별도PoC",
+      "checkedAt": "2026-11-09T00:13:27.071339+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179736",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1PDD-OFVcG5w60iPnrSnRgcmrIyiDJRA2WUM5G3gOhAK2Aw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1Dv8YprpRMfsO1Keokqh1Pnt-6Ikvb0jol4k8uP-sPvIOKQ"
+      ]
+    },
+    {
+      "field": "period",
+      "reference": "상세신청기간",
+      "checkedAt": "2026-11-09T00:13:27.071339+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179736",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1PDD-OFVcG5w60iPnrSnRgcmrIyiDJRA2WUM5G3gOhAK2Aw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1Dv8YprpRMfsO1Keokqh1Pnt-6Ikvb0jol4k8uP-sPvIOKQ"
+      ]
+    },
+    {
+      "field": "application",
+      "reference": "Google폼전체4문항·별도PoC공고3886본문",
+      "checkedAt": "2026-11-09T00:13:27.071339+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179736",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1PDD-OFVcG5w60iPnrSnRgcmrIyiDJRA2WUM5G3gOhAK2Aw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1Dv8YprpRMfsO1Keokqh1Pnt-6Ikvb0jol4k8uP-sPvIOKQ"
+      ]
+    },
+    {
+      "field": "requiredDocuments",
+      "reference": "상세제출·Google폼필수4질문",
+      "checkedAt": "2026-11-09T00:13:27.071339+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179736",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1PDD-OFVcG5w60iPnrSnRgcmrIyiDJRA2WUM5G3gOhAK2Aw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1Dv8YprpRMfsO1Keokqh1Pnt-6Ikvb0jol4k8uP-sPvIOKQ"
+      ]
+    },
+    {
+      "field": "businessPlan",
+      "reference": "상세온라인참가신청/포럼양식",
+      "checkedAt": "2026-11-09T00:13:27.071339+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179736",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1PDD-OFVcG5w60iPnrSnRgcmrIyiDJRA2WUM5G3gOhAK2Aw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1Dv8YprpRMfsO1Keokqh1Pnt-6Ikvb0jol4k8uP-sPvIOKQ"
+      ]
+    },
+    {
+      "field": "evaluation",
+      "reference": "상세사전신청접수",
+      "checkedAt": "2026-11-09T00:13:27.071339+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179736",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1PDD-OFVcG5w60iPnrSnRgcmrIyiDJRA2WUM5G3gOhAK2Aw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1Dv8YprpRMfsO1Keokqh1Pnt-6Ikvb0jol4k8uP-sPvIOKQ"
+      ]
+    },
+    {
+      "field": "contact",
+      "reference": "상세문의4865·상단4846",
+      "checkedAt": "2026-11-09T00:13:27.071339+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179736",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1PDD-OFVcG5w60iPnrSnRgcmrIyiDJRA2WUM5G3gOhAK2Aw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1Dv8YprpRMfsO1Keokqh1Pnt-6Ikvb0jol4k8uP-sPvIOKQ"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2134 @@
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+
+<html lang="kr">
+<head>
+
+    
+    
+
+<!-- Env Start -->
+    <meta charset="utf-8" />
+    <title>국가보훈부 제대군인지원센터</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes" />
+    <meta name="description" content="국가보훈부 제대군인지원센터" />
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="국가보훈부 제대군인지원센터"/>
+    <meta property="og:description" content="제대군인 사회복귀, 복지향상, 취업, 창업 지원, 채용 및 인재정보 제공" />
+    <meta property="og:image" content="https://vnet.go.kr/img/main/logo.gif" />
+    <meta property="og:url" content="https://vnet.go.kt" />
+
+
+	<link rel="stylesheet" type="text/css" href="/jquery/jquery-ui/jquery-ui.min.css"/>
+   	<link rel="stylesheet" type="text/css" href="/jquery/jqGrid/css/ui.jqgrid.css"/>
+   	<link rel="stylesheet" type="text/css" href="/mobile/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="/mobile/css/mobile.css" />
+    <link rel="stylesheet" type="text/css" href="/mobile/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/mobile/css/mob640.css" media="all and (max-width:640px)" />  <!--화면 600까지 따로 링크를 걸어줌 -->
+    <link rel="stylesheet" type="text/css" href="/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="/css/layer.css" /> 
+	<link rel="stylesheet" type="text/css" href="/css/style_oacx.css" />
+	<link rel="stylesheet" type="text/css" href="/css/style_chatbot.css" />
+	<link rel="stylesheet" type="text/css" href="/css/style.css?2024071101" />
+	<link rel="stylesheet" type="text/css" href="/css/main.css" />
+	
+	<link rel="stylesheet" type="text/css" href="/css/index.css"/>
+	<link rel="stylesheet" type="text/css" href="/css/styles.css?2024071701" />
+
+	<link rel="stylesheet" type="text/css" href="/plugins/nano/nano.css" />
+
+	<script type="text/javascript" src="/jquery/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="/js/common.js"></script>
+
+	 <script type="text/javascript" src="/jquery/jquery-migrate-1.2.1.js"></script>
+	<script type="text/javascript" src="/jquery/jquery-ui/jquery-ui.min.js"></script>
+	
+	<script type="text/javascript" src="/jquery/jqGrid/js/i18n/grid.locale-kr.js"></script>
+	<script type="text/javascript" src="/jquery/jqGrid/js/jquery.jqGrid.min.js"></script>
+	
+	<script type="text/javascript" src="/jquery/jquery.alphanum.js"></script>
+	<script type="text/javascript" src="/jquery/jquery.mask.min.js"></script>
+	
+	<script type="text/javascript" src="/js/ext_common.js?2024101004"></script>
+	<script type="text/javascript" src="/js/ext_common_wj.js"></script>
+	<script type="text/javascript" src="/js/ext_common_rv.js"></script>
+	<script type="text/javascript" src="/js/ext_pagination.js"></script>
+	<script type="text/javascript" src="/js/com.js"></script>
+	<script type="text/javascript" src="/js/web_event_collector.min.js"></script>
+<!-- Env End -->
+
+	<script type="text/javascript">
+
+		/****************************************************/
+		/* 변수 선언                                      */
+		/****************************************************/
+		// 공통코드 변수 선언
+		var cdN0223;
+		var cdN0123;
+
+		
+		/****************************************************/
+		/* Ready                                            */
+		/****************************************************/
+		$(document).ready(function () {  
+	
+			// 필수 초기화 
+			cfn_init();
+	
+			// 업무화면 초기화
+			fn_init();
+	
+		});
+	
+		
+		/****************************************************/
+		/* 초기화                                           */
+		/****************************************************/
+		function fn_init()
+		{
+			// 공통코드 조회
+	
+			// 셀렉트 박스 생성
+	
+			// 라디오 생성
+	
+			// 버튼 이벤트 설정
+			fn_setButtonEvent();
+	
+			// 데이터 조회
+			fn_select();
+		}
+		
+		
+		/****************************************************/
+		/* 버튼 이벤트 설정                                 */
+		/****************************************************/
+		function fn_setButtonEvent()
+		{
+			$("#btnList").click(function() {	
+				fn_list();
+			});
+	
+			$("#btnUpdate").click(function() {	
+				fn_update();
+			});
+	
+			$("#btnDelete").click(function() {	
+				fn_delete();
+			});
+
+			$("#applyBt").click(function()	{
+				fn_insert();
+			});
+
+			$("#cancelBt").click(function() {
+				fn_cancel();
+			});
+		}
+	
+		/****************************************************/
+		/* 사용자 정의 함수                                */
+		/****************************************************/
+		
+		// 목록화면으로 이동
+		function fn_list(){
+			$("#frm").attr("action", "/esta/EstaLcr002.do");
+			$("#frm").submit();
+		}
+
+		// 상세내용 조회
+		function fn_select(){
+			var oParam = {
+				  "idx" : $("#idx").val()
+			};
+	
+			cfn_transaction(
+				  "select"
+				, "/esta/selectEstaLcr002D.do"	// url
+				, oParam				 							// 검색조건
+				, "fn_callback"
+			);
+		}
+
+		//과정별 수강신청/확인 insert
+		function fn_insert(){
+			var edcBtn = getCookie("EstaLcr_"+$("#idx").val());
+
+			if(edcBtn !="" && ((new Date() -new Date( edcBtn))/1000/60)<1){
+				alert("1분 후에 신청가능합니다.");
+				return;
+			}else{
+				var oParam ={
+					 "idx"        : $("#idx").val()
+					,"curriculum" : $("#insertCurriculum").val()
+					,"courseCode" : $("#insertCourseCode").val()
+					,"eduDesc" 	  : $("#insertEduDesc").val()
+					,"evStartDt"  : $("#insertEvStartDt").val()
+					,"evEndDt"    : $("#insertEvEndDt").val()
+					,"lagbCode"   : $("#insertLagbCode").val()	
+				};
+	
+				cfn_transaction(
+					"insert"
+				  , "/esta/createEstaLcr002D.do"
+				  , oParam
+				  , "fn_callback" 
+				);
+			}
+		}
+
+		//과정별 수강신청/확인 cancel
+		function fn_cancel(){
+			var edcBtn = getCookie("EstaLcr_"+$("#idx").val());
+
+			if(edcBtn !="" && ((new Date() -new Date( edcBtn))/1000/60)<1){
+				alert("1분 후에 취소가능합니다.");
+				return;
+			}else{
+				var oParam ={
+					 "idx"        : $("#idx").val()
+				};
+	
+				cfn_transaction(
+					"cancel"
+				  , "/esta/cancelEstaLcr002D.do"
+				  , oParam
+				  , "fn_callback" 
+				);
+			}
+		}
+	
+		// 콜백
+		function fn_callback(sSvcId, nErrorCode, oResponseData){
+	
+			if (nErrorCode < 0 )
+			{
+				alert("해당 자료가 존재하지 않습니다.");
+				history.back();
+				return false;
+			}
+	
+			switch(sSvcId)
+			{
+				case "select":  //tr svcid
+					// 값설정
+					$("#title").html(htmlDecode(oResponseData.resultMap.title));
+					$("#evDate").text(oResponseData.resultMap.evStartDt + ' ~ ' +oResponseData.resultMap.evEndDt);
+					$("#apDate").text(oResponseData.resultMap.apStartDt + ' ~ ' +oResponseData.resultMap.apEndDt);
+					var url1= $("#filename1").attr("href");
+					$("#filename1").text(oResponseData.resultMap.filename1).attr("href", url1 + "&fileDtlId=" + oResponseData.resultMap.fileDtlId1);
+					if(!cfn_isEmpty(oResponseData.resultMap.filename2)){
+						var url2 = $("#filename2").attr("href");
+						$("#filename2").text(", "+oResponseData.resultMap.filename2).attr("href", url2 + "&fileDtlId=" + oResponseData.resultMap.fileDtlId2);
+					}
+					$("#content").html(htmlDecode(oResponseData.resultMap.content));
+					$("#lagbCode").text(oResponseData.resultMap.lagbCode);
+					$("#readno").text(oResponseData.resultMap.readno);
+
+					$("#insertCurriculum").val(oResponseData.resultMap.title);
+					$("#insertCourseCode").val(oResponseData.resultMap.courseCode);
+					$("#insertEduDesc").val(oResponseData.resultMap.eduDesc);
+					$("#insertEvStartDt").val(oResponseData.resultMap.evStartDt);
+					$("#insertEvEndDt").val(oResponseData.resultMap.evEndDt);
+					$("#insertLagbCode").val(oResponseData.resultMap.insertLagbCode);
+
+					//신청여부버튼
+					$("#endYn").val(oResponseData.resultMap.endYn);
+					$("#apEndDt").val(oResponseData.resultMap.apEndDt);
+
+					var endYn = oResponseData.resultMap.endYn;
+					
+					//오늘날짜
+					var _today = new Date();
+					var todayYear = _today.getFullYear();
+					var todayMonth = (_today.getMonth()+1);
+					var todayDay = _today.getDate();
+					if(todayMonth.length < 2) todayMonth = "0" + todayMonth;
+					if(todayMonth.length < 2) todayMonth = "0" + todayMonth;
+					var today = new Date(todayYear, todayMonth-1, todayDay);
+
+					//문자열로 된 마감일을 날짜 타입으로 변환하기
+					var endDate = oResponseData.resultMap.apEndDt+"";
+					var endYear = endDate.substr(0,4);
+					var endMonth = endDate.substr(5,2);
+					var endDay = endDate.substr(8,2);
+					var apEndDt = new Date(endYear, endMonth-1, endDay);
+
+					
+					
+						$("#applyBt").attr("type", "button");
+					
+					//신청여부버튼
+					break;
+				case "delete":
+					alert("삭제되었습니다.");
+					fn_list();
+					break;
+				case "insert":
+					if(oResponseData.insertIdx == '1'){
+						alert("신청되었습니다.");
+						$("#applyBt").attr("type", "hidden");
+						$("#cancelBt").attr("type", "button");
+						//btnClick = false;
+						//setTimeout(function(){btnClick=true;},60000);
+						//2024-10-10 1분 후 취소,문의 될수 있도록 delay 주기 위해 쿠키에 값 셋팅
+						setCookieM("EstaLcr_"+$("#idx").val(), new Date(), 1);
+					}else{
+						alert(oResponseData.loginOut);
+						location.reload();
+					}
+					break;
+				case "cancel":
+					if(oResponseData.deleteIdx == '1'){
+						alert("취소되었습니다.");
+						$("#applyBt").attr("type", "button");
+						$("#cancelBt").attr("type", "hidden");
+						//btnClick = false;
+					//	setTimeout(function(){btnClick=true;},60000);
+						//2024-10-10 1분 후 취소,문의 될수 있도록 delay 주기 위해 쿠키에 값 셋팅
+						setCookieM("EstaLcr_"+$("#idx").val(), new Date(), 1);
+					}else{
+						alert(oResponseData.loginOut)
+						location.reload();
+					}
+					break;
+			}
+		}
+		
+		function htmlDecode(value){
+			return !value ? value : String(value).replace(/&gt;/g, ">").replace(/&lt;/g, "<").replace(/&quot;/g, '"').replace(/&amp;/g, "&");
+		}
+
+		//세션 로그인된 정보가 있다면 신청/조회항목에 신청버튼 생성
+		//end_yn 컬럼이 수료전 신청 -> 'N'(취소버튼생성), 수료시 -> 'Y'(없음), null -> 신청버튼생성
+// 		$(function(){
+// 			var endYn = $("#endYn").val();
+// 			var mbrId = $("#mbrId").val();
+// 			var enddate = $("#enddate").val();
+// 			var mtype = $("#mtype").val();
+// 			if(cfn_isEmpty(mbrId)){
+// 			}else if(mtype=='P'){
+// 				//로그인이 되어있고 신청기간이 남아있을때에만 나타나라
+// 				if(cfn_isEmpty(endYn) && (enddate != '[마감]')){
+// 					$("#applyBt").attr("type", "button");
+// 				}else if((endYn == '[신청완료]') && (enddate != '[마감]')){
+// 					$("#cancelBt").attr("type", "button");
+// 				}
+// 			}
+// 		})
+	</script>
+
+</head>
+<body>
+	<main>
+		
+			<!-- SKIPNAVI -->
+			
+
+
+
+
+
+
+
+
+
+<div id="skipNavi">
+	<ul>
+		<li><a href="#container">본문으로 이동</a></li>
+		<li><a href="#header">대메뉴로 이동</a></li>
+		<li><a href="#footer">하단정보 바로가기</a></li>
+	</ul>
+</div>
+
+			<!--// SKIPNAVI -->
+		
+	
+		<!-- header -->
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Header Start -->
+<script type="text/javascript" >
+function goAllmenu(){
+	location.href="/cmn/MenuMap.do";
+ }
+
+
+var currentFontSize = 16;
+/* 글씨크기 초기화 */
+function resetFontSize(){
+	currentFontSize = 16;
+	document.documentElement.style.fontSize = currentFontSize + "px";
+	localStorage.setItem("currentFontSize",currentFontSize);
+}
+
+/* 글씨크기 크게 */
+function increaseFontSize(){
+	if(currentFontSize < 22) {
+		currentFontSize += 2;
+		document.documentElement.style.fontSize = currentFontSize + "px";
+		localStorage.setItem("currentFontSize",currentFontSize);
+	}
+	console.log(currentFontSize,localStorage["currentFontSize"]);
+}
+
+/* 글씨크기 작게 */
+function decreaseFontSize(){
+	
+	if(currentFontSize > 10) {
+		currentFontSize -= 2;
+		document.documentElement.style.fontSize = currentFontSize + "px";
+		localStorage.setItem("currentFontSize",currentFontSize);
+		console.log(currentFontSize,localStorage["currentFontSize"]);
+	}
+}
+
+function initFontSize(){
+	if(localStorage['currentFontSize']!==undefined){
+		currentFontSize = Number(localStorage['currentFontSize']);
+		document.documentElement.style.fontSize = currentFontSize + "px";
+		console.log(currentFontSize,localStorage["currentFontSize"]);
+		
+	}
+}
+
+function resetFontSize(){
+	if(confirm("화면크기를 초기화 하시겠습니까? \n초기화 진행시 메인 화면으로 이동 됩니다.")){
+		localStorage.removeItem("currentFontSize");
+		location.href="/VnetIndex.do";
+
+	}
+}
+
+</script>
+
+
+<style>
+
+.zoominBt2 {border:1px solid #ddd; display:inline-block; margin-left:5px;}
+.zoominBt2 .zoomBt {display:inline-block; width:28px; height:25px; border-right:1px solid #ddd; background:url("/img/common/zoom_icon.gif") no-repeat center center; font-size:0px;   }
+.zoominBt2 .inBt {display:inline-block; width:25px; height:25px;  background:url("/img/common/in_icon.gif") no-repeat center center; font-size:0px;   }
+.zoominBt2 .reset {display:inline-block; width:25px; height:25px; border-right:1px solid #ddd; background:url("/img/common/refreshBt.png") no-repeat center center; font-size:0px;   }
+
+.zoominBt3 {display:inline-block; margin-left:5px;}
+.zoominBt3 .zoomBt {display:inline-block; width:28px; height:25px; border-right:1px solid #ddd; background:url("/img/common/zoom_icon.gif") no-repeat center center; font-size:0px;background-color:white;  }
+.zoominBt3 .inBt {display:inline-block; width:25px;  height:25px;  background:url("/img/common/in_icon.gif") no-repeat center center; font-size:0px; background-color:white; }
+.zoominBt3 .reset {display:inline-block; width:25px; height:25px; border-right:1px solid #ddd; background:url("/img/common/refreshBt.png") no-repeat center center; font-size:0px; background-color:white;  }
+
+
+</style>
+<script type="text/javascript" src="/js/html2canvas.js"></script>
+
+<!-- ############################# Mobile Menu Start -->
+	
+
+
+
+
+
+
+
+
+
+	        <!--로딩-->
+	        <div class="LoadingBox" id="loadingAction">  
+	          <div class="loding">
+	            <span>잠시만 기다려주세요!</span>
+	             <p class="lodingImg"></p>
+	          </div>
+	        </div>
+	        <!--// 로딩-->
+			
+		<script type="text/javascript">
+		
+		
+		$(document).ready(function() {
+
+			initFontSize();
+			
+			fn_setBoldLeftMenu();
+			$(".gnbN > a").on('keydown', function(event) {
+				if(event.key == 'Enter') {
+					event.preventDefault();
+					$(this).trigger("mouseover");
+				}	
+			})
+			/* $(".gnbN > a").on('mouseover', function(event) {
+				console.log("TEST");
+			}) */
+
+		    deviceView();
+		    // desktopNoscroll();
+
+		    function deviceView(){
+		        var windowWidth = $( window ).width();
+		        if(windowWidth < 1025) {
+		            $("body").addClass("mobileView").removeClass("deskView");
+		        } else {
+		            $("body").addClass("deskView").removeClass("mobileView");;
+		        }
+		    }
+		    $(window).resize(function(){
+		        deviceView();
+		    });
+
+		    $(window).scroll(function(){
+		    
+		        if($(window).scrollTop() > 50){
+		            $("body").addClass("fx");
+		        }else{
+		            $("body").removeClass("fx");
+		        }
+		    });
+		    
+		    //nanoScroll
+		    //$(".nano").nanoScroller();
+
+		    // 네비게이션
+		    $("#btnMenu, #btnMenuClose, .closeBtn").bind('click', function(){
+		        var status = $("body").hasClass("menu-open");
+
+		        if(status === false){
+		            $("body").addClass("noscroll");
+		            $("body").addClass("menu-open");
+		            $("#navMoblie").focus();
+		        } else {
+		            $("body").removeClass("noscroll");
+		            $("body").removeClass("menu-open");
+		            $(this).focus();
+		        }
+		    });
+
+		    // 모바일 햄버거 메뉴 제어
+		    $(".more > a").bind('click' , function(e){
+		        // Prevents the default action to be triggered.
+		        e.preventDefault();
+
+		        let opStatus = $(this).closest('li');
+
+		        if(opStatus.hasClass('open') == false){
+		            opStatus.addClass('open');
+		        } else {
+		            opStatus.removeClass('open');
+		        }
+		    });
+
+		    // 서브페이지 사이드 메뉴
+		    $(".lnbwrap > li > strong a").bind('click' , function(e){
+		        // Prevents the default action to be triggered.
+		        e.preventDefault();
+
+		        let opStatusPc = $(this).closest('li');
+
+		        if(opStatusPc.hasClass('open') == false){
+		            $(".lnbwrap > li").removeClass('open');
+		            opStatusPc.addClass('open');
+		        } else {
+		            opStatusPc.removeClass('open');
+		        }
+		    });
+
+		    // 1depth 메뉴 클릭 이벤트
+		    $(".depth1 a").bind('click' , function(e){
+		        // Prevents the default action to be triggered.
+		        e.preventDefault();
+		        var tabmn = $(this).attr('data-tab');
+
+
+		        $('.depth1 li').find('.active').removeClass('active');
+		        $(this).addClass('active');
+		        $('.navwrap .gnbmn').find('.active').removeClass('active');
+		        $('.' + tabmn).addClass('active');
+		        $('.navwrap .gnbmn .depth2').find('.open').removeClass('open');
+		    });
+
+		    // $(".depth2 .more").bind('click' , function(e){
+		    //     // Prevents the default action to be triggered.
+		    //     e.preventDefault();
+
+
+		    //     $(this).children('.depth3').addClass('active');
+		    //     $('.navwrap .gnbmn .more').find('.active').removeClass('active');
+		    // });
+
+		    if($(".job_memoiros").length > 0) {
+			    if($(".job_memoiros ul > li > button").length > 0) {
+				    $(".job_memoiros ul > li").eq(0).css("background-color", "#2477ea");
+			    	$(".job_memoiros ul > li > button").eq(0).css("color", "white");
+
+					$(".job_memoiros ul > li").on("click", function() {
+ 				    	$(".job_memoiros ul > li").css("background-color", "white");
+				    	$(".job_memoiros ul > li > button").css("color", "black"); 
+					    $(this).css("background-color", "#2477ea");
+					    $(this).find("button").eq(0).css("color", "white");
+				   	});
+				}
+			}
+		    // 취업지원 static 페이지 버튼 이벤트
+		    
+			
+		});
+		$(function(){
+			$(".gnb>li").on("click", ".depth1", function(e){
+				e.preventDefault();
+				$(".depth1ON").attr("class", "depth1");
+				$(".depth2").attr("style", "display:none;");
+				$(this).next(".depth2").attr("style", "display:block;");
+				$(this).attr("class", "depth1ON");
+			});
+		
+			$(".more > a").click(function(e){
+				e.preventDefault();
+				var style = $(this).next(".depth3").attr("style");
+				if(style == "display:none;"){
+					$(".depth3").attr("style", "display:none;");
+					$(this).next(".depth3").attr("style", "display:block;");
+				} else {
+					$(this).next(".depth3").attr("style", "display:none;");
+				}
+			});
+			$('.login_con').hide();
+			$('.login_con').html('로그인하기');
+
+		})
+			function fn_mobileMenu(){
+				document.getElementById('m_nav').style.display = 'block';
+// 				document.getElementById('m_nav').style.position = 'fixed';
+				document.getElementById('fade').style.display = 'block'
+				document.documentElement.scrollTop = 0;
+			};
+		
+		var capture_term;
+		var timer;
+		function fn_capture(e) {
+			var delay = 15;
+			if(capture_term > 0) {
+				alert("캡쳐는 " + capture_term + "초 이후에 사용가능합니다.");
+				return false;
+			} else {
+				capture_term= delay;
+			}
+			var body 		= document.body;
+			var height 	= body.scrollHeight;
+			var width		= body.scrollWidth;
+
+			html2canvas(document.body).then(
+				function(canvas) { // 전체 화면 캡쳐
+					var img = canvas.getContext("2d").getImageData(0, 0, width, height);
+					var data = document.createElement("canvas");
+					data.width = width;
+					data.height = height;
+					data.getContext("2d").putImageData(img, 0, 0);
+					captureSave(canvas, data);
+				}
+			);	
+			//----------------------------------- 캡쳐 파일 저장
+			function captureSave(canvas, data) {
+				var dataURL = canvas.toDataURL(data);
+
+				var formData = new FormData();
+				//formData.append('fileData', dataURL.split(',')[1]);
+
+				$.ajax({ 
+					url: '/cmn/saveCaptureImg.do', 
+					data		: {"fileData" : dataURL.split(',')[1]}, 
+					dataType	: "json",
+					type: 'POST', 
+					success: function(data){
+						//console.log(data);
+
+					} 
+					, error	: function(oResponseData) {
+						alert("처리 중 통신에러가 발생하였습니다.");
+						return;
+					}
+				});   
+			
+
+			/* 	var blob = convertToBlob(dataURL);
+				formData.append('fileSize', blob.size);
+				formData.append('fileType', dataURL.split(',')[0]);
+				formData.append('cptrDivCd', 'C');
+				var xmlRequest = new XMLHttpRequest();
+				xmlRequest.open('POST', cfn_getContextPath() + "/cmn/saveCaptureImg.do", true);
+				xmlRequest.onload = function() {
+					if(xmlRequest.status == 200) {
+						console.log("전송성공");
+					} else {
+						console.log("전송실패");
+					}
+				}
+				xmlRequest.send(formData);  */
+				
+/* 				if(navigator.msSaveBlob) {
+					var blob = canvas.msToBlob();
+					return navigator.msSaveBlob(blob, "파일명.png");
+				} else {
+					var el = document.getElementById("captureTarget");
+					el.href = canvas.toDataURL("image/png");
+					el.download = "파일명.png";
+					el.click();
+				} */
+			}
+			//----------------------------------- 캡쳐 파일 저장 end
+			function convertToBlob(dataURL) {
+				var binary = atob(dataURL.split(',')[1]);
+				var array = [];
+				for(var i = 0; i < binary.length; i++) {
+					array.push(binary.charCodeAt(i));
+				}
+				return new Blob([new Uint8Array(array)], {type: 'image/png'});
+			}
+			//----------------------------------- 캡쳐 함수 실행시간 텀 두기
+			var timerFunc = function() {
+				capture_term--;
+			//	console.log(capture_term);
+				if(capture_term > 0) timer = setTimeout(timerFunc, 1000);
+			};
+			timer = setTimeout(timerFunc, 1000);
+			//----------------------------------- 캡쳐 함수 실행시간 텀 두기 end
+		}
+
+ 		function fn_openCamera() {
+			$("#mobileCapture").trigger("click");
+		} 
+
+		function fn_setBoldLeftMenu() {
+			if(cfn_nchk($(".subMenu"), '') != '') {
+				var arrLeftMenu = $(".subMenu").find('a');
+				$.each(arrLeftMenu, function(i) {
+					var menu_tag = $(arrLeftMenu[i]);
+					if($(menu_tag).attr("href") == '/esta/EstaLcr002D.do') {
+						if($(menu_tag).closest('dd').length > 0) { 
+							$(menu_tag).closest('dd').show();
+						}						
+						if($(menu_tag).closest('dl').length > 0) {
+							if($(menu_tag).closest('dl').find('dt').length > 0) {
+								$(menu_tag).closest('dl').find('dt').eq(0).find('a').eq(0).removeClass('depth2');
+								$(menu_tag).closest('dl').find('dt').eq(0).find('a').eq(0).addClass('depth2on');
+								$(menu_tag).closest('dl').find('dt').eq(0).find('a').eq(0).removeClass('arr');
+								$(menu_tag).closest('dl').find('dt').eq(0).find('a').eq(0).addClass('arron');
+							}
+						}
+						
+						if($(menu_tag).hasClass("depth2off")) {
+							$(menu_tag).removeClass("depth2off");
+							$(menu_tag).addClass("depth2on");
+						} else if($(menu_tag).hasClass("depth2")) {
+							$(menu_tag).removeClass("depth2");
+							$(menu_tag).addClass("depth2on");
+						} else if($(menu_tag).hasClass("depth3")) {
+							$(menu_tag).removeClass("depth3");
+							$(menu_tag).addClass("depth3on");
+						} else if($(menu_tag).hasClass("depth3off")) {
+							$(menu_tag).removeClass("depth3off");
+							$(menu_tag).addClass("depth3on");
+						}
+					}
+				})
+			}
+		}
+
+		function fn_openPsyJob() {
+			var confirmMsg = "아래의 심리검사를 진행할 수 있습니다. ";
+			confirmMsg += "\n1. 성인용 직업적성검사";
+			confirmMsg += "\n2. 직업선호도검사 S형";
+			confirmMsg += "\n3. 창업적성검사";
+			confirmMsg += "\n4. 직업가치관검사";
+			confirmMsg += "\n5. 직업선호도검사(L형)";
+			confirmMsg += "\n6. 구직준비도검사";
+			confirmMsg += "\n※ 검사 중 창을 닫거나, 진행을 종료하는 경우 검사 결과가 저장되지 않습니다. 반드시 검사를 완료해주세요.";
+			if(confirm(confirmMsg)) {
+				var url = "https://work.go.kr/consltJobCarpa/jobPsyExam/guest/univJobPsyExamInfo.do?psyExamOrgcd=G0198&psyExamId=" + '';
+				window.open(url, "_blank");
+			}
+		}
+		</script>
+		
+		
+
+            <!-- 위에 비밀번호 확인 필요 -->
+            
+            
+		<!--header-->
+		<header id="header">
+			 <div class="logo_con">
+            <div class="logoName">
+                <a href="/VnetIndex.do" class="logo" title="국가보훈부 제대군인지원센터">제대군인지원센터</a>
+                <a href="/VnetIndex.do" class="logo2" title="국가보훈부 제대군인지원센터"><img src="/img/common/header_logo_mb.png" alt="국가보훈부 제대군인지원센터"></a>
+                <!--// only mobile view(e) -->
+                <ul class="glb">
+                	
+                		
+		                    <li class="login log"><a href="/gud/GudMbrLgn.do">로그인</a></li>
+		                    <li><a href="/gud/GudMbrJn.do">회원가입</a></li>
+		                    <li>
+		                    	<a href='#' style="cursor: default;">화면크기</a>
+									<p class="zoominBt2">
+										
+										<button class="reset" onclick="resetFontSize()"></button>
+										<button class="zoomBt" onclick="increaseFontSize()"></button>
+										<button class="inBt" onclick="decreaseFontSize()"></button>
+										
+									</p>
+                            </li>
+                		
+                		
+                	
+                	
+                	
+                   	<li class="search"><a href="/search/mobileSearch.do"><span>검색</span></a></li>
+		            <li class="search2"><a href="/search/mobileSearch.do"><span style="display:inline-block;">검색</span></a></li>
+                </ul>
+            <!-- only mobile view(s) -->
+            <button type="button" id="btnMenu" class="btnmenu" title="메뉴 하위메뉴 펼치기"></button>
+            </div>
+        </div>
+		<!-- Menu -->
+			<nav id="navMobile">
+                <h2 class="blind">국가보훈부 vnet 주요메뉴</h2>
+				<div class="login-box">
+					
+						
+						
+							<a href="/gud/GudMbrLgn.do" class="btn_login1">로그인</a>
+							<a href="/gud/GudMbrJn.do" class="btn_member1">회원가입</a> 
+							
+						
+					
+						<a href='#' style="cursor: default;">화면크기</a>
+						<p class="zoominBt3">
+							<button class="reset" onclick="resetFontSize()"></button><button class="zoomBt" onclick="increaseFontSize()"></button><button class="inBt" onclick="decreaseFontSize()"></button>
+							
+						</p>
+					
+					<button type="button" class="closeBtn"><img src="/img/icon/closed-x2.png" alt="메뉴닫기"></button>
+				</div>
+				<div>
+					<ul class="depth1">
+	                    <li><a href="#none" data-tab="menu1">채용정보</a></li>
+	                    <li><a href="#none" data-tab="menu2">취업지원</a></li>
+	                    <li><a href="#none" data-tab="menu3">창업지원</a></li>
+	                    <!-- <li><a href="#none" data-tab="menu4">뉴딜정책</a></li> -->
+	                    <li><a href="#none" data-tab="menu5">해외취업</a></li>
+	                    <li><a href="#none" data-tab="menu6">교육훈련</a></li>
+	                    <li><a href="#none" data-tab="menu7">선후배멘토링</a></li>
+	                    <li><a href="#none" data-tab="menu8">열린도우미</a></li>
+	                    <li><a href="#none" data-tab="menu9">지역별센터</a></li>
+	                    
+               		</ul>
+				</div>
+				<div class="navwrap">
+                    <div class="nano">
+                    	<div class="nano-content">
+                    		
+                    		<ul class="gnbmn">
+                    			<li class="gnbsn_more menu1">	<!-- 채용정보 -->
+	                    			<ul class="depth2">
+                                        <li class="sbmn"><a href="/empn/EmpnInf001.do"><span>제대군인지원센터채용정보</span></a></li>
+                                        <li><a href="/empn/EmpnSctJbInf001.do"><span>사회적일자리 채용정보</span></a></li>
+                                        <li class="more">
+                                        	<a href="#">해외일자리 채용정보</a>
+											<ul class="depth3" >
+												<li><a href="/empn/EmpnDsEmpnslFrvlJbInf008.do">월드잡제공 해외채용정보</a></li>
+		                                        <li><a href="/empn/EmpnFrnJbInf001.do">센터제공 해외채용정보</a></li>
+											</ul>
+										</li>
+										<li><a href="/empn/EmpnDsEmpnslFrvlJbInf004.do">센터기업회원 채용정보</a></li>
+                                        <li class="more">
+                                        	<a href="#">OPENAPI 채용정보</a>
+											<ul class="depth3" >
+												<li><a href="/empn/EmpnDsEmpnslFrvlJbInf001.do">고용24제공 채용정보</a></li>
+												<li><a href="/empn/EmpnDsEmpnslFrvlJbInf009.do">공공기관 잡알리오 채용정보</a></li>
+                                				<li><a href="/empn/EmpnDsEmpnslFrvlJbInf010.do">인사혁신처 나라일터 채용정보</a></li>
+                                				<li><a href="/empn/EmpnDsEmpnslFrvlJbInf011.do">국방부제공 채용정보</a></li>
+											</ul>
+										</li>
+										<li><a href="/empn/EmpnSit.do"><span>채용정보 사이트</span></a></li>
+									</ul>
+                    			</li>
+                    			<li class="gnbsn_more menu2">	<!-- 취업지원 -->
+	                    			<ul class="depth2">
+										<li class="sbmn more">
+											<a href="#">입사지원가이드</a>
+											<ul class="depth3">
+												<li><a href="/em/EmJal001.do" class="depth3ON">이력서</a></li>
+												<li><a href="/em/EmJal002.do">자기소개서</a></li>
+												<li><a href="/em/EmJal003.do">경력기술서</a></li>
+												<li><a href="/em/EmJal004.do">면접법</a></li>
+												<li><a href="/em/EmJal005.do">직무수행계획서</a></li>
+											</ul>
+										</li>
+										<li class="sbmn more">
+											<a href="#">취업정보</a>
+												<ul class="depth3">
+													<li><a href="/em/EmGud.do">취업가이드</a></li>
+													<li><a href="/em/EmNwsl.do">취업뉴스</a></li>
+												</ul>
+										</li>
+										<li class="more">
+											<a href="#">취업워크숍/특강</a>
+											<ul class="depth3">
+												<li><a href="/em/EmLcr001_1.do">교육과정별 소개</a></li>
+												<li><a href="/em/EmLcr002.do">과정별 수강신청</a></li>
+											</ul>
+										</li>
+										<li><a href="/em/EmNotc.do">순회상담/구직행사/공지</a></li>
+<!-- 										<li><a href="https://www.work.go.kr/consltJobCarpa/jobPsyExam/jobPsyExamIntro.do" target="_blank">직업심리검사</a></li> -->
+										<li><a href="/em/EmNCS.do">NCS(국가직무능력표준)</a></li>
+									</ul>
+                    			</li>
+                    			<li class="gnbsn_more menu3">	<!-- 창업지원 -->
+	                    			<ul class="depth2">
+										<li class="sbmn more">
+											<a href="#">창업워크숍</a>
+											<ul class="depth3">
+												<li><a href="/esta/EstaLcr001.do">교육과정별소개</a></li>
+												<li><a href="/esta/EstaLcr002.do">과정별 수강신청</a></li>
+											</ul>
+										</li>
+										<li><a href="/esta/EstaGbh.do">창업&middot; 귀농귀촌박람회</a></li>
+										<li><a href="/esta/EstaPbaf.do">창업실무체험소개</a></li>
+										<li class="more">
+											<a href="#">창업칼럼</a>
+											<ul class="depth3">
+												<li><a href="/esta/EstaCol001.do">자문위원칼럼</a></li>
+												<li><a href="/esta/EstaCol002.do">자문위원소개</a></li>
+												<li><a href="/esta/EstaCol003.do">창업가이드</a></li>
+											</ul>
+										</li>
+										<li class="more">
+											<a href="#">창업정보</a>
+											<ul class="depth3">
+												<li><a href="/esta/EstaInf001.do">업종리뷰</a></li>
+												<li><a href="/esta/EstaInf002.do">창업뉴스</a></li>
+											</ul>
+										</li>
+										
+										<li><a href="/esta/EstaRsrm.do">창업자료실</a></li>
+										
+										<li class="more">
+											<a href="#">창업&middot;귀농귀촌 관련기관</a>
+											<ul class="depth3">
+												<li><a href="/esta/EstaKMDC.do">소상공인시장진흥공단</a></li>
+												<li><a href="/esta/EstaKstartup.do">K-STARTUP 창업지원사업</a></li>
+												<li><a href="/esta/EstaGreendaeroOffline.do">그린대로 오프라인 교육</a></li>
+												<li><a href="/esta/EstaGreendaeroOnline.do">그린대로 온라인 교육</a></li>
+												<li><a href="/esta/EstaGreendaeroLive.do">그린대로 농촌에서살아보기</a></li>
+											</ul>
+										</li>
+										
+									</ul>
+                    			</li>
+
+                    			<li class="gnbsn_more menu5">	<!-- 해외취업 -->
+	                    			<ul class="depth2">
+										<li class="sbmn"><a href="/frn/FrnEm.do">해외취업 소개</a></li>
+										<li><a href="/frn/FrnJbNwsl.do">해외취&middot;창업뉴스</a></li>
+<!-- 										<li><a href="https://www.worldjob.or.kr/abGuide/engResume.do?menuId=1000000048" target="_blank">영문이력서 작성 및 인터뷰 방법<span class="winopen">&nbsp;</span></a></li> -->
+										<li><a href="#none;" onclick="window.open('https://www.worldjob.or.kr/abGuide/engResume.do?menuId=1000000048'); return false;" target="_blank">영문이력서 작성 및 인터뷰 방법<span class="winopen">&nbsp;</span></a></li>
+										<li><a href="/frn/FrnEmSit.do">해외취업관련사이트</a></li>
+									</ul>
+                    			</li>
+                    			<li class="gnbsn_more menu6">	<!-- 교육훈련 -->
+	                    			<ul class="depth2">
+										<li class="sbmn"><a href="/edc/EdcCyb.do">사이버교육</a></li>
+										<li class="more">
+											<a href="#">전문교육기관위탁교육</a>
+											<ul class="depth3" style="display:none;">
+												<li><a href="/edc/EdcCnsg001.do">교육과정 및 일정소개</a></li>
+												<li><a href="/edc/EdcCnsg002.do">과정별 수강신청</a></li>
+											</ul>
+										</li>
+										<li><a href="/edc/EdcAbltEde.do">직업능력개발 교육비</a></li>
+										<li><a href="/edc/EdcEde.do">직업훈련정보</a></li>
+										<li><a href="http://www.work24.go.kr" target="_blank">고용24 HRD직업훈련<span class="winopen">&nbsp;</span></a></li>
+										<li><a href="http://www.q-net.or.kr/crf005.do?id=crf00501&gSite=Q&depth=0101" target="_blank">산업인력공단Q-net자격증 <span class="winopen">&nbsp;</span></a></li>
+									</ul>
+                    			</li>
+                    			<li class="gnbsn_more menu7">	<!-- 선후배멘토링 -->
+	                    			<ul class="depth2">
+										<li class="sbmn"><a href="/sen/SenMento001.do">선후배멘토링소개</a></li>
+										<li><a href="/sen/SenMento002.do">선후배 멘토 보기</a></li>
+											
+										<li><a href="/sen/SenMemr.do?ctval=4">취&middot; 창업성공수기집</a></li>
+	                                    
+											<li><a href="/gud/GudMbrLgnMento.do">멘토회원 로그인</a></li>
+										
+									</ul>
+                    			</li>
+                    			<li class="gnbsn_more menu8">	<!-- 열린도우미 -->
+	                    			<ul class="depth2">
+										<li class="sbmn more">
+											<a href="#">민원행정서비스</a>
+											<ul class="depth3" style="display:none;">
+												<li><a href="/gud/GudCvIntro.do">민원행정서비스 홈</a></li>
+												<li><a href="/gud/GudCv002.do">전직지원금 신청</a></li>
+												<li><a href="/gud/GudCv003.do">사이버교육 신청</a></li>
+												<li><a href="/gud/GudCv004.do">직업능력개발교육비 신청</a></li>
+												
+												<!-- 20250225 추가 -->
+												<li><a href="/gud/GudCv014.do">고용우수기업인증제 안내</a></li>
+												
+												
+												
+												<li><a href="/gud/GudCv005.do">직업능력개발훈련 신청(고용노동부추천)</a></li>
+												<li><a href="/gud/GudCv001.do">제대군인지원 신청</a></li>
+												<li><a href="/gud/GudCv006.do">보훈특별고용 및 특별채용추천신청</a></li>
+												<li><a href="/gud/GudCv008.do">무료법률지원서비스</a></li>
+												<li><a href="/gud/GudCv009.do">제대군인(자녀)교육지원대상자 증명</a></li>
+												<li><a href="/gud/GudCv010.do">아파트 특별공급(분양/임대)신청</a></li>
+												<li><a href="/gud/GudCv011.do">제대군인대부 신청</a></li>
+												<li><a href="/gud/GudCv012.do">국립묘지안장 신청</a></li>
+												<li><a href="/gud/GudCv999.do">심리재활서비스</a></li>
+												<li><a href="/gud/GudCv007.do">고용촉진장려금(사업주용)</a></li>
+											</ul>
+										</li>
+										
+											<li class="sbmn more">
+												<a href="#">회원가입/로그인</a>
+												<ul class="depth3">
+													<li><a href="/gud/GudMbrJn.do">회원가입</a></li>
+													<li><a href="/gud/GudMbrLgn.do">회원로그인</a></li>
+												</ul>
+											</li>
+										
+										<li class="more">
+											<a href="#">FAQ(자주묻는질문)</a>
+											<ul class="depth3">
+												<li><a href="/gud/GudFaqIndl.do">개인회원 FAQ</a></li>
+												<li><a href="/gud/GudFaqEt.do">기업회원 FAQ</a></li>
+											</ul>
+										</li>
+										<li><a href="/gud/GudCv.do">국민신문고</a></li>
+										<li><a href="/gud/GudCentNwsl.do">센터소식</a></li>
+										<li><a href="/gud/GudSmileDssl.do">리;스펙 제대군인</a></li>
+										<li><a href="/gud/GudPbrlMpi.do">홍보 알림</a></li>
+										<li class="more">
+											<a href="#">자료실</a>
+											<ul class="depth3">
+												<li><a href="/gud/GudCentRsrm.do">정보자료실</a></li>
+												<li><a href="/gud/GudCentTmplRsrm.do">서식자료실</a></li>
+											</ul>
+										</li>
+									</ul>
+                    			</li>
+                    			<li class="gnbsn_more menu9">	<!-- 센터소개 -->
+	                    			<ul class="depth2">
+	                    				<li><a href="/cent/CentMain.do?centCode=seoul">서울</a></li>
+	                    				<li><a href="/cent/CentMain.do?centCode=ggbb">경기북부</a></li>
+	                    				<li><a href="/cent/CentMain.do?centCode=ggnb">경기남부</a></li>
+	                    				<li><a href="/cent/CentMain.do?centCode=inchun">인천</a></li>
+	                    				<li><a href="/cent/CentMain.do?centCode=gangwon">강원</a></li>
+	                    				<li><a href="/cent/CentMain.do?centCode=daejeon">대전</a></li>
+	                    				<li><a href="/cent/CentMain.do?centCode=gwanju">광주</a></li>
+	                    				<li><a href="/cent/CentMain.do?centCode=daegu">대구</a></li>
+	                    				<li><a href="/cent/CentMain.do?centCode=gn">경남</a></li>
+	                    				<li><a href="/cent/CentMain.do?centCode=busan">부산</a></li>
+	                    				<li><a href="/cent/CentPlusPage.do?centCode=cheonan">고용복지 플러스센터</a></li>
+<!-- 	                    				<li class="more"> -->
+<!-- 											<a href="#">고용복지 플러스센터</a> -->
+<!-- 											<ul class="depth3"> -->
+
+
+
+
+<!-- 											</ul> -->
+<!-- 										</li> -->
+									</ul>
+                    			</li>
+                    			
+                    			
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav>
+            <div class="navmask" id="btnMenuClose"></div>
+<!-- ############################# Mobile Menu End -->
+
+<!-- ############################# PC Menu Start -->
+		<script type="text/javascript">
+		
+		$(function(){
+			var tabIndex = 0;
+			$('.login dt a').click(function(){
+				tabIndex = $(this).index();
+				$('.login dt a').each(function(idx){
+					$(this).attr('class', $(this).attr('class').replace('tabOn','tab'));
+					if(tabIndex == idx) {
+						$(this).attr('class', $(this).attr('class').replace('tab','tabOn'));
+						$("#mchkG").val(tabIndex);
+					}
+				});
+				
+				if(tabIndex == 1) { alert("멘토회원은 제대군인지원센터에서\n멘토로 등록한 고객만 로그인이 가능합니다\n일반회원은 ‘개인/기업회원’으로 로그인하세요.");}
+			});
+		})
+		</script>
+        <!-- header -->
+        <nav id="navDesktop">
+            <h2 class="blind">국가보훈부 vnet 주요메뉴</h2>
+            <!-- gnb -->
+            <div class="gnb_box">
+                <div class="gnbMenu">
+                    <ul class="gnb">
+                    	<li class="gnbN gnb_menu_tab"><a href="/cmn/MenuMap.do"><span>전체메뉴 바로가기</span></a></li>
+                        <li class="gnbN">
+                            <a href="/empn/EmpnInf001.do">채용정보</a>
+                            <!-- 채용정보 -->
+                            <div class="gnb_sub">
+                                <ul class="nav_sub">
+                                    <li><span class="title">채용정보</span></li>
+                                    <li>
+                                        <a href="/empn/EmpnInf001.do" class="nav_bt">제대군인지원센터 채용정보</a>
+                                        <a href="/empn/EmpnSctJbInf001.do" class="nav_bt">사회적 일자리 채용정보 </a>
+                                        <dl>
+                                        	<dt>
+	                                        	<a href="/empn/EmpnFrnJbInf001.do" class="nav_bt">해외일자리 채용정보</a>
+	                                        </dt>
+                                            <dd>
+                                        		<a href="/empn/EmpnFrnJbInf001.do" >센터제공 해외채용정보</a>
+                                                <a href="/empn/EmpnDsEmpnslFrvlJbInf008.do">월드잡제공 해외채용정보</a>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                        	<dt>
+                                        		<a href="/empn/EmpnDsEmpnslFrvlJbInf004.do">센터기업회원 채용정보</a>
+                                        	</dt>
+                                        	<dt>
+	                                        	<a href="/empn/EmpnDsEmpnslFrvlJbInf001.do" class="nav_bt">OPENAPI 채용정보 </a>
+	                                        </dt>
+                                            <dd>
+                                                <a href="/empn/EmpnDsEmpnslFrvlJbInf001.do">고용24제공 채용정보</a>
+                                                <a href="/empn/EmpnDsEmpnslFrvlJbInf009.do">공공기관 잡알리오 채용정보</a>
+                                				<a href="/empn/EmpnDsEmpnslFrvlJbInf010.do">인사혁신처 나라일터 채용정보</a>
+                                				<a href="/empn/EmpnDsEmpnslFrvlJbInf011.do">국방부제공 채용정보</a>
+                                            </dd>
+                                        </dl>
+
+                                    </li>
+
+                                    <li><a href="/empn/EmpnSit.do" class="nav_bt">채용정보사이트</a></li>
+                                </ul>
+                            </div>
+                            <!-- // 채용정보 -->                     
+                        </li>
+                        <li class="gnbN">
+                            <a href="/em/EmJal001.do">취업지원</a>
+                            <!-- 취업지원 -->
+                            <div class="gnb_sub">
+                                <ul class="nav_sub">
+                                    <li><span class="title">취업지원</span></li>
+                                    <li>
+                                        <dl>
+                                        	<dt>
+	                                    		<a href="/em/EmJal001.do" class="nav_bt">입사지원가이드</a>
+	                                    	</dt>
+                                            <dd>
+                                                <a href="/em/EmJal001.do">이력서</a>
+                                                <a href="/em/EmJal002.do">자기소개서</a>
+                                                <a href="/em/EmJal003.do">경력기술서</a>
+                                                <a href="/em/EmJal004.do">면접법</a>
+                                                <a href="/em/EmJal005.do">직무수행계획서</a>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                    	<dl>
+                                    		<dt>
+		                                  		 <a href="/em/EmGud.do" class="nav_bt">취업정보</a>
+                                        	</dt>
+                                        	<dd>
+                                        	    <a href="/em/EmGud.do" >취업가이드 </a>
+		                                        <a href="/em/EmNwsl.do">취업뉴스 </a>
+                                        	</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt><a href="/em/EmLcr001_1.do">취업워크숍 / 특강</a></dt>
+                                            <dd>
+                                                <a href="/em/EmLcr001_1.do">교육과정별 소개</a>
+                                                <a href="/em/EmLcr002.do">과정별 수강신청</a>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <a href="/em/EmNotc.do" class="nav_bt">순회상담/구직행사/공지</a>
+                                        <a href="/em/EmNCS.do" class="nav_bt">NCS(국가직무능력표준)</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- // 취업지원 -->
+                            
+                        </li>
+                        <li class="gnbN">
+                            <a href="/esta/EstaLcr001.do">창업지원</a>
+                            <!-- 창업지원 -->
+                            <div class="gnb_sub">
+                                <ul class="nav_sub">
+                                    <li><span class="title">창업지원</span></li>
+                                    <li>
+                                        <dl>
+                                        	<dt>
+	                                    		<a href="/esta/EstaLcr001.do" class="nav_bt">창업워크숍</a>
+	                                    	</dt>
+                                            <dd>
+                                                <a href="/esta/EstaLcr001.do">교육과정별 소개</a>
+                                                <a href="/esta/EstaLcr002.do">과정별 수강신청</a>
+                                            </dd>
+                                        </dl>
+                                        <a href="/esta/EstaGbh.do" class="nav_bt">창업&middot;귀농귀촌 박람회</a>
+                                        <a href="/esta/EstaPbaf.do" class="nav_bt">창업실무체험소개</a>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                        	<dt>
+	                                        	<a href="/esta/EstaCol001.do" class="nav_bt">창업칼럼</a>
+	                                        </dt>
+                                            <dd>
+                                                <a href="/esta/EstaCol001.do">자문위원칼럼</a>
+                                                <a href="/esta/EstaCol002.do">자문위원소개</a>
+                                                <a href="/esta/EstaCol003.do">창업가이드</a>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                        	<dt>
+                                        		<a href="/esta/EstaInf001.do" class="nav_bt">창업정보</a>
+                                        	</dt>
+                                            <dd>
+                                                <a href="/esta/EstaInf001.do">업종리뷰</a>
+                                                <a href="/esta/EstaInf002.do">창업뉴스</a>
+                                            </dd>
+                                        </dl>
+                                        <a href="/esta/EstaRsrm.do" class="nav_bt">창업자료실</a>
+                                    	<dt>
+                                     		<a href="/esta/EstaKMDC.do" class="nav_bt">창업&middot;귀농귀촌 관련기관</a>
+                                     	</dt>
+                                         <dd>
+                                             <a href="/esta/EstaKMDC.do">소상공인시장진흥공단</a>
+                                             <a href="/esta/EstaKstartup.do">K-STARTUP 창업지원사업</a>
+                                             <a href="/esta/EstaGreendaeroOffline.do">그린대로 오프라인 교육</a>
+                                             <a href="/esta/EstaGreendaeroOnline.do">그린대로 온라인 교육</a>
+                                             <a href="/esta/EstaGreendaeroLive.do">그린대로 농촌에서살아보기</a>
+                                         </dd>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- // 창업지원 -->
+                        <li class="gnbN">
+                            <a href="/frn/FrnEm.do">해외취업</a>
+
+                            <!-- 해외취업 -->
+                            <div class="gnb_sub">
+                                <ul class="nav_sub">
+                                    <li><span class="title">해외취업</span></li>
+                                    <li>
+                                        <a href="/frn/FrnEm.do" class="nav_bt">해외취업소개</a>
+                                        <a href="/frn/FrnJbNwsl.do" class="nav_bt">해외취&middot;창업뉴스</a>
+                                    </li>
+                                    <li>
+<!--                                         <a href="https://www.worldjob.or.kr/abGuide/engResume.do?menuId=1000000048" target="_blank" class="nav_bt">영문이력서 작성 및 인터뷰 방법 <span class="winopen">&nbsp;</span></a> -->
+                                        <a href="#none;" onclick="window.open('https://www.worldjob.or.kr/abGuide/engResume.do?menuId=1000000048'); return false;" target="_blank" class="nav_bt">영문이력서 작성 및 인터뷰 방법 <span class="winopen">&nbsp;</span></a>
+                                        <a href="/frn/FrnEmSit.do" class="nav_bt">해외취업 관련 사이트</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- // 해외취업 -->
+                        </li>
+                        <li class="gnbN">
+                            <a href="/edc/EdcCyb.do">교육훈련</a>
+                            <!-- 교육훈련 -->
+                            <div class="gnb_sub">
+                                <ul class="nav_sub">
+                                    <li><span class="title">교육훈련</span></li>
+                                    <li>
+                                        <a href="/edc/EdcCyb.do" class="nav_bt">사이버교육</a>
+                                        <dl>
+                                            <dt><a href="/edc/EdcCnsg001.do">전문교육기관위탁교육</a></dt>
+                                            <dd>
+                                                <a href="/edc/EdcCnsg001.do">교육과정 및 일정소개</a>
+                                                <a href="/edc/EdcCnsg002.do">과정별 수강신청</a>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <a href="/edc/EdcAbltEde.do" class="nav_bt">직업능력개발 교육비</a>
+                                        <a href="/edc/EdcEde.do" class="nav_bt">직업훈련정보</a>
+                                         <a href="#none;" onclick="window.open('https://www.work24.go.kr'); return false;" target="_blank" class="nav_bt" title="새창열림">고용24 HRD직업훈련<span class="winopen">&nbsp;</span></a>
+                                        <a href="http://www.q-net.or.kr/crf005.do?id=crf00501&gSite=Q&depth=0101" target="_blank" class="nav_bt">산업인력공단Q-net자격증 <span class="winopen">&nbsp;</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- // 교육훈련 -->
+                        </li>
+                        <li class="gnbN">
+                            <a href="/sen/SenMento001.do">선후배멘토링</a>
+
+                            <!-- 선후배멘토링 -->
+                            <div class="gnb_sub">
+                                <ul class="nav_sub">
+                                    <li><span class="title">선후배멘토링</span></li>
+                                    <li>
+                                    	<a href="/sen/SenMento001.do" class="nav_bt">선후배 멘토링 소개</a>
+                                    	<a href="/sen/SenMento002.do" class="nav_bt">선후배멘토 찾기</a>
+                                    	
+                                    </li>
+                                    <li>
+                                    	<a href="/sen/SenMemr.do?ctval=4" class="nav_bt">취 &middot; 창업성공수기집</a>
+ 	                                    
+	                                    	<a href="/gud/GudMbrLgnMento.do" class="nav_bt">멘토회원 로그인</a>
+	                                    
+	                                </li>
+                                </ul>
+                            </div>
+                            <!-- // 선후배멘토링 -->
+                        </li>
+                        <li class="gnbN">
+                            <a href="/gud/GudCvIntro.do">열린도우미</a>
+                            <!-- 열린도우미 -->
+                            <div class="gnb_sub" style="height:460px;">
+                                <ul class="nav_sub">
+                                    <li><span class="title">열린도우미</span></li>
+                                    <li>
+                                        <dl>
+                                        	<dt>
+	                                        	<a href="/gud/GudCvIntro.do" class="nav_bt">민원행정서비스</a>
+	                                        </dt>
+                                            <dd>
+                                                <a href="/gud/GudCv002.do">전직지원금 신청</a>
+                                                <a href="/gud/GudCv003.do">사이버교육 신청</a>
+                                                <a href="/gud/GudCv004.do">직업능력개발교육비 신청</a>
+                                                
+                                                <!-- 20250225 추가 -->
+												<a href="/gud/GudCv014.do">고용우수기업인증제 안내</a>
+												
+                                                
+                                                
+                                                <a href="/gud/GudCv005.do">직업능력개발훈련 신청(고용노동부추천)</a>
+                                                <a href="/gud/GudCv001.do">제대군인지원 신청</a>
+                                                <a href="/gud/GudCv006.do">보훈특별고용 및 특별채용추천 신청</a>
+                                                <a href="/gud/GudCv008.do">무료법률지원서비스</a>
+                                                <a href="/gud/GudCv009.do">제대군인(자녀)교육지원 대상자 증명</a>
+                                                <a href="/gud/GudCv010.do">아파트 특별공급(분양/임대) 신청</a>
+                                                <a href="/gud/GudCv011.do">제대군인대부 신청</a>
+                                                <a href="/gud/GudCv012.do">국립묘지안장 신청</a>
+                                                <a href="/gud/GudCv999.do">심리재활서비스</a>
+                                            	<a href="/gud/GudCv007.do">고용촉진장려금(사업주용)</a>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    
+                                    <li>
+                                    
+                                        <dl>
+                                        	<dt>
+                                    			<a href="/gud/GudMbrJn.do" class="nav_bt">회원가입/로그인</a>
+                                    		</dt>
+                                            <dd>
+                                                <a href="/gud/GudMbrJn.do">회원가입</a>
+                                                <a href="/gud/GudMbrLgn.do">회원로그인</a>
+                                            </dd>
+                                        </dl>
+                                    
+                                        <dl>
+                                        	<dt>
+ 	                                   	    	<a href="/gud/GudFaqIndl.do" class="nav_bt">FAQ(자주묻는질문)</a>
+ 	                                   	    </dt>
+                                            <dd>
+                                                <a href="/gud/GudFaqIndl.do">개인회원 FAQ</a>
+                                                <a href="/gud/GudFaqEt.do">기업회원 FAQ</a>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="/gud/GudCv.do" class="nav_bt">국민신문고</a>
+                                        <a href="/gud/GudCentNwsl.do" class="nav_bt">센터소식</a>
+                                        <a href="/gud/GudSmileDssl.do" class="nav_bt">제대군인JOB</a>
+                                        <a href="/gud/GudPbrlMpi.do" class="nav_bt">홍보 알림</a>
+                                        <dl>
+	                                        <dt>
+		                                        <a href="/gud/GudCentRsrm.do" class="nav_bt">자료실</a>
+	                                        </dt>
+                                            <dd>
+                                                <a href="/gud/GudCentRsrm.do">정보 자료실</a>
+                                                <a href="/gud/GudCentTmplRsrm.do">서식 자료실</a>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- // 열린도우미 -->
+                        </li>
+                        <li class="gnbN">
+                            <a href="/cent/CentMain.do?centCode=seoul">지역별센터</a>
+                            <!-- 센터소개 -->
+                            <div class="gnb_sub" style="height:340px;">
+                                <ul class="nav_sub">
+                                    <li><span class="title">지역별센터</span></li>
+                                    <li>
+                                        <a href="/cent/CentMain.do?centCode=seoul" class="nav_bt">서울</a>
+                                        <a href="/cent/CentMain.do?centCode=ggbb" class="nav_bt">경기북부</a>
+                                        <a href="/cent/CentMain.do?centCode=ggnb" class="nav_bt">경기남부</a>
+                                        <a href="/cent/CentMain.do?centCode=Inchun" class="nav_bt">인천</a>
+                                        <a href="/cent/CentMain.do?centCode=gangwon" class="nav_bt">강원</a>
+                                    </li>
+                                    <li>
+                                        <a href="/cent/CentMain.do?centCode=daejeon" class="nav_bt">대전</a>
+                                        <a href="/cent/CentMain.do?centCode=gwanju" class="nav_bt">광주</a>
+                                        <a href="/cent/CentMain.do?centCode=daegu" class="nav_bt">대구</a>
+                                        <a href="/cent/CentMain.do?centCode=gn" class="nav_bt">경남</a>
+                                        <a href="/cent/CentMain.do?centCode=busan" class="nav_bt">부산</a>
+                                    </li>
+                                    <li>
+                                         <a href="/cent/CentPlusPage.do?centCode=cheonan" class="nav_bt">고용복지 플러스센터</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- // 센터소개 -->
+                        </li>
+                        <!-- <li class="gnbN"></li> -->
+                       	
+	                    
+                        
+                        <li class="gnbN">
+                        </li>
+                        
+                          
+                            <!-- 인재정보 -->
+                        <li class="gnbN">
+                        
+                        
+                        
+                        
+                        </li >
+                            <!-- // 인재정보 -->
+						<li class="gnbN">
+                        </li>
+                            
+                        
+                        
+                       </ul>
+                    <!-- 로그인 전 -->
+					
+                    
+                    
+                    
+                    <div class="login_con" style="display:none">
+                        <div class="login_cell">
+                            <ul class="loginBox">
+                                <li>
+                                    <a href="#" class="close_bt" onclick="javascript:$('.login_con').hide();"></a>
+                                    <dl class="login">
+                                        <dt><a href="#" class="tabOn">개인/기업회원</a><a href="#" class="tab">멘토회원</a></dt>
+                                        <dd>
+                                            <input type="text" id="idG" name="아이디" onkeyup="javascript:fn_IdKeyup();" class="id" placeholder="ID" autocomplete="off"/>
+                                            <!-- <input type="hidden" id="pwG"/> -->
+                                            <input type="password" id="pwG" name="비밀번호" class="pw" placeholder="PW" autocomplete="off"/>
+                                            <input type="hidden" id="mchkG" name="mchkG" value="0"/>
+                                            <a href="#" class="login_bt" onclick="javascript:fn_rsaLogin();">로그인</a>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="logkeep" onchange="javascript:fn_logkeep();"/> <label for="logkeep"> 로그인유지</label> 
+                                    <a id="idSave" href="#" class="idSave"></a> <label for="logkeep"> 아이디 저장</label>
+                                    <a href="javascript:_fn_openFindIdPwLayerPop();" class="idFind">ID/PW 찾기</a>
+                                    
+									
+                                </li>
+                                <li>
+                                	
+
+
+<script type="text/javascript">
+// 접속정보 받아오기
+function fn_oacxAuth(type) {
+	window.addEventListener("message", simpleLogin, false);
+	
+	
+	$.ajax({
+		type : "GET",
+		url  : '' + "/oacx/getAccessInfo.jsp",
+		data : {"loginID" : "TEST"},
+		success : function(data) {
+			if(data.indexOf("loadJSONInfoError") > 0) {
+				alert("간편인증 인증키 파일을 읽지 못했습니다.");
+			} else if(data.indexOf("getAccessInfoError") > 0) {
+				alert("간편인증 인증키가 잘못되었습니다.");
+			} else {
+				var json     = JSON.parse(String(data));
+				var accKey   = json.accKey;
+				var accToken = json.accToken;
+				fn_openPopup(accKey, accToken);	
+			}
+			
+		},
+		error : function(request, response, error) {
+			console.log("oacxAuth_Error :: " + error);
+		}
+	});
+}
+
+//인증팝업 출력하기
+
+var oacxPopup = null;
+var url = "https://easysign.anyid.go.kr/esign";
+var status = "toolbar=no,scrollbars=no,location=no,resizable=no,status=no,menubar=no,width=838,height=611";	// option
+
+function fn_openPopup(accKey, accToken){
+	if(accKey == "" || accToken == "") {
+		alert("접속 정보가 없습니다.");
+		return;
+	}
+	if(oacxPopup == null || oacxPopup.window == null){
+		var fn = "simpleAuth";
+		oacxPopup = window.open("https://easysign.anyid.go.kr/esign", fn, status);	//팝업 호출
+		fn_sendData(fn, accKey, accToken);
+	}
+}
+
+var initVal = false;
+var initCnt = 0;
+function fn_sendData(fn, accKey, accToken) {
+		setTimeout(function(){
+			if(initVal) {
+				var postMsg = '{';
+				postMsg += '"simpleType" : "' + fn + '"';
+				postMsg += ', "accKey" : "' + accKey +'"';
+				postMsg += ', "accToken" : "' + accToken + '"';
+				postMsg += '}';
+
+				oacxPopup.postMessage(postMsg, "*");
+	
+				initVal = false;
+				initCnt = 0;
+			} else {
+				if(initCnt > 20) {
+					initCnt = 0;
+					return;
+				}
+			}
+			fn_sendData(fn, accKey, accToken);
+			initCnt++;
+		}, 300);
+}
+
+
+
+function simpleLogin(event) {
+	var data = event.data;
+	var jsonData = JSON.parse(data);
+	console.log(" initFlag :: " + jsonData.initFlag);
+	if(jsonData.initFlag == "true") {
+		initVal = true;
+	}
+	if(jsonData.status == "success"){
+		console.log("4");
+		var param = JSON.stringify(jsonData);
+		$.ajax({
+			type : "POST",
+			url  : '/gud/mbr/lgn/oacxSimpleLogin.do',
+			dataType : "html",
+			// contentType: "application/json; charset=utf-8",
+			data : {"jsonData" : param},
+			success : function(data) {
+				var responseData = JSON.parse(data);
+				console.log(data);
+				if(responseData.result == "simpleLogin SUCCESS") {
+					if('' == 'mobile') {
+						location.href = cfn_getContextPath() + "/VnetIndexM.do";
+						console.log('This is mobile');
+					} else {
+						//location.reload(true);
+						location.href = cfn_getContextPath() + "/VnetIndex.do";
+						console.log('not mobile');
+					}
+				} else if(responseData.resultMsg) {
+					alert(responseData.resultMsg);
+				}
+				
+			}
+		});
+	}
+}
+</script>
+
+<div id="authBtn" class="oacx-ux oacx-ux-btn btn btn-primary demo-btn" onclick="fn_oacxAuth('simpleLogin'); return false;">
+            회원 간편인증 
+            <span>
+                <a class="oacx-mdl" title="모바일 운전면허증"></a>
+                <a class="oacx-kakao" title="카카오"></a>
+                <a class="oacx-naver" title="네이버"></a>
+                <a class="oacx-samsung" title="삼성패스"></a>
+                <a class="oacx-pass" title="통신사패스"></a>
+                <a class="oacx-payco" title="페이코"></a>
+                
+            </span>
+            
+</div> 
+                                </li>
+                                <li style="padding: 20px 0px; text-align: center;">아직 회원이 아니세요?
+                                	<a href="/gud/GudMbrJn.do" class="memberBt">회원가입</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+
+
+
+
+
+
+
+<script type="text/javascript">
+	//열기
+	function _fn_openFindIdPwLayerPop(){
+		$("#_findIdPwLayerPop").css("display", "block");
+		$("#_findIdPwLayerPop").load("/gud/mbr/lgn/PopFindIdPwMType.do");
+	}
+	function _fn_openFindIdPwLayerPop(searchIdx){
+		$("#_findIdPwLayerPop").css("display", "block");
+		$("#_findIdPwLayerPop").load("/gud/mbr/lgn/PopFindIdPwMType.do?searchIdx=" + searchIdx);
+	}
+	//닫기
+	function _fn_closeFindIdPwLayerPop(){
+		$("#_findIdPwLayerPop").css("display", "none");
+		return false;
+	}
+</script>
+    <!-- id,pw찾기 기본 폼 -->
+    <div class="layer_popBg" id="_findIdPwLayerPop" style="display:none;">
+
+    </div>
+    <!-- //id,pw찾기 기본 폼 -->
+
+                    <!-- // 로그인 -->
+                    
+                    
+                            
+                    
+                    <!-- // 로그인 후 -->            
+                </div>
+            </div>
+            <!-- // gnb -->
+        </nav>
+		</header>
+		<!--// header-->
+
+
+
+<!-- Header End -->
+		<!-- // header -->
+
+		<div id="container" class="inner">
+            <!--location-->
+            
+	            <div class="location">
+	                <div class="nav">
+	                    <span class="home">홈으로</span>
+	                    <span class="locabu1">창업지원</span>
+	                    <span class="locabu1">창업워크숍</span>
+	                    <span class="locabu2">과정별 일정 수강신청</span>
+	                </div>
+	            </div>
+            
+            <!--// location-->
+	
+
+	
+			<div id="contents">
+                <!--leftMenu-->
+                
+
+
+
+
+
+
+
+                <div class="leftMenu mb-x" id="leftMenu">
+                    <h3>창업지원</h3>
+                    <div class="subMenu">
+						<dl class="lineNone">
+                            <dt><a href="#none" class="depth2 arr" >창업워크숍</a></dt>
+                            <dd style="display: none;">
+                                <a href="/esta/EstaLcr001.do" class="depth3">교육과정별 소개</a>
+                                <a href="/esta/EstaLcr002.do" class="depth3">과정별 수강신청</a>
+                            </dd>
+                        </dl>
+                        <a href="/esta/EstaGbh.do" class="depth2off">창업&middot;귀농귀촌박람회</a>
+                        <a href="/esta/EstaPbaf.do" class="depth2off">창업실무체험소개</a>
+
+						<dl class="lineNone">
+                            <dt><a href="#none" class="depth2 arr">창업칼럼</a></dt>
+                            <dd style="display: none;">
+                                <a href="/esta/EstaCol001.do" class="depth3">자문위원칼럼</a>
+                                <a href="/esta/EstaCol002.do" class="depth3">자문위원소개</a>
+                                 <a href="/esta/EstaCol003.do" class="depth3">창업가이드</a>
+                            </dd>
+                        </dl>
+                        
+						<dl class="lineNone">
+                            <dt><a href="#none" class="depth2 arr">창업정보</a></dt>
+                            <dd style="display: none;">
+                                <a href="/esta/EstaInf001.do" class="depth3">업종리뷰</a>
+                                <a href="/esta/EstaInf002.do" class="depth3">창업뉴스</a>
+                            </dd>
+                        </dl>
+                        
+                        <a href="/esta/EstaRsrm.do" class="depth2off">창업자료실</a>
+                        
+                        <dl class="lineNone">
+                            <dt><a href="#none" class="depth2 arr">창업&middot;귀농귀촌 관련기관</a></dt>
+                            <dd style="display: none;">
+                                <a href="/esta/EstaKMDC.do" class="depth3">소상공인시장진흥공단</a>
+                                <a href="/esta/EstaKstartup.do" class="depth3">K-STARTUP 창업지원사업</a>
+                                <a href="/esta/EstaGreendaeroOffline.do" class="depth3">그린대로 오프라인 교육</a>
+                                <a href="/esta/EstaGreendaeroOnline.do" class="depth3">그린대로 온라인 교육</a>
+                                <a href="/esta/EstaGreendaeroLive.do" class="depth3">그린대로 농촌에서살아보기</a>
+                            </dd>
+                        </dl>
+                    </div>
+
+                </div>
+                
+                
+
+                <!--//leftMenu-->
+
+                <!--subWrap-->
+              <div class="subWrap mb200">
+                    <h4>과정별 일정 수강신청</h4>
+
+
+                    <!--가이드-->
+                    <div class="guide">
+                        <ul>
+                            <li>전역후 성공적인 사회 연착륙을 위해 센터에서는 창업 워크숍과 멘토․창업성공자 특강 등을 실시하고 있으니 센터별 진행 일정을 확인하시고 참여 바라며 수강신청은 온라인신청 가능합니다.</li>
+                        </ul>
+                    </div>
+                    <!--// 가이드-->
+                    <!-- innerWrap 게시글 -->
+                    <form name="frm" id="frm" method="post">
+                    <div class="innerWrap">
+                    	<input type="hidden" 			id="idx" 				name="idx"	 			value="5730"/>
+						<input type="hidden" 			id="pageNo" 	nname="pageNo" 			value=""/>
+						
+						<input type="hidden" 			id="endYn" 		name="endYn" 				value=""/>
+						<input type="hidden" 			id="apEndDt" 	name="apEndDt" 			value=""/>
+						
+						<input type="hidden" 			id="mbrId" 		name="mbrId"				value=""/>
+						<input type="hidden" 			id="mtype" 		name="mtype"				value=""/>
+						<input type="hidden"			id="enddate" 	name="enddate"			value=""/>
+						<input type="hidden"			id="searchText" 	name="searchText"			value=""/>
+						<input type="hidden"			id="searchType" 	name="searchType"		value=""/>
+						
+                        
+						
+						<input type="hidden" 	id="insertCurriculum" 	name="curriculum"			value=""	/>
+						<input type="hidden" 	id="insertCourseCode" 	name="courseCode" 			value=""	/>
+						<input type="hidden" 	id="insertEduDesc" 		name="eduDesc"				value=""	/>
+						<input type="hidden" 	id="insertEvStartDt" 	name="evStartDt" 			value=""	/>
+						<input type="hidden" 	id="insertEvEndDt" 		name="evEndDt"				value=""	/>
+						<input type="hidden" 	id="insertLagbCode" 	name="insertLagbCode"		value=""	/>
+                        <!-- 게시글 상세화면 -->
+                        <div class="board_list">
+                            <table class="tbl_type02">
+                                <caption>과정별 일정 수강신청</caption>
+                                <colgroup>
+                                    <col style="width:15%;">
+                                    <col style="width:35%;">
+                                    <col style="width:15%;">
+                                    <col style="width:35%;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="row">제목</th>
+                                        <td class="title" id="title"></td>
+                                        <th scope="row">신청/ 취소</th>
+                                        <td>
+	                                        <input type="hidden" id="applyBt"	class="eduBt"  name="applyBt" 	value="신청"/>
+	                                        <input type="hidden" id="cancelBt"	class="eduBt"  name="cancelBt"  value="취소"/>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">신청기간</th>
+                                        <td id="apDate"></td>
+                                        <th scope="row">행사기간</th>
+                                        <td id="evDate"></td>
+                                    </tr>
+                                    <tr>
+                                       <th scope="row">조회수</th>
+	                                    <td id="readno"></td>
+									
+                                        <th scope="row">센터명</th>
+                                        <td id="lagbCode"></td>
+                                    </tr>
+                                    <tr>
+                                    	<th scope="row">첨부파일</th>
+                                        <td colspan="4">
+                                        	
+                                        	<a href="/esta/downloadEstaLcr002D.do?idx=5730&sn=1" id="filename1"/>
+                                        	
+                                        	<a href="/esta/downloadEstaLcr002D.do?idx=5730&sn=2" id="filename2"/>
+                                        </td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="4">
+                                            <div class="list_detail" id="content">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- // 게시글 상세화면 -->
+                        <div class="actionBox"><a href="#" class="actionBt" id="btnList">목록</a></div>
+                    </div>
+                    </form>
+                    <!-- // innerWrap 게시글 -->
+                </div>
+                <!--//subWrap-->
+			</div>
+		</div>
+		<!-- satisfyPoll -->
+		<!-- webfilter -->
+	</main>
+
+	<!-- footer -->
+	
+
+
+
+
+
+
+
+
+
+<!-- 챗봇 style 태그 -->
+<!-- Footer Start -->
+
+
+	<div id="footer">
+            <div class="foot_con">
+                <ul class="etc">
+                    <li>
+                        <a href="/use/UseClu001.do">이용안내</a>
+                        <a href="/use/UseInif011.do" class="bold">개인정보처리방침</a>
+                        <a href="/use/UseCopyright.do">저작권정책</a>
+                        <a href="/cent/CentHist.do">센터연혁</a>
+                        <!-- <a href="/use/UsePgm.do">뷰어프로그램</a> -->
+                    </li>
+                    <li class="join">
+                        <a href="#none" class="site_link">패밀리 및 유관기관 사이트 </a>
+
+                        <!-- 유관사이트 -->
+                        <div class="joinSite" style="display:none;">
+                            <div class="scroll">
+                                <span>패밀리 사이트</span>
+                                <a href="#none;" onclick="window.open('https://www.mpva.go.kr'); return false;" target="_blank" class="joinLink" title="새창열림">국가보훈부</a>
+                                <a href="#none;" onclick="window.open('https://www.moti.or.kr'); return false;" target="_blank" class="joinLink" title="새창열림">국방전직교육원</a>
+                                <a href="#none;" onclick="window.open('https://www.work24.go.kr'); return false;" target="_blank" class="joinLink" title="새창열림">고용24</a>
+                                <a href="#none;" onclick="window.open('https://www.epeople.go.kr'); return false;" target="_blank" class="joinLink" title="새창열림">국민신문고</a>
+                                <span>유관사이트</span>
+                                <a href="#none;" onclick="window.open('http://www.jobtogether.net/'); return false;" target="_blank" class="joinLink" title="새창열림">한국무역협회 일자리지원센터</a>
+                                <a href="#none;" onclick="window.open('http://www.worldfriendskorea.or.kr'); return false;" target="_blank" class="joinLink" title="새창열림">월드프렌즈코리아</a>
+                                <a href="#none;" onclick="window.open('https://www.50plus.or.kr'); return false;" target="_blank" class="joinLink" title="새창열림">서울특별시50플러스재단</a>
+                                <a href="#none;" onclick="window.open('https://www.seoulwomanup.or.kr'); return false;" target="_blank" class="joinLink" title="새창열림">서울우먼업</a>
+                                <a href="#none;" onclick="window.open('http://www.bohunedu.or.kr/'); return false;" target="_blank" class="joinLink" title="새창열림">한국 보훈복지 의료공단 보훈교육연구원</a>
+                                <a href="#none;" onclick="window.open('https://www.armyjob.kr/'); return false;" target="_blank" class="joinLink" title="새창열림">강원도 제대군인 정착지원센터</a>
+                                <a href="#none;" onclick="window.open('http://www.aroka.kr/'); return false;" target="_blank" class="joinLink" title="새창열림">육군발전협회</a>
+                                <a href="#none;" onclick="window.open('http://www.armyjob.mil.kr/'); return false;" target="_blank" class="joinLink" title="새창열림">육군취업지원센터</a>
+                                <a href="#none;" onclick="window.open('https://www.kdia.or.kr/'); return false;" target="_blank" class="joinLink" title="새창열림">한국 방위 산업 진흥회</a>                                
+                                <a href="#none;" onclick="window.open('https://www.work24.go.kr/'); return false;" target="_blank" class="joinLink" title="새창열림">노동부 고용안정정보망</a>
+                              <!--   <a href="#none;" onclick="window.open('http://www.work24.go.kr/'); return false;" target="_blank" class="joinLink" title="새창열림">HRD-NET직업훈련 정보망</a> -->
+                            </div>
+                        </div>
+                        <!-- //유관사이트 -->
+                    </li>
+                </ul>
+                <div class="logo_copy">
+                    <div class="foot_logo">
+                        <img src="/img/main/logo_footer.gif" alt="">
+                        <span>제대군인지원센터</span>
+                    </div>
+                    <ul class="copy_text">
+                        <li><span>제대군인지원센터 1666-9279</span> 평일 9:00 ~ 18:00 (점심 12:00 ~ 13:00 제외)  주말, 공휴일 휴무</li>
+                        <li>Copyright ⓒ Ministry of Patriots & Veterans Affairs. All rights reserved.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- start 챗봇 로고 및 메세지  -->
+		<div class="message_area" id="message_area">
+		    <img class="chatBot_message_close" id="chatBot_message_close" src="/img/icon/icon_close.png"
+		        alt="알림 창 닫기" onclick="closeMessage()" style="display: none;">
+		    <div class="chatBot_message" id="chatBot_message" onclick="meesageChatBot()" style="transform: rotateY(0deg); display: none;">
+		    </div>
+		</div>
+		<img class="chatBot_icon" id="chatBot_icon" src="/img/icon/icon_profile.png" alt="챗봇 로고"
+		    onclick="openChatbot('')">
+		<form id="chat_search_form" method="post"></form>
+		<!-- end 챗봇 로고 및 메세지  -->
+		
+		
+        <div class="topBox" style="position: fixed; bottom:20px; right:20px;">
+        	<span id="top_move">
+        		<a href="#header" class="topBt">Top</a>
+        	</span> 
+        </div>
+        <script type="text/javascript">
+		</script>
+
+<!-- start 챗봇 script 태그 -->
+<script type="text/javascript">
+
+	window.name = "parent";
+    var message = [];
+    var mbr_id = "null"; 
+    var chatUrl = 'https://chat.vnet.go.kr/chat';     // 챗봇 url
+    var url = window.location.href;							// 현재 페이지 url
+    var host = window.location.host;
+    var chatBot = null;
+	var temp = url.split('/');
+	var param = temp.length > 0 ? temp[temp.length - 1] : 'VnetIndex.do';
+	var pathArray = ['VnetIndex.do', 'GudMbrLgn.do', 'GudMbrJn.do'];	// 알림 표출 하는 페이지 path
+	if(param === window.location.host || param === 'vnet' || param === '') param = 'VnetIndex.do';
+	
+	if(mbr_id !== window.sessionStorage.getItem('mbrId')) {
+	   	sessionStorage.setItem('mbrId', mbr_id);
+	    sessionStorage.removeItem('VnetIndex.domessage_idx');
+	    sessionStorage.removeItem('VnetIndex.dodelete_idx');
+	}
+	
+
+    var message_idx = sessionStorage.getItem(param+'message_idx') || 0;
+    var delete_idx = sessionStorage.getItem(param+'delete_idx') || ''; 
+
+	
+	var displayNoneMessage = function () {
+	   window.document.getElementById("chatBot_message").style.display = 'none';
+	   window.document.getElementById("chatBot_message_close").style.display = 'none';
+	
+	}
+	var closeMessage = function () {
+		displayNoneMessage();
+	    delete_idx = delete_idx + message_idx;
+	    if(pathArray.includes(param)) sessionStorage.setItem(param+'delete_idx', delete_idx);
+	}
+	
+	
+	var openChatbot = function (message) {
+	    var left = window.innerWidth - 300;
+	    var top = window.innerHeight - 700;
+	
+	    if (window.screenX) {
+	        left += window.screenX;
+	        top += window.screenY;
+	    } else if (window.screenLeft) {
+	        left += window.screenLeft;
+	        top += window.screenTop;
+	    }
+	
+	    var url = chatUrl;
+	    if (message.length > 0) {
+	    	url = chatUrl + '/' + message;
+	    }
+		if(mbr_id !== null && mbr_id !== '' && mbr_id !== 'null'){
+			url = url + '?id=' + btoa(mbr_id);
+		}
+	
+	    if(chatBot === null || chatBot.closed){
+	        chatBot = window.open(url, "mywindow", "width=375px, height=730px, left=" + left + "px, top=" + top + "px, resizable=no, menubar=no, toolbars=no location=no");
+	    }
+	    
+	    chatBot.focus();
+	}
+	
+	var meesageChatBot = function () {
+	    openChatbot(message[message_idx].value);
+	}
+	var nextMessageIdx = function (idx) {
+	    var next = Number(idx) + 1;
+	    if(next > message.length -1) {
+	        next = 0;
+	    }
+	    if(delete_idx.indexOf(next) >= 0) {
+	        return nextMessageIdx(next);
+	    } 
+	    return next;
+	}
+	
+	var chatJobDetail = function (type, idx) {
+		var paramTag = "";
+		var action = "";
+		switch(type) {
+		case "센터등록공고":
+			paramTag += '<input type="hidden" id="menuId" name="menuId" value="EmpnInf001"/>';
+			paramTag += '<input type="hidden" id="menuNm" name="menuNm" value="제대군인지원센터 채용정보"/>';
+			paramTag += '<input type="hidden" id="bsnregno" name="bsnregno" value=""/>';
+			paramTag += '<input type="hidden" id="fsgubun" name="fsgubun" value="F"/>';
+			paramTag += '<input type="hidden" id="idx" name="idx" value="'+idx+'"/>';
+			action = "/empn/EmpnInf002.do";
+			break;
+		case "기업등록공고":
+			paramTag += '<input type="hidden" id="menuNmll" name="menuNm" value="제군센터 기업회원 채용정보"/>';
+			paramTag += '<input type="hidden" id="idx" name="idx" value="'+idx+'"/>';
+			action = "/empn/EmpnDsEmpnslFrvlJbInf005.do";
+			break;
+		case "사회적일자리":
+			paramTag += '<input type="hidden" id="menuId" name="menuId" value="EmpnSctJbInf001"/>';
+			paramTag += '<input type="hidden" id="menuNm" name="menuNm" value="사회적 일자리 채용정보"/>';
+			paramTag += '<input type="hidden" id="bsnregno" name="bsnregno" value=""/>';
+			paramTag += '<input type="hidden" id="fsgubun" name="fsgubun" value="F"/>';
+			paramTag += '<input type="hidden" id="idx" name="idx" value="'+idx+'"/>';
+			action = "/empn/EmpnInf002.do";
+			break;
+		case "해외일자리":		
+			paramTag += '<input type="hidden" id="menuId" name="menuId" value="EmpnFrnJbInf001"/>';
+			paramTag += '<input type="hidden" id="menuNm" name="menuNm" value="해외일자리 채용정보"/>';
+			paramTag += '<input type="hidden" id="bsnregno" name="bsnregno" value=""/>';
+			paramTag += '<input type="hidden" id="fsgubun" name="fsgubun" value="F"/>';
+			paramTag += '<input type="hidden" id="idx" name="idx" value="'+idx+'"/>';
+			action = "/empn/EmpnInf002.do";
+			break;
+		//-------------------------------------------- 워크넷/월드잡워크넷채용
+		case "워크넷":
+			paramTag += '<input type="hidden" id="menuNm" name="menuNm" value="워크넷제공 채용정보"/>';
+			paramTag += '<input type="hidden" id="wantedAuthNo" name="wantedAuthNo" value="'+idx+'"/>';
+			action = "/empn/EmpnDsEmpnslFrvlJbInf002.do";
+			break;
+		case "월드잡":
+			paramTag += '<input type="hidden" id="menuNm" name="menuNm" value="월드잡제공 채용정보"/>';
+			paramTag += '<input type="hidden" id="jocrtfcno" name="jocrtfcno" value="'+idx+'"/>';
+			action = "/empn/EmpnDsEmpnslFrvlJbInf008D.do";
+			break;
+		}
+		$("#chat_search_form").empty();
+		$("#chat_search_form").append(paramTag);
+		$("#chat_search_form").attr("target", "_blank");
+		$("#chat_search_form").attr("action", action);
+		$("#chat_search_form").submit();
+	}
+    /* 
+    메세지 API 호출
+        1. 회원가입 페이지 (https://www.vnet.go.kr/gud/GudMbrJn.do)
+        2. 로그인 페이지 (https://www.vnet.go.kr/gud/GudMbrLgn.do)
+        3. 메인 페이지 (https://www.vnet.go.kr || https://www.vnet.go.kr/vnet || https://www.vnet.go.kr/vnet/VnetIndex.do )
+    위 3개의 페이지에서 호출
+    */
+	if(pathArray.includes(param)) {
+		$.ajax({
+		    type: "POST",
+		    url: chatUrl + "/message", // 메세지 API url
+		    dataType: "json",
+			async    : false,
+		    data: {
+		        url: url,
+		        mbr_id: mbr_id
+		    },
+		    success: function (responseData) {
+		        try {
+		            message = responseData;
+		        	if (message_idx === null || message_idx >= message.length) {
+		        		if(pathArray.includes(param)) sessionStorage.setItem(param+'message_idx', 0);
+		        	    message_idx = 0;
+		        	}
+		        	
+		        	if (message.length === 0 || delete_idx.length >= message.length) {
+		        	    displayNoneMessage();
+		        	} else {
+		        	
+		        	    if(delete_idx.indexOf(message_idx) >= 0 ){
+		        	        message_idx = nextMessageIdx(message_idx);
+		        	    }
+		        	
+		        	    if(delete_idx.indexOf(message_idx) < 0 && message_idx < message.length){
+		        	 	   	window.document.getElementById("chatBot_message").style.display = '';
+		        		  	window.document.getElementById("chatBot_message_close").style.display = '';
+		        	        window.document.getElementById("chatBot_message").innerText = message[message_idx].key;
+		        	        window.document.getElementById("chatBot_message_close").style.bottom = window.document.getElementById("chatBot_message").offsetHeight + 'px';
+		        	    } 
+		        	
+		        	}
+		        	
+		        	 if(pathArray.includes(param)) sessionStorage.setItem(param+'message_idx', Number(message_idx) + 1);
+		        	
+		        	if(message[message_idx]) {
+		        	    setTimeout(function () {
+		        	        displayNoneMessage();
+		        	    }, message[message_idx].duration)
+		        	}
+		        } catch (e) {
+		            console.log('chat message error ::');
+		            // console.log(e);
+		            return false;
+		        }
+		    },
+		    error: function (request, status, error) {
+		        console.log(error + ", " + status);
+		    }
+		})
+	}
+
+	window.addEventListener('message', function (e) {	
+        if (e.data.link === "jobLink") {
+			chatJobDetail(e.data.type, e.data.idx);
+        }
+    });
+
+	/* PC/모바일 경우에 따른 화면크기 visible */
+	function footerIsMobile(){
+		return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+	}
+
+	if(footerIsMobile()){
+		$('#fontSizeLi').css('display', 'none');
+	}else{
+		$('#fontSizeLi').css('display', '');
+	}
+	
+	
+</script>
+<!-- end 챗봇 script 태그 -->
+<script src="/js/common.js"></script>
+<!-- Footer End -->
+	<!-- //footer # -->
+
+</body>
+</html>

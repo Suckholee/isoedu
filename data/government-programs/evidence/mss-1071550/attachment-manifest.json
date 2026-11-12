@@ -1,0 +1,36 @@
+[
+  {
+    "url": "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071550&cbIdx=310&streFileNm=7f83b904-734c-4862-9dac-94ab24fffef0.hwpx",
+    "file": "attachment-01.bin",
+    "name": "「민관협력_오픈이노베이션_지원」_2026년_제2차_상호_자율탐색형(바이오_분야)_참여기업_모집공고.hwpx",
+    "bytes": 1566726,
+    "sha256": "896bfbcd6f19c7c0b4a3fa85460abfd1c3d5341986418744f7e8cb0990d0761e",
+    "contentType": "application/octet-stream;charset=UTF-8",
+    "verifiedAt": "2026-10-18T00:02:27.694Z",
+    "status": "downloaded",
+    "localPath": "attachment-01.hwpx",
+    "format": "HWPX",
+    "extractionStatus": "text-extracted",
+    "characters": 44932,
+    "displayName": "「민관협력_오픈이노베이션_지원」_2026년_제2차_상호_자율탐색형(바이오_분야)_참여기업_모집공고.hwpx"
+  },
+  {
+    "url": "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071550&cbIdx=310&streFileNm=41352459-6243-46d4-8bec-88e3a06290b7.pdf",
+    "file": "attachment-02.bin",
+    "name": "[별첨]_사업_신청_매뉴얼.pdf",
+    "bytes": 4517938,
+    "sha256": "61479e93e5bcf4eccf658a0a3961488cef7edd8c764aaae62da08323044235e0",
+    "contentType": "application/octet-stream;charset=UTF-8",
+    "verifiedAt": "2026-10-18T00:02:29.992Z",
+    "status": "downloaded",
+    "localPath": "attachment-02.pdf",
+    "format": "PDF",
+    "pages": 16,
+    "extractionStatus": "text-extracted",
+    "characters": 44,
+    "displayName": "[별첨]_사업_신청_매뉴얼.pdf",
+    "ocrStatus": "failed",
+    "ocrError": "Vision exit1, stderr(null), no recognized output",
+    "visualReview": "16페이지렌더/축소확인,3쪽확대확인;전체세부판독미완료"
+  }
+]

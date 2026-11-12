@@ -1,0 +1,42 @@
+{
+  "at": "2026-10-22T00:37:34.798Z",
+  "status": 200,
+  "total": 51,
+  "analyses": 22,
+  "checked": [
+    {
+      "id": "kstartup-179506",
+      "date": "2026-10-27",
+      "time": "17:00",
+      "review": "partial"
+    },
+    {
+      "id": "kstartup-179574",
+      "date": "2026-10-27",
+      "time": "15:00",
+      "review": "complete"
+    },
+    {
+      "id": "kstartup-179581",
+      "date": "2026-10-28",
+      "time": "15:00",
+      "review": "partial"
+    },
+    {
+      "id": "kstartup-179564",
+      "date": "2026-10-29",
+      "time": "15:00",
+      "review": "complete"
+    },
+    {
+      "id": "kstartup-179568",
+      "date": "2026-10-29",
+      "time": "16:00",
+      "review": "partial"
+    }
+  ],
+  "validation": "route.GET직접호출·화면미검증",
+  "localHttp": {
+    "error": "fetch failed"
+  }
+}

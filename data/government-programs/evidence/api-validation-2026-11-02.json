@@ -1,0 +1,47 @@
+{
+  "checkedAt": "2026-11-02T00:12:15.802Z",
+  "status": 200,
+  "records": 109,
+  "analyses": 75,
+  "dates": [
+    {
+      "id": "kstartup-179622",
+      "start": "2026-10-26",
+      "end": "2026-11-09",
+      "deadlineTime": "23:59"
+    },
+    {
+      "id": "kstartup-179637",
+      "start": "2026-10-27",
+      "end": "2026-11-09",
+      "deadlineTime": "18:00"
+    },
+    {
+      "id": "kstartup-179636",
+      "start": "2026-10-23",
+      "end": "2026-11-10",
+      "deadlineTime": "15:00"
+    },
+    {
+      "id": "kstartup-179661",
+      "start": "2026-11-02",
+      "end": "2026-11-20",
+      "deadlineTime": "18:00"
+    },
+    {
+      "id": "kstartup-179653",
+      "start": "2026-11-02",
+      "end": "2026-11-26",
+      "deadlineTime": "13:00"
+    }
+  ],
+  "calendarDateMappingVerified": true,
+  "http": {
+    "url": "http://127.0.0.1:3001/api/government-programs",
+    "status": 404,
+    "meaning": "현재 해당포트 HTTP서비스는이API를제공하지않음·프로세스변경안함"
+  },
+  "method": "route.GET direct invocation",
+  "screenVerified": false,
+  "deployed": false
+}

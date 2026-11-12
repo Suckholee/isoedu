@@ -1,0 +1,86 @@
+{
+  "at": "2026-10-30T01:46:24.326716+00:00",
+  "date": "2026-10-30",
+  "automationId": "isoedu",
+  "stage": "daily-analysis-summary",
+  "triggerTime": "2026-10-29T23:57:03.955Z",
+  "summary": "2026-10-30 정기 실행: K-Startup15·중기부10 각 첫 페이지 수집, 신규13·누적100공고·상세100건 확보. FinalDay/아트스타트업/용인반도체포럼/오피스허브입주/먹거리경연 5건 첨부8개 실제 분석(포스터3개 시각·HWP/HWPX/DOCX/텍스트 본문·별첨/양식), 공개 신청2곳 전체 정적문항·이벤터스 티켓 확인 후 미해결을 남겨partial. 총18첨부 다운로드·기존10개 동일해시·변경0. FinalDay등록/IR시간 차이·용인공고14시와 신청폼23:59/시작일충돌·동의고지추가개인정보차이·오피스허브평가위원문구·먹거리양식2~4추가요구/구글폼401 기록. 용인두링크최종동일 확인,FinalDay308정상리디렉션후참가폼확보(동적잔여/접수상태미검증). 신규중2건분석·나머지11건상세/첨부링크만. 기존완료2건은 상세지문불일치로완료표시해제·최신근거재확인대기(실제정정확정아님). 큐complete0/partial60/pending40·잔여100,이번처리미해결10/31재시도. 보완기업마당15/IRIS9개 공개목록후보24건 별도저장·상세/첨부미분석·중복/세부차수확인전달력병합안함;KOTRA목록셸만확인·전체수집아님. route.GET200·100공고60분석·5건날짜/마감시각/달력배치/공개필드필터검증,localhost3001연결실패·화면미검증. G01→S03→S12/S13 ID·근거·회사필드·권한인계보존. 회사적합판정·DB변경·배포·외부발송없음.",
+  "collection": {
+    "k-startup": {
+      "status": "success",
+      "page": 1,
+      "records": 15
+    },
+    "mss": {
+      "status": "success",
+      "page": 1,
+      "records": 10
+    },
+    "newRecords": 13,
+    "totalRecords": 100,
+    "detailFetches": 100,
+    "fullCoverage": false
+  },
+  "analysis": {
+    "reviewedProgramIds": [
+      "kstartup-179645",
+      "kstartup-179646",
+      "kstartup-179608",
+      "kstartup-179633",
+      "kstartup-179625"
+    ],
+    "actualReviewedAttachments": 8,
+    "visualPosterReviews": 3,
+    "reviewStatus": "partial",
+    "newRecordsAnalysed": 2,
+    "newRecordsDetailOnly": 11,
+    "oldCompletionInvalidated": [
+      "kstartup-179574",
+      "kstartup-179564"
+    ],
+    "queueCounts": {
+      "partial": 60,
+      "pending": 40
+    },
+    "remaining": 100,
+    "nextRetryAt": "2026-10-31T09:00:00+09:00"
+  },
+  "attachmentChecks": {
+    "downloaded": 18,
+    "newHashBaselines": 8,
+    "existingSameHash": 10,
+    "changed": 0,
+    "unreviewedScope": "동일URL교체 해시대조는이번10건18첨부만;다른공고미검증"
+  },
+  "supplementalSources": {
+    "bizinfo": "공개목록첫페이지15개후보·상세미확인",
+    "iris": "공개홈목록9개후보·통합/세부차수미확인",
+    "kotra": "공개목록셸200·개별공고미확보"
+  },
+  "failures": [
+    {
+      "source": "kstartup-179625",
+      "url": "https://forms.gle/Mqi7q1HDFUsCdkzE6",
+      "error": "HTTP401;실제폼미확인",
+      "nextRetryAt": "2026-10-31T09:00:00+09:00"
+    },
+    {
+      "source": "local-api-http",
+      "url": "http://127.0.0.1:3001/api/government-programs",
+      "error": "connection refused;route.GET직접검증으로분리"
+    }
+  ],
+  "resolvedAccessIssues": [
+    {
+      "source": "kstartup-179645",
+      "url": "https://m.site.naver.com/2j3E2",
+      "resolution": "308 Location을표준리디렉션으로따라공개200본문확보;접근제한우회없음"
+    }
+  ],
+  "validationEvidence": "evidence/api-validation-2026-10-30.json",
+  "screenVerified": false,
+  "companyEligibilityAssessed": false,
+  "databaseModified": false,
+  "deployed": false,
+  "externalMessagesSent": false
+}

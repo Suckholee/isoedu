@@ -1,0 +1,188 @@
+{
+  "at": "2026-11-10T00:22:23.195286+00:00",
+  "date": "2026-11-10",
+  "automationId": "isoedu",
+  "stage": "daily-analysis-summary",
+  "summary": "2026-11-10 정기 실행: KStartup15/중기부10 각첫페이지·신규13·누적170·상세170성공/실패0. 여성CEO교육/핀테크라이징/충남OI/제주법률/바이오멤버십/공급망2차/LBS행사 7건 실제첨부17개 분석후partial저장. 여성CEO공식신청폼closedform조기마감확인·명목11/10 23:59이력유지/공개설명경고. 핀테크11/12 16시·공고이후발급·신청계획동의1PDF/증빙별도1PDF/대상1000만원+전북정착3000만원조건및환수확인. 충남OI통합11/27대세라젬CP11/13 21시를세부차수로저장·12주2000만원/정량PoC/신청·동의·수요처스캔2쪽시각/지급25·50·100의미미확인. 제주11/15 18시/상담일기준7년·신산업10년/셔틀·후속법률한도확인·양식1누락/본문지역·8대9분야혼재충돌보존. 바이오스캔포스터전체시각·소개10쪽/발행공고기준1개월/평가40·40·20·70점·전원동의·10년상실·공고10/27대목록10/29/보완·이의조항충돌·공식폼401. 공급망PDF38쪽본문/부처표/품목·서비스계획/청렴·동의·변경/예시전체텍스트및핵심14쪽시각·HWPX중복대조,법인등기인감3개월/감사5년·지정은기금확정아님·청렴서약제1차잔존/변경서식번호충돌·샘플수치기업사실전용금지. LBS포스터전체3구간·TXT·공개폼3페이지질문분기동의전체확인,일반11/17(명목11/18 00시)대상담11/9별도·보유행사후1년·외부협업자료artifact셸미확인. 총23첨부다운로드/해시·기존마감1건4+수정공고1건2동일/교체0. 중기부수정1072312목록날짜공란으로누락된11/13 18시를동일첨부근거복원;수집기는검증근거있는기존날짜를공란으로덮지않도록보완·새명시날짜는갱신하며과거증빙분리보존,관련6테스트통과/실제MSS목록병합재현통과. 신규13중3첨부분석·나머지10상세/링크만. 큐partial119/pending51/complete0·잔여170·이번7건11/11재시도. 기업마당null리디렉션/IRIS홈/KOTRA셸200근거보존·전체수집아님. route.GET200·170공고119분석·7건기간/시각/달력및조기마감경고·차수검증,HTTP3010연결실패·화면미검증. G01→S03→S12/S13 ID/근거/조건·회사필드·기존권한인계보존·회사적합확정/DB변경/배포/외부발송없음.",
+  "coverage": {
+    "k-startup": "first page15",
+    "mss": "first page10",
+    "newRecords": 13,
+    "newRecordIds": [
+      "kstartup-179762",
+      "kstartup-179758",
+      "kstartup-179759",
+      "kstartup-179756",
+      "kstartup-179754",
+      "kstartup-179746",
+      "kstartup-179747",
+      "kstartup-179751",
+      "kstartup-179579",
+      "kstartup-179745",
+      "kstartup-179729",
+      "kstartup-179748",
+      "kstartup-179717"
+    ],
+    "totalRecords": 170,
+    "detailSuccess": 170,
+    "detailFailures": 0,
+    "fullCollection": false
+  },
+  "reviewedWithAttachments": [
+    "kstartup-179579",
+    "kstartup-179746",
+    "kstartup-179662",
+    "kstartup-179762",
+    "kstartup-179654",
+    "kstartup-179683",
+    "mss-1071793"
+  ],
+  "actualReviewedNoticeAttachments": 17,
+  "newRecordsAnalyzed": [
+    "kstartup-179579",
+    "kstartup-179746",
+    "kstartup-179762"
+  ],
+  "unreviewedNewRecords": 10,
+  "hashDownloads": 23,
+  "sameExistingHashes": 6,
+  "changedHashes": 0,
+  "existingHashCheckedIds": [
+    "kstartup-179543",
+    "mss-1072312"
+  ],
+  "queueCounts": {
+    "partial": 119,
+    "pending": 51
+  },
+  "remaining": 170,
+  "nextRetryAt": "2026-11-11T09:00:00+09:00",
+  "sourceChecks": [
+    {
+      "id": "bizinfo",
+      "url": "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/list.do",
+      "checkedAt": "2026-11-10T00:09:27.762185+00:00",
+      "status": 200,
+      "finalUrl": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200View.do?null",
+      "evidence": "bizinfo-publiccheck-20261110.html",
+      "bytes": 110567
+    },
+    {
+      "id": "iris",
+      "url": "https://www.iris.go.kr/index.do",
+      "checkedAt": "2026-11-10T00:09:27.762504+00:00",
+      "status": 200,
+      "finalUrl": "https://www.iris.go.kr/index.do",
+      "evidence": "iris-publiccheck-20261110.html",
+      "bytes": 1510300
+    },
+    {
+      "id": "kotra",
+      "url": "https://kotra.or.kr/subList/20000020753",
+      "checkedAt": "2026-11-10T00:09:27.762632+00:00",
+      "status": 200,
+      "finalUrl": "https://kotra.or.kr/subList/20000020753",
+      "evidence": "kotra-publiccheck-20261110.html",
+      "bytes": 151048
+    }
+  ],
+  "applicationChecks": [
+    {
+      "id": "179579",
+      "url": "https://forms.gle/H2cDLynmJ51ENh9FA",
+      "checkedAt": "2026-11-10T00:11:18.545719+00:00",
+      "status": 200,
+      "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeYcpCVzV7LmjAU9eDA_wHdVq_cUTU5KpqJzO07zBS3qs-rZw/closedform",
+      "evidence": "179579-publiccheck-20261110.html",
+      "bytes": 81827
+    },
+    {
+      "id": "179746",
+      "url": "https://event.jbci.or.kr/",
+      "checkedAt": "2026-11-10T00:11:18.546036+00:00",
+      "status": 200,
+      "finalUrl": "https://event.jbci.or.kr/",
+      "evidence": "179746-publiccheck-20261110.html",
+      "bytes": 9892
+    },
+    {
+      "id": "179683",
+      "url": "https://forms.gle/ofMzRcnVthJWy99V8",
+      "checkedAt": "2026-11-10T00:11:18.546145+00:00",
+      "status": 200,
+      "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfRMnAQIEAtIbTm3ObqTtF6mLGospRMrQcrjCvx28dx89imcg/viewform?usp=send_form",
+      "evidence": "179683-publiccheck-20261110.html",
+      "bytes": 138768
+    },
+    {
+      "id": "179683-site",
+      "url": "https://www.korealbs.or.kr/2026/lbsday.asp",
+      "checkedAt": "2026-11-10T00:11:18.546523+00:00",
+      "status": 200,
+      "finalUrl": "https://www.korealbs.or.kr/2026/lbsday",
+      "evidence": "179683-site-publiccheck-20261110.html",
+      "bytes": 7291
+    },
+    {
+      "id": "179746-detail",
+      "url": "https://event.jbci.or.kr/sub/s1_1_view.html?id=369",
+      "checkedAt": "2026-11-10T00:12:26.524042+00:00",
+      "status": 200,
+      "finalUrl": "https://event.jbci.or.kr/sub/s1_1_view.html?id=369",
+      "evidence": "179746-detail-publiccheck-20261110.html",
+      "bytes": 10151
+    },
+    {
+      "id": "179654",
+      "url": "https://forms.gle/5Pdn5Z9bcPmUESv87",
+      "checkedAt": "2026-11-10T00:12:26.524382+00:00",
+      "error": "HTTP Error 401: Unauthorized"
+    },
+    {
+      "id": "179762",
+      "url": "https://www.k-startup.go.kr/web/contents/webPMSBizUnvs.do?returnUrl=/screen/BMO0101M01?pbancId=0690901",
+      "checkedAt": "2026-11-10T00:12:26.524500+00:00",
+      "status": 200,
+      "finalUrl": "https://www.k-startup.go.kr/web/contents/webPMSBizUnvs.do?returnUrl=/screen/BMO0101M01?pbancId=0690901",
+      "evidence": "179762-publiccheck-20261110.html",
+      "bytes": 18917
+    },
+    {
+      "id": "179683-brief",
+      "url": "https://buly.kr/CB7ddtF",
+      "checkedAt": "2026-11-10T00:16:53.125450+00:00",
+      "status": 200,
+      "finalUrl": "https://claude.ai/artifact/EVruy23SyqFnWGP1mfw8HJ",
+      "evidence": "179683-brief-publiccheck-20261110.html",
+      "bytes": 37026
+    }
+  ],
+  "sourceFailures": [
+    {
+      "id": "179654",
+      "url": "https://forms.gle/5Pdn5Z9bcPmUESv87",
+      "checkedAt": "2026-11-10T00:12:26.524382+00:00",
+      "error": "HTTP Error 401: Unauthorized"
+    }
+  ],
+  "validationEvidence": "evidence/api-validation-2026-11-10.json",
+  "collectorFix": {
+    "issue": "목록공란이첨부검증날짜덮음",
+    "files": [
+      "scripts/collect-government-programs.mjs",
+      "src/lib/governmentCollectionMerge.mjs",
+      "tests/government-collection.test.mjs"
+    ],
+    "regressionTests": {
+      "command": "node --test tests/government-collection.test.mjs",
+      "passed": 6,
+      "failed": 0
+    },
+    "realMssSnapshotReproduction": true,
+    "deployed": false
+  },
+  "screenVerified": false,
+  "databaseModified": false,
+  "deployed": false,
+  "externalMessagesSent": false
+}

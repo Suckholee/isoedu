@@ -1,0 +1,370 @@
+{
+  "programId": "mss-1071736",
+  "title": "2026년 해외규격인증획득지원사업(일반지원) 3차 참여기업 모집공고",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-09T00:12:07.520289+00:00",
+  "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071736&parentSeq=1071736",
+  "reviewScope": "PDF29쪽본문·붙임1~5전체텍스트/HWPX중복본문·표대조·PDF2,3,23,24,25,27,28,29쪽시각·공식main/사업소개/ESG공개안내확인;2026-11-09",
+  "attachments": [
+    {
+      "url": "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071736&cbIdx=310&streFileNm=1b724635-9fb9-4d2f-b5b2-8d6e6040b1af.hwpx",
+      "verifiedAt": "2026-11-09",
+      "status": "downloaded",
+      "sha256": "7f6e390db74c495a92728604624f786e6714556e28cb30ccb6a38c97430610fe",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 190641,
+      "format": "HWPX",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=UTF-8",
+      "extraction": "text",
+      "characters": 58677,
+      "review": {
+        "at": "2026-11-09T00:12:07.520289+00:00",
+        "scope": "PDF29쪽본문·붙임1~5전체텍스트/HWPX중복본문·표대조·PDF2,3,23,24,25,27,28,29쪽시각·공식main/사업소개/ESG공개안내확인;2026-11-09",
+        "method": "text/visual scope recorded in reviewScope"
+      }
+    },
+    {
+      "url": "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071736&cbIdx=310&streFileNm=9a18f7e0-ab6e-4ad6-a9bc-0262cea931ca.pdf",
+      "verifiedAt": "2026-11-09",
+      "status": "downloaded",
+      "sha256": "d63802849d9aa3412305660aad34c0117b5993cc8c459871a27c6b5d3dbba8b8",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 721013,
+      "format": "PDF",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=UTF-8",
+      "extraction": "text",
+      "characters": 30103,
+      "review": {
+        "at": "2026-11-09T00:12:07.520289+00:00",
+        "scope": "PDF29쪽본문·붙임1~5전체텍스트/HWPX중복본문·표대조·PDF2,3,23,24,25,27,28,29쪽시각·공식main/사업소개/ESG공개안내확인;2026-11-09",
+        "method": "text/visual scope recorded in reviewScope"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071736&cbIdx=310&streFileNm=1b724635-9fb9-4d2f-b5b2-8d6e6040b1af.hwpx": "7f6e390db74c495a92728604624f786e6714556e28cb30ccb6a38c97430610fe",
+    "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071736&cbIdx=310&streFileNm=9a18f7e0-ab6e-4ad6-a9bc-0262cea931ca.pdf": "d63802849d9aa3412305660aad34c0117b5993cc8c459871a27c6b5d3dbba8b8"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-09T00:12:07.520289+00:00",
+  "eligibility": {
+    "summary": "전년도직접수출액5000만달러미만중소기업(글로벌강소1000+지정기업은이상도가능).일반지원583종(붙임1)·전략10종외,전략인증이어도건당시험+인증비3000만원초과고비용/지정의료8종/비공고인증심의대상포함.업종/지역/업력일괄제한없으나제품·인증범위·지역경쟁/중복지원따로확인.이미공고일기준획득인증은지원불가,갱신특례별도.",
+    "companyFields": [
+      "중소기업확인유효",
+      "본점소재",
+      "설립일",
+      "2025직접수출/글로벌강소1000+",
+      "2024/2025매출·직간접/무체물수출/국가",
+      "대상제품모델/인증명·등급/분야코드",
+      "인증진행/획득/만료일",
+      "기관별시험/인증/컨설팅견적",
+      "등록컨설팅기관여부",
+      "중복지원/2021~2025지원합",
+      "휴폐업/체납/신용회생/제재",
+      "교육/상담이력",
+      "수출준비·가점증빙"
+    ],
+    "reference": "PDF1~2/5~7/붙임1 p9~22; 확인 2026-11-09T00:13:27.071339+00:00; 원문 https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071736&parentSeq=1071736"
+  },
+  "exclusions": {
+    "items": [
+      "휴폐업/미가동",
+      "국세지방세체납(마감변제완료예외)",
+      "채무불이행(회생/재창업공공지원예외)",
+      "동사업진행/미완료·당해동일트랙재참여",
+      "참여제한기간",
+      "동일/파생모델인증비중복수혜(인증갱신기한특례)",
+      "2021~2025지원합2억원이상(2025추경추가지원제외)",
+      "공고일기획득인증",
+      "강제/수출연관범위외시험비·단순홍보인증"
+    ],
+    "reference": "PDF5~7/붙임2 p26주석; 확인 2026-11-09T00:13:27.071339+00:00; 원문 https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071736&parentSeq=1071736"
+  },
+  "support": {
+    "summary": "240개사내외.성공조건부사후지원/협약1년·12개월최대2회연장.연간트랙합4건/1억원,합산신청3500만원미만이면3500만원내건수제한없이추가가능.의료지정8종최대1.5억원·건당예상협약1억원초과시1건만.2025매출100억미만70%,100억이상300억미만60%,300억이상50%;인정비용자부담30/40/50%및불인정비용본인부담.실비×비율과붙임2인증별한도중낮은금액/협약한도내.인증·시험·등록컨설팅비지원,미등록/독자수행컨설팅비제외.과제연장신청지원종료일부터30일이내문구원문보존.",
+    "reference": "PDF1~2/4/붙임2 p23~26·붙임3p27; 확인 2026-11-09T00:13:27.071339+00:00; 원문 https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071736&parentSeq=1071736",
+    "funding": {
+      "currency": "KRW",
+      "generalAnnualCap": 100000000,
+      "medicalDesignatedCap": 150000000,
+      "standardAnnualCount": 4,
+      "countExceptionUnder": 35000000,
+      "ratesByPreviousYearSales": [
+        {
+          "lessThan": 10000000000,
+          "rate": 0.7,
+          "ownRate": 0.3
+        },
+        {
+          "from": 10000000000,
+          "lessThan": 30000000000,
+          "rate": 0.6,
+          "ownRate": 0.4
+        },
+        {
+          "from": 30000000000,
+          "rate": 0.5,
+          "ownRate": 0.5
+        }
+      ],
+      "settlement": "인정실비×비율과인증별한도중작은금액/협약한도내·성공조건부사후지원",
+      "reference": "PDF2·23~27"
+    }
+  },
+  "period": {
+    "start": "2026-10-14",
+    "end": "2026-11-13",
+    "deadlineTime": "18:00",
+    "timezone": "Asia/Seoul",
+    "reference": "PDF3모집일정; 확인 2026-11-09T00:13:27.071339+00:00; 원문 https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071736&parentSeq=1071736"
+  },
+  "application": {
+    "summary": "10/14 09시~11/13 18시,https://www.smes.go.kr/globalcerti/ 회원가입로그인→해외규격인증획득지원사업→사업신청→일반지원 온라인작성/업로드(오프라인X).PDF/JPG/PNG/HWP/DOC/EXCEL가능.평가11/16~12/11예정→운영위원선정→KTR협약→인증완료→완료보고/사후정산.공개main.do/info페이지확인·로그인후실제입력양식미검증.",
+    "reference": "PDF3/4·공식main.do/사업소개; 확인 2026-11-09T00:13:27.071339+00:00; 원문 https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071736&parentSeq=1071736"
+  },
+  "requiredDocuments": [
+    {
+      "name": "사업신청서·신용정보동의",
+      "condition": "필수온라인작성",
+      "reference": "PDF28붙임4"
+    },
+    {
+      "name": "중소기업지원통합관리정보활용동의",
+      "condition": "필수온라인작성",
+      "reference": "PDF28붙임4"
+    },
+    {
+      "name": "ESG자가진단보고서",
+      "condition": "필수/ESG통합플랫폼작성후업로드",
+      "reference": "PDF7·28"
+    },
+    {
+      "name": "2024·2025직접수출확인/표준재무/사업자등록증/중소기업확인",
+      "condition": "필수확인·TmyDATA/원클릭/사전SME발급연계로제출생략",
+      "reference": "PDF28필수"
+    },
+    {
+      "name": "시험인증기관견적/청구/계약",
+      "condition": "고비용신청필수·일반도평가점수관련",
+      "reference": "PDF28·29"
+    },
+    {
+      "name": "비공고규격별첨1-4",
+      "condition": "해당시필수/과제수행가이드양식",
+      "reference": "PDF9·28"
+    },
+    {
+      "name": "2024·2025무체물/간접수출증명",
+      "condition": "관세청미집계실적반영시별도제출",
+      "reference": "PDF28선택"
+    },
+    {
+      "name": "원산지인증수출자/외국어카탈로그·홈페이지동영상·교육수료/재직·해외전시확인",
+      "condition": "해당평가주장시/교육전년당년·회사명없으면당년재직증명·전시는참여완료",
+      "reference": "PDF28선택"
+    },
+    {
+      "name": "가점/글로벌강소1000+",
+      "condition": "자동확인제출생략항목·마감유효증빙",
+      "reference": "PDF28~29"
+    }
+  ],
+  "businessPlan": {
+    "format": "온라인사업신청서;별도범용사업계획서첨부명시없음·비공고인증은가이드별첨1-4지정",
+    "limit": "온라인필드/분량제한및별첨1-4실물미확인",
+    "sections": [
+      {
+        "name": "온라인신청",
+        "items": [
+          "기업정보/대상인증·제품·분야코드·견적비용·수출역량입력범위추정금지/실제양식확인필요"
+        ],
+        "limit": "온라인필드/분량제한및별첨1-4실물미확인"
+      },
+      {
+        "name": "비공고규격별첨1-4",
+        "items": [
+          "지원필요수출연관성입증·실물양식항목미확인"
+        ],
+        "limit": "온라인필드/분량제한및별첨1-4실물미확인"
+      }
+    ],
+    "reference": "PDF28온라인신청·p9/28가이드별첨1-4참조; 확인 2026-11-09T00:13:27.071339+00:00; 원문 https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071736&parentSeq=1071736",
+    "unverifiedOnlineFields": true
+  },
+  "evaluation": {
+    "summary": "붙임5총100점:필요가능의지50(견적30+인증노력20),해외역량다변화50(매출10+수출증감률5/액5/국가5/신시장5+수출준비20).가점최대4(여성/비수도권1,소부장1,우수2).65점기준·본점지역수요경쟁;고비용전국경쟁.교육/상담/내수·창업3년이내자동조회없음등배점예외원문참조.",
+    "reference": "PDF3~4·29붙임5전체배점; 확인 2026-11-09T00:13:27.071339+00:00; 원문 https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071736&parentSeq=1071736"
+  },
+  "contact": {
+    "name": "KTR 수출인증지원센터/수출규제대응사업단1522-0141,FAX02-507-8118;경기과천교육원로98본관410호",
+    "reference": "PDF1/8; 확인 2026-11-09T00:13:27.071339+00:00; 원문 https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071736&parentSeq=1071736"
+  },
+  "unresolved": [
+    "로그인후온라인신청서/동의서실제필드·길이/파일한도미확인·회사가입/제출안함",
+    "비공고인증필수과제수행가이드별첨1-4및최신운영지침실물미확보·붙임1~5전체확인과구별",
+    "붙임1목록전체텍스트/붙임2표시각·전체29쪽시각대조미완료;제품별583인증매칭/비용확정은권한회사자료후진행"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "mss-1071736",
+    "companyId": null,
+    "permission": "권한회사프로필확보후근거별검토·현재신청가능확정아님",
+    "steps": [
+      "회사필드/증빙확인",
+      "충돌/미확인해결",
+      "S12양식·S13회사정보로서류/계획작성"
+    ]
+  },
+  "applicationChecks": [
+    {
+      "id": "1071736",
+      "url": "https://www.smes.go.kr/globalcerti/",
+      "checkedAt": "2026-11-09T00:08:22.390085+00:00",
+      "status": 200,
+      "finalUrl": "https://www.smes.go.kr/globalcerti/",
+      "evidence": "1071736-publiccheck-20261109.html",
+      "bytes": 252
+    },
+    {
+      "id": "1071736-esg",
+      "url": "https://kdoctor.kosmes.or.kr/esgplatform/service/intro_esg.do",
+      "checkedAt": "2026-11-09T00:08:22.390185+00:00",
+      "status": 200,
+      "finalUrl": "https://kdoctor.kosmes.or.kr/esgplatform/service/intro_esg.do",
+      "evidence": "1071736-esg-publiccheck-20261109.html",
+      "bytes": 39798
+    },
+    {
+      "id": "1071736-main",
+      "url": "https://www.smes.go.kr/globalcerti/main.do",
+      "checkedAt": "2026-11-09T00:09:28.241424+00:00",
+      "status": 200,
+      "finalUrl": "https://www.smes.go.kr/globalcerti/main.do",
+      "evidence": "1071736-main-publiccheck-20261109.html",
+      "bytes": 84938
+    },
+    {
+      "id": "1071736-info",
+      "url": "https://www.smes.go.kr/globalcerti/info/ktrInfo.do?key=9093",
+      "checkedAt": "2026-11-09T00:11:05.359170+00:00",
+      "status": 200,
+      "finalUrl": "https://www.smes.go.kr/globalcerti/info/ktrInfo.do?key=9093",
+      "evidence": "1071736-info-publiccheck-20261109.html",
+      "bytes": 206317
+    }
+  ],
+  "evidenceReferences": [
+    {
+      "field": "eligibility",
+      "reference": "PDF1~2/5~7/붙임1 p9~22",
+      "checkedAt": "2026-11-09T00:13:27.071339+00:00",
+      "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071736&parentSeq=1071736",
+      "attachmentUrls": [
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071736&cbIdx=310&streFileNm=1b724635-9fb9-4d2f-b5b2-8d6e6040b1af.hwpx",
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071736&cbIdx=310&streFileNm=9a18f7e0-ab6e-4ad6-a9bc-0262cea931ca.pdf"
+      ]
+    },
+    {
+      "field": "exclusions",
+      "reference": "PDF5~7/붙임2 p26주석",
+      "checkedAt": "2026-11-09T00:13:27.071339+00:00",
+      "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071736&parentSeq=1071736",
+      "attachmentUrls": [
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071736&cbIdx=310&streFileNm=1b724635-9fb9-4d2f-b5b2-8d6e6040b1af.hwpx",
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071736&cbIdx=310&streFileNm=9a18f7e0-ab6e-4ad6-a9bc-0262cea931ca.pdf"
+      ]
+    },
+    {
+      "field": "support",
+      "reference": "PDF1~2/4/붙임2 p23~26·붙임3p27",
+      "checkedAt": "2026-11-09T00:13:27.071339+00:00",
+      "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071736&parentSeq=1071736",
+      "attachmentUrls": [
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071736&cbIdx=310&streFileNm=1b724635-9fb9-4d2f-b5b2-8d6e6040b1af.hwpx",
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071736&cbIdx=310&streFileNm=9a18f7e0-ab6e-4ad6-a9bc-0262cea931ca.pdf"
+      ]
+    },
+    {
+      "field": "period",
+      "reference": "PDF3모집일정",
+      "checkedAt": "2026-11-09T00:13:27.071339+00:00",
+      "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071736&parentSeq=1071736",
+      "attachmentUrls": [
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071736&cbIdx=310&streFileNm=1b724635-9fb9-4d2f-b5b2-8d6e6040b1af.hwpx",
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071736&cbIdx=310&streFileNm=9a18f7e0-ab6e-4ad6-a9bc-0262cea931ca.pdf"
+      ]
+    },
+    {
+      "field": "application",
+      "reference": "PDF3/4·공식main.do/사업소개",
+      "checkedAt": "2026-11-09T00:13:27.071339+00:00",
+      "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071736&parentSeq=1071736",
+      "attachmentUrls": [
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071736&cbIdx=310&streFileNm=1b724635-9fb9-4d2f-b5b2-8d6e6040b1af.hwpx",
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071736&cbIdx=310&streFileNm=9a18f7e0-ab6e-4ad6-a9bc-0262cea931ca.pdf"
+      ]
+    },
+    {
+      "field": "requiredDocuments",
+      "reference": "PDF28붙임4·p7ESG·p4마감유효",
+      "checkedAt": "2026-11-09T00:13:27.071339+00:00",
+      "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071736&parentSeq=1071736",
+      "attachmentUrls": [
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071736&cbIdx=310&streFileNm=1b724635-9fb9-4d2f-b5b2-8d6e6040b1af.hwpx",
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071736&cbIdx=310&streFileNm=9a18f7e0-ab6e-4ad6-a9bc-0262cea931ca.pdf"
+      ]
+    },
+    {
+      "field": "businessPlan",
+      "reference": "PDF28온라인신청·p9/28가이드별첨1-4참조",
+      "checkedAt": "2026-11-09T00:13:27.071339+00:00",
+      "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071736&parentSeq=1071736",
+      "attachmentUrls": [
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071736&cbIdx=310&streFileNm=1b724635-9fb9-4d2f-b5b2-8d6e6040b1af.hwpx",
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071736&cbIdx=310&streFileNm=9a18f7e0-ab6e-4ad6-a9bc-0262cea931ca.pdf"
+      ]
+    },
+    {
+      "field": "evaluation",
+      "reference": "PDF3~4·29붙임5전체배점",
+      "checkedAt": "2026-11-09T00:13:27.071339+00:00",
+      "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071736&parentSeq=1071736",
+      "attachmentUrls": [
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071736&cbIdx=310&streFileNm=1b724635-9fb9-4d2f-b5b2-8d6e6040b1af.hwpx",
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071736&cbIdx=310&streFileNm=9a18f7e0-ab6e-4ad6-a9bc-0262cea931ca.pdf"
+      ]
+    },
+    {
+      "field": "contact",
+      "reference": "PDF1/8",
+      "checkedAt": "2026-11-09T00:13:27.071339+00:00",
+      "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071736&parentSeq=1071736",
+      "attachmentUrls": [
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071736&cbIdx=310&streFileNm=1b724635-9fb9-4d2f-b5b2-8d6e6040b1af.hwpx",
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1071736&cbIdx=310&streFileNm=9a18f7e0-ab6e-4ad6-a9bc-0262cea931ca.pdf"
+      ]
+    }
+  ],
+  "duplicateAttachments": {
+    "primary": "attachment-02.bin",
+    "comparison": "attachment-01.bin",
+    "scope": "동일제2026-584호29쪽/본문·붙임1~5대조;HWPX추출은표중복포함",
+    "extraFormMissing": "과제수행가이드별첨1-4·로그인후온라인서식"
+  },
+  "publicationEvidence": {
+    "officialMainNoticeDate": "2026-10-13",
+    "mssNoticeDate": "2026-10-14",
+    "applicationStart": "2026-10-14 09:00",
+    "meaning": "게시일과공고/모집시작은별도값·지원자격기준일은제2026-584호10/14를보존",
+    "checkedAt": "2026-11-09T00:15:05.932261+00:00"
+  }
+}

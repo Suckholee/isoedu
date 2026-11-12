@@ -1,0 +1,78 @@
+[
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/v1X3eIqqSVh3P0uBIlpZt7ilAU5APQKSRhl17cUHIcNfIE3Q",
+    "verifiedAt": "2026-11-04",
+    "status": "downloaded",
+    "sha256": "b7d3b20af059aae79ace889198364b8273648e44593e1bc94d6e4a77595bf647",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 4243456,
+    "format": "HWP",
+    "file": "attachment-01.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 6353,
+    "review": {
+      "at": "2026-11-04T00:45:52.940286+00:00",
+      "method": "text",
+      "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+    }
+  },
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/v17Ha8zHWVWAvqpDP2Bt6LI6SbS-Sm3H1eadCscmDmzdXNBg",
+    "verifiedAt": "2026-11-04",
+    "status": "downloaded",
+    "sha256": "f1d00c9c78942ab8eac207e87740d62fa336f2e95f8dee4e12a0764a39cc0776",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 91648,
+    "format": "HWP",
+    "file": "attachment-02.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 5971,
+    "review": {
+      "at": "2026-11-04T00:45:52.940286+00:00",
+      "method": "text",
+      "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+    }
+  },
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/v1OlMesEzqsbPcxNdrPRxHFSpxSYfBi1n4bM_5F3Nqiu-d6Q",
+    "verifiedAt": "2026-11-04",
+    "status": "downloaded",
+    "sha256": "4bfc63ff341c0d68c0a6a9e935f8edfa86d5f37d79ac0fbe3563a14b4afade54",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 64512,
+    "format": "HWP",
+    "file": "attachment-03.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 1003,
+    "review": {
+      "at": "2026-11-04T00:45:52.940286+00:00",
+      "method": "text",
+      "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+    }
+  },
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/v1ebN4541FqUiZ-p4yH8OarIbnpl3D2mJkw_2I6Z7eTZNv3g",
+    "verifiedAt": "2026-11-04",
+    "status": "downloaded",
+    "sha256": "e550f44dd55d5ef87b991e3f9f3036cd6e01a8fe7a550add39812fe226303155",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 1940092,
+    "format": "PDF",
+    "file": "attachment-04.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 0,
+    "review": {
+      "at": "2026-11-04T00:45:52.940286+00:00",
+      "method": "text",
+      "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+    }
+  }
+]

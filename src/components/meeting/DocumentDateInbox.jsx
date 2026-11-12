@@ -15,7 +15,7 @@ export default function DocumentDateInbox({companyId,clients,onOpen,onReload}){
  const selectedRef=useRef(selectedId);selectedRef.current=selectedId;
  useEffect(()=>{if(new URL(window.location.href).searchParams.get('dateReview')==='1')setOpen(true);},[]);
  const job=useRef(null),identity=useRef('');identity.current=`${user?.id}/${companyId||'all'}`;
- async function load(){if(!supabase||!user)return;const key=identity.current;let q=supabase.from('documents').select('id,company_id,title,file_url,content_draft,metadata,updated_at').order('company_id').order('id');if(companyId)q=q.eq('company_id',companyId);const {data,error}=await q.limit(1000);if(error)throw error;if(key===identity.current){setDocs(data);const companies=await supabase.from('companies').select('id,name');if(!companies.error&&key===identity.current)setNames(companies.data);}return data;}
+ async function load(){if(!supabase||!user)return;const key=identity.current;let q=supabase.from('documents').select('id,company_id,title,file_url,content_draft,metadata,updated_at').order('company_id').order('id');if(companyId)q=q.eq('company_id',companyId);const {data,error}=await q.limit(1000);if(error)throw error;if(key===identity.current){setDocs(data.filter(d=>d.metadata?.kind!=='certification-curation'));const companies=await supabase.from('companies').select('id,name');if(!companies.error&&key===identity.current)setNames(companies.data);}return data;}
  useEffect(()=>{setDocs([]);setError('');load().catch(e=>setError(e.message));return()=>{job.current?.abort();};},[user?.id,companyId]);
  function put(doc){setDocs(list=>list.map(d=>d.id===doc.id?doc:d));}
  async function analyze(d,signal){

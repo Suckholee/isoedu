@@ -1,0 +1,96 @@
+{
+  "at": "2026-10-31T06:32:56.017685+00:00",
+  "date": "2026-10-31",
+  "automationId": "isoedu",
+  "stage": "daily-analysis-summary",
+  "summary": "2026-10-31 정기 실행: K-Startup15·중기부10 각 첫 페이지 수집, 신규6·누적106·상세106건 확보. 정부R&D특강/네이버MARKETCONNECT/서울기후B2G/장수트레일/제주부트캠프 5건 첨부13개 실제분석(이미지6개 시각·HWP2/HWPX1/대체텍스트4 본문·표·별첨),모두partial저장. 총17첨부다운로드·기존임박2건4첨부동일해시·변경0. 네이버공개7페이지폼질문/투자기관분기·동의확인,실제제출/동적작동미검증. R&D/로컬폼401·제주노션200셸만으로실제제안양식미확보. 기후B2G예비제외/최대2쪽/희망국5순위추가확인·시작10/22대10/30/주소범위충돌,제주상세10/26~11/5대포스터10/23~11/5대텍스트10/22~11/3충돌보존. 네이버마감11/3 00:00을23:59로늘리지않음. 신규6중3건분석·나머지3건상세/첨부링크만,주관기관모집공고를기업직접지원과구분. 큐partial65/pending41/complete0·잔여106,이번처리11/1재시도. 기업마당/IRIS/KOTRA공개페이지200근거보존·전체수집/상세분석아님. route.GET200·106공고65분석·5건마감/달력배치검증,localhost3001연결실패·화면미검증. G01→S03→S12/S13 ID·회사필드·근거·권한인계유지. 회사적합판정·DB변경·배포·외부발송없음.",
+  "coverage": {
+    "k-startup": "first page15",
+    "mss": "first page10",
+    "newRecords": 6,
+    "totalRecords": 106,
+    "detailsFetched": 106,
+    "fullCollection": false
+  },
+  "reviewedProgramIds": [
+    "kstartup-179674",
+    "kstartup-179652",
+    "kstartup-179668",
+    "kstartup-179672",
+    "kstartup-179620"
+  ],
+  "actualReviewedAttachments": 13,
+  "hashDownloads": 17,
+  "sameExistingHashes": 4,
+  "changedHashes": 0,
+  "queueCounts": {
+    "partial": 65,
+    "pending": 41
+  },
+  "remaining": 106,
+  "nextRetryAt": "2026-11-01T09:00:00+09:00",
+  "sourceChecks": [
+    {
+      "id": "179674",
+      "url": "https://forms.gle/GgF2LhcWToiLaZk17",
+      "checkedAt": "2026-10-31T06:28:09.834183+00:00",
+      "error": "HTTP Error 401: Unauthorized"
+    },
+    {
+      "id": "179652",
+      "url": "https://forms.markettest.kr/r/e5ZLLQ",
+      "checkedAt": "2026-10-31T06:28:09.834509+00:00",
+      "status": 200,
+      "finalUrl": "https://forms.markettest.kr/r/e5ZLLQ",
+      "evidence": "179652-publiccheck-20261031.html",
+      "bytes": 94093
+    },
+    {
+      "id": "179672",
+      "url": "http://vo.la/GbHdE9e",
+      "checkedAt": "2026-10-31T06:28:09.834973+00:00",
+      "error": "HTTP Error 401: Unauthorized"
+    },
+    {
+      "id": "179620",
+      "url": "https://maize-manatee-b6e.notion.site/2026-OPEN-ISLAND-BOOT-CAMP-40136f809ea880f1b999d7fd3b744594",
+      "checkedAt": "2026-10-31T06:28:09.835081+00:00",
+      "status": 200,
+      "finalUrl": "https://maize-manatee-b6e.notion.site/2026-OPEN-ISLAND-BOOT-CAMP-40136f809ea880f1b999d7fd3b744594",
+      "evidence": "179620-publiccheck-20261031.html",
+      "bytes": 19984
+    },
+    {
+      "id": "bizinfo",
+      "url": "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/list.do",
+      "checkedAt": "2026-10-31T06:28:09.835194+00:00",
+      "status": 200,
+      "finalUrl": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200View.do?null",
+      "evidence": "bizinfo-publiccheck-20261031.html",
+      "bytes": 111149
+    },
+    {
+      "id": "iris",
+      "url": "https://www.iris.go.kr/index.do",
+      "checkedAt": "2026-10-31T06:28:09.835289+00:00",
+      "status": 200,
+      "finalUrl": "https://www.iris.go.kr/index.do",
+      "evidence": "iris-publiccheck-20261031.html",
+      "bytes": 2512977
+    },
+    {
+      "id": "kotra",
+      "url": "https://kotra.or.kr/subList/20000020753",
+      "checkedAt": "2026-10-31T06:28:09.835380+00:00",
+      "status": 200,
+      "finalUrl": "https://kotra.or.kr/subList/20000020753",
+      "evidence": "kotra-publiccheck-20261031.html",
+      "bytes": 152169
+    }
+  ],
+  "validationEvidence": "evidence/api-validation-2026-10-31.json",
+  "screenVerified": false,
+  "databaseModified": false,
+  "deployed": false,
+  "externalMessagesSent": false
+}

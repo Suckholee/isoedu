@@ -1,0 +1,161 @@
+{
+  "at": "2026-10-24T00:02:23.195954+00:00",
+  "stage": "daily-attachment-analysis",
+  "status": "partial-success",
+  "summary": "2026-10-24 정기 실행: K-Startup15·중기부10 각 첫 페이지, 신규 창업도시1건·누적63공고·상세63건 확인. 미분석5건(농식품데모데이·고양자금조달·제대군인워크숍·구로발표교육·충북AI제조교육) 실제첨부6개와 신청폼3개 전문 검토 후 partial 저장. 신규 창업도시는6첨부 확보 및 핵심조항만 예비분석 partial로 별도 구분, 광역자치단체 대상이며 일반기업 직접신청 아님·평가계획11/4 15시 별도 사전제출 발견. 전체23첨부 다운로드·기존13개동일해시, 완료2건 및 마감임박3건 기존상태 유지. 농식품폼 개인정보 안내 미작성/이메일필수충돌, 고양 상세16:59 대 포스터·폼17:00 마감차이, 구로 필수증빙미명시 보존. 큐complete2/partial32/pending29·잔여61,이번처리미해결10/25재시도. 보완3출처200은 페이지접근만·기업마당redirect 및 IRIS셸/목록 전체 미검증. route.GET200·63공고/34분석 및6건마감시각 검증,localhost접속실패·화면미검증. G01→S03→S12/S13 ID·근거·권한 인계 보존,회사적합판정·DB변경·배포·외부발송 없음.",
+  "scope": {
+    "listing": {
+      "kstartup": 15,
+      "mss": 10,
+      "coverage": "first-page-only"
+    },
+    "newRecords": 1,
+    "retainedRecords": 63,
+    "detailPagesAttempted": 63,
+    "analysedThisRun": [
+      "kstartup-179602",
+      "kstartup-179536",
+      "kstartup-179520",
+      "kstartup-179590",
+      "kstartup-179593"
+    ],
+    "preliminaryOnly": [
+      "mss-1071948"
+    ],
+    "downloadedAttachments": 23,
+    "failedAttachments": 0,
+    "priorHashesCompared": 13,
+    "contentChanged": 0,
+    "queue": {
+      "partial": 32,
+      "pending": 29,
+      "complete": 2
+    },
+    "remaining": 61
+  },
+  "failures": [
+    "초기 sandbox 네트워크실패 후 권한경로 재실행 성공",
+    "기존 일부 상세 첨부0응답·기존기록보존",
+    "로컬HTTP 연결실패·화면미검증"
+  ],
+  "supplementalSourceChecks": [
+    {
+      "name": "fast-form",
+      "url": "https://forms.gle/A17LY1yVwFR5U5as9",
+      "checkedAt": "2026-10-23T23:59:55.523611+00:00",
+      "status": 200,
+      "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSe3ZIongEbdQKYLrUc2bQnpVlgiA5nezPNRzUhyInzgy7lqOQ/viewform?usp=send_form",
+      "bytes": 115125
+    },
+    {
+      "name": "goyang-form",
+      "url": "https://forms.gle/tvPfwBgDMzPwcNrT7",
+      "checkedAt": "2026-10-23T23:59:55.524012+00:00",
+      "status": 200,
+      "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdGKG_FZIjKZJ-SN2VOQ0hWot4QOi6COLcf__N8QxETItyWFA/viewform?usp=send_form",
+      "bytes": 126366
+    },
+    {
+      "name": "ai-form",
+      "url": "https://forms.gle/hUWxJdH9Lx5fboif7",
+      "checkedAt": "2026-10-23T23:59:55.524203+00:00",
+      "status": 200,
+      "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdU5O2Jd1ACDdNzA06JwnHgJ02nDKGnZRrXpxrMXixn_axMJQ/viewform?usp=send_form",
+      "bytes": 117390
+    },
+    {
+      "name": "veteran",
+      "url": "https://vnet.go.kr/esta/EstaLcr002D.do?idx=5730",
+      "checkedAt": "2026-10-23T23:59:55.524312+00:00",
+      "status": 200,
+      "finalUrl": "https://vnet.go.kr/esta/EstaLcr002D.do?idx=5730",
+      "bytes": 95667
+    },
+    {
+      "name": "guro",
+      "url": "https://lifelong.dongyang.ac.kr/lecture/list.do?menu_idx=10",
+      "checkedAt": "2026-10-23T23:59:55.524813+00:00",
+      "status": 200,
+      "finalUrl": "https://lifelong.dongyang.ac.kr/lecture/list.do?menu_idx=10",
+      "bytes": 22096
+    },
+    {
+      "name": "bizinfo",
+      "url": "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/list.do",
+      "checkedAt": "2026-10-23T23:59:55.524925+00:00",
+      "status": 200,
+      "finalUrl": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200View.do?null",
+      "bytes": 111448
+    },
+    {
+      "name": "iris",
+      "url": "https://www.iris.go.kr/index.do",
+      "checkedAt": "2026-10-23T23:59:55.525062+00:00",
+      "status": 200,
+      "finalUrl": "https://www.iris.go.kr/index.do",
+      "bytes": 2512965
+    },
+    {
+      "name": "kotra",
+      "url": "https://kotra.or.kr/subList/20000020753",
+      "checkedAt": "2026-10-23T23:59:55.525161+00:00",
+      "status": 200,
+      "finalUrl": "https://kotra.or.kr/subList/20000020753",
+      "bytes": 152169
+    }
+  ],
+  "apiValidation": {
+    "at": "2026-10-24T00:01:23.350Z",
+    "status": 200,
+    "total": 63,
+    "analyses": 34,
+    "checked": [
+      {
+        "id": "kstartup-179520",
+        "date": "2026-11-10",
+        "time": "23:59",
+        "reviewStatus": "partial"
+      },
+      {
+        "id": "kstartup-179536",
+        "date": "2026-11-06",
+        "time": "16:59",
+        "reviewStatus": "partial"
+      },
+      {
+        "id": "kstartup-179602",
+        "date": "2026-10-30",
+        "time": "13:00",
+        "reviewStatus": "partial"
+      },
+      {
+        "id": "kstartup-179593",
+        "date": "2026-11-06",
+        "time": "13:00",
+        "reviewStatus": "partial"
+      },
+      {
+        "id": "kstartup-179590",
+        "date": "2026-11-11",
+        "time": "18:00",
+        "reviewStatus": "partial"
+      },
+      {
+        "id": "mss-1071948",
+        "date": "2026-11-30",
+        "time": "15:00",
+        "reviewStatus": "partial"
+      }
+    ],
+    "scope": "route.GET 직접 호출·화면 미검증",
+    "localHttp": {
+      "error": "fetch failed"
+    },
+    "note": "마지막 신규 창업도시 예비분석 저장 후 분석파일 수 재집계"
+  },
+  "screenValidation": "미검증",
+  "companyMatching": "권한 회사 프로필 미확보: 판정 없음",
+  "deployment": "없음",
+  "schemaChanges": "없음",
+  "externalMessages": "없음"
+}

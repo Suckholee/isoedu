@@ -1,0 +1,58 @@
+[
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/v1hqFPxkppHD8QpimP-XmK9jeF4hXGuQPUCgKwDBdWVfVTVA",
+    "verifiedAt": "2026-11-05",
+    "status": "downloaded",
+    "sha256": "cdb2403dfbd65e47d9384b47b7539b3e0764593383333f8a7e50c45d42317867",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 308289,
+    "format": "PDF",
+    "file": "attachment-01.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 4136
+  },
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/v1OxbP5qI3KLPLuihM9RUD2Ghf35orUr3BiYg9zcqzHS0N5Q",
+    "verifiedAt": "2026-11-05",
+    "status": "downloaded",
+    "sha256": "4210364e710572c9ee8db1fbac14daff4f3eebcd974e447e6268595a9253248a",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 81920,
+    "format": "HWP",
+    "file": "attachment-02.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 4494
+  },
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/v1sngFPA1nQSYlTTrJDoHFA9egn3tlCGS3znUVc2AeAM9xLQ",
+    "verifiedAt": "2026-11-05",
+    "status": "downloaded",
+    "sha256": "ea4710a86b0222dd29982daaf56148c1eb35d9abff59af863742fff324171deb",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 76800,
+    "format": "HWP",
+    "file": "attachment-03.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 2095
+  },
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/v14lsbf80dnyAFqzaWg8yL9JTXfBR4o8TJtrDHoo8OCciYkg",
+    "verifiedAt": "2026-11-05",
+    "status": "downloaded",
+    "sha256": "bbd0e8934c34a102100a62e93839910f316a75a1d83a8a3f19045dba0a63558a",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 60928,
+    "format": "HWP",
+    "file": "attachment-04.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 837
+  }
+]

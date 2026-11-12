@@ -1,0 +1,93 @@
+{
+  "programId": "kstartup-179741",
+  "title": "2026년도 제4차 북부창업아카데미 및 북부창업멘토링 DAY 참가자 모집(주제 : 2027 정부지원사업 합격을 위한 실전 전략)",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-08T10:18:01.435819+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179741",
+  "reviewScope": "상세대상/제출/평가/교육전문읽음. 무첨부공고분석수준,2026-11-08",
+  "attachments": [],
+  "attachmentContentHashes": {},
+  "lastAttachmentHashCheckedAt": "2026-11-08T10:18:01.435819+00:00",
+  "eligibility": {
+    "summary": "정부지원사업지원예정 여성예비/창업자·남성제외. 아카데미30명선착순,수료자중계획서제출4명멘토링선발.",
+    "companyFields": [
+      "여성",
+      "예비/창업정보",
+      "지원사업계획서",
+      "교육수료가능",
+      "계획서11/18제출여부"
+    ],
+    "reference": "상세대상/제출/평가/교육전문읽음. 무첨부공고분석수준,2026-11-08"
+  },
+  "exclusions": {
+    "items": [
+      "남성",
+      "멘토링계획서기한미제출선발제외"
+    ],
+    "reference": "상세대상/제출/평가/교육전문읽음. 무첨부공고분석수준,2026-11-08"
+  },
+  "support": {
+    "summary": "무료아카데미11/25 14~17 북부여성발전센터109호. 멘토링12/2·12/8 13:30~17:30중지정60분내외2회. 사업아이템/BM/시장검증/사업계획교육. 지원금/비율아님.",
+    "reference": "상세대상/제출/평가/교육전문읽음. 무첨부공고분석수준,2026-11-08"
+  },
+  "period": {
+    "start": "2026-11-06",
+    "end": "2026-11-18",
+    "deadlineTime": "17:00",
+    "timezone": "Asia/Seoul",
+    "reference": "상세대상/제출/평가/교육전문읽음. 무첨부공고분석수준,2026-11-08"
+  },
+  "application": {
+    "summary": "센터공식공지/온라인접수. 멘토링희망은교육신청과별도로11/18까지자유계획서 bukbu7692@seoulwomanup.or.kr 제출,11/26결과예정.",
+    "reference": "상세대상/제출/평가/교육전문읽음. 무첨부공고분석수준,2026-11-08"
+  },
+  "requiredDocuments": [
+    {
+      "name": "교육참가신청",
+      "condition": "공통·실제문항미확인",
+      "reference": "상세 신청절"
+    },
+    {
+      "name": "사업계획서 자유양식",
+      "condition": "멘토링희망자만·11/18이메일",
+      "reference": "상세 제출절"
+    }
+  ],
+  "businessPlan": {
+    "format": "자유사업계획서",
+    "limit": "항목/분량별도미명시",
+    "sections": [],
+    "reference": "상세대상/제출/평가/교육전문읽음. 무첨부공고분석수준,2026-11-08"
+  },
+  "evaluation": {
+    "summary": "교육선착순30명→수료·계획서제출자4명멘토링선발,배점미기재.",
+    "reference": "상세대상/제출/평가/교육전문읽음. 무첨부공고분석수준,2026-11-08"
+  },
+  "contact": {
+    "name": "02-3399-7692 bukbu7692@seoulwomanup.or.kr",
+    "reference": "상세대상/제출/평가/교육전문읽음. 무첨부공고분석수준,2026-11-08"
+  },
+  "unresolved": [
+    "공고첨부0개·공식공지/온라인접수실제문항미확인",
+    "멘토링선발기준/자유계획서구성·분량미명시"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179741",
+    "companyId": null,
+    "permission": "권한회사프로필확보후근거별검토·현재신청가능확정아님",
+    "steps": [
+      "회사필드/증빙확인",
+      "충돌/미확인해결",
+      "S12양식·S13회사정보로서류/계획작성"
+    ]
+  },
+  "applicationChecks": [],
+  "evidenceReferences": []
+}

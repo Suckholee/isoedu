@@ -1,0 +1,100 @@
+{
+  "at": "2026-11-10T00:20:43.252Z",
+  "status": 200,
+  "method": "local route.GET direct invocation + calendar helper; browser screen not checked",
+  "records": 170,
+  "analyses": 119,
+  "checks": [
+    {
+      "id": "kstartup-179579",
+      "start": "2026-10-20",
+      "end": "2026-11-10",
+      "time": "23:59",
+      "dateMatch": true,
+      "timeMatch": true,
+      "calendarContains": true,
+      "reviewStatus": "partial",
+      "unresolved": 3
+    },
+    {
+      "id": "kstartup-179746",
+      "start": "2026-10-14",
+      "end": "2026-11-12",
+      "time": "16:00",
+      "dateMatch": true,
+      "timeMatch": true,
+      "calendarContains": true,
+      "reviewStatus": "partial",
+      "unresolved": 4
+    },
+    {
+      "id": "kstartup-179662",
+      "start": "2026-10-29",
+      "end": "2026-11-27",
+      "time": "21:00",
+      "dateMatch": true,
+      "timeMatch": true,
+      "calendarContains": true,
+      "reviewStatus": "partial",
+      "unresolved": 4
+    },
+    {
+      "id": "kstartup-179762",
+      "start": "2026-11-09",
+      "end": "2026-11-15",
+      "time": "18:00",
+      "dateMatch": true,
+      "timeMatch": true,
+      "calendarContains": true,
+      "reviewStatus": "partial",
+      "unresolved": 4
+    },
+    {
+      "id": "kstartup-179654",
+      "start": "2026-10-29",
+      "end": "2026-11-17",
+      "time": "17:00",
+      "dateMatch": true,
+      "timeMatch": true,
+      "calendarContains": true,
+      "reviewStatus": "partial",
+      "unresolved": 4
+    },
+    {
+      "id": "kstartup-179683",
+      "start": "2026-11-01",
+      "end": "2026-11-18",
+      "time": "00:00",
+      "dateMatch": true,
+      "timeMatch": true,
+      "calendarContains": true,
+      "reviewStatus": "partial",
+      "unresolved": 4
+    },
+    {
+      "id": "mss-1071793",
+      "start": "2026-10-15",
+      "end": "2026-11-16",
+      "time": "18:00",
+      "dateMatch": true,
+      "timeMatch": true,
+      "calendarContains": true,
+      "reviewStatus": "partial",
+      "unresolved": 5
+    }
+  ],
+  "closedFormWarningVerified": true,
+  "earlyRoundPreserved": true,
+  "realMssListingDateMerge": {
+    "id": "mss-1072312",
+    "listingEnd": null,
+    "mergedEnd": "2026-11-13"
+  },
+  "coverage": "K-Startup·중기부 공개 목록 1페이지 우선 수집. 전체 공고 수집 아님.",
+  "screenVerified": false,
+  "http": {
+    "url": "http://127.0.0.1:3010/api/government-programs",
+    "error": "curl exit7 connection refused",
+    "screenVerified": false
+  }
+}

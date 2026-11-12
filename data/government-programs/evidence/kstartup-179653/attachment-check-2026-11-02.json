@@ -1,0 +1,57 @@
+[
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/H42Ln",
+    "verifiedAt": "2026-11-02",
+    "status": "downloaded",
+    "sha256": "b207432392a588db6189c89733400a3ed4d2fe3431be216f861e981982fac348",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 1183829,
+    "format": "PDF",
+    "file": "attachment-01.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 9025,
+    "review": {
+      "at": "2026-11-02T00:10:50.858912+00:00",
+      "method": "text",
+      "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+    }
+  },
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/d42Ln",
+    "verifiedAt": "2026-11-02",
+    "status": "downloaded",
+    "sha256": "5d349a4d4a14df73e754843968683ccac7433c6a1299ca70d779bf6e837f552e",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 6424845,
+    "format": "IMAGE",
+    "file": "attachment-02.bin",
+    "contentType": "image/jpeg;charset=UTF-8",
+    "review": {
+      "at": "2026-11-02T00:10:50.858912+00:00",
+      "method": "visual",
+      "scope": "전체 포스터 시각 검토·동반 텍스트 대조; 긴 이미지 작은글씨 전부검증아님"
+    }
+  },
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/Y42Ln",
+    "verifiedAt": "2026-11-02",
+    "status": "downloaded",
+    "sha256": "74225bba1080b2f018d23cca45a788195103ec0e19928b7c04b9ba9e7cc735e4",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 12800,
+    "format": "HWP",
+    "file": "attachment-03.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 784,
+    "review": {
+      "at": "2026-11-02T00:10:50.858912+00:00",
+      "method": "text",
+      "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+    }
+  }
+]

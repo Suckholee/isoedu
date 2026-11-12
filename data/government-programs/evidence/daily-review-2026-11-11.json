@@ -1,0 +1,205 @@
+{
+  "at": "2026-11-11T02:41:02.698126+00:00",
+  "runDateKst": "2026-11-11",
+  "triggeredAt": "2026-11-11T00:09:49.932Z",
+  "stage": "daily-attachment-analysis",
+  "status": "partial-success",
+  "newIds": [
+    "kstartup-179690",
+    "kstartup-179761",
+    "kstartup-179760",
+    "kstartup-179763",
+    "kstartup-179764",
+    "kstartup-179766",
+    "kstartup-179626"
+  ],
+  "newCount": 7,
+  "totalRecords": 177,
+  "details": {
+    "htmlCaptured": 177,
+    "failed": 0,
+    "scope": "첨부 주소 목록 및 본문 확보. 첨부 내용 검토 범위는 별도."
+  },
+  "collectionSources": [
+    {
+      "id": "k-startup",
+      "listingPage": 1,
+      "count": 15,
+      "failures": []
+    },
+    {
+      "id": "mss",
+      "listingPage": 1,
+      "count": 10,
+      "failures": []
+    },
+    {
+      "id": "bizinfo",
+      "httpStatus": 200,
+      "scope": "공개 진입 확인, ?null 리디렉션 이후 실제 공고 목록 미확인"
+    },
+    {
+      "id": "iris",
+      "httpStatus": 200,
+      "scope": "공개 홈 접근만 확인, 전체 공고 미수집"
+    },
+    {
+      "id": "kotra",
+      "httpStatus": 200,
+      "scope": "공개 인덱스 접근만 확인, 전체 공고 미수집"
+    }
+  ],
+  "supplementaryEvidence": "evidence/public-links-20261111.json",
+  "analyses": [
+    {
+      "id": "kstartup-179690",
+      "status": "partial",
+      "attachmentsReviewed": 4,
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179690",
+      "analysisFile": "analyses/kstartup-179690.json",
+      "unresolved": [
+        "K-Startup 명목 종료 11/19 23:59가 행사 종료 17:30 이후. 초청장과 현재 접수 상태 응답에서 각각 실제 종료 시각은 확인되지 않음."
+      ]
+    },
+    {
+      "id": "kstartup-179761",
+      "status": "partial",
+      "attachmentsReviewed": 1,
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179761",
+      "analysisFile": "analyses/kstartup-179761.json",
+      "unresolved": [
+        "공고 본문 7년 미만과 첨부 양식 3년 미만 충돌. 대학 센터 소개에는 차수별 정정 없음.",
+        "임대료 구간의 120㎡ 경계가 양쪽에 포함되며 부과 주기는 본문에서 확인되지 않음.",
+        "첨부의 대표자 이력서·사업계획서와 본문 제출 목록 차이는 담당처 확인 필요."
+      ]
+    },
+    {
+      "id": "kstartup-179760",
+      "status": "partial",
+      "attachmentsReviewed": 2,
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179760",
+      "analysisFile": "analyses/kstartup-179760.json",
+      "unresolved": [
+        "행사 종료 시각 상세 20:20 대 포스터·대체 HWPX 20:30. 최신 정정 확인 필요.",
+        "e4c 공개 HTML에는 사전신청 제목만 노출되어 실제 필수 문항·동의서 미확인."
+      ]
+    },
+    {
+      "id": "kstartup-179763",
+      "status": "partial",
+      "attachmentsReviewed": 1,
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179763",
+      "analysisFile": "analyses/kstartup-179763.json",
+      "unresolved": [
+        "접수 시각 K-Startup 11/10 00:00~11/20 14:00 대 수행기관 11/10 09:00~11/20 17:00. 같은 폼으로 연결됨. 달력은 현재 확인된 이른 마감 14시 유지.",
+        "수행기관 지역 목록이 실제 참가 제한인지 미확인. 폼의 개인정보 보유기간 미표기."
+      ]
+    },
+    {
+      "id": "kstartup-179764",
+      "status": "partial",
+      "attachmentsReviewed": 2,
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179764",
+      "analysisFile": "analyses/kstartup-179764.json",
+      "unresolved": [
+        "11/18 행사 시작 상세 13:00 대 포스터·폼 13:30, 장소 대체텍스트 120호 대 상세·포스터·폼 102호.",
+        "공개 Tally에 숨김 상태의 밋업 마감 문구와 조건부 희망 입력이 공존. 활성 마감 여부나 현장 추가 접수 확정 불가."
+      ]
+    },
+    {
+      "id": "kstartup-179766",
+      "status": "complete",
+      "attachmentsReviewed": 2,
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179766",
+      "analysisFile": "analyses/kstartup-179766.json",
+      "unresolved": []
+    },
+    {
+      "id": "kstartup-179626",
+      "status": "partial",
+      "attachmentsReviewed": 2,
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179626",
+      "analysisFile": "analyses/kstartup-179626.json",
+      "unresolved": [
+        "K-Startup 표시 시작 09:00과 시청 공고 첨부의 방문 가능 10:00 차이. 방문 업무는 원 공고 10:00 기준.",
+        "관련 실적 3년 기산점은 공고일로 적힌 HWPX Ⅲ/Ⅳ 및 PDF 본문과 PDF 주석의 접수 마감일 표기가 달라 경계 사례 확인 필요."
+      ]
+    },
+    {
+      "id": "kstartup-179759",
+      "status": "partial",
+      "attachmentsReviewed": 4,
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179759",
+      "analysisFile": "analyses/kstartup-179759.json",
+      "unresolved": [
+        "상세 11/6 15시·공고문 11/6 공고일 대 카드뉴스·포스터 11/5 모집 시작 충돌. 주관기관 게시 11/6 15:50. 최신 정정 미확인.",
+        "창업예정자의 사업자등록증 대체서류 미명시. 센터 문의 필요."
+      ]
+    }
+  ],
+  "attachmentDownloads": 23,
+  "attachmentReviewCount": 18,
+  "hashOnlyUnchanged": [
+    {
+      "id": "kstartup-179590",
+      "sameHashes": 1,
+      "manifest": "evidence/kstartup-179590/attachment-check-2026-11-11.json"
+    },
+    {
+      "id": "kstartup-179746",
+      "sameHashes": 2,
+      "manifest": "evidence/kstartup-179746/attachment-check-2026-11-11.json"
+    },
+    {
+      "id": "mss-1072312",
+      "sameHashes": 2,
+      "manifest": "evidence/mss-1072312/attachment-check-2026-11-11.json"
+    }
+  ],
+  "attachmentDownloadFailures": 0,
+  "priority": "모집 중 마감 임박, 신규, 기존 대기·재시도. 동일 기존 첨부 5개는 해시만 대조.",
+  "queue": {
+    "counts": {
+      "partial": 126,
+      "pending": 50,
+      "complete": 1
+    },
+    "remaining": 176,
+    "retryAt": "2026-11-12T09:00:00+09:00"
+  },
+  "notableConflicts": [
+    {
+      "id": "kstartup-179763",
+      "summary": "K-Startup 마감 14시 / 수행기관 17시. 달력 14시 유지."
+    },
+    {
+      "id": "kstartup-179761",
+      "summary": "K-Startup 업력 7년 미만 / HWP 신청구분 3년 미만."
+    },
+    {
+      "id": "kstartup-179626",
+      "summary": "목록 09시 / 방문 접수 10시, 실적 산정일 공고일 / 마감일."
+    }
+  ],
+  "apiValidation": "evidence/api-validation-2026-11-11.json",
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programIds": [
+      "kstartup-179690",
+      "kstartup-179761",
+      "kstartup-179760",
+      "kstartup-179763",
+      "kstartup-179764",
+      "kstartup-179766",
+      "kstartup-179626",
+      "kstartup-179759"
+    ],
+    "companyEligibilityEvaluated": false
+  },
+  "detailEvidence": "177건 개별 detail-fetch 로그"
+}

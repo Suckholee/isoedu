@@ -1,0 +1,16 @@
+[
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/tQ2Ln",
+    "verifiedAt": "2026-10-30",
+    "status": "downloaded",
+    "sha256": "10770f4650cdfc5e1428adee8e4b6b87aea5a867b28c68e1af2d2ee35c06c597",
+    "previousHash": "10770f4650cdfc5e1428adee8e4b6b87aea5a867b28c68e1af2d2ee35c06c597",
+    "changed": false,
+    "bytes": 289257,
+    "format": "PDF",
+    "file": "attachment-01.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 0
+  }
+]

@@ -1,0 +1,40 @@
+[
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/v1QevUAVRL--Hilz-NPaNAg7sOwEIzyeoJ5VthyZhwNuK78g",
+    "verifiedAt": "2026-11-04",
+    "status": "downloaded",
+    "sha256": "004638d969e9d00e13afb58f089a15455f82136069bbad4714e1d35f8c76d2a1",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 81408,
+    "format": "HWP",
+    "file": "attachment-01.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 5029,
+    "review": {
+      "at": "2026-11-04T00:45:52.940286+00:00",
+      "method": "text",
+      "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+    }
+  },
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/v1p_P1vqgfEd6QKG46oSMOjGTgJmDbdp0Glg616bMa3tWnJA",
+    "verifiedAt": "2026-11-04",
+    "status": "downloaded",
+    "sha256": "91f916a9f9d8d31f59f791dbaa40dfb52221eeb53e674d4da85f7d173d8dbeda",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 58368,
+    "format": "HWP",
+    "file": "attachment-02.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 2545,
+    "review": {
+      "at": "2026-11-04T00:45:52.940286+00:00",
+      "method": "text",
+      "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+    }
+  }
+]

@@ -1,0 +1,150 @@
+{
+  "at": "2026-10-27T00:08:23.444098+00:00",
+  "stage": "daily-attachment-analysis",
+  "status": "partial-success",
+  "summary": "2026-10-27 정기 실행: K-Startup15·중기부10 각 첫 페이지,신규13·누적76공고·상세76건 확인. 관악S밸리·KETI연구소기업·국민대부트캠프·창동데모데이·서리풀클리닉 기존미분석5건 실제첨부10개·주최공개페이지/신청1단계 검토후partial저장. 신규13건은이번실행상세/링크확보까지이며첨부내용분석대기로명시. 총20첨부다운로드·기존10개동일해시·변경0,완료2건보존·마감임박3건기존미해결유지. 서리풀각회차전주목요일마감/아이템자문필수·멘토별각각신청,국민대자체+NAIS이중신청/사업자소득예외와확정후증빙,관악본사이전·연비용조건기록. KETI폼401·이메일오타,관악원본후반/사진·일부모든쪽시각미검토·실제접수필드미확인 보존. 큐complete2/partial48/pending26·잔여74,이번미해결10/28재시도. 보완3출처공개접근만·전체수집아님. route.GET200·76공고/50분석·5건마감검증,localhost실패·화면미검증. G01→S03→S12/S13 ID·근거·회사별필드·권한인계유지,회사적합판정·DB변경·배포·외부발송없음.",
+  "scope": {
+    "listing": {
+      "kstartup": 15,
+      "mss": 10,
+      "coverage": "first-page-only"
+    },
+    "newRecords": 13,
+    "retainedRecords": 76,
+    "detailPagesAttempted": 76,
+    "analysedThisRun": [
+      "kstartup-179582",
+      "kstartup-179528",
+      "kstartup-179559",
+      "kstartup-179562",
+      "kstartup-179586"
+    ],
+    "detailOnly": [],
+    "downloadedAttachments": 20,
+    "failedAttachments": 0,
+    "priorHashesCompared": 10,
+    "contentChanged": 0,
+    "queue": {
+      "partial": 48,
+      "pending": 26,
+      "complete": 2
+    },
+    "remaining": 74
+  },
+  "supplementalSourceChecks": [
+    {
+      "name": "keti",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSc7D5wYhf-fHXn0IM2kE3Xgzs0CyXUFsJVqT9TcbOCOqXp6Ug/viewform",
+      "checkedAt": "2026-10-27T00:06:12.838256+00:00",
+      "error": "HTTP Error 401: Unauthorized"
+    },
+    {
+      "name": "kookmin",
+      "url": "https://axkookmin.com/",
+      "checkedAt": "2026-10-27T00:06:12.838662+00:00",
+      "status": 200,
+      "finalUrl": "https://axkookmin.com/",
+      "bytes": 250263
+    },
+    {
+      "name": "kookmin-apply",
+      "url": "https://axkookmin.com/apply",
+      "checkedAt": "2026-10-27T00:06:12.838817+00:00",
+      "status": 200,
+      "finalUrl": "https://axkookmin.com/apply",
+      "bytes": 33671
+    },
+    {
+      "name": "changdong",
+      "url": "https://www.startup-plus.kr/project/PRJ007649",
+      "checkedAt": "2026-10-27T00:06:12.838946+00:00",
+      "status": 200,
+      "finalUrl": "https://www.startup-plus.kr/project/PRJ007649",
+      "bytes": 105235
+    },
+    {
+      "name": "seocho",
+      "url": "https://www.xn--2i4bieu3bszgvtc6wlunby2r.com/sub_program/operate_view.php?idx=69",
+      "checkedAt": "2026-10-27T00:06:12.839700+00:00",
+      "status": 200,
+      "finalUrl": "https://www.xn--2i4bieu3bszgvtc6wlunby2r.com/sub_program/operate_view.php?idx=69",
+      "bytes": 69749
+    },
+    {
+      "name": "bizinfo",
+      "url": "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/list.do",
+      "checkedAt": "2026-10-27T00:06:12.839841+00:00",
+      "status": 200,
+      "finalUrl": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200View.do?null",
+      "bytes": 111166
+    },
+    {
+      "name": "iris",
+      "url": "https://www.iris.go.kr/index.do",
+      "checkedAt": "2026-10-27T00:06:12.839994+00:00",
+      "status": 200,
+      "finalUrl": "https://www.iris.go.kr/index.do",
+      "bytes": 2512938
+    },
+    {
+      "name": "kotra",
+      "url": "https://kotra.or.kr/subList/20000020753",
+      "checkedAt": "2026-10-27T00:06:12.840130+00:00",
+      "status": 200,
+      "finalUrl": "https://kotra.or.kr/subList/20000020753",
+      "bytes": 152169
+    }
+  ],
+  "apiValidation": {
+    "at": "2026-10-27T00:08:05.726Z",
+    "status": 200,
+    "total": 76,
+    "analyses": 50,
+    "checked": [
+      {
+        "id": "kstartup-179528",
+        "date": "2026-11-15",
+        "time": "18:00",
+        "status": "partial"
+      },
+      {
+        "id": "kstartup-179562",
+        "date": "2026-11-18",
+        "time": "17:00",
+        "status": "partial"
+      },
+      {
+        "id": "kstartup-179559",
+        "date": "2026-11-19",
+        "time": "23:59",
+        "status": "partial"
+      },
+      {
+        "id": "kstartup-179582",
+        "date": "2026-11-16",
+        "time": "23:55",
+        "status": "partial"
+      },
+      {
+        "id": "kstartup-179586",
+        "date": "2026-11-19",
+        "time": "23:59",
+        "status": "partial"
+      }
+    ],
+    "scope": "route.GET 직접 호출·화면 미검증",
+    "localHttp": {
+      "error": "fetch failed"
+    }
+  },
+  "screenValidation": "미검증",
+  "companyMatching": "권한 회사 프로필 미확보: 판정없음",
+  "deployment": "없음",
+  "schemaChanges": "없음",
+  "externalMessages": "없음",
+  "failures": [
+    "KETI신청폼401·우회없음",
+    "일부기존상세첨부0응답·기존근거보존",
+    "로컬HTTP연결실패·직접route검증과구분"
+  ]
+}

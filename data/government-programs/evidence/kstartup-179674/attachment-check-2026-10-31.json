@@ -1,0 +1,38 @@
+[
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/4d2Ln",
+    "verifiedAt": "2026-10-31",
+    "status": "downloaded",
+    "sha256": "5b997f86daf6b15ace048e1292bfbdc133a72029e63493007528d38299034587",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 413481,
+    "format": "IMAGE",
+    "file": "attachment-01.bin",
+    "contentType": "image/png;charset=UTF-8",
+    "review": {
+      "at": "2026-10-31T06:29:54.881062+00:00",
+      "method": "visual",
+      "scope": "전체 포스터 시각 검토·동반 텍스트 대조; 긴 이미지 작은글씨 전부검증아님"
+    }
+  },
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/Ed2Ln",
+    "verifiedAt": "2026-10-31",
+    "status": "downloaded",
+    "sha256": "7d8bf9e9ae1c85b7c2e81583d705ef5968685207f1c494d480e99cf55a6add82",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 1133,
+    "format": "TEXT",
+    "file": "attachment-02.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "characters": 557,
+    "extraction": "text",
+    "review": {
+      "at": "2026-10-31T06:29:54.881062+00:00",
+      "method": "text",
+      "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+    }
+  }
+]

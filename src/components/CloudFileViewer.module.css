@@ -15,3 +15,5 @@
 
 .body{display:flex;flex:1;min-height:0;overflow:hidden}.reviewBody{display:grid;grid-template-columns:minmax(0,1fr) 360px;flex:1;min-height:0;overflow:hidden}.reviewPanel{min-height:0;overflow:auto;background:#fff;border-left:1px solid #dfe7f1}
 @media(max-width:850px){.reviewBody{grid-template-columns:1fr;grid-template-rows:minmax(240px,1fr) minmax(220px,42%)}.reviewPanel{border-left:0;border-top:1px solid #dfe7f1}}
+
+.inline{height:75vh;min-height:420px;box-shadow:none;border:1px solid #e2e8f0;border-radius:10px;max-width:none}

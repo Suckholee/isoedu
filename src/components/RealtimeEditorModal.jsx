@@ -52,7 +52,7 @@ import {
   extractTemplatePlaceholders,
   replaceTemplatePlaceholders,
 } from '../lib/projectWorkflow.mjs';
-import { safeDownloadFileName, buildWordDocumentHtml, triggerBrowserDownload } from '../lib/documentExport.mjs';
+import { safeDownloadFileName, prepareWordDocumentHtml, triggerBrowserDownload } from '../lib/documentExport.mjs';
 
 export default function RealtimeEditorModal({
   doc,
@@ -192,10 +192,12 @@ export default function RealtimeEditorModal({
     }
   };
 
-  const handleExportWord = () => {
-    const html = buildWordDocumentHtml({ ...doc, contentDraft: content }, { companyName: companyDisplayName });
+  const handleExportWord = async () => {
+    try {
+    const html = await prepareWordDocumentHtml({ ...doc, contentDraft: content }, { companyName: companyDisplayName });
     const fileName = safeDownloadFileName(`${doc.code ? `${doc.code}_` : ''}${doc.title || doc.name}`, 'doc');
     triggerBrowserDownload(html, fileName, 'application/msword;charset=utf-8');
+    } catch(e) {setUploadError(e.message||'Word 파일을 준비하지 못했습니다.');}
   };
 
   const handleExportText = () => {

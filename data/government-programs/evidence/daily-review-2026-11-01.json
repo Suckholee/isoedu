@@ -1,0 +1,110 @@
+{
+  "at": "2026-11-01T02:31:16.292603+00:00",
+  "date": "2026-11-01",
+  "automationId": "isoedu",
+  "stage": "daily-analysis-summary",
+  "summary": "2026-11-01 정기 실행: K-Startup15·중기부10 각 첫 페이지 수집,신규홍익대입주1·누적107·상세107건. 인천중장년입주/마포계획서교육/AI청년포럼/창원경진/안산입주 기존미분석5건 첨부12개 실제분석·모두partial. 스캔PDF2개와시설사진PDF1개전체시각·창원포스터·인천안내HWP내장시설사진4개시각,공고/양식/부록텍스트검토;창원PDF18쪽핵심및양식전체읽고중복HWP주요항목대조(일부추가부록/모든쪽시각미완료). 총16첨부다운로드·기존임박2건4첨부동일해시·변경0. 인천첨부PPT/신분증추가요구·이전기한미명시,안산세금증명유효/사업자등기3개월/대표직접심사·주소3개월이전확인,창원상금2100만원/증빙제출단계·개인정보보유5년대종료시파기충돌보존. 마포2건주최공개안내확인·최종신청필드미확인. 기존BeyondOI단축URL정상리디렉션후기업/성과/협업/참석/최신IR PDF문항확보,동적수요기업/보유기간미해결;ST신청폼401유지. 신규1건상세/첨부링크만·내용분석대기. 큐complete0/partial70/pending37·잔여107,이번미해결11/2재시도. 기업마당/IRIS/KOTRA공개페이지200근거보존·목록전체/상세분석아님. route.GET200·107공고70분석·5건마감/달력배치검증,localhost3001연결실패·화면미검증. G01→S03→S12/S13 ID·회사필드·근거·권한인계유지. 회사적합판정·DB변경·배포·외부발송없음.",
+  "coverage": {
+    "k-startup": "first page15",
+    "mss": "first page10",
+    "newRecords": 1,
+    "totalRecords": 107,
+    "detailsFetched": 107,
+    "fullCollection": false
+  },
+  "reviewedProgramIds": [
+    "kstartup-179613",
+    "kstartup-179628",
+    "kstartup-179627",
+    "kstartup-179599",
+    "kstartup-179606"
+  ],
+  "actualReviewedAttachments": 12,
+  "hashDownloads": 16,
+  "sameExistingHashes": 4,
+  "changedHashes": 0,
+  "queueCounts": {
+    "partial": 70,
+    "pending": 37
+  },
+  "remaining": 107,
+  "nextRetryAt": "2026-11-02T09:00:00+09:00",
+  "sourceChecks": [
+    {
+      "id": "179628",
+      "url": "https://www.naroo.or.kr/bbs/content.php?co_id=program_view&np_seq=1309",
+      "checkedAt": "2026-11-01T02:27:57.325866+00:00",
+      "status": 200,
+      "finalUrl": "https://www.naroo.or.kr/bbs/content.php?co_id=program_view&np_seq=1309",
+      "evidence": "179628-publiccheck-20261101.html",
+      "bytes": 33750
+    },
+    {
+      "id": "179627",
+      "url": "https://www.naroo.or.kr/bbs/content.php?co_id=program_view&np_seq=1311",
+      "checkedAt": "2026-11-01T02:27:57.326184+00:00",
+      "status": 200,
+      "finalUrl": "https://www.naroo.or.kr/bbs/content.php?co_id=program_view&np_seq=1311",
+      "evidence": "179627-publiccheck-20261101.html",
+      "bytes": 29511
+    },
+    {
+      "id": "179606",
+      "url": "https://pms.gtp.or.kr/",
+      "checkedAt": "2026-11-01T02:27:57.326602+00:00",
+      "status": 200,
+      "finalUrl": "https://pms.gtp.or.kr/web/main/index.do",
+      "evidence": "179606-publiccheck-20261101.html",
+      "bytes": 27131
+    },
+    {
+      "id": "bizinfo",
+      "url": "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/list.do",
+      "checkedAt": "2026-11-01T02:27:57.326738+00:00",
+      "status": 200,
+      "finalUrl": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200View.do?null",
+      "evidence": "bizinfo-publiccheck-20261101.html",
+      "bytes": 111148
+    },
+    {
+      "id": "iris",
+      "url": "https://www.iris.go.kr/index.do",
+      "checkedAt": "2026-11-01T02:27:57.326853+00:00",
+      "status": 200,
+      "finalUrl": "https://www.iris.go.kr/index.do",
+      "evidence": "iris-publiccheck-20261101.html",
+      "bytes": 1531606
+    },
+    {
+      "id": "kotra",
+      "url": "https://kotra.or.kr/subList/20000020753",
+      "checkedAt": "2026-11-01T02:27:57.326975+00:00",
+      "status": 200,
+      "finalUrl": "https://kotra.or.kr/subList/20000020753",
+      "evidence": "kotra-publiccheck-20261101.html",
+      "bytes": 152169
+    }
+  ],
+  "retryChecks": [
+    {
+      "id": "179616",
+      "url": "https://forms.gle/cafJaUT8BPfPxCyEA",
+      "checkedAt": "2026-11-01T02:29:53.093936+00:00",
+      "error": "HTTP Error 401: Unauthorized"
+    },
+    {
+      "id": "179624",
+      "url": "https://m.site.naver.com/2jwIV",
+      "checkedAt": "2026-11-01T02:29:53.094211+00:00",
+      "status": 200,
+      "finalUrl": "https://script.google.com/macros/s/AKfycbzaJ-L4IjIfN3QsER7FSA5-ywCUbgdmT-yIMNSjaE1-5ZvC8SGc4K9Dmin9KeyeIPHx/exec",
+      "evidence": "179624-publiccheck-20261101.html",
+      "bytes": 2154900
+    }
+  ],
+  "validationEvidence": "evidence/api-validation-2026-11-01.json",
+  "screenVerified": false,
+  "databaseModified": false,
+  "deployed": false,
+  "externalMessagesSent": false
+}

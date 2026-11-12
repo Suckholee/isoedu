@@ -128,7 +128,7 @@
     "https://www.k-startup.go.kr/afile/fileDownload/tZ2Ln": "af1081cfebc5e774f3bdb21203c7be0fd00eec5ed1316ae3e6ea8a0c559d1a9b",
     "https://www.k-startup.go.kr/afile/fileDownload/1p2Ln": "07ecdf17c3407e3f35987208b606b13ce073b93df8114b47192054d6191d63af"
   },
-  "lastAttachmentHashCheckedAt": "2026-11-03T00:03:26.113645+00:00",
+  "lastAttachmentHashCheckedAt": "2026-11-08T10:20:39.754794+00:00",
   "eligibility": {
     "summary": "전국 대학생·대학원생 개인/팀·충북 지역자원(기술·로컬등)활용 창업아이디어·팀인원늘면양식표조정가능.기업업력한도는첨부미명시",
     "companyFields": [
@@ -276,5 +276,7 @@
       "sha256": "7dd0c6de0787c77e9e42486927a670815f7dcda1f805f8b588d86ab2d4c5a2ce",
       "format": "HWPX"
     }
-  ]
+  ],
+  "latestHashEvidence": "evidence/kstartup-179676/attachment-check-2026-11-08.json",
+  "latestHashCheckScope": "본문재분석아닌 기존첨부 바이트SHA256 대조; 동일바이트·기존미해결유지"
 }

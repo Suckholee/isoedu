@@ -48,7 +48,7 @@
     "https://www.k-startup.go.kr/afile/fileDownload/kd2Ln": "ce819546c089bd4a346727b8b0003904d730d56709ae7dd0b078016f25b48dae",
     "https://www.k-startup.go.kr/afile/fileDownload/ld2Ln": "140e440458c4e8c604542f7721997f4077e4eaee6e44962f91a022c4edf89571"
   },
-  "lastAttachmentHashCheckedAt": "2026-10-31T06:29:54.881062+00:00",
+  "lastAttachmentHashCheckedAt": "2026-11-06T01:30:04.673492+00:00",
   "eligibility": {
     "summary": "업력7년이내로컬(예비)창업기업10곳·장수군소재또는이전예정",
     "companyFields": [
@@ -131,5 +131,6 @@
       "미확인·충돌해결·최신양식확보",
       "S12양식·S13회사정보로회사별서류/계획작성"
     ]
-  }
+  },
+  "latestHashEvidence": "evidence/kstartup-179672/attachment-check-2026-11-06.json"
 }

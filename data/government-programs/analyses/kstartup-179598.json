@@ -87,7 +87,7 @@
     "https://www.k-startup.go.kr/afile/fileDownload/oi2Ln": "6d61bf6ae89e5e3a58fae11270a27ce668160bf0f56508f6d21819f0c9153561",
     "https://www.k-startup.go.kr/afile/fileDownload/wi2Ln": "da2efcd51a774169b4bb536138aeaddeaa4398dff3adb78f4d8b2569c2effae1"
   },
-  "lastAttachmentHashCheckedAt": "2026-10-26T00:01:22.300546+00:00",
+  "lastAttachmentHashCheckedAt": "2026-11-09T00:13:27.071339+00:00",
   "unresolved": [
     "공고1쪽자격·우대/계약조건 전체검토미완료",
     "HWP원본전체배치및사진PDF남은쪽미검토",
@@ -185,5 +185,7 @@
       "공고 양식 선택",
       "회사 사실정보로 서류·사업계획서 작성 및 검토"
     ]
-  }
+  },
+  "latestHashEvidence": "evidence/kstartup-179598/attachment-check-2026-11-09.json",
+  "latestHashCheckScope": "공고/양식기존바이트SHA256대조·본문재분석아님·기존미해결유지"
 }

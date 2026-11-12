@@ -1,0 +1,48 @@
+{
+  "at": "2026-10-24T00:02:33.060Z",
+  "status": 200,
+  "total": 63,
+  "analyses": 34,
+  "checked": [
+    {
+      "id": "kstartup-179520",
+      "date": "2026-11-10",
+      "time": "23:59",
+      "reviewStatus": "partial"
+    },
+    {
+      "id": "kstartup-179536",
+      "date": "2026-11-06",
+      "time": "16:59",
+      "reviewStatus": "partial"
+    },
+    {
+      "id": "kstartup-179602",
+      "date": "2026-10-30",
+      "time": "13:00",
+      "reviewStatus": "partial"
+    },
+    {
+      "id": "kstartup-179593",
+      "date": "2026-11-06",
+      "time": "13:00",
+      "reviewStatus": "partial"
+    },
+    {
+      "id": "kstartup-179590",
+      "date": "2026-11-11",
+      "time": "18:00",
+      "reviewStatus": "partial"
+    },
+    {
+      "id": "mss-1071948",
+      "date": "2026-11-30",
+      "time": "15:00",
+      "reviewStatus": "partial"
+    }
+  ],
+  "scope": "route.GET 직접 호출·화면 미검증",
+  "localHttp": {
+    "error": "fetch failed"
+  }
+}

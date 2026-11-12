@@ -1,0 +1,16 @@
+{
+  "checkedAt": "2026-10-30T01:40:19.567454+00:00",
+  "redirects": [
+    {
+      "url": "https://m.site.naver.com/2j3E2",
+      "status": 308,
+      "location": "https://script.google.com/macros/s/AKfycbw0Wkxdngw6R0o74H-meOISIfEkhxurT5UN87n92l4Pd38SHtYy9Pkm5a_D3pPxsqzh/exec"
+    },
+    {
+      "url": "https://script.google.com/macros/s/AKfycbw0Wkxdngw6R0o74H-meOISIfEkhxurT5UN87n92l4Pd38SHtYy9Pkm5a_D3pPxsqzh/exec",
+      "status": 200,
+      "finalUrl": "https://script.google.com/macros/s/AKfycbw0Wkxdngw6R0o74H-meOISIfEkhxurT5UN87n92l4Pd38SHtYy9Pkm5a_D3pPxsqzh/exec",
+      "bytes": 398518
+    }
+  ]
+}

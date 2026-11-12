@@ -1,0 +1,173 @@
+{
+  "programId": "kstartup-179766",
+  "title": "[강동구 청년해냄센터] 2027년 정부 지원 사업 대비 성공 창업 스쿨 참가자 모집 공고",
+  "reviewStatus": "complete",
+  "status": "첨부 분석 완료",
+  "analyzedAt": "2026-11-11T02:38:50.665484+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179766",
+  "reviewScope": "K-Startup 접수기간 및 상세 / 포스터 전면과 대체 텍스트 / 공식 센터 공고 및 공개 Google 신청서 질문·동의 전체",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1IO9gqj4kRuH-cVPVWomMkjX4nBtemjHTKV_uxpOl171gmA",
+      "verifiedAt": "2026-11-11",
+      "status": "downloaded",
+      "sha256": "8b74e0a08d87d2fd4d26abb7a23970673eada47127cf9acc9d38c0a0f60dd251",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 219517,
+      "format": "IMAGE",
+      "file": "attachment-01.bin",
+      "contentType": "image/png;charset=UTF-8",
+      "review": {
+        "at": "2026-11-11T02:33:34.647201+00:00",
+        "scope": "K-Startup 신청·교육·문의 / 포스터 전면 시각 검토 및 대체 텍스트 전문 / 강동구 청년해냄센터 프로그램 신청 목록",
+        "method": "visual"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1j3hyN1dxlFnEueMFN0Se9eCaeERnE1w77q3mV9YeHVaX6w",
+      "verifiedAt": "2026-11-11",
+      "status": "downloaded",
+      "sha256": "c0765f3ad12892d017d5941f8739aaec23038fb1c3467c0985b8be2391733ec3",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 1043,
+      "format": "OTHER",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "review": {
+        "at": "2026-11-11T02:33:34.647201+00:00",
+        "scope": "K-Startup 신청·교육·문의 / 포스터 전면 시각 검토 및 대체 텍스트 전문 / 강동구 청년해냄센터 프로그램 신청 목록",
+        "method": "text/visual scope recorded in reviewScope"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/v1imq0raGE2DebfN6B7krK1ai_8-vB89fSvOgJsd9EkZIeXA": "8b74e0a08d87d2fd4d26abb7a23970673eada47127cf9acc9d38c0a0f60dd251",
+    "https://www.k-startup.go.kr/afile/fileDownload/v1ubDTGE5L6lio2vvvplO_tcjWRy6IjODzzjkrrADefxh6QA": "c0765f3ad12892d017d5941f8739aaec23038fb1c3467c0985b8be2391733ec3"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-12T00:17:22.034859+00:00",
+  "eligibility": {
+    "summary": "2027년 정부 지원 사업에 도전하려는 예비·기창업자 24명. 청년과 교육 4회 전부 참석 가능자를 우대. 신청서에는 예비, 초기(3년 미만), 기창업(3년 이상), 일반인과 거주지 입력란이 있으며 공고는 별도 업종·거주지 제한을 명시하지 않음.",
+    "companyFields": [
+      "신청자 창업 여부·업력",
+      "생년월일",
+      "거주지",
+      "교육 4회 참석 가능 여부",
+      "창업 아이템"
+    ],
+    "reference": "K-Startup 접수기간 및 상세 / 포스터 전면과 대체 텍스트 / 공식 센터 공고 및 공개 Google 신청서 질문·동의 전체"
+  },
+  "exclusions": {
+    "items": [
+      "개인정보 수집 동의를 거부하면 신청 불가",
+      "무단 불참 시 즉시 수강 기회 박탈 및 2개월 프로그램 참여 제한"
+    ],
+    "reference": "공개 신청서 안내·개인정보수집 여부 동의"
+  },
+  "support": {
+    "summary": "무료 교육. 12/1·2·7·8 각 14~17시, 강동구 청년해냄센터 손문규 센터장. 사업화 보조금·비율·자부담 미기재.",
+    "reference": "K-Startup 신청·교육·문의 / 포스터 전면 시각 검토 및 대체 텍스트 전문 / 강동구 청년해냄센터 프로그램 신청 목록"
+  },
+  "period": {
+    "start": "2026-11-09",
+    "end": "2026-11-23",
+    "deadlineTime": "14:00",
+    "timezone": "Asia/Seoul",
+    "reference": "K-Startup 접수기간 11/9 00:00~11/23 14:00. 포스터 11/23 14:00 마감 일치.",
+    "checkedAt": "2026-11-11T02:38:50.665484+00:00",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179766"
+  },
+  "application": {
+    "summary": "공식 센터 프로그램 신청 글의 포스터를 통해 Google 신청서 제출. 선정 시 11/24 개별 연락, 참석 확인 메일·문자에 기한 내 회신. 장소는 센터 창업교육장(강동구 올림픽로 610 효성해링턴타워 B동 2층).",
+    "reference": "K-Startup 접수기간 및 상세 / 포스터 전면과 대체 텍스트 / 공식 센터 공고 및 공개 Google 신청서 질문·동의 전체",
+    "url": "https://docs.google.com/forms/d/e/1FAIpQLSeb_76biica1Bi-5_bNLx-byLsQyw0m7GgRwjcEMNK5vDhB3A/viewform?usp=send_form"
+  },
+  "requiredDocuments": [
+    {
+      "name": "공개 Google 신청서",
+      "condition": "일정 확인, 본명, 성별, 전화, 이메일, 생년월일, 거주지, 창업 여부, 아이템 한 줄, 유입 경로, 개인정보 수집 동의 필수. 별도 증빙 업로드 문항 없음.",
+      "reference": "공개 Google 신청서 필수 문항 및 개인정보 동의"
+    }
+  ],
+  "businessPlan": {
+    "format": "신청서에 아이템 한 줄. 별도 사업계획서 양식·분량 미기재.",
+    "limit": null,
+    "sections": [],
+    "reference": "공개 Google 신청서 창업 아이템 문항"
+  },
+  "evaluation": {
+    "summary": "청년 및 교육 4회 전 과정 참석 가능자 우선 선발. 배점 미기재.",
+    "reference": "공개 Google 신청서 모집·생년월일 안내"
+  },
+  "contact": {
+    "name": "강동구 청년해냄센터 02-488-6880 평일 09~18시",
+    "reference": "K-Startup 신청·교육·문의 / 포스터 전면 시각 검토 및 대체 텍스트 전문 / 강동구 청년해냄센터 프로그램 신청 목록"
+  },
+  "unresolved": [],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179766",
+    "companyId": null,
+    "permission": "권한회사프로필확보후근거별검토·현재신청가능확정아님",
+    "steps": [
+      "회사필드/증빙확인",
+      "충돌/미확인해결",
+      "S12양식·S13회사정보로서류/계획작성"
+    ]
+  },
+  "evidence": {
+    "detail": "evidence/kstartup-179766/detail.html",
+    "detailFetchedAt": "2026-11-11T02:27:27.394Z",
+    "attachmentManifest": "evidence/kstartup-179766/attachment-check-2026-11-11.json",
+    "publicChecks": [
+      {
+        "id": "179766",
+        "url": "http://www.gdhaenaem.com/?c=168",
+        "checkedAt": "2026-11-11T02:29:37.856995+00:00",
+        "status": 200,
+        "finalUrl": "http://www.gdhaenaem.com/?c=168",
+        "evidence": "179766-publiccheck-20261111.html",
+        "bytes": 27828
+      },
+      {
+        "id": "179766-detail",
+        "url": "http://www.gdhaenaem.com/?c=168&s=&gp=1&gbn=view&ix=12004",
+        "checkedAt": "2026-11-11T02:33:52.583903+00:00",
+        "status": 200,
+        "finalUrl": "http://www.gdhaenaem.com/?c=168&s=&gp=1&gbn=viewok&ix=12004",
+        "evidence": "179766-detail-publiccheck-20261111.html",
+        "bytes": 24302
+      },
+      {
+        "id": "179766-form",
+        "url": "https://forms.gle/HNnr3ojuGNrv8UHy6",
+        "checkedAt": "2026-11-11T02:36:04.954034+00:00",
+        "status": 200,
+        "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeb_76biica1Bi-5_bNLx-byLsQyw0m7GgRwjcEMNK5vDhB3A/viewform?usp=send_form",
+        "evidence": "179766-form-publiccheck-20261111.html",
+        "bytes": 170777
+      }
+    ]
+  },
+  "sourceFingerprint": "680cd1de0ac4aa514030468bee0a0d7e77c160966b829c85a6085596ff042d19",
+  "lastAttachmentHashManifest": "evidence/kstartup-179766/attachment-check-2026-11-12.json",
+  "lastReviewedUnchanged": {
+    "checkedAt": "2026-11-12T00:17:22.034859+00:00",
+    "form": {
+      "id": "179766-form",
+      "url": "https://forms.gle/HNnr3ojuGNrv8UHy6",
+      "checkedAt": "2026-11-12T00:08:14.842686+00:00",
+      "status": 200,
+      "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeb_76biica1Bi-5_bNLx-byLsQyw0m7GgRwjcEMNK5vDhB3A/viewform?usp=send_form",
+      "evidence": "179766-form-publiccheck-20261112.html",
+      "bytes": 171356
+    },
+    "scope": "접수기간 및 상세 주요 항목, 동일 포스터·대체텍스트 해시, 동일 공개 신청서 본문. 첨부 전송 URL 변경."
+  }
+}

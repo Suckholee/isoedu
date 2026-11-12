@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-05",
+  "sources": [
+    {
+      "file": "advanced-search-official.html",
+      "sha256": "ffd6eb26c4609dede9fbe9116107a6f9f47b84265995846b20e569bab5ebeb6b",
+      "sourceUrl": "https://plus.kipris.or.kr/portal/popup/DBII_000000000000001/SC002/ADI_0000000000002944/apiDescriptionSearch.do"
+    },
+    {
+      "file": "official-samples.zip",
+      "sha256": "9afc156455a9fc63c15af8edce25995d1c96bec7684cf7a230ce00809fb1a9e5",
+      "sourceUrl": "https://plus.kipris.or.kr/cmm/fms/FileDown.do?atchFileId=FILE_000000000010531&bbsId=B0000001&fileSn=1"
+    }
+  ],
+  "scope": "공식 명세·샘플. API 키·사용자 계정정보 미포함."
+}

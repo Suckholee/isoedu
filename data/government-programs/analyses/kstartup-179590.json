@@ -27,7 +27,7 @@
   "attachmentContentHashes": {
     "https://www.k-startup.go.kr/afile/fileDownload/0M2Ln": "c7b8133a9a3af8e3483ee29315454780ad4ba2f1beceec9e39fde4da5f7b7fdb"
   },
-  "lastAttachmentHashCheckedAt": "2026-10-24T00:00:39.128035+00:00",
+  "lastAttachmentHashCheckedAt": "2026-11-11T02:38:50.665484+00:00",
   "unresolved": [
     "PDF 필수서류·이메일 제출 요구의 구체목록 및 실제 필드 미확인",
     "PDF 3년이내 사업자와 업력관계없이 배정 문구 범위 불명확",
@@ -102,5 +102,6 @@
       "공고 양식 선택",
       "회사 사실정보로 서류·사업계획서 작성 및 검토"
     ]
-  }
+  },
+  "lastAttachmentHashManifest": "evidence/kstartup-179590/attachment-check-2026-11-11.json"
 }

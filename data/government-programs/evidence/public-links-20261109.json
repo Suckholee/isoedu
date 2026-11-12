@@ -1,0 +1,29 @@
+[
+  {
+    "id": "bizinfo",
+    "url": "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/list.do",
+    "checkedAt": "2026-11-09T00:06:42.057204+00:00",
+    "status": 200,
+    "finalUrl": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200View.do?null",
+    "evidence": "bizinfo-publiccheck-20261109.html",
+    "bytes": 110795
+  },
+  {
+    "id": "iris",
+    "url": "https://www.iris.go.kr/index.do",
+    "checkedAt": "2026-11-09T00:06:42.057576+00:00",
+    "status": 200,
+    "finalUrl": "https://www.iris.go.kr/index.do",
+    "evidence": "iris-publiccheck-20261109.html",
+    "bytes": 1510328
+  },
+  {
+    "id": "kotra",
+    "url": "https://kotra.or.kr/subList/20000020753",
+    "checkedAt": "2026-11-09T00:06:42.057722+00:00",
+    "status": 200,
+    "finalUrl": "https://kotra.or.kr/subList/20000020753",
+    "evidence": "kotra-publiccheck-20261109.html",
+    "bytes": 151048
+  }
+]

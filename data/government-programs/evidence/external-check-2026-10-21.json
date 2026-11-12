@@ -1,0 +1,71 @@
+[
+  {
+    "source": "demo-form-a",
+    "url": "https://forms.gle/1ENie8Cb9TMR1cgo7",
+    "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdSKMcs0H_LyfDatWEDD0oenF7psXlcmuvVfpsM2uIHhsD3bw/viewform?usp=send_form",
+    "http": 200,
+    "bytes": 100865,
+    "scope": "공개 페이지 접근만; 상세 전건 수집 아님"
+  },
+  {
+    "source": "demo-form-b",
+    "url": "https://forms.gle/YtTmJXaMVRiiEDpQ8",
+    "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdSKMcs0H_LyfDatWEDD0oenF7psXlcmuvVfpsM2uIHhsD3bw/viewform?usp=send_form",
+    "http": 200,
+    "bytes": 101018,
+    "scope": "공개 페이지 접근만; 상세 전건 수집 아님"
+  },
+  {
+    "source": "ydp-form",
+    "url": "https://naver.me/xtNRxTJj",
+    "finalUrl": "https://form.naver.com/response/E23OXfKn7gm",
+    "http": 200,
+    "bytes": 2403,
+    "scope": "공개 페이지 접근만; 상세 전건 수집 아님"
+  },
+  {
+    "source": "db-form",
+    "url": "https://forms.gle/AtJXW8TGx4LuRToA9",
+    "error": "HTTP Error 401: Unauthorized"
+  },
+  {
+    "source": "ceo-form",
+    "url": "https://forms.gle/3Ufzv6WDUMDstPxC7",
+    "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfGopLdfUz5KzaILycc_QOlZtxmeoNUyncaOhPdHTLoW04_Pg/viewform?usp=send_form",
+    "http": 200,
+    "bytes": 113922,
+    "scope": "공개 페이지 접근만; 상세 전건 수집 아님"
+  },
+  {
+    "source": "school-form",
+    "url": "https://www.cnsinbo.co.kr/education.html",
+    "finalUrl": "https://www.cnsinbo.co.kr/education.html",
+    "http": 200,
+    "bytes": 87,
+    "scope": "공개 페이지 접근만; 상세 전건 수집 아님"
+  },
+  {
+    "source": "bizinfo",
+    "url": "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/list.do",
+    "finalUrl": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200View.do?null",
+    "http": 200,
+    "bytes": 111559,
+    "scope": "공개 페이지 접근만; 상세 전건 수집 아님"
+  },
+  {
+    "source": "iris",
+    "url": "https://www.iris.go.kr/contents/retrieveBsnsAncmBtinSituListView.do",
+    "finalUrl": "https://www.iris.go.kr/contents/retrieveBsnsAncmBtinSituListView.do",
+    "http": 200,
+    "bytes": 111904,
+    "scope": "공개 페이지 접근만; 상세 전건 수집 아님"
+  },
+  {
+    "source": "kotra",
+    "url": "https://kotra.or.kr/subList/20000020753",
+    "finalUrl": "https://kotra.or.kr/subList/20000020753",
+    "http": 200,
+    "bytes": 152169,
+    "scope": "공개 페이지 접근만; 상세 전건 수집 아님"
+  }
+]

@@ -1,0 +1,223 @@
+{
+  "programId": "kstartup-179739",
+  "title": "2026 아산 투자유치 Build-Up 프로그램 참여기업 모집",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-06T01:28:27.988925+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179739",
+  "reviewScope": "포스터전체시각·대체TEXT대조·공개Googleform전체필드/개인정보·공개Drive HWP 전부(일반현황/3쪽/개요2쪽/PSST) 2026-11-06 확인",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1EkeUCgM-y8fJeGBLBXGcHerqh9DAQuTOMG0APb9aUq0brg",
+      "verifiedAt": "2026-11-06",
+      "status": "downloaded",
+      "sha256": "d6a67bb401ba34ba5ba05d7767c423235bf26a08c8d40aa1831f04bceb3a0f47",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 2121684,
+      "format": "IMAGE",
+      "file": "attachment-01.bin",
+      "contentType": "image/jpeg;charset=UTF-8",
+      "review": {
+        "at": "2026-11-06T01:28:27.988925+00:00",
+        "scope": "포스터전체시각·대체TEXT대조·공개Googleform전체필드/개인정보·공개Drive HWP 전부(일반현황/3쪽/개요2쪽/PSST) 2026-11-06 확인",
+        "method": "visual"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v14o2KUT-PQXAlEcihYTC7PtQX5b3Gb5N7Km2m33Nk0bwTfg",
+      "verifiedAt": "2026-11-06",
+      "status": "downloaded",
+      "sha256": "e3622a0f49df376344d0063a4dc03c97a621fd61d0e32d99f0836761847d6773",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 1388,
+      "format": "OTHER",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "review": {
+        "at": "2026-11-06T01:28:27.988925+00:00",
+        "scope": "포스터전체시각·대체TEXT대조·공개Googleform전체필드/개인정보·공개Drive HWP 전부(일반현황/3쪽/개요2쪽/PSST) 2026-11-06 확인",
+        "method": "text (visual exceptions in reviewScope)"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/v1EkeUCgM-y8fJeGBLBXGcHerqh9DAQuTOMG0APb9aUq0brg": "d6a67bb401ba34ba5ba05d7767c423235bf26a08c8d40aa1831f04bceb3a0f47",
+    "https://www.k-startup.go.kr/afile/fileDownload/v14o2KUT-PQXAlEcihYTC7PtQX5b3Gb5N7Km2m33Nk0bwTfg": "e3622a0f49df376344d0063a4dc03c97a621fd61d0e32d99f0836761847d6773",
+    "https://drive.google.com/uc?export=download&id=1pxtVfNGATftYWHz6T12SV3xg5Y4OmRxn": "b8074f1fd592518e0bc8622a8d52a9a925a966d862de546aaa1c16ba13eb565f"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-06T01:28:27.988925+00:00",
+  "eligibility": {
+    "summary": "아산소재 또는 이전/창업예정 기업, 폼은 Seed/Pre-A/Series-A 단계 투자유치희망기업15개 추가명시. 업력·자격확정은 상세문서의 누락/상이조건 확인후.",
+    "companyFields": [
+      "기업소재·이전계획",
+      "창업일·사업자유형",
+      "투자단계·유치희망액",
+      "매출23~25",
+      "고용23~25",
+      "기업가치·기술검증",
+      "대표자·담당자"
+    ],
+    "reference": "포스터전체시각·대체TEXT대조·공개Googleform전체필드/개인정보·공개Drive HWP 전부(일반현황/3쪽/개요2쪽/PSST) 2026-11-06 확인"
+  },
+  "exclusions": {
+    "items": [
+      "공고·양식에 세부제외업종/제재/중복수혜 미기재"
+    ],
+    "reference": "포스터전체시각·대체TEXT대조·공개Googleform전체필드/개인정보·공개Drive HWP 전부(일반현황/3쪽/개요2쪽/PSST) 2026-11-06 확인"
+  },
+  "support": {
+    "summary": "기업진단, IR스토리/디자인, 데모데이 발표·질의, 투자자1:1매칭·후속투자유치. 우수기업1억원이상 직접투자/TIPS연계는 기회, 전원지급아님. 프로그램11월3주~2027.1. 자부담·지원금비율 미명시.",
+    "reference": "포스터전체시각·대체TEXT대조·공개Googleform전체필드/개인정보·공개Drive HWP 전부(일반현황/3쪽/개요2쪽/PSST) 2026-11-06 확인"
+  },
+  "period": {
+    "start": "2026-11-05",
+    "end": "2026-11-13",
+    "deadlineTime": "23:59",
+    "timezone": "Asia/Seoul",
+    "reference": "포스터전체시각·대체TEXT대조·공개Googleform전체필드/개인정보·공개Drive HWP 전부(일반현황/3쪽/개요2쪽/PSST) 2026-11-06 확인"
+  },
+  "application": {
+    "summary": "Googleform+서명HWP 이메일 jp@jptnr.com 동시제출, 제목 [아산 스타트업 Build-UP]. 개인정보필수 동의·보유1년. 폼 이름/회사/직책/주소/하이픈전화/메일·선택IR소개자료 이메일. 결과11/16~18(폼) vs선정11/16~20(포스터).",
+    "reference": "포스터전체시각·대체TEXT대조·공개Googleform전체필드/개인정보·공개Drive HWP 전부(일반현황/3쪽/개요2쪽/PSST) 2026-11-06 확인"
+  },
+  "requiredDocuments": [
+    {
+      "name": "지정참가신청서 HWP",
+      "condition": "서명·폼과이메일 제출",
+      "reference": "HWP 제출안내"
+    },
+    {
+      "name": "사업자등록증",
+      "condition": "해당시",
+      "reference": "HWP 목록"
+    },
+    {
+      "name": "회사소개/IR자료",
+      "condition": "보유시 이메일첨부·자유자료",
+      "reference": "공개폼/HWP"
+    }
+  ],
+  "businessPlan": {
+    "format": "지정HWP 구조 유지; 이미지/표·행추가가능·파란안내삭제검정작성",
+    "limit": "전체3쪽내외·증빙무제한; 아이템개요2쪽이내",
+    "sections": [
+      {
+        "name": "일반현황",
+        "items": [
+          "사업자등록과기업명일치·개업/법인설립·주소·등록번호·대표/담당"
+        ],
+        "limit": "전체3쪽내외·증빙무제한; 아이템개요2쪽이내"
+      },
+      {
+        "name": "사업역량",
+        "items": [
+          "투자액·매출2023/24/25백만원·고용각연도·기술검증·이력"
+        ],
+        "limit": "전체3쪽내외·증빙무제한; 아이템개요2쪽이내"
+      },
+      {
+        "name": "아이템개요",
+        "items": [
+          "명칭/범주·사용/규격/가격/기능·고객혜택"
+        ],
+        "limit": "전체3쪽내외·증빙무제한; 아이템개요2쪽이내"
+      },
+      {
+        "name": "Problem",
+        "items": [
+          "문제인식·고객필요"
+        ],
+        "limit": "전체3쪽내외·증빙무제한; 아이템개요2쪽이내"
+      },
+      {
+        "name": "Solution",
+        "items": [
+          "차별성·실현가능성"
+        ],
+        "limit": "전체3쪽내외·증빙무제한; 아이템개요2쪽이내"
+      },
+      {
+        "name": "Growth",
+        "items": [
+          "시장/경쟁/BM·추진일정·자금"
+        ],
+        "limit": "전체3쪽내외·증빙무제한; 아이템개요2쪽이내"
+      },
+      {
+        "name": "Team",
+        "items": [
+          "팀역량·이미지"
+        ],
+        "limit": "전체3쪽내외·증빙무제한; 아이템개요2쪽이내"
+      }
+    ],
+    "reference": "포스터전체시각·대체TEXT대조·공개Googleform전체필드/개인정보·공개Drive HWP 전부(일반현황/3쪽/개요2쪽/PSST) 2026-11-06 확인"
+  },
+  "evaluation": {
+    "summary": "15개사·투자희망단계 폼명시. 상세페이지 선정없음 표기와 실제선발일정 충돌; 배점미기재.",
+    "reference": "포스터전체시각·대체TEXT대조·공개Googleform전체필드/개인정보·공개Drive HWP 전부(일반현황/3쪽/개요2쪽/PSST) 2026-11-06 확인"
+  },
+  "contact": {
+    "name": "042-364-1001 jp@jptnr.com / 041-622-9155 sang@hoseo.edu",
+    "reference": "포스터전체시각·대체TEXT대조·공개Googleform전체필드/개인정보·공개Drive HWP 전부(일반현황/3쪽/개요2쪽/PSST) 2026-11-06 확인"
+  },
+  "unresolved": [
+    "접수시작11/2·11/3·11/5 상이, 대체TEXT2027과 실제포스터2026충돌",
+    "선정없음 상세표기 vs15개선발·11/16~18결과·11/16~20평가 일정충돌",
+    "세부제외·선정배점·비용 확인필요"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179739",
+    "companyId": null,
+    "permission": "권한회사프로필확보후근거별검토·현재신청가능확정아님",
+    "steps": [
+      "회사필드/증빙확인",
+      "충돌/미확인해결",
+      "S12양식·S13회사정보로서류/계획작성"
+    ]
+  },
+  "conflicts": [
+    {
+      "field": "period",
+      "values": [
+        "포스터11/2",
+        "HWP/form11/3",
+        "목록11/5",
+        "대체TEXT2027년"
+      ],
+      "resolution": "unresolved; 목록기간유지"
+    },
+    {
+      "field": "selection",
+      "values": [
+        "상세선정없음",
+        "폼15개·메일11/16~18",
+        "포스터11/16~20"
+      ],
+      "resolution": "unresolved"
+    }
+  ],
+  "additionalReview": "HWP 일반현황(23~25매출/고용), 아이템개요2쪽/전체3쪽내외·증빙무제한·서식삭제금지 확인. 폼동의는 필수체크이나 안내문 선택적이라고 표기·거부시참여제한, 보유1년. 실제접수하지않음.",
+  "additionalAttachments": [
+    {
+      "programId": "kstartup-179739",
+      "url": "https://drive.google.com/uc?export=download&id=1pxtVfNGATftYWHz6T12SV3xg5Y4OmRxn",
+      "file": "kstartup-179739/extra-b8074f1fd592.bin",
+      "sha256": "b8074f1fd592518e0bc8622a8d52a9a925a966d862de546aaa1c16ba13eb565f",
+      "format": "HWP",
+      "bytes": 110080,
+      "verifiedAt": "2026-11-06T01:28:27.988925+00:00",
+      "reviewStatus": "text-reviewed",
+      "reference": "HWP 일반현황(23~25매출/고용), 아이템개요2쪽/전체3쪽내외·증빙무제한·서식삭제금지 확인. 폼동의는 필수체크이나 안내문 선택적이라고 표기·거부시참여제한, 보유1년. 실제접수하지않음."
+    }
+  ],
+  "evidenceManifest": "evidence/official-extra-check-20261106.json"
+}

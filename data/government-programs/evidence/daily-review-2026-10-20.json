@@ -1,0 +1,138 @@
+{
+  "at": "2026-10-20T00:17:22.668418+00:00",
+  "stage": "daily-attachment-analysis",
+  "status": "partial-success",
+  "coverage": {
+    "listing": "K-Startup15·중기부10 각 첫페이지, 전체수집아님",
+    "retainedRecords": 26,
+    "detailPages": 26,
+    "newAnalyses": [
+      "kstartup-179519",
+      "kstartup-179529",
+      "kstartup-179523",
+      "kstartup-179535",
+      "kstartup-179525"
+    ],
+    "recheckedAnalyses": [
+      "kstartup-179524",
+      "mss-1071550",
+      "kstartup-179504",
+      "kstartup-179516"
+    ],
+    "downloadedAttachments": 20,
+    "hashUnchanged": 9,
+    "newHashBaselines": 11,
+    "complete": 0,
+    "partial": 11,
+    "pending": 15,
+    "remaining": 26,
+    "supplementalSources": [
+      {
+        "source": "water",
+        "url": "http://www.wateround.kr",
+        "finalUrl": "https://www.wateround.kr/wq/index.do?w2xPath=/ui/index.xml",
+        "http": 200,
+        "bytes": 5305,
+        "scope": "공개 페이지 접근만 확인; 상세 전건 수집 아님"
+      },
+      {
+        "source": "tips-form",
+        "url": "https://forms.gle/82A2f9w8fFUCucJZ9",
+        "error": "HTTP Error 401: Unauthorized"
+      },
+      {
+        "source": "sodam-form",
+        "url": "https://fanfandaero.kr/portal/v2/preSprtBizPbancDetail.do?sprtBizCd=202603010100",
+        "finalUrl": "https://fanfandaero.kr/portal/v2/preSprtBizPbancDetail.do?sprtBizCd=202603010100",
+        "http": 200,
+        "bytes": 106456,
+        "scope": "공개 페이지 접근만 확인; 상세 전건 수집 아님"
+      },
+      {
+        "source": "gwacheon-form",
+        "url": "https://miniintern.com/event/3366",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "source": "bizinfo",
+        "url": "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/list.do",
+        "finalUrl": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200View.do?null",
+        "http": 200,
+        "bytes": 111767,
+        "scope": "공개 페이지 접근만 확인; 상세 전건 수집 아님"
+      },
+      {
+        "source": "iris",
+        "url": "https://www.iris.go.kr/contents/retrieveBsnsAncmBtinSituListView.do",
+        "finalUrl": "https://www.iris.go.kr/contents/retrieveBsnsAncmBtinSituListView.do",
+        "http": 200,
+        "bytes": 111854,
+        "scope": "공개 페이지 접근만 확인; 상세 전건 수집 아님"
+      },
+      {
+        "source": "kotra",
+        "url": "https://kotra.or.kr/subList/20000020753",
+        "finalUrl": "https://kotra.or.kr/subList/20000020753",
+        "http": 200,
+        "bytes": 152169,
+        "scope": "공개 페이지 접근만 확인; 상세 전건 수집 아님"
+      }
+    ]
+  },
+  "failures": [
+    "처음 sandbox 네트워크 실패 후 허가된 네트워크 재실행 성공",
+    "Google신청폼401·미니인턴403,제한우회없음",
+    "기존바이오신청매뉴얼16쪽스캔 OCR미해결 유지;이번 바이트검증만",
+    "워터라운드 별도계획서양식 미확보·WebSquare셸만 확보",
+    "HWP원본표배치시각대조미완료"
+  ],
+  "conflicts": [
+    "나주 기준일10/6vs10/15·접수문의전화·기간",
+    "제주팁스 업력기준·평가10/27vs11/3",
+    "기존판다밋업 마감10/21vs10/22·충남 접수방법 충돌 미해결"
+  ],
+  "companyMatching": "권한회사프로필미확보:미실시",
+  "apiValidation": {
+    "at": "2026-10-20T00:14:38.940Z",
+    "validation": "실제 route GET 직접 호출; HTTP서버/화면 미검증",
+    "status": 200,
+    "total": 26,
+    "analyses": 11,
+    "checked": [
+      {
+        "id": "kstartup-179519",
+        "date": "2026-10-23",
+        "time": "18:00",
+        "status": "partial"
+      },
+      {
+        "id": "kstartup-179529",
+        "date": "2026-10-25",
+        "time": "23:59",
+        "status": "partial"
+      },
+      {
+        "id": "kstartup-179523",
+        "date": "2026-10-26",
+        "time": "15:00",
+        "status": "partial"
+      },
+      {
+        "id": "kstartup-179535",
+        "date": "2026-10-28",
+        "time": "18:00",
+        "status": "partial"
+      },
+      {
+        "id": "kstartup-179525",
+        "date": "2026-11-02",
+        "time": "23:59",
+        "status": "partial"
+      }
+    ]
+  },
+  "screenValidation": "미검증",
+  "localHttp": "localhost3000연결실패;route.GET직접호출200",
+  "deployment": "없음",
+  "schemaChange": "없음"
+}

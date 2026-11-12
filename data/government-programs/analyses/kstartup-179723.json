@@ -1,0 +1,165 @@
+{
+  "programId": "kstartup-179723",
+  "title": "2026년 중동 상황 대응 규격 컨설팅 지원사업「수혜기업 모집」",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-06T01:28:27.988925+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179723",
+  "reviewScope": "공식 상세·PDF7쪽 전부; p1~3대상/지원,p4제출표 시각대조,p5평가,p6피해증빙,p7정산. 2026-11-06 확인, 원문 sourceUrl·첨부 attachmentUrls/hash 및 추가공식URL 별도보존",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1rwVteWfjMPv00NxkP66W4cQXJ6z8LholeuYt9-SHVl5nVg",
+      "verifiedAt": "2026-11-06",
+      "status": "downloaded",
+      "sha256": "8a6202431f10a4f72c72e54d2d3c2a234a52c9018223d23b17defbe01e20b02e",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 128607,
+      "format": "PDF",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 5860,
+      "review": {
+        "at": "2026-11-06T01:28:27.988925+00:00",
+        "scope": "공식 상세·PDF7쪽 전부; p1~3대상/지원,p4제출표 시각대조,p5평가,p6피해증빙,p7정산. 2026-11-06 확인, 원문 sourceUrl·첨부 attachmentUrls/hash 및 추가공식URL 별도보존",
+        "method": "text (visual exceptions in reviewScope)"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/v1rwVteWfjMPv00NxkP66W4cQXJ6z8LholeuYt9-SHVl5nVg": "8a6202431f10a4f72c72e54d2d3c2a234a52c9018223d23b17defbe01e20b02e"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-08T10:20:39.754794+00:00",
+  "eligibility": {
+    "summary": "서울 본점/주사업장 사업자등록 중소기업 중 식품바이오·화장품·산업전자 제조 또는 브랜드 기업. 2023~2025 중동 수출증빙 또는 지정 신규/재진출 의향서 필요. 서울 지점·연구소·영업소만 있으면 제외.",
+    "companyFields": [
+      "본점사업자주소",
+      "중소기업확인",
+      "제조/브랜드업종·제품",
+      "희망국가·인증",
+      "2023~2025중동수출/의향",
+      "동일품목인증중복지원",
+      "24/25재무",
+      "증빙발급일",
+      "가점·피해증빙",
+      "현금자부담·VAT"
+    ],
+    "reference": "공식 상세·PDF7쪽 전부; p1~3대상/지원,p4제출표 시각대조,p5평가,p6피해증빙,p7정산. 2026-11-06 확인, 원문 sourceUrl·첨부 attachmentUrls/hash 및 추가공식URL 별도보존"
+  },
+  "exclusions": {
+    "items": [
+      "동일제품·동일인증 타정부중복수혜",
+      "중동심층컨설팅 현재수혜",
+      "폐업·휴업·파산·회생·체납처분 등 공고상제외",
+      "입찰제한"
+    ],
+    "reference": "공식 상세·PDF7쪽 전부; p1~3대상/지원,p4제출표 시각대조,p5평가,p6피해증빙,p7정산. 2026-11-06 확인, 원문 sourceUrl·첨부 attachmentUrls/hash 및 추가공식URL 별도보존"
+  },
+  "support": {
+    "summary": "30개사·협약후 약6개월(2026.11~2027.4). SBA지원 최대1500만원 VAT제외, 기업현금>=지원금10% 및 VAT전액. 3개 수행전문기관 중 배정. 인증/등록 또는 신청접수증 등 완료증빙 후 정산; 카드결제금액·VAT 지원제외. FSSC/Halal/vegan/kosher/SFDA/ISO, 화장품ISO22716·eCosma·Montaji, ECAS/GMark 등 제품별 협의. 취득 보장 아님.",
+    "reference": "공식 상세·PDF7쪽 전부; p1~3대상/지원,p4제출표 시각대조,p5평가,p6피해증빙,p7정산. 2026-11-06 확인, 원문 sourceUrl·첨부 attachmentUrls/hash 및 추가공식URL 별도보존"
+  },
+  "period": {
+    "start": "2026-10-28",
+    "end": "2026-11-09",
+    "deadlineTime": "15:59",
+    "timezone": "Asia/Seoul",
+    "reference": "공식 상세·PDF7쪽 전부; p1~3대상/지원,p4제출표 시각대조,p5평가,p6피해증빙,p7정산. 2026-11-06 확인, 원문 sourceUrl·첨부 attachmentUrls/hash 및 추가공식URL 별도보존"
+  },
+  "application": {
+    "summary": "SBA 기업회원 로그인→사업신청→PDF/ZIP 합계30MB 이내 업로드→제출. 공고PDF p4 16:00과 KStartup15:59 충돌, 조기시각보존. 선정통보20일 내 3자협약.",
+    "reference": "공식 상세·PDF7쪽 전부; p1~3대상/지원,p4제출표 시각대조,p5평가,p6피해증빙,p7정산. 2026-11-06 확인, 원문 sourceUrl·첨부 attachmentUrls/hash 및 추가공식URL 별도보존"
+  },
+  "requiredDocuments": [
+    {
+      "name": "참가신청서 붙임1·수행계획서 붙임2",
+      "condition": "모든기업·첫업로드칸",
+      "reference": "PDF p4 표"
+    },
+    {
+      "name": "본점 사업자등록증·중소기업확인서·표준재무제표2024/25·국영문 카탈로그/성분규격",
+      "condition": "ZIP 두번째칸; 증빙 공고일기준3개월 원칙",
+      "reference": "PDF p4~5"
+    },
+    {
+      "name": "중동수출실적2023~25 또는 수출의향서붙임3",
+      "condition": "신규/재진출 대체가능·ZIP 세번째칸",
+      "reference": "PDF p4~5"
+    },
+    {
+      "name": "가점/피해증빙",
+      "condition": "해당시·수출계약/해지사유/바이어·운송/환전/미수금/분쟁/전시취소 등 상황별증빙",
+      "reference": "PDF p5~6"
+    }
+  ],
+  "businessPlan": {
+    "format": "지정HWP 붙임2",
+    "limit": "양식 다운로드400으로 항목·분량 미확인",
+    "sections": [],
+    "reference": "공식 상세·PDF7쪽 전부; p1~3대상/지원,p4제출표 시각대조,p5평가,p6피해증빙,p7정산. 2026-11-06 확인, 원문 sourceUrl·첨부 attachmentUrls/hash 및 추가공식URL 별도보존"
+  },
+  "evaluation": {
+    "summary": "필수적격→정량정성70점이상 대상 고득점. 필요성40(피해20/목표20), 제품적합30(기술15/준비15),효과30(달성15/수출15); 동점 필요성→제품적합. 가점합계최대5(HiSeoul2/서울어워드2/SBA수출2/중동피해3 등)·자동합산확정금지.",
+    "reference": "공식 상세·PDF7쪽 전부; p1~3대상/지원,p4제출표 시각대조,p5평가,p6피해증빙,p7정산. 2026-11-06 확인, 원문 sourceUrl·첨부 attachmentUrls/hash 및 추가공식URL 별도보존"
+  },
+  "contact": {
+    "name": "SBA 02-2657-5729 / namutegi@sba.seoul.kr",
+    "reference": "공식 상세·PDF7쪽 전부; p1~3대상/지원,p4제출표 시각대조,p5평가,p6피해증빙,p7정산. 2026-11-06 확인, 원문 sourceUrl·첨부 attachmentUrls/hash 및 추가공식URL 별도보존"
+  },
+  "unresolved": [
+    "공식HWP 공고·참가신청/수행계획서2URL HTTP400, 양식·의향서본문 재시도 필요",
+    "마감15:59(목록) vs16:00(PDF) 최신정정 확인 필요",
+    "로그인후 제출필드/실제접수 미확인"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179723",
+    "companyId": null,
+    "permission": "권한회사프로필확보후근거별검토·현재신청가능확정아님",
+    "steps": [
+      "회사필드/증빙확인",
+      "충돌/미확인해결",
+      "S12양식·S13회사정보로서류/계획작성"
+    ]
+  },
+  "conflicts": [
+    {
+      "field": "deadlineTime",
+      "values": [
+        "15:59 KStartup",
+        "16:00 PDF p4"
+      ],
+      "resolution": "unresolved; 달력15:59보존"
+    }
+  ],
+  "additionalReview": "SBA 공개신청안내 확인. 공고 HWP/PDF중 PDF7쪽 분석; 다른 신청/수행계획/의향서 양식은 HTTP400으로 미확인. 물류B/L·AWB 2026.1.1이후+운임, 2/28이전계약해지, T/T·L/C미수금, 법적분쟁, 전시취소 각각 증빙조건확인.",
+  "additionalAttachments": [
+    {
+      "programId": "kstartup-179723",
+      "url": "https://smc.sba.kr/AttachFiles/new_display/2026/10/28/4e62240d-abd2-f111-b404-d4f5ef4a1e33/%5B%EA%B3%B5%EA%B3%A0%EB%AC%B8_%EC%88%98%ED%98%9C%EA%B8%B0%EC%97%85_%EB%AA%A8%EC%A7%91%5D_2026%EB%85%84_%EC%A4%91%EB%8F%99_%EC%83%81%ED%99%A9_%EB%8C%80%EC%9D%91_%EA%B7%9C%EA%B2%A9_%EC%BB%A8%EC%84%A4%ED%8C%85_%EC%A7%80%EC%9B%90%EC%82%AC%EC%97%85_%EC%88%98%ED%98%9C%EA%B8%B0%EC%97%85_%EB%AA%A8%EC%A7%91(1).hwp",
+      "error": "HTTP Error 400: Bad Request",
+      "verifiedAt": "2026-11-06T01:28:27.988925+00:00",
+      "reviewStatus": "unread",
+      "reference": "SBA 공개신청안내 확인. 공고 HWP/PDF중 PDF7쪽 분석; 다른 신청/수행계획/의향서 양식은 HTTP400으로 미확인. 물류B/L·AWB 2026.1.1이후+운임, 2/28이전계약해지, T/T·L/C미수금, 법적분쟁, 전시취소 각각 증빙조건확인."
+    },
+    {
+      "programId": "kstartup-179723",
+      "url": "https://smc.sba.kr/AttachFiles/new_display/2026/10/30/4E62240D-ABD2-F111-B404-D4F5EF4A1E33/%5B%EC%B0%B8%EA%B0%80_%EC%8B%A0%EC%B2%AD%EC%84%9C_%EC%88%98%ED%96%89%EA%B3%84%ED%9A%8D%EC%84%9C_%EC%88%98%ED%98%9C%EA%B8%B0%EC%97%85%5D_%EC%A4%91%EB%8F%99%EC%83%81%ED%99%A9%EB%8C%80%EC%9D%91_%E3%80%8E%EA%B7%9C%EA%B2%A9%EC%BB%A8%EC%84%A4%ED%8C%85_%EC%A7%80%EC%9B%90%EC%82%AC%EC%97%85%E3%80%8F_%EC%88%98%ED%98%9C%EA%B8%B0%EC%97%85.hwp",
+      "error": "HTTP Error 400: Bad Request",
+      "verifiedAt": "2026-11-06T01:28:27.988925+00:00",
+      "reviewStatus": "unread",
+      "reference": "SBA 공개신청안내 확인. 공고 HWP/PDF중 PDF7쪽 분석; 다른 신청/수행계획/의향서 양식은 HTTP400으로 미확인. 물류B/L·AWB 2026.1.1이후+운임, 2/28이전계약해지, T/T·L/C미수금, 법적분쟁, 전시취소 각각 증빙조건확인."
+    }
+  ],
+  "evidenceManifest": "evidence/official-extra-check-20261106.json",
+  "latestHashEvidence": "evidence/kstartup-179723/attachment-check-2026-11-08.json",
+  "latestHashCheckScope": "본문재분석아닌 기존첨부 바이트SHA256 대조; 동일바이트·기존미해결유지",
+  "additionalRetryEvidence": "evidence/official-extra-retry-20261109.json",
+  "additionalRetryAt": "2026-11-09T00:14:09.964812+00:00"
+}

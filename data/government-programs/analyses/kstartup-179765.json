@@ -1,0 +1,202 @@
+{
+  "programId": "kstartup-179765",
+  "title": "STARTUP STARRY NIGHT in Seoul 1:1 밋업(투자, O.I.) 참여기업 모집(11월 허브아워)",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-12T00:09:09.610510+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179765",
+  "reviewScope": "K-Startup 기간·대상·제출 / PDF 1쪽 전면과 파트너 표 시각 / HWP 전문 중복대조 / 공덕 PRJ007690 공식 상세 및 별도 포스터 전체 시각",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1WOOaezDv7_ogYG78JjyIV7-wwa44hZcXurUqhoc7X0d9bw",
+      "verifiedAt": "2026-11-11T23:59:53.762467+00:00",
+      "status": "downloaded",
+      "sha256": "f8ba1be871d34d069ca1253440a8f57dd116d678ef575aa891e7f230be17db10",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 78336,
+      "format": "HWP",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 1058,
+      "review": {
+        "at": "2026-11-12T00:09:09.610510+00:00",
+        "scope": "K-Startup 기간·대상·제출 / PDF 1쪽 전면과 파트너 표 시각 / HWP 전문 중복대조 / 공덕 PRJ007690 공식 상세 및 별도 포스터 전체 시각",
+        "method": "text/visual scope recorded in reviewScope"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v18jd5bFsHwAgpIhGuWnhM1putg8bOMHEnJgPCbU5FvrIJZw",
+      "verifiedAt": "2026-11-11T23:59:54.207721+00:00",
+      "status": "downloaded",
+      "sha256": "7a12778c8e89dcfc7cfec3e8519110e1b3d76789fc6c793d8af9214c8fb689ac",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 55558,
+      "format": "PDF",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 943,
+      "review": {
+        "at": "2026-11-12T00:09:09.610510+00:00",
+        "scope": "K-Startup 기간·대상·제출 / PDF 1쪽 전면과 파트너 표 시각 / HWP 전문 중복대조 / 공덕 PRJ007690 공식 상세 및 별도 포스터 전체 시각",
+        "method": "text/visual scope recorded in reviewScope"
+      }
+    },
+    {
+      "url": "https://hubgongdeok.startup-plus.kr/api/common/download?attachFilePath=%2fproject%2fattachment%2f261104134911%ed%8f%ac%ec%8a%a4%ed%84%b0.jpg",
+      "file": "host-poster-2026-11-12.jpg",
+      "format": "IMAGE",
+      "status": "downloaded",
+      "sha256": "bf145e7cd7b71ef97ba3087ab6869bcf1d4606ab21097188211e25f2603ab2bf",
+      "review": {
+        "at": "2026-11-12T00:17:22.034859+00:00",
+        "method": "visual",
+        "scope": "전체 포스터 및 파트너 표"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/v1WOOaezDv7_ogYG78JjyIV7-wwa44hZcXurUqhoc7X0d9bw": "f8ba1be871d34d069ca1253440a8f57dd116d678ef575aa891e7f230be17db10",
+    "https://www.k-startup.go.kr/afile/fileDownload/v18jd5bFsHwAgpIhGuWnhM1putg8bOMHEnJgPCbU5FvrIJZw": "7a12778c8e89dcfc7cfec3e8519110e1b3d76789fc6c793d8af9214c8fb689ac",
+    "https://hubgongdeok.startup-plus.kr/api/common/download?attachFilePath=%2fproject%2fattachment%2f261104134911%ed%8f%ac%ec%8a%a4%ed%84%b0.jpg": "bf145e7cd7b71ef97ba3087ab6869bcf1d4606ab21097188211e25f2603ab2bf"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-12T00:09:09.610510+00:00",
+  "eligibility": {
+    "summary": "서울 본점·지점·기업부설연구소 중 1개를 가진 스타트업. 이화여대기술지주 업력 3년 이내·전 분야 Seed·여성기업/대학창업기업 우대. 블루포인트 환경·에너지·AI Seed~Pre-A. 한국투자액셀러레이터 업력 3년 이내 및 투자 전 가치 100억원 이하, Seed~Series A 전 분야. 파이오니어 AI·유통·물류·로봇 등 Series A~Pre-IPO. 삼성증권 AI 투자 콘텐츠·마케팅·개발·법인 영업 솔루션.",
+    "companyFields": [
+      "서울 소재지 및 본점·지점·연구소 구분",
+      "설립일",
+      "업종·제품",
+      "희망 파트너",
+      "투자단계·기업가치",
+      "여성기업·대학창업 여부",
+      "협업 시나리오",
+      "사업자등록번호·IR 자료"
+    ],
+    "reference": "K-Startup 기간·대상·제출 / PDF 1쪽 전면과 파트너 표 시각 / HWP 전문 중복대조 / 공덕 PRJ007690 공식 상세 및 별도 포스터 전체 시각"
+  },
+  "exclusions": {
+    "items": [
+      "공통 서울 거점 요건, 파트너별 업력·가치·수요 분야 차이. 공덕 페이지 대상 메타의 전체 무관 표기는 같은 페이지 본문 서울 요건보다 넓음."
+    ],
+    "reference": "K-Startup 기간·대상·제출 / PDF 1쪽 전면과 파트너 표 시각 / HWP 전문 중복대조 / 공덕 PRJ007690 공식 상세 및 별도 포스터 전체 시각"
+  },
+  "support": {
+    "summary": "투자사·대기업 1:1 밋업 총 약 30개사, 파트너당 약 6개사. 제시 투자 티켓 이화 1~3억원, 블루포인트 1~5억원, 한국투자 최대 5억원, 파이오니어 5~20억원. 실제 투자액·지원비율·자부담 확정 없음. 삼성증권은 협업 검토.",
+    "reference": "K-Startup 기간·대상·제출 / PDF 1쪽 전면과 파트너 표 시각 / HWP 전문 중복대조 / 공덕 PRJ007690 공식 상세 및 별도 포스터 전체 시각"
+  },
+  "period": {
+    "start": "2026-11-11",
+    "end": "2026-11-17",
+    "deadlineTime": "23:59",
+    "timezone": "Asia/Seoul",
+    "reference": "K-Startup 기간·대상·제출 / PDF 1쪽 전면과 파트너 표 시각 / HWP 전문 중복대조 / 공덕 PRJ007690 공식 상세 및 별도 포스터 전체 시각",
+    "checkedAt": "2026-11-12T00:17:22.034859+00:00",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179765",
+    "attachmentUrls": [
+      "https://www.k-startup.go.kr/afile/fileDownload/v1WOOaezDv7_ogYG78JjyIV7-wwa44hZcXurUqhoc7X0d9bw",
+      "https://www.k-startup.go.kr/afile/fileDownload/v18jd5bFsHwAgpIhGuWnhM1putg8bOMHEnJgPCbU5FvrIJZw"
+    ],
+    "startTime": "13:00"
+  },
+  "application": {
+    "summary": "서울창업허브 공덕 PRJ007690에서 신청 양식으로 이동. 11/25 15:00~18:00 노보텔 앰배서더 서울 동대문 B1, 기업당 약 30분. 선정 안내 11/18~20 예정.",
+    "reference": "K-Startup 기간·대상·제출 / PDF 1쪽 전면과 파트너 표 시각 / HWP 전문 중복대조 / 공덕 PRJ007690 공식 상세 및 별도 포스터 전체 시각",
+    "url": "https://forms.gle/GWG9hTDADAYtkqQh6"
+  },
+  "requiredDocuments": [
+    {
+      "name": "Google 신청서 및 IR 덱",
+      "condition": "상세에 기업명·사업자등록번호·IR덱·투자유치개요·협업개요. 분야별 필수 여부와 파일 규격 미확인.",
+      "reference": "K-Startup 제출서류 / HWP·PDF 모집 / 주최 포스터 신청방법"
+    }
+  ],
+  "businessPlan": {
+    "format": "별도 고정 사업계획서 양식·분량 미기재. IR 덱과 희망 투자·협업 개요를 준비.",
+    "limit": null,
+    "sections": [
+      {
+        "name": "IR 덱",
+        "items": [
+          "기업과 제품, 투자유치 개요"
+        ],
+        "limit": null
+      },
+      {
+        "name": "협업",
+        "items": [
+          "희망 파트너 및 협업 개요"
+        ],
+        "limit": null
+      }
+    ],
+    "reference": "K-Startup 기간·대상·제출 / PDF 1쪽 전면과 파트너 표 시각 / HWP 전문 중복대조 / 공덕 PRJ007690 공식 상세 및 별도 포스터 전체 시각"
+  },
+  "evaluation": {
+    "summary": "투자사·대기업 파트너 직접 선발. 평가 배점 미기재.",
+    "reference": "K-Startup 기간·대상·제출 / PDF 1쪽 전면과 파트너 표 시각 / HWP 전문 중복대조 / 공덕 PRJ007690 공식 상세 및 별도 포스터 전체 시각"
+  },
+  "contact": {
+    "name": "SBA 창업허브1팀 02-2115-2033/2035, startup_bi@sba.seoul.kr / 낭만고래 02-6959-4683~6, romanwhales_1@naver.com",
+    "reference": "K-Startup 기간·대상·제출 / PDF 1쪽 전면과 파트너 표 시각 / HWP 전문 중복대조 / 공덕 PRJ007690 공식 상세 및 별도 포스터 전체 시각"
+  },
+  "unresolved": [
+    "K-Startup 시작 11/11 13:00, 공덕 PRJ007690 11/4 09:00으로 차이. 양쪽 마감 11/17 23:59 일치.",
+    "실제 신청서 https://forms.gle/GWG9hTDADAYtkqQh6 HTTP 401. 문항·파일 제출 방식·조건부 서류 재시도 필요."
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179765",
+    "companyId": null,
+    "permission": "권한회사프로필확보후근거별검토·현재신청가능확정아님",
+    "steps": [
+      "회사필드/증빙확인",
+      "충돌/미확인해결",
+      "S12양식·S13회사정보로서류/계획작성"
+    ]
+  },
+  "evidence": {
+    "detail": "evidence/kstartup-179765/detail.html",
+    "detailFetchedAt": "2026-11-11T23:58:47.835Z",
+    "attachmentManifest": "evidence/kstartup-179765/attachment-check-2026-11-12.json",
+    "publicChecks": [
+      {
+        "id": "179765",
+        "url": "https://hubgongdeok.startup-plus.kr/project/PRJ007690",
+        "checkedAt": "2026-11-12T00:00:06.395019+00:00",
+        "status": 200,
+        "finalUrl": "https://hubgongdeok.startup-plus.kr/project/PRJ007690",
+        "evidence": "179765-publiccheck-20261112.html",
+        "bytes": 37540
+      },
+      {
+        "id": "179765-form",
+        "url": "https://forms.gle/GWG9hTDADAYtkqQh6",
+        "checkedAt": "2026-11-12T00:07:03.398912+00:00",
+        "error": "HTTP Error 401: Unauthorized"
+      }
+    ]
+  },
+  "scheduleConflict": {
+    "summary": "공덕 11/4 09:00, K-Startup 11/11 13:00 접수 시작. 마감은 11/17 23:59 일치. 달력은 기존 K-Startup 기간을 유지.",
+    "sources": [
+      {
+        "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179765",
+        "start": "2026-11-11T13:00:00+09:00"
+      },
+      {
+        "url": "https://hubgongdeok.startup-plus.kr/project/PRJ007690",
+        "start": "2026-11-04T09:00:00+09:00"
+      }
+    ],
+    "checkedAt": "2026-11-12T00:17:22.034859+00:00"
+  }
+}

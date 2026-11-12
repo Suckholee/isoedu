@@ -7,7 +7,7 @@ import DocumentDateInbox from './meeting/DocumentDateInbox';
 import {fromDocumentRow} from '../lib/documentModel';
 import DocumentSpaceHeader from './DocumentSpaceHeader';
 import {getSecureDownloadUrl} from '../lib/storageVault';
-import {safeDownloadFileName,buildWordDocumentHtml,triggerBrowserDownload} from '../lib/documentExport.mjs';
+import {safeDownloadFileName,prepareWordDocumentHtml,triggerBrowserDownload} from '../lib/documentExport.mjs';
 
 export default function ManagedClientDrive({clients,selectedClient,documents,onSelectClient,onOpenDocument,onAddDocument,onCreateClient,enterprise=false}){
  const reviewFocus=useSearchParams().get('dateReview')==='1';
@@ -33,7 +33,7 @@ export default function ManagedClientDrive({clients,selectedClient,documents,onS
     if(url.startsWith('blob:'))setTimeout(()=>URL.revokeObjectURL(url),30000);
     return;
    }
-   const html=buildWordDocumentHtml(d,{companyName:selectedClient?.name||''});
+   const html=await prepareWordDocumentHtml(d,{companyName:selectedClient?.name||''});
    const fileName=safeDownloadFileName(`${d.code?`${d.code}_`:''}${d.title||d.name}`,'doc');
    triggerBrowserDownload(html,fileName,'application/msword;charset=utf-8');
   }catch(e){

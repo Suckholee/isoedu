@@ -1,0 +1,86 @@
+{
+  "programId": "kstartup-179678",
+  "title": "[로컬창업트랙 2기]기억되는 브랜드가 되는 법",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-08T10:18:01.435819+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179678",
+  "reviewScope": "공식상세본문전문(신청/대상/교육/연장). 무첨부분석구분,2026-11-08",
+  "attachments": [],
+  "attachmentContentHashes": {},
+  "lastAttachmentHashCheckedAt": "2026-11-08T10:18:01.435819+00:00",
+  "eligibility": {
+    "summary": "1987년이후출생청년예비·초기창업자. 초기기업연차는상세상단구간만으로확정않음.",
+    "companyFields": [
+      "출생연도",
+      "예비/초기창업현황",
+      "브랜드아이템",
+      "교육회차참여"
+    ],
+    "reference": "공식상세본문전문(신청/대상/교육/연장). 무첨부분석구분,2026-11-08"
+  },
+  "exclusions": {
+    "items": [
+      "별도제외미기재"
+    ],
+    "reference": "공식상세본문전문(신청/대상/교육/연장). 무첨부분석구분,2026-11-08"
+  },
+  "support": {
+    "summary": "무료온라인ZOOM 로컬브랜딩교육11/10·12·17 14~18. 현금지원/비율아님.",
+    "reference": "공식상세본문전문(신청/대상/교육/연장). 무첨부분석구분,2026-11-08"
+  },
+  "period": {
+    "start": "2026-10-19",
+    "end": "2026-11-12",
+    "deadlineTime": "23:59",
+    "timezone": "Asia/Seoul",
+    "reference": "공식상세본문전문(신청/대상/교육/연장). 무첨부분석구분,2026-11-08"
+  },
+  "application": {
+    "summary": "관악공개프로그램상세주소를통한온라인신청. 마감11/12연장,첫교육11/10후접수가능여부확인필요.",
+    "reference": "공식상세본문전문(신청/대상/교육/연장). 무첨부분석구분,2026-11-08"
+  },
+  "requiredDocuments": [
+    {
+      "name": "온라인신청",
+      "condition": "공통",
+      "reference": "상세 신청방법"
+    }
+  ],
+  "businessPlan": {
+    "format": "교육신청",
+    "limit": "제출서류·사업계획서없음",
+    "sections": [],
+    "reference": "공식상세본문전문(신청/대상/교육/연장). 무첨부분석구분,2026-11-08"
+  },
+  "evaluation": {
+    "summary": "평가없음,정원미기재.",
+    "reference": "공식상세본문전문(신청/대상/교육/연장). 무첨부분석구분,2026-11-08"
+  },
+  "contact": {
+    "name": "070-7777-7408",
+    "reference": "공식상세본문전문(신청/대상/교육/연장). 무첨부분석구분,2026-11-08"
+  },
+  "unresolved": [
+    "공고첨부0개·연장후첫회교육11/10과모집마감11/12관계/참여조건확인필요",
+    "실제신청필드·동의/정원미확인"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179678",
+    "companyId": null,
+    "permission": "권한회사프로필확보후근거별검토·현재신청가능확정아님",
+    "steps": [
+      "회사필드/증빙확인",
+      "충돌/미확인해결",
+      "S12양식·S13회사정보로서류/계획작성"
+    ]
+  },
+  "applicationChecks": [],
+  "evidenceReferences": []
+}

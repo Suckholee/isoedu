@@ -1,0 +1,345 @@
+{
+  "programId": "mss-1072312",
+  "title": "2026년 1인 창조기업 지원센터‧중장년 기술창업센터 신규 주관기관 모집 수정 공고",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-09T00:11:01.912915+00:00",
+  "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1072312&parentSeq=1072312",
+  "reviewScope": "수정공고2026-625 상세수정표·PDF12쪽전체본문/양식읽기·HWPX동일조항/표/양식대조·PDF1,2,3,5,7,8,10,11,12시각;기존2026-623 PDF12쪽텍스트차이대조로시설전용→연면적만변경확인;2026-11-09",
+  "attachments": [
+    {
+      "url": "https://www.mss.go.kr/common/board/Download.do?bcIdx=1072312&cbIdx=310&streFileNm=721ea0a1-783f-4a34-9d8c-ab152a1b6879.hwpx",
+      "verifiedAt": "2026-11-09",
+      "status": "downloaded",
+      "sha256": "364edbcf3b334e3dd5330ed175e84696bc00150434e19b0ee29449ff2cd82211",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 106084,
+      "format": "HWPX",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=UTF-8",
+      "extraction": "text",
+      "characters": 13007,
+      "review": {
+        "at": "2026-11-09T00:11:01.912915+00:00",
+        "scope": "수정공고2026-625 상세수정표·PDF12쪽전체본문/양식읽기·HWPX동일조항/표/양식대조·PDF1,2,3,5,7,8,10,11,12시각;기존2026-623 PDF12쪽텍스트차이대조로시설전용→연면적만변경확인;2026-11-09",
+        "method": "text/visual scope recorded in reviewScope"
+      }
+    },
+    {
+      "url": "https://www.mss.go.kr/common/board/Download.do?bcIdx=1072312&cbIdx=310&streFileNm=6c0521ec-849c-4e23-963d-bcc1c3816aa8.pdf",
+      "verifiedAt": "2026-11-09",
+      "status": "downloaded",
+      "sha256": "cf87c838a2ac195824077a5f4e685de188b05a7360f2f3cc82a094bb81fc3f9c",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 562816,
+      "format": "PDF",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=UTF-8",
+      "extraction": "text",
+      "characters": 7890,
+      "review": {
+        "at": "2026-11-09T00:11:01.912915+00:00",
+        "scope": "수정공고2026-625 상세수정표·PDF12쪽전체본문/양식읽기·HWPX동일조항/표/양식대조·PDF1,2,3,5,7,8,10,11,12시각;기존2026-623 PDF12쪽텍스트차이대조로시설전용→연면적만변경확인;2026-11-09",
+        "method": "text/visual scope recorded in reviewScope"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.mss.go.kr/common/board/Download.do?bcIdx=1072312&cbIdx=310&streFileNm=721ea0a1-783f-4a34-9d8c-ab152a1b6879.hwpx": "364edbcf3b334e3dd5330ed175e84696bc00150434e19b0ee29449ff2cd82211",
+    "https://www.mss.go.kr/common/board/Download.do?bcIdx=1072312&cbIdx=310&streFileNm=6c0521ec-849c-4e23-963d-bcc1c3816aa8.pdf": "cf87c838a2ac195824077a5f4e685de188b05a7360f2f3cc82a094bb81fc3f9c"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-12T00:17:22.034859+00:00",
+  "eligibility": {
+    "summary": "일반기업입주모집이아닌 주관(협력)기관모집.지자체/대학/공공기관/비영리법인등 인프라와보육역량보유.1인센터3곳:세종/제주/충북 소재법인단체,중장년센터3곳:부산/대전/세종 소재법인단체(사업자등록소재지).2기관컨소시엄가능·지자체는협력기관위탁필수.센터장1+총괄/행정매니저1이상보직겸직불가/정해진전문자격중1.독립구분센터공간500㎡연면적이상(11/5정정);입주공간99㎡이상,1인15석이상/중장년10팀이상.2027.4까지법정창업보육센터지정필요.",
+    "companyFields": [
+      "기관유형/소재지",
+      "센터유형",
+      "컨소시엄기관/협력역할",
+      "센터장/총괄행정매니저/상근자격경력",
+      "센터연면적/독립분리/입주면적/좌석팀",
+      "시설보유/기자재",
+      "현금대응/외부확약",
+      "채무/세금/임금체불",
+      "참여제한/최근3년해약실패",
+      "2027.4보육센터지정계획"
+    ],
+    "reference": "PDF1~3/5지원조건·상세시설수정표; 확인 2026-11-09T00:13:27.071339+00:00; 원문 https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1072312&parentSeq=1072312"
+  },
+  "exclusions": {
+    "items": [
+      "보조금통합관리지침결격",
+      "채무불이행/부도/화의법정관리(예외마감2023.3.16오래된날짜잔존)",
+      "국세지방세체납",
+      "창업지원참여제재",
+      "공개임금체불사업주",
+      "최근3년협약해약/실패",
+      "기타정당제한"
+    ],
+    "reference": "PDF5제외7호; 확인 2026-11-09T00:13:27.071339+00:00; 원문 https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1072312&parentSeq=1072312"
+  },
+  "support": {
+    "summary": "기관운영비 총사업비80%이내/최대1억3000만원(2027운영방향따라변경).대응20%이상·현금10%이상(시설임대료/보증금제외),외부기관확약별도양식없음·2027.4실입금확인예정.지정최대2년/연성과평가차등·최초협약~2027.12.31.직접:창업프로그램/선택형사업비;간접:전담인건비/운영/국내외여비/회의비등PDF4쪽표.",
+    "reference": "PDF2/4지원비/지정기간; 확인 2026-11-09T00:13:27.071339+00:00; 원문 https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1072312&parentSeq=1072312",
+    "funding": {
+      "currency": "KRW",
+      "cap": 130000000,
+      "maxGovernmentRate": 0.8,
+      "minOwnRate": 0.2,
+      "minCashRate": 0.1,
+      "reference": "PDF2(2027운영방향따라변경가능)"
+    }
+  },
+  "period": {
+    "start": "2026-11-05",
+    "end": "2026-11-13",
+    "deadlineTime": "18:00",
+    "timezone": "Asia/Seoul",
+    "reference": "PDF1공고일11/5·p7모집11/13 18시; 확인 2026-11-09T00:13:27.071339+00:00; 원문 https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1072312&parentSeq=1072312",
+    "startMeaning": "수정공고게시11/5·기존신청11/3시작이력보존"
+  },
+  "application": {
+    "summary": "공고일~11/13 18시 지역지방청담당이메일제출 후유선접수필수확인.서류11/16~19→현장11/23~27→발표12월1주→이의2주→선정12월예정(변경가능).부산051-601-5147 sis2088@korea.kr,대전세종042-865-6146 gtkim2006@korea.kr,광주전남062-360-9141 hsm17@korea.kr,충북043-230-5334 twotableman@korea.kr;제주연락관할표미명시확인필요.",
+    "reference": "PDF7접수/일정·p8발표; 확인 2026-11-09T00:13:27.071339+00:00; 원문 https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1072312&parentSeq=1072312"
+  },
+  "requiredDocuments": [
+    {
+      "name": "지정신청서",
+      "condition": "필수/대표날인·총사업비/정부지원/주관협력부담분리",
+      "reference": "PDF10붙임1/HWPX동일"
+    },
+    {
+      "name": "정관또는사업운영규정",
+      "condition": "필수",
+      "reference": "PDF10첨부1"
+    },
+    {
+      "name": "사업계획서",
+      "condition": "필수/붙임2지정목차",
+      "reference": "PDF10~12"
+    },
+    {
+      "name": "전문인력현황·시설명세서",
+      "condition": "필수/상근/자격경력증빙·이력서",
+      "reference": "PDF10첨부3·11"
+    },
+    {
+      "name": "대표이력서/대주주주식·이력/재무/수익비용",
+      "condition": "계획목차별해당;비영리자본금항목제외",
+      "reference": "PDF11~12"
+    },
+    {
+      "name": "토지건물/장비도면사진·업무제휴근거",
+      "condition": "해당계획증빙별도",
+      "reference": "PDF12"
+    },
+    {
+      "name": "대응자금확약",
+      "condition": "외부지자체등부담시별도양식없음·사업목적명시",
+      "reference": "PDF2주석"
+    },
+    {
+      "name": "발표PPT",
+      "condition": "발표대상20분/질의10분이내",
+      "reference": "PDF8평가단계"
+    }
+  ],
+  "businessPlan": {
+    "format": "PDF붙임2/HWPX동일지정목차",
+    "limit": "계획총쪽수/글꼴제한미기재·주요사업향후5년/연도별수지5년;발표20분",
+    "sections": [
+      {
+        "name": "Ⅰ사업자개요",
+        "items": [
+          "명칭대표이력/소재연락/설립등기/주요사업"
+        ],
+        "limit": "계획총쪽수/글꼴제한미기재·주요사업향후5년/연도별수지5년;발표20분"
+      },
+      {
+        "name": "Ⅰ자본출자",
+        "items": [
+          "비영리제외/수권납입/주식종류수량가격/주주별대주주이력"
+        ],
+        "limit": "계획총쪽수/글꼴제한미기재·주요사업향후5년/연도별수지5년;발표20분"
+      },
+      {
+        "name": "Ⅰ조직임직원",
+        "items": [
+          "조직도/부서기능/직위학경력자격/전문인력상근자격증빙"
+        ],
+        "limit": "계획총쪽수/글꼴제한미기재·주요사업향후5년/연도별수지5년;발표20분"
+      },
+      {
+        "name": "Ⅱ목적/설립",
+        "items": [
+          "창업수요특화중장기/설립소유형태"
+        ],
+        "limit": "계획총쪽수/글꼴제한미기재·주요사업향후5년/연도별수지5년;발표20분"
+      },
+      {
+        "name": "Ⅱ일정입지시설",
+        "items": [
+          "향후5년일정/토지건물용도면적도면사진/장비제원용도확충"
+        ],
+        "limit": "계획총쪽수/글꼴제한미기재·주요사업향후5년/연도별수지5년;발표20분"
+      },
+      {
+        "name": "Ⅱ전문인력입주수요",
+        "items": [
+          "매니저확보/대상선정방법입주기간"
+        ],
+        "limit": "계획총쪽수/글꼴제한미기재·주요사업향후5년/연도별수지5년;발표20분"
+      },
+      {
+        "name": "Ⅱ기술경영지원",
+        "items": [
+          "정보수집분석/장비인력제휴근거/졸업후속지원"
+        ],
+        "limit": "계획총쪽수/글꼴제한미기재·주요사업향후5년/연도별수지5년;발표20분"
+      },
+      {
+        "name": "Ⅱ재정자립조달",
+        "items": [
+          "수익/연차자립목표/관리사용료/재무수익비용/5년수지"
+        ],
+        "limit": "계획총쪽수/글꼴제한미기재·주요사업향후5년/연도별수지5년;발표20분"
+      }
+    ],
+    "reference": "PDF11~12붙임2전체목차; 확인 2026-11-09T00:13:27.071339+00:00; 원문 https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1072312&parentSeq=1072312"
+  },
+  "evaluation": {
+    "summary": "1서류자격·대응인력시설→2현장/서면대체가능→3발표100:사업추진의지30/인프라20/계획40/운영10(안·변경가능).위원회사업비조정최종선정.",
+    "reference": "PDF7~8절차/배점30/20/40/10; 확인 2026-11-09T00:13:27.071339+00:00; 원문 https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1072312&parentSeq=1072312"
+  },
+  "contact": {
+    "name": "정책044-204-7667 03hyeon@korea.kr;한국창업보육협회042-346-9615 goodlike@kobia.or.kr;지역접수는PDF7표",
+    "reference": "PDF7지방청표·p9정책/협회; 확인 2026-11-09T00:13:27.071339+00:00; 원문 https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1072312&parentSeq=1072312"
+  },
+  "unresolved": [
+    "PDF5채무예외접수마감2023.3.16잔존·이번2026.11.13과충돌기관확인필요",
+    "제주신청가능지역이나접수표광주전남/부산/대전세종/충북만·제주접수담당확인필요",
+    "수정공고상세신청기간공란·PDF7공고일~11/13 18시확인·계획총분량/자격증빙유효기간미명시",
+    "HWPX/PDF본문·별첨대조및핵심9쪽시각/전체12쪽시각미완료"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "mss-1072312",
+    "companyId": null,
+    "permission": "권한회사프로필확보후근거별검토·현재신청가능확정아님",
+    "steps": [
+      "회사필드/증빙확인",
+      "충돌/미확인해결",
+      "S12양식·S13회사정보로서류/계획작성"
+    ]
+  },
+  "applicationChecks": [],
+  "evidenceReferences": [
+    {
+      "field": "eligibility",
+      "reference": "PDF1~3/5지원조건·상세시설수정표",
+      "checkedAt": "2026-11-09T00:13:27.071339+00:00",
+      "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1072312&parentSeq=1072312",
+      "attachmentUrls": [
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1072312&cbIdx=310&streFileNm=721ea0a1-783f-4a34-9d8c-ab152a1b6879.hwpx",
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1072312&cbIdx=310&streFileNm=6c0521ec-849c-4e23-963d-bcc1c3816aa8.pdf"
+      ]
+    },
+    {
+      "field": "exclusions",
+      "reference": "PDF5제외7호",
+      "checkedAt": "2026-11-09T00:13:27.071339+00:00",
+      "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1072312&parentSeq=1072312",
+      "attachmentUrls": [
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1072312&cbIdx=310&streFileNm=721ea0a1-783f-4a34-9d8c-ab152a1b6879.hwpx",
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1072312&cbIdx=310&streFileNm=6c0521ec-849c-4e23-963d-bcc1c3816aa8.pdf"
+      ]
+    },
+    {
+      "field": "support",
+      "reference": "PDF2/4지원비/지정기간",
+      "checkedAt": "2026-11-09T00:13:27.071339+00:00",
+      "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1072312&parentSeq=1072312",
+      "attachmentUrls": [
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1072312&cbIdx=310&streFileNm=721ea0a1-783f-4a34-9d8c-ab152a1b6879.hwpx",
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1072312&cbIdx=310&streFileNm=6c0521ec-849c-4e23-963d-bcc1c3816aa8.pdf"
+      ]
+    },
+    {
+      "field": "period",
+      "reference": "PDF1공고일11/5·p7모집11/13 18시",
+      "checkedAt": "2026-11-09T00:13:27.071339+00:00",
+      "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1072312&parentSeq=1072312",
+      "attachmentUrls": [
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1072312&cbIdx=310&streFileNm=721ea0a1-783f-4a34-9d8c-ab152a1b6879.hwpx",
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1072312&cbIdx=310&streFileNm=6c0521ec-849c-4e23-963d-bcc1c3816aa8.pdf"
+      ]
+    },
+    {
+      "field": "application",
+      "reference": "PDF7접수/일정·p8발표",
+      "checkedAt": "2026-11-09T00:13:27.071339+00:00",
+      "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1072312&parentSeq=1072312",
+      "attachmentUrls": [
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1072312&cbIdx=310&streFileNm=721ea0a1-783f-4a34-9d8c-ab152a1b6879.hwpx",
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1072312&cbIdx=310&streFileNm=6c0521ec-849c-4e23-963d-bcc1c3816aa8.pdf"
+      ]
+    },
+    {
+      "field": "requiredDocuments",
+      "reference": "PDF10붙임1첨부·p11~12별도증빙·p2대응확약",
+      "checkedAt": "2026-11-09T00:13:27.071339+00:00",
+      "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1072312&parentSeq=1072312",
+      "attachmentUrls": [
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1072312&cbIdx=310&streFileNm=721ea0a1-783f-4a34-9d8c-ab152a1b6879.hwpx",
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1072312&cbIdx=310&streFileNm=6c0521ec-849c-4e23-963d-bcc1c3816aa8.pdf"
+      ]
+    },
+    {
+      "field": "businessPlan",
+      "reference": "PDF11~12붙임2전체목차",
+      "checkedAt": "2026-11-09T00:13:27.071339+00:00",
+      "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1072312&parentSeq=1072312",
+      "attachmentUrls": [
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1072312&cbIdx=310&streFileNm=721ea0a1-783f-4a34-9d8c-ab152a1b6879.hwpx",
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1072312&cbIdx=310&streFileNm=6c0521ec-849c-4e23-963d-bcc1c3816aa8.pdf"
+      ]
+    },
+    {
+      "field": "evaluation",
+      "reference": "PDF7~8절차/배점30/20/40/10",
+      "checkedAt": "2026-11-09T00:13:27.071339+00:00",
+      "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1072312&parentSeq=1072312",
+      "attachmentUrls": [
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1072312&cbIdx=310&streFileNm=721ea0a1-783f-4a34-9d8c-ab152a1b6879.hwpx",
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1072312&cbIdx=310&streFileNm=6c0521ec-849c-4e23-963d-bcc1c3816aa8.pdf"
+      ]
+    },
+    {
+      "field": "contact",
+      "reference": "PDF7지방청표·p9정책/협회",
+      "checkedAt": "2026-11-09T00:13:27.071339+00:00",
+      "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1072312&parentSeq=1072312",
+      "attachmentUrls": [
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1072312&cbIdx=310&streFileNm=721ea0a1-783f-4a34-9d8c-ab152a1b6879.hwpx",
+        "https://www.mss.go.kr/common/board/Download.do?bcIdx=1072312&cbIdx=310&streFileNm=6c0521ec-849c-4e23-963d-bcc1c3816aa8.pdf"
+      ]
+    }
+  ],
+  "correction": {
+    "previousProgramId": "mss-1072252",
+    "previousNoticeNumber": "2026-623",
+    "noticeNumber": "2026-625",
+    "date": "2026-11-05",
+    "change": "PDF3센터500㎡전용면적→연면적;500㎡수치와입주공간99㎡/15석/10팀기준유지",
+    "evidence": "상세수정표·신구PDF전체텍스트diff"
+  },
+  "latestHashEvidence": "evidence/mss-1072312/attachment-check-2026-11-10.json",
+  "latestHashCheckScope": "HWPX/PDF동일SHA256확인·목록날짜공란으로지운검증기간복원·본문재분석아님",
+  "lastAttachmentHashManifest": "evidence/mss-1072312/attachment-check-2026-11-12.json"
+}

@@ -1,0 +1,230 @@
+{
+  "at": "2026-11-02T00:12:16.071137+00:00",
+  "date": "2026-11-02",
+  "automationId": "isoedu",
+  "stage": "daily-analysis-summary",
+  "summary": "2026-11-02 정기 실행: K-Startup15·중기부10 각 첫 페이지,신규SM컬처테크/키친통합모집2·누적109·상세109건. 신규2건+서초브랜딩/디자인런/게임랩 5건 첨부13개 실제분석(포스터4시각·공고/신청HWP/PDF본문·대체텍스트·공고중복대조·핵심PDF5쪽시각). 키친공식별첨ZIP추가확보·14파일(신규PPT3/신청확인HWP10/사용매뉴얼PDF1)추출·핵심항목검토(일부반복동의/양식전문·전체시각미확인). 게임랩공식신청HWP다운로드HTTP400·양식미확인. 총공고첨부18다운로드·기존오늘마감2건5첨부동일해시·변경0,키친ZIP1추가(중복제외19컨테이너파일). 서초주최본문체납/유흥등제외추가확인. 게임랩공고3개월내발급/ZIP10MB/한글원본+날인PDF·5인이하/최대3석기준확인. SM요약1쪽/서류각PDF·현장밋업요일차이·주민번호고지/생년월일필드차이보존. 키친졸업대상2023대2024·졸업제외문구·제조PPT15/20쪽·보건증6개월대매뉴얼1년·운영시간차이보존·기관최신확인대기. 미해결있어5건모두partial. 큐complete0/partial75/pending34·잔여109,이번처리11/3재시도. 기업마당/IRIS/KOTRA공개페이지확인근거보존·전체수집아님. route.GET200·109공고75분석·5건마감/달력배치검증. localhost3001은이API404·화면미검증. G01→S03→S12/S13 ID/회사필드/근거/권한인계유지·회사적합판정/DB변경/배포/외부발송없음.",
+  "coverage": {
+    "k-startup": "first page15",
+    "mss": "first page10",
+    "newRecords": 2,
+    "totalRecords": 109,
+    "detailsFetched": 109,
+    "fullCollection": false
+  },
+  "reviewedProgramIds": [
+    "kstartup-179622",
+    "kstartup-179637",
+    "kstartup-179636",
+    "kstartup-179661",
+    "kstartup-179653"
+  ],
+  "actualReviewedNoticeAttachments": 13,
+  "additionalOfficialZIP": 1,
+  "ZIPMembers": 14,
+  "ZIPReview": "핵심신청항목·확인서·발표/매뉴얼·일부전체본문/시각미완료",
+  "hashDownloads": 18,
+  "sameExistingHashes": 5,
+  "changedHashes": 0,
+  "queueCounts": {
+    "partial": 75,
+    "pending": 34
+  },
+  "remaining": 109,
+  "nextRetryAt": "2026-11-03T09:00:00+09:00",
+  "sourceChecks": [
+    {
+      "id": "179622",
+      "url": "https://www.xn--2i4bieu3bszgvtc6wlunby2r.com/sub_program/operate_view.php?idx=70",
+      "checkedAt": "2026-11-02T00:07:50.734941+00:00",
+      "status": 200,
+      "finalUrl": "https://www.xn--2i4bieu3bszgvtc6wlunby2r.com/sub_program/operate_view.php?idx=70",
+      "evidence": "179622-publiccheck-20261102.html",
+      "bytes": 65450
+    },
+    {
+      "id": "179637",
+      "url": "https://event-us.kr/openknowldgt/event/137008",
+      "checkedAt": "2026-11-02T00:07:50.735312+00:00",
+      "status": 200,
+      "finalUrl": "https://event-us.kr/openknowldgt/event/137008",
+      "evidence": "179637-publiccheck-20261102.html",
+      "bytes": 351123
+    },
+    {
+      "id": "179636",
+      "url": "https://www.sba.seoul.kr/Pages/BusinessApply/PostingDetail.aspx?p=0&mid=61860843-d4cd-f111-b404-d4f5ef4a1e33",
+      "checkedAt": "2026-11-02T00:07:50.735761+00:00",
+      "status": 200,
+      "finalUrl": "https://www.sba.seoul.kr/Pages/BusinessApply/PostingDetail.aspx?p=0&mid=61860843-d4cd-f111-b404-d4f5ef4a1e33",
+      "evidence": "179636-publiccheck-20261102.html",
+      "bytes": 273541
+    },
+    {
+      "id": "179653",
+      "url": "https://www.startup-plus.kr/project/PRJ007656",
+      "checkedAt": "2026-11-02T00:07:50.735886+00:00",
+      "status": 200,
+      "finalUrl": "https://www.startup-plus.kr/project/PRJ007656",
+      "evidence": "179653-publiccheck-20261102.html",
+      "bytes": 123242
+    },
+    {
+      "id": "179653-tour",
+      "url": "https://forms.gle/2aNii1nmtUvrSyWy6",
+      "checkedAt": "2026-11-02T00:07:50.735982+00:00",
+      "status": 200,
+      "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSffqQlJZSutkNY2xuga1cb3NCFm53CB6epS2ql0tmvwv7o8fQ/viewform?usp=send_form",
+      "evidence": "179653-tour-publiccheck-20261102.html",
+      "bytes": 119836
+    },
+    {
+      "id": "bizinfo",
+      "url": "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/list.do",
+      "checkedAt": "2026-11-02T00:07:50.736074+00:00",
+      "status": 200,
+      "finalUrl": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200View.do?null",
+      "evidence": "bizinfo-publiccheck-20261102.html",
+      "bytes": 111148
+    },
+    {
+      "id": "iris",
+      "url": "https://www.iris.go.kr/index.do",
+      "checkedAt": "2026-11-02T00:07:50.736174+00:00",
+      "status": 200,
+      "finalUrl": "https://www.iris.go.kr/index.do",
+      "evidence": "iris-publiccheck-20261102.html",
+      "bytes": 1531571
+    },
+    {
+      "id": "kotra",
+      "url": "https://kotra.or.kr/subList/20000020753",
+      "checkedAt": "2026-11-02T00:07:50.901240+00:00",
+      "status": 200,
+      "finalUrl": "https://kotra.or.kr/subList/20000020753",
+      "evidence": "kotra-publiccheck-20261102.html",
+      "bytes": 152169
+    }
+  ],
+  "supplementaryChecks": [
+    {
+      "programId": "179636",
+      "url": "https://smc.sba.kr/AttachFiles/new_display/2026/10/22/61860843-D4CD-F111-B404-D4F5EF4A1E33/%5B%EC%9E%91%EC%84%B1_%EC%96%91%EC%8B%9D%5D_%EC%9E%85%EC%A3%BC%EC%8B%A0%EC%B2%AD%EC%84%9C_%EB%B0%8F_%EC%82%AC%EC%97%85%EA%B3%84%ED%9A%8D%EC%84%9C_%EA%B2%8C%EC%9E%84%EB%9E%A9.hwp",
+      "checkedAt": "2026-11-02T00:08:53.339392+00:00",
+      "error": "HTTP Error 400: Bad Request"
+    },
+    {
+      "programId": "179653",
+      "url": "https://www.startup-plus.kr/api/common/download?attachFilePath=%2fproject%2fattachment%2f261028091151%eb%b6%99%ec%9e%842.+%ec%8b%a0%ec%b2%ad%ec%84%9c%eb%a5%98+%ec%96%91%ec%8b%9d+%eb%b0%8f+%ec%82%ac%ec%9a%a9%eb%93%b1%eb%a1%9d+%eb%a9%94%eb%89%b4%ec%96%bc.zip",
+      "checkedAt": "2026-11-02T00:08:53.450055+00:00",
+      "file": "official-extra.zip",
+      "bytes": 843121,
+      "sha256": "fdc911630aafd545c563355ef50980a3496fbfc391c651b743e6d7305ec7c15a",
+      "status": "downloaded",
+      "members": [
+        "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-1. 발표자료양식, 신청서, 유의사항확인서_개별주방_25기/(팀명작성)발표자료양식_개별주방_25기.pptx",
+        "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-1. 발표자료양식, 신청서, 유의사항확인서_개별주방_25기/(팀명작성)신청서 및 서약서_개별주방 25기.hwp",
+        "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-1. 발표자료양식, 신청서, 유의사항확인서_개별주방_25기/(팀명작성)유의사항확인서_개별주방_25기.hwp",
+        "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-2. 발표자료양식, 신청서, 유의사항확인서_(신규)공유주방_25기/(팀명작성)발표자료양식_(신규)공유주방 25기.pptx",
+        "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-2. 발표자료양식, 신청서, 유의사항확인서_(신규)공유주방_25기/(팀명작성)신청서 및 서약서_(신규)공유주방 25기.hwp",
+        "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-2. 발표자료양식, 신청서, 유의사항확인서_(신규)공유주방_25기/(팀명작성)유의사항확인서_(신규)공유주방_25기.hwp",
+        "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-3. 발표자료양식, 신청서, 유의사항확인서_(신규)제조주방_13기/(팀명)발표자료양식_키친인큐베이터 제조주방_13기.pptx",
+        "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-3. 발표자료양식, 신청서, 유의사항확인서_(신규)제조주방_13기/(팀명작성)신청서 및 서약서_(신규)제조주방 13기.hwp",
+        "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-3. 발표자료양식, 신청서, 유의사항확인서_(신규)제조주방_13기/(팀명작성)유의사항확인서_(신규)제조주방_13기.hwp",
+        "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-4. 신청서, 유의사항확인서_(졸업)공유주방_25기/(팀명작성)신청서 및 서약서_(졸업)공유주방_25기.hwp",
+        "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-4. 신청서, 유의사항확인서_(졸업)공유주방_25기/(팀명작성)유의사항확인서_(졸업)공유주방_25기.hwp",
+        "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-5. 신청서, 유의사항확인서_(졸업)제조주방_13기/(팀명작성)신청서 및 서약서_(졸업)제조주방_13기.hwp",
+        "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-5. 신청서, 유의사항확인서_(졸업)제조주방_13기/(팀명작성)유의사항확인서_(졸업)제조주방_13기.hwp",
+        "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-6. 서울창업허브 공덕 키친인큐베이터 공유, 제조주방 사용등록 메뉴얼.pdf"
+      ],
+      "extractions": [
+        {
+          "name": "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-1. 발표자료양식, 신청서, 유의사항확인서_개별주방_25기/(팀명작성)발표자료양식_개별주방_25기.pptx",
+          "file": "zip-member-03.pptx",
+          "status": "unsupported"
+        },
+        {
+          "name": "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-1. 발표자료양식, 신청서, 유의사항확인서_개별주방_25기/(팀명작성)신청서 및 서약서_개별주방 25기.hwp",
+          "file": "zip-member-04.hwp",
+          "characters": 3588,
+          "status": "text-extracted"
+        },
+        {
+          "name": "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-1. 발표자료양식, 신청서, 유의사항확인서_개별주방_25기/(팀명작성)유의사항확인서_개별주방_25기.hwp",
+          "file": "zip-member-05.hwp",
+          "characters": 1413,
+          "status": "text-extracted"
+        },
+        {
+          "name": "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-2. 발표자료양식, 신청서, 유의사항확인서_(신규)공유주방_25기/(팀명작성)발표자료양식_(신규)공유주방 25기.pptx",
+          "file": "zip-member-07.pptx",
+          "status": "unsupported"
+        },
+        {
+          "name": "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-2. 발표자료양식, 신청서, 유의사항확인서_(신규)공유주방_25기/(팀명작성)신청서 및 서약서_(신규)공유주방 25기.hwp",
+          "file": "zip-member-08.hwp",
+          "characters": 3560,
+          "status": "text-extracted"
+        },
+        {
+          "name": "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-2. 발표자료양식, 신청서, 유의사항확인서_(신규)공유주방_25기/(팀명작성)유의사항확인서_(신규)공유주방_25기.hwp",
+          "file": "zip-member-09.hwp",
+          "characters": 1698,
+          "status": "text-extracted"
+        },
+        {
+          "name": "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-3. 발표자료양식, 신청서, 유의사항확인서_(신규)제조주방_13기/(팀명)발표자료양식_키친인큐베이터 제조주방_13기.pptx",
+          "file": "zip-member-11.pptx",
+          "status": "unsupported"
+        },
+        {
+          "name": "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-3. 발표자료양식, 신청서, 유의사항확인서_(신규)제조주방_13기/(팀명작성)신청서 및 서약서_(신규)제조주방 13기.hwp",
+          "file": "zip-member-12.hwp",
+          "characters": 3729,
+          "status": "text-extracted"
+        },
+        {
+          "name": "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-3. 발표자료양식, 신청서, 유의사항확인서_(신규)제조주방_13기/(팀명작성)유의사항확인서_(신규)제조주방_13기.hwp",
+          "file": "zip-member-13.hwp",
+          "characters": 1952,
+          "status": "text-extracted"
+        },
+        {
+          "name": "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-4. 신청서, 유의사항확인서_(졸업)공유주방_25기/(팀명작성)신청서 및 서약서_(졸업)공유주방_25기.hwp",
+          "file": "zip-member-15.hwp",
+          "characters": 3783,
+          "status": "text-extracted"
+        },
+        {
+          "name": "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-4. 신청서, 유의사항확인서_(졸업)공유주방_25기/(팀명작성)유의사항확인서_(졸업)공유주방_25기.hwp",
+          "file": "zip-member-16.hwp",
+          "characters": 1794,
+          "status": "text-extracted"
+        },
+        {
+          "name": "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-5. 신청서, 유의사항확인서_(졸업)제조주방_13기/(팀명작성)신청서 및 서약서_(졸업)제조주방_13기.hwp",
+          "file": "zip-member-18.hwp",
+          "characters": 3783,
+          "status": "text-extracted"
+        },
+        {
+          "name": "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-5. 신청서, 유의사항확인서_(졸업)제조주방_13기/(팀명작성)유의사항확인서_(졸업)제조주방_13기.hwp",
+          "file": "zip-member-19.hwp",
+          "characters": 2049,
+          "status": "text-extracted"
+        },
+        {
+          "name": "붙임2. 신청서류 양식 및 사용등록 메뉴얼/2-6. 서울창업허브 공덕 키친인큐베이터 공유, 제조주방 사용등록 메뉴얼.pdf",
+          "file": "zip-member-20.pdf",
+          "characters": 1965,
+          "status": "text-extracted"
+        }
+      ]
+    }
+  ],
+  "validationEvidence": "evidence/api-validation-2026-11-02.json",
+  "screenVerified": false,
+  "databaseModified": false,
+  "deployed": false,
+  "externalMessagesSent": false
+}

@@ -1,0 +1,108 @@
+{
+  "at": "2026-11-05T03:11:46.629585+00:00",
+  "date": "2026-11-05",
+  "automationId": "isoedu",
+  "stage": "daily-analysis-summary",
+  "summary": "2026-11-05 정기 실행: K-Startup15·중기부10 각 첫 페이지 갱신·신규14·누적138·상세138. LGD DreamPlay/홍익입주/서구아카데미/AI웹교육/성동입주 5건 실제첨부13개 본문·양식·동의/평가/비목/별첨 검토후partial. AI교육스캔PDF1쪽·홍익사진PDF1쪽·성동포스터이미지전체시각. LGD PoC최대5000만원·계획5쪽이상/13pt이하·법인등기3개월/재무23~25·총괄재직확인. 홍익세금사업자등기공고1개월/기타3개월·보증10개월·사본원본대조필기록. 성동창업/이전3·5개월서로역전/유의5개월·재무24/25·포스터PDF5/8기준일잔존·방문접수/23:59대24시충돌보존. 서구11/23사전요약IR·상금10팀총370만원안·신청2URL모두401/미보유공통양식대기. AI교육3회차폼문항확인·전체마감이이전회차뒤/개인정보고지미확인. LGD주최공개페이지/성동주최공지확인·로그인후실제필드미검증. 총20공고첨부다운로드·기존임박2건동일해시7·변경0. 신규14중성동1분석·나머지13건상세/첨부링크확보까지만. 큐{'partial': 91, 'pending': 47}·잔여138·이번5건11/6재시도. 기업마당/IRIS/KOTRA공개접근근거저장·전체목록수집아님. route.GET200·138공고91분석·5건마감/달력배치검증;localhost3001연결실패·화면미검증. G01→S03→S12/S13 ID·회사필드·근거·권한인계보존,회사적합판정·DB변경·배포·외부발송없음.",
+  "coverage": {
+    "k-startup": "first page15",
+    "mss": "first page10",
+    "newRecords": 14,
+    "totalRecords": 138,
+    "detailsFetched": 138,
+    "fullCollection": false
+  },
+  "reviewedProgramIds": [
+    "kstartup-179603",
+    "kstartup-179665",
+    "kstartup-179638",
+    "kstartup-179680",
+    "kstartup-179712"
+  ],
+  "actualReviewedNoticeAttachments": 13,
+  "unreviewedNewRecords": 13,
+  "hashDownloads": 20,
+  "sameExistingHashes": 7,
+  "changedHashes": 0,
+  "queueCounts": {
+    "partial": 91,
+    "pending": 47
+  },
+  "remaining": 138,
+  "nextRetryAt": "2026-11-06T09:00:00+09:00",
+  "sourceChecks": [
+    {
+      "id": "bizinfo",
+      "url": "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/list.do",
+      "checkedAt": "2026-11-05T01:24:38.719773+00:00",
+      "status": 200,
+      "finalUrl": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200View.do?null",
+      "evidence": "bizinfo-publiccheck-20261105.html",
+      "bytes": 110971
+    },
+    {
+      "id": "iris",
+      "url": "https://www.iris.go.kr/index.do",
+      "checkedAt": "2026-11-05T01:24:38.720653+00:00",
+      "status": 200,
+      "finalUrl": "https://www.iris.go.kr/index.do",
+      "evidence": "iris-publiccheck-20261105.html",
+      "bytes": 1510303
+    },
+    {
+      "id": "kotra",
+      "url": "https://kotra.or.kr/subList/20000020753",
+      "checkedAt": "2026-11-05T01:24:38.721161+00:00",
+      "status": 200,
+      "finalUrl": "https://kotra.or.kr/subList/20000020753",
+      "evidence": "kotra-publiccheck-20261105.html",
+      "bytes": 151048
+    }
+  ],
+  "applicationChecks": [
+    {
+      "id": "179603",
+      "url": "https://www.startup-plus.kr/project/PRJ007657",
+      "checkedAt": "2026-11-05T03:08:15.223802+00:00",
+      "status": 200,
+      "finalUrl": "https://www.startup-plus.kr/project/PRJ007657",
+      "evidence": "179603-publiccheck-20261105.html",
+      "bytes": 110264
+    },
+    {
+      "id": "179638",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSfSf8JshcFHUXPzlBSCaz1n2jxvFAO_nsNxGdgqZohX00L6NA/viewform",
+      "checkedAt": "2026-11-05T03:08:15.224106+00:00",
+      "error": "HTTP Error 401: Unauthorized"
+    },
+    {
+      "id": "179638-alt",
+      "url": "https://forms.gle/9MvM7TScPa1RRobh9",
+      "checkedAt": "2026-11-05T03:08:15.224221+00:00",
+      "error": "HTTP Error 401: Unauthorized"
+    },
+    {
+      "id": "179680",
+      "url": "https://forms.gle/UbLPVojyhPL9fTx28",
+      "checkedAt": "2026-11-05T03:08:15.224585+00:00",
+      "status": 200,
+      "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfE98YYzE7oL--rroXdD6Dii6j-luAzL5wutIJeh3jt7IDhMg/viewform?usp=send_form",
+      "evidence": "179680-publiccheck-20261105.html",
+      "bytes": 121595
+    },
+    {
+      "id": "179712",
+      "url": "https://www.sd.go.kr/main/selectBbsNttView.do?key=1473&bbsNo=184&nttNo=362663&integrDeptCode=30301350000",
+      "checkedAt": "2026-11-05T03:08:15.224679+00:00",
+      "status": 200,
+      "finalUrl": "https://www.sd.go.kr/main/selectBbsNttView.do?key=1473&bbsNo=184&nttNo=362663&integrDeptCode=30301350000",
+      "evidence": "179712-publiccheck-20261105.html",
+      "bytes": 206453
+    }
+  ],
+  "validationEvidence": "evidence/api-validation-2026-11-05.json",
+  "screenVerified": false,
+  "databaseModified": false,
+  "deployed": false,
+  "externalMessagesSent": false
+}

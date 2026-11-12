@@ -1,0 +1,174 @@
+{
+  "at": "2026-10-25T03:35:51.860191+00:00",
+  "stage": "daily-attachment-analysis",
+  "status": "partial-success",
+  "summary": "2026-10-25 정기 실행: K-Startup15·중기부10 각 첫 페이지 수집, 신규0·기존63공고 보존·상세63건 확인. 시제품바우처·경남AI교육·해양수산데모데이·글로벌진출·논산아카데미 5건 실제첨부7개 분석 및 ICT교육1건 상세/주최본문 검토(첨부0개로 별도구분),6건partial저장. 바우처5개사/VAT포함최대500만원·업체직접지급·계획서/동의서와40/45/10배점,가점중복규정차이 보존. 경남2링크동일폼확인으로링크차이해소하되매니저과정접수미확인. 논산상세10월교육대포스터11월·주소/접수시작충돌,ICT접수시작차이 보존. 총18첨부다운로드·기존11개동일해시·변경0,마감임박3건미해결재시도/완료2건상태유지. 해양신청폼첫단계만확인·QR308추적실패,글로벌로그인이후필드미검증,HWP시각대조미완료. 큐complete2/partial38/pending23·잔여61,이번처리미해결10/26재시도. 보완3출처공개접근만확인·전체수집아님. route.GET200으로63공고/40분석·6건마감시각검증,로컬HTTP연결실패·화면미검증. G01→S03→S12/S13 근거·ID·권한인계보존. 회사적합판정·DB변경·공개배포·외부발송 없음.",
+  "scope": {
+    "listing": {
+      "kstartup": 15,
+      "mss": 10,
+      "coverage": "first-page-only"
+    },
+    "newRecords": 0,
+    "retainedRecords": 63,
+    "detailPagesAttempted": 63,
+    "analysedThisRun": [
+      "kstartup-179601",
+      "kstartup-179552",
+      "kstartup-179533",
+      "kstartup-179555",
+      "kstartup-179591"
+    ],
+    "detailOnly": [
+      "kstartup-179544"
+    ],
+    "downloadedAttachments": 18,
+    "failedAttachments": 0,
+    "priorHashesCompared": 11,
+    "contentChanged": 0,
+    "queue": {
+      "partial": 38,
+      "pending": 23,
+      "complete": 2
+    },
+    "remaining": 61
+  },
+  "supplementalSourceChecks": [
+    {
+      "name": "gyeongnam-button",
+      "url": "https://forms.gle/9jDmZDob7Tq8yFjY9",
+      "checkedAt": "2026-10-25T03:33:21.056126+00:00",
+      "status": 200,
+      "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeg0SV1FRR-b2QTu3um4KgDAmiU9O3TKJhdgLs7kjES_r8b6Q/viewform?usp=send_form",
+      "bytes": 146013
+    },
+    {
+      "name": "gyeongnam-notice",
+      "url": "https://forms.gle/qHcGGsfGe1Fq5EQq9",
+      "checkedAt": "2026-10-25T03:33:21.056326+00:00",
+      "status": 200,
+      "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeg0SV1FRR-b2QTu3um4KgDAmiU9O3TKJhdgLs7kjES_r8b6Q/viewform?usp=send_form",
+      "bytes": 145830
+    },
+    {
+      "name": "marine-form",
+      "url": "https://forms.gle/2PkaAnHxgo3wC56CA",
+      "checkedAt": "2026-10-25T03:33:21.056461+00:00",
+      "status": 200,
+      "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSf_pjoivvk6H_f-QYbP6fkqHG8S3PWe2y7-IEbx2eXlrFOwKA/viewform?usp=send_form",
+      "bytes": 102020
+    },
+    {
+      "name": "marine-qr",
+      "url": "https://m.site.naver.com/2iwbX",
+      "checkedAt": "2026-10-25T03:33:21.056538+00:00",
+      "error": "HTTP Error 308: Permanent Redirect"
+    },
+    {
+      "name": "global",
+      "url": "https://www.startup-plus.kr/project/PRJ007565",
+      "checkedAt": "2026-10-25T03:33:21.056920+00:00",
+      "status": 200,
+      "finalUrl": "https://www.startup-plus.kr/project/PRJ007565",
+      "bytes": 107700
+    },
+    {
+      "name": "ict",
+      "url": "https://www.checkin-gwanak.or.kr/core/?cid=58&role=programvopn&pSeq=1254&tab=",
+      "checkedAt": "2026-10-25T03:33:21.057034+00:00",
+      "status": 200,
+      "finalUrl": "https://www.checkin-gwanak.or.kr/core/?cid=58&role=programvopn&pSeq=1254&tab=",
+      "bytes": 25557
+    },
+    {
+      "name": "voucher",
+      "url": "https://cbpm.cbnu.ac.kr/notice/notice/?mod=document&uid=1259",
+      "checkedAt": "2026-10-25T03:33:21.057118+00:00",
+      "status": 200,
+      "finalUrl": "https://cbpm.cbnu.ac.kr/notice/notice/?mod=document&uid=1259",
+      "bytes": 284397
+    },
+    {
+      "name": "bizinfo",
+      "url": "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/list.do",
+      "checkedAt": "2026-10-25T03:33:21.057189+00:00",
+      "status": 200,
+      "finalUrl": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200View.do?null",
+      "bytes": 111456
+    },
+    {
+      "name": "iris",
+      "url": "https://www.iris.go.kr/index.do",
+      "checkedAt": "2026-10-25T03:33:21.251020+00:00",
+      "status": 200,
+      "finalUrl": "https://www.iris.go.kr/index.do",
+      "bytes": 2512965
+    },
+    {
+      "name": "kotra",
+      "url": "https://kotra.or.kr/subList/20000020753",
+      "checkedAt": "2026-10-25T03:33:21.259610+00:00",
+      "status": 200,
+      "finalUrl": "https://kotra.or.kr/subList/20000020753",
+      "bytes": 152169
+    }
+  ],
+  "apiValidation": {
+    "at": "2026-10-25T03:35:17.162Z",
+    "status": 200,
+    "total": 63,
+    "analyses": 40,
+    "checked": [
+      {
+        "id": "kstartup-179555",
+        "date": "2026-11-17",
+        "time": "17:00",
+        "status": "partial"
+      },
+      {
+        "id": "kstartup-179552",
+        "date": "2026-11-13",
+        "time": "18:00",
+        "status": "partial"
+      },
+      {
+        "id": "kstartup-179533",
+        "date": "2026-11-12",
+        "time": "13:59",
+        "status": "partial"
+      },
+      {
+        "id": "kstartup-179544",
+        "date": "2026-11-02",
+        "time": "23:59",
+        "status": "partial"
+      },
+      {
+        "id": "kstartup-179601",
+        "date": "2026-11-03",
+        "time": "14:00",
+        "status": "partial"
+      },
+      {
+        "id": "kstartup-179591",
+        "date": "2026-11-18",
+        "time": "15:00",
+        "status": "partial"
+      }
+    ],
+    "scope": "route.GET 직접 호출·화면 미검증",
+    "localHttp": {
+      "error": "fetch failed"
+    }
+  },
+  "screenValidation": "미검증",
+  "companyMatching": "권한 회사 프로필 미확보: 판정없음",
+  "deployment": "없음",
+  "schemaChanges": "없음",
+  "externalMessages": "없음",
+  "failures": [
+    "해양수산 포스터 QR308자동리디렉션 실패·제한우회없음",
+    "일부기존상세첨부0응답·기존근거보존",
+    "로컬HTTP연결실패·직접route검증과구분"
+  ]
+}

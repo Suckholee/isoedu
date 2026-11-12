@@ -1,0 +1,62 @@
+[
+  {
+    "name": "gangwon-body",
+    "url": "https://forms.gle/NZP2VANG8peaduLz7",
+    "checkedAt": "2026-10-26T00:00:16.895904+00:00",
+    "error": "HTTP Error 401: Unauthorized"
+  },
+  {
+    "name": "gangwon-poster",
+    "url": "https://forms.gle/ucawuXbEaZ4EVah6A",
+    "checkedAt": "2026-10-26T00:00:16.896110+00:00",
+    "error": "HTTP Error 401: Unauthorized"
+  },
+  {
+    "name": "woman",
+    "url": "https://dongbu.seoulcareerup.or.kr/dongbu/common/bbs/selectBBS.do?bbs_code=B0454&bbs_seq=145185",
+    "checkedAt": "2026-10-26T00:00:16.896208+00:00",
+    "status": 200,
+    "finalUrl": "https://dongbu.seoulcareerup.or.kr/dongbu/common/bbs/selectBBS.do?bbs_code=B0454&bbs_seq=145185",
+    "bytes": 140045
+  },
+  {
+    "name": "daegu",
+    "url": "https://www.dcoe.or.kr/business/detail/313",
+    "checkedAt": "2026-10-26T00:00:16.896282+00:00",
+    "status": 200,
+    "finalUrl": "https://www.dcoe.or.kr/business/detail/313",
+    "bytes": 76789
+  },
+  {
+    "name": "dongguk",
+    "url": "https://dvic.dongguk.edu/dvic5_7/75",
+    "checkedAt": "2026-10-26T00:00:16.896656+00:00",
+    "status": 200,
+    "finalUrl": "https://dvic.dongguk.edu/dvic5_7/75",
+    "bytes": 22796
+  },
+  {
+    "name": "bizinfo",
+    "url": "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/list.do",
+    "checkedAt": "2026-10-26T00:00:16.896757+00:00",
+    "status": 200,
+    "finalUrl": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200View.do?null",
+    "bytes": 111456
+  },
+  {
+    "name": "iris",
+    "url": "https://www.iris.go.kr/index.do",
+    "checkedAt": "2026-10-26T00:00:16.896854+00:00",
+    "status": 200,
+    "finalUrl": "https://www.iris.go.kr/index.do",
+    "bytes": 2512938
+  },
+  {
+    "name": "kotra",
+    "url": "https://kotra.or.kr/subList/20000020753",
+    "checkedAt": "2026-10-26T00:00:16.896928+00:00",
+    "status": 200,
+    "finalUrl": "https://kotra.or.kr/subList/20000020753",
+    "bytes": 152169
+  }
+]

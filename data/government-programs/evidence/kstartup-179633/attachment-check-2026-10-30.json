@@ -1,0 +1,21 @@
+[
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/Y22Ln",
+    "verifiedAt": "2026-10-30",
+    "status": "downloaded",
+    "sha256": "3a04340ec7cf6ec5d84d05dea826f8e74a93cb3077b7ad1a95cb0515455fe173",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 27136,
+    "format": "HWP",
+    "file": "attachment-01.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 3464,
+    "review": {
+      "method": "text",
+      "at": "2026-10-30T01:43:07.316288+00:00",
+      "scope": "전체 추출 본문·표·별첨 양식 확인; 원본 배치·그림 전체 시각 검증 아님"
+    }
+  }
+]

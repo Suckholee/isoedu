@@ -396,7 +396,6 @@ gtag('config', 'UA-71469923-1');
 	    if (endPoint && endPoint.trim() !== "") {
 			subUrl = "?endPoint=" + encodeURIComponent(endPoint);
 	    }
-	    console.log("anyidAdaptor.ssoLoginPageSub :: subUrl : " + subUrl);
 	    
 	    if (!acrValues && acrValues.trim() == "") {
 			acrValues = "3" 
@@ -410,7 +409,6 @@ gtag('config', 'UA-71469923-1');
 			}
 			subUrl = subUrl + "acrValues=" + acrValues;
 	    }
-	    console.log("anyidAdaptor.ssoLoginPageSub :: ssoLoginPageSub : baseUrl+subUrl : " + baseUrl + "/" + subUrl);
 	    
 	    window.location.replace(baseUrl+subUrl);
 	}
@@ -432,9 +430,7 @@ gtag('config', 'UA-71469923-1');
 	/**/
 	anyidAdaptor.ssoLoginPage = function(endPoint, acrValues){
 	    endPoint = typeof endPoint !== 'undefined' ? endPoint : "/web/main/index.do";
-	    console.log("anyidAdaptor.ssoLoginPage :: endPoint : " + endPoint);
 	    var baseUrl = window.location.origin + anyidAdaptor.agencyContextPath + "/oidc/auth";
-	    console.log("anyidAdaptor.ssoLoginPage :: baseUrl : " + baseUrl);
 	    anyidAdaptor.ssoLoginPageSub(baseUrl, endPoint, acrValues)
 	}
 	
@@ -787,7 +783,6 @@ function openChatbot() {
 	    if (endPoint && endPoint.trim() !== "") {
 			subUrl = "?endPoint=" + encodeURIComponent(endPoint);
 	    }
-	    console.log("anyidAdaptor.ssoLoginPageSub :: subUrl : " + subUrl);
 	    
 	    if (!acrValues && acrValues.trim() == "") {
 			acrValues = "3" 
@@ -801,7 +796,6 @@ function openChatbot() {
 			}
 			subUrl = subUrl + "acrValues=" + acrValues;
 	    }
-	    console.log("anyidAdaptor.ssoLoginPageSub :: ssoLoginPageSub : baseUrl+subUrl : " + baseUrl + "/" + subUrl);
 	    
 	    window.location.replace(baseUrl+subUrl);
 	}
@@ -823,9 +817,7 @@ function openChatbot() {
 	/**/
 	anyidAdaptor.ssoLoginPage = function(endPoint, acrValues){
 	    endPoint = typeof endPoint !== 'undefined' ? endPoint : "/web/main/index.do";
-	    console.log("anyidAdaptor.ssoLoginPage :: endPoint : " + endPoint);
 	    var baseUrl = window.location.origin + anyidAdaptor.agencyContextPath + "/oidc/auth";
-	    console.log("anyidAdaptor.ssoLoginPage :: baseUrl : " + baseUrl);
 	    anyidAdaptor.ssoLoginPageSub(baseUrl, endPoint, acrValues)
 	}
 	
@@ -968,9 +960,9 @@ function openChatbot() {
 												<a href="javascript:anyidAdaptor.ssoLoginPage('/web/main/index.do','');" title="로그인">로그인</a>
 													</li>
 										<li><a href="/web/contents/webMEMB_JOIN.do" title="회원가입">회원가입</a></li>
-										<li>
-												<a href="/imsso/login.do?anyidLginUseYn=N&snsLoginYn=N&returnUrl=">
-													<img src="/cubersc/templete/kstartup1/img/button_icon_01.png" style="vertical-align:middle;" alt=""/>
+										<li style="background-color: #004C97;">
+												<a href="/imsso/login.do?anyidLginUseYn=N&snsLoginYn=N&returnUrl=" style="color: #fff;">
+													<img src="/cubersc/templete/kstartup1/img/button_icon_01_reverse.png" style="vertical-align:middle;" alt=""/>
 													통합회원 로그인
 												</a>
 											</li>
@@ -982,9 +974,9 @@ function openChatbot() {
 									<li>
 											<a href="javascript:anyidAdaptor.ssoLoginPage('/web/main/index.do','');" title="로그인">로그인</a>
 												</li>
-										<li>
-												<a href="/imsso/login.do?anyidLginUseYn=N&snsLoginYn=N&returnUrl=">
-													<img src="/cubersc/templete/kstartup1/img/button_icon_01.png" style="vertical-align:middle;" alt=""/>
+										<li style="background-color: #004C97;">
+												<a href="/imsso/login.do?anyidLginUseYn=N&snsLoginYn=N&returnUrl=" style="color: #fff;">
+													<img src="/cubersc/templete/kstartup1/img/button_icon_01_reverse.png" style="vertical-align:middle;" alt=""/>
 													통합회원 로그인
 												</a>
 											</li>
@@ -2048,12 +2040,12 @@ function openChatbot() {
 											<div class="btn_wrap">
 												<ul>
 													<li>
-																<a href="javascript:void(0)" onclick="fnPdfView('BU1Ln')" class="btn_view" title="새창열림">
+																<a href="javascript:void(0)" onclick="fnPdfView('v182ycp_rwz35Pdq80qebF1X4YrdJwuD97iZOS43I9U0HT_w')" class="btn_view" title="새창열림">
 																			<span>바로보기</span>
 																		</a>
 																	</li>
 														<li>
-														<a href="/afile/fileDownload/BU1Ln" class="btn_down" name="downloadBtn">
+														<a href="/afile/fileDownload/v1UJ5imBpecjC4XzWvY2tpN5TMaaisMtFU2p3UodeQ_jEK9g" class="btn_down" name="downloadBtn">
 																	<span>다운로드</span>
 																</a>
 															</li>

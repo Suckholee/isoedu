@@ -1,0 +1,183 @@
+{
+  "at": "2026-11-08T10:20:39.754794+00:00",
+  "date": "2026-11-08",
+  "automationId": "isoedu",
+  "stage": "daily-analysis-summary",
+  "summary": "2026-11-08 정기 실행(한국19시 트리거): KStartup15/중기부10 각첫페이지·신규8·누적156·상세156성공/실패0. 임팩트스타/NEST G밸리/화성TIPS추천/용인입주/재도전성과 5건 실제첨부13개 분석·모두partial. NEST PDF32쪽 텍스트+로컬OCR·핵심10쪽/포스터시각,입주기본1년대6개월충돌·계획10쪽/12pt·월세보증없음/6개월100만원VAT별도 확인. 화성신청2+동의1총3쪽·선정후확약/완납·20/30/30/20배점·공고일/번호/시작/전화충돌,용인모든PDF/세금1개월·등기3개월·인감6개월·사실증명11/5이후/별도발표자료·평가20/40/40확인. 임팩트스타두링크동일폼/보유1년·포스터추가시간/전화차이. 추가6건(G밸리의료교육/판교투자자교류/도봉창업스쿨/로컬브랜드/강북포럼/북부여성교육)은공고첨부0개로상세/공개폼분석만·partial;도봉지정양식누락·등본3대6개월충돌,판교는AC/VC/CVC·OI담당참가로스타트업모집과구분,북부여성멘토링11/18별도계획서확인. 공고첨부총23개다운로드·기존임박3건10개동일해시/교체0,기존미해결보존. 신규8중6분석(1건무첨부),나머지2상세/링크만. 최종큐{'partial': 107, 'pending': 49}·잔여156·이번11건11/9재시도·이전상세실패106건전송복구. 기업마당/IRIS/KOTRA공개접근200(기업마당null리디렉션)·전체수집아님. route.GET200·156공고107분석·11건기간/시각/달력배치검증,HTTP3010연결실패·화면미검증. G01→S03→S12/S13 공고ID/근거/조건·회사필드/권한인계보존,회사적합확정·DB변경·배포·외부발송없음. 중동규격11/9마감 공고/신청HWP2URL재시도HTTP400유지·다음날재시도·분석완료아님.",
+  "coverage": {
+    "k-startup": "first page15",
+    "mss": "first page10",
+    "newRecords": 8,
+    "totalRecords": 156,
+    "detailSuccess": 156,
+    "detailFailures": 0,
+    "fullCollection": false
+  },
+  "reviewedWithAttachments": [
+    "kstartup-179735",
+    "kstartup-179733",
+    "kstartup-179732",
+    "kstartup-179740",
+    "kstartup-179730"
+  ],
+  "reviewedWithoutAttachments": [
+    "kstartup-179545",
+    "kstartup-179554",
+    "kstartup-179635",
+    "kstartup-179678",
+    "kstartup-179649",
+    "kstartup-179741"
+  ],
+  "actualReviewedNoticeAttachments": 13,
+  "hashDownloads": 23,
+  "sameExistingHashes": 10,
+  "changedHashes": 0,
+  "recoveredPreviousDetailFailures": 106,
+  "unreviewedNewRecords": 2,
+  "queueCounts": {
+    "partial": 107,
+    "pending": 49
+  },
+  "remaining": 156,
+  "nextRetryAt": "2026-11-09T09:00:00+09:00",
+  "sourceChecks": [
+    {
+      "id": "bizinfo",
+      "url": "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/list.do",
+      "checkedAt": "2026-11-08T10:08:18.114803+00:00",
+      "status": 200,
+      "finalUrl": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200View.do?null",
+      "evidence": "bizinfo-publiccheck-20261108.html",
+      "bytes": 110795
+    },
+    {
+      "id": "iris",
+      "url": "https://www.iris.go.kr/index.do",
+      "checkedAt": "2026-11-08T10:08:18.115156+00:00",
+      "status": 200,
+      "finalUrl": "https://www.iris.go.kr/index.do",
+      "evidence": "iris-publiccheck-20261108.html",
+      "bytes": 1510314
+    },
+    {
+      "id": "kotra",
+      "url": "https://kotra.or.kr/subList/20000020753",
+      "checkedAt": "2026-11-08T10:08:18.115289+00:00",
+      "status": 200,
+      "finalUrl": "https://kotra.or.kr/subList/20000020753",
+      "evidence": "kotra-publiccheck-20261108.html",
+      "bytes": 151048
+    }
+  ],
+  "applicationChecks": [
+    {
+      "id": "179735",
+      "url": "https://forms.gle/t8R375VTga1sTnDb8",
+      "checkedAt": "2026-11-08T10:11:40.401363+00:00",
+      "status": 200,
+      "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSe5C5G3djuOZULSySDoYoIUaRKEA6ApMa-Vgdii5WPc8acY5g/viewform?usp=send_form",
+      "evidence": "179735-publiccheck-20261108.html",
+      "bytes": 124440
+    },
+    {
+      "id": "179735-poster",
+      "url": "https://forms.gle/xzdWGRKUg4BaAwyB6",
+      "checkedAt": "2026-11-08T10:11:40.401685+00:00",
+      "status": 200,
+      "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSe5C5G3djuOZULSySDoYoIUaRKEA6ApMa-Vgdii5WPc8acY5g/viewform?usp=send_form",
+      "evidence": "179735-poster-publiccheck-20261108.html",
+      "bytes": 124366
+    },
+    {
+      "id": "179730",
+      "url": "https://moaform.com/q/r7idF8",
+      "checkedAt": "2026-11-08T10:11:40.402146+00:00",
+      "status": 200,
+      "finalUrl": "https://answer.moaform.com/answers/Mqpqaj/start?st=r7idF8",
+      "evidence": "179730-publiccheck-20261108.html",
+      "bytes": 5461
+    },
+    {
+      "id": "179732",
+      "url": "https://platform.hsbiz.or.kr",
+      "checkedAt": "2026-11-08T10:11:40.402272+00:00",
+      "status": 200,
+      "finalUrl": "https://platform.hsbiz.or.kr",
+      "evidence": "179732-publiccheck-20261108.html",
+      "bytes": 8454
+    },
+    {
+      "id": "179732-event",
+      "url": "https://forms.gle/zPfV1horbX53C31r9",
+      "checkedAt": "2026-11-08T10:11:40.402371+00:00",
+      "status": 200,
+      "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdKGYYJrtrHqAoPoe6xqcW_GhEK56EeO1rz8aAuMqiMavyUeQ/viewform?usp=send_form",
+      "evidence": "179732-event-publiccheck-20261108.html",
+      "bytes": 97490
+    },
+    {
+      "id": "179733",
+      "url": "https://www.kodit.or.kr/sut/index.do",
+      "checkedAt": "2026-11-08T10:11:40.624784+00:00",
+      "status": 200,
+      "finalUrl": "https://www.kodit.or.kr/apps/index.do",
+      "evidence": "179733-publiccheck-20261108.html",
+      "bytes": 405166
+    },
+    {
+      "id": "179740",
+      "url": "https://ybs.ypa.or.kr",
+      "checkedAt": "2026-11-08T10:11:40.664121+00:00",
+      "status": 200,
+      "finalUrl": "https://ybs.ypa.or.kr",
+      "evidence": "179740-publiccheck-20261108.html",
+      "bytes": 134
+    },
+    {
+      "id": "179545",
+      "url": "https://catchform.vercel.app/form/GMSC",
+      "checkedAt": "2026-11-08T10:11:40.748407+00:00",
+      "status": 200,
+      "finalUrl": "https://catchform.vercel.app/form/GMSC",
+      "evidence": "179545-publiccheck-20261108.html",
+      "bytes": 14991
+    },
+    {
+      "id": "179635",
+      "url": "https://forms.gle/KK5ebFgC3K3bgun6A",
+      "checkedAt": "2026-11-08T10:11:40.931453+00:00",
+      "status": 200,
+      "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfSjekZ96fGS_fyUIQ7UWqjBYVnuJRrBQXu4G9ZtNH_e5rk4g/viewform?usp=send_form",
+      "evidence": "179635-publiccheck-20261108.html",
+      "bytes": 140036
+    },
+    {
+      "id": "179649",
+      "url": "https://forms.gle/QEF9uYMjgVh3KNSp9",
+      "checkedAt": "2026-11-08T10:11:41.070596+00:00",
+      "status": 200,
+      "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeGJFX5uqMi0-et4aF-ifbCV-bStxEKe2_Q1gn7XEVBmnRewA/viewform?usp=send_form",
+      "evidence": "179649-publiccheck-20261108.html",
+      "bytes": 138870
+    }
+  ],
+  "validationEvidence": "evidence/api-validation-2026-11-08.json",
+  "screenVerified": false,
+  "databaseModified": false,
+  "deployed": false,
+  "externalMessagesSent": false,
+  "additionalAttachmentFailures": [
+    {
+      "programId": "kstartup-179723",
+      "url": "https://smc.sba.kr/AttachFiles/new_display/2026/10/28/4e62240d-abd2-f111-b404-d4f5ef4a1e33/%5B%EA%B3%B5%EA%B3%A0%EB%AC%B8_%EC%88%98%ED%98%9C%EA%B8%B0%EC%97%85_%EB%AA%A8%EC%A7%91%5D_2026%EB%85%84_%EC%A4%91%EB%8F%99_%EC%83%81%ED%99%A9_%EB%8C%80%EC%9D%91_%EA%B7%9C%EA%B2%A9_%EC%BB%A8%EC%84%A4%ED%8C%85_%EC%A7%80%EC%9B%90%EC%82%AC%EC%97%85_%EC%88%98%ED%98%9C%EA%B8%B0%EC%97%85_%EB%AA%A8%EC%A7%91(1).hwp",
+      "checkedAt": "2026-11-08T10:21:26.467956+00:00",
+      "error": "HTTP Error 400: Bad Request"
+    },
+    {
+      "programId": "kstartup-179723",
+      "url": "https://smc.sba.kr/AttachFiles/new_display/2026/10/30/4E62240D-ABD2-F111-B404-D4F5EF4A1E33/%5B%EC%B0%B8%EA%B0%80_%EC%8B%A0%EC%B2%AD%EC%84%9C_%EC%88%98%ED%96%89%EA%B3%84%ED%9A%8D%EC%84%9C_%EC%88%98%ED%98%9C%EA%B8%B0%EC%97%85%5D_%EC%A4%91%EB%8F%99%EC%83%81%ED%99%A9%EB%8C%80%EC%9D%91_%E3%80%8E%EA%B7%9C%EA%B2%A9%EC%BB%A8%EC%84%A4%ED%8C%85_%EC%A7%80%EC%9B%90%EC%82%AC%EC%97%85%E3%80%8F_%EC%88%98%ED%98%9C%EA%B8%B0%EC%97%85.hwp",
+      "checkedAt": "2026-11-08T10:21:26.588111+00:00",
+      "error": "HTTP Error 400: Bad Request"
+    }
+  ]
+}

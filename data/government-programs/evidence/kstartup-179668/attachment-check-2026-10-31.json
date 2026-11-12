@@ -1,0 +1,76 @@
+[
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/Xa2Ln",
+    "verifiedAt": "2026-10-31",
+    "status": "downloaded",
+    "sha256": "df9516cf5f06d8771c002958d9fe8ca3d0068f14e89cbe278d8f11a8db3429c3",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 80896,
+    "format": "HWP",
+    "file": "attachment-01.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 6121,
+    "review": {
+      "at": "2026-10-31T06:29:54.881062+00:00",
+      "method": "text",
+      "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+    }
+  },
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/Wa2Ln",
+    "verifiedAt": "2026-10-31",
+    "status": "downloaded",
+    "sha256": "5e3371d307f9c3dad410552c4972095d72896d3bb72f8b25871917b15774156e",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 63488,
+    "format": "HWP",
+    "file": "attachment-02.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 5139,
+    "review": {
+      "at": "2026-10-31T06:29:54.881062+00:00",
+      "method": "text",
+      "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+    }
+  },
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/fY2Ln",
+    "verifiedAt": "2026-10-31",
+    "status": "downloaded",
+    "sha256": "611e43071c2d7fd1906be27c7aee04cdce7880e430a0239a982bee5eb9ee40d9",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 2997912,
+    "format": "IMAGE",
+    "file": "attachment-03.bin",
+    "contentType": "image/png;charset=UTF-8",
+    "review": {
+      "at": "2026-10-31T06:29:54.881062+00:00",
+      "method": "visual",
+      "scope": "전체 포스터 시각 검토·동반 텍스트 대조; 긴 이미지 작은글씨 전부검증아님"
+    }
+  },
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/2a2Ln",
+    "verifiedAt": "2026-10-31",
+    "status": "downloaded",
+    "sha256": "31da5bfa80593250423a165326b5745aa818d6d81762cb2827fe0dceff4af91b",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 947,
+    "format": "TEXT",
+    "file": "attachment-04.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "characters": 451,
+    "extraction": "text",
+    "review": {
+      "at": "2026-10-31T06:29:54.881062+00:00",
+      "method": "text",
+      "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+    }
+  }
+]

@@ -1,0 +1,338 @@
+{
+  "programId": "kstartup-179654",
+  "title": "2026년 K-바이오랩허브 멤버십 기업 모집",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-10T00:15:27.202691+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179654",
+  "reviewScope": "공고HWP전체자격예외/서류표/평가/혜택/유의·별도양식HWP붙임1~3전문·스캔PDF포스터1쪽전체시각·상세본문대조/Google폼401;2026-11-10",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1dDcs7G6pEnNEadd2eYvO9a2tBQPvR8T1OgB4Wwfzu_-8GA",
+      "verifiedAt": "2026-11-10",
+      "status": "downloaded",
+      "sha256": "8c5d0791b7c30be06e56b65d5c9bec8376193e43d0d310ee99d56de1eba5000e",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 119296,
+      "format": "HWP",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 4180,
+      "review": {
+        "at": "2026-11-10T00:15:27.202691+00:00",
+        "scope": "공고HWP전체자격예외/서류표/평가/혜택/유의·별도양식HWP붙임1~3전문·스캔PDF포스터1쪽전체시각·상세본문대조/Google폼401;2026-11-10",
+        "method": "text/visual scope recorded in reviewScope"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1DGNBpiUm30K8L7urJjpwdEZGbOP247WhchBghsXNlom-DQ",
+      "verifiedAt": "2026-11-10",
+      "status": "downloaded",
+      "sha256": "c13c25d99eba623be6a8f93d903fbd2916e60e8358f3829d81aebc955b5a7135",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 81920,
+      "format": "HWP",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 4212,
+      "review": {
+        "at": "2026-11-10T00:15:27.202691+00:00",
+        "scope": "공고HWP전체자격예외/서류표/평가/혜택/유의·별도양식HWP붙임1~3전문·스캔PDF포스터1쪽전체시각·상세본문대조/Google폼401;2026-11-10",
+        "method": "text/visual scope recorded in reviewScope"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1zNz_yJU27p5v8k_6uO3kyZ6pUVzGqVGAdZwXHqwvBCFoxA",
+      "verifiedAt": "2026-11-10",
+      "status": "downloaded",
+      "sha256": "1089851ca1adb7a0bd6b3bf8493b7e961ca37c0fd52b027753db2702ae14c078",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 2424599,
+      "format": "PDF",
+      "file": "attachment-03.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 0,
+      "review": {
+        "at": "2026-11-10T00:15:27.202691+00:00",
+        "scope": "공고HWP전체자격예외/서류표/평가/혜택/유의·별도양식HWP붙임1~3전문·스캔PDF포스터1쪽전체시각·상세본문대조/Google폼401;2026-11-10",
+        "method": "text/visual scope recorded in reviewScope"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/v1dDcs7G6pEnNEadd2eYvO9a2tBQPvR8T1OgB4Wwfzu_-8GA": "8c5d0791b7c30be06e56b65d5c9bec8376193e43d0d310ee99d56de1eba5000e",
+    "https://www.k-startup.go.kr/afile/fileDownload/v1DGNBpiUm30K8L7urJjpwdEZGbOP247WhchBghsXNlom-DQ": "c13c25d99eba623be6a8f93d903fbd2916e60e8358f3829d81aebc955b5a7135",
+    "https://www.k-startup.go.kr/afile/fileDownload/v1zNz_yJU27p5v8k_6uO3kyZ6pUVzGqVGAdZwXHqwvBCFoxA": "1089851ca1adb7a0bd6b3bf8493b7e961ca37c0fd52b027753db2702ae14c078"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-10T00:15:27.202691+00:00",
+  "eligibility": {
+    "summary": "모집공고일10/27기준업력10년미만의약바이오창업기업대표·프로그램적극참여.공고전창업기업만/개업또는법인설립일기준/공동각자대표전원요건충족,다사업자창업법판단필요.단백질의약·항체·백신·효소·세포조직·유전자·저분자·약물전달·오가노이드등.타지원프로그램참여중가능.10년이되는날이후자격상실·시범기간업력조건확인필요.",
+    "companyFields": [
+      "설립/개업일/다사업자이력",
+      "공동대표자격",
+      "의약바이오분야/연구단계",
+      "직원4대보험수",
+      "2023~25매출/2025재무",
+      "투자내역/2026~28목표",
+      "보유제품IP/인증/연구소",
+      "희망프로그램1~5순위",
+      "협업계획",
+      "휴폐업/채무변제회생/체납유예/임금체불/참여제한",
+      "대표/담당/참여인력동의"
+    ],
+    "reference": "HWP공고모집/신청자격/혜택; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179654"
+  },
+  "exclusions": {
+    "items": [
+      "신청일휴폐업",
+      "채무불이행(변제완료/워크아웃새출발/회생면책/재기보증예외)",
+      "국세지방세체납(강제징수유예/특수채무변제예외)",
+      "임금체불공개",
+      "창업제외업종",
+      "중기부창업참여제재",
+      "기타사업단제한"
+    ],
+    "reference": "HWP공고신청제외/예외박스; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179654"
+  },
+  "support": {
+    "summary": "50개사내외컨설팅/OI/엑셀러레이팅/IR/네트워킹·산학연병정VC연계.기간선정연도포함본사업시작전~2028,10년되는날이후자격/지원자동상실.2028신규입주지원가산점은예정혜택·입주/투자보장아님.직접지원금한도/자부담률미명시.",
+    "reference": "HWP공고멤버십혜택/기간·스캔포스터; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179654"
+  },
+  "period": {
+    "start": "2026-10-29",
+    "end": "2026-11-17",
+    "deadlineTime": "17:00",
+    "timezone": "Asia/Seoul",
+    "reference": "상세10/29·HWP/포스터10/27~11/17 17시; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179654",
+    "sourceConflict": {
+      "recordStart": "2026-10-29",
+      "attachmentStart": "2026-10-27",
+      "eligibilityBaseDate": "2026-10-27",
+      "resolution": "충돌보존·최신정정기관확인대기"
+    }
+  },
+  "application": {
+    "summary": "11/17 17시제출완료건만구글폼 https://forms.gle/5Pdn5Z9bcPmUESv87 (공개열람401·로그인후접수미검증).서류1압축묶음/파일명기업명_2026년K-바이오랩허브멤버십참여기업신청.서류발행공고일기준1개월이내문구보존.11/19~20서면/11/23발표/11/24이후협약예정.접수후보완변경불가규정과담당보완요청가능문구함께기록.",
+    "reference": "HWP신청방법/유의·Google401; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179654"
+  },
+  "requiredDocuments": [
+    {
+      "name": "멤버십신청서",
+      "condition": "필수붙임1·대표날인",
+      "reference": "HWP공고표①·양식붙임1"
+    },
+    {
+      "name": "사업소개서",
+      "condition": "필수붙임2/최대10페이지내외",
+      "reference": "HWP공고표②·양식붙임2"
+    },
+    {
+      "name": "개인정보이용제공조회동의",
+      "condition": "필수붙임3·참여인원전원각서명날인",
+      "reference": "HWP양식붙임3"
+    },
+    {
+      "name": "사업자등록증또는법인등기부등본",
+      "condition": "필수·서류발행공고일기준1개월이내",
+      "reference": "HWP공고표④/주석"
+    },
+    {
+      "name": "국세·지방세완납증명각1",
+      "condition": "필수·동일발행기준",
+      "reference": "HWP공고표⑤/주석"
+    },
+    {
+      "name": "재무/부가세·투자계약이체·지재권실적우대·IR",
+      "condition": "해당시선택/작성실적증빙",
+      "reference": "HWP공고⑥~⑧·양식2"
+    }
+  ],
+  "businessPlan": {
+    "format": "HWP붙임1~3지정신청/사업소개/개인기업동의",
+    "limit": "사업소개최대10페이지내외·안내맑은고딕10pt·참여인력대표포함전원개별약력",
+    "sections": [
+      {
+        "name": "신청",
+        "items": [
+          "설립/분야1개/연구개발투자단계/4대보험직원/희망프로그램순위/참여의지"
+        ],
+        "limit": "사업소개최대10페이지내외·안내맑은고딕10pt·참여인력대표포함전원개별약력"
+      },
+      {
+        "name": "소개1현황",
+        "items": [
+          "2023~25매출·2025이익자본·최근투자/인증연구소IP협력지원성과"
+        ],
+        "limit": "사업소개최대10페이지내외·안내맑은고딕10pt·참여인력대표포함전원개별약력"
+      },
+      {
+        "name": "소개2계획",
+        "items": [
+          "지원목적·인프라활용/제품개발정도/잠재력강점/2026~28성장투자목표/시장진입/OI협업/애로/사진포트폴리오"
+        ],
+        "limit": "사업소개최대10페이지내외·안내맑은고딕10pt·참여인력대표포함전원개별약력"
+      },
+      {
+        "name": "소개3인력",
+        "items": [
+          "전원고용직책담당/유관경력·프로젝트·무경력담당업무"
+        ],
+        "limit": "사업소개최대10페이지내외·안내맑은고딕10pt·참여인력대표포함전원개별약력"
+      },
+      {
+        "name": "동의",
+        "items": [
+          "개인기업정보시범사업종료까지/제3자협력기관동의철회또는목적달성까지"
+        ],
+        "limit": "사업소개최대10페이지내외·안내맑은고딕10pt·참여인력대표포함전원개별약력"
+      }
+    ],
+    "reference": "HWP양식붙임2전체/붙임1·3; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179654"
+  },
+  "evaluation": {
+    "summary": "서면100점:기술경쟁20+잠재성장20+시장20+투자사업화20+참여10+협업10.70점이상고득점/동점기술력→사업성→적정성.점수의견비공개·결과통보7일내이의신청문구있음.",
+    "reference": "HWP선정기준/평가표40·40·20; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179654"
+  },
+  "contact": {
+    "name": "K-바이오랩허브사업단032-310-7521 jwnam@ccei.kr /7522 kjy0418@ccei.kr /7523 tooyoon@ccei.kr",
+    "reference": "HWP공고신청문의표; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179654"
+  },
+  "unresolved": [
+    "상세모집10/29대공고·스캔포스터10/27시작충돌·10/27공고기준업력/서류발행별도보존",
+    "10년미만대이내박스문구·시범기간내10년넘지않아야함/10년도달자격상실범위기관확인필요",
+    "공고접수완료후보완변경불가대담당자미비서류보완요청가능·신청서이의제기안함대공고7일이의기간충돌",
+    "공식구글폼401로실제필드/파일한도/최신고지미확인·HWP전체배치시각미완료"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179654",
+    "companyId": null,
+    "permission": "권한회사프로필확보후근거별검토·현재신청가능확정아님",
+    "steps": [
+      "회사필드/증빙확인",
+      "충돌/미확인해결",
+      "S12양식·S13회사정보로서류/계획작성"
+    ]
+  },
+  "applicationChecks": [
+    {
+      "id": "179654",
+      "url": "https://forms.gle/5Pdn5Z9bcPmUESv87",
+      "checkedAt": "2026-11-10T00:12:26.524382+00:00",
+      "error": "HTTP Error 401: Unauthorized"
+    }
+  ],
+  "evidenceReferences": [
+    {
+      "field": "eligibility",
+      "reference": "HWP공고모집/신청자격/혜택",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179654",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1dDcs7G6pEnNEadd2eYvO9a2tBQPvR8T1OgB4Wwfzu_-8GA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1DGNBpiUm30K8L7urJjpwdEZGbOP247WhchBghsXNlom-DQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1zNz_yJU27p5v8k_6uO3kyZ6pUVzGqVGAdZwXHqwvBCFoxA"
+      ]
+    },
+    {
+      "field": "exclusions",
+      "reference": "HWP공고신청제외/예외박스",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179654",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1dDcs7G6pEnNEadd2eYvO9a2tBQPvR8T1OgB4Wwfzu_-8GA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1DGNBpiUm30K8L7urJjpwdEZGbOP247WhchBghsXNlom-DQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1zNz_yJU27p5v8k_6uO3kyZ6pUVzGqVGAdZwXHqwvBCFoxA"
+      ]
+    },
+    {
+      "field": "support",
+      "reference": "HWP공고멤버십혜택/기간·스캔포스터",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179654",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1dDcs7G6pEnNEadd2eYvO9a2tBQPvR8T1OgB4Wwfzu_-8GA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1DGNBpiUm30K8L7urJjpwdEZGbOP247WhchBghsXNlom-DQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1zNz_yJU27p5v8k_6uO3kyZ6pUVzGqVGAdZwXHqwvBCFoxA"
+      ]
+    },
+    {
+      "field": "period",
+      "reference": "상세10/29·HWP/포스터10/27~11/17 17시",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179654",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1dDcs7G6pEnNEadd2eYvO9a2tBQPvR8T1OgB4Wwfzu_-8GA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1DGNBpiUm30K8L7urJjpwdEZGbOP247WhchBghsXNlom-DQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1zNz_yJU27p5v8k_6uO3kyZ6pUVzGqVGAdZwXHqwvBCFoxA"
+      ]
+    },
+    {
+      "field": "application",
+      "reference": "HWP신청방법/유의·Google401",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179654",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1dDcs7G6pEnNEadd2eYvO9a2tBQPvR8T1OgB4Wwfzu_-8GA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1DGNBpiUm30K8L7urJjpwdEZGbOP247WhchBghsXNlom-DQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1zNz_yJU27p5v8k_6uO3kyZ6pUVzGqVGAdZwXHqwvBCFoxA"
+      ]
+    },
+    {
+      "field": "requiredDocuments",
+      "reference": "HWP공고제출표/발행주석·별도양식1~3",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179654",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1dDcs7G6pEnNEadd2eYvO9a2tBQPvR8T1OgB4Wwfzu_-8GA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1DGNBpiUm30K8L7urJjpwdEZGbOP247WhchBghsXNlom-DQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1zNz_yJU27p5v8k_6uO3kyZ6pUVzGqVGAdZwXHqwvBCFoxA"
+      ]
+    },
+    {
+      "field": "businessPlan",
+      "reference": "HWP양식붙임2전체/붙임1·3",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179654",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1dDcs7G6pEnNEadd2eYvO9a2tBQPvR8T1OgB4Wwfzu_-8GA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1DGNBpiUm30K8L7urJjpwdEZGbOP247WhchBghsXNlom-DQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1zNz_yJU27p5v8k_6uO3kyZ6pUVzGqVGAdZwXHqwvBCFoxA"
+      ]
+    },
+    {
+      "field": "evaluation",
+      "reference": "HWP선정기준/평가표40·40·20",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179654",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1dDcs7G6pEnNEadd2eYvO9a2tBQPvR8T1OgB4Wwfzu_-8GA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1DGNBpiUm30K8L7urJjpwdEZGbOP247WhchBghsXNlom-DQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1zNz_yJU27p5v8k_6uO3kyZ6pUVzGqVGAdZwXHqwvBCFoxA"
+      ]
+    },
+    {
+      "field": "contact",
+      "reference": "HWP공고신청문의표",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179654",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1dDcs7G6pEnNEadd2eYvO9a2tBQPvR8T1OgB4Wwfzu_-8GA",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1DGNBpiUm30K8L7urJjpwdEZGbOP247WhchBghsXNlom-DQ",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1zNz_yJU27p5v8k_6uO3kyZ6pUVzGqVGAdZwXHqwvBCFoxA"
+      ]
+    }
+  ],
+  "attachmentManifest": "evidence/kstartup-179654/attachment-check-2026-11-10.json"
+}

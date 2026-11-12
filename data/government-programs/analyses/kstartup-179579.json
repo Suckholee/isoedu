@@ -1,0 +1,274 @@
+{
+  "programId": "kstartup-179579",
+  "title": "2026년 여성CEO 비즈니스 아카데미 인천경기권역 시즌 2",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-10T00:12:03.260422+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179579",
+  "reviewScope": "HWP운영계획전문/PDF3쪽동일계획+스캔포스터전체시각·별도JPG포스터전체시각대조·상세본문/공식Google closedform전문;2026-11-10",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1n2aPTmTenD2HKKUnoKfG8TuH8pdqWv96NlYPL53pzcWFqw",
+      "verifiedAt": "2026-11-10",
+      "status": "downloaded",
+      "sha256": "e8b8155fea1a2a649d523ad99bd3d0a2bd0db675dc579d42729cc9a32a961879",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 942592,
+      "format": "HWP",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 1221,
+      "review": {
+        "at": "2026-11-10T00:12:03.260422+00:00",
+        "scope": "HWP운영계획전문/PDF3쪽동일계획+스캔포스터전체시각·별도JPG포스터전체시각대조·상세본문/공식Google closedform전문;2026-11-10",
+        "method": "text/visual scope recorded in reviewScope"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1KD21VeBjsXh4bwVPzvz4Rzk3WspD2U_88sIM8WrpcHEI6Q",
+      "verifiedAt": "2026-11-10",
+      "status": "downloaded",
+      "sha256": "ef15ad25ecee5107fef1118fc9abaabf3c9c2dba93c9c9f8b23a9e01918a32e9",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 1661624,
+      "format": "IMAGE",
+      "file": "attachment-02.bin",
+      "contentType": "image/jpeg;charset=UTF-8",
+      "review": {
+        "at": "2026-11-10T00:12:03.260422+00:00",
+        "scope": "HWP운영계획전문/PDF3쪽동일계획+스캔포스터전체시각·별도JPG포스터전체시각대조·상세본문/공식Google closedform전문;2026-11-10",
+        "method": "visual"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1L99hoIeBdR98u1u_qxX-Au_ppZ9Ivne47q00bx3WlacFcQ",
+      "verifiedAt": "2026-11-10",
+      "status": "downloaded",
+      "sha256": "d7e6d86ab81d725049c17902a7912fdca6a3755605c80b09f102386b51b43344",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 433200,
+      "format": "PDF",
+      "file": "attachment-03.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 1249,
+      "review": {
+        "at": "2026-11-10T00:12:03.260422+00:00",
+        "scope": "HWP운영계획전문/PDF3쪽동일계획+스캔포스터전체시각·별도JPG포스터전체시각대조·상세본문/공식Google closedform전문;2026-11-10",
+        "method": "text/visual scope recorded in reviewScope"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/v1n2aPTmTenD2HKKUnoKfG8TuH8pdqWv96NlYPL53pzcWFqw": "e8b8155fea1a2a649d523ad99bd3d0a2bd0db675dc579d42729cc9a32a961879",
+    "https://www.k-startup.go.kr/afile/fileDownload/v1KD21VeBjsXh4bwVPzvz4Rzk3WspD2U_88sIM8WrpcHEI6Q": "ef15ad25ecee5107fef1118fc9abaabf3c9c2dba93c9c9f8b23a9e01918a32e9",
+    "https://www.k-startup.go.kr/afile/fileDownload/v1L99hoIeBdR98u1u_qxX-Au_ppZ9Ivne47q00bx3WlacFcQ": "d7e6d86ab81d725049c17902a7912fdca6a3755605c80b09f102386b51b43344"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-10T00:12:03.260422+00:00",
+  "eligibility": {
+    "summary": "기업성장을고민하는여성CEO/여성임원80명선착순.현재공식Google폼은많은참여로모집마감/공석발생시추가모집안내(2026-11-10확인).지역제한별도명시없으나여성CEO/임원아니면참여제한가능.",
+    "companyFields": [
+      "성명",
+      "기업명",
+      "여성CEO/여성임원여부",
+      "연락처/이메일",
+      "참석가능일",
+      "온라인IR상담희망"
+    ],
+    "reference": "HWP개요·상세대상·공식closedform; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179579"
+  },
+  "exclusions": {
+    "items": [
+      "여성CEO/여성임원아닌경우참여제한",
+      "1인1신청/동반자개별신청",
+      "현재접수종료확인"
+    ],
+    "reference": "상세참여유의·closedform; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179579"
+  },
+  "support": {
+    "summary": "무료교육·네트워킹,11/17 14~17시(등록13:30)경원재바이워커힐시그니처홀/인천연수구테크노파크로200.맞춤형IR온라인상담기업당30분내외/신청자중5명선정.현금지원없음.",
+    "reference": "HWP개요/시간표·PDF1~3포스터/JPG; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179579"
+  },
+  "period": {
+    "start": "2026-10-20",
+    "end": "2026-11-10",
+    "deadlineTime": "23:59",
+    "timezone": "Asia/Seoul",
+    "reference": "상세신청기간·HWP신청·공식closedform; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179579"
+  },
+  "application": {
+    "summary": "온라인 https://forms.gle/H2cDLynmJ51ENh9FA (최종closedform)현재마감.공석추가모집가능안내만·재개확정아님.신청자문자/메일안내예정.당초10/20~11/10 23:59명목기간은보존하고정확조기종료시각미확인.",
+    "reference": "상세신청/제출·공식closedform; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179579",
+    "status": "모집마감(공식신청폼확인)",
+    "closedEvidence": {
+      "checkedAt": "2026-11-10T00:12:03.260422+00:00",
+      "url": "https://forms.gle/H2cDLynmJ51ENh9FA",
+      "evidenceFile": "evidence/179579-publiccheck-20261110.html",
+      "meaning": "많은참여로교육마감·추후공석시추가모집예정안내·추가일미확정"
+    }
+  },
+  "requiredDocuments": [
+    {
+      "name": "온라인Google참여신청서",
+      "condition": "1인1개필수·현재닫혀실제문항미확인",
+      "reference": "상세제출/참여유의·공식폼closedform"
+    },
+    {
+      "name": "별도사업계획서/증빙",
+      "condition": "공고요구없음·IR온라인상담5명선정후추가요구미확인",
+      "reference": "HWP/PDF개요"
+    }
+  ],
+  "businessPlan": {
+    "format": "사업계획서지정양식없음",
+    "limit": "해당없음",
+    "sections": [],
+    "reference": "HWP개요/신청·상세제출; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179579"
+  },
+  "evaluation": {
+    "summary": "교육80명선착순,맞춤형온라인IR상담5명선정(기준/수치미공개).현재모집마감.",
+    "reference": "상세선착순·HWP상담5명; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179579"
+  },
+  "contact": {
+    "name": "2026여성CEO비즈니스아카데미운영사무국(오케이어스)070-8670-2282",
+    "reference": "HWP신청문의·포스터하단; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179579"
+  },
+  "unresolved": [
+    "공식폼모집마감확인·당초11/10 23:59와조기마감상태병기/정확종료시각및추가모집일미명시",
+    "닫힌신청폼의실제필수문항/동의서·보유기간미확인",
+    "IR온라인상담5명선정기준·추가자료필요여부미명시"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179579",
+    "companyId": null,
+    "permission": "권한회사프로필확보후근거별검토·현재신청가능확정아님",
+    "steps": [
+      "회사필드/증빙확인",
+      "충돌/미확인해결",
+      "S12양식·S13회사정보로서류/계획작성"
+    ]
+  },
+  "applicationChecks": [
+    {
+      "id": "179579",
+      "url": "https://forms.gle/H2cDLynmJ51ENh9FA",
+      "checkedAt": "2026-11-10T00:11:18.545719+00:00",
+      "status": 200,
+      "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeYcpCVzV7LmjAU9eDA_wHdVq_cUTU5KpqJzO07zBS3qs-rZw/closedform",
+      "evidence": "179579-publiccheck-20261110.html",
+      "bytes": 81827
+    }
+  ],
+  "evidenceReferences": [
+    {
+      "field": "eligibility",
+      "reference": "HWP개요·상세대상·공식closedform",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179579",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1n2aPTmTenD2HKKUnoKfG8TuH8pdqWv96NlYPL53pzcWFqw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1KD21VeBjsXh4bwVPzvz4Rzk3WspD2U_88sIM8WrpcHEI6Q",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1L99hoIeBdR98u1u_qxX-Au_ppZ9Ivne47q00bx3WlacFcQ"
+      ]
+    },
+    {
+      "field": "exclusions",
+      "reference": "상세참여유의·closedform",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179579",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1n2aPTmTenD2HKKUnoKfG8TuH8pdqWv96NlYPL53pzcWFqw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1KD21VeBjsXh4bwVPzvz4Rzk3WspD2U_88sIM8WrpcHEI6Q",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1L99hoIeBdR98u1u_qxX-Au_ppZ9Ivne47q00bx3WlacFcQ"
+      ]
+    },
+    {
+      "field": "support",
+      "reference": "HWP개요/시간표·PDF1~3포스터/JPG",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179579",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1n2aPTmTenD2HKKUnoKfG8TuH8pdqWv96NlYPL53pzcWFqw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1KD21VeBjsXh4bwVPzvz4Rzk3WspD2U_88sIM8WrpcHEI6Q",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1L99hoIeBdR98u1u_qxX-Au_ppZ9Ivne47q00bx3WlacFcQ"
+      ]
+    },
+    {
+      "field": "period",
+      "reference": "상세신청기간·HWP신청·공식closedform",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179579",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1n2aPTmTenD2HKKUnoKfG8TuH8pdqWv96NlYPL53pzcWFqw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1KD21VeBjsXh4bwVPzvz4Rzk3WspD2U_88sIM8WrpcHEI6Q",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1L99hoIeBdR98u1u_qxX-Au_ppZ9Ivne47q00bx3WlacFcQ"
+      ]
+    },
+    {
+      "field": "application",
+      "reference": "상세신청/제출·공식closedform",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179579",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1n2aPTmTenD2HKKUnoKfG8TuH8pdqWv96NlYPL53pzcWFqw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1KD21VeBjsXh4bwVPzvz4Rzk3WspD2U_88sIM8WrpcHEI6Q",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1L99hoIeBdR98u1u_qxX-Au_ppZ9Ivne47q00bx3WlacFcQ"
+      ]
+    },
+    {
+      "field": "requiredDocuments",
+      "reference": "상세제출서류·HWP신청절",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179579",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1n2aPTmTenD2HKKUnoKfG8TuH8pdqWv96NlYPL53pzcWFqw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1KD21VeBjsXh4bwVPzvz4Rzk3WspD2U_88sIM8WrpcHEI6Q",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1L99hoIeBdR98u1u_qxX-Au_ppZ9Ivne47q00bx3WlacFcQ"
+      ]
+    },
+    {
+      "field": "businessPlan",
+      "reference": "HWP개요/신청·상세제출",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179579",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1n2aPTmTenD2HKKUnoKfG8TuH8pdqWv96NlYPL53pzcWFqw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1KD21VeBjsXh4bwVPzvz4Rzk3WspD2U_88sIM8WrpcHEI6Q",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1L99hoIeBdR98u1u_qxX-Au_ppZ9Ivne47q00bx3WlacFcQ"
+      ]
+    },
+    {
+      "field": "evaluation",
+      "reference": "상세선착순·HWP상담5명",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179579",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1n2aPTmTenD2HKKUnoKfG8TuH8pdqWv96NlYPL53pzcWFqw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1KD21VeBjsXh4bwVPzvz4Rzk3WspD2U_88sIM8WrpcHEI6Q",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1L99hoIeBdR98u1u_qxX-Au_ppZ9Ivne47q00bx3WlacFcQ"
+      ]
+    },
+    {
+      "field": "contact",
+      "reference": "HWP신청문의·포스터하단",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179579",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1n2aPTmTenD2HKKUnoKfG8TuH8pdqWv96NlYPL53pzcWFqw",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1KD21VeBjsXh4bwVPzvz4Rzk3WspD2U_88sIM8WrpcHEI6Q",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1L99hoIeBdR98u1u_qxX-Au_ppZ9Ivne47q00bx3WlacFcQ"
+      ]
+    }
+  ],
+  "attachmentManifest": "evidence/kstartup-179579/attachment-check-2026-11-10.json"
+}

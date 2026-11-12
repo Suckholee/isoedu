@@ -1,0 +1,130 @@
+{
+  "at": "2026-10-23T00:15:32.070139+00:00",
+  "stage": "daily-attachment-analysis",
+  "status": "partial-success",
+  "summary": "2026-10-23 정기 실행: K-Startup 첫 페이지 15건·중기부 첫 페이지 10건 수집, 신규 11·누적 62공고·상세 62건 확인. 6건 실제 첨부 분석 후 미확인 사항이 있어 partial 저장. 공고 첨부 20개와 주최기관 참석자 XLSX 1개 다운로드, 기존 13개 콘텐츠 해시 동일 확인. 울산 신청서의 대전 표기·첨부필수 여부 충돌, LH 개인정보동의서의 다른 시설명·접수장소 충돌, M&A 신청폼 로딩 셸을 미해결로 보존. 강원 AX 포럼의 주최기관 별도 참석자 양식 확보. 중기부 전통시장 수정공고는 기존 공고와 정정 후보로만 연결하고 원문 대조 전 병합하지 않음. 큐 complete2/partial26/pending34·잔여60, 이번 처리 미해결 항목 재시도 10/24 이후. 보완 3출처 공개 페이지 접근만 확인·전체 수집 아님. route.GET 200으로 62공고/28분석 및 6건 마감시각 검증, 로컬 HTTP 연결 실패·화면 미검증. G01→S03→S12/S13 ID·근거·권한 인계 보존. 회사 적합 판정·DB 변경·배포·외부 발송 없음.",
+  "scope": {
+    "listing": {
+      "kstartup": 15,
+      "mss": 10,
+      "coverage": "first-page-only"
+    },
+    "newRecords": 11,
+    "retainedRecords": 62,
+    "detailPagesAttempted": 62,
+    "analysedThisRun": [
+      "kstartup-179569",
+      "kstartup-179566",
+      "kstartup-179577",
+      "kstartup-179572",
+      "kstartup-179557",
+      "kstartup-179592"
+    ],
+    "completeThisRun": [],
+    "downloadedAttachments": 21,
+    "failedAttachments": 0,
+    "priorHashesCompared": 13,
+    "contentChanged": 0,
+    "queue": {
+      "partial": 26,
+      "pending": 34,
+      "complete": 2
+    },
+    "remaining": 60
+  },
+  "unresolved": [
+    "울산 공고와 대전 표기 신청서 및 첨부필수 여부 불일치",
+    "LH 다른 시설명 개인정보동의서 및 접수장소 불일치·도면 시각검토 미완료",
+    "일부 HWPX/DOCX/XLSX 원본 배치 시각대조 미완료",
+    "M&A 신청폼은 로딩 셸로 실제 문항 미확인",
+    "일부 기존 상세는 첨부 링크 0개 응답: 기존 자료 보존",
+    "MSS 전통시장 수정공고 정정 후보: 첨부 대조 미완료"
+  ],
+  "supplementalSourceChecks": [
+    {
+      "source": "ma-form",
+      "url": "https://forms.cloud.microsoft/r/VACVRPyhLg",
+      "finalUrl": "https://forms.cloud.microsoft/pages/responsepage.aspx?id=OwmbbcJ8OEuL0qKKMNZNAZ7vJDxlOwVBhDBS9jzOGyBUM0pWTjQxM1pQTEUyQkQ5WjVKNkFXWTVFNC4u&route=shorturl",
+      "http": 200,
+      "bytes": 68967,
+      "scope": "공개 페이지 접근만; 상세 전건 수집 아님"
+    },
+    {
+      "source": "bizinfo",
+      "url": "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/list.do",
+      "finalUrl": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200View.do?null",
+      "http": 200,
+      "bytes": 111282,
+      "scope": "공개 페이지 접근만; 상세 전건 수집 아님"
+    },
+    {
+      "source": "iris",
+      "url": "https://www.iris.go.kr/contents/retrieveBsnsAncmBtinSituListView.do",
+      "finalUrl": "https://www.iris.go.kr/contents/retrieveBsnsAncmBtinSituListView.do",
+      "http": 200,
+      "bytes": 111921,
+      "scope": "공개 페이지 접근만; 상세 전건 수집 아님"
+    },
+    {
+      "source": "kotra",
+      "url": "https://kotra.or.kr/subList/20000020753",
+      "finalUrl": "https://kotra.or.kr/subList/20000020753",
+      "http": 200,
+      "bytes": 152169,
+      "scope": "공개 페이지 접근만; 상세 전건 수집 아님"
+    }
+  ],
+  "apiValidation": {
+    "at": "2026-10-23T00:13:08.177Z",
+    "status": 200,
+    "total": 62,
+    "analyses": 28,
+    "checked": [
+      {
+        "id": "kstartup-179569",
+        "date": "2026-10-28",
+        "time": "14:00",
+        "review": "partial"
+      },
+      {
+        "id": "kstartup-179566",
+        "date": "2026-10-29",
+        "time": "16:00",
+        "review": "partial"
+      },
+      {
+        "id": "kstartup-179577",
+        "date": "2026-10-30",
+        "time": "16:00",
+        "review": "partial"
+      },
+      {
+        "id": "kstartup-179572",
+        "date": "2026-11-02",
+        "time": "18:00",
+        "review": "partial"
+      },
+      {
+        "id": "kstartup-179557",
+        "date": "2026-11-04",
+        "time": "13:00",
+        "review": "partial"
+      },
+      {
+        "id": "kstartup-179592",
+        "date": "2026-10-27",
+        "time": "10:00",
+        "review": "partial"
+      }
+    ],
+    "scope": "route.GET직접호출·화면미검증",
+    "localHttp": {
+      "error": "fetch failed"
+    }
+  },
+  "screenValidation": "미검증",
+  "companyMatching": "권한 회사 프로필 미확보: 판정 없음",
+  "deployment": "없음",
+  "schemaChanges": "없음",
+  "externalMessages": "없음"
+}

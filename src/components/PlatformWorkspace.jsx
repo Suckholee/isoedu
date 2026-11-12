@@ -3,6 +3,7 @@ import ModalLayer from './ui/ModalLayer';
 
 import React, { useState, useEffect, useRef } from 'react';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
+import {parsePreparationPath,preparationPath} from '../lib/preparationRoutes.mjs';
 import { navFromPath, platformHref } from '../lib/platformRoutes.mjs';
 import Header from '../components/Header';
 import PlatformUtilityView from '../components/PlatformUtilityView';
@@ -13,6 +14,7 @@ import ManagedClientDrive from './ManagedClientDrive';
 import IsoComplianceMatrixView from '../components/IsoComplianceMatrixView';
 import MyWorkView from './MyWorkView';
 import EnterpriseWorkspace from './EnterpriseWorkspace';
+import CertificationCuration from './CertificationCuration';
 import GrowthIntakeHandoff from './GrowthIntakeHandoff';
 import {useMemberPortal} from '../hooks/useMemberPortal';
 import AgentSchedulesView from './AgentSchedulesView';
@@ -96,6 +98,7 @@ export default function PlatformWorkspace() {
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
   const [isNewProjectModalOpen, setIsNewProjectModalOpen] = useState(false);
   const [selectedGovProgram, setSelectedGovProgram] = useState(null);
+  const [selectedCuration, setSelectedCuration] = useState(null);
   const [addTemplateLevel, setAddTemplateLevel] = useState('BLANK');
   const [isEditorOpen, setIsEditorOpen] = useState(false);
   const [isDetailModalOpen, setIsDetailModalOpen] = useState(false);
@@ -253,6 +256,14 @@ export default function PlatformWorkspace() {
   };
 
   const handleOpenDoc = (doc) => {
+    if(doc.kind==='certification-curation') { navigate('curation',{company:doc.companyId});return; }
+    if (doc.ai?.kind === 'venture-document') {
+      const project = projects.find(p => p.id === doc.ai.projectId && p.companyId === doc.companyId);
+      if (!project) { showToast('연결된 프로젝트를 불러온 뒤 다시 열어 주세요.'); return; }
+      setActiveProject(project);
+      router.push(preparationPath({projectId:project.id,documentId:doc.id,companyId:project.companyId}),{scroll:false});
+      return;
+    }
     setActiveDoc(doc);
     setIsEditorOpen(true);
   };
@@ -452,7 +463,8 @@ export default function PlatformWorkspace() {
 
         {/* Center: The Floating White Canvas Panel (핵심 고급스러움 요소) */}
         <div className="flex-1 flex flex-col min-w-0 overflow-hidden">
-          <div className="platform-workspace-topbar">
+          <div className={`platform-workspace-topbar ${memberPortal.enterprise&&(parsePreparationPath(pathname)?.requestId==='business-plan'||searchParams.get("request")==="business-plan")?"platform-document-topbar":""}`}>
+          {memberPortal.enterprise&&(parsePreparationPath(pathname)?.requestId==='business-plan'||searchParams.get("request")==="business-plan")&&<div id="venture-document-toolbar" className="platform-document-toolbar-slot"/>}
       {/* 1. Google Drive Material 3 Header */}
       <Header
         enterprise={memberPortal.enterprise}
@@ -485,10 +497,10 @@ export default function PlatformWorkspace() {
           <div className="iso-workspace flex-1 flex flex-col overflow-hidden">
 
             {/* Scrollable View Content Canvas */}
-            <div ref={contentRef} className="platform-scroll flex-1 overflow-auto">
+            <div ref={contentRef} className={`platform-scroll flex-1 overflow-auto ${memberPortal.enterprise&&(parsePreparationPath(pathname)||searchParams.get("prepareProject"))?"platform-document-content":""}`}>
               {searchParams.get("intake")==="1"&&<GrowthIntakeHandoff companies={(memberPortal.context?.companies||[]).filter(c=>memberPortal.enterprise||clientCompanies.some(client=>client.id===c.id))} currentCompany={currentCompany}/>}
 
-              {isCloudMode&&user&&(memberPortal.loading||memberPortal.error)?<div className="p-6"><p role={memberPortal.error?'alert':'status'}>{memberPortal.error?'회원 화면을 불러오지 못했습니다. 회사 연결 설정을 확인해 주세요.':'회원·회사 정보를 확인하고 있습니다.'}</p>{memberPortal.error&&<button className="text-blue-700 underline mt-3" onClick={memberPortal.reload}>다시 불러오기</button>}</div>:memberPortal.enterprise?<EnterpriseWorkspace context={memberPortal.context} company={currentCompany} projects={projects} documents={documents} activeNav={activeNav} activeProject={activeProject} onSelectCompany={c=>{selectCompany(c);if(activeNav==='settings')setActiveNav('dashboard');}} onSelectProject={handleSelectProject} onRefresh={async()=>{const uid=accountRef.current;const w=await loadWorkspace();if(accountRef.current===uid){setCompanies(w.companies);setProjects(w.projects);memberPortal.reload();}}} onOpenDocument={handleOpenDoc} onAddDocument={handleAddDocument} onUpdateDocument={handleUpdateDocument} onOpenUpload={()=>setIsAddModalOpen(true)} onOpenDocuments={()=>setActiveNav('drive')}/>:<>
+              {isCloudMode&&user&&(memberPortal.loading||memberPortal.error)?<div className="p-6"><p role={memberPortal.error?'alert':'status'}>{memberPortal.error?'회원 화면을 불러오지 못했습니다. 회사 연결 설정을 확인해 주세요.':'회원·회사 정보를 확인하고 있습니다.'}</p>{memberPortal.error&&<button className="text-blue-700 underline mt-3" onClick={memberPortal.reload}>다시 불러오기</button>}</div>:activeNav==='curation'?<CertificationCuration key={`${accountId}/${currentCompany?.id||'none'}`} company={currentCompany} companies={clientCompanies} onSelectCompany={selectCompany} onPrepare={handoff=>{setSelectedGovProgram(null);setSelectedCuration(handoff);setIsNewProjectModalOpen(true);}}/>:memberPortal.enterprise?<EnterpriseWorkspace context={memberPortal.context} company={currentCompany} projects={projects} documents={documents} activeNav={activeNav} activeProject={activeProject} onSelectCompany={c=>{selectCompany(c);if(activeNav==='settings')setActiveNav('dashboard');}} onSelectProject={handleSelectProject} onProjectsLoaded={(companyId,loaded)=>setProjects(old=>[...old.filter(p=>p.companyId!==companyId),...loaded.map(p=>({...old.find(x=>x.id===p.id),...p}))])} onRefresh={async()=>{const uid=accountRef.current;const w=await loadWorkspace();if(accountRef.current===uid){setCompanies(w.companies);setProjects(w.projects);memberPortal.reload();}}} onOpenDocument={handleOpenDoc} onAddDocument={handleAddDocument} onUpdateDocument={handleUpdateDocument} onOpenUpload={()=>setIsAddModalOpen(true)} onOpenDocuments={()=>setActiveNav('drive')}/>:<>
               {currentCompany&&<div className="managed-context-bar"><strong>현재 거래처 · {currentCompany.name}</strong><button onClick={()=>selectCompany(null)}>전체 거래처로 전환</button></div>}
               {activeNav==='gov_programs'&&currentCompany&&<p className="px-8 text-sm text-slate-500">{currentCompany.name} 작업 중 · 공고는 전체 목록이며 회사 정보에 따른 신청 적합성 판정은 아직 제공되지 않습니다.</p>}
 
@@ -990,9 +1002,11 @@ export default function PlatformWorkspace() {
         onClose={() => {
           setIsNewProjectModalOpen(false);
           setSelectedGovProgram(null);
+          setSelectedCuration(null);
         }}
         onCreateProject={handleCreateProject}
         initialProgram={selectedGovProgram}
+        initialCuration={selectedCuration}
         companies={clientCompanies}
         currentCompany={currentCompany}
       />

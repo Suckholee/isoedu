@@ -1,0 +1,32 @@
+[
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/hx1Ln",
+    "file": "attachment-01.bin",
+    "name": "[Æ÷½ºÅÍ]ÆÇ´Ù¹Ô¾÷ 3È¸.jpg",
+    "bytes": 1522007,
+    "sha256": "124326ffe15ce4aba2f73f228c4b8d02f6a35c82bbe79ae5cf46f0ca9b4cc058",
+    "contentType": "image/jpeg;charset=UTF-8",
+    "verifiedAt": "2026-10-18T00:02:30.467Z",
+    "status": "downloaded",
+    "localPath": "attachment-01.jpg",
+    "format": "JPG",
+    "extractionStatus": "visual-review-needed",
+    "characters": 0,
+    "displayName": "[포스터]판다밋업 3회.jpg"
+  },
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/3x1Ln",
+    "file": "attachment-02.bin",
+    "name": "[Æ÷½ºÅÍ] ÆÇ´Ù¹Ô¾÷ 3È¸.txt",
+    "bytes": 1161,
+    "sha256": "9490d90d713e22bddcad966c6ba33a5cd7808eee85dbd945a8266a84bf43ee3d",
+    "contentType": "application/octet-stream",
+    "verifiedAt": "2026-10-18T00:02:30.533Z",
+    "status": "downloaded",
+    "localPath": "attachment-02.txt",
+    "format": "TXT",
+    "extractionStatus": "text-extracted",
+    "characters": 646,
+    "displayName": "[포스터] 판다밋업 3회.txt"
+  }
+]

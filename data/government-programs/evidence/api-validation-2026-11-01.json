@@ -1,0 +1,43 @@
+{
+  "checkedAt": "2026-11-01T02:30:41.130Z",
+  "status": 200,
+  "records": 107,
+  "analyses": 70,
+  "dates": [
+    {
+      "id": "kstartup-179613",
+      "start": "2026-10-26",
+      "end": "2026-11-06",
+      "deadlineTime": "15:00"
+    },
+    {
+      "id": "kstartup-179628",
+      "start": "2026-10-27",
+      "end": "2026-11-06",
+      "deadlineTime": "14:00"
+    },
+    {
+      "id": "kstartup-179627",
+      "start": "2026-10-27",
+      "end": "2026-11-06",
+      "deadlineTime": "14:00"
+    },
+    {
+      "id": "kstartup-179599",
+      "start": "2026-10-19",
+      "end": "2026-11-06",
+      "deadlineTime": "18:00"
+    },
+    {
+      "id": "kstartup-179606",
+      "start": "2026-10-26",
+      "end": "2026-11-09",
+      "deadlineTime": "13:00"
+    }
+  ],
+  "calendarDateMappingVerified": true,
+  "http": "localhost3001 connection refused",
+  "method": "route.GET direct invocation",
+  "screenVerified": false,
+  "deployed": false
+}

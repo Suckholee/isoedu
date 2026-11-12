@@ -1,0 +1,24 @@
+const text=(v,max=1000)=>typeof v==='string'&&v.length<=max;
+export function validateVisuals(value,{sectionIds,companyId,documentId}={}){
+ if(!Array.isArray(value)||value.length>20)throw Error('시각 자료는 문서당 20개까지 넣을 수 있습니다.');const ids=new Set();
+ return value.map(v=>{
+  if(!v||!text(v.id,80)||!v.id||ids.has(v.id)||!sectionIds.includes(v.sectionId)||!['table','bar','line','diagram','image'].includes(v.type)||!text(v.title,200)||!text(v.caption,1000)||!text(v.source,2000)||!['fact','plan','reference'].includes(v.basis))throw Error('시각 자료의 문항·형식·출처를 확인해 주세요.');ids.add(v.id);
+  const b={id:v.id,sectionId:v.sectionId,type:v.type,title:v.title,caption:v.caption,source:v.source,basis:v.basis};
+  if(v.type==='table'){if(!Array.isArray(v.columns)||v.columns.length<1||v.columns.length>8||v.columns.some(c=>!text(c,100))||!Array.isArray(v.rows)||v.rows.length>30||v.rows.some(r=>!Array.isArray(r)||r.length!==v.columns.length||r.some(c=>!text(c,1000))))throw Error('표는 8열·30행 이내로 작성해 주세요.');return {...b,columns:v.columns,rows:v.rows};}
+  if(['bar','line'].includes(v.type)){if(!text(v.unit,80)||!Array.isArray(v.points)||v.points.length<1||v.points.length>24||v.points.some(p=>!text(p.label,100)||!Number.isFinite(p.value)||Math.abs(p.value)>1e15||!text(p.evidence,1000)||!p.evidence.trim()))throw Error('그래프의 값·단위·각 수치 근거를 확인해 주세요.');return {...b,unit:v.unit,points:v.points.map(p=>({label:p.label,value:p.value,evidence:p.evidence}))};}
+  if(v.type==='diagram'){if(!Array.isArray(v.nodes)||!v.nodes.length||v.nodes.length>12||v.nodes.some(n=>!text(n,200)))throw Error('도식은 12개 단계 이내로 작성해 주세요.');return {...b,nodes:v.nodes};}
+  const prefix=`companies/${companyId}/${documentId}/visuals/`;
+  if(!v.path?.startsWith(prefix)||!/^[-\w]+\.(png|jpg|jpeg|webp)$/.test(v.path.slice(prefix.length)))throw Error('이 문서에 올린 그림만 연결할 수 있습니다.');return {...b,path:v.path};
+ });
+}
+const escape=v=>String(v??'').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
+export function visualSvg(v){
+ const width=800,height=v.type==='diagram'?Math.max(200,Math.ceil(v.nodes.length/3)*150+40):430;
+ let parts=`<rect width="${width}" height="${height}" fill="white"/><text x="36" y="32" font-size="19" font-weight="700">${escape(v.title)}</text>`;
+ if(v.type==='diagram'){v.nodes.forEach((n,i)=>{const x=30+(i%3)*260,y=65+Math.floor(i/3)*150;parts+=`<rect x="${x}" y="${y}" width="220" height="90" rx="12" fill="#e9f3ef" stroke="#257259"/>`;const chunks=n.match(/.{1,16}/gu)||[];chunks.slice(0,3).forEach((t,j)=>parts+=`<text x="${x+110}" y="${y+28+j*21}" text-anchor="middle" font-size="14">${escape(t)}</text>`);if(i<v.nodes.length-1)parts+=`<text x="${x+230}" y="${y+53}" font-size="22">${i%3===2?'↓':'→'}</text>`;});}
+ else {const values=v.points.map(p=>p.value),low=Math.min(0,...values),high=Math.max(0,...values),span=high-low||1,plotY=n=>340-(n-low)/span*260,step=700/v.points.length,zero=plotY(0);parts+=`<line x1="55" y1="${zero}" x2="760" y2="${zero}" stroke="#536578"/><text x="760" y="56" text-anchor="end" font-size="12">단위: ${escape(v.unit)}</text>`;
+  if(v.type==='line')parts+=`<polyline fill="none" stroke="#176b52" stroke-width="3" points="${v.points.map((p,i)=>`${55+step*(i+.5)},${plotY(p.value)}`).join(' ')}"/>`;
+  v.points.forEach((p,i)=>{const x=55+step*(i+.5),y=plotY(p.value);parts+=v.type==='bar'?`<rect x="${x-step*.3}" y="${Math.min(y,zero)}" width="${step*.6}" height="${Math.max(1,Math.abs(y-zero))}" fill="#24765d"/>`:`<circle cx="${x}" cy="${y}" r="5" fill="#24765d"/>`;parts+=`<text x="${x}" y="${y-9}" text-anchor="middle" font-size="12">${p.value}</text><text x="${x}" y="365" text-anchor="middle" font-size="11">${escape(p.label.slice(0,12))}</text>`;});}
+ return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" font-family="Arial, sans-serif" fill="#203b35">${parts}</svg>`;
+}
+export function visualsHtml(visuals,images={}){return visuals.map(v=>`<div style="margin:18px 0;page-break-inside:avoid"><h3>${escape(v.title)} · ${({fact:'실적·확인값',plan:'계획안',reference:'참고 도식'})[v.basis]}</h3>${v.type==='table'?`<table style="width:100%;border-collapse:collapse" border="1"><tr>${v.columns.map(c=>`<th>${escape(c)}</th>`).join('')}</tr>${v.rows.map(r=>`<tr>${r.map(c=>`<td>${escape(c)}</td>`).join('')}</tr>`).join('')}</table>`:images[v.id]?`<img alt="${escape(v.title)}" src="${images[v.id]}" style="max-width:100%;width:640px;"/>`:`<p>[시각 자료 이미지 준비 필요]</p>`}<p>${escape(v.caption)}</p><p>출처: ${escape(v.source)}</p>${v.type==='diagram'?`<ol>${v.nodes.map(n=>`<li>${escape(n)}</li>`).join('')}</ol>`:''}${['bar','line'].includes(v.type)?`<table border="1"><tr><th>항목</th><th>값 (${escape(v.unit)})</th><th>수치 근거</th></tr>${v.points.map(p=>`<tr><td>${escape(p.label)}</td><td>${p.value}</td><td>${escape(p.evidence)}</td></tr>`).join('')}</table>`:''}</div>`).join('');}

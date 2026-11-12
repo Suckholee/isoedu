@@ -1,0 +1,38 @@
+{
+  "version": "venture-growth-2026-11-05-v1",
+  "retrievedAt": "2026-11-05T03:39:47.968715+00:00",
+  "sources": [
+    {
+      "id": "guidebook-2026",
+      "file": "guidebook-2026.pdf",
+      "url": "https://www.smes.go.kr/venturein/board/viewArchBoard?menuId=4080000&bbsSn=5861",
+      "downloadUrl": "https://www.smes.go.kr/venturein/file/download/1336627/2?originYn=Y",
+      "publishedAt": "2026-04-06",
+      "pages": 44,
+      "relevantPages": {
+        "requirements": "PDF 17~18쪽 / 인쇄 27~28쪽 (펼침면에서 유형 구분)",
+        "outline": "PDF 21쪽 / 인쇄 34~35쪽"
+      },
+      "extraction": "embedded text; requirements and outline visually checked",
+      "sha256": "3b1fde4cd8ba5f908e5b68b3f2f64bd79cf67a0510e48076e83a3026af2480a0"
+    },
+    {
+      "id": "growth-guideline",
+      "file": "growth-guideline.pdf",
+      "url": "https://www.smes.go.kr/venturein/institution/requireGuide?rgCd=C",
+      "pages": 19,
+      "relevantPages": {
+        "narrative": "2~16",
+        "requirements": "17~19"
+      },
+      "extraction": "Apple Vision ko-KR OCR; requirements visually checked",
+      "publishedAt": null,
+      "sha256": "0547ce08382195615d561f236c13284c94f9fc527c6481e5df5bb0a2709e85d0"
+    }
+  ],
+  "limitations": [
+    "공개 자료 기준. 로그인 후 공식 신청 화면의 입력 제한·추가 요구는 제출 시 재확인.",
+    "2026 가이드북은 펼침면: PDF17쪽 왼쪽 제출서류는 연구개발유형이며 혁신성장유형은 PDF18쪽 왼쪽이다.",
+    "이노비즈확인서는 현재 공개 구비서류 목록에 기재되지만 2026 가이드북 추가목록에는 없음. 해당 시 기관 확인."
+  ]
+}

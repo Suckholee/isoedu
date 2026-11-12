@@ -1,0 +1,56 @@
+[
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/PT1Ln",
+    "verifiedAt": "2026-10-20",
+    "status": "downloaded",
+    "sha256": "b3ad07f24bbb7fb8a20cf1f211e8fe0bec21c37215321ddc38a7f14e20e3cdc5",
+    "previousHash": "b3ad07f24bbb7fb8a20cf1f211e8fe0bec21c37215321ddc38a7f14e20e3cdc5",
+    "changed": false,
+    "bytes": 187904,
+    "format": "HWP",
+    "file": "attachment-01.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 5929
+  },
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/rT1Ln",
+    "verifiedAt": "2026-10-20",
+    "status": "downloaded",
+    "sha256": "e21ad1161fe4eff226ac6d73ef349e585fede2db4d73aae5093e5c3a52e1fb0e",
+    "previousHash": "e21ad1161fe4eff226ac6d73ef349e585fede2db4d73aae5093e5c3a52e1fb0e",
+    "changed": false,
+    "bytes": 825089,
+    "format": "PDF",
+    "file": "attachment-02.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 5941
+  },
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/sT1Ln",
+    "verifiedAt": "2026-10-20",
+    "status": "downloaded",
+    "sha256": "4091bb5a9c7d9eb8f8a1a329ef7f88ea08d4de493d317a22d640d7530d20c069",
+    "previousHash": "4091bb5a9c7d9eb8f8a1a329ef7f88ea08d4de493d317a22d640d7530d20c069",
+    "changed": false,
+    "bytes": 819198,
+    "format": "IMAGE",
+    "file": "attachment-03.bin",
+    "contentType": "image/jpeg;charset=UTF-8"
+  },
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/Tp1Ln",
+    "verifiedAt": "2026-10-20",
+    "status": "downloaded",
+    "sha256": "e0cd7dc188e3fa5005db8ba702279806b8c59dac3fda8ba88bd063a0184d502d",
+    "previousHash": "e0cd7dc188e3fa5005db8ba702279806b8c59dac3fda8ba88bd063a0184d502d",
+    "changed": false,
+    "bytes": 34838,
+    "format": "HWPX",
+    "file": "attachment-04.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 478
+  }
+]

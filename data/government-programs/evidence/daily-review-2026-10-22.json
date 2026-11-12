@@ -1,0 +1,170 @@
+{
+  "at": "2026-10-22T00:39:16.812604+00:00",
+  "stage": "daily-attachment-analysis",
+  "status": "partial-success",
+  "scope": {
+    "listing": "K-Startup첫페이지15건성공·중기부첫페이지타임아웃(기존보존)",
+    "newRecords": 15,
+    "retainedRecords": 51,
+    "detailPages": 51,
+    "analysedThisRun": [
+      "kstartup-179506",
+      "kstartup-179574",
+      "kstartup-179581",
+      "kstartup-179564",
+      "kstartup-179568"
+    ],
+    "completeThisRun": [
+      "kstartup-179574",
+      "kstartup-179564"
+    ],
+    "partialThisRun": [
+      "kstartup-179506",
+      "kstartup-179581",
+      "kstartup-179568"
+    ],
+    "recheckedExisting": [
+      "kstartup-179504",
+      "kstartup-179516",
+      "kstartup-179519"
+    ],
+    "downloadOnlyPendingAnalysis": [
+      "kstartup-179572",
+      "kstartup-179557",
+      "kstartup-179536",
+      "kstartup-179520",
+      "kstartup-179543"
+    ],
+    "downloadedAttachments": 26,
+    "failedAttachments": 0,
+    "priorHashesCompared": 5,
+    "contentChanged": 0,
+    "queue": {
+      "partial": 20,
+      "complete": 2,
+      "pending": 29
+    },
+    "remaining": 49,
+    "supplementalSources": [
+      {
+        "source": "tour-form",
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSeLjYWGHyKBDBANFdi2jWQmrwrQSyMgbCfwQSJlOJZYiW69Cw/viewform",
+        "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeLjYWGHyKBDBANFdi2jWQmrwrQSyMgbCfwQSJlOJZYiW69Cw/viewform",
+        "http": 200,
+        "bytes": 111171,
+        "scope": "공개 페이지 접근만; 상세 전건 수집 아님"
+      },
+      {
+        "source": "clima-form",
+        "url": "https://linktr.ee/2026climaday",
+        "finalUrl": "https://linktr.ee/2026climaday",
+        "http": 200,
+        "bytes": 215543,
+        "scope": "공개 페이지 접근만; 상세 전건 수집 아님"
+      },
+      {
+        "source": "ddm-a",
+        "url": "https://forms.gle/gvJUEPgekFM7VuLM6",
+        "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSf2LQOF9k-tjhjDNnFbrD_hDeOWkEZt1PGEYr2mc5LwWnFpcg/viewform?usp=send_form",
+        "http": 200,
+        "bytes": 112129,
+        "scope": "공개 페이지 접근만; 상세 전건 수집 아님"
+      },
+      {
+        "source": "ddm-b",
+        "url": "https://forms.gle/yacZTqyQgaJ5HjK98",
+        "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSf2LQOF9k-tjhjDNnFbrD_hDeOWkEZt1PGEYr2mc5LwWnFpcg/viewform?usp=send_form",
+        "http": 200,
+        "bytes": 112350,
+        "scope": "공개 페이지 접근만; 상세 전건 수집 아님"
+      },
+      {
+        "source": "biig-form",
+        "url": "https://forms.gle/4A2jzZVS8YFTXq7a7",
+        "error": "HTTP Error 401: Unauthorized"
+      },
+      {
+        "source": "bizinfo",
+        "url": "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/list.do",
+        "finalUrl": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200View.do?null",
+        "http": 200,
+        "bytes": 111360,
+        "scope": "공개 페이지 접근만; 상세 전건 수집 아님"
+      },
+      {
+        "source": "iris",
+        "url": "https://www.iris.go.kr/contents/retrieveBsnsAncmBtinSituListView.do",
+        "finalUrl": "https://www.iris.go.kr/contents/retrieveBsnsAncmBtinSituListView.do",
+        "http": 200,
+        "bytes": 111921,
+        "scope": "공개 페이지 접근만; 상세 전건 수집 아님"
+      },
+      {
+        "source": "kotra",
+        "url": "https://kotra.or.kr/subList/20000020753",
+        "finalUrl": "https://kotra.or.kr/subList/20000020753",
+        "http": 200,
+        "bytes": 152169,
+        "scope": "공개 페이지 접근만; 상세 전건 수집 아님"
+      }
+    ]
+  },
+  "importantFindings": [
+    "빅웨이브IRHWP원본제출필수이나첨부PDF만:원본양식필요",
+    "클리마상세10:30~12:30/포스터10:30~17/링크트리10~17차이;OI/IR신청마감표시와일반참가분리",
+    "DDM두폼URL동일확인·전체8문항확인으로충돌해소"
+  ],
+  "failures": [
+    "중기부목록타임아웃,기존공고삭제/마감안함",
+    "빅웨이브신청폼401,제한우회안함",
+    "일부상세첨부0응답:기존분석·근거유지",
+    "1회자동승인검토시간초과후실제수집재실행성공",
+    "로컬HTTP3000연결실패,직접route검증으로구분"
+  ],
+  "apiValidation": {
+    "at": "2026-10-22T00:37:34.798Z",
+    "status": 200,
+    "total": 51,
+    "analyses": 22,
+    "checked": [
+      {
+        "id": "kstartup-179506",
+        "date": "2026-10-27",
+        "time": "17:00",
+        "review": "partial"
+      },
+      {
+        "id": "kstartup-179574",
+        "date": "2026-10-27",
+        "time": "15:00",
+        "review": "complete"
+      },
+      {
+        "id": "kstartup-179581",
+        "date": "2026-10-28",
+        "time": "15:00",
+        "review": "partial"
+      },
+      {
+        "id": "kstartup-179564",
+        "date": "2026-10-29",
+        "time": "15:00",
+        "review": "complete"
+      },
+      {
+        "id": "kstartup-179568",
+        "date": "2026-10-29",
+        "time": "16:00",
+        "review": "partial"
+      }
+    ],
+    "validation": "route.GET직접호출·화면미검증",
+    "localHttp": {
+      "error": "fetch failed"
+    }
+  },
+  "companyMatching": "권한회사프로필미확보:판정안함",
+  "screenValidation": "미검증",
+  "deployment": "없음",
+  "schemaChanges": "없음"
+}

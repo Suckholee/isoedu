@@ -1,0 +1,58 @@
+[
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/v1SIKibRphOPvYK_Xj0oWtpvJSYHAbZq2hUK0RDdT585r4aw",
+    "verifiedAt": "2026-11-09",
+    "status": "downloaded",
+    "sha256": "25aab877125a7a0deab9acd651898e20a6243d4c58f097484049b0b4c04a7da7",
+    "previousHash": "25aab877125a7a0deab9acd651898e20a6243d4c58f097484049b0b4c04a7da7",
+    "changed": false,
+    "bytes": 64000,
+    "format": "HWP",
+    "file": "attachment-01.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 2990
+  },
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/v1FbXkw2Lh1K_aUNOjwguVOrDncJlTKnaCvnQPcnlSnFHSxA",
+    "verifiedAt": "2026-11-09",
+    "status": "downloaded",
+    "sha256": "1b902d66873700d1d568df9bbcce45627c06ee5d6117d5fcd3ad6b638e0ebbdb",
+    "previousHash": "1b902d66873700d1d568df9bbcce45627c06ee5d6117d5fcd3ad6b638e0ebbdb",
+    "changed": false,
+    "bytes": 83456,
+    "format": "HWP",
+    "file": "attachment-02.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 5294
+  },
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/v1r2ze_AfcOgdpnsNniTJ5SpVa44wDEEM05BRB5QiqIQXEUA",
+    "verifiedAt": "2026-11-09",
+    "status": "downloaded",
+    "sha256": "2621bc741527586e90ead42a8c3c70e671464f527c638bbe9d64d6784d0bf880",
+    "previousHash": "2621bc741527586e90ead42a8c3c70e671464f527c638bbe9d64d6784d0bf880",
+    "changed": false,
+    "bytes": 38468,
+    "format": "PDF",
+    "file": "attachment-03.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 1975
+  },
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/v1kSHQqMEp4FJ2BLnJFgd4ycEB2VMDtBjnSvbCJM_c-EpMBQ",
+    "verifiedAt": "2026-11-09",
+    "status": "downloaded",
+    "sha256": "6bf630feb5861be315f4c2a56e84387bee1fc3444309746375f4fd0a765c72bd",
+    "previousHash": "6bf630feb5861be315f4c2a56e84387bee1fc3444309746375f4fd0a765c72bd",
+    "changed": false,
+    "bytes": 422143,
+    "format": "PDF",
+    "file": "attachment-04.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 56
+  }
+]

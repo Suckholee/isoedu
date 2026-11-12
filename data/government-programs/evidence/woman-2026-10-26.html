@@ -1,0 +1,5809 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+<html lang="ko">
+
+<head>
+
+<meta charset="UTF-8" >
+<meta name="robots" content="all" />
+
+<!-- <meta name="viewport" content="initial-scale=1.0, width=device-width" /> -->
+<script>
+if(sessionStorage.getItem('view_mode') != "pc"){
+	var meta = document.createElement('meta');
+
+	meta.name = 'viewport';
+	meta.content = "width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, minimal-ui";
+
+	document.getElementsByTagName('head')[0].appendChild(meta);
+}
+</script>
+
+<!-- 콘텐츠 마크업 -->
+
+<meta name="naver-site-verification" content="fe50591453d2f632aa9ba11f1df562f693a1f0b9">
+<meta name="google-site-verification" content="5FRU8XS1O1WYNz9xoZcUN8Q2rp5AfUdjc3LaLVLksX4">
+<meta name="keywords" content="동부여성발전센터,여성취업,여성재취업,여성창업">
+<meta name="description" content="취·창업 직업훈련교육프로그램 운영, 구인 구직 및 취업상담 제공, 여성 창업 지원.">
+<meta name="author" content="동부여성발전센터">
+
+<link rel="canonical" href="https://dongbu.seoulcareerup.or.kr/dongbu/main/main.do">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="동부여성발전센터">
+<meta property="og:title" content="동부여성발전센터">
+<meta property="og:description" content="취·창업 직업훈련교육프로그램 운영, 구인 구직 및 취업상담 제공, 여성 창업 지원.">
+<meta property="og:url" content="https://dongbu.seoulcareerup.or.kr/dongbu/main/main.do">
+
+<meta name="twitter:image" content="https://dongbu.seoulcareerup.or.kr/common/images/meta/logo_dongbu.png" />
+<meta name="twitter:title" content="[모집]서울특별시동부여성발전..." />
+<meta name="twitter:description" content="신규모집1.png image.png image.png ..." />
+<meta name="twitter:card" content="summary" />
+<meta property="og:image" content="https://dongbu.seoulcareerup.or.kr/common/images/meta/logo_dongbu.png?v=20261013_1" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="[모집]서울특별시동부여성발전..." />
+<meta property="og:description" content="신규모집1.png image.png image.png ..." />
+<meta property="og:site_name" content="동부여성발전센터" />
+
+<title>동부여성발전센터</title>
+<!-- 카카오스토리js -->
+<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+
+<!-- cardnew js, css  -->
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<!-- end  -->
+
+
+
+
+
+<script src="//wcs.naver.net/wcslog.js"></script>
+
+
+<link rel="stylesheet" href="/common/css/womanup/swiper.min.css"/>
+<link rel="stylesheet" href="/common/css/womanup/publish_default_wm.css?lud=20261021_v2"/>
+<link rel="stylesheet" type="text/css" href="/common/css/womanup/slick.css"/>
+<link rel="stylesheet" type="text/css" href="/common/css/womanup/slick-theme.css"/>
+
+
+
+
+<link rel="shortcut icon" type="image/x-icon" href="/common/images/wrd/wonmanup.ico">
+<link rel="stylesheet" href="/common/css/gen/publish_common_g_new.css?lud=20261021_v2"/> 
+
+<link rel="stylesheet" href="/common/css/womanup/publish_sub_womanup.css?lud=20261021_v2"/>
+<link rel="stylesheet" href="/common/css/gen/publish_sub.css?lud=20261021_v2"/>
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+    // [개발,인력] 네이버 analytics
+    var naver_analytics_id = '';
+
+    if ('dongbu' == 'nambu') { // 남부
+        naver_analytics_id = 'a06657de20e378';
+    } else if ('dongbu' == 'dongbu') { // 동부
+        naver_analytics_id = '83fa62b6377a20';
+    } else if ('dongbu' == 'bukbu') { // 북부
+        naver_analytics_id = '240e075723f100';
+    } else if ('dongbu' == 'seobu') { // 서부
+        naver_analytics_id = '10052b33eecfcf8';
+    } else if ('dongbu' == 'jungbu') { // 중부
+        naver_analytics_id = 'e0593f74893364';
+    } else if ('dongbu' == 'gd') { // 강동
+        naver_analytics_id = '4d4b29a340731c';
+    } else if ('dongbu' == 'dongjak') { // 동작
+        naver_analytics_id = '1359d1ee74be220';
+    } else if ('dongbu' == 'seocho') { // 서초
+        naver_analytics_id = '92305d4bdeeafc';
+    } else if ('dongbu' == 'sd') { // 성동
+        naver_analytics_id = '11cbea8668ecd68';
+    } else if ('dongbu' == 'songpa') { // 송파
+        naver_analytics_id = '7a212318484f0';
+    } else if ('dongbu' == 'yongsan') { // 용산
+        naver_analytics_id = '523d75b60b9bfc';
+    } else if ('dongbu' == 'wsbt') { // 장애
+        naver_analytics_id = 'b944ce610e5938';
+    } else if ('dongbu' == 'jungnang') { // 중랑
+        naver_analytics_id = '15d80cc5090c6c';
+    } else if ('dongbu' == 'gangbuk') { // 강북
+        naver_analytics_id = '2828d4479cbad4';
+    } else if ('dongbu' == 'gangseo') { // 강서
+        naver_analytics_id = '282906f4b11814';
+    } else if ('dongbu' == 'gwanak') { // 관악
+        naver_analytics_id = '28292641e07a90';
+    } else if ('dongbu' == 'guro') { // 구로
+        naver_analytics_id = 'fefde6775fade0';
+    } else if ('dongbu' == 'ydp') { // 영등포
+        naver_analytics_id = 'fefe536eeda8e0';
+    } else if ('dongbu' == 'nowon') { // 노원
+        naver_analytics_id = '2829575e643198';
+    } else if ('dongbu' == 'ddm') { // 동대문
+        naver_analytics_id = '28297309ff4e14';
+    } else if ('dongbu' == 'sdm') { // 서대문
+        naver_analytics_id = '282992058e46e0';
+    } else if ('dongbu' == 'ep') { // 은평
+        naver_analytics_id = '197fd7b54255e0';
+    } else if ('dongbu' == 'jongno') { // 종로
+        naver_analytics_id = 'fefe83da006b30';
+    }
+
+    if (!wcs_add) var wcs_add = {};
+    wcs_add["wa"] = naver_analytics_id;
+    wcs_do();
+
+</script>
+
+
+
+<link rel="stylesheet" href="/common/js/jquery-ui/css/jquery-ui.min.css"/>
+<script src="/common/js/womanup/jquery-1.11.3.min.js"></script>
+<script src="/common/js/womanup/jquery-ui.min.js"></script>
+<script src="/common/js/womanup/swiper.min.js"></script>
+<script src="/common/js/womanup/slick.min.js"></script>
+<script src="/common/js/womanup/publish.js?lud=20261021_v2"></script>
+<script src="/common/js/common.js?lud=20250331_v1"></script>
+<script src="/common/js/jquery/jquery.cookie.js"></script>
+<script src="/common/js/jquery/jquery.rwdImageMaps.min.js"></script>
+<script src="/common/js/underscore-1.9.1.min.js"></script>
+
+
+
+
+<script type="text/javascript">
+	Kakao.init('e98ab6daef51beac98d06ed629d75e9f');
+	//<![CDATA[
+	$('document').ready(
+		function(){
+			
+			$('.your-class').slick({
+				autoplay: true,
+				autoplaySpeed: 3500,
+			});
+			 
+			$('.view_content').find('img').each(function(){
+			    $(this).css("max-width", "100%");
+
+			    if (!$(this).css("height") || $(this).css("height") === "0px") {
+			        $(this).css("height", "auto");
+			    }
+			});
+			
+			$('.view_content').find('img').on('click', function(){
+				windowW=window.innerWidth;
+				if (windowW<=1000){
+					simpleLightbox($(this).attr('src'));
+				}
+			});
+		}
+	);
+	
+	var aviOriWidth, aviOriHeight;
+	aviOriWidth = $(".con_movie iframe").width();
+	aviOriHeight = $(".con_movie iframe").height();
+	
+	function avi_setting(){
+		windowW=window.innerWidth;
+		//console.log("innerWidth : "+windowW);
+		$('.con_movie').find('iframe').each(
+		function() {
+			console.log("aviOriWidth"+aviOriWidth);
+			console.log("aviOriHeight"+aviOriHeight);
+			if(windowW<=$width){
+				if( $(this).attr("width") > 0 ){
+					$(this).removeAttr("width");
+				}
+				
+				if( $(this).attr("height") > 0 ){
+					//$(this).removeAttr("height");
+				}
+				
+				$(this).css("width", "100%");
+			} else{
+				$(this).css("max-width", "");
+				$(this).width(aviOriWidth);
+				$(this).height(aviOriHeight);
+			}		
+		});
+	}
+	
+	// 댓글 목록
+	function fnGoList(){
+		var list_url = '/dongbu/common/bbs/selectPageListBBS.do?bbs_code=B0454';
+		
+		$("#aform").attr({
+			action:list_url
+			, method:'get'
+		}).submit();			
+	}
+	
+	//메인 글 삭제
+	function fnDelete(){
+		
+		if(confirm("삭제하시겠습니까?")){
+			$("#aform").attr({action:"/dongbu/common/bbs/deleteBbs.do", method:'post'}).submit();		
+		}
+	}
+	
+	// 첨부파일 다운로드
+	function fnDownload(file_id){
+		$('[name=file_id]').val(file_id);
+		$('#aform').attr({ 'action' : '/common/file/FileDown.do' }).submit();
+	}		
+	
+	// 상세조회
+	function fnSelect(bbs_seq, open_yn){
+		
+		
+		var  url = "/dongbu/common/bbs/selectBBS.do";
+		
+		// 공개/비공개 Check :비공개인경우
+		if( open_yn == 'N'){
+			var param = { "bbs_seq" : bbs_seq,
+							"bbs_code" : 'B0454'
+						};
+			
+			$.ajax({
+				type : 'POST',
+				dataType : 'json',
+				url : '/dongbu/common/bbs/checkOpenYnAjax.do',
+				data : param,
+				success : function(param){
+					if(param.resultStats.resultCode == 'error'){
+						alert(param.resultStats.resultMsg);
+						return false;
+					} else{
+						
+						var matchYN = param.resultStats.matchYN;
+						
+						if(matchYN == "Y"){
+							
+							$('#bbs_seq').val(bbs_seq);
+							
+							if( $("#bbs_type").val() == 'qna') {
+								url = "/dongbu/common/bbs/selectQnaBbs.do";
+							}
+							
+							$('#aform').attr({ 
+								action : url 
+								, method:'get'
+							}).submit();
+							
+							return false;
+						} else {
+							alert("이 글은 비공개 글입니다.");
+							return false;
+						}
+					}
+				},
+				error : function(jqXHR, textStatus, thrownError){
+					ajaxJsonErrorAlert(jqXHR, textStatus, thrownError)
+					return false;
+				}
+				
+			});
+		} else {
+			$('#bbs_seq').val(bbs_seq);
+			
+			if( $("#bbs_type").val() == 'qna') {
+				url = "/dongbu/common/bbs/selectQnaBbs.do";
+			}
+			
+			$('#aform').attr({ 
+				action : url
+				, method:'post'
+			}).submit();
+		}
+	}
+		
+	avi_setting();
+	$(window).resize(function(){ avi_setting(); });
+	function simpleLightbox(imageUrl, bgColor, maxWidth){
+		if(typeof bgColor === 'undefined'){
+			bgColor = '#000';
+		}
+		if(typeof maxWidth === 'undefined'){
+			maxWidth = '1100px';
+		}
+		window.open('', 'simpleLightbox').document.write(
+				'<html lang="ko">'
+				+ '<head>'
+				+ '<meta name="viewport" content="user-scalable=yes, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0, width=device-width" />'
+				+ '</head>'
+				+ '<body style="margin:0;'+bgColor+';height:100%;" onclick="javascript:window.close(\'simpleLightbox\');">'
+				+ '<table border="0" width="100%" height="100%">'
+				+ '<caption>이미지</caption>'
+				+ '<tr>'
+				+ '<td valign="middle" align="center">'
+				+ '<img style="position:relative;z-index:2;width:100%;max-width:'+maxWidth+';" src="'+imageUrl+'"/>'
+				+ '</td></tr></table></body></html>'
+		);
+	}
+	
+	// updateForm 이동
+	function fnGoUpdateForm(){
+		$("#aform").attr({action:"/dongbu/common/bbs/updateFormBbs.do", method:'post'}).submit(); 
+	}
+	
+	// 댓글 등록
+	function fnAnswerInsert(){
+		var ss_id = "";
+		
+		if(ss_id == '' || ss_id == null ){
+			alert("로그인하셔야 합니다.");
+			return false;
+		}
+		if($("[name=cn]").val() == ""){
+			alert("내용 입력해 주세요.");
+			$("[name=cn]").focus();
+			return;
+		}
+		
+		if(confirm("등록하시겠습니까?")){
+			
+			$("#aform").attr({
+				action:"/dongbu/common/bbs/insertBbsAnswer.do"
+				, method:'post'
+			}).submit();
+		}
+	}
+	
+	//댓글 수정폼
+	function fnUpdateFormAnswer(val,seq,obj){
+		
+		var txtAreaHtml = "";
+	
+		if(val == 'N'){
+			$('.comment li').removeClass('active');
+			$(".txtArea").empty();
+		}else{
+			
+			$(".txtArea").empty();
+			
+			var req = {
+					answer_seq : seq
+			};
+			
+			jQuery.ajax( {
+				type : 'POST',
+				dataType : 'json',
+				url : '/dongbu/common/bbs/selectBbsAnswerAjax.do',
+				data : req,
+				success : function(param) {
+					if(param.resultStats.resultCode == "error"){
+						alert(param.resultStats.resultMsg);
+						return;
+					}
+					
+					var matchYN = param.resultStats.matchYN;
+					if(matchYN == "Y"){
+						txtAreaHtml += '<label class="textarea" for="update_cn" ><textarea name="update_cn" id="update_cn" placeholder="작성란에 글을 작성해주시기 바랍니다." >' + param.resultMap.CN + '</textarea></label>';
+						txtAreaHtml += '<div class="c_btn">';
+						txtAreaHtml += '	<button type="button" onclick="fnUpdateFormAnswer(\'N\','+ param.resultMap.ANSWER_SEQ +',this); return false;">수정취소</button>';
+						txtAreaHtml += '	<button type="button" onclick="fnAnswerUpdate('+ param.resultMap.ANSWER_SEQ +'); return false;">수정</button>';
+						txtAreaHtml += '</div>';
+						
+						$(obj).parents('li').addClass('active').siblings().removeClass('active');
+						$(obj).parents('li').find('.txtArea').html(txtAreaHtml);
+					} else {
+						alert(param.resultStats.resultMsg);
+						return false;
+					}
+				},
+				error : function(jqXHR, textStatus, thrownError){
+					ajaxJsonErrorAlert(jqXHR, textStatus, thrownError)
+				}
+			});
+			
+			$("[name=cancel_"+seq+"]").show();
+			$("#txtArea_"+seq).show();
+			$("[name=area_"+seq+"]").hide();
+			
+		}
+	}
+	
+	//댓글 글 수정
+	function fnAnswerUpdate(answerSeq){
+		if(confirm("수정하시겠습니까?")){
+			$("[name=answer_seq]").val(answerSeq);
+			$("#aform").attr({action:"/dongbu/common/bbs/updateBbsAnswer.do", method:'post'}).submit();
+		}
+	}
+	
+	//댓글 글 삭제
+	function fnAnswerDelete(answerSeq){
+		if(confirm("삭제하시겠습니까?")){
+			$("[name=answer_seq]").val(answerSeq);
+			$("#aform").attr({action:"/dongbu/common/bbs/deleteBbsAnswer.do", method:'post'}).submit();		
+		}			
+	}
+	
+	//댓글 페이지이동
+	function fnAnswerGoPage(answer_currentPage){
+		$("#answer_currentPage").val(answer_currentPage);
+		
+		$("#aform").attr({
+			action:"/dongbu/common/bbs/selectBBS.do"
+			, method:'get'
+		}).submit();
+	}
+	
+	
+	//]]>
+	</script>
+	<style>
+	.slick-slide img {
+		    display: block;
+		    margin: 0 auto;
+	}
+	.slick-prev, .slick-next {
+	    color: white;
+	}
+	.slick-prev:before, .slick-next:before {
+	    color: #444444;
+	    font-size: 40px;
+	}
+	</style>
+</head>
+
+<body>
+		<div class="skipNavi">
+	<h3>바로 넘어가기 메뉴</h3>
+	<a href="#sub">본문 바로가기</a>
+	<a href="#nav_head">주메뉴 바로가기</a>
+</div>
+	<div id="wrapper">
+		
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="https://www.seoul.go.kr/seoulgnb/gnb.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-331ZZ7TT8W"></script>
+<script>
+	$(document).ready(function () {
+		$(".btn_close").click(function () {
+			var type_code = "";
+			var subPath = "dongbu";
+
+			if (type_code == "G") {
+				if (subPath == "womanup") {
+					$(".layer_interview_request_list_womanup").css("display", "none");
+				} else {
+					$(".layer_interview_request_list").css("display", "none");
+				}
+			} else if (type_code == "O") {
+				if (subPath == "womanup") {
+					$(".layer_heart_pf_list_womanup").css("display", "none");
+				} else {
+					$(".layer_heart_pf_list").css("display", "none");
+				}
+			}
+		});
+	});
+	
+    $(function () {
+        if ("공지사항" == "메인" || "공지사항" == "") {
+            $(document).attr("title", "동부여성발전센터");
+        } else {
+            $(document).attr("title", "공지사항 | 동부여성발전센터");
+        }
+
+        //3depth 메뉴 링크 비활성화
+        if ($('.nav_m li.has>ul').length) {
+            $('.nav_m li.has>a').click(function (e) {
+                e.preventDefault();
+            });
+        }
+
+        Yjs.Gnb.init('P021', 'seoul-common-gnb');
+
+        $('[name=tot_search_text]').keyup(function (e) {
+            if (e.keyCode == 13) {
+                fnTotSearch();
+            }
+        });
+
+    });
+
+    // start : Google Analytics
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-331ZZ7TT8W');
+    // end : Google Analytics
+
+    // GNB 미 사용으로 주석 처리
+    $(window).resize(function () {
+        Yjs.Gnb.init('C004', 'seoul-common-gnb');
+    });
+ 	// end : Google Analytics
+
+
+    function fnTotSearch(text) {
+
+        var tot_search_text = "";
+
+        if (text != null && text != "") {
+            tot_search_text = encodeURI(encodeURIComponent(text));
+        } else {
+            tot_search_text = encodeURI(encodeURIComponent($("[name=tot_search_text]").val()));
+        }
+
+        if (tot_search_text.replaceAll(' ', '') == "") {
+            alert("검색어를 입력해 주세요.");
+            $("[name=tot_search_text]").focus();
+            return;
+        }
+
+
+        
+
+        // 발전/개발 센터
+        var query = "tot_search_text=" + tot_search_text + "&organ_code=06";
+        
+        var param = {"tot_search_text": text};
+
+        $.ajax({
+            type: 'POST',
+            dataType: 'json',
+            url: '/common/updteTotSearchCntAjax.do',
+            data: param,
+            success: function (param) {
+
+                if (param.resultStats.resultCode == 'error') {
+                    alert(param.resultStats.resultMsg);
+                    return false;
+                }
+            },
+            error: function (jqXHR, textStatus, thrownError) {
+                ajaxJsonErrorAlert(jqXHR, textStatus, thrownError)
+                return false;
+            }
+        });
+
+        
+        // 발전
+        document.location.href = "/dongbu/common/totGenSearch.do?" + query;
+        
+
+    }
+    
+function fnGoWomanupProject(url){
+
+	let popup = window.open('about:blank');
+	
+	$.ajax({
+		type: "POST",
+		dataType: 'json',
+		url: "/common/sendEncodingDataAjaxa.do",
+		data: {
+		},
+		async: false,
+		success: function (data) {
+			if(data.ID == null){
+				popup.location.href = url;
+            }
+			else{
+				//const url = "https://swup.seoulwomanup.or.kr/swm/internship/main.do";
+				const token = data.encodingSeedEncrypt;
+				//const token = JSON.stringify(data.encodingSeedEncrypt);
+				popup.location.href = url + "?token=" + token;
+			}
+		},
+		error: function (result) {
+			alert("데이터 전송에 실패하였습니다.");
+		}
+	});
+}    
+
+function fnSend(url, isCop){	
+
+		let now = new Date();
+		
+		const d_day = isCop==true? new Date('2023-04-24 09:00:00.000') : new Date('2023-05-23 09:00:00.000');
+		//const d_day = new Date('2023-04-24 09:00:00.000');
+		if(d_day>now){
+			const msg_alert = isCop==true? "4/23까지는 이메일을 통해 접수받고있으니 2023intern@seoulwomen.or.kr로 제출해주세요." : "5/23일 오전 9시부터 이용 가능합니다.";
+			alert(msg_alert);
+			return;
+		}
+
+		let popup = window.open('about:blank');
+		$.ajax({
+			type: "POST",
+			dataType: 'json',
+			url: "/common/sendEncodingDataAjaxa.do",
+			data: {
+			},
+			async: false,
+			success: function (data) {
+				if(data.ID == null){
+					popup.close();
+					setTimeout(
+						function(){
+							if(confirm("로그인이 필요한 서비스입니다.\n로그인 하시겠습니까?")){
+								
+								//document.location.href = "https://www.seoulwomanup.or.kr/common/login.do" + "?ru=" + window.location.href;
+								//document.location.href = "http://www.seoulwomanup.com:9012/common/login.do" + "?ru=" + "https://www.seoulwomanup.or.kr/womanup/common/bbs/selectPageListBBS.do?bbs_code=noticeall";
+							
+								document.location.href = ( window.location.href.indexOf("selectBBS") == -1 )? 
+										"https://www.seoulwomanup.or.kr/common/login.do" + "?ru=" + window.location.href :
+										"https://www.seoulwomanup.or.kr/common/login.do";
+
+							}
+						},1);
+	                }
+				else{
+					//const url = "https://swup.seoulwomanup.or.kr/swm/internship/main.do";
+					const token = data.encodingSeedEncrypt;
+					//const token = JSON.stringify(data.encodingSeedEncrypt);
+					popup.location.href = url + "?token=" + token;
+				}
+			},
+			error: function (result) {
+				alert("데이터 전송에 실패하였습니다.");
+			}
+		});
+		
+	}
+	
+function fnShowInterviewModal() {
+	if ("dongbu" == "womanup") {
+		$(".layer_interview_request_list_womanup").css("display", "block");
+	} else {
+		$(".layer_interview_request_list").css("display", "block");
+	}
+}
+	
+function fnShowHeartPFModal() {
+	if ("dongbu" == "womanup") {
+		$(".layer_heart_pf_list_womanup").css("display", "block");
+	} else {
+		$(".layer_heart_pf_list").css("display", "block");
+	}
+}
+</script>
+<style>
+#seoul-gnb-plugin{background-color : #003C82;}
+ .interview_request { 
+	color: #D67D33 !important;
+    font-weight: 500;
+    background-image: unset !important;
+    padding: 0px 10px;
+    border-radius: 10px;
+    border: 1px solid #D67D33;
+}
+.layer_interview_request_list_womanup 
+, .layer_heart_pf_list_womanup { 
+ 	display: block; width: 600px; height: 300px; border: 1px solid #c5c5c5; background: white;
+ 	z-index: 999; position: absolute; padding: 20px; top: 100px; right: 400px;
+ 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12), 0 2px 5px rgba(0, 0, 0, 0.24);
+ }
+.layer_interview_request_list
+, .layer_heart_pf_list { 
+ 	display: block; width: 600px; height: 300px; border: 1px solid #c5c5c5; background: white;
+ 	z-index: 999; position: absolute; padding: 20px; top: 150px; left: 200px;
+ 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12), 0 2px 5px rgba(0, 0, 0, 0.24);
+ }
+.layer_table { 
+ 	height: 205px; margin-top: 5px; overflow-y: auto; 
+	}
+.btn_close { 
+	float: right;
+}
+table {
+ 	border-top: 1px solid #008c7e; width: 100%;
+ }
+th {
+ 	background: #f6f6f6; border-bottom: 1px solid #ddd; padding: 5px 20px;
+    font-weight: 500; color: #000;
+ }
+td { 
+	border-bottom: 1px solid #ddd; padding: 5px 20px;
+}
+.layer_title {
+	font: 500 20px 'Noto Sans KR';
+}
+.layer_comment {
+	font-size: 14px; margin-left: 5px;
+}
+.lowtop {    
+	position: absolute;
+    top: -20px;
+    font-size: 14px;
+}
+@media (max-width: 720px) {
+	.interview_request {
+		padding: 0px 10px; background: #D67D33; border-radius: 18px; color: #ffffff !important; border: none; margin-left: 10px;
+	}
+}
+</style>
+
+<header id="header" class="gen no-gnb">
+	<div id="skip_navigation"></div>
+	<div id='seoul-common-gnb' class="seoul_common_gnb"></div>
+	<div class="navi">
+		<h3>전체메뉴</h3>
+		<div>
+			<h1 class="logo_dongbu">
+				<a href="/" title="홈으로">동부여성발전센터
+				</a>
+			</h1>
+			<div class="log_area">
+				
+				<ul class="other quick_menu">
+					
+						
+							<li><a href="/common/login.do?session_d=Y" title="로그인">로그인</a></li>
+							<li><a href="/common/member/memberRegistInfo.do" title="회원가입">회원가입</a></li>
+						
+						
+					
+					<li><a href="/dongbu/common/sitemap/selectSiteMap.do" title="사이트맵">사이트맵</a></li>
+					<li><a href="https://lecturer.seoulwomanup.or.kr" title="회원가입">강사홈페이지</a></li>
+				</ul>
+			</div>
+
+
+			
+
+			<!--웹에서 보여줄 부분-->
+			<div class="box_w">
+				<h3>전체메뉴소개</h3>
+				<div>
+					<ul class="other">
+						
+							
+								<li><a href="/common/login.do?session_d=Y" title="">로그인</a></li>
+								<li><a href="/common/member/memberRegistInfo.do" title="">회원가입</a></li>
+							
+							
+						
+						<li><a href="/dongbu/common/sitemap/selectSiteMap.do" title="">사이트맵</a></li>
+						<li><a href="https://lecturer.seoulwomanup.or.kr" title="회원가입">강사홈페이지</a></li>
+					</ul>
+					
+					<aside class="quick_menu">
+						<ul>
+							
+								<li><a href="https://www.seoulcareerup.or.kr" target="_blank" 
+										
+									   title="서울커리업 새 창 열림">서울커리업</a></li>
+							
+							
+								
+									<!-- <li><a href="javascript:alert('컨텐츠 준비중입니다.')" title="서울커리업 프로젝트" >서울커리업 프로젝트</a></li> -->	
+								
+								
+																
+							
+								<li><a href="https://swrd.seoulcareerup.or.kr" target="_blank" title="여성능력개발원 새 창 열림">여성능력개발원</a>
+								</li>
+							
+							<li><a href="#" title="여성발전센터">여성발전센터</a>
+								<div style="height:0">
+									<ol>
+										<li><a href="https://nambu.seoulcareerup.or.kr" target="_blank"
+											   title="남부여성발전센터 새 창 열림" class="active">남부여성발전센터</a></li>
+										<li><a href="https://dongbu.seoulcareerup.or.kr" target="_blank"
+											   title="동부여성발전센터 새 창 열림">동부여성발전센터</a></li>
+										<li><a href="https://bukbu.seoulcareerup.or.kr" target="_blank"
+											   title="북부여성발전센터 새 창 열림">북부여성발전센터</a></li>
+										<li><a href="https://seobu.seoulcareerup.or.kr" target="_blank"
+											   title="서부여성발전센터 새 창 열림">서부여성발전센터</a></li>
+										<li><a href="https://jungbu.seoulcareerup.or.kr" target="_blank"
+											   title="중부여성발전센터 새 창 열림">중부여성발전센터</a></li>
+									</ol>
+								</div>
+							</li>
+							<li><a href="#" title="여성인력개발센터">여성인력개발센터</a>
+								<div style="height:0">
+									<ol>
+										<li><a href="https://gd.seoulcareerup.or.kr" target="_blank" title="강동여성인력개발센터 새 창 열림">강동여성인력개발센터</a>
+										</li>
+										<li><a href="https://gangbuk.seoulcareerup.or.kr" target="_blank"
+											   title="강북여성인력개발센터 새 창 열림">강북여성인력개발센터</a></li>
+										<li><a href="https://gangseo.seoulcareerup.or.kr" target="_blank"
+											   title="강서여성인력개발센터 새 창 열림">강서여성인력개발센터</a></li>
+										<li><a href="https://gwanak.seoulcareerup.or.kr" target="_blank"
+											   title="관악여성인력개발센터 새 창 열림">관악여성인력개발센터</a></li>
+										<li><a href="https://guro.seoulcareerup.or.kr" target="_blank"
+											   title="구로여성인력개발센터 새 창 열림">구로여성인력개발센터</a></li>
+										<li><a href="https://nowon.seoulcareerup.or.kr" target="_blank"
+											   title="노원여성인력개발센터 새 창 열림">노원여성인력개발센터</a></li>
+										<li><a href="https://ddm.seoulcareerup.or.kr" target="_blank" title="동대문여성인력개발센터 새 창 열림">동대문여성인력개발센터</a>
+										</li>
+										<li><a href="https://dongjak.seoulcareerup.or.kr" target="_blank"
+											   title="동작여성인력개발센터 새 창 열림">동작여성인력개발센터</a></li>
+										<li><a href="https://sdm.seoulcareerup.or.kr" target="_blank" title="서대문여성인력개발센터 새 창 열림">서대문여성인력개발센터</a>
+										</li>
+										<li><a href="https://seocho.seoulcareerup.or.kr" target="_blank"
+											   title="서초여성인력개발센터 새 창 열림">서초여성인력개발센터</a></li>
+										<li><a href="https://sd.seoulcareerup.or.kr" target="_blank" title="성동여성인력개발센터 새 창 열림">성동여성인력개발센터</a>
+										</li>
+										<li><a href="https://songpa.seoulcareerup.or.kr" target="_blank"
+											   title="송파여성인력개발센터 새 창 열림">송파여성인력개발센터</a></li>
+										<li><a href="https://ydp.seoulcareerup.or.kr" target="_blank" title="영등포여성인력개발센터 새 창 열림">영등포여성인력개발센터</a>
+										</li>
+										<li><a href="https://yongsan.seoulcareerup.or.kr" target="_blank"
+											   title="용산여성인력개발센터 새 창 열림">용산여성인력개발센터</a></li>
+										<li><a href="https://ep.seoulcareerup.or.kr" target="_blank" title="은평여성인력개발센터 새 창 열림">은평여성인력개발센터</a>
+										</li>
+										<li><a href="https://wsbt.seoulcareerup.or.kr" target="_blank"
+											   title="장애여성인력개발센터 새 창 열림">장애여성인력개발센터</a></li>
+										<li><a href="https://jongno.seoulcareerup.or.kr" target="_blank"
+											   title="종로여성인력개발센터 새 창 열림">종로여성인력개발센터</a></li>
+										<li><a href="https://jungnang.seoulcareerup.or.kr" target="_blank"
+											   title="중랑여성인력개발센터 새 창 열림">중랑여성인력개발센터</a></li>
+									</ol>
+								</div>
+							</li>
+							
+						</ul>
+					</aside>
+					
+				</div>
+				<nav class="nav_w">
+					<div id="nav_head" name="nav_head"></div>
+					<ul>
+						
+						  <li><a href="/dongbu/edu/selectPageListRealEduProgram.do" title="교육">교육</a>
+								<div>
+									<ol>
+										
+											
+												
+													
+													
+														<li><a href="/dongbu/edu/selectPageListRealEduProgram.do" title="교육 프로그램 신청">교육 프로그램 신청</a></li>
+													
+												
+												
+											
+										
+											
+												
+													
+													
+														<li><a href="/dongbu/edu/selectPageListLeisureProgram.do" title="생활체육 프로그램 신청">생활체육 프로그램 신청</a></li>
+													
+												
+												
+											
+										
+											
+												
+													
+													
+														<li><a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600003" title="교육 접수 안내">교육 접수 안내</a></li>
+													
+												
+												
+											
+										
+											
+												
+													
+													
+														<li><a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600004" title="강좌 안내">강좌 안내</a></li>
+													
+												
+												
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+									</ol>
+								</div>
+								
+							</li>
+						
+						  <li><a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600039" title="취업">취업</a>
+								<div>
+									<ol>
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+												
+													
+													
+														<li><a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600039" title="동부여성새로일하기센터란?">동부여성새로일하기센터란?</a></li>
+													
+												
+												
+											
+										
+											
+												
+													
+													
+														<li><a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600052" title="구인(구인신청/구인정보)">구인(구인신청/구인정보)</a></li>
+													
+												
+												
+											
+										
+											
+												
+													
+													
+														<li><a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600053" title="구직(구직신청/취업안내)">구직(구직신청/취업안내)</a></li>
+													
+												
+												
+											
+										
+											
+												
+													
+													
+														<li><a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600040" title="집단상담프로그램">집단상담프로그램</a></li>
+													
+												
+												
+											
+										
+											
+												
+													
+													
+														<li><a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600042" title="경력이음사례관리서비스">경력이음사례관리서비스</a></li>
+													
+												
+												
+											
+										
+											
+												
+													
+													
+														<li><a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600050" title="경력단절예방지원사업">경력단절예방지원사업</a></li>
+													
+												
+												
+											
+										
+											
+												
+													
+													
+														<li><a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600054" title="새일여성인턴사업">새일여성인턴사업</a></li>
+													
+												
+												
+											
+										
+											
+												
+													
+													
+														<li><a href="/dongbu/common/bbs/selectPageListBBS.do?bbs_code=G0604" title="새일게시판">새일게시판</a></li>
+													
+												
+												
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+									</ol>
+								</div>
+								
+							</li>
+						
+						  <li><a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600051" title="창업">창업</a>
+								<div>
+									<ol>
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+												
+													
+													
+														<li><a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600011" title="여성창업보육센터 ">여성창업보육센터 </a></li>
+													
+												
+												
+											
+										
+											
+												
+													
+													
+														<li><a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600047" title="여성창업플라자">여성창업플라자</a></li>
+													
+												
+												
+											
+										
+											
+												
+													
+													
+														<li><a href="/dongbu/common/bbs/selectPageListBBS.do?bbs_code=G0603" title="창업게시판">창업게시판</a></li>
+													
+												
+												
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+									</ol>
+								</div>
+								
+							</li>
+						
+						  <li><a href="/dongbu/common/bbs/selectPageListBBS.do?bbs_code=B0454" title="참여마당">참여마당</a>
+								<div>
+									<ol>
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+												
+													
+													
+														<li><a href="/dongbu/common/bbs/selectPageListBBS.do?bbs_code=B0454" title="공지사항">공지사항</a></li>
+													
+												
+												
+											
+										
+											
+												
+													
+													
+														<li><a href="/dongbu/common/bbs/selectPageListBBS.do?bbs_code=G0605" title="채용">채용</a></li>
+													
+												
+												
+											
+										
+											
+												
+													
+													
+														<li><a href="/dongbu/common/bbs/selectPageListBBS.do?bbs_code=G0601" title="자주 묻는 질문">자주 묻는 질문</a></li>
+													
+												
+												
+											
+										
+											
+												
+													
+													
+														<li><a href="/dongbu/dev/qna/selectQnAPageList.do" title="1:1상담문의">1:1상담문의</a></li>
+													
+												
+												
+											
+										
+											
+												
+													
+													
+														<li><a href="/dongbu/common/bbs/selectPageListBBS.do?bbs_code=P0481" title="포토갤러리">포토갤러리</a></li>
+													
+												
+												
+											
+										
+											
+												
+													
+													
+														<li><a href="/dongbu/common/bbs/selectPageListBBS.do?bbs_code=B0478" title="언론보도">언론보도</a></li>
+													
+												
+												
+											
+										
+											
+												
+													
+													
+														<li><a href="/dongbu/common/bbs/selectPageListBBS.do?bbs_code=G0602" title="뉴스레터">뉴스레터</a></li>
+													
+												
+												
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+									</ol>
+								</div>
+								
+							</li>
+						
+						  <li><a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600016" title="센터소개">센터소개</a>
+								<div>
+									<ol>
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+												
+													
+													
+														<li><a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600016" title="인사말">인사말</a></li>
+													
+												
+												
+											
+										
+											
+												
+													
+													
+														<li><a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600017" title="설립목적 및 연혁">설립목적 및 연혁</a></li>
+													
+												
+												
+											
+										
+											
+												
+													
+													
+														<li><a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600058" title="안전보건 목표 및 경영방침">안전보건 목표 및 경영방침</a></li>
+													
+												
+												
+											
+										
+											
+												
+													
+													
+														<li><a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600059" title="ESG 경영">ESG 경영</a></li>
+													
+												
+												
+											
+										
+											
+												
+													
+													
+														<li><a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600026" title="조직안내">조직안내</a></li>
+													
+												
+												
+											
+										
+											
+												
+													
+													
+														<li><a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600028" title="시설안내">시설안내</a></li>
+													
+												
+												
+											
+										
+											
+												
+													
+													
+														<li><a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600022" title="대관안내">대관안내</a></li>
+													
+												
+												
+											
+										
+											
+												
+													
+													
+														<li><a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600024" title="사물함">사물함</a></li>
+													
+												
+												
+											
+										
+											
+												
+													
+													
+														<li><a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600060" title="무인전자사물함">무인전자사물함</a></li>
+													
+												
+												
+											
+										
+											
+												
+													
+													
+														<li><a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600025" title="오시는길">오시는길</a></li>
+													
+												
+												
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+									</ol>
+								</div>
+								
+							</li>
+						
+					</ul>
+				</nav>
+			</div>
+
+			<!--모바일에서 보여줄 부분-->
+			<div class="box_m">
+				<a href="#" class="icon_open" title="전체 메뉴 열기">전체메뉴열기</a>
+				<a href="#"
+					class="icon_search" title="검색">검색</a>
+				<h4 class="dep1_title">참여마당
+				</h4>
+				<div class="layer">
+					<div>
+						<ul class="other">
+							
+								
+									<li><a class="loginBtn_mobile" href="/common/login.do?session_d=Y" title="로그인">로그인</a></li>
+									<li><a href="/common/member/memberRegistInfo.do" title="회원가입">회원가입</a></li>
+								
+								
+							
+						</ul>
+						
+						<aside class="quick_menu">
+
+							<h3>
+								<a href="https://www.seoulcareerup.or.kr" target="_blank" title="서울커리업">서울커리업</a>
+							</h3>
+							<ul>
+								
+									<li><a href="https://www.seoulcareerup.or.kr" target="_blank" title="서울커리업 새창 열림">서울커리업</a></li>
+								
+								
+								
+									<!-- <li><a href="javascript:alert('컨텐츠 준비중입니다.')" title="서울커리업 프로젝트" >서울커리업 프로젝트</a></li> -->	
+								
+								
+								
+								
+									<li><a href="https://swrd.seoulcareerup.or.kr" target="_blank" titel="여성능력개발원 새창 열림">여성능력개발원</a></li>
+								
+								<li><a href="#" title="여성발전센터">여성발전센터</a>
+									<div>
+										<ol>
+											<li><a href="https://nambu.seoulcareerup.or.kr" target="_blank"
+												   class="active" title="남부여성발전센터 새창 열림">남부여성발전센터</a></li>
+											<li><a href="https://dongbu.seoulcareerup.or.kr"
+												   target="_blank" title="동부여성발전센터 새창 열림">동부여성발전센터</a></li>
+											<li><a href="https://bukbu.seoulcareerup.or.kr"
+												   target="_blank" title="북부여성발전센터 새창 열림">북부여성발전센터</a></li>
+											<li><a href="https://seobu.seoulcareerup.or.kr"
+												   target="_blank" title="서부여성발전센터 새창 열림">서부여성발전센터</a></li>
+											<li><a href="https://jungbu.seoulcareerup.or.kr"
+												   target="_blank" title="중부여성발전센터 새창 열림">중부여성발전센터</a></li>
+										</ol>
+									</div>
+								</li>
+								<li><a href="#" title="여성인력개발센터">여성인력개발센터</a>
+									<div>
+										<ol>
+											<li><a href="https://gd.seoulcareerup.or.kr" target="_blank"
+												   title="강동여성인력개발센터 새 창 열림">강동여성인력개발센터</a></li>
+											<li><a href="https://gangbuk.seoulcareerup.or.kr" target="_blank"
+												   title="강북여성인력개발센터 새 창 열림">강북여성인력개발센터</a></li>
+											<li><a href="https://gangseo.seoulcareerup.or.kr" target="_blank"
+												   title="강서여성인력개발센터 새 창 열림">강서여성인력개발센터</a></li>
+											<li><a href="https://gwanak.seoulcareerup.or.kr" target="_blank"
+												   title="관악여성인력개발센터 새 창 열림">관악여성인력개발센터</a></li>
+											<li><a href="https://guro.seoulcareerup.or.kr" target="_blank"
+												   title="구로여성인력개발센터 새 창 열림">구로여성인력개발센터</a></li>
+											<li><a href="https://nowon.seoulcareerup.or.kr" target="_blank"
+												   title="노원여성인력개발센터 새 창 열림">노원여성인력개발센터</a></li>
+											<li><a href="https://ddm.seoulcareerup.or.kr" target="_blank"
+												   title="동대문여성인력개발센터 새 창 열림">동대문여성인력개발센터</a></li>
+											<li><a href="https://dongjak.seoulcareerup.or.kr" target="_blank"
+												   title="동작여성인력개발센터 새 창 열림">동작여성인력개발센터</a></li>
+											<li><a href="https://sdm.seoulcareerup.or.kr" target="_blank"
+												   title="서대문여성인력개발센터 새 창 열림">서대문여성인력개발센터</a></li>
+											<li><a href="https://seocho.seoulcareerup.or.kr" target="_blank"
+												   title="서초여성인력개발센터 새 창 열림">서초여성인력개발센터</a></li>
+											<li><a href="https://sd.seoulcareerup.or.kr" target="_blank"
+												   title="성동여성인력개발센터 새 창 열림">성동여성인력개발센터</a></li>
+											<li><a href="https://songpa.seoulcareerup.or.kr" target="_blank"
+												   title="송파여성인력개발센터 새 창 열림">송파여성인력개발센터</a></li>
+											<li><a href="https://ydp.seoulcareerup.or.kr" target="_blank"
+												   title="영등포여성인력개발센터 새 창 열림">영등포여성인력개발센터</a></li>
+											<li><a href="https://yongsan.seoulcareerup.or.kr" target="_blank"
+												   title="용산여성인력개발센터 새 창 열림">용산여성인력개발센터</a></li>
+											<li><a href="https://ep.seoulcareerup.or.kr" target="_blank"
+												   title="은평여성인력개발센터 새 창 열림">은평여성인력개발센터</a></li>
+											<li><a href="https://wsbt.seoulcareerup.or.kr" target="_blank"
+												   title="장애여성인력개발센터 새 창 열림">장애여성인력개발센터</a></li>
+											<li><a href="https://jongno.seoulcareerup.or.kr" target="_blank"
+												   title="종로여성인력개발센터 새 창 열림">종로여성인력개발센터</a></li>
+											<li><a href="https://jungnang.seoulcareerup.or.kr" target="_blank"
+												   title="중랑여성인력개발센터 새 창 열림">중랑여성인력개발센터</a></li>
+										</ol>
+									</div>
+								</li>
+							</ul>
+						</aside>
+						
+
+						<nav class="nav_m">
+							<ul>
+								
+								
+								
+								
+								
+									
+										
+										
+											<li>
+										
+									
+									
+									
+										
+										
+											<a href="/dongbu/edu/selectPageListRealEduProgram.do" title="교육">교육</a>
+										
+									
+									<div>
+										<ol>
+											
+												
+													<li><a href="/dongbu/edu/selectPageListRealEduProgram.do">교육 프로그램 신청</a>
+														
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+															
+													</li>
+												
+											
+												
+													<li><a href="/dongbu/edu/selectPageListLeisureProgram.do">생활체육 프로그램 신청</a>
+														
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+															
+													</li>
+												
+											
+												
+													<li><a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600003">교육 접수 안내</a>
+														
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+															
+													</li>
+												
+											
+												
+													<li><a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600004">강좌 안내</a>
+														
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+															
+													</li>
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+										</ol>
+									</div>
+									</li>
+								
+									
+										
+										
+											<li>
+										
+									
+									
+									
+										
+										
+											<a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600039" title="취업">취업</a>
+										
+									
+									<div>
+										<ol>
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+													<li><a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600039">동부여성새로일하기센터란?</a>
+														
+														<ul class="dep3">
+															
+															
+																
+															
+																
+															
+																
+																	<li>
+																		<a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600039">동부여성새로일하기센터</a>
+																	</li>
+																
+															
+																
+																	<li>
+																		<a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600044">직업교육훈련</a>
+																	</li>
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+															
+														</ul>
+														
+													</li>
+												
+											
+												
+													<li><a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600052">구인(구인신청/구인정보)</a>
+														
+														<ul class="dep3">
+															
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+																	<li>
+																		<a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600052">구인신청</a>
+																	</li>
+																
+															
+																
+																	<li>
+																		<a href="/dongbu/job/selectPageListJobOffer.do">구인정보</a>
+																	</li>
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+															
+														</ul>
+														
+													</li>
+												
+											
+												
+													<li><a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600053">구직(구직신청/취업안내)</a>
+														
+														<ul class="dep3">
+															
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+																	<li>
+																		<a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600053">구직신청</a>
+																	</li>
+																
+															
+																
+																	<li>
+																		<a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600005">취업안내</a>
+																	</li>
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+															
+														</ul>
+														
+													</li>
+												
+											
+												
+													<li><a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600040">집단상담프로그램</a>
+														
+														<ul class="dep3">
+															
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+																	<li>
+																		<a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600040">집단상담프로그램</a>
+																	</li>
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+															
+														</ul>
+														
+													</li>
+												
+											
+												
+													<li><a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600042">경력이음사례관리서비스</a>
+														
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+															
+													</li>
+												
+											
+												
+													<li><a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600050">경력단절예방지원사업</a>
+														
+														<ul class="dep3">
+															
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+																	<li>
+																		<a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600050">경력단절예방지원사업</a>
+																	</li>
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+															
+														</ul>
+														
+													</li>
+												
+											
+												
+													<li><a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600054">새일여성인턴사업</a>
+														
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+															
+													</li>
+												
+											
+												
+													<li><a href="/dongbu/common/bbs/selectPageListBBS.do?bbs_code=G0604">새일게시판</a>
+														
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+															
+													</li>
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+										</ol>
+									</div>
+									</li>
+								
+									
+										
+										
+											<li>
+										
+									
+									
+									
+										
+										
+											<a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600051" title="창업">창업</a>
+										
+									
+									<div>
+										<ol>
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+													<li><a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600011">여성창업보육센터 </a>
+														
+														<ul class="dep3">
+															
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+																	<li>
+																		<a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600051">센터소개</a>
+																	</li>
+																
+															
+																
+																	<li>
+																		<a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600011">추진사업/업체지원내용</a>
+																	</li>
+																
+															
+																
+																	<li>
+																		<a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600012">입주안내/모집안내</a>
+																	</li>
+																
+															
+																
+																	<li>
+																		<a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600013">입주업체 현황</a>
+																	</li>
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+															
+														</ul>
+														
+													</li>
+												
+											
+												
+													<li><a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600047">여성창업플라자</a>
+														
+														<ul class="dep3">
+															
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+																	<li>
+																		<a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600047">여성창업플라자 소개</a>
+																	</li>
+																
+															
+																
+																	<li>
+																		<a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600048">입주안내/모집안내</a>
+																	</li>
+																
+															
+																
+																	<li>
+																		<a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600049">입주업체 현황</a>
+																	</li>
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+															
+														</ul>
+														
+													</li>
+												
+											
+												
+													<li><a href="/dongbu/common/bbs/selectPageListBBS.do?bbs_code=G0603">창업게시판</a>
+														
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+															
+													</li>
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+										</ol>
+									</div>
+									</li>
+								
+									
+										
+											<li class="active">
+										
+										
+									
+									
+									
+										
+										
+											<a href="/dongbu/common/bbs/selectPageListBBS.do?bbs_code=B0454" title="참여마당">참여마당</a>
+										
+									
+									<div>
+										<ol>
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+													<li><a href="/dongbu/common/bbs/selectPageListBBS.do?bbs_code=B0454">공지사항</a>
+														
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+															
+													</li>
+												
+											
+												
+													<li><a href="/dongbu/common/bbs/selectPageListBBS.do?bbs_code=G0605">채용</a>
+														
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+															
+													</li>
+												
+											
+												
+													<li><a href="/dongbu/common/bbs/selectPageListBBS.do?bbs_code=G0601">자주 묻는 질문</a>
+														
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+															
+													</li>
+												
+											
+												
+													<li><a href="/dongbu/dev/qna/selectQnAPageList.do">1:1상담문의</a>
+														
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+															
+													</li>
+												
+											
+												
+													<li><a href="/dongbu/common/bbs/selectPageListBBS.do?bbs_code=P0481">포토갤러리</a>
+														
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+															
+													</li>
+												
+											
+												
+													<li><a href="/dongbu/common/bbs/selectPageListBBS.do?bbs_code=B0478">언론보도</a>
+														
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+															
+													</li>
+												
+											
+												
+													<li><a href="/dongbu/common/bbs/selectPageListBBS.do?bbs_code=G0602">뉴스레터</a>
+														
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+															
+													</li>
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+										</ol>
+									</div>
+									</li>
+								
+									
+										
+										
+											<li>
+										
+									
+									
+									
+										
+										
+											<a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600016" title="센터소개">센터소개</a>
+										
+									
+									<div>
+										<ol>
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+													<li><a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600016">인사말</a>
+														
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+															
+													</li>
+												
+											
+												
+													<li><a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600017">설립목적 및 연혁</a>
+														
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+															
+													</li>
+												
+											
+												
+													<li><a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600058">안전보건 목표 및 경영방침</a>
+														
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+															
+													</li>
+												
+											
+												
+													<li><a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600059">ESG 경영</a>
+														
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+															
+													</li>
+												
+											
+												
+													<li><a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600026">조직안내</a>
+														
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+															
+													</li>
+												
+											
+												
+													<li><a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600028">시설안내</a>
+														
+														<ul class="dep3">
+															
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+																	<li>
+																		<a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600028">전체시설</a>
+																	</li>
+																
+															
+																
+																	<li>
+																		<a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600018">대관시설</a>
+																	</li>
+																
+															
+																
+																	<li>
+																		<a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600020">운동시설</a>
+																	</li>
+																
+															
+																
+																	<li>
+																		<a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600021">편의시설</a>
+																	</li>
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+															
+														</ul>
+														
+													</li>
+												
+											
+												
+													<li><a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600022">대관안내</a>
+														
+														<ul class="dep3">
+															
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+																	<li>
+																		<a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600022">대관절차</a>
+																	</li>
+																
+															
+																
+																	<li>
+																		<a href="/dongbu/dev/hall/selectPageListReserveHall.do">대관신청/변경</a>
+																	</li>
+																
+															
+																
+																	<li>
+																		<a href="/dongbu/dev/hall/selectListStatMonthHall.do">예약현황</a>
+																	</li>
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+															
+														</ul>
+														
+													</li>
+												
+											
+												
+													<li><a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600024">사물함</a>
+														
+														<ul class="dep3">
+															
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+																	<li>
+																		<a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600024">이용안내</a>
+																	</li>
+																
+															
+																
+																	<li>
+																		<a href="/dongbu/dev/cabinet/selectListRentCabinet.do">사물함 신청</a>
+																	</li>
+																
+															
+																
+																	<li>
+																		<a href="/dongbu/dev/cabinet/selectPageListCabinetToPay.do">사물함 이용료 결제</a>
+																	</li>
+																
+															
+																
+																	<li>
+																		<a href="/dongbu/dev/cabinet/selectPageListRentStts.do">사물함 신청 확인</a>
+																	</li>
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+															
+														</ul>
+														
+													</li>
+												
+											
+												
+													<li><a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600060">무인전자사물함</a>
+														
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+															
+													</li>
+												
+											
+												
+													<li><a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600025">오시는길</a>
+														
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+																
+															
+															
+													</li>
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+										</ol>
+									</div>
+									</li>
+								
+							</ul>
+						</nav>
+						<a href="#" class="icon_close" title="전체 메뉴 닫기">전체메뉴닫기</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="layer_interview_request_list" style="display: none;">
+			
+	            <h3>나를찜한기업</h3>
+                <div>
+	                <button type="button" class="btn_close" data-focus="focus01-close" data-focus-next="focus01">
+	                	<img src="/common/images/btn_search_cancel_cut.png" alt="레이어 닫기" style="width: 30px;">
+	                </button>
+                    <h2 class="layer_title">나를찜한기업<span class="layer_comment">※ 회원님이 입력한 구직포트폴리오를 열람한 기업 리스트 입니다. </span></h2>
+                    <div class="layer_table">
+                    	<table>
+                    		<tr>
+                    			<th>요청기업</th>
+                    			<th width="200">요청일자</th>
+                    		</tr>
+                    		
+                    	</table>
+                    </div>
+                </div>
+	        </div>
+			
+	        <div class="layer_heart_pf_list" style="display: none;">
+			
+	        	<h3>찜한 구직자</h3>
+	        	<div>
+	                <button type="button" class="btn_close" data-focus="focus01-close" data-focus-next="focus01">
+	                	<img src="/common/images/btn_search_cancel_cut.png" alt="레이어 닫기" style="width: 30px;">
+	                </button>
+	        	</div>
+	        	<h2 class="layer_title">찜한 구직자<span class="layer_comment">※ 회원님이 구직포트폴리오 열람하기에서 이력서 요청한 리스트입니다. </span></h2>
+	        	<div class="layer_table">
+	        		<table>
+	        			<tr>
+	        				<th width="100">담당기관</td>
+	        				<th>성명</td>
+	        				<th>아이디</td>
+	        				<th width="150">찜한 날짜</td>
+	        			</tr>
+	        			
+	        		</table>
+	        	</div>
+	        </div>
+		</div>
+	</div>
+</header>
+<div class="shadow_gen"></div>
+
+		
+			
+		
+
+
+
+
+
+
+
+<script type="text/javascript">
+function fnOnPrint(){
+	var body = document.querySelector('body');
+	var printContents = document.querySelector('#sub').innerHTML;
+	
+	var w = window.open();
+	var title = "인쇄 미리보기 | " + document.title;
+	w.document.write('<!DOCTYPE html><html lang="ko"><head><title>'+ title + '</title><link rel="stylesheet" href="../../../common/css/womanup/print.css" /><link rel="stylesheet" href="../../../common/css/womanup/publish_default.css" /></head><body><div id="sub" tabindex="0">'+printContents+'</div></body></html>');
+	w.document.close();
+
+	setTimeout(function() {
+		w.window.print();
+		if (w.window.navigator.userAgent.indexOf('Chrome/') > -1) {
+			w.window.close();
+		} else {
+			w.window.onfocus = function() {
+				w.window.close();
+			}
+		}
+	},500);
+}
+
+	 
+function fnHomeClick(){
+	location.href="/dongbu/main/main.do";
+}
+</script>
+<section class="title_01 title_100014001300">
+				<h3>타이틀영역</h3>
+				<ul>
+					
+					
+					
+					<li><a href="/dongbu/common/bbs/selectPageListBBS.do?bbs_code=P0481" title="포토갤러리">포토갤러리</a></li>
+					
+					
+					<li class="active"><a href="/dongbu/common/bbs/selectPageListBBS.do?bbs_code=B0454" title="공지사항">공지사항</a></li>
+					
+					
+					
+					<li><a href="/dongbu/common/bbs/selectPageListBBS.do?bbs_code=B0478" title="언론보도">언론보도</a></li>
+					
+					
+				</ul>
+			</section>
+			<section class="navi_sub">
+				<h3>네비게이션</h3>
+				<div>
+					<ul class="gnb_01">
+						<li><a href="#" onclick="fnHomeClick(); return false;" title="홈">HOME</a></li>
+						
+							
+              
+							
+								<li>
+							
+							
+							
+								
+		              <a href="#" onclick="void(0); return false;" title="참여마당">참여마당</a>
+								
+								
+								
+								
+							
+								<ol>
+							
+								<li 
+								
+									
+										
+									
+									
+									
+									
+								
+								><a href="/dongbu/edu/selectPageListRealEduProgram.do" title="교육">교육</a></li>
+							
+								<li 
+								
+									
+										
+									
+									
+									
+									
+								
+								><a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600039" title="취업">취업</a></li>
+							
+								<li 
+								
+									
+										
+									
+									
+									
+									
+								
+								><a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600051" title="창업">창업</a></li>
+							
+								<li 
+								
+									
+										class="active"
+									
+									
+									
+									
+								
+								><a href="/dongbu/common/bbs/selectPageListBBS.do?bbs_code=B0454" title="참여마당">참여마당</a></li>
+							
+								<li 
+								
+									
+										
+									
+									
+									
+									
+								
+								><a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600016" title="센터소개">센터소개</a></li>
+							
+								</ol>
+							</li>
+       			 
+							
+              
+								<li class="active">
+							
+							
+							
+							
+								
+								
+		              <a href="#" onclick="void(0); return false;" title="공지사항">공지사항</a>
+								
+								
+								
+							
+								<ol>
+							
+								<li 
+								
+									
+									
+										class="active"
+									
+									
+									
+								
+								><a href="/dongbu/common/bbs/selectPageListBBS.do?bbs_code=B0454" title="공지사항">공지사항</a></li>
+							
+								<li 
+								
+									
+									
+										
+									
+									
+									
+								
+								><a href="/dongbu/common/bbs/selectPageListBBS.do?bbs_code=G0605" title="채용">채용</a></li>
+							
+								<li 
+								
+									
+									
+										
+									
+									
+									
+								
+								><a href="/dongbu/common/bbs/selectPageListBBS.do?bbs_code=G0601" title="자주 묻는 질문">자주 묻는 질문</a></li>
+							
+								<li 
+								
+									
+									
+										
+									
+									
+									
+								
+								><a href="/dongbu/dev/qna/selectQnAPageList.do" title="1:1상담문의">1:1상담문의</a></li>
+							
+								<li 
+								
+									
+									
+										
+									
+									
+									
+								
+								><a href="/dongbu/common/bbs/selectPageListBBS.do?bbs_code=P0481" title="포토갤러리">포토갤러리</a></li>
+							
+								<li 
+								
+									
+									
+										
+									
+									
+									
+								
+								><a href="/dongbu/common/bbs/selectPageListBBS.do?bbs_code=B0478" title="언론보도">언론보도</a></li>
+							
+								<li 
+								
+									
+									
+										
+									
+									
+									
+								
+								><a href="/dongbu/common/bbs/selectPageListBBS.do?bbs_code=G0602" title="뉴스레터">뉴스레터</a></li>
+							
+								</ol>
+							</li>
+       			 
+					</ul>
+					<div class="sns" style="outline: none !important;">
+						
+						
+							 
+								
+								
+								
+									<a href="#" onclick="goFaceBook('공지사항','https://dongbu.seoulcareerup.or.kr/dongbu/common/bbs/selectBBS.do?snsShareYn=Y&bbs_code=B0454&bbs_seq=145185&'); return false;" title="새 창 열림(페이스북)"><img src="../../../common/images/womanup/face.png" alt="페이스북으로 보내기" /></a>
+									<a href="#" onclick="goTwitter('공지사항','https://dongbu.seoulcareerup.or.kr/dongbu/common/bbs/selectBBS.do?snsShareYn=Y&bbs_code=B0454&bbs_seq=145185&'); return false;" title="새 창 열림(트위터)"><img src="../../../common/images/womanup/twitter.png" alt="트위터로 보내기"></a>
+									<a href="#" onclick="goNaverBlog('공지사항','https://dongbu.seoulcareerup.or.kr/dongbu/common/bbs/selectBBS.do?snsShareYn=Y&bbs_code=B0454&bbs_seq=145185&'); return false;" title="새 창 열림(블로그)"><img src="../../../common/images/womanup/blog.png" alt="네이버블로그로 보내기"></a><!-- 2019-06-03 수정-->
+									<a href="#" onclick="goKakao('공지사항','https://dongbu.seoulcareerup.or.kr/dongbu/common/bbs/selectBBS.do?snsShareYn=Y&bbs_code=B0454&bbs_seq=145185&'); return false;" title="새 창 열림(카카오톡)"><img src="../../../common/images/womanup/kastory.png" alt="카카오스토리로 보내기"></a>
+								 
+							
+						
+						<a href="#" onclick="fnOnPrint(); return false;" title="새 창 열림(프린트)"><img src="../../../common/images/womanup/print.png" alt="프린트"/></a>
+					</div>
+				</div>
+			</section>
+
+		<div id="sub" tabindex="0">
+			<h3>리스트 상세페이지</h3>
+		  <div class="content_A">
+				<form id="aform" name="aform" method="get" action="">
+			  	<input type="hidden" id="currentPage" name="currentPage" value="" >
+					<input type="hidden" id="sch_type" name="sch_type" value="">
+					<input type="hidden" id="sch_text" name="sch_text" value="">
+					<input type="hidden" id="bbs_code" name="bbs_code" value="B0454">
+					<input type="hidden" id="sch_org_code" name="sch_org_code" value="">
+					<input type="hidden" id="bbs_type_code" name="bbs_type_code" value="10" >
+		    	<input type="hidden" id="register_no" name="register_no" value="111" />
+					<input type="hidden" id= "bbs_seq" name="bbs_seq" value="145185" />
+					<input type="hidden" id="bbs_organ_code" name="bbs_organ_code" value="06" >
+				  <input type="hidden" id="atch_doc_id" name="atch_doc_id" value="1790829417672KZLBQST1NUJ2PONKF5L5">
+				  <input type="hidden" id="thumb_doc_id" name="thumb_doc_id" value="17908294176720XZWQCNW68YLK78HJYRS">
+				  <input type="hidden" id="image_doc_id" name="image_doc_id" value="1790829417672WMZQRPI65W15WMP6VPBV">
+					<input type="hidden" id="answer_seq" name="answer_seq" >
+					<input type="hidden" name="file_id" />
+				  <input type="hidden" id="WrdNoticeAllValue" name="WrdNoticeAllValue" value="">
+					<input type="hidden" id="reqUrl" name="reqUrl" value="">
+				  <input type="hidden" id="sch_year" name="sch_year" value="">
+					<input type="hidden" id="sch_month" name="sch_month" value="">
+		      <div id="list_detail" class="staff_detail">
+		      	<div class="view_top">
+		        	<h2>[모집]서울특별시동부여성발전센터&nbsp;창업센터&nbsp;2027년&nbsp;신규입주기업&nbsp;모집&nbsp;공고</h2>
+		          <ul class="view_info">
+		          
+		          	
+		          	<li>동부여성발전센터</li>
+		          	
+		          
+  		        	<li>2026.10.01</li>
+		            <!-- start : 첨부파일 list -->
+		          
+		          	<li  class="detail_file">
+								
+									<a href="#" title="2027년&nbsp;동부여성발전센터&nbsp;창업센터&nbsp;입주신청서.hwp 다운로드" onclick="fnDownload('17914204195647IJWR8KVHNLPRNLV5YT1W0MJQ'); return false;" class="icon_hwp inline">
+									2027년&nbsp;동부여성발전센터&nbsp;창업센터&nbsp;입주신청서.hwp (90.624) KB
+									</a><br />
+								
+									<a href="#" title="2027년&nbsp;동부여성발전센터&nbsp;창업센터&nbsp;신규&nbsp;입주모집&nbsp;공고문.pdf 다운로드" onclick="fnDownload('1791420419617VFG3BCZ3BGNEG0AW1M2YV6Q2E'); return false;" class="icon_pdf inline">
+									2027년&nbsp;동부여성발전센터&nbsp;창업센터&nbsp;신규&nbsp;입주모집&nbsp;공고문.pdf (142.81) KB
+									</a><br />
+								
+								</li>
+						
+								<!-- end : 첨부파일 list -->
+		            <li class="clicks"><b>조회 <span>1140</span></b></li>
+		          </ul>
+		        </div>
+		        <!-- Start : 게시물 내용 -->
+		        <div class="view_content">
+							<!-- Start : 이미지 게시판(첨부파일이미지 넣기) -->
+							<!-- End : 이미지 게시판(첨부파일이미지 넣기) -->
+						
+						<!-- 에디터 유무에 따른 내용 가져 오기 -->
+						<p><img src="/cmsdata/web_upload/dext5editordata/20261001/20261001_133621681_00816.png" alt="신규모집1.png" style="width: 616px; height: 869px;"></p><p><img src="/cmsdata/web_upload/dext5editordata/20261008/20261008_094822718_32932.png" alt="image.png" style="width: 577px; height: 822px;"></p><p><img src="/cmsdata/web_upload/dext5editordata/20261001/20261001_134130399_72300.png" alt="image.png" style="width: 578px; height: 822px;"></p><p><img src="/cmsdata/web_upload/dext5editordata/20261012/20261012_161829960_85752.png" alt="2027년 신규입주기업 모집 포스터 최최종.png" style="font-size: 12pt; width: 627px; height: 901px;"></p><p>&nbsp;</p><p>&nbsp;</p>
+
+						</div>
+						<!-- End : 게시물 내용 -->
+						<!-- start : 키워드  -->
+						
+		      	<!-- end : 키워드  -->
+		        <!-- start : 댓글 -->
+		        
+		      	<!-- end : 댓글 -->
+		        <!-- start : 글 작성 여부에 따른 버튼 display -->
+		      
+		      	<div class="btn btn1">
+		        	<button type="button" class="reset wfr" onclick="fnGoList(); return false;">목록</button>
+		        </div>
+		      
+		      	<!-- end : 글 작성 여부에 따른 버튼 displya -->
+		         <ul class="page_nav">
+		        	<li>
+		          	<span>이전글</span>
+		            
+		            
+		            	<a href="#" title="이전글 모두의&nbsp;생리대&nbsp;설치&nbsp;안내" onclick="fnSelect('145050','Y'); return false;" style="display: block;">모두의&nbsp;생리대&nbsp;설치&nbsp;안내</a>
+		            
+		          </li>
+		          <li>
+		          	<span>다음글</span>
+		            
+		            
+		            	<a href="#" title="다음글 [공지]&nbsp;경력증명서(재직,&nbsp;경력,&nbsp;강의)&nbsp;발급&nbsp;안내" onclick="fnSelect('145291','Y'); return false;" style="display: block;">[공지]&nbsp;경력증명서(재직,&nbsp;경력,&nbsp;강의)&nbsp;발급&nbsp;안내</a>
+		            
+		          </li>
+		        </ul> 
+		     	</div>
+		    </form>
+		 	</div>
+		</div>
+		
+
+
+<script type="text/javascript">
+	function insertSurvey()
+	{
+		//alert( $("input:radio[name='survey']").is(":checked") == true );
+		//alert( $('input[name="survey"]').val() == 'undefined' );
+		//return false;
+		if( $("input:radio[name='survey']").is(":checked") )
+		{
+			$.ajax({
+				type : "GET",
+				url : "/common/inc/womanupSurveyAjax.do",
+				dataType: 'json',
+				data : {
+					'ORG_CODE' : $('input[name="ORG_CODE"]').val(),
+					'menu_id' : $('input[name="menu_id"]').val(),
+					'url' : $('input[name="url"]').val(),
+					'uri' : $('input[name="uri"]').val(),
+					'query' : $('input[name="query"]').val(),
+					'score' : $('input[name="survey"]:checked').val()
+				},
+				success : function(response)
+				{
+//	 					console.log(response);
+//	 					alert( $('input[name="survey"]:checked').val() );
+					if(response.resultStats.resultCode=="error"){
+						alert(response.resultStats.resultMsg);
+					}else{
+						alert('만족도 조사에 참여해주셔서 감사합니다.');						
+					}	
+				},
+				error : function(jqXHR, textStatus, thrownError)
+				{
+					console.log('error');
+				}
+			});
+		}
+		else
+		{
+			alert('만족도를 선택하지 않으셨습니다.');
+		}
+	}
+</script>
+<!-- <div class="survey_box"> -->
+<!--   <div class="survey"> -->
+
+
+
+
+
+<!--       <div> -->
+<!--           <h2><b>사용자</b> <b>만족도 조사</b></h2> -->
+<!--           <p><span>현재 페이지의 내용에 </span><span>얼마나 만족하십니까?</span></p> -->
+<!--       </div> -->
+<!--       <form name="form_survey" action="#" method="post"> -->
+<!--           <fieldset> -->
+<!--               <legend>만족도 조사</legend> -->
+<!--               @@@20180711 value값 추가 -->
+<!--               @@@20180712 class값 변경(ul, label) -->
+<!--                 <ul class="radio"> -->
+<!--                     <li> -->
+<!--                         <label for="survey_5"> -->
+<!--                             <input type="radio" name="survey" id="survey_5" value="5" /> -->
+<!--                             매우 만족합니다. -->
+<!--                         </label> -->
+<!--                     </li> -->
+<!--                     <li> -->
+<!--                         <label for="survey_4"> -->
+<!--                             <input type="radio" name="survey" id="survey_4" value="4" /> -->
+<!--                             만족합니다. -->
+<!--                         </label> -->
+<!--                     </li> -->
+<!--                     <li> -->
+<!--                         <label for="survey_3"> -->
+<!--                             <input type="radio" name="survey" id="survey_3" value="3" /> -->
+<!--                             보통입니다. -->
+<!--                         </label> -->
+<!--                     </li> -->
+<!--                     <li> -->
+<!--                         <label for="survey_2"> -->
+<!--                             <input type="radio" name="survey" id="survey_2" value="2" /> -->
+<!--                             불만족합니다. -->
+<!--                         </label> -->
+<!--                     </li> -->
+<!--                     <li> -->
+<!--                         <label for="survey_1"> -->
+<!--                             <input type="radio" name="survey" id="survey_1" value="1" /> -->
+<!--                             매우 불만족합니다. -->
+<!--                         </label> -->
+<!--                     </li> -->
+<!--                 </ul> -->
+<!--                 <button type="button" class="btn_ok" onclick="insertSurvey(); return false;">참여하기</button> -->
+<!--             </fieldset> -->
+<!--         </form> -->
+<!--     </div> -->
+<!-- </div> -->
+		
+
+
+
+
+
+<footer id="footer">
+	<section class="personal">
+		<h3>이용약관 및 관련기관바로가기</h3>
+		<div class="footer_top">
+			<ul class="personal_link">
+				<li><a href="/www/common/cntnts/selectContents.do?cntnts_id=W0000094">이용약관</a></li>
+				<li class="txt_bold"><a href="/www/common/cntnts/selectContents.do?cntnts_id=W9700064">개인정보처리방침</a></li>
+				
+				<li><a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=W9700020">이메일무단수집거부</a></li>
+
+				
+				<li><a href="/dongbu/common/cntnts/selectContents.do?cntnts_id=G0600038" title="사용자가이드">사용자가이드</a></li>
+				
+
+				
+				<li><a href="https://swrd.seoulcareerup.or.kr" target="_blank" title="새 창 열림(서울시여성능력개발원)">서울시여성능력개발원</a>
+				</li>
+				
+			</ul>
+			
+			
+			<div class="family">
+				<button>관련기관 바로가기</button>
+				<div>
+					<div>
+						<ul>
+							<li>
+								<b>서울커리업</b>
+								<ol>
+									<li><a href="https://www.seoulcareerup.or.kr" target="_blank"
+										   title="새 창 열림">서울커리업</a></li>
+								</ol>
+							</li>
+							<li>
+								<b>서울시여성능력개발원</b>
+								<ol>
+									<li><a href="https://swrd.seoulcareerup.or.kr" target="_blank"
+										   title="새 창 열림(서울시여성능력개발원)">서울시여성능력개발원</a>
+									</li>
+								</ol>
+							</li>
+							<li>
+								<b>서울시여성발전센터</b>
+								<ol>
+									<li><a href="https://nambu.seoulcareerup.or.kr" target="_blank"
+										   title="새 창 열림(남부여성발전센터)">남부여성발전센터</a>
+									</li>
+									<li><a href="https://dongbu.seoulcareerup.or.kr" target="_blank"
+										   title="새 창 열림(동부여성발전센터)">동부여성발전센터</a>
+									</li>
+									<li><a href="https://bukbu.seoulcareerup.or.kr" target="_blank"
+										   title="새 창 열림(북부여성발전센터)">북부여성발전센터</a>
+									</li>
+									<li><a href="https://seobu.seoulcareerup.or.kr" target="_blank"
+										   title="새 창 열림(서부여성발전센터)">서부여성발전센터</a>
+									</li>
+									<li><a href="https://jungbu.seoulcareerup.or.kr" target="_blank"
+										   title="새 창 열림(중부여성발전센터)">중부여성발전센터</a>
+									</li>
+								</ol>
+							</li>
+							<li>
+								<b>서울시여성인력개발센터</b>
+								<ol>
+									<li><a href="https://gd.seoulcareerup.or.kr" target="_blank"
+										   title="새 창 열림(강동여성인력개발센터)">강동여성인력개발센터</a>
+									</li>
+									<li><a href="https://gangbuk.seoulcareerup.or.kr" target="_blank"
+										   title="새 창 열림(강북여성인력개발센터)">강북여성인력개발센터</a>
+									</li>
+									<li><a href="https://gangseo.seoulcareerup.or.kr" target="_blank"
+										   title="새 창 열림(강서여성인력개발센터)">강서여성인력개발센터</a>
+									</li>
+									<li><a href="https://gwanak.seoulcareerup.or.kr" target="_blank"
+										   title="새 창 열림(관악여성인력개발센터)">관악여성인력개발센터</a>
+									</li>
+									<li><a href="https://guro.seoulcareerup.or.kr" target="_blank"
+										   title="새 창 열림(구로여성인력개발센터)">구로여성인력개발센터</a>
+									</li>
+									<li><a href="https://nowon.seoulcareerup.or.kr" target="_blank"
+										   title="새 창 열림(노원여성인력개발센터)">노원여성인력개발센터</a>
+									</li>
+									<li><a href="https://ddm.seoulcareerup.or.kr" target="_blank"
+										   title="새 창 열림(동대문여성인력개발센터)">동대문여성인력개발센터</a>
+									</li>
+									<li><a href="https://dongjak.seoulcareerup.or.kr" target="_blank"
+										   title="새 창 열림(동작여성인력개발센터)">동작여성인력개발센터</a>
+									</li>
+									<li><a href="https://sdm.seoulcareerup.or.kr" target="_blank"
+										   title="새 창 열림(서대문여성인력개발센터)">서대문여성인력개발센터</a>
+									</li>
+									<li><a href="https://seocho.seoulcareerup.or.kr" target="_blank"
+										   title="새 창 열림(서초여성인력개발센터)">서초여성인력개발센터</a>
+									</li>
+									<li><a href="https://sd.seoulcareerup.or.kr" target="_blank"
+										   title="새 창 열림(성동여성인력개발센터)">성동여성인력개발센터</a>
+									</li>
+									<li><a href="https://songpa.seoulcareerup.or.kr" target="_blank"
+										   title="새 창 열림(송파여성인력개발센터)">송파여성인력개발센터</a>
+									</li>
+									<li><a href="https://ydp.seoulcareerup.or.kr" target="_blank"
+										   title="새 창 열림(영등포여성인력개발센터)">영등포여성인력개발센터</a>
+									</li>
+									<li><a href="https://yongsan.seoulcareerup.or.kr" target="_blank"
+										   title="새 창 열림(용산여성인력개발센터)">용산여성인력개발센터</a>
+									</li>
+									<li><a href="https://ep.seoulcareerup.or.kr" target="_blank"
+										   title="새 창 열림(은평여성인력개발센터)">은평여성인력개발센터</a>
+									</li>
+									<li><a href="https://wsbt.seoulcareerup.or.kr" target="_blank"
+										   title="새 창 열림(장애여성인력개발센터)">장애여성인력개발센터</a>
+									</li>
+									<li><a href="https://jongno.seoulcareerup.or.kr" target="_blank"
+										   title="새 창 열림(종로여성인력개발센터)">종로여성인력개발센터</a>
+									</li>
+									<li><a href="https://jungnang.seoulcareerup.or.kr" target="_blank"
+										   title="새 창 열림">중랑여성인력개발센터</a></li>
+								</ol>
+							</li>
+							<li>
+								<b>단독 새로일하기센터</b>
+								<ol>
+									<li>
+										<a href="https://www.dobongwoman.or.kr" target="_blank" title="새 창 열림(도봉여성새로일하기센터)">도봉여성새로일하기센터</a>
+									</li>
+									<li>
+										<a href="https://www.jnwelfare.or.kr" target="_blank" title="새 창 열림(도봉여성새로일하기센터)">정릉여성새로일하기센터</a>
+									</li>
+									<li>
+										<a href="https://www.jgwoman.or.kr" target="_blank" title="새 창 열림(도봉여성새로일하기센터)">중구여성새로일하기센터</a>
+									</li>
+								</ol>
+							</li>
+							<li>
+								<b>유관기관</b>
+								<ol>
+									<li>
+										<a href="http://www.seoul.go.kr" target="_blank" title="새 창 열림(서울시청)">서울시청</a>
+									</li>
+									<li>
+										<a href="http://www.mogef.go.kr" target="_blank" title="새 창 열림(성평등가족부)">성평등가족부</a></li>
+									</li>
+									<li>
+										<a href="http://www.seoulwomen.or.kr" target="_blank" title="새 창 열림(서울시여성가족재단)">서울시여성가족재단</a>
+									</li>
+									<li>
+										<a href="https://familyseoul.or.kr/" target="_blank" title="새 창 열림(서울시가족센터)">서울시가족센터</a></li>
+									<li>
+										<a href="http://www.seoulhanbumo.or.kr" target="_blank" title="새 창 열림(서울시한부모가족지원센터)">서울시한부모가족지원센터</a>
+									</li>
+									<li>
+										<a href="https://50plus.or.kr" target="_blank" title="새 창 열림">서울시50플러스재단</a>
+									</li>
+									
+									<!-- <li><a href="http://<!%=Globals.DOMAIN_SEOULWORKINGMOM%>" target="_blank"
+										   title="새 창 열림(양성평등과 직장맘지원센터)">양성평등과 직장맘지원센터</a>
+									</li> -->
+								</ol>
+							</li>
+						</ul>
+						<button type="button" class="family_colse">닫기</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+				
+	<section class="address">
+		<h3>회사주소 및 정보</h3>
+		<div>
+			
+			<ul>
+				<li class="add">서울특별시 광진구 아차산로30길 36 (자양동)</li>
+				<li>센터장 : 정은아</li>
+				<li class="add">전화 : <span>02-460-2300</span><a href="tel:02-460-2300">02-460-2300</a></li>
+				<li class="add">팩스 : <span>02-460-2399</span><a href="tel:02-460-2399">02-460-2399</a></li>
+				<li>개인정보관리책임자 : 정은아</li>
+				<li>사업자등록번호 : 206-83-02273</li>
+				<li>이메일 : dongbu@scup.or.kr</li>
+				<li class="copy">Copyright&copy; 2018. 서울특별시 동부여성발전센터. All rights Reserved.</li>
+			</ul>
+			<ol>
+				<li><a href="https://www.youtube.com/channel/UCQEBegrkiQqW3mky8sj744w" target="_blank" title="새 창 열림(유튜브)"><img
+						src="/common/images/womanup/youtube.png" alt="유튜브"/></a></li>
+				<li><a href="https://www.facebook.com/dongbuwomanup" target="_blank" title="새 창 열림(페이스북)"><img
+						src="/common/images/womanup/face.png" alt="페이스북"/></a></li>
+				<li><a href="https://www.instagram.com/dongbuwomanup/" target="_blank" title="새 창 열림(인스타그램)"><img
+						src="/common/images/womanup/insta.png" alt="인스타그램"/></a></li>
+				<li><a href="https://blog.naver.com/dongbu2017" target="_blank" title="새 창 열림(블로그)"><img
+						src="/common/images/womanup/blog.png" alt="블로그"/></a></li>
+				<li><!-- <img src="/common/images/womanup/web.png" alt="웹접근성" /> --></li>
+			</ol>
+			
+		</div>
+	</section>
+</footer>
+<aside class="btn_top">
+	<button type="button" class="goTop">맨위로</button>
+</aside>
+
+<script type="text/javaScript" language="javascript">
+    $(document).ready(function () {
+        var speed = 200;
+        $(".goTop").css("cursor", "pointer").click(function () {
+            $('body, html').animate({scrollTop: 0}, speed);
+        });
+    });
+
+    
+</script>
+
+<script type="text/javascript">
+	if(sessionStorage.getItem('view_mode') == null){
+		var mobileBtn = document.getElementById("view_mode_mobile");
+		if(mobileBtn != null){
+			mobileBtn.setAttribute('style', 'display:none;')
+		}
+	}
+</script>
+
+
+<script type="text/javascript" src="//wcs.naver.net/wcslog.js"> </script> 
+<script type="text/javascript"> 
+	if (!wcs_add) var wcs_add={};
+	wcs_add["wa"] = "s_1513120c9004";
+	if (!_nasa) var _nasa={};
+	if(window.wcs){
+		wcs.inflow("seoulwomanup.or.kr");
+		wcs_do(_nasa);
+	}
+</script>
+
+
+	</div>
+</body>
+</html>

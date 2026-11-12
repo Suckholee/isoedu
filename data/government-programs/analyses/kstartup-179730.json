@@ -1,0 +1,228 @@
+{
+  "programId": "kstartup-179730",
+  "title": "2026 재도전˙혁신캠퍼스 성과공유회",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-08T10:13:36.931982+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179730",
+  "reviewScope": "공식상세·대체TXT전문·포스터이미지전체시각·Moaform공개접근/최종URL확인,2026-11-08",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v180SLQdS_XHtZch_HfkFgAef9705vS5JmDWke6mIPI3pBfg",
+      "verifiedAt": "2026-11-08",
+      "status": "downloaded",
+      "sha256": "5a1db2cafe974390cc85f1b808813fe250bcb25a315d2bcf2350a10498abe968",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 1443422,
+      "format": "IMAGE",
+      "file": "attachment-01.bin",
+      "contentType": "image/png;charset=UTF-8",
+      "review": {
+        "at": "2026-11-08T10:13:36.931982+00:00",
+        "scope": "공식상세·대체TXT전문·포스터이미지전체시각·Moaform공개접근/최종URL확인,2026-11-08",
+        "method": "visual"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1cwPbGQ2TzoP0tdXF0ehnve1_O1D35yJLUJYVSiERqNThhQ",
+      "verifiedAt": "2026-11-08",
+      "status": "downloaded",
+      "sha256": "c0f96340c14188ed97b3999c8557652f4693496dfa71ce2ea43e22a42ed42837",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 796,
+      "format": "TEXT",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "review": {
+        "at": "2026-11-08T10:13:36.931982+00:00",
+        "scope": "공식상세·대체TXT전문·포스터이미지전체시각·Moaform공개접근/최종URL확인,2026-11-08",
+        "method": "text/visual scope recorded in reviewScope"
+      },
+      "extraction": "decoded-text",
+      "textFile": "attachment-02.bin.txt"
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/v180SLQdS_XHtZch_HfkFgAef9705vS5JmDWke6mIPI3pBfg": "5a1db2cafe974390cc85f1b808813fe250bcb25a315d2bcf2350a10498abe968",
+    "https://www.k-startup.go.kr/afile/fileDownload/v1cwPbGQ2TzoP0tdXF0ehnve1_O1D35yJLUJYVSiERqNThhQ": "c0f96340c14188ed97b3999c8557652f4693496dfa71ce2ea43e22a42ed42837"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-08T10:13:36.931982+00:00",
+  "eligibility": {
+    "summary": "재도전·혁신캠퍼스참여기업,유관기관관계자,VC/AC투자자,(예비)재창업자등 행사참석.",
+    "companyFields": [
+      "참가자소속·역할",
+      "재창업/투자관심",
+      "연락처·참석가능여부(폼문항미확인)"
+    ],
+    "reference": "상세신청대상·포스터참석대상; 확인 2026-11-08T10:20:39.754794+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179730"
+  },
+  "exclusions": {
+    "items": [
+      "상세제외조건미기재",
+      "입주·지원금모집과구분"
+    ],
+    "reference": "상세신청절; 확인 2026-11-08T10:20:39.754794+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179730"
+  },
+  "support": {
+    "summary": "11/27 14~16:30 대전스타트업파크본부2층 재도전·혁신캠퍼스라운지/코워킹. 센터/기관지원소개·성장스토리·네트워크. 지원금·비율·자부담·참가비 미명시.",
+    "reference": "포스터진행일시/장소/내용; 확인 2026-11-08T10:20:39.754794+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179730"
+  },
+  "period": {
+    "start": "2026-11-05",
+    "end": "2026-11-26",
+    "deadlineTime": "18:00",
+    "timezone": "Asia/Seoul",
+    "reference": "상세신청기간; 확인 2026-11-08T10:20:39.754794+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179730"
+  },
+  "application": {
+    "summary": "moaform.com/q/r7idF8 또는포스터QR. 공개URL200/최종answer.moaform 리디렉션 확인하되JS셸로실제폼질문·동의미확인. 제출안함.",
+    "reference": "포스터신청QR·상세신청링크; 확인 2026-11-08T10:20:39.754794+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179730"
+  },
+  "requiredDocuments": [
+    {
+      "name": "온라인참가폼",
+      "condition": "공통·실제문항미확인",
+      "reference": "상세 제출서류·포스터신청방법"
+    }
+  ],
+  "businessPlan": {
+    "format": "행사신청폼",
+    "limit": "사업계획서양식·분량요구없음",
+    "sections": [],
+    "reference": "상세제출서류; 확인 2026-11-08T10:20:39.754794+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179730"
+  },
+  "evaluation": {
+    "summary": "온라인신청자참석 안내,평가배점미명시.",
+    "reference": "상세선정절; 확인 2026-11-08T10:20:39.754794+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179730"
+  },
+  "contact": {
+    "name": "운영070-4772-7287 kyc@letsedu.kr /주관042-385-0584",
+    "reference": "포스터문의처; 확인 2026-11-08T10:20:39.754794+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179730"
+  },
+  "unresolved": [
+    "Moaform JS셸만확인하여필수문항·동의/보유기간·접수상태미확인",
+    "상세공고작성일11/27(모집마감11/26후)표기 및상세지역/실제행사역할차이 확인필요",
+    "참가비/정원미명시"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179730",
+    "companyId": null,
+    "permission": "권한회사프로필확보후근거별검토·현재신청가능확정아님",
+    "steps": [
+      "회사필드/증빙확인",
+      "충돌/미확인해결",
+      "S12양식·S13회사정보로서류/계획작성"
+    ]
+  },
+  "applicationChecks": [
+    {
+      "id": "179730",
+      "url": "https://moaform.com/q/r7idF8",
+      "checkedAt": "2026-11-08T10:11:40.402146+00:00",
+      "status": 200,
+      "finalUrl": "https://answer.moaform.com/answers/Mqpqaj/start?st=r7idF8",
+      "evidence": "179730-publiccheck-20261108.html",
+      "bytes": 5461
+    }
+  ],
+  "evidenceReferences": [
+    {
+      "field": "eligibility",
+      "reference": "상세신청대상·포스터참석대상",
+      "checkedAt": "2026-11-08T10:20:39.754794+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179730",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v180SLQdS_XHtZch_HfkFgAef9705vS5JmDWke6mIPI3pBfg",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1cwPbGQ2TzoP0tdXF0ehnve1_O1D35yJLUJYVSiERqNThhQ"
+      ]
+    },
+    {
+      "field": "exclusions",
+      "reference": "상세신청절",
+      "checkedAt": "2026-11-08T10:20:39.754794+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179730",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v180SLQdS_XHtZch_HfkFgAef9705vS5JmDWke6mIPI3pBfg",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1cwPbGQ2TzoP0tdXF0ehnve1_O1D35yJLUJYVSiERqNThhQ"
+      ]
+    },
+    {
+      "field": "support",
+      "reference": "포스터진행일시/장소/내용",
+      "checkedAt": "2026-11-08T10:20:39.754794+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179730",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v180SLQdS_XHtZch_HfkFgAef9705vS5JmDWke6mIPI3pBfg",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1cwPbGQ2TzoP0tdXF0ehnve1_O1D35yJLUJYVSiERqNThhQ"
+      ]
+    },
+    {
+      "field": "period",
+      "reference": "상세신청기간",
+      "checkedAt": "2026-11-08T10:20:39.754794+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179730",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v180SLQdS_XHtZch_HfkFgAef9705vS5JmDWke6mIPI3pBfg",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1cwPbGQ2TzoP0tdXF0ehnve1_O1D35yJLUJYVSiERqNThhQ"
+      ]
+    },
+    {
+      "field": "application",
+      "reference": "포스터신청QR·상세신청링크",
+      "checkedAt": "2026-11-08T10:20:39.754794+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179730",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v180SLQdS_XHtZch_HfkFgAef9705vS5JmDWke6mIPI3pBfg",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1cwPbGQ2TzoP0tdXF0ehnve1_O1D35yJLUJYVSiERqNThhQ"
+      ]
+    },
+    {
+      "field": "requiredDocuments",
+      "reference": "상세제출서류",
+      "checkedAt": "2026-11-08T10:20:39.754794+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179730",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v180SLQdS_XHtZch_HfkFgAef9705vS5JmDWke6mIPI3pBfg",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1cwPbGQ2TzoP0tdXF0ehnve1_O1D35yJLUJYVSiERqNThhQ"
+      ]
+    },
+    {
+      "field": "businessPlan",
+      "reference": "상세제출서류",
+      "checkedAt": "2026-11-08T10:20:39.754794+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179730",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v180SLQdS_XHtZch_HfkFgAef9705vS5JmDWke6mIPI3pBfg",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1cwPbGQ2TzoP0tdXF0ehnve1_O1D35yJLUJYVSiERqNThhQ"
+      ]
+    },
+    {
+      "field": "evaluation",
+      "reference": "상세선정절",
+      "checkedAt": "2026-11-08T10:20:39.754794+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179730",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v180SLQdS_XHtZch_HfkFgAef9705vS5JmDWke6mIPI3pBfg",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1cwPbGQ2TzoP0tdXF0ehnve1_O1D35yJLUJYVSiERqNThhQ"
+      ]
+    },
+    {
+      "field": "contact",
+      "reference": "포스터문의처",
+      "checkedAt": "2026-11-08T10:20:39.754794+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179730",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v180SLQdS_XHtZch_HfkFgAef9705vS5JmDWke6mIPI3pBfg",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1cwPbGQ2TzoP0tdXF0ehnve1_O1D35yJLUJYVSiERqNThhQ"
+      ]
+    }
+  ]
+}

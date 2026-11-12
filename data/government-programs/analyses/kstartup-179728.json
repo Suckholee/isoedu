@@ -1,0 +1,231 @@
+{
+  "programId": "kstartup-179728",
+  "title": "[&#034;Beyond Silicon 2026&#034; 화합물반도체 미래를 여는 길] 개최",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-09T00:10:10.078931+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179728",
+  "reviewScope": "포스터JPG전체시각·대체TXT전문대조(표/문의/신청포함)·상세신청/제출/선정/행사·Naver공개폼셸;2026-11-09",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1y7jZcxD7ZQp5oCjK4iF_jeJb00jPXRvfoSiX3-6n3X1UOg",
+      "verifiedAt": "2026-11-09",
+      "status": "downloaded",
+      "sha256": "bea1b7666b4ec2f195c7db44169c55aa78637f4475be51048c2ea5a4ea3c7de7",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 1886556,
+      "format": "IMAGE",
+      "file": "attachment-01.bin",
+      "contentType": "image/jpeg;charset=UTF-8",
+      "review": {
+        "at": "2026-11-09T00:10:10.078931+00:00",
+        "scope": "포스터JPG전체시각·대체TXT전문대조(표/문의/신청포함)·상세신청/제출/선정/행사·Naver공개폼셸;2026-11-09",
+        "method": "visual"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1cOLao3lPxWAC0rOZW7wnr0-ES0PlVVclJeT0_wc3-Y5hvw",
+      "verifiedAt": "2026-11-09",
+      "status": "downloaded",
+      "sha256": "40cff453d33db6bb882c156d5b4931d9212105e9c6d284ecb278709ecb8771b0",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 3043,
+      "format": "TEXT",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "decoded-text",
+      "textFile": "attachment-02.bin.txt",
+      "review": {
+        "at": "2026-11-09T00:10:10.078931+00:00",
+        "scope": "포스터JPG전체시각·대체TXT전문대조(표/문의/신청포함)·상세신청/제출/선정/행사·Naver공개폼셸;2026-11-09",
+        "method": "text/visual scope recorded in reviewScope"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/v1y7jZcxD7ZQp5oCjK4iF_jeJb00jPXRvfoSiX3-6n3X1UOg": "bea1b7666b4ec2f195c7db44169c55aa78637f4475be51048c2ea5a4ea3c7de7",
+    "https://www.k-startup.go.kr/afile/fileDownload/v1cOLao3lPxWAC0rOZW7wnr0-ES0PlVVclJeT0_wc3-Y5hvw": "40cff453d33db6bb882c156d5b4931d9212105e9c6d284ecb278709ecb8771b0"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-09T00:10:10.078931+00:00",
+  "eligibility": {
+    "summary": "화합물반도체 행사 참여 희망자.기업규모/업력/지역제한이나별도선정은상세미기재;사업화지원금모집아님.팹투어는사전신청자한정.",
+    "companyFields": [
+      "소속",
+      "직위",
+      "성명",
+      "연락처",
+      "관심기술",
+      "참석일",
+      "팹투어사전신청여부"
+    ],
+    "reference": "상세신청대상·포스터팹투어주석; 확인 2026-11-09T00:13:27.071339+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179728"
+  },
+  "exclusions": {
+    "items": [
+      "상세제외조건없음·신청폼실제필드미확인"
+    ],
+    "reference": "상세신청/선정; 확인 2026-11-09T00:13:27.071339+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179728"
+  },
+  "support": {
+    "summary": "정책/기술/산업세미나·전시·팹투어·네트워킹,11/19~20 한국나노기술원1층;상세지원내용없음·참가비명시없어무료단정안함.1일등록9시/2일9:30,투어1/2차사전신청필요.",
+    "reference": "포스터11/19~20프로그램표·상세지원내용; 확인 2026-11-09T00:13:27.071339+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179728"
+  },
+  "period": {
+    "start": "2026-11-05",
+    "end": "2026-11-16",
+    "deadlineTime": "18:00",
+    "timezone": "Asia/Seoul",
+    "reference": "포스터하단·상세신청기간; 확인 2026-11-09T00:13:27.071339+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179728"
+  },
+  "application": {
+    "summary": "11/16 18시까지 포스터URL https://m.site.naver.com/2gKrl →Naver폼 https://form.naver.com/response/JpvgbG8Lot9 .공개HTTP200은JS셸만으로실제신청문항미확인.",
+    "reference": "포스터하단URL/공개Naver폼JS셸; 확인 2026-11-09T00:13:27.071339+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179728"
+  },
+  "requiredDocuments": [
+    {
+      "name": "온라인 참가신청",
+      "condition": "필수/상세제출서류없음·팹투어사전신청별도선택미확인",
+      "reference": "포스터하단·상세신청/제출·공개Naver폼셸"
+    }
+  ],
+  "businessPlan": {
+    "format": "사업계획서요구없음",
+    "limit": "해당없음",
+    "sections": [],
+    "reference": "상세제출서류없음; 확인 2026-11-09T00:13:27.071339+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179728"
+  },
+  "evaluation": {
+    "summary": "상세선정절차없음·행사참가등록",
+    "reference": "상세선정없음; 확인 2026-11-09T00:13:27.071339+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179728"
+  },
+  "contact": {
+    "name": "한국나노기술원 대외협력처/화합물반도체기술협의회031-546-6530,baeki.chung@kanc.re.kr (상세·TXT·포스터대조)",
+    "reference": "포스터하단·상세문의; 확인 2026-11-09T00:13:27.071339+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179728"
+  },
+  "unresolved": [
+    "대체TXT상단2026.08.27 14시문구잔존·이미지/상세2026.11.19~20일정과충돌;최신일정기관확인",
+    "Naver폼200은JS로딩셸만·참가/투어문항과개인정보동의미확인",
+    "팹투어잔여정원/참가비여부미명시·선정가능확정아님"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179728",
+    "companyId": null,
+    "permission": "권한회사프로필확보후근거별검토·현재신청가능확정아님",
+    "steps": [
+      "회사필드/증빙확인",
+      "충돌/미확인해결",
+      "S12양식·S13회사정보로서류/계획작성"
+    ]
+  },
+  "applicationChecks": [
+    {
+      "id": "179728",
+      "url": "https://m.site.naver.com/2gKrl",
+      "checkedAt": "2026-11-09T00:08:22.389298+00:00",
+      "status": 200,
+      "finalUrl": "https://form.naver.com/response/JpvgbG8Lot9",
+      "evidence": "179728-publiccheck-20261109.html",
+      "bytes": 2411
+    }
+  ],
+  "evidenceReferences": [
+    {
+      "field": "eligibility",
+      "reference": "상세신청대상·포스터팹투어주석",
+      "checkedAt": "2026-11-09T00:13:27.071339+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179728",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1y7jZcxD7ZQp5oCjK4iF_jeJb00jPXRvfoSiX3-6n3X1UOg",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1cOLao3lPxWAC0rOZW7wnr0-ES0PlVVclJeT0_wc3-Y5hvw"
+      ]
+    },
+    {
+      "field": "exclusions",
+      "reference": "상세신청/선정",
+      "checkedAt": "2026-11-09T00:13:27.071339+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179728",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1y7jZcxD7ZQp5oCjK4iF_jeJb00jPXRvfoSiX3-6n3X1UOg",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1cOLao3lPxWAC0rOZW7wnr0-ES0PlVVclJeT0_wc3-Y5hvw"
+      ]
+    },
+    {
+      "field": "support",
+      "reference": "포스터11/19~20프로그램표·상세지원내용",
+      "checkedAt": "2026-11-09T00:13:27.071339+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179728",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1y7jZcxD7ZQp5oCjK4iF_jeJb00jPXRvfoSiX3-6n3X1UOg",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1cOLao3lPxWAC0rOZW7wnr0-ES0PlVVclJeT0_wc3-Y5hvw"
+      ]
+    },
+    {
+      "field": "period",
+      "reference": "포스터하단·상세신청기간",
+      "checkedAt": "2026-11-09T00:13:27.071339+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179728",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1y7jZcxD7ZQp5oCjK4iF_jeJb00jPXRvfoSiX3-6n3X1UOg",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1cOLao3lPxWAC0rOZW7wnr0-ES0PlVVclJeT0_wc3-Y5hvw"
+      ]
+    },
+    {
+      "field": "application",
+      "reference": "포스터하단URL/공개Naver폼JS셸",
+      "checkedAt": "2026-11-09T00:13:27.071339+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179728",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1y7jZcxD7ZQp5oCjK4iF_jeJb00jPXRvfoSiX3-6n3X1UOg",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1cOLao3lPxWAC0rOZW7wnr0-ES0PlVVclJeT0_wc3-Y5hvw"
+      ]
+    },
+    {
+      "field": "requiredDocuments",
+      "reference": "상세제출서류없음",
+      "checkedAt": "2026-11-09T00:13:27.071339+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179728",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1y7jZcxD7ZQp5oCjK4iF_jeJb00jPXRvfoSiX3-6n3X1UOg",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1cOLao3lPxWAC0rOZW7wnr0-ES0PlVVclJeT0_wc3-Y5hvw"
+      ]
+    },
+    {
+      "field": "businessPlan",
+      "reference": "상세제출서류없음",
+      "checkedAt": "2026-11-09T00:13:27.071339+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179728",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1y7jZcxD7ZQp5oCjK4iF_jeJb00jPXRvfoSiX3-6n3X1UOg",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1cOLao3lPxWAC0rOZW7wnr0-ES0PlVVclJeT0_wc3-Y5hvw"
+      ]
+    },
+    {
+      "field": "evaluation",
+      "reference": "상세선정없음",
+      "checkedAt": "2026-11-09T00:13:27.071339+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179728",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1y7jZcxD7ZQp5oCjK4iF_jeJb00jPXRvfoSiX3-6n3X1UOg",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1cOLao3lPxWAC0rOZW7wnr0-ES0PlVVclJeT0_wc3-Y5hvw"
+      ]
+    },
+    {
+      "field": "contact",
+      "reference": "포스터하단·상세문의",
+      "checkedAt": "2026-11-09T00:13:27.071339+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179728",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1y7jZcxD7ZQp5oCjK4iF_jeJb00jPXRvfoSiX3-6n3X1UOg",
+        "https://www.k-startup.go.kr/afile/fileDownload/v1cOLao3lPxWAC0rOZW7wnr0-ES0PlVVclJeT0_wc3-Y5hvw"
+      ]
+    }
+  ]
+}

@@ -7,7 +7,7 @@ export async function abortable(promise,signal){
  try{return await Promise.race([promise,cancelled]);}finally{signal.removeEventListener('abort',stop);}
 }
 const MAX_BYTES=50*1024*1024,MAX_PAGES=60,MAX_TEXT=3_000_000;
-function officeUnits(bytes,ext,warnings){
+export function officeUnits(bytes,ext,warnings){
  let total=0;const archive=unzipSync(bytes,{filter:file=>{const selected=ext==='docx'?/^word\/(document|header\d+|footer\d+)\.xml$/.test(file.name):ext==='hwpx'?/^Contents\/section\d+\.xml$/.test(file.name):/^xl\/(sharedStrings|styles|workbook|worksheets\/sheet\d+)\.xml$/.test(file.name);if(selected){total+=file.originalSize;if(total>MAX_TEXT*4)throw Error('본문 크기가 너무 큽니다. PDF로 변환해 확인해 주세요.');}return selected;}});
  const units=[];
  for(const [name,data]of Object.entries(archive)){
@@ -36,7 +36,7 @@ function officeUnits(bytes,ext,warnings){
  warnings.push('문서에 삽입된 이미지와 도형 안의 글자는 본문 추출에 포함되지 않을 수 있습니다. 스캔 자료는 PDF·이미지로 올려 주세요.');
  return units;
 }
-async function hwpUnits(bytes,warnings){
+export async function hwpUnits(bytes,warnings){
  const CFB=await import('cfb');const cfb=CFB.read(bytes,{type:'array'}),find=name=>cfb.FileIndex.find((f,i)=>cfb.FullPaths[i].endsWith('/'+name));
  const header=find('FileHeader');if(!header)throw Error('HWP 헤더를 확인하지 못했습니다.');const flags=new DataView(Uint8Array.from(header.content).buffer).getUint32(36,true);if(flags&2||flags&4)throw Error('암호화·배포용 HWP는 PDF로 변환해 주세요.');
  const units=[];let size=0;

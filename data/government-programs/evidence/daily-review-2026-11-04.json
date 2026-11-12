@@ -1,0 +1,118 @@
+{
+  "at": "2026-11-04T00:47:52.401970+00:00",
+  "date": "2026-11-04",
+  "automationId": "isoedu",
+  "stage": "daily-analysis-summary",
+  "summary": "2026-11-04 정기 실행: K-Startup15·중기부10 각 첫 페이지,신규5·누적124·상세124건. 순천법률/위치정보교육/공주입주/해양IR/김해교육 5건 첨부14개 본문·양식·동의/별첨 실제분석후partial. 이미지3·공주스캔2쪽·순천지도사진1쪽시각확인. 공주대공식추가6첨부다운로드·기존3HWP본문대조·PPT19장핵심요령/항목확인(추가포스터/리플릿텍스트0자로시각검토대기). 공주최초발전150만원/내부지원20%·20쪽계획/발표순서고정추가확인. 순천신청양식필수업로드대본문온라인기본충돌·양식미확보,김해공고13:30~18:30대폼13~18충돌,위치교육시작10/30대포스터10/27충돌보존·공개폼필수문항및12/10파기고지확인. 해양IR자격확인서R&D참여제한추가·보유기간누락미해결. KStartup179705는제2026-622호/11/23 16시동일수정공고로mss1072214와연결(중복원문그룹·ID이력유지),8첨부중공고핵심대조외7양식내용미분석. 총공고첨부25다운로드·기존임박2건동일해시3·변경0,공주추가6별도. 큐{'partial': 86, 'pending': 38}·잔여124·이번5건11/5재시도. 기업마당/IRIS/KOTRA공개접근상태근거저장·전체목록수집아님. route.GET200·124공고86분석·5건마감시각/달력배치검증,localhost3001연결실패·화면미검증. G01→S03→S12/S13 공고ID·필드·근거·권한인계유지. 회사적합판정·DB변경·배포·외부발송없음.",
+  "coverage": {
+    "k-startup": "first page15",
+    "mss": "first page10",
+    "newRecords": 5,
+    "totalRecords": 124,
+    "detailsFetched": 124,
+    "fullCollection": false
+  },
+  "reviewedProgramIds": [
+    "kstartup-179708",
+    "kstartup-179679",
+    "kstartup-179691",
+    "kstartup-179615",
+    "kstartup-179688"
+  ],
+  "actualReviewedNoticeAttachments": 14,
+  "additionalHostAttachments": 6,
+  "hostReview": "3HWP중복본문/PPT19장핵심요령·추가스캔포스터/리플릿미검토",
+  "downloadOnlyScope": "kstartup179705 7신청/계획/증빙양식전문분석대기",
+  "hashDownloads": 25,
+  "sameExistingHashes": 3,
+  "changedHashes": 0,
+  "queueCounts": {
+    "partial": 86,
+    "pending": 38
+  },
+  "remaining": 124,
+  "nextRetryAt": "2026-11-05T09:00:00+09:00",
+  "sourceChecks": [
+    {
+      "id": "bizinfo",
+      "url": "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/list.do",
+      "checkedAt": "2026-11-04T00:43:16.667173+00:00",
+      "status": 200,
+      "finalUrl": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200View.do?null",
+      "evidence": "bizinfo-publiccheck-20261104.html",
+      "bytes": 111040
+    },
+    {
+      "id": "iris",
+      "url": "https://www.iris.go.kr/index.do",
+      "checkedAt": "2026-11-04T00:43:16.667579+00:00",
+      "status": 200,
+      "finalUrl": "https://www.iris.go.kr/index.do",
+      "evidence": "iris-publiccheck-20261104.html",
+      "bytes": 1510326
+    },
+    {
+      "id": "kotra",
+      "url": "https://kotra.or.kr/subList/20000020753",
+      "checkedAt": "2026-11-04T00:43:16.667826+00:00",
+      "status": 200,
+      "finalUrl": "https://kotra.or.kr/subList/20000020753",
+      "evidence": "kotra-publiccheck-20261104.html",
+      "bytes": 151048
+    }
+  ],
+  "applicationChecks": [
+    {
+      "id": "179688",
+      "url": "https://forms.gle/1z1TutqXonW5jTD1A",
+      "checkedAt": "2026-11-04T00:44:09.750098+00:00",
+      "status": 200,
+      "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLScXyCuzs0BhZv-jq_zZLdjImj0M6zT7Y1doUHgSNhESh5TTsQ/viewform?usp=send_form",
+      "evidence": "179688-publiccheck-20261104.html",
+      "bytes": 113067
+    },
+    {
+      "id": "179679",
+      "url": "http://www.openitrun.com",
+      "checkedAt": "2026-11-04T00:44:09.750395+00:00",
+      "status": 200,
+      "finalUrl": "http://www.openitrun.com",
+      "evidence": "179679-publiccheck-20261104.html",
+      "bytes": 673
+    },
+    {
+      "id": "179615",
+      "url": "https://badabom.go.kr/stup/pbanc/detail/view.do?pbancMngNo=S-ANN202600023",
+      "checkedAt": "2026-11-04T00:44:09.750509+00:00",
+      "status": 200,
+      "finalUrl": "https://badabom.go.kr/stup/pbanc/detail/view.do?pbancMngNo=S-ANN202600023",
+      "evidence": "179615-publiccheck-20261104.html",
+      "bytes": 9784787
+    }
+  ],
+  "extraChecks": [
+    {
+      "id": "179679-form",
+      "url": "https://forms.gle/YezXBNdVQmjfSZRK6",
+      "checkedAt": "2026-11-04T00:44:36.742820+00:00",
+      "status": 200,
+      "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdBzY6Fy9Mn39XsiCAXcYjUMcKpXgZvA4CGCflN76yWcRkHtA/viewform?usp=send_form",
+      "evidence": "179679-form-publiccheck-20261104.html",
+      "bytes": 112027
+    },
+    {
+      "id": "179691-host",
+      "url": "https://sanhak.kongju.ac.kr/bbs/M00015/562/433649/artclView.do?layout=unknown",
+      "checkedAt": "2026-11-04T00:44:36.743264+00:00",
+      "status": 200,
+      "finalUrl": "https://sanhak.kongju.ac.kr/M00015/5726/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGTTAwMDE1JTJGNTYyJTJGNDMzNjQ5JTJGYXJ0Y2xWaWV3LmRvJTNG",
+      "evidence": "179691-host-publiccheck-20261104.html",
+      "bytes": 147851
+    }
+  ],
+  "validationEvidence": "evidence/api-validation-2026-11-04.json",
+  "screenVerified": false,
+  "databaseModified": false,
+  "deployed": false,
+  "externalMessagesSent": false
+}

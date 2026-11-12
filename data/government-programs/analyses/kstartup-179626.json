@@ -1,0 +1,219 @@
+{
+  "programId": "kstartup-179626",
+  "title": "세종창업키움센터 운영 민간위탁 수탁기관 모집 재공고",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-11T02:37:54.824912+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179626",
+  "reviewScope": "세종시 공고 제2026-2201호, K-Startup 상세 / 공고 PDF 1~7쪽 텍스트·4쪽 배점표 시각 / HWPX Ⅰ~Ⅴ·붙임1~3·서식1~10 및 별지1~13 본문·표",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1iPEQyYZvBGp3D-JYzqRta3FC4E8E_gh5EvMuAIzwZP7tSw",
+      "verifiedAt": "2026-11-11",
+      "status": "downloaded",
+      "sha256": "8a4c1b58a0dc71cd64cd5300b6ee8d1c2b60e5935ab61709cc170dad0d1cbdd2",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 374869,
+      "format": "PDF",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 4780,
+      "review": {
+        "at": "2026-11-11T02:37:54.824912+00:00",
+        "scope": "세종시 공고 제2026-2201호, K-Startup 상세 / 공고 PDF 1~7쪽 텍스트·4쪽 배점표 시각 / HWPX Ⅰ~Ⅴ·붙임1~3·서식1~10 및 별지1~13 본문·표",
+        "method": "text/visual scope recorded in reviewScope"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1v6QvpzCx1OXFl1KCQzuZ1p_MrQesforkA2jX02jVA6Re_A",
+      "verifiedAt": "2026-11-11",
+      "status": "downloaded",
+      "sha256": "5e999bf4bbfa84ff609e6d9bf07884fb27c62c06ee22ca2e6bfc8574b2bfc5b3",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 199964,
+      "format": "HWPX",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 54909,
+      "review": {
+        "at": "2026-11-11T02:37:54.824912+00:00",
+        "scope": "세종시 공고 제2026-2201호, K-Startup 상세 / 공고 PDF 1~7쪽 텍스트·4쪽 배점표 시각 / HWPX Ⅰ~Ⅴ·붙임1~3·서식1~10 및 별지1~13 본문·표",
+        "method": "text/visual scope recorded in reviewScope"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/v1iPEQyYZvBGp3D-JYzqRta3FC4E8E_gh5EvMuAIzwZP7tSw": "8a4c1b58a0dc71cd64cd5300b6ee8d1c2b60e5935ab61709cc170dad0d1cbdd2",
+    "https://www.k-startup.go.kr/afile/fileDownload/v1v6QvpzCx1OXFl1KCQzuZ1p_MrQesforkA2jX02jVA6Re_A": "5e999bf4bbfa84ff609e6d9bf07884fb27c62c06ee22ca2e6bfc8574b2bfc5b3"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-11T02:37:54.824912+00:00",
+  "eligibility": {
+    "summary": "창업보육시설 또는 액셀러레이팅 운영 실적이 최근 3년 내 있는 법인·단체, 창업보육센터 요건 및 전문인력 2인 이상. 공동수급은 2개 기관, 각 지분 20% 이상, 높은 지분 기관 대표. 위탁시설 전담 상근 참여율 100%.",
+    "companyFields": [
+      "법인·단체 유형",
+      "주사무소·상근인력",
+      "창업보육·육성 수행 실적 및 기간",
+      "전문인력 자격·실제 참여",
+      "공동수급 지분·업무·중복 여부",
+      "입찰·운영 제재 이력",
+      "재무·안전·회계 증빙"
+    ],
+    "reference": "세종시 공고 제2026-2201호, K-Startup 상세 / 공고 PDF 1~7쪽 텍스트·4쪽 배점표 시각 / HWPX Ⅰ~Ⅴ·붙임1~3·서식1~10 및 별지1~13 본문·표"
+  },
+  "exclusions": {
+    "items": [
+      "최근 2년 입찰제한",
+      "최근 3년 시 위탁사무 행정처분 또는 벌금 이상 해당",
+      "최근 10년 비리·부실 운영 위탁 해지",
+      "주사무소·상근인력 실체 없는 법인·단체",
+      "중복 참여 불가"
+    ],
+    "reference": "세종시 공고 제2026-2201호, K-Startup 상세 / 공고 PDF 1~7쪽 텍스트·4쪽 배점표 시각 / HWPX Ⅰ~Ⅴ·붙임1~3·서식1~10 및 별지1~13 본문·표"
+  },
+  "support": {
+    "summary": "2027-01-01~2029-12-31 운영 위탁. 총 4억6500만원·2027년 1억5500만원, 위탁수수료 포함 및 예산 조정 가능. 지원비율·자부담 미기재.",
+    "reference": "세종시 공고 제2026-2201호, K-Startup 상세 / 공고 PDF 1~7쪽 텍스트·4쪽 배점표 시각 / HWPX Ⅰ~Ⅴ·붙임1~3·서식1~10 및 별지1~13 본문·표"
+  },
+  "period": {
+    "start": "2026-11-09",
+    "end": "2026-11-23",
+    "deadlineTime": "18:00",
+    "timezone": "Asia/Seoul",
+    "reference": "세종시 공고 제2026-2201호, K-Startup 상세 / 공고 PDF 1~7쪽 텍스트·4쪽 배점표 시각 / HWPX Ⅰ~Ⅴ·붙임1~3·서식1~10 및 별지1~13 본문·표",
+    "checkedAt": "2026-11-11T02:38:50.665484+00:00",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179626"
+  },
+  "application": {
+    "summary": "세종우체국 2층 세종시 경제정책과 창업벤처팀 대표·위임자 방문. 10:00~18:00, 12:00~13:00 제외. 제출본 일체의 PDF는 razolright@korea.kr로 별도 송부. 메일 단독 접수 불가.",
+    "reference": "세종시 공고 제2026-2201호, K-Startup 상세 / 공고 PDF 1~7쪽 텍스트·4쪽 배점표 시각 / HWPX Ⅰ~Ⅴ·붙임1~3·서식1~10 및 별지1~13 본문·표"
+  },
+  "requiredDocuments": [
+    {
+      "name": "사업계획서 및 PPT 각 10부",
+      "condition": "직인 원본 1부·평가본 9부, 50p/30p 제한, 양면 스프링 제본",
+      "reference": "HWPX Ⅲ-3, Ⅳ-1 / PDF p3"
+    },
+    {
+      "name": "별지 1 및 4~11",
+      "condition": "공모참가 인감날인, 서약·노동·청렴·안전·정량 자가진단·인력 적정성·법인 및 개인 동의",
+      "reference": "HWPX 붙임3 별지1,4~11"
+    },
+    {
+      "name": "별지 2·3",
+      "condition": "공동수급 시 협정·합의각서, 역할·책임을 계획서에 명시",
+      "reference": "HWPX Ⅲ-1, 붙임3 별지2~3"
+    },
+    {
+      "name": "사업자등록 사본, 등기부·인감·국세·지방세·자격증빙",
+      "condition": "등기·인감·납세는 공고일 기준 3개월 이내, 인감도장 지참",
+      "reference": "HWPX Ⅲ-3"
+    },
+    {
+      "name": "사용인감계·위임장 및 재직증명서",
+      "condition": "해당 시 별지12 또는 별지13 및 대리인 신분증",
+      "reference": "HWPX 붙임3 별지12~13"
+    },
+    {
+      "name": "정량평가 증빙 별권",
+      "condition": "실적·자격·학력·경력·재직·재무·기타, 발급 자료 공고일 3개월 이내(협약서·자격증 등 제외)",
+      "reference": "HWPX Ⅲ-3, Ⅳ-2, 붙임1"
+    }
+  ],
+  "businessPlan": {
+    "format": "HWPX 지정 서식 1~10. 발표용 PowerPoint. 평가본에 원본대조필, 증빙 별권 구분.",
+    "limit": "계획서 50쪽/25매, PPT 30쪽/15매, 각각 표지·목차 제외",
+    "sections": [
+      {
+        "name": "기관 일반현황",
+        "items": [
+          "신청기관과 주요 사업"
+        ],
+        "limit": "계획서 50쪽/25매, PPT 30쪽/15매, 각각 표지·목차 제외"
+      },
+      {
+        "name": "조직·인력",
+        "items": [
+          "전체 및 투입 조직, 책임자·실무자"
+        ],
+        "limit": "계획서 50쪽/25매, PPT 30쪽/15매, 각각 표지·목차 제외"
+      },
+      {
+        "name": "유사 실적",
+        "items": [
+          "최근 3년 보육·액셀러레이팅과 협업"
+        ],
+        "limit": "계획서 50쪽/25매, PPT 30쪽/15매, 각각 표지·목차 제외"
+      },
+      {
+        "name": "운영계획",
+        "items": [
+          "목표·연차·2027 세부·인력·KPI·기대효과"
+        ],
+        "limit": "계획서 50쪽/25매, PPT 30쪽/15매, 각각 표지·목차 제외"
+      },
+      {
+        "name": "사업비",
+        "items": [
+          "연차별 총괄·2027~2029 예산 및 산출내역"
+        ],
+        "limit": "계획서 50쪽/25매, PPT 30쪽/15매, 각각 표지·목차 제외"
+      },
+      {
+        "name": "기타",
+        "items": [
+          "재무·실적·인력 증빙"
+        ],
+        "limit": "계획서 50쪽/25매, PPT 30쪽/15매, 각각 표지·목차 제외"
+      }
+    ],
+    "reference": "세종시 공고 제2026-2201호, K-Startup 상세 / 공고 PDF 1~7쪽 텍스트·4쪽 배점표 시각 / HWPX Ⅰ~Ⅴ·붙임1~3·서식1~10 및 별지1~13 본문·표"
+  },
+  "evaluation": {
+    "summary": "정량 20(기관8·전문성6·실적6), 정성 80(이해15·수행25+예산10·운영30). 합산 70점 이상 고득점순, 동점 정성 우선 후 추첨. 12/3 심의 예정, 발표 20분·질의 10분 예정·최대 2인.",
+    "reference": "세종시 공고 제2026-2201호, K-Startup 상세 / 공고 PDF 1~7쪽 텍스트·4쪽 배점표 시각 / HWPX Ⅰ~Ⅴ·붙임1~3·서식1~10 및 별지1~13 본문·표"
+  },
+  "contact": {
+    "name": "세종시 경제정책과 044-300-4034 / razolright@korea.kr",
+    "reference": "세종시 공고 제2026-2201호, K-Startup 상세 / 공고 PDF 1~7쪽 텍스트·4쪽 배점표 시각 / HWPX Ⅰ~Ⅴ·붙임1~3·서식1~10 및 별지1~13 본문·표"
+  },
+  "unresolved": [
+    "K-Startup 표시 시작 09:00과 시청 공고 첨부의 방문 가능 10:00 차이. 방문 업무는 원 공고 10:00 기준.",
+    "관련 실적 3년 기산점은 공고일로 적힌 HWPX Ⅲ/Ⅳ 및 PDF 본문과 PDF 주석의 접수 마감일 표기가 달라 경계 사례 확인 필요."
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179626",
+    "companyId": null,
+    "permission": "권한회사프로필확보후근거별검토·현재신청가능확정아님",
+    "steps": [
+      "회사필드/증빙확인",
+      "충돌/미확인해결",
+      "S12양식·S13회사정보로서류/계획작성"
+    ]
+  },
+  "evidence": {
+    "detail": "evidence/kstartup-179626/detail.html",
+    "detailFetchedAt": "2026-11-11T02:27:27.394Z",
+    "attachmentManifest": "evidence/kstartup-179626/attachment-check-2026-11-11.json",
+    "publicChecks": [
+      {
+        "id": "179626",
+        "url": "https://www.sejong.go.kr/shrUrl/A89l142HUP.do",
+        "checkedAt": "2026-11-11T02:33:52.583509+00:00",
+        "status": 200,
+        "finalUrl": "https://www.sejong.go.kr/prog/publicNotice/kor/sub02_030301/C1_1/view.do?not_ancmt_mgt_no=72448&pageIndex=1",
+        "evidence": "179626-publiccheck-20261111.html",
+        "bytes": 216009
+      }
+    ]
+  }
+}

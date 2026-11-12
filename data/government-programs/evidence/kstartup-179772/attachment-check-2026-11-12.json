@@ -1,0 +1,16 @@
+[
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/v14rraLa5qqDgveJWfFhw_GVGCS4YEIlwOyDyiMj02dszjTg",
+    "verifiedAt": "2026-11-11T23:59:52.775285+00:00",
+    "status": "downloaded",
+    "sha256": "ac126da38fd0ee3e9f7155936cca3522060815e72a966e98407da6056d91c96f",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 244748,
+    "format": "PDF",
+    "file": "attachment-01.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 3372
+  }
+]

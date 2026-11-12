@@ -1,0 +1,58 @@
+[
+  {
+    "name": "gn",
+    "url": "https://www.gnstartup.kr/business/8339db24-725a-45bc-baf9-d778adc7b0d8/10788/detail",
+    "checkedAt": "2026-10-29T01:42:54.237750+00:00",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "name": "snip",
+    "url": "https://www.snip.or.kr/SNIP/contents/Business1.do?schM=view&snp=26a9e82acc6511f1b1350200655b0007",
+    "checkedAt": "2026-10-29T01:42:54.238014+00:00",
+    "status": 200,
+    "finalUrl": "https://www.snip.or.kr/SNIP/contents/Business1.do?schM=view&snp=26a9e82acc6511f1b1350200655b0007",
+    "bytes": 366568
+  },
+  {
+    "name": "beyond",
+    "url": "https://m.site.naver.com/2jwIV",
+    "checkedAt": "2026-10-29T01:42:54.238159+00:00",
+    "error": "HTTP Error 308: Permanent Redirect"
+  },
+  {
+    "name": "st",
+    "url": "https://forms.gle/cafJaUT8BPfPxCyEA",
+    "checkedAt": "2026-10-29T01:42:54.238254+00:00",
+    "error": "HTTP Error 401: Unauthorized"
+  },
+  {
+    "name": "mapo",
+    "url": "https://www.naroo.or.kr/bbs/content.php?co_id=program_view&np_seq=1312",
+    "checkedAt": "2026-10-29T01:42:54.238827+00:00",
+    "status": 200,
+    "finalUrl": "https://www.naroo.or.kr/bbs/content.php?co_id=program_view&np_seq=1312",
+    "bytes": 31328
+  },
+  {
+    "name": "bizinfo",
+    "url": "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/list.do",
+    "checkedAt": "2026-10-29T01:42:54.238975+00:00",
+    "status": 200,
+    "finalUrl": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200View.do?null",
+    "bytes": 111271
+  },
+  {
+    "name": "iris",
+    "url": "https://www.iris.go.kr/index.do",
+    "checkedAt": "2026-10-29T01:42:54.239111+00:00",
+    "error": "The read operation timed out"
+  },
+  {
+    "name": "kotra",
+    "url": "https://kotra.or.kr/subList/20000020753",
+    "checkedAt": "2026-10-29T01:42:54.239191+00:00",
+    "status": 200,
+    "finalUrl": "https://kotra.or.kr/subList/20000020753",
+    "bytes": 152169
+  }
+]

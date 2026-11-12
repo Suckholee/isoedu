@@ -1,0 +1,136 @@
+{
+  "programId": "kstartup-179760",
+  "title": "[2026년 대전창업문화주간] 제 3회 대전창업문화 주간(창업의 시작과 끝)",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-11T02:33:34.647201+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179760",
+  "reviewScope": "K-Startup 신청방법·제출·행사·문의 / 첨부1 포스터 전면 시각 검토 및 첨부2 HWPX section0 강연·신청링크 / e4c 공개 HTML",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1GwCsTD_gdN-KDxrVC3sFl9c8BJ9sO4ExmQZ0aX3Sc4rarg",
+      "verifiedAt": "2026-11-11",
+      "status": "downloaded",
+      "sha256": "44e53cc2927901c8d5b73fe185be7b2cb7e6b047d8e4f650124776c8187cc142",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 11210036,
+      "format": "IMAGE",
+      "file": "attachment-01.bin",
+      "contentType": "image/png;charset=UTF-8",
+      "review": {
+        "at": "2026-11-11T02:33:34.647201+00:00",
+        "scope": "K-Startup 신청방법·제출·행사·문의 / 첨부1 포스터 전면 시각 검토 및 첨부2 HWPX section0 강연·신청링크 / e4c 공개 HTML",
+        "method": "visual"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1PoaKlz6703qc7OaQIJTs2oPhRFNBiKCeKdQ5T0LhQic-aw",
+      "verifiedAt": "2026-11-11",
+      "status": "downloaded",
+      "sha256": "a95397c14905244346066ac3888ea0c430b43c4e6d4cf4241582efe5e62801df",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 30555,
+      "format": "HWPX",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 416,
+      "review": {
+        "at": "2026-11-11T02:33:34.647201+00:00",
+        "scope": "K-Startup 신청방법·제출·행사·문의 / 첨부1 포스터 전면 시각 검토 및 첨부2 HWPX section0 강연·신청링크 / e4c 공개 HTML",
+        "method": "text/visual scope recorded in reviewScope"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/v1GwCsTD_gdN-KDxrVC3sFl9c8BJ9sO4ExmQZ0aX3Sc4rarg": "44e53cc2927901c8d5b73fe185be7b2cb7e6b047d8e4f650124776c8187cc142",
+    "https://www.k-startup.go.kr/afile/fileDownload/v1PoaKlz6703qc7OaQIJTs2oPhRFNBiKCeKdQ5T0LhQic-aw": "a95397c14905244346066ac3888ea0c430b43c4e6d4cf4241582efe5e62801df"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-12T00:17:22.034859+00:00",
+  "eligibility": {
+    "summary": "창업에 관심 있는 누구나. 업종·지역·업력·규모 제한 미기재.",
+    "companyFields": [
+      "참가자 성명",
+      "연락처",
+      "참석 여부"
+    ],
+    "reference": "K-Startup 신청방법·제출·행사·문의 / 첨부1 포스터 전면 시각 검토 및 첨부2 HWPX section0 강연·신청링크 / e4c 공개 HTML"
+  },
+  "exclusions": {
+    "items": [
+      "별도 제외 조건 미기재"
+    ],
+    "reference": "K-Startup 신청방법·제출·행사·문의 / 첨부1 포스터 전면 시각 검토 및 첨부2 HWPX section0 강연·신청링크 / e4c 공개 HTML"
+  },
+  "support": {
+    "summary": "대전창업문화주간 3회차 문경수·김작가 강연. 사전신청자 기념품. 지원금·비율·자부담 미기재.",
+    "reference": "K-Startup 신청방법·제출·행사·문의 / 첨부1 포스터 전면 시각 검토 및 첨부2 HWPX section0 강연·신청링크 / e4c 공개 HTML"
+  },
+  "period": {
+    "start": "2026-11-09",
+    "end": "2026-11-13",
+    "deadlineTime": "13:00",
+    "timezone": "Asia/Seoul",
+    "reference": "K-Startup 신청방법·제출·행사·문의 / 첨부1 포스터 전면 시각 검토 및 첨부2 HWPX section0 강연·신청링크 / e4c 공개 HTML",
+    "checkedAt": "2026-11-11T02:38:50.665484+00:00",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179760"
+  },
+  "application": {
+    "summary": "K-Startup 상세의 e4c 링크에서 사전 신청 또는 현장 접수. 11/13 대전스타트업파크 본부 1층(궁동로2번길 81).",
+    "reference": "K-Startup 신청방법·제출·행사·문의 / 첨부1 포스터 전면 시각 검토 및 첨부2 HWPX section0 강연·신청링크 / e4c 공개 HTML"
+  },
+  "requiredDocuments": [],
+  "businessPlan": {
+    "format": "사업계획서 요구 없음",
+    "limit": null,
+    "sections": [],
+    "reference": "K-Startup 신청방법·제출·행사·문의 / 첨부1 포스터 전면 시각 검토 및 첨부2 HWPX section0 강연·신청링크 / e4c 공개 HTML"
+  },
+  "evaluation": {
+    "summary": "온라인 사전 신청 및 현장 접수. 배점 미기재.",
+    "reference": "K-Startup 신청방법·제출·행사·문의 / 첨부1 포스터 전면 시각 검토 및 첨부2 HWPX section0 강연·신청링크 / e4c 공개 HTML"
+  },
+  "contact": {
+    "name": "글로벌상생협력실 042-385-0643",
+    "reference": "K-Startup 신청방법·제출·행사·문의 / 첨부1 포스터 전면 시각 검토 및 첨부2 HWPX section0 강연·신청링크 / e4c 공개 HTML"
+  },
+  "unresolved": [
+    "행사 종료 시각 상세 20:20 대 포스터·대체 HWPX 20:30. 최신 정정 확인 필요.",
+    "e4c 공개 HTML에는 사전신청 제목만 노출되어 실제 필수 문항·동의서 미확인."
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179760",
+    "companyId": null,
+    "permission": "권한회사프로필확보후근거별검토·현재신청가능확정아님",
+    "steps": [
+      "회사필드/증빙확인",
+      "충돌/미확인해결",
+      "S12양식·S13회사정보로서류/계획작성"
+    ]
+  },
+  "evidence": {
+    "detail": "evidence/kstartup-179760/detail.html",
+    "detailFetchedAt": "2026-11-11T02:27:27.394Z",
+    "attachmentManifest": "evidence/kstartup-179760/attachment-check-2026-11-11.json",
+    "publicChecks": [
+      {
+        "id": "179760",
+        "url": "https://www.e4c.kr/forum/index.html?event=f0173fdb-5b6e-4bf8-b3da-50563a1bab12",
+        "checkedAt": "2026-11-11T02:29:37.856051+00:00",
+        "status": 200,
+        "finalUrl": "https://www.e4c.kr/forum/index.html?event=f0173fdb-5b6e-4bf8-b3da-50563a1bab12",
+        "evidence": "179760-publiccheck-20261111.html",
+        "bytes": 1436
+      }
+    ]
+  },
+  "lastAttachmentHashManifest": "evidence/kstartup-179760/attachment-check-2026-11-12.json"
+}

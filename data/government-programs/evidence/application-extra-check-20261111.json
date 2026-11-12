@@ -1,0 +1,38 @@
+[
+  {
+    "id": "179690",
+    "url": "https://inviteme.kr/6th-KHUDemoDay/",
+    "checkedAt": "2026-11-11T02:33:52.583078+00:00",
+    "status": 200,
+    "finalUrl": "https://inviteme.kr/6th-KHUDemoDay/",
+    "evidence": "179690-publiccheck-20261111.html",
+    "bytes": 12339
+  },
+  {
+    "id": "179761",
+    "url": "https://gw-startup.halla.ac.kr/incubator",
+    "checkedAt": "2026-11-11T02:33:52.583400+00:00",
+    "status": 200,
+    "finalUrl": "https://gw-startup.halla.ac.kr/incubator",
+    "evidence": "179761-publiccheck-20261111.html",
+    "bytes": 22124
+  },
+  {
+    "id": "179626",
+    "url": "https://www.sejong.go.kr/shrUrl/A89l142HUP.do",
+    "checkedAt": "2026-11-11T02:33:52.583509+00:00",
+    "status": 200,
+    "finalUrl": "https://www.sejong.go.kr/prog/publicNotice/kor/sub02_030301/C1_1/view.do?not_ancmt_mgt_no=72448&pageIndex=1",
+    "evidence": "179626-publiccheck-20261111.html",
+    "bytes": 216009
+  },
+  {
+    "id": "179766-detail",
+    "url": "http://www.gdhaenaem.com/?c=168&s=&gp=1&gbn=view&ix=12004",
+    "checkedAt": "2026-11-11T02:33:52.583903+00:00",
+    "status": 200,
+    "finalUrl": "http://www.gdhaenaem.com/?c=168&s=&gp=1&gbn=viewok&ix=12004",
+    "evidence": "179766-detail-publiccheck-20261111.html",
+    "bytes": 24302
+  }
+]

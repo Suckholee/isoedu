@@ -1,0 +1,17 @@
+[
+  {
+    "id": "iris-list",
+    "url": "https://www.iris.go.kr/contents/retrieveBsnsAncmBtinSituListView.do",
+    "checkedAt": "2026-11-12T00:10:24.097715+00:00",
+    "status": 200,
+    "finalUrl": "https://www.iris.go.kr/contents/retrieveBsnsAncmBtinSituListView.do",
+    "evidence": "iris-list-publiccheck-20261112.html",
+    "bytes": 112052
+  },
+  {
+    "id": "bizinfo-list",
+    "url": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200List.do",
+    "checkedAt": "2026-11-12T00:10:24.100751+00:00",
+    "error": "HTTP Error 404: Not Found"
+  }
+]

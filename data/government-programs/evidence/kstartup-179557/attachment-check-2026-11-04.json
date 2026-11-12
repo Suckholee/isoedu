@@ -1,0 +1,26 @@
+[
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/v1TLA0tAKl6o6Hjc8vF9jeWNenpv0hh-09VOFJ62AP4u677w",
+    "verifiedAt": "2026-11-04",
+    "status": "downloaded",
+    "sha256": "b5cbe73d4fd5c8f01a4e7e1de640d6e7cbd1d3e35542891f45f6f2be8c98dd1a",
+    "previousHash": "b5cbe73d4fd5c8f01a4e7e1de640d6e7cbd1d3e35542891f45f6f2be8c98dd1a",
+    "changed": false,
+    "bytes": 3378292,
+    "format": "IMAGE",
+    "file": "attachment-01.bin",
+    "contentType": "image/png;charset=UTF-8"
+  },
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/v1R2qh_aD_IvigOxvhcYqRTr9mY0wDV2_BfLJ3nJmD_K9R8w",
+    "verifiedAt": "2026-11-04",
+    "status": "downloaded",
+    "sha256": "35468f00a082f33e52928355cf6a9a6e0446dff38bd8faa9db4229b7533e327e",
+    "previousHash": "35468f00a082f33e52928355cf6a9a6e0446dff38bd8faa9db4229b7533e327e",
+    "changed": false,
+    "bytes": 1475,
+    "format": "OTHER",
+    "file": "attachment-02.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1"
+  }
+]

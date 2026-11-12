@@ -1,0 +1,34 @@
+[
+  {
+    "source": "ma-form",
+    "url": "https://forms.cloud.microsoft/r/VACVRPyhLg",
+    "finalUrl": "https://forms.cloud.microsoft/pages/responsepage.aspx?id=OwmbbcJ8OEuL0qKKMNZNAZ7vJDxlOwVBhDBS9jzOGyBUM0pWTjQxM1pQTEUyQkQ5WjVKNkFXWTVFNC4u&route=shorturl",
+    "http": 200,
+    "bytes": 68967,
+    "scope": "공개 페이지 접근만; 상세 전건 수집 아님"
+  },
+  {
+    "source": "bizinfo",
+    "url": "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/list.do",
+    "finalUrl": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200View.do?null",
+    "http": 200,
+    "bytes": 111282,
+    "scope": "공개 페이지 접근만; 상세 전건 수집 아님"
+  },
+  {
+    "source": "iris",
+    "url": "https://www.iris.go.kr/contents/retrieveBsnsAncmBtinSituListView.do",
+    "finalUrl": "https://www.iris.go.kr/contents/retrieveBsnsAncmBtinSituListView.do",
+    "http": 200,
+    "bytes": 111921,
+    "scope": "공개 페이지 접근만; 상세 전건 수집 아님"
+  },
+  {
+    "source": "kotra",
+    "url": "https://kotra.or.kr/subList/20000020753",
+    "finalUrl": "https://kotra.or.kr/subList/20000020753",
+    "http": 200,
+    "bytes": 152169,
+    "scope": "공개 페이지 접근만; 상세 전건 수집 아님"
+  }
+]

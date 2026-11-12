@@ -1,0 +1,78 @@
+[
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/CQ2Ln",
+    "verifiedAt": "2026-11-01",
+    "status": "downloaded",
+    "sha256": "25aab877125a7a0deab9acd651898e20a6243d4c58f097484049b0b4c04a7da7",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 64000,
+    "format": "HWP",
+    "file": "attachment-01.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 2990,
+    "review": {
+      "at": "2026-11-01T02:29:24.757028+00:00",
+      "method": "text",
+      "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+    }
+  },
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/DQ2Ln",
+    "verifiedAt": "2026-11-01",
+    "status": "downloaded",
+    "sha256": "1b902d66873700d1d568df9bbcce45627c06ee5d6117d5fcd3ad6b638e0ebbdb",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 83456,
+    "format": "HWP",
+    "file": "attachment-02.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 5294,
+    "review": {
+      "at": "2026-11-01T02:29:24.757028+00:00",
+      "method": "text",
+      "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+    }
+  },
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/6Q2Ln",
+    "verifiedAt": "2026-11-01",
+    "status": "downloaded",
+    "sha256": "2621bc741527586e90ead42a8c3c70e671464f527c638bbe9d64d6784d0bf880",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 38468,
+    "format": "PDF",
+    "file": "attachment-03.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 1975,
+    "review": {
+      "at": "2026-11-01T02:29:24.757028+00:00",
+      "method": "text",
+      "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+    }
+  },
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/MQ2Ln",
+    "verifiedAt": "2026-11-01",
+    "status": "downloaded",
+    "sha256": "6bf630feb5861be315f4c2a56e84387bee1fc3444309746375f4fd0a765c72bd",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 422143,
+    "format": "PDF",
+    "file": "attachment-04.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 56,
+    "review": {
+      "at": "2026-11-01T02:30:10.974581+00:00",
+      "method": "visual",
+      "scope": "1쪽사진기반PDF전체렌더시각검토"
+    }
+  }
+]

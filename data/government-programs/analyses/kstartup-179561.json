@@ -55,7 +55,7 @@
     "https://www.k-startup.go.kr/afile/fileDownload/Xi2Ln": "77493439b53a42512df100bee6fce781a4fba5b2ea7488158ce5c1c86e596827",
     "https://www.k-startup.go.kr/afile/fileDownload/1i2Ln": "c438964315e02fe92488e29bcd4058c2e47acbce6be9a571f0ccee6f7663a91b"
   },
-  "lastAttachmentHashCheckedAt": "2026-10-26T00:01:22.300546+00:00",
+  "lastAttachmentHashCheckedAt": "2026-11-08T10:20:39.754794+00:00",
   "unresolved": [
     "시작상세10/19대첨부10/1·마감23:50대24:00충돌",
     "실제입주신청/사업계획서양식미확보",
@@ -148,5 +148,7 @@
       "공고 양식 선택",
       "회사 사실정보로 서류·사업계획서 작성 및 검토"
     ]
-  }
+  },
+  "latestHashEvidence": "evidence/kstartup-179561/attachment-check-2026-11-08.json",
+  "latestHashCheckScope": "본문재분석아닌 기존첨부 바이트SHA256 대조; 동일바이트·기존미해결유지"
 }

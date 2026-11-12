@@ -1,0 +1,36 @@
+[
+  {
+    "id": "179629",
+    "url": "https://www.gdhaenaem.com/?c=168",
+    "checkedAt": "2026-11-03T00:01:12.934890+00:00",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.gdhaenaem.com'. (_ssl.c:1129)>"
+  },
+  {
+    "id": "179677",
+    "url": "https://www.ktestbed.net",
+    "checkedAt": "2026-11-03T00:01:12.935175+00:00",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.ktestbed.net'. (_ssl.c:1129)>"
+  },
+  {
+    "id": "179676-officialpdf",
+    "url": "https://www.ut.ac.kr/cmm/fms/FileDown.do?atchFileId=FILE_000000000293328&fileSn=0",
+    "checkedAt": "2026-11-03T00:01:12.935303+00:00",
+    "status": 200,
+    "finalUrl": "https://www.ut.ac.kr/cmm/fms/FileDown.do?atchFileId=FILE_000000000293328&fileSn=0",
+    "evidence": "179676-officialpdf-publiccheck-20261103.html",
+    "bytes": 174695,
+    "sha256": "7d32b7167b958d219cd98986a7115ea8e666202ae2b3ebc7a00290025cbff8de",
+    "format": "PDF"
+  },
+  {
+    "id": "179676-officialhwpx",
+    "url": "https://www.ut.ac.kr/cmm/fms/FileDown.do?atchFileId=FILE_000000000293328&fileSn=1",
+    "checkedAt": "2026-11-03T00:01:12.935687+00:00",
+    "status": 200,
+    "finalUrl": "https://www.ut.ac.kr/cmm/fms/FileDown.do?atchFileId=FILE_000000000293328&fileSn=1",
+    "evidence": "179676-officialhwpx-publiccheck-20261103.html",
+    "bytes": 51618,
+    "sha256": "7dd0c6de0787c77e9e42486927a670815f7dcda1f805f8b588d86ab2d4c5a2ce",
+    "format": "HWPX"
+  }
+]

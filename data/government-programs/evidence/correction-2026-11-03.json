@@ -1,0 +1,27 @@
+{
+  "at": "2026-11-03T00:05:45.661351+00:00",
+  "event": "correction-confirmed",
+  "programId": "mss-1072214",
+  "sourceUrl": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1072214&parentSeq=1072214",
+  "reviewStatus": "partial",
+  "scope": "수정공고PDF02물리1쪽수정표/3~6쪽자격접수평가·HWPX01앞부분대조,구공고제2026-621호와KStartup재게시01공고마감대조",
+  "correction": {
+    "noticeNumber": "2026-622",
+    "previousNoticeNumber": "2026-621",
+    "publishedOn": "2026-11-02",
+    "supersedes": [
+      "mss-1072172",
+      "kstartup-179660"
+    ],
+    "previousDeadline": "2026-11-20T16:00:00+09:00",
+    "newDeadline": "2026-11-23T16:00:00+09:00",
+    "reference": "PDFp1시각/텍스트일치·구공고본문4쪽"
+  },
+  "unresolved": [
+    "수정신청기간11/23이나채무변제예외마감11/20문구PDFp4잔존·기준일충돌기관확인필요",
+    "수정본문후반유형별요건·평가배점·재원/운영비·첨부신청양식전체아직읽지않음·분석완료아님",
+    "KStartup구양식다운로드8개중공고마감만대조·서류/계획/증빙양식전문미검토·재시도필요",
+    "로그인이후실제신청입력/제출미확인"
+  ],
+  "downloadOnlyAttachments": "KStartup179660 8첨부중공고마감대조외양식전문분석대기"
+}

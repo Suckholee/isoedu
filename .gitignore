@@ -40,6 +40,7 @@ next-env.d.ts
 **/사업계획서_작성사례/
 data/business-plan-corpus/
 data/client-drive/
+data/drive-import-20261112/
 
 # Private reference inputs, client analysis and visual verification
 /참고자료/
@@ -53,3 +54,9 @@ docs/reference/customer-document-evidence.md
 **/__pycache__/
 
 /public/document-reader/
+
+# Private business-plan source audit
+data/business-plan-form-audit-20261112/
+
+# Local agent runtime and audit logs
+/.bkit/

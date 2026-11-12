@@ -1,0 +1,56 @@
+[
+  {
+    "url": "https://sanhak.kongju.ac.kr/bbs/M00015/562/659492/download.do",
+    "format": "HWP",
+    "file": "host-659492.bin",
+    "sha256": "b7d3b20af059aae79ace889198364b8273648e44593e1bc94d6e4a77595bf647",
+    "bytes": 4243456,
+    "extractionExit": 0,
+    "characters": 6353
+  },
+  {
+    "url": "https://sanhak.kongju.ac.kr/bbs/M00015/562/659493/download.do",
+    "format": "PDF",
+    "file": "host-659493.bin",
+    "sha256": "a73a6ec050b5289e50fdf289a0b0cf299a988f2c8a46e7637307b22f3666bca6",
+    "bytes": 1522987,
+    "extractionExit": 0,
+    "characters": 0
+  },
+  {
+    "url": "https://sanhak.kongju.ac.kr/bbs/M00015/562/659494/download.do",
+    "format": "HWP",
+    "file": "host-659494.bin",
+    "sha256": "f1d00c9c78942ab8eac207e87740d62fa336f2e95f8dee4e12a0764a39cc0776",
+    "bytes": 91648,
+    "extractionExit": 0,
+    "characters": 5971
+  },
+  {
+    "url": "https://sanhak.kongju.ac.kr/bbs/M00015/562/659495/download.do",
+    "format": "PPTX",
+    "file": "host-659495.bin",
+    "sha256": "25752d6349c92af9c0fbe26eb3bb628976d0ecf4e94e19e674686a0553b74e37",
+    "bytes": 6750733,
+    "extractionExit": 0,
+    "characters": 6641
+  },
+  {
+    "url": "https://sanhak.kongju.ac.kr/bbs/M00015/562/659496/download.do",
+    "format": "HWP",
+    "file": "host-659496.bin",
+    "sha256": "4bfc63ff341c0d68c0a6a9e935f8edfa86d5f37d79ac0fbe3563a14b4afade54",
+    "bytes": 64512,
+    "extractionExit": 0,
+    "characters": 1003
+  },
+  {
+    "url": "https://sanhak.kongju.ac.kr/bbs/M00015/562/659497/download.do",
+    "format": "PDF",
+    "file": "host-659497.bin",
+    "sha256": "b130f0ed31846c6b5678c9a7f29563e7e2e519faac26b3b2d1cdb2b2388b4731",
+    "bytes": 6588876,
+    "extractionExit": 0,
+    "characters": 0
+  }
+]

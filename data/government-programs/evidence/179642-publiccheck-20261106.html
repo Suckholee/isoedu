@@ -1,0 +1,484 @@
+
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes">
+	<title>KOICA</title>
+	<script type="text/javascript" src="/lib/jquery/js/jquery-1.8.0.min.js"></script>
+	<script type="text/javascript" src="/lib/jquery/js/jquery-ui-1.8.23.custom.min.js"></script>
+	<script type="text/javascript" src="/lib/js/script.js"></script>
+	<link rel="stylesheet" href="css/reset.min.css">
+	<link rel="stylesheet" href="css/font.css">
+	<link rel="stylesheet" href="css/style.css?101927">
+	<link rel="stylesheet" href="css/media.css?101927">
+	<style>
+		#application .application_form .field-options--cards {
+			display: grid;
+			grid-template-columns: minmax(0, 1fr);
+			gap: 0.45rem;
+		}
+		#application .application_form .field-options-help {
+			margin-bottom: 0.45rem;
+			color: #64717d;
+			font-size: 0.65rem;
+			line-height: 1.5;
+		}
+		#application .application_form .field-options--cards .field-option {
+			display: flex;
+			align-items: flex-start;
+			gap: 0.50rem;
+			padding: 0.50rem 0.75rem;
+			border: 1px solid #dce3e9;
+			border-radius: 0.3rem;
+			background: #fff;
+		}
+		#application .application_form .field-options--cards input {
+			flex: 0 0 auto;
+			margin-top: 0.1rem;
+			font-size: 0.60rem;
+		}
+		#application .application_form .field-options--cards label {
+			flex: 1;
+			padding: 0;
+			line-height: 1.55;
+			word-break: keep-all;
+			font-size: 0.75rem;
+		}
+		#application .etc02-participation-notice {
+			margin-top: 0.8rem;
+			padding: 0.75rem 0.9rem;
+			border: 1px solid #f1d391;
+			border-left: 4px solid #d18a00;
+			border-radius: 0.25rem;
+			background: #fff8e8;
+			color: #59430f;
+			font-size: 0.68rem;
+			line-height: 1.7;
+		}
+		#application .etc02-participation-notice strong {
+			font-weight: 700;
+		}
+		#application .application_form .application-field-label {
+			margin-bottom: 0.65rem;
+			color: #222;
+			font-size: 0.8rem;
+			font-weight: 600;
+			line-height: 1.5;
+		}
+		#application .usr-que-note {
+			margin-top: 0.65rem;
+			padding: 0.55rem 0.7rem;
+			border-left: 3px solid #8ba8bd;
+			background: #f4f7f9;
+			color: #536675;
+			font-size: 0.65rem;
+			line-height: 1.6;
+		}
+	</style>
+</head>
+<body class="viewr_white">
+<div class="navbar">
+	<div class="inner">
+	  <!-- 좌측: 로고 -->
+	  <a href="#top">
+	  </a>
+	  <!-- 우측: 메뉴 -->
+	  <ul>
+		<li><a href="#header_sub">행사개요</a></li>
+		<li><a href="/upfiles/data/KOICA_IMPACT_TOGETHER_2026.pdf" target="_program">세부 프로그램 안내</a></li>	 		
+		<li><a href="#application" data-open-application aria-controls="application-panel" aria-expanded="false">참가등록</a></li>
+		<li><a href="#information">문의처</a></li>
+	  </ul>
+	</div>
+</div>
+
+<div class="inner2" style="background-color: #11337a;">
+	<header>
+		<div id="header_sub">
+				<img class="top_image" src="/upfiles/imgSave/1792631134_9914b103.png">
+				<img class="top_image_m" src="/upfiles/imgSave/1792631134_c8d78280.png">
+				<!--h1 class="top_title">
+				<p><span2>2025-2026</span2> KOICA 포용적 비즈니스 프로그램(IBS) <br><span>신규사업 공모설명회 사전 신청</span></p>
+				</h1-->
+		</div>
+	</header>	
+	
+	
+<div id="program">
+	<img src="/upfiles/imgSave/1792631134_3f3a6aa3.png" alt="프로그램 안내">
+</div>
+
+
+	<div id="application">
+	<div id="application-launch">
+		<button type="button" class="application-launch-button" data-open-application aria-controls="application-panel" aria-expanded="false">참가등록하기</button>
+	</div>
+	<div id="application-panel" hidden>
+	<button type="button" class="application-close" id="close-application" aria-label="참가등록폼 닫기">&times;</button>
+	<h3>참가등록하기</h3>
+	 <form name="form1" id="form1" action="reg_ok_pre.php" method="post" onsubmit="return chk_f(this)" target="hidden_iframe">
+        <input type="hidden" name="webinar_sq" value="1">
+		<p style="text-indent:-1rem;padding-left:1rem;text-align:left;width:54rem;max-width:95%;margin:0 auto;">※ 작성하신 이메일 주소와 휴대폰번호로 행사 정보, 행사장 입장 QR코드 등 전달드릴 예정입니다. 제출 전 오탈자가 없는지 확인바랍니다.</p>
+
+        <table class="application_form">
+                                                                            <tr>
+                                            <th>
+                            성명                            <span class="color_red">*</span>                        </th>
+                        <td>
+                                                                                                <input type='text' name='usr_name' id='usr_name' value='' placeholder='성명을 입력하세요' class='w95p' required>                                                                    </td>
+                </tr>
+                                                                            <tr>
+                                            <th>
+                            기업명                            <span class="color_red">*</span>                        </th>
+                        <td>
+                                                                                                <input type='text' name='usr_title' id='usr_title' value='' placeholder='기업명(기관명)을 입력하세요.' class='w95p' required>                                                                    </td>
+                </tr>
+                                                                            <tr>
+                                            <th>
+                            직함                            <span class="color_red">*</span>                        </th>
+                        <td>
+                                                                                                <input type='text' name='etc04' id='etc04' value='' placeholder='직함을 입력하세요.' class='w95p' required>                                                                    </td>
+                </tr>
+                                                                            <tr>
+                                            <th>
+                            핸드폰번호                            <span class="color_red">*</span>                        </th>
+                        <td>
+                                                                                                <input type='text' name='usr_phone' id='usr_phone' value='' placeholder='숫자만 입력 (예: 01012345678)' class='w95p' required>                                                                    </td>
+                </tr>
+                                                                            <tr>
+                                            <th>
+                            이메일                            <span class="color_red">*</span>                        </th>
+                        <td>
+                                                                                                <input type='text' name='usr_email' id='usr_email' value='' placeholder='이메일주소를 입력하세요.' class='w95p' required>                                                                    </td>
+                </tr>
+                                                                            <tr>
+                                            <th>
+                            관심분과                            <span class="color_red">*</span>                        </th>
+                        <td>
+                                                                                                <div class='field-options field-options--vertical'><span class='field-option'><input type='radio' name='etc01' id='etc01_7fc56270e7a70fa81a5935b72eacbe29' value='A'  required> <label for='etc01_7fc56270e7a70fa81a5935b72eacbe29'>A : 공공사업 참여(국내 지원사업ㆍ공공구매와 개발협력을 잇는 성장 경로)</label></span><span class='field-option'><input type='radio' name='etc01' id='etc01_9d5ed678fe57bcca610140957afab571' value='B'  required> <label for='etc01_9d5ed678fe57bcca610140957afab571'>B : 글로벌 도약(개도국에서의 성과를 투자 유치와 해외시장 진출로) </label></span><span class='field-option'><input type='radio' name='etc01' id='etc01_0d61f8370cad1d412f80b84d143e1257' value='C'  required> <label for='etc01_0d61f8370cad1d412f80b84d143e1257'>C : ESG 파트너십(기업ㆍ비영리 협력으로 키우는 ESG 경쟁력과 개도국의 변화)</label></span></div><div class='field-placeholder'>※ 참여하고자 하는 관심분과를 1개만 선택해주세요.</div>                                                                    </td>
+                </tr>
+                                                                            <tr class="application_form__full-width">
+                                            <td colspan="2">
+                            <div class="application-field-label">
+                                컨설팅 희망여부                                                            </div>
+                                                                                                                            <input type="hidden" name="etc02_options_enabled" value="1">
+                            <div class="field-options-help">
+                                최대 3개까지 선택 가능합니다.                            </div>
+                            <div class="field-options field-options--vertical field-options--cards" data-max-selections="3">
+                                                                                                        <span class="field-option">
+                                        <input type="checkbox" name="etc02_options[]" id="etc02_c4ca4238a0b923820dcc509a6f75849b" value="1">
+                                        <label for="etc02_c4ca4238a0b923820dcc509a6f75849b">KOICA 파트너사업(기업협력사업(IBS/CTS), 시민사회협력사업) 참여방안</label>
+                                    </span>
+                                                                                                        <span class="field-option">
+                                        <input type="checkbox" name="etc02_options[]" id="etc02_c81e728d9d4c2f636f067f89cc14862c" value="2">
+                                        <label for="etc02_c81e728d9d4c2f636f067f89cc14862c">중소기업기술마켓(기술마켓 등록ㆍ활용, 실증ㆍ구매 연계 등)</label>
+                                    </span>
+                                                                                                        <span class="field-option">
+                                        <input type="checkbox" name="etc02_options[]" id="etc02_eccbc87e4b5ce2fe28308fd9f2a7baf3" value="3">
+                                        <label for="etc02_eccbc87e4b5ce2fe28308fd9f2a7baf3">공공조달ㆍ혁신조달(공공(KOICA 포함) 조달 진입, 혁신제품ㆍ우수조달 등 제도 활용 등)</label>
+                                    </span>
+                                                                                                        <span class="field-option">
+                                        <input type="checkbox" name="etc02_options[]" id="etc02_a87ff679a2f3e71d9181a67b7542122c" value="4">
+                                        <label for="etc02_a87ff679a2f3e71d9181a67b7542122c">해외진출ㆍ해외조달(해외시장 진출, 수출ㆍ사업화 기반 등)</label>
+                                    </span>
+                                                                                                        <span class="field-option">
+                                        <input type="checkbox" name="etc02_options[]" id="etc02_e4da3b7fbbce2345d7772b0674a318d5" value="5">
+                                        <label for="etc02_e4da3b7fbbce2345d7772b0674a318d5">투자ㆍ금융ㆍ기술사업화(기술사업화 가능성 점검, 투자유치 준비, 임팩트 투자, 보증, 스케일업 등)</label>
+                                    </span>
+                                                                                                        <span class="field-option">
+                                        <input type="checkbox" name="etc02_options[]" id="etc02_1679091c5a880faf6fb5e6087eb1b2dc" value="6">
+                                        <label for="etc02_1679091c5a880faf6fb5e6087eb1b2dc">ESGㆍ사회적가치 파트너십(기업ㆍ시민사회 파트너십, ESG 협력, 사회적기업ㆍ소셜벤처 성장, B Crop 인증 등)</label>
+                                    </span>
+                                                            </div>
+                                                                            <div class="etc02-participation-notice">
+                                <strong>참여 안내</strong><br>
+                                ※ 참여 절차 : 컨설팅 희망 기업(기관)을 대상으로 신청 링크를 추후 안내드릴 예정입니다. (11월 초 예정)<br>
+                                ※ 참여 인원 : 신청자 포함 최대 2인 참여 가능<br>
+                                ※ 유의 사항 : 신청은 선착순으로 진행되어 조기마감될 수 있습니다
+                            </div>
+                                            </td>
+                </tr>
+                                                                            <tr class="application_form__full-width">
+                                            <td colspan="2">
+                            <div class="application-field-label">
+                                사전질문                                                            </div>
+                                                                                                <textarea name='usr_que' id='usr_que' placeholder='사전질문을 입력해주세요.'  class='w95p' rows='4' style='height:120px;'></textarea>                                                                            <!--div class="usr-que-note">※ 사전질문을 등록하신분 50분을 선정하여 소정의 기념품을 제공할 예정입니다.</div-->
+                                            </td>
+                </tr>
+                    </table>
+
+		<div id="agree" class="agree">
+					<!--p style="font-size:0.9rem;text-align:center;width:100%;padding:1rem 0;font-weight:500;">< 개인정보 수집·이용 동의서<span2 style="font-weight:300">(참가등록/참가확인증 발급 목적)</span2> ></p-->
+							<p>【개인정보 수집 및 이용, 제공에 대한 동의】</p>
+							<div class="Privacy">
+							한국국제협력단(기업협력사업팀)은 개인정보보호법 및 관련 법령에 따라 개인정보 보호에 최선을 다하고 있으며, 개인정보보호법 제15조 및 제22조에 따라 "KOICA IMPACT TOGETHER 2026" 행사의 참가등록을 위해 개인정보 수집, 이용 및 제공에 대한 귀하의 동의를 받고자 합니다.<br><br>								
+							<span>ㅇ 개인정보 수집, 이용 내역(필수항목)</span><br>
+							  1) 수집 및 이용 항목: 기업명(기관명), 성명, 연락처, 이메일 등 <br>
+							  2) 수집 및 이용 목적: IBS공모, 설명회 등 IBS 행사 관련 홍보 안내 <br>
+							  3) 보유기간 : 신청일로부터 1년<br>
+							  4) 제공받는자: 한국국제협력단, (주)코웍스<br>
+								*비고: (주)코웍스는 한국국제협력단 자회사로 동 행사를 위탁 수행하고 있습니다.<br><br>
+							<span>ㅇ 개인정보 수집, 이용, 제공 내역 고지</span><br>
+								개인정보보호법 제15조 1항에 근거, 한국국제협력단법 제7조(목적)의 범위 내에서 개인정보를 처리할 수 있습니다.
+							</div>
+							<div class="Consent">
+							<p><input type="checkbox" name="privacy_check" id="privacy_check" ><label for="privacy_check"><b class="color_red">(필수)</b>  본인은 개인정보 수집·이용에 관한 설명을 모두 이해하고, 이에 동의합니다.</label></p>
+							</div>
+			</div>	
+        <div class="btn_wrap">
+            <button type="submit" class="submit btn_04" style="border-radius:0.3rem; width:12rem; min-width:8rem;">
+                <i class="xi-check-square-o"></i> &nbsp;등록하기
+            </button>
+            <button type="button" class="registration-edit-trigger" id="open-registration-edit">
+                등록확인 및 수정
+            </button>
+        </div>
+    </form>	
+	</div>
+	<div class="registration-edit-modal" id="registration-edit-modal" aria-hidden="true">
+		<div class="registration-edit-backdrop" data-close-registration-edit></div>
+		<section class="registration-edit-dialog" role="dialog" aria-modal="true" aria-labelledby="registration-edit-title">
+			<button type="button" class="registration-edit-close" aria-label="닫기" data-close-registration-edit>&times;</button>
+			<div id="registration-edit-content" aria-live="polite"></div>
+		</section>
+	</div>
+</div>
+<div id="information" >
+	<img src="/upfiles/imgSave/1792631806_81bed001.png" alt="문의처 안내" >
+</div>
+
+<iframe name="hidden_iframe" id="hidden_iframe" title="숨겨진 프레임" src="about:blank" style="display: none;" ></iframe>
+<script type="text/javascript">
+const applicationPanel = document.getElementById('application-panel');
+const applicationLaunch = document.getElementById('application-launch');
+const applicationTriggers = document.querySelectorAll('[data-open-application]');
+let applicationAnimation = null;
+
+function updateCheckboxSelectionLimits(root) {
+	root.querySelectorAll('.field-options[data-max-selections]').forEach((group) => {
+		const maxSelections = parseInt(group.dataset.maxSelections, 10);
+		if (!maxSelections) return;
+		const checkboxes = Array.from(group.querySelectorAll('input[type="checkbox"]'));
+		const checkedCount = checkboxes.filter((checkbox) => checkbox.checked).length;
+		checkboxes.forEach((checkbox) => {
+			checkbox.disabled = !checkbox.checked && checkedCount >= maxSelections;
+		});
+	});
+}
+
+document.addEventListener('change', (event) => {
+	if (event.target.matches('.field-options[data-max-selections] input[type="checkbox"]')) {
+		updateCheckboxSelectionLimits(event.target.closest('.field-options').parentElement);
+	}
+});
+updateCheckboxSelectionLimits(document);
+
+applicationTriggers.forEach((trigger) => {
+	trigger.addEventListener('click', (event) => {
+		event.preventDefault();
+		const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+		const scrollToApplication = () => {
+			document.getElementById('application').scrollIntoView({
+				behavior: reducedMotion ? 'instant' : 'smooth',
+				block: 'start'
+			});
+		};
+		if (!applicationPanel.hidden) {
+			scrollToApplication();
+			return;
+		}
+		applicationPanel.hidden = false;
+		applicationLaunch.hidden = true;
+		applicationTriggers.forEach((item) => item.setAttribute('aria-expanded', 'true'));
+		if (!reducedMotion) {
+			applicationAnimation = applicationPanel.animate([
+				{ height: '0px', opacity: 0, overflow: 'hidden' },
+				{ height: applicationPanel.offsetHeight + 'px', opacity: 1, overflow: 'hidden' }
+			], {
+				duration: 350,
+				easing: 'cubic-bezier(0.22, 1, 0.36, 1)'
+			});
+			applicationAnimation.onfinish = () => {
+				applicationAnimation = null;
+				scrollToApplication();
+			};
+		}
+		scrollToApplication();
+	});
+});
+
+document.getElementById('close-application').addEventListener('click', () => {
+	if (applicationAnimation) {
+		applicationAnimation.cancel();
+		applicationAnimation = null;
+	}
+	applicationPanel.hidden = true;
+	applicationLaunch.hidden = false;
+	applicationTriggers.forEach((item) => item.setAttribute('aria-expanded', 'false'));
+	applicationLaunch.querySelector('button').focus({ preventScroll: true });
+	document.getElementById('application').scrollIntoView({ behavior: 'smooth', block: 'start' });
+});
+
+function chk_f(f) {
+	const emailField = f.elements.namedItem('usr_email');
+	if (emailField && emailField.value && !chk_mail(emailField.value)) {
+		alert("올바른 메일주소가 아닙니다.");
+		emailField.focus();
+		return false;
+	}
+
+	return chk_agree("privacy_check", "개인정보의 수집 및 이용");
+}
+
+function chk_f2() {
+	$("#form1").attr("action","reg_ok_pre.php?TP=guest").submit();
+}
+
+function chk_agree() {         
+		//alert(url);         
+	if (document.getElementById('privacy_check').checked) {             
+		return true;         
+		}         
+		else {             
+			alert("개인정보 수집 및 이용 약관에 동의해 주세요.");            
+          	return false;         
+			}     
+		}
+
+function chk_agree2() {         
+		//alert(url);         
+	if (document.getElementById('privacy_check2').checked) {             
+		return true;         
+		}         
+		else {             
+			alert("개인정보 제3자 제공 약관에 동의해 주세요.");            
+          	return false;         
+			}     
+		}
+
+const editModal = document.getElementById('registration-edit-modal');
+const editContent = document.getElementById('registration-edit-content');
+const editUrl = new URL('/registration_edit.php', window.location.origin);
+editUrl.searchParams.set('webinar_sq', '1');
+editUrl.searchParams.set('modal', '1');
+
+document.getElementById('open-registration-edit').addEventListener('click', async () => {
+	editModal.classList.add('is-open');
+	editModal.setAttribute('aria-hidden', 'false');
+	document.body.classList.add('modal-open');
+	editContent.textContent = '등록정보 확인 화면을 불러오는 중입니다.';
+	try {
+		const response = await fetch(editUrl.href, { credentials: 'same-origin' });
+		if (!response.ok) throw new Error('HTTP ' + response.status);
+		editContent.innerHTML = await response.text();
+		updateCheckboxSelectionLimits(editContent);
+		const nameInput = editContent.querySelector('input[name="usr_name"]');
+		if (nameInput) nameInput.focus();
+	} catch (error) {
+		console.error('등록정보 화면을 불러오지 못했습니다.', error);
+		editContent.textContent = '등록정보 화면을 불러오지 못했습니다. 잠시 후 다시 시도해 주세요.';
+	}
+});
+
+editModal.addEventListener('click', (event) => {
+	if (event.target.closest('[data-close-registration-edit]')) closeRegistrationEdit();
+});
+
+editContent.addEventListener('submit', async (event) => {
+	const form = event.target;
+	if (!(form instanceof HTMLFormElement)) return;
+	event.preventDefault();
+	const submitButton = form.querySelector('button[type="submit"]');
+	if (submitButton) submitButton.disabled = true;
+	try {
+		const formData = new FormData(form);
+		const response = await fetch(editUrl.href, {
+			method: 'POST',
+			body: new URLSearchParams(formData),
+			credentials: 'same-origin'
+		});
+		const responseHtml = await response.text();
+		if (!response.ok) throw new Error('HTTP ' + response.status);
+		editContent.innerHTML = responseHtml;
+		updateCheckboxSelectionLimits(editContent);
+		const nameInput = editContent.querySelector('input[name="usr_name"]');
+		if (nameInput) nameInput.focus();
+	} catch (error) {
+		console.error('등록정보 요청을 처리하지 못했습니다.', error);
+		const message = document.createElement('p');
+		message.className = 'edit-message edit-message--error';
+		message.textContent = error instanceof Error && error.message.startsWith('HTTP ')
+			? '서버에서 요청을 처리하지 못했습니다. (' + error.message + ') 잠시 후 다시 시도해 주세요.'
+			: '요청을 처리하지 못했습니다. 네트워크 연결을 확인한 뒤 다시 시도해 주세요.';
+		editContent.prepend(message);
+		if (submitButton) submitButton.disabled = false;
+	}
+});
+
+function closeRegistrationEdit() {
+	editModal.classList.remove('is-open');
+	editModal.setAttribute('aria-hidden', 'true');
+	document.body.classList.remove('modal-open');
+}
+
+document.addEventListener('keydown', (event) => {
+	if (event.key === 'Escape' && editModal.classList.contains('is-open')) closeRegistrationEdit();
+});
+
+const webinar_sq = '1'; // 해당 이벤트 ID로 수정
+
+function checkRegistrationLimit() {
+  fetch('check_limit.php?webinar_sq=' + webinar_sq)
+    .then(response => response.json())
+    .then(data => {
+      if (data.exceeded) {
+        console.log("정원 초과! 새로고침합니다.");
+        location.reload();
+      }
+    })
+    .catch(err => console.error("에러:", err));
+}
+
+// 60초마다 체크 (원하는 간격으로 조절 가능)
+setInterval(checkRegistrationLimit, 60000);
+
+
+let lastScroll = 0;
+let disableHide = false; // 숨김 기능 잠시 중단
+const navbar = document.querySelector('.navbar');
+
+// 스크롤 이벤트(하단으로 스크롤시는 네비게이션바 사라짐, 상단을 스크롤시에는 다시 나탐남)
+window.addEventListener('scroll', () => {
+  if (disableHide) return; // 숨김 중단 상태면 아무것도 안 함
+
+  const currentScroll = window.pageYOffset;
+
+  if (currentScroll > lastScroll && currentScroll > 50) {
+    navbar.classList.add('hidden');
+  } else {
+    navbar.classList.remove('hidden');
+  }
+
+  lastScroll = currentScroll;
+});
+
+// 마우스 올리면 숨김 기능 중단 + 항상 보이게
+navbar.addEventListener('mouseenter', () => {
+  disableHide = true;
+  navbar.classList.remove('hidden');
+});
+
+// 마우스가 떠나면 숨김 기능 재개
+navbar.addEventListener('mouseleave', () => {
+  disableHide = false;
+});
+
+</script>
+
+
+
+</body>
+</html>

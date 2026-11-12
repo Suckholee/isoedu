@@ -1,0 +1,134 @@
+
+
+<!-- JSTL Tag Library -->
+
+
+
+
+
+
+<!-- Spring Tag Library -->
+
+
+
+<!-- ktag Tag Library -->
+
+
+<!-- JSTL Global Variable -->
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ko" xmlns='http://www.w3.org/1999/xhtml' xmlns:ev='http://www.w3.org/2001/xml-events' xmlns:w2='http://www.inswave.com/websquare' xmlns:xf='http://www.w3.org/2002/xforms'>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<meta name="keywords" content="워터라운드, 솔루션마켓, 데이터, 물기술통합검색, 커뮤니티, 참여기업 , 플랫폼소개" />
+		<meta name="title" content="K water 워터라운드" />
+		<meta name="description" content="물 문제 해결을 위한 디지털 솔루션을 빠르게 개발해 국내외에 서비스하기 위한 개방형 비즈니스 플랫폼" />
+		<meta http-equiv="Content-Script-Type" content="text/javascript" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="K water 워터라운드" />
+		<meta property="og:description" content="물 문제 해결을 위한 디지털 솔루션을 빠르게 개발해 국내외에 서비스하기 위한 개방형 비즈니스 플랫폼" />
+		<meta property="og:site_name" content="K water 워터라운드" />
+		<meta property="og:url" content="https://wateround.kr/" />
+	
+		<title>워터라운드</title>
+		<link rel="shortcut icon" type="image/x-icon" href="/resources/images/favicon.ico" />
+		
+		<script type="text/javascript" src="/wq/dwpWqConfig.js?ver=1792454992623"></script>
+		<script type="text/javascript" src="/resources/js/common/dwpGlobal.js"></script>
+		<script type="text/javascript" src="/resources/js/common/dwpDirect.js"></script>
+		<script type="text/javascript" src="/resources/js/kakao.min.js"></script>
+		
+		<script type="text/javascript">
+			//document.domain = _domain;
+			window.addEventListener('message', () => {
+				if(event.origin !== '_domain') return;
+			});
+		</script>
+		
+	
+			<link rel="stylesheet" type="text/css" href="/resources/css/main.css"/>
+			<link rel="stylesheet" type="text/css" href="/resources/css/common.css"/>
+			<link rel="stylesheet" type="text/css" href="/resources/css/modal.css"/>
+			<link rel="stylesheet" type="text/css" href="/resources/css/calendar.css"/>
+			<link rel="stylesheet" type="text/css" href="/resources/css/content.css"/>
+			<link rel="stylesheet" type="text/css" href="/resources/css/animated.css"/>
+			<link rel="stylesheet" type="text/css" href="/resources/css/font.css"/>
+			<link rel="stylesheet" type="text/css" href="/resources/css/layout.css"/>
+			<link rel="stylesheet" type="text/css" href="/resources/css/board.css"/>
+			<link rel="stylesheet" type="text/css" href="/resources/css/jquery.modal.min.css"/>
+			<link rel="stylesheet" type="text/css" href="/resources/css/solution.css"/>
+			
+			<!-- 신규 CSS : S -->
+			<link rel="stylesheet" type="text/css" href="/resources/css/renewal.css" />
+			<link rel="stylesheet" type="text/css" href="/resources/js/lib/swiper-bundle.min.css" />
+			<!-- 신규 CSS : E -->
+			
+			<script type="text/javascript" src="/resources/js/common/message_KOR.js"></script>
+			<script type="text/javascript" src="/wq/javascript.wq?q=/bootloader"></script>
+				
+	    	<script type="text/javascript" src="/resources/js/mobile_resp.js"></script>
+	    	
+	    	<!-- RaonK upload Start -->
+	    	<script type="text/javascript" src="/resources/raonkupload/js/raonkupload.js"></script>
+	    	<script type="text/javascript" src="/resources/js/common/raonk_file.js"></script>
+	    	<!-- RaonK upload End -->
+	    	
+	    	<!-- fusionChart BEGIN -->
+			<script type="text/javascript" src="/resources/js/fusioncharts-suite-xt-rdl/js/fusioncharts.js"></script>
+			<script type="text/javascript" src="/resources/js/fusioncharts-suite-xt-rdl/js/plugin/fusioncharts.jqueryplugin.min.js"></script>
+			<script type="text/javascript" src="/resources/js/fusioncharts-suite-xt-rdl/js/themes/fusioncharts.theme.fusion.js"></script>
+			<script type="text/javascript">
+			
+			</script>
+			<!-- fusionChart FINISH -->
+			
+			<!-- swiper -->
+			<script type="text/javascript" src="/resources/js/lib/swiper-bundle.min.js"></script>
+			
+
+			
+<script type="text/javascript">
+	function init() {
+		Kakao.init('72445a811bd3a3f09e201fb9fd999a73');
+		comLib.setCookie("dwpEnParam", 'null', 1);
+	
+		try{
+			WebSquare.startApplication();
+		} catch(e) {
+		    comLib.onWebsquareError(e.message);//메세지 조회 후 조치가이드 화면 오픈
+		}
+	}
+	window.onload = init;
+	
+	window.addEventListener("message", function(e){
+		var data = e.data;
+		
+		if(data.type == "juso") {
+			window[data.wf+"_scwin"].jusoCallBack(data.roadFullAddr, data.roadAddrPart1, data.addrDetail, data.roadAddrPart2, data.engAddr, data.jibunAddr, data.zipNo, data.rtAdmCd);
+		}
+	});
+</script>
+
+	</head>
+	<body></body>
+</html>

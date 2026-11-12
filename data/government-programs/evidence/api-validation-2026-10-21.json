@@ -1,0 +1,23 @@
+{
+  "at": "2026-10-21T00:16:42.922Z",
+  "status": 200,
+  "total": 36,
+  "analyses": 17,
+  "checked": [
+    "kstartup-179537",
+    "kstartup-177421",
+    "kstartup-179531",
+    "kstartup-179522",
+    "kstartup-179538",
+    "mss-1071870"
+  ],
+  "extension": {
+    "id": "mss-1071870",
+    "date": "2026-10-30",
+    "time": "18:00"
+  },
+  "scope": "route.GET직접호출;화면미검증",
+  "localHttp": {
+    "error": "fetch failed"
+  }
+}

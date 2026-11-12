@@ -1,0 +1,21 @@
+[
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/IX2Ln",
+    "verifiedAt": "2026-10-30",
+    "status": "downloaded",
+    "sha256": "0e0c9b30bc2eac6d39c0afd9daf2e19c621376e372befbcecf0c3ce0937137d1",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 100864,
+    "format": "HWP",
+    "file": "attachment-01.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 7224,
+    "review": {
+      "method": "text",
+      "at": "2026-10-30T01:43:07.316288+00:00",
+      "scope": "전체 추출 본문·표·별첨 양식 확인; 원본 배치·그림 전체 시각 검증 아님"
+    }
+  }
+]

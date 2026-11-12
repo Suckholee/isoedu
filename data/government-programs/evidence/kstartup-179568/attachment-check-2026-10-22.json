@@ -1,0 +1,44 @@
+[
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/ar2Ln",
+    "verifiedAt": "2026-10-22",
+    "status": "downloaded",
+    "sha256": "ca11801e02b27f936ac4e9f79868f17151a4a1b764d54cf082d5d700354101cd",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 284851,
+    "format": "PDF",
+    "file": "attachment-01.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 3913
+  },
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/dr2Ln",
+    "verifiedAt": "2026-10-22",
+    "status": "downloaded",
+    "sha256": "a998ee152f22400c514aa65f4dbde033085bc1e051d5a5d08287576f3e6eb6a2",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 93327,
+    "format": "PDF",
+    "file": "attachment-02.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 887
+  },
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/Yr2Ln",
+    "verifiedAt": "2026-10-22",
+    "status": "downloaded",
+    "sha256": "6fac0a2ab70b2cc09657760963f14f19b9be792318880344dc83f14a7c74f460",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 76205,
+    "format": "PDF",
+    "file": "attachment-03.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 1379
+  }
+]

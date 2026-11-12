@@ -1,0 +1,63 @@
+[
+  {
+    "source": "tour-form",
+    "url": "https://docs.google.com/forms/d/e/1FAIpQLSeLjYWGHyKBDBANFdi2jWQmrwrQSyMgbCfwQSJlOJZYiW69Cw/viewform",
+    "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeLjYWGHyKBDBANFdi2jWQmrwrQSyMgbCfwQSJlOJZYiW69Cw/viewform",
+    "http": 200,
+    "bytes": 111171,
+    "scope": "공개 페이지 접근만; 상세 전건 수집 아님"
+  },
+  {
+    "source": "clima-form",
+    "url": "https://linktr.ee/2026climaday",
+    "finalUrl": "https://linktr.ee/2026climaday",
+    "http": 200,
+    "bytes": 215543,
+    "scope": "공개 페이지 접근만; 상세 전건 수집 아님"
+  },
+  {
+    "source": "ddm-a",
+    "url": "https://forms.gle/gvJUEPgekFM7VuLM6",
+    "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSf2LQOF9k-tjhjDNnFbrD_hDeOWkEZt1PGEYr2mc5LwWnFpcg/viewform?usp=send_form",
+    "http": 200,
+    "bytes": 112129,
+    "scope": "공개 페이지 접근만; 상세 전건 수집 아님"
+  },
+  {
+    "source": "ddm-b",
+    "url": "https://forms.gle/yacZTqyQgaJ5HjK98",
+    "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSf2LQOF9k-tjhjDNnFbrD_hDeOWkEZt1PGEYr2mc5LwWnFpcg/viewform?usp=send_form",
+    "http": 200,
+    "bytes": 112350,
+    "scope": "공개 페이지 접근만; 상세 전건 수집 아님"
+  },
+  {
+    "source": "biig-form",
+    "url": "https://forms.gle/4A2jzZVS8YFTXq7a7",
+    "error": "HTTP Error 401: Unauthorized"
+  },
+  {
+    "source": "bizinfo",
+    "url": "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/list.do",
+    "finalUrl": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200View.do?null",
+    "http": 200,
+    "bytes": 111360,
+    "scope": "공개 페이지 접근만; 상세 전건 수집 아님"
+  },
+  {
+    "source": "iris",
+    "url": "https://www.iris.go.kr/contents/retrieveBsnsAncmBtinSituListView.do",
+    "finalUrl": "https://www.iris.go.kr/contents/retrieveBsnsAncmBtinSituListView.do",
+    "http": 200,
+    "bytes": 111921,
+    "scope": "공개 페이지 접근만; 상세 전건 수집 아님"
+  },
+  {
+    "source": "kotra",
+    "url": "https://kotra.or.kr/subList/20000020753",
+    "finalUrl": "https://kotra.or.kr/subList/20000020753",
+    "http": 200,
+    "bytes": 152169,
+    "scope": "공개 페이지 접근만; 상세 전건 수집 아님"
+  }
+]

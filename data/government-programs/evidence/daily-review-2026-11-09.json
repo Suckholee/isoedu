@@ -1,0 +1,159 @@
+{
+  "at": "2026-11-09T00:15:05.932261+00:00",
+  "date": "2026-11-09",
+  "automationId": "isoedu",
+  "stage": "daily-analysis-summary",
+  "summary": "2026-11-09 정기 실행: KStartup15/중기부10 각첫페이지·한국공항공사입주 신규1·누적157·상세157성공/실패0. 해외규격일반3차/센터주관기관수정/삼육입주/BeyondSilicon/충남8차포럼 5건 실제첨부10개 분석후partial. 해외규격PDF29쪽본문/붙임1~5전체텍스트·HWPX중복대조·핵심8쪽시각,일반연간4건1억원/매출구간70·60·50%/지정의료1.5억원/ESG필수·온라인신청/별첨1-4양식미확인. 센터주관기관2026-623→625 신구PDF전체텍스트차이로500㎡전용→연면적정정확인·원공고2첨부핵심비교·ID/기간보존/최신연결,수정기간공란을PDF근거11/5~11/13 18시달력전달;80%최대1.3억원/현금10%/향후5년계획·평가30/20/40/10·과거2023채무예외날짜충돌보존. 삼육HWP공고/신청/동의/계획전체및시설사진시각,30㎡1실/연4752000원·관리월60000/선정후증빙·동의5년·발표10분확인. 포스터2개전체시각·대체TXT대조,BeyondTXT8월일시잔존/Naver폼JS셸,충남포럼Google폼4필수문항·개인정보세부고지미확인. 포스터PoC12주2000만원은별도사업179662로분리·주최본문개별기한만확인(관련추가첨부미분석). 총21첨부다운로드/해시·기존오늘마감2건9첨부동일/교체0;중동마감오늘HWP2URL재시도400실패유지. 신규1건상세/첨부주소확보만·분석대기. 큐partial112/pending45/complete0·잔여157·이번처리11/10재시도. 기업마당null리디렉션/IRIS홈/KOTRA셸200근거보존·전체수집아님. route.GET200·157공고112분석·5건마감시각/달력배치검증,HTTP3010연결실패·화면미검증. G01→S03→S12/S13 공고ID/근거/조건·회사필드·권한인계보존,회사적합확정/DB변경/공개배포/외부발송없음.",
+  "coverage": {
+    "k-startup": "first page15",
+    "mss": "first page10",
+    "newRecords": 1,
+    "newRecordIds": [
+      "kstartup-179731"
+    ],
+    "totalRecords": 157,
+    "detailSuccess": 157,
+    "detailFailures": [],
+    "fullCollection": false
+  },
+  "reviewedWithAttachments": [
+    "kstartup-178799",
+    "kstartup-179728",
+    "kstartup-179736",
+    "mss-1071736",
+    "mss-1072312"
+  ],
+  "actualReviewedNoticeAttachments": 10,
+  "additionalOriginalCorrectionComparison": {
+    "programId": "mss-1072252",
+    "attachmentCount": 2,
+    "scope": "신구전체텍스트차이대조·세부분석은최신625공유"
+  },
+  "hashDownloads": 21,
+  "sameExistingHashes": 9,
+  "changedHashes": 0,
+  "existingHashCheckedIds": [
+    "kstartup-179598",
+    "kstartup-179606"
+  ],
+  "unreviewedNewRecords": 1,
+  "queueCounts": {
+    "partial": 112,
+    "pending": 45
+  },
+  "remaining": 157,
+  "nextRetryAt": "2026-11-10T09:00:00+09:00",
+  "sourceChecks": [
+    {
+      "id": "bizinfo",
+      "url": "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/list.do",
+      "checkedAt": "2026-11-09T00:06:42.057204+00:00",
+      "status": 200,
+      "finalUrl": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200View.do?null",
+      "evidence": "bizinfo-publiccheck-20261109.html",
+      "bytes": 110795
+    },
+    {
+      "id": "iris",
+      "url": "https://www.iris.go.kr/index.do",
+      "checkedAt": "2026-11-09T00:06:42.057576+00:00",
+      "status": 200,
+      "finalUrl": "https://www.iris.go.kr/index.do",
+      "evidence": "iris-publiccheck-20261109.html",
+      "bytes": 1510328
+    },
+    {
+      "id": "kotra",
+      "url": "https://kotra.or.kr/subList/20000020753",
+      "checkedAt": "2026-11-09T00:06:42.057722+00:00",
+      "status": 200,
+      "finalUrl": "https://kotra.or.kr/subList/20000020753",
+      "evidence": "kotra-publiccheck-20261109.html",
+      "bytes": 151048
+    }
+  ],
+  "applicationChecks": [
+    {
+      "id": "179728",
+      "url": "https://m.site.naver.com/2gKrl",
+      "checkedAt": "2026-11-09T00:08:22.389298+00:00",
+      "status": 200,
+      "finalUrl": "https://form.naver.com/response/JpvgbG8Lot9",
+      "evidence": "179728-publiccheck-20261109.html",
+      "bytes": 2411
+    },
+    {
+      "id": "179736",
+      "url": "https://m.site.naver.com/2jTh2",
+      "checkedAt": "2026-11-09T00:08:22.389594+00:00",
+      "status": 200,
+      "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdaKCR_VfPzMbZAePA2XnmdBeeSp34YzOirsEznAHnjojvkIQ/viewform?usp=send_form",
+      "evidence": "179736-publiccheck-20261109.html",
+      "bytes": 93162
+    },
+    {
+      "id": "179736-poc",
+      "url": "https://m.site.naver.com/2jPzT",
+      "checkedAt": "2026-11-09T00:08:22.389708+00:00",
+      "status": 200,
+      "finalUrl": "https://sandan.koreatech.ac.kr/kor/CMS/Board/Board.do?mCode=MN062&searchCategory=c001&mgr_seq=9&mode=view&mgr_seq=9&board_seq=3886",
+      "evidence": "179736-poc-publiccheck-20261109.html",
+      "bytes": 179115
+    },
+    {
+      "id": "1071736",
+      "url": "https://www.smes.go.kr/globalcerti/",
+      "checkedAt": "2026-11-09T00:08:22.390085+00:00",
+      "status": 200,
+      "finalUrl": "https://www.smes.go.kr/globalcerti/",
+      "evidence": "1071736-publiccheck-20261109.html",
+      "bytes": 252
+    },
+    {
+      "id": "1071736-esg",
+      "url": "https://kdoctor.kosmes.or.kr/esgplatform/service/intro_esg.do",
+      "checkedAt": "2026-11-09T00:08:22.390185+00:00",
+      "status": 200,
+      "finalUrl": "https://kdoctor.kosmes.or.kr/esgplatform/service/intro_esg.do",
+      "evidence": "1071736-esg-publiccheck-20261109.html",
+      "bytes": 39798
+    },
+    {
+      "id": "1071736-main",
+      "url": "https://www.smes.go.kr/globalcerti/main.do",
+      "checkedAt": "2026-11-09T00:09:28.241424+00:00",
+      "status": 200,
+      "finalUrl": "https://www.smes.go.kr/globalcerti/main.do",
+      "evidence": "1071736-main-publiccheck-20261109.html",
+      "bytes": 84938
+    },
+    {
+      "id": "1071736-info",
+      "url": "https://www.smes.go.kr/globalcerti/info/ktrInfo.do?key=9093",
+      "checkedAt": "2026-11-09T00:11:05.359170+00:00",
+      "status": 200,
+      "finalUrl": "https://www.smes.go.kr/globalcerti/info/ktrInfo.do?key=9093",
+      "evidence": "1071736-info-publiccheck-20261109.html",
+      "bytes": 206317
+    }
+  ],
+  "attachmentRetryFailures": [
+    {
+      "programId": "kstartup-179723",
+      "url": "https://smc.sba.kr/AttachFiles/new_display/2026/10/28/4e62240d-abd2-f111-b404-d4f5ef4a1e33/%5B%EA%B3%B5%EA%B3%A0%EB%AC%B8_%EC%88%98%ED%98%9C%EA%B8%B0%EC%97%85_%EB%AA%A8%EC%A7%91%5D_2026%EB%85%84_%EC%A4%91%EB%8F%99_%EC%83%81%ED%99%A9_%EB%8C%80%EC%9D%91_%EA%B7%9C%EA%B2%A9_%EC%BB%A8%EC%84%A4%ED%8C%85_%EC%A7%80%EC%9B%90%EC%82%AC%EC%97%85_%EC%88%98%ED%98%9C%EA%B8%B0%EC%97%85_%EB%AA%A8%EC%A7%91(1).hwp",
+      "checkedAt": "2026-11-09T00:09:33.005302+00:00",
+      "error": "HTTP Error 400: Bad Request"
+    },
+    {
+      "programId": "kstartup-179723",
+      "url": "https://smc.sba.kr/AttachFiles/new_display/2026/10/30/4E62240D-ABD2-F111-B404-D4F5EF4A1E33/%5B%EC%B0%B8%EA%B0%80_%EC%8B%A0%EC%B2%AD%EC%84%9C_%EC%88%98%ED%96%89%EA%B3%84%ED%9A%8D%EC%84%9C_%EC%88%98%ED%98%9C%EA%B8%B0%EC%97%85%5D_%EC%A4%91%EB%8F%99%EC%83%81%ED%99%A9%EB%8C%80%EC%9D%91_%E3%80%8E%EA%B7%9C%EA%B2%A9%EC%BB%A8%EC%84%A4%ED%8C%85_%EC%A7%80%EC%9B%90%EC%82%AC%EC%97%85%E3%80%8F_%EC%88%98%ED%98%9C%EA%B8%B0%EC%97%85.hwp",
+      "checkedAt": "2026-11-09T00:09:33.248703+00:00",
+      "error": "HTTP Error 400: Bad Request"
+    }
+  ],
+  "validationEvidence": "evidence/api-validation-2026-11-09.json",
+  "screenVerified": false,
+  "databaseModified": false,
+  "deployed": false,
+  "externalMessagesSent": false
+}

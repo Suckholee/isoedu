@@ -90,7 +90,7 @@
     "https://www.k-startup.go.kr/afile/fileDownload/6Q2Ln": "2621bc741527586e90ead42a8c3c70e671464f527c638bbe9d64d6784d0bf880",
     "https://www.k-startup.go.kr/afile/fileDownload/MQ2Ln": "6bf630feb5861be315f4c2a56e84387bee1fc3444309746375f4fd0a765c72bd"
   },
-  "lastAttachmentHashCheckedAt": "2026-11-01T02:29:24.757028+00:00",
+  "lastAttachmentHashCheckedAt": "2026-11-09T00:13:27.071339+00:00",
   "eligibility": {
     "summary": "신청일기준3년이내IT/SW중소기업또는예비창업자·첨부제11차KSIC65개업종확인",
     "companyFields": [
@@ -231,5 +231,7 @@
       "미확인·충돌해결·최신양식확보",
       "S12양식·S13회사정보로회사별서류/계획작성"
     ]
-  }
+  },
+  "latestHashEvidence": "evidence/kstartup-179606/attachment-check-2026-11-09.json",
+  "latestHashCheckScope": "공고/양식기존바이트SHA256대조·본문재분석아님·기존미해결유지"
 }

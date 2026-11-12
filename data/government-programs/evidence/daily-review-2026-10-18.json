@@ -1,0 +1,75 @@
+{
+  "at": "2026-10-18T00:09:06.060119Z",
+  "stage": "daily-attachment-analysis",
+  "status": "partial-success",
+  "scope": {
+    "listings": "K-Startup15건·중기부10건,각첫페이지만",
+    "detailPages": 25,
+    "detailAttachmentLinks": 50,
+    "analysedThisRun": [
+      "kstartup-179515",
+      "kstartup-179524",
+      "mss-1071550",
+      "kstartup-179504",
+      "kstartup-179516"
+    ],
+    "completeThisRun": 0,
+    "partialThisRun": 5,
+    "totalPartial": 6,
+    "unanalysed": 19,
+    "remaining": 25,
+    "supplementalSources": [
+      {
+        "source": "bizinfo",
+        "url": "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/list.do",
+        "http": 200,
+        "bytes": 111318,
+        "verifiedAt": "2026-10-18T00:03:08.112Z",
+        "scope": "공개 목록 페이지 접근 확인만; 상세·첨부 미분석, records 미병합"
+      },
+      {
+        "source": "iris",
+        "url": "https://www.iris.go.kr/contents/retrieveBsnsAncmListView.do",
+        "http": 200,
+        "bytes": 96150,
+        "verifiedAt": "2026-10-18T00:03:09.214Z",
+        "scope": "공개 목록 페이지 접근 확인만; 상세·첨부 미분석, records 미병합"
+      },
+      {
+        "source": "kotra",
+        "url": "https://www.kotra.or.kr/subList/20000020753",
+        "http": 200,
+        "bytes": 152177,
+        "verifiedAt": "2026-10-18T00:03:08.427Z",
+        "scope": "공개 목록 페이지 접근 확인만; 상세·첨부 미분석, records 미병합"
+      }
+    ]
+  },
+  "failures": [
+    {
+      "programId": "mss-1071550",
+      "stage": "OCR",
+      "message": "Vision OCR returned exit1 stderr(null);16 scanned pages rendered,3쪽 확대확인·나머지축소만. HWPX일부표 누락도 재검토"
+    },
+    {
+      "programId": "kstartup-179515",
+      "stage": "application-form",
+      "message": "forms.gle web접근실패"
+    },
+    {
+      "programId": "kstartup-179524",
+      "stage": "application-site",
+      "message": "ccceicontest공개접근timeout"
+    }
+  ],
+  "conflicts": [
+    "kstartup-179504 마감10/21 vs10/22",
+    "kstartup-179524 온라인vs이메일·실적연도",
+    "mss-1071550 확약서기산일"
+  ],
+  "companyMatching": "권한회사프로필없음:미실시",
+  "contentHashCheck": "5건신규분석 및 기존mss1071619 첨부13개 다운로드 SHA256기준선저장/기존원본대조. 나머지미분석19건 콘텐츠해시확인대기",
+  "calendarValidation": "이 프로젝트 로컬3001 API200:25건·분석6건,신규분석5건마감시각/충돌구분검증",
+  "screenValidation": "미검증",
+  "deployment": "수행안함"
+}

@@ -1,3 +1,4 @@
+import {serveSourceBundle} from './venture/sourceBundle.mjs';
 import {vaultFileTarget,vaultRange} from './vaultFileRequest.mjs';
 export function createVaultFileHandler({getClient,config,fetcher=fetch}){
 const headers={'Cache-Control':'private, no-store','X-Content-Type-Options':'nosniff'};
@@ -9,11 +10,12 @@ return async function GET(request){
  try{
   const {data:identity,error:identityError}=await client.auth.getUser();
   if(identityError||!identity.user)return fail(401,'로그인이 필요합니다.');
-  const {data:document,error}=await client.from('documents').select('id').eq('id',target.documentId).eq('company_id',target.companyId).single();
+  const {data:document,error}=await client.from('documents').select('id,metadata').eq('id',target.documentId).eq('company_id',target.companyId).single();
   if(error||!document)return fail(404,'파일이 없거나 접근 권한이 없습니다.');
   const {data:session}=await client.auth.getSession();
   if(!session.session)return fail(401,'로그인이 필요합니다.');
   const upstreamHeaders={apikey:config.key,Authorization:`Bearer ${session.session.access_token}`};
+  if(document.metadata?.sourceBundle?.originalPath===target.path)return await serveSourceBundle({bundle:document.metadata.sourceBundle,target,request,headers,fetchPart:(path,range)=>fetcher(`${config.url}/storage/v1/object/iso-vault/${path.split('/').map(encodeURIComponent).join('/')}`,{headers:{...upstreamHeaders,Range:range},cache:'no-store',signal:AbortSignal.any([request.signal,AbortSignal.timeout(30000)])})});
   const range=vaultRange(request.headers.get('range'));if(range)upstreamHeaders.Range=range;
   const upstream=await fetcher(`${config.url}/storage/v1/object/iso-vault/${target.path.split('/').map(encodeURIComponent).join('/')}`,{headers:upstreamHeaders,cache:'no-store',signal:AbortSignal.timeout(30000)});
   if(!upstream.ok&&upstream.status!==416)return fail(upstream.status===401?401:404,'파일을 읽지 못했거나 접근 권한이 해제되었습니다.');

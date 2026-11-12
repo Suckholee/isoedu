@@ -1,0 +1,59 @@
+[
+  {
+    "id": "179674",
+    "url": "https://forms.gle/GgF2LhcWToiLaZk17",
+    "checkedAt": "2026-10-31T06:28:09.834183+00:00",
+    "error": "HTTP Error 401: Unauthorized"
+  },
+  {
+    "id": "179652",
+    "url": "https://forms.markettest.kr/r/e5ZLLQ",
+    "checkedAt": "2026-10-31T06:28:09.834509+00:00",
+    "status": 200,
+    "finalUrl": "https://forms.markettest.kr/r/e5ZLLQ",
+    "evidence": "179652-publiccheck-20261031.html",
+    "bytes": 94093
+  },
+  {
+    "id": "179672",
+    "url": "http://vo.la/GbHdE9e",
+    "checkedAt": "2026-10-31T06:28:09.834973+00:00",
+    "error": "HTTP Error 401: Unauthorized"
+  },
+  {
+    "id": "179620",
+    "url": "https://maize-manatee-b6e.notion.site/2026-OPEN-ISLAND-BOOT-CAMP-40136f809ea880f1b999d7fd3b744594",
+    "checkedAt": "2026-10-31T06:28:09.835081+00:00",
+    "status": 200,
+    "finalUrl": "https://maize-manatee-b6e.notion.site/2026-OPEN-ISLAND-BOOT-CAMP-40136f809ea880f1b999d7fd3b744594",
+    "evidence": "179620-publiccheck-20261031.html",
+    "bytes": 19984
+  },
+  {
+    "id": "bizinfo",
+    "url": "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/list.do",
+    "checkedAt": "2026-10-31T06:28:09.835194+00:00",
+    "status": 200,
+    "finalUrl": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200View.do?null",
+    "evidence": "bizinfo-publiccheck-20261031.html",
+    "bytes": 111149
+  },
+  {
+    "id": "iris",
+    "url": "https://www.iris.go.kr/index.do",
+    "checkedAt": "2026-10-31T06:28:09.835289+00:00",
+    "status": 200,
+    "finalUrl": "https://www.iris.go.kr/index.do",
+    "evidence": "iris-publiccheck-20261031.html",
+    "bytes": 2512977
+  },
+  {
+    "id": "kotra",
+    "url": "https://kotra.or.kr/subList/20000020753",
+    "checkedAt": "2026-10-31T06:28:09.835380+00:00",
+    "status": 200,
+    "finalUrl": "https://kotra.or.kr/subList/20000020753",
+    "evidence": "kotra-publiccheck-20261031.html",
+    "bytes": 152169
+  }
+]

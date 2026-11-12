@@ -1,0 +1,21 @@
+[
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/fe2Ln",
+    "verifiedAt": "2026-11-02",
+    "status": "downloaded",
+    "sha256": "d654d26f5ffddaffdf8fa4c03791b67ba4164d61dafd893a2410e15c28190921",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 362452,
+    "format": "PDF",
+    "file": "attachment-01.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 6617,
+    "review": {
+      "at": "2026-11-02T00:10:50.858912+00:00",
+      "method": "text",
+      "scope": "전체 추출본문·표·별첨 확인;원본배치/그림 시각미확인"
+    }
+  }
+]

@@ -1,0 +1,174 @@
+{
+  "programId": "kstartup-179761",
+  "title": "2026년 한라대학교 창업보육센터 11월 신규입주기업 모집 공고",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-11T02:37:54.824912+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179761",
+  "reviewScope": "K-Startup 신청대상·입주공간·입주부담금·제출서류 / HWP 신청서·사업계획서·동의 전문 / 대학 창업보육센터 공식 안내",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1na_zuJqYceewmCzxV0g8Vame4iLKmoW7MLbGCCZ5MZRG7A",
+      "verifiedAt": "2026-11-11",
+      "status": "downloaded",
+      "sha256": "f5b11c9a0de41a0da264d9c713224fad1b1bd50ae906bb0326831062a5d6ec3b",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 58880,
+      "format": "HWP",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 3239,
+      "review": {
+        "at": "2026-11-11T02:37:54.824912+00:00",
+        "scope": "K-Startup 신청대상·입주공간·입주부담금·제출서류 / HWP 신청서·사업계획서·동의 전문 / 대학 창업보육센터 공식 안내",
+        "method": "text/visual scope recorded in reviewScope"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/v1na_zuJqYceewmCzxV0g8Vame4iLKmoW7MLbGCCZ5MZRG7A": "f5b11c9a0de41a0da264d9c713224fad1b1bd50ae906bb0326831062a5d6ec3b"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-11T02:37:54.824912+00:00",
+  "eligibility": {
+    "summary": "예비창업자 또는 공고 본문 기준 창업 7년 미만. 양식 신청구분은 3년 미만으로 표기. 예비는 3개월 안 사업자등록, 기창업은 본점 이전 또는 연구소·전담부서 입주 조건 확인. 창조경제혁신센터·청년창업사관학교 졸업기업 우대.",
+    "companyFields": [
+      "설립일·사업자등록일",
+      "예비·기창업",
+      "본점 이전 및 연구소 설치 가능 여부",
+      "신용 상태",
+      "업종 및 배출·소음",
+      "희망 면적·인원",
+      "졸업 우대 증빙"
+    ],
+    "reference": "K-Startup 신청대상·입주공간·입주부담금·제출서류 / HWP 신청서·사업계획서·동의 전문 / 대학 창업보육센터 공식 안내"
+  },
+  "exclusions": {
+    "items": [
+      "신용불량",
+      "공해·소음 유발",
+      "중기부 또는 대학 제한 업종 등 본문 제외"
+    ],
+    "reference": "K-Startup 신청대상·입주공간·입주부담금·제출서류 / HWP 신청서·사업계획서·동의 전문 / 대학 창업보육센터 공식 안내"
+  },
+  "support": {
+    "summary": "10평 1실·30평 2실·50평 1실·1인공간 6석. 기본 2년 후 연장 심사. 보증금 ㎡당 5만원, 임대 ㎡당 5,000원 또는 5,300원, 관리 ㎡당 1,200원 및 전기 실비. 1인공간 보증금 30만원·임대료 10만원/석. 현금 지원 없음은 명시되지 않음.",
+    "reference": "K-Startup 신청대상·입주공간·입주부담금·제출서류 / HWP 신청서·사업계획서·동의 전문 / 대학 창업보육센터 공식 안내"
+  },
+  "period": {
+    "start": "2026-11-09",
+    "end": "2026-11-30",
+    "deadlineTime": "18:00",
+    "timezone": "Asia/Seoul",
+    "reference": "K-Startup 신청대상·입주공간·입주부담금·제출서류 / HWP 신청서·사업계획서·동의 전문 / 대학 창업보육센터 공식 안내",
+    "checkedAt": "2026-11-11T02:38:50.665484+00:00",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179761"
+  },
+  "application": {
+    "summary": "서류를 bic@halla.ac.kr로 제출. 센터 안내에는 공고 확인→서류 접수→발표 심사→계약·입주.",
+    "reference": "K-Startup 신청대상·입주공간·입주부담금·제출서류 / HWP 신청서·사업계획서·동의 전문 / 대학 창업보육센터 공식 안내"
+  },
+  "requiredDocuments": [
+    {
+      "name": "입주신청서 및 정보제공 동의",
+      "condition": "필수, HWP 서명 양식",
+      "reference": "첨부 HWP 신청서·정보제공 동의"
+    },
+    {
+      "name": "대표자 인감증명, 주민등록등본 또는 사업자등록증",
+      "condition": "본문 구분별 확인",
+      "reference": "K-Startup 제출서류"
+    },
+    {
+      "name": "법인등기부등본·주주명부",
+      "condition": "법인 해당",
+      "reference": "K-Startup 제출서류"
+    },
+    {
+      "name": "대표자 이력서·사업계획서",
+      "condition": "HWP 제출 목록·서식에 명시",
+      "reference": "첨부 HWP 제출서류·사업계획서"
+    }
+  ],
+  "businessPlan": {
+    "format": "HWP 지정 서식",
+    "limit": null,
+    "sections": [
+      {
+        "name": "창업자·기업 현황",
+        "items": [
+          "학력·이력·자산·지식재산·인력"
+        ],
+        "limit": null
+      },
+      {
+        "name": "기술·시장",
+        "items": [
+          "제품 사양·기술 개발 경위·시장 3년·경쟁업체·기술과 가격"
+        ],
+        "limit": null
+      },
+      {
+        "name": "매출 및 일정",
+        "items": [
+          "국내·수출 5년 추정·판매계획·준비도·1년 분기 일정·조달"
+        ],
+        "limit": null
+      },
+      {
+        "name": "입주",
+        "items": [
+          "동기·희망지원·반입 장비"
+        ],
+        "limit": null
+      }
+    ],
+    "reference": "K-Startup 신청대상·입주공간·입주부담금·제출서류 / HWP 신청서·사업계획서·동의 전문 / 대학 창업보육센터 공식 안내"
+  },
+  "evaluation": {
+    "summary": "서류 후 발표심사. 배점과 통과 기준 미기재.",
+    "reference": "K-Startup 신청대상·입주공간·입주부담금·제출서류 / HWP 신청서·사업계획서·동의 전문 / 대학 창업보육센터 공식 안내"
+  },
+  "contact": {
+    "name": "한라대학교 창업보육센터 033-760-1400 / bic@halla.ac.kr",
+    "reference": "K-Startup 신청대상·입주공간·입주부담금·제출서류 / HWP 신청서·사업계획서·동의 전문 / 대학 창업보육센터 공식 안내"
+  },
+  "unresolved": [
+    "공고 본문 7년 미만과 첨부 양식 3년 미만 충돌. 대학 센터 소개에는 차수별 정정 없음.",
+    "임대료 구간의 120㎡ 경계가 양쪽에 포함되며 부과 주기는 본문에서 확인되지 않음.",
+    "첨부의 대표자 이력서·사업계획서와 본문 제출 목록 차이는 담당처 확인 필요."
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179761",
+    "companyId": null,
+    "permission": "권한회사프로필확보후근거별검토·현재신청가능확정아님",
+    "steps": [
+      "회사필드/증빙확인",
+      "충돌/미확인해결",
+      "S12양식·S13회사정보로서류/계획작성"
+    ]
+  },
+  "evidence": {
+    "detail": "evidence/kstartup-179761/detail.html",
+    "detailFetchedAt": "2026-11-11T02:27:27.394Z",
+    "attachmentManifest": "evidence/kstartup-179761/attachment-check-2026-11-11.json",
+    "publicChecks": [
+      {
+        "id": "179761",
+        "url": "https://gw-startup.halla.ac.kr/incubator",
+        "checkedAt": "2026-11-11T02:33:52.583400+00:00",
+        "status": 200,
+        "finalUrl": "https://gw-startup.halla.ac.kr/incubator",
+        "evidence": "179761-publiccheck-20261111.html",
+        "bytes": 22124
+      }
+    ]
+  }
+}

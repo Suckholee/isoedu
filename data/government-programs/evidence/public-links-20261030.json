@@ -1,0 +1,68 @@
+[
+  {
+    "id": "179645",
+    "url": "https://m.site.naver.com/2j3E2",
+    "checkedAt": "2026-10-30T01:37:19.011673+00:00",
+    "error": "HTTP Error 308: Permanent Redirect"
+  },
+  {
+    "id": "179646",
+    "url": "https://event-us.kr/26artstartupday/event/137790",
+    "checkedAt": "2026-10-30T01:37:19.012348+00:00",
+    "status": 200,
+    "finalUrl": "https://event-us.kr/26artstartupday/event/137790",
+    "bytes": 553339,
+    "evidence": "data/government-programs/evidence/179646-publiccheck-20261030-6854736524907951413.html"
+  },
+  {
+    "id": "179608",
+    "url": "https://nextstep.io.kr/2026-yongin-semicon-forum",
+    "checkedAt": "2026-10-30T01:37:19.012543+00:00",
+    "status": 200,
+    "finalUrl": "https://nextstep.io.kr/2026-yongin-semicon-forum",
+    "bytes": 113280,
+    "evidence": "data/government-programs/evidence/179608-publiccheck-20261030-1275792176892754112.html"
+  },
+  {
+    "id": "179608",
+    "url": "https://andone-erpsystem.vercel.app/q/ysemicon",
+    "checkedAt": "2026-10-30T01:37:19.012708+00:00",
+    "status": 200,
+    "finalUrl": "https://nextstep.io.kr/2026-yongin-semicon-forum",
+    "bytes": 113280,
+    "evidence": "data/government-programs/evidence/179608-publiccheck-20261030-1277126371792162337.html"
+  },
+  {
+    "id": "179625",
+    "url": "https://forms.gle/Mqi7q1HDFUsCdkzE6",
+    "checkedAt": "2026-10-30T01:37:19.013845+00:00",
+    "error": "HTTP Error 401: Unauthorized"
+  },
+  {
+    "id": "bizinfo",
+    "url": "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/list.do",
+    "checkedAt": "2026-10-30T01:37:19.014049+00:00",
+    "status": 200,
+    "finalUrl": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200View.do?null",
+    "bytes": 110890,
+    "evidence": "data/government-programs/evidence/bizinfo-publiccheck-20261030-4087139914650347814.html"
+  },
+  {
+    "id": "iris",
+    "url": "https://www.iris.go.kr/index.do",
+    "checkedAt": "2026-10-30T01:37:19.014232+00:00",
+    "status": 200,
+    "finalUrl": "https://www.iris.go.kr/index.do",
+    "bytes": 2512931,
+    "evidence": "data/government-programs/evidence/iris-publiccheck-20261030-3680371945587678228.html"
+  },
+  {
+    "id": "kotra",
+    "url": "https://kotra.or.kr/subList/20000020753",
+    "checkedAt": "2026-10-30T01:37:19.014452+00:00",
+    "status": 200,
+    "finalUrl": "https://kotra.or.kr/subList/20000020753",
+    "bytes": 152169,
+    "evidence": "data/government-programs/evidence/kotra-publiccheck-20261030-257976681689577779.html"
+  }
+]

@@ -12,37 +12,39 @@ import {
 } from '../lib/projectWorkflow.mjs';
 import {useAuth} from '../context/AuthContext';
 import {isCloudMode} from '../lib/dataConfig';
+import {CERTIFICATIONS,preparationDocuments} from '../lib/curation/catalog.mjs';
 
-export default function NewProjectModal({isOpen,onClose,onCreateProject,initialProgram=null,companies=[],currentCompany=null}){
+export default function NewProjectModal({isOpen,onClose,onCreateProject,initialProgram=null,initialCuration=null,companies=[],currentCompany=null}){
  const {user}=useAuth();
  const [form,setForm]=useState(null),[tasks,setTasks]=useState([]),[manualDateKeys,setManualDateKeys]=useState([]),[titleEdited,setTitleEdited]=useState(false),[custom,setCustom]=useState(''),[error,setError]=useState(''),[saving,setSaving]=useState(false),[reviewed,setReviewed]=useState(false);
  useEffect(()=>{
   if(isOpen){
    const defaultCompanyId=currentCompany?.id||'';
    const companyName=companies.find(c=>c.id===defaultCompanyId)?.name||currentCompany?.name||'';
-   const defaultKind=initialProgram?'SUPPORT':'ISO';
-   const defaultStandards=['ISO_9001'];
+   const defaultKind=initialCuration?.kind||(initialProgram?'SUPPORT':'ISO');
+   const defaultStandards=initialCuration?.standards||['ISO_9001'];
    setForm({
     requestId:crypto.randomUUID(),
     companyId:defaultCompanyId,
     clientName:'',
-    title:suggestProjectTitle({companyName,kind:defaultKind,standards:defaultStandards,programTitle:initialProgram?.title||''}),
+    title:initialCuration?`${companyName} ${initialCuration.title}`.slice(0,120):suggestProjectTitle({companyName,kind:defaultKind,standards:defaultStandards,programTitle:initialProgram?.title||''}),
     kind:defaultKind,
     standards:defaultStandards,
     targetDate:'',
-    notes:'',
+    notes:initialCuration?.notes||'',
+    curationOrigin:initialCuration?{companyId:initialCuration.companyId,reportId:initialCuration.reportId,revision:initialCuration.revision,certificationId:initialCuration.certificationId,sourceVersion:initialCuration.sourceVersion,applicationType:CERTIFICATIONS.find(c=>c.id===initialCuration.certificationId)?.policyType}:undefined,
     programId:initialProgram?.id||'',
    });
    setTasks(suggestedProjectTasks(''));
    setManualDateKeys([]);
-   setTitleEdited(Boolean(initialProgram?.title));
-   setCustom('');
+   setTitleEdited(Boolean(initialProgram?.title||initialCuration));
+   setCustom(initialCuration?.kind==='DOMESTIC'?preparationDocuments(initialCuration.certificationId).map(d=>d.title).join('\n'):'');
    setError('');
    setReviewed(false);
   }
- },[isOpen,currentCompany?.id,currentCompany?.name,initialProgram,companies]);
+ },[isOpen,currentCompany?.id,currentCompany?.name,initialProgram,initialCuration,companies]);
  if(!isOpen||!form)return null;
- const requirements=form.kind==='ISO'?requirementsForStandards(form.standards,ISO_MANDATORY_REQUIREMENTS):custom.split('\n').filter(s=>s.trim()).map((s,i)=>({key:`custom-${i+1}`,title:s.trim(),standard:''}));
+ const requirements=form.kind==='ISO'?requirementsForStandards(form.standards,ISO_MANDATORY_REQUIREMENTS):custom.split('\n').filter(s=>s.trim()).map((s,i)=>{const source=initialCuration?preparationDocuments(initialCuration.certificationId).find(d=>d.title===s.trim()):null;return {key:source?`${CERTIFICATIONS.find(c=>c.id===initialCuration.certificationId).policyType.toLowerCase()}-${source.key}`:`custom-${i+1}`,title:s.trim(),standard:'',sourceVersion:source?.sourceVersion||'user-reviewed-v1'};});
  function resolveCompanyName(nextForm){
   if(nextForm.companyId)return companies.find(c=>c.id===nextForm.companyId)?.name||currentCompany?.name||'';
   return nextForm.clientName||'';
@@ -90,7 +92,7 @@ export default function NewProjectModal({isOpen,onClose,onCreateProject,initialP
  return <ModalLayer onClose={()=>{if(!saving)onClose();}} className="fixed inset-0 z-50 bg-slate-900/60 flex items-center justify-center p-4"><section role="dialog" aria-modal="true" aria-label="거래처 프로젝트 만들기" className="bg-white rounded-2xl w-full max-w-2xl max-h-[90dvh] overflow-auto p-6">
  <header className="flex justify-between mb-4"><h2 className="text-lg font-bold">거래처 프로젝트 만들기</h2><button disabled={saving} type="button" onClick={onClose} aria-label="닫기">닫기</button></header>
  <form onSubmit={submit} className="space-y-4 text-sm">
- <label className="block">거래처<select aria-label="프로젝트 거래처" className={input} value={form.companyId} onChange={e=>field('companyId',e.target.value)}><option value="">새 거래처 등록</option>{companies.map(c=><option key={c.id} value={c.id}>{c.name}</option>)}</select></label>
+ <label className="block">거래처<select aria-label="프로젝트 거래처" className={input} value={form.companyId} disabled={Boolean(initialCuration)} onChange={e=>field('companyId',e.target.value)}><option value="">새 거래처 등록</option>{companies.map(c=><option key={c.id} value={c.id}>{c.name}</option>)}</select></label>
  {!form.companyId&&<label className="block">새 거래처명<input aria-label="새 거래처명" required maxLength={150} className={input} value={form.clientName} onChange={e=>field('clientName',e.target.value)}/><small className="text-slate-500">새 관리 공간을 만듭니다. 기존 회사의 소속 승인이나 대표자 확인을 대신하지 않습니다.</small></label>}
  <div><div className="flex justify-between items-center"><label htmlFor="new-project-title">프로젝트명</label><button type="button" className="text-xs text-blue-700 underline" onClick={()=>{setTitleEdited(false);setForm(prev=>({...prev,title:suggestProjectTitle({companyName:resolveCompanyName(prev),kind:prev.kind,standards:prev.standards,programTitle:initialProgram?.title||''})}));setReviewed(false);}}>규격·거래처 기준 자동 입력</button></div><input id="new-project-title" aria-label="프로젝트명" required maxLength={120} className={input} value={form.title} onChange={e=>{setTitleEdited(true);field('title',e.target.value);}} placeholder="예: 2026 통합 ISO 인증 준비"/></div>
  <label className="block">진행 종류<select aria-label="프로젝트 종류" className={input} value={form.kind} onChange={e=>field('kind',e.target.value)}>{Object.entries(PROJECT_KINDS).map(([k,v])=><option key={k} value={k}>{v}</option>)}</select></label>

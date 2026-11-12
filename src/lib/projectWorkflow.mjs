@@ -220,7 +220,7 @@ export function buildProjectTaskSyncPlan(tasks = [], requirements = [], document
   updates,
  };
 }
-export function projectDraft({companyId='',clientName='',title='',kind='ISO',standards=[],targetDate='',requirements=[],tasks=[],requestId,notes='',programId=''}={}) {
+export function projectDraft({companyId='',clientName='',title='',kind='ISO',standards=[],targetDate='',requirements=[],tasks=[],requestId,notes='',programId='',curationOrigin}={}) {
  if(!requestId)throw Error('저장 요청 식별자를 확인해 주세요.');
  if(!title.trim()||title.trim().length>120)throw Error('프로젝트명을 120자 이내로 입력해 주세요.');
  if(!companyId&&!clientName.trim())throw Error('기존 거래처를 선택하거나 새 거래처명을 입력해 주세요.');
@@ -230,7 +230,8 @@ export function projectDraft({companyId='',clientName='',title='',kind='ISO',sta
  if(tasks.length>30||tasks.some(t=>!t.title.trim()||t.title.length>180||!validTaskDate(t.dueDate)))throw Error('준비 업무명과 날짜를 확인해 주세요.');
  if(targetDate&&tasks.some(t=>t.dueDate&&t.dueDate>targetDate))throw Error('목표일보다 늦은 준비 일정이 있습니다. 날짜를 확인해 주세요.');
  if(new Set(tasks.map(t=>t.key)).size!==tasks.length||new Set(requirements.map(r=>r.key)).size!==requirements.length)throw Error('중복 항목을 확인해 주세요.');
- return {workflowVersion:2,requestId,companyId,clientName:clientName.trim(),title:title.trim(),kind,standards:kind==='ISO'?standards:[],targetDate,notes:notes.slice(0,10000),programId,requirements:requirements.map(r=>({...r,sourceVersion:r.sourceVersion||'user-reviewed-v1'})),tasks};
+ if(curationOrigin&&(curationOrigin.companyId!==companyId||typeof curationOrigin.reportId!=='string'||!Number.isInteger(curationOrigin.revision)||curationOrigin.revision<1))throw Error('추천 기록의 회사 연결을 확인해 주세요.');
+ return {...(curationOrigin?{curationOrigin}:{}),workflowVersion:2,requestId,companyId,clientName:clientName.trim(),title:title.trim(),kind,standards:kind==='ISO'?standards:[],targetDate,notes:notes.slice(0,10000),programId,requirements:requirements.map(r=>({...r,sourceVersion:r.sourceVersion||'user-reviewed-v1'})),tasks};
 }
 export function suggestedProjectTasks(targetDate) {
  const titles=['회사 현황·준비 범위 확인','구비서류 작성·증적 정리','내부 검토·보완'];

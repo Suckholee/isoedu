@@ -1,0 +1,124 @@
+{
+  "at": "2026-11-03T00:08:48.076790+00:00",
+  "date": "2026-11-03",
+  "automationId": "isoedu",
+  "stage": "daily-analysis-summary",
+  "summary": "2026-11-03 정기 실행: K-Startup15·중기부10 각 첫 페이지 갱신,신규10·누적119·상세119건. 별별상상/대전창업포럼/해냄멘토링/상지입주/대전테스트베드 5건 실제첨부20개 분석·일부미확인으로partial. 포스터3/내장HWP포스터1·스캔PDF1·사진PDF1쪽·양식PDF2쪽시각확인,본문/평가/집행/계획양식전문검토. 공식교통대추가PDF(2쪽)·HWPX각1개확보·동일사업대조. 대전창업포럼공식신청폼11/2전체모집/밋업조기마감확인·기존11/9마감보존하고공개설명/API분석에상태경고. 상지대상세7년미만vs첨부예비전용·호실/면적·서류범위충돌보존. 대전테스트베드2000만원/3비목·요약2쪽/본문10쪽/평가30·20·20·20·10 확인. 추가수정공고mss-1072214핵심분석partial:2026-622가621수정,11/20→11/23 16시연장·예산변동시인력/대응·투자재원변경허용. 구공고mss-1072172/KStartup179660동일공고번호확인·이력ID/구마감유지및최신연결,수정p4채무예외11/20잔존충돌. 추가다운로드12개중신구공고4첨부는핵심수정대조만·KStartup8첨부는공고외유형별계획양식내용미분석. 총공고첨부36개다운로드·기존임박2건4첨부동일해시·변경0,공식추가2개합38파일. 해냄/K테스트베드HTTPS인증서호스트불일치·우회없이실제신청폼미확인. 큐complete0/partial81/pending38·잔여119,처리6건미해결11/4재시도. 기업마당잘못된null리디렉션·IRIS홈/KOTRA셸200은목록전체수집아님. route.GET200·119공고81분석·6건날짜/시각/달력배치및조기마감공개경고검증;localhost3001연결실패·화면미검증. G01→S03→S12/S13 공고ID/회사필드/근거/권한인계유지. 회사적합판정·DB변경·공개배포·외부발송없음.",
+  "coverage": {
+    "k-startup": "first page15",
+    "mss": "first page10",
+    "newRecords": 10,
+    "totalRecords": 119,
+    "detailsFetched": 119,
+    "fullCollection": false
+  },
+  "reviewedProgramIds": [
+    "kstartup-179676",
+    "kstartup-179664",
+    "kstartup-179629",
+    "kstartup-179612",
+    "kstartup-179677"
+  ],
+  "actualReviewedNoticeAttachments": 20,
+  "additionalCoreCorrectionReview": "mss-1072214",
+  "correctionScope": "신규수정본문앞6쪽/구공고마감/수정표시각확인·유형별후반및양식미완료",
+  "downloadOnlyScope": "KStartup179660 8첨부중공고마감대조외7개유형/계획/증빙양식전문미검토",
+  "additionalOfficialFiles": 2,
+  "hashDownloads": 36,
+  "sameExistingHashes": 4,
+  "changedHashes": 0,
+  "queueCounts": {
+    "partial": 81,
+    "pending": 38
+  },
+  "remaining": 119,
+  "nextRetryAt": "2026-11-04T09:00:00+09:00",
+  "sourceChecks": [
+    {
+      "id": "179676",
+      "url": "https://www.ut.ac.kr/cop/bbs/BBSMSTR_000000000059/selectBoardArticle.do?nttId=1125705",
+      "checkedAt": "2026-11-02T23:59:55.552516+00:00",
+      "status": 200,
+      "finalUrl": "https://www.ut.ac.kr/cop/bbs/BBSMSTR_000000000059/selectBoardArticle.do?nttId=1125705",
+      "evidence": "179676-publiccheck-20261103.html",
+      "bytes": 95812
+    },
+    {
+      "id": "179664",
+      "url": "https://forms.gle/q61cvcRxJwF4Jiq88",
+      "checkedAt": "2026-11-02T23:59:55.552820+00:00",
+      "status": 200,
+      "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSd666SleL9Jj8nIesVpV1kuF858xVr_Un5afNZHBXehgGR3Uw/viewform?usp=send_form",
+      "evidence": "179664-publiccheck-20261103.html",
+      "bytes": 120453
+    },
+    {
+      "id": "bizinfo",
+      "url": "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/list.do",
+      "checkedAt": "2026-11-02T23:59:55.552961+00:00",
+      "status": 200,
+      "finalUrl": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200View.do?null",
+      "evidence": "bizinfo-publiccheck-20261103.html",
+      "bytes": 111436
+    },
+    {
+      "id": "iris",
+      "url": "https://www.iris.go.kr/index.do",
+      "checkedAt": "2026-11-02T23:59:55.553343+00:00",
+      "status": 200,
+      "finalUrl": "https://www.iris.go.kr/index.do",
+      "evidence": "iris-publiccheck-20261103.html",
+      "bytes": 1531598
+    },
+    {
+      "id": "kotra",
+      "url": "https://kotra.or.kr/subList/20000020753",
+      "checkedAt": "2026-11-02T23:59:55.553458+00:00",
+      "status": 200,
+      "finalUrl": "https://kotra.or.kr/subList/20000020753",
+      "evidence": "kotra-publiccheck-20261103.html",
+      "bytes": 152169
+    }
+  ],
+  "supplementaryChecks": [
+    {
+      "id": "179629",
+      "url": "https://www.gdhaenaem.com/?c=168",
+      "checkedAt": "2026-11-03T00:01:12.934890+00:00",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.gdhaenaem.com'. (_ssl.c:1129)>"
+    },
+    {
+      "id": "179677",
+      "url": "https://www.ktestbed.net",
+      "checkedAt": "2026-11-03T00:01:12.935175+00:00",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.ktestbed.net'. (_ssl.c:1129)>"
+    },
+    {
+      "id": "179676-officialpdf",
+      "url": "https://www.ut.ac.kr/cmm/fms/FileDown.do?atchFileId=FILE_000000000293328&fileSn=0",
+      "checkedAt": "2026-11-03T00:01:12.935303+00:00",
+      "status": 200,
+      "finalUrl": "https://www.ut.ac.kr/cmm/fms/FileDown.do?atchFileId=FILE_000000000293328&fileSn=0",
+      "evidence": "179676-officialpdf-publiccheck-20261103.html",
+      "bytes": 174695,
+      "sha256": "7d32b7167b958d219cd98986a7115ea8e666202ae2b3ebc7a00290025cbff8de",
+      "format": "PDF"
+    },
+    {
+      "id": "179676-officialhwpx",
+      "url": "https://www.ut.ac.kr/cmm/fms/FileDown.do?atchFileId=FILE_000000000293328&fileSn=1",
+      "checkedAt": "2026-11-03T00:01:12.935687+00:00",
+      "status": 200,
+      "finalUrl": "https://www.ut.ac.kr/cmm/fms/FileDown.do?atchFileId=FILE_000000000293328&fileSn=1",
+      "evidence": "179676-officialhwpx-publiccheck-20261103.html",
+      "bytes": 51618,
+      "sha256": "7dd0c6de0787c77e9e42486927a670815f7dcda1f805f8b588d86ab2d4c5a2ce",
+      "format": "HWPX"
+    }
+  ],
+  "validationEvidence": "evidence/api-validation-2026-11-03.json",
+  "screenVerified": false,
+  "databaseModified": false,
+  "deployed": false,
+  "externalMessagesSent": false
+}

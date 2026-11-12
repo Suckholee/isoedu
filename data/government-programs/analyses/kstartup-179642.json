@@ -1,0 +1,173 @@
+{
+  "programId": "kstartup-179642",
+  "title": "[한국국제협력단]「 KOICA IMPACT TOGETHER 2026 」 행사",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-06T01:28:27.988925+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179642",
+  "reviewScope": "TEXT·포스터전체시각·PDF2쪽전체·공개등록폼필드/동의문 전체읽음, 2026-11-06; 실제신청/발송없음",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1h8OvmG7gN8Vgdhu45nMMtN_KluSpDfY2W8xEJImffiIHlw",
+      "verifiedAt": "2026-11-06",
+      "status": "downloaded",
+      "sha256": "3e2d462363b30a007652a9b96da62e433d6740595c24823599998cd359c306d3",
+      "previousHash": "3e2d462363b30a007652a9b96da62e433d6740595c24823599998cd359c306d3",
+      "changed": false,
+      "bytes": 1544,
+      "format": "OTHER",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "review": {
+        "at": "2026-11-06T01:28:27.988925+00:00",
+        "scope": "TEXT·포스터전체시각·PDF2쪽전체·공개등록폼필드/동의문 전체읽음, 2026-11-06; 실제신청/발송없음",
+        "method": "text (visual exceptions in reviewScope)"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1TmkrNhdEequgHFNeVFRe1bcI2TUjg3A96VbW4vdiF1RIew",
+      "verifiedAt": "2026-11-06",
+      "status": "downloaded",
+      "sha256": "2680ac5d6aa0ba2a1299dedf7206942d50db8523b47baeef0f4c56cbabc1729d",
+      "previousHash": "2680ac5d6aa0ba2a1299dedf7206942d50db8523b47baeef0f4c56cbabc1729d",
+      "changed": false,
+      "bytes": 614111,
+      "format": "IMAGE",
+      "file": "attachment-02.bin",
+      "contentType": "image/jpeg;charset=UTF-8",
+      "review": {
+        "at": "2026-11-06T01:28:27.988925+00:00",
+        "scope": "TEXT·포스터전체시각·PDF2쪽전체·공개등록폼필드/동의문 전체읽음, 2026-11-06; 실제신청/발송없음",
+        "method": "visual"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1NyKwYU_9DS-6DIarvAdbRjOrTL3B0sjE7ikENP1-HGU9Yg",
+      "verifiedAt": "2026-11-06",
+      "status": "downloaded",
+      "sha256": "aab5329367dacf8a3c9081d2bc6f3e068a0460adcdbe966784a274c67730e370",
+      "previousHash": "aab5329367dacf8a3c9081d2bc6f3e068a0460adcdbe966784a274c67730e370",
+      "changed": false,
+      "bytes": 125101,
+      "format": "PDF",
+      "file": "attachment-03.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 1900,
+      "review": {
+        "at": "2026-11-06T01:28:27.988925+00:00",
+        "scope": "TEXT·포스터전체시각·PDF2쪽전체·공개등록폼필드/동의문 전체읽음, 2026-11-06; 실제신청/발송없음",
+        "method": "text (visual exceptions in reviewScope)"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/v1h8OvmG7gN8Vgdhu45nMMtN_KluSpDfY2W8xEJImffiIHlw": "3e2d462363b30a007652a9b96da62e433d6740595c24823599998cd359c306d3",
+    "https://www.k-startup.go.kr/afile/fileDownload/v1TmkrNhdEequgHFNeVFRe1bcI2TUjg3A96VbW4vdiF1RIew": "2680ac5d6aa0ba2a1299dedf7206942d50db8523b47baeef0f4c56cbabc1729d",
+    "https://www.k-startup.go.kr/afile/fileDownload/v1NyKwYU_9DS-6DIarvAdbRjOrTL3B0sjE7ikENP1-HGU9Yg": "aab5329367dacf8a3c9081d2bc6f3e068a0460adcdbe966784a274c67730e370"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-06T01:28:27.988925+00:00",
+  "eligibility": {
+    "summary": "KOICA 기업협력/기타사업 참여기관 및 관심기업·공공기관·NGO 등 250~300명, 기업당2명. 행사참가로 사업선정·지원가능판정 아님.",
+    "companyFields": [
+      "회사/기관명·분야",
+      "참가자최대2명",
+      "관심분과1개",
+      "상담희망분야최대3",
+      "이름·직책·전화·메일",
+      "개인정보동의"
+    ],
+    "reference": "TEXT·포스터전체시각·PDF2쪽전체·공개등록폼필드/동의문 전체읽음, 2026-11-06; 실제신청/발송없음"
+  },
+  "exclusions": {
+    "items": [
+      "선착순 조기마감가능",
+      "기관당2명·상담사전예약 우선",
+      "별도사업신청자격 아님"
+    ],
+    "reference": "TEXT·포스터전체시각·PDF2쪽전체·공개등록폼필드/동의문 전체읽음, 2026-11-06; 실제신청/발송없음"
+  },
+  "support": {
+    "summary": "11/16 13~17 ST센터B1(서울테헤란로7길22), 접수12:30. 공통13~14, 분과14:15~15:35 A공공조달/B글로벌투자/C ESG. 상담14:15~16:50 20분+5분이동6회; 현장잔여석만가능. 지원금·투자보장없음·참가비미기재.",
+    "reference": "TEXT·포스터전체시각·PDF2쪽전체·공개등록폼필드/동의문 전체읽음, 2026-11-06; 실제신청/발송없음"
+  },
+  "period": {
+    "start": "2026-10-28",
+    "end": "2026-11-16",
+    "deadlineTime": "12:30",
+    "timezone": "Asia/Seoul",
+    "reference": "TEXT·포스터전체시각·PDF2쪽전체·공개등록폼필드/동의문 전체읽음, 2026-11-06; 실제신청/발송없음"
+  },
+  "application": {
+    "summary": "https://koicaibs.mlive.kr/regist_1116.php 공개신청폼. 필수이름/회사/직책/하이픈휴대폰/메일·분과1선택, 상담희망최대3(KOICA/기술판로/조달/해외/투자재무사업화/ESG). 사전질문선정50명상품. 별도상담예약URL11월초공유예정. 개인정보 KOICA·코웍스운영 보유1년·IBS홍보활용,동의필수.",
+    "reference": "TEXT·포스터전체시각·PDF2쪽전체·공개등록폼필드/동의문 전체읽음, 2026-11-06; 실제신청/발송없음"
+  },
+  "requiredDocuments": [
+    {
+      "name": "공개등록폼·개인정보동의",
+      "condition": "참가자공통",
+      "reference": "공개폼 전체"
+    },
+    {
+      "name": "상담예약",
+      "condition": "희망자·별도URL후속",
+      "reference": "PDF p2/포스터"
+    }
+  ],
+  "businessPlan": {
+    "format": "행사등록폼",
+    "limit": "계획서제출·재무첨부 요구없음",
+    "sections": [],
+    "reference": "TEXT·포스터전체시각·PDF2쪽전체·공개등록폼필드/동의문 전체읽음, 2026-11-06; 실제신청/발송없음"
+  },
+  "evaluation": {
+    "summary": "행사선착순·별도평가배점없음. 상담예약우선·잔여석현장. 프로그램신청선정평가와구별.",
+    "reference": "TEXT·포스터전체시각·PDF2쪽전체·공개등록폼필드/동의문 전체읽음, 2026-11-06; 실제신청/발송없음"
+  },
+  "contact": {
+    "name": "행사운영 yskim@teamskorea.net",
+    "reference": "TEXT·포스터전체시각·PDF2쪽전체·공개등록폼필드/동의문 전체읽음, 2026-11-06; 실제신청/발송없음"
+  },
+  "unresolved": [
+    "실제상담예약URL·잔여석·동반2인입력절차 미확인",
+    "등록페이지헤더2025~2026 IBS설명회 잔존 vs2026행사본문 최신정정확인필요",
+    "분과80분표기와세부합계85분충돌"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179642",
+    "companyId": null,
+    "permission": "권한회사프로필확보후근거별검토·현재신청가능확정아님",
+    "steps": [
+      "회사필드/증빙확인",
+      "충돌/미확인해결",
+      "S12양식·S13회사정보로서류/계획작성"
+    ]
+  },
+  "conflicts": [
+    {
+      "field": "formHeader",
+      "values": [
+        "2025~2026 IBS공모설명회헤더",
+        "2026.11.16행사내용"
+      ],
+      "resolution": "unresolved"
+    },
+    {
+      "field": "sessionDuration",
+      "values": [
+        "80분",
+        "세부합85분"
+      ],
+      "resolution": "unresolved"
+    }
+  ],
+  "additionalReview": "포스터/PDF/상세TEXT대조·등록폼전체텍스트확인. 상담6슬롯14:15/14:40/15:05/15:40/16:05/16:30. 이름·회사/직책·연락처·이메일 수집/보유1년 및 운영사코웍스·홍보활용문구 확인; 등록버튼실행안함.",
+  "additionalAttachments": [],
+  "evidenceManifest": "evidence/official-extra-check-20261106.json"
+}

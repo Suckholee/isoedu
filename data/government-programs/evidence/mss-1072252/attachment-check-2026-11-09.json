@@ -1,0 +1,30 @@
+[
+  {
+    "url": "https://www.mss.go.kr/common/board/Download.do?bcIdx=1072252&cbIdx=310&streFileNm=25a03638-cecc-4b01-9fc3-4eb444a4d8fc.hwpx",
+    "verifiedAt": "2026-11-09",
+    "status": "downloaded",
+    "sha256": "577421ab05e7bdae7216cebf29f416cd58ef8e6bfe4bdd6b688b1aab4dfdb552",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 105474,
+    "format": "HWPX",
+    "file": "attachment-01.bin",
+    "contentType": "application/octet-stream;charset=UTF-8",
+    "extraction": "text",
+    "characters": 13000
+  },
+  {
+    "url": "https://www.mss.go.kr/common/board/Download.do?bcIdx=1072252&cbIdx=310&streFileNm=a9c066da-619f-42de-b401-d2691338e82a.pdf",
+    "verifiedAt": "2026-11-09",
+    "status": "downloaded",
+    "sha256": "48c62ae25537f43f7bef30203d3339b594a2d78473f7d63cbfbe07fe544b6f82",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 562579,
+    "format": "PDF",
+    "file": "attachment-02.bin",
+    "contentType": "application/octet-stream;charset=UTF-8",
+    "extraction": "text",
+    "characters": 7889
+  }
+]

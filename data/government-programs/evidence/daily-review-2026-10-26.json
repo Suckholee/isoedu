@@ -1,0 +1,148 @@
+{
+  "at": "2026-10-26T00:02:30.954474+00:00",
+  "stage": "daily-attachment-analysis",
+  "status": "partial-success",
+  "summary": "2026-10-26 정기 실행: K-Startup15·중기부10 각 첫 페이지, 신규0·누적63공고·상세63건 확인. 대구콘텐츠입주·동부여성입주·동국대입주·TEL투자밋업·강원특구5건 첨부19개 확보,핵심모집/신청·계획/동의·포스터를 검토해partial저장(일부중복공고·후반기준·모든쪽시각검토미완료). 총28첨부다운로드,기존13개동일해시·변경0,완료2건재분석없이유지·마감임박3건미해결유지. 동부여성상세10/19·23:50대첨부10/1·24시 충돌,대구7년기준일차이,TEL연락처/요일차이,강원특구본문/포스터상이신청폼모두401 및 이전시점조건단계확인필요 기록. 큐complete2/partial43/pending18·잔여61,이번처리미해결10/27재시도. 보완3출처공개접근만확인·전체수집아님. route.GET200·63공고/45분석·5건마감시각검증,로컬HTTP접속실패·화면미검증. G01→S03→S12/S13 ID·근거·회사별조건·권한인계보존. 회사적합판정·DB변경·배포·외부발송없음.",
+  "scope": {
+    "listing": {
+      "kstartup": 15,
+      "mss": 10,
+      "coverage": "first-page-only"
+    },
+    "newRecords": 0,
+    "retainedRecords": 63,
+    "detailPagesAttempted": 63,
+    "analysedThisRun": [
+      "kstartup-179570",
+      "kstartup-179561",
+      "kstartup-179598",
+      "kstartup-179543",
+      "kstartup-179596"
+    ],
+    "detailOnly": [],
+    "downloadedAttachments": 28,
+    "failedAttachments": 0,
+    "priorHashesCompared": 13,
+    "contentChanged": 0,
+    "queue": {
+      "partial": 43,
+      "pending": 18,
+      "complete": 2
+    },
+    "remaining": 61
+  },
+  "supplementalSourceChecks": [
+    {
+      "name": "gangwon-body",
+      "url": "https://forms.gle/NZP2VANG8peaduLz7",
+      "checkedAt": "2026-10-26T00:00:16.895904+00:00",
+      "error": "HTTP Error 401: Unauthorized"
+    },
+    {
+      "name": "gangwon-poster",
+      "url": "https://forms.gle/ucawuXbEaZ4EVah6A",
+      "checkedAt": "2026-10-26T00:00:16.896110+00:00",
+      "error": "HTTP Error 401: Unauthorized"
+    },
+    {
+      "name": "woman",
+      "url": "https://dongbu.seoulcareerup.or.kr/dongbu/common/bbs/selectBBS.do?bbs_code=B0454&bbs_seq=145185",
+      "checkedAt": "2026-10-26T00:00:16.896208+00:00",
+      "status": 200,
+      "finalUrl": "https://dongbu.seoulcareerup.or.kr/dongbu/common/bbs/selectBBS.do?bbs_code=B0454&bbs_seq=145185",
+      "bytes": 140045
+    },
+    {
+      "name": "daegu",
+      "url": "https://www.dcoe.or.kr/business/detail/313",
+      "checkedAt": "2026-10-26T00:00:16.896282+00:00",
+      "status": 200,
+      "finalUrl": "https://www.dcoe.or.kr/business/detail/313",
+      "bytes": 76789
+    },
+    {
+      "name": "dongguk",
+      "url": "https://dvic.dongguk.edu/dvic5_7/75",
+      "checkedAt": "2026-10-26T00:00:16.896656+00:00",
+      "status": 200,
+      "finalUrl": "https://dvic.dongguk.edu/dvic5_7/75",
+      "bytes": 22796
+    },
+    {
+      "name": "bizinfo",
+      "url": "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/list.do",
+      "checkedAt": "2026-10-26T00:00:16.896757+00:00",
+      "status": 200,
+      "finalUrl": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200View.do?null",
+      "bytes": 111456
+    },
+    {
+      "name": "iris",
+      "url": "https://www.iris.go.kr/index.do",
+      "checkedAt": "2026-10-26T00:00:16.896854+00:00",
+      "status": 200,
+      "finalUrl": "https://www.iris.go.kr/index.do",
+      "bytes": 2512938
+    },
+    {
+      "name": "kotra",
+      "url": "https://kotra.or.kr/subList/20000020753",
+      "checkedAt": "2026-10-26T00:00:16.896928+00:00",
+      "status": 200,
+      "finalUrl": "https://kotra.or.kr/subList/20000020753",
+      "bytes": 152169
+    }
+  ],
+  "apiValidation": {
+    "at": "2026-10-26T00:02:11.080Z",
+    "status": 200,
+    "total": 63,
+    "analyses": 45,
+    "checked": [
+      {
+        "id": "kstartup-179543",
+        "date": "2026-11-10",
+        "time": "23:59",
+        "status": "partial"
+      },
+      {
+        "id": "kstartup-179570",
+        "date": "2026-11-06",
+        "time": "10:00",
+        "status": "partial"
+      },
+      {
+        "id": "kstartup-179561",
+        "date": "2026-11-08",
+        "time": "23:50",
+        "status": "partial"
+      },
+      {
+        "id": "kstartup-179598",
+        "date": "2026-11-09",
+        "time": "11:00",
+        "status": "partial"
+      },
+      {
+        "id": "kstartup-179596",
+        "date": "2026-11-11",
+        "time": "15:00",
+        "status": "partial"
+      }
+    ],
+    "scope": "route.GET 직접 호출·화면 미검증",
+    "localHttp": {
+      "error": "fetch failed"
+    }
+  },
+  "screenValidation": "미검증",
+  "companyMatching": "권한 회사 프로필 미확보: 판정없음",
+  "deployment": "없음",
+  "schemaChanges": "없음",
+  "externalMessages": "없음",
+  "failures": [
+    "강원본문/포스터신청폼둘다401·우회없음",
+    "일부기존상세첨부0응답·기존근거보존",
+    "로컬HTTP연결실패·직접route검증과구분"
+  ]
+}

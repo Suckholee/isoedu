@@ -1,0 +1,242 @@
+{
+  "programId": "kstartup-179762",
+  "title": "2026년 스타트업 법률지원사업 제주특별자치도 법률상담회 참여기업 모집",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-10T00:14:45.822006+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179762",
+  "reviewScope": "공식상세·PDF7쪽본문/일정/지원/접수/요건/유의/사진지도전체텍스트및전쪽시각·공개접수연결페이지확인;2026-11-10",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1bjy5I40HAQBQSO0xnJDAF-TIEc_RRDosv6_rjkHCLYCYQA",
+      "verifiedAt": "2026-11-10",
+      "status": "downloaded",
+      "sha256": "18c5af935753bc7ffeb6ab2179858354a2f3e6ff7cccccc76ced485d31ef3291",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 971098,
+      "format": "PDF",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 4424,
+      "review": {
+        "at": "2026-11-10T00:14:45.822006+00:00",
+        "scope": "공식상세·PDF7쪽본문/일정/지원/접수/요건/유의/사진지도전체텍스트및전쪽시각·공개접수연결페이지확인;2026-11-10",
+        "method": "text/visual scope recorded in reviewScope"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/v1bjy5I40HAQBQSO0xnJDAF-TIEc_RRDosv6_rjkHCLYCYQA": "18c5af935753bc7ffeb6ab2179858354a2f3e6ff7cccccc76ced485d31ef3291"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-10T00:14:45.822006+00:00",
+  "eligibility": {
+    "summary": "예비창업자 또는 상담일11/17기준7년이내창업기업(신산업10년이내)·기업경영법률상담.20팀내외/제출완료선착순.9분야는계약거래/IP/개인정보/규제인허가/노무/투자/기업법무/사업정리재도전/해외법률.소재지제한공고미명시.",
+    "companyFields": [
+      "창업/설립일/상담일기준업력",
+      "신산업해당",
+      "업종/창업제외여부",
+      "법률상담분야/질의",
+      "분쟁소송여부",
+      "희망상담시간",
+      "참석/셔틀수요",
+      "KStartup실명/기업인증여부",
+      "기존원스톱자문지원사용액"
+    ],
+    "reference": "PDF1/4요건검토; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179762"
+  },
+  "exclusions": {
+    "items": [
+      "창업제외업종시행령4조",
+      "분쟁/소송상담불가",
+      "대면원칙/온라인상담불가",
+      "지각연장불가",
+      "선정후취소불참향후불이익가능"
+    ],
+    "reference": "상세제외·PDF4~5유의; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179762"
+  },
+  "support": {
+    "summary": "11/17 10~16시서귀포스타트업타운신중로46,기업별45분대면.해외진출/규제전문강연10~12시·코워킹개방·제주시↔서귀포31인승셔틀사전수요(9시출발/13:30·16:30복귀안).후속상담은별도원스톱센터신청·기업300만원/건100만원이내한도(현금지급아님).행사자부담/교통숙박비지원범위미명시·숙박지원단정안함.",
+    "reference": "PDF1~3상담강연/공간셔틀; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179762"
+  },
+  "period": {
+    "start": "2026-11-09",
+    "end": "2026-11-15",
+    "deadlineTime": "18:00",
+    "timezone": "Asia/Seoul",
+    "reference": "PDF4모집기간·상세신청; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179762"
+  },
+  "application": {
+    "summary": "11/15 18시까지KStartup pbancId=0690901 온라인제출완료기준선착순,실명인증공통/창업기업기업인증필요.본문등록시작11/9 18시.상담희망시간고려하나부족시임의배정·현장신청당일15시마감은온라인기한과별도.상세2영업일내확정예정·실제배정미확인.",
+    "reference": "PDF4접수/인증/선정·PMS공개페이지; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179762"
+  },
+  "requiredDocuments": [
+    {
+      "name": "법률상담신청서[양식1]",
+      "condition": "PDF필수업로드대상세온라인기본/필요추가양식업로드충돌",
+      "reference": "PDF4표·상세제출"
+    },
+    {
+      "name": "상담관련참고자료",
+      "condition": "선택/매칭자문단사전준비용",
+      "reference": "PDF4표"
+    },
+    {
+      "name": "회사사업계획서·IR",
+      "condition": "선택/자유양식PDF",
+      "reference": "PDF4표"
+    },
+    {
+      "name": "실명/기업인증",
+      "condition": "공통개인·기업해당필수/기업공동인증·금융·SCI·국세청택1",
+      "reference": "PDF4인증절"
+    }
+  ],
+  "businessPlan": {
+    "format": "상담신청지정양식1실물미확보·선택계획/IR자유PDF",
+    "limit": "분량제한미기재",
+    "sections": [
+      {
+        "name": "법률상담",
+        "items": [
+          "질의내용/희망시간·정확양식필드미확인"
+        ],
+        "limit": "분량제한미기재"
+      },
+      {
+        "name": "선택기업자료",
+        "items": [
+          "사업계획/IR자유PDF"
+        ],
+        "limit": "분량제한미기재"
+      }
+    ],
+    "reference": "PDF4양식1참조·선택사업자료; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179762"
+  },
+  "evaluation": {
+    "summary": "지원자격·기업경영법률분야충족기업중제출완료선착순20팀내외.전문분야/산업/아이템고려변호사매칭·수치평가없음.",
+    "reference": "PDF4선착순·상세확정예정; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179762"
+  },
+  "contact": {
+    "name": "창업진흥원 원스톱지원실044-410-1753,acs@kised.or.kr",
+    "reference": "PDF5문의; 확인 2026-11-10T00:20:07.796965+00:00; 원문 https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179762"
+  },
+  "unresolved": [
+    "첨부양식1필수업로드대본문온라인기본/추가필요시양식충돌·별도신청양식실물미확보",
+    "상세행사제목전남광주통합특별시/제주특별자치시및8대9상담분야혼재·PDF제주9분야/주소우선보존·정정확인대기",
+    "PDF20팀대5테이블×5타임25슬롯숫자차이·실제정원기관확인",
+    "실명/기업인증이후실제접수필드/개인정보동의미검증·비용/유효증빙별도고지미확인"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179762",
+    "companyId": null,
+    "permission": "권한회사프로필확보후근거별검토·현재신청가능확정아님",
+    "steps": [
+      "회사필드/증빙확인",
+      "충돌/미확인해결",
+      "S12양식·S13회사정보로서류/계획작성"
+    ]
+  },
+  "applicationChecks": [
+    {
+      "id": "179762",
+      "url": "https://www.k-startup.go.kr/web/contents/webPMSBizUnvs.do?returnUrl=/screen/BMO0101M01?pbancId=0690901",
+      "checkedAt": "2026-11-10T00:12:26.524500+00:00",
+      "status": 200,
+      "finalUrl": "https://www.k-startup.go.kr/web/contents/webPMSBizUnvs.do?returnUrl=/screen/BMO0101M01?pbancId=0690901",
+      "evidence": "179762-publiccheck-20261110.html",
+      "bytes": 18917
+    }
+  ],
+  "evidenceReferences": [
+    {
+      "field": "eligibility",
+      "reference": "PDF1/4요건검토",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179762",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1bjy5I40HAQBQSO0xnJDAF-TIEc_RRDosv6_rjkHCLYCYQA"
+      ]
+    },
+    {
+      "field": "exclusions",
+      "reference": "상세제외·PDF4~5유의",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179762",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1bjy5I40HAQBQSO0xnJDAF-TIEc_RRDosv6_rjkHCLYCYQA"
+      ]
+    },
+    {
+      "field": "support",
+      "reference": "PDF1~3상담강연/공간셔틀",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179762",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1bjy5I40HAQBQSO0xnJDAF-TIEc_RRDosv6_rjkHCLYCYQA"
+      ]
+    },
+    {
+      "field": "period",
+      "reference": "PDF4모집기간·상세신청",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179762",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1bjy5I40HAQBQSO0xnJDAF-TIEc_RRDosv6_rjkHCLYCYQA"
+      ]
+    },
+    {
+      "field": "application",
+      "reference": "PDF4접수/인증/선정·PMS공개페이지",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179762",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1bjy5I40HAQBQSO0xnJDAF-TIEc_RRDosv6_rjkHCLYCYQA"
+      ]
+    },
+    {
+      "field": "requiredDocuments",
+      "reference": "PDF4제출표/인증",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179762",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1bjy5I40HAQBQSO0xnJDAF-TIEc_RRDosv6_rjkHCLYCYQA"
+      ]
+    },
+    {
+      "field": "businessPlan",
+      "reference": "PDF4양식1참조·선택사업자료",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179762",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1bjy5I40HAQBQSO0xnJDAF-TIEc_RRDosv6_rjkHCLYCYQA"
+      ]
+    },
+    {
+      "field": "evaluation",
+      "reference": "PDF4선착순·상세확정예정",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179762",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1bjy5I40HAQBQSO0xnJDAF-TIEc_RRDosv6_rjkHCLYCYQA"
+      ]
+    },
+    {
+      "field": "contact",
+      "reference": "PDF5문의",
+      "checkedAt": "2026-11-10T00:20:07.796965+00:00",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179762",
+      "attachmentUrls": [
+        "https://www.k-startup.go.kr/afile/fileDownload/v1bjy5I40HAQBQSO0xnJDAF-TIEc_RRDosv6_rjkHCLYCYQA"
+      ]
+    }
+  ],
+  "attachmentManifest": "evidence/kstartup-179762/attachment-check-2026-11-10.json"
+}

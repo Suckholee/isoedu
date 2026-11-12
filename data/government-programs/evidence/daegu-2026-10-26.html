@@ -1,0 +1,1485 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" id="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>대구콘텐츠밸리 통합홈페이지</title>
+    <link rel="stylesheet" href="/css/site/fonts.css">
+    <link rel="stylesheet" href="/css/site/common.css">
+    <link rel="stylesheet" href="/css/site/layout.css">
+    <link rel="stylesheet" href="/css/site/main.css">
+    <link rel="stylesheet" href="/css/site/contents.css">
+    <link rel="stylesheet" href="/css/site/board.css">
+    <link rel="stylesheet" href="/css/site/aos.css">
+    <link rel="stylesheet" href="/css/site/swiper-bundle.min.css">
+    <script src="/js/jquery/jquery-1.12.4.min.js"type="text/javascript"></script>
+    <script src="/resources/js/main.js" type="text/javascript" ></script>
+    <script src="/resources/js/mobile_menu.js" type="text/javascript" ></script>
+    <script src="/js/jquery/swiper-bundle.min.js"></script>
+    <script src="/js/jquery/aos.js"type="text/javascript"></script>
+    <script src="/js/cmmn/seCommon.js" type="text/javascript" ></script>
+    <script src="/js/jquery/jquery.rwdImageMaps.min.js" type="text/javascript" ></script>
+    
+    <link rel="shortcut icon" href="/resources/images/layout/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/resources/images/layout/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<script>
+    AOS.init();
+</script>
+<div id="skipNav">
+    <a href="#content_focus">본문 바로가기</a>
+    <a href="#gnb">주메뉴 바로가기</a>
+    <a href="#footer">푸터 바로가기</a>
+</div>
+<!-- Container Area Start -->
+<div class="wrapper">
+    <!-- Header Area Start -->
+    <header id="header sub" class="sub_header">
+        
+
+
+
+
+
+<div class="popupLayer">
+    <div class="popup_wrap">
+        <div class="popup_inner">
+            <h2>popup zone</h2>
+            <div class="popUps">
+                <ul class="swiper-wrapper">
+                    
+
+                    
+                        
+
+                        
+                            <div class="empty_popup">
+                                <p> 등록된 팝업이 없습니다. </p>
+                            </div>
+                        
+                    
+
+                </ul>
+                <div class="popup_dots"></div>
+            </div>
+            <div class="btn_wrapper">
+                
+                <button type="button" class="popup_today_close"><span>오늘 하루 열지 않기</span> <i class="xcon"></i></button>
+                <button type="button" class="popup_close"><span>닫기</span> <i class="xcon"></i></button>
+            </div>
+            <div class="popup_btn">
+                <button type="button" class="popup_prev"><span class="blind">이전</span></button>
+                <button type="button" class="popup_next"><span class="blind">다음</span></button>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function(){
+        function setCookie( name, value, expiredays ) {
+            if(expiredays != null){
+                var todayDate = new Date();
+                todayDate.setDate( todayDate.getDate() + expiredays );
+                document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+            }else{
+                document.cookie = name + "=" + escape( value ) + " ; path=/; ";
+            }
+
+        }
+
+        $("button.btn_popup").on("click", function(e) {
+            $("html").addClass("fixed");
+            $(".popupLayer").addClass("show");
+        });
+
+        $("button.popup_close").on("click", function() {    
+            $("html").removeClass("fixed");
+            $(".popupLayer").removeClass("show");
+        });
+
+        $("button.popup_today_close").on("click", function() {      
+            setCookie( "imgpop", "done" , 1 );
+            $("html").removeClass("fixed");
+            $(".popupLayer").removeClass("show");
+        });
+
+
+        function getCookie(name) {
+            var Found = false;
+            var start, end;
+            var i = 0;
+
+            while(i <= document.cookie.length) {
+                start = i;
+                end = start + name.length;
+                if(document.cookie.substring(start, end) == name) {
+                    Found = true;
+                    break;
+                }
+                i++;
+            }
+            if(Found == true) {
+                start = end + 1;
+                end = start+name.length-2;
+                var value = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
+                return value? value[2] : null;
+            }
+            return;
+        }
+
+        var eventCookie = getCookie("imgpop");
+
+        if (eventCookie == "done") {
+            $('.popupLayer').removeClass('show');
+        }else{
+            
+        }
+
+    });
+
+    //팝업 스와이퍼
+    var popUps = new Swiper(".popUps", {
+        observer: true,
+        observeParents: true,
+        loop:false,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+        slidesPerView :1,
+        initialSlide: 1,
+        spaceBetween: 20,
+        speed:1000,
+        navigation:{
+            nextEl: "button.popup_next",
+            prevEl: "button.popup_prev"
+        },
+        pagination: {
+            el: '.popup_dots',
+            clickable: true,
+        },
+        breakpoints:{
+            9999:{
+                slidesPerView:4,
+                spaceBetween:20,
+            },
+            1300:{
+                slidesPerView:3,
+                spaceBetween:20,
+            },
+            1200:{
+                slidesPerView:3,
+                spaceBetween:20,
+            },
+            676: {
+                slidesPerView: 2,
+                spaceBetween: 10
+            },
+        },
+    });
+</script>
+
+
+
+<header id="header" class="header">
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+        var _menuInfo = {
+            activeMenuSeq: '1702426836078',
+            activeMenu: undefined,
+            menuSeqToMenu: {},
+            menuSeqToChildren: {},
+            getActualLinkInfo: function (currentMenu) {
+                var url = '';
+                var target = '';
+
+                if (currentMenu.menu_type != 'MNT_004') {
+                    if (currentMenu.menu_type == 'MNT_002') {
+                        url = currentMenu.link + '/list';
+                    } else {
+                        url = currentMenu.link;
+                    }
+
+                    if (currentMenu.type === 'LNK_001') {
+                        target = '';
+                    } else {
+                        target = '_blank';
+                    }
+
+                    return {
+                        url: url,
+                        target: target
+                    };
+                }
+
+                var children = _menuInfo.menuSeqToChildren[currentMenu.seq];
+
+                if (children) {
+                    for (var childIndex = 0; childIndex < children.length; childIndex++) {
+                        var childMenu = children[childIndex];
+
+                        if (childMenu.type === 'LNK_001') {
+                            target = '';
+                        } else {
+                            target = '_blank';
+                        }
+
+                        if (childMenu.menu_type == 'MNT_002') {
+                            url = childMenu.link + '/list';
+                        } else if (childMenu.menu_type == 'MNT_004') {
+                            var linkInfo = _menuInfo.getActualLinkInfo(childMenu);
+
+                            if (linkInfo && linkInfo.url) {
+                                url = linkInfo.url;
+                                target = linkInfo.target;
+                            }
+
+                            if (!url) {
+                                url = childMenu.link;
+                            }
+                        } else {
+                            url = childMenu.link;
+                        }
+
+                        return {
+                            url: url,
+                            target: target
+                        };
+                    }
+                } else {
+                    //console.log('invalid menu : ', currentMenu);
+                }
+
+                return {
+                    url: '#',
+                    target: ''
+                };
+
+                
+            }
+        };
+
+        $(document).ready(function () {
+            var getActualLink = function (currentMenu, depth2, depth3, depth4) {
+                var html = '';
+
+                var linkInfo = _menuInfo.getActualLinkInfo(currentMenu);
+
+                html += linkInfo.url + '"';
+                if (linkInfo.target) {
+                    html += ' target="' + linkInfo.target + '"';
+                }
+                html += '>';
+
+                return html;
+            };
+
+            var menu_array = new Array();
+            $('.header_drop').each(function (i, v) {
+                $.ajax({
+                    url: '/menu/list',
+                    type: 'post',
+                    async: false,
+                    data: {
+                        menu_info_seq: '1',
+                        menu_seq: $(v).data('parent-seq'),
+                        flag: 'child'
+                    },
+                    dataType: 'json',
+                    success: function (res) {
+                        var parent = new Array();
+                        var child = new Array();
+                        var last_child = new Array();
+                        res.forEach(function (v, i) {
+                            var menuItem = undefined;
+
+                            switch (v.menu_depth) {
+                                case '1':
+                                    menuItem = {
+                                        seq: v.menu_seq,
+                                        title: v.menu_title,
+                                        parent: v.prt_seq,
+                                        link: v.menu_link,
+                                        type: v.menu_link_type,
+                                        menu_type: v.menu_type,
+                                        child_yn: v.child_yn,
+                                        menu_depth: v.menu_depth
+                                    };
+                                    parent.push(menuItem);
+                                    break;
+                                case '2':
+                                    menuItem = {
+                                        seq: v.menu_seq,
+                                        parent: v.prt_seq,
+                                        title: v.menu_title,
+                                        link: v.menu_link,
+                                        type: v.menu_link_type,
+                                        menu_type: v.menu_type,
+                                        menu_depth: v.menu_depth
+                                    };
+                                    child.push(menuItem);
+                                    break;
+                                case '3':
+                                    menuItem = {
+                                        seq: v.menu_seq,
+                                        parent: v.prt_seq,
+                                        title: v.menu_title,
+                                        link: v.menu_link,
+                                        type: v.menu_link_type,
+                                        menu_type: v.menu_type,
+                                        menu_depth: v.menu_depth
+                                    };
+                                    last_child.push(menuItem);
+                                    break;
+                            }
+
+                            if (menuItem) {
+                                if (menuItem.seq === _menuInfo.activeMenuSeq) {
+                                    _menuInfo.activeMenu = menuItem;
+                                }
+
+                                if (menuItem.parent) {
+                                    var childList = _menuInfo.menuSeqToChildren[menuItem.parent];
+
+                                    if (! childList) {
+                                        childList = [];
+                                        _menuInfo.menuSeqToChildren[menuItem.parent] = childList;
+                                    }
+
+                                    childList.push(menuItem);
+                                }
+
+                                _menuInfo.menuSeqToMenu[menuItem.seq] = menuItem
+                            }
+                        });
+                        menu_array.push({parent: parent, child: child, last_child: last_child});
+                    }
+                });
+            });
+            var prevParent = 0;
+
+            menu_array.forEach(function (v, i) {
+                prevParent = 0;
+                var parent = v.parent;
+                //console.log(v.parent);
+                var child = v.child;
+                var last_child = v.last_child;
+                //console.table(v.child);
+                var menu_content = '';
+                var m_menu_content = '';
+//            parent.forEach(function(sv, si) {
+//                if(prevParent == 0){
+//                    prevParent = sv.parent;
+//                }
+//                prevParent = sv.parent;
+//            });
+
+                if (parent && parent.length > 0) {
+                    var $menu = $('.header_drop[data-parent-seq="' + parent[0].parent + '"], ul.depth2[data-parent-seq="' + parent[0].parent + '"]').prev();
+                    if ($menu.is('a') && ($menu.attr('href') === '#' || $menu.attr('href') === '#none')) {
+                        // 최상단 메뉴에 링크 부여
+
+                        var topMenuLinkInfo = _menuInfo.getActualLinkInfo({
+                            seq: parent[0].parent,
+                            menu_type: 'MNT_004'
+                        });
+
+                        if (topMenuLinkInfo) {
+                            $menu.attr('href', topMenuLinkInfo.url);
+                            $menu.attr('target', topMenuLinkInfo.target);
+                        }
+                    }
+                }
+
+                parent.forEach(function (sv, si) {
+                    menu_content = '';
+                    m_menu_content = '';
+                    if (prevParent == 0) {
+                        prevParent = sv.parent;
+                    }
+
+                    if (prevParent == sv.parent) {
+                        if (sv.menu_type == 'MNT_002') {
+                            menu_content += '       <li><a href="';
+                            menu_content += sv.link + '/list';
+                            menu_content += '" target="' + (sv.type === 'LNK_001' ? '' : '_blank') + '">' + sv.title + '</a></li>';
+
+
+                            var checkers = "";
+                            if (sv.parent == '1586249001065') {
+                                checkers = "";
+                            } else {
+                                checkers = "";
+                            }
+
+                            if (sv.child_yn == 'Y') {
+                                m_menu_content += '       <li class="has"><a href="';
+                            } else {
+                                m_menu_content += '       <li><a href="';
+                            }
+
+                            m_menu_content += sv.link + '/list';
+                            m_menu_content += '" target="' + (sv.type === 'LNK_001' ? '' : '_blank') + '">' + checkers + sv.title + '</a></li>';
+                        } else if (sv.menu_type == 'MNT_004') { //분류형 메뉴일 때, 하위 첫번째 자식 정보(링크/타겟)를 세팅한다.
+                            menu_content += '   <li><a href="';
+                            if (sv.child_yn == 'Y') {
+                                m_menu_content += '       <li class="has"><a href="';
+                            } else {
+                                m_menu_content += '       <li><a href="';
+                            }
+                            var ii = 0;
+                            var mm = 0;
+
+                            var checkers = "";
+                            if (sv.parent == '1586249001065') {
+                                checkers = "";
+                            } else {
+                                checkers = "";
+                            }
+
+                            menu_content += getActualLink(sv, child, last_child);
+                            m_menu_content += getActualLink(sv, child, last_child);
+
+                            menu_content += sv.title + '</a></li>';
+                            m_menu_content += sv.title + '</a>';
+
+                            var menu_count = 0;
+
+                            /* mobile/sitemap은 3뎁스를 표시 */
+                            child.forEach(function (ssv2, ssi) {
+                                if (ssi == 0) {
+                                    m_menu_content += '<ul class="depth3 depth03">';
+                                }
+                                if (sv.seq == ssv2.parent) {
+                                    m_menu_content += '   <li><a href="';
+                                    if (ssv2.menu_type == 'MNT_002') {
+                                        m_menu_content += ssv2.link + '/list';
+                                        m_menu_content += '" target="' + (ssv2.type === 'LNK_001' ? '' : '_blank') + '">' + ssv2.title;
+                                    } else if (ssv2.menu_type == 'MNT_004') {
+                                        m_menu_content += getActualLink(ssv2, last_child);
+                                        m_menu_content += ssv2.title;
+                                    } else {
+                                        m_menu_content += ssv2.link;
+                                        m_menu_content += '" target="' + (ssv2.type === 'LNK_001' ? '' : '_blank') + '">' + ssv2.title;
+                                    }
+                                    m_menu_content += '</a></li>';
+                                }
+                                menu_count++;
+                            });
+                            if (menu_count == 0) {
+                                m_menu_content += '</li>'
+                            } else {
+                                m_menu_content += '</ul></li>'
+                            }
+
+                        } else {
+                            menu_content += '       <li><a href="';
+                            menu_content += sv.link;
+                            menu_content += '" target="' + (sv.type == 'LNK_001' ? '' : '_blank') + '">' + sv.title + '</a></li>';
+
+                            var checkers = "";
+                            if (sv.parent == '1586249001065') {
+                                checkers = "";
+                            } else {
+                                checkers = "";
+                            }
+                            if (sv.child_yn == 'Y') {
+                                m_menu_content += '       <li class="has"><a href="';
+                            } else {
+                                m_menu_content += '       <li><a href="';
+                            }
+                            m_menu_content += sv.link;
+                            m_menu_content += '" target="' + (sv.type == 'LNK_001' ? '' : '_blank') + '">' + checkers + sv.title + '</a></li>';
+                        }
+
+
+                        // FIXME 부모가 마이페이지 코드일 경우 PC 버전에서는 노출시키지 않는다.
+                        if (sv.parent == '1586249001065') {
+                            $('.header_drop[data-parent-seq="' + sv.parent + '"] .depth_list').parent().html('');
+                            //$('.depth2[data-parent-seq="' + sv.parent + '"] .depth_list').append(m_menu_content);
+
+                            $('ul.depth2[data-parent-seq="' + sv.parent + '"]').append(m_menu_content);
+                        } else {
+                            $('.header_drop[data-parent-seq="' + sv.parent + '"] .depth_list').append(m_menu_content);
+                            //$('.depth2[data-parent-seq="' + sv.parent + '"] .depth_list').append(m_menu_content);
+
+                            $('ul.depth2[data-parent-seq="' + sv.parent + '"]').append(m_menu_content);
+                        }
+                    } else {
+
+                    }
+                    prevParent = sv.parent;
+                });
+            });
+
+        });
+
+    </script>
+
+
+    <div class="header_menu">
+        <div class="top_util">
+            <div class="wrap">
+                <ul>
+                    <li><a href="/" class="go_main"><span>HOME</span></a></li>
+                    
+                        <li><a href="/login"><span>로그인</span></a></li>
+                    
+                    
+
+                </ul>
+            </div>
+        </div>
+        <div class="bottom_nav">
+        <div class="wrap">
+            <h1 class="logo">
+                <a href="/main"><img src="/resources/images/layout/common/header_logo_new.svg" alt="대구콘텐츠밸리 DAEGU CONTENTS VALLEY"></a>
+                <a href="https://www.dip.or.kr/home/main.ubs" target="_blank"><img src="/resources/images/layout/common/header_logo_bott.svg" alt="dip 대구디지털혁신진흥원 daegu digital innovation promotion agency"></a>
+            </h1>
+            <nav id="gnb" class="gnb">
+                <ul class="depth01">
+                    
+                        
+                        
+                        
+                            
+                            
+                                <li>
+                                    
+                                    
+                                        
+                                        <a href="#" target="">
+                                            
+                                            
+                                            <span>밸리소개</span>
+                                        </a>
+                                        <div class="depth02 header_drop" data-parent-seq="1699575797522" style="display: none;">
+                                            <div class="wrap">
+                                                <div class="m_tit" >
+                                                    <strong>밸리소개</strong>
+                                                </div>
+                                                <ul class="depth_list">
+                                                </ul>
+                                            </div>
+                                        </div>
+                                </li>
+                            
+                        
+                    
+                        
+                        
+                        
+                            
+                            
+                                <li>
+                                    
+                                    
+                                        
+                                        <a href="#" target="">
+                                            
+                                            
+                                            <span>사업소개</span>
+                                        </a>
+                                        <div class="depth02 header_drop" data-parent-seq="1702426788833" style="display: none;">
+                                            <div class="wrap">
+                                                <div class="m_tit" >
+                                                    <strong>사업소개</strong>
+                                                </div>
+                                                <ul class="depth_list">
+                                                </ul>
+                                            </div>
+                                        </div>
+                                </li>
+                            
+                        
+                    
+                        
+                        
+                        
+                            
+                            
+                                <li>
+                                    
+                                    
+                                        
+                                        <a href="#" target="">
+                                            
+                                            
+                                            <span>교육소개</span>
+                                        </a>
+                                        <div class="depth02 header_drop" data-parent-seq="170242681951" style="display: none;">
+                                            <div class="wrap">
+                                                <div class="m_tit" >
+                                                    <strong>교육소개</strong>
+                                                </div>
+                                                <ul class="depth_list">
+                                                </ul>
+                                            </div>
+                                        </div>
+                                </li>
+                            
+                        
+                    
+                        
+                        
+                        
+                            
+                            
+                                <li>
+                                    
+                                    
+                                        
+                                        <a href="#" target="">
+                                            
+                                            
+                                            <span>시설소개</span>
+                                        </a>
+                                        <div class="depth02 header_drop" data-parent-seq="1699575800611" style="display: none;">
+                                            <div class="wrap">
+                                                <div class="m_tit" >
+                                                    <strong>시설소개</strong>
+                                                </div>
+                                                <ul class="depth_list">
+                                                </ul>
+                                            </div>
+                                        </div>
+                                </li>
+                            
+                        
+                    
+                        
+                        
+                        
+                            
+                            
+                                <li>
+                                    
+                                    
+                                        
+                                        <a href="#" target="">
+                                            
+                                            
+                                            <span>알림마당</span>
+                                        </a>
+                                        <div class="depth02 header_drop" data-parent-seq="1699575801002" style="display: none;">
+                                            <div class="wrap">
+                                                <div class="m_tit" >
+                                                    <strong>알림마당</strong>
+                                                </div>
+                                                <ul class="depth_list">
+                                                </ul>
+                                            </div>
+                                        </div>
+                                </li>
+                            
+                        
+                    
+                        
+                        
+                        
+                            
+                                
+                            
+                            
+                        
+                    
+
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                </ul>
+            </nav>
+            <div class="gnb_util">
+                <div class="btn_wrap">
+                    <button class="btn_search"><span class="blind">검색</span></button>
+                    <div class="search_wrap" style="display: none;">
+                        <div class="inner">
+                            <div class="sch_tit"><h3>통합검색</h3></div>
+                            <div class="sch_box">
+                                <form id="searchFrm" name="searchFrm" action="/search/list" method="GET">
+                                    <div class="sch_input">
+                                        <span class="blind">검색어 입력</span>
+                                        <input name="searchKeyword" id="searchKeyword" type="text" placeholder="검색어를 입력해주세요." title="통합검색">
+                                        <a class="sch_btn" href="javascript:fn_search();"><span class="blind">검색</span></a>
+                                    </div>
+                                </form>
+                            </div>
+                            <button class="sch_close" title="닫기"><span class="blind">닫기</span></button>
+                        </div>
+                    </div>
+                    <button class="btn_ham">
+                        <span><em class="blind">전체메뉴 보기</em></span>
+                        <span><em class="blind">전체메뉴 보기</em></span>
+                        <span><em class="blind">전체메뉴 보기</em></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</header>
+<div class="full_menu">
+    <div class="inner">
+        <div class="top">
+            <div class="wrap">
+                <div class="logo">
+                    <img src="/resources/images/layout/common/header_logo_new.svg" alt="대구콘텐츠밸리">
+                </div>
+                <button class="menu_close"><span class="blind">닫기</span></button>
+            </div>
+        </div>
+        <div class="bott">
+            <ul class="depth1">
+
+
+                
+                    
+
+                    
+                    
+                    
+                        
+                        
+                            <li class="parent_li  ">
+                                <a href="#none"><span>밸리소개</span></a>
+                                <ul class="depth2" data-parent-seq="1699575797522">
+
+                                </ul>
+                            </li>
+                        
+                    
+
+                
+                    
+
+                    
+                    
+                    
+                        
+                        
+                            <li class="parent_li active ">
+                                <a href="#none"><span>사업소개</span></a>
+                                <ul class="depth2" data-parent-seq="1702426788833">
+
+                                </ul>
+                            </li>
+                        
+                    
+
+                
+                    
+
+                    
+                    
+                    
+                        
+                        
+                            <li class="parent_li  ">
+                                <a href="#none"><span>교육소개</span></a>
+                                <ul class="depth2" data-parent-seq="170242681951">
+
+                                </ul>
+                            </li>
+                        
+                    
+
+                
+                    
+
+                    
+                    
+                    
+                        
+                        
+                            <li class="parent_li  ">
+                                <a href="#none"><span>시설소개</span></a>
+                                <ul class="depth2" data-parent-seq="1699575800611">
+
+                                </ul>
+                            </li>
+                        
+                    
+
+                
+                    
+
+                    
+                    
+                    
+                        
+                        
+                            <li class="parent_li  ">
+                                <a href="#none"><span>알림마당</span></a>
+                                <ul class="depth2" data-parent-seq="1699575801002">
+
+                                </ul>
+                            </li>
+                        
+                    
+
+                
+                    
+
+                    
+                    
+                    
+                        
+                            
+                        
+                        
+                    
+
+                
+
+
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+    </header>
+
+    <div class="sub_visual">
+        <div class="sub_visual_bg"></div>
+        <div class="sub_visual_tit">
+            <h2>사업소개</h2>
+            
+            
+            <p>디지털 혁신을 주도하는 대구콘텐츠밸리</p>
+        </div>
+    </div>
+
+        <!-- menu Area Start -->
+    <div class="lnb_area">
+        <div class="wrap">
+            
+
+
+
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#depth1 > a').on('click', function () {
+            //alert('tttttttttttr');
+            if ($(this).attr('class') == 'active') {
+                $(this).removeClass('active');
+                $('#depth1 > ul').css('display', 'none');
+            } else {
+                $(this).addClass('active');
+                $('#depth1 > ul').css('display', 'block');
+            }
+        });
+
+        $('#depth2 > a').on('click', function () {
+            //alert('tttttttttttr');
+            if ($(this).attr('class') == 'active') {
+                $(this).removeClass('active');
+                $('#depth2 > ul').css('display', 'none');
+            } else {
+                $(this).addClass('active');
+                $('#depth2 > ul').css('display', 'block');
+            }
+        });
+
+        $('#depth3 > a').on('click', function () {
+            //alert('tttttttttttr');
+            if ($(this).attr('class') == 'active') {
+                $(this).removeClass('active');
+                $('#depth3 > ul').css('display', 'none');
+            } else {
+                $(this).addClass('active');
+                $('#depth3 > ul').css('display', 'block');
+            }
+        });
+
+        $('#depth4 > a').on('click', function () {
+            //alert('tttttttttttr');
+            if ($(this).attr('class') == 'active') {
+                $(this).removeClass('active');
+                $('#depth4 > ul').css('display', 'none');
+            } else {
+                $(this).addClass('active');
+                $('#depth4 > ul').css('display', 'block');
+            }
+        });
+    });
+</script>
+
+
+
+<!-- lnb -->
+<div class="lnb" id="lnb">
+    
+    <ul class="lnb_depth01">
+        <li class="home"><a href="/main"></a></li>
+        
+            
+                <li class="depth" id="depth1" data-lnb-menu_seq="1702426788833">
+                    <a href="javascript:void(0);" title="펼치기">
+                        <span>
+                            사업소개
+                        </span>
+                    </a>
+                    <ul style="display: none;" class="first">
+                        
+                            
+                                
+                                    
+                                    
+                                        <li class=" " data-lnb-list-menu_seq="1699575797522">
+                                            <a href="#none"><span>밸리소개</span></a>
+                                        </li>
+                                    
+                                
+
+                            
+                                
+                                    
+                                    
+                                        <li class="active " data-lnb-list-menu_seq="1702426788833">
+                                            <a href="#none"><span>사업소개</span></a>
+                                        </li>
+                                    
+                                
+
+                            
+                                
+                                    
+                                    
+                                        <li class=" " data-lnb-list-menu_seq="170242681951">
+                                            <a href="#none"><span>교육소개</span></a>
+                                        </li>
+                                    
+                                
+
+                            
+                                
+                                    
+                                    
+                                        <li class=" " data-lnb-list-menu_seq="1699575800611">
+                                            <a href="#none"><span>시설소개</span></a>
+                                        </li>
+                                    
+                                
+
+                            
+                                
+                                    
+                                    
+                                        <li class=" " data-lnb-list-menu_seq="1699575801002">
+                                            <a href="#none"><span>알림마당</span></a>
+                                        </li>
+                                    
+                                
+
+                            
+                                
+                                    
+                                        
+                                    
+                                    
+                                
+
+                            
+                        
+                    </ul>
+                </li>
+            
+        
+            
+                <li class="depth" id="depth2" data-lnb-menu_seq="1702426836078">
+                    <a href="javascript:void(0);" title="펼치기">
+                        <span>
+                            사업 공고
+                        </span>
+                    </a>
+                    <ul style="display: none;" class="first">
+                        
+                    </ul>
+                </li>
+            
+        
+    </ul>
+</div>
+<!--//lnb-->
+
+<script type="text/javascript">
+
+    $(document).ready(function() {
+        $("#select_menu").parent().parent().show();
+        $("#select_menu").parent().parent().parent().addClass("active");
+    });
+</script>
+
+
+<script type="text/javascript" charset="utf-8">
+    $(document).ready(function () {
+        $('.lnb_depth01 li[data-lnb-menu_seq]').each(function (index, elem) {
+            var menu_seq = $(elem).attr('data-lnb-menu_seq');
+            var menu = _menuInfo.menuSeqToMenu[menu_seq];
+
+            if (! menu) {
+                return;
+            }
+
+            var children = _menuInfo.menuSeqToChildren[menu.parent];
+
+            if (! children) {
+                return;
+            }
+
+            var html = '';
+
+            children.forEach(function (item) {
+                html += '<li class="' + (item.seq == menu_seq ? 'active' : '') + '" data-lnb-list-menu_seq="' + item.seq + '">';
+
+                var linkInfo = _menuInfo.getActualLinkInfo(_menuInfo.menuSeqToMenu[item.seq]);
+
+                html += '<a href="' + linkInfo.url + '"';
+                if (linkInfo.target) {
+                    html += ' target="' + linkInfo.target + '"';
+                }
+                html += '>' + item.title + '</a>';
+                html += '</li>';
+            });
+
+            $(elem).find('ul').html(html);
+        });
+
+        $('#depth1 ul [data-lnb-list-menu_seq]').each(function (index, elem) {
+            var depth1Menu_seq = $(elem).attr('data-lnb-list-menu_seq');
+
+            var children = _menuInfo.menuSeqToChildren[depth1Menu_seq];
+
+            if (children && children.length) {
+                var linkInfo = _menuInfo.getActualLinkInfo(children[0]);
+
+                if (linkInfo && linkInfo.url) {
+                    $(elem).find('> a').attr('href', linkInfo.url).attr('target', linkInfo.target);
+                }
+            }
+        });
+    });
+</script>
+
+        </div>
+    </div>
+        <!-- menu Area End -->
+    <!-- Header Area End -->
+
+    <div class="contents">
+        <div class="wrap">
+        <!-- Content Area Start -->
+            
+
+
+
+
+
+
+
+<script>
+
+    $(document).ready(function(){
+    });
+
+    function goList(){
+        $('#businessFrm').attr('action', '/business/list');
+        $('#businessFrm').submit();
+    }
+
+</script>
+
+<form id="businessFrm" name="businessFrm" action="/business/form" method="post" enctype="multipart/form-data">
+    <input id="business_seq" name="business_seq" type="hidden" value="313"/>
+    <input id="pageIndex" name="pageIndex" type="hidden" value="1"/>
+    <input id="flag" name="flag" type="hidden" value=""/>
+    <input id="searchCondition" name="searchCondition" type="hidden" value=""/>
+    <input id="searchKeyword" name="searchKeyword" type="hidden" value=""/>
+    
+    
+    <input id="searchOrderBy" name="searchOrderBy" type="hidden" value=""/>
+<div>
+</div></form>
+
+<html>
+
+<div class="content_area">
+    <div class="sub_top">
+        <h2 class="sub_tit">사업 공고</h2>
+    </div>
+
+    <!-- board_view -->
+    <div class="bd_view">
+        <div class="tit">
+            <h3>대구콘텐츠기업지원센터 2026년 3차 입주기업 모집 공고</h3>
+            <ul class="info">
+                <li><span>주관</span> 대구디지털혁신진흥원</li>
+                <li><span>분류</span>
+                     일반 
+                    
+                    
+                    
+                    
+                </li>
+                <li><span>기간</span> 2026-10-19 ~ 2026-11-06</li>
+                <li><span>작성일</span> 2026-10-19</li>
+                <li><span>조회수</span> 109</li>
+            </ul>
+            
+                
+                    
+                        <div class="bd_file">
+                            <div class="files1" data-name="file">
+                                
+                                <div>
+                                    <li class='files1' data-name="file">
+                                        <a href="/cmmn/fileDown.do?fileSeq=2441">
+                                            
+                                                붙임1. 공고문.pdf
+                                        </a>
+                                            
+                                            
+                                        <br/>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="bd_file">
+                            <div class="files1" data-name="file">
+                                
+                                <div>
+                                    <li class='files2' data-name="file">
+                                        <a href="/cmmn/fileDown.do?fileSeq=2440">
+                                            
+                                                붙임2. 입주신청서(양식).hwp
+                                        </a>
+                                            
+                                            
+                                        <br/>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="bd_file">
+                            <div class="files1" data-name="file">
+                                
+                                <div>
+                                    <li class='files3' data-name="file">
+                                        <a href="/cmmn/fileDown.do?fileSeq=2439">
+                                            
+                                                붙임3. 입주실 변경신청서(양식).hwp
+                                        </a>
+                                            
+                                            
+                                        <br/>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                    
+                
+                
+            
+        </div>
+        <div class="bd_cont">
+            <p class="0" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; margin: 0px; padding: 0px; line-height: 1.6em; color: rgb(62, 72, 85); font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255); text-align: center;">&nbsp;</p>
+
+<p class="0" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; margin: 0px; padding: 0px; line-height: 1.6em; color: rgb(62, 72, 85); font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255); text-align: center;"><span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: 함초롬바탕; letter-spacing: 0pt; font-weight: bold;">「</span><span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: HY헤드라인M; letter-spacing: -0.1pt; font-weight: bold; font-size: 15pt; color: rgb(0, 0, 128);">대구콘텐츠기업지원센터</span><span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: 함초롬바탕; letter-spacing: 0pt; font-weight: bold;">」​</span></p>
+
+<p class="0" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; margin: 0px; padding: 0px; line-height: 1.6em; color: rgb(62, 72, 85); font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255); text-align: center;"><span lang="EN-US" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: HY헤드라인M; letter-spacing: -0.1pt; font-weight: bold; font-size: 21pt; color: rgb(0, 0, 128);">2026</span><span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: HY헤드라인M; letter-spacing: -0.1pt; font-weight: bold; font-size: 21pt; color: rgb(0, 0, 128);">년 3</span><span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: HY헤드라인M; letter-spacing: -0.1pt; font-weight: bold; font-size: 21pt; color: rgb(0, 0, 128);">차 입주기업 모집 공고</span></p>
+
+<p class="0" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; margin: 0px; padding: 0px; line-height: 1.6em; color: rgb(62, 72, 85); font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255); text-align: center;">&nbsp;</p>
+
+<p class="0" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; margin: 0px; padding: 0px; line-height: 1.6em; color: rgb(62, 72, 85); font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255); text-align: center;"><span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; font-size: 11pt;">대구 지역 내 문화콘텐츠 산업 관련 기업 육성 및 창업 활성화를 위하여 대구콘텐츠기업지원센터에 입주할 경쟁력 있는 콘텐츠 기업을 모집하고자 합니다</span><span lang="EN-US" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; letter-spacing: 0pt; font-size: 11pt;">.</span></p>
+
+<p class="0" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; margin: 0px; padding: 0px; line-height: 1.6em; color: rgb(62, 72, 85); font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; background-color: rgb(255, 255, 255); text-align: center; font-size: 11pt;"><span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 11pt;">&nbsp;<o:p style="box-sizing: border-box; -webkit-font-smoothing: antialiased;"></o:p></span></p>
+
+<p class="0" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; margin: 0px; padding: 0px; line-height: 1.6em; color: rgb(62, 72, 85); font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255); text-align: right;"><span lang="EN-US" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; letter-spacing: 0pt; font-weight: bold; font-size: 11pt;">2026</span><span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; font-weight: bold; font-size: 11pt;">년</span><span lang="EN-US" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; letter-spacing: 0pt; font-weight: bold; font-size: 11pt;">&nbsp;10</span><span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; font-weight: bold; font-size: 11pt;">월</span></p>
+
+<p class="0" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; margin: 0px; padding: 0px; line-height: 1.6em; color: rgb(62, 72, 85); font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255); text-align: right;"><span lang="EN-US" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; letter-spacing: 0pt; font-weight: bold; font-size: 11pt;">(</span><span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; font-weight: bold; font-size: 11pt;">재</span><span lang="EN-US" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; letter-spacing: 0pt; font-weight: bold; font-size: 11pt;">)</span><span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; font-weight: bold; font-size: 11pt;">대구디지털혁신진흥원장</span></p>
+
+<p class="0" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; margin: 0px; padding: 0px; line-height: 1.6em; color: rgb(62, 72, 85); font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; background-color: rgb(255, 255, 255); font-size: 11pt;"><span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 11pt;">&nbsp;<o:p style="box-sizing: border-box; -webkit-font-smoothing: antialiased;"></o:p></span></p>
+
+<p class="0" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; margin: 0px 0px 0px 36.6pt; padding: 0px; line-height: 1.6em; color: rgb(62, 72, 85); font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255); text-indent: -36.6pt;"><span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; letter-spacing: 0pt; font-weight: bold; font-size: 11pt;">◦</span><span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; font-weight: bold; font-size: 11pt;">공 고 명</span><span lang="EN-US" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; letter-spacing: 0pt; font-size: 11pt;">: 2026</span><span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; font-size: 11pt;">년 대구콘텐츠기업지원센터 3</span><span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; font-size: 11pt;">차 입주기업 모집</span></p>
+
+<p class="0" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; margin: 0px 0px 0px 36.6pt; padding: 0px; line-height: 1.6em; color: rgb(62, 72, 85); font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255); text-indent: -36.6pt;"><span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; letter-spacing: 0pt; font-weight: bold; font-size: 11pt;">◦</span><span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; font-weight: bold; font-size: 11pt;">모집센터</span><span lang="EN-US" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; letter-spacing: 0pt; font-size: 11pt;">: </span><span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; font-size: 11pt;">대구콘텐츠기업지원센터</span><span lang="EN-US" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; letter-spacing: 0pt; font-size: 11pt;">(</span><span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; font-size: 11pt;">대구 동구 장등로 </span><span lang="EN-US" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; letter-spacing: 0pt; font-size: 11pt;">76)</span></p>
+
+<p class="0" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; margin: 0px 0px 0px 36.6pt; padding: 0px; line-height: 1.6em; color: rgb(62, 72, 85); font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255); text-indent: -36.6pt;"><span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; letter-spacing: 0pt; font-weight: bold; font-size: 11pt;">◦</span><span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; font-weight: bold; font-size: 11pt;">모집규모</span><span lang="EN-US" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; letter-spacing: 0pt; font-size: 11pt;">: </span><span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; font-size: 11pt;">총 9</span><span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; font-size: 11pt;">개실</span><span lang="EN-US" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; letter-spacing: 0pt; font-size: 11pt;">(202호, 203호, 207</span><span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; font-size: 11pt;">호, 211호, 302호, 307호, 404호, 406호, 407호</span><span lang="EN-US" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; letter-spacing: 0pt; font-size: 11pt;">)</span></p>
+
+<p class="0" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; margin: 0px 0px 0px 36.6pt; padding: 0px; line-height: 1.6em; color: rgb(62, 72, 85); font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255); text-indent: -36.6pt;"><span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; letter-spacing: 0pt; font-weight: bold; font-size: 11pt;">◦</span><span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; font-weight: bold; font-size: 11pt;">모집기간</span><span lang="EN-US" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; letter-spacing: 0pt; font-size: 11pt;">: </span><span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; font-size: 11pt;">공고일 </span><span lang="EN-US" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; letter-spacing: 0pt; font-size: 11pt;">~ 2026</span><span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; font-size: 11pt;">년</span><span lang="EN-US" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; letter-spacing: 0pt; font-size: 11pt;">&nbsp;11</span><span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; font-size: 11pt;">월 6</span><span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; font-size: 11pt;">일</span><span lang="EN-US" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; letter-spacing: 0pt; font-size: 11pt;">(금</span><span lang="EN-US" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; letter-spacing: 0pt; font-size: 11pt;">) 10</span><span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; font-size: 11pt;">시까지</span></p>
+
+<p class="0" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; margin: 0px 0px 0px 36.6pt; padding: 0px; line-height: 1.6em; color: rgb(62, 72, 85); font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255); text-indent: -36.6pt;"><span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; letter-spacing: 0pt; font-weight: bold; font-size: 11pt;">◦</span><span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; font-weight: bold; font-size: 11pt;">모집대상</span></p>
+
+<p class="0" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; margin: 0px 0px 0px 36.6pt; padding: 0px; line-height: 1.6em; color: rgb(62, 72, 85); font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255); text-indent: -36.6pt;"><span lang="EN-US" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; letter-spacing: 0pt; font-size: 11pt;">&nbsp; &nbsp;- </span><span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; font-size: 11pt;">공고일 기준 설립 </span><span lang="EN-US" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; letter-spacing: 0pt; font-size: 11pt;">7</span><span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; font-size: 11pt;">년 이내 문화콘텐츠 기업</span><span lang="EN-US" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; letter-spacing: 0pt; font-size: 11pt;">(</span><span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; font-size: 11pt;">법인 또는 개인</span><span lang="EN-US" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; letter-spacing: 0pt; font-size: 11pt;">)</span></p>
+
+<p class="0" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; margin: 0px 0px 0px 36.6pt; padding: 0px; line-height: 1.6em; color: rgb(62, 72, 85); font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255); text-indent: -36.6pt;"><span lang="EN-US" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; letter-spacing: 0pt; font-size: 11pt;">&nbsp; &nbsp;- </span><span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; font-size: 11pt;">입주계약일로부터 </span><span lang="EN-US" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; letter-spacing: 0pt; font-size: 11pt;">30</span><span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; font-size: 11pt;">일 이내 본사 소재지를 대구콘텐츠기업지원센터로 이전 가능한 기업</span></p>
+
+<p class="0" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; margin: 0px 0px 0px 36.6pt; padding: 0px; line-height: 1.6em; color: rgb(62, 72, 85); font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255); text-indent: -36.6pt;"><span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; font-size: 11pt;">&nbsp; &nbsp;- 입주실 추가/변경을 희망하는 기존 입주기업</span></p>
+
+<p class="0" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; margin: 0px 0px 0px 36.6pt; padding: 0px; line-height: 1.6em; color: rgb(62, 72, 85); font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255); text-indent: -36.6pt;"><span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; letter-spacing: 0pt; font-weight: bold; font-size: 11pt;">◦</span><span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; font-weight: bold; font-size: 11pt;">접수방법</span><span lang="EN-US" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; letter-spacing: 0pt; font-size: 11pt;">: </span><span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; font-size: 11pt;">입주신청서 작성하여 담당자 이메일 제출(첨부파일 참고)</span></p>
+
+<p class="0" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; margin: 0px 0px 0px 36pt; padding: 0px; line-height: 1.6em; color: rgb(62, 72, 85); font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255); text-indent: -36pt;"><span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; letter-spacing: 0pt; font-weight: bold; font-size: 11pt;">◦</span><span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; font-weight: bold; font-size: 11pt;">문 의 처</span><span lang="EN-US" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; letter-spacing: 0pt; font-size: 11pt;">: (</span><span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; font-size: 11pt;">재</span><span lang="EN-US" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; letter-spacing: 0pt; font-size: 11pt;">)</span><span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; font-size: 11pt;">대구디지털혁신진흥원 사업담당자</span><span lang="EN-US" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: &quot;맑은 고딕&quot;; letter-spacing: 0pt; font-size: 11pt;"> shine@dip.or.kr / 053-215-4906</span></p>
+
+<p class="0" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; margin: 0px 0px 0px 36pt; padding: 0px; line-height: 1.6em; color: rgb(62, 72, 85); font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255); text-indent: -36pt;">&nbsp;</p>
+
+<p class="0" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; margin: 0px 0px 0px 36pt; padding: 0px; line-height: 1.6em; color: rgb(62, 72, 85); font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255); text-indent: -36pt;">&nbsp;</p>
+
+<p class="0" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; margin: 0px 0px 0px 36pt; padding: 0px; line-height: 1.6em; color: rgb(62, 72, 85); font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255); text-indent: -36pt;">&nbsp;</p>
+
+<p class="0" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; margin: 0px 0px 0px 36pt; padding: 0px; line-height: 1.6em; color: rgb(62, 72, 85); font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255); text-indent: -36pt; text-align: center;"><img alt="" src="/cmmn/fileView?path=/ckeditor//business&amp;physical=1792396961220.png&amp;contentType=image" /></p>
+
+        </div>
+        <div class="bd_more">
+            <ul>
+                <li class="prev">   
+                    
+                        <a href="/business/detail/312">
+                            <span class="icon"></span>
+                            <span>이전글</span>
+                            <p>
+                                    『2026년 지역특화콘텐츠개발지원(대구게임테크허브)』 게임 스케일업 패키지 지원사
+                                    ...
+                            </p>
+                        </a>
+                    
+                    
+                </li>
+
+                <li class="next">   
+                    
+                    
+                        <a href="#none">
+                            <span class="icon"></span>
+                            <span>다음글</span>
+                            <p>다음글 없음</p>
+                        </a>
+                    
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- board_view -->
+    
+
+
+    <div class="btn_area">
+        <a href="/business/list?pageIndex=1&searchKeyword=&searchCondition=&category=&searchDate=&search_start_date=&search_end_date=&gubun=" class="btn_gray">목록</a>
+    </div>
+</div>
+
+</html>
+
+        <!-- Content Area End -->
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer id="footer" class="footer">
+        
+
+
+
+
+
+<div class="btn_quick">
+    <ul class="quick_list">
+        <li><a href="/business/list" title="사업공고"><strong>사업공고</strong> <i class="icon icon01"></i></a></li>
+        <li><a href="/edu/list" title="교육신청"><strong>교육신청</strong> <i class="icon icon02"></i></a></li>
+        <li><a href="/space/list" title="대관신청"><strong>대관신청</strong> <i class="icon icon03"></i></a></li>
+        <li><a href="/equipment/list?sisul_code=SISUL_1" title="장비대여"><strong>장비대여</strong> <i class="icon icon04"></i></a></li>
+    </ul>
+    <div class="btn_wrapper">
+        <button type="button" class="quick_open"><span>Quick<br>Menu</span></button>
+        <button type="button" class="quick_close"><span><i class="icon_close"></i> 닫기</span></button>
+    </div>
+</div>
+
+<div class="btn_top">
+    <a href="#"><span>TOP</span></a>
+</div>
+
+<div class="ft_banner">
+    <div class="wrap">
+        <div class="ban_tit">
+            
+            <div class="control footer">
+                <button type="button" class="partner_prev"><span class="blind">이전</span></button>
+                <button type="button" class="partner_pause"><span class="blind">중지</span></button>
+                <button type="button" class="partner_play" style="display: none;"><span class="blind">재생</span></button>
+                <button type="button" class="partner_next"><span class="blind">다음</span></button>
+            </div>
+        </div>
+        <div class="partner swiper-container">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                    <a href="https://www.dip.or.kr/home/main.ubs" target="_blank" alt="대구디지털혁신진흥원" title="새창">
+                        <img src="/resources/images/layout/common/ms_partner6.jpg" alt="대구디지털혁신진흥원">
+                    </a>
+                </li><li class="swiper-slide">
+                    <a href="http://www.dcoe.or.kr/" target="_blank" alt="DCOE" title="새창">
+                        <img src="/resources/images/layout/common/ms_partner10.jpg" alt="DCOE">
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="https://dgckl.kr/" target="_blank" alt="대구콘텐츠코리아랩" title="새창">
+                        <img src="/resources/images/layout/common/ms_partner1.jpg" alt="대구콘텐츠코리아랩">
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="https://dcec.dip.or.kr/" target="_blank" alt="대구콘텐츠기업지원센터" title="새창">
+                        <img src="/resources/images/layout/common/ms_partner7.jpg" alt="대구콘텐츠기업지원센터">
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="http://dggc.or.kr/" target="_blank" alt="대구글로벌게임센터" title="새창">
+                        <img src="/resources/images/layout/common/ms_partner2.jpg" alt="대구글로벌게임센터">
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="https://dgwebtoon.dip.or.kr/" target="_blank" alt="대구웹툰캠퍼스" title="새창">
+                        <img src="/resources/images/layout/common/ms_partner3.jpg" alt="대구웹툰캠퍼스">
+                    </a>
+                </li>
+                
+                    
+                        
+                    
+                
+                
+                    
+                        
+                    
+                
+                <li class="swiper-slide">
+                    <a href="https://meplex-daegu.kr/" target="_blank" alt="대구1인미디어센터" title="새창">
+                        <img src="/resources/images/layout/common/ms_partner9.jpg" alt="대구1인미디어센터">
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="http://www.dpps.or.kr/" target="_blank" alt="대구출판산업지원센터" title="새창">
+                        <img src="/resources/images/layout/common/ms_partner8.jpg" alt="대구출판산업지원센터">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="ft_top">
+    <div class="wrap">
+        <div class="ft_info">
+            
+            
+            
+            <ul class="ft_logo">
+                <li><img src="/resources/images/layout/common/footer_logo_01.png" alt="대구광역시 로고"></li>
+                <li><img src="/resources/images/layout/common/footer_logo_02.png" alt="대구디지털혁신진흥원 로고"></li>
+                <li><img src="/resources/images/layout/common/footer_logo_03.png" alt="대구콘텐츠비즈니스센터 로고"></li>
+            </ul>
+            <div class="addr">
+                <address>
+                    <span>(41260) 대구광역시 동구 동대구로 469 (신천동)</span>
+                    <span class="tel"><b>대표전화</b> 053-215-8403</span>
+                    
+                </address>
+                <p class="copy">
+                    COPYRIGHT(C) Daegu Digital Innovation Promotion Agency.All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="ft_bott">
+    <div class="wrap">
+        <ul class="ft_page">
+            <li><a href="/privacy_policy">개인정보처리방침</a></li>
+            <li><a href="/terms_of_us">이용약관</a></li>
+            <li><a href="/video_privacy_policy">고정형 영상정보처리기기 운영·관리 방침</a> </li>
+        </ul>
+    </div>
+</div>
+<script>
+    //지원기관 슬라이드
+    var partner = new Swiper(".partner", {
+        slidesPerView :'auto',
+        observer: true,
+        observeParents: true,
+        loop:true,
+        speed:1000,
+        autoplay:{
+            delay:3000,
+            disableOnInteraction : false,
+        },
+        navigation:{
+            nextEl: "button.partner_next",
+            prevEl: "button.partner_prev"
+        },
+        breakpoints:{
+            1200:{
+                slidesPerView:4,
+                spaceBetween:20,
+            },
+            992:{
+                slidesPerView:3,
+                spaceBetween:20,
+            },
+            768:{
+                slidesPerView:2,
+                spaceBetween: 20,
+            },
+            566: {
+                slidesPerView: 2,
+                spaceBetween: 20
+            },
+            480: {
+                slidesPerView: 1,
+                spaceBetween: 0
+            },
+        },
+    });
+
+    $('.partner_pause').on('click', function () {
+        partner.autoplay.stop();
+        $('.partner_play').show();
+        $('.partner_pause').hide();
+    });
+    $('.partner_play').on('click', function () {
+        partner.autoplay.start();
+        $('.partner_pause').show();
+        $('.partner_play').hide();
+    });
+</script>
+    </footer>
+    <!-- //footer -->
+
+</div>
+</body>
+</html>

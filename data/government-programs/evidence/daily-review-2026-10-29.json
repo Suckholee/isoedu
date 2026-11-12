@@ -1,0 +1,118 @@
+{
+  "at": "2026-10-29T01:45:14.595662+00:00",
+  "stage": "daily-attachment-analysis",
+  "status": "partial-success",
+  "summary": "2026-10-29 정기 실행: K-Startup15·중기부10 각 첫 페이지 수집, 신규11·누적87·상세87. 남동발전연장/성남중장년입주/BeyondOI/ST아카데미/마포창업데이 5건 첨부12개 실제 분석(이미지3개 전체 시각·HWP전문), 모두 미해결을 남겨partial. 총22첨부 다운로드·기존10개 동일해시·변경0. 완료원문 재분석없음, 관광교육은 상세fingerprint변경으로 큐 재확인대상. 남동발전5/8개사·지난평가일·2025양식충돌/접수URL404,성남평가일·양식9월·동의문구충돌,ST시작일/대상차이·신청폼401,Beyond단축URL308 기록. 신규나머지9건 상세/링크만 확보. 큐complete1/partial54/pending32·잔여86. 주최공개본문성남/마포확인·멘토링분야별선착순6명 기록. 보완출처기업마당/KOTRA공개접근·IRIS타임아웃·전체수집아님. route.GET200·87공고55분석·5마감시각확인,localhost연결실패·화면미검증. G01→S03→S12/S13근거/필드/권한인계 유지. DB변경·배포·외부발송·회사적합판정없음.",
+  "scope": {
+    "newRecords": 11,
+    "retainedRecords": 87,
+    "listingCoverage": "KStartup15/MSS10 first page only",
+    "analysedThisRun": [
+      "kstartup-179576",
+      "kstartup-179607",
+      "kstartup-179624",
+      "kstartup-179616",
+      "kstartup-179605"
+    ],
+    "downloadedAttachments": 22,
+    "contentChanged": 0,
+    "priorHashesCompared": 10,
+    "queue": {
+      "partial": 54,
+      "pending": 32,
+      "complete": 1
+    }
+  },
+  "externalChecks": [
+    {
+      "name": "gn",
+      "url": "https://www.gnstartup.kr/business/8339db24-725a-45bc-baf9-d778adc7b0d8/10788/detail",
+      "checkedAt": "2026-10-29T01:42:54.237750+00:00",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "name": "snip",
+      "url": "https://www.snip.or.kr/SNIP/contents/Business1.do?schM=view&snp=26a9e82acc6511f1b1350200655b0007",
+      "checkedAt": "2026-10-29T01:42:54.238014+00:00",
+      "status": 200,
+      "finalUrl": "https://www.snip.or.kr/SNIP/contents/Business1.do?schM=view&snp=26a9e82acc6511f1b1350200655b0007",
+      "bytes": 366568
+    },
+    {
+      "name": "beyond",
+      "url": "https://m.site.naver.com/2jwIV",
+      "checkedAt": "2026-10-29T01:42:54.238159+00:00",
+      "error": "HTTP Error 308: Permanent Redirect"
+    },
+    {
+      "name": "st",
+      "url": "https://forms.gle/cafJaUT8BPfPxCyEA",
+      "checkedAt": "2026-10-29T01:42:54.238254+00:00",
+      "error": "HTTP Error 401: Unauthorized"
+    },
+    {
+      "name": "mapo",
+      "url": "https://www.naroo.or.kr/bbs/content.php?co_id=program_view&np_seq=1312",
+      "checkedAt": "2026-10-29T01:42:54.238827+00:00",
+      "status": 200,
+      "finalUrl": "https://www.naroo.or.kr/bbs/content.php?co_id=program_view&np_seq=1312",
+      "bytes": 31328
+    },
+    {
+      "name": "bizinfo",
+      "url": "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/list.do",
+      "checkedAt": "2026-10-29T01:42:54.238975+00:00",
+      "status": 200,
+      "finalUrl": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200View.do?null",
+      "bytes": 111271
+    },
+    {
+      "name": "iris",
+      "url": "https://www.iris.go.kr/index.do",
+      "checkedAt": "2026-10-29T01:42:54.239111+00:00",
+      "error": "The read operation timed out"
+    },
+    {
+      "name": "kotra",
+      "url": "https://kotra.or.kr/subList/20000020753",
+      "checkedAt": "2026-10-29T01:42:54.239191+00:00",
+      "status": 200,
+      "finalUrl": "https://kotra.or.kr/subList/20000020753",
+      "bytes": 152169
+    }
+  ],
+  "apiValidation": {
+    "status": 200,
+    "records": 87,
+    "analyses": 55,
+    "dates": [
+      {
+        "id": "kstartup-179607",
+        "deadlineTime": "16:00",
+        "analysis": "partial"
+      },
+      {
+        "id": "kstartup-179605",
+        "deadlineTime": "14:00",
+        "analysis": "partial"
+      },
+      {
+        "id": "kstartup-179624",
+        "deadlineTime": "23:59",
+        "analysis": "partial"
+      },
+      {
+        "id": "kstartup-179576",
+        "deadlineTime": "18:00",
+        "analysis": "partial"
+      },
+      {
+        "id": "kstartup-179616",
+        "deadlineTime": "23:59",
+        "analysis": "partial"
+      }
+    ],
+    "screen": "미검증",
+    "localHttpError": "fetch failed"
+  }
+}

@@ -1,0 +1,274 @@
+{
+  "programId": "kstartup-179703",
+  "title": "(하반기) 2026년 서울창업허브M+ 입주기업 모집",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-06T01:28:27.988925+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179703",
+  "reviewScope": "PDF8쪽전부·p6~7시설사진/p8스캔신산업27분야 시각; 공식PDF중복대조·ZIP 4개(PDF중복+HWP서식1~3) 각각검토·별도신산업PDF 대조, 2026-11-06",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1yQ85P_O4Vns2u4Ylu7d6hx92k_E_j4ALhgPEE6UmXqR1Nw",
+      "verifiedAt": "2026-11-06",
+      "status": "downloaded",
+      "sha256": "d9eeb1654a0d506d3e3a31b9e9e5cd767eb271a383ac3429981a0bd89f9c8cb1",
+      "previousHash": "d9eeb1654a0d506d3e3a31b9e9e5cd767eb271a383ac3429981a0bd89f9c8cb1",
+      "changed": false,
+      "bytes": 1464757,
+      "format": "PDF",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 6985,
+      "review": {
+        "at": "2026-11-06T01:28:27.988925+00:00",
+        "scope": "PDF8쪽전부·p6~7시설사진/p8스캔신산업27분야 시각; 공식PDF중복대조·ZIP 4개(PDF중복+HWP서식1~3) 각각검토·별도신산업PDF 대조, 2026-11-06",
+        "method": "text (visual exceptions in reviewScope)"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/v1yQ85P_O4Vns2u4Ylu7d6hx92k_E_j4ALhgPEE6UmXqR1Nw": "d9eeb1654a0d506d3e3a31b9e9e5cd767eb271a383ac3429981a0bd89f9c8cb1",
+    "https://mplus.startup-plus.kr/api/common/download?attachFilePath=%2fproject%2fattachment%2f261102141005%e2%98%85+(%ea%b3%b5%ea%b3%a0%eb%ac%b8)+%ec%84%9c%ec%9a%b8%ec%b0%bd%ec%97%85%ed%97%88%eb%b8%8cM%2b+%ec%8b%a0%ea%b7%9c+%ec%9e%85%ec%a3%bc%ea%b8%b0%ec%97%85+%eb%aa%a8%ec%a7%91+%ea%b3%b5%ea%b3%a0(%ed%95%98%eb%b0%98%ea%b8%b0).pdf": "d9eeb1654a0d506d3e3a31b9e9e5cd767eb271a383ac3429981a0bd89f9c8cb1",
+    "https://mplus.startup-plus.kr/api/common/download?attachFilePath=%2fproject%2fattachment%2f261102141005%eb%b6%99%ec%9e%842.+%eb%aa%a8%ec%a7%91%ea%b3%b5%ea%b3%a0%eb%ac%b8+%eb%b0%8f+%ec%82%ac%ec%97%85%ec%8b%a0%ec%b2%ad%ec%84%9c+%ec%96%91%ec%8b%9d.zip": "57d2a23298ad1ae7b82f065e59bfd1d794c9de05f10e58959cf99b55d54dca4e",
+    "https://mplus.startup-plus.kr/api/common/download?attachFilePath=%2fproject%2fattachment%2f261102141005%eb%b6%99%ec%9e%843.+%ec%8b%a0%ec%82%b0%ec%97%85+%ec%b0%bd%ec%97%85+%eb%b6%84%ec%95%bc.pdf": "0916d6f9d9cd1afbafaa34f9a62c1bd329a54b82b4690b6813680b351cf7a62b"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-06T01:28:27.988925+00:00",
+  "eligibility": {
+    "summary": "신청일 업력7년미만, 신산업27분야 10년미만, 마곡입주가능업종. 예비창업자는 계약전사업자등록 조건. 선정계약후30일내 이전(해외/연구소3개월 예외가 신청서와충돌).",
+    "companyFields": [
+      "설립일",
+      "신산업27분야해당",
+      "표준산업분류·마곡입주업종",
+      "현재정부공공공간지원",
+      "서울7개허브이력",
+      "입주본사/지점/연구소",
+      "계약/실제이전일",
+      "임대료연납",
+      "재무23~25",
+      "고용23~26Q4",
+      "특허·협력·투자"
+    ],
+    "reference": "PDF8쪽전부·p6~7시설사진/p8스캔신산업27분야 시각; 공식PDF중복대조·ZIP 4개(PDF중복+HWP서식1~3) 각각검토·별도신산업PDF 대조, 2026-11-06"
+  },
+  "exclusions": {
+    "items": [
+      "창업제외업종",
+      "신용불량·체납(회복/분할납부/계약전해소등예외확인)",
+      "서울자치구등지원공간중복(계약종료/포기예외)",
+      "휴폐업·퇴거",
+      "M+기입주·7개허브이전수혜",
+      "자격확인서별도 공공공간/본지점중복/허브독립실이력"
+    ],
+    "reference": "PDF8쪽전부·p6~7시설사진/p8스캔신산업27분야 시각; 공식PDF중복대조·ZIP 4개(PDF중복+HWP서식1~3) 각각검토·별도신산업PDF 대조, 2026-11-06"
+  },
+  "support": {
+    "summary": "21실·기본2년+연1회2회연장 최대4년. 보증·관리비없음, 임대료연납·매년감정평가. 1/2/3/4년차재산평가액1/2/3/4%. PDF20.93㎡304호397840원/년~99.2㎡703호1885590원/년; 목록최소29.01㎡551420원과충돌. 창없는호실308309405516616 시각확인. 월단가0,000원은 공고미완성표기로 미확정.",
+    "reference": "PDF8쪽전부·p6~7시설사진/p8스캔신산업27분야 시각; 공식PDF중복대조·ZIP 4개(PDF중복+HWP서식1~3) 각각검토·별도신산업PDF 대조, 2026-11-06"
+  },
+  "period": {
+    "start": "2026-11-02",
+    "end": "2026-11-13",
+    "deadlineTime": "23:59",
+    "timezone": "Asia/Seoul",
+    "reference": "PDF8쪽전부·p6~7시설사진/p8스캔신산업27분야 시각; 공식PDF중복대조·ZIP 4개(PDF중복+HWP서식1~3) 각각검토·별도신산업PDF 대조, 2026-11-06"
+  },
+  "application": {
+    "summary": "M+ Startup-plus PRJ007682 온라인제출. 11월3주서면→4주대면→12월1~2주산단심사/호실→3주산단/M+각계약. 희망1~3순위,동일경합대면순위후유사면적배정. 승인30일내계약·계약30일내입주.",
+    "reference": "PDF8쪽전부·p6~7시설사진/p8스캔신산업27분야 시각; 공식PDF중복대조·ZIP 4개(PDF중복+HWP서식1~3) 각각검토·별도신산업PDF 대조, 2026-11-06"
+  },
+  "requiredDocuments": [
+    {
+      "name": "서식1 신청서·사업계획서",
+      "condition": "공통·서명/직인",
+      "reference": "ZIP HWP1"
+    },
+    {
+      "name": "서식2 개인/기업 수집이용제공동의",
+      "condition": "공통·보유5년·서울/SBA/파트너/심사위원제공·거부시선정불이익",
+      "reference": "ZIP HWP2"
+    },
+    {
+      "name": "서식3 입주자격확인",
+      "condition": "공통·체크모순 확인필요",
+      "reference": "ZIP HWP3"
+    },
+    {
+      "name": "사업자등록증·법인등기·재무2023~2025 각1부",
+      "condition": "예비창업자면제공고·계약전사업자등록",
+      "reference": "PDF/서식1 제출서류"
+    }
+  ],
+  "businessPlan": {
+    "format": "지정HWP 서식1; 파란안내삭제·이미지/설계/도표 활용",
+    "limit": "최대10페이지 내외",
+    "sections": [
+      {
+        "name": "기술·상품서비스",
+        "items": [
+          "보유기술/제품 대외공개범위 이미지"
+        ],
+        "limit": "최대10페이지 내외"
+      },
+      {
+        "name": "BM/시장",
+        "items": [
+          "사업화·고객Segmentation/Target·점유율·시장진입·전망·경쟁제품/링크"
+        ],
+        "limit": "최대10페이지 내외"
+      },
+      {
+        "name": "추진전략",
+        "items": [
+          "R&D/상품화/글로벌/수출·고용매출목표"
+        ],
+        "limit": "최대10페이지 내외"
+      },
+      {
+        "name": "주요성과",
+        "items": [
+          "기업연혁·수상인증·IP·매출수출"
+        ],
+        "limit": "최대10페이지 내외"
+      },
+      {
+        "name": "고용",
+        "items": [
+          "상시/연구개발2023~25·2026년4분기·인력직무경력"
+        ],
+        "limit": "최대10페이지 내외"
+      },
+      {
+        "name": "투자",
+        "items": [
+          "년도/라운드/투자자/금액/기업가치·향후목적희망액가치"
+        ],
+        "limit": "최대10페이지 내외"
+      },
+      {
+        "name": "입주필요",
+        "items": [
+          "근무규모·본점/지점/연구소공간활용"
+        ],
+        "limit": "최대10페이지 내외"
+      },
+      {
+        "name": "마곡협력",
+        "items": [
+          "대중소기업공동연구/판매·프로젝트개요/성과계획"
+        ],
+        "limit": "최대10페이지 내외"
+      }
+    ],
+    "reference": "PDF8쪽전부·p6~7시설사진/p8스캔신산업27분야 시각; 공식PDF중복대조·ZIP 4개(PDF중복+HWP서식1~3) 각각검토·별도신산업PDF 대조, 2026-11-06"
+  },
+  "evaluation": {
+    "summary": "서면 시장30/사업50/마곡협력20; 대면 조직10/시장20/기술30/사업30/마곡10. 심사5명 최고/최저제외평균 70점초과 기준(70이상 아님); 대면고득점21실. 대면순위호실경합반영.",
+    "reference": "PDF8쪽전부·p6~7시설사진/p8스캔신산업27분야 시각; 공식PDF중복대조·ZIP 4개(PDF중복+HWP서식1~3) 각각검토·별도신산업PDF 대조, 2026-11-06"
+  },
+  "contact": {
+    "name": "02-6958-9106 sally@sba.seoul.kr / 평일09~18 점심12~13",
+    "reference": "PDF8쪽전부·p6~7시설사진/p8스캔신산업27분야 시각; 공식PDF중복대조·ZIP 4개(PDF중복+HWP서식1~3) 각각검토·별도신산업PDF 대조, 2026-11-06"
+  },
+  "unresolved": [
+    "예비창업허용 공고 vs자격확인서 사업자등록없음 체크시제외문구 충돌",
+    "해외/연구소이전3개월예외 vs서식30일 일괄의무 충돌",
+    "중복공간·7개허브제외범위 공고/확인서 상이",
+    "임대료목록최소값과PDF304호차이·월단가0,000표기 주최확인필요",
+    "로그인후접수필드 미확인"
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179703",
+    "companyId": null,
+    "permission": "권한회사프로필확보후근거별검토·현재신청가능확정아님",
+    "steps": [
+      "회사필드/증빙확인",
+      "충돌/미확인해결",
+      "S12양식·S13회사정보로서류/계획작성"
+    ]
+  },
+  "conflicts": [
+    {
+      "field": "prospective",
+      "values": [
+        "공고예비가능/계약전등록",
+        "확인서사업자등록없음해당시제외"
+      ],
+      "resolution": "unresolved"
+    },
+    {
+      "field": "moveDeadline",
+      "values": [
+        "공고해외/연구소3개월예외",
+        "서식일괄30일"
+      ],
+      "resolution": "unresolved"
+    },
+    {
+      "field": "rent",
+      "values": [
+        "목록최소551420/29.01㎡",
+        "PDF304호397840/20.93㎡",
+        "단가0,000"
+      ],
+      "resolution": "unresolved"
+    },
+    {
+      "field": "priorHubSupport",
+      "values": [
+        "공고7허브수혜",
+        "서식7허브독립실사용"
+      ],
+      "resolution": "unresolved"
+    }
+  ],
+  "additionalReview": "공식PDF·ZIP공고PDF는동일본문대조후대표분석. 별도HWP3종과신산업PDF 각각읽음. 개인정보5년·제3자제공조건·사업자등록없음제외체크 모순 기록. 10쪽내외계획8개항목과23~25재무·고용/26Q4,희망호실1~3위 확인.",
+  "additionalAttachments": [
+    {
+      "programId": "kstartup-179703",
+      "url": "https://mplus.startup-plus.kr/api/common/download?attachFilePath=%2fproject%2fattachment%2f261102141005%e2%98%85+(%ea%b3%b5%ea%b3%a0%eb%ac%b8)+%ec%84%9c%ec%9a%b8%ec%b0%bd%ec%97%85%ed%97%88%eb%b8%8cM%2b+%ec%8b%a0%ea%b7%9c+%ec%9e%85%ec%a3%bc%ea%b8%b0%ec%97%85+%eb%aa%a8%ec%a7%91+%ea%b3%b5%ea%b3%a0(%ed%95%98%eb%b0%98%ea%b8%b0).pdf",
+      "file": "kstartup-179703/extra-d9eeb1654a0d.bin",
+      "sha256": "d9eeb1654a0d506d3e3a31b9e9e5cd767eb271a383ac3429981a0bd89f9c8cb1",
+      "format": "PDF",
+      "bytes": 1464757,
+      "verifiedAt": "2026-11-06T01:28:27.988925+00:00",
+      "reviewStatus": "text-reviewed",
+      "reference": "공식PDF·ZIP공고PDF는동일본문대조후대표분석. 별도HWP3종과신산업PDF 각각읽음. 개인정보5년·제3자제공조건·사업자등록없음제외체크 모순 기록. 10쪽내외계획8개항목과23~25재무·고용/26Q4,희망호실1~3위 확인."
+    },
+    {
+      "programId": "kstartup-179703",
+      "url": "https://mplus.startup-plus.kr/api/common/download?attachFilePath=%2fproject%2fattachment%2f261102141005%eb%b6%99%ec%9e%842.+%eb%aa%a8%ec%a7%91%ea%b3%b5%ea%b3%a0%eb%ac%b8+%eb%b0%8f+%ec%82%ac%ec%97%85%ec%8b%a0%ec%b2%ad%ec%84%9c+%ec%96%91%ec%8b%9d.zip",
+      "file": "kstartup-179703/extra-57d2a23298ad.bin",
+      "sha256": "57d2a23298ad1ae7b82f065e59bfd1d794c9de05f10e58959cf99b55d54dca4e",
+      "format": "ZIP",
+      "bytes": 1497007,
+      "members": [
+        "★ (공고문) 서울창업허브M+ 신규 입주기업 모집 공고(하반기).pdf",
+        "[서식1] 입주신청서 및 사업계획서.hwp",
+        "[서식2] 개인 및 기업 정보제공동의서.hwp",
+        "[서식3] 입주 자격 요건 확인서.hwp"
+      ],
+      "verifiedAt": "2026-11-06T01:28:27.988925+00:00",
+      "reviewStatus": "text-reviewed",
+      "reference": "공식PDF·ZIP공고PDF는동일본문대조후대표분석. 별도HWP3종과신산업PDF 각각읽음. 개인정보5년·제3자제공조건·사업자등록없음제외체크 모순 기록. 10쪽내외계획8개항목과23~25재무·고용/26Q4,희망호실1~3위 확인."
+    },
+    {
+      "programId": "kstartup-179703",
+      "url": "https://mplus.startup-plus.kr/api/common/download?attachFilePath=%2fproject%2fattachment%2f261102141005%eb%b6%99%ec%9e%843.+%ec%8b%a0%ec%82%b0%ec%97%85+%ec%b0%bd%ec%97%85+%eb%b6%84%ec%95%bc.pdf",
+      "file": "kstartup-179703/extra-0916d6f9d9cd.bin",
+      "sha256": "0916d6f9d9cd1afbafaa34f9a62c1bd329a54b82b4690b6813680b351cf7a62b",
+      "format": "PDF",
+      "bytes": 48104,
+      "verifiedAt": "2026-11-06T01:28:27.988925+00:00",
+      "reviewStatus": "text-reviewed",
+      "reference": "공식PDF·ZIP공고PDF는동일본문대조후대표분석. 별도HWP3종과신산업PDF 각각읽음. 개인정보5년·제3자제공조건·사업자등록없음제외체크 모순 기록. 10쪽내외계획8개항목과23~25재무·고용/26Q4,희망호실1~3위 확인."
+    }
+  ],
+  "evidenceManifest": "evidence/official-extra-check-20261106.json"
+}

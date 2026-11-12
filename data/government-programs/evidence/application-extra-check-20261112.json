@@ -1,0 +1,53 @@
+[
+  {
+    "id": "179769",
+    "url": "https://forms.gle/QnDxFp1p3BAmkMeF8",
+    "checkedAt": "2026-11-12T00:00:06.394700+00:00",
+    "error": "HTTP Error 401: Unauthorized"
+  },
+  {
+    "id": "179765",
+    "url": "https://hubgongdeok.startup-plus.kr/project/PRJ007690",
+    "checkedAt": "2026-11-12T00:00:06.395019+00:00",
+    "status": 200,
+    "finalUrl": "https://hubgongdeok.startup-plus.kr/project/PRJ007690",
+    "evidence": "179765-publiccheck-20261112.html",
+    "bytes": 37540
+  },
+  {
+    "id": "179771",
+    "url": "https://event-us.kr/theilab/event/138030",
+    "checkedAt": "2026-11-12T00:00:06.395397+00:00",
+    "status": 200,
+    "finalUrl": "https://event-us.kr/theilab/event/138030",
+    "evidence": "179771-publiccheck-20261112.html",
+    "bytes": 349061
+  },
+  {
+    "id": "179772",
+    "url": "https://forms.gle/pqE4dQ3izE16pCVC9",
+    "checkedAt": "2026-11-12T00:00:06.395498+00:00",
+    "status": 200,
+    "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdS02mXhO6ICKltlsNbqrwOnIGCq7xDrR7MvNcuyeA0sWqhMA/viewform?usp=send_form",
+    "evidence": "179772-publiccheck-20261112.html",
+    "bytes": 120977
+  },
+  {
+    "id": "179775",
+    "url": "https://forms.gle/uTjVyDLqaQ4PFHS36",
+    "checkedAt": "2026-11-12T00:00:06.395591+00:00",
+    "status": 200,
+    "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSf-YCbNBC3BZkFPIn4kINfnHlx0yysdZbHkMuOiNzLZemwCxw/viewform?usp=send_form",
+    "evidence": "179775-publiccheck-20261112.html",
+    "bytes": 95710
+  },
+  {
+    "id": "179775-host",
+    "url": "https://kovwa.or.kr/94/?bmode=view&idx=175564123",
+    "checkedAt": "2026-11-12T00:00:06.715935+00:00",
+    "status": 200,
+    "finalUrl": "https://kovwa.or.kr/94/?bmode=view&idx=175564123",
+    "evidence": "179775-host-publiccheck-20261112.html",
+    "bytes": 467770
+  }
+]

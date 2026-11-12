@@ -1,0 +1,2370 @@
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>중소기업 수출규제대응지원센터</title>
+<meta name="title" content="중소기업 수출규제대응지원센터" />
+
+
+
+
+
+
+
+
+<link rel="shortcut icon" type="image/x-icon" href="/globalcerti/images/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="/globalcerti/css/default.css" />
+<link rel="stylesheet" type="text/css" href="/globalcerti/css/font-face.css" />
+<link rel="stylesheet" type="text/css" href="/globalcerti/css/layout.css" />
+<link rel="stylesheet" type="text/css" href="/globalcerti/css/contents.css" />
+<link rel="stylesheet" type="text/css" href="/globalcerti/css/board.css" />
+<link rel="stylesheet" type="text/css" href="/globalcerti/css/custom.css?20260727a"/>
+<link rel="stylesheet" href="/globalcerti/css/jquery.datetimepicker.css">
+<link rel="stylesheet" href="/globalcerti/css/jqueryui.css" />
+<!-- 새로운 css -->
+<link rel="stylesheet" href="/globalcerti/nice-select/css/nice-select.css" />
+<link rel="stylesheet" href="/globalcerti/css/jqueryui.css" />
+<link rel="stylesheet" type="text/css" href="/globalcerti/css/2026/style.css?20261019a" />
+<link rel="stylesheet" type="text/css" href="/globalcerti/css/2026/contents.css" />
+<link rel="stylesheet" type="text/css" href="/globalcerti/css/2026/slick-theme.min.css" />
+<link rel="stylesheet" type="text/css" href="/globalcerti/css/2026/slick.min.css" />
+<link rel="stylesheet" type="text/css" href="/globalcerti/css/2026/page.css?20260813a" />
+<link rel="stylesheet" type="text/css" href="/globalcerti/css/2026/board.css?20260427a" />
+<link rel="stylesheet" href="/globalcerti/css/jquery.datetimepicker.css">
+
+
+<script src="/globalcerti/js/jquery-1.12.4.min.js"></script>
+<script src="/globalcerti/js/jqueryui.js"></script>
+<script src="/globalcerti/js/common.js?v20260825a"></script>
+<!-- 새로운 스크립트 -->
+<script src="/globalcerti/nice-select/js/jquery.nice-select.min.js"></script>
+<script src="/globalcerti/js/2026/slick.min.js"></script>
+<script src="/globalcerti/js/2026/common.js?v20260511a"></script>
+<script src="/globalcerti/js/2026/page.js?v20251216c"></script>
+<script src="/globalcerti/js/2026/mobile-gate.js?v20260610a"></script> 
+</head>
+<body>
+<!-- header -->
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+    .member .mypage,
+    .member .logout,
+    .member .mypage.signup,
+    .member .mypage.login
+    {
+        display: inline-flex;
+        align-items: center;
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+    .member a.qim-conn::after {
+        content: none ;
+        display: none ;
+    }
+</style>
+<script src="/globalcerti/js/sessionTimer.js?v20250624"></script>
+<script type="text/javascript">
+    
+
+    //컨설팅기관 등록현황 확인
+    $("#concInfoBtn").click(function(){
+
+        var url = "/globalcerti/conc/selfConcDetailInfoPop.do";
+        var strbuff = new StringBuffer();
+
+        strbuff.append("<form id='snoFrm2' name='snoFrm2' action='"+url+"' target='pop2' method='post'>");
+        strbuff.append("</form>");
+        $("form:eq(0)").after(strbuff.toString());
+        var p =window.open('','pop2','width=930,height=820,scrollbars=yes,resizable=no');
+        $("#snoFrm2").submit();
+        $("#snoFrm2").remove();
+        if (p.closed == false) {
+            p.focus();
+        }
+    });
+
+</script>
+
+
+
+<!-- header -->
+<header class="common">
+    <h1><a href="/globalcerti/main.do" target="_self">
+        
+        중소기업 수출규제대응지원센터</a>
+    </h1>
+    <button type="button" class="mobileMenu" title="전체 메뉴 보기"><span>메뉴</span></button>
+    <div class="mobileWrap">
+    
+    
+    
+        <div class="member">
+            <!-- 2025.12.22 login, signup 클래스 추가 -->
+            <a href="/globalcerti/registSelect.do" target="_self" class="mypage signup">회원가입</a>
+             
+             
+            <a href="/globalcerti/loginSelect.do" target="_self" class="mypage login">로그인</a>
+        </div>
+    
+    
+        
+        
+        <nav class="gnb">
+            <a href="/globalcerti/info/standard/standardSearch.do?key=9093" target="_self">해외규격인증정보</a>
+            <button type="button">해외규격인증정보</button>
+            <div class="mobileMenu">
+                <ul>
+                    <li><a href="/globalcerti/info/standard/standardSearch.do?key=9093">해외규격인증검색</a></li>
+                    <li><a href="/globalcerti/notice/standard/standardReport.do?key=9093">해외규격용역 전자보고서</a></li>
+                </ul>
+            </div>
+            <a href="/globalcerti/info/ktrInfo.do?key=9093" target="_self">해외규격인증획득지원사업</a>
+            <button type="button">해외규격인증획득지원사업</button>
+            <div class="mobileMenu">
+                <ul>
+                    <li><a href="/globalcerti/info/ktrInfo.do?key=9093">사업소개</a></li>
+                    <li><a href="/globalcerti/notice/noticeList.do?key=9093&bizCd=10">공지사항</a></li>
+                    <li><a href="/globalcerti/pki/pkiView.do?key=9093">공동인증서발급안내</a></li>
+                </ul>
+            </div>
+            <a href="/globalcerti/notice/noticeList.do?key=9093&bizCd=20" target="_self">컨설팅기관</a>
+            <button type="button">컨설팅기관</button>
+            <div class="mobileMenu">
+                <ul>
+                    <li><a href="/globalcerti/notice/noticeList.do?key=9093&bizCd=20" target="_self">컨설팅 공지사항</a></li>
+                    <li><a href="/globalcerti/info/concList.do?key=9093">컨설팅기관 검색</a></li>
+                </ul>
+            </div>
+            <a href="/globalcerti/notice/noticeList.do?key=9093&bizCd=60" target="_self">교육신청</a>
+            <button type="button">교육신청</button>
+            <div class="mobileMenu">
+                <ul>
+                    <li><a href="/globalcerti/notice/noticeList.do?key=9093&bizCd=60" target="_self">공지사항</a></li>
+                    <li><a href="/globalcerti/info/eduList.do?key=9093" target="_self">교육신청</a></li>
+                    <li><a href="/globalcerti/edu/eduApplyList.do?key=9093" target="_self">교육신청현황</a></li>
+                    <li><a href="/globalcerti/info/replayList.do?key=9093" target="_self">다시보기교육</a></li>
+                    <li><a href="/globalcerti/user/qnaList.do?key=9093" target="_self">Q&A</a></li>
+                    <li><a href="/globalcerti/user/edureqList.do?key=9093" target="_self">인증교육개설요청</a></li>
+                </ul>
+            </div>
+            <a href="/globalcerti/notice/noticeList.do?key=9093&bizCd=50" target="_self">해외수출규제<br />전담대응반</a>
+            <button type="button">해외수출규제 전담대응반</button>
+            <div class="mobileMenu">
+                <ul>
+                    <li><a href="/globalcerti/notice/noticeList.do?key=9093&bizCd=50" target="_self">공지사항</a></li>
+                    <li><a href="/globalcerti/user/exclusiveCharge/exclusiveChargeQnaList.do?key=9093" target="_self">일반상담(해외인증 문의)</a></li>
+                    <li><a href="/globalcerti/user/exclusiveCharge/exclusiveChargeRegStatList.do?key=9093" target="_self">일반상담(해외인증 문의)<br/>내역 조회</a></li>
+                    <li><a href="/globalcerti/expertCounseling/applyList.do?key=9093" target="_self">전문심층상담 신청 및 현황</a></li>
+                </ul>
+            </div>
+            
+            
+            <a href="/globalcerti/info/duty.do" target="_self">AI 챗봇 서비스</a>
+            <button type="button">AI 챗봇 서비스</button>
+            <div class="mobileMenu">
+                <ul>
+                    <li><a href="/globalcerti/info/duty.do" target="_self"
+                        onclick="if (window.innerWidth < 1024) { popupWindow('/globalcerti/duty/index.html','duty',800,750); return false; }">관세율 조회</a></li>
+                    <li><a href="/globalcerti/info/cosmetics.do" target="_self"
+                        onclick="if (window.innerWidth < 1024) { popupWindow('https://chatbot.opsnow.com/chatbot-screen/96752f42-4326-4023-bc3e-e0bd6ab6f3b0','cosmetics',600,700); return false; }">화장품 인증정보</a></li>
+                </ul>
+            </div>
+            <a href="/globalcerti/fraudreport/agree.do" target="_self">부정신고</a>
+            <button type="button">부정신고</button>
+            <div class="mobileMenu">
+                <ul>
+                    <li><a href="/globalcerti/fraudreport/agree.do" target="_self">신고하기</a></li>
+                    <li><a href="/globalcerti/fraudreport/agree.do" target="_self">신고현황</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+    </div>
+</header>
+<!-- //header -->
+<!--// header -->
+
+<style>
+    @media (max-width: 480px) {
+        .recent > section h2 button { letter-spacing: -2px; }
+    }
+</style>
+
+<script type="text/javascript">
+
+    // 공지사항 상세
+	function noticeDetail(noticeId, bizCd){
+		var $form = $("<form></form>");
+	    $form.attr("action", "/globalcerti/notice/noticeDetail.do");
+	    $form.attr("method", "post");
+	    $form.append($('<input/>', {type:'hidden', name:'noticeId', value:noticeId}));
+	    $form.append($('<input/>', {type:'hidden', name:'bizCd', value:bizCd}));
+	    $form.appendTo('body');
+	    $form.submit();
+	}
+
+    // 더보기
+    function more(bizCd) {
+        var $form = $("<form></form>");
+        $form.attr("action", "/globalcerti/notice/noticeList.do");
+        $form.attr("method", "post");
+        $form.append($('<input/>', {type: 'hidden', name: 'bizCd', value: bizCd}));
+        $form.appendTo('body');
+        $form.submit();
+    }
+
+    // 교육신청 상세
+	function eduDetail(eduId){
+        var sessionScopeId = $("#sessionScopeId").val();
+
+        if(sessionScopeId == ''){
+            var url = "/globalcerti/info/eduComApplyDetail.do";
+        }else{
+            var url = "/globalcerti/edu/eduComApplyView.do";
+        }
+
+        var $form = $("<form></form>");
+        $form.attr("action", url);
+        $form.attr("method", "post");
+        $form.append($('<input/>', {type: 'hidden', name: 'eduId', value: eduId}));
+        $form.append($('<input/>', {type: 'hidden', name: 'pageCd', value: 'Y'}));
+        $form.appendTo('body');
+        $form.submit();
+	}
+
+    // 해외규격인증검색 이동
+    function goStandardSearch(continentCd) {
+        var $form = $("<form></form>");
+        $form.attr("action", "/globalcerti/info/standard/standardSearch.do");
+        $form.attr("method", "post");
+        $form.append($('<input/>', {type: 'hidden', name: 'continent', value: continentCd}));
+        $form.appendTo('body');
+        $form.submit();
+    }
+
+</script>
+
+<main class="index">
+    <div class="bgWrap">
+        <div class="mainBanner" style="padding-top: 0px;">
+            
+                <div class="items" aria-hidden="false">
+                    <figure>
+                        <a href="https://www.smes.go.kr/globalcerti/info/ktrInfo.do?key=9093">
+                            <img src="/globalcerti/files/download.link?file=ZGF0YS91cGxvYWQva3RyL2Jhbm5lci9LYWthb1RhbGtfMjAyNjEwMTNfMTgxMzU5MzY1LmpwZ3x8S2FrYW9UYWxrXzIwMjYxMDEzXzE4MTM1OTM2NS5qcGc%3D" alt="image" class="pc"/>
+                            <img src="/globalcerti/files/download.link?file=ZGF0YS91cGxvYWQva3RyL2Jhbm5lci9LYWthb1RhbGtfMjAyNjEwMTNfMTgxMzU5MzY1XzAxLmpwZ3x8S2FrYW9UYWxrXzIwMjYxMDEzXzE4MTM1OTM2NV8wMS5qcGc%3D" alt="image" class="mo"/>
+                        </a>
+                    </figure>
+                </div>
+            
+                <div class="items" aria-hidden="true">
+                    <figure>
+                        <a href="/globalcerti/info/ktrInfo.do?key=9093&tabNum=02">
+                            <img src="/globalcerti/files/download.link?file=ZGF0YS91cGxvYWQva3RyL2Jhbm5lci9LYWthb1RhbGtfMjAyNjA2MTBfMDk1NjAwNzE0XzAxLmpwZ3x8S2FrYW9UYWxrXzIwMjYwNjEwXzA5NTYwMDcxNF8wMS5qcGc%3D" alt="image" class="pc"/>
+                            <img src="/globalcerti/files/download.link?file=ZGF0YS91cGxvYWQva3RyL2Jhbm5lci9LYWthb1RhbGtfMjAyNjA2MTBfMDk1NjAwNzE0LmpwZ3x8S2FrYW9UYWxrXzIwMjYwNjEwXzA5NTYwMDcxNC5qcGc%3D" alt="image" class="mo"/>
+                        </a>
+                    </figure>
+                </div>
+            
+            <nav style="margin-top: -20px;">
+                <button type="button" class="control prev" title="이전"><img src="/globalcerti/images/2026/mainbanner-arrow.svg"></button>
+                <p><strong>1</strong>/2</p>
+                <button type="button" class="pause" title="자동전환/일시정지"></button>
+                <button type="button" class="control next" title="다음"><img src="/globalcerti/images/2026/mainbanner-arrow.svg"></button>
+            </nav>
+        </div>
+        <div class="recent">
+            <div class="title">
+                <h2>공지사항</h2>
+            </div>
+            <section data-selected="true">
+                <header>
+                    <h2><button type="button">지원사업</button></h2>
+                    <a href="#" onclick="more(10); return false;" class="more" title="더보기"></a>
+                </header>
+                <div class="list">
+                    
+                        <a href="#" onclick="noticeDetail('361', '10'); return false;">
+                            <header> [공고문] 2026년 해외규격인증획득지원사업 일반지원 3차 참여기업 모집공고 안내</header>
+                            <span class="date">
+                                
+                                    
+                                        2026.10.
+                                        <strong>13</strong>
+                                    
+                                    
+                                
+                            </span>
+                            
+                                <p>
+
+자세한 내용은 사업소개 페이지 또는 첨부파일을 참고하여 주시기 바랍니다.감사합니다.</p>
+                            
+                        </a>
+                    
+                        <a href="#" onclick="noticeDetail('357', '10'); return false;">
+                            <header>2026년 해외규격인증획득지원사업 일반지원 2차 선정 / 탈락 조회 방법 및 협약제출 일정 안내</header>
+                            <span class="date">
+                                
+                                    
+                                    
+                                        2026.10.01
+                                    
+                                
+                            </span>
+                            
+                        </a>
+                    
+                        <a href="#" onclick="noticeDetail('339', '10'); return false;">
+                            <header>`26년 해외규격인증획득(추경) 추가지원사업 FAQ (`26.07.22.)</header>
+                            <span class="date">
+                                
+                                    
+                                    
+                                        2026.07.22
+                                    
+                                
+                            </span>
+                            
+                        </a>
+                    
+                        <a href="#" onclick="noticeDetail('333', '10'); return false;">
+                            <header>[공고문] 2026년 의료기기·무선통신기기 사이버보안(미국,유럽) 규제 대응 지원사업 참여기업 추가 모집 안내</header>
+                            <span class="date">
+                                
+                                    
+                                    
+                                        2026.07.14
+                                    
+                                
+                            </span>
+                            
+                        </a>
+                    
+                        <a href="#" onclick="noticeDetail('332', '10'); return false;">
+                            <header>[공고문] 2026년 해외규격인증획득지원사업 일반지원 2차 참여기업 모집공고 안내</header>
+                            <span class="date">
+                                
+                                    
+                                    
+                                        2026.07.14
+                                    
+                                
+                            </span>
+                            
+                        </a>
+                    
+                </div>
+            </section>
+            <section data-selected="false">
+                <header>
+                    <h2><button type="button">컨설팅기관</button></h2>
+                    <a href="#" onclick="more(20); return false;" class="more" title="더보기"></a>
+                </header>
+                <div class="list">
+                    
+                        <a href="#" onclick="noticeDetail('347', '20'); return false;">
+                            <header>해외규격인증획득지원사업 컨설팅기관 모집 및 관리 개정전문(`26.08.)</header>
+                            <span class="date">
+                                
+                                    
+                                        2026.08.
+                                        <strong>25</strong>
+                                    
+                                    
+                                
+                            </span>
+                            
+                                <p></p>
+                            
+                        </a>
+                    
+                        <a href="#" onclick="noticeDetail('342', '20'); return false;">
+                            <header>`26년 해외규격인증획득지원사업 PPWR 인증 분야 컨설팅 기관 모집</header>
+                            <span class="date">
+                                
+                                    
+                                    
+                                        2026.08.04
+                                    
+                                
+                            </span>
+                            
+                        </a>
+                    
+                        <a href="#" onclick="noticeDetail('341', '20'); return false;">
+                            <header>해외규격인증획득지원사업 컨설팅기관 모집 및 관리 개정전문(`26.07.)</header>
+                            <span class="date">
+                                
+                                    
+                                    
+                                        2026.08.04
+                                    
+                                
+                            </span>
+                            
+                        </a>
+                    
+                        <a href="#" onclick="noticeDetail('221', '20'); return false;">
+                            <header>'25년 컨설팅기관 실태점검 공지</header>
+                            <span class="date">
+                                
+                                    
+                                    
+                                        2025.08.11
+                                    
+                                
+                            </span>
+                            
+                        </a>
+                    
+                        <a href="#" onclick="noticeDetail('195', '20'); return false;">
+                            <header>해외규격인증획득지원사업 컨설팅기관 모집 및 관리 개정전문('25.05.)</header>
+                            <span class="date">
+                                
+                                    
+                                    
+                                        2025.05.19
+                                    
+                                
+                            </span>
+                            
+                        </a>
+                    
+                </div>
+            </section>
+            <section data-selected="false">
+                <header>
+                    <h2><button type="button">교육신청</button></h2>
+                    <a href="#" onclick="more(60); return false;" class="more" title="더보기"></a>
+                </header>
+                <div class="list">
+                    
+                        <a href="#" onclick="noticeDetail('367', '60'); return false;">
+                            <header>[교육] EU 포장재 규제(PPWR) 찾아가는 교육·상담회 일정 안내</header>
+                            <span class="date">
+                                
+                                    
+                                        2026.10.
+                                        <strong>29</strong>
+                                    
+                                    
+                                
+                            </span>
+                            
+                                <p>
+</p>
+                            
+                        </a>
+                    
+                        <a href="#" onclick="noticeDetail('366', '60'); return false;">
+                            <header>[교육] 2026년 해외규격인증획득지원사업 하반기 컨설팅기관/컨설턴트 청렴교육 일정 안내</header>
+                            <span class="date">
+                                
+                                    
+                                    
+                                        2026.10.22
+                                    
+                                
+                            </span>
+                            
+                        </a>
+                    
+                        <a href="#" onclick="noticeDetail('365', '60'); return false;">
+                            <header>[교육] 2026년 해외규격인증획득지원사업 11월 통합수출교육 일정 안내</header>
+                            <span class="date">
+                                
+                                    
+                                    
+                                        2026.10.22
+                                    
+                                
+                            </span>
+                            
+                        </a>
+                    
+                        <a href="#" onclick="noticeDetail('364', '60'); return false;">
+                            <header> [교육] 2026년 해외규격인증획득지원사업 11월 글로벌 환경규제교육 일정 안내</header>
+                            <span class="date">
+                                
+                                    
+                                    
+                                        2026.10.22
+                                    
+                                
+                            </span>
+                            
+                        </a>
+                    
+                        <a href="#" onclick="noticeDetail('359', '60'); return false;">
+                            <header>[수출국다변화] 수출시장 확대 및 수출 인증 교육·기업 맞춤형 상담회 - 중동 및 기타 관련 국가</header>
+                            <span class="date">
+                                
+                                    
+                                    
+                                        2026.10.12
+                                    
+                                
+                            </span>
+                            
+                        </a>
+                    
+                </div>
+            </section>
+            <section data-selected="false">
+                <header>
+                    <h2><button type="button">수출규제전담대응반</button></h2>
+                    <a href="#" onclick="more(50); return false;" class="more" title="더보기"></a>
+                </header>
+                <div class="list">
+                    
+                        <a href="#" onclick="noticeDetail('368', '50'); return false;">
+                            <header>해외수출규제 전담대응반 11월-23호 뉴스레터</header>
+                            <span class="date">
+                                
+                                    
+                                        2026.10.
+                                        <strong>30</strong>
+                                    
+                                    
+                                
+                            </span>
+                            
+                                <p>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</p>
+                            
+                        </a>
+                    
+                        <a href="#" onclick="noticeDetail('363', '50'); return false;">
+                            <header>(채널추가 이벤트) 2026 해외수출규제 전담대응반 AI 챗봇</header>
+                            <span class="date">
+                                
+                                    
+                                    
+                                        2026.10.19
+                                    
+                                
+                            </span>
+                            
+                        </a>
+                    
+                        <a href="#" onclick="noticeDetail('362', '50'); return false;">
+                            <header> 해외수출규제 전담대응반 10월-22호 뉴스레터</header>
+                            <span class="date">
+                                
+                                    
+                                    
+                                        2026.10.15
+                                    
+                                
+                            </span>
+                            
+                        </a>
+                    
+                        <a href="#" onclick="noticeDetail('360', '50'); return false;">
+                            <header>권역별 해외수출규제 오프라인 인증상담회(11/02~11/12)</header>
+                            <span class="date">
+                                
+                                    
+                                    
+                                        2026.10.12
+                                    
+                                
+                            </span>
+                            
+                        </a>
+                    
+                        <a href="#" onclick="noticeDetail('352', '50'); return false;">
+                            <header> 해외수출규제 전담대응반 9월-21호 뉴스레터</header>
+                            <span class="date">
+                                
+                                    
+                                    
+                                        2026.09.04
+                                    
+                                
+                            </span>
+                            
+                        </a>
+                    
+                </div>
+            </section>
+        </div>
+        <div class="map">
+            <header><strong>해외 수출 시</strong> 필요한 인증정보를 확인해보세요!</header>
+            <div class="contents">
+                
+                    
+                        
+                        
+                        
+                        
+                            <a href="#" onclick="goStandardSearch('AF01'); return false;" class="africa">
+                                <dl>
+                                    <dt>아프리카 5개국</dt>
+                                    <dd>6인증</dd>
+                                </dl>
+                            </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                
+                    
+                        
+                        
+                            <a href="#" onclick="goStandardSearch('AS01'); return false;" class="asia">
+                                <dl>
+                                    <dt>동북아시아 7개국</dt>
+                                    <dd>69인증</dd>
+                                </dl>
+                            </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                            <a href="#" onclick="goStandardSearch('AS02'); return false;" class="esasia">
+                                <dl>
+                                    <dt>동남아시아 9개국</dt>
+                                    <dd>45인증</dd>
+                                </dl>
+                            </a>
+                        
+                    
+                
+                    
+                        
+                        
+                        
+                            <a href="#" onclick="goStandardSearch('AS03'); return false;" class="wsasia">
+                                <dl>
+                                    <dt>서남아시아태평양 3개국</dt>
+                                    <dd>24인증</dd>
+                                </dl>
+                            </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                            <a href="#" onclick="goStandardSearch('AS04'); return false;" class="rusia">
+                                <dl>
+                                    <dt>러시아·중앙아시아 4개국</dt>
+                                    <dd>15인증</dd>
+                                </dl>
+                            </a>
+                        
+                        
+                    
+                
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                            <a href="#" onclick="goStandardSearch('AS05'); return false;" class="me">
+                                <dl>
+                                    <dt>중동 10개국</dt>
+                                    <dd>16인증</dd>
+                                </dl>
+                            </a>
+                        
+                        
+                        
+                        
+                    
+                
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                            <a href="#" onclick="goStandardSearch('EU01'); return false;" class="europe">
+                                <dl>
+                                    <dt>유럽 14개국</dt>
+                                    <dd>89인증</dd>
+                                </dl>
+                            </a>
+                        
+                        
+                        
+                    
+                
+                    
+                        
+                            <a href="#" onclick="goStandardSearch('IT01'); return false;" class="all">
+                                <dl>
+                                    <dt>국제</dt>
+                                    <dd>111인증</dd>
+                                </dl>
+                            </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                
+                    
+                        
+                        
+                        
+                        
+                        
+                            <a href="#" onclick="goStandardSearch('NA01'); return false;" class="noram">
+                                <dl>
+                                    <dt>북미 3개국</dt>
+                                    <dd>71인증</dd>
+                                </dl>
+                            </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+                            <a href="#" onclick="goStandardSearch('SA01'); return false;" class="latam">
+                                <dl>
+                                    <dt>중남미 6개국</dt>
+                                    <dd>19인증</dd>
+                                </dl>
+                            </a>
+                        
+                        
+                        
+                        
+                        
+                    
+                
+                <img src="/globalcerti/images/2026/map-afreeca.svg">
+                <img src="/globalcerti/images/2026/map-enasia.svg">
+                <img src="/globalcerti/images/2026/map-esasia.svg">
+                <img src="/globalcerti/images/2026/map-europe.svg">
+                <img src="/globalcerti/images/2026/map-latam.svg">
+                <img src="/globalcerti/images/2026/map-middleeast.svg">
+                <img src="/globalcerti/images/2026/map-noram.svg">
+                <img src="/globalcerti/images/2026/map-rusia.svg">
+                <img src="/globalcerti/images/2026/map-wsasia.svg">
+            </div>
+        </div>
+    </div>
+    <section class="education">
+        <input type="hidden" name="sessionScopeId" id="sessionScopeId" value="" />
+        <!-- 2025.11.27 수정 -->
+        <header>
+            <h2>교육신청</h2>
+            <div class="control-box">                
+                <a href="/globalcerti/info/eduList.do" class="more" title="더보기"></a>
+                <div class="slide-control">
+                    <button type="button" class="prev control" title="이전"></button>
+                    <button type="button" class="play" title="자동전환"></button>
+                    <button type="button" class="pause" title="일시정지"></button>
+                    <button type="button" class="next control" title="다음"></button>
+                </div>
+            </div>            
+        </header>
+        <!-- 2025.11.27 수정 끝 -->
+        <div class="list">
+            
+                <a href="#" onclick="eduDetail('644'); return false;">
+                    <article>
+                        <header>
+                            <span class="region">ICR 평생교육원 4층 강의장D</span>
+                            [서울] EU포장재 및 포장 폐기물 규정(PPWR) 대응 실무-의료기기 관련 사례 중심 환경교육
+                        </header>
+                        <dl>
+                            <dt>교육기간</dt>
+                            <dd>
+                                
+                                
+                                    2026-11-17
+                                    &nbsp;~&nbsp;
+                                    2026-11-18
+                                
+                            </dd>
+                            <dt>신청기간</dt>
+                            <dd>
+                                2026-10-22 00:00
+                                &nbsp;~&nbsp;
+                                2026-11-16 13:00
+                            </dd>
+                        </dl>
+                        <span class="go">신청하기</span>
+                    </article>
+                </a>
+            
+                <a href="#" onclick="eduDetail('654'); return false;">
+                    <article>
+                        <header>
+                            <span class="region">오송, H호텔 세종시티(3층, 비바체)</span>
+                            [충청권] EU 포장재 규제(PPWR) 찾아가는 교육·상담회
+                        </header>
+                        <dl>
+                            <dt>교육기간</dt>
+                            <dd>
+                                
+                                    2026-11-18
+                                
+                                
+                            </dd>
+                            <dt>신청기간</dt>
+                            <dd>
+                                2026-10-30 09:00
+                                &nbsp;~&nbsp;
+                                2026-11-18 09:30
+                            </dd>
+                        </dl>
+                        <span class="go">신청하기</span>
+                    </article>
+                </a>
+            
+                <a href="#" onclick="eduDetail('658'); return false;">
+                    <article>
+                        <header>
+                            <span class="region">윤커뮤니케이션즈 10층 홍익컨퍼런스홀</span>
+                            아시아국가(일본,중국) 및 동남아국가(베트남,인도네시아 등)  전기전자 인증 심화 수출 교육(PSE,CCC,CQC,SNI,CR 등)
+                        </header>
+                        <dl>
+                            <dt>교육기간</dt>
+                            <dd>
+                                
+                                
+                                    2026-11-18
+                                    &nbsp;~&nbsp;
+                                    2026-11-18
+                                
+                            </dd>
+                            <dt>신청기간</dt>
+                            <dd>
+                                2026-11-02 00:00
+                                &nbsp;~&nbsp;
+                                2026-11-17 13:00
+                            </dd>
+                        </dl>
+                        <span class="go">신청하기</span>
+                    </article>
+                </a>
+            
+                <a href="#" onclick="eduDetail('655'); return false;">
+                    <article>
+                        <header>
+                            <span class="region">부산, 코모도호텔 부산(2층, 희락정)</span>
+                            [경상권] EU 포장재 규제(PPWR) 찾아가는 교육·상담회
+                        </header>
+                        <dl>
+                            <dt>교육기간</dt>
+                            <dd>
+                                
+                                    2026-11-20
+                                
+                                
+                            </dd>
+                            <dt>신청기간</dt>
+                            <dd>
+                                2026-10-30 09:00
+                                &nbsp;~&nbsp;
+                                2026-11-20 09:30
+                            </dd>
+                        </dl>
+                        <span class="go">신청하기</span>
+                    </article>
+                </a>
+            
+                <a href="#" onclick="eduDetail('656'); return false;">
+                    <article>
+                        <header>
+                            <span class="region">수원, 노보텔 수원(2층, 아잘레아홀)</span>
+                            [경기, 인천] EU 포장재 규제(PPWR) 찾아가는 교육·상담회
+                        </header>
+                        <dl>
+                            <dt>교육기간</dt>
+                            <dd>
+                                
+                                    2026-11-23
+                                
+                                
+                            </dd>
+                            <dt>신청기간</dt>
+                            <dd>
+                                2026-10-30 09:00
+                                &nbsp;~&nbsp;
+                                2026-11-23 09:30
+                            </dd>
+                        </dl>
+                        <span class="go">신청하기</span>
+                    </article>
+                </a>
+            
+                <a href="#" onclick="eduDetail('647'); return false;">
+                    <article>
+                        <header>
+                            <span class="region">송도컨벤시아 102+103호</span>
+                            [인천] 유럽 전기전자 인증 절차 및 실무 대응 수출 교육 (CE Marking,LVD,EMC,RED,RoHS)
+                        </header>
+                        <dl>
+                            <dt>교육기간</dt>
+                            <dd>
+                                
+                                
+                                    2026-11-23
+                                    &nbsp;~&nbsp;
+                                    2026-11-23
+                                
+                            </dd>
+                            <dt>신청기간</dt>
+                            <dd>
+                                2026-10-22 00:00
+                                &nbsp;~&nbsp;
+                                2026-11-20 13:00
+                            </dd>
+                        </dl>
+                        <span class="go">신청하기</span>
+                    </article>
+                </a>
+            
+                <a href="#" onclick="eduDetail('645'); return false;">
+                    <article>
+                        <header>
+                            <span class="region">KTR 과천 본관동 1층 동해홀</span>
+                            [경기남부] ESPR(에코디자인 규정) 및 DPP(디지털 제품 여권)규제 대응 교육
+                        </header>
+                        <dl>
+                            <dt>교육기간</dt>
+                            <dd>
+                                
+                                
+                                    2026-11-24
+                                    &nbsp;~&nbsp;
+                                    2026-11-25
+                                
+                            </dd>
+                            <dt>신청기간</dt>
+                            <dd>
+                                2026-10-22 00:00
+                                &nbsp;~&nbsp;
+                                2026-11-23 13:00
+                            </dd>
+                        </dl>
+                        <span class="go">신청하기</span>
+                    </article>
+                </a>
+            
+                <a href="#" onclick="eduDetail('657'); return false;">
+                    <article>
+                        <header>
+                            <span class="region">서울, 더 링크 서울(2층, 링크홀)</span>
+                            [서울, 강원] EU 포장재 규제(PPWR) 찾아가는 교육·상담회
+                        </header>
+                        <dl>
+                            <dt>교육기간</dt>
+                            <dd>
+                                
+                                    2026-11-25
+                                
+                                
+                            </dd>
+                            <dt>신청기간</dt>
+                            <dd>
+                                2026-10-30 09:00
+                                &nbsp;~&nbsp;
+                                2026-11-25 09:30
+                            </dd>
+                        </dl>
+                        <span class="go">신청하기</span>
+                    </article>
+                </a>
+            
+                <a href="#" onclick="eduDetail('651'); return false;">
+                    <article>
+                        <header>
+                            <span class="region">인천지방중소벤처기업청 별관 1층 대강당</span>
+                            [인천] 유럽 의료기기 인허가 전주기 인증 대응 실무자 과정 수출 교육(CE MDR)
+                        </header>
+                        <dl>
+                            <dt>교육기간</dt>
+                            <dd>
+                                
+                                
+                                    2026-11-26
+                                    &nbsp;~&nbsp;
+                                    2026-11-27
+                                
+                            </dd>
+                            <dt>신청기간</dt>
+                            <dd>
+                                2026-10-22 00:00
+                                &nbsp;~&nbsp;
+                                2026-11-25 13:00
+                            </dd>
+                        </dl>
+                        <span class="go">신청하기</span>
+                    </article>
+                </a>
+            
+                <a href="#" onclick="eduDetail('648'); return false;">
+                    <article>
+                        <header>
+                            <span class="region">송도컨벤시아 309호</span>
+                            [인천] 아세안 주요 국가(태국,베트남,인도네시아) 화장품 규제∙제품 신고 실무 수출 교육(Thai FDA,DAV,BPOM)
+                        </header>
+                        <dl>
+                            <dt>교육기간</dt>
+                            <dd>
+                                
+                                
+                                    2026-11-26
+                                    &nbsp;~&nbsp;
+                                    2026-11-26
+                                
+                            </dd>
+                            <dt>신청기간</dt>
+                            <dd>
+                                2026-10-22 00:00
+                                &nbsp;~&nbsp;
+                                2026-11-25 13:00
+                            </dd>
+                        </dl>
+                        <span class="go">신청하기</span>
+                    </article>
+                </a>
+            
+        </div>
+    </section>
+
+
+<!-- 레이어 팝업: 컨테이너 + 리소스 로딩 + 초기화 -->
+<link rel="stylesheet" type="text/css" href="/globalcerti/css/popup-layer.css?v20260526d" />
+
+<!-- jQuery UI (draggable) 필요: 프로젝트에 이미 포함돼 있다면 중복 로딩 금지 -->
+<script src="/globalcerti/js/jquery-ui.min.js"></script>
+<script src="/globalcerti/js/popup-layer.js?v20260721c"></script>
+
+<script>
+    PopupLayer.init({
+        apiUrl: '/globalcerti/api/popup/current.do',
+        maxShow: 5,
+        draggable: true,
+        defaultWidth: 500
+    });
+</script>
+<!-- 중기원패스 전환 팝업 -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>통합회원 로그인</title>
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-gov-dynamic-subset.min.css" />
+
+    <script type="text/javascript">
+		/** 전환 바로가기 */
+		function fn_qimConversion() {
+			location.href = "";
+		}
+		/** 다음에 전환하기(팝업 닫기) */
+		function fn_closeQimConversion() {
+			$("#popup-container").hide();
+		}
+		/** 로그인 바로가기 */
+/*		function fn_onepassLogin() {
+			// location.href = "https://www.smes.go.kr/globalcerti-dev2/oauth2/authorization/smes";
+			location.href = "/globalcerti/oauth2/authorization/smes";
+		}*/
+    </script>
+
+</head>
+<body>
+	
+</body>
+</html>
+<!-- 추가정보 입력 팝업 -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>중소기업 수출규제대응지원센터</title>
+	<meta name="title" content="중소기업 수출규제대응지원센터" />
+	<script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<style>
+	.qim-additional-popup-wrap {
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 99999;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.45);
+		align-items: flex-start;
+		justify-content: center;
+		padding: 40px 20px;
+		box-sizing: border-box;
+		overflow-y: auto;
+	}
+
+	.qim-additional-popup {
+		width: 640px;
+		max-width: 100%;
+		padding: 32px;
+		background: #fff;
+		border-radius: 18px;
+		box-sizing: border-box;
+		box-shadow: 0 8px 30px rgba(0, 0, 0, 0.18);
+		max-height: calc(100vh - 80px);
+		overflow-y: auto;
+	}
+
+    .qim-additional-popup .nice-select {
+        position: relative;
+        z-index: 10;
+    }
+
+    .qim-additional-popup .nice-select.open {
+        z-index: 100001;
+    }
+
+    .qim-additional-popup .nice-select .list {
+        width: 100%;
+        max-height: 180px;
+        overflow-y: auto;
+        z-index: 100002;
+        box-sizing: border-box;
+    }
+
+    .qim-additional-popup .nice-select .option {
+        min-height: 36px;
+        line-height: 36px;
+        font-size: 15px;
+    }
+
+    .qim-email-group .nice-select .list {
+        top: auto;
+        bottom: 100%;
+        margin-top: 0;
+        margin-bottom: 4px;
+    }
+
+    .qim-additional-popup-title {
+        margin-bottom: 10px;
+        font-size: 24px;
+        font-weight: 700;
+        color: #256ef4;
+        letter-spacing: -0.6px;
+    }
+
+    .qim-additional-popup-desc {
+        margin-bottom: 26px;
+        font-size: 15px;
+        line-height: 1.6;
+        color: #666;
+        letter-spacing: -0.4px;
+    }
+
+    .qim-additional-input-row {
+        margin-bottom: 16px;
+    }
+
+    .qim-additional-input-row label {
+        display: block;
+        margin-bottom: 7px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #222;
+        letter-spacing: -0.4px;
+    }
+
+    .qim-additional-input-row input,
+    .qim-additional-input-row select,
+    .qim-additional-input-row .nice-select {
+        height: 46px;
+        line-height: 44px;
+        padding: 0 15px 0 15px;
+        border: 1px solid #ddd !important;
+        border-radius: 7px;
+        box-sizing: border-box;
+        outline: none;
+        background: #fff;
+    }
+
+    .qim-additional-input-row input:focus,
+    .qim-additional-input-row select:focus,
+    .qim-additional-input-row .nice-select.open,
+    .qim-additional-input-row .nice-select:focus {
+        border-color: #256ef4 !important;
+    }
+
+    .qim-additional-input-row input[readonly] {
+        background: #f6f7f8;
+        color: #777;
+    }
+
+    .qim-input-full {
+        width: 100%;
+    }
+
+    .qim-phone-group,
+    .qim-email-group {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .qim-phone-group input,
+    .qim-phone-group select,
+    .qim-phone-group .nice-select {
+        width: 33.333% !important;
+        min-width: 0;
+    }
+
+    .qim-email-id {
+        width: 34%;
+    }
+
+    .qim-email-domain {
+        width: 34%;
+    }
+
+    .qim-email-select,
+    .qim-email-group .nice-select {
+        width: 32% !important;
+        min-width: 0;
+    }
+
+    .qim-separator {
+        flex: 0 0 auto;
+        font-size: 15px;
+        color: #777;
+    }
+
+    .qim-additional-button-area {
+        display: flex;
+        gap: 10px;
+        margin-top: 28px;
+    }
+
+    .qim-btn {
+        width: 50%;
+        height: 48px;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        border: 0;
+        letter-spacing: -0.4px;
+    }
+
+    .qim-btn-close {
+        background: #eef6ff;
+        color: #256ef4;
+        border: 1px solid #b9d8ff;
+    }
+
+    .qim-btn-save {
+        background: #256ef4;
+        color: #fff;
+    }
+
+    @media screen and (max-width: 640px) {
+        .qim-additional-popup-wrap {
+            padding: 14px;
+            align-items: flex-start;
+            overflow-y: auto;
+        }
+
+        .qim-additional-popup {
+            width: 100%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 24px 18px;
+            border-radius: 14px;
+            overflow: visible;
+        }
+
+        .qim-additional-popup-title {
+            font-size: 21px;
+        }
+
+        .qim-additional-popup-desc {
+            font-size: 14px;
+        }
+
+        .qim-phone-group {
+            gap: 6px;
+        }
+
+        .qim-email-group {
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .qim-email-id {
+            width: calc(50% - 13px);
+        }
+
+        .qim-email-domain {
+            width: calc(50% - 13px);
+        }
+
+        .qim-email-select,
+        .qim-email-group .nice-select {
+            width: 100% !important;
+        }
+
+        .qim-additional-popup .nice-select .list {
+            max-height: 160px;
+        }
+
+        .qim-additional-button-area {
+            flex-direction: column;
+        }
+
+        .qim-btn {
+            width: 100%;
+        }
+    }
+
+    .qim-password-guide {
+        margin: -6px 0 16px 0;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 1.5;
+        color: #256ef4;
+        letter-spacing: -0.3px;
+    }
+
+	.qim-address-line {
+		margin-top: 8px;
+	}
+
+	.qim-additional-popup-wrap-ent {
+		align-items: flex-start;
+		overflow-y: auto;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	.qim-additional-popup-wrap-ent .qim-additional-popup {
+		width: 640px;
+		max-width: 100%;
+		max-height: calc(100vh - 80px);
+		overflow-y: auto;
+		margin: 0 auto;
+	}
+
+	.qim-zipcode-group {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+	}
+
+	.qim-zipcode-input {
+		width: 160px;
+		height: 46px;
+		padding: 0 13px;
+		border: 1px solid #ddd;
+		border-radius: 7px;
+		box-sizing: border-box;
+		font-size: 14px;
+	}
+
+	.qim-zipcode-btn {
+		width: 110px;
+		height: 46px;
+		border: 1px solid #b9d8ff;
+		border-radius: 7px;
+		background: #eef6ff;
+		color: #256ef4;
+		font-size: 14px;
+		font-weight: 500;
+		cursor: pointer;
+		letter-spacing: -0.4px;
+		box-sizing: border-box;
+	}
+
+	.qim-zipcode-btn:hover {
+		background: #e3f0ff;
+	}
+
+	.qim-zipcode-btn:focus {
+		outline: none;
+		border-color: #256ef4;
+	}
+
+	.qim-id-check-group {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+	}
+
+	.qim-id-input {
+		width: 200px;
+		height: 46px;
+		padding: 0 13px;
+		border: 1px solid #ddd;
+		border-radius: 7px;
+		box-sizing: border-box;
+		font-size: 14px;
+	}
+
+	.qim-id-check-btn {
+		width: 90px;
+		height: 46px;
+		border: 1px solid #b9d8ff;
+		border-radius: 7px;
+		background: #eef6ff;
+		color: #256ef4;
+		font-size: 14px;
+		font-weight: 500;
+		cursor: pointer;
+		box-sizing: border-box;
+	}
+
+	.qim-id-check-btn:hover {
+		background: #e3f0ff;
+	}
+
+	.qim-additional-popup input::placeholder {
+		color: #c7c7c7 !important;
+		opacity: 1 !important;
+	}
+</style>
+
+
+
+
+	<script type="text/javascript">
+
+		// 추가정보 입력 팝업 열기
+		function fn_openQimAdditionalInfo() {
+			$("#qimAdditionalInfoPopup").css("display", "flex");
+		}
+
+		function fn_closeQimAdditionalInfo() {
+			if (confirm("팝업을 닫을 경우 로그아웃됩니다. 로그아웃 하시겠습니까?")) {
+				location.href = "/globalcerti/logout.do";
+			}
+		}
+
+		// 우편번호 검색
+		function addrSearch() {
+			$(this).addrInfo({detpChangFlag:false});
+		}
+
+		// 추가정보 입력값 확인 후 저장
+		function fn_saveQimAdditionalInfo() {
+
+			let regType = $("#regType").val();
+			let loginId = $.trim($("#loginId").val());
+			let password = $.trim($("#password").val());
+			let passwordConfirm = $.trim($("#passwordConfirm").val());
+			let companyName = $.trim($("#companyName").val());
+			let rprsvNm = $.trim($("#rprsvNm").val());
+			let picName = $.trim($("#picName").val());
+			let phone1 = $.trim($("#phone1").val());
+			let phone2 = $.trim($("#phone2").val());
+			let phone3 = $.trim($("#phone3").val());
+			let email1 = $.trim($("#email1").val());
+			let email2 = $.trim($("#email2").val());
+			let mobilePhone1 = $.trim($("#mobilePhone1").val());
+			let mobilePhone2 = $.trim($("#mobilePhone2").val());
+			let mobilePhone3 = $.trim($("#mobilePhone3").val());
+			let picMobilePhone1 = $.trim($("#picMobilePhone1").val());
+			let picMobilePhone2 = $.trim($("#picMobilePhone2").val());
+			let picMobilePhone3 = $.trim($("#picMobilePhone3").val());
+			let zipCode = $.trim($("#postNum").val());
+			let addr1 = $.trim($("#addr1").val());
+			let addr2 = $.trim($("#addr2").val());
+			let passwordReg = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[!@#$%^&*()_\-+=\[\]{};:'",.<>\/?\\|`~])[A-Za-z\d!@#$%^&*()_\-+=\[\]{};:'",.<>\/?\\|`~]{8,20}$/;
+			let loginIdReg = /^[A-Za-z0-9_]{8,12}$/;
+
+			if (loginId === "") {
+				alert("아이디를 입력해 주세요.");
+				$("#loginId").focus();
+				return;
+			}
+
+			if (!loginIdReg.test(loginId)) {
+				alert("아이디는 영문, 숫자 조합 8~12자로 입력해 주세요.");
+				$("#loginId").focus();
+				return;
+			}
+
+			if ($("#loginIdChecked").val() !== "Y" || $("#checkedLoginId").val() !== loginId) {
+				alert("아이디 중복확인을 해 주세요.");
+				$("#loginId").focus();
+				return;
+			}
+
+			if (password === "") {
+				alert("비밀번호를 입력해 주세요.");
+				$("#password").focus();
+				return;
+			}
+
+			if (!passwordReg.test(password)) {
+				alert("비밀번호는 8~12자이며 영문, 숫자, 특수문자를 조합해야 합니다.");
+				$("#password").focus();
+				return;
+			}
+
+			if (passwordConfirm === "") {
+				alert("비밀번호 확인을 입력해 주세요.");
+				$("#passwordConfirm").focus();
+				return;
+			}
+
+			if (password !== passwordConfirm) {
+				alert("비밀번호가 일치하지 않습니다.");
+				$("#passwordConfirm").focus();
+				return;
+			}
+
+			// 기업
+			if (regType === "ENT") {
+				if (companyName === "") {
+					alert("회사명을 입력해 주세요.");
+					$("#companyName").focus();
+					return;
+				}
+
+				if (rprsvNm === "") {
+					alert("대표자명을 입력해 주세요.");
+					$("#rprsvNm").focus();
+					return;
+				}
+
+				if (mobilePhone1 === "") {
+					alert("대표자 휴대폰 앞자리를 선택해 주세요.");
+					$("#mobilePhone1").focus();
+					return;
+				}
+				if (mobilePhone2 === "") {
+					alert("대표자 휴대폰 가운데 자리를 입력해 주세요.");
+					$("#mobilePhone2").focus();
+					return;
+				}
+				if (mobilePhone3 === "") {
+					alert("대표자 휴대폰 마지막 자리를 입력해 주세요.");
+					$("#mobilePhone3").focus();
+					return;
+				}
+				if (!/^[0-9]{4}$/.test(mobilePhone2)) {
+					alert("대표자 휴대폰 가운데 자리는 숫자 4자리로 입력해 주세요.");
+					$("#mobilePhone2").focus();
+					return;
+				}
+				if (!/^[0-9]{4}$/.test(mobilePhone3)) {
+					alert("대표자 휴대폰 마지막 자리는 숫자 4자리로 입력해 주세요.");
+					$("#mobilePhone3").focus();
+					return;
+				}
+				$("#fullMobilePhone").val(mobilePhone1 + "-" + mobilePhone2 + "-" + mobilePhone3);
+
+				if (picName === "") {
+					alert("담당자명을 입력해 주세요.");
+					$("#picName").focus();
+					return;
+				}
+
+				if (picMobilePhone1 === "") {
+					alert("담당자 휴대폰 앞자리를 선택해 주세요.");
+					$("#picMobilePhone1").focus();
+					return;
+				}
+				if (picMobilePhone2 === "") {
+					alert("담당자 휴대폰 가운데 자리를 입력해 주세요.");
+					$("#picMobilePhone2").focus();
+					return;
+				}
+				if (picMobilePhone3 === "") {
+					alert("담당자 휴대폰 마지막 자리를 입력해 주세요.");
+					$("#picMobilePhone3").focus();
+					return;
+				}
+				if (!/^[0-9]{4}$/.test(picMobilePhone2)) {
+					alert("담당자 휴대폰 가운데 자리는 숫자 4자리로 입력해 주세요.");
+					$("#picMobilePhone2").focus();
+					return;
+				}
+				if (!/^[0-9]{4}$/.test(picMobilePhone3)) {
+					alert("담당자 휴대폰 마지막 자리는 숫자 4자리로 입력해 주세요.");
+					$("#picMobilePhone3").focus();
+					return;
+				}
+				$("#fullPicMobilePhone").val(picMobilePhone1 + "-" + picMobilePhone2 + "-" + picMobilePhone3);
+			}
+
+			if (phone1 === "") {
+				alert("전화번호 앞자리를 선택해 주세요.");
+				$("#phone1").focus();
+				return;
+			}
+			if (phone2 === "") {
+				alert("전화번호 가운데 자리를 입력해 주세요.");
+				$("#phone2").focus();
+				return;
+			}
+			if (phone3 === "") {
+				alert("전화번호 마지막 자리를 입력해 주세요.");
+				$("#phone3").focus();
+				return;
+			}
+			$("#fullPhone").val(phone1 + "-" + phone2 + "-" + phone3);
+
+			if (email1 === "") {
+				alert("이메일 아이디를 입력해 주세요.");
+				$("#email1").focus();
+				return;
+			}
+			if (email2 === "") {
+				alert("이메일 도메인을 입력해 주세요.");
+				$("#email2").focus();
+				return;
+			}
+			let fullEmail = email1 + "@" + email2;
+			$("#fullEmail").val(fullEmail);
+
+			// 주소
+			if (zipCode === "") {
+				alert("우편번호를 검색해 주세요.");
+				$("#postNum").focus();
+				return;
+			}
+			if (addr1 === "") {
+				alert("주소를 입력해 주세요.");
+				$("#addr1").focus();
+				return;
+			}
+			if (addr2 === "") {
+				alert("상세주소를 입력해 주세요.");
+				$("#addr2").focus();
+				return;
+			}
+
+			if (!confirm("저장하시겠습니까?")) {
+				return;
+			}
+
+			$("#addInfoForm").submit();
+		}
+
+		// 아이디 중복 확인
+		function fn_checkLoginId() {
+
+			let loginId = $.trim($("#loginId").val());
+			let loginIdReg = /^[A-Za-z0-9_]{8,12}$/;
+
+			if (loginId === "") {
+				alert("아이디를 입력해 주세요.");
+				$("#loginId").focus();
+				return;
+			}
+
+			if (!loginIdReg.test(loginId)) {
+				alert("아이디는 영문, 숫자 조합 8~12자로 입력해 주세요.");
+				$("#loginId").focus();
+				return;
+			}
+
+			$.ajax({
+				url : "/globalcerti/checkLoginId.do",
+				type: "POST",
+				dataType: "json",
+				data: {
+					loginId: loginId
+				},
+				success: function (result) {
+					if (result.available === true) {
+						alert("사용 가능한 아이디입니다.");
+						$("#loginIdChecked").val("Y");
+						$("#checkedLoginId").val(loginId);
+					} else {
+						alert("이미 사용 중인 아이디입니다.");
+						$("#loginIdChecked").val("N");
+						$("#checkedLoginId").val("");
+						$("#loginId").focus();
+					}
+				},
+				error: function () {
+					alert("아이디 중복확인 중 오류가 발생했습니다.");
+				}
+			});
+		}
+
+		$(document).on("change", "#emailSelect", function () {
+			let selectedDomain = $(this).val();
+
+			if (selectedDomain === "") {
+				$("#email2").val("");
+				$("#email2").prop("readonly", false);
+				$("#email2").focus();
+			} else {
+				$("#email2").val(selectedDomain);
+				$("#email2").prop("readonly", true);
+			}
+		});
+
+		// 아이디 입력 제한
+		$(document).on("input", "#loginId", function () {
+			$("#loginIdChecked").val("N");
+			$("#checkedLoginId").val("");
+		});
+
+		// 법인등록번호, 전화번호, 휴대전화번호 숫자만 입력
+		$(document).on("input", "#lawresino, #phone2, #phone3, #mobilePhone2, #mobilePhone3, #picMobilePhone2, #picMobilePhone3", function () {
+			this.value = this.value.replace(/[^0-9]/g, "");
+		});
+
+	</script>
+
+</head>
+<body>
+	<div id="qimAdditionalInfoPopup" class="qim-additional-popup-wrap " style="display:none;">
+		<div class="qim-additional-popup">
+			<div class="qim-additional-popup-title">
+				<strong>추가정보 입력이 필요합니다</strong>
+			</div>
+			<div class="qim-additional-popup-desc">
+				<p>서비스 이용을 계속하려면 우리 사이트에서 사용할 로그인 ID와 비밀번호를 등록해 주세요.</p>
+			</div>
+			<form id="addInfoForm" method="post" action="/globalcerti/updateAddInfo.do">
+				<input type="hidden" id="regType" name="regType" value=""/>
+				<input type="hidden" id="fullPhone" name="phone"/>
+				<input type="hidden" id="fullEmail" name="email"/>
+				<input type="hidden" id="fullMobilePhone" name="mobilePhone"/>
+				<input type="hidden" id="fullPicMobilePhone" name="picMobilePhone"/>
+
+				<!-- 개인/기업 공통 -->
+				<div class="qim-additional-input-row">
+					<label for="loginId">아이디</label>
+					<div class="qim-id-check-group">
+						
+							
+							
+						
+						<button type="button" id="loginIdCheckBtn" class="qim-id-check-btn" onclick="fn_checkLoginId();">중복확인</button>
+					</div>
+				</div>
+				<div class="qim-additional-input-row">
+					<label for="password">비밀번호</label>
+					<input type="password" id="password" name="password" class="qim-input-full" autocomplete="new-password" maxlength="13" placeholder="비밀번호를 입력해 주세요."/>
+				</div>
+				<div class="qim-additional-input-row">
+					<label for="passwordConfirm">비밀번호 확인</label>
+					<input type="password" id="passwordConfirm" name="passwordConfirm" class="qim-input-full" autocomplete="new-password" maxlength="13" placeholder="비밀번호를 다시 입력해 주세요."/>
+				</div>
+				<div class="qim-password-guide">
+					비밀번호는 8~12자이며 영문, 숫자, 특수문자를 조합해야 합니다.
+				</div>
+
+				
+				
+
+				
+				
+				<div class="qim-additional-button-area">
+					<button type="button" class="qim-btn qim-btn-close" onclick="fn_closeQimAdditionalInfo();">닫기</button>
+					<button type="button" class="qim-btn qim-btn-save" onclick="fn_saveQimAdditionalInfo();">저장하고 계속하기</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
+<!-- footer -->
+
+
+
+
+
+
+</main>
+
+
+
+
+
+
+
+<style>
+	.popupOverlay {
+		display: none;
+		position: fixed;
+		top: 0; left: 0;
+		width: 100%; height: 100%;
+		background-color: rgba(0, 0, 0, 0.6);
+		z-index: 10010;
+		font-family: sans-serif;
+	}
+
+	.popupOverlay .popupContent {
+		max-width: 90%;
+		width: 520px;
+		background: #fff;
+		margin: 4% auto;
+		padding: 20px;
+		border-radius: 8px;
+		position: relative;
+		box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+		font-weight: normal;
+	}
+
+	.popupOverlay h3 {
+		margin-top: 0;
+		margin-bottom: 20px;
+		font-size: 20px;
+		font-weight: normal;
+	}
+
+	.popupOverlay p {
+		font-weight: normal;
+	}
+
+	.popupOverlay label {
+		font-weight: bold;
+		display: block;
+		margin-bottom: 6px;
+		font-size: 16px;
+	}
+
+	.popupOverlay input[type="text"] {
+		width: 100%;
+		padding: 8px;
+		margin-bottom: 12px;
+		font-size: 16px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+	}
+
+	.popupOverlay .btn {
+		padding: 8px 12px;
+		cursor: pointer;
+		font-size: 16px;
+		border: none;
+		border-radius: 4px;
+	}
+
+	.popupOverlay .btn-check {
+		background: #eee;
+		margin-bottom: 12px;
+        line-height: 12px;
+	}
+
+	.popupOverlay .btn-submit {
+		background: #007bff;
+		color: white;
+		width: 100%;
+		margin-top: 16px;
+		line-height: 14px;
+	}
+
+	.popupOverlay .btn-close {
+		position: absolute;
+		top: 10px;
+		right: 15px;
+		cursor: pointer;
+		color: #888;
+		font-size: 18px;
+	}
+
+	.popupOverlay .dupResult {
+		font-size: 0.9em;
+		margin: 6px 0;
+	}
+	.popupOverlay .popup-notice-desc {
+		font-size: 17px;
+		color: #222;
+		margin: 8px 0 16px;
+		line-height: 1.6;
+	}
+	.popupOverlay .privacyDetail {
+		display: none;
+		background: #f9f9f9;
+		border: 1px solid #ccc;
+		padding: 12px;
+		margin-top: 6px;
+		font-size: 13px;
+		line-height: 1.5;
+
+		/* 👇 아래 3개 반드시 함께 설정 */
+		max-height: 200px;
+		overflow-y: auto;
+		overflow-x: hidden;
+	}
+	.popupOverlay .privacyDetail.is-open{display: block;}
+	.popupOverlay .bul-dash,
+	.popupOverlay .guide_info {
+		padding-left: 16px;
+		margin: 6px 0;
+	}
+
+	.privacyDetail li, .privacyDetail span {
+		font-size: 15px;
+		color: #200;
+		font-weight: normal;
+	}
+
+	@media (max-width: 480px) {
+		.popupOverlay .popupContent {
+			width: 92%;
+			margin-top: 10%;
+			padding: 16px;
+		}
+	}
+</style>
+<!-- 신청 버튼 -->
+
+<form id="frmOverlay" name="frmOverlay" method="POST">
+</form>
+<!-- 팝업 레이어 -->
+<div id="popupOverlay" class="popupOverlay">
+	<div id="popupContent"  class="popupContent">
+		<span class="btn-close" onclick="closePopup()">×</span>
+		<h3>지원사업 모집공고 알림 신청</h3>
+		<p class="popup-notice-desc">
+			지원사업의 모집이 시작되면 안내 문자를 1회 발송해 드립니다.<br>
+			다음 모집 때도 안내를 받고 싶으시다면 다시 신청해 주시기 바랍니다.
+		</p>
+		<label for="name">이름</label>
+		<input type="text" id="name" name="name" placeholder="이름 입력" value=""/>
+
+		<label for="phone">휴대폰 번호(번호만 입력)</label>
+		<input type="text" id="phone" name="phone" placeholder="예: 01012345678" value="">
+		<button type="button" class="btn btn-check" onclick="checkDuplicate()">중복신청확인</button>
+		<div id="dupResult" class="dupResult" style="margin: 6px 0; font-size: 0.9em;"></div>
+
+		<!-- 개인정보 동의 -->
+		<label>
+			<input type="checkbox" id="agree"> 개인정보 수집 및 이용에 동의합니다.
+		</label>
+		<a href="javascript:void(0);" onclick="togglePrivacyDetail()">[상세보기]</a>
+		<div id="privacyDetail"  class="privacyDetail">
+			<ul class="bul-dash">
+				<li>
+					중소기업 수출규제대응지원센터는 「개인정보보호법」에 따라 아래와 같이 개인정보의 수집. 이용에 관하여 귀하의 동의를 얻고자 합니다. 중소기업 수출규제대응지원센터는 이용자의 사전 동의 없이는 이용자의 개인정보를 함부로 수집하지 않으며, 수집된 정보는 아래와 같이 이용하고 있습니다. 이용자가 제공한 모든 정보는 아래의 목적에 필요한 용도 이외로는 사용되지 않으며 이용 목적이 변경될 시에는 이를 알리고 동의를 구할 것입니다.
+				</li>
+			</ul>
+			<ul class="guide_info">
+				<li>개인정보 이용 및 수집 동의</li>
+				<li>1. 개인정보의 수집 및 이용 목적</li>
+				<li>
+					<ul class="bul-dash">
+						<li>
+							가. 서비스 제공에 관한 업무 이행 – 지원사업 모집공고 알림
+						</li>
+					</ul>
+				</li>
+				<li>2. 수집하는 개인정보의 항목 </li>
+				<li>
+					<ul class="bul-dash">
+						<li>
+							<span class="bullet"> - 필수항목 : 이름, 핸드폰번호</span>
+						</li>
+					</ul>
+				</li>
+				<li>3. 개인정보의 보유 및 이용기간</li>
+				<li>
+					<ul class="bul-dash">
+						<li>
+							중소기업 수출규제대응지원센터 원칙적으로 보유기간의 경과, 개인정보의 수집 및 이용목적의 달성 등 그 개인정보가 불필요하게 되었을 때에는 지체 없이 파기합니다. 다만, 다른 법령에 따라 보존하여야 하는 경우에는 그러하지 않을 수 있습니다. 불필요하게 되었을 때에는 지체 없이 해당 개인정보를 파기합니다.
+						</li>
+					</ul>
+				</li>
+				<li>4. 동의 거부권 및 불이익</li>
+				<li>
+					<ul class="bul-dash">
+						<li>
+							정보주체는 개인정보 수집에 동의를 거부할 권리가 있습니다. 다만, 필수 항목에 대한 동의를 거부할 시 저희가 제공하는 서비스를 이용할 수 없습니다.
+						</li>
+					</ul>
+				</li>
+				<li>5. 14세 미만 아동의 경우 회원가입 및 저희가 제공하는 서비스를 이용할 수 없습니다.</li>
+			</ul>
+		</div>
+
+		<button type="button" class="btn btn-submit" onclick="validationCheck1()">신청하기</button>
+	</div>
+</div>
+
+<script>
+	$(document).ready(function(){
+		$(document).on("click", "#bizAlramApplyNotice", function(){
+			openPopup();
+		});
+	});
+
+	function openPopup() {
+		document.getElementById("popupOverlay").style.display = "block";
+		document.getElementById("name").focus();
+	}
+
+	function closePopup() {
+		document.getElementById("popupOverlay").style.display = "none";
+		clearForm();
+	}
+
+	function clearForm() {
+		document.getElementById("name").value = '';
+		document.getElementById("phone").value = '';
+		document.getElementById("agree").checked = false;
+		document.getElementById("dupResult").innerText = '';
+		document.getElementById("privacyDetail").style.display = 'none';
+		isDuplicateChecked = false;
+		isDuplicateAvailable = false;
+		window.location.reload();
+	}
+
+	function togglePrivacyDetail() {
+		const detail = document.getElementById("privacyDetail");
+		detail.classList.toggle('is-open');
+	}
+
+	let isDuplicateChecked = false;       // 중복 확인 여부
+	let isDuplicateAvailable = false;     // 사용 가능한 번호인지 여부
+
+	function checkDuplicate() {
+		const phoneInput = document.getElementById("phone");
+		const phone = phoneInput.value.trim();
+		const dupResult = document.getElementById("dupResult");
+
+		// 유효성 검사: 공백 여부
+		if (!phone) {
+			dupResult.innerText = "휴대폰 번호를 입력해주세요.";
+			dupResult.style.color = "red";
+			isDuplicateChecked = false;
+			isDuplicateAvailable = false;
+			return;
+		}
+
+		// 형식 검사 (숫자만, 10~11자리)
+		const phoneRegex = /^01[0-9]{8,9}$/;
+		if (!phoneRegex.test(phone)) {
+			dupResult.innerText = "올바른 휴대폰 번호 형식이 아닙니다.";
+			dupResult.style.color = "red";
+			isDuplicateChecked = false;
+			isDuplicateAvailable = false;
+			return;
+		}
+		// jQuery AJAX 사용 (IE 호환)
+		$.ajax({
+			url: '/globalcerti/bizNoticeRequest/check-duplicate.do',
+			type: 'GET',
+			data: { phone: phone },
+			dataType: 'json',
+			success: function(data) {
+				isDuplicateChecked = true;
+				if (data.duplicate === false) {
+					isDuplicateAvailable = true;
+					dupResult.innerText = "사용 가능한 번호입니다.";
+					dupResult.style.color = "green";
+				} else {
+					isDuplicateAvailable = false;
+					dupResult.innerText = "이미 신청된 번호입니다.";
+					dupResult.style.color = "red";
+				}
+			},
+			error: function(xhr, status, error) {
+				dupResult.innerText = "중복 확인 중 오류가 발생했습니다.";
+				dupResult.style.color = "red";
+				isDuplicateChecked = false;
+				isDuplicateAvailable = false;
+			}
+		});
+	}
+
+	function validationCheck1() {
+		const name = document.getElementById("name").value.trim();
+		const phone = document.getElementById("phone").value.trim();
+		const agree = document.getElementById("agree").checked;
+
+		// 1. 이름 유효성
+		if (!name) {
+			alert("이름을 입력해 주세요.");
+			return;
+		}
+
+		// 2. 휴대폰 번호 유효성
+		if (!phone) {
+			alert("휴대폰 번호를 입력해 주세요.");
+			return;
+		}
+
+		// 3. 중복 확인 여부
+		if (!isDuplicateChecked) {
+			alert("휴대폰 번호 중복 확인을 해주세요.");
+			return;
+		}
+
+		// 4. 중복된 번호일 경우
+		if (!isDuplicateAvailable) {
+			alert("이미 신청된 번호입니다.");
+			return;
+		}
+
+		// 5. 개인정보 동의 확인
+		if (!agree) {
+			alert("개인정보 수집 및 이용에 동의해 주세요.");
+			return;
+		}
+
+		// 휴대폰 인증 정보 조회
+		$.ajax({
+			url: '/globalcerti/bizNoticeRequest/mobileAuth.do',
+			type: 'GET',
+			dataType: 'json',
+			// async : false,
+			success: function(data) {
+				window.name = "autoWin";
+				let PCC_window ;
+				PCC_window = window.open('', 'PCCV3Window', 'width=400, height=630, resizable=1, scrollbars=no, status=0, titlebar=0, toolbar=0, left=300, top=200' );
+				if(PCC_window == null){
+					alert(" ※ 윈도우 XP SP2 또는 인터넷 익스플로러 7 사용자일 경우에는 \n    화면 상단에 있는 팝업 차단 알림줄을 클릭하여 팝업을 허용해 주시기 바랍니다. \n\n※ MSN,야후,구글 팝업 차단 툴바가 설치된 경우 팝업허용을 해주시기 바랍니다.");
+				}
+
+				let url = 'https://pcc.siren24.com/pcc_V3/jsp/pcc_V3_j10_v2.jsp';
+				let $frm = $('#frmOverlay');
+				$frm.attr("action", url);
+				$frm.attr("target", "PCCV3Window");
+				/*$frm.append('<input type=hidden name="D_idx" value="J01" />');
+                $frm.append('<input type=hidden name="M_idx" value="1_02" />');*/
+				$frm.append('<input type="hidden" name="id" value="'+data.mobileMap.id+'"/>');				
+				$frm.append('<input type="hidden" name="reqNum" value="'+data.mobileMap.reqNum+'"/>');		
+				$frm.append('<input type="hidden" name="retUrl" value="'+data.mobileMap.retUrl+'"/>');		
+				$frm.append('<input type="hidden" name="reqInfo" value="'+data.mobileMap.reqInfo+'"/>');		
+				$frm.append('<input type="hidden" name="regist" value="'+data.mobileMap.regist+'"/>');
+				$frm.append('<input type="hidden" name="verSion" value="2" />');
+
+				$frm.append('<input type="hidden" name="name" value="'+name+'" />');
+				$frm.append('<input type="hidden" name="phone" value="'+phone+'" />');
+
+				$frm.submit();
+			},
+			error: function(xhr, status, error) {
+				alert("휴대폰 인증 기능 호출에 실패하였습니다.");
+			}
+		});
+	}
+
+	function submitRequest(authName, authPhone, childWin){
+		const name = document.getElementById("name").value.trim();
+		const phone = document.getElementById("phone").value.trim();
+		const agree = document.getElementById("agree").checked;
+
+		if(name != authName) {
+			alert("휴대폰 인증 사용자가 일치하지 않습니다.\n다시 확인해주세요.");
+			window.location.reload();
+			return false;
+		}
+
+		if(phone != authPhone){
+			alert("휴대폰 번호가 일치하지 않습니다.\n다시 확인해주세요.");
+			window.location.reload();
+			return false;
+		}
+
+		// 전송 데이터 구성
+		const requestData = {
+			user_name: name,
+			phone: phone,
+			agree_yn: agree ? "Y" : "N"
+		};
+
+		// jQuery AJAX 전송 (POST)
+		$.ajax({
+			url: '/globalcerti/bizNoticeRequest/submit.do',
+			type: 'POST',
+			contentType: 'application/json; charset=UTF-8',
+			data: JSON.stringify(requestData),
+			dataType: 'json',
+			// async : false,
+			success: function(data) {
+				if (data.success) {
+					childWin.alert("신청이 정상적으로 완료되었습니다.");
+					if (childWin && !childWin.closed) childWin.close();
+					closePopup(); // 폼만 정리하고 리로드는 보류
+				} else {
+					alert("신청 처리 중 오류가 발생했습니다.");
+					if (childWin && !childWin.closed) childWin.close();
+					window.location.reload();
+				}
+			},
+			error: function(xhr, status, error) {
+				alert("신청 요청 중 오류가 발생했습니다.");
+				console.error("에러 상세:", error);
+				window.location.reload();
+			}
+		});
+	}
+</script>
+
+
+
+
+<aside class="quick">
+    <a href="/globalcerti/info/ktrInfo.do?key=9093" target="_self" class="intro"><span>지원</span> <span>사업소개</span></a>
+    <a href="/globalcerti/info/concList.do?key=9093" target="_self" class="institute"><span>컨설팅</span> <span>기관 검색</span></a>
+    <a href="/globalcerti/info/eduList.do?key=9093" target="_self" class="education"><span>교육</span> <span>신청</span></a>
+    <a href="/globalcerti/info/standard/standardSearch.do" target="_self" class="search"><span>인증정보</span> <span>검색</span></a>
+    <a href="/globalcerti/user/exclusiveCharge/exclusiveChargeQnaList.do" target="_self" class="oversea"><span>해외</span> <span>주요인증 문의</span></a>
+    <a href="#" onclick="openPopup(); return false;" target="_self" class="alarm"><span>모집공고</span> <span>알림 신청</span></a>
+</aside>
+
+
+<footer class="common">
+    <ul class="logo">
+        <li><img src="/globalcerti/images/2026/logo-MoSMEnS.svg" alt="중소벤처기업부"></li>
+        <li><img src="/globalcerti/images/2026/logo-ktr.svg" alt="한국화학융합시험연구원" style="padding: 10px 0;"></li>
+    </ul>
+    <dl class="info">
+        <dt>메일문의</dt>
+        <dd>mail@ktr.or.kr</dd>
+        <dt>지원사업안내 / 홈페이지 / 기존 회원 로그인 장애문의</dt>
+        <dd>1522-0141</dd>
+        <dt>통합회원 로그인 장애문의</dt>
+        <dd>(044) 300-0990, (044) 300-0991</dd>
+        <dt>관리기관</dt>
+        <dd>(재)한국화학융합시험연구원 (13810) 경기도 과천시 교육원로98(중앙동) 한국화학융합시험연구원 본관동 410호 수출규제대응사업단</dd>
+    </dl>
+    <div class="rest">
+        <nav class="link">
+            <a href="/globalcerti/useTerms.do" target="_self">이용안내</a>
+            <a href="/globalcerti/privacyPolicy.do" target="_self"><strong>개인정보처리방침</strong></a>
+        </nav>
+        <p class="copyrights">&copy; The Government of the Republic of Korea. All rights reserved.</p>
+    </div>
+</footer>
+<!-- //footer -->
+
+
+    
+    
+    
+    
+        <link rel="stylesheet" type="text/css" href="/globalcerti/smes/api/css/smes-common-menu-1.0.css"/>
+        <link rel="stylesheet" type="text/css" href="/globalcerti/smes/api/css/smes-common-login-1.0.css"/>
+        <script src="/globalcerti/smes/api/scripts/smes-common-menu-1.0.js"></script>
+        <script src="/globalcerti/smes/api/scripts/smes-common-login-1.0.js"></script>
+    
+
+<script>
+    try {
+        if (smes.CommonLogin) {
+            new smes.CommonLogin("").init(
+                '/globalcerti',
+                false,
+                'cp',
+                '/globalcerti/login.do',
+                'GBCT'
+            );
+        }
+    }
+    catch (ex) {
+        console.log(ex.message);
+    }
+</script>
+<!-- // footer -->
+</body>
+</html>

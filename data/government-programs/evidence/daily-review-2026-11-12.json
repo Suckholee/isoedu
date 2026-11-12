@@ -1,0 +1,195 @@
+{
+  "at": "2026-11-12T00:24:01.051544+00:00",
+  "runDateKst": "2026-11-12",
+  "triggeredAt": "2026-11-11T23:58:16.355Z",
+  "stage": "daily-attachment-analysis",
+  "status": "partial-success",
+  "newIds": [
+    "kstartup-179771",
+    "kstartup-179772",
+    "kstartup-179775",
+    "kstartup-179769",
+    "kstartup-179765"
+  ],
+  "newCount": 5,
+  "totalRecords": 182,
+  "details": {
+    "htmlCaptured": 182,
+    "failed": 0
+  },
+  "collectionSources": [
+    {
+      "id": "k-startup",
+      "listingPage": 1,
+      "count": 15,
+      "failure": null
+    },
+    {
+      "id": "mss",
+      "listingPage": 1,
+      "count": 10,
+      "failure": null
+    },
+    {
+      "id": "bizinfo",
+      "scope": "공개 페이지 리디렉션 ?null, 실제 목록 미확인",
+      "failure": "대체 목록 주소 HTTP 404"
+    },
+    {
+      "id": "iris",
+      "scope": "접수중 공개 목록 첫 페이지 ID·제목 10건 기록, 세부 차수 미확인·달력 보류",
+      "evidence": "evidence/iris-first-page-candidates-2026-11-12.json"
+    },
+    {
+      "id": "kotra",
+      "scope": "공개 사업신청 홈 확인, 공고 목록·상세 미수집"
+    }
+  ],
+  "supplementaryEvidence": [
+    "evidence/public-links-20261112.json",
+    "evidence/supplementary-list-check-20261112.json"
+  ],
+  "analyses": [
+    {
+      "id": "kstartup-179771",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179771",
+      "status": "partial",
+      "newAttachmentReviews": 2,
+      "analysisFile": "analyses/kstartup-179771.json",
+      "unresolved": [
+        "이벤터스 공개 페이지에서 무료·모집중·동일 마감 확인. 동적 티켓 신청 문항 및 필수 동의 미확인."
+      ]
+    },
+    {
+      "id": "kstartup-179772",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179772",
+      "status": "partial",
+      "newAttachmentReviews": 1,
+      "analysisFile": "analyses/kstartup-179772.json",
+      "unresolved": [
+        "공고 PDF 2쪽 선발 발표 11/25, 5쪽 추진일정 결과 통보 11/26으로 차이. 공식 페이지에도 별도 정정 없음.",
+        "진흥원 게시물 내부 소제목에 별개 홍보 콘텐츠 제작 교육 문구 잔존. 게시물 제목·공고번호·첨부·본문 모집명으로 캐릭터 캠프 식별.",
+        "진흥원 첨부 응답은 PDF 대신 403 Forbidden HTML을 반환했습니다. K-Startup 공고 PDF 5쪽은 열람했으며 진흥원 사본 비교는 재시도 필요."
+      ]
+    },
+    {
+      "id": "kstartup-179775",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179775",
+      "status": "partial",
+      "newAttachmentReviews": 2,
+      "analysisFile": "analyses/kstartup-179775.json",
+      "unresolved": [
+        "K-Startup 본문 교육 일시 11/4는 동일 본문 세션별 11/30·12/1과 충돌. 협회 공식 포스터 및 HWP 교육 정보의 11/30~12/1을 행사 기준으로 기록.",
+        "HWP 추출본의 단축링크 문자열이 공식 공지/상세의 실제 공개 신청 링크와 달라, 실제 입력은 협회 공지의 검증된 폼을 기준으로 기록. HWP 내 링크 원형/별도 경로 미확인."
+      ]
+    },
+    {
+      "id": "kstartup-179769",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179769",
+      "status": "partial",
+      "newAttachmentReviews": 2,
+      "analysisFile": "analyses/kstartup-179769.json",
+      "unresolved": [
+        "공식 신청서 https://forms.gle/QnDxFp1p3BAmkMeF8 HTTP 401. 필수 문항·추가 증빙·동의 안내 재시도 필요."
+      ]
+    },
+    {
+      "id": "kstartup-179765",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179765",
+      "status": "partial",
+      "newAttachmentReviews": 3,
+      "analysisFile": "analyses/kstartup-179765.json",
+      "unresolved": [
+        "K-Startup 시작 11/11 13:00, 공덕 PRJ007690 11/4 09:00으로 차이. 양쪽 마감 11/17 23:59 일치.",
+        "실제 신청서 https://forms.gle/GWG9hTDADAYtkqQh6 HTTP 401. 문항·파일 제출 방식·조건부 서류 재시도 필요."
+      ]
+    },
+    {
+      "id": "kstartup-179533",
+      "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179533",
+      "status": "partial",
+      "newAttachmentReviews": 0,
+      "analysisFile": "analyses/kstartup-179533.json",
+      "unresolved": [
+        "K-Startup 전체 행사 종료 17:30과 포스터 세부 종료 17:20 차이.",
+        "폼에 밋업 10/30 마감이 표시되나 1:1 신청 분기 선택지가 잔존. 참관과 밋업의 접수 일정을 별도 기록."
+      ]
+    }
+  ],
+  "newAttachmentReviews": 10,
+  "officialCollectionAttachmentDownloads": 19,
+  "supplementaryAttachmentDownloads": 1,
+  "attachmentDownloadFailures": [
+    {
+      "programId": "kstartup-179772",
+      "url": "https://www.jcon.or.kr/board/files/download.php?nttId=4694&bbsId=BBSMSTR_000000000001&fileSn=1",
+      "reason": "403 HTML returned instead of PDF; K-Startup copy reviewed"
+    }
+  ],
+  "applicationChecks": [
+    "evidence/application-extra-check-20261112.json",
+    "evidence/application-final-check-20261112.json",
+    "evidence/application-recheck-20261112.json",
+    "evidence/application-urgent-20261112.json"
+  ],
+  "hashRechecks": [
+    {
+      "programId": "kstartup-179533",
+      "files": 2,
+      "sameHashes": 2,
+      "manifest": "evidence/kstartup-179533/attachment-check-2026-11-12.json"
+    },
+    {
+      "programId": "kstartup-179746",
+      "files": 2,
+      "sameHashes": 2,
+      "manifest": "evidence/kstartup-179746/attachment-check-2026-11-12.json"
+    },
+    {
+      "programId": "kstartup-179760",
+      "files": 2,
+      "sameHashes": 2,
+      "manifest": "evidence/kstartup-179760/attachment-check-2026-11-12.json"
+    },
+    {
+      "programId": "kstartup-179766",
+      "files": 2,
+      "sameHashes": 2,
+      "manifest": "evidence/kstartup-179766/attachment-check-2026-11-12.json"
+    },
+    {
+      "programId": "mss-1072312",
+      "files": 2,
+      "sameHashes": 2,
+      "manifest": "evidence/mss-1072312/attachment-check-2026-11-12.json"
+    }
+  ],
+  "hashChanges": 0,
+  "queue": {
+    "counts": {
+      "partial": 131,
+      "pending": 50,
+      "complete": 1
+    },
+    "remaining": 181,
+    "retryAt": "2026-11-13T09:00:00+09:00"
+  },
+  "apiValidation": "evidence/api-validation-2026-11-12.json",
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programIds": [
+      "kstartup-179771",
+      "kstartup-179772",
+      "kstartup-179775",
+      "kstartup-179769",
+      "kstartup-179765",
+      "kstartup-179533"
+    ],
+    "companyEligibilityEvaluated": false
+  }
+}

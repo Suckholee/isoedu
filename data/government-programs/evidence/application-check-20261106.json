@@ -1,0 +1,65 @@
+[
+  {
+    "id": "179723",
+    "url": "https://www.sba.seoul.kr/Pages/BusinessApply/PostingDetail.aspx?p=0&mid=4e62240d-abd2-f111-b404-d4f5ef4a1e33",
+    "checkedAt": "2026-11-06T01:19:27.311001+00:00",
+    "status": 200,
+    "finalUrl": "https://www.sba.seoul.kr/Pages/BusinessApply/PostingDetail.aspx?p=0&mid=4e62240d-abd2-f111-b404-d4f5ef4a1e33",
+    "evidence": "179723-publiccheck-20261106.html",
+    "bytes": 274712
+  },
+  {
+    "id": "179737",
+    "url": "https://forms.gle/kJRtMspksUWjgtus7",
+    "checkedAt": "2026-11-06T01:19:27.311362+00:00",
+    "status": 200,
+    "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdVr6Xh9HqE6I6nq3cyJ7F6LCDBF5LFnnwmorBS2K4izp33tw/viewform?usp=send_form",
+    "evidence": "179737-publiccheck-20261106.html",
+    "bytes": 98030
+  },
+  {
+    "id": "179739",
+    "url": "https://forms.gle/ryHx22aymGc9yFUL8",
+    "checkedAt": "2026-11-06T01:19:27.311878+00:00",
+    "status": 200,
+    "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdb8HiDmir9bFlbF7XP0TZ9PBC7ia_Qsi-YzgQYrBLdqvHXKA/viewform?usp=send_form",
+    "evidence": "179739-publiccheck-20261106.html",
+    "bytes": 110824
+  },
+  {
+    "id": "179737-files",
+    "url": "https://drive.google.com/drive/folders/1CLEpC71-DzamiJvG8ibA3IIcaEIEQJDK?usp=drive_link",
+    "checkedAt": "2026-11-06T01:19:27.312012+00:00",
+    "status": 200,
+    "finalUrl": "https://drive.google.com/drive/folders/1CLEpC71-DzamiJvG8ibA3IIcaEIEQJDK?usp=drive_link",
+    "evidence": "179737-files-publiccheck-20261106.html",
+    "bytes": 313656
+  },
+  {
+    "id": "179739-files",
+    "url": "https://drive.google.com/drive/folders/1ERtLhyimt7pbazvQ5voLkPRuK0PqyS36?usp=drive_link",
+    "checkedAt": "2026-11-06T01:19:27.312127+00:00",
+    "status": 200,
+    "finalUrl": "https://drive.google.com/drive/folders/1ERtLhyimt7pbazvQ5voLkPRuK0PqyS36?usp=drive_link",
+    "evidence": "179739-files-publiccheck-20261106.html",
+    "bytes": 313360
+  },
+  {
+    "id": "179703",
+    "url": "https://mplus.startup-plus.kr/project/PRJ007682",
+    "checkedAt": "2026-11-06T01:19:27.312237+00:00",
+    "status": 200,
+    "finalUrl": "https://mplus.startup-plus.kr/project/PRJ007682",
+    "evidence": "179703-publiccheck-20261106.html",
+    "bytes": 32957
+  },
+  {
+    "id": "179642",
+    "url": "https://koicaibs.mlive.kr",
+    "checkedAt": "2026-11-06T01:19:27.312387+00:00",
+    "status": 200,
+    "finalUrl": "https://koicaibs.mlive.kr/regist_1116.php",
+    "evidence": "179642-publiccheck-20261106.html",
+    "bytes": 26226
+  }
+]

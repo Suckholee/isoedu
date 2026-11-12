@@ -1,0 +1,21 @@
+[
+  {
+    "url": "https://www.k-startup.go.kr/afile/fileDownload/Le2Ln",
+    "verifiedAt": "2026-11-01",
+    "status": "downloaded",
+    "sha256": "49f2d27f7b723093df361083f251bb4d184abe8cee0138812bb91447d7a8c23c",
+    "previousHash": null,
+    "changed": false,
+    "bytes": 291176,
+    "format": "PDF",
+    "file": "attachment-01.bin",
+    "contentType": "application/octet-stream;charset=ISO-8859-1",
+    "extraction": "text",
+    "characters": 0,
+    "review": {
+      "at": "2026-11-01T02:30:10.974581+00:00",
+      "method": "visual",
+      "scope": "스캔PDF1쪽전체렌더시각검토·주최안내전문대조"
+    }
+  }
+]

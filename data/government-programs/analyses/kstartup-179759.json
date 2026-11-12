@@ -1,0 +1,213 @@
+{
+  "programId": "kstartup-179759",
+  "title": "소공인 역량강화 아카데미 5기 공고",
+  "reviewStatus": "partial",
+  "status": "첨부 분석·일부 미확인",
+  "analyzedAt": "2026-11-11T02:33:34.647201+00:00",
+  "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179759",
+  "reviewScope": "K-Startup 신청·평가 / 공식 센터 uid244 / 첨부1 HWP 신청서·동의서 / 첨부2 PDF p1–2 모집 및 제출 / 첨부3 PDF p1–4 및 첨부4 PDF p1 홍보",
+  "attachments": [
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1s6o2S6ZZZ_JUg3WhLwHqgRPn3Jyvp0GVtFzN-PI-Dm5SyA",
+      "verifiedAt": "2026-11-11",
+      "status": "downloaded",
+      "sha256": "c4ac2d3130e7356dd985e6e6a174c4adc20a8666dad2f7ee41c860be3763634d",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 53248,
+      "format": "HWP",
+      "file": "attachment-01.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 1507,
+      "review": {
+        "at": "2026-11-11T02:33:34.647201+00:00",
+        "scope": "K-Startup 신청·평가 / 공식 센터 uid244 / 첨부1 HWP 신청서·동의서 / 첨부2 PDF p1–2 모집 및 제출 / 첨부3 PDF p1–4 및 첨부4 PDF p1 홍보",
+        "method": "text/visual scope recorded in reviewScope"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1AtD9VzNO2vqu3py_ASSAg1hibAa5QjwLsmuYBMQLT0b3Vg",
+      "verifiedAt": "2026-11-11",
+      "status": "downloaded",
+      "sha256": "0cd1b56e4c1b10124e657483ef3714d664fb1f918247423622061a8ee4083112",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 148118,
+      "format": "PDF",
+      "file": "attachment-02.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 1552,
+      "review": {
+        "at": "2026-11-11T02:33:34.647201+00:00",
+        "scope": "K-Startup 신청·평가 / 공식 센터 uid244 / 첨부1 HWP 신청서·동의서 / 첨부2 PDF p1–2 모집 및 제출 / 첨부3 PDF p1–4 및 첨부4 PDF p1 홍보",
+        "method": "text/visual scope recorded in reviewScope"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1_r2S3r8zZM8ZIW0KlSoA0Ugf_1BULP0TkxKEGOvo-3nzhQ",
+      "verifiedAt": "2026-11-11",
+      "status": "downloaded",
+      "sha256": "c017b161c77a18356902d6681819c4c8ee730de74638ea5ffb16fba8e6060e16",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 266542,
+      "format": "PDF",
+      "file": "attachment-03.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 1144,
+      "review": {
+        "at": "2026-11-11T02:33:34.647201+00:00",
+        "scope": "K-Startup 신청·평가 / 공식 센터 uid244 / 첨부1 HWP 신청서·동의서 / 첨부2 PDF p1–2 모집 및 제출 / 첨부3 PDF p1–4 및 첨부4 PDF p1 홍보",
+        "method": "text/visual scope recorded in reviewScope"
+      }
+    },
+    {
+      "url": "https://www.k-startup.go.kr/afile/fileDownload/v1Li5bSJqaOtLCOmijQe_9oNNxPZqjX-pyIcYHlGKucnZ12A",
+      "verifiedAt": "2026-11-11",
+      "status": "downloaded",
+      "sha256": "6610e2a7f79380fdfe15771f9d588d0ddb04f7e58250d487ab967d751434baf4",
+      "previousHash": null,
+      "changed": false,
+      "bytes": 158473,
+      "format": "PDF",
+      "file": "attachment-04.bin",
+      "contentType": "application/octet-stream;charset=ISO-8859-1",
+      "extraction": "text",
+      "characters": 719,
+      "review": {
+        "at": "2026-11-11T02:33:34.647201+00:00",
+        "scope": "K-Startup 신청·평가 / 공식 센터 uid244 / 첨부1 HWP 신청서·동의서 / 첨부2 PDF p1–2 모집 및 제출 / 첨부3 PDF p1–4 및 첨부4 PDF p1 홍보",
+        "method": "text/visual scope recorded in reviewScope"
+      }
+    }
+  ],
+  "attachmentContentHashes": {
+    "https://www.k-startup.go.kr/afile/fileDownload/v1s6o2S6ZZZ_JUg3WhLwHqgRPn3Jyvp0GVtFzN-PI-Dm5SyA": "c4ac2d3130e7356dd985e6e6a174c4adc20a8666dad2f7ee41c860be3763634d",
+    "https://www.k-startup.go.kr/afile/fileDownload/v1AtD9VzNO2vqu3py_ASSAg1hibAa5QjwLsmuYBMQLT0b3Vg": "0cd1b56e4c1b10124e657483ef3714d664fb1f918247423622061a8ee4083112",
+    "https://www.k-startup.go.kr/afile/fileDownload/v1_r2S3r8zZM8ZIW0KlSoA0Ugf_1BULP0TkxKEGOvo-3nzhQ": "c017b161c77a18356902d6681819c4c8ee730de74638ea5ffb16fba8e6060e16",
+    "https://www.k-startup.go.kr/afile/fileDownload/v1Li5bSJqaOtLCOmijQe_9oNNxPZqjX-pyIcYHlGKucnZ12A": "6610e2a7f79380fdfe15771f9d588d0ddb04f7e58250d487ab967d751434baf4"
+  },
+  "lastAttachmentHashCheckedAt": "2026-11-11T02:33:34.647201+00:00",
+  "eligibility": {
+    "summary": "서울 소재 가죽·패션 브랜드, 해당 산업 소상공인 및 창업예정자 6명. 제조업 코드 예시 191200·191202·191201.",
+    "companyFields": [
+      "소재지",
+      "품목·업종코드",
+      "사업자등록여부",
+      "기업 형태",
+      "신청자",
+      "교육 참가 가능일"
+    ],
+    "reference": "K-Startup 신청·평가 / 공식 센터 uid244 / 첨부1 HWP 신청서·동의서 / 첨부2 PDF p1–2 모집 및 제출 / 첨부3 PDF p1–4 및 첨부4 PDF p1 홍보"
+  },
+  "exclusions": {
+    "items": [
+      "적합 업종 및 유효한 신청서 심사. 서류 미비·허위는 제외 또는 취소 가능."
+    ],
+    "reference": "K-Startup 신청·평가 / 공식 센터 uid244 / 첨부1 HWP 신청서·동의서 / 첨부2 PDF p1–2 모집 및 제출 / 첨부3 PDF p1–4 및 첨부4 PDF p1 홍보"
+  },
+  "support": {
+    "summary": "사업계획서 교육과 1:1 컨설팅. 11/25·12/2 14~18시, 12/9·12/16 14~17시. 강동구 고덕로108 1층. 금액·비율·수강료 미기재.",
+    "reference": "K-Startup 신청·평가 / 공식 센터 uid244 / 첨부1 HWP 신청서·동의서 / 첨부2 PDF p1–2 모집 및 제출 / 첨부3 PDF p1–4 및 첨부4 PDF p1 홍보"
+  },
+  "period": {
+    "start": "2026-11-06",
+    "end": "2026-11-16",
+    "deadlineTime": "23:59",
+    "timezone": "Asia/Seoul",
+    "reference": "K-Startup 신청·평가 / 공식 센터 uid244 / 첨부1 HWP 신청서·동의서 / 첨부2 PDF p1–2 모집 및 제출 / 첨부3 PDF p1–4 및 첨부4 PDF p1 홍보",
+    "checkedAt": "2026-11-11T02:38:50.665484+00:00",
+    "sourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179759"
+  },
+  "application": {
+    "summary": "신청·동의에 서명 또는 날인 후 PDF로 변환. sfsc.gangdong2@gmail.com 이메일. 제목 [소공인 역량강화 아카데미 : 참가신청서_업체명]. 회신으로 선정 안내.",
+    "reference": "K-Startup 신청·평가 / 공식 센터 uid244 / 첨부1 HWP 신청서·동의서 / 첨부2 PDF p1–2 모집 및 제출 / 첨부3 PDF p1–4 및 첨부4 PDF p1 홍보"
+  },
+  "requiredDocuments": [
+    {
+      "name": "참여신청서 및 개인정보 동의서",
+      "condition": "필수 각 1부, PDF",
+      "reference": "공고 PDF p2 및 HWP 신청·동의"
+    },
+    {
+      "name": "사업자등록증 사본",
+      "condition": "공고상 필수, 창업예정자 별도 문의",
+      "reference": "공고 PDF p2 / 카드뉴스 p4"
+    }
+  ],
+  "businessPlan": {
+    "format": "지정 HWP 참여신청서, PDF 제출. 별도 사업계획서 제출 미기재",
+    "limit": "참여동기 300자 이상, 관심 지원사업 100자 이상",
+    "sections": [
+      {
+        "name": "기업·신청자",
+        "items": [
+          "품목·등록번호·사업자 형태·사업장 주소 및 대표 정보"
+        ],
+        "limit": "참여동기 300자 이상, 관심 지원사업 100자 이상"
+      },
+      {
+        "name": "동기·관심",
+        "items": [
+          "참여동기·관심 사업·기존 신청 현황"
+        ],
+        "limit": "참여동기 300자 이상, 관심 지원사업 100자 이상"
+      },
+      {
+        "name": "동의",
+        "items": [
+          "개인정보 수집·제공 별도 선택, 보유 2년"
+        ],
+        "limit": "참여동기 300자 이상, 관심 지원사업 100자 이상"
+      }
+    ],
+    "reference": "K-Startup 신청·평가 / 공식 센터 uid244 / 첨부1 HWP 신청서·동의서 / 첨부2 PDF p1–2 모집 및 제출 / 첨부3 PDF p1–4 및 첨부4 PDF p1 홍보"
+  },
+  "evaluation": {
+    "summary": "유효 서류 및 대상 적합성 확인 후 선착순. 배점 미기재.",
+    "reference": "K-Startup 신청·평가 / 공식 센터 uid244 / 첨부1 HWP 신청서·동의서 / 첨부2 PDF p1–2 모집 및 제출 / 첨부3 PDF p1–4 및 첨부4 PDF p1 홍보"
+  },
+  "contact": {
+    "name": "서울시 강동가죽제조지원센터 02-6482-7502 전은정 팀장",
+    "reference": "K-Startup 신청·평가 / 공식 센터 uid244 / 첨부1 HWP 신청서·동의서 / 첨부2 PDF p1–2 모집 및 제출 / 첨부3 PDF p1–4 및 첨부4 PDF p1 홍보"
+  },
+  "unresolved": [
+    "상세 11/6 15시·공고문 11/6 공고일 대 카드뉴스·포스터 11/5 모집 시작 충돌. 주관기관 게시 11/6 15:50. 최신 정정 미확인.",
+    "창업예정자의 사업자등록증 대체서류 미명시. 센터 문의 필요."
+  ],
+  "handoff": {
+    "featureIds": [
+      "G01",
+      "S03",
+      "S12",
+      "S13"
+    ],
+    "programId": "kstartup-179759",
+    "companyId": null,
+    "permission": "권한회사프로필확보후근거별검토·현재신청가능확정아님",
+    "steps": [
+      "회사필드/증빙확인",
+      "충돌/미확인해결",
+      "S12양식·S13회사정보로서류/계획작성"
+    ]
+  },
+  "evidence": {
+    "detail": "evidence/kstartup-179759/detail.html",
+    "detailFetchedAt": "2026-11-11T02:27:27.394Z",
+    "attachmentManifest": "evidence/kstartup-179759/attachment-check-2026-11-11.json",
+    "publicChecks": [
+      {
+        "id": "179759",
+        "url": "https://sfsc-gangdong.or.kr/announcement/?uid=244&mod=document&pageid=1",
+        "checkedAt": "2026-11-11T02:29:38.155211+00:00",
+        "status": 200,
+        "finalUrl": "https://sfsc-gangdong.or.kr/announcement/?uid=244&mod=document&pageid=1",
+        "evidence": "179759-publiccheck-20261111.html",
+        "bytes": 429619
+      }
+    ]
+  }
+}
