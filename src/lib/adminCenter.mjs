@@ -2,6 +2,7 @@
 // S01~S04 (회원·기업·소속 권한), 전자발송·알림 규칙(S25·S27·S34), 심사원 풀·CMS·운영(S21·S30~S36), 감사 로그.
 
 export const ADMIN_TABS = Object.freeze([
+  {id:"articles",label:"홈페이지 글 · AI 작성",sub:"S32",description:"공개 글 초안 작성·검토·발행 관리"},
   {
     id: 'members',
     label: '회원 · 계정 관리',

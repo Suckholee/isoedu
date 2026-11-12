@@ -1,4 +1,28 @@
 {
+  "articlePublishing20261112": {
+    "status": "implemented_deployment_verification_pending",
+    "featureIds": [
+      "S02",
+      "S05",
+      "S32"
+    ],
+    "scope": "Naver honest_stone RSS auto-refresh; administrator AI/manual draft editor; reviewed public snapshots and standalone article pages. User-requested S32 extension.",
+    "flow": "S02 active ADMIN -> S32 draft/edit/review/publish -> S05 public landing and /insights/{uuid}. Existing S11-S17 customer documents unchanged.",
+    "dataAndPermissions": "Private id/revision/title/body/category/topic/source_notes/ai_generated. Only title/body/category/ai_generated and publication dates enter public snapshots. ADMIN server+RLS/RPC checks, revision CAS, unpublish preserves draft. No customer company/project/document auto-transfer. UX-001 retained.",
+    "sources": [
+      "https://rss.blog.naver.com/honest_stone.xml",
+      "https://honestone.kr/insights"
+    ],
+    "verification": [
+      "14 article/RBAC/routes tests passed",
+      "Production build passed",
+      "Live RSS 50 records; anonymous admin API 401",
+      "Supabase migration applied successfully",
+      "Existing OpenAI key added as sensitive Vercel production env with explicit user approval; real AI draft generated successfully (992 Korean characters)"
+    ],
+    "limits": "RSS publication delay belongs to Naver. Request-driven 300-second server refresh and visible-page polling. No scheduled AI generation or unreviewed auto-publication.",
+    "productionUrl": "https://isoedu-cyan.vercel.app"
+  },
   "publicInsights20261112": {
     "status": "deployed_and_verified",
     "featureIds": [
@@ -39,7 +63,8 @@
     "limits": "Links and curated title/date metadata only; no full article copying, eligibility claims, official submission or automatic feed synchronization.",
     "sourceCommit": "cbee38b",
     "productionUrl": "https://isoedu-cyan.vercel.app",
-    "deploymentUrl": "https://isoedu-e5mdnfm4t-peter15975345-8667s-projects.vercel.app"
+    "deploymentUrl": "https://isoedu-e5mdnfm4t-peter15975345-8667s-projects.vercel.app",
+    "supersededBy": "articlePublishing20261112"
   },
   "representativePhotos20261112": {
     "status": "deployed_and_verified",

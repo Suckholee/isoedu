@@ -29,6 +29,7 @@ import {
   FileText,
 } from 'lucide-react';
 import ModalLayer from './ui/ModalLayer';
+import ArticleEditor from './ArticleEditor';
 import AuthModal from './AuthModal';
 import Button from './ui/Button';
 import { useAuth } from '../context/AuthContext';
@@ -1328,7 +1329,7 @@ export default function AdminCenterView({
             {ADMIN_TABS.map((tab) => {
               const isActive = activeTab === tab.id;
               const badgeCount =
-                tab.id === 'members'
+                tab.id === 'articles' ? '글' : tab.id === 'members'
                   ? opSummary.totalMembers
                   : tab.id === 'companies'
                   ? opSummary.totalCompanies
@@ -1410,6 +1411,7 @@ export default function AdminCenterView({
         {/* ================================================================== */}
         {/* TAB 1: 회원 · 계정 관리 (Members Directory & Detail Control)         */}
         {/* ================================================================== */}
+        {activeTab === 'articles' && <ArticleEditor/>}
         {activeTab === 'members' && (
           <div className="space-y-4">
             {/* Filter & Action Toolbar */}

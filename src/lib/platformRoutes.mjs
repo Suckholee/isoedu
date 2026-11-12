@@ -11,7 +11,7 @@ export function validPlatformPath(section, detail=[]) {
  if(nav==='drive')return detail.length===0 || (detail.length===1 && ['references','iso'].includes(detail[0]));
  if(nav==='project')return detail.length===1 && Boolean(detail[0]);
  if(nav==='gov_programs')return detail.length===0 || (detail.length===1 && ['calendar','list'].includes(detail[0]));
- if(nav==='admin')return detail.length===0 || (detail.length===1 && ['members','companies','dispatch','operations','audit-logs'].includes(detail[0]));
+ if(nav==='admin')return detail.length===0 || (detail.length===1 && ['members','companies','dispatch','operations','audit-logs','articles'].includes(detail[0]));
  return detail.length===0;
 }
 export function platformHref(nav, currentSearch='', patch={}) {
