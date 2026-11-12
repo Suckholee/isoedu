@@ -1,6 +1,6 @@
 {
   "brandioLanding20261112": {
-    "status": "locally_verified_deployment_pending",
+    "status": "deployed_and_verified",
     "referenceUrl": "https://brandio.co.kr/",
     "featureIds": [
       "S02",
@@ -22,13 +22,17 @@
       "Production build passed; 8 intake/public-program tests passed",
       "1470px desktop and 390px mobile visual review, portrait and concept image load, mobile width equals viewport",
       "Banner selection pauses autoplay; business-plan action opens existing company intake",
-      "Sidebar collapse/expand preserves typed company name; mobile menu opens/closes; mobile intake layout verified"
+      "Sidebar collapse/expand preserves typed company name; mobile menu opens/closes; mobile intake layout verified",
+      "Vercel build/deployment succeeded; production banner, portrait and concept images loaded; 1470px no horizontal overflow. Local screenshot landing-brandio-20261112.jpg."
     ],
     "limits": "Visual refresh only; business-plan/AI entry uses existing government preparation intake, not direct document creation. No production document writes, live AI generation or official submission tested.",
     "assets": [
       "public/instructors/cho-youngbin.png",
       "public/images/honestone/business-plan-concept.png"
-    ]
+    ],
+    "sourceCommit": "c6e9707",
+    "productionUrl": "https://isoedu-cyan.vercel.app",
+    "deploymentUrl": "https://isoedu-ouub219p7-peter15975345-8667s-projects.vercel.app"
   },
   "publicMasthead20261112": {
     "status": "deployed_and_verified",

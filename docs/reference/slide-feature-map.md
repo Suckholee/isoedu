@@ -775,4 +775,4 @@ Source 1fb2e7e deployed to https://isoedu-cyan.vercel.app (https://isoedu-4mk7gx
 
 연결: 공개 홈 → 관심 분야/회사 입력 → S02 로그인 → S03 회사 확인 → S05 준비 업무 → S11~S17 문서. 사업계획서·AI 문서 작성 메뉴는 기존 정부지원 준비 입력으로 연결하며 문서를 즉시 생성하지 않는다. interest/companyName/industry/employees/region, draft.id/ownerId 및 회사/프로젝트/문서 권한을 유지한다. 새 저장소·API·상담 접수 기능은 추가하지 않는다. UX-001: isoedu_sidebar_open 접기 상태, 입력 중 회사 정보, 업무 셸의 회사/문서/필터 상태 유지.
 
-검증: 운영용 빌드 및 기존 입력/공고 테스트8개 통과. 1470px/390px 화면·사진/이미지 로딩·모바일 가로 넘침 없음, 배너 선택/정지, 사업계획서에서 회사 입력 진입, 메뉴 접기/펼치기 후 회사명 유지, 모바일 메뉴 열기/닫기와 입력 배치 확인. 실제 운영 문서 저장·AI 생성·공식 제출은 이번 변경의 검증 범위 밖이다. 운영 배포 대기. feature-registry의 brandioLanding20261112와 동기화.
+검증: 운영용 빌드 및 기존 입력/공고 테스트8개 통과. 1470px/390px 화면·사진/이미지 로딩·모바일 가로 넘침 없음, 배너 선택/정지, 사업계획서에서 회사 입력 진입, 메뉴 접기/펼치기 후 회사명 유지, 모바일 메뉴 열기/닫기와 입력 배치 확인. 실제 운영 문서 저장·AI 생성·공식 제출은 이번 변경의 검증 범위 밖이다. 운영 배포 완료: 소스 c6e9707, https://isoedu-cyan.vercel.app (https://isoedu-ouub219p7-peter15975345-8667s-projects.vercel.app). 운영 배너·대표 사진·콘셉트 이미지 로딩 및 1470px 가로 넘침 없음 확인. 증거 landing-brandio-20261112.jpg (로컬 전용). feature-registry의 brandioLanding20261112와 동기화.
