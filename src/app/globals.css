@@ -324,6 +324,12 @@
 
 /* Detailed document work uses the available canvas instead of stacked page padding. */
 .platform-scroll.platform-document-content { padding: 0; min-height: 0; overflow: hidden; }
+@media(max-width:767px) { .platform-scroll.platform-library-content { padding-inline: 0; } }
+.ppt-layout:has(.platform-library-content) .platform-nav > svg { flex-shrink: 0; }
+.ppt-layout:has(.platform-library-content) .platform-nav > span:first-of-type { word-break: keep-all; }
+@media(max-width:1400px) {
+  .ppt-layout:has(.platform-library-content) .platform-nav > span:nth-of-type(2) { display: none; }
+}
 
 .platform-document-topbar{padding:4px 12px;gap:8px;border-bottom:1px solid #e2e8e5;background:white}
 .platform-document-toolbar-slot{flex:1;min-width:0;order:1}

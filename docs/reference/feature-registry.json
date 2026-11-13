@@ -983,7 +983,10 @@
       ],
       "dependencyBasis": "제안: 원본 기능 내용을 바탕으로 구성한 선행 데이터 의존성. 슬라이드 순서와 구별한다.",
       "codeCandidates": [
-        "src/lib/iso9001Blueprint.js"
+        "src/lib/iso9001Blueprint.js",
+        "src/lib/certification-library/catalog.mjs",
+        "src/app/api/certification-library/route.js",
+        "src/components/CertificationLibrary.jsx"
       ],
       "status": "구현 후보 있음·완료 미검증",
       "specMissing": false,
@@ -1025,7 +1028,16 @@
       "ventureConversation20261105": "공통 ventureConversation20261105 기록: gahoseokho 인터뷰 구조 참고·대화형 AI/반영본/검토 저장·실제 검증.",
       "ventureFormDocument20261105": "ventureFormDocument20261105 공통 기록: 문항별 문서 양식·AI 인터뷰·동일 양식 내보내기.",
       "ventureDetailedFields20261105": "공통 ventureDetailedFields20261105 참조: 카테고리별 행과 내용 배치·세부 칸 저장·Word 일치.",
-      "certificationCuration20261106": "루트 certificationCuration20261106 및 docs/reference/certification-curation.md 참조. 공통 준비 추천 범위, 공식 자격 확정 아님."
+      "certificationCuration20261106": "루트 certificationCuration20261106 및 docs/reference/certification-curation.md 참조. 공통 준비 추천 범위, 공식 자격 확정 아님.",
+      "memberCertificationLibrary20261113": {
+        "relatedFeatures": ["S02", "S07", "S12", "B04"],
+        "scope": "기업회원·컨설턴트 공통 무료 인증 자료실. 국내 10종, 국제·해외 7종의 대상·준비 순서·준비 자료 및 공식 출처를 화면에서 열람. 일부 유형은 기존 어니스톤 준비 체크리스트를 함께 표시한다. 공식 자격 판정·심사·발급, 별도 양식 다운로드 및 AI 연동과 구별한다.",
+        "handoff": "S02 로그인 후 S12 /certification-library 진입. S07·B04 인증 큐레이션에서 guide 인증 ID만 넘겨 해당 매뉴얼을 연다. 회사·프로젝트·문서 데이터 인계나 저장 없음. UX-001 적용.",
+        "access": "서버에서 로그인 확인 후 읽기 전용 응답을 반환한다. 회사 연결·결제 불필요. 익명 열람 차단 및 비공개 캐시. 회사 자료 권한과 공식 기관의 역할 유지.",
+        "uiRefinement": "넓은 화면에서 목록·본문을 분리하고 선택 항목과 단계·서류 목록을 강조한다. 좁은 화면에서는 열람 시 제목·필터 영역을 접고 목록으로 돌아오면 검색 상태를 유지한다. 기존 URL·인계·열람 권한 유지.",
+        "verification": "운영용 빌드·관련 테스트 11개 통과. 비로그인 요청 401 및 HTML 본문 비노출. 로컬 가상 기업·컨설턴트에서 회사 없이 응답 200, 17종 로드, 390px·1280px 검색과 상세 열람, 모바일 목록 복귀 확인. 운영 실계정 미검증.",
+        "status": "로컬 구현 / 운영 배포 전"
+      }
     },
     {
       "id": "S13",

@@ -1,10 +1,11 @@
 'use client';
 import CompanySwitcher from './CompanySwitcher';
-import { ShieldCheck, LayoutDashboard, ClipboardCheck, Files, FilePenLine, CalendarDays, Settings, ChevronLeft, PanelLeftOpen, Landmark, UserCog, Sparkles } from 'lucide-react';
+import { BookOpen, ShieldCheck, LayoutDashboard, ClipboardCheck, Files, FilePenLine, CalendarDays, Settings, ChevronLeft, PanelLeftOpen, Landmark, UserCog, Sparkles } from 'lucide-react';
 
 const items = [
   ['dashboard', '내 업무', LayoutDashboard, ['dashboard']],
   ['business_plan', '사업계획서 만들기', FilePenLine, ['business_plan']],
+  ['certification_library', '인증 자료실', BookOpen, ['certification_library']],
   ['curation', '인증 큐레이션', Sparkles, ['curation']],
   ['compliance', '인증 관리', ClipboardCheck, ['compliance', 'project']],
   ['drive', '거래처 드라이브', Files, ['drive']],
@@ -15,7 +16,7 @@ const items = [
 ];
 
 export default function PlatformSidebar({ enterprise=false, isOpen, onToggle, activeNav, onSelectNav, currentCompany, companies = [], onSelectCompany, onCreateClient, projects = [], onSelectProject, onOpenNewProjectModal }) {
-  const navigationItems=enterprise?items.filter(([id])=>['dashboard','business_plan','curation','compliance','drive','settings'].includes(id)).map(item=>[item[0],{dashboard:'우리 회사 준비',business_plan:'사업계획서 만들기',curation:'인증 큐레이션',compliance:'진행 현황',drive:'회사 문서함',settings:'회사·계정'}[item[0]],...item.slice(2)]):items;
+  const navigationItems=enterprise?items.filter(([id])=>['dashboard','business_plan','certification_library','curation','compliance','drive','settings'].includes(id)).map(item=>[item[0],{dashboard:'우리 회사 준비',business_plan:'사업계획서 만들기',certification_library:'인증 자료실',curation:'인증 큐레이션',compliance:'진행 현황',drive:'회사 문서함',settings:'회사·계정'}[item[0]],...item.slice(2)]):items;
   const isItemActive = (id, group = [id]) => activeNav === id || group.includes(activeNav);
 
   if (!isOpen) return <aside id="platform-navigation" className="platform-sidebar-collapsed" aria-label="접힌 탐색 메뉴">

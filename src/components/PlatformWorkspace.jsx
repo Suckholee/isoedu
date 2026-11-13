@@ -16,6 +16,7 @@ import MyWorkView from './MyWorkView';
 import BusinessPlanEntry from './BusinessPlanEntry';
 import EnterpriseWorkspace from './EnterpriseWorkspace';
 import CertificationCuration from './CertificationCuration';
+import CertificationLibrary from './CertificationLibrary';
 import GrowthIntakeHandoff from './GrowthIntakeHandoff';
 import {useMemberPortal} from '../hooks/useMemberPortal';
 import AgentSchedulesView from './AgentSchedulesView';
@@ -494,7 +495,7 @@ export default function PlatformWorkspace() {
         onSelectNav={setActiveNav}
       />
 
-      {(authError || auditWarning || workspaceError || documentStore.error || (isCloudMode && !user)) && (
+      {activeNav!=='certification_library' && (authError || auditWarning || workspaceError || documentStore.error || (isCloudMode && !user)) && (
         <div role="alert" className="platform-connection-notice">
           {authError || workspaceError || documentStore.error || auditWarning || '클라우드 문서를 보려면 오른쪽 프로필 메뉴에서 로그인해 주세요.'}
         </div>
@@ -506,10 +507,10 @@ export default function PlatformWorkspace() {
           <div className="iso-workspace flex-1 flex flex-col overflow-hidden">
 
             {/* Scrollable View Content Canvas */}
-            <div ref={contentRef} className={`platform-scroll flex-1 overflow-auto ${memberPortal.enterprise&&(parsePreparationPath(pathname)||searchParams.get("prepareProject"))?"platform-document-content":""}`}>
-              {searchParams.get("intake")==="1"&&<GrowthIntakeHandoff companies={(memberPortal.context?.companies||[]).filter(c=>memberPortal.enterprise||clientCompanies.some(client=>client.id===c.id))} currentCompany={currentCompany}/>}
+            <div ref={contentRef} className={`platform-scroll flex-1 overflow-auto ${activeNav==='certification_library'?"platform-library-content":memberPortal.enterprise&&(parsePreparationPath(pathname)||searchParams.get("prepareProject"))?"platform-document-content":""}`}>
+              {activeNav!=='certification_library'&&searchParams.get("intake")==="1"&&<GrowthIntakeHandoff companies={(memberPortal.context?.companies||[]).filter(c=>memberPortal.enterprise||clientCompanies.some(client=>client.id===c.id))} currentCompany={currentCompany}/>}
 
-              {isCloudMode&&user&&(memberPortal.loading||memberPortal.error)?<div className="p-6"><p role={memberPortal.error?'alert':'status'}>{memberPortal.error?'회원 화면을 불러오지 못했습니다. 회사 연결 설정을 확인해 주세요.':'회원·회사 정보를 확인하고 있습니다.'}</p>{memberPortal.error&&<button className="text-blue-700 underline mt-3" onClick={memberPortal.reload}>다시 불러오기</button>}</div>:activeNav==='business_plan'?<BusinessPlanEntry
+              {activeNav==='certification_library'?<CertificationLibrary />:isCloudMode&&user&&(memberPortal.loading||memberPortal.error)?<div className="p-6"><p role={memberPortal.error?'alert':'status'}>{memberPortal.error?'회원 화면을 불러오지 못했습니다. 회사 연결 설정을 확인해 주세요.':'회원·회사 정보를 확인하고 있습니다.'}</p>{memberPortal.error&&<button className="text-blue-700 underline mt-3" onClick={memberPortal.reload}>다시 불러오기</button>}</div>:activeNav==='business_plan'?<BusinessPlanEntry
                 key={accountId}
                 companies={planCompanies}
                 company={planCompany}
