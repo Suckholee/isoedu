@@ -6,6 +6,22 @@ import {validateProgramRubric,criteriaFor} from './visionReview.mjs';
 import {evaluateVisionPage,evaluateVisionDocument,guideVisionReview} from './visionCoach.mjs';
 import {HWP_RENDER_VERSION,usesNativeHwpRenderer} from './hwpRenderVersion.mjs';
 const hash=value=>createHash('sha256').update(typeof value==='string'||Buffer.isBuffer(value)?value:JSON.stringify(value)).digest('hex');
+const MAX_ATTEMPTS_PER_REQUEST=3;
+const MIN_HOURLY_REQUESTS=30;
+function enforceVisionQuota(usage,requestKey,{pageCount,chat=false}){
+  if(usage.filter(item=>item.key===requestKey).length>=MAX_ATTEMPTS_PER_REQUEST){
+    throw new VentureError('같은 분석·대화의 세 번 시도가 끝났습니다. 완료된 평가는 보존됩니다.',429);
+  }
+  // Historical usage stored page/report hashes and chat turn UUIDs in the same list.
+  const cutoff=Date.now()-3600000;
+  const recent=usage.filter(item=>uuid(item.key)===chat&&Date.parse(item.at)>cutoff).length;
+  // Reserve enough requests for every page and the final report, including retries.
+  const limit=chat?MIN_HOURLY_REQUESTS:Math.max(MIN_HOURLY_REQUESTS,(pageCount+1)*MAX_ATTEMPTS_PER_REQUEST);
+  if(recent>=limit){
+    const message=chat?'보완 대화의 시간당 요청 한도에 도달했습니다.':'문서 분석의 시간당 요청 한도에 도달했습니다. 완료된 페이지는 보존됩니다. 잠시 후 이어서 분석해 주세요.';
+    throw new VentureError(message,429);
+  }
+}
 export const rubricKey=row=>hash(row.metadata.sourceCoach?.program||null);
 export const visualKey=row=>hash([row.metadata.sourceUpload.fingerprint,row.metadata.sourceRender?.path||row.metadata.originalPath,...(usesNativeHwpRenderer(row)?[HWP_RENDER_VERSION]:[])]);
 export const pageEvaluationKey=(row,page)=>hash([row.metadata.sourceVision.key,page.id,page.hash,rubricKey(row)]);
@@ -98,7 +114,7 @@ export async function handleVisionAction({body,db,row,user,project,persist,downl
     if(row.updated_at!==body.expectedUpdatedAt)throw new VentureError('자료가 변경됐습니다. 다시 열어 이어서 분석해 주세요.',409);
     if(coach.pending&&Date.now()-Date.parse(coach.pending.at)<120000)throw new VentureError('다른 AI 작업이 진행 중입니다. 완료 후 이어서 분석해 주세요.',409);
     const usage=coach.usage||[];
-    if(usage.filter(u=>u.key===state.key).length>=3||usage.filter(u=>Date.now()-Date.parse(u.at)<3600000).length>=30)throw new VentureError('AI 분석 요청 한도에 도달했습니다. 완료된 페이지는 보존됩니다.',429);
+    enforceVisionQuota(usage,state.key,{pageCount:state.total});
     const evaluations=[];let size=0;
     for(const ref of refs){const bytes=await download(db,ref.path,1000000);size+=bytes.length;if(size>1500000)throw new VentureError('종합 평가 용량을 초과했습니다. 페이지 분석 기록은 보존됩니다.',413);const result=JSON.parse(bytes.toString('utf8'));if(result.key!==ref.key)throw new VentureError('페이지 평가 기록이 변경됐습니다.',409);evaluations.push(result);}
     const pending={key:state.key,at:new Date().toISOString()};
@@ -126,9 +142,9 @@ export async function handleVisionAction({body,db,row,user,project,persist,downl
   if(action==='source-coach-chat'&&coach.proposal&&coach.proposal.content!==body.content)throw new VentureError('앞서 받은 수정안을 적용하거나 보류한 뒤 대화를 이어가세요.',409);
   if(row.updated_at!==body.expectedUpdatedAt)throw new VentureError('자료가 변경됐습니다. 최신 자료에서 다시 실행해 주세요.',409);
   if(action==='source-coach-chat'&&(coach.turns||[]).length>=20)throw new VentureError('문서의 보완 대화 20회에 도달했습니다. 현재 내용을 저장해 주세요.',429);
-  const usage=coach.usage||[],recent=usage.filter(u=>Date.now()-Date.parse(u.at)<3600000);if(recent.length>=30)throw new VentureError('문서당 한 시간에 AI 평가·대화 30회까지 가능합니다.',429);
+  const usage=coach.usage||[];
   const attemptKey=action==='source-page-evaluate'?key:body.turnId;
-  if(usage.filter(u=>u.key===attemptKey).length>=3)throw new VentureError('같은 평가·대화의 세 번 시도가 끝났습니다.',429);
+  enforceVisionQuota(usage,attemptKey,{pageCount:vision.pages.length,chat:action==='source-coach-chat'});
   const pending={key:attemptKey,at:new Date().toISOString()};
   row=await save({...row.metadata,sourceCoach:{...coach,pending,usage:[...usage,pending]}});
   try{

@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import {COMMON_CRITERIA,validateProgramRubric,validatePageEvaluation,pageScoreSummary,applyReviewChanges} from '../src/lib/businessPlans/visionReview.mjs';
-import {handleVisionAction,visualKey} from '../src/lib/businessPlans/visionActions.mjs';
+import {handleVisionAction,pageEvaluationKey,visualKey} from '../src/lib/businessPlans/visionActions.mjs';
 const digest=x=>createHash('sha256').update(x).digest('hex');
 const annotation=()=>({criterionId:'common-problem',box:{x:100,y:120,width:500,height:200},role:'고객 문제 정의',context:'해결책을 설명하기 전 고객 문제를 제시하는 부분',evidence:'고객 인터뷰 예정',issue:'확인된 인터뷰 근거가 없음',suggestion:'대상과 검증 방법을 계획으로 구분해 제시',question:'누구를 대상으로 언제 인터뷰할 계획인가요?'});
 const evaluation=()=>({summary:'시험용 페이지 평가',scores:COMMON_CRITERIA.map((c,i)=>({criterionId:c.id,score:i===0?10:null,reason:i===0?'고객 문제의 근거가 부족함':'이 페이지에서 평가하지 않음'})),annotations:[annotation()]});
@@ -26,9 +26,37 @@ function store(){
   const download=async(_db,path,max)=>{const value=objects.get(path);if(!value||value.length>max)throw Error('not found or too large');return value;};
   const plainUpload=async(_db,path,value)=>objects.set(path,Buffer.from(JSON.stringify(value)));
   const call=body=>handleVisionAction({body,db,row:structuredClone(current),user:{id:'actor'},project,persist,download,plainUpload});
-  return {call,objects,get row(){return current;},set row(value){current=value;},async pages(){const key=visualKey(current);for(let id=1;id<=2;id++){const path=`companies/${company}/${current.id}/vision-pages/${key}/${id}.jpg`;objects.set(path,Buffer.from([255,216,id,255,217]));await call({action:'source-vision-unit',visualKey:key,page:{id,path}});}await assert.rejects(call({action:'source-vision-complete',total:3}));await call({action:'source-vision-complete',total:2});}};
+  return {call,objects,get row(){return current;},set row(value){current=value;},async pages(total=2){const key=visualKey(current);for(let id=1;id<=total;id++){const path=`companies/${company}/${current.id}/vision-pages/${key}/${id}.jpg`;objects.set(path,Buffer.from([255,216,id,255,217]));await call({action:'source-vision-unit',visualKey:key,page:{id,path}});}await assert.rejects(call({action:'source-vision-complete',total:total+1}));await call({action:'source-vision-complete',total});}};
 }
-async function provider(fn){const old=globalThis.fetch,key=process.env.OPENAI_API_KEY;process.env.OPENAI_API_KEY='test-only';const requests=[];globalThis.fetch=async(_url,options)=>{const body=JSON.parse(options.body);requests.push(body);const value=body.text.format.name==='plan_page_review'?evaluation():{reply:'대상을 확인했습니다.',questions:['검증 일정도 알려 주세요.'],changes:[{lineId:1,after:'[계획안] 제조기업 담당자 인터뷰 예정',reason:'사용자 답변으로 대상 보완'}]};return Response.json({status:'completed',model:'test-vision',output:[{content:[{type:'output_text',text:JSON.stringify(value)}]}]});};try{await fn(requests);}finally{globalThis.fetch=old;if(key===undefined)delete process.env.OPENAI_API_KEY;else process.env.OPENAI_API_KEY=key;}}
+async function provider(fn){const old=globalThis.fetch,key=process.env.OPENAI_API_KEY;process.env.OPENAI_API_KEY='test-only';const requests=[];globalThis.fetch=async(_url,options)=>{const body=JSON.parse(options.body);requests.push(body);let value;
+  switch(body.text.format.name){
+  case 'plan_page_review': value=evaluation();break;
+  case 'plan_document_review': value={summary:'전체 논리 연결 평가',scores:COMMON_CRITERIA.map(c=>({criterionId:c.id,score:12,reason:'여러 페이지의 근거를 연결함',pages:[1,2]})),priorities:[{issue:'검증 계획',suggestion:'고객 문제와 검증 지표 연결',question:'측정 방법은?',pages:[1,2]}],visualRecommendations:[]};break;
+  default: value={reply:'대상을 확인했습니다.',questions:['검증 일정도 알려 주세요.'],changes:[{lineId:1,after:'[계획안] 제조기업 담당자 인터뷰 예정',reason:'사용자 답변으로 대상 보완'}]};
+  }
+  return Response.json({status:'completed',model:'test-vision',output:[{content:[{type:'output_text',text:JSON.stringify(value)}]}]});};try{await fn(requests);}finally{globalThis.fetch=old;if(key===undefined)delete process.env.OPENAI_API_KEY;else process.env.OPENAI_API_KEY=key;}}
+
+test('46-page analysis resumes at the old hourly cap, saves a report, and leaves coaching available',()=>provider(async requests=>{
+  const s=store();
+  await s.pages(46);
+  const evaluate=pageId=>s.call({action:'source-page-evaluate',pageId,expectedUpdatedAt:s.row.updated_at});
+  for(let page=1;page<=28;page++)await evaluate(page);
+  const coach=s.row.metadata.sourceCoach;
+  const saved=structuredClone(coach.evaluations);
+  const attempt={key:pageEvaluationKey(s.row,s.row.metadata.sourceVision.pages[28]),at:new Date().toISOString()};
+  coach.usage.push(attempt,attempt);
+  assert.equal(coach.usage.length,30);
+  for(let page=1;page<=46;page++)await evaluate(page);
+  assert.equal(requests.length,46);
+  assert.deepEqual(s.row.metadata.sourceCoach.evaluations.slice(0,28),saved);
+  const report=await s.call({action:'source-document-evaluate',expectedUpdatedAt:s.row.updated_at});
+  assert.equal(report.report.total,46);
+  assert.deepEqual(JSON.parse(requests.at(-1).input[0].content[0].text).pages.map(p=>p.page),Array.from({length:46},(_,i)=>i+1));
+  assert.equal((await s.call({action:'source-document-result'})).report.key,report.report.key);
+  const chat={action:'source-coach-chat',pageId:1,annotationIndex:0,turnId:'40000000-0000-4000-8000-000000000001',expectedUpdatedAt:s.row.updated_at,content:'수동 메모\n고객 인터뷰 예정',message:'제조기업 담당자입니다.'};
+  assert.ok((await s.call(chat)).turn);
+  assert.equal(s.row.content_draft,'기존 저장본');
+}));
 test('vision evaluations read exact page and adjacent images, persist overlays, and keep drafts unchanged until review save',()=>provider(async requests=>{
   const s=store();await assert.rejects(s.call({action:'source-page-evaluate',pageId:1}));await s.pages();
   const result=await s.call({action:'source-page-evaluate',pageId:1,expectedUpdatedAt:s.row.updated_at});assert.equal(result.evaluation.annotations[0].box.x,100);assert.equal(s.row.content_draft,'기존 저장본');

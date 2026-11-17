@@ -1,4 +1,31 @@
 {
+  "businessPlanFullAnalysisQuota20261117": {
+    "relatedIds": [
+      "S02",
+      "S03",
+      "S05",
+      "S11",
+      "S12",
+      "S13",
+      "S14",
+      "S15",
+      "S16",
+      "S17"
+    ],
+    "flow": "회사 및 프로젝트 접근 → 원본 페이지 읽기 → 평가와 종합 보고서 → 보완 대화 및 검토 저장 → 다른 사업 양식과 Word 출력",
+    "data": [
+      "companyId/projectId/sourceId",
+      "sourceVision.key/pages/hash/total",
+      "sourceCoach.usage/evaluations/documents",
+      "sourceReview.revision"
+    ],
+    "permissions": "기존 회사 및 프로젝트 편집·조회 권한과 비공개 저장소를 사용한다. 사용량 및 평가 결과는 문서에 귀속되며 계정별 초안을 보존한다.",
+    "behavior": [
+      "기존 평가가 있으면 원본과 평가 기준이 일치할 때 재사용한다.",
+      "시간당 분석 한도는 최소 30회이며 페이지와 종합 평가 각각 3회 시도를 수용한다. 보완 대화는 별도 집계한다."
+    ],
+    "verification": "46쪽 모의 테스트에서 기존 28쪽을 재사용해 종합 평가 저장·재조회와 보완 대화를 검증했다."
+  },
   "certificationReportLanding20261112": {
     "featureIds": [
       "S02",
