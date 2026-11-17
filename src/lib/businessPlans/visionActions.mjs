@@ -107,7 +107,8 @@ export async function handleVisionAction({body,db,row,user,project,persist,downl
   }
   const page=vision?.pages.find(p=>p.id===(priority?priority.pages[0]:body.pageId));
   if(['source-document-result','source-document-evaluate'].includes(action)){
-    const state=documentEvaluationState(row),{refs,report,...progress}=state;
+    const state=documentEvaluationState(row),{refs,report,...counts}=state;
+    const progress={...counts,completedPageIds:refs.map(ref=>ref.pageId)};
     if(report)return {source:row,progress,report:JSON.parse((await download(db,report.path,1000000)).toString('utf8'))};
     if(action==='source-document-result')return {source:row,progress,report:null};
     if(!state.total||state.completed!==state.total)throw new VentureError('모든 페이지의 이미지 평가가 끝나야 전체 평가를 만들 수 있습니다.',409);

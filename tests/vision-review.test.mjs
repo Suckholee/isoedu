@@ -46,7 +46,10 @@ test('46-page analysis resumes at the old hourly cap, saves a report, and leaves
   const attempt={key:pageEvaluationKey(s.row,s.row.metadata.sourceVision.pages[28]),at:new Date().toISOString()};
   coach.usage.push(attempt,attempt);
   assert.equal(coach.usage.length,30);
-  for(let page=1;page<=46;page++)await evaluate(page);
+  const progress=(await s.call({action:'source-document-result'})).progress;
+  assert.deepEqual(progress.completedPageIds,Array.from({length:28},(_,i)=>i+1));
+  await evaluate(1); // An already saved page is still idempotent if a caller requests it.
+  for(let page=29;page<=46;page++)await evaluate(page);
   assert.equal(requests.length,46);
   assert.deepEqual(s.row.metadata.sourceCoach.evaluations.slice(0,28),saved);
   const report=await s.call({action:'source-document-evaluate',expectedUpdatedAt:s.row.updated_at});
