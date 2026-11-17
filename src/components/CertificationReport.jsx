@@ -51,7 +51,7 @@ export default function CertificationReport({draft}) {
       </div>
       {selected && <div className={styles.reportServiceDetail}>
         <p>{selected[2]}</p>
-        <p>어니스톤 상담 페이지에서 문의 내용을 직접 입력해 주세요. 상담에서 진행 범위와 비용을 확인할 수 있습니다.</p>
+        <p>상담 페이지에서 문의 내용을 직접 입력해 주세요. 상담에서 진행 범위와 비용을 확인할 수 있습니다.</p>
         <a href={CONSULTATION_URL} target="_blank" rel="noopener noreferrer">상담 신청 페이지 열기 <ArrowUpRight size={15}/></a>
       </div>}
     </section>

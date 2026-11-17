@@ -1,3 +1,4 @@
+import {hasCurrentSourceReview} from './sourceReview.mjs';
 export const PLAN_TYPES=[
  {id:'venture',label:'벤처기업확인',pattern:'벤처|혁신성장'},
  {id:'startup',label:'예비·초기 창업패키지',pattern:'예비창업|초기창업|창업과제'},
@@ -15,7 +16,7 @@ export const COMMON_LIBRARY_ID='5edfe9ef-debc-4f85-af8c-c75b9fff89d9';
 export class PlanError extends Error {constructor(message,status=400){super(message);this.status=status;}}
 export const isId=x=>typeof x==='string'&&/^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(x);
 export const inferType=title=>PLAN_TYPES.find(t=>new RegExp(t.pattern,'i').test(title||''))?.id||'other';
-export const isEligibleSource=d=>d.metadata?.sourceImport?.category!=='unassigned'&&!d.metadata?.sourceImport?.excludeFromAi&&!/아이디.*비번|비밀번호/.test(d.title||'');
+export const isEligibleSource=d=>d.metadata?.sourceImport?.category!=='unassigned'&&!d.metadata?.sourceImport?.excludeFromAi&&!/아이디.*비번|비밀번호/.test(d.title||'')&&(d.metadata?.kind!=='venture-source'||hasCurrentSourceReview(d));
 export function sourceOption(d){return {id:d.id,title:d.title,updatedAt:d.updated_at,originalName:d.metadata?.originalName||d.title,originalPath:d.metadata?.originalPath||null,fileSize:d.metadata?.fileSize||0,sha256:d.metadata?.migration?.sha256||null,text:d.content_draft||'',category:d.metadata?.sourceImport?.category||'company-material',type:inferType(d.title)};}
 const bounded=(s,max,name,required=true)=>{if(typeof s!=='string'||s.length>max||required&&!s.trim())throw new PlanError(`${name}을 확인해 주세요. (최대 ${max.toLocaleString()}자)`);return s.trim();};
 export function validateInput(body){

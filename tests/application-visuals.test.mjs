@@ -172,3 +172,40 @@ test('exhausted provider credits are distinguished from a temporary request limi
  const e=await providerError(Response.json({error:{code:'credit_balance_exhausted',type:'insufficient_quota'}},{status:429}));assert.equal(e.status,503);assert.match(e.message,/사용 잔액/);
  const busy=await providerError(Response.json({error:{code:'rate_limit_exceeded'}},{status:429}));assert.equal(busy.status,429);assert.match(busy.message,/잠시 후/);
 });
+
+
+test('reviewed plan is required as exact saved evidence and its revision follows the new application',()=>withKey(async()=>{
+ const {sourceReviewKey}=await import('../src/lib/businessPlans/sourceReview.mjs');
+ function reviewed(m){const row=m.state.rows[1];row.content_draft='[계획안] 검토한 사업계획과 예산 30백만원';row.metadata={kind:'venture-source',sourceUpload:{state:'ready',fingerprint:'original'},sourceAnalysis:{state:'ready',units:[{id:1,outputPath:'read-1'}]}};row.metadata.sourceReview={revision:2,analysisKey:sourceReviewKey(row),reviewedContent:row.content_draft};return row;}
+ const m=mock(),saved=reviewed(m),a=args(m);a.body.sources=[{id:source,updatedAt:at,text:saved.content_draft}];
+ assert((await applicationCatalog(m.db,project)).sources.some(item=>item.id===source));
+ a.generate=async({input})=>{assert.equal(input.sources[0].text,saved.content_draft);return {...output(),provider:{model:'test'}};};
+ const created=(await generateApplication(a)).document;assert.equal(created.metadata.ai.basis.provenance.find(item=>item.id===source).reviewRevision,2);assert.equal(saved.content_draft,'[계획안] 검토한 사업계획과 예산 30백만원');assert.notEqual(created.id,saved.id);
+ for(const mode of ['unsaved','reread','forged','changed-version','unreviewed-edit']){
+  const m=mock(),row=reviewed(m),a=args(m);a.body.sources=[{id:source,updatedAt:at,text:row.content_draft}];
+  if(mode==='unsaved')delete row.metadata.sourceReview;
+  if(mode==='reread')row.metadata.sourceAnalysis.units[0].outputPath='read-2';
+  if(mode==='forged')a.body.sources[0].text='저장하지 않은 매출';
+  if(mode==='changed-version')row.updated_at='changed';
+  if(mode==='unreviewed-edit'){row.content_draft='검토 없이 수정';a.body.sources[0].text=row.content_draft;}
+  await assert.rejects(generateApplication(a));assert.equal(m.state.calls,0);
+  if(['unsaved','reread'].includes(mode))assert(!(await applicationCatalog(m.db,project)).sources.some(item=>item.id===source));
+ }
+}));
+
+test('rejected table references are reconciled in both saved body and output before the document is ready',()=>withKey(async()=>{
+ const m=mock(),a=automaticArgs(m);a.generate=async()=>{const result=output();result.sections[0].content='회사 설명은 유지합니다.\nvisualDrafts의 ‘팀 구성 현황’ 표 참조. 팀원은 [확인 필요]입니다.';return {...result,visualDrafts:[graphic('table',{title:'팀 구성 현황',evidence:'없는 근거',columns:['역할'],rows:[['확인 필요']]})],visualNotes:[],provider:{model:'test'}};};
+ const document=(await generateApplication(a)).document;
+ assert.match(document.content_draft,/작성 필요: 팀 구성 현황/);assert.match(document.content_draft,/회사 설명은 유지합니다/);assert.match(document.content_draft,/팀원은 \[확인 필요\]/);assert.doesNotMatch(document.content_draft,/visualDrafts|표 참조/);
+ assert.equal(document.metadata.ai.visuals.length,0);assert.match(document.metadata.ai.output.sections[0].content,/작성 필요: 팀 구성 현황/);
+}));
+
+test('application retry tolerates JSONB key ordering while still rejecting changed inputs',()=>withKey(async()=>{
+ const reorder=v=>Array.isArray(v)?v.map(reorder):v&&typeof v==='object'?Object.fromEntries(Object.keys(v).reverse().map(k=>[k,reorder(v[k])])):v;
+ const m=mock(),a=automaticArgs(m);a.generate=async()=>{throw Object.assign(Error('connection lost'),{status:502});};
+ await assert.rejects(generateApplication(a),/connection lost/);
+ const stored=m.state.rows.find(r=>r.id===id);stored.metadata.ai.applicationInput=reorder(stored.metadata.ai.applicationInput);
+ a.generate=async()=>({...output(),visualDrafts:allGraphics(),visualNotes:[],provider:{model:'test'}});
+ const result=await generateApplication({...a,body:{...a.body,retry:true}});assert.equal(result.document.metadata.ai.state,'ready');assert.equal(m.state.rows.filter(r=>r.id===id).length,1);
+ await assert.rejects(generateApplication({...a,body:{...a.body,business:'다른 입력',retry:false}}),/다른 문서 또는 다른 입력/);
+}));

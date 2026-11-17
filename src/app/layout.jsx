@@ -2,8 +2,8 @@ import './globals.css';
 import Providers from '../components/Providers';
 
 export const metadata = {
-  title: '어니스톤 | 기업 문서·사업계획서 관리',
-  description: '회사별 구비문서와 사업계획서 작성을 연결하는 어니스톤 플랫폼',
+  title: '써티멘토 | 기업 문서·사업계획서 관리',
+  description: '회사별 구비문서와 사업계획서 작성을 연결하는 써티멘토 플랫폼',
 };
 
 export default function RootLayout({ children }) {

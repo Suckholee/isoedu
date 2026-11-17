@@ -15,3 +15,6 @@
 .workPage .planPanel>section{flex:1;min-height:0;display:flex;flex-direction:column;margin:0;padding:0}
 @media(max-width:1050px){.workPage .workbench{grid-template-columns:170px minmax(0,1fr)}.workPage .documentRail{display:block;border-right:1px solid #e4e7eb;border-bottom:0}.workPage .documentRail button{width:100%;max-width:none}.workPage .railTools{flex-wrap:wrap}.workPage .railTools button{width:auto}}
 @media(max-width:1050px){.workPage .workbench{display:flex;flex-direction:column;overflow:auto}.workPage .documentRail{display:flex;flex-wrap:nowrap;flex-shrink:0;overflow:auto;max-height:52px;border-right:0;border-bottom:1px solid #e4e7eb;padding:4px;gap:4px;align-items:center}.workPage .documentRail p{display:none}.workPage .documentRail>button{width:auto;max-width:200px;white-space:nowrap;margin:0}.workPage .railTools{border:0;flex-wrap:nowrap;padding:0;flex-shrink:0}.workPage .documentRail details{flex-shrink:0}.workPage .planPanel{flex:1;overflow:visible;min-height:100%}}
+
+/* UX-DENSITY-001 */
+.page:not(.workPage){max-width:none;padding:16px 24px}.header{margin-bottom:12px}.header h1{font-size:22px}@media(max-width:700px){.page:not(.workPage){padding:16px}}

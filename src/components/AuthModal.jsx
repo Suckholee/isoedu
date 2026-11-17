@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 
-export default function AuthModal({ isOpen, onClose, initialMode='login', initialCompanyName='', brandName='어니스톤' }) {
+export default function AuthModal({ isOpen, onClose, initialMode='login', initialCompanyName='', brandName='써티멘토' }) {
   const { login, signup, switchDemoRole, isDemoMode } = useAuth();
   const [mode, setMode] = useState('login'); // 'login' | 'signup'
   

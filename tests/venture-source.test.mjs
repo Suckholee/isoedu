@@ -104,3 +104,48 @@ test('JSONB key order does not mark unchanged document fields as an unsaved edit
  const {readDocumentFields,sameDocumentFields}=await import('../src/lib/venture/documentFields.mjs');
  const fromJsonb={application:'unknown',businessNumber:'',companyName:'네오앤피터',representativeName:''};assert(sameDocumentFields(fromJsonb,readDocumentFields({documentFields:fromJsonb})));assert(!sameDocumentFields({...fromJsonb,companyName:'수정'},readDocumentFields({documentFields:fromJsonb})));
 });
+
+
+test('review preserves original evidence, saves versioned corrections, rejects conflicts and invalidates after rereading',async()=>{
+ const {hasCurrentSourceReview}=await import('../src/lib/businessPlans/sourceReview.mjs');
+ const store=storageAdapter(),project={id:ids.project,company_id:ids.company},user={id:'actor'};
+ const outputPath=prefix+'analysis-output/unit-1-1.txt';store.objects.set(outputPath,new Blob([JSON.stringify(output)]));
+ store.rows.push({id:ids.source,company_id:ids.company,title:'기존 계획서.pdf',updated_at:'2026-01-01T00:00:00Z',content_draft:'',file_url:prefix+'original.pdf',metadata:{kind:'venture-source',sourceOrigin:{projectId:ids.project},sourceUpload:{state:'ready',fingerprint:'abc'},sourceAnalysis:{state:'ready',units:[{id:1,location:'1쪽',outputPath,state:'ready'}]}}});
+ const call=body=>handleSourceAction({db:store.db,project,user,body:{sourceId:ids.source,...body}});
+ const preview=await call({action:'source-review-preview'});assert.match(preview.content,/기존 계획서.pdf · 1쪽/);assert.match(preview.content,/90/);assert.equal(store.rows[0].content_draft,'');
+ const save={action:'source-review-save',expectedUpdatedAt:preview.source.updated_at,content:preview.content+'\n[계획안] 고객 인터뷰 2027년 진행',reviewed:true};
+ await assert.rejects(call({...save,reviewed:false}));
+ const first=(await call(save)).source;assert(hasCurrentSourceReview(first));assert.equal(first.metadata.sourceReview.revision,1);assert.equal(first.file_url,prefix+'original.pdf');assert(store.objects.has(outputPath));
+ await assert.rejects(call({...save,content:'오래된 화면'}),e=>e.status===409);
+ const second=(await call({...save,expectedUpdatedAt:first.updated_at,content:first.content_draft+'\n확인한 추가 근거'})).source;
+ assert.equal(second.metadata.sourceReview.revision,2);assert.equal(second.metadata.sourceReview.history[0].content,first.content_draft);
+ const reloaded=await call({action:'source-review-preview'});assert.equal(reloaded.content,second.content_draft);assert.equal(reloaded.stale,false);
+ store.rows[0].metadata.sourceAnalysis.units[0].outputPath=prefix+'analysis-output/unit-1-2.txt';assert(!hasCurrentSourceReview(store.rows[0]));
+ const stale=await call({action:'source-review-preview'});assert.equal(stale.stale,true);assert.equal(stale.content,second.content_draft);
+ store.rows[0].metadata.sourceAnalysis.state='failed';await assert.rejects(call({...save,expectedUpdatedAt:second.updated_at}),e=>e.status===409);
+});
+test('vision-only review saves actor-linked versions and reopens the saved AI proposal without text analysis',async()=>{
+ const {hasCurrentSourceReview}=await import('../src/lib/businessPlans/sourceReview.mjs');
+ const store=storageAdapter(),project={id:ids.project,company_id:ids.company},user={id:'reviewer'};
+ store.rows.push({id:ids.source,company_id:ids.company,title:'페이지 계획서.pdf',updated_at:'2026-01-01T00:00:00Z',content_draft:'',metadata:{kind:'venture-source',sourceOrigin:{projectId:ids.project,actor:'uploader'},sourceUpload:{state:'ready',fingerprint:'abc'},sourceAnalysis:{state:'new',units:[]},sourceVision:{key:'verified-images',prepared:true},sourceCoach:{turns:[{id:'turn1',actor:'speaker',changes:[{before:'예전',after:'검토한 수정안'}]}],proposal:{turnId:'turn1',baseContent:'예전',content:'검토한 수정안'}}}});
+ const call=body=>handleSourceAction({db:store.db,project,user,body:{sourceId:ids.source,...body}});
+ const preview=await call({action:'source-review-preview'});assert.equal(preview.source.metadata.sourceCoach.proposal.content,'검토한 수정안');
+ const first=(await call({action:'source-review-save',expectedUpdatedAt:preview.source.updated_at,content:'검토한 수정안',reviewed:true})).source;
+ assert(hasCurrentSourceReview(first));assert.equal(first.metadata.sourceReview.actor,'reviewer');assert.equal(first.metadata.sourceCoach.turns[0].actor,'speaker');assert.equal(first.metadata.sourceCoach.turns[0].reviewedRevision,1);assert.equal(first.metadata.sourceCoach.turns[0].applied,true);assert.equal(first.metadata.sourceCoach.proposal,null);
+ const second=(await call({action:'source-review-save',expectedUpdatedAt:first.updated_at,content:'두 번째 검토 본문',reviewed:true})).source;
+ assert.equal(second.metadata.sourceReview.history[0].content,'검토한 수정안');assert.equal((await call({action:'source-review-preview'})).content,'두 번째 검토 본문');
+});
+test('autosaved account drafts reopen independently and cannot resurrect after review save',async()=>{
+ const store=storageAdapter(),project={id:ids.project,company_id:ids.company};
+ store.rows.push({id:ids.source,company_id:ids.company,title:'계획서.hwp',updated_at:'2026-01-01T00:00:00Z',content_draft:'',metadata:{kind:'venture-source',sourceOrigin:{projectId:ids.project},sourceUpload:{state:'ready',fingerprint:'abc'},sourceAnalysis:{state:'new',units:[]},sourceVision:{key:'images',prepared:true}}});
+ const call=(body,actor='first')=>handleSourceAction({db:store.db,project,user:{id:actor},body:{sourceId:ids.source,...body}});
+ const request={action:'source-draft-save',requestId:'draft1',expectedDraftVersion:0,content:'수정 중인 본문',message:'아직 보내지 않은 답변',pageId:3,point:1};
+ const saved=await call(request);assert.equal(saved.source.content_draft,'');assert.equal(saved.source.metadata.sourceReview,undefined);
+ const preview=await call({action:'source-review-preview'});assert.equal(preview.actorId,'first');assert.equal(preview.workingDraft.content,request.content);assert.equal(preview.workingDraft.message,request.message);assert.equal(preview.workingDraft.pageId,3);
+ assert.equal((await call({action:'source-review-preview'},'second')).workingDraft,null);
+ await call({...request,requestId:'draft2',content:'다른 계정 본문'},'second');assert.equal((await call({action:'source-review-preview'})).workingDraft.content,request.content);
+ const current=await call({action:'source-review-preview'});const review=await call({action:'source-review-save',expectedUpdatedAt:current.source.updated_at,reviewed:true,content:'검토 완료 본문'});
+ assert.equal(review.source.content_draft,'검토 완료 본문');assert.equal(review.source.metadata.sourceWorkingDrafts.first.cleared,true);assert.equal(review.source.metadata.sourceWorkingDrafts.second.content,'다른 계정 본문');
+ await assert.rejects(call({...request,requestId:'late'}),e=>e.status===409);
+ store.setDeny(true);await assert.rejects(call({action:'source-draft-save',...request}),e=>e.status===404);
+});

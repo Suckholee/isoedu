@@ -4,7 +4,7 @@ import {readSourceUnits} from './sourceReader.mjs';
 import {retrySourceTransfer,sourceTransferMessage} from './sourceTransfer.mjs';
 const digest=async blob=>[...new Uint8Array(await crypto.subtle.digest('SHA-256',await blob.arrayBuffer()))].map(b=>b.toString(16).padStart(2,'0')).join('');
 export async function sourceFingerprint(file){return digest(new Blob([file.name+'\n'+file.size+'\n'+file.lastModified+'\n',file.slice(0,65536),file.slice(Math.max(0,file.size-65536))]));}
-async function put(path,blob,type,signal){
+export async function put(path,blob,type,signal){
  try{await retrySourceTransfer(async()=>{
   const result=await supabase.storage.from('iso-vault').upload(path,blob.type===type?blob:new Blob([blob],{type}),{contentType:type,upsert:false});
   if(!result.error)return;
@@ -13,7 +13,7 @@ async function put(path,blob,type,signal){
   if(await digest(old.data)!==await digest(blob))throw Error('이전에 올린 같은 자료 조각과 내용이 다릅니다.');
  },{signal});}catch(error){if(error.name==='AbortError'||/내용이 다릅니다/.test(error.message))throw error;throw Error(sourceTransferMessage(error),{cause:error});}
 }
-export async function prepareCompanySource(file,{api,sources,companyId,signal,onProgress=()=>{},onSource=()=>{}}){
+export async function prepareCompanySource(file,{api,sources,companyId,visionOnly=false,signal,onProgress=()=>{},onSource=()=>{}}){
  const ensure=()=>{if(signal?.aborted)throw new DOMException('준비를 중지했습니다.','AbortError');};
  if(file.size<=0||file.size>SOURCE_MAX_BYTES)throw Error('자료는 파일당 500MB까지 올릴 수 있습니다.');
  const fingerprint=await sourceFingerprint(file),previous=sources.find(s=>s.metadata.sourceUpload.fingerprint===fingerprint),sourceId=previous?.id||crypto.randomUUID();
@@ -26,7 +26,7 @@ export async function prepareCompanySource(file,{api,sources,companyId,signal,on
   }
   ensure();source=(await api({action:'source-complete',sourceId})).source;onSource(source);window.dispatchEvent(new CustomEvent('honestone:documents-saved',{detail:{companyId}}));
  }
- if(source.metadata.sourceAnalysis.prepared)return source;
+ if(visionOnly||source.metadata.sourceAnalysis.prepared)return source;
  const skipIds=new Set(source.metadata.sourceAnalysis.units.map(u=>u.id));let total=0;
  for await(const unit of readSourceUnits(file,{signal,skipIds,onProgress})){
   ensure();total=unit.id;if(unit.skip)continue;if(skipIds.has(unit.id))continue;

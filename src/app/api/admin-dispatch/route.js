@@ -65,7 +65,7 @@ function buildEmailHtml({ subject, body, senderName, senderEmail, attachments = 
 <body style="margin:0;padding:24px;background:#f8fafc;font-family:-apple-system,BlinkMacSystemFont,'Pretendard',sans-serif;color:#0f172a;">
   <div style="max-width:640px;margin:0 auto;background:#ffffff;border:1px solid #e2e8f0;border-radius:16px;overflow:hidden;">
     <div style="background:#0f172a;color:#ffffff;padding:18px 24px;">
-      <div style="font-size:11px;font-weight:700;color:#93c5fd;letter-spacing:0.04em;">HONESTONE · 어니스톤 공식 전자발송</div>
+      <div style="font-size:11px;font-weight:700;color:#93c5fd;letter-spacing:0.04em;">CERTIMENTO · 써티멘토 공식 전자발송</div>
       <div style="font-size:16px;font-weight:800;margin-top:4px;">${escapeHtml(subject)}</div>
     </div>
     <div style="padding:24px;font-size:14px;line-height:1.7;color:#1e293b;">
@@ -80,7 +80,7 @@ function buildEmailHtml({ subject, body, senderName, senderEmail, attachments = 
       }
     </div>
     <div style="padding:14px 24px;background:#f8fafc;border-top:1px solid #e2e8f0;font-size:12px;color:#64748b;">
-      발신: <strong>${escapeHtml(senderName)}</strong> (${escapeHtml(senderEmail)}) · 어니스톤 인증·문서 관리 플랫폼
+      발신: <strong>${escapeHtml(senderName)}</strong> (${escapeHtml(senderEmail)}) · 써티멘토 인증·문서 관리 플랫폼
     </div>
   </div>
 </body>

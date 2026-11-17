@@ -15,3 +15,6 @@
 .actions{display:flex;align-items:center;gap:5px;white-space:nowrap}.actions button{padding:4px 7px;border:1px solid #bfdaef;background:#f0f8ff;color:#0372ab;border-radius:4px;font-size:11px}.actions button:last-child{background:#fff;color:#63758d;border-color:#dbe3ef}.actions button:disabled{opacity:.5;cursor:wait}
 .footer{display:flex;align-items:center;gap:12px;padding:7px 10px;min-height:39px;background:#f8fafc;font-size:11px;color:#718096;flex-shrink:0}.footer select{padding:3px 6px;border:1px solid #d6e0ec;border-radius:4px;background:#fff}.pages{margin-left:auto;display:flex;align-items:center;gap:10px}.pages button{padding:4px 7px;border:1px solid #d6e0ec;border-radius:4px;background:#fff}.pages button:disabled{opacity:.35}.empty{text-align:center;padding:35px!important;color:#8190a5}.error{margin:0;padding:8px 10px;background:#fff1f2;color:#b91c1c;font-size:12px}
 @media(max-width:800px){.workspace{height:calc(100dvh - 85px);min-height:420px}.heading{padding-right:0;min-height:44px}.heading h1{font-size:17px}.heading p{max-width:70%;font-size:11px}.summary{display:none}.toolbar{gap:6px}.toolbar span{font-size:10px}.standards button,.states button{padding:7px 9px}.footer{flex-wrap:wrap;gap:8px}}
+
+/* UX-DENSITY-001 */
+.heading{padding-right:0}

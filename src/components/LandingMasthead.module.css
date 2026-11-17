@@ -279,3 +279,8 @@
   .serviceStepArrow { display: none; }
   .certAreas { grid-template-columns: 1fr; }
 }
+
+/* UX-DENSITY-001: prioritize content over repeated presentation rows. */
+
+.reportHero{min-height:0;padding:28px 24px}.reportHeroScope{margin:10px auto}.reportHero h1{font-size:clamp(28px,3.5vw,44px);line-height:1.25}.reportHeroIntro{margin:12px auto 18px;line-height:1.65}.serviceSteps li{padding:16px}.serviceSteps h2{font-size:20px;margin:8px 0 6px}.certGuide,.smartFactory{padding:28px 24px}.certGuide h2,.smartFactory h2{font-size:24px}.about{padding:28px 24px;text-align:left}.aboutLabel{margin-bottom:8px}.about>h2{font-size:24px}.founder{margin:20px 0 0;grid-template-columns:160px 1fr;gap:24px;max-width:800px}.founderPhoto{height:200px;min-height:0}.founderCopy h3{font-size:22px}.photoSection{padding:28px 24px}.photoHeading{margin-bottom:16px;gap:16px;align-items:center}.photoHeading h2{font-size:24px;line-height:1.4}.photoCaption{padding-top:10px}.photoCaption h3{font-size:15px;margin:4px 0}.photoLinks{margin-top:14px}.footer{padding:24px}.footer span{margin-top:8px}
+@media(max-width:700px){.reportHero,.certGuide,.smartFactory,.about,.photoSection{padding:24px 16px}.serviceSteps li{padding:12px}.serviceSteps h2{font-size:18px}.photoHeading{gap:8px}.founder{grid-template-columns:100px 1fr;gap:16px}.founderPhoto{height:140px}.footer{padding:20px 16px 76px}}

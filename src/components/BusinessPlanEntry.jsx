@@ -4,12 +4,13 @@ import {useRef, useState} from 'react';
 import {useRouter, useSearchParams} from 'next/navigation';
 import AuthModal from './AuthModal';
 import VentureDocumentWorkspace from './venture/VentureDocumentWorkspace';
+import BusinessPlanAnalysis from './BusinessPlanAnalysis';
 import {useAuth} from '../context/AuthContext';
 import {projectDraft} from '../lib/projectWorkflow.mjs';
 import {createProject} from '../lib/workspaceRepository';
 
 export default function BusinessPlanEntry({
-  companies, company, projects, documents, ready, loadError, onProjectCreated,
+  companies, company, projects, documents, ready, loadError, onProjectCreated, analysis = false,
 }) {
   const {user, isLoading} = useAuth();
   const router = useRouter();
@@ -18,6 +19,8 @@ export default function BusinessPlanEntry({
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState('');
   const request = useRef(null);
+  const basePath = analysis ? '/business-plan-analysis' : '/business-plan';
+  const title = analysis ? '내 사업계획서 분석' : '사업계획서 만들기';
 
   const companyProjects = projects.filter(project => project.companyId === company?.id);
   const requestedProjectId = search.get('planProject');
@@ -28,7 +31,7 @@ export default function BusinessPlanEntry({
     for (const key of ['planProject', 'document', 'section']) params.delete(key);
     params.set('company', nextCompany);
     if (nextProject) params.set('planProject', nextProject);
-    router.push('/business-plan?' + params.toString(), {scroll: false});
+    router.push(basePath + '?' + params.toString(), {scroll: false});
   }
 
   async function startPlan() {
@@ -41,7 +44,7 @@ export default function BusinessPlanEntry({
     try {
       const draft = projectDraft({
         companyId: company.id,
-        title: '사업계획서 작성',
+        title: analysis ? '사업계획서 분석' : '사업계획서 작성',
         kind: 'GENERAL',
         requestId: request.current.id,
       });
@@ -55,38 +58,40 @@ export default function BusinessPlanEntry({
     }
   }
 
-  if (project) {
+  if (user && !isLoading && ready && !loadError && project) {
     return <section className="flex h-full min-h-[36rem] flex-col bg-white">
       <header className="flex flex-wrap items-center justify-between gap-2 border-b px-4 py-2 text-sm">
-        <span className="font-medium">{company.name} · {project.title}</span>
+        <span className="font-medium">{title} · {company.name} · {project.title}</span>
         <button className="text-blue-700 underline" onClick={() => changeSelection(company.id)}>
-          작성 목록
+          {analysis ? '분석 목록' : '작성 목록'}
         </button>
       </header>
-      <VentureDocumentWorkspace
+      {analysis ? <BusinessPlanAnalysis key={`${user.id}/${company.id}/${project.id}`}
+        project={project} documents={documents.filter(item => item.companyId === company.id)} canEdit={company.canEdit} /> : <VentureDocumentWorkspace
         key={project.id}
         project={project}
         documents={documents.filter(item => item.companyId === company.id)}
         canEdit={company.canEdit}
         applicationType={project.operations?.applicationType ?? (project.kind === 'ISO' ? 'ISO' : 'OTHER')}
         compact
-      />
+      />}
     </section>;
   }
 
-  return <section className="mx-auto max-w-3xl space-y-5 p-5 sm:p-8">
-    <h1 className="text-2xl font-bold text-slate-900">사업계획서 만들기</h1>
+  return <section className="business-plan-entry space-y-3 p-4 sm:px-6">
+    <h1 className="text-xl font-bold text-slate-900">{title}</h1>
     {isLoading ? <p role="status">로그인 상태를 확인하고 있습니다.</p> : !user ? <>
-      <p>로그인하면 회사에 사업계획서를 만들고 저장할 수 있습니다.</p>
+      <p>{analysis ? '로그인하면 보유한 사업계획서를 올리고 분석 결과를 다시 확인할 수 있습니다.' : '로그인하면 회사에 사업계획서를 만들고 저장할 수 있습니다.'}</p>
       <button className="work-primary" onClick={() => setShowLogin(true)}>로그인하고 시작</button>
       <AuthModal isOpen={showLogin} onClose={() => setShowLogin(false)} />
-    </> : loadError ? <p role="alert">작성 목록을 불러오지 못했습니다. 페이지를 새로고침해 주세요.</p>
-    : !ready ? <p role="status">회사와 작성 목록을 불러오는 중입니다.</p>
+    </> : loadError ? <p role="alert">목록을 불러오지 못했습니다. 페이지를 새로고침해 주세요.</p>
+    : !ready ? <p role="status">회사와 프로젝트 목록을 불러오는 중입니다.</p>
     : !companies.length ? <p>연결된 회사가 없습니다. 회사 관리자에게 소속 연결을 요청해 주세요.</p>
     : <>
+      {analysis && <p className="text-sm text-slate-600">내 계정에서 접근할 수 있는 회사와 프로젝트를 선택하세요. 자료와 결과는 해당 회사의 권한에 따라 공유됩니다.</p>}
       {requestedProjectId && <p role="alert">선택한 작성 공간을 열 수 없습니다. 아래에서 다시 선택해 주세요.</p>}
       <label className="block max-w-md text-sm font-medium">
-        작성할 회사
+        {analysis ? '분석할 회사' : '작성할 회사'}
         <select
           className="mt-2 block w-full rounded-lg border border-slate-300 bg-white p-2.5"
           value={company?.id || ''}
@@ -100,9 +105,9 @@ export default function BusinessPlanEntry({
       {company && <>
         {company.canEdit
           ? <button className="work-primary" disabled={saving} onClick={startPlan}>
-              {saving ? '작성 공간을 여는 중…' : '새 사업계획서 만들기'}
+              {saving ? '공간을 여는 중…' : analysis ? '새 분석 시작' : '새 사업계획서 만들기'}
             </button>
-          : <p>이 회사의 사업계획서는 열람할 수 있습니다. 새 계획서를 작성하려면 회사 편집 권한이 필요합니다.</p>}
+          : <p>이 회사의 저장된 자료는 열람할 수 있습니다. 새 작업에는 회사 편집 권한이 필요합니다.</p>}
         {error && <p role="alert" className="text-red-700">{error}</p>}
         {companyProjects.length > 0 && <section aria-labelledby="plan-workspaces-title">
           <h2 id="plan-workspaces-title" className="mb-2 font-semibold">기존 프로젝트에서 열기</h2>

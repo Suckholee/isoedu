@@ -13,7 +13,7 @@ import {VentureError,uuid,validateInput,inputHash,generateVentureDocument,revisi
 import {validateChatRequest,guideVentureDocument} from '../../../lib/venture/conversation.mjs';
 export const dynamic='force-dynamic';
 export const runtime='nodejs';
-export const maxDuration=120;
+export const maxDuration=240;
 const headers={'Cache-Control':'private, no-store'};
 const json=(body,status=200)=>Response.json(body,{status,headers});
 function check(result){if(result.error)throw new VentureError('저장소 요청에 실패했습니다. 권한과 연결 상태를 확인해 주세요.',503);return result.data;}
@@ -40,12 +40,13 @@ export async function GET(request){
 export async function POST(request){
   let active;
   try{
-    const origin=request.headers.get('origin');
-    if(origin&&origin!==new URL(request.url).origin)throw new VentureError('같은 사이트에서 다시 시도해 주세요.',403);
+    const origin=request.headers.get('origin'),requestUrl=new URL(request.url),host=request.headers.get('host');
+    const sameOrigin=!origin||origin===requestUrl.origin||Boolean(host&&origin===`${requestUrl.protocol}//${host}`);
+    if(!sameOrigin)throw new VentureError('같은 사이트에서 다시 시도해 주세요.',403);
     if(Number(request.headers.get('content-length'))>1000000)throw new VentureError('입력이 너무 큽니다.',413);
     const raw=await request.text();if(Buffer.byteLength(raw,'utf8')>1000000)throw new VentureError('입력이 너무 큽니다.',413);
     let body;try{body=JSON.parse(raw);}catch{throw new VentureError('입력 형식을 확인해 주세요.');}
-    const {db,user,project}=await context(body?.projectId,true);
+    const {db,user,project}=await context(body?.projectId,!['source-list','source-result','source-review-preview','source-page-result','source-document-result'].includes(body?.action));
     if(body.action==='application-catalog')return json(await applicationCatalog(db,project));
     if(['sync-checklist','generate','source-fill'].includes(body.action)&&project.applicationType!=='VENTURE_GROWTH')throw new VentureError('이 기능은 혁신성장 프로젝트에서 사용할 수 있습니다.');
     if(body.action==='source-fill'&&body.documentId){const target=check(await scoped(db,project).eq('id',body.documentId).maybeSingle());if(target?.metadata?.ai?.input?.type==='application_plan')throw new VentureError('신청 사업별 문서는 작성 설정에서 근거자료를 선택해 주세요.');}

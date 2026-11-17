@@ -5,11 +5,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 import {
   ArrowRight, ArrowUp, ArrowUpRight, Building2, CalendarDays, ChevronLeft, Compass,
-  Factory, Files, Globe2, Link2, LogIn, Menu, PackageCheck, PanelLeftOpen, Plane, ShieldCheck,
+  Factory, Files, Globe2, Link2, LogIn, Menu, Network, PackageCheck, PanelLeftOpen, Plane, ShieldCheck,
   UserRound, X,
 } from 'lucide-react';
 import styles from './LandingMasthead.module.css';
 import FeaturedInsights from './FeaturedInsights';
+import PeopleDirectory from './PeopleDirectory';
 import {INTERESTS} from '../lib/growthIntake.mjs';
 import {SMART_FACTORY_NOTICE} from '../lib/certificationReport.mjs';
 
@@ -52,10 +53,10 @@ const reportSteps = [
 ];
 
 function Mark() {
-  return <span className={styles.brandMark} aria-hidden="true">C</span>;
+  return <span className={styles.brandMark} aria-hidden="true">H</span>;
 }
 
-export default function LandingMasthead({user, onLogin, onStart, children}) {
+export default function LandingMasthead({user, onLogin, onStart, children, pageContent}) {
   const [open, setOpen] = useState(true);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [shareStatus, setShareStatus] = useState('');
@@ -141,16 +142,19 @@ export default function LandingMasthead({user, onLogin, onStart, children}) {
         <div>
           <Link href="/business-plan" aria-label="사업계획서 만들기" title="사업계획서 만들기" onClick={close}><Files size={17}/><span>사업계획서 만들기</span></Link>
           <Link href="/programs" aria-label="정부지원사업" title="정부지원사업" onClick={close}><CalendarDays size={17}/><span>정부지원사업</span></Link>
+          <Link href="/second-brain" aria-label="세컨브레인" title="세컨브레인" onClick={close}><Network size={17}/><span>세컨브레인</span></Link>
           <Link href="/dashboard" aria-label="내 업무 공간" title="내 업무 공간" onClick={close}><Compass size={17}/><span>내 업무 공간</span></Link>
         </div>
         <div>
-          <a href="#areas" aria-label="분야별 인증 가이드" title="분야별 인증 가이드" onClick={close}><ShieldCheck size={17}/><span>분야별 인증 가이드</span></a>
-          <a href="#honestone-story" aria-label="써티멘토 소개" title="써티멘토 소개" onClick={close}><UserRound size={17}/><span>써티멘토 소개</span></a>
-          <a href="#insights" aria-label="블로그·홈페이지 글" title="블로그·홈페이지 글" onClick={close}><Files size={17}/><span>블로그·홈페이지 글</span></a>
+          <a href="/#areas" aria-label="분야별 인증 가이드" title="분야별 인증 가이드" onClick={close}><ShieldCheck size={17}/><span>분야별 인증 가이드</span></a>
+          <a href="/#honestone-story" aria-label="써티멘토 소개" title="써티멘토 소개" onClick={close}><UserRound size={17}/><span>써티멘토 소개</span></a>
+          <a href="/knowledge" aria-label="기업 실무 질문과 답변" title="기업 실무 질문과 답변" onClick={close}><Files size={17}/><span>기업 실무 질문과 답변</span></a>
+          <Link href="/people" aria-label="파트너스" title="파트너스" onClick={close}><UserRound size={17}/><span>파트너스</span></Link>
+          <a href="/#insights" aria-label="블로그·홈페이지 글" title="블로그·홈페이지 글" onClick={close}><Files size={17}/><span>블로그·홈페이지 글</span></a>
         </div>
       </nav>
       <div className={styles.sidebarPromos}>
-        <a href="#smart-factory" className={styles.smartFactoryPromo} onClick={close}>스마트공장 지원사업<small>공식 공고·사업계획서 준비</small><ArrowUpRight size={17}/></a>
+        <a href="/#smart-factory" className={styles.smartFactoryPromo} onClick={close}>스마트공장 지원사업<small>공식 공고·사업계획서 준비</small><ArrowUpRight size={17}/></a>
       </div>
       <div className={styles.sidebarBottom}>
         {user
@@ -160,8 +164,8 @@ export default function LandingMasthead({user, onLogin, onStart, children}) {
     </aside>
 
     <div id="landing-content" className={styles.content}>
+      {pageContent || <>
       <section id="process" className={styles.reportHero} aria-labelledby="report-hero-title">
-        <span className={styles.reportMark}><ShieldCheck size={30} strokeWidth={1.6} aria-hidden="true"/></span>
         <p className={styles.reportHeroScope}>국내외 기업인증 · 제품인증</p>
         <h1 id="report-hero-title">인증 준비, 무료 리포트부터.</h1>
         <p className={styles.reportHeroIntro}>전문자격사와 컨설턴트가 고객에게 공유하는 인증 준비 리포트. 기업은 직접 작성하고, 필요할 때 전문가 검토와 준비 용역을 문의할 수 있습니다.</p>
@@ -235,11 +239,13 @@ export default function LandingMasthead({user, onLogin, onStart, children}) {
         </div>
       </section>
    <section id="people-gallery" className={styles.photoSection} aria-labelledby="photo-gallery-title">
-    <div className={styles.photoHeading}><div><h2 id="photo-gallery-title">사진과 이야기로 만나는<br/>조영빈 대표.</h2></div><p>공식 프로필과 영상에서 인증 준비 이야기를 만나보세요.</p></div>
+    <div className={styles.photoHeading}><div><h2 id="photo-gallery-title">조영빈 대표의 사진과 이야기</h2></div><p>공식 프로필과 영상에서 인증 준비 이야기를 만나보세요.</p></div>
     <div className={styles.photoGrid}>{representativePhotos.map(photo=><a key={photo.file} href={photo.href} target="_blank" rel="noopener noreferrer" className={styles.photoCard} aria-label={`${photo.title} — 출처 보기 (새 창)`}><div className={styles.photoImage}><Image src={`/images/honestone/cho-youngbin/${photo.file}`} alt={`${photo.title} — 조영빈 대표${photo.kind==='OFFICIAL CONTENT'?' 공식 영상 썸네일':''}`} fill sizes="(max-width: 600px) 44vw, (max-width: 1150px) 28vw, 15vw"/></div><div className={styles.photoCaption}><small>{photo.kind}</small><h3>{photo.title}</h3><p>{photo.credit}<ArrowUpRight size={13}/></p></div></a>)}</div>
     <div className={styles.photoLinks}><span>영상 썸네일을 누르면 원문 사이트로 이동합니다.</span><a href="https://www.youtube.com/channel/UC4bv_sw6JudKORw7lbLxe6w" target="_blank" rel="noopener noreferrer">조영빈의 사업은 처음이라 <ArrowUpRight size={15}/></a><a href="https://www.instagram.com/honestone_kevin/" target="_blank" rel="noopener noreferrer">인스타그램 <ArrowUpRight size={15}/></a></div>
    </section>
+      <PeopleDirectory compact/>
       <FeaturedInsights/>
+      </>}
       <footer className={styles.footer}>
         <div className={styles.footerBrand}><Mark/><strong>써티멘토</strong></div>
         <div><p>국내외 기업인증·제품인증 준비</p><span>© {new Date().getFullYear()} CERTIMENTO</span></div>

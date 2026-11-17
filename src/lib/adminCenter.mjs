@@ -3,6 +3,7 @@
 
 export const ADMIN_TABS = Object.freeze([
   {id:"articles",label:"홈페이지 글 · AI 작성",sub:"S32",description:"공개 글 초안 작성·검토·발행 관리"},
+  {id:"partners",label:"파트너스 브랜딩",sub:"S36·B02",description:"소개·공개 고객사·작업 이력·채널 관리"},
   {
     id: 'members',
     label: '회원 · 계정 관리',
@@ -63,9 +64,9 @@ export const DISPATCH_STATUS_LABELS = Object.freeze({
 });
 
 export const DEFAULT_ADMIN_SENDER = Object.freeze({
-  name: '어니스톤 관리자 조영빈',
+  name: '써티멘토 관리자 조영빈',
   email: 'ceo@honestone.kr',
-  organization: '어니스톤 (Honestone)',
+  organization: '써티멘토 (Honestone)',
 });
 
 export const COMPLETION_STATUS_LABELS = Object.freeze({
@@ -86,37 +87,37 @@ export const OFFICIAL_ATTACHMENT_PRESETS = Object.freeze([
   {
     id: 'preset-completion-cert',
     code: 'CERT-EDU-01',
-    title: '어니스톤 ISO 전문가·수강생 교육과정 수료증 (공식 서식)',
+    title: '써티멘토 ISO 전문가·수강생 교육과정 수료증 (공식 서식)',
     category: '수료증·증명서',
-    fileName: '어니스톤_교육과정_수료증.pdf',
+    fileName: '써티멘토_교육과정_수료증.pdf',
   },
   {
     id: 'preset-iso-kickoff-notice',
     code: 'DOC-NOTICE-01',
     title: 'ISO 인증 준비 착수 안내 공문 및 필수 구비서류 체크리스트',
     category: '안내 공문',
-    fileName: '어니스톤_ISO인증준비_착수공문_체크리스트.pdf',
+    fileName: '써티멘토_ISO인증준비_착수공문_체크리스트.pdf',
   },
   {
     id: 'preset-supplement-form',
     code: 'DOC-SUPP-02',
     title: '필수 구비서류 보완 요청서 및 표준 작성 가이드',
     category: '보완 요청서',
-    fileName: '어니스톤_구비서류_보완요청서.docx',
+    fileName: '써티멘토_구비서류_보완요청서.docx',
   },
   {
     id: 'preset-audit-schedule-notice',
     code: 'DOC-AUDIT-03',
     title: '심사 일정 사전 통보서 및 현장·서류 준비 지침서',
     category: '심사 통보서',
-    fileName: '어니스톤_심사일정_사전통보서.pdf',
+    fileName: '써티멘토_심사일정_사전통보서.pdf',
   },
   {
     id: 'preset-renewal-guide',
     code: 'DOC-RENEW-04',
     title: '인증 유효기간 만기 및 사후·갱신 심사 절차 안내문',
     category: '사후관리 공문',
-    fileName: '어니스톤_사후갱신심사_안내문.pdf',
+    fileName: '써티멘토_사후갱신심사_안내문.pdf',
   },
 ]);
 
@@ -126,10 +127,10 @@ export const DISPATCH_TEMPLATES = Object.freeze([
     category: '전체·선택 회원 공지 (관리자 발송)',
     title: '회원 대상 공지사항 및 교육·인증 운영 안내',
     defaultChannel: 'EMAIL',
-    subjectTemplate: '[어니스톤 공지] {{수신자명}} 회원님, {{규격명}} 운영 및 주요 일정 안내',
+    subjectTemplate: '[써티멘토 공지] {{수신자명}} 회원님, {{규격명}} 운영 및 주요 일정 안내',
     bodyTemplate: [
       '안녕하세요, {{수신자명}} 님 ({{기업명}}).',
-      '어니스톤 관리자 조영빈입니다.',
+      '써티멘토 관리자 조영빈입니다.',
       '',
       '플랫폼 회원 여러분께 주요 운영 사항 및 준비 일정을 안내해 드립니다.',
       '',
@@ -138,7 +139,7 @@ export const DISPATCH_TEMPLATES = Object.freeze([
       '■ 주요 안내 사항: {{보완항목}}',
       '■ 기준 일자: {{목표일}}',
       '',
-      '상세 내용은 동봉된 첨부 문서 또는 어니스톤 플랫폼 워크스페이스에서 확인하실 수 있습니다.',
+      '상세 내용은 동봉된 첨부 문서 또는 써티멘토 플랫폼 워크스페이스에서 확인하실 수 있습니다.',
       '문의사항이 있으시면 언제든 회신해 주시기 바랍니다.',
       '',
       '감사합니다.',
@@ -150,10 +151,10 @@ export const DISPATCH_TEMPLATES = Object.freeze([
     category: '인증서·수료증·공문 발송 (S24·B01)',
     title: '교육 수료증 / ISO 인증 준비 공문 / 표준 서식 전자발송',
     defaultChannel: 'EMAIL',
-    subjectTemplate: '[어니스톤] {{수신자명}} ({{기업명}}) 님 {{교육과정명}} 수료증·문서 전자발송 안내',
+    subjectTemplate: '[써티멘토] {{수신자명}} ({{기업명}}) 님 {{교육과정명}} 수료증·문서 전자발송 안내',
     bodyTemplate: [
       '안녕하세요, {{수신자명}} 님.',
-      '어니스톤 관리자 조영빈입니다.',
+      '써티멘토 관리자 조영빈입니다.',
       '',
       '{{기업명}} 소속 {{수신자명}} 님의 교육 수료증 및 요청하신 표준 문서를 전자발송해 드립니다.',
       '',
@@ -174,18 +175,18 @@ export const DISPATCH_TEMPLATES = Object.freeze([
     category: '회원·소속 관리 (S02·S04)',
     title: '신규 회원 가입 및 기업 소속 신청 코드 안내',
     defaultChannel: 'EMAIL',
-    subjectTemplate: '[어니스톤] {{기업명}} 워크스페이스 소속 신청 코드 안내',
+    subjectTemplate: '[써티멘토] {{기업명}} 워크스페이스 소속 신청 코드 안내',
     bodyTemplate: [
       '안녕하세요, {{수신자명}} 님.',
       '',
-      '어니스톤(Honestone) 인증 준비·문서 관리 플랫폼에서 {{기업명}} 워크스페이스 합류를 위한 소속 신청 코드를 안내해 드립니다.',
+      '써티멘토(Honestone) 인증 준비·문서 관리 플랫폼에서 {{기업명}} 워크스페이스 합류를 위한 소속 신청 코드를 안내해 드립니다.',
       '',
       '■ 대상 기업: {{기업명}}',
       '■ 부여 예정 권한: {{역할명}}',
       '■ 소속 신청 코드: {{신청코드}}',
       '',
       '[이용 방법]',
-      '1. 어니스톤 플랫폼에 로그인(또는 신규 회원가입)합니다.',
+      '1. 써티멘토 플랫폼에 로그인(또는 신규 회원가입)합니다.',
       '2. [관리자 센터 > 기업·소속 권한] 또는 [설정 > 회사 소속 신청]에서 위 신청 코드를 입력합니다.',
       '3. 회사 관리자가 승인하면 즉시 {{기업명}}의 프로젝트 및 구비문서에 접근하실 수 있습니다.',
       '',
@@ -198,7 +199,7 @@ export const DISPATCH_TEMPLATES = Object.freeze([
     category: '회원·소속 관리 (S04)',
     title: '기업 소속 승인 완료 및 권한 부여 안내',
     defaultChannel: 'ALIMTALK',
-    subjectTemplate: '[어니스톤] {{기업명}} 소속 승인 및 권한({{역할명}}) 설정 완료 안내',
+    subjectTemplate: '[써티멘토] {{기업명}} 소속 승인 및 권한({{역할명}}) 설정 완료 안내',
     bodyTemplate: [
       '안녕하세요, {{수신자명}} 님.',
       '',
@@ -219,7 +220,7 @@ export const DISPATCH_TEMPLATES = Object.freeze([
     category: '심사·일정 관리 (S23·S28)',
     title: '내부 목표 심사일 대비 준비 일정 사전 점검 안내',
     defaultChannel: 'EMAIL',
-    subjectTemplate: '[어니스톤] {{기업명}} ({{규격명}}) 목표 심사일({{목표일}}) 사전 준비 안내',
+    subjectTemplate: '[써티멘토] {{기업명}} ({{규격명}}) 목표 심사일({{목표일}}) 사전 준비 안내',
     bodyTemplate: [
       '안녕하세요, {{수신자명}} 님.',
       '',
@@ -230,7 +231,7 @@ export const DISPATCH_TEMPLATES = Object.freeze([
       '■ 내부 목표일: {{목표일}}',
       '■ 중점 점검 사항: {{보완항목}}',
       '',
-      '※ 본 안내는 어니스톤 플랫폼의 내부 준비 일정 기준이며, 공식 인증기관 심사 확정 일정과는 구분됩니다.',
+      '※ 본 안내는 써티멘토 플랫폼의 내부 준비 일정 기준이며, 공식 인증기관 심사 확정 일정과는 구분됩니다.',
       '',
       '감사합니다.',
       '{{발신자명}} 드림',
@@ -241,7 +242,7 @@ export const DISPATCH_TEMPLATES = Object.freeze([
     category: '구비서류·보완 요청 (S15·S33)',
     title: '필수 구비서류 미입력 항목 및 증적 보완 요청',
     defaultChannel: 'EMAIL',
-    subjectTemplate: '[어니스톤] {{기업명}} ({{규격명}}) 필수 구비서류 보완 요청 안내',
+    subjectTemplate: '[써티멘토] {{기업명}} ({{규격명}}) 필수 구비서류 보완 요청 안내',
     bodyTemplate: [
       '안녕하세요, {{수신자명}} 님.',
       '',
@@ -262,7 +263,7 @@ export const DISPATCH_TEMPLATES = Object.freeze([
     category: '사후·만기 관리 (S26·S29)',
     title: '인증 유효기간 만기 도래 및 차기 갱신 심사 준비 안내',
     defaultChannel: 'ALIMTALK',
-    subjectTemplate: '[어니스톤] {{기업명}} {{규격명}} 유효기간 만기 점검 및 차기 심사 준비 안내',
+    subjectTemplate: '[써티멘토] {{기업명}} {{규격명}} 유효기간 만기 점검 및 차기 심사 준비 안내',
     bodyTemplate: [
       '안녕하세요, {{수신자명}} 님.',
       '',
@@ -778,7 +779,7 @@ export function generateCompletionCertificateNumber({
 
 export function buildCompletionCertificateDoc(member = {}, options = {}) {
   const fullName = member.fullName || '수강생';
-  const companyName = member.primaryCompanyName || member.companyName || '어니스톤 교육생';
+  const companyName = member.primaryCompanyName || member.companyName || '써티멘토 교육생';
   const cohort = options.cohort || member.cohort || '제1기';
   const courseName =
     options.courseName || member.courseName || TRAINING_COURSE_PRESETS[0];
@@ -788,13 +789,13 @@ export function buildCompletionCertificateDoc(member = {}, options = {}) {
     generateCompletionCertificateNumber({ cohort, sequence: 1 });
   const completionDate =
     options.completionDate || member.completionDate || new Date().toISOString().slice(0, 10);
-  const issuerName = options.issuerName || '어니스톤 (Honestone) 대표 조 영 빈';
+  const issuerName = options.issuerName || '써티멘토 (Honestone) 대표 조 영 빈';
 
   return `<!DOCTYPE html>
 <html lang="ko">
 <head>
 <meta charset="utf-8" />
-<title>어니스톤 교육과정 수료증 - ${fullName}</title>
+<title>써티멘토 교육과정 수료증 - ${fullName}</title>
 <style>
   @page { size: A4 portrait; margin: 20mm; }
   body { font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; color: #0f172a; line-height: 1.6; }
@@ -820,7 +821,7 @@ export function buildCompletionCertificateDoc(member = {}, options = {}) {
       <tr><th>교 육 과 정</th><td>${courseName}</td></tr>
     </table>
     <div class="statement">
-      위 사람은 어니스톤(Honestone)에서 실시한<br/>
+      위 사람은 써티멘토(Honestone)에서 실시한<br/>
       <strong>「${courseName}」</strong>의 전 교육 및 실무 평가 과정을<br/>
       성실히 이수하였으므로 이 증서를 수여합니다.
     </div>
@@ -862,7 +863,7 @@ export function buildSampleRosterCsv() {
       'auditor2@example.kr',
       '010-9876-5432',
       'AUDITOR',
-      '어니스톤 파트너스',
+      '써티멘토 파트너스',
       '1기',
       'ISO 9001·14001·45001 통합심사원 및 인증실무 과정',
       '파트너검증완료',
@@ -1010,7 +1011,7 @@ export function parseMemberRosterCsv(rawText = '') {
       email,
       phone: rawPhone.trim(),
       role,
-      companyName: rawCompany.trim() || '어니스톤 교육생',
+      companyName: rawCompany.trim() || '써티멘토 교육생',
       department: rawDept.trim(),
       cohort: rawCohort.trim(),
       courseName: rawCourse.trim(),
@@ -1118,7 +1119,7 @@ export function normalizeDispatchRecipients(recipients = [], channel = 'EMAIL') 
       phone,
       contact,
       companyId: item.primaryCompanyId || item.companyId || null,
-      companyName: item.primaryCompanyName || item.companyName || '어니스톤 회원',
+      companyName: item.primaryCompanyName || item.companyName || '써티멘토 회원',
       roleLabel: item.roleLabel || PLATFORM_ROLE_LABELS[item.role] || '회원',
       cohort: item.cohort || item.metadata?.cohort || '',
       courseName: item.courseName || item.metadata?.courseName || '',

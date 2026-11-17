@@ -55,3 +55,11 @@ test('inline basic fields export identically to the editable paper without chang
  const html=buildPlanFormHtml({title:'시험',contentDraft:content,ai:{companyName:'연결 회사',input:{type:'business_plan',application:'new'},documentFields:{companyName:'문서 기업명 <수정>',representativeName:'검토 & 확인',businessNumber:'시험용 번호',application:'unknown'}}},{companyName:'연결 회사'});
  assert.match(html,/문서 기업명 &lt;수정&gt;/);assert.match(html,/검토 &amp; 확인/);assert.match(html,/시험용 번호/);assert.match(html,/신청 구분<\/th><td[^>]*>확인 필요/);assert(!html.includes('신규 신청'));
 });
+
+test('multiline official headings do not duplicate shorter titles embedded inside them',()=>{
+ const definition={title:'공식 양식',sections:[{id:'intro',title:'제품(서비스)\n\n한 줄 소개'},{id:'effect',title:'기대효과'},{id:'partner',title:'협업에 따른 \n\n기대효과'}]};
+ const content='제품(서비스)\n\n한 줄 소개\n소개 본문\n\n기대효과\n사업 효과\n\n협업에 따른 \n\n기대효과\n협업 효과';
+ const parsed=parsePlanForm(content,'application_plan',definition);assert.equal(parsed.sections.length,3);assert.equal(parsed.sections[1].value,'사업 효과');assert.equal(parsed.sections[2].value,'협업 효과');
+ assert.equal(updatePlanCell(content,'application_plan','effect','보완한 사업 효과',definition),content.replace('사업 효과','보완한 사업 효과'));
+ assert.equal(parsePlanForm(content+'\n\n기대효과\n중복 본문','application_plan',definition),null);
+});

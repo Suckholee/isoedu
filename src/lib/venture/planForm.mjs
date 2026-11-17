@@ -7,9 +7,14 @@ import {DOCUMENT_TYPES,definitionForAi} from './catalog.mjs';
 export function parsePlanForm(content,type='business_plan',customDefinition=null){
  const definition=customDefinition||DOCUMENT_TYPES[type];if(!definition||typeof content!=='string')return null;
  const matches=[];
+ // Match complete headings together so a short title inside a multiline title
+ // (for example "기대효과") is not mistaken for a second standalone section.
+ const escape=title=>title.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+ const alternatives=[...definition.sections].sort((a,b)=>b.title.length-a.title.length).map(s=>escape(s.title));
+ if(!alternatives.length)return null;
+ const headings=[...content.matchAll(new RegExp(`^(?:${alternatives.join('|')})\\r?$`,'gm'))];
  for(const section of definition.sections){
-  const escaped=section.title.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
-  const found=[...content.matchAll(new RegExp(`^${escaped}\\r?$`,'gm'))];
+  const found=headings.filter(match=>match[0].replace(/\r$/,'')===section.title);
   if(found.length!==1)return null;
   matches.push({...section,start:found[0].index,headingEnd:found[0].index+found[0][0].length});
  }

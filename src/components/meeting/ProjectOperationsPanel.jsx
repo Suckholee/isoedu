@@ -470,7 +470,7 @@ export default function ProjectOperationsPanel({
                             <summary className="cursor-pointer text-blue-700">매뉴얼·준비 안내</summary>
                             <p className="my-2">보유한 원본을 업로드하거나 회사 문서함의 파일을 선택해 제출하세요. 발급기관의 증명서·경력 증빙은 실제 원본이 필요하며 AI 초안으로 대체할 수 없습니다.</p>
                             <a className="text-blue-700 underline" href={official?VENTURE_GUIDE_URL:guide.url} target="_blank" rel="noreferrer">유형별 준비 매뉴얼 열기</a>
-                            <p className="text-slate-500 mt-1">{official?'공식 공개자료 확인: 2026-11-05':'어니스톤 운영 안내: '+policyCatalog.reviewedAt} · 최종 제출 범위는 신청기관에서 확인합니다.</p>
+                            <p className="text-slate-500 mt-1">{official?'공식 공개자료 확인: 2026-11-05':'운영 안내: '+policyCatalog.reviewedAt} · 최종 제출 범위는 신청기관에서 확인합니다.</p>
                           </details>
                         )}
                       </td>

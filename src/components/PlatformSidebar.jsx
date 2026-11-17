@@ -1,9 +1,11 @@
 'use client';
 import CompanySwitcher from './CompanySwitcher';
-import { BookOpen, ShieldCheck, LayoutDashboard, ClipboardCheck, Files, FilePenLine, CalendarDays, Settings, ChevronLeft, PanelLeftOpen, Landmark, UserCog, Sparkles } from 'lucide-react';
+import { Network, BookOpen, ShieldCheck, LayoutDashboard, ClipboardCheck, Files, FilePenLine, CalendarDays, Settings, ChevronLeft, PanelLeftOpen, Landmark, UserCog, Sparkles } from 'lucide-react';
 
 const items = [
   ['dashboard', '내 업무', LayoutDashboard, ['dashboard']],
+  ['second_brain', '세컨브레인', Network, ['second_brain']],
+  ['business_plan_analysis', '내 사업계획서 분석', Files, ['business_plan_analysis']],
   ['business_plan', '사업계획서 만들기', FilePenLine, ['business_plan']],
   ['certification_library', '인증 자료실', BookOpen, ['certification_library']],
   ['curation', '인증 큐레이션', Sparkles, ['curation']],
@@ -16,12 +18,12 @@ const items = [
 ];
 
 export default function PlatformSidebar({ enterprise=false, isOpen, onToggle, activeNav, onSelectNav, currentCompany, companies = [], onSelectCompany, onCreateClient, projects = [], onSelectProject, onOpenNewProjectModal }) {
-  const navigationItems=enterprise?items.filter(([id])=>['dashboard','business_plan','certification_library','curation','compliance','drive','settings'].includes(id)).map(item=>[item[0],{dashboard:'우리 회사 준비',business_plan:'사업계획서 만들기',certification_library:'인증 자료실',curation:'인증 큐레이션',compliance:'진행 현황',drive:'회사 문서함',settings:'회사·계정'}[item[0]],...item.slice(2)]):items;
+  const navigationItems=enterprise?items.filter(([id])=>['dashboard','second_brain','business_plan_analysis','business_plan','certification_library','curation','compliance','drive','settings'].includes(id)).map(item=>[item[0],{dashboard:'우리 회사 준비',second_brain:'세컨브레인',business_plan_analysis:'내 사업계획서 분석',business_plan:'사업계획서 만들기',certification_library:'인증 자료실',curation:'인증 큐레이션',compliance:'진행 현황',drive:'회사 문서함',settings:'회사·계정'}[item[0]],...item.slice(2)]):items;
   const isItemActive = (id, group = [id]) => activeNav === id || group.includes(activeNav);
 
   if (!isOpen) return <aside id="platform-navigation" className="platform-sidebar-collapsed" aria-label="접힌 탐색 메뉴">
     <button type="button" className="platform-sidebar-toggle" onClick={onToggle} aria-label="사이드바 펼치기" aria-expanded={false} aria-controls="platform-navigation" title="사이드바 펼치기 ([ 또는 Ctrl/Cmd+B)"><PanelLeftOpen className="w-5 h-5" aria-hidden="true" /></button>
-    <button type="button" className="platform-icon-button" onClick={() => onSelectNav('dashboard')} aria-label="어니스톤 홈으로 이동" title="어니스톤 홈"><ShieldCheck className="w-5 h-5 text-blue-400" aria-hidden="true" /></button>
+    <button type="button" className="platform-icon-button" onClick={() => onSelectNav('dashboard')} aria-label="써티멘토 홈으로 이동" title="써티멘토 홈"><ShieldCheck className="w-5 h-5 text-blue-400" aria-hidden="true" /></button>
     <nav className="platform-icon-nav" aria-label="주 메뉴">
       {navigationItems.map(([id, label, Icon, group]) => <button type="button" key={id}
         aria-label={label} aria-current={isItemActive(id, group) ? 'page' : undefined}
@@ -33,7 +35,7 @@ export default function PlatformSidebar({ enterprise=false, isOpen, onToggle, ac
     </nav>
   </aside>;
   return <aside id="platform-navigation" className="platform-sidebar">
-    <div className="flex items-center justify-between px-2 mb-7"><button type="button" onClick={() => onSelectNav('dashboard')} aria-label="어니스톤 홈으로 이동" className="flex items-center gap-2 rounded text-lg font-bold focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-400"><ShieldCheck className="text-blue-400" aria-hidden="true" /> 어니스톤</button><button type="button" className="platform-sidebar-toggle" onClick={onToggle} aria-label="사이드바 접기" aria-expanded={true} aria-controls="platform-navigation" title="사이드바 접기 ([ 또는 Ctrl/Cmd+B)"><ChevronLeft className="w-4 h-4" /></button></div>
+    <div className="flex items-center justify-between px-2 mb-7"><button type="button" onClick={() => onSelectNav('dashboard')} aria-label="써티멘토 홈으로 이동" className="flex items-center gap-2 rounded text-lg font-bold focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-400"><ShieldCheck className="text-blue-400" aria-hidden="true" /> 써티멘토</button><button type="button" className="platform-sidebar-toggle" onClick={onToggle} aria-label="사이드바 접기" aria-expanded={true} aria-controls="platform-navigation" title="사이드바 접기 ([ 또는 Ctrl/Cmd+B)"><ChevronLeft className="w-4 h-4" /></button></div>
     <CompanySwitcher enterprise={enterprise} sidebar companies={companies} currentCompany={currentCompany} onSelectCompany={onSelectCompany} onCreateClient={onCreateClient}/>
     <nav aria-label="주 메뉴" className="space-y-1.5 mt-7">
       {navigationItems.map(([id, label, Icon, group]) => {

@@ -22,7 +22,7 @@ export default function AgentSchedulesView() {
           <caption className="sr-only">2026년 10월 18일 확인한 예약 설정. 실시간 실행 상태와는 다릅니다.</caption>
           <thead><tr><th scope="col">에이전트 업무</th><th scope="col">실행 주기</th><th scope="col">예약 설정</th><th scope="col">결과</th></tr></thead>
           <tbody><tr>
-            <td><strong>정부지원사업 수집·분석</strong><small>어니스톤 정부지원사업 매일 업데이트</small></td>
+            <td><strong>정부지원사업 수집·분석</strong><small>써티멘토 정부지원사업 매일 업데이트</small></td>
             <td><span className="agent-time"><Repeat2 size={14} aria-hidden="true"/>매일 오전 9:00</span></td>
             <td><span className="agent-status">활성 · 확인 시점 기준</span></td>
             <td><Link href="/government-programs" className="agent-link">수집 결과 보기 <ArrowUpRight size={14} aria-hidden="true"/></Link></td>

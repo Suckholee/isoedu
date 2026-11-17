@@ -30,6 +30,7 @@ import {
 } from 'lucide-react';
 import ModalLayer from './ui/ModalLayer';
 import ArticleEditor from './ArticleEditor';
+import PartnerBrandEditor from './PartnerBrandEditor';
 import AuthModal from './AuthModal';
 import Button from './ui/Button';
 import { useAuth } from '../context/AuthContext';
@@ -401,7 +402,7 @@ export default function AdminCenterView({
         (c) => c.id === (inviteCompanyId || currentCompany?.id)
       );
       const companyName =
-        inviteCustomCompanyName.trim() || targetComp?.name || '어니스톤 교육생';
+        inviteCustomCompanyName.trim() || targetComp?.name || '써티멘토 교육생';
       const certNo =
         inviteCompletionStatus === 'COMPLETED' || inviteCompletionStatus === 'CERTIFIED'
           ? generateCompletionCertificateNumber({
@@ -491,7 +492,7 @@ export default function AdminCenterView({
             email: c.email,
             phone: c.phone,
             primaryCompanyId: c.company_id,
-            primaryCompanyName: c.company_name || c.metadata?.companyName || '어니스톤 회원',
+            primaryCompanyName: c.company_name || c.metadata?.companyName || '써티멘토 회원',
             cohort: c.metadata?.cohort || '',
             courseName: c.metadata?.courseName || '',
             certificateNo: c.metadata?.certificateNo || '',
@@ -682,7 +683,7 @@ export default function AdminCenterView({
   const [dispatchChannel, setDispatchChannel] = useState('EMAIL');
   const [dispatchTemplateKey, setDispatchTemplateKey] = useState(DISPATCH_TEMPLATES[0].key);
   const [dispatchSenderName, setDispatchSenderName] = useState(
-    () => profile?.fullName ? `어니스톤 관리자 ${profile.fullName}` : DEFAULT_ADMIN_SENDER.name
+    () => profile?.fullName ? `써티멘토 관리자 ${profile.fullName}` : DEFAULT_ADMIN_SENDER.name
   );
   const [dispatchSenderEmail, setDispatchSenderEmail] = useState(
     () => user?.email || profile?.email || DEFAULT_ADMIN_SENDER.email
@@ -741,7 +742,7 @@ export default function AdminCenterView({
     return {
       name: dispatchRecipientName || '홍길동 회원',
       contact: dispatchRecipientContact || '',
-      companyName: dispatchRecipientCompany || selectedAdminCompany?.name || '어니스톤 관리 기업',
+      companyName: dispatchRecipientCompany || selectedAdminCompany?.name || '써티멘토 관리 기업',
       cohort: '1기',
       courseName: TRAINING_COURSE_PRESETS[0],
       certificateNo: 'HN-EDU-202610-1기-001',
@@ -764,7 +765,7 @@ export default function AdminCenterView({
           senderEmail: dispatchSenderEmail,
           recipientName: previewTargetRecipient.name,
           companyName:
-            previewTargetRecipient.companyName || selectedAdminCompany?.name || '어니스톤 관리 기업',
+            previewTargetRecipient.companyName || selectedAdminCompany?.name || '써티멘토 관리 기업',
           joinCode: dispatchJoinCode || joinCodeValue || '(신청 코드 발급 후 자동 삽입)',
           roleLabel: dispatchRoleLabel,
           targetDate: dispatchTargetDate,
@@ -845,7 +846,7 @@ export default function AdminCenterView({
           contact,
           companyId: m.primaryCompanyId || m.companyId || selectedAdminCompany?.id || null,
           companyName:
-            m.primaryCompanyName || m.companyName || selectedAdminCompany?.name || '어니스톤 회원',
+            m.primaryCompanyName || m.companyName || selectedAdminCompany?.name || '써티멘토 회원',
           roleLabel: m.roleLabel || PLATFORM_ROLE_LABELS[m.role] || '회원',
           cohort: m.cohort || m.metadata?.cohort || '',
           courseName: m.courseName || m.metadata?.courseName || '',
@@ -879,7 +880,7 @@ export default function AdminCenterView({
         phone: m.phone || '',
         contact: channel === 'EMAIL' ? m.email : m.phone || m.email,
         companyId: m.primaryCompanyId || m.companyId || null,
-        companyName: m.primaryCompanyName || m.companyName || '어니스톤 회원',
+        companyName: m.primaryCompanyName || m.companyName || '써티멘토 회원',
         cohort: m.cohort || m.metadata?.cohort || '',
         courseName: m.courseName || m.metadata?.courseName || '',
         certificateNo: m.certificateNo || m.metadata?.certificateNo || '',
@@ -897,7 +898,7 @@ export default function AdminCenterView({
         phone: !recipientContact.includes('@') ? recipientContact : '',
         contact: recipientContact,
         companyId: selectedAdminCompany?.id || null,
-        companyName: companyName || selectedAdminCompany?.name || '어니스톤 회원',
+        companyName: companyName || selectedAdminCompany?.name || '써티멘토 회원',
       };
       setSelectedRecipients([single]);
       setDispatchRecipientName(recipientName);
@@ -976,7 +977,7 @@ export default function AdminCenterView({
               contact: dispatchRecipientContact.trim(),
               companyId: selectedAdminCompany?.id || null,
               companyName:
-                dispatchRecipientCompany.trim() || selectedAdminCompany?.name || '어니스톤 회원',
+                dispatchRecipientCompany.trim() || selectedAdminCompany?.name || '써티멘토 회원',
             },
           ]
         : [];
@@ -996,7 +997,7 @@ export default function AdminCenterView({
         senderName: dispatchSenderName,
         senderEmail: dispatchSenderEmail,
         companyId: selectedAdminCompany?.id || null,
-        companyName: selectedAdminCompany?.name || '어니스톤 관리 기업',
+        companyName: selectedAdminCompany?.name || '써티멘토 관리 기업',
         joinCode: dispatchJoinCode || joinCodeValue || '(신청 코드 발급 후 자동 삽입)',
         roleLabel: dispatchRoleLabel,
         targetDate: dispatchTargetDate,
@@ -1268,18 +1269,18 @@ export default function AdminCenterView({
   }, [snapshot.auditLogs, logResourceFilter, logQuery]);
 
   return (
-    <div className="min-h-full bg-slate-50/60 pb-12">
+    <div className="admin-center min-h-full bg-slate-50/60 pb-6">
       {/* Sticky Top Admin Sub-Navigation Bar (UX-004, UX-007, UX-REGISTER-001) */}
-      <div className="sticky top-0 z-20 bg-white/95 backdrop-blur border-b border-slate-200 px-6 md:px-8 pt-3">
+      <div className="sticky top-0 z-20 bg-white/95 backdrop-blur border-b border-slate-200 px-4 md:px-6 pt-3">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-wrap items-center justify-between gap-3 pb-2.5">
-            <div className="flex items-center gap-2.5">
+            <div className="admin-heading flex items-center gap-2.5">
               <span className="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-slate-900 text-white font-bold text-xs">
                 관리
               </span>
               <div>
-                <div className="flex items-center gap-2">
-                  <h1 className="text-lg font-extrabold text-slate-900">어니스톤 관리자 센터</h1>
+                <div className="admin-title flex flex-wrap items-center gap-2">
+                  <h1 className="text-lg font-extrabold text-slate-900">써티멘토 관리자 센터</h1>
                   <span className="px-2 py-0.5 rounded bg-blue-50 text-blue-700 border border-blue-200 text-[11px] font-bold">
                     {isCloudMode ? (user ? 'Supabase 연동' : '로그인 필요') : '로컬 관리자 모드'}
                   </span>
@@ -1329,7 +1330,7 @@ export default function AdminCenterView({
             {ADMIN_TABS.map((tab) => {
               const isActive = activeTab === tab.id;
               const badgeCount =
-                tab.id === 'articles' ? '글' : tab.id === 'members'
+                tab.id === 'partners' ? '프로필' : tab.id === 'articles' ? '글' : tab.id === 'members'
                   ? opSummary.totalMembers
                   : tab.id === 'companies'
                   ? opSummary.totalCompanies
@@ -1412,6 +1413,7 @@ export default function AdminCenterView({
         {/* TAB 1: 회원 · 계정 관리 (Members Directory & Detail Control)         */}
         {/* ================================================================== */}
         {activeTab === 'articles' && <ArticleEditor/>}
+        {activeTab === 'partners' && <PartnerBrandEditor/>}
         {activeTab === 'members' && (
           <div className="space-y-4">
             {/* Filter & Action Toolbar */}
@@ -1987,7 +1989,7 @@ export default function AdminCenterView({
                               completionDate: editMemberCompletionDate,
                             });
                             downloadDocFile(
-                              `어니스톤_수료증_${activeMember.fullName}_${certNo}.doc`,
+                              `써티멘토_수료증_${activeMember.fullName}_${certNo}.doc`,
                               docHtml
                             );
                             notify(
@@ -3076,7 +3078,7 @@ export default function AdminCenterView({
                     <div className="text-blue-300 font-sans font-bold">1) 이메일 실발송 + 파일 첨부 (Resend API)</div>
                     <div>RESEND_API_KEY=re_xxxxxxxxx</div>
                     <div>DISPATCH_FROM_EMAIL=ceo@honestone.kr</div>
-                    <div>DISPATCH_SENDER_NAME=어니스톤 관리자 조영빈</div>
+                    <div>DISPATCH_SENDER_NAME=써티멘토 관리자 조영빈</div>
                   </div>
                   <div className="p-3 rounded-xl bg-slate-800 border border-slate-700 space-y-1">
                     <div className="text-amber-300 font-sans font-bold">2) 카카오 알림톡 · SMS 웹훅/게이트웨이</div>
@@ -3317,7 +3319,7 @@ export default function AdminCenterView({
                             phone: dispatchChannel !== 'EMAIL' ? dispatchRecipientContact.trim() : '',
                             recipientContact: dispatchRecipientContact.trim(),
                             primaryCompanyName:
-                              dispatchRecipientCompany.trim() || selectedAdminCompany?.name || '어니스톤 회원',
+                              dispatchRecipientCompany.trim() || selectedAdminCompany?.name || '써티멘토 회원',
                           },
                         ]);
                         setDispatchRecipientName('');

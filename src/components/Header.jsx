@@ -98,9 +98,9 @@ export default function Header({
           <Menu className="w-5 h-5" />
         </button>
 
-        <button type="button" className="iso-brand" onClick={() => onSelectNav?.('dashboard')} aria-label="어니스톤 전체 현황">
+        <button type="button" className="iso-brand" onClick={() => onSelectNav?.('dashboard')} aria-label="써티멘토 전체 현황">
           <span className="iso-brand-mark"><ShieldCheck className="w-6 h-6" aria-hidden="true" /></span>
-          <span className="text-left"><span className="block text-lg font-bold tracking-tight">어니스톤</span><span className="block text-[11px] text-slate-500">인증 준비와 사후 관리</span></span>
+          <span className="text-left"><span className="block text-lg font-bold tracking-tight">써티멘토</span><span className="block text-[11px] text-slate-500">인증 준비와 사후 관리</span></span>
         </button>
       </div>
 
@@ -178,7 +178,7 @@ export default function Header({
         <div className="relative" ref={appsRef}>
           <button
             onClick={() => setIsAppsDropdownOpen(!isAppsDropdownOpen)}
-            title="어니스톤 도구"
+            title="써티멘토 도구"
             className="p-2.5 rounded-full hover:bg-slate-200/70 text-slate-600 transition-colors"
           >
             <Grid className="w-5 h-5" />
@@ -187,7 +187,7 @@ export default function Header({
           {isAppsDropdownOpen && (
             <div className="absolute right-0 mt-2 w-80 bg-white rounded-2xl shadow-2xl border border-slate-200 p-4 z-50 animate-scale-up">
               <div className="text-xs font-bold text-slate-500 mb-3 uppercase tracking-wider">
-                어니스톤 서비스
+                써티멘토 서비스
               </div>
               <div className="grid grid-cols-3 gap-3 text-center">
                 <div
@@ -405,7 +405,7 @@ export default function Header({
             <div className="flex items-center justify-between border-b border-slate-100 pb-3">
               <h3 className="text-base font-bold text-slate-900 flex items-center gap-2">
                 <HelpCircle className="w-5 h-5 text-blue-600" />
-                <span>어니스톤 고객지원 및 심사 핫라인</span>
+                <span>써티멘토 고객지원 및 심사 핫라인</span>
               </h3>
               <button onClick={() => setIsHelpModalOpen(false)} className="p-1 rounded-lg text-slate-400 hover:bg-slate-100">
                 <X className="w-5 h-5" />

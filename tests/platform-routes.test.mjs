@@ -4,3 +4,11 @@ import { NAV_PATHS, navFromPath, platformHref, validPlatformPath } from '../src/
 test('each feature has a unique direct route',()=>{assert.equal(new Set(Object.values(NAV_PATHS)).size,Object.keys(NAV_PATHS).length);for(const [key,path]of Object.entries(NAV_PATHS))assert.equal(navFromPath(path),key);assert.equal(navFromPath('/documents-unrelated'),null);});
 test('navigation preserves filters and encodes project identifiers',()=>{assert.equal(platformHref('drive','standard=ISO_14001',{folder:'CERT'}),'/documents/iso?standard=ISO_14001&folder=CERT');assert.equal(platformHref('project','',{projectId:'a/b'}),'/projects/a%2Fb');assert.throws(()=>platformHref('unknown'));});
 test('invalid paths are rejected rather than rendering the dashboard',()=>{assert.equal(validPlatformPath('unknown'),false);assert.equal(validPlatformPath('documents',['invalid']),false);assert.equal(validPlatformPath('documents',['references']),true);assert.equal(validPlatformPath('projects'),false);assert.equal(validPlatformPath('projects',['123']),true);assert.equal(validPlatformPath('government-programs',['calendar']),true);assert.equal(validPlatformPath('admin'),true);assert.equal(validPlatformPath('admin',['dispatch']),true);assert.equal(validPlatformPath('admin',['unknown']),false);});
+
+test('business plan analysis has a direct route and preserves company, project and document context',()=>{
+  assert.equal(navFromPath('/business-plan-analysis'),'business_plan_analysis');
+  assert.equal(validPlatformPath('business-plan-analysis'),true);
+  assert.equal(validPlatformPath('business-plan-analysis',['unknown']),false);
+  assert.equal(platformHref('business_plan_analysis','company=c&planProject=p&document=d&folder=f'),'/business-plan-analysis?company=c&planProject=p&document=d&folder=f');
+  assert.equal(platformHref('business_plan','company=c&planProject=p'),'/business-plan?company=c&planProject=p');
+});

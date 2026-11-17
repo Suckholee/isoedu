@@ -81,3 +81,6 @@
   .guideHeading { padding: 13px 12px; border-radius: 0; }
   .detail > section, .checklist { margin-inline: 12px; }
 }
+
+/* UX-DENSITY-001 */
+.page{max-width:none;padding:16px 24px 24px}.heading{margin-bottom:12px}.heading h1{font-size:22px}@media(max-width:700px){.page{padding:16px}}

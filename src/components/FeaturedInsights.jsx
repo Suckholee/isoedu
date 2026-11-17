@@ -13,12 +13,12 @@ export default function FeaturedInsights(){
  },[]);
  const filtered=articles.filter(a=>filter==='all'||a.source===filter);
  return <section id="insights" className={styles.section} aria-labelledby="insights-title">
-  <div className={styles.heading}><div><p className={styles.eyebrow}>JOURNAL / INSIGHTS</p><h2 id="insights-title">사진 너머의 이야기,<br/>글로 이어집니다.</h2></div><p className={styles.intro}>사업계획과 자금, 인증을 준비하는 분들을 위해.<br/>새로운 소식을 이곳에서 만나보세요.</p></div>
+  <div className={styles.heading}><div><h2 id="insights-title">블로그·홈페이지 글</h2></div><p className={styles.intro}>사업계획과 자금, 인증을 준비하는 분들을 위해. 새로운 소식을 이곳에서 만나보세요.</p></div>
   <div className={styles.filters}><div role="group" aria-label="글 출처">{[['all','전체'],['blog','네이버 블로그'],['site','이 사이트 글']].map(([key,label])=><button key={key} aria-pressed={filter===key} onClick={()=>{setFilter(key);setLimit(9);}}>{label}</button>)}</div>{profile?.role==='ADMIN'&&<a href="/admin/articles">글 작성 · AI 발행 <ArrowUpRight size={14}/></a>}</div>
   <p className={styles.status} role="status">{notice}</p>
-  <div className={styles.grid}>{filtered.slice(0,limit).map((article,index)=>{const primary=article.siteUrl||article.blogUrl,external=primary?.startsWith('https:');return <article key={article.id} className={styles.article}>
+  <div className={styles.grid}>{filtered.slice(0,limit).map(article=>{const primary=article.siteUrl||article.blogUrl,external=primary?.startsWith('https:');return <article key={article.id} className={styles.article}>
    <div className={styles.meta}><span>{article.category}{article.aiGenerated?' · AI 작성':''}</span><time dateTime={article.date}>{new Intl.DateTimeFormat('sv-SE',{timeZone:'Asia/Seoul'}).format(new Date(article.date)).replaceAll('-','.')}</time></div>
-   <span className={styles.number} aria-hidden="true">{String(index+1).padStart(2,'0')}</span><h3><a href={primary} target={external?'_blank':undefined} rel={external?'noopener noreferrer':undefined}>{article.title}</a></h3>
+   <h3><a href={primary} target={external?'_blank':undefined} rel={external?'noopener noreferrer':undefined}>{article.title}</a></h3>
    <div className={styles.links}>{article.siteUrl&&<a href={article.siteUrl} target={external?'_blank':undefined} rel={external?'noopener noreferrer':undefined}>{article.source==='site'?'이 사이트에서 읽기':'홈페이지에서 읽기'} <ArrowUpRight size={14}/></a>}{article.blogUrl&&<a href={article.blogUrl} target="_blank" rel="noopener noreferrer">블로그 원문 <ArrowUpRight size={14}/></a>}</div>
   </article>;})}</div>
   {!filtered.length&&<p className={styles.empty}>아직 공개된 글이 없습니다. 새 글이 발행되면 이곳에 표시됩니다.</p>}

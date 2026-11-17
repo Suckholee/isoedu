@@ -147,14 +147,14 @@ function Guide({ guide }) {
       <section><h3>준비 순서</h3><ol className={styles.steps} role="list">{guide.steps.map(step => <li key={step}>{step}</li>)}</ol></section>
       <section><h3>먼저 모아둘 자료</h3><ul>{guide.evidence.map(item => <li key={item}>{item}</li>)}</ul></section>
       {guide.checklist.length > 0 && <details className={styles.checklist}>
-        <summary><ClipboardList size={18} aria-hidden="true" /> <span>어니스톤 서류 준비 목록</span><small>{guide.checklist.length}건</small><ChevronDown className={styles.checklistChevron} size={17} aria-hidden="true" /></summary>
+        <summary><ClipboardList size={18} aria-hidden="true" /> <span>서류 준비 목록</span><small>{guide.checklist.length}건</small><ChevronDown className={styles.checklistChevron} size={17} aria-hidden="true" /></summary>
         <p>준비용 목록입니다. 실제 제출 여부와 발급 기준은 신청 기관에서 확인하세요.</p>
         <ul>{guide.checklist.map(item => <li key={item.key}>
           <strong>{item.title}</strong>{item.conditional && <small>해당 시</small>}
           {item.guidance && <p>{item.guidance}</p>}
         </li>)}</ul>
         {guide.preparationSource && <a href={guide.preparationSource} target="_blank" rel="noreferrer">
-          어니스톤 원본 안내 <ExternalLink size={13} aria-hidden="true" />
+          원본 안내 <ExternalLink size={13} aria-hidden="true" />
         </a>}
       </details>}
       <section className={styles.sources}>

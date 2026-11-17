@@ -1,0 +1,475 @@
+{
+  "source": "써티멘토 공개 인물·기관 프로필",
+  "sourceUrl": "https://thirtymentor-mvp.vercel.app",
+  "importedOn": "2026-11-17",
+  "sourceHash": "5dc8f56cb5ce404c9c1edf1ecc4ddeb4453ac574fae946f928b2c1b7d8e415d7",
+  "profiles": [
+    {
+      "slug": "youngbin-cho",
+      "portrait": "/images/honestone/cho-youngbin/ceo-standing.jpg",
+      "portraitNote": "어니스톤 공식 홈페이지 프로필",
+      "updatedAt": "2026-11-17",
+      "name": "조영빈",
+      "field": "경영자문",
+      "org": "어니스톤",
+      "bio": "단단 스터디를 운영하며 자금·세금·지원금에 관한 실무 정보를 단단 브리핑으로 나누고 있습니다. 기업 고객과 대화를 시작할 때 확인할 제도와 질문을 정리합니다.",
+      "topics": [
+        "경영자문",
+        "자금·세금·지원금",
+        "단단 브리핑"
+      ],
+      "source": "단단 스터디 운영 안내와 브리핑 1~6호",
+      "sourceUrl": "https://thirtymentor-mvp.vercel.app/u/youngbin-cho",
+      "entityType": "Person"
+    },
+    {
+      "slug": "seokho-lee",
+      "name": "이석호",
+      "field": "AX · AI 활용",
+      "org": "네오앤피터",
+      "bio": "네오앤피터 이석호입니다. 단단 스터디의 AX 분야 멤버로, 서티멘토에서 컨설턴트의 업무와 개인 브랜딩을 연결하는 서비스를 준비하고 있습니다.",
+      "topics": [
+        "AX",
+        "AI 활용",
+        "컨설턴트 브랜딩"
+      ],
+      "source": "본인 제공 회사·이름 및 단단 스터디 분야 소개",
+      "sourceUrl": "https://thirtymentor-mvp.vercel.app/u/seokho-lee",
+      "entityType": "Person"
+    },
+    {
+      "slug": "harim-lee",
+      "name": "이하림",
+      "field": "세무",
+      "bio": "서울 강서구 마곡에서 세무사업을 운영하는 이하림 세무사입니다. 컨설턴트 및 전문직과의 협업에 관심을 두고 단단 스터디에서 함께합니다.",
+      "topics": [
+        "세무",
+        "전문가 협업"
+      ],
+      "source": "2026.11.12 단단 스터디 본인 자기소개",
+      "sourceUrl": "https://thirtymentor-mvp.vercel.app/u/harim-lee",
+      "entityType": "Person"
+    },
+    {
+      "slug": "hongseok-park",
+      "name": "박홍석",
+      "field": "행정사",
+      "org": "해드리오 행정사사무소",
+      "bio": "해드리오 행정사사무소 대표 행정사 박홍석입니다. 단단 스터디에서 행정 분야의 전문성을 나눕니다.",
+      "topics": [
+        "행정사",
+        "기업 실무"
+      ],
+      "source": "2026.11.12 단단 스터디 본인 자기소개",
+      "sourceUrl": "https://thirtymentor-mvp.vercel.app/u/hongseok-park",
+      "entityType": "Person"
+    },
+    {
+      "slug": "yeonwoo-seo",
+      "name": "서연우",
+      "field": "회계",
+      "bio": "단단 스터디에서 회계사 분야로 소개된 서연우님입니다. 이 페이지에 본인의 전문 지식과 공개 콘텐츠를 모아갑니다.",
+      "topics": [
+        "회계"
+      ],
+      "source": "단단 스터디 멤버 소개 · 2026.11.16 확인",
+      "sourceUrl": "https://thirtymentor-mvp.vercel.app/u/yeonwoo-seo",
+      "entityType": "Person"
+    },
+    {
+      "slug": "yonghwan-lee",
+      "name": "이용환",
+      "field": "IT 개발",
+      "bio": "단단 스터디에서 장사이지플랫폼 분야로 소개된 이용환님입니다. 이 페이지에 본인의 전문 지식과 공개 콘텐츠를 모아갑니다.",
+      "topics": [
+        "IT 개발"
+      ],
+      "source": "단단 스터디 멤버 소개 · 2026.11.16 확인",
+      "sourceUrl": "https://thirtymentor-mvp.vercel.app/u/yonghwan-lee",
+      "entityType": "Person"
+    },
+    {
+      "slug": "ara-ryu",
+      "name": "류아라",
+      "field": "안전보건",
+      "bio": "단단 스터디에서 안전보건컨설팅 분야로 소개된 류아라님입니다. 이 페이지에 본인의 전문 지식과 공개 콘텐츠를 모아갑니다.",
+      "topics": [
+        "안전보건"
+      ],
+      "source": "단단 스터디 멤버 소개 · 2026.11.16 확인",
+      "sourceUrl": "https://thirtymentor-mvp.vercel.app/u/ara-ryu",
+      "entityType": "Person"
+    },
+    {
+      "slug": "jeongyong-lee",
+      "name": "이정용",
+      "field": "행정사",
+      "bio": "단단 스터디에서 행정사 분야로 소개된 이정용님입니다. 이 페이지에 본인의 전문 지식과 공개 콘텐츠를 모아갑니다.",
+      "topics": [
+        "행정사"
+      ],
+      "source": "단단 스터디 멤버 소개 · 2026.11.16 확인",
+      "sourceUrl": "https://thirtymentor-mvp.vercel.app/u/jeongyong-lee",
+      "entityType": "Person"
+    },
+    {
+      "slug": "jongbin-lee",
+      "name": "이종빈",
+      "field": "행정사",
+      "bio": "단단 스터디에서 행정사 분야로 소개된 이종빈님입니다. 이 페이지에 본인의 전문 지식과 공개 콘텐츠를 모아갑니다.",
+      "topics": [
+        "행정사"
+      ],
+      "source": "단단 스터디 멤버 소개 · 2026.11.16 확인",
+      "sourceUrl": "https://thirtymentor-mvp.vercel.app/u/jongbin-lee",
+      "entityType": "Person"
+    },
+    {
+      "slug": "hyunjin-joo",
+      "name": "주현진",
+      "field": "경영컨설팅",
+      "bio": "단단 스터디에서 경영컨설팅 분야로 소개된 주현진님입니다. 이 페이지에 본인의 전문 지식과 공개 콘텐츠를 모아갑니다.",
+      "topics": [
+        "경영컨설팅"
+      ],
+      "source": "단단 스터디 멤버 소개 · 2026.11.16 확인",
+      "sourceUrl": "https://thirtymentor-mvp.vercel.app/u/hyunjin-joo",
+      "entityType": "Person"
+    },
+    {
+      "slug": "jaeeon-moon",
+      "name": "문재언",
+      "field": "경영컨설팅",
+      "bio": "단단 스터디에서 경영컨설팅 분야로 소개된 문재언님입니다. 이 페이지에 본인의 전문 지식과 공개 콘텐츠를 모아갑니다.",
+      "topics": [
+        "경영컨설팅"
+      ],
+      "source": "단단 스터디 멤버 소개 · 2026.11.16 확인",
+      "sourceUrl": "https://thirtymentor-mvp.vercel.app/u/jaeeon-moon",
+      "entityType": "Person"
+    },
+    {
+      "slug": "yujin-wi",
+      "name": "위유진",
+      "field": "경영컨설팅",
+      "bio": "단단 스터디에서 경영컨설팅 분야로 소개된 위유진님입니다. 이 페이지에 본인의 전문 지식과 공개 콘텐츠를 모아갑니다.",
+      "topics": [
+        "경영컨설팅"
+      ],
+      "source": "단단 스터디 멤버 소개 · 2026.11.16 확인",
+      "sourceUrl": "https://thirtymentor-mvp.vercel.app/u/yujin-wi",
+      "entityType": "Person"
+    },
+    {
+      "slug": "kyungi-park",
+      "name": "박경이",
+      "field": "경영컨설팅",
+      "bio": "단단 스터디에서 경영컨설팅 분야로 소개된 박경이님입니다. 이 페이지에 본인의 전문 지식과 공개 콘텐츠를 모아갑니다.",
+      "topics": [
+        "경영컨설팅"
+      ],
+      "source": "단단 스터디 멤버 소개 · 2026.11.16 확인",
+      "sourceUrl": "https://thirtymentor-mvp.vercel.app/u/kyungi-park",
+      "entityType": "Person"
+    },
+    {
+      "slug": "suhyung-ahn",
+      "name": "안수형",
+      "field": "안전보건 교육",
+      "bio": "단단 스터디에서 안전보건 교육기관 분야로 소개된 안수형님입니다. 이 페이지에 본인의 전문 지식과 공개 콘텐츠를 모아갑니다.",
+      "topics": [
+        "안전보건 교육"
+      ],
+      "source": "단단 스터디 멤버 소개 · 2026.11.16 확인",
+      "sourceUrl": "https://thirtymentor-mvp.vercel.app/u/suhyung-ahn",
+      "entityType": "Person"
+    },
+    {
+      "slug": "wanggyu-song",
+      "name": "송왕규",
+      "field": "행정사",
+      "bio": "단단 스터디에서 행정사 분야로 소개된 송왕규님입니다. 이 페이지에 본인의 전문 지식과 공개 콘텐츠를 모아갑니다.",
+      "topics": [
+        "행정사"
+      ],
+      "source": "단단 스터디 멤버 소개 · 2026.11.16 확인",
+      "sourceUrl": "https://thirtymentor-mvp.vercel.app/u/wanggyu-song",
+      "entityType": "Person"
+    },
+    {
+      "slug": "kyungjin-son",
+      "name": "손경진",
+      "field": "노무",
+      "bio": "단단 스터디에서 노무사 분야로 소개된 손경진님입니다. 이 페이지에 본인의 전문 지식과 공개 콘텐츠를 모아갑니다.",
+      "topics": [
+        "노무"
+      ],
+      "source": "단단 스터디 멤버 소개 · 2026.11.16 확인",
+      "sourceUrl": "https://thirtymentor-mvp.vercel.app/u/kyungjin-son",
+      "entityType": "Person"
+    },
+    {
+      "slug": "hyunbae-bang",
+      "name": "방현배",
+      "field": "세무",
+      "bio": "단단 스터디에서 세무사 분야로 소개된 방현배님입니다. 이 페이지에 본인의 전문 지식과 공개 콘텐츠를 모아갑니다.",
+      "topics": [
+        "세무"
+      ],
+      "source": "단단 스터디 멤버 소개 · 2026.11.16 확인",
+      "sourceUrl": "https://thirtymentor-mvp.vercel.app/u/hyunbae-bang",
+      "entityType": "Person"
+    },
+    {
+      "slug": "youngmoon-kim",
+      "name": "김영문",
+      "field": "전문 분야 소개 예정",
+      "bio": "단단 스터디에서 함께하는 김영문님입니다. 전문 분야 소개와 공개 콘텐츠를 준비하고 있습니다.",
+      "topics": [],
+      "source": "단단 스터디 대화상대 목록 · 2026.11.16 확인",
+      "createdAt": "2026-11-17",
+      "updatedAt": "2026-11-17",
+      "sourceUrl": "https://thirtymentor-mvp.vercel.app/u/youngmoon-kim",
+      "entityType": "Person"
+    },
+    {
+      "slug": "taehoon-kim",
+      "name": "김태훈",
+      "field": "행정사",
+      "bio": "단단 스터디에서 행정사 분야로 소개된 김태훈님입니다. 본인의 지식과 경험을 이 페이지에 모아갑니다.",
+      "topics": [
+        "행정사"
+      ],
+      "source": "단단 스터디 대화상대 목록 · 2026.11.16 확인",
+      "createdAt": "2026-11-17",
+      "updatedAt": "2026-11-17",
+      "sourceUrl": "https://thirtymentor-mvp.vercel.app/u/taehoon-kim",
+      "entityType": "Person"
+    },
+    {
+      "slug": "ryunc-safety",
+      "name": "류앤씨 안전보건기술연구원",
+      "field": "안전보건",
+      "bio": "단단 스터디에서 안전보건 분야로 소개된 류앤씨 안전보건기술연구원님입니다. 본인의 지식과 경험을 이 페이지에 모아갑니다.",
+      "topics": [
+        "안전보건"
+      ],
+      "source": "단단 스터디 대화상대 목록 · 2026.11.16 확인",
+      "createdAt": "2026-11-17",
+      "updatedAt": "2026-11-17",
+      "entityType": "Organization",
+      "sourceUrl": "https://thirtymentor-mvp.vercel.app/u/ryunc-safety"
+    },
+    {
+      "slug": "hohyun-park",
+      "name": "박호현",
+      "field": "전문 분야 소개 예정",
+      "bio": "단단 스터디에서 함께하는 박호현님입니다. 전문 분야 소개와 공개 콘텐츠를 준비하고 있습니다.",
+      "topics": [],
+      "source": "단단 스터디 대화상대 목록 · 2026.11.16 확인",
+      "createdAt": "2026-11-17",
+      "updatedAt": "2026-11-17",
+      "sourceUrl": "https://thirtymentor-mvp.vercel.app/u/hohyun-park",
+      "entityType": "Person"
+    },
+    {
+      "slug": "resting-friends",
+      "name": "쉬고있는 프렌즈",
+      "field": "전문 분야 소개 예정",
+      "bio": "단단 스터디에서 함께하는 쉬고있는 프렌즈님입니다. 전문 분야 소개와 공개 콘텐츠를 준비하고 있습니다.",
+      "topics": [],
+      "source": "단단 스터디 대화상대 목록 · 2026.11.16 확인",
+      "createdAt": "2026-11-17",
+      "updatedAt": "2026-11-17",
+      "sourceUrl": "https://thirtymentor-mvp.vercel.app/u/resting-friends",
+      "entityType": "Person"
+    },
+    {
+      "slug": "alchemist-k",
+      "name": "연금술사 K",
+      "field": "전문 분야 소개 예정",
+      "bio": "단단 스터디에서 함께하는 연금술사 K님입니다. 전문 분야 소개와 공개 콘텐츠를 준비하고 있습니다.",
+      "topics": [],
+      "source": "단단 스터디 대화상대 목록 · 2026.11.16 확인",
+      "createdAt": "2026-11-17",
+      "updatedAt": "2026-11-17",
+      "sourceUrl": "https://thirtymentor-mvp.vercel.app/u/alchemist-k",
+      "entityType": "Person"
+    },
+    {
+      "slug": "insook-yeom",
+      "name": "염인숙",
+      "field": "전문 분야 소개 예정",
+      "bio": "단단 스터디에서 함께하는 염인숙님입니다. 전문 분야 소개와 공개 콘텐츠를 준비하고 있습니다.",
+      "topics": [],
+      "source": "단단 스터디 대화상대 목록 · 2026.11.16 확인",
+      "createdAt": "2026-11-17",
+      "updatedAt": "2026-11-17",
+      "org": "이음컴퍼니",
+      "sourceUrl": "https://thirtymentor-mvp.vercel.app/u/insook-yeom",
+      "entityType": "Person"
+    },
+    {
+      "slug": "jeonghyun-yoon",
+      "name": "윤정현",
+      "field": "전문 분야 소개 예정",
+      "bio": "단단 스터디에서 함께하는 윤정현님입니다. 전문 분야 소개와 공개 콘텐츠를 준비하고 있습니다.",
+      "topics": [],
+      "source": "단단 스터디 대화상대 목록 · 2026.11.16 확인",
+      "createdAt": "2026-11-17",
+      "updatedAt": "2026-11-17",
+      "sourceUrl": "https://thirtymentor-mvp.vercel.app/u/jeonghyun-yoon",
+      "entityType": "Person"
+    },
+    {
+      "slug": "cheering-ryan",
+      "name": "응원하는 라이언",
+      "field": "전문 분야 소개 예정",
+      "bio": "단단 스터디에서 함께하는 응원하는 라이언님입니다. 전문 분야 소개와 공개 콘텐츠를 준비하고 있습니다.",
+      "topics": [],
+      "source": "단단 스터디 대화상대 목록 · 2026.11.16 확인",
+      "createdAt": "2026-11-17",
+      "updatedAt": "2026-11-17",
+      "sourceUrl": "https://thirtymentor-mvp.vercel.app/u/cheering-ryan",
+      "entityType": "Person"
+    },
+    {
+      "slug": "hwayoung-lee",
+      "name": "이화영",
+      "field": "전문 분야 소개 예정",
+      "bio": "단단 스터디에서 함께하는 이화영님입니다. 전문 분야 소개와 공개 콘텐츠를 준비하고 있습니다.",
+      "topics": [],
+      "source": "단단 스터디 대화상대 목록 · 2026.11.16 확인",
+      "createdAt": "2026-11-17",
+      "updatedAt": "2026-11-17",
+      "sourceUrl": "https://thirtymentor-mvp.vercel.app/u/hwayoung-lee",
+      "entityType": "Person"
+    },
+    {
+      "slug": "tax-beauty",
+      "name": "절세미인",
+      "field": "전문 분야 소개 예정",
+      "bio": "단단 스터디에서 함께하는 절세미인님입니다. 전문 분야 소개와 공개 콘텐츠를 준비하고 있습니다.",
+      "topics": [],
+      "source": "단단 스터디 대화상대 목록 · 2026.11.16 확인",
+      "createdAt": "2026-11-17",
+      "updatedAt": "2026-11-17",
+      "sourceUrl": "https://thirtymentor-mvp.vercel.app/u/tax-beauty",
+      "entityType": "Person"
+    },
+    {
+      "slug": "muhyun-kim",
+      "name": "김무현",
+      "field": "행정사",
+      "bio": "단단 스터디에서 행정사 분야로 소개된 김무현님입니다. 본인의 지식과 경험을 이 페이지에 모아갑니다.",
+      "topics": [
+        "행정사"
+      ],
+      "source": "단단 스터디 대화상대 목록 · 2026.11.16 확인",
+      "createdAt": "2026-11-17",
+      "updatedAt": "2026-11-17",
+      "sourceUrl": "https://thirtymentor-mvp.vercel.app/u/muhyun-kim",
+      "entityType": "Person"
+    },
+    {
+      "slug": "jeongyul",
+      "name": "정율",
+      "field": "전문 분야 소개 예정",
+      "bio": "단단 스터디에서 함께하는 정율님입니다. 전문 분야 소개와 공개 콘텐츠를 준비하고 있습니다.",
+      "topics": [],
+      "source": "단단 스터디 대화상대 목록 · 2026.11.16 확인",
+      "createdAt": "2026-11-17",
+      "updatedAt": "2026-11-17",
+      "sourceUrl": "https://thirtymentor-mvp.vercel.app/u/jeongyul",
+      "entityType": "Person"
+    },
+    {
+      "slug": "hyunsu-ham",
+      "name": "함현수",
+      "field": "행정사",
+      "bio": "단단 스터디에서 행정사 분야로 소개된 함현수님입니다. 본인의 지식과 경험을 이 페이지에 모아갑니다.",
+      "topics": [
+        "행정사"
+      ],
+      "source": "단단 스터디 대화상대 목록 · 2026.11.16 확인",
+      "createdAt": "2026-11-17",
+      "updatedAt": "2026-11-17",
+      "sourceUrl": "https://thirtymentor-mvp.vercel.app/u/hyunsu-ham",
+      "entityType": "Person"
+    },
+    {
+      "slug": "bb",
+      "name": "BB",
+      "field": "전문 분야 소개 예정",
+      "bio": "단단 스터디에서 함께하는 BB님입니다. 전문 분야 소개와 공개 콘텐츠를 준비하고 있습니다.",
+      "topics": [],
+      "source": "단단 스터디 대화상대 목록 · 2026.11.16 확인",
+      "createdAt": "2026-11-17",
+      "updatedAt": "2026-11-17",
+      "sourceUrl": "https://thirtymentor-mvp.vercel.app/u/bb",
+      "entityType": "Person"
+    },
+    {
+      "slug": "seungwoo-yoon",
+      "name": "윤승우",
+      "field": "전문 분야 소개 예정",
+      "bio": "단단 스터디에서 함께하는 윤승우님입니다. 전문 분야 소개와 공개 콘텐츠를 준비하고 있습니다.",
+      "topics": [],
+      "source": "단단 스터디 대화상대 목록 · 2026.11.16 확인",
+      "createdAt": "2026-11-17",
+      "updatedAt": "2026-11-17",
+      "sourceUrl": "https://thirtymentor-mvp.vercel.app/u/seungwoo-yoon",
+      "entityType": "Person"
+    }
+  ],
+  "articles": [
+    {
+      "id": "certimento-venture-tax-check",
+      "title": "벤처확인만 받으면 세금이 줄어들까요?",
+      "category": "단단 브리핑 · 기업 인증",
+      "url": "https://thirtymentor-mvp.vercel.app/blog/venture-tax-check",
+      "reviewer_slug": null,
+      "sourceDate": "2026-11-12",
+      "sourceLabel": "써티멘토",
+      "source_author_slug": "youngbin-cho",
+      "author_slug": null,
+      "attributionLabel": "원문 제공 · AI 재구성 · 원저자 추가 검수 미확인"
+    },
+    {
+      "id": "certimento-income-tax-prepayment",
+      "title": "상반기 실적이 줄었다면 중간예납 고지서를 어떻게 확인할까요?",
+      "category": "단단 브리핑 · 세금",
+      "url": "https://thirtymentor-mvp.vercel.app/blog/income-tax-prepayment",
+      "reviewer_slug": null,
+      "sourceDate": "2026-11-15",
+      "sourceLabel": "써티멘토",
+      "source_author_slug": "youngbin-cho",
+      "author_slug": null,
+      "attributionLabel": "원문 제공 · AI 재구성 · 원저자 추가 검수 미확인"
+    },
+    {
+      "id": "certimento-export-readiness",
+      "title": "내년 수출지원사업을 기다리는 기업은 무엇을 먼저 준비할까요?",
+      "category": "단단 브리핑 · 수출",
+      "url": "https://thirtymentor-mvp.vercel.app/blog/export-readiness",
+      "reviewer_slug": null,
+      "sourceDate": "2026-11-16",
+      "sourceLabel": "써티멘토",
+      "source_author_slug": "youngbin-cho",
+      "author_slug": null,
+      "attributionLabel": "원문 제공 · AI 재구성 · 원저자 추가 검수 미확인"
+    },
+    {
+      "id": "certimento-policy-funding-check",
+      "title": "정책자금 상담 전에 계약과 신청 경로를 확인해야 하는 이유",
+      "category": "단단 브리핑 · 자금",
+      "url": "https://thirtymentor-mvp.vercel.app/blog/policy-funding-check",
+      "reviewer_slug": null,
+      "sourceDate": "2026-11-11",
+      "sourceLabel": "써티멘토",
+      "source_author_slug": "youngbin-cho",
+      "author_slug": null,
+      "attributionLabel": "원문 제공 · AI 재구성 · 원저자 추가 검수 미확인"
+    }
+  ]
+}

@@ -335,3 +335,100 @@
 .platform-document-toolbar-slot{flex:1;min-width:0;order:1}
 .platform-document-topbar .iso-header{flex-shrink:0}
 @media(max-width:700px){.platform-document-toolbar-slot{flex-basis:100%;order:3}.platform-document-topbar{gap:0;padding:4px 8px}.platform-document-topbar .iso-header{margin-left:auto}}
+
+/* UX-DENSITY-001 — shared page chrome; document canvases keep their own layout. */
+:root { --workspace-gutter: 24px; --workspace-gap: 12px; }
+.platform-scroll:not(.platform-document-content) { padding: 0 var(--workspace-gutter) 24px; }
+.platform-dashboard, .gov-calendar-page, .agent-schedules { padding-top: 16px; }
+.platform-page-heading, .gov-calendar-page .platform-page-heading, .agent-schedules .platform-page-heading, .reference-library .platform-page-heading { display: flex; height: auto; min-height: 44px; align-items: center; flex-wrap: wrap; gap: 8px 16px; margin-bottom: 12px; }
+.platform-page-heading > div:first-child { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 16px; min-width: 0; }
+.platform-page-heading h1, .agent-schedules .platform-page-heading h1 { font-size: 22px; line-height: 1.4; }
+.platform-page-heading p { font-size: 13px; margin: 0; line-height: 1.6; }
+.platform-update { padding-top: 0; gap: 10px; flex-wrap: wrap; white-space: normal; }
+.gov-calendar-page .platform-page-heading > div:last-child, .reference-library .platform-page-heading > button { margin-top: 0; }
+.ppt-layout .platform-card { padding: 18px; }
+.platform-top-grid, .platform-bottom-grid, .ppt-layout .platform-top-grid, .ppt-layout .platform-bottom-grid { gap: var(--workspace-gap); }
+.platform-bottom-grid, .ppt-layout .platform-bottom-grid { margin-top: 12px; }
+.ppt-layout .platform-top-grid > .platform-card, .ppt-layout .platform-bottom-grid > .platform-card { min-height: 0; }
+.reference-library, .client-drive, .my-work { padding: 16px var(--workspace-gutter) 24px; max-width: none; }
+.reference-summary { margin: 12px 0; }
+.reference-empty, .work-empty { padding: 28px 16px; }
+.client-drive-heading h1, .work-heading h1 { font-size: 22px; }
+.client-drive-heading p, .work-heading p { font-size: 13px; margin-top: 4px; }
+.client-drive-actions { margin-top: 10px; }
+.client-drive-toolbar { margin: 12px 0; padding: 12px; }
+.client-drive-search { margin-bottom: 12px; }
+.client-folder-card>button { min-height: 0; padding: 16px; }
+.my-work .work-controls, .my-work .work-list-toolbar { margin: 12px 0; }
+.managed-context-bar { margin: 12px var(--workspace-gutter) 0; }
+.document-space-header { display: flex; align-items: center; flex-wrap: wrap; gap: 6px 20px; margin-bottom: 12px; }
+.document-space-header h1 { font-size: 22px; }
+.document-space-header p { margin: 0; font-size: 12px; }
+.document-space-header nav { margin-top: 0; gap: 18px; }
+.document-space-header nav a { padding: 8px 2px; min-height: 40px; }
+.document-space-header-compact { margin-bottom: 8px; }
+.client-drive-review-mode { padding: 16px 24px; }
+.admin-center > div > .max-w-7xl { max-width: none; }
+@media(max-width:767px) {
+  :root { --workspace-gutter: 16px; }
+  .platform-page-heading { flex-direction: row; }
+  .platform-page-heading h1, .agent-schedules .platform-page-heading h1 { font-size: 20px; }
+  .ppt-layout .platform-card { padding: 14px; }
+  .document-space-header { gap: 6px 12px; }
+  .document-space-header nav { width: 100%; overflow-x: auto; }
+  .document-space-header nav a { min-height: 44px; white-space: nowrap; }
+  .client-drive-review-mode { padding: 12px; }
+}
+.ppt-layout .platform-sidebar { padding-top: 18px; padding-bottom: 18px; }
+.ppt-layout .platform-sidebar > :first-child { margin-bottom: 18px; }
+.ppt-layout .platform-sidebar nav { margin-top: 16px; }
+.ppt-layout .platform-nav { min-height: 44px; padding: 9px 16px; margin-bottom: 3px; font-size: 14px; gap: 12px; }
+.work-heading > div:first-child { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 16px; }
+.work-heading p { margin: 0; }
+.work-row { padding: 12px 16px; }
+.work-group { margin-bottom: 16px; }
+.work-group h2 { margin-bottom: 8px; }
+.work-local-note { margin-top: 16px; }
+.platform-readiness-body { padding: 16px 0; }
+.ppt-layout .platform-metric { min-height: 0; padding: 14px; }
+.ppt-layout .platform-table th, .ppt-layout .platform-table td { padding: 12px 8px; }
+@media(max-width:767px) { .work-row { padding: 12px; } }
+.company-projects { margin: 16px 24px; }
+.ppt-layout .project-quickstart { padding: 12px 16px; }
+.project-quickstart > summary { min-height: 24px; line-height: 24px; }
+.project-quickstart > ol { margin-top: 12px; }
+.client-drive-toolbar .work-client-search { flex: 1; min-width: 140px; max-width: 420px; padding: 10px 12px; }
+.managed-client-grid { gap: 10px; margin-top: 12px; grid-template-columns: repeat(auto-fill,minmax(240px,1fr)); }
+.managed-client-grid button { display: grid; grid-template-columns: 28px minmax(0,1fr); align-content: start; align-items: center; gap: 4px 10px; padding: 14px; }
+.managed-client-grid button strong { font-size: 14px; overflow-wrap: anywhere; }
+.managed-client-grid button small { grid-column: 2; font-size: 11px; }
+.client-folder-grid { gap: 10px; margin-bottom: 12px; }
+.client-folder-open { display: grid; grid-template-columns: 30px minmax(0,1fr); gap: 6px 10px; align-items: center; }
+.client-folder-open small { grid-column: 2; }
+@media(max-width:767px) {
+ .company-projects { margin: 12px 16px; }
+ .client-drive-toolbar { flex-wrap: wrap; gap: 8px; padding: 10px 0; }
+ .client-drive-toolbar .work-client-search { order: 3; flex-basis: 100%; max-width: none; min-height: 44px; }
+}
+.platform-dashboard { min-width: 0; }
+.platform-scroll > .my-work, .platform-scroll > .client-drive, .platform-scroll > .reference-library { padding-inline: 0; }
+.platform-scroll > .company-projects { margin-inline: 0; }
+.admin-center > .max-w-7xl { max-width: none; padding-inline: 24px; padding-top: 16px; }
+@media(max-width:1200px) {
+ .ppt-layout .platform-top-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+ .ppt-layout .platform-top-grid > :last-child { grid-column: span 2; }
+ .ppt-layout .platform-bottom-grid { grid-template-columns: 1fr; }
+}
+@media(max-width:767px) {
+ .ppt-layout .platform-top-grid { grid-template-columns: 1fr; }
+ .ppt-layout .platform-top-grid > :last-child { grid-column: auto; }
+ .admin-center > .max-w-7xl { padding-inline: 16px; }
+}
+.platform-scroll > .admin-center { margin-inline: calc(-1 * var(--workspace-gutter)); }
+.admin-heading > span { flex-shrink: 0; }
+.admin-title > span { white-space: nowrap; }
+@media(max-width:640px) {
+ .admin-heading > span, .admin-heading > div > p { display: none; }
+ .admin-title h1 { font-size: 16px; }
+ .admin-title > span { font-size: 10px; padding: 2px 5px; }
+}

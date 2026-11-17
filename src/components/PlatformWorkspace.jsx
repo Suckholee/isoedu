@@ -17,6 +17,7 @@ import BusinessPlanEntry from './BusinessPlanEntry';
 import EnterpriseWorkspace from './EnterpriseWorkspace';
 import CertificationCuration from './CertificationCuration';
 import CertificationLibrary from './CertificationLibrary';
+import SecondBrain from './SecondBrain';
 import GrowthIntakeHandoff from './GrowthIntakeHandoff';
 import {useMemberPortal} from '../hooks/useMemberPortal';
 import AgentSchedulesView from './AgentSchedulesView';
@@ -95,7 +96,7 @@ export default function PlatformWorkspace() {
   );
   const planCompany = planCompanies.find(company => company.id === planCompanyId);
   const documentStore = useDocuments({
-    companyId: activeNav === 'business_plan' ? planCompany?.id : currentCompany?.id, userId: accountId,
+    companyId: ['business_plan','business_plan_analysis'].includes(activeNav) ? planCompany?.id : currentCompany?.id, userId: accountId,
     enabled: !authLoading && (!isCloudMode || Boolean(user && profile)),
   });
   const documents = documentStore.documents;
@@ -435,7 +436,7 @@ export default function PlatformWorkspace() {
     }));
   };
 
-  const selectCompany = comp => {setCurrentCompany(comp);setActiveProject(comp?projects.find(p=>p.companyId===comp.id)||null:null);const p=clientContextSearch(searchParams.toString(),comp);if(activeNav==='business_plan'){for(const key of ['planProject','document','section'])p.delete(key);if(!comp)p.set('company','');}router.push((activeNav==='project'?'/certifications':pathname)+(p.size?'?'+p:''),{scroll:false});showToast(comp?`${comp.name} 기준으로 전환했습니다.`:'전체 거래처로 전환했습니다.');};
+  const selectCompany = comp => {setCurrentCompany(comp);setActiveProject(comp?projects.find(p=>p.companyId===comp.id)||null:null);const p=clientContextSearch(searchParams.toString(),comp);if(['business_plan','business_plan_analysis'].includes(activeNav)){for(const key of ['planProject','document','section'])p.delete(key);if(!comp)p.set('company','');}router.push((activeNav==='project'?'/certifications':pathname)+(p.size?'?'+p:''),{scroll:false});showToast(comp?`${comp.name} 기준으로 전환했습니다.`:'전체 거래처로 전환했습니다.');};
   return (
     <div className="iso-app ppt-layout h-screen flex flex-col text-slate-800 font-sans overflow-hidden">
 
@@ -507,11 +508,12 @@ export default function PlatformWorkspace() {
           <div className="iso-workspace flex-1 flex flex-col overflow-hidden">
 
             {/* Scrollable View Content Canvas */}
-            <div ref={contentRef} className={`platform-scroll flex-1 overflow-auto ${activeNav==='certification_library'?"platform-library-content":memberPortal.enterprise&&(parsePreparationPath(pathname)||searchParams.get("prepareProject"))?"platform-document-content":""}`}>
+            <div ref={contentRef} className={`platform-scroll flex-1 overflow-auto ${activeNav==='second_brain'?"platform-document-content":activeNav==='certification_library'?"platform-library-content":memberPortal.enterprise&&(parsePreparationPath(pathname)||searchParams.get("prepareProject"))?"platform-document-content":""}`}>
               {activeNav!=='certification_library'&&searchParams.get("intake")==="1"&&<GrowthIntakeHandoff companies={(memberPortal.context?.companies||[]).filter(c=>memberPortal.enterprise||clientCompanies.some(client=>client.id===c.id))} currentCompany={currentCompany}/>}
 
-              {activeNav==='certification_library'?<CertificationLibrary />:isCloudMode&&user&&(memberPortal.loading||memberPortal.error)?<div className="p-6"><p role={memberPortal.error?'alert':'status'}>{memberPortal.error?'회원 화면을 불러오지 못했습니다. 회사 연결 설정을 확인해 주세요.':'회원·회사 정보를 확인하고 있습니다.'}</p>{memberPortal.error&&<button className="text-blue-700 underline mt-3" onClick={memberPortal.reload}>다시 불러오기</button>}</div>:activeNav==='business_plan'?<BusinessPlanEntry
-                key={accountId}
+              {activeNav==='certification_library'?<CertificationLibrary />:isCloudMode&&user&&(memberPortal.loading||memberPortal.error)?<div className="p-6"><p role={memberPortal.error?'alert':'status'}>{memberPortal.error?'회원 화면을 불러오지 못했습니다. 회사 연결 설정을 확인해 주세요.':'회원·회사 정보를 확인하고 있습니다.'}</p>{memberPortal.error&&<button className="text-blue-700 underline mt-3" onClick={memberPortal.reload}>다시 불러오기</button>}</div>:['business_plan','business_plan_analysis'].includes(activeNav)?<BusinessPlanEntry
+                key={`${accountId}/${activeNav}`}
+                analysis={activeNav==='business_plan_analysis'}
                 companies={planCompanies}
                 company={planCompany}
                 projects={loadedWorkspaceAccount===accountId?projects:[]}
@@ -523,7 +525,7 @@ export default function PlatformWorkspace() {
                   setProjects(previous=>[project,...previous.filter(item=>item.id!==project.id)]);
                   return true;
                 }}
-              />:activeNav==='curation'?<CertificationCuration key={`${accountId}/${currentCompany?.id||'none'}`} company={currentCompany} companies={clientCompanies} onSelectCompany={selectCompany} onPrepare={handoff=>{setSelectedGovProgram(null);setSelectedCuration(handoff);setIsNewProjectModalOpen(true);}}/>:memberPortal.enterprise?<EnterpriseWorkspace context={memberPortal.context} company={currentCompany} projects={projects} documents={documents} activeNav={activeNav} activeProject={activeProject} onSelectCompany={c=>{selectCompany(c);if(activeNav==='settings')setActiveNav('dashboard');}} onSelectProject={handleSelectProject} onProjectsLoaded={(companyId,loaded)=>setProjects(old=>[...old.filter(p=>p.companyId!==companyId),...loaded.map(p=>({...old.find(x=>x.id===p.id),...p}))])} onRefresh={async()=>{const uid=accountRef.current;const w=await loadWorkspace();if(accountRef.current===uid){setCompanies(w.companies);setProjects(w.projects);memberPortal.reload();}}} onOpenDocument={handleOpenDoc} onAddDocument={handleAddDocument} onUpdateDocument={handleUpdateDocument} onOpenUpload={()=>setIsAddModalOpen(true)} onOpenDocuments={()=>setActiveNav('drive')}/>:<>
+              />:activeNav==='second_brain'?<SecondBrain key={`${accountId}/${currentCompany?.id||'none'}`} company={currentCompany} companies={clientCompanies} accountId={accountId} projects={projects} documents={documents} onSelectCompany={selectCompany} onOpenDocument={handleOpenDoc} onSelectProject={handleSelectProject}/>:activeNav==='curation'?<CertificationCuration key={`${accountId}/${currentCompany?.id||'none'}`} company={currentCompany} companies={clientCompanies} onSelectCompany={selectCompany} onPrepare={handoff=>{setSelectedGovProgram(null);setSelectedCuration(handoff);setIsNewProjectModalOpen(true);}}/>:memberPortal.enterprise?<EnterpriseWorkspace context={memberPortal.context} company={currentCompany} projects={projects} documents={documents} activeNav={activeNav} activeProject={activeProject} onSelectCompany={c=>{selectCompany(c);if(activeNav==='settings')setActiveNav('dashboard');}} onSelectProject={handleSelectProject} onProjectsLoaded={(companyId,loaded)=>setProjects(old=>[...old.filter(p=>p.companyId!==companyId),...loaded.map(p=>({...old.find(x=>x.id===p.id),...p}))])} onRefresh={async()=>{const uid=accountRef.current;const w=await loadWorkspace();if(accountRef.current===uid){setCompanies(w.companies);setProjects(w.projects);memberPortal.reload();}}} onOpenDocument={handleOpenDoc} onAddDocument={handleAddDocument} onUpdateDocument={handleUpdateDocument} onOpenUpload={()=>setIsAddModalOpen(true)} onOpenDocuments={()=>setActiveNav('drive')}/>:<>
               {currentCompany&&<div className="managed-context-bar"><strong>현재 거래처 · {currentCompany.name}</strong><button onClick={()=>selectCompany(null)}>전체 거래처로 전환</button></div>}
               {activeNav==='gov_programs'&&currentCompany&&<p className="px-8 text-sm text-slate-500">{currentCompany.name} 작업 중 · 공고는 전체 목록이며 회사 정보에 따른 신청 적합성 판정은 아직 제공되지 않습니다.</p>}
 

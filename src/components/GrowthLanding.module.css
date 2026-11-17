@@ -31,3 +31,8 @@
 .reportServiceChoices > button[aria-pressed="true"] { background: #173b30; color: #fff; }
 .reportServiceDetail { padding: 10px 12px; margin-top: 10px; background: #f2f6f3; }
 .reportServiceDetail > p { margin: 0 0 7px; font-size: 13px; line-height: 1.55; }
+
+/* UX-DENSITY-001: prioritize content over repeated presentation rows. */
+
+.formSection{padding:28px 24px;gap:28px}.eyebrow{margin-bottom:8px}.sectionTitle{font-size:26px;margin-bottom:10px;line-height:1.4}.description{line-height:1.7}.formPromise{margin-top:16px}.formBox{padding:20px}.progress{padding-bottom:12px;margin-bottom:16px}.choices{margin-top:16px}.actions{margin-top:16px}.publicPreview>section{padding:28px 24px!important}.publicPreview h2{font-size:24px!important}
+@media(max-width:700px){.formSection{padding:24px 16px;gap:16px}.formBox{padding:16px}.publicPreview>section{padding:24px 16px!important}}

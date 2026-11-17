@@ -571,7 +571,7 @@ export async function registerMemberInviteCandidate({
 
   const metadata = {
     department: String(department || (cohort ? `${cohort} 수강생` : '신규 등록 회원')).trim(),
-    companyName: String(companyName || '어니스톤 교육생').trim(),
+    companyName: String(companyName || '써티멘토 교육생').trim(),
     invitedCompanyName: companyName,
     inviteStatus: 'REGISTERED',
     cohort: String(cohort || '').trim(),
@@ -675,7 +675,7 @@ export async function batchRegisterMembersAdmin(rows = []) {
       phone: r.phone || '',
       role: r.role || 'MEMBER',
       companyId: r.companyId || null,
-      companyName: r.companyName || '어니스톤 교육생',
+      companyName: r.companyName || '써티멘토 교육생',
       department: r.department || (r.cohort ? `${r.cohort} 수강생` : ''),
       cohort: r.cohort || '',
       courseName: r.courseName || '',
@@ -833,7 +833,7 @@ export async function fetchDispatchGatewayStatus() {
       smsConfigured: false,
       emailProvider: 'Resend / SMTP API 키 대기 (발송 대장 + 메일앱 모드)',
       smsProvider: '알림톡·SMS API 키 대기 (발송 대장 기록 모드)',
-      senderName: '어니스톤 관리자 조영빈',
+      senderName: '써티멘토 관리자 조영빈',
       senderEmail: 'ceo@honestone.kr',
     };
   }
@@ -846,7 +846,7 @@ export async function recordElectronicDispatch({
   templateKey = 'ADMIN_MEMBER_NOTICE',
   recipientName = '',
   recipientContact = '',
-  senderName = '어니스톤 관리자 조영빈',
+  senderName = '써티멘토 관리자 조영빈',
   senderEmail = 'ceo@honestone.kr',
   subject = '',
   body = '',
@@ -1008,7 +1008,7 @@ export async function executeAdminDispatchBatch({
       templateKey: item.templateKey || 'ADMIN_MEMBER_NOTICE',
       recipientName: item.recipientName || '회원',
       recipientContact: item.recipientContact || '',
-      senderName: item.senderName || '어니스톤 관리자 조영빈',
+      senderName: item.senderName || '써티멘토 관리자 조영빈',
       senderEmail: item.senderEmail || userEmail || 'ceo@honestone.kr',
       subject: item.subject || '',
       body: item.body || '',
@@ -1136,7 +1136,7 @@ export async function retryQueuedOrFailedDispatches(dispatchRows = [], userEmail
     companyName: d.company_name || d.companyName || d.metadata?.companyName || '',
     channel: d.channel || 'EMAIL',
     templateKey: d.template_key || d.templateKey || 'ADMIN_MEMBER_NOTICE',
-    senderName: d.metadata?.senderName || '어니스톤 관리자 조영빈',
+    senderName: d.metadata?.senderName || '써티멘토 관리자 조영빈',
     senderEmail: d.sender_email || d.metadata?.senderEmail || userEmail || 'ceo@honestone.kr',
     subject: d.subject || '',
     body: d.body || '',

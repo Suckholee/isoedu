@@ -38,11 +38,11 @@ test('review preserves previous body and rejects stale writes and forged complet
 // against the repository migrations in enterprise-portal.test.mjs.
 const ids={project:'10000000-0000-4000-8000-000000000001',company:'10000000-0000-4000-8000-000000000002',doc:'10000000-0000-4000-8000-000000000003',other:'10000000-0000-4000-8000-000000000004'};
 let state;
-function adapter(){return {auth:{getUser:async()=>({data:{user:state.logged?{id:'actor'}:null}})},rpc:async(name)=>({data:name==='can_edit_company'?state.edit:true}),from(table){
+function adapter(){return {storage:{from:()=>({download:async path=>({data:state.objects?.[path] ? new Blob([JSON.stringify(state.objects[path])]) : null})})},auth:{getUser:async()=>({data:{user:state.logged?{id:'actor'}:null}})},rpc:async(name)=>({data:name==='can_edit_company'?state.edit:true}),from(table){
   let filters=[],operation='select',payload,one=false,count=false;
   const q={select(columns,options){count=!!options?.count;return q;},eq(key,value){filters.push([key,value]);return q;},gte(){return q;},in(key,value){filters.push([key,value]);return q;},order(){return q;},limit(){return q;},maybeSingle(){one=true;return q;},single(){one=true;return q;},insert(value){operation='insert';payload=value;return q;},update(value){operation='update';payload=value;return q;},then(resolve,reject){return Promise.resolve().then(()=>{
     let rows=table==='audit_projects'?(state.access?[{id:ids.project,company_id:ids.company,data:{}}]:[]):table==='companies'?[{id:ids.company,name:'시험기업'}]:table==='project_operations'?[{project_id:ids.project,data:{applicationType:'VENTURE_GROWTH'}}]:state.rows;
-    const match=r=>filters.every(([key,value])=>{const v=key.startsWith('metadata->ai->>')?r.metadata?.ai?.[key.split('->>')[1]]:r[key];return Array.isArray(value)?value.includes(v):v===value;});
+    const match=r=>filters.every(([key,value])=>{const v=key.startsWith('metadata->')?key.split('->').slice(1).reduce((value,part)=>value?.[part.replace('>','')],r.metadata):r[key];return Array.isArray(value)?value.includes(v):v===value;});
     rows=rows.filter(match);
     if(operation==='insert'){if(state.rows.some(r=>r.id===payload.id))return {error:{code:'23505'}};state.rows.push(structuredClone(payload));rows=[state.rows.at(-1)];}
     if(operation==='update'){for(const r of rows)Object.assign(r,structuredClone(payload));}
@@ -143,5 +143,40 @@ test('patent search uses existing project/document permission checks and reports
 
 
 test('source endpoints preserve project authorization even before any file processing',async()=>{
- state={logged:false,edit:true,access:true,rows:[]};assert.equal((await post({action:'source-list'})).status,401);state.logged=true;state.edit=false;assert.equal((await post({action:'source-list'})).status,403);state.edit=true;state.access=false;assert.equal((await post({action:'source-list'})).status,404);
+ state={logged:false,edit:true,access:true,rows:[]};assert.equal((await post({action:'source-list'})).status,401);state.logged=true;state.edit=false;assert.equal((await post({action:'source-list'})).status,200);state.edit=true;state.access=false;assert.equal((await post({action:'source-list'})).status,404);
+});
+
+
+test('analysis read-only accounts can reload results while anonymous, other projects and all writes are blocked', async () => {
+  const source = {id:ids.doc, company_id:ids.company, metadata:{
+    sourceOrigin:{projectId:ids.project}, sourceUpload:{state:'ready'},
+    sourceAnalysis:{units:[{id:1,outputPath:'saved-result'}],state:'ready'},
+  }};
+  state={logged:true,edit:false,access:true,rows:[source,
+    {...source,id:ids.other,metadata:{...source.metadata,sourceOrigin:{projectId:ids.other}}},
+  ],objects:{'saved-result':{summary:'저장한 분석 결과'}}};
+  const listing=await post({action:'source-list'});
+  assert.equal(listing.status,200);
+  assert.deepEqual((await listing.json()).sources.map(row=>row.id),[ids.doc]);
+  const result=await post({action:'source-result',sourceId:ids.doc,unitId:1});
+  assert.equal(result.status,200);
+  assert.equal((await result.json()).result.summary,'저장한 분석 결과');
+  assert.equal((await post({action:'source-result',sourceId:ids.other,unitId:1})).status,404);
+  for(const action of ['source-draft-save','source-document-evaluate','source-begin','source-part','source-complete','source-unit','source-prepared','source-analyze','source-fill','source-review-save','source-render','source-render-attach','source-vision-unit','source-vision-complete','source-rubric-save','source-page-evaluate','source-coach-chat','source-coach-discard','source-unknown']) {
+    assert.equal((await post({action,sourceId:ids.doc})).status,403,action);
+  }
+  assert.equal((await post({action:'source-page-result',sourceId:ids.other,pageId:1})).status,404);
+  assert.equal((await post({action:'source-document-result',sourceId:ids.other})).status,404);
+  state.access=false;
+  assert.equal((await post({action:'source-list'})).status,404);
+  state.access=true;state.logged=false;
+  assert.equal((await post({action:'source-list'})).status,401);
+  assert.equal((await post({action:'source-result',sourceId:ids.doc,unitId:1})).status,401);
+});
+test('source requests accept the actual same Host through Next URL rewriting and reject cross-site origins',async()=>{
+  state={logged:true,edit:false,access:true,rows:[]};
+  const send=origin=>route.POST(new Request('http://localhost:3050/api/venture-documents',{method:'POST',headers:{origin,host:'127.0.0.1:3050'},body:JSON.stringify({action:'source-list',projectId:ids.project})}));
+  assert.equal((await send('http://127.0.0.1:3050')).status,200);
+  assert.equal((await send('https://foreign.example')).status,403);
+  assert.equal((await send('http://127.0.0.1:3050.evil.example')).status,403);
 });

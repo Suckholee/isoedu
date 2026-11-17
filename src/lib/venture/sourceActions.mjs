@@ -1,4 +1,9 @@
+import {handleSourceVisualAction} from '../businessPlans/sourceVisualActions.mjs';
+import {includedSourceVisuals,sourceVisualSignature} from '../businessPlans/sourceVisuals.mjs';
+import {handleVisionAction} from '../businessPlans/visionActions.mjs';
+import {updateWorkingDraft} from '../businessPlans/workingDraft.mjs';
 import {proposalParents} from './proposalLineage.mjs';
+import {sourceReviewKey,hasCurrentSourceReview,reviewDraftText} from '../businessPlans/sourceReview.mjs';
 import {createHash} from 'node:crypto';
 import {VentureError,uuid,inputHash} from './generation.mjs';
 import {SOURCE_MAX_BYTES,SOURCE_PART_BYTES,validateSourceBundle} from './sourceBundle.mjs';
@@ -10,7 +15,7 @@ import {DOCUMENT_TYPES,VENTURE_VERSION,VENTURE_BOOK_URL} from './catalog.mjs';
 const must=result=>{if(result.error)throw new VentureError('자료 저장에 실패했습니다. 회사 권한과 연결 상태를 확인해 주세요.',503);return result.data;};
 const hash=bytes=>createHash('sha256').update(bytes).digest('hex');
 const scoped=(db,project)=>db.from('documents').select('*').eq('company_id',project.company_id).eq('metadata->sourceOrigin->>projectId',project.id);
-async function persist(db,row,metadata,other={}){const saved=must(await db.from('documents').update({metadata,updated_at:new Date().toISOString(),...other}).eq('id',row.id).eq('company_id',row.company_id).eq('updated_at',row.updated_at).select('*').maybeSingle());if(!saved)throw new VentureError('다른 곳에서 자료가 변경되었습니다. 새로 불러온 뒤 이어가 주세요.',409);return saved;}
+async function persist(db,row,metadata,other={}){const saved=must(await db.from('documents').update({metadata,updated_at:new Date(Math.max(Date.now(),(Date.parse(row.updated_at)||0)+1)).toISOString(),...other}).eq('id',row.id).eq('company_id',row.company_id).eq('updated_at',row.updated_at).select('*').maybeSingle());if(!saved)throw new VentureError('다른 곳에서 자료가 변경되었습니다. 새로 불러온 뒤 이어가 주세요.',409);return saved;}
 async function download(db,path,max){const blob=must(await db.storage.from('iso-vault').download(path));if(!blob||blob.size>max)throw new VentureError('자료 조각의 크기를 확인해 주세요.');return Buffer.from(await blob.arrayBuffer());}
 const plainUpload=async(db,path,value)=>must(await db.storage.from('iso-vault').upload(path,new Blob([JSON.stringify(value)],{type:'text/plain'}),{contentType:'text/plain',upsert:false}));
 const prefix=(project,id)=>`companies/${project.company_id}/${id}/`;
@@ -41,7 +46,7 @@ export async function handleSourceAction({body,db,project,user}){
   if(row){if(row.metadata.sourceUpload.fingerprint!==f.fingerprint||row.metadata.sourceUpload.size!==f.size)throw new VentureError('이전 원본과 다른 파일입니다. 새 자료로 올려 주세요.',409);return {source:row};}
   const types={pdf:'application/pdf',doc:'application/msword',docx:'application/vnd.openxmlformats-officedocument.wordprocessingml.document',hwp:'application/x-hwp',hwpx:'application/hwp+zip',pptx:'application/vnd.openxmlformats-officedocument.presentationml.presentation',xlsx:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',png:'image/png',jpg:'image/jpeg',jpeg:'image/jpeg'};
   const ext=f.name.split('.').pop().toLowerCase(),mime=types[ext]||'text/plain';
-  row=must(await db.from('documents').insert({id:body.sourceId,company_id:project.company_id,title:f.name,code:'SRC-'+body.sourceId.slice(0,8),hierarchy_level:'LEVEL_4',certification_code:'VENTURE',status:'DRAFT',content_draft:'',metadata:{kind:'venture-source',format:ext.toUpperCase(),fileName:f.name,fileSize:f.size,sourceOrigin:{projectId:project.id,actor:user.id},sourceUpload:{fingerprint:f.fingerprint,size:f.size,contentType:mime,partSize:SOURCE_PART_BYTES,parts:[],state:'uploading'},sourceAnalysis:{units:[],cells:{},basicFields:{},prepared:false,state:'new'}}}).select('*').single());return {source:row};
+  row=must(await db.from('documents').insert({id:body.sourceId,company_id:project.company_id,title:f.name,code:'SRC-'+body.sourceId.slice(0,8),hierarchy_level:'LEVEL_4',certification_code:'VENTURE',status:'DRAFT',content_draft:'',metadata:{kind:'venture-source',format:ext.toUpperCase(),fileName:f.name,fileSize:f.size,sourceOrigin:{projectId:project.id,actor:user.id,at:new Date().toISOString()},sourceUpload:{fingerprint:f.fingerprint,size:f.size,contentType:mime,partSize:SOURCE_PART_BYTES,parts:[],state:'uploading'},sourceAnalysis:{units:[],cells:{},basicFields:{},prepared:false,state:'new'}}}).select('*').single());return {source:row};
  }
  if(!row)throw new VentureError('자료가 없거나 회사 접근 권한이 없습니다.',404);
  let upload=row.metadata.sourceUpload,analysis=row.metadata.sourceAnalysis;
@@ -58,6 +63,40 @@ export async function handleSourceAction({body,db,project,user}){
   row=await persist(db,row,{...row.metadata,sourceUpload:{...upload,state:'ready'},sourceBundle:clean,originalPath:bundle.originalPath,...(row.metadata.format==='PDF'?{previewPath:bundle.originalPath,previewFormat:'PDF'}:{})},{file_url:bundle.originalPath});return {source:row};
  }
  if(upload.state!=='ready')throw new VentureError('원본 업로드를 먼저 완료해 주세요.',409);
+ if(['source-visual-save','source-visual-chat'].includes(body.action))return handleSourceVisualAction({body,db,row,user,project,persist,download});
+ if(body.action==='source-draft-save'){
+  const draft=updateWorkingDraft(row,body,user.id);
+  if(row.metadata.sourceWorkingDrafts?.[user.id]?.requestId===body.requestId)return {source:row,draft};
+  if(row.metadata.sourceCoach?.pending&&Date.now()-Date.parse(row.metadata.sourceCoach.pending.at)<120000)throw new VentureError('AI 작업 후 자동 저장을 다시 시도합니다.',423);
+  row=await persist(db,row,{...row.metadata,sourceWorkingDrafts:{...row.metadata.sourceWorkingDrafts,[user.id]:draft}});return {source:row,draft};
+ }
+ if(['source-document-result','source-document-evaluate','source-render','source-render-attach','source-coach-discard','source-vision-unit','source-vision-complete','source-rubric-save','source-page-result','source-page-evaluate','source-coach-chat'].includes(body.action))return handleVisionAction({body,db,row,user,project,persist,download,plainUpload});
+ if(['source-review-preview','source-review-save'].includes(body.action)){
+  const editor={actorId:user.id,workingDraft:row.metadata.sourceWorkingDrafts?.[user.id]||null};
+  const textReady=analysis.state==='ready'&&analysis.units.length&&!analysis.units.some(unit=>unit.state!=='ready'||!unit.outputPath);
+  if(body.action==='source-review-preview'&&!textReady)return {...editor,source:row,content:row.content_draft||'',pendingVision:true,stale:!!row.metadata.sourceReview&&!hasCurrentSourceReview(row)};
+  if(!textReady&&!row.metadata.sourceVision?.prepared)throw new VentureError('페이지 이미지 준비를 완료한 뒤 보완해 주세요.',409);
+  if(body.action==='source-review-preview'){
+   if(row.metadata.sourceReview)return {...editor,source:row,content:row.content_draft,stale:!hasCurrentSourceReview(row)};
+   const units=[];let size=0;
+   for(const unit of analysis.units){
+    const result=JSON.parse((await download(db,unit.outputPath,1000000)).toString('utf8'));
+    size+=JSON.stringify(result).length;
+    if(size>180000)throw new VentureError('분석 자료가 큽니다. 쪽별 결과를 확인하며 필요한 내용을 보완란에 직접 정리해 주세요.',413);
+    units.push({unit,result});
+   }
+   const content=reviewDraftText(row,units);
+   if(content.length>60000)throw new VentureError('보완 초안이 60,000자를 넘습니다. 쪽별 결과를 확인하며 필요한 내용을 보완란에 직접 정리해 주세요.',413);
+   return {...editor,source:row,content,stale:false};
+  }
+  if(row.updated_at!==body.expectedUpdatedAt)throw new VentureError('자료가 변경됐습니다. 보완 내용을 복사해 보관한 뒤 최신 자료를 다시 열어 주세요.',409);
+  if(Object.values(row.metadata.sourceVisuals||{}).some(c=>c.pending&&Date.now()-Date.parse(c.pending.at)<210000))throw new VentureError('시각 자료 작성이 끝난 뒤 보완 완료를 눌러 주세요.',409);
+  if(typeof body.content!=='string'||!body.content.trim()||body.content.length>60000||body.reviewed!==true)throw new VentureError('보완 본문(60,000자 이내)과 원문 검토 여부를 확인해 주세요.');
+  const previous=row.metadata.sourceReview;
+  const history=[...(previous?.history||[]),...(previous?[{revision:previous.revision,content:previous.reviewedContent,visuals:previous.visuals||[],at:previous.savedAt,actor:previous.actor,analysisKey:previous.analysisKey}]:[])];
+  row=await persist(db,row,{...row.metadata,sourceWorkingDrafts:{...row.metadata.sourceWorkingDrafts,[user.id]:{version:(editor.workingDraft?.version||0)+1,cleared:true,cardMessages:editor.workingDraft?.cardMessages||{},activePriority:editor.workingDraft?.activePriority??null,at:new Date().toISOString()}},sourceCoach:row.metadata.sourceCoach?{...row.metadata.sourceCoach,proposal:null,turns:(row.metadata.sourceCoach.turns||[]).map(t=>t.id===row.metadata.sourceCoach.proposal?.turnId?{...t,reviewedRevision:(previous?.revision||0)+1,reviewedBy:user.id,reviewedAt:new Date().toISOString(),applied:body.content.trim()===row.metadata.sourceCoach.proposal.content.trim()}:t)}:undefined,sourceReview:{visuals:includedSourceVisuals(row),visualSignature:sourceVisualSignature(row),revision:(previous?.revision||0)+1,analysisKey:sourceReviewKey(row),reviewedContent:body.content.trim(),savedAt:new Date().toISOString(),actor:user.id,history}},{content_draft:body.content.trim()});
+  return {source:row};
+ }
  if(body.action==='source-unit'){
   const unit=body.unit;if(!unit||!Number.isInteger(unit.id)||unit.id<1||unit.id>2000||typeof unit.location!=='string'||!unit.location||unit.location.length>300||!Array.isArray(unit.images)||unit.images.length>3)throw new VentureError('분석 단위·위치를 확인해 주세요. 파일당 최대 2,000개 단위를 지원합니다.');
   const base=prefix(project,row.id)+`analysis-input/unit-${unit.id}/`;
